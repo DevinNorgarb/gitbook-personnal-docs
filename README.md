@@ -1,1 +1,5 @@
-# gitbook-personnal-docs
+# Ubuntu set keyboard backlight
+
+```
+xset led 3 
+```
