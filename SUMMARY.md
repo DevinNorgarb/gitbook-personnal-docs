@@ -17,6 +17,7 @@
   * [General](software-engineering/documentation/general.md)
 * [Containerisation](software-engineering/containerisation/README.md)
   * [LXC/LXD](software-engineering/containerisation/lxc-lxd/README.md)
+    * [How to make your LXD containers get IP addresses from your LAN using macvlan](software-engineering/containerisation/lxc-lxd/how-to-make-your-lxd-containers-get-ip-addresses-from-your-lan-using-macvlan.md)
     * [Create and Update LXC Profiles](software-engineering/containerisation/lxc-lxd/create-and-update-lxc-profiles.md)
   * [Docker Compose](software-engineering/containerisation/docker-compose.md)
   * [Docker](software-engineering/containerisation/docker.md)
