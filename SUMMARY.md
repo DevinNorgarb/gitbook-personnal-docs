@@ -12,6 +12,9 @@
 
 ## Software Engineering
 
+* [Grafana](software-engineering/grafana/README.md)
+  * [OBD2 Dashboard](software-engineering/grafana/obd2-dashboard.md)
+  * [Strava Dashboard](software-engineering/grafana/strava-dashboard.md)
 * [Documentation](software-engineering/documentation/README.md)
   * [Tools](software-engineering/documentation/tools.md)
   * [General](software-engineering/documentation/general.md)
