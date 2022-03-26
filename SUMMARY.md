@@ -24,6 +24,7 @@
     * [How to make your LXD containers get IP addresses from your LAN using macvlan](software-engineering/containerisation/lxc-lxd/how-to-make-your-lxd-containers-get-ip-addresses-from-your-lan-using-macvlan.md)
     * [How to use the LXD Proxy Device to map ports between the host and the containers](software-engineering/containerisation/lxc-lxd/how-to-use-the-lxd-proxy-device-to-map-ports-between-the-host-and-the-containers.md)
     * [How to easily run graphics-accelerated GUI apps in LXD containers on your Ubuntu desktop](software-engineering/containerisation/lxc-lxd/how-to-easily-run-graphics-accelerated-gui-apps-in-lxd-containers-on-your-ubuntu-desktop.md)
+    * [Ubuntu](software-engineering/containerisation/lxc-lxd/ubuntu.md)
   * [Docker Compose](software-engineering/containerisation/docker-compose.md)
   * [Docker](software-engineering/containerisation/docker.md)
 * [Browsers](software-engineering/browsers/README.md)
@@ -56,7 +57,7 @@
 ## IoT
 
 * [OBDII](iot/obdii/README.md)
-  * [Page 2](iot/obdii/page-2.md)
+  * [Guides](iot/obdii/guides.md)
   * [a quick crash-course](iot/obdii/a-quick-crash-course.md)
   * [How to Hack and Upgrade Your Car, Using CAN Bus](iot/obdii/how-to-hack-and-upgrade-your-car-using-can-bus.md)
   * [The Car Hacker’s Handbook](iot/obdii/the-car-hackers-handbook.md)
