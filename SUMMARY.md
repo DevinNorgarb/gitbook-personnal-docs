@@ -38,7 +38,8 @@
     * [UDP Holepunching](software-engineering/networking/vpn/udp-holepunching.md)
     * [NetMaker](software-engineering/networking/vpn/netmaker/README.md)
       * [Installation](software-engineering/networking/vpn/netmaker/installation.md)
-  * [Container Networking](software-engineering/networking/container-networking.md)
+  * [Container Networking](software-engineering/networking/container-networking/README.md)
+    * [How to make your LXD containers get IP addresses from your LAN using macvlan](software-engineering/networking/container-networking/how-to-make-your-lxd-containers-get-ip-addresses-from-your-lan-using-macvlan.md)
 * [Kubernetes](software-engineering/kubernetes/README.md)
   * [K3s](software-engineering/kubernetes/k3s.md)
   * [Rancher](software-engineering/kubernetes/rancher.md)
@@ -54,6 +55,11 @@
 
 ## IoT
 
+* [OBDII](iot/obdii/README.md)
+  * [Page 2](iot/obdii/page-2.md)
+  * [a quick crash-course](iot/obdii/a-quick-crash-course.md)
+  * [How to Hack and Upgrade Your Car, Using CAN Bus](iot/obdii/how-to-hack-and-upgrade-your-car-using-can-bus.md)
+  * [The Car Hacker’s Handbook](iot/obdii/the-car-hackers-handbook.md)
 * [Raspberry Pi](iot/raspberry-pi.md)
 * [ESP32](iot/esp32.md)
 
