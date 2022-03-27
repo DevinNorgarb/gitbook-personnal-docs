@@ -37,6 +37,7 @@
   * [Page 1](software-engineering/proxmox/page-1.md)
 * [Networking](software-engineering/networking/README.md)
   * [Web Sockets](software-engineering/networking/web-sockets/README.md)
+    * [Page 2](software-engineering/networking/web-sockets/page-2.md)
     * [Socket Client Tool](software-engineering/networking/web-sockets/socket-client-tool.md)
   * [NetShoot](software-engineering/networking/netshoot.md)
   * [TCPDump](software-engineering/networking/tcpdump.md)
