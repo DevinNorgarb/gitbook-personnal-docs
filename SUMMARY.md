@@ -13,6 +13,7 @@
 ## Software Engineering
 
 * [Linux](software-engineering/linux/README.md)
+  * [systemd](software-engineering/linux/systemd.md)
   * [Bash](software-engineering/linux/bash/README.md)
     * [How To Get / Print Current Date in Unix / Linux Shell Script](software-engineering/linux/bash/how-to-get-print-current-date-in-unix-linux-shell-script.md)
 * [Grafana](software-engineering/grafana/README.md)
@@ -35,6 +36,8 @@
 * [ProxMox](software-engineering/proxmox/README.md)
   * [Page 1](software-engineering/proxmox/page-1.md)
 * [Networking](software-engineering/networking/README.md)
+  * [Web Sockets](software-engineering/networking/web-sockets/README.md)
+    * [Socket Client Tool](software-engineering/networking/web-sockets/socket-client-tool.md)
   * [NetShoot](software-engineering/networking/netshoot.md)
   * [TCPDump](software-engineering/networking/tcpdump.md)
   * [VPN](software-engineering/networking/vpn/README.md)
