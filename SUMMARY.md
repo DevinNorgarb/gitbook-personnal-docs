@@ -9,6 +9,8 @@
 ## Software Engineering
 
 * [Linux](software-engineering/linux/README.md)
+  * [udev rules](software-engineering/linux/udev-rules/README.md)
+    * [Changing /dev/hidraw permissions](software-engineering/linux/udev-rules/changing-dev-hidraw-permissions.md)
   * [systemd](software-engineering/linux/systemd.md)
   * [Bash](software-engineering/linux/bash/README.md)
     * [How To Get / Print Current Date in Unix / Linux Shell Script](software-engineering/linux/bash/how-to-get-print-current-date-in-unix-linux-shell-script.md)
