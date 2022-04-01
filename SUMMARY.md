@@ -10,6 +10,7 @@
 
 * [Linux](software-engineering/linux/README.md)
   * [udev rules](software-engineering/linux/udev-rules/README.md)
+    * [An introduction to Udev: The Linux subsystem for managing device events](software-engineering/linux/udev-rules/an-introduction-to-udev-the-linux-subsystem-for-managing-device-events.md)
     * [Changing /dev/hidraw permissions](software-engineering/linux/udev-rules/changing-dev-hidraw-permissions.md)
   * [systemd](software-engineering/linux/systemd.md)
   * [Bash](software-engineering/linux/bash/README.md)
