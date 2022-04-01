@@ -1,4 +1,8 @@
-# Ubuntu
+---
+description: Enable the below command to run docker in LXC containers
+---
+
+# Enable Nesting in LXC
 
 We’ve long considered nested containers an important use case in LXC. LXD is no different in this regard. If you are using privileged lxd containers (security.privileged: true), then the only thing you need to do is to set the security.nesting flag to true:
 

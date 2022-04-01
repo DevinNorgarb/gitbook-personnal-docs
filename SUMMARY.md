@@ -6,10 +6,6 @@
 * [Firewall rules to allow Chromecast](random/firewall-rules-to-allow-chromecast.md)
 * [Scripts](random/scripts.md)
 
-## 3D Printing
-
-* [My problems](3d-printing/my-problems.md)
-
 ## Software Engineering
 
 * [Linux](software-engineering/linux/README.md)
@@ -24,11 +20,12 @@
   * [General](software-engineering/documentation/general.md)
 * [Containerisation](software-engineering/containerisation/README.md)
   * [LXC/LXD](software-engineering/containerisation/lxc-lxd/README.md)
+    * [Page 3](software-engineering/containerisation/lxc-lxd/page-3.md)
     * [Create and Update LXC Profiles](software-engineering/containerisation/lxc-lxd/create-and-update-lxc-profiles.md)
     * [How to make your LXD containers get IP addresses from your LAN using macvlan](software-engineering/containerisation/lxc-lxd/how-to-make-your-lxd-containers-get-ip-addresses-from-your-lan-using-macvlan.md)
     * [How to use the LXD Proxy Device to map ports between the host and the containers](software-engineering/containerisation/lxc-lxd/how-to-use-the-lxd-proxy-device-to-map-ports-between-the-host-and-the-containers.md)
     * [How to easily run graphics-accelerated GUI apps in LXD containers on your Ubuntu desktop](software-engineering/containerisation/lxc-lxd/how-to-easily-run-graphics-accelerated-gui-apps-in-lxd-containers-on-your-ubuntu-desktop.md)
-    * [Ubuntu](software-engineering/containerisation/lxc-lxd/ubuntu.md)
+    * [Enable Nesting in LXC](software-engineering/containerisation/lxc-lxd/enable-nesting-in-lxc.md)
   * [Docker Compose](software-engineering/containerisation/docker-compose.md)
   * [Docker](software-engineering/containerisation/docker.md)
 * [Browsers](software-engineering/browsers/README.md)
@@ -52,6 +49,10 @@
   * [K3s](software-engineering/kubernetes/k3s.md)
   * [Rancher](software-engineering/kubernetes/rancher.md)
   * [Single Node Cluster](software-engineering/kubernetes/single-node-cluster.md)
+
+## 3D Printing
+
+* [My problems](3d-printing/my-problems.md)
 
 ***
 
