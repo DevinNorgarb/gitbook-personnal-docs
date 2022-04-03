@@ -42,6 +42,7 @@
   * [NetShoot](software-engineering/networking/netshoot.md)
   * [TCPDump](software-engineering/networking/tcpdump.md)
   * [VPN](software-engineering/networking/vpn/README.md)
+    * [Install Pritunl Client](software-engineering/networking/vpn/install-pritunl-client.md)
     * [Firewalls](software-engineering/networking/vpn/firewalls.md)
     * [UDP Holepunching](software-engineering/networking/vpn/udp-holepunching.md)
     * [NetMaker](software-engineering/networking/vpn/netmaker/README.md)
