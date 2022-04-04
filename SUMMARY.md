@@ -16,6 +16,8 @@
   * [Bash](software-engineering/linux/bash/README.md)
     * [How To Get / Print Current Date in Unix / Linux Shell Script](software-engineering/linux/bash/how-to-get-print-current-date-in-unix-linux-shell-script.md)
 * [Grafana](software-engineering/grafana/README.md)
+  * [Loki](software-engineering/grafana/loki.md)
+  * [Install](software-engineering/grafana/install.md)
   * [OBD2 Dashboard](software-engineering/grafana/obd2-dashboard.md)
   * [Strava Dashboard](software-engineering/grafana/strava-dashboard.md)
 * [Documentation](software-engineering/documentation/README.md)
