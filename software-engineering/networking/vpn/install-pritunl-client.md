@@ -9,3 +9,10 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E528
 sudo apt-get update
 sudo apt-get install pritunl-client-electron
 ```
+
+```
+pritunl-client add pritunl://pritunl.url.com/ku/cdscdscdcds
+pritunl-client list
+pritunl-client start 
+
+```
