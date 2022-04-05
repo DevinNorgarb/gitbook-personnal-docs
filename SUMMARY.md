@@ -5,6 +5,7 @@
 * [Ubuntu set keyboard backlight](README.md)
 * [Firewall rules to allow Chromecast](random/firewall-rules-to-allow-chromecast.md)
 * [Scripts](random/scripts/README.md)
+  * [Install oh-my-zsh](random/scripts/install-oh-my-zsh.md)
   * [NVM Install](random/scripts/nvm-install.md)
 
 ## Software Engineering
