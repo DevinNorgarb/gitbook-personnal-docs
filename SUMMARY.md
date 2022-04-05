@@ -7,8 +7,9 @@
 * [Scripts](random/scripts/README.md)
   * [Install Docker and docker-compose](random/scripts/install-docker-and-docker-compose.md)
   * [Install Golang](random/scripts/install-golang.md)
+  * [Install MAGE](random/scripts/install-mage.md)
   * [Install oh-my-zsh](random/scripts/install-oh-my-zsh.md)
-  * [Install NVM](random/scripts/install-nvm.md)
+  * [Install NVM](random/scripts/nvm-install.md)
 
 ## Software Engineering
 
