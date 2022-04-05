@@ -5,9 +5,10 @@
 * [Ubuntu set keyboard backlight](README.md)
 * [Firewall rules to allow Chromecast](random/firewall-rules-to-allow-chromecast.md)
 * [Scripts](random/scripts/README.md)
+  * [Install Docker and docker-compose](random/scripts/install-docker-and-docker-compose.md)
   * [Install Golang](random/scripts/install-golang.md)
   * [Install oh-my-zsh](random/scripts/install-oh-my-zsh.md)
-  * [NVM Install](random/scripts/nvm-install.md)
+  * [Install NVM](random/scripts/install-nvm.md)
 
 ## Software Engineering
 
