@@ -15,6 +15,8 @@
 
 * [Cryptocurrencies](software-engineering/cryptocurrencies/README.md)
   * [Running your own bitcoin node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/README.md)
+    * [Page 3](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/page-3/README.md)
+      * [how-to: run your own bitcoin node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/page-3/how-to-run-your-own-bitcoin-node.md)
     * [Six Reasons Why You Should Run Your Own Bitcoin Node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/six-reasons-why-you-should-run-your-own-bitcoin-node.md)
   * [Trading Bots](software-engineering/cryptocurrencies/trading-bots.md)
 * [Linux](software-engineering/linux/README.md)
@@ -97,5 +99,5 @@
 
 ***
 
-* [Import](import.md)
+* [Import](import/README.md)
 * [Import](import-1.md)
