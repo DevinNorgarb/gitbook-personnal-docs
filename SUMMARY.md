@@ -13,6 +13,10 @@
 
 ## Software Engineering
 
+* [Programming](software-engineering/programming/README.md)
+  * [Frontend](software-engineering/programming/frontend/README.md)
+    * [Javascript](software-engineering/programming/frontend/javascript/README.md)
+      * [Quasar + Pinia + Electron Desktop App](software-engineering/programming/frontend/javascript/quasar-+-pinia-+-electron-desktop-app.md)
 * [Cryptocurrencies](software-engineering/cryptocurrencies/README.md)
   * [Running your own bitcoin node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/README.md)
     * [how-to: run your own bitcoin node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/how-to-run-your-own-bitcoin-node.md)
