@@ -13,6 +13,10 @@
 
 ## Software Engineering
 
+* [Cryptocurrencies](software-engineering/cryptocurrencies/README.md)
+  * [Running your own bitcoin node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/README.md)
+    * [Six Reasons Why You Should Run Your Own Bitcoin Node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/six-reasons-why-you-should-run-your-own-bitcoin-node.md)
+  * [Trading Bots](software-engineering/cryptocurrencies/trading-bots.md)
 * [Linux](software-engineering/linux/README.md)
   * [udev rules](software-engineering/linux/udev-rules/README.md)
     * [An introduction to Udev: The Linux subsystem for managing device events](software-engineering/linux/udev-rules/an-introduction-to-udev-the-linux-subsystem-for-managing-device-events.md)
@@ -30,7 +34,6 @@
   * [General](software-engineering/documentation/general.md)
 * [Containerisation](software-engineering/containerisation/README.md)
   * [LXC/LXD](software-engineering/containerisation/lxc-lxd/README.md)
-    * [Page 3](software-engineering/containerisation/lxc-lxd/page-3.md)
     * [Create and Update LXC Profiles](software-engineering/containerisation/lxc-lxd/create-and-update-lxc-profiles.md)
     * [How to make your LXD containers get IP addresses from your LAN using macvlan](software-engineering/containerisation/lxc-lxd/how-to-make-your-lxd-containers-get-ip-addresses-from-your-lan-using-macvlan.md)
     * [How to use the LXD Proxy Device to map ports between the host and the containers](software-engineering/containerisation/lxc-lxd/how-to-use-the-lxd-proxy-device-to-map-ports-between-the-host-and-the-containers.md)
@@ -94,6 +97,5 @@
 
 ***
 
-* [Import](import/README.md)
-  * [Ubuntu](import/ubuntu.md)
+* [Import](import.md)
 * [Import](import-1.md)
