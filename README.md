@@ -1,5 +1,2 @@
-# Ubuntu set keyboard backlight
+# Tooling
 
-```
-xset led 3 
-```

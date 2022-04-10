@@ -1,25 +1,17 @@
 # Table of contents
 
-## Random
-
-* [Ubuntu set keyboard backlight](README.md)
-* [Firewall rules to allow Chromecast](random/firewall-rules-to-allow-chromecast.md)
-* [Scripts](random/scripts/README.md)
-  * [Install Docker and docker-compose](random/scripts/install-docker-and-docker-compose.md)
-  * [Install Golang](random/scripts/install-golang.md)
-  * [Install MAGE](random/scripts/install-mage.md)
-  * [Install oh-my-zsh](random/scripts/install-oh-my-zsh.md)
-  * [Install NVM](random/scripts/nvm-install.md)
-
 ## Software Engineering
 
+* [Tooling](README.md)
+  * [CSS](software-engineering/tooling/css/README.md)
+    * [How to inspect and copy an element's CSS the easy way](software-engineering/tooling/css/how-to-inspect-and-copy-an-elements-css-the-easy-way.md)
 * [Programming](software-engineering/programming/README.md)
+  * [Backend](software-engineering/programming/backend/README.md)
+    * [PHP <3](software-engineering/programming/backend/php-less-than-3.md)
   * [Frontend](software-engineering/programming/frontend/README.md)
     * [Javascript](software-engineering/programming/frontend/javascript/README.md)
       * [Quasar + Pinia + Electron Desktop App](software-engineering/programming/frontend/javascript/quasar-+-pinia-+-electron-desktop-app.md)
-    * [CSS](software-engineering/programming/frontend/css/README.md)
-      * [How to inspect and copy an element's CSS the easy way](software-engineering/programming/frontend/css/how-to-inspect-and-copy-an-elements-css-the-easy-way.md)
-  * [PHP <3](software-engineering/programming/php-less-than-3.md)
+    * [CSS](software-engineering/programming/frontend/css.md)
 * [Cryptocurrencies](software-engineering/cryptocurrencies/README.md)
   * [Running your own bitcoin node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/README.md)
     * [how-to: run your own bitcoin node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/how-to-run-your-own-bitcoin-node.md)
@@ -85,7 +77,6 @@
 ## IoT
 
 * [Balena.io](iot/balena.io.md)
-* [Page 3](iot/page-3.md)
 * [OBDII](iot/obdii/README.md)
   * [Guides](iot/obdii/guides.md)
   * [a quick crash-course](iot/obdii/a-quick-crash-course.md)
@@ -103,6 +94,17 @@
 * [MapBox](gis/mapbox.md)
 * [Uber Big Data](gis/uber-big-data.md)
 * [Mapbox Storytelling](gis/mapbox-storytelling.md)
+
+## Random
+
+* [Ubuntu set keyboard backlight](<README (1).md>)
+* [Firewall rules to allow Chromecast](random/firewall-rules-to-allow-chromecast.md)
+* [Scripts](random/scripts/README.md)
+  * [Install Docker and docker-compose](random/scripts/install-docker-and-docker-compose.md)
+  * [Install Golang](random/scripts/install-golang.md)
+  * [Install MAGE](random/scripts/install-mage.md)
+  * [Install oh-my-zsh](random/scripts/install-oh-my-zsh.md)
+  * [Install NVM](random/scripts/nvm-install.md)
 
 ## Maritime AIS
 
