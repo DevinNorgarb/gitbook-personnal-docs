@@ -68,11 +68,11 @@
   * [K3s](software-engineering/kubernetes/k3s.md)
   * [Rancher](software-engineering/kubernetes/rancher.md)
   * [Single Node Cluster](software-engineering/kubernetes/single-node-cluster.md)
-* [ROS](software-engineering/ros/README.md)
-  * [ROS and Docker](software-engineering/ros/ros-and-docker.md)
-  * [Dockerizing an existing ROS project](software-engineering/ros/dockerizing-an-existing-ros-project.md)
-  * [Init ROS Melodic](software-engineering/ros/init-ros-melodic/README.md)
-    * [ROS Wiki](software-engineering/ros/init-ros-melodic/ros-wiki.md)
+* [ROS](ros/README.md)
+  * [ROS and Docker](ros/ros-and-docker.md)
+  * [Dockerizing an existing ROS project](ros/dockerizing-an-existing-ros-project.md)
+  * [Init ROS Melodic](ros/init-ros-melodic/README.md)
+    * [ROS Wiki](ros/init-ros-melodic/ros-wiki.md)
 
 ## 3D Printing
 
@@ -81,6 +81,8 @@
 
 ## IoT
 
+* [Balena.io](iot/balena.io.md)
+* [Page 3](iot/page-3.md)
 * [OBDII](iot/obdii/README.md)
   * [Guides](iot/obdii/guides.md)
   * [a quick crash-course](iot/obdii/a-quick-crash-course.md)
@@ -88,6 +90,7 @@
   * [The Car Hacker’s Handbook](iot/obdii/the-car-hackers-handbook.md)
 * [Raspberry Pi](iot/raspberry-pi.md)
 * [ESP32](iot/esp32.md)
+* [Painless Mesh](iot/painless-mesh.md)
 
 ## GIS
 
@@ -100,5 +103,8 @@
 
 ***
 
-* [Import](import/README.md)
-* [Import](import-1.md)
+* [Import](import.md)
+
+## Maritime AIS
+
+* [Page 4](maritime-ais/page-4.md)
