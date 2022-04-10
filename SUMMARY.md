@@ -68,18 +68,16 @@
   * [K3s](software-engineering/kubernetes/k3s.md)
   * [Rancher](software-engineering/kubernetes/rancher.md)
   * [Single Node Cluster](software-engineering/kubernetes/single-node-cluster.md)
+* [ROS](software-engineering/ros/README.md)
+  * [ROS and Docker](software-engineering/ros/ros-and-docker.md)
+  * [Dockerizing an existing ROS project](software-engineering/ros/dockerizing-an-existing-ros-project.md)
+  * [Init ROS Melodic](software-engineering/ros/init-ros-melodic/README.md)
+    * [ROS Wiki](software-engineering/ros/init-ros-melodic/ros-wiki.md)
 
 ## 3D Printing
 
+* [Gallery](3d-printing/gallery.md)
 * [My problems](3d-printing/my-problems.md)
-
-***
-
-* [ROS](ros/README.md)
-  * [ROS and Docker](ros/ros-and-docker.md)
-  * [Dockerizing an existing ROS project](ros/dockerizing-an-existing-ros-project.md)
-  * [Init ROS Melodic](ros/init-ros-melodic/README.md)
-    * [ROS Wiki](ros/init-ros-melodic/ros-wiki.md)
 
 ## IoT
 
