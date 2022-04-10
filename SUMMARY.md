@@ -32,7 +32,8 @@
 * [Grafana](software-engineering/grafana/README.md)
   * [Loki](software-engineering/grafana/loki/README.md)
     * [Install](software-engineering/grafana/loki/install.md)
-  * [OBD2 Dashboard](software-engineering/grafana/obd2-dashboard.md)
+  * [OBD2 Dashboard](software-engineering/grafana/obd2-dashboard/README.md)
+    * [Page 4](software-engineering/grafana/obd2-dashboard/page-4.md)
   * [Strava Dashboard](software-engineering/grafana/strava-dashboard.md)
 * [Documentation](software-engineering/documentation/README.md)
   * [Tools](software-engineering/documentation/tools.md)
@@ -101,10 +102,6 @@
 * [Uber Big Data](gis/uber-big-data.md)
 * [Mapbox Storytelling](gis/mapbox-storytelling.md)
 
-***
-
-* [Import](import.md)
-
 ## Maritime AIS
 
-* [Page 4](maritime-ais/page-4.md)
+* [Marine Traffic SLR350](maritime-ais/marine-traffic-slr350.md)
