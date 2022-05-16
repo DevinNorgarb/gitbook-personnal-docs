@@ -6,7 +6,7 @@
 
 ## ROS Docker Simple
 
-A simple template project for [dockerizing](https://www.docker.com) your [ROS](http://www.ros.org) code. Have your ROS project set up and running in 3 minutes by putting your catkin workspace in `catkin_ws` and running:
+A simple template project for [dockerizing](https://www.docker.com/) your [ROS](http://www.ros.org/) code. Have your ROS project set up and running in 3 minutes by putting your catkin workspace in `catkin_ws` and running:
 
 `cp ros-project`&#x20;
 

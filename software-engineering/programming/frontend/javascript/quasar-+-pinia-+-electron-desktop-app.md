@@ -6,7 +6,7 @@ Why? Because I love Vue and want to have a public showcase that I can reference 
 
 ### Why Quasar?
 
-[Quasar](https://quasar.dev) is an MIT licensed open-source Vue.js based framework that targets SPA, SSR, PWA, mobile app, desktop app, and browser extension all using one codebase. It handles the build setup and provides a complete collection of Material Design compliant UI components.
+[Quasar](https://quasar.dev/) is an MIT licensed open-source Vue.js based framework that targets SPA, SSR, PWA, mobile app, desktop app, and browser extension all using one codebase. It handles the build setup and provides a complete collection of Material Design compliant UI components.
 
 Quasar’s motto is:
 
@@ -56,7 +56,7 @@ Let’s start by creating a new project using the Quasar CLI:
 ? Continue to install project dependencies after the project has been created? (recommended) NPM
 ```
 
-We chose [SCSS](https://sass-lang.com) as our CSS preprocessor, [ESLint](https://eslint.org) & [Typescript](https://www.typescriptlang.org) as additional features, [Vue 3’s Composition API](https://vuejs.org/guide/introduction.html#api-styles) and [Prettier](https://prettier.io) for code formatting.
+We chose [SCSS](https://sass-lang.com/) as our CSS preprocessor, [ESLint](https://eslint.org/) & [Typescript](https://www.typescriptlang.org/) as additional features, [Vue 3’s Composition API](https://vuejs.org/guide/introduction.html#api-styles) and [Prettier](https://prettier.io/) for code formatting.
 
 Do not choose Vuex as we will add another state library in the next chapter. If you accidentally added Vuex, remove it manually from your `package.json`.
 
@@ -64,7 +64,7 @@ Do not choose Vuex as we will add another state library in the next chapter. If 
 
 ### Add Pinia as Vue store library
 
-We’ll use [Pinia](https://pinia.vuejs.org) as Vue store library, which is now the recommended state library for Vue.
+We’ll use [Pinia](https://pinia.vuejs.org/) as Vue store library, which is now the recommended state library for Vue.
 
 First, we need to install Pinia:
 

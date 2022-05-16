@@ -2,7 +2,9 @@
 
 ## Software Engineering
 
-* [WebRTC](README.md)
+* [Install Certbot](README.md)
+  * [Certbot Instructions](software-engineering/install-certbot/certbot-instructions.md)
+* [WebRTC](<README (2).md>)
   * [Testing WEBRTC](software-engineering/webrtc/testing-webrtc.md)
   * [Setting  up STUN and TURN servers](software-engineering/webrtc/setting-up-stun-and-turn-servers.md)
 * [Tooling](<README (1).md>)
@@ -81,7 +83,8 @@
 
 * [Balena.io](iot/balena.io.md)
 * [OBDII](iot/obdii/README.md)
-  * [Guides](iot/obdii/guides.md)
+  * [Guides](iot/obdii/guides/README.md)
+    * [Creating A Wireless OBDII Scanner](iot/obdii/guides/creating-a-wireless-obdii-scanner.md)
   * [a quick crash-course](iot/obdii/a-quick-crash-course.md)
   * [How to Hack and Upgrade Your Car, Using CAN Bus](iot/obdii/how-to-hack-and-upgrade-your-car-using-can-bus.md)
   * [The Car Hacker’s Handbook](iot/obdii/the-car-hackers-handbook.md)

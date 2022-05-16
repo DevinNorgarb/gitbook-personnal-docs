@@ -157,7 +157,7 @@ To upgrade Docker Engine, download the newer package file and repeat the [instal
 
 #### Install using the convenience script <a href="#install-using-the-convenience-script" id="install-using-the-convenience-script"></a>
 
-Docker provides a convenience script at [get.docker.com](https://get.docker.com) to install Docker into development environments quickly and non-interactively. The convenience script is not recommended for production environments, but can be used as an example to create a provisioning script that is tailored to your needs. Also refer to the [install using the repository](broken-reference) steps to learn about installation steps to install using the package repository. The source code for the script is open source, and can be found in the [`docker-install` repository on GitHub](https://github.com/docker/docker-install).
+Docker provides a convenience script at [get.docker.com](https://get.docker.com/) to install Docker into development environments quickly and non-interactively. The convenience script is not recommended for production environments, but can be used as an example to create a provisioning script that is tailored to your needs. Also refer to the [install using the repository](broken-reference) steps to learn about installation steps to install using the package repository. The source code for the script is open source, and can be found in the [`docker-install` repository on GitHub](https://github.com/docker/docker-install).
 
 Always examine scripts downloaded from the internet before running them locally. Before installing, make yourself familiar with potential risks and limitations of the convenience script:
 
@@ -176,7 +176,7 @@ Always examine scripts downloaded from the internet before running them locally.
 > $ DRY_RUN=1 sh ./get-docker.sh
 > ```
 
-This example downloads the script from [get.docker.com](https://get.docker.com) and runs it to install the latest stable release of Docker on Linux:
+This example downloads the script from [get.docker.com](https://get.docker.com/) and runs it to install the latest stable release of Docker on Linux:
 
 ```
 $ curl -fsSL https://get.docker.com -o get-docker.sh
@@ -193,7 +193,7 @@ Docker is installed. The `docker` service starts automatically on Debian based d
 
 **Install pre-releases**
 
-Docker also provides a convenience script at [test.docker.com](https://test.docker.com) to install pre-releases of Docker on Linux. This script is equivalent to the script at `get.docker.com`, but configures your package manager to enable the “test” channel from our package repository, which includes both stable and pre-releases (beta versions, release-candidates) of Docker. Use this script to get early access to new releases, and to evaluate them in a testing environment before they are released as stable.
+Docker also provides a convenience script at [test.docker.com](https://test.docker.com/) to install pre-releases of Docker on Linux. This script is equivalent to the script at `get.docker.com`, but configures your package manager to enable the “test” channel from our package repository, which includes both stable and pre-releases (beta versions, release-candidates) of Docker. Use this script to get early access to new releases, and to evaluate them in a testing environment before they are released as stable.
 
 To install the latest version of Docker on Linux from the “test” channel, run:
 

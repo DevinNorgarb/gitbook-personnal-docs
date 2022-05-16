@@ -70,6 +70,6 @@ Running your own node is super cool, and gives you a great appreciation of the p
 
 ### Conclusion: <a href="#conclusion" id="conclusion"></a>
 
-Hopefully, it is clear now why you should run a node. There are various ways. [If you want individual help, see here](https://armantheparman.com/mentorship/). For the computer illiterate, help is available at [www.bitcoin4boomers.com](http://www.bitcoin4boomers.com).
+Hopefully, it is clear now why you should run a node. There are various ways. [If you want individual help, see here](https://armantheparman.com/mentorship/). For the computer illiterate, help is available at [www.bitcoin4boomers.com](http://www.bitcoin4boomers.com/).
 
 _This is a guest post by Arman the Parman. Opinions expressed are entirely their own and do not necessarily reflect those of BTC Inc or_ Bitcoin Magazine_._

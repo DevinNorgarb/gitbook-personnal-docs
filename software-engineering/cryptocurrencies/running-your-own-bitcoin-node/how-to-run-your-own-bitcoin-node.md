@@ -142,7 +142,7 @@ The next time you login to your desktop, Bitcoin Core GUI should be automaticall
 
 If Bitcoin Core GUI does not automatically start, you may need to add it to an `.xinit` or `.xsession` file as [described here](https://en.wikibooks.org/wiki/Guide\_to\_X11/Starting\_Sessions).
 
-You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
+You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com/), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
 
 To support the Bitcoin network, you also need to allow incoming connections. Please read the Network Configuration section for details.
 
@@ -178,7 +178,7 @@ Save the file and exit; the updated crontab file will be installed for you. On m
 
 If you’re a expert system administrator and want to use an init script instead, see [the init scripts directory in Bitcoin Core’s source tree](https://github.com/bitcoin/bitcoin/tree/master/contrib/init).
 
-You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
+You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com/), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
 
 To support the Bitcoin network, you also need to allow incoming connections. Please read the Network Configuration section for details.
 
@@ -242,7 +242,7 @@ The next time you login to your desktop, Bitcoin Core GUI will be automatically 
 
 **Warning:** to prevent data corruption, do not force shutdown of your computer from the Windows shutdown screen when you have Bitcoin Core running.
 
-You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
+You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com/), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
 
 To support the Bitcoin network, you also need to allow incoming connections. Please read the Network Configuration section for details.
 
@@ -302,7 +302,7 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 
 **Warning:** to prevent data corruption, do not force shutdown of your computer from the Windows shutdown screen when you have Bitcoin Core running.
 
-You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
+You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com/), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
 
 To support the Bitcoin network, you also need to allow incoming connections. Please read the Network Configuration section for details.
 
@@ -364,7 +364,7 @@ The next time you login to your desktop, Bitcoin Core GUI will be automatically 
 
 **Warning:** to prevent data corruption, do not force shutdown of your computer from the Windows shutdown screen when you have Bitcoin Core running.
 
-You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
+You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com/), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
 
 To support the Bitcoin network, you also need to allow incoming connections. Please read the Network Configuration section for details.
 
@@ -424,7 +424,7 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 
 **Warning:** to prevent data corruption, do not force shutdown of your computer from the Windows shutdown screen when you have Bitcoin Core running.
 
-You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
+You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com/), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
 
 To support the Bitcoin network, you also need to allow incoming connections. Please read the Network Configuration section for details.
 
@@ -486,7 +486,7 @@ The next time you login to your desktop, Bitcoin Core GUI will be automatically 
 
 **Warning:** to prevent data corruption, do not force shutdown of your computer from the Windows shutdown screen when you have Bitcoin Core running.
 
-You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
+You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com/), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
 
 To support the Bitcoin network, you also need to allow incoming connections. Please read the Network Configuration section for details.
 
@@ -550,7 +550,7 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 
 **Warning:** to prevent data corruption, do not force shutdown of your computer from the Windows shutdown screen when you have Bitcoin Core running.
 
-You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
+You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com/), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
 
 To support the Bitcoin network, you also need to allow incoming connections. Please read the Network Configuration section for details.
 
@@ -604,7 +604,7 @@ While running Bitcoin Core GUI, open the Bitcoin Core menu and choose Preference
 
 The next time you login to your desktop, Bitcoin Core GUI will be automatically started minimized in the task bar.
 
-You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
+You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com/), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
 
 To support the Bitcoin network, you also need to allow incoming connections. Please read the Network Configuration section for details.
 
@@ -666,7 +666,7 @@ curl https://raw.githubusercontent.com/bitcoin/bitcoin/master/contrib/init/org.b
 
 The next time you login to your desktop, Bitcoin Core daemon will be automatically started.
 
-You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
+You have now completed installing Bitcoin Core. If you have any questions, please ask in one of Bitcoin’s many communities, such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com/), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin\&uio=d4) IRC chatroom on Freenode.
 
 To support the Bitcoin network, you also need to allow incoming connections. Please read the Network Configuration section for details.
 
@@ -724,7 +724,7 @@ If you don’t have inbound connections, please read instructions for enabling i
 
 #### Enabling Connections <a href="#enabling-connections" id="enabling-connections"></a>
 
-If Bitcoin Core can’t automatically configure your router to open port 8333, you will need to manually configure your router. We’ve tried to make the following instructions generic enough to cover most router models; if you need specific help with your router, please ask for help on a tech support site such as [SuperUser](http://superuser.com).
+If Bitcoin Core can’t automatically configure your router to open port 8333, you will need to manually configure your router. We’ve tried to make the following instructions generic enough to cover most router models; if you need specific help with your router, please ask for help on a tech support site such as [SuperUser](http://superuser.com/).
 
 Enabling inbound connections requires two steps, plus an extra third step for firewall users:
 
@@ -738,13 +738,13 @@ In order for your router to direct incoming port 8333 connections to your comput
 
 Start by logging into your router’s administration interface. Most routers can be configured using one of the following URLs, so keep clicking links until you find one that works. If none work, consult your router’s manual.
 
-* [http://192.168.0.1](http://192.168.0.1) (some Linksys/Cisco models)
-* [http://192.168.1.1](http://192.168.1.1) (some D-Link/Netgear models)
-* [http://192.168.2.1](http://192.168.2.1) (some Belkin/SMC models)
-* [http://192.168.123.254](http://192.168.123.254) (some US Robotics models)
-* [http://10.0.1.1](http://10.0.1.1) (some Apple models)
+* [http://192.168.0.1](http://192.168.0.1/) (some Linksys/Cisco models)
+* [http://192.168.1.1](http://192.168.1.1/) (some D-Link/Netgear models)
+* [http://192.168.2.1](http://192.168.2.1/) (some Belkin/SMC models)
+* [http://192.168.123.254](http://192.168.123.254/) (some US Robotics models)
+* [http://10.0.1.1](http://10.0.1.1/) (some Apple models)
 
-Upon connecting, you will probably be prompted for a username and password. If you configured a password, enter it now. If not, the [Router Passwords site](http://www.routerpasswords.com) provides a database of known default username and password pairs.
+Upon connecting, you will probably be prompted for a username and password. If you configured a password, enter it now. If not, the [Router Passwords site](http://www.routerpasswords.com/) provides a database of known default username and password pairs.
 
 After logging in, you want to search your router’s menus for options related to DHCP, the Dynamic Host Configuration Protocol. These options may also be called Address Reservation. For example, the router page shown below calls the option we need “DHCP Reservation”:
 
@@ -782,7 +782,7 @@ After filling in the details for the mapping, save the entry. You should not nee
 
 If you still can’t connect and you use a firewall, you probably need to change your firewall settings. See the Firewall section below.
 
-If something else went wrong, it’s probably a problem with your router configuration. Re-read the instructions above to see if you missed anything, search the web for help with “port forwarding”, and ask for help on sites like [SuperUser](http://superuser.com).
+If something else went wrong, it’s probably a problem with your router configuration. Re-read the instructions above to see if you missed anything, search the web for help with “port forwarding”, and ask for help on sites like [SuperUser](http://superuser.com/).
 
 We can’t provide direct support, but if you see a way to improve these instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
 
@@ -800,7 +800,7 @@ Ubuntu also comes with its firewall disabled by default, but if you have enabled
 
 Once you have allowed inbound connections to port 8333, start Bitcoin Core (if you haven’t already) and follow the Testing Connections instructions to test your connection.
 
-If something else went wrong re-read the DHCP, port forwarding, and firewall instructions above to see if you missed anything, search the web for help with “port forwarding” and “opening firewall ports”, and ask for help on sites like [SuperUser](http://superuser.com).
+If something else went wrong re-read the DHCP, port forwarding, and firewall instructions above to see if you missed anything, search the web for help with “port forwarding” and “opening firewall ports”, and ask for help on sites like [SuperUser](http://superuser.com/).
 
 We can’t provide direct support, but if you see a way to improve these instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
 

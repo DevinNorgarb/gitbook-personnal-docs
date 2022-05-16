@@ -1,6 +1,6 @@
 # Setting  up STUN and TURN servers
 
-[HOME](https://www.webrtc-experiment.com) © [Muaz Khan](https://muazkhan.com) . [@WebRTCWeb](http://twitter.com/WebRTCWeb) . [Github](https://github.com/muaz-khan?tab=repositories) . [Latest issues](https://github.com/muaz-khan/WebRTC-Experiment/issues?state=open) . [What's New?](https://github.com/muaz-khan/WebRTC-Experiment/commits/master)
+[HOME](https://www.webrtc-experiment.com/) © [Muaz Khan](https://muazkhan.com/) . [@WebRTCWeb](http://twitter.com/WebRTCWeb) . [Github](https://github.com/muaz-khan?tab=repositories) . [Latest issues](https://github.com/muaz-khan/WebRTC-Experiment/issues?state=open) . [What's New?](https://github.com/muaz-khan/WebRTC-Experiment/commits/master)
 
 > This document is aimed to explain TURN server installation steps for different operating systems.\
 >
@@ -472,7 +472,7 @@
 
 ### TURN installation on Windows
 
-> Alternatives: [STUNTMAN](http://www.stunprotocol.org) or [C# STUN Client](http://www.codeproject.com/Articles/18492/STUN-Client) or [Pion TURN-server for Windows](https://github.com/pions/turn/releases).
+> Alternatives: [STUNTMAN](http://www.stunprotocol.org/) or [C# STUN Client](http://www.codeproject.com/Articles/18492/STUN-Client) or [Pion TURN-server for Windows](https://github.com/pions/turn/releases).
 
 Please check PION link above for a **Windows TURN client**.
 
