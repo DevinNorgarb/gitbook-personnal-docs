@@ -112,6 +112,8 @@
 
 ## Random
 
+* [ADHD and Programming](random/adhd-and-programming/README.md)
+  * [Page 4](random/adhd-and-programming/page-4.md)
 * [Ubuntu set keyboard backlight](<README (1) (1).md>)
 * [Firewall rules to allow Chromecast](random/firewall-rules-to-allow-chromecast.md)
 * [Scripts](random/scripts/README.md)
