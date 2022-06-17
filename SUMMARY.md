@@ -88,15 +88,22 @@
 * [Gallery](3d-printing/gallery.md)
 * [My problems](3d-printing/my-problems.md)
 
+***
+
+* [OBDII](obdii/README.md)
+  * [Libraries](obdii/libraries/README.md)
+    * [ELM327-emulator](obdii/libraries/elm327-emulator.md)
+    * [OBD2 Simulator](obdii/libraries/obd2-simulator.md)
+  * [Guides](obdii/guides/README.md)
+    * [Creating A Wireless OBDII Scanner](obdii/guides/creating-a-wireless-obdii-scanner.md)
+  * [OBDII Simulator Guide](obdii/obdii-simulator-guide.md)
+  * [a quick crash-course](obdii/a-quick-crash-course.md)
+  * [How to Hack and Upgrade Your Car, Using CAN Bus](obdii/how-to-hack-and-upgrade-your-car-using-can-bus.md)
+  * [The Car Hacker’s Handbook](obdii/the-car-hackers-handbook.md)
+
 ## IoT
 
 * [Balena.io](iot/balena.io.md)
-* [OBDII](iot/obdii/README.md)
-  * [Guides](iot/obdii/guides/README.md)
-    * [Creating A Wireless OBDII Scanner](iot/obdii/guides/creating-a-wireless-obdii-scanner.md)
-  * [a quick crash-course](iot/obdii/a-quick-crash-course.md)
-  * [How to Hack and Upgrade Your Car, Using CAN Bus](iot/obdii/how-to-hack-and-upgrade-your-car-using-can-bus.md)
-  * [The Car Hacker’s Handbook](iot/obdii/the-car-hackers-handbook.md)
 * [Raspberry Pi](iot/raspberry-pi.md)
 * [ESP32](iot/esp32.md)
 * [Painless Mesh](iot/painless-mesh.md)
