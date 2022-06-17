@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>Professional Services - Traccar</title><link rel="icon" sizes="192x192" href="/icon.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="canonical" href="https://www.traccar.org/product/professional-services/"><link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous"><link rel="stylesheet" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"><style>.bg-body {
+  background: LightGray;
+}
+
+.bg-default {
+  background: White;
+}
+
+.bg-brand {
+  background: #007bff;
+  background: linear-gradient(45deg, #007bff, #7E57C2);
+}
+
+.bg-brand-dark {
+  background: #405060;
+}
+
+.comment {
+  overflow-x: auto;
+}
+
+/* bootstrap styles */
+
+.comment img {
+  max-width: 100%;
+  height: auto;
+}
+
+pre {
+  padding: 1rem;
+  border-radius: .25rem;
+  background: #f8f9fa;
+}
+
+blockquote {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  padding: 0 0 0 15px;
+  border-left: 5px solid #eee;
+}
+</style></head><body class="bg-body"><div class="py-1 bg-dark"><div class="container"><nav class="navbar navbar-expand-md navbar-dark"><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#mainMenu"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="/"><img class="d-inline-block align-top mr-2" width="30" height="30" title="Traccar" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNjQiIHdpZHRoPSI2NCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTMyLjU0NSA2LjY1OGEyNS4yMyAyNS4yMyAwIDAwLTEzLjIxNyAzLjM5NUM3LjIwNyAxNy4wNTIgMy4wNTUgMzIuNTUgMTAuMDUzIDQ0LjY3MmM2Ljk5OSAxMi4xMjEgMjIuNDk3IDE2LjI3MyAzNC42MTkgOS4yNzUgMTIuMTIxLTYuOTk5IDE2LjI3NS0yMi40OTcgOS4yNzctMzQuNjE5LTQuNTkzLTcuOTU0LTEyLjg0Ni0xMi40NzgtMjEuNDA0LTEyLjY3em05Ljg1OSAxMC4zODVhMjAuMTEgMjAuMTEgMCAwMTUuMjE5IDUuOTM3IDIwLjEyIDIwLjEyIDAgMDEyLjUzMyA3LjQ5bC00LjUwOC42NDdjLS4yNjQtMS45OS0uODY1LTQuMDM2LTEuOTMxLTUuODgzLTEuMDY3LTEuODQ3LTIuNTM1LTMuMzg5LTQuMTI3LTQuNjEzbDIuODE0LTMuNTc4em0tNS40MzkgNy4yMDdjMS4xMjMuODcgMi4wOTMgMS45MzQgMi44NDcgMy4yNHMxLjE4OSAyLjY3NiAxLjM4MSA0LjA4NGwtNC41MDcuNjUxYy0uMTItLjgyOC0uMzM2LTEuNzEyLS43OC0yLjQ4LS40NDMtLjc2OS0xLjEtMS4zOTgtMS43NTgtMS45MTVsMi44MTctMy41Nzh2LS4wMDJ6TTE5LjY3OCAyOC43bDQuNTEgNy44MSA0LjUxMSA3LjgxMmE5LjAyIDkuMDIgMCAwMS05LjAyMSAwIDkuMDIgOS4wMiAwIDAxLTQuNTEtNy44MTIgOS4wMiA5LjAyIDAgMDE0LjUxLTcuODF6bTEwLjMxNiAyLjE3M0EyLjI1NSAyLjI1NSAwIDAxMzIgMzJhMi4yNTUgMi4yNTUgMCAwMS0uODI2IDMuMDggMi4yNTUgMi4yNTUgMCAwMS0zLjA4LS44MjQgMi4yNTUgMi4yNTUgMCAwMS44MjYtMy4wODIgMi4yNTUgMi4yNTUgMCAwMTEuMDc0LS4zeiIvPjwvc3ZnPg=="><span class="d-md-none d-lg-inline">Traccar</span></a><div class="collapse navbar-collapse" id="mainMenu"><ul class="navbar-nav mr-auto"><li class="nav-item"><a class="nav-link" href="/devices/">Devices</a></li><li class="nav-item dropdown"><a class="nav-link" href="#" data-toggle="dropdown">Products</a><div class="dropdown-menu"><a class="dropdown-item" href="/products/">Products Overview</a><a class="dropdown-item" href="/server/">Traccar Server</a><a class="dropdown-item" href="/client/">Traccar Client</a><a class="dropdown-item" href="/manager/">Traccar Manager</a></div></li><li class="nav-item"><a class="nav-link" href="/pricing/">Pricing</a></li><li class="nav-item dropdown"><a class="nav-link" href="#" data-toggle="dropdown">Download</a><div class="dropdown-menu"><a class="dropdown-item" href="/download/">Installer</a><a class="dropdown-item" href="/source-code/">Source Code</a></div></li><li class="nav-item"><a class="nav-link" href="/documentation/">Documentation</a></li><li class="nav-item dropdown"><a class="nav-link" href="#" data-toggle="dropdown">Resources</a><div class="dropdown-menu"><a class="dropdown-item" href="/forums/">Forums</a><a class="dropdown-item" href="/support/">Support</a><a class="dropdown-item d-none d-md-block d-lg-none" href="/demo-server/">Demo</a></div></li><li class="nav-item d-md-none d-lg-block"><a class="nav-link" href="/demo-server/">Demo</a></li></ul><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="/search/"><i class="fa fa-search fa-lg" title="Search"></i><span class="d-md-none d-xl-inline ml-2">Search</span></a></li></ul><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="/login/"><i class="fa fa-sign-in fa-lg" title="Login"></i><span class="d-md-none ml-2">Login</span></a></li></ul></div></nav></div></div><div class="bg-default"><div class="container py-5"><div class="row"><div class="col-md-6 col-lg-4 mb-5"><div class="card text-center bg-light"><img class="card-img-top mx-auto mt-5 mb-3" width="85" height="85" src="/images/product-service.svg"><div class="card-body"><h1 class="card-title mb-4 h4">Professional Services</h1><p>Support, development, customization work and training services.</p></div></div></div><div class="col-md-6 col-lg-4 align-self-center mb-5 px-5"><p class="mt-4"><strong>$100 / hour</strong> for calls and <strong>$50 / hour</strong> for everything else</p><a class="btn btn-primary mt-3" href="mailto:support@traccar.org">Contact Support</a></div></div><hr class="mb-5"><h3>Description</h3><p>Professional services or support from Traccar team.</p><p>Popular work items with approximate time estimates:</p><ul><li>Server installation on Linux – 2 hours</li><li>Simple web app branding – 2 hours</li><li>Simple mobile app branding – 5 hours</li><li>New protocol implementation – 3 to 10 hours</li></ul><p>We are happy to help with a project of any size. Please <a href="mailto:support@traccar.org">contact us</a> to discuss your requirements.</p><script>window.onload = function() {
+  $('select[name="number"]').change(function() {
+    var number = parseInt($('select[name="number"]').val());
+    $('#price').text(number + ' = $' + (number * 50).toFixed(2));
+  });
+  $('form').on('submit', function(e) {
+    e.preventDefault();
+    openCheckout({
+      email: '',
+      code: 'professional-services',
+      quantity: parseInt($('select[name="number"]').val()),
+      returnUrl: new URL('/success/professional-services/', document.baseURI).href,
+      test: false
+    });
+  });
+};</script><script src="/javascripts/checkout-paypal.js"></script><script type="application/ld+json">{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "Professional Services",
+  "image": "https://www.traccar.org/images/product-service.svg",
+  "description": "One hour of customization work, training or support.",
+  "sku": "service",
+  "mpn": "TRACCAR-SERVICE",
+  "brand": {
+    "@type": "Brand",
+    "name": "Traccar"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Anton Tananaev"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "1"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.traccar.org/product/professional-services/",
+    "priceCurrency": "USD",
+    "price": "50.00",
+    "priceValidUntil": "2022-07-17",
+    "availability": "http://schema.org/InStock"
+  }
+}</script></div></div><footer><div class="container"><div class="row"><div class="col-sm-3 pt-5" style="min-width: 10rem"><h6 class="text-uppercase">Traccar</h6><p>Traccar is a free and open source modern GPS tracking system.</p><p><a href="/subscribe/">Subscribe</a> to the project news and updates.</p></div><div class="col-sm-3 col-lg-2 offset-lg-2 pt-5"><h6 class="text-uppercase">Useful Links</h6><nav class="nav flex-column"><a class="nav-link active" href="/documentation/">Documentation</a><a class="nav-link active" href="/devices/">Devices</a><a class="nav-link active" href="/download/">Download</a><a class="nav-link active" href="/source-code/">Source Code</a></nav></div><div class="col-sm-3 col-lg-2 pt-5"><h6 class="text-uppercase">Community</h6><nav class="nav flex-column"><a class="nav-link active" href="/blog/">Blog</a><a class="nav-link active" href="/forums/">Forums</a><a class="nav-link active" href="/support/">Support</a></nav></div><div class="col-sm-3 col-lg-2 pt-5"><h6 class="text-uppercase">Company</h6><nav class="nav flex-column"><a class="nav-link active" href="/about/">About</a><a class="nav-link active" href="/terms/">Terms of Service</a><a class="nav-link active" href="/sla/">Service Level Agreement</a><a class="nav-link active" href="/privacy/">Privacy Policy</a></nav></div></div><div class="row py-5"><div class="col text-muted">&copy; <span class="d-none d-sm-inline">Copyright 2009 - 2022 </span>Tananaev Solutions<span class="pull-right"><a class="text-muted ml-3" href="//www.facebook.com/traccar"><i class="fa fa-facebook-square fa-lg"></i></a><a class="text-muted ml-3" href="//twitter.com/TraccarOrg"><i class="fa fa-twitter-square fa-lg"></i></a><a class="text-muted ml-3" href="//www.youtube.com/c/TraccarOrg"><i class="fa fa-youtube-square fa-lg"></i></a><a class="text-muted ml-3" href="mailto:support@traccar.org"><i class="fa fa-envelope-square fa-lg"></i></a></span></div></div></div></footer><script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script><script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script><script src="//www.googletagmanager.com/gtag/js?id=UA-31301086-1" async></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-31301086-1');</script></body></html>
