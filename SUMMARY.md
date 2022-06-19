@@ -102,6 +102,7 @@
       * [ELM327-emulator](obdii/libraries/elm327-emulator.md)
       * [OBD2 Simulator](obdii/libraries/obd2-simulator.md)
     * [a quick crash-course](iot/obdii/a-quick-crash-course.md)
+  * [obdsim on ubuntu 22.04](obdii/obdsim-on-ubuntu-22.04.md)
 
 ## 3D Printing
 
