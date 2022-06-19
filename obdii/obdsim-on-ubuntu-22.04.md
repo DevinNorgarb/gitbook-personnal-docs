@@ -1,3 +1,8 @@
+---
+cover: ../.gitbook/assets/2022-06-19_21-58.png
+coverY: 0
+---
+
 # obdsim on ubuntu 22.04
 
 [https://stackoverflow.com/a/26878598](https://stackoverflow.com/a/26878598)
