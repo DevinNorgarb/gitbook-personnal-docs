@@ -12,3 +12,8 @@ watch "curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/spee
  du -a / | sort -n -r | head -n 20
 ```
 
+#### Top Memory Usage
+
+```
+ps aux --sort=-%mem | head
+```

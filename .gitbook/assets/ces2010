@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<META NAME="Keywords" CONTENT="OBD,OBDII,OBD2,GPS,Logging,Logger,KML">
+<META NAME="Description" CONTENT="OBD and GPS Logging tool">
+<TITLE>Vegas CES 2010</TITLE>
+</HEAD>
+<BODY>
+<H1>Vegas CES 2010</H1>
+
+<P>I won a competition with this very software at <A
+HREF="http://plugcomputer.org">plugcomputer.org</A>. For winning, they
+put me up in a hotel in Vegas for a couple nights, let me show off my
+software a bit, and gave me a new SheevaPlug</P>
+
+
+<H2>Google Earth Screenshots</H2>
+<P><B>Driving from LA to Vegas...</B><BR>
+<A HREF="ces2010-there.jpg"><IMG SRC="small-ces2010-there.jpg"></A></P>
+
+<P><B>Couldn't find the convention center...</B><BR>
+<A HREF="ces2010-1.jpg"><IMG SRC="small-ces2010-1.jpg"></A></P>
+
+
+<H2>Files</H2>
+<P>The output from obdlogger: <A HREF="ces2010.db">ces2010.db</A></P>
+<P>Open this in Google Earth: <A HREF="ces2010.kml.gz">ces2010.kml.gz</A> [gzipped]</P>
+<P>The CSV file: <A HREF="ces2010.csv.gz">ces2010.csv.gz</A> [gzipped]</P>
+
+<BR><BR>
+
+<P><A HREF="../../">Back to OBD GPS Logger main page</A></P>
+
+<ADDRESS><P><A HREF="mailto:chunky@icculus.org">Gary (-;<BR>
+&lt;chunky@icculus.org&gt;</A></P></ADDRESS>
+
+</BODY>
+</HTML>

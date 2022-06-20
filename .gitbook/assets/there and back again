@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<META NAME="Keywords" CONTENT="OBD,OBDII,OBD2,GPS,Logging,Logger,KML">
+<META NAME="Description" CONTENT="OBD and GPS Logging tool">
+<TITLE>There and Back Again</TITLE>
+</HEAD>
+<BODY>
+<H1>There and Back Again: Lunch in El Segundo</H1>
+
+<P>Just going down to El Segundo for lunch, taking slightly different
+paths each way. By the airport, there's a large apparently blank bit;
+that's where I was in a tunnel and my GPS couldn't get a lock.</A>
+
+<P>This trip was driving my Mini Cooper S.</P>
+
+<H2>Google Earth Screenshots</H2>
+<A HREF="there-and-back-again1.jpg"><IMG SRC="small-there-and-back-again1.jpg"></A>
+<A HREF="there-and-back-again2.jpg"><IMG SRC="small-there-and-back-again2.jpg"></A>
+
+<H2>Files</H2>
+<P>The output from obdlogger: <A HREF="there-and-back-again.db">there-and-back-again.db</A></P>
+<P>Open this in Google Earth: <A HREF="there-and-back-again.kml">there-and-back-again.kml</A></P>
+<P>CSV file for your favorite spreadsheet: <A HREF="there-and-back-again.csv">there-and-back-again.csv</A></P>
+
+<BR><BR>
+
+<P><A HREF="../../">Back to OBD GPS Logger main page</A></P>
+
+<ADDRESS><P><A HREF="mailto:chunky@icculus.org">Gary (-;<BR>
+&lt;chunky@icculus.org&gt;</A></P></ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<META NAME="Keywords" CONTENT="OBD,OBDII,OBD2,GPS,Logging,Logger,KML">
+<META NAME="Description" CONTENT="OBD and GPS Logging tool">
+<TITLE>Testing Trips</TITLE>
+</HEAD>
+<BODY>
+<H1>Testing Trips</H1>
+
+<P>OBD GPS Logger understands "trips". Basically, it means you can keep
+multiple logs in the same database without issue. The logging tool
+automatically stops and starts logging whenever the engine is turned
+off and on. What you see on this page is the first test drive after I
+implemented trips, with me just driving around turning the engine off
+at some stoplights.</P>
+
+<P>Height at each point indicates speed, and color indicates engine
+efficiency at the time. You can see the MPG plummet as we accellerate
+away from stops, and hit the maximum value as we slow down. The white
+graph indicates engine RPM.</P>
+
+<P>This trip was driving my Mini Cooper S.</P>
+
+<H2>Google Earth Screenshots</H2>
+<A HREF="testing-trips1.jpg"><IMG SRC="small-testing-trips1.jpg"></A>
+<A HREF="testing-trips2.jpg"><IMG SRC="small-testing-trips2.jpg"></A>
+
+<H2>Files</H2>
+<P>The output from obdlogger: <A HREF="testing-trips.db">testing-trips.db</A></P>
+<P>Open this in Google Earth: <A HREF="testing-trips.kml">testing-trips.kml</A></P>
+<P>CSV file for your favorite spreadsheet: <A HREF="testing-trips.csv">testing-trips.csv</A></P>
+
+<BR><BR>
+
+<P><A HREF="../../">Back to OBD GPS Logger main page</A></P>
+
+<ADDRESS><P><A HREF="mailto:chunky@icculus.org">Gary (-;<BR>
+&lt;chunky@icculus.org&gt;</A></P></ADDRESS>
+
+</BODY>
+</HTML>

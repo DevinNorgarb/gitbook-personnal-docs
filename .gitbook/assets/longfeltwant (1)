@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<META NAME="Keywords" CONTENT="OBD,OBDII,OBD2,GPS,Logging,Logger,KML">
+<META NAME="Description" CONTENT="OBD and GPS Logging tool">
+<TITLE>Cross-country trip</TITLE>
+</HEAD>
+<BODY>
+<H1>Cross-country trip</H1>
+
+<P>So to my utter <I>joy</I>, someone took obdgpslogger seriously,
+and logged an entire cross-country trip with it.</P>
+
+<P>He blogged about it here: <A
+HREF="http://www.rinarledge.com/">http://www.rinarledge.com/</A>, and
+generously has let me post the data files on my site.</P>
+
+<H2>Google Earth Screenshots</H2>
+<A HREF="longfeltwant1.jpg"><IMG SRC="small-longfeltwant1.jpg"></A>
+<A HREF="longfeltwant2.jpg"><IMG SRC="small-longfeltwant2.jpg"></A>
+
+<H2>Files</H2>
+<P>The output from obdlogger: <A HREF="longfeltwant.db">longfeltwant.db</A></P>
+<P>Open this in Google Earth: <A HREF="longfeltwant.kml.gz">longfeltwant.kml.gz</A> [gzipped]</P>
+<P>The CSV file: <A HREF="longfeltwant.csv.gz">longfeltwant.csv.gz</A> [gzipped]</P>
+
+<BR><BR>
+
+<P><A HREF="../../">Back to OBD GPS Logger main page</A></P>
+
+<ADDRESS><P><A HREF="mailto:chunky@icculus.org">Gary (-;<BR>
+&lt;chunky@icculus.org&gt;</A></P></ADDRESS>
+
+</BODY>
+</HTML>
