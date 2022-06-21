@@ -1,8 +1,17 @@
 # Table of contents
 
+* [snippets / scripts](README.md)
+  * [Scripts](snippets-scripts/scripts/README.md)
+    * [Install Scripts](snippets-scripts/scripts/install-scripts.md)
+    * [Install Docker and docker-compose](snippets-scripts/scripts/install-docker-and-docker-compose.md)
+    * [Install Golang](snippets-scripts/scripts/install-golang.md)
+    * [Install MAGE](snippets-scripts/scripts/install-mage.md)
+    * [Install oh-my-zsh](snippets-scripts/scripts/install-oh-my-zsh.md)
+    * [Install NVM](snippets-scripts/scripts/install-nvm.md)
+
 ## Software Engineering
 
-* [Tooling](README.md)
+* [Tooling](<README (1).md>)
   * [Networking](software-engineering/tooling/networking.md)
   * [Linux](software-engineering/tooling/linux/README.md)
     * [LXC/LXD](software-engineering/tooling/linux/lxc-lxd.md)
@@ -79,7 +88,7 @@
   * [Dockerizing an existing ROS project](ros/dockerizing-an-existing-ros-project.md)
   * [Init ROS Melodic](ros/init-ros-melodic/README.md)
     * [ROS Wiki](ros/init-ros-melodic/ros-wiki.md)
-* [WebRTC](<README (1).md>)
+* [WebRTC](<README (1) (2).md>)
   * [Testing WEBRTC](software-engineering/webrtc/testing-webrtc.md)
   * [Setting  up STUN and TURN servers](software-engineering/webrtc/setting-up-stun-and-turn-servers.md)
 
@@ -139,12 +148,6 @@
   * [Page 4](random/adhd-and-programming/page-4.md)
 * [Ubuntu set keyboard backlight](<README (1) (1).md>)
 * [Firewall rules to allow Chromecast](random/firewall-rules-to-allow-chromecast.md)
-* [Scripts](random/scripts/README.md)
-  * [Install Docker and docker-compose](random/scripts/install-docker-and-docker-compose.md)
-  * [Install Golang](random/scripts/install-golang.md)
-  * [Install MAGE](random/scripts/install-mage.md)
-  * [Install oh-my-zsh](random/scripts/install-oh-my-zsh.md)
-  * [Install NVM](random/scripts/nvm-install.md)
 
 ## Maritime AIS
 
