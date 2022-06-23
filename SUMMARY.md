@@ -1,13 +1,13 @@
 # Table of contents
 
-* [snippets / scripts](README.md)
-  * [Scripts](snippets-scripts/scripts/README.md)
-    * [Install Scripts](snippets-scripts/scripts/install-scripts.md)
-    * [Install Docker and docker-compose](snippets-scripts/scripts/install-docker-and-docker-compose.md)
-    * [Install Golang](snippets-scripts/scripts/install-golang.md)
-    * [Install MAGE](snippets-scripts/scripts/install-mage.md)
-    * [Install oh-my-zsh](snippets-scripts/scripts/install-oh-my-zsh.md)
-    * [Install NVM](snippets-scripts/scripts/install-nvm.md)
+* [Snippets & Scripts](README.md)
+  * [Scripts](snippets-and-scripts/scripts/README.md)
+    * [Install Scripts](snippets-and-scripts/scripts/install-scripts/README.md)
+      * [Install Docker and docker-compose](snippets-and-scripts/scripts/install-scripts/install-docker-and-docker-compose.md)
+      * [Install NVM](snippets-and-scripts/scripts/install-scripts/install-nvm.md)
+      * [Install Golang](snippets-and-scripts/scripts/install-scripts/install-golang.md)
+      * [Install MAGE](snippets-and-scripts/scripts/install-scripts/install-mage.md)
+      * [Install oh-my-zsh](snippets-and-scripts/scripts/install-scripts/install-oh-my-zsh.md)
 
 ## Software Engineering
 

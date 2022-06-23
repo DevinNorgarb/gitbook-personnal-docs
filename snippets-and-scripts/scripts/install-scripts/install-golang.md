@@ -17,7 +17,7 @@ Download and install Go quickly with the steps described here.
 For other content on installing, you might be interested in:
 
 * Managing Go installations -- How to install multiple versions and uninstall.
-* [Installing Go from source](../../.gitbook/assets/source) -- How to check out the sources, build them on your own machine, and run them.
+* [Installing Go from source](../../../.gitbook/assets/source) -- How to check out the sources, build them on your own machine, and run them.
 
 ### 1. Go download. <a href="#download" id="download"></a>
 

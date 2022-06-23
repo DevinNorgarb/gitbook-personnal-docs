@@ -1,2 +1,2 @@
-# Tooling
+# snippets / scripts
 

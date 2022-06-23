@@ -1,2 +1,2 @@
-# snippets / scripts
+# Snippets & Scripts
 
