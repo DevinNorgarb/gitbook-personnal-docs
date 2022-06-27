@@ -24,7 +24,7 @@ To begin, navigate to the **Motors** tab in the sidebar on the left, then procee
 4. Click the **Auto-Detect Directions** button, and wait while the vehicle does it's motor direction detection routine.
 5. The results of the routine will appear as the routine progresses, and success or failure will be indicated. If the routine failed, you may try again, or configure the motor directions **manually**.
 
-![](<../.gitbook/assets/quick start autodetect motors>)
+![](<../../.gitbook/assets/quick start autodetect motors>)
 
 ### results matching ""
 

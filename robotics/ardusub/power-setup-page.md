@@ -23,7 +23,7 @@ QGroundControl can be used to calculate appropriate voltage divider and amps-per
 
 QGC has a profile for the BlueRobotics Power Sense Module R2, which can be selected from the dropdown menu.
 
-![](<../.gitbook/assets/reference ardusub power psmr2>)
+![](<../../.gitbook/assets/reference ardusub power psmr2>)
 
 ### results matching ""
 

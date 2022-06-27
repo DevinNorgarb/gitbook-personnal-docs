@@ -2,7 +2,7 @@
 
 The Frame Setup page configures the MAIN Outputs of the autopilot board to coincide with how many and in which orientation thrusters have been installed on a vehicle frame.
 
-![](<../.gitbook/assets/reference ardusub frame>)
+![](<../../.gitbook/assets/reference ardusub frame>)
 
 1. Click on the corresponding vehicle frame that was originally picked out in the "[Building a Vehicle Frame](broken-reference)" section of this documentation.
 2. Reboot the vehicle or autopilot for the frame selection to be saved and loaded on the next start.
