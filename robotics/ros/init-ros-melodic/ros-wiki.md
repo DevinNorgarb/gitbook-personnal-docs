@@ -19,16 +19,16 @@ These packages are built and hosted on infrastructure maintained and paid for by
 
 Contents
 
-1. [Ubuntu install of ROS Melodic](broken-reference/)
-   1. [Installation](broken-reference/)
-      1. [Configure your Ubuntu repositories](broken-reference/)
-      2. [Setup your sources.list](broken-reference/)
-      3. [Set up your keys](broken-reference/)
-      4. [Installation](broken-reference/)
-      5. [Environment setup](broken-reference/)
-      6. [Dependencies for building packages](broken-reference/)
-      7. [Build farm status](broken-reference/)
-   2. [Tutorials](broken-reference/)
+1. [Ubuntu install of ROS Melodic](../../../ros/init-ros-melodic/broken-reference/)
+   1. [Installation](../../../ros/init-ros-melodic/broken-reference/)
+      1. [Configure your Ubuntu repositories](../../../ros/init-ros-melodic/broken-reference/)
+      2. [Setup your sources.list](../../../ros/init-ros-melodic/broken-reference/)
+      3. [Set up your keys](../../../ros/init-ros-melodic/broken-reference/)
+      4. [Installation](../../../ros/init-ros-melodic/broken-reference/)
+      5. [Environment setup](../../../ros/init-ros-melodic/broken-reference/)
+      6. [Dependencies for building packages](../../../ros/init-ros-melodic/broken-reference/)
+      7. [Build farm status](../../../ros/init-ros-melodic/broken-reference/)
+   2. [Tutorials](../../../ros/init-ros-melodic/broken-reference/)
 
 #### Configure your Ubuntu repositories <a href="#installation.2fubuntu.2fsources.configure_your_ubuntu_repositories" id="installation.2fubuntu.2fsources.configure_your_ubuntu_repositories"></a>
 
