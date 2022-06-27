@@ -15,9 +15,9 @@ The Firmware Page allows ArduSub firmware to be downloaded from the internet and
 5. Once detected, QGroundControl will show a firmware selection box on the right.
 6. Choose **"ArduPilot Flight Stack"**, then select **"ChibiOS"**, **"Sub"**, and (assuming you are using a Pixhawk) **"Pixhawk1"** from the dropdown list.
 
-![](<../../.gitbook/assets/firmware 2>)
+![](<../.gitbook/assets/firmware 2>)
 
 1. Press "OK" at the top right.
 2. The firmware will upload the Pixhawk and you'll see the following printout and success message. The Pixhawk will reboot and then will automatically connect with QGroundControl.
 
-![](<../../.gitbook/assets/firmware 3>)
+![](<../.gitbook/assets/firmware 3>)

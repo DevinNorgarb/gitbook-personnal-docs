@@ -4,11 +4,11 @@ The Sensors Setup page allows users to calibrate the vehicle's accelerometer, co
 
 Available sensors are displayed as a list of buttons beside the sidebar. Sensors marked with green are already calibrated, while sensors marked with red require calibration prior to operation. Sensors with no color marks are simple calibrations that are optional.
 
-![](<../../.gitbook/assets/reference ardusub sensors>)
+![](<../.gitbook/assets/reference ardusub sensors>)
 
 ### Accelerometer Calibration <a href="#accelerometer-calibration" id="accelerometer-calibration"></a>
 
-![](<../../.gitbook/assets/reference ardusub sensors accelerometer>)
+![](<../.gitbook/assets/reference ardusub sensors accelerometer>)
 
 To calibrate the autopilot's accelerometers the vehicle will need to be placed and held in a number of orientations.
 
@@ -21,7 +21,7 @@ The calibration steps are:
 
 ### Compass Calibration <a href="#compass-calibration" id="compass-calibration"></a>
 
-![](<../../.gitbook/assets/reference ardusub sensors compass>)
+![](<../.gitbook/assets/reference ardusub sensors compass>)
 
 The calibration steps are:
 
