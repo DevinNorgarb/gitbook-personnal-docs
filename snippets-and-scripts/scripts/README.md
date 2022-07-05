@@ -1,8 +1,16 @@
 # Scripts
 
+#### Find size of LXC container
+
+`lxc storage list`
+
+``
+
 #### Kill process running on port
 
 `lsof -t -i tcp:1234 | xargs kill`
+
+``
 
 #### Run a speedtest from the CLI
 
