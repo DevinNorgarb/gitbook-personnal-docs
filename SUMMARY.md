@@ -88,6 +88,7 @@
 ***
 
 * [OBDII](obdii/README.md)
+  * [Related Projects](obdii/related-projects.md)
   * [OBDII Simulator Guide](obdii/obdii-simulator-guide/README.md)
     * [OBD GPS Logger for Linux and OSX](obdii/obdii-simulator-guide/obd-gps-logger-for-linux-and-osx.md)
     * [OBDSim](obdii/obdii-simulator-guide/obdsim.md)
