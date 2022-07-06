@@ -10,4 +10,8 @@
 
 {% embed url="https://github.com/Vehicle-Hacks/cariot" %}
 
+{% embed url="https://github.com/Rad-hi/OBDII-Talker" %}
+
 {% embed url="https://github.com/kimsehwan96/car-iot-platform-from-kpu" %}
+
+{% embed url="https://github.com/topics/obd2" %}
