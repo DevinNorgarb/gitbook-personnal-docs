@@ -88,6 +88,11 @@
 ***
 
 * [OBDII](obdii/README.md)
+  * [Car Hacking](obdii/car-hacking/README.md)
+    * [CuratedPython](obdii/car-hacking/curatedpython.md)
+  * [Guides](obdii/guides/README.md)
+    * [Creating A Wireless OBDII Scanner](obdii/guides/creating-a-wireless-obdii-scanner.md)
+  * [Page 3](obdii/page-3.md)
   * [Related Projects](obdii/related-projects.md)
   * [OBDII Simulator Guide](obdii/obdii-simulator-guide/README.md)
     * [OBD GPS Logger for Linux and OSX](obdii/obdii-simulator-guide/obd-gps-logger-for-linux-and-osx.md)
@@ -101,8 +106,6 @@
     * [Vehicle Tracking](obdii/vehicle-tracking/README.md)
       * [Open Vehicles documentation](obdii/vehicle-tracking/open-vehicles-documentation.md)
       * [traccar.org](obdii/vehicle-tracking/traccar.org.md)
-    * [Guides](iot/obdii/guides/README.md)
-      * [Creating A Wireless OBDII Scanner](iot/obdii/guides/creating-a-wireless-obdii-scanner.md)
     * [Libraries](obdii/libraries/README.md)
       * [ELM327-emulator](obdii/libraries/elm327-emulator.md)
       * [OBD2 Simulator](obdii/libraries/obd2-simulator.md)
