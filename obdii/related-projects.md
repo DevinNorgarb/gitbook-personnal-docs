@@ -15,3 +15,9 @@
 {% embed url="https://github.com/kimsehwan96/car-iot-platform-from-kpu" %}
 
 {% embed url="https://github.com/topics/obd2" %}
+OBD2 Github Topic
+{% endembed %}
+
+{% embed url="https://github.com/Nishkalkashyap/obd-utils" %}
+
+{% embed url="https://github.com/kocur/obd2" %}
