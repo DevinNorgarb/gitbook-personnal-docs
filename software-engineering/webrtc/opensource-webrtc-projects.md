@@ -4,11 +4,7 @@ description: 'Credit: https://medevel.com/13-os-webrtc-server/'
 
 # Opensource WebRTC Projects
 
-## Top 13 open-source WebRTC projects to build Video conferencing and calling apps
-
-* [![Go to the profile of  Hamza Musa](https://medevel.com/content/images/size/w100/2021/08/1629035686466.jpeg)](https://medevel.com/author/hamza/)
-
-[Hamza Musa](https://medevel.com/author/hamza/)29 Dec 2021·5 min readShare:
+## Top 13 open-source WebRTC projects to build Video conferencing and calling app
 
 WebRTC is an open-source framework that enables real-time communications for the web through your web browser.
 
