@@ -34,6 +34,7 @@
     * [Six Reasons Why You Should Run Your Own Bitcoin Node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/six-reasons-why-you-should-run-your-own-bitcoin-node.md)
   * [Trading Bots](software-engineering/cryptocurrencies/trading-bots.md)
 * [Linux](software-engineering/linux/README.md)
+  * [Grow Filesystem while running](software-engineering/linux/grow-filesystem-while-running.md)
   * [Adding extra swap to a Linux system](software-engineering/linux/adding-extra-swap-to-a-linux-system.md)
   * [udev rules](software-engineering/linux/udev-rules/README.md)
     * [An introduction to Udev: The Linux subsystem for managing device events](software-engineering/linux/udev-rules/an-introduction-to-udev-the-linux-subsystem-for-managing-device-events.md)
