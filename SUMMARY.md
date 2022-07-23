@@ -11,6 +11,7 @@
 
 ## Software Engineering
 
+* [Principles](software-engineering/principles.md)
 * [Tooling](<README (1).md>)
   * [Networking](software-engineering/tooling/networking.md)
   * [Linux](software-engineering/tooling/linux/README.md)
