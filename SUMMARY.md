@@ -11,7 +11,16 @@
 
 ## Software Engineering
 
-* [Principles](software-engineering/principles.md)
+* [Principles & Practices](software-engineering/principles-and-practices/README.md)
+  * [Code Reviews](software-engineering/principles-and-practices/code-reviews/README.md)
+    * [Google - Code Review](software-engineering/principles-and-practices/code-reviews/google-code-review/README.md)
+      * [Speed of Code Reviews](software-engineering/principles-and-practices/code-reviews/google-code-review/speed-of-code-reviews.md)
+      * [How to write code review comments](software-engineering/principles-and-practices/code-reviews/google-code-review/how-to-write-code-review-comments.md)
+      * [The Standard of Code Review](software-engineering/principles-and-practices/code-reviews/google-code-review/the-standard-of-code-review.md)
+      * [Code Review Developer Guide](software-engineering/principles-and-practices/code-reviews/google-code-review/code-review-developer-guide.md)
+      * [Handling pushback in code reviews](software-engineering/principles-and-practices/code-reviews/google-code-review/handling-pushback-in-code-reviews.md)
+      * [CL in review](software-engineering/principles-and-practices/code-reviews/google-code-review/cl-in-review.md)
+* [Page 3](software-engineering/page-3.md)
 * [Tooling](<README (1).md>)
   * [Networking](software-engineering/tooling/networking.md)
   * [Linux](software-engineering/tooling/linux/README.md)

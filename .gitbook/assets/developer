@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The CL author’s guide to getting through code review | eng-practices</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="The CL author’s guide to getting through code review" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Google’s Engineering Practices documentation" />
+<meta property="og:description" content="Google’s Engineering Practices documentation" />
+<link rel="canonical" href="https://google.github.io/eng-practices/review/developer/" />
+<meta property="og:url" content="https://google.github.io/eng-practices/review/developer/" />
+<meta property="og:site_name" content="eng-practices" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The CL author’s guide to getting through code review" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Google’s Engineering Practices documentation","headline":"The CL author’s guide to getting through code review","url":"https://google.github.io/eng-practices/review/developer/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/eng-practices/assets/css/style.css?v=ab034bf9fee73813f1934e964f23987b8da64adc">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/eng-practices/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://google.github.io/eng-practices/">eng-practices</a></h1>
+      
+
+      <h1 id="the-cl-authors-guide-to-getting-through-code-review">The CL author’s guide to getting through code review</h1>
+
+<p>The pages in this section contain best practices for developers going through
+code review. These guidelines should help you get through reviews faster and
+with higher-quality results. You don’t have to read them all, but they are
+intended to apply to every Google developer, and many people have found it
+helpful to read the whole set.</p>
+
+<ul>
+  <li><a href="/eng-practices/review/developer/cl-descriptions.html">Writing Good CL Descriptions</a></li>
+  <li><a href="/eng-practices/review/developer/small-cls.html">Small CLs</a></li>
+  <li><a href="/eng-practices/review/developer/handling-comments.html">How to Handle Reviewer Comments</a></li>
+</ul>
+
+<p>See also <a href="/eng-practices/review/reviewer/">How to Do a Code Review</a>, which gives detailed
+guidance for code reviewers.</p>
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/google/eng-practices/edit/master/review/developer/index.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
