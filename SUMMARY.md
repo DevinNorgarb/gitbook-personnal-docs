@@ -20,7 +20,7 @@
       * [Code Review Developer Guide](software-engineering/principles-and-practices/code-reviews/google-code-review/code-review-developer-guide.md)
       * [Handling pushback in code reviews](software-engineering/principles-and-practices/code-reviews/google-code-review/handling-pushback-in-code-reviews.md)
       * [CL in review](software-engineering/principles-and-practices/code-reviews/google-code-review/cl-in-review.md)
-* [Page 3](software-engineering/page-3.md)
+    * [How to Make Good Code Reviews Better](software-engineering/principles-and-practices/code-reviews/how-to-make-good-code-reviews-better.md)
 * [Tooling](<README (1).md>)
   * [Networking](software-engineering/tooling/networking.md)
   * [Linux](software-engineering/tooling/linux/README.md)
