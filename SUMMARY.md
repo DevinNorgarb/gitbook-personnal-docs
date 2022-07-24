@@ -3,6 +3,7 @@
 * [Snippets & Scripts](README.md)
   * [Scripts](snippets-and-scripts/scripts/README.md)
     * [Install Scripts](snippets-and-scripts/scripts/install-scripts/README.md)
+      * [Pritunl VPN Client](snippets-and-scripts/scripts/install-scripts/pritunl-vpn-client.md)
       * [Install Docker and docker-compose](snippets-and-scripts/scripts/install-scripts/install-docker-and-docker-compose.md)
       * [Install NVM](snippets-and-scripts/scripts/install-scripts/install-nvm.md)
       * [Install Golang](snippets-and-scripts/scripts/install-scripts/install-golang.md)
