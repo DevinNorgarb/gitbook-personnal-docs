@@ -3,6 +3,8 @@
 * [Snippets & Scripts](README.md)
   * [Scripts](snippets-and-scripts/scripts/README.md)
     * [Install Scripts](snippets-and-scripts/scripts/install-scripts/README.md)
+      * [Mac OS](snippets-and-scripts/scripts/install-scripts/mac-os.md)
+      * [Samba on Mac](snippets-and-scripts/scripts/install-scripts/samba-on-mac.md)
       * [Pritunl VPN Client](snippets-and-scripts/scripts/install-scripts/pritunl-vpn-client.md)
       * [Install Docker and docker-compose](snippets-and-scripts/scripts/install-scripts/install-docker-and-docker-compose.md)
       * [Install NVM](snippets-and-scripts/scripts/install-scripts/install-nvm.md)
