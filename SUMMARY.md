@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Snippets & Scripts](README.md)
+  * [Online Resize Ubuntu/Debian Disk](snippets-and-scripts/online-resize-ubuntu-debian-disk.md)
   * [Scripts](snippets-and-scripts/scripts/README.md)
     * [Install Scripts](snippets-and-scripts/scripts/install-scripts/README.md)
       * [Mac OS](snippets-and-scripts/scripts/install-scripts/mac-os.md)
