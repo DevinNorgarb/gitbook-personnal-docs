@@ -6,7 +6,7 @@ Start by installing cloud-utils. This contains the growpart tool.
 sudo apt-get install -y cloud-utils    
 ```
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>The root partition is 32 GB but  the device itself is 64GB. I intent to resize the root partition (/dev/sda2) </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>The root partition is 32 GB but  the device itself is 64GB. I intent to resize the root partition (/dev/sda2) </p></figcaption></figure>
 
 &#x20;Run growpart
 
@@ -27,6 +27,6 @@ And then:
 sudo resize2fs /dev/sda2
 ```
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Success</p></figcaption></figure>

@@ -15,12 +15,13 @@
 
 ## Software Engineering
 
-* [Frontend](software-engineering/frontend/README.md)
-  * [Javascript](software-engineering/frontend/javascript/README.md)
-    * [Quasar + Pinia + Electron Desktop App](software-engineering/frontend/javascript/quasar-+-pinia-+-electron-desktop-app.md)
-  * [CSS](software-engineering/frontend/css.md)
-* [Backend](software-engineering/backend/README.md)
-  * [PHP <3](software-engineering/backend/php-less-than-3.md)
+* [Frontend](software-engineering/programming/frontend/README.md)
+  * [Javascript](software-engineering/programming/frontend/javascript/README.md)
+    * [Quasar + Pinia + Electron Desktop App](software-engineering/programming/frontend/javascript/quasar-+-pinia-+-electron-desktop-app.md)
+    * [Laravel Upgrade from Webpack to Vite](software-engineering/frontend/javascript/laravel-upgrade-from-webpack-to-vite.md)
+  * [CSS](software-engineering/programming/frontend/css.md)
+* [Backend](software-engineering/programming/backend/README.md)
+  * [PHP <3](software-engineering/programming/backend/php-less-than-3.md)
 * [Principles & Practices](software-engineering/principles-and-practices/README.md)
   * [Code Reviews](software-engineering/principles-and-practices/code-reviews/README.md)
     * [Google - Code Review](software-engineering/principles-and-practices/code-reviews/google-code-review/README.md)
@@ -43,7 +44,6 @@
   * [Frontend](software-engineering/tooling/frontend/README.md)
     * [CSS](software-engineering/tooling/css/README.md)
       * [How to inspect and copy an element's CSS the easy way](software-engineering/tooling/css/how-to-inspect-and-copy-an-elements-css-the-easy-way.md)
-* [Programming](software-engineering/programming.md)
 * [Cryptocurrencies](software-engineering/cryptocurrencies/README.md)
   * [Running your own bitcoin node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/README.md)
     * [how-to: run your own bitcoin node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/how-to-run-your-own-bitcoin-node.md)
