@@ -1,6 +1,6 @@
 # Online Resize Ubuntu/Debian Disk
 
-Start by installing cloud-utls. This contains the growpart tool.
+Start by installing cloud-utils. This contains the growpart tool.
 
 ```
 sudo apt-get install -y cloud-utils    
