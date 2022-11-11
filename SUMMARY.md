@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Snippets & Scripts](README.md)
+  * [Resize Proxmox root storage](snippets-and-scripts/resize-proxmox-root-storage.md)
   * [Online Resize Ubuntu/Debian Disk](snippets-and-scripts/online-resize-ubuntu-debian-disk.md)
   * [Scripts](snippets-and-scripts/scripts/README.md)
     * [Install Scripts](snippets-and-scripts/scripts/install-scripts/README.md)
