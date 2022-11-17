@@ -13,6 +13,7 @@
       * [Install Golang](snippets-and-scripts/scripts/install-scripts/install-golang.md)
       * [Install MAGE](snippets-and-scripts/scripts/install-scripts/install-mage.md)
       * [Install oh-my-zsh](snippets-and-scripts/scripts/install-scripts/install-oh-my-zsh.md)
+      * [SDKMan](snippets-and-scripts/scripts/install-scripts/sdkman.md)
 
 ## Software Engineering
 
