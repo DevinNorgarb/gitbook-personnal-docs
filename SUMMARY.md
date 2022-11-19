@@ -17,6 +17,9 @@
 
 ## Software Engineering
 
+* [AWS](software-engineering/aws.md)
+* [Page 5](software-engineering/page-5.md)
+* [Page 3](software-engineering/page-3.md)
 * [Frontend](software-engineering/programming/frontend/README.md)
   * [Javascript](software-engineering/programming/frontend/javascript/README.md)
     * [Quasar + Pinia + Electron Desktop App](software-engineering/programming/frontend/javascript/quasar-+-pinia-+-electron-desktop-app.md)
