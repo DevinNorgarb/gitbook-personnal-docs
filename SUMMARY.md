@@ -17,9 +17,8 @@
 
 ## Software Engineering
 
-* [AWS](software-engineering/aws.md)
-* [Page 5](software-engineering/page-5.md)
-* [Page 3](software-engineering/page-3.md)
+* [AWS](software-engineering/aws/README.md)
+  * [SQS vs SNS vs Kinesis](software-engineering/aws/sqs-vs-sns-vs-kinesis.md)
 * [Frontend](software-engineering/programming/frontend/README.md)
   * [Javascript](software-engineering/programming/frontend/javascript/README.md)
     * [Quasar + Pinia + Electron Desktop App](software-engineering/programming/frontend/javascript/quasar-+-pinia-+-electron-desktop-app.md)
