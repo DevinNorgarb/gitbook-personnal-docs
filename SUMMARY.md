@@ -170,12 +170,24 @@
 * [Gallery](3d-printing/gallery.md)
 * [My problems](3d-printing/my-problems.md)
 
+***
+
+* [Self Hosting](self-hosting.md)
+* [Page 3](page-3.md)
+
 ## IoT
 
 * [Balena.io](iot/balena.io.md)
 * [Raspberry Pi](iot/raspberry-pi.md)
 * [ESP32](iot/esp32.md)
 * [Painless Mesh](iot/painless-mesh.md)
+
+## Copy of IoT
+
+* [Balena.io](copy-of-iot/balena.io.md)
+* [Raspberry Pi](copy-of-iot/raspberry-pi.md)
+* [ESP32](copy-of-iot/esp32.md)
+* [Painless Mesh](copy-of-iot/painless-mesh.md)
 
 ## GIS
 
