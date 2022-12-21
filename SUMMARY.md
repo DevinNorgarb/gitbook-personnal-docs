@@ -182,12 +182,9 @@
 * [ESP32](iot/esp32.md)
 * [Painless Mesh](iot/painless-mesh.md)
 
-## Copy of IoT
+## Self-Hosting
 
-* [Balena.io](copy-of-iot/balena.io.md)
-* [Raspberry Pi](copy-of-iot/raspberry-pi.md)
-* [ESP32](copy-of-iot/esp32.md)
-* [Painless Mesh](copy-of-iot/painless-mesh.md)
+* [Awesome Self-Hosted](self-hosting-1/awesome-self-hosted.md)
 
 ## GIS
 
