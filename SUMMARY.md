@@ -134,6 +134,8 @@
   * [Latest Open Tech From Seeed](obdii/latest-open-tech-from-seeed.md)
 * [a quick crash-course](iot/obdii/a-quick-crash-course.md)
 * [Robotics](robotics/README.md)
+  * [BlueOS](robotics/blueos.md)
+  * [PixHawk](robotics/pixhawk.md)
   * [SITL](robotics/sitl.md)
   * [ArduSub](robotics/page-7.md)
     * [Troubleshooting](robotics/troubleshooting.md)
