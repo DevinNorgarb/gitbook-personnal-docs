@@ -170,9 +170,10 @@
   * [Required Hardware](robotics/required-hardware.md)
   * [QGroundControl Software](robotics/qgroundcontrol-software.md)
   * [Firmware Page](robotics/firmware-page.md)
-* [Robotics](robotics/robotics.md)
+* [Robotics](robotics/README.md)
 * [SITL](robotics/sitl.md)
-* [PixHawk](robotics/pixhawk.md)
+* [PixHawk](robotics/pixhawk/README.md)
+  * [Connection Diagrams](robotics/pixhawk/connection-diagrams.md)
 * [BlueOS](robotics/blueos.md)
 
 ***
