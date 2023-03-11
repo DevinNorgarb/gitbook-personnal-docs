@@ -4,6 +4,7 @@
   * [Resize Proxmox root storage](snippets-and-scripts/resize-proxmox-root-storage.md)
   * [Online Resize Ubuntu/Debian Disk](snippets-and-scripts/online-resize-ubuntu-debian-disk.md)
   * [Scripts](snippets-and-scripts/scripts/README.md)
+    * [Run docker without needing sudo](snippets-and-scripts/scripts/run-docker-without-needing-sudo.md)
     * [Nginx Proxy Block](snippets-and-scripts/scripts/nginx-proxy-block.md)
     * [Install Scripts](snippets-and-scripts/scripts/install-scripts/README.md)
       * [Mac OS](snippets-and-scripts/scripts/install-scripts/mac-os.md)
