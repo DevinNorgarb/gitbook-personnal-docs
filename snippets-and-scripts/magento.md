@@ -22,6 +22,14 @@ magento setup:store-config:set --base-url="http://www.magento.devsdev.com/"
 magento setup:store-config:set --base-url-secure="https://www.magento.devsdev.com/"
 ```
 
+### Remove 2FA on Magento 2.4.\*
+
+```
+bin/magento module:disable Magento_TwoFactorAuth
+bin/magento cache:flush 
+bin/magento setup:di:compile
+```
+
 ### All Commands
 
 ```
