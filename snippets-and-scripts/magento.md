@@ -30,6 +30,11 @@ bin/magento cache:flush
 bin/magento setup:di:compile
 ```
 
+### Deploy Sample data
+
+<pre><code><strong>bin/magento sampledata:deploy 
+</strong></code></pre>
+
 ### All Commands
 
 ```
