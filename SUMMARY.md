@@ -186,7 +186,9 @@
 ## IoT
 
 * [Balena.io](iot/balena.io.md)
-* [Raspberry Pi](iot/raspberry-pi.md)
+* [Raspberry Pi](iot/raspberry-pi/README.md)
+  * [Page 5](iot/raspberry-pi/page-5.md)
+  * [PCI-Express Bridge “Chip”](iot/raspberry-pi/pci-express-bridge-chip.md)
 * [ESP32](iot/esp32.md)
 * [Painless Mesh](iot/painless-mesh.md)
 
