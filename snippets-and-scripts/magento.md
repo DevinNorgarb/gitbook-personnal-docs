@@ -6,7 +6,7 @@ description: Useful Magento CLI commands
 
 ### Create an Admin User
 
-<pre><code><strong>bin/magento admin:user:create --admin-user=admin --admin-password=admin123
+<pre><code><strong>bin/magento admin:user:create --admin-user=admin --admin-password=xxxxxxxx
 </strong></code></pre>
 
 ### Set Base URL&#x20;

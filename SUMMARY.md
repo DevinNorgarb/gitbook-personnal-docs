@@ -187,6 +187,7 @@
 
 * [Balena.io](iot/balena.io.md)
 * [Raspberry Pi](iot/raspberry-pi.md)
+  * [Install ProxMox on a Raspberry Pi](iot/raspberry-pi/install-proxmox-on-a-raspberry-pi.md)
   * [PCI-Express Bridge “Chip”](iot/raspberry-pi/pci-express-bridge-chip.md)
   * [Argo CD for your private Raspberry Pi k3s cluster](iot/raspberry-pi/argo-cd-for-your-private-raspberry-pi-k3s-cluster.md)
 * [ESP32](iot/esp32.md)
