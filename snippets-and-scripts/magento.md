@@ -6,25 +6,25 @@ description: Useful Magento CLI commands
 
 ### Create an Admin User
 
-```
-magento admin:user:create --admin-user=admin --admin-password=admin123
-```
+<pre><code><strong>bin/magento admin:user:create --admin-user=admin --admin-password=admin123
+</strong></code></pre>
 
 ### Set Base URL&#x20;
 
 ```
-magento setup:store-config:set --base-url="http://www.magento.devsdev.com/"
+bin/magento setup:store-config:set --base-url="http://www.magento.devsdev.com/"
 ```
 
 ### Set a Secure Base URL&#x20;
 
 ```
-magento setup:store-config:set --base-url-secure="https://www.magento.devsdev.com/"
+bin/magento setup:store-config:set --base-url-secure="https://www.magento.devsdev.com/"
 ```
 
 ### Remove 2FA on Magento 2.4.\*
 
 ```
+bin/magento module:disable Magento_AdminAdobeImsTwoFactorAuth
 bin/magento module:disable Magento_TwoFactorAuth
 bin/magento cache:flush 
 bin/magento setup:di:compile
