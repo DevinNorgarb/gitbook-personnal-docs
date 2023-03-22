@@ -1,5 +1,7 @@
 ---
-description: https://raspberrytips.com/proxmox-on-raspberry-pi/
+description: >-
+  https://raspberrytips.com/proxmox-on-raspberry-pi/
+  https://github.com/pimox/pimox7
 ---
 
 # Install ProxMox on a Raspberry Pi

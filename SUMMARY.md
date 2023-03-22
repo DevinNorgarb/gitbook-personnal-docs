@@ -16,7 +16,8 @@
       * [Install MAGE](snippets-and-scripts/scripts/install-scripts/install-mage.md)
       * [Install oh-my-zsh](snippets-and-scripts/scripts/install-scripts/install-oh-my-zsh.md)
       * [SDKMan](snippets-and-scripts/scripts/install-scripts/sdkman.md)
-  * [Magento](snippets-and-scripts/magento.md)
+  * [Magento](snippets-and-scripts/magento/README.md)
+    * [Magento One Line install](snippets-and-scripts/magento/magento-one-line-install.md)
 
 ## Software Engineering
 
