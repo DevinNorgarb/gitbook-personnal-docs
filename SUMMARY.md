@@ -16,7 +16,7 @@
       * [Install MAGE](snippets-and-scripts/scripts/install-scripts/install-mage.md)
       * [Install oh-my-zsh](snippets-and-scripts/scripts/install-scripts/install-oh-my-zsh.md)
       * [SDKMan](snippets-and-scripts/scripts/install-scripts/sdkman.md)
-  * [Magento](snippets-and-scripts/magento/README.md)
+  * [Magento](snippets-and-scripts/magento.md)
     * [Magento One Line install](snippets-and-scripts/magento/magento-one-line-install.md)
 
 ## Software Engineering
@@ -58,6 +58,7 @@
     * [Six Reasons Why You Should Run Your Own Bitcoin Node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/six-reasons-why-you-should-run-your-own-bitcoin-node.md)
   * [Trading Bots](software-engineering/cryptocurrencies/trading-bots.md)
 * [Linux](software-engineering/linux/README.md)
+  * [MultiArch Apt Sources](software-engineering/linux/multiarch-apt-sources.md)
   * [Grow Filesystem while running](software-engineering/linux/grow-filesystem-while-running.md)
   * [Adding extra swap to a Linux system](software-engineering/linux/adding-extra-swap-to-a-linux-system.md)
   * [udev rules](software-engineering/linux/udev-rules/README.md)
@@ -188,7 +189,8 @@
 
 * [Balena.io](iot/balena.io.md)
 * [Raspberry Pi](iot/raspberry-pi.md)
-  * [Install ProxMox on a Raspberry Pi](iot/raspberry-pi/install-proxmox-on-a-raspberry-pi.md)
+  * [Install ProxMox on a Raspberry Pi](iot/raspberry-pi/install-proxmox-on-a-raspberry-pi/README.md)
+    * [pimox/pimox7](iot/raspberry-pi/install-proxmox-on-a-raspberry-pi/pimox-pimox7.md)
   * [PCI-Express Bridge “Chip”](iot/raspberry-pi/pci-express-bridge-chip.md)
   * [Argo CD for your private Raspberry Pi k3s cluster](iot/raspberry-pi/argo-cd-for-your-private-raspberry-pi-k3s-cluster.md)
 * [ESP32](iot/esp32.md)
@@ -197,6 +199,10 @@
 ## Self-Hosting
 
 * [Awesome Self-Hosted](self-hosting-1/awesome-self-hosted.md)
+
+## Android Dev
+
+* [Awesome Self-Hosted](android-dev/awesome-self-hosted.md)
 
 ## GIS
 
