@@ -10,6 +10,7 @@
       * [Mac OS](snippets-and-scripts/scripts/install-scripts/mac-os.md)
       * [Samba on Mac](snippets-and-scripts/scripts/install-scripts/samba-on-mac.md)
       * [Pritunl VPN Client](snippets-and-scripts/scripts/install-scripts/pritunl-vpn-client.md)
+      * [Pritunl VPN Client](snippets-and-scripts/scripts/install-scripts/pritunl-vpn-client-1.md)
       * [Install Docker and docker-compose](snippets-and-scripts/scripts/install-scripts/install-docker-and-docker-compose.md)
       * [Install NVM](snippets-and-scripts/scripts/install-scripts/install-nvm.md)
       * [Install Golang](snippets-and-scripts/scripts/install-scripts/install-golang.md)
@@ -77,6 +78,7 @@
   * [General](software-engineering/documentation/general.md)
 * [Containerisation](software-engineering/containerisation/README.md)
   * [LXC/LXD](software-engineering/containerisation/lxc-lxd/README.md)
+    * [LXC commands](software-engineering/containerisation/lxc-lxd/lxc-commands.md)
     * [LXC increase storage volume](software-engineering/containerisation/lxc-lxd/lxc-increase-storage-volume.md)
     * [Create and Update LXC Profiles](software-engineering/containerisation/lxc-lxd/create-and-update-lxc-profiles.md)
     * [How to make your LXD containers get IP addresses from your LAN using macvlan](software-engineering/containerisation/lxc-lxd/how-to-make-your-lxd-containers-get-ip-addresses-from-your-lan-using-macvlan.md)
@@ -179,6 +181,7 @@
 * [PixHawk](robotics/pixhawk/README.md)
   * [Connection Diagrams](robotics/pixhawk/connection-diagrams.md)
 * [BlueOS](robotics/blueos.md)
+* [Page 5](robotics/page-5.md)
 
 ***
 
