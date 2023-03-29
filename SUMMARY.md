@@ -205,6 +205,7 @@
 
 ## Android Dev
 
+* [PixelExperience on Xiaomi Redmi](android-dev/pixelexperience-on-xiaomi-redmi.md)
 * [Awesome Self-Hosted](android-dev/awesome-self-hosted.md)
 
 ## GIS
