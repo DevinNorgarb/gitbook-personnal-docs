@@ -14,25 +14,25 @@ To use `qemu-user-static`, you need to follow these steps:
 1. Install the `qemu-user-static` package on your host system. On Ubuntu or Debian, you can do this with the following command:
 
 ```sql
-sqlCopy codesudo apt-get install qemu-user-static
+sudo apt-get install qemu-user-static
 ```
 
 2. Download the `multiarch/qemu-user-static` Docker image for the `linux/arm64` platform:
 
 ```arduino
-arduinoCopy codedocker pull multiarch/qemu-user-static:register
+docker pull multiarch/qemu-user-static:register
 ```
 
 3. Register the `qemu-user-static` binary as the default interpreter for the `linux/arm64` platform:
 
 ```arduino
-arduinoCopy codedocker run --rm --privileged multiarch/qemu-user-static:register --reset
+docker run --rm --privileged multiarch/qemu-user-static:register --reset
 ```
 
 4. Try running your Docker image again:
 
 ```arduino
-arduinoCopy codedocker run my_image
+docker run my_image
 ```
 
 This time, Docker should use the `qemu-user-static` binary to run the `linux/arm64` binary in your Docker image on your `linux/amd64` host system.
@@ -48,31 +48,31 @@ Here are the steps to follow:
 1. Install Homebrew on your `macOS` system, if you haven't already. You can do this by running the following command in a terminal:
 
 ```bash
-bashCopy code/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 2. Use Homebrew to install `qemu` and `binfmt-support`:
 
 ```
-Copy codebrew install qemu binfmt-support
+brew install qemu binfmt-support
 ```
 
 3. Download the `multiarch/qemu-user-static` Docker image for the `linux/arm64` platform:
 
 ```arduino
-arduinoCopy codedocker pull multiarch/qemu-user-static:register
+docker pull multiarch/qemu-user-static:register
 ```
 
 4. Register the `qemu-user-static` binary as the default interpreter for the `linux/arm64` platform:
 
 ```arduino
-arduinoCopy codedocker run --rm --privileged multiarch/qemu-user-static:register --reset
+docker run --rm --privileged multiarch/qemu-user-static:register --reset
 ```
 
 5. Try running your Docker image again:
 
 ```arduino
-arduinoCopy codedocker run my_image
+docker run my_image
 ```
 
 This time, Docker should use the `qemu-user-static` binary to run the `linux/arm64` binary in your Docker image on your `macOS` host system.
