@@ -41,38 +41,30 @@ This time, Docker should use the `qemu-user-static` binary to run the `linux/arm
 
 `I am using macos`
 
-In that case, you can still use `qemu-user-static` to run the `linux/arm64` binary on your `macOS` system. However, the installation process is a bit different.
+I apologize for the confusion. `binfmt-support` is a Linux package that provides support for registering binary formats with the kernel, and it's not available on macOS.
 
-Here are the steps to follow:
+On macOS, you can use a tool called `docker-binfmt` to register support for foreign architectures. Here are the steps you can follow:
 
-1. Install Homebrew on your `macOS` system, if you haven't already. You can do this by running the following command in a terminal:
+1. Install `docker-binfmt` by running the following command in a terminal:
+
+```
+brew install docker-binfmt
+```
+
+2. Enable `docker-binfmt` by running the following command:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+bsudo docker run --rm --privileged docker/binfmt:a7996909642ee92942dcd6cff44b9b95f08dad64
 ```
 
-2. Use Homebrew to install `qemu` and `binfmt-support`:
+This command will enable support for various foreign architectures, including `linux/arm64`.
 
-```
-brew install qemu binfmt-support
-```
-
-3. Download the `multiarch/qemu-user-static` Docker image for the `linux/arm64` platform:
-
-```arduino
-docker pull multiarch/qemu-user-static:register
-```
-
-4. Register the `qemu-user-static` binary as the default interpreter for the `linux/arm64` platform:
-
-```arduino
-docker run --rm --privileged multiarch/qemu-user-static:register --reset
-```
-
-5. Try running your Docker image again:
+3. Try running your Docker image again:
 
 ```arduino
 docker run my_image
 ```
 
-This time, Docker should use the `qemu-user-static` binary to run the `linux/arm64` binary in your Docker image on your `macOS` host system.
+This time, Docker should be able to run the `linux/arm64` binary in your Docker image on your macOS host system.
+
+I hope this helps!

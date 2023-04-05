@@ -12,7 +12,7 @@ grow_lxd_btrfs_file pritunl-storage-pool 50GB
 
 `lxc storage list`
 
-``
+
 
 #### Kill process running on port
 

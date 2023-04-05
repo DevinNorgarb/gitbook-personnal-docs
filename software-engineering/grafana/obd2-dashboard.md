@@ -4,7 +4,7 @@ description: https://github.com/DevinNorgarb/obd-visualiser
 
 # OBD2 Dashboard
 
-
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ![](<../../.gitbook/assets/2022-04-10\_20-21\_1 (copy).png>)
 
