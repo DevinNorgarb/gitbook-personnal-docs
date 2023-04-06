@@ -148,10 +148,8 @@
 
 ## Robotics
 
-* [Page 6](robotics/page-6/README.md)
-  * [Communicating with Raspberry Pi via MAVLink — Dev documentation](robotics/page-6/communicating-with-raspberry-pi-via-mavlink-dev-documentation.md)
-  * [Build software better, together](robotics/page-6/build-software-better-together.md)
 * [Mavlink](robotics/mavlink/README.md)
+  * [Communicating with Raspberry Pi via MAVLink — Dev documentation](robotics/mavlink/communicating-with-raspberry-pi-via-mavlink-dev-documentation.md)
   * [PyMavlink](robotics/mavlink/pymavlink.md)
 * [ROS](robotics/ros/README.md)
   * [Ros Guide](robotics/ros/ros-guide/README.md)
