@@ -148,6 +148,8 @@
 
 ## Robotics
 
+* [Mavlink](robotics/mavlink/README.md)
+  * [PyMavlink](robotics/mavlink/pymavlink.md)
 * [ROS](robotics/ros/README.md)
   * [Ros Guide](robotics/ros/ros-guide/README.md)
     * [An Introduction to Robot Operating System: The Ultimate Robot Application Framework](robotics/ros/ros-guide/an-introduction-to-robot-operating-system-the-ultimate-robot-application-framework.md)
