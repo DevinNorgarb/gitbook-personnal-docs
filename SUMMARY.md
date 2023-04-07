@@ -185,12 +185,10 @@
 * [PixHawk](robotics/pixhawk/README.md)
   * [Connection Diagrams](robotics/pixhawk/connection-diagrams.md)
 * [BlueOS](robotics/blueos.md)
-* [Page 5](robotics/page-5.md)
 
 ***
 
 * [Self Hosting](self-hosting.md)
-* [Page 3](page-3.md)
 
 ## IoT
 
