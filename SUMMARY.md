@@ -194,10 +194,12 @@
 
 * [Balena.io](iot/balena.io.md)
 * [Raspberry Pi](iot/raspberry-pi.md)
+  * [Setting up a Cloudflare Tunnel on the Raspberry Pi](iot/raspberry-pi/setting-up-a-cloudflare-tunnel-on-the-raspberry-pi.md)
   * [Install ProxMox on a Raspberry Pi](iot/raspberry-pi/install-proxmox-on-a-raspberry-pi/README.md)
     * [pimox/pimox7](iot/raspberry-pi/install-proxmox-on-a-raspberry-pi/pimox-pimox7.md)
   * [PCI-Express Bridge “Chip”](iot/raspberry-pi/pci-express-bridge-chip.md)
   * [Argo CD for your private Raspberry Pi k3s cluster](iot/raspberry-pi/argo-cd-for-your-private-raspberry-pi-k3s-cluster.md)
+  * [Overclocking Raspberry Pi 4](iot/raspberry-pi/overclocking-raspberry-pi-4.md)
 * [ESP32](iot/esp32.md)
 * [Painless Mesh](iot/painless-mesh.md)
 
