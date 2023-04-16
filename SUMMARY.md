@@ -160,6 +160,7 @@
     * [ROS Wiki](robotics/ros/init-ros-melodic/ros-wiki.md)
 * [ArduSub](robotics/page-7.md)
   * [Compiling](robotics/ardusub/compiling/README.md)
+    * [Building ArduPilot](robotics/ardusub/compiling/building-ardupilot.md)
     * [For MacOS](robotics/ardusub/compiling/for-macos.md)
   * [Troubleshooting](robotics/troubleshooting.md)
   * [Overview](robotics/overview.md)
