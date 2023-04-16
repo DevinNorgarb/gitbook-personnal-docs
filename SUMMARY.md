@@ -159,6 +159,7 @@
   * [Init ROS Melodic](robotics/ros/init-ros-melodic/README.md)
     * [ROS Wiki](robotics/ros/init-ros-melodic/ros-wiki.md)
 * [ArduSub](robotics/page-7.md)
+  * [Compiling](robotics/ardusub/compiling.md)
   * [Troubleshooting](robotics/troubleshooting.md)
   * [Overview](robotics/overview.md)
   * [Installing Autopilot Firmware](robotics/installing-autopilot-firmware.md)
