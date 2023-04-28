@@ -217,13 +217,16 @@
 
 ## GIS
 
-* [Geocoding](gis/geocoding.md)
+* [Geocoding](gis/geocoding/README.md)
+  * [Mapbox Geocoding API](gis/geocoding/mapbox-geocoding-api/README.md)
+    * [Useful Mapbox Geocoding API Info](gis/geocoding/mapbox-geocoding-api/useful-mapbox-geocoding-api-info.md)
+  * [Geocoding Accuracy](gis/geocoding/geocoding-accuracy.md)
 * [Tile38](gis/tile38.md)
 * [Deck.gl](gis/deck.gl.md)
 * [Vector Tiles](gis/vector-tiles.md)
-* [MapBox](gis/mapbox.md)
 * [Uber Big Data](gis/uber-big-data.md)
 * [Mapbox Storytelling](gis/mapbox-storytelling.md)
+* [MapBox](gis/mapbox.md)
 
 ## Random
 
