@@ -228,6 +228,19 @@
 * [Mapbox Storytelling](gis/mapbox-storytelling.md)
 * [MapBox](gis/mapbox.md)
 
+## Copy of GIS
+
+* [Geocoding](copy-of-gis/geocoding/README.md)
+  * [Mapbox Geocoding API](copy-of-gis/geocoding/mapbox-geocoding-api/README.md)
+    * [Useful Mapbox Geocoding API Info](copy-of-gis/geocoding/mapbox-geocoding-api/useful-mapbox-geocoding-api-info.md)
+  * [Geocoding Accuracy](copy-of-gis/geocoding/geocoding-accuracy.md)
+  * [Tile38](copy-of-gis/geocoding/tile38.md)
+  * [Vector Tiles](copy-of-gis/geocoding/vector-tiles.md)
+  * [Uber Big Data](copy-of-gis/geocoding/uber-big-data.md)
+  * [Mapbox Storytelling](copy-of-gis/geocoding/mapbox-storytelling.md)
+  * [MapBox](copy-of-gis/geocoding/mapbox.md)
+* [Deck.gl](copy-of-gis/deck.gl.md)
+
 ## Random
 
 * [ADHD and Programming](random/adhd-and-programming/README.md)
