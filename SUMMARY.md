@@ -217,6 +217,7 @@
 
 ## GIS
 
+* [Geocoding](gis/geocoding.md)
 * [Tile38](gis/tile38.md)
 * [Deck.gl](gis/deck.gl.md)
 * [Vector Tiles](gis/vector-tiles.md)
