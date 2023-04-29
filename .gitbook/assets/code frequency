@@ -23,7 +23,7 @@
     <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-4d8f37cc9d91.css" />
     <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/global-243d3a393d7d.css" />
     <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/github-b717d68e0146.css" />
-  
+  <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/insights-9330bfb31919.css" />
 
 
 
@@ -58,17 +58,17 @@
 <script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/notifications-global-4dc6f295cc92.js"></script>
   
 
-  <title>Milestones - lorien/awesome-web-scraping · GitHub</title>
+  <title>Code frequency · lorien/awesome-web-scraping · GitHub</title>
 
 
 
-  <meta name="route-pattern" content="/:user_id/:repository/milestones(.:format)">
+  <meta name="route-pattern" content="/:user_id/:repository/graphs/code-frequency(.:format)">
 
     
-  <meta name="current-catalog-service-hash" content="81bb79d38c15960b92d99bca9288a9108c7a47b18f2423d0f6438c5b7bcd2114">
+  <meta name="current-catalog-service-hash" content="82c569b93da5c18ed649ebd4c2c79437db4611a6a1373e805a3cb001c64130b7">
 
 
-  <meta name="request-id" content="4A97:59A4:1786BB:22EC92:644C0FA4" data-pjax-transient="true"/><meta name="html-safe-nonce" content="0cd6a3f87032e6a9130a3c5d9928aae6ed00b3ea500a63e33ebbe075df426e56" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiI0QTk3OjU5QTQ6MTc4NkJCOjIyRUM5Mjo2NDRDMEZBNCIsInZpc2l0b3JfaWQiOiI0MDg0MzAwMDQ1MTY3MTAzOTA5IiwicmVnaW9uX2VkZ2UiOiJpYWQiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="23287b6906d2005b6abc7b32d0aa80feddf8a17fb7337de077c611ad8f24a4cd" data-pjax-transient="true"/>
+  <meta name="request-id" content="9594:0CC7:28364:3EAC9:644C0FA5" data-pjax-transient="true"/><meta name="html-safe-nonce" content="06fd524d5a5f184510f34f16477e2a56cd65a2de8e6f2a4a3ca016d6bfcd41eb" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiI5NTk0OjBDQzc6MjgzNjQ6M0VBQzk6NjQ0QzBGQTUiLCJ2aXNpdG9yX2lkIjoiMzg1MjUxMjM4OTc1NzY2OTI4NSIsInJlZ2lvbl9lZGdlIjoiaWFkIiwicmVnaW9uX3JlbmRlciI6ImlhZCJ9" data-pjax-transient="true"/><meta name="visitor-hmac" content="3cec312d0641a016628057e5f5aad18cf2bf549656781f18cacc14e1b8c9e3a8" data-pjax-transient="true"/>
 
 
     <meta name="hovercard-subject-tag" content="repository:40621231" data-turbo-transient>
@@ -77,7 +77,7 @@
   <meta name="github-keyboard-shortcuts" content="repository" data-turbo-transient="true" />
   
 
-  <meta name="selected-link" value="repo_issues" data-turbo-transient>
+  <meta name="selected-link" value="repo_graphs" data-turbo-transient>
 
     <meta name="google-site-verification" content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY">
   <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
@@ -87,7 +87,7 @@
 
 <meta name="octolytics-url" content="https://collector.github.com/github/collect" />
 
-  <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/milestones/index" data-turbo-transient="true" />
+  <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/graphs/code_frequency" data-turbo-transient="true" />
 
   
 
@@ -102,13 +102,13 @@
 
     <meta name="viewport" content="width=device-width">
     
-      <meta name="description" content="List of libraries, tools and APIs for web scraping and data processing. - Milestones - lorien/awesome-web-scraping">
+      <meta name="description" content="List of libraries, tools and APIs for web scraping and data processing. - Code frequency · lorien/awesome-web-scraping">
       <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
     <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
     <meta property="fb:app_id" content="1401488693436528">
     <meta name="apple-itunes-app" content="app-id=1477376905" />
-      <meta name="twitter:image:src" content="https://opengraph.githubassets.com/0555414c6fc48577309d49c9b0c692a58eb5b866218920414d425cc05679bfca/lorien/awesome-web-scraping" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Milestones - lorien/awesome-web-scraping" /><meta name="twitter:description" content="List of libraries, tools and APIs for web scraping and data processing. - Milestones - lorien/awesome-web-scraping" />
-      <meta property="og:image" content="https://opengraph.githubassets.com/0555414c6fc48577309d49c9b0c692a58eb5b866218920414d425cc05679bfca/lorien/awesome-web-scraping" /><meta property="og:image:alt" content="List of libraries, tools and APIs for web scraping and data processing. - Milestones - lorien/awesome-web-scraping" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="600" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="Milestones - lorien/awesome-web-scraping" /><meta property="og:url" content="https://github.com/lorien/awesome-web-scraping" /><meta property="og:description" content="List of libraries, tools and APIs for web scraping and data processing. - Milestones - lorien/awesome-web-scraping" />
+      <meta name="twitter:image:src" content="https://opengraph.githubassets.com/0555414c6fc48577309d49c9b0c692a58eb5b866218920414d425cc05679bfca/lorien/awesome-web-scraping" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Code frequency · lorien/awesome-web-scraping" /><meta name="twitter:description" content="List of libraries, tools and APIs for web scraping and data processing. - Code frequency · lorien/awesome-web-scraping" />
+      <meta property="og:image" content="https://opengraph.githubassets.com/0555414c6fc48577309d49c9b0c692a58eb5b866218920414d425cc05679bfca/lorien/awesome-web-scraping" /><meta property="og:image:alt" content="List of libraries, tools and APIs for web scraping and data processing. - Code frequency · lorien/awesome-web-scraping" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="600" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="Code frequency · lorien/awesome-web-scraping" /><meta property="og:url" content="https://github.com/lorien/awesome-web-scraping" /><meta property="og:description" content="List of libraries, tools and APIs for web scraping and data processing. - Code frequency · lorien/awesome-web-scraping" />
       
     <link rel="assets" href="https://github.githubassets.com/">
 
@@ -188,9 +188,9 @@
       </a>
 
         <div class="flex-1">
-          <a href="/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fmilestones%2Findex&amp;source=header-repo"
+          <a href="/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fgraphs%2Fcode_frequency&amp;source=header-repo"
             class="d-inline-block d-lg-none flex-order-1 f5 no-underline border color-border-default rounded-2 px-2 py-1 color-fg-inherit"
-            data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/lorien/awesome-web-scraping/milestones&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="1d681a00bc9d73f4a2f6d965814273548e612a5c32c1e51a16cb5fbe94b5bca9"
+            data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/lorien/awesome-web-scraping/graphs/code-frequency&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="137369596d8c43a79d6bfda15032c6a623ca4ad5c1233887a9feb5d1309d8328"
           >
             Sign&nbsp;up
           </a>
@@ -573,7 +573,7 @@
           spellcheck="false"
           autocomplete="off"
         >
-        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="GcvJt2q2x9KSs2+hmacx3oFfp3pJdxwo4bEiquF9wDfNSzTZsaIQi0I7jEn/0OmAIJi8RO0WpBqdHS9okRZrcw==" />
+        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="sEmghMTjteS8T525G9V4Jb6fHOEuaOgk2OLNhfDXgPDGFK3lAeDVpQc3gEX3Y2YlahHZAPN3zhPVRgrLlamwYg==" />
         <input type="hidden" class="js-site-search-type-field" name="type" >
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1 header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
 
@@ -753,18 +753,18 @@
             </div>
 
           <div class="position-relative mr-lg-3 d-lg-inline-block">
-            <a href="/login?return_to=https%3A%2F%2Fgithub.com%2Florien%2Fawesome-web-scraping%2Fmilestones"
+            <a href="/login?return_to=https%3A%2F%2Fgithub.com%2Florien%2Fawesome-web-scraping%2Fgraphs%2Fcode-frequency"
               class="HeaderMenu-link HeaderMenu-link--sign-in flex-shrink-0 no-underline d-block d-lg-inline-block border border-lg-0 rounded rounded-lg-0 p-2 p-lg-0"
-              data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/lorien/awesome-web-scraping/milestones&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7b29df42e349f32fbc62a89dc819d6d65c19d6b0ffd180e8617419f0389d36de"
+              data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/lorien/awesome-web-scraping/graphs/code-frequency&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0f5e0aba77ffe3dd639b2e4db4c123af274dba56e576702ca6ba6af4f3fa0925"
               data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">
               Sign in
             </a>
           </div>
 
-            <a href="/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fmilestones%2Findex&amp;source=header-repo&amp;source_repo=lorien%2Fawesome-web-scraping"
+            <a href="/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fgraphs%2Fcode_frequency&amp;source=header-repo&amp;source_repo=lorien%2Fawesome-web-scraping"
               class="HeaderMenu-link HeaderMenu-link--sign-up flex-shrink-0 d-none d-lg-inline-block no-underline border color-border-default rounded px-2 py-1"
-              data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/lorien/awesome-web-scraping/milestones&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7b29df42e349f32fbc62a89dc819d6d65c19d6b0ffd180e8617419f0389d36de"
-              data-analytics-event="{&quot;category&quot;:&quot;Sign up&quot;,&quot;action&quot;:&quot;click to sign up for account&quot;,&quot;label&quot;:&quot;ref_page:/&lt;user-name&gt;/&lt;repo-name&gt;/milestones/index;ref_cta:Sign up;ref_loc:header logged out&quot;}"
+              data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/lorien/awesome-web-scraping/graphs/code-frequency&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0f5e0aba77ffe3dd639b2e4db4c123af274dba56e576702ca6ba6af4f3fa0925"
+              data-analytics-event="{&quot;category&quot;:&quot;Sign up&quot;,&quot;action&quot;:&quot;click to sign up for account&quot;,&quot;label&quot;:&quot;ref_page:/&lt;user-name&gt;/&lt;repo-name&gt;/graphs/code_frequency;ref_cta:Sign up;ref_loc:header logged out&quot;}"
             >
               Sign up
             </a>
@@ -828,8 +828,7 @@
     <main id="js-repo-pjax-container" >
       
   
-
-      
+    
 
 
 
@@ -869,13 +868,13 @@
       
 
   <li>
-            <a href="/login?return_to=%2Florien%2Fawesome-web-scraping" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;notification subscription menu watch&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/lorien/awesome-web-scraping/milestones&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="caf188135e69da0714e071ee4003464e1c0fc5308396b55dded498996a2d3a8c" aria-label="You must be signed in to change notification settings" data-view-component="true" class="tooltipped tooltipped-s btn-sm btn">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-bell mr-2">
+            <a href="/login?return_to=%2Florien%2Fawesome-web-scraping" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;notification subscription menu watch&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/lorien/awesome-web-scraping/graphs/code-frequency&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="cfe9f42188e74260e105cda91e57d7163f94719195e3eb4460d3c88811a85973" aria-label="You must be signed in to change notification settings" data-view-component="true" class="tooltipped tooltipped-s btn-sm btn">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-bell mr-2">
     <path d="M8 16a2 2 0 0 0 1.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 0 0 8 16ZM3 5a5 5 0 0 1 10 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.519 1.519 0 0 1 13.482 13H2.518a1.516 1.516 0 0 1-1.263-2.36l1.703-2.554A.255.255 0 0 0 3 7.947Zm5-3.5A3.5 3.5 0 0 0 4.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.017.017 0 0 0-.003.01l.001.006c0 .002.002.004.004.006l.006.004.007.001h10.964l.007-.001.006-.004.004-.006.001-.007a.017.017 0 0 0-.003-.01l-1.703-2.554a1.745 1.745 0 0 1-.294-.97V5A3.5 3.5 0 0 0 8 1.5Z"></path>
 </svg>Notifications
 </a>  </li>
 
   <li>
-          <a icon="repo-forked" id="fork-button" href="/login?return_to=%2Florien%2Fawesome-web-scraping" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;repo details fork button&quot;,&quot;repository_id&quot;:40621231,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/lorien/awesome-web-scraping/milestones&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="e78e567d2f30aa3ff618bbea6992988da04241086f7f8d639e4f2b3dcc337f73" data-view-component="true" class="btn-sm btn">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked mr-2">
+          <a icon="repo-forked" id="fork-button" href="/login?return_to=%2Florien%2Fawesome-web-scraping" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;repo details fork button&quot;,&quot;repository_id&quot;:40621231,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/lorien/awesome-web-scraping/graphs/code-frequency&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="28d5d0d0f316b1168d7c2ea3e126b3fa47072d0dbc6267c5574bc65eb0eab4b7" data-view-component="true" class="btn-sm btn">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked mr-2">
     <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path>
 </svg>Fork
     <span id="repo-network-counter" data-pjax-replace="true" data-turbo-replace="true" title="751" data-view-component="true" class="Counter">751</span>
@@ -884,7 +883,7 @@
 
   <li>
         <div data-view-component="true" class="BtnGroup d-flex">
-        <a href="/login?return_to=%2Florien%2Fawesome-web-scraping" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;star button&quot;,&quot;repository_id&quot;:40621231,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/lorien/awesome-web-scraping/milestones&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="44ecc37713d1b8ce5717bf089721e3a65bf2cf4cf8b43a8afad5eedc45f63e32" aria-label="You must be signed in to star a repository" data-view-component="true" class="tooltipped tooltipped-s btn-sm btn BtnGroup-item">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star v-align-text-bottom d-inline-block mr-2">
+        <a href="/login?return_to=%2Florien%2Fawesome-web-scraping" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;star button&quot;,&quot;repository_id&quot;:40621231,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/lorien/awesome-web-scraping/graphs/code-frequency&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="5c37f26afa85c04b40f7d22740186dc304bea17ee6ab2af562a77432c2001eef" aria-label="You must be signed in to star a repository" data-view-component="true" class="tooltipped tooltipped-s btn-sm btn BtnGroup-item">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star v-align-text-bottom d-inline-block mr-2">
     <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
 </svg><span data-view-component="true" class="d-inline">
           Star
@@ -923,7 +922,7 @@
     
 </a></li>
       <li data-view-component="true" class="d-inline-flex">
-  <a id="issues-tab" href="/lorien/awesome-web-scraping/issues" data-tab-item="i1issues-tab" data-selected-links="repo_issues repo_labels repo_milestones /lorien/awesome-web-scraping/issues" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g i" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Issues&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" aria-current="page" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item selected">
+  <a id="issues-tab" href="/lorien/awesome-web-scraping/issues" data-tab-item="i1issues-tab" data-selected-links="repo_issues repo_labels repo_milestones /lorien/awesome-web-scraping/issues" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g i" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Issues&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
     
               <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-issue-opened UnderlineNav-octicon d-none d-sm-inline">
     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
@@ -994,7 +993,7 @@
     
 </a></li>
       <li data-view-component="true" class="d-inline-flex">
-  <a id="insights-tab" href="/lorien/awesome-web-scraping/pulse" data-tab-item="i7insights-tab" data-selected-links="repo_graphs repo_contributors dependency_graph dependabot_updates pulse people community /lorien/awesome-web-scraping/pulse" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Insights&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+  <a id="insights-tab" href="/lorien/awesome-web-scraping/pulse" data-tab-item="i7insights-tab" data-selected-links="repo_graphs repo_contributors dependency_graph dependabot_updates pulse people community /lorien/awesome-web-scraping/pulse" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Insights&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" aria-current="page" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item selected">
     
               <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-graph UnderlineNav-octicon d-none d-sm-inline">
     <path d="M1.5 1.75V13.5h13.75a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75V1.75a.75.75 0 0 1 1.5 0Zm14.28 2.53-5.25 5.25a.75.75 0 0 1-1.06 0L7 7.06 4.28 9.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.25-3.25a.75.75 0 0 1 1.06 0L10 7.94l4.72-4.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path>
@@ -1020,7 +1019,7 @@
                   Code
 </a>              </li>
               <li data-menu-item="i1issues-tab" hidden>
-                <a role="menuitem" class="js-selected-navigation-item selected dropdown-item" aria-current="page" data-selected-links="repo_issues repo_labels repo_milestones /lorien/awesome-web-scraping/issues" href="/lorien/awesome-web-scraping/issues">
+                <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links="repo_issues repo_labels repo_milestones /lorien/awesome-web-scraping/issues" href="/lorien/awesome-web-scraping/issues">
                   Issues
 </a>              </li>
               <li data-menu-item="i2pull-requests-tab" hidden>
@@ -1044,7 +1043,7 @@
                   Security
 </a>              </li>
               <li data-menu-item="i7insights-tab" hidden>
-                <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links="repo_graphs repo_contributors dependency_graph dependabot_updates pulse people community /lorien/awesome-web-scraping/pulse" href="/lorien/awesome-web-scraping/pulse">
+                <a role="menuitem" class="js-selected-navigation-item selected dropdown-item" aria-current="page" data-selected-links="repo_graphs repo_contributors dependency_graph dependabot_updates pulse people community /lorien/awesome-web-scraping/pulse" href="/lorien/awesome-web-scraping/pulse">
                   Insights
 </a>              </li>
           </ul>
@@ -1065,126 +1064,73 @@
 
     
       
-    <div class="clearfix new-discussion-timeline js-check-all-container container-xl px-3 px-md-4 px-lg-5 mt-4" data-pjax="" data-turbo-frame="">
-      
-  <div class="d-flex flex-wrap flex-justify-between width-full width-md-auto milestones-flexbox-gap">
+<h1 class='sr-only'>Insights: lorien/awesome-web-scraping</h1>
+<div class="clearfix container-xl px-3 px-md-4 px-lg-5 mt-4">
+  <div data-view-component="true" class="Layout Layout--flowRow-until-md Layout--sidebarPosition-start Layout--sidebarPosition-flowRow-start">
   
-<nav class="subnav-links float-left d-flex no-wrap" aria-label="Issue">
-  <a selected_link="repo_milestones" class="js-selected-navigation-item subnav-item" data-selected-links="repo_labels /lorien/awesome-web-scraping/labels" href="/lorien/awesome-web-scraping/labels">
-    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-tag">
-    <path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"></path>
-</svg>
-    Labels
-</a>  <a selected_link="repo_milestones" class="js-selected-navigation-item selected subnav-item" aria-current="page" data-selected-links="repo_milestones /lorien/awesome-web-scraping/milestones" href="/lorien/awesome-web-scraping/milestones">
-    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-milestone">
-    <path d="M7.75 0a.75.75 0 0 1 .75.75V3h3.634c.414 0 .814.147 1.13.414l2.07 1.75a1.75 1.75 0 0 1 0 2.672l-2.07 1.75a1.75 1.75 0 0 1-1.13.414H8.5v5.25a.75.75 0 0 1-1.5 0V10H2.75A1.75 1.75 0 0 1 1 8.25v-3.5C1 3.784 1.784 3 2.75 3H7V.75A.75.75 0 0 1 7.75 0Zm4.384 8.5a.25.25 0 0 0 .161-.06l2.07-1.75a.248.248 0 0 0 0-.38l-2.07-1.75a.25.25 0 0 0-.161-.06H2.75a.25.25 0 0 0-.25.25v3.5c0 .138.112.25.25.25h9.384Z"></path>
-</svg>
-    Milestones
-</a></nav>
+  <div data-view-component="true" class="Layout-sidebar">      
+
+  <nav class="menu" aria-label="Insights" data-pjax>
+    <a class="js-selected-navigation-item menu-item" data-selected-links="pulse /lorien/awesome-web-scraping/pulse" href="/lorien/awesome-web-scraping/pulse">Pulse</a>
+    <a class="js-selected-navigation-item menu-item" data-selected-links=" /lorien/awesome-web-scraping/graphs/contributors" href="/lorien/awesome-web-scraping/graphs/contributors">Contributors</a>
+      <a class="js-selected-navigation-item menu-item" data-selected-links=" /lorien/awesome-web-scraping/community" href="/lorien/awesome-web-scraping/community">Community Standards</a>
+    <a class="js-selected-navigation-item menu-item" data-selected-links=" /lorien/awesome-web-scraping/graphs/commit-activity" href="/lorien/awesome-web-scraping/graphs/commit-activity">Commits</a>
+    <a class="js-selected-navigation-item selected menu-item" aria-current="page" data-selected-links=" /lorien/awesome-web-scraping/graphs/code-frequency" href="/lorien/awesome-web-scraping/graphs/code-frequency">Code frequency</a>
+      <a class="js-selected-navigation-item menu-item" data-selected-links="dependency_graph dependabot_updates /lorien/awesome-web-scraping/network/dependencies" href="/lorien/awesome-web-scraping/network/dependencies">Dependency graph</a>
+    <a class="js-selected-navigation-item menu-item" data-selected-links=" /lorien/awesome-web-scraping/network" href="/lorien/awesome-web-scraping/network">Network</a>
+    <a class="js-selected-navigation-item menu-item" data-selected-links=" /lorien/awesome-web-scraping/forks" href="/lorien/awesome-web-scraping/forks">Forks</a>
+  </nav>
+
 
 </div>
+  <div data-view-component="true" class="Layout-main">
+      
+  <div class="graphs wheader">
+    <div data-view-component="true" class="Subhead">
+  <h2 data-view-component="true" class="Subhead-heading d-flex flex-items-center">        Code frequency over the history of
+        <span class="ml-1 text-emphasized">lorien/awesome-web-scraping</span>
+</h2>
+  
+  
+</div>
+    <h2 class="ghead">
+      <span class="dir">
+        <span class="cadd">Additions</span> and
+        <span class="cdel">Deletions</span> per week
+      </span>
+    </h2>
+    <code-frequency-graph>
+      <div class="js-graph graph-canvas" data-graph-name="code-frequency" data-url="/lorien/awesome-web-scraping/graphs/code-frequency-data" data-target="code-frequency-graph.graph">
+        <div class="activity">
+  <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="graph-loading dots mb-2 anim-rotate">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+</svg>
+  <div class="graph-loading msg">
+    <p>Crunching the latest data, just for you. Hang tight…</p>
+  </div>
+  <div class="graph-empty msg mt-6">
+    <h4>We don’t have enough data to show anything useful.</h4>
+    <p>It usually takes about a week to populate this graph.</p>
+  </div>
+  <div class="graph-no-usable-data msg mt-6">
+    <p>We need at least one non-empty commit with an email to generate this graph.</p>
+  </div>
+</div>
+
+<div data-view-component="true" class="graph-error flash flash-error m-3">
+  
+  <p>We tried our best, but the graph wouldn’t load. Try reloading the page.</p>
 
 
-  <div class="table-list-header">
-    <div class="table-list-filters">
-      <div class="table-list-header-toggle states float-left">
-        <a class="btn-link selected" href="/lorien/awesome-web-scraping/milestones?state=open">
-          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-milestone">
-    <path d="M7.75 0a.75.75 0 0 1 .75.75V3h3.634c.414 0 .814.147 1.13.414l2.07 1.75a1.75 1.75 0 0 1 0 2.672l-2.07 1.75a1.75 1.75 0 0 1-1.13.414H8.5v5.25a.75.75 0 0 1-1.5 0V10H2.75A1.75 1.75 0 0 1 1 8.25v-3.5C1 3.784 1.784 3 2.75 3H7V.75A.75.75 0 0 1 7.75 0Zm4.384 8.5a.25.25 0 0 0 .161-.06l2.07-1.75a.248.248 0 0 0 0-.38l-2.07-1.75a.25.25 0 0 0-.161-.06H2.75a.25.25 0 0 0-.25.25v3.5c0 .138.112.25.25.25h9.384Z"></path>
-</svg>
-          0
-          Open
-</a>
-        <a class="btn-link " href="/lorien/awesome-web-scraping/milestones?state=closed">
-          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-          0
-          Closed
-</a>      </div>
-
-      <div class="table-list-header-toggle float-right">
-        <details class="details-reset details-overlay select-menu">
-            <summary data-view-component="true" class="select-menu-button icon-only btn-link">    Sort
-</summary>          <details-menu class="select-menu-modal position-absolute right-0" style="z-index:99;">
-            <div class="select-menu-header">
-              <span class="select-menu-title">Sort</span>
-            </div>
-            <div class="select-menu-list">
-              <a class="select-menu-item" href="/lorien/awesome-web-scraping/milestones" aria-checked="true" role="menuitemradio">
-                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check select-menu-item-icon">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-                <div class="select-menu-item-text">Recently updated</div>
-              </a>
-                <a class="select-menu-item" href="/lorien/awesome-web-scraping/milestones?direction=desc&amp;sort=due_date&amp;state=open" aria-checked="false" role="menuitemradio">
-                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check select-menu-item-icon">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-                  <div class="select-menu-item-text">Furthest due date</div>
-                </a>
-                <a class="select-menu-item" href="/lorien/awesome-web-scraping/milestones?direction=asc&amp;sort=due_date&amp;state=open" aria-checked="false" role="menuitemradio">
-                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check select-menu-item-icon">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-                  <div class="select-menu-item-text">Closest due date</div>
-                </a>
-                <a class="select-menu-item" href="/lorien/awesome-web-scraping/milestones?direction=asc&amp;sort=completeness&amp;state=open" aria-checked="false" role="menuitemradio">
-                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check select-menu-item-icon">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-                  <div class="select-menu-item-text">Least complete</div>
-                </a>
-                <a class="select-menu-item" href="/lorien/awesome-web-scraping/milestones?direction=desc&amp;sort=completeness&amp;state=open" aria-checked="false" role="menuitemradio">
-                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check select-menu-item-icon">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-                  <div class="select-menu-item-text">Most complete</div>
-                </a>
-                <a class="select-menu-item" href="/lorien/awesome-web-scraping/milestones?direction=asc&amp;sort=title&amp;state=open" aria-checked="false" role="menuitemradio">
-                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check select-menu-item-icon">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-                  <div class="select-menu-item-text">Alphabetically</div>
-                </a>
-                <a class="select-menu-item" href="/lorien/awesome-web-scraping/milestones?direction=desc&amp;sort=title&amp;state=open" aria-checked="false" role="menuitemradio">
-                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check select-menu-item-icon">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-                  <div class="select-menu-item-text">Reverse alphabetically</div>
-                </a>
-                <a class="select-menu-item" href="/lorien/awesome-web-scraping/milestones?direction=desc&amp;sort=count&amp;state=open" aria-checked="false" role="menuitemradio">
-                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check select-menu-item-icon">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-                  <div class="select-menu-item-text">Most issues</div>
-                </a>
-                <a class="select-menu-item" href="/lorien/awesome-web-scraping/milestones?direction=asc&amp;sort=count&amp;state=open" aria-checked="false" role="menuitemradio">
-                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check select-menu-item-icon">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-                  <div class="select-menu-item-text">Least issues</div>
-                </a>
-            </div>
-          </details-menu>
-        </details>
+  
+</div>
       </div>
-    </div>
+    </code-frequency-graph>
   </div>
 
-        
-  <div data-view-component="true" class="blankslate">
-    <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-milestone blankslate-icon">
-    <path d="M11.75 1a.75.75 0 0 1 .75.75V4h6.532c.42 0 .826.15 1.143.425l3.187 2.75a1.75 1.75 0 0 1 0 2.65l-3.187 2.75a1.75 1.75 0 0 1-1.143.425H12.5v9.25a.75.75 0 0 1-1.5 0V13H3.75A1.75 1.75 0 0 1 2 11.25v-5.5C2 4.783 2.784 4 3.75 4H11V1.75a.75.75 0 0 1 .75-.75Zm7.282 4.5H3.75a.25.25 0 0 0-.25.25v5.5c0 .138.112.25.25.25h15.282c.06 0 .118-.021.163-.06l3.188-2.75a.248.248 0 0 0 0-.38l-3.188-2.75a.249.249 0 0 0-.163-.06Z"></path>
-</svg>
-
-    <h2 data-view-component="true" class="blankslate-heading">            No Milestones found!
-</h2>
-    <p data-view-component="true">            If this project had milestones, we’d show you them here. Promise!
-</p>
-
 </div>
-    </div>
+</div></div>
 
 
   </div>
