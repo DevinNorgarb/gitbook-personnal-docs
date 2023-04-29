@@ -232,25 +232,7 @@
 
 * [Monkey-DL](web-scraping/monkey-dl.md)
 * [Scrapers](web-scraping/scrapers.md)
-* [awesome-scraping](web-scraping/awesome-scraping/README.md)
-  * [GitHub: List of libraries, tools and APIs for web scraping and data processing.](web-scraping/awesome-scraping/github-list-of-libraries-tools-and-apis-for-web-scraping-and-data-processing./README.md)
-    * [awesome-web-scraping/LICENSE at master](web-scraping/awesome-scraping/github-list-of-libraries-tools-and-apis-for-web-scraping-and-data-processing./awesome-web-scraping-license-at-master/README.md)
-      * [Actions](web-scraping/awesome-scraping/github-list-of-libraries-tools-and-apis-for-web-scraping-and-data-processing./awesome-web-scraping-license-at-master/actions.md)
-    * [Stargazers](web-scraping/awesome-scraping/github-list-of-libraries-tools-and-apis-for-web-scraping-and-data-processing./stargazers.md)
-    * [Forks](web-scraping/awesome-scraping/github-list-of-libraries-tools-and-apis-for-web-scraping-and-data-processing./forks/README.md)
-      * [Releases](web-scraping/awesome-scraping/github-list-of-libraries-tools-and-apis-for-web-scraping-and-data-processing./forks/releases.md)
-    * [GitHub: List of libraries, tools and APIs for web scraping and data processing.](web-scraping/awesome-scraping/github-list-of-libraries-tools-and-apis-for-web-scraping-and-data-processing./github-list-of-libraries-tools-and-apis-for-web-scraping-and-data-processing./README.md)
-      * [Commits](web-scraping/awesome-scraping/github-list-of-libraries-tools-and-apis-for-web-scraping-and-data-processing./github-list-of-libraries-tools-and-apis-for-web-scraping-and-data-processing./commits.md)
-    * [Build software better, together](web-scraping/awesome-scraping/github-list-of-libraries-tools-and-apis-for-web-scraping-and-data-processing./build-software-better-together/README.md)
-      * [Add cloudpickle to python list@ad05430](web-scraping/awesome-scraping/github-list-of-libraries-tools-and-apis-for-web-scraping-and-data-processing./build-software-better-together/add-cloudpickle-to-python-list-ad05430.md)
-      * [GitHub at ad05430f52365c33841d041c68602e8c3832bd79](web-scraping/awesome-scraping/github-list-of-libraries-tools-and-apis-for-web-scraping-and-data-processing./build-software-better-together/github-at-ad05430f52365c33841d041c68602e8c3832bd79.md)
-    * [Commits](web-scraping/awesome-scraping/github-list-of-libraries-tools-and-apis-for-web-scraping-and-data-processing./commits.md)
-    * [Build software better, together](web-scraping/awesome-scraping/github-list-of-libraries-tools-and-apis-for-web-scraping-and-data-processing./build-software-better-together-1/README.md)
-      * [Branches](web-scraping/awesome-scraping/github-list-of-libraries-tools-and-apis-for-web-scraping-and-data-processing./build-software-better-together-1/branches.md)
-    * [Page 3](web-scraping/awesome-scraping/github-list-of-libraries-tools-and-apis-for-web-scraping-and-data-processing./page-3.md)
-  * [Issues](web-scraping/awesome-scraping/issues.md)
-  * [Pull requests](web-scraping/awesome-scraping/pull-requests.md)
-  * [Pulse](web-scraping/awesome-scraping/pulse.md)
+* [PHP Web Scraping](web-scraping/php-web-scraping.md)
 
 ## Random
 
