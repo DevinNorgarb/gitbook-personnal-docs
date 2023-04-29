@@ -7,6 +7,7 @@
     * [Run docker commands without needing sudo](snippets-and-scripts/scripts/run-docker-commands-without-needing-sudo.md)
     * [Nginx Proxy Block](snippets-and-scripts/scripts/nginx-proxy-block.md)
     * [Install Scripts](snippets-and-scripts/scripts/install-scripts/README.md)
+      * [ZeroTier VPN](snippets-and-scripts/scripts/install-scripts/zerotier-vpn.md)
       * [Mac OS](snippets-and-scripts/scripts/install-scripts/mac-os.md)
       * [Samba on Mac](snippets-and-scripts/scripts/install-scripts/samba-on-mac.md)
       * [Pritunl VPN Client](snippets-and-scripts/scripts/install-scripts/pritunl-vpn-client.md)
