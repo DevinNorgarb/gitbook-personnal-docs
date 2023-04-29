@@ -229,6 +229,10 @@
 * [Mapbox Storytelling](gis/mapbox-storytelling.md)
 * [MapBox](gis/mapbox.md)
 
+## Web Archiving
+
+* [Awesome Web Archiving](web-archiving/awesome-web-archiving.md)
+
 ## Web Scraping
 
 * [Monkey-DL](web-scraping/monkey-dl.md)
@@ -237,7 +241,8 @@
 
 ## Pen Testing
 
-* [Page 3](pen-testing/page-3.md)
+* [SQLMap](pen-testing/sqlmap.md)
+* [BeEF](pen-testing/beef.md)
 
 ## Random
 
