@@ -254,4 +254,5 @@
 
 ## Maritime AIS
 
+* [AISHub RPiAIS](maritime-ais/aishub-rpiais.md)
 * [Marine Traffic SLR350](maritime-ais/marine-traffic-slr350.md)
