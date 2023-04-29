@@ -1,6 +1,6 @@
 # Issues
 
-[Labels 7 ](../.gitbook/assets/labels)[Milestones 0](../.gitbook/assets/milestones)
+[Labels 7 ](../../.gitbook/assets/labels)[Milestones 0](../../.gitbook/assets/milestones)
 
 <details>
 

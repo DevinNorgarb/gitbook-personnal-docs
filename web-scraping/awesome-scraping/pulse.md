@@ -81,7 +81,7 @@ lorien / [**awesome-web-scraping**](broken-reference) Public
 
 </details>
 
-[Pulse](broken-reference) [Contributors](../.gitbook/assets/contributors) [Community Standards](../.gitbook/assets/community) [Commits](<../.gitbook/assets/commit activity>) [Code frequency](<../.gitbook/assets/code frequency>) [Dependency graph](../.gitbook/assets/dependencies) [Network](../.gitbook/assets/network) [Forks](broken-reference)
+[Pulse](broken-reference) [Contributors](../../.gitbook/assets/contributors) [Community Standards](../../.gitbook/assets/community) [Commits](<../../.gitbook/assets/commit activity>) [Code frequency](<../../.gitbook/assets/code frequency>) [Dependency graph](../../.gitbook/assets/dependencies) [Network](../../.gitbook/assets/network) [Forks](broken-reference)
 
 ### April 21, 2023 – April 28, 2023
 
@@ -91,7 +91,7 @@ lorien / [**awesome-web-scraping**](broken-reference) Public
 
 Filter activity
 
-[24 hours](../.gitbook/assets/daily)[3 days](../.gitbook/assets/halfweekly)[1 week](broken-reference)[1 month](../.gitbook/assets/monthly)
+[24 hours](../../.gitbook/assets/daily)[3 days](../../.gitbook/assets/halfweekly)[1 week](broken-reference)[1 month](../../.gitbook/assets/monthly)
 
 </details>
 
