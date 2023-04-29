@@ -234,6 +234,10 @@
 * [Scrapers](web-scraping/scrapers.md)
 * [PHP Web Scraping](web-scraping/php-web-scraping.md)
 
+## Pen Testing
+
+* [Page 3](pen-testing/page-3.md)
+
 ## Random
 
 * [ADHD and Programming](random/adhd-and-programming/README.md)
