@@ -205,7 +205,8 @@
   * [PCI-Express Bridge “Chip”](iot/raspberry-pi/pci-express-bridge-chip.md)
   * [Argo CD for your private Raspberry Pi k3s cluster](iot/raspberry-pi/argo-cd-for-your-private-raspberry-pi-k3s-cluster.md)
   * [Overclocking Raspberry Pi 4](iot/raspberry-pi/overclocking-raspberry-pi-4.md)
-* [ESP32](iot/esp32/README.md)
+* [ESP32](iot/esp32.md)
+  * [EVIL-ESP](iot/esp32/evil-esp.md)
   * [esp32-wifi-penetration-tool](iot/esp32/esp32-wifi-penetration-tool.md)
   * [esptool](iot/esp32/esptool.md)
 * [Painless Mesh](iot/painless-mesh.md)
@@ -244,6 +245,8 @@
 
 ## Pen Testing
 
+* [Captive Portals](pen-testing/captive-portals/README.md)
+  * [OpenNDS](pen-testing/captive-portals/opennds.md)
 * [SQLMap](pen-testing/sqlmap.md)
 * [BeEF](pen-testing/beef.md)
 
