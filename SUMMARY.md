@@ -206,6 +206,7 @@
   * [Argo CD for your private Raspberry Pi k3s cluster](iot/raspberry-pi/argo-cd-for-your-private-raspberry-pi-k3s-cluster.md)
   * [Overclocking Raspberry Pi 4](iot/raspberry-pi/overclocking-raspberry-pi-4.md)
 * [ESP32](iot/esp32.md)
+* [esptool](iot/esptool.md)
 * [Painless Mesh](iot/painless-mesh.md)
 
 ## Self-Hosting
