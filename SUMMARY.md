@@ -205,8 +205,9 @@
   * [PCI-Express Bridge “Chip”](iot/raspberry-pi/pci-express-bridge-chip.md)
   * [Argo CD for your private Raspberry Pi k3s cluster](iot/raspberry-pi/argo-cd-for-your-private-raspberry-pi-k3s-cluster.md)
   * [Overclocking Raspberry Pi 4](iot/raspberry-pi/overclocking-raspberry-pi-4.md)
-* [ESP32](iot/esp32.md)
-* [esptool](iot/esptool.md)
+* [ESP32](iot/esp32/README.md)
+  * [esp32-wifi-penetration-tool](iot/esp32/esp32-wifi-penetration-tool.md)
+  * [esptool](iot/esp32/esptool.md)
 * [Painless Mesh](iot/painless-mesh.md)
 
 ## Self-Hosting
