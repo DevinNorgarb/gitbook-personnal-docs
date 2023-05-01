@@ -4,6 +4,8 @@
 
 {% embed url="https://github.com/igorbannicov/RPi3Car" %}
 
+{% embed url="https://github.com/rudydelorenzo/ELMo" %}
+
 {% embed url="https://github.com/mathewroy/torqueR" %}
 
 {% embed url="https://github.com/dorsic/RPi-OBD" %}
