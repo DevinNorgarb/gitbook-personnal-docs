@@ -120,6 +120,7 @@
 ***
 
 * [OBDII](obdii/README.md)
+  * [ELM327 Datasheet](obdii/elm327-datasheet.md)
   * [Car Hacking](obdii/car-hacking/README.md)
     * [CuratedPython](obdii/car-hacking/curatedpython.md)
     * [How to Hack and Upgrade Your Car, Using CAN Bus](iot/obdii/how-to-hack-and-upgrade-your-car-using-can-bus.md)
