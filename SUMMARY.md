@@ -200,6 +200,7 @@
 
 * [Balena.io](iot/balena.io.md)
 * [Raspberry Pi](iot/raspberry-pi.md)
+  * [Raspberry Pi HotSpot](iot/raspberry-pi/raspberry-pi-hotspot.md)
   * [Setting up a Cloudflare Tunnel on the Raspberry Pi](iot/raspberry-pi/setting-up-a-cloudflare-tunnel-on-the-raspberry-pi.md)
   * [Install ProxMox on a Raspberry Pi](iot/raspberry-pi/install-proxmox-on-a-raspberry-pi/README.md)
     * [pimox/pimox7](iot/raspberry-pi/install-proxmox-on-a-raspberry-pi/pimox-pimox7.md)
