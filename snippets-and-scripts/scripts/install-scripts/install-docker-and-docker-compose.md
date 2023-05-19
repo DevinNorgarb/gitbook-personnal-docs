@@ -1,4 +1,4 @@
-# Install Docker and docker-compose
+# Docker
 
 _Estimated reading time: 11 minutes_
 
