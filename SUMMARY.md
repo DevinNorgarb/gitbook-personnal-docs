@@ -201,6 +201,7 @@
 
 * [Balena.io](iot/balena.io.md)
 * [Raspberry Pi](iot/raspberry-pi.md)
+  * [Awesome Raspberry Pi](iot/raspberry-pi/awesome-raspberry-pi.md)
   * [Raspberry Pi HotSpot](iot/raspberry-pi/raspberry-pi-hotspot/README.md)
     * [raspap-webgui](iot/raspberry-pi/raspberry-pi-hotspot/raspap-webgui.md)
     * [HotSpotOS](iot/raspberry-pi/raspberry-pi-hotspot/hotspotos.md)
@@ -211,7 +212,7 @@
     * [pimox/pimox7](iot/raspberry-pi/install-proxmox-on-a-raspberry-pi/pimox-pimox7.md)
   * [PCI-Express Bridge “Chip”](iot/raspberry-pi/pci-express-bridge-chip.md)
   * [Argo CD for your private Raspberry Pi k3s cluster](iot/raspberry-pi/argo-cd-for-your-private-raspberry-pi-k3s-cluster.md)
-  * [Overclocking Raspberry Pi 4](iot/raspberry-pi/overclocking-raspberry-pi-4/README.md)
+  * [Overclocking Raspberry Pi 4](iot/raspberry-pi/overclocking-raspberry-pi-4.md)
     * [Pi 4 Overclocking Maximum settings](iot/raspberry-pi/overclocking-raspberry-pi-4/pi-4-overclocking-maximum-settings.md)
 * [ESP32](iot/esp32.md)
   * [EVIL-ESP](iot/esp32/evil-esp.md)
