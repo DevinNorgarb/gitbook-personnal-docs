@@ -215,6 +215,7 @@
   * [Overclocking Raspberry Pi 4](iot/raspberry-pi/overclocking-raspberry-pi-4.md)
     * [Pi 4 Overclocking Maximum settings](iot/raspberry-pi/overclocking-raspberry-pi-4/pi-4-overclocking-maximum-settings.md)
 * [ESP32](iot/esp32.md)
+  * [ESP DroneBridge](iot/esp32/esp-dronebridge.md)
   * [EVIL-ESP](iot/esp32/evil-esp.md)
   * [esp32-wifi-penetration-tool](iot/esp32/esp32-wifi-penetration-tool.md)
   * [esptool](iot/esp32/esptool.md)
@@ -275,5 +276,4 @@
 
 ## Drones
 
-* [Page 3](drones/page-3.md)
-* [Marine Traffic SLR350](drones/marine-traffic-slr350.md)
+* [DroneBridge](drones/dronebridge.md)
