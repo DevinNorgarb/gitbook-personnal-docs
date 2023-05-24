@@ -255,7 +255,8 @@
 
 ## Pen Testing
 
-* [Kali Linux](pen-testing/kali-linux.md)
+* [Kali Linux](pen-testing/kali-linux/README.md)
+  * [Kali Linux Blog](pen-testing/kali-linux/kali-linux-blog.md)
 * [Captive Portals](pen-testing/captive-portals/README.md)
   * [fluxion](pen-testing/captive-portals/fluxion.md)
   * [Captive Portal Attack](pen-testing/captive-portals/captive-portal-attack.md)
