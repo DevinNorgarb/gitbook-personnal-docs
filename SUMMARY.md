@@ -282,5 +282,4 @@
 
 ## Software Defined Radio
 
-* [Page 3](software-defined-radio/page-3.md)
-* [DroneBridge](software-defined-radio/dronebridge.md)
+* [The BIG List of RTL-SDR Supported Software](software-defined-radio/the-big-list-of-rtl-sdr-supported-software.md)
