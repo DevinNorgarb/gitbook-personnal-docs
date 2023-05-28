@@ -278,6 +278,7 @@
 
 ## Drones
 
+* [dji-firmware-tools](drones/dji-firmware-tools.md)
 * [DroneBridge](drones/dronebridge.md)
 
 ## Software Defined Radio
