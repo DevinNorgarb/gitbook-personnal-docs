@@ -255,6 +255,7 @@
 
 ## Pen Testing
 
+* [Vulnerability Scanning](pen-testing/vulnerability-scanning.md)
 * [Kali Linux](pen-testing/kali-linux/README.md)
   * [Kali Linux Blog](pen-testing/kali-linux/kali-linux-blog.md)
 * [Captive Portals](pen-testing/captive-portals/README.md)
@@ -289,4 +290,3 @@
 ## Resources, Documents, PDF's, etc
 
 * [Software Defined Radio (SDR)](resources-documents-pdfs-etc/software-defined-radio-sdr.md)
-* [Resources, Documents, PDF's, etc](resources-documents-pdfs-etc/resources-documents-pdfs-etc.md)
