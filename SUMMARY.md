@@ -288,4 +288,5 @@
 
 ## Resources, Documents, PDF's, etc
 
+* [Software Defined Radio (SDR)](resources-documents-pdfs-etc/software-defined-radio-sdr.md)
 * [Resources, Documents, PDF's, etc](resources-documents-pdfs-etc/resources-documents-pdfs-etc.md)
