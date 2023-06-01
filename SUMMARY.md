@@ -255,7 +255,8 @@
 
 ## Pen Testing
 
-* [Vulnerability Scanning](pen-testing/vulnerability-scanning.md)
+* [Vulnerability Scanning](pen-testing/vulnerability-scanning/README.md)
+  * [Top 5 Wordpress Vulnerability Scanners](pen-testing/vulnerability-scanning/top-5-wordpress-vulnerability-scanners.md)
 * [Kali Linux](pen-testing/kali-linux/README.md)
   * [Kali Linux Blog](pen-testing/kali-linux/kali-linux-blog.md)
 * [Captive Portals](pen-testing/captive-portals/README.md)
