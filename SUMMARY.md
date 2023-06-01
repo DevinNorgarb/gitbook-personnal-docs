@@ -255,6 +255,7 @@
 
 ## Pen Testing
 
+* [OSINT](pen-testing/osint.md)
 * [Vulnerability Scanning](pen-testing/vulnerability-scanning/README.md)
   * [Top 5 Wordpress Vulnerability Scanners](pen-testing/vulnerability-scanning/top-5-wordpress-vulnerability-scanners.md)
 * [Kali Linux](pen-testing/kali-linux/README.md)
