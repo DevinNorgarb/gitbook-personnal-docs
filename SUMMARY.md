@@ -293,6 +293,8 @@
 
 ## Resources, Documents, PDF's, etc
 
+* [Geospatial Development](resources-documents-pdfs-etc/geospatial-development.md)
+* [Finance](resources-documents-pdfs-etc/finance.md)
 * [Databases](resources-documents-pdfs-etc/databases.md)
 * [Programming](resources-documents-pdfs-etc/programming.md)
 * [Software Defined Radio (SDR)](resources-documents-pdfs-etc/software-defined-radio-sdr.md)
