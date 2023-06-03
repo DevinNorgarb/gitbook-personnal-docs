@@ -293,4 +293,6 @@
 
 ## Resources, Documents, PDF's, etc
 
+* [Databases](resources-documents-pdfs-etc/databases.md)
+* [Programming](resources-documents-pdfs-etc/programming.md)
 * [Software Defined Radio (SDR)](resources-documents-pdfs-etc/software-defined-radio-sdr.md)
