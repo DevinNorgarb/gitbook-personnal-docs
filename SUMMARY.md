@@ -231,7 +231,6 @@
 ## Android Dev
 
 * [PixelExperience on Xiaomi Redmi](android-dev/pixelexperience-on-xiaomi-redmi.md)
-* [Awesome Self-Hosted](android-dev/awesome-self-hosted.md)
 
 ## GIS
 
@@ -274,7 +273,8 @@
 
 ## Random
 
-* [BitTorrent](random/bittorrent.md)
+* [Torrents & DHT Network](random/torrents-and-dht-network/README.md)
+  * [Magnetico](random/torrents-and-dht-network/magnetico.md)
 * [ADHD and Programming](random/adhd-and-programming/README.md)
   * [Page 4](random/adhd-and-programming/page-4.md)
 * [Ubuntu set keyboard backlight](<README (1) (1).md>)
