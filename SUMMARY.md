@@ -24,6 +24,7 @@
 
 ## Software Engineering
 
+* [Authentication](software-engineering/authentication.md)
 * [AWS](software-engineering/aws/README.md)
   * [SQS vs SNS vs Kinesis](software-engineering/aws/sqs-vs-sns-vs-kinesis.md)
 * [Frontend](software-engineering/programming/frontend/README.md)
