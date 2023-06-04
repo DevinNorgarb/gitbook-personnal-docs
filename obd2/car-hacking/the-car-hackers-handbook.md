@@ -26,7 +26,7 @@ Compositor: Laurel Chun\
 Proofreader: James Fraleigh\
 Indexer: BIM Indexing & Proofreading Services
 
-The following code and images are reproduced with permission: [Figures 5-3](broken-reference/) and [5-7](broken-reference/) © Jan-Niklas Meier; [Figures 6-17](broken-reference/) and [6-18](broken-reference/) © Matt Wallace; [Figures 8-6](broken-reference/), [8-7](broken-reference/), [8-8](broken-reference/), and [8-20](broken-reference/) © NewAE Technology Inc.; Brute-forcing keypad entry code on [pages 228](broken-reference/)–[230](broken-reference/) © Peter Boothe; [Figures 13-3](broken-reference/) and [A-6](broken-reference/) © Jared Gould and Paul Brunckhorst; [Figures A-1](broken-reference/) and A-2 © SECONS Ltd., [_http://www.obdtester.com/pyobd/_](http://www.obdtester.com/pyobd/)_;_ [Figure A-4](broken-reference/) © Collin Kidder and EVTV Motor Werks.
+The following code and images are reproduced with permission: [Figures 5-3](../../iot/obdii/broken-reference/) and [5-7](../../iot/obdii/broken-reference/) © Jan-Niklas Meier; [Figures 6-17](../../iot/obdii/broken-reference/) and [6-18](../../iot/obdii/broken-reference/) © Matt Wallace; [Figures 8-6](../../iot/obdii/broken-reference/), [8-7](../../iot/obdii/broken-reference/), [8-8](../../iot/obdii/broken-reference/), and [8-20](../../iot/obdii/broken-reference/) © NewAE Technology Inc.; Brute-forcing keypad entry code on [pages 228](../../iot/obdii/broken-reference/)–[230](../../iot/obdii/broken-reference/) © Peter Boothe; [Figures 13-3](../../iot/obdii/broken-reference/) and [A-6](../../iot/obdii/broken-reference/) © Jared Gould and Paul Brunckhorst; [Figures A-1](../../iot/obdii/broken-reference/) and A-2 © SECONS Ltd., [_http://www.obdtester.com/pyobd/_](http://www.obdtester.com/pyobd/)_;_ [Figure A-4](../../iot/obdii/broken-reference/) © Collin Kidder and EVTV Motor Werks.
 
 For information on distribution, translations, or bulk sales, please contact No Starch Press, Inc. directly:\
 No Starch Press, Inc.\
@@ -130,37 +130,37 @@ _The Car Hacker’s Handbook_ walks you through what it takes to hack a vehicle.
 
 Here’s a breakdown of what you’ll find in each chapter:
 
-• [**Chapter 1: Understanding Threat Models**](broken-reference/) teaches you how to assess a vehicle. You’ll learn how to identify areas with the highest risk components. If you work for the auto industry, this will serve as a useful guide for building your own threat model systems.
+• [**Chapter 1: Understanding Threat Models**](../../iot/obdii/broken-reference/) teaches you how to assess a vehicle. You’ll learn how to identify areas with the highest risk components. If you work for the auto industry, this will serve as a useful guide for building your own threat model systems.
 
-• [**Chapter 2: Bus Protocols**](broken-reference/) details the various bus networks you may run into when auditing a vehicle and explores the wiring, voltages, and protocols that each bus uses.
+• [**Chapter 2: Bus Protocols**](../../iot/obdii/broken-reference/) details the various bus networks you may run into when auditing a vehicle and explores the wiring, voltages, and protocols that each bus uses.
 
-• [**Chapter 3: Vehicle Communication with SocketCAN**](broken-reference/) shows how to use the SocketCAN interface on Linux to integrate numerous CAN hardware tools so that you can write or use one tool regardless of your equipment.
+• [**Chapter 3: Vehicle Communication with SocketCAN**](../../iot/obdii/broken-reference/) shows how to use the SocketCAN interface on Linux to integrate numerous CAN hardware tools so that you can write or use one tool regardless of your equipment.
 
-• [**Chapter 4: Diagnostics and Logging**](broken-reference/) covers how to read engine codes, the Unified Diagnostic Services, and the ISO-TP protocol. You’ll learn how different module services work, what their common weaknesses are, and what information is logged about you and where that information is stored.
+• [**Chapter 4: Diagnostics and Logging**](../../iot/obdii/broken-reference/) covers how to read engine codes, the Unified Diagnostic Services, and the ISO-TP protocol. You’ll learn how different module services work, what their common weaknesses are, and what information is logged about you and where that information is stored.
 
-• [**Chapter 5: Reverse Engineering the CAN Bus**](broken-reference/) details how to analyze the CAN network, including how to set up virtual testing environments and how to use CAN security–related tools and fuzzers.
+• [**Chapter 5: Reverse Engineering the CAN Bus**](../../iot/obdii/broken-reference/) details how to analyze the CAN network, including how to set up virtual testing environments and how to use CAN security–related tools and fuzzers.
 
-• [**Chapter 6: ECU Hacking**](broken-reference/) focuses on the firmware that runs on the ECU. You’ll discover how to access the firmware, how to modify it, and how to analyze the firmware’s binary data.
+• [**Chapter 6: ECU Hacking**](../../iot/obdii/broken-reference/) focuses on the firmware that runs on the ECU. You’ll discover how to access the firmware, how to modify it, and how to analyze the firmware’s binary data.
 
-• [**Chapter 7: Building and Using ECU Test Benches**](broken-reference/) explains how to remove parts from a vehicle to set up a safe testing environment. It also discusses how to read wiring diagrams and simulate components of the engine to the ECU, such as temperature sensors and the crank shaft.
+• [**Chapter 7: Building and Using ECU Test Benches**](../../iot/obdii/broken-reference/) explains how to remove parts from a vehicle to set up a safe testing environment. It also discusses how to read wiring diagrams and simulate components of the engine to the ECU, such as temperature sensors and the crank shaft.
 
-• [**Chapter 8: Attacking ECUs and Other Embedded Systems**](broken-reference/) covers integrated circuit debugging pins and methodologies. We also look at side channel analysis attacks, such as differential power analysis and clock glitching, with step-by-step examples.
+• [**Chapter 8: Attacking ECUs and Other Embedded Systems**](../../iot/obdii/broken-reference/) covers integrated circuit debugging pins and methodologies. We also look at side channel analysis attacks, such as differential power analysis and clock glitching, with step-by-step examples.
 
-• [**Chapter 9: In-Vehicle Infotainment Systems**](broken-reference/) details how infotainment systems work. Because the in-vehicle infotainment system probably has the largest attack surface, we’ll focus on different ways to get to its firmware and execute on the system. This chapter also discusses some open source in-vehicle infotainment systems that can be used for testing.
+• [**Chapter 9: In-Vehicle Infotainment Systems**](../../iot/obdii/broken-reference/) details how infotainment systems work. Because the in-vehicle infotainment system probably has the largest attack surface, we’ll focus on different ways to get to its firmware and execute on the system. This chapter also discusses some open source in-vehicle infotainment systems that can be used for testing.
 
-• [**Chapter 10: Vehicle-to-Vehicle Communication**](broken-reference/) explains how the proposed vehicle-to-vehicle network is designed to work. This chapter covers cryptography as well as the different protocol proposals from multiple countries. We’ll also discuss some potential weaknesses with vehicle-to-vehicle systems.
+• [**Chapter 10: Vehicle-to-Vehicle Communication**](../../iot/obdii/broken-reference/) explains how the proposed vehicle-to-vehicle network is designed to work. This chapter covers cryptography as well as the different protocol proposals from multiple countries. We’ll also discuss some potential weaknesses with vehicle-to-vehicle systems.
 
-• [**Chapter 11: Weaponizing CAN Findings**](broken-reference/) details how to turn your research into a working exploit. You’ll learn how to convert proof-of-concept code to assembly code, and ultimately shellcode, and you’ll examine ways of exploiting only the targeted vehicle, including ways to probe a vehicle undetected.
+• [**Chapter 11: Weaponizing CAN Findings**](../../iot/obdii/broken-reference/) details how to turn your research into a working exploit. You’ll learn how to convert proof-of-concept code to assembly code, and ultimately shellcode, and you’ll examine ways of exploiting only the targeted vehicle, including ways to probe a vehicle undetected.
 
-• [**Chapter 12: Attacking Wireless Systems with SDR**](broken-reference/) covers how to use software-defined radio to analyze wireless communications, such as TPMS, key fobs, and immobilizer systems. We review the encryption schemes you may run into when dealing with immobilizers as well as any known weaknesses.
+• [**Chapter 12: Attacking Wireless Systems with SDR**](../../iot/obdii/broken-reference/) covers how to use software-defined radio to analyze wireless communications, such as TPMS, key fobs, and immobilizer systems. We review the encryption schemes you may run into when dealing with immobilizers as well as any known weaknesses.
 
-• [**Chapter 13: Performance Tuning**](broken-reference/) discusses techniques used to enhance and modify a vehicle’s performance. We’ll cover chip tuning as well as common tools and techniques used to tweak an engine so it works the way you want it to.
+• [**Chapter 13: Performance Tuning**](../../iot/obdii/broken-reference/) discusses techniques used to enhance and modify a vehicle’s performance. We’ll cover chip tuning as well as common tools and techniques used to tweak an engine so it works the way you want it to.
 
-• [**Appendix A: Tools of the Trade**](broken-reference/) provides a list of software and hardware tools that will be useful when building your automotive security lab.
+• [**Appendix A: Tools of the Trade**](../../iot/obdii/broken-reference/) provides a list of software and hardware tools that will be useful when building your automotive security lab.
 
-• [**Appendix B: Diagnostic Code Modes and PIDs**](broken-reference/) lists some common modes and handy PIDS.
+• [**Appendix B: Diagnostic Code Modes and PIDs**](../../iot/obdii/broken-reference/) lists some common modes and handy PIDS.
 
-• [**Appendix C: Creating Your Own Open Garage**](broken-reference/) explains how to get involved in the car hacking community and start your own Open Garage.
+• [**Appendix C: Creating Your Own Open Garage**](../../iot/obdii/broken-reference/) explains how to get involved in the car hacking community and start your own Open Garage.
 
 By the end of the book, you should have a much deeper understanding of how your vehicle’s computer systems work, where they’re most vulnerable, and how those vulnerabilities might be exploited.
 
@@ -208,7 +208,7 @@ Your threat model can consist of different levels; if a process in your model is
 
 _**Level 0: Bird’s-Eye View**_
 
-At this level, we use the checklist we built when considering attack surfaces. Think about how data can enter the vehicle. Draw the vehicle in the center, and then label the external and internal spaces. [Figure 1-1](broken-reference/) illustrates a possible Level 0 diagram.
+At this level, we use the checklist we built when considering attack surfaces. Think about how data can enter the vehicle. Draw the vehicle in the center, and then label the external and internal spaces. [Figure 1-1](../../iot/obdii/broken-reference/) illustrates a possible Level 0 diagram.
 
 The rectangular boxes are the inputs, and the circle in the center represents the entire vehicle. On their way to the vehicle, the inputs cross two dotted lines, which represent external and internal threats.
 
@@ -222,21 +222,21 @@ _**Level 1: Receivers**_
 
 To move on to the Level 1 diagram, pick a process to explore. Because we have only the one process in our diagram, let’s dig in to the vehicle process and focus on what each input talks to.
 
-The Level 1 map shown in [Figure 1-2](broken-reference/) is almost identical to that in Level 0. The only difference is that here we specify the vehicle connections that receive the Level 0 input. We won’t look at the receivers in depth just yet; we’re looking only at the basic device or area that the input talks to.
+The Level 1 map shown in [Figure 1-2](../../iot/obdii/broken-reference/) is almost identical to that in Level 0. The only difference is that here we specify the vehicle connections that receive the Level 0 input. We won’t look at the receivers in depth just yet; we’re looking only at the basic device or area that the input talks to.
 
 ![image](../../.gitbook/assets/000031)
 
 _Figure 1-2: Level 1 map of inputs and vehicle connections_
 
-Notice in [Figure 1-2](broken-reference/) that we number each receiver. The first digit represents the process label from the Level 0 diagram in [Figure 1-1](broken-reference/), and the second digit is the number of the receiver. Because the infotainment unit is both a complex process and an input, we’ve given it a process circle. We now have three other processes: immobilizer, ECU, and TPMS Receiver.
+Notice in [Figure 1-2](../../iot/obdii/broken-reference/) that we number each receiver. The first digit represents the process label from the Level 0 diagram in [Figure 1-1](../../iot/obdii/broken-reference/), and the second digit is the number of the receiver. Because the infotainment unit is both a complex process and an input, we’ve given it a process circle. We now have three other processes: immobilizer, ECU, and TPMS Receiver.
 
 The dotted lines in the Level 1 map represent divisions between trust boundaries. The inputs at the top of the diagram are the least trusted, and the ones at the bottom are the most trusted. The more trust boundaries that a communication channel crosses, the more risky that channel becomes.
 
 _**Level 2: Receiver Breakdown**_
 
-At Level 2, we examine the communication taking place inside the vehicle. Our sample diagram ([Figure 1-3](broken-reference/)) focuses on a Linux-based infotainment console, receiver 1.1. This is one of the more complicated receivers, and it’s often directly connected to the vehicle’s internal network.
+At Level 2, we examine the communication taking place inside the vehicle. Our sample diagram ([Figure 1-3](../../iot/obdii/broken-reference/)) focuses on a Linux-based infotainment console, receiver 1.1. This is one of the more complicated receivers, and it’s often directly connected to the vehicle’s internal network.
 
-In [Figure 1-3](broken-reference/), we group the communications channels into boxes with dashed lines to once again represent trust boundaries. Now there’s a new trust boundary inside the infotainment console called kernel space. Systems that talk directly to the kernel hold higher risk than ones that talk to system applications because they may bypass any access control mechanisms on the infotainment unit. Therefore, the cellular channel is higher risk than the Wi-Fi channel because it crosses a trust boundary into kernel space; the Wi-Fi channel, on the other hand, communicates with the WPA supplicant process in user space.
+In [Figure 1-3](../../iot/obdii/broken-reference/), we group the communications channels into boxes with dashed lines to once again represent trust boundaries. Now there’s a new trust boundary inside the infotainment console called kernel space. Systems that talk directly to the kernel hold higher risk than ones that talk to system applications because they may bypass any access control mechanisms on the infotainment unit. Therefore, the cellular channel is higher risk than the Wi-Fi channel because it crosses a trust boundary into kernel space; the Wi-Fi channel, on the other hand, communicates with the WPA supplicant process in user space.
 
 ![image](../../.gitbook/assets/000033)
 
@@ -492,7 +492,7 @@ DREAD stands for the following:
 
 **Discoverabilty** How easy is it to find the vulnerability?
 
-[Table 1-1](broken-reference/) lists the risk levels from 1 to 3 for each rating category.
+[Table 1-1](../../iot/obdii/broken-reference/) lists the risk levels from 1 to 3 for each rating category.
 
 **Table 1-1:** DREAD Rating System
 
@@ -504,7 +504,7 @@ DREAD stands for the following:
 | **A** | Affected users      | Affects all users, including the default setup user and key customers                         | Affects some users or specific setups                                                                             | Affects a very small percentage of users; typically affects an obscure feature          |
 | **D** | Discoverability     | Can be easily found in a published explanation of the attack                                  | Affects a seldom-used part, meaning an attacker would need to be very creative to discover a malicious use for it | Is obscure, meaning it’s unlikely attackers would find a way to exploit it              |
 
-Now we can apply each DREAD category from [Table 1-1](broken-reference/) to an identified threat from earlier in the chapter and score the threat from low to high (1–3). For instance, if we take the Level 2 HSI threats discussed in “[Level 2: Receiver Breakdown](broken-reference/)” on [page 10](broken-reference/), we can come up with threat ratings like the ones shown in [Table 1-2](broken-reference/).
+Now we can apply each DREAD category from [Table 1-1](../../iot/obdii/broken-reference/) to an identified threat from earlier in the chapter and score the threat from low to high (1–3). For instance, if we take the Level 2 HSI threats discussed in “[Level 2: Receiver Breakdown](../../iot/obdii/broken-reference/)” on [page 10](../../iot/obdii/broken-reference/), we can come up with threat ratings like the ones shown in [Table 1-2](../../iot/obdii/broken-reference/).
 
 **Table 1-2:** HSI Level 2 Threats with DREAD Scores
 
@@ -513,7 +513,7 @@ Now we can apply each DREAD category from [Table 1-1](broken-reference/) to an i
 | An older, unpatched version of HSI that may be exploitable        | 3     | 3     | 2     | 3     | 3     | 14        |
 | An HSI that may be susceptible to injectable serial communication | 2     | 2     | 2     | 3     | 3     | 12        |
 
-You can identify the overall rating by using the values in the Total column, as shown in [Table 1-3](broken-reference/).
+You can identify the overall rating by using the values in the Total column, as shown in [Table 1-3](../../iot/obdii/broken-reference/).
 
 **Table 1-3:** DREAD Risk Scoring Chart
 
@@ -523,7 +523,7 @@ You can identify the overall rating by using the values in the Total column, as 
 | 8–11      | Medium         |
 | 12–15     | High           |
 
-When performing a risk assessment, it’s good practice to leave the scoring results visible so that the person reading the results can better understand the risks. In the case of the HSI threats, we can assign high risk to each of these threats, as shown in [Table 1-4](broken-reference/).
+When performing a risk assessment, it’s good practice to leave the scoring results visible so that the person reading the results can better understand the risks. In the case of the HSI threats, we can assign high risk to each of these threats, as shown in [Table 1-4](../../iot/obdii/broken-reference/).
 
 **Table 1-4:** HSI Level 2 Threats with DREAD Risk Levels Applied
 
@@ -546,7 +546,7 @@ _While we could use ISO 26262 ASIL or MIL-STD-882E when rating threats, we want 
 
 At this point, we have a layout of many of the potential threats to our vehicle, and we have them ranked by risk. Now what? Well, that depends on what team you’re on. To use military jargon, the attacker side is the “red team,” and the defender side is the “blue team.” If you’re on the red team, your next step is to start attacking the highest risk areas that are likely to have the best chance of success. If you’re on the blue team, go back to your risk chart and modify each threat with a countermeasure.
 
-For example, if we were to take the two risks in “[The DREAD Rating System](broken-reference/)” on [page 11](broken-reference/), we could add a countermeasure section to each. [Table 1-5](broken-reference/) includes the countermeasure for the HSI code execution risk, and [Table 1-6](broken-reference/) includes the countermeasure for the risk of HSI interception.
+For example, if we were to take the two risks in “[The DREAD Rating System](../../iot/obdii/broken-reference/)” on [page 11](../../iot/obdii/broken-reference/), we could add a countermeasure section to each. [Table 1-5](../../iot/obdii/broken-reference/) includes the countermeasure for the HSI code execution risk, and [Table 1-6](../../iot/obdii/broken-reference/) includes the countermeasure for the risk of HSI interception.
 
 **Table 1-5:** HSI Code Execution Risk
 
@@ -588,19 +588,19 @@ We’ll detail the different buses and protocols you may run across on your vehi
 
 CAN is a simple protocol used in manufacturing and in the automobile industry. Modern vehicles are full of little embedded systems and electronic control units (ECUs) that can communicate using the CAN protocol. CAN has been a standard on US cars and light trucks since 1996, but it wasn’t made mandatory until 2008 (2001 for European vehicles). If your car is older than 1996, it still may have CAN, but you’ll need to check.
 
-CAN runs on two wires: CAN high (CANH) and CAN low (CANL). CAN uses _differential signaling_ (with the exception of low-speed CAN, discussed in “[The GMLAN Bus](broken-reference/)” on [page 20](broken-reference/)), which means that when a signal comes in, CAN raises the voltage on one line and drops the other line an equal amount (see [Figure 2-1](broken-reference/)). Differential signaling is used in environments that must be fault tolerant to noise, such as in automotive systems and manufacturing.
+CAN runs on two wires: CAN high (CANH) and CAN low (CANL). CAN uses _differential signaling_ (with the exception of low-speed CAN, discussed in “[The GMLAN Bus](../../iot/obdii/broken-reference/)” on [page 20](../../iot/obdii/broken-reference/)), which means that when a signal comes in, CAN raises the voltage on one line and drops the other line an equal amount (see [Figure 2-1](../../iot/obdii/broken-reference/)). Differential signaling is used in environments that must be fault tolerant to noise, such as in automotive systems and manufacturing.
 
 ![image](../../.gitbook/assets/000042)
 
 _Figure 2-1: CAN differential signaling_
 
-[Figure 2-1](broken-reference/) shows a signal captured using a PicoScope, which listens to both CANH (darker lines at the top of the graph) and CANL (lighter lines at the bottom of the graph). Notice that when a bit is transmitted on the CAN bus, the signal will simultaneously broadcast both 1V higher and lower. The sensors and ECUs have a transceiver that checks to ensure both signals are triggered; if they are not, the transceiver rejects the packet as noise.
+[Figure 2-1](../../iot/obdii/broken-reference/) shows a signal captured using a PicoScope, which listens to both CANH (darker lines at the top of the graph) and CANL (lighter lines at the bottom of the graph). Notice that when a bit is transmitted on the CAN bus, the signal will simultaneously broadcast both 1V higher and lower. The sensors and ECUs have a transceiver that checks to ensure both signals are triggered; if they are not, the transceiver rejects the packet as noise.
 
 The two twisted-pair wires make up the bus and require the bus to be terminated on each end. There’s a 120-ohm resistor across both wires on the termination ends. If the module isn’t on the end of the bus, it doesn’t have to worry about termination. As someone who may tap into the lines, the only time you’ll need to worry about termination is if you remove a terminating device in order to sniff the wires.
 
 _**The OBD-II Connector**_
 
-Many vehicles come equipped with an OBD-II connector, also known as the _diagnostic link connector (DLC)_, which communicates with the vehicle’s internal network. You’ll usually find this connector under the steering column or hidden elsewhere on the dash in a relatively accessible place. You may have to hunt around for it, but its outline looks similar to that in [Figure 2-2](broken-reference/).
+Many vehicles come equipped with an OBD-II connector, also known as the _diagnostic link connector (DLC)_, which communicates with the vehicle’s internal network. You’ll usually find this connector under the steering column or hidden elsewhere on the dash in a relatively accessible place. You may have to hunt around for it, but its outline looks similar to that in [Figure 2-2](../../iot/obdii/broken-reference/).
 
 ![image](../../.gitbook/assets/000044)
 
@@ -612,7 +612,7 @@ _**Finding CAN Connections**_
 
 CAN is easy to find when hunting through cables because its resting voltage is 2.5V. When a signal comes in, it’ll add or subtract 1V (3.5V or 1.5V). CAN wires run through the vehicle and connect between the ECUs and other sensors, and they’re always in dual-wire pairs. If you hook up a multimeter and check the voltage of wires in your vehicle, you’ll find that they’ll be at rest at 2.5V or fluctuating by 1V. If you find a wire transmitting at 2.5V, it’s almost certainly CAN.
 
-You should find the CANH and CANL connections on pins 6 and 14 of your OBD-II connector, as shown in [Figure 2-3](broken-reference/).
+You should find the CANH and CANL connections on pins 6 and 14 of your OBD-II connector, as shown in [Figure 2-3](../../iot/obdii/broken-reference/).
 
 ![image](../../.gitbook/assets/000046)
 
@@ -638,7 +638,7 @@ Each CAN bus packet contains four key elements:
 
 **Data** This is the data itself. The maximum size of the data carried by a standard CAN bus packet can be up to 8 bytes, but some systems force 8 bytes by padding out the packet.
 
-[Figure 2-4](broken-reference/) shows the format of standard CAN packets.
+[Figure 2-4](../../iot/obdii/broken-reference/) shows the format of standard CAN packets.
 
 ![image](../../.gitbook/assets/000048)
 
@@ -654,7 +654,7 @@ Standard packets also differ from extended ones in their use of flags. When look
 
 _**The ISO-TP Protocol**_
 
-ISO 15765-2, also known as _ISO-TP_, is a standard for sending packets over the CAN bus that extends the 8-byte CAN limit to support up to 4095 bytes by chaining CAN packets together. The most common use of ISO-TP is for diagnostics (see “[Unified Diagnostic Services](broken-reference/)” on [page 54](broken-reference/)) and KWP messages (an alternative protocol to CAN), but it can also be used any time large amounts of data need to be transferred over CAN. The can-utils program includes isotptun, a proof-of-concept tunneling tool for SocketCAN that allows two devices to tunnel IP over CAN. (For a detailed explanation of how to install and use can-utils, see “[Setting Up can-utils to Connect to CAN Devices](broken-reference/)” on [page 36](broken-reference/).)
+ISO 15765-2, also known as _ISO-TP_, is a standard for sending packets over the CAN bus that extends the 8-byte CAN limit to support up to 4095 bytes by chaining CAN packets together. The most common use of ISO-TP is for diagnostics (see “[Unified Diagnostic Services](../../iot/obdii/broken-reference/)” on [page 54](../../iot/obdii/broken-reference/)) and KWP messages (an alternative protocol to CAN), but it can also be used any time large amounts of data need to be transferred over CAN. The can-utils program includes isotptun, a proof-of-concept tunneling tool for SocketCAN that allows two devices to tunnel IP over CAN. (For a detailed explanation of how to install and use can-utils, see “[Setting Up can-utils to Connect to CAN Devices](../../iot/obdii/broken-reference/)” on [page 36](../../iot/obdii/broken-reference/).)
 
 In order to encapsulate ISO-TP into CAN, the first byte is used for extended addressing, leaving only 7 bytes for data per packet. Sending lots of information over ISO-TP can easily flood the bus, so be careful when using this standard for large transfers on an active bus.
 
@@ -666,13 +666,13 @@ If you see a bunch of arbitration IDs of 0x0, you’ve found a good indicator th
 
 _**The GMLAN Bus**_
 
-GMLAN is a CAN bus implementation by General Motors. It’s based on ISO 15765-2 ISO-TP, just like UDS (see “[Unified Diagnostic Services](broken-reference/)” on [page 54](broken-reference/)). The GMLAN bus consists of a single-wire low-speed and a dual-wire high-speed bus. The low-speed bus, a single-wire CAN bus that operates at 33.33Kbps with a maximum of 32 nodes, was adopted in an attempt to lower the cost of communication and wiring. It’s used to transport noncritical information for things like the infotainment center, HVAC controls, door locks, immobilizers, and so on. In contrast, the high-speed bus runs at 500Kbps with a maximum of 16 nodes. Nodes in a GMLAN network relate to the sensors on that bus.
+GMLAN is a CAN bus implementation by General Motors. It’s based on ISO 15765-2 ISO-TP, just like UDS (see “[Unified Diagnostic Services](../../iot/obdii/broken-reference/)” on [page 54](../../iot/obdii/broken-reference/)). The GMLAN bus consists of a single-wire low-speed and a dual-wire high-speed bus. The low-speed bus, a single-wire CAN bus that operates at 33.33Kbps with a maximum of 32 nodes, was adopted in an attempt to lower the cost of communication and wiring. It’s used to transport noncritical information for things like the infotainment center, HVAC controls, door locks, immobilizers, and so on. In contrast, the high-speed bus runs at 500Kbps with a maximum of 16 nodes. Nodes in a GMLAN network relate to the sensors on that bus.
 
 #### **The SAE J1850 Protocol** <a href="#calibre_link-462" id="calibre_link-462"></a>
 
 The SAE J1850 protocol was originally adopted in 1994 and can still be found in some of today’s vehicles, for example some General Motors and Chrysler vehicles. These bus systems are older and slower than CAN but cheaper to implement.
 
-There are two types of J1850 protocols: pulse width modulation (PWM) and variable pulse width (VPW). [Figure 2-5](broken-reference/) shows where to find PWM pins on the OBD-II connector. VPW uses only pin 2.
+There are two types of J1850 protocols: pulse width modulation (PWM) and variable pulse width (VPW). [Figure 2-5](../../iot/obdii/broken-reference/) shows where to find PWM pins on the OBD-II connector. VPW uses only pin 2.
 
 ![image](../../.gitbook/assets/000050)
 
@@ -692,13 +692,13 @@ VPW, a single-wire bus system, uses only pin 2 and is typically used by General 
 
 When compared with CAN, there are some key differences in the way VPW interprets data. For one, because VPW uses time-dependent signaling, receiving 1 bit isn’t determined by just a high potential on the bus. The bit must remain either high or low for a set amount of time in order to be considered a single 1 bit or a 0 bit. Pulling the bus to a high position will put it at around 7V, while sending a low signal will put it to ground or near-ground levels. This bus also is at a resting, or nontransmission, stage at a near-ground level (up to 3V).
 
-VPW packets use the format in [Figure 2-6](broken-reference/).
+VPW packets use the format in [Figure 2-6](../../iot/obdii/broken-reference/).
 
 ![image](../../.gitbook/assets/000052)
 
 _Figure 2-6: VPW Format_
 
-The data section is a set size—always 11 bits followed by a 1-bit CRC validity check. [Table 2-1](broken-reference/) shows the meaning of the header bits.
+The data section is a set size—always 11 bits followed by a 1-bit CRC validity check. [Table 2-1](../../iot/obdii/broken-reference/) shows the meaning of the header bits.
 
 **Table 2-1:** Meaning of Header Bits
 
@@ -722,13 +722,13 @@ The KWP2000 protocol has two variations that differ mainly in baud initializatio
 
 • ISO 14230-4 KWP (fast init, 10.4 Kbaud)
 
-ISO 9141-2, or K-Line, is a variation of KWP2000 seen most often in European vehicles. K-Line uses pin 7 and, optionally, pin 15, as shown in [Figure 2-7](broken-reference/). K-Line is a UART protocol similar to serial. UARTs use start bits and may include a parity bit and a stop bit. (If you’ve ever set up a modem, you should recognize this terminology.)
+ISO 9141-2, or K-Line, is a variation of KWP2000 seen most often in European vehicles. K-Line uses pin 7 and, optionally, pin 15, as shown in [Figure 2-7](../../iot/obdii/broken-reference/). K-Line is a UART protocol similar to serial. UARTs use start bits and may include a parity bit and a stop bit. (If you’ve ever set up a modem, you should recognize this terminology.)
 
 ![image](../../.gitbook/assets/000054)
 
 _Figure 2-7: KWP K-Line pins cable view_
 
-[Figure 2-8](broken-reference/) shows the protocol’s packet layout. Unlike CAN packets, K-Line packets have a source (transmitter) and a destination (receiver) address. K-Line can use the same or a similar parameter ID (PID) request structure as CAN. (For more on PIDs, see “[Unified Diagnostic Services](broken-reference/)” on [page 54](broken-reference/).)
+[Figure 2-8](../../iot/obdii/broken-reference/) shows the protocol’s packet layout. Unlike CAN packets, K-Line packets have a source (transmitter) and a destination (receiver) address. K-Line can use the same or a similar parameter ID (PID) request structure as CAN. (For more on PIDs, see “[Unified Diagnostic Services](../../iot/obdii/broken-reference/)” on [page 54](../../iot/obdii/broken-reference/).)
 
 ![image](../../.gitbook/assets/000057)
 
@@ -742,7 +742,7 @@ LIN can support up to 16 slave nodes that primarily just listen to the master no
 
 The maximum speed of LIN is 20Kbps. LIN is a single-wire bus that operates at 12V. You won’t see LIN broken out to the OBD connector, but it’s often used instead of direct CAN packets to handle controls to simple devices, so be aware of its existence.
 
-A LIN message frame includes a header, which is always sent by the master, and a response section, which may be sent by master or slave (see [Figure 2-9](broken-reference/)).
+A LIN message frame includes a header, which is always sent by the master, and a response section, which may be sent by master or slave (see [Figure 2-9](../../iot/obdii/broken-reference/)).
 
 ![image](../../.gitbook/assets/000059)
 
@@ -774,7 +774,7 @@ _**MOST Network Layers**_
 
 Unless your goal is to hack a car’s video or audio stream, the MOST protocol may not be all that interesting to you. That said, MOST does allow access to the in-vehicle microphone or cell system, as well as traffic information that’s likely to be of interest to malware authors.
 
-[Figure 2-10](broken-reference/) shows how MOST is divided up amongst the seven layers of the Open Systems Interconnection (OSI) model that standardizes communication over networks. If you’re familiar with other media-based networking protocols, then MOST may look familiar.
+[Figure 2-10](../../iot/obdii/broken-reference/) shows how MOST is divided up amongst the seven layers of the Open Systems Interconnection (OSI) model that standardizes communication over networks. If you’re familiar with other media-based networking protocols, then MOST may look familiar.
 
 ![image](../../.gitbook/assets/000063)
 
@@ -782,7 +782,7 @@ _Figure 2-10: MOST divided into the seven layers of the OSI model. The OSI layer
 
 _**MOST Control Blocks**_
 
-In MOST25, a block consists of 16 frames. A frame is 512 bits and looks like the illustration in [Figure 2-11](broken-reference/).
+In MOST25, a block consists of 16 frames. A frame is 512 bits and looks like the illustration in [Figure 2-11](../../iot/obdii/broken-reference/).
 
 ![image](../../.gitbook/assets/000064)
 
@@ -790,7 +790,7 @@ _Figure 2-11: MOST25 frame_
 
 Synchronous data contains 6 to 15 quadlets (each quadlet is 4 bytes), and asynchronous data contains 0 to 9 quadlets. A control frame is 2 bytes, but after combining a full block, or 16 frames, you end up with 32 bytes of control data.
 
-An assembled control block is laid out as shown in [Figure 2-12](broken-reference/).
+An assembled control block is laid out as shown in [Figure 2-12](../../iot/obdii/broken-reference/).
 
 ![image](../../.gitbook/assets/000068)
 
@@ -840,7 +840,7 @@ FIBEX data is used during firmware compile time and allows developers to referen
 
 _**FlexRay Cycles**_
 
-A FlexRay cycle can be viewed as a packet. The length of each cycle is determined at design time and should consist of four parts, as shown in [Figure 2-13](broken-reference/).
+A FlexRay cycle can be viewed as a packet. The length of each cycle is determined at design time and should consist of four parts, as shown in [Figure 2-13](../../iot/obdii/broken-reference/).
 
 ![image](../../.gitbook/assets/000070)
 
@@ -854,7 +854,7 @@ The static section of a FlexRay cycle contains a set amount of slots to store da
 
 The dynamic section is split up into minislots, typically one macrotick long. The dynamic section is usually used for less important, intermittent data, such as internal air temperature. As a minislot passes, an ECU may choose to fill the minislots with data. If all the minislots are full, the ECU must wait for the next cycle.
 
-In [Figure 2-14](broken-reference/), the FlexRay cycles are represented as train cars. Transmitters responsible for filling in information for static slots do so when the cycle passes, but dynamic slots are filled in on a first-come, first-served basis. All train cars are the same size and represent the time deterministic properties of FlexRay.
+In [Figure 2-14](../../iot/obdii/broken-reference/), the FlexRay cycles are represented as train cars. Transmitters responsible for filling in information for static slots do so when the cycle passes, but dynamic slots are filled in on a first-come, first-served basis. All train cars are the same size and represent the time deterministic properties of FlexRay.
 
 ![image](../../.gitbook/assets/000074)
 
@@ -866,7 +866,7 @@ While most states are obvious, some need further explanation. Specifically, onli
 
 _**Packet Layout**_
 
-The actual packet that FlexRay uses contains several fields and fits into the cycle in the static or dynamic slot (see [Figure 2-15](broken-reference/)).
+The actual packet that FlexRay uses contains several fields and fits into the cycle in the static or dynamic slot (see [Figure 2-15](../../iot/obdii/broken-reference/)).
 
 ![image](../../.gitbook/assets/000075)
 
@@ -902,23 +902,23 @@ Because MOST and FlexRay are expensive and losing support (the FlexRay consortiu
 
 While there’s no common standard for CAN traffic, manufacturers are starting to use the IEEE 802.1AS Audio Video Bridging (AVB) standard. This standard supports quality of service (QoS) and traffic shaping, and it uses time-synchronized UDP packets. In order to achieve this synchronization, the nodes follow a _best master clock_ algorithm to determine which node is to be the timing master. The master node will normally sync with an outside timing source, such as GPS or (worst case) an on-board oscillator. The master syncs with the other nodes by sending timed packets (10 milliseconds), the slave responds with a _delay request_, and the time offset is calculated from that exchange.
 
-From a researcher’s perspective, the only challenge with vehicle Ethernet lies in figuring out how to talk to the Ethernet. You may need to make or buy a custom cable to communicate with vehicle Ethernet cables because they won’t look like the standard twisted-pair cables that you’d find in a networking closet. Typically, a connector will just be wires like the ones you find connected to an ECU. Don’t expect the connectors to have their own plug, but if they do, it won’t look like an RJ-45 connector. Some exposed connectors are actually round, as shown in [Figure 2-16](broken-reference/).
+From a researcher’s perspective, the only challenge with vehicle Ethernet lies in figuring out how to talk to the Ethernet. You may need to make or buy a custom cable to communicate with vehicle Ethernet cables because they won’t look like the standard twisted-pair cables that you’d find in a networking closet. Typically, a connector will just be wires like the ones you find connected to an ECU. Don’t expect the connectors to have their own plug, but if they do, it won’t look like an RJ-45 connector. Some exposed connectors are actually round, as shown in [Figure 2-16](../../iot/obdii/broken-reference/).
 
 _Figure 2-16: Round Ethernet connectors_
 
 #### **OBD-II Connector Pinout Maps** <a href="#calibre_link-307" id="calibre_link-307"></a>
 
-The remaining pins in the OBD-II pinout are manufacturer specific. Mappings vary by manufacturer, and these are just guidelines. Your pinout could differ depending on your make and model. For example, [Figure 2-17](broken-reference/) shows a General Motors pinout.
+The remaining pins in the OBD-II pinout are manufacturer specific. Mappings vary by manufacturer, and these are just guidelines. Your pinout could differ depending on your make and model. For example, [Figure 2-17](../../iot/obdii/broken-reference/) shows a General Motors pinout.
 
 _Figure 2-17: Complete OBD pinout cable view for a General Motors vehicle_
 
 Notice that the OBD connector can have more than one CAN line, such as a low-speed line (LS-CAN) or a mid-speed one (MS-CAN). Low-speed operates around 33Kbps, mid-speed is around 128Kbps, and high-speed (HS-CAN) is around 500Kbps.
 
-Often you’ll use a DB9-to-OBDII connector when connecting your sniffer to your vehicle’s OBD-II connector. [Figure 2-18](broken-reference/) shows the plug view, not that of the cable.
+Often you’ll use a DB9-to-OBDII connector when connecting your sniffer to your vehicle’s OBD-II connector. [Figure 2-18](../../iot/obdii/broken-reference/) shows the plug view, not that of the cable.
 
 _Figure 2-18: Typical DB9 connector plug view. An asterisk (\*) means that the pin is optional. A DB9 adapter can have as few as three pins connected._
 
-This pinout is a common pinout in the United Kingdom, and if you’re making a cable yourself, this one will be the easiest to use. However, some sniffers, such as many Arduino shields, expect the US-style DB9 connector (see [Figure 2-19](broken-reference/)).
+This pinout is a common pinout in the United Kingdom, and if you’re making a cable yourself, this one will be the easiest to use. However, some sniffers, such as many Arduino shields, expect the US-style DB9 connector (see [Figure 2-19](../../iot/obdii/broken-reference/)).
 
 _Figure 2-19: US-style DB9 connector, plug view_
 
@@ -928,7 +928,7 @@ The US version has more features and gives you more access to other OBD connecto
 
 OBD-III is a rather controversial evolution of the OBD-II standard. OBD-II was originally designed to be compliant with emissions testing (at least from the regulators’ perspective), but now that the powertrain control module (PCM) knows whether a vehicle is within guidelines, we’re still left with the inconvenience of the vehicle owner having to go for testing every other year. The OBD-III standard allows the PCM to communicate its status remotely without the owner’s interaction. This communication is typically accomplished through a roadside transponder, but cell phones and satellite communications work as well.
 
-The California Air Resources Board (CARB) began testing roadside readers for OBD-III in 1994 and is capable of reading vehicle data from eight lanes of traffic traveling at 100 miles per hour. If a fault is detected in the system, it’ll transmit the diagnostic trouble codes (DTC) and vehicle identification numbers (VIN) to a nearby transponder (see “[Diagnostic Trouble Codes](broken-reference/)” on [page 52](broken-reference/)). The idea is to have the system report that pollutants are entering the atmosphere without having to wait up to two years for an emissions check.
+The California Air Resources Board (CARB) began testing roadside readers for OBD-III in 1994 and is capable of reading vehicle data from eight lanes of traffic traveling at 100 miles per hour. If a fault is detected in the system, it’ll transmit the diagnostic trouble codes (DTC) and vehicle identification numbers (VIN) to a nearby transponder (see “[Diagnostic Trouble Codes](../../iot/obdii/broken-reference/)” on [page 52](../../iot/obdii/broken-reference/)). The idea is to have the system report that pollutants are entering the atmosphere without having to wait up to two years for an emissions check.
 
 Most implementations of OBD-III are manufacturer specific. The vehicle phones home to the manufacturer with faults and then contacts the owner to inform them of the need for repairs. As you might imagine, this system has some obvious legal questions that still need to be answered, including the risk of mass surveillance of private property. Certainly, there’s lots of room for abuses by law enforcement, including speed traps, tracking, immobilization, and so on.
 
@@ -952,7 +952,7 @@ It’s important to note that even if OBD-III sends only DTC and VIN, it’s tri
 
 When working on your target vehicle, you may run into a number of different buses and protocols. When you do, examine the pins that your OBD-II connector uses for your particular vehicle to help you determine what tools you’ll need and what to expect when reversing your vehicle’s network.
 
-I’ve focused in this chapter on easily accessible buses via the OBD-II connector, but you should also look at your vehicle wiring diagrams to determine where to find other bus lines between sensors. Not all bus lines are exposed via the OBD-II connector, and when looking for a certain packet, it may be easier to locate the module and bus lines leaving a specific module in order to reverse a particular packet. (See [Chapter 7](broken-reference/) for details on how to read wiring diagrams.)
+I’ve focused in this chapter on easily accessible buses via the OBD-II connector, but you should also look at your vehicle wiring diagrams to determine where to find other bus lines between sensors. Not all bus lines are exposed via the OBD-II connector, and when looking for a certain packet, it may be easier to locate the module and bus lines leaving a specific module in order to reverse a particular packet. (See [Chapter 7](../../iot/obdii/broken-reference/) for details on how to read wiring diagrams.)
 
 ### **3** **VEHICLE COMMUNICATION WITH SOCKETCAN** <a href="#calibre_link-253" id="calibre_link-253"></a>
 
@@ -966,7 +966,7 @@ Volkswagen Group Research contributed the original SocketCAN implementation, whi
 
 SocketCAN ties into the Linux networking stack, which makes it very easy to create tools to support CAN. SocketCAN applications can use standard C socket calls with a custom network protocol family, PF\_CAN. This functionality allows the kernel to handle CAN device drivers and to interface with existing networking hardware to provide a common interface and user-space utilities.
 
-[Figure 3-1](broken-reference/) compares the implementation of traditional CAN software with that of a unified SocketCAN.
+[Figure 3-1](../../iot/obdii/broken-reference/) compares the implementation of traditional CAN software with that of a unified SocketCAN.
 
 _Figure 3-1: SocketCAN layout (left) and traditional CAN software (right)_
 
@@ -1035,7 +1035,7 @@ TX packets:0 errors:0 dropped:0 overruns:0 carrier:0\
 collisions:0 txqueuelen:10\
 RX bytes:0 (0.0 B) TX bytes:0 (0.0 B)
 
-Now set the CAN bus speed. (You’ll find more information on bus speeds in [Chapter 5](broken-reference/).) The key component you need to set is the bit rate. This is the speed of the bus. A typical value for high-speed CAN (HS-CAN) is 500Kbps. Values of 250Kbps or 125Kbps are typical for lower-speed CAN buses.
+Now set the CAN bus speed. (You’ll find more information on bus speeds in [Chapter 5](../../iot/obdii/broken-reference/).) The key component you need to set is the bit rate. This is the speed of the bus. A typical value for high-speed CAN (HS-CAN) is 500Kbps. Values of 250Kbps or 125Kbps are typical for lower-speed CAN buses.
 
 $ sudo ip link set can0 type can bitrate 500000\
 $ sudo ip link set up can0
@@ -1072,7 +1072,7 @@ The slcand daemon provides the interface needed to translate serial communicatio
 
 \-o Opens the device
 
-\-s6 Sets the CAN bus baud rate and speed (see [Table 3-1](broken-reference/))
+\-s6 Sets the CAN bus baud rate and speed (see [Table 3-1](../../iot/obdii/broken-reference/))
 
 \-t hw Specifies the serial flow control, either HW (hardware) or SW (software)
 
@@ -1080,7 +1080,7 @@ The slcand daemon provides the interface needed to translate serial communicatio
 
 /dev/ttyUSB0 Your USB FTDI device
 
-[Table 3-1](broken-reference/) lists the numbers passed to -s and the corresponding baud rates.
+[Table 3-1](../../iot/obdii/broken-reference/) lists the numbers passed to -s and the corresponding baud rates.
 
 **Table 3-1:** Numbers and Corresponding Baud Rates
 
@@ -1125,7 +1125,7 @@ If you check dmesg, you shouldn’t see much more than a message like this:
 $ dmesg\
 \[604882.283392] vcan: Virtual CAN interface driver
 
-Now you just set up the interface as discussed in “[Configuring Built-In Chipsets](broken-reference/)” on [page 37](broken-reference/) but without specifying a baud rate for the virtual interface.
+Now you just set up the interface as discussed in “[Configuring Built-In Chipsets](../../iot/obdii/broken-reference/)” on [page 37](../../iot/obdii/broken-reference/) but without specifying a baud rate for the virtual interface.
 
 $ ip link add dev vcan0 type vcan\
 $ ip link set up vcan0
@@ -1180,7 +1180,7 @@ cansend This tool sends a single CAN frame to the network.
 
 cansniffer This interactive sniffer groups packets by ID and highlights changed bytes.
 
-isotpdump This tool dumps ISO-TP CAN packets, which are explained in “[Sending Data with ISO-TP and CAN](broken-reference/)” on [page 55](broken-reference/).
+isotpdump This tool dumps ISO-TP CAN packets, which are explained in “[Sending Data with ISO-TP and CAN](../../iot/obdii/broken-reference/)” on [page 55](../../iot/obdii/broken-reference/).
 
 isotprecv This utility receives ISO-TP CAN packets and outputs to stdout.
 
@@ -1348,7 +1348,7 @@ The protocol for socketcand is essentially the same as that of Jan-Niklas Meier�
 
 #### **Kayak** <a href="#calibre_link-490" id="calibre_link-490"></a>
 
-Kayak ([_http://kayak.2codeornot2code.org/_](http://kayak.2codeornot2code.org)), a Java-based GUI for CAN diagnostics and monitoring (see [Figure 3-2](broken-reference/)), is one of the best tools for use with socketcand. Kayak links with OpenStreetMaps for mapping and can handle CAN definitions. As a Java-based application, it’s platform independent, so it leans on socketcand to handle communication to the CAN transceivers.
+Kayak ([_http://kayak.2codeornot2code.org/_](http://kayak.2codeornot2code.org)), a Java-based GUI for CAN diagnostics and monitoring (see [Figure 3-2](../../iot/obdii/broken-reference/)), is one of the best tools for use with socketcand. Kayak links with OpenStreetMaps for mapping and can handle CAN definitions. As a Java-based application, it’s platform independent, so it leans on socketcand to handle communication to the CAN transceivers.
 
 You can download a binary package for Kayak or compile from source. In order to compile Kayak, install the latest version of Apache Maven, and clone the Kayak git repository ([_git://github.com/dschanoeh/Kayak_](http://git/github.com/dschanoeh/Kayak)). Once the clone is complete, run the following:
 
@@ -1369,17 +1369,17 @@ _You can attach as many CAN devices as you want to socketcand, separated by comm
 Next, start Kayak and take the following steps:
 
 1. Create a new project with CTRL-N and give it a name.
-2.  Right-click the project and choose **Newbus**; then, give your bus a name (see [Figure 3-3](broken-reference/)).
+2.  Right-click the project and choose **Newbus**; then, give your bus a name (see [Figure 3-3](../../iot/obdii/broken-reference/)).
 
     _Figure 3-3: Creating a name for the CAN bus_
-3.  Click the **Connections** tab at the right; your socketcand should show up under Auto Discovery (see [Figure 3-4](broken-reference/)).
+3.  Click the **Connections** tab at the right; your socketcand should show up under Auto Discovery (see [Figure 3-4](../../iot/obdii/broken-reference/)).
 
     _Figure 3-4: Finding Auto Discovery under the Connections tab_
-4.  Drag the socketcand connection to the bus connection. (The bus connection should say _Connection: None_ before it’s set up.) To see the bus, you may have to expand it by clicking the drop-down arrow next to the bus name, as shown in [Figure 3-5](broken-reference/).
+4.  Drag the socketcand connection to the bus connection. (The bus connection should say _Connection: None_ before it’s set up.) To see the bus, you may have to expand it by clicking the drop-down arrow next to the bus name, as shown in [Figure 3-5](../../iot/obdii/broken-reference/).
 
     _Figure 3-5: Setting up the bus connection_
 5. Right-click the bus and choose **Open RAW view**.
-6.  Press the play button (circled in [Figure 3-6](broken-reference/)); you should start to see packets from the CAN bus.
+6.  Press the play button (circled in [Figure 3-6](../../iot/obdii/broken-reference/)); you should start to see packets from the CAN bus.
 
     _Figure 3-6: Open RAW view and press the play button to see packets from the CAN bus._
 7. Choose **Colorize** from the toolbar to make it easier to see and read the changing packets.
@@ -1396,7 +1396,7 @@ In this chapter, you learned how to use SocketCAN as a unified interface for CAN
 
 ![image](../../.gitbook/assets/000023)
 
-The OBD-II connector is primarily used by mechanics to quickly analyze and troubleshoot problems with a vehicle. (See “[The OBD-II Connector](broken-reference/)” on [page 17](broken-reference/) for help locating the OBD connector.) When a vehicle experiences a fault, it saves information related to that fault and triggers the engine warning light, also known as the _malfunction indicator lamp (MIL)._ These routine diagnostic checks are handled by the vehicle’s primary ECU, the powertrain control module (PCM), which can be made up of several ECUs (but to keep the discussion simple, we’ll refer to it only as the PCM).
+The OBD-II connector is primarily used by mechanics to quickly analyze and troubleshoot problems with a vehicle. (See “[The OBD-II Connector](../../iot/obdii/broken-reference/)” on [page 17](../../iot/obdii/broken-reference/) for help locating the OBD connector.) When a vehicle experiences a fault, it saves information related to that fault and triggers the engine warning light, also known as the _malfunction indicator lamp (MIL)._ These routine diagnostic checks are handled by the vehicle’s primary ECU, the powertrain control module (PCM), which can be made up of several ECUs (but to keep the discussion simple, we’ll refer to it only as the PCM).
 
 If you trigger faults while experimenting with the bus on a vehicle, you’ll need to able to read and write to the PCM in order to clear them. In this chapter, we’ll learn how to fetch and clear diagnostic codes as well as query the diagnostic services of the ECU. We’ll also learn how to access a vehicle’s crash data recordings and how to brute-force hidden diagnostic codes.
 
@@ -1434,7 +1434,7 @@ In an ideal world, these snapshots would happen as soon the DTC occurs, but the 
 
 _**DTC Format**_
 
-A DTC is a five-character alphanumeric code. For example, you’ll see codes like P0477 (exhaust pressure control valve low) and U0151 (lost communication with restraint control module). The code in the first byte position represents the basic function of the component that set the code, as shown in [Table 4-1](broken-reference/).
+A DTC is a five-character alphanumeric code. For example, you’ll see codes like P0477 (exhaust pressure control valve low) and U0151 (lost communication with restraint control module). The code in the first byte position represents the basic function of the component that set the code, as shown in [Table 4-1](../../iot/obdii/broken-reference/).
 
 **Table 4-1:** Diagnostic Code Layouts
 
@@ -1450,11 +1450,11 @@ A DTC is a five-character alphanumeric code. For example, you’ll see codes lik
 
 _When set to 3, byte 2 is both an SAE-defined standard and a manufacturer-specific code. Originally, 3 was used exclusively for manufacturers, but pressure is mounting to standardize 3 to mean a standard code instead. In modern cars, if you see a 3 in the second position, it’s probably an SAE standard code._
 
-The five characters in a DTC are represented by just two raw bytes on the network. [Table 4-2](broken-reference/) shows how to break down the 2 DTC bytes into a full DTC code.
+The five characters in a DTC are represented by just two raw bytes on the network. [Table 4-2](../../iot/obdii/broken-reference/) shows how to break down the 2 DTC bytes into a full DTC code.
 
 **Table 4-2:** Diagnostic Code Binary Breakdown
 
-Except for the first two, the characters have a one-to-one relationship. Refer to [Table 4-1](broken-reference/) to see how the first two bits are assigned.
+Except for the first two, the characters have a one-to-one relationship. Refer to [Table 4-1](../../iot/obdii/broken-reference/) to see how the first two bits are assigned.
 
 You should be able to look up the meaning of any codes that follow the SAE standard online. Here are some example ranges for common powertrain DTCs:
 
@@ -1511,11 +1511,11 @@ To test ISO-TP, connect to a CAN network that has diagnostic-capable modules suc
 $ cansend can0 7df#02010d\
 Replies similar to 7e8 03 41 0d 00
 
-In this listing, 7df is the OBD diagnostic code, 02 is the size of the packet, 01 is the mode (show current data; see [Appendix B](broken-reference/) for a list of common modes and PIDs), and 0d is the service (a vehicle speed of 0 because the vehicle was stationary). The response adds 0x8 to the ID (7e8); the next byte is the size of the response. Responses then add 0x40 to the type of request, which is 0x41 in this case. Then, the service is repeated and followed by the data for the service. ISO-TP dictates how to respond to a CAN packet.
+In this listing, 7df is the OBD diagnostic code, 02 is the size of the packet, 01 is the mode (show current data; see [Appendix B](../../iot/obdii/broken-reference/) for a list of common modes and PIDs), and 0d is the service (a vehicle speed of 0 because the vehicle was stationary). The response adds 0x8 to the ID (7e8); the next byte is the size of the response. Responses then add 0x40 to the type of request, which is 0x41 in this case. Then, the service is repeated and followed by the data for the service. ISO-TP dictates how to respond to a CAN packet.
 
 Normal CAN packets use a “fire-and-forget” structure, meaning they simply send data and don’t wait for a return packet. ISO-TP specifies a method to receive response data. Because this response data can’t be sent back using the same arbitration ID, the receiver returns the response by adding 0x8 to the ID and noting that the response is a positive one by adding 0x40 to the request. (If the response fails, you should see a 0x7F instead of the positive + 0x40 response.)
 
-[Table 4-3](broken-reference/) lists the most common error responses.
+[Table 4-3](../../iot/obdii/broken-reference/) lists the most common error responses.
 
 **Table 4-3:** Common UDS Error Responses
 
@@ -1552,7 +1552,7 @@ Replies similar to 7e8 03 7F 11 11
 
 In this response, we can see that after 0x7e8, the next byte is 0x03, which represents the size of the response. The next byte, 0x7F, represents an error for service 0x11, the third byte. The final byte, 0x11, represents the error returned—in this case, service not supported (SNS).
 
-To send or receive something with more than the 8 bytes of data in a standard CAN packet, use SocketCAN’s ISO-TP tools. Run istotpsend in one terminal, and then run isotpsniffer (or isotprecv) in another terminal to see the response to your istotpsend commands. (Don’t forget to insmod your can-isotp.ko module, as described in [Chapter 3](broken-reference/).)
+To send or receive something with more than the 8 bytes of data in a standard CAN packet, use SocketCAN’s ISO-TP tools. Run istotpsend in one terminal, and then run isotpsniffer (or isotprecv) in another terminal to see the response to your istotpsend commands. (Don’t forget to insmod your can-isotp.ko module, as described in [Chapter 3](../../iot/obdii/broken-reference/).)
 
 For example, in one terminal, set up a sniffer like this:
 
@@ -1571,7 +1571,7 @@ can0 7DF \[2] 09 02 - '..'\
 can0 7E8 \[20] 49➊ 02➋ 01➌ 31 47 31 5A 54 35 33 38 32 36 46 31 30 39 31 34 39\
 \- 'I..1G1ZT53826F109149'
 
-The first 3 bytes make up the UDS response. 0x49 ➊ is service 0x09 + 0x40, which signifies a positive response for PID 0x02 ➋, the next byte. The third byte, 0x01 ➌, indicates the number of data items that are being returned (one VIN in this case). The VIN returned is 1G1ZT53826F109149. Enter this VIN into Google, and you should see detailed information about this vehicle, which was taken from an ECU pulled from a wrecked car found in a junkyard. [Table 4-4](broken-reference/) shows the information you should see.
+The first 3 bytes make up the UDS response. 0x49 ➊ is service 0x09 + 0x40, which signifies a positive response for PID 0x02 ➋, the next byte. The third byte, 0x01 ➌, indicates the number of data items that are being returned (one VIN in this case). The VIN returned is 1G1ZT53826F109149. Enter this VIN into Google, and you should see detailed information about this vehicle, which was taken from an ECU pulled from a wrecked car found in a junkyard. [Table 4-4](../../iot/obdii/broken-reference/) shows the information you should see.
 
 **Table 4-4:** VIN Information
 
@@ -1583,11 +1583,11 @@ If you were watching this UDS query via a normal CAN sniffer, you’d have seen 
 
 **NOTE**
 
-_If you have difficulty running the ISO-TP tools, make sure you have the proper kernel module compiled and installed (see “_[_Installing Additional Kernel Modules_](broken-reference/)_” on_ [_page 42_](broken-reference/)_)._
+_If you have difficulty running the ISO-TP tools, make sure you have the proper kernel module compiled and installed (see “_[_Installing Additional Kernel Modules_](../../iot/obdii/broken-reference/)_” on_ [_page 42_](../../iot/obdii/broken-reference/)_)._
 
 _**Understanding Modes and PIDs**_
 
-The first byte of the data section in a diagnostic code is the mode. In automotive manuals, modes start with a $, as in $1. The $ is used to state that the number is in hex. The mode $1 is the same as 0x01, $0A is the same as 0x0A, and so on. I’ve listed a few examples here, and there are more in [Appendix B](broken-reference/) for reference.
+The first byte of the data section in a diagnostic code is the mode. In automotive manuals, modes start with a $, as in $1. The $ is used to state that the number is in hex. The mode $1 is the same as 0x01, $0A is the same as 0x0A, and so on. I’ve listed a few examples here, and there are more in [Appendix B](../../iot/obdii/broken-reference/) for reference.
 
 **0x01: Shows current data**
 
@@ -1599,7 +1599,7 @@ Has the same PID values as 0x01, except that the data returned is from the freez
 
 **0x03: Shows stored “confirmed” diagnostic trouble codes**
 
-Matches the DTCs mentioned in “[DTC Format](broken-reference/)” on [page 52](broken-reference/).
+Matches the DTCs mentioned in “[DTC Format](../../iot/obdii/broken-reference/)” on [page 52](../../iot/obdii/broken-reference/).
 
 **0x04: Erases DTCs and clears diagnostic history**
 
@@ -1619,7 +1619,7 @@ Several pieces of data can be pulled with mode 0x09.
 
 **0x0a: Permanent diagnostic codes**
 
-This mode pulls DTCs that have been erased via mode 0x04. These DTCs are cleared only once the PCM has verified the fault condition is no longer present (see “[Erasing DTCs](broken-reference/)” on [page 54](broken-reference/)).
+This mode pulls DTCs that have been erased via mode 0x04. These DTCs are cleared only once the PCM has verified the fault condition is no longer present (see “[Erasing DTCs](../../iot/obdii/broken-reference/)” on [page 54](../../iot/obdii/broken-reference/)).
 
 _**Brute-Forcing Diagnostic Modes**_
 
@@ -1738,7 +1738,7 @@ You likely know that airplanes have black boxes that record information about fl
 
 • Vehicle speed
 
-While this data is very similar to freeze frame data, its purpose is to collect and store information during a crash. The EDR constantly stores information, typically only about 20 seconds worth at any one time. This information was originally stored in a vehicle’s airbag control module (ACM), but today’s vehicles distribute this data among the vehicle’s ECUs. These boxes collect data from other ECUs and sensors and store them for recovery after a crash. [Figure 4-1](broken-reference/) shows a typical EDR.
+While this data is very similar to freeze frame data, its purpose is to collect and store information during a crash. The EDR constantly stores information, typically only about 20 seconds worth at any one time. This information was originally stored in a vehicle’s airbag control module (ACM), but today’s vehicles distribute this data among the vehicle’s ECUs. These boxes collect data from other ECUs and sensors and store them for recovery after a crash. [Figure 4-1](../../iot/obdii/broken-reference/) shows a typical EDR.
 
 _Figure 4-1: A typical event data recorder_
 
@@ -1828,7 +1828,7 @@ In order to reverse engineer the CAN bus, we first have to be able to read the C
 
 #### **Locating the CAN Bus** <a href="#calibre_link-503" id="calibre_link-503"></a>
 
-Of course, before we can reverse the CAN bus, we need to locate the CAN. If you have access to the OBD-II connector, your vehicle’s connector pinout map should show you where the CAN is. (See [Chapter 2](broken-reference/) for common locations of the OBD connectors and their pinouts.) If you don’t have access to the OBD-II connector or you’re looking for hidden CAN signals, try one of these methods:
+Of course, before we can reverse the CAN bus, we need to locate the CAN. If you have access to the OBD-II connector, your vehicle’s connector pinout map should show you where the CAN is. (See [Chapter 2](../../iot/obdii/broken-reference/) for common locations of the OBD connectors and their pinouts.) If you don’t have access to the OBD-II connector or you’re looking for hidden CAN signals, try one of these methods:
 
 • Look for paired and twisted wires. CAN wires are typically two wires twisted together.
 
@@ -1836,7 +1836,7 @@ Of course, before we can reverse the CAN bus, we need to locate the CAN. If you 
 
 • Use a multimeter to check for ohm resistance. The CAN bus uses a 120-ohm terminator on each end of the bus, so there should be 60 ohms between the two twisted-pair wires you suspect are CAN.
 
-• Use a two-channel oscilloscope and subtract the difference between the two suspected CAN wires. You should get a constant signal because the differential signals should cancel each other out. (Differential signaling is discussed in “[The CAN Bus](broken-reference/)” on [page 16](broken-reference/).)
+• Use a two-channel oscilloscope and subtract the difference between the two suspected CAN wires. You should get a constant signal because the differential signals should cancel each other out. (Differential signaling is discussed in “[The CAN Bus](../../iot/obdii/broken-reference/)” on [page 16](../../iot/obdii/broken-reference/).)
 
 **NOTE**
 
@@ -1848,7 +1848,7 @@ Once you’ve identified a CAN network, the next step is to start monitoring the
 
 First, you need to determine the type of communication running on the bus. You’ll often want to identify a certain signal or the way a certain component talks—for example, how the car unlocks or how the drivetrain works. In order to do so, locate the bus those target components use, and then reverse engineer the packets traveling on that bus to identify their purpose.
 
-To monitor the activity on your CAN, you need a device that can monitor and generate CAN packets, such as the ones discussed in [Appendix A](broken-reference/). There are a _ton_ of these devices on the market. The cheap OBD-II devices that sell for under $20 technically work, but their sniffers are slow and will miss a lot of packets. It’s always best to have a device that’s as open as possible because it’ll work with the majority of software tools—open source hardware and software is ideal. However, a proprietary device specifically designed to sniff CAN should still work. We’ll look at using candump, from the can-utils suite, and Wireshark to capture and filter the packets.
+To monitor the activity on your CAN, you need a device that can monitor and generate CAN packets, such as the ones discussed in [Appendix A](../../iot/obdii/broken-reference/). There are a _ton_ of these devices on the market. The cheap OBD-II devices that sell for under $20 technically work, but their sniffers are slow and will miss a lot of packets. It’s always best to have a device that’s as open as possible because it’ll work with the majority of software tools—open source hardware and software is ideal. However, a proprietary device specifically designed to sniff CAN should still work. We’ll look at using candump, from the can-utils suite, and Wireshark to capture and filter the packets.
 
 Generic packet analysis won’t work for CAN because CAN packets are unique to each vehicle’s make and model. Also, because there’s so much noise on CAN, it’s too cumbersome to sort through every packet as it flows by in sequence.
 
@@ -1856,19 +1856,19 @@ _**Using Wireshark**_
 
 Wireshark ([_https://www.wireshark.org/_](https://www.wireshark.org)) is a common network monitoring tool. If your background is in networking, your first instinct may be to use Wireshark to look at CAN packets. This technically works, but we will soon see why Wireshark is not the best tool for the job.
 
-If you want to use Wireshark to capture CAN packets, you can do so together with SocketCAN. Wireshark can listen on both canX and vcanX devices, but not on slcanX because serial-link devices are not true netlink devices and they need a translation daemon in order for them to work. If you need to use a slcanX device with Wireshark, try changing the name from _slcanX_ to _canX_. (I discuss CAN interfaces in detail [Chapter 2](broken-reference/).)
+If you want to use Wireshark to capture CAN packets, you can do so together with SocketCAN. Wireshark can listen on both canX and vcanX devices, but not on slcanX because serial-link devices are not true netlink devices and they need a translation daemon in order for them to work. If you need to use a slcanX device with Wireshark, try changing the name from _slcanX_ to _canX_. (I discuss CAN interfaces in detail [Chapter 2](../../iot/obdii/broken-reference/).)
 
 If renaming the interface doesn’t work or you simply need to move CAN packets from an interface that Wireshark can’t read to one it can, you can bridge the two interfaces. You’ll need to use candump from the can-utils package in bridge mode to send packets from slcan0 to vcan0.
 
 $ candump -b vcan0 slcan0
 
-Notice in [Figure 5-1](broken-reference/) that the data section isn’t decoded and is just showing raw hex bytes. This is because Wireshark’s decoder handles only the basic CAN header and doesn’t know how to deal with ISO-TP or UDS packets. The highlighted packet is a UDS request for VIN. (I’ve sorted the packets in the screen by identifier, rather than by time, to make it easier to read.)
+Notice in [Figure 5-1](../../iot/obdii/broken-reference/) that the data section isn’t decoded and is just showing raw hex bytes. This is because Wireshark’s decoder handles only the basic CAN header and doesn’t know how to deal with ISO-TP or UDS packets. The highlighted packet is a UDS request for VIN. (I’ve sorted the packets in the screen by identifier, rather than by time, to make it easier to read.)
 
 _Figure 5-1: Wireshark on the CAN bus_
 
 _**Using candump**_
 
-As with Wireshark, candump doesn’t decode the data for you; that job is left up to you, as the reverse engineer. [Listing 5-1](broken-reference/) uses slcan0 as the sniffer device.
+As with Wireshark, candump doesn’t decode the data for you; that job is left up to you, as the reverse engineer. [Listing 5-1](../../iot/obdii/broken-reference/) uses slcan0 as the sniffer device.
 
 $ candump slcan0\
 slcan0➊ 388➋ \[2]➌ 01 10➍\
@@ -1909,7 +1909,7 @@ Devices on a CAN network are noisy, often pulsing at set intervals or when trigg
 
 **Grouping Packets with cansniffer**
 
-The cansniffer command line tool groups the packets by arbitration ID and highlights the bytes that have changed since the last time the sniffer looked at that ID. For example, [Figure 5-2](broken-reference/) shows the result of running cansniffer on the device slcan0.
+The cansniffer command line tool groups the packets by arbitration ID and highlights the bytes that have changed since the last time the sniffer looked at that ID. For example, [Figure 5-2](../../iot/obdii/broken-reference/) shows the result of running cansniffer on the device slcan0.
 
 _Figure 5-2:_ cansniffer _example output_
 
@@ -1965,7 +1965,7 @@ ID Binary Representation\
 
 For those not familiar with AND operations, each binary bit is compared, and if _both_ are a 1 then the output is a 1. For instance, 1 AND 1 = 1, while 1 AND 0 = 0.
 
-If you prefer to have a GUI interface, Kayak, which we discussed in “[Kayak](broken-reference/)” on [page 46](broken-reference/), is a CAN bus–monitoring application that also uses socketcand and will colorize its display of capture packets. Kayak won’t remove repeating packets the way cansniffer does, but it offers a few unique capabilities that you can’t easily get on the command line, such as documenting the identified packets in XML (_.kcd_ files), which can be used by Kayak to display virtual instrument clusters and map data (see [Figure 5-3](broken-reference/)).
+If you prefer to have a GUI interface, Kayak, which we discussed in “[Kayak](../../iot/obdii/broken-reference/)” on [page 46](../../iot/obdii/broken-reference/), is a CAN bus–monitoring application that also uses socketcand and will colorize its display of capture packets. Kayak won’t remove repeating packets the way cansniffer does, but it offers a few unique capabilities that you can’t easily get on the command line, such as documenting the identified packets in XML (_.kcd_ files), which can be used by Kayak to display virtual instrument clusters and map data (see [Figure 5-3](../../iot/obdii/broken-reference/)).
 
 _Figure 5-3: Kayak GUI interface_
 
@@ -1975,13 +1975,13 @@ Once you’ve used cansniffer or a similar tool to identify certain packets to f
 
 The can-utils suite records CAN packets using a simple ASCII format, which you can view with a simple text editor, and most of its tools support this format for both recording and playback. For example, you can record with candump, redirect standard output or use the command line options to record to a file, and then use canplayer to play back recordings.
 
-[Figure 5-4](broken-reference/) shows a view of the layout of Kayak’s equivalent to cansniffer.
+[Figure 5-4](../../iot/obdii/broken-reference/) shows a view of the layout of Kayak’s equivalent to cansniffer.
 
 _Figure 5-4: Kayak recording to a logfile_
 
-To record CAN packets with Kayak, first click the Play button in the Log files tab ➊. Then drag one or more buses from the Projects pane to the Busses field of the LogOutput Window tab ➋. Press the Record and Stop buttons at the bottom of the LogOutput window ➌ to start or stop recording. Once your packet capture is complete, the logging should show in the Log Directory drop-down menu (see [Figure 5-5](broken-reference/)).
+To record CAN packets with Kayak, first click the Play button in the Log files tab ➊. Then drag one or more buses from the Projects pane to the Busses field of the LogOutput Window tab ➋. Press the Record and Stop buttons at the bottom of the LogOutput window ➌ to start or stop recording. Once your packet capture is complete, the logging should show in the Log Directory drop-down menu (see [Figure 5-5](../../iot/obdii/broken-reference/)).
 
-If you open a Kayak logfile, you’ll see something like the code snippet in [Listing 5-2](broken-reference/). The values in this example won’t directly correlate to those in [Figure 5-4](broken-reference/) because the GUI groups by ID, as in cansniffer, but the log is sequential, as in candump.
+If you open a Kayak logfile, you’ll see something like the code snippet in [Listing 5-2](../../iot/obdii/broken-reference/). The values in this example won’t directly correlate to those in [Figure 5-4](../../iot/obdii/broken-reference/) because the GUI groups by ID, as in cansniffer, but the log is sequential, as in candump.
 
 PLATFORM NO\_PLATFORM\
 DESCRIPTION "No description"\
@@ -1996,9 +1996,9 @@ _Listing 5-2: Contents of Kayak’s logfile_
 
 _Figure 5-5: Right pane of Log files tab settings_
 
-Other than some metadata (PLATFORM, DESCRIPTION, and DEVICE\_ALIAS), the log is pretty much the same as the one captured by the can-utils package: ➊ is the timestamp, ➋ is your bus, and ➌ is your arbitration ID and data separated by a # symbol. To play back the capture, right-click the **Log Description** in the right panel, and open the recording (see [Figure 5-5](broken-reference/)).
+Other than some metadata (PLATFORM, DESCRIPTION, and DEVICE\_ALIAS), the log is pretty much the same as the one captured by the can-utils package: ➊ is the timestamp, ➋ is your bus, and ➌ is your arbitration ID and data separated by a # symbol. To play back the capture, right-click the **Log Description** in the right panel, and open the recording (see [Figure 5-5](../../iot/obdii/broken-reference/)).
 
-[Listing 5-3](broken-reference/) shows the logfile created by candump using the -l command line option:
+[Listing 5-3](../../iot/obdii/broken-reference/) shows the logfile created by candump using the -l command line option:
 
 (1442245115.027238) slcan0 166#D0320018\
 (1442245115.028348) slcan0 158#0000000000000019\
@@ -2007,7 +2007,7 @@ Other than some metadata (PLATFORM, DESCRIPTION, and DEVICE\_ALIAS), the log is 
 
 _Listing 5-3: candump logfile_
 
-Notice in [Listing 5-3](broken-reference/) that the candump logfiles are almost identical to those displayed by Kayak in [Figure 5-4](broken-reference/). (For more details on different can-utils programs, see “[The CAN Utilities Suite](broken-reference/)” on [page 41](broken-reference/).)
+Notice in [Listing 5-3](../../iot/obdii/broken-reference/) that the candump logfiles are almost identical to those displayed by Kayak in [Figure 5-4](../../iot/obdii/broken-reference/). (For more details on different can-utils programs, see “[The CAN Utilities Suite](../../iot/obdii/broken-reference/)” on [page 41](../../iot/obdii/broken-reference/).)
 
 _**Creative Packet Analysis**_
 
@@ -2025,7 +2025,7 @@ There’s a ton of noise on the CAN bus, so finding a single-bit change can be v
 
 If pressing Playback didn’t unlock the door, a couple of things may have gone wrong. First, you may have missed the action in the recording, so try recording and performing the action again. If you still can’t seem to record and replay the action, the message is probably hardwired to the physical lock button, as is often the case with the driver’s-side door lock. Try unlocking the passenger door instead while recording. If that still doesn’t work, the message for the unlock action is either on a CAN bus other than the one you’re monitoring—you’ll need to find the correct one—or the playback may have caused a collision, resulting in the packet being stomped on. Try to replay the recording a few times to make sure the playback is working.
 
-Once you have a recording that performs the desired action, use the method shown in [Figure 5-6](broken-reference/) to filter out the noise and locate the exact packet and bits that are used to unlock the door via the CAN bus.
+Once you have a recording that performs the desired action, use the method shown in [Figure 5-6](../../iot/obdii/broken-reference/) to filter out the noise and locate the exact packet and bits that are used to unlock the door via the CAN bus.
 
 Now, keep halving the size of the packet capture until you’re down to only one packet, at which point you should be able figure out which bit or bits are used to unlock the door. The quickest way to do this is to open your sniffer and filter on the arbitration ID you singled out. Unlock the door, and the bit or byte that changed should highlight. Now, try to unlock the car’s back doors, and see how the bytes change. You should be able to tell exactly which bit must be changed in order to unlock each door.
 
@@ -2086,7 +2086,7 @@ Follow the same steps that you used to find the door unlock control:
 4. Press **Playback**.
 5. See whether the tachometer gauge has moved.
 
-You’ll probably find that a lot of engine lights flash and go crazy during this test because this packet is doing a lot more than just unlocking the car door. Ignore all the blinking warning lights, and follow the flowchart shown in [Figure 5-6](broken-reference/) to find the arbitration ID that causes the tachometer to change. You’ll have a much higher chance of collisions this time than when trying to find the bit to unlock the doors because there’s a lot more going on. Consequently, you may have to play and record more traffic than before. (Remember the value conversions mentioned earlier, and keep in mind that more than one byte in this arbitration ID will probably control the reported speed.)
+You’ll probably find that a lot of engine lights flash and go crazy during this test because this packet is doing a lot more than just unlocking the car door. Ignore all the blinking warning lights, and follow the flowchart shown in [Figure 5-6](../../iot/obdii/broken-reference/) to find the arbitration ID that causes the tachometer to change. You’ll have a much higher chance of collisions this time than when trying to find the bit to unlock the doors because there’s a lot more going on. Consequently, you may have to play and record more traffic than before. (Remember the value conversions mentioned earlier, and keep in mind that more than one byte in this arbitration ID will probably control the reported speed.)
 
 **Putting Kayak to Work**
 
@@ -2094,7 +2094,7 @@ To make things a bit easier, we’ll use Kayak’s GUI instead of can-utils to f
 
 Once you have the reaction you expect from the vehicle, repeat the halving process used to find the door unlock, with some additional Kayak options.
 
-Kayak’s playback interface lets you set the playback to loop infinitely and, more importantly, set the “in” and “out” packets (see [Figure 5-7](broken-reference/)). The slider represents the number of packets captured. Use the slider to pick which packet you start and stop with during playback. You can quickly jump to the middle or other sections of the recording using the slider, which makes playing back half of a section very easy.
+Kayak’s playback interface lets you set the playback to loop infinitely and, more importantly, set the “in” and “out” packets (see [Figure 5-7](../../iot/obdii/broken-reference/)). The slider represents the number of packets captured. Use the slider to pick which packet you start and stop with during playback. You can quickly jump to the middle or other sections of the recording using the slider, which makes playing back half of a section very easy.
 
 _Figure 5-7: Kayak playback interface_
 
@@ -2104,7 +2104,7 @@ To send packets continuously with can-utils, you can use a while loop with canse
 
 #### **Creating Background Noise with the Instrument Cluster Simulator** <a href="#calibre_link-510" id="calibre_link-510"></a>
 
-The instrument cluster simulator (ICSim) is one of the most useful tools to come out of Open Garages, a group that fosters open collaboration between mechanics, performance tuners, and security researchers (see [Appendix A](broken-reference/)). ICSim is a software utility designed to produce a few key CAN signals in order to provide a lot of seemingly “normal” background CAN noise—essentially, it’s designed to let you practice CAN bus reversing without having to tinker around with your car. (ICSim is Linux only because it relies on the virtual CAN devices.) The methods you’ll learn playing with ICSim will directly translate to your target vehicles. ICSim was designed as a safe way to familiarize yourself with CAN reversing so that the transition to an actual vehicle is as seamless as possible.
+The instrument cluster simulator (ICSim) is one of the most useful tools to come out of Open Garages, a group that fosters open collaboration between mechanics, performance tuners, and security researchers (see [Appendix A](../../iot/obdii/broken-reference/)). ICSim is a software utility designed to produce a few key CAN signals in order to provide a lot of seemingly “normal” background CAN noise—essentially, it’s designed to let you practice CAN bus reversing without having to tinker around with your car. (ICSim is Linux only because it relies on the virtual CAN devices.) The methods you’ll learn playing with ICSim will directly translate to your target vehicles. ICSim was designed as a safe way to familiarize yourself with CAN reversing so that the transition to an actual vehicle is as seamless as possible.
 
 _**Setting Up the ICSim**_
 
@@ -2114,7 +2114,7 @@ ICSim comes with two components, icsim and controls, which talk to each other ov
 
 $ ./icsim vcan0
 
-In response, you should see the ICSim instrument cluster with turn signals, a speedometer, and a picture of a car, which will be used to show the car doors locking and unlocking (see [Figure 5-8](broken-reference/)).
+In response, you should see the ICSim instrument cluster with turn signals, a speedometer, and a picture of a car, which will be used to show the car doors locking and unlocking (see [Figure 5-8](../../iot/obdii/broken-reference/)).
 
 _Figure 5-8: ICSim instrument cluster_
 
@@ -2122,11 +2122,11 @@ The icsim application listens only for CAN signals, so when the ICSim first load
 
 $ ./controls vcan0
 
-The CANBus Control Panel shown in [Figure 5-9](broken-reference/) should appear.
+The CANBus Control Panel shown in [Figure 5-9](../../iot/obdii/broken-reference/) should appear.
 
 _Figure 5-9: ICSim control interface_
 
-The screen looks like a game controller; in fact, you can plug in a USB game controller, and it should be supported by ICSim. (As of this writing, you can use sixad tools to connect a PS3 controller over Bluetooth as well.) You can use the controller to operate the ICSim in a method similar to driving a car using a gaming console, or you can control it by pressing the corresponding keys on your keyboard (see [Figure 5-9](broken-reference/)).
+The screen looks like a game controller; in fact, you can plug in a USB game controller, and it should be supported by ICSim. (As of this writing, you can use sixad tools to connect a PS3 controller over Bluetooth as well.) You can use the controller to operate the ICSim in a method similar to driving a car using a gaming console, or you can control it by pressing the corresponding keys on your keyboard (see [Figure 5-9](../../iot/obdii/broken-reference/)).
 
 **NOTE**
 
@@ -2144,9 +2144,9 @@ Make sure you can fit both the ICSim and the CANBus Control Panel on the same sc
 
 _**Reading CAN Bus Traffic on the ICSim**_
 
-When you’re sure everything is working, fire up your sniffer of choice and take a look at the CAN bus traffic, as shown in [Figure 5-10](broken-reference/). Try to identify which packets control the vehicle, and create scripts to control ICSim without using the control panel.
+When you’re sure everything is working, fire up your sniffer of choice and take a look at the CAN bus traffic, as shown in [Figure 5-10](../../iot/obdii/broken-reference/). Try to identify which packets control the vehicle, and create scripts to control ICSim without using the control panel.
 
-Most of the changing data you see in [Figure 5-10](broken-reference/) is caused by a replay file of a real CAN bus. You’ll have to sort through the messages to determine the proper packets. All methods of replay and packet sending will work with ICSim, so you can validate your findings.
+Most of the changing data you see in [Figure 5-10](../../iot/obdii/broken-reference/) is caused by a replay file of a real CAN bus. You’ll have to sort through the messages to determine the proper packets. All methods of replay and packet sending will work with ICSim, so you can validate your findings.
 
 _Figure 5-10: Screen layout for using ICSim_
 
@@ -2234,7 +2234,7 @@ The fields from OpenXC’s default API are as follows:
 
 Different vehicles may support different signals than the ones listed here or no signals at all.
 
-OpenXC also supports JSON trace output for recording vehicle journey. JSON provides a common data format that’s easy for most other modern languages to consume, as shown in [Listing 5-4](broken-reference/).
+OpenXC also supports JSON trace output for recording vehicle journey. JSON provides a common data format that’s easy for most other modern languages to consume, as shown in [Listing 5-4](../../iot/obdii/broken-reference/).
 
 {"metadata": {\
 "version": "v3.0",\
@@ -2276,7 +2276,7 @@ _**Hacking OpenXC**_
 
 If you’ve done the work to reverse the CAN signals, you can even make your own VI OpenXC firmware. Compiling your own firmware means you don’t have any limitations, so you can read and write whatever you want and even create “unsupported” signals. For example, you could create a signal for remote\_engine\_start and add it to your own firmware in order to provide a simple interface to start your car. Hooray, open source!
 
-Consider a signal that represents engine\_speed. [Listing 5-5](broken-reference/) will set a basic configuration to output the engine\_speed signal. We’ll send RPM data with a 2-byte-long message ID 0x110 starting at the second byte.
+Consider a signal that represents engine\_speed. [Listing 5-5](../../iot/obdii/broken-reference/) will set a basic configuration to output the engine\_speed signal. We’ll send RPM data with a 2-byte-long message ID 0x110 starting at the second byte.
 
 { "name" : "Test Bench",\
 "buses": {\
@@ -2368,7 +2368,7 @@ A vehicle typically has as many as a dozen or more electronic controllers, many 
 
 While these terms may have specific meanings in a formal setting, similar terms are often used interchangeably in practice. What may be a TCU to one manufacturer is a TCM to another, yet both electronic controllers perform the same or extremely similar functions.
 
-Most automotive control modules have measures in place to prevent you from altering their code and operation; these range from very strong to laughably weak. You won’t know what you’re dealing with until you investigate a particular system. In this chapter, we’ll take a closer look at particular security mechanisms, but first we’ll examine strategies for gaining access to these systems. Then in [Chapter 8](broken-reference/) we’ll look at some more specific ECU hacks, like glitch attacks and debugging. The attack vectors for ECUs fall into three different classes:
+Most automotive control modules have measures in place to prevent you from altering their code and operation; these range from very strong to laughably weak. You won’t know what you’re dealing with until you investigate a particular system. In this chapter, we’ll take a closer look at particular security mechanisms, but first we’ll examine strategies for gaining access to these systems. Then in [Chapter 8](../../iot/obdii/broken-reference/) we’ll look at some more specific ECU hacks, like glitch attacks and debugging. The attack vectors for ECUs fall into three different classes:
 
 **Front door attacks** Commandeering the access mechanism of the original equipment manufacturer (OEM)
 
@@ -2404,11 +2404,11 @@ To find an open source J2534 shim, search [_code.google.com_](mailto:code.google
 
 **J2534 with a Sniffer**
 
-You can also use J2534 to generate interesting traffic that you can then observe and record with a third party sniffer. There’s no magic here: this is just an excellent example of how to generate juicy packets that might otherwise be difficult to capture. (See [Chapter 5](broken-reference/) for more information on monitoring network traffic.)
+You can also use J2534 to generate interesting traffic that you can then observe and record with a third party sniffer. There’s no magic here: this is just an excellent example of how to generate juicy packets that might otherwise be difficult to capture. (See [Chapter 5](../../iot/obdii/broken-reference/) for more information on monitoring network traffic.)
 
 _**KWP2000 and Other Earlier Protocols**_
 
-Before J2534, there were many flash-programmable ECUs and other control units, such as the Keyword Protocol 2000 (KWP2000 or ISO14230). From an OSI networking perspective, it’s primarily an application protocol. It can be used on top of CAN or ISO9141 as the physical layer. You’ll find a _huge_ number of KWP2000 flasher tools that interface with a PC using a serial/ USB-serial interface and that support diagnostics and flashing using this protocol just by searching online. (For more on the Keyword Protocol 2000, see [Chapter 2](broken-reference/).)
+Before J2534, there were many flash-programmable ECUs and other control units, such as the Keyword Protocol 2000 (KWP2000 or ISO14230). From an OSI networking perspective, it’s primarily an application protocol. It can be used on top of CAN or ISO9141 as the physical layer. You’ll find a _huge_ number of KWP2000 flasher tools that interface with a PC using a serial/ USB-serial interface and that support diagnostics and flashing using this protocol just by searching online. (For more on the Keyword Protocol 2000, see [Chapter 2](../../iot/obdii/broken-reference/).)
 
 _**Capitalizing on Front Door Approaches: Seed-Key Algorithms**_
 
@@ -2440,7 +2440,7 @@ Sometimes front door attacks are too tricky; you may not have the right tools or
 
 When reversing a circuit board of any system, you should start with the largest chips first. These larger processor and memory chips are likely to be the most complex. It’s a good idea to make a list of part numbers to feed to Google, [_datasheet.com_](http://datasheet.com), or something similar, to obtain a copy of the data sheet. You’ll sometimes encounter custom application-specific integrated circuits (ASICs) and one-off chips, especially with older ECUs, which will prove more difficult than off-the-shelf parts. In many cases, you’ll have to infer the function of these parts based on how they’re connected to identifiable parts.
 
-It’s critical to look out for memory chips—SRAM, EEPROM, FlashROM, one-time-programmable ROM, serial EEPROM, serial flash, NVSRAM, and so on. The type of memory used varies immensely from one platform to another; every single variety listed here has been found in the wild. Newer designs are less likely to have parallel memories and more likely to have serial chips. Newer microcontrollers are less likely to have any external memories at all, as their internal flash capacities have dramatically increased. Any nonvolatile memory chip present can be removed from the circuit board, read, and then replaced. [Chapter 8](broken-reference/) goes into much more detail on reverse engineering the circuit board.
+It’s critical to look out for memory chips—SRAM, EEPROM, FlashROM, one-time-programmable ROM, serial EEPROM, serial flash, NVSRAM, and so on. The type of memory used varies immensely from one platform to another; every single variety listed here has been found in the wild. Newer designs are less likely to have parallel memories and more likely to have serial chips. Newer microcontrollers are less likely to have any external memories at all, as their internal flash capacities have dramatically increased. Any nonvolatile memory chip present can be removed from the circuit board, read, and then replaced. [Chapter 8](../../iot/obdii/broken-reference/) goes into much more detail on reverse engineering the circuit board.
 
 #### **Exploits** <a href="#calibre_link-526" id="calibre_link-526"></a>
 
@@ -2448,7 +2448,7 @@ Although arguably just another example of a backdoor approach, exploits deserve 
 
 Not all bugs can be turned into exploits, however—some bugs only cause problems or shut down core systems. And while bugs are usually discovered by accident, most exploits require careful craft. It is unlikely that you’d be able to turn a known bug into an exploit without also having prior knowledge of the system, usually gained from firmware analysis. At a bare minimum, you’d need basic knowledge of the architecture in order to write the necessary code. Most of the time, this knowledge needs to be gathered through research prior to writing an exploit.
 
-It’s hard to find bugs that make suitable attack vectors and it’s often just as difficult to write exploits for them, so exploits that build on bugs are fairly uncommon. While it is foolish to discount the relevance of exploits, the other methods presented here and in [Chapter 8](broken-reference/) are much more practical paths to understanding and reprogramming automotive systems in most cases.
+It’s hard to find bugs that make suitable attack vectors and it’s often just as difficult to write exploits for them, so exploits that build on bugs are fairly uncommon. While it is foolish to discount the relevance of exploits, the other methods presented here and in [Chapter 8](../../iot/obdii/broken-reference/) are much more practical paths to understanding and reprogramming automotive systems in most cases.
 
 #### **Reversing Automotive Firmware** <a href="#calibre_link-527" id="calibre_link-527"></a>
 
@@ -2462,7 +2462,7 @@ _**Self-Diagnostic System**_
 
 Every engine controller has some type of self-diagnostic system that typically monitors most critical engine functions, and analyzing this is an excellent route to understanding firmware. A good first step in investigative disassembly is to identify the location of these procedures. This will provide you with insight into the memory locations involved in all of the sensors and functions that are checked for errors. Any modern vehicle should support OBD-II packets, which standardize the diagnostic data reported. Even controllers created prior to OBD-II standards have a way to report faults. Some have a system where an analog input is shorted to ground and either an internal LED or the “check engine” light flashes out the code. For example, knowing that code 10 refers to a failed intake air temperature sensor means you can find the piece of code that sets error code 10 to help you identify the internal variables associated with the air temperature sensor.
 
-For more detailed information on using diagnostics, see [Chapter 4](broken-reference/).
+For more detailed information on using diagnostics, see [Chapter 4](../../iot/obdii/broken-reference/).
 
 _**Library Procedures**_
 
@@ -2478,31 +2478,31 @@ One way to identify tables is to leverage the specific physical and electrical c
 
 Fortunately for us, the signal output from an MAF is determined by physics—that is, King’s Law—so the curve will always have a characteristic shape, though it’ll be slightly different for each sensor. This will result in the tables having a characteristic set of values that can be observed in the ROM. Armed with the knowledge that there will be universal data to identify, let’s take a closer look at how calibration data is displayed in different programs.
 
-[Figures 6-1](broken-reference/) and [6-2](broken-reference/) show similarly shaped Ford and Nissan sensor curves; the similarity they illustrate extends to multiple manufacturers.
+[Figures 6-1](../../iot/obdii/broken-reference/) and [6-2](../../iot/obdii/broken-reference/) show similarly shaped Ford and Nissan sensor curves; the similarity they illustrate extends to multiple manufacturers.
 
 _Figure 6-1: Ford MAF transfer graph_
 
 _Figure 6-2: Nissan MAF VQ graph_
 
-[Figures 6-2](broken-reference/) through [6-6](broken-reference/) show five different views of the same data. [Figure 6-3](broken-reference/) shows how the VQ curve pictured in [Figure 6-2](broken-reference/) would look in a hex editor.
+[Figures 6-2](../../iot/obdii/broken-reference/) through [6-6](../../iot/obdii/broken-reference/) show five different views of the same data. [Figure 6-3](../../iot/obdii/broken-reference/) shows how the VQ curve pictured in [Figure 6-2](../../iot/obdii/broken-reference/) would look in a hex editor.
 
 _Figure 6-3: VQ table in HxD hex editor: 128 bytes or 64- to 16-bit words_
 
-[Figures 6-4](broken-reference/) and [6-5](broken-reference/) show the VQ table in analyze.exe available from [_https://github.com/blundar/analyze.exe/_](https://github.com/blundar/analyze.exe/). A simple visualization tool, analyze.exe colors cells based on their numeric value. You can select the precision of the data—for example, 1 = 8-bit byte, 2 = 16-bit word, and 4 = 32-bit long—and how many rows and columns you want present. This simple visual arrangement often makes it easier to identify what is code and what is data than it is when you’re using a hex editor, as in [Figure 6-3](broken-reference/).
+[Figures 6-4](../../iot/obdii/broken-reference/) and [6-5](../../iot/obdii/broken-reference/) show the VQ table in analyze.exe available from [_https://github.com/blundar/analyze.exe/_](https://github.com/blundar/analyze.exe/). A simple visualization tool, analyze.exe colors cells based on their numeric value. You can select the precision of the data—for example, 1 = 8-bit byte, 2 = 16-bit word, and 4 = 32-bit long—and how many rows and columns you want present. This simple visual arrangement often makes it easier to identify what is code and what is data than it is when you’re using a hex editor, as in [Figure 6-3](../../iot/obdii/broken-reference/).
 
 _Figure 6-4: VQ table in analyze.exe: values from 48 to 65535 in first four rows of 16×16-bit values_
 
 _Figure 6-5: First four rows of 16x16-bit values_
 
-Look again at the first four rows of 16×16-bit values in [Figures 6-4](broken-reference/) and [6-5](broken-reference/) shaded in analyze.exe. Notice how the smooth nonlinear curve in [Figures 6-1](broken-reference/) and [6-2](broken-reference/) mimics the smooth nonlinear progression of values. [Figure 6-6](broken-reference/) shows the same values in a 64-column layout, so you can see the full gradient of the first four rows from [Figure 6-5](broken-reference/). No matter what type of vehicle you’re looking at, the overall data structures will be similar.
+Look again at the first four rows of 16×16-bit values in [Figures 6-4](../../iot/obdii/broken-reference/) and [6-5](../../iot/obdii/broken-reference/) shaded in analyze.exe. Notice how the smooth nonlinear curve in [Figures 6-1](../../iot/obdii/broken-reference/) and [6-2](../../iot/obdii/broken-reference/) mimics the smooth nonlinear progression of values. [Figure 6-6](../../iot/obdii/broken-reference/) shows the same values in a 64-column layout, so you can see the full gradient of the first four rows from [Figure 6-5](../../iot/obdii/broken-reference/). No matter what type of vehicle you’re looking at, the overall data structures will be similar.
 
 _Figure 6-6: 64- to 16-bit words per row_
 
-Data visualization tools like hex editors or analyze.exe can also be useful when you don’t know the exact shape or pattern you are looking for. No matter what type of vehicle you’re looking at, data structures will have orders and patterns that are not typically seen in executable code. [Figure 6-7](broken-reference/) shows an example of the clear visual pattern of data in analyze.exe—gradually changing values and repetition should stand out.
+Data visualization tools like hex editors or analyze.exe can also be useful when you don’t know the exact shape or pattern you are looking for. No matter what type of vehicle you’re looking at, data structures will have orders and patterns that are not typically seen in executable code. [Figure 6-7](../../iot/obdii/broken-reference/) shows an example of the clear visual pattern of data in analyze.exe—gradually changing values and repetition should stand out.
 
 _Figure 6-7: Patterns and gradual changes in table data appear in a 2002 Chevrolet Camaro ROM visualized with analyze.exe_
 
-On the other hand, when you look at code like that in [Figure 6-8](broken-reference/), there is a more random, chaotic appearance. (In [Figures 6-7](broken-reference/) and [6-8](broken-reference/), precision is set to 2 because the microcontroller unit used is a 16-bit processor and it’s reasonable to assume that a good chunk of the data items will be 16-bit as well.)
+On the other hand, when you look at code like that in [Figure 6-8](../../iot/obdii/broken-reference/), there is a more random, chaotic appearance. (In [Figures 6-7](../../iot/obdii/broken-reference/) and [6-8](../../iot/obdii/broken-reference/), precision is set to 2 because the microcontroller unit used is a 16-bit processor and it’s reasonable to assume that a good chunk of the data items will be 16-bit as well.)
 
 _Figure 6-8: This random code doesn’t have the neat, orderly patterns that are present in most tables._
 
@@ -2516,7 +2516,7 @@ _**Comparing Bytes to Identify Parameters**_
 
 It’s often possible to get multiple bins that’ll run on the same physical ECU. The more the better! Doing a simple compare in a hex editor will show which bytes differ between the files. It’s common—but not guaranteed—for code to remain unchanged while parameters change. If less than 5 percent of the files differ, it’s generally safe to assume that the differences are parameters. If you know what’s been changed functionally between the two bins and you know which bytes have changed, you have further clues to help correlate changes in the ROM with changes in parameters.
 
-[Figures 6-9](broken-reference/) and [6-10](broken-reference/) compare a 1996 V8 Mustang and a 1997 V6 Thunderbird, showing 6,667 differences out of 114,688 bytes. This is an extreme example of having the same code with different parameters, but there’s still only about a 5.8 percent difference compared to overall file size.
+[Figures 6-9](../../iot/obdii/broken-reference/) and [6-10](../../iot/obdii/broken-reference/) compare a 1996 V8 Mustang and a 1997 V6 Thunderbird, showing 6,667 differences out of 114,688 bytes. This is an extreme example of having the same code with different parameters, but there’s still only about a 5.8 percent difference compared to overall file size.
 
 Most processors use an interrupt vector table defined by the processor being used. Referencing the processor’s data sheet will define the structure of interrupt routines, allowing you to quickly identify the interrupt handlers. Tracing interrupt pins on the processor to circuitry within the ECU to pins you can reference in a vehicle wiring diagram can help you identify code blocks used to service such hardware functions as fuel and spark control, crank and cam signal processing, and idle functions.
 
@@ -2526,7 +2526,7 @@ _Figure 6-10: File compare function of the HxD hex editor_
 
 _**Identifying ROM Data with WinOLS**_
 
-WinOLS is a popular commercial program for modifying bins. It combines a series of tools for calculating and updating checksums within a ROM with a set of tools for identifying tables. [Figures 6-11](broken-reference/) and [6-12](broken-reference/) illustrate WinOLS in use.
+WinOLS is a popular commercial program for modifying bins. It combines a series of tools for calculating and updating checksums within a ROM with a set of tools for identifying tables. [Figures 6-11](../../iot/obdii/broken-reference/) and [6-12](../../iot/obdii/broken-reference/) illustrate WinOLS in use.
 
 If the ROM type is known, it has many templates that automatically identify configuration parameters. Most of the known built-in ROM types are geared toward Bosch Motronic ECUs. Templates and configurations can be saved, shared, and sold to enable users to make modifications to specific files with greater ease. WinOLS is arguably the most common software used for identifying interesting data within a ROM that doesn’t involve code analysis. It’s designed to facilitate rapid tuning changes to a controller.
 
@@ -2562,21 +2562,21 @@ To see disassembly in action, we’ll look at a plain disassembly of a 1990 Niss
 
 A critical point about the memory structure is that the MCU can address 65535 bytes (64KB). This information tells you what to expect when looking at the addresses in your binary blob. Further reading suggests that the interrupt vector table lies at the _end_ of addressable memory, with the reset vector—where every processor starts after a reset—at 0xFFFE/0xFFFF. Assuming that the 32KB (0x7FFF hex) binary blob we have from reading the EPROM contains the interrupt vector table, we can figure out that the binary image needs to start at memory address 0x8000 for it to end at 0xFFFF (0xFFFF – 0x7FFF = 0x8000). It also helps to search online to see whether others are trying to do something similar. For example, the post at [_http://forum.nistune.com/viewtopic.php?f=2\&t=417_](http://forum.nistune.com/viewtopic.php?f=2\&t=417) is for a smaller 16KB binary based on settings for a 0xC000 entry point. The more legwork and research you do prior to actually invoking a disassembler, the more likely you are to get reasonable results.
 
-[Figure 6-13](broken-reference/) shows the symbol table for the 300ZX binary. Next to each symbol is the memory address used by the firmware. These memory addresses can hold values such as incoming data from different physical pins on the chip or internal information, like timing.
+[Figure 6-13](../../iot/obdii/broken-reference/) shows the symbol table for the 300ZX binary. Next to each symbol is the memory address used by the firmware. These memory addresses can hold values such as incoming data from different physical pins on the chip or internal information, like timing.
 
 _Figure 6-13: Symbol file for 32KB 300ZX binary disassembly with DASMx_
 
-We’ll use DASMx to disassemble the binary. As shown in [Figure 6-14](broken-reference/), DASMx reports a Hitachi 6303 MCU with a source file length, or size, of 32KB, which is 32768 bytes.
+We’ll use DASMx to disassemble the binary. As shown in [Figure 6-14](../../iot/obdii/broken-reference/), DASMx reports a Hitachi 6303 MCU with a source file length, or size, of 32KB, which is 32768 bytes.
 
 _Figure 6-14: Running DASMx to disassemble 32KB 300ZX binary_
 
 Now cross your fingers and hope for a meaningful result!
 
-The result is the vector table shown in [Figure 6-15](broken-reference/), which looks sane enough: all addresses are above the 0x8000 entry point specified. Notice that the reset vector (0xFFFE, RES-vector) has a pointer to the RESET\_entry at 0xBE6D.
+The result is the vector table shown in [Figure 6-15](../../iot/obdii/broken-reference/), which looks sane enough: all addresses are above the 0x8000 entry point specified. Notice that the reset vector (0xFFFE, RES-vector) has a pointer to the RESET\_entry at 0xBE6D.
 
 _Figure 6-15: Disassembled vector table_
 
-We can disassemble the code at 0xBE6D for the reset vector, which is also the entry point for code. In [Figure 6-16](broken-reference/), we see a routine, RESET\_entry, that looks like it wipes a chunk of RAM. This is a plausible part of the initial reset sequence because often when booting, firmware will initialize the data region to all 0s.
+We can disassemble the code at 0xBE6D for the reset vector, which is also the entry point for code. In [Figure 6-16](../../iot/obdii/broken-reference/), we see a routine, RESET\_entry, that looks like it wipes a chunk of RAM. This is a plausible part of the initial reset sequence because often when booting, firmware will initialize the data region to all 0s.
 
 _Figure 6-16: Reset vector disassembly_
 
@@ -2590,9 +2590,9 @@ One of the advantages of IDA Pro is that it’s programmable to allow additional
 
 Lastly, IDA Pro supports more embedded platforms out of the box than just about any other disassembler currently available.
 
-You don’t necessarily need these functions to successfully analyze code, but they make things substantially easier. [Figures 6-17](broken-reference/) and [6-18](broken-reference/) are screenshots from real code analysis with IDA Pro. Thanks to Matt Wallace for graciously posting these examples in a public forum.
+You don’t necessarily need these functions to successfully analyze code, but they make things substantially easier. [Figures 6-17](../../iot/obdii/broken-reference/) and [6-18](../../iot/obdii/broken-reference/) are screenshots from real code analysis with IDA Pro. Thanks to Matt Wallace for graciously posting these examples in a public forum.
 
-The user in [Figure 6-18](broken-reference/) obtained Acura NSX ECU firmware through a combination of hardware-hacking approaches, took the code apart, analyzed it using IDA Pro, and rewrote it. Next, the user determined the necessary functions to log data from the ECU and alter its operation. The result allowed the user to use forced induction—that is, turbochargers and superchargers—with a factory computer; this would have been impossible without ECU modification.
+The user in [Figure 6-18](../../iot/obdii/broken-reference/) obtained Acura NSX ECU firmware through a combination of hardware-hacking approaches, took the code apart, analyzed it using IDA Pro, and rewrote it. Next, the user determined the necessary functions to log data from the ECU and alter its operation. The result allowed the user to use forced induction—that is, turbochargers and superchargers—with a factory computer; this would have been impossible without ECU modification.
 
 _Figure 6-17: IDA diagram showing a custom-written routine for NVRAM real-time programming_
 
@@ -2600,17 +2600,17 @@ _Figure 6-18: IDA diagram of code for checking fuel injectors on NSX ECU_
 
 #### **Summary** <a href="#calibre_link-535" id="calibre_link-535"></a>
 
-Because hacking on the ECU often involves processors that are smaller than those used in more powerful modern devices, such as cell phones, the tools used for reversing the firmware differ for each target. By using a combination of techniques, such as data visualization to locate tables, and by reversing the firmware directly, you can identify the areas you’re interested in modifying. The methods discussed in this chapter are techniques commonly used by performance tuners to adjust how a vehicle handles fuel efficiency. All can be used to unlock features hidden in the code of your vehicle. We’ll look at performance tuning in more detail in [Chapter 13](broken-reference/).
+Because hacking on the ECU often involves processors that are smaller than those used in more powerful modern devices, such as cell phones, the tools used for reversing the firmware differ for each target. By using a combination of techniques, such as data visualization to locate tables, and by reversing the firmware directly, you can identify the areas you’re interested in modifying. The methods discussed in this chapter are techniques commonly used by performance tuners to adjust how a vehicle handles fuel efficiency. All can be used to unlock features hidden in the code of your vehicle. We’ll look at performance tuning in more detail in [Chapter 13](../../iot/obdii/broken-reference/).
 
 ### **7** **BUILDING AND USING ECU TEST BENCHES** <a href="#calibre_link-30" id="calibre_link-30"></a>
 
 ![image](../../.gitbook/assets/000023)
 
-An ECU test bench, like the one shown in [Figure 7-1](broken-reference/), consists of an ECU, a power supply, an optional power switch, and an OBD-II connector. You can also add an IC or other CAN-related systems for testing, but just building a basic ECU test bench is a great way to learn the CAN bus and how to create custom tools. In this chapter, we’ll walk step by step through the process of building a test bench for development and testing.
+An ECU test bench, like the one shown in [Figure 7-1](../../iot/obdii/broken-reference/), consists of an ECU, a power supply, an optional power switch, and an OBD-II connector. You can also add an IC or other CAN-related systems for testing, but just building a basic ECU test bench is a great way to learn the CAN bus and how to create custom tools. In this chapter, we’ll walk step by step through the process of building a test bench for development and testing.
 
 #### **The Basic ECU Test Bench** <a href="#calibre_link-536" id="calibre_link-536"></a>
 
-The most basic test bench is the device that you want to target and a power supply. When you give an ECU the proper amount of power, you can start performing tests on its inputs and communications. For example, [Figure 7-1](broken-reference/) shows a basic test bench containing a PC power supply and an ECU.
+The most basic test bench is the device that you want to target and a power supply. When you give an ECU the proper amount of power, you can start performing tests on its inputs and communications. For example, [Figure 7-1](../../iot/obdii/broken-reference/) shows a basic test bench containing a PC power supply and an ECU.
 
 _Figure 7-1: A simple ECU test bench_
 
@@ -2626,7 +2626,7 @@ If you’re not comfortable pulling devices out of junked cars, you can order an
 
 _One downside to buying an ECU online is that it may be difficult to acquire parts from the same car if you need multiple parts. For instance, you may need both the body control module (BCM) and the ECU because you want to include keys and the immobilizer is in the BCM. In this case, if you mix and match from two different vehicles, the vehicle won’t “start” properly._
 
-Instead of harvesting or buying a used ECU, you could also use a prebuilt simulator, like the ECUsim 2000 by ScanTool (see [Figure 7-2](broken-reference/)). A simulator like ECUsim will cost around $200 per protocol and will support only OBD/UDS communications. Simulators can generate faults and MIL lights, and they include fault knobs for changing common vehicle parameters, such as speed. Unless you’re building an application that uses only UDS packets, however, a simulator probably isn’t the way to go.
+Instead of harvesting or buying a used ECU, you could also use a prebuilt simulator, like the ECUsim 2000 by ScanTool (see [Figure 7-2](../../iot/obdii/broken-reference/)). A simulator like ECUsim will cost around $200 per protocol and will support only OBD/UDS communications. Simulators can generate faults and MIL lights, and they include fault knobs for changing common vehicle parameters, such as speed. Unless you’re building an application that uses only UDS packets, however, a simulator probably isn’t the way to go.
 
 _Figure 7-2: ECUsim OBD simulator_
 
@@ -2634,7 +2634,7 @@ _**Dissecting the ECU Wiring**_
 
 Once you have all of the parts, you’ll need to find the ECU’s wiring diagram to determine which wires you need to connect in order to get it to work. Visit a website such as ALLDATA ([_http://www.alldata.com/_](http://www.alldata.com)) or Mitchell 1 ([_http://mitchell1.com/main/_](http://mitchell1.com/main/)) to get a complete wiring diagram. You’ll find that off-the-shelf service manuals will sometimes have wiring diagrams, but they’re often incomplete and contain only common repair areas.
 
-Wiring diagrams aren’t always easy to read, mainly because some combine numerous small components (see [Figure 7-3](broken-reference/)). Try to mentally break down each component to get a better idea of which wires to focus on.
+Wiring diagrams aren’t always easy to read, mainly because some combine numerous small components (see [Figure 7-3](../../iot/obdii/broken-reference/)). Try to mentally break down each component to get a better idea of which wires to focus on.
 
 _Figure 7-3: Example of an ECU wiring diagram_
 
@@ -2644,7 +2644,7 @@ You can get pinouts for the ECUs on several different vehicles from [_http://www
 
 **Block Diagrams**
 
-Block diagrams are often easier to read than wiring diagrams that show all components on the same sheet. Block diagrams usually show the wiring for only one component and offer a higher-level overview of the main components, whereas schematics show all the circuitry details. Some block diagrams also include a legend showing which connector block the diagram refers to and the connectors on that module; you’ll typically find these in the corner of the block diagram (see [Table 7-1](broken-reference/)).
+Block diagrams are often easier to read than wiring diagrams that show all components on the same sheet. Block diagrams usually show the wiring for only one component and offer a higher-level overview of the main components, whereas schematics show all the circuitry details. Some block diagrams also include a legend showing which connector block the diagram refers to and the connectors on that module; you’ll typically find these in the corner of the block diagram (see [Table 7-1](../../iot/obdii/broken-reference/)).
 
 **Table 7-1:** Example Connector Legend
 
@@ -2655,11 +2655,11 @@ Block diagrams are often easier to read than wiring diagrams that show all compo
 | C3          | 68            | M-GY      |
 | C4          | 12            | BK        |
 
-The legend should give the connector number, its number pin count, and the color. For instance, the line C1 = 68 WH in [Table 7-1](broken-reference/) means that the C1 connector has 68 pins and is white. L-GY probably means light gray, and so on. A connector number like C2-55 refers to connector 2, pin 55. The connectors usually have a number on the first and last pin in the row.
+The legend should give the connector number, its number pin count, and the color. For instance, the line C1 = 68 WH in [Table 7-1](../../iot/obdii/broken-reference/) means that the C1 connector has 68 pins and is white. L-GY probably means light gray, and so on. A connector number like C2-55 refers to connector 2, pin 55. The connectors usually have a number on the first and last pin in the row.
 
 _**Wiring Things Up**_
 
-Once you have information on the connector’s wiring, it’s time to wire it up. Wire the CAN to the proper ports on the connector, as discussed in “[OBD-II Connector Pinout Maps](broken-reference/)” on [page 31](broken-reference/). When you provide power—a power supply from an old PC should suffice—and add a CAN sniffer, you should see packets. You can use just a simple OBD-II scan tool that you can pick up at any automotive store. If you have everything wired correctly, the scan tool should be able to identify the vehicle, assuming that your test bench includes the main ECU.
+Once you have information on the connector’s wiring, it’s time to wire it up. Wire the CAN to the proper ports on the connector, as discussed in “[OBD-II Connector Pinout Maps](../../iot/obdii/broken-reference/)” on [page 31](../../iot/obdii/broken-reference/). When you provide power—a power supply from an old PC should suffice—and add a CAN sniffer, you should see packets. You can use just a simple OBD-II scan tool that you can pick up at any automotive store. If you have everything wired correctly, the scan tool should be able to identify the vehicle, assuming that your test bench includes the main ECU.
 
 **NOTE**
 
@@ -2673,13 +2673,13 @@ _A lot of components communicate with the ECU in a simple manner, either via set
 
 #### **Building a More Advanced Test Bench** <a href="#calibre_link-540" id="calibre_link-540"></a>
 
-If you’re ready to take your car hacking research further, consider building a more advanced ECU test bench, like the one shown in [Figure 7-4](broken-reference/).
+If you’re ready to take your car hacking research further, consider building a more advanced ECU test bench, like the one shown in [Figure 7-4](../../iot/obdii/broken-reference/).
 
 This unit combines an ECU with a BCM because it also has the original keys to start the vehicle. Notice that the optional IC has two 1 kilohm potentiometers, or variable resistors, on the lower left side, both of which are tied to the engine temperature and fuel lines. We use these potentiometers to generate sensor signals, as discussed in the following section. This particular test bench also includes a small MCU that allows you to simulate sending crankshaft and camshaft signals to the ECU.
 
 _Figure 7-4: More complex test bench_
 
-A more complex unit like the one in [Figure 7-4](broken-reference/) makes it trivial to determine CAN traffic: just load a sniffer, adjust the knob, and watch for the packets to change. If you know which wires you’re targeting and the type of input they take, you can easily fake signals from most components.
+A more complex unit like the one in [Figure 7-4](../../iot/obdii/broken-reference/) makes it trivial to determine CAN traffic: just load a sniffer, adjust the knob, and watch for the packets to change. If you know which wires you’re targeting and the type of input they take, you can easily fake signals from most components.
 
 _**Simulating Sensor Signals**_
 
@@ -2701,11 +2701,11 @@ For our test bench, we also want to control the RPMs and/or speedometer needle. 
 
 _**Hall Effect Sensors**_
 
-Hall effect sensors are often used to sense engine speed and crankshaft position (CKP) and to generate digital signals. In [Figure 7-5](broken-reference/), the Hall effect sensor uses a shutter wheel, or a wheel with gaps in it, to measure the rotation speed. The gallium arsenate crystal changes its conductivity when exposed to a magnetic field. As the shutter wheel spins, the crystal detects the magnet and sends a pulse when not blocked by the wheel. By measuring the frequency of pulses, you can derive the vehicle speed.
+Hall effect sensors are often used to sense engine speed and crankshaft position (CKP) and to generate digital signals. In [Figure 7-5](../../iot/obdii/broken-reference/), the Hall effect sensor uses a shutter wheel, or a wheel with gaps in it, to measure the rotation speed. The gallium arsenate crystal changes its conductivity when exposed to a magnetic field. As the shutter wheel spins, the crystal detects the magnet and sends a pulse when not blocked by the wheel. By measuring the frequency of pulses, you can derive the vehicle speed.
 
 _Figure 7-5: Shutter wheel diagram for Hall effect sensor_
 
-You can also use the camshaft timing sprocket to measure speed. When you look at the camshaft timing sprocket, the magnet is on the side of the wheel (see [Figure 7-6](broken-reference/)).
+You can also use the camshaft timing sprocket to measure speed. When you look at the camshaft timing sprocket, the magnet is on the side of the wheel (see [Figure 7-6](../../iot/obdii/broken-reference/)).
 
 _Figure 7-6: Camshaft timing sprocket_
 
@@ -2713,13 +2713,13 @@ Using a scope on the signal wire shows that the Hall effect sensor produces a sq
 
 You can gauge full rotation timing with a missing tooth called a _trigger wheel_ or with a timing mark. It’s important to know when the camshaft has made a full rotation. An inductive camshaft sensor produces a sine wave and will often have a missing tooth to detect full rotation.
 
-[Figure 7-7](broken-reference/) shows the camshaft sensor repeating approximately every 2 milliseconds. The jump or a gap you see in the wave at around the 40-millisecond mark occurs when the missing tooth is reached. The location of that gap marks the point at which the camshaft has completed a full rotation. In order to fake these camshaft signals into the ECU test bench, you’d need to write a small sketch for your microcontroller. When writing microcontroller code to mimic these sensors, it’s important to know what type of sensor your vehicle uses so that you’ll know whether to use a digital or analog output when faking the teeth.
+[Figure 7-7](../../iot/obdii/broken-reference/) shows the camshaft sensor repeating approximately every 2 milliseconds. The jump or a gap you see in the wave at around the 40-millisecond mark occurs when the missing tooth is reached. The location of that gap marks the point at which the camshaft has completed a full rotation. In order to fake these camshaft signals into the ECU test bench, you’d need to write a small sketch for your microcontroller. When writing microcontroller code to mimic these sensors, it’s important to know what type of sensor your vehicle uses so that you’ll know whether to use a digital or analog output when faking the teeth.
 
 _Figure 7-7: Camshaft sensor signals under a scope_
 
 #### **Simulating Vehicle Speed** <a href="#calibre_link-543" id="calibre_link-543"></a>
 
-Now, we’ll build a test bench to simulate vehicle speed. We’ll use this test bench together with the IC shown in [Figure 7-4](broken-reference/) to pull a vehicle’s VIN via the OBD-II connector. This will give us the exact year, make, model, and engine type of the vehicle. (We looked at how to do this manually in “[Unified Diagnostic Services](broken-reference/)” on [page 54](broken-reference/).) [Table 7-2](broken-reference/) shows the results.
+Now, we’ll build a test bench to simulate vehicle speed. We’ll use this test bench together with the IC shown in [Figure 7-4](../../iot/obdii/broken-reference/) to pull a vehicle’s VIN via the OBD-II connector. This will give us the exact year, make, model, and engine type of the vehicle. (We looked at how to do this manually in “[Unified Diagnostic Services](../../iot/obdii/broken-reference/)” on [page 54](../../iot/obdii/broken-reference/).) [Table 7-2](../../iot/obdii/broken-reference/) shows the results.
 
 **Table 7-2:** Vehicle Information
 
@@ -2727,13 +2727,13 @@ Now, we’ll build a test bench to simulate vehicle speed. We’ll use this test
 | ----------------- | --------- | -------- | --------- | ----------- | --------------- |
 | 1G1ZT53826F109149 | Malibu    | 2006     | Chevrolet | Sedan 4Door | 3.5L V6 OHV 12V |
 
-Once we know a vehicle’s year of manufacture and engine type, we can fetch the wiring diagram to determine which of the ECU wires control the engine speed (see [Figure 7-8](broken-reference/)). Then, we can send simulated speed data to the ECU in order to measure effects. Using wiring diagrams to simulate real engine behavior can make it easy to identify target signals on the CAN bus.
+Once we know a vehicle’s year of manufacture and engine type, we can fetch the wiring diagram to determine which of the ECU wires control the engine speed (see [Figure 7-8](../../iot/obdii/broken-reference/)). Then, we can send simulated speed data to the ECU in order to measure effects. Using wiring diagrams to simulate real engine behavior can make it easy to identify target signals on the CAN bus.
 
 _Figure 7-8: Wiring diagram showing the engine speed pin_
 
-The wiring diagram in [Figure 7-8](broken-reference/) shows how you can trace the wire from the CKP sensor so that connector C2, pin 27 receives the engine speed from the crankshaft sensor. Having identified this pin in the wiring diagram, we locate the corresponding wire on the ECU. We can connect this wire to any digital IO pin on an Arduino. In this example, we’ll use pin 2 and then add a potentiometer to A0 to control the speed of the CKP sensor’s “teeth” going to the ECM. Pin 2 will send output to C2, pin 27.
+The wiring diagram in [Figure 7-8](../../iot/obdii/broken-reference/) shows how you can trace the wire from the CKP sensor so that connector C2, pin 27 receives the engine speed from the crankshaft sensor. Having identified this pin in the wiring diagram, we locate the corresponding wire on the ECU. We can connect this wire to any digital IO pin on an Arduino. In this example, we’ll use pin 2 and then add a potentiometer to A0 to control the speed of the CKP sensor’s “teeth” going to the ECM. Pin 2 will send output to C2, pin 27.
 
-In order to simulate engine speed sent from the CKP sensor, we code up an Arduino sketch to send high and low pulses with a delay interval mapped to the potentiometer position (see [Listing 7-1](broken-reference/)).
+In order to simulate engine speed sent from the CKP sensor, we code up an Arduino sketch to send high and low pulses with a delay interval mapped to the potentiometer position (see [Listing 7-1](../../iot/obdii/broken-reference/)).
 
 int ENG\_SPD\_PIN = 2;\
 long interval = 500;\
@@ -2770,7 +2770,7 @@ digitalWrite(ENG\_SPD\_PIN, state);\
 
 _Listing 7-1: Arduino sketch designed to simulate engine speed_
 
-Now, we upload this sketch to the Arduino, power up the test bench, and when we turn the knob on the potentiometer, the RPM dial moves on the IC. In [Figure 7-9](broken-reference/), the second line of the cansniffer traffic shows bytes 2 and 3—0x0B and 0x89—changing as we rotate the potentiometer knob for Arbitration ID 0x110 (the column labeled _ID_).
+Now, we upload this sketch to the Arduino, power up the test bench, and when we turn the knob on the potentiometer, the RPM dial moves on the IC. In [Figure 7-9](../../iot/obdii/broken-reference/), the second line of the cansniffer traffic shows bytes 2 and 3—0x0B and 0x89—changing as we rotate the potentiometer knob for Arbitration ID 0x110 (the column labeled _ID_).
 
 _Figure 7-9:_ cansniffer _identifying RPMs_
 
@@ -2778,7 +2778,7 @@ _Figure 7-9:_ cansniffer _identifying RPMs_
 
 _0x0B and 0x89 don’t directly translate into the RPMs; rather, they’re shorthand. In other words, if you’re going to 1000 RPMs, you won’t see the hex for 1000. When you query an engine for RPMs, the algorithm to convert these two bytes into RPMs is commonly the following:_
 
-_A is the first byte and_ B _is the second byte. If you apply that algorithm to what’s shown in_ [_Figure 7-9_](broken-reference/) _(converted from hex to decimal), you get this:_
+_A is the first byte and_ B _is the second byte. If you apply that algorithm to what’s shown in_ [_Figure 7-9_](../../iot/obdii/broken-reference/) _(converted from hex to decimal), you get this:_
 
 _You can simplify this method to taking 0xB89, which is 2953 in decimal form. When you divide this by 4, you get 738.25 RPMs._
 
@@ -2790,7 +2790,7 @@ $ cansend slcan0 110#00ffff3500380000
 
 While this method works and, once connected, takes only a few seconds to identify the CAN packet responsible for RPMs, there are still some visible issues. Every so often a CAN signal shows up that resets the values to 00 00 and stops the speedometer from moving. So while the ECM is fairly certain the crankshaft is spinning, it’s detecting a problem and attempting to reset.
 
-You can use the ISO-TP tools discussed in [Chapter 3](broken-reference/) to pull data. In two different terminals, we can check whether there was a diagnostic code. (You can also use a scan tool.)
+You can use the ISO-TP tools discussed in [Chapter 3](../../iot/obdii/broken-reference/) to pull data. In two different terminals, we can check whether there was a diagnostic code. (You can also use a scan tool.)
 
 In one terminal, enter the following:
 
@@ -2819,7 +2819,7 @@ Building a test bench can be a time-consuming process during your initial resear
 
 ![image](../../.gitbook/assets/000023)
 
-The ECU is a common target of reverse engineering, sometimes referred to as chip tuning. As mentioned in [Chapter 7](broken-reference/), the most popular ECU hack is modifying the fuel map to alter the balance of fuel efficiency and performance in order to give you a higher-performance vehicle. There’s a large community involved with these types of modifications, and we’ll go into more detail on firmware modifications like this in [Chapter 13](broken-reference/).
+The ECU is a common target of reverse engineering, sometimes referred to as chip tuning. As mentioned in [Chapter 7](../../iot/obdii/broken-reference/), the most popular ECU hack is modifying the fuel map to alter the balance of fuel efficiency and performance in order to give you a higher-performance vehicle. There’s a large community involved with these types of modifications, and we’ll go into more detail on firmware modifications like this in [Chapter 13](../../iot/obdii/broken-reference/).
 
 This chapter will focus on generic embedded-system methods of attack as well as side-channel attacks. These methodologies can be applied to any embedded system, not just to the ECU, and they may even be used to modify a vehicle with the help of aftermarket tools. Here, we’ll focus on debugging interfaces for hardware as well as performing side-channel analysis attacks and glitching attacks.
 
@@ -2829,27 +2829,27 @@ _To get the most out of this chapter, you should have a good understanding of ba
 
 #### **Analyzing Circuit Boards** <a href="#calibre_link-545" id="calibre_link-545"></a>
 
-The first step in attacking the ECU or any embedded system in a vehicle is to analyze the target circuit board. I touched upon circuit board analysis in [Chapter 7](broken-reference/), but in this chapter, I’ll go into more detail about how electronics and chips work. I’ll introduce you to techniques that can be applied to any embedded system in the vehicle.
+The first step in attacking the ECU or any embedded system in a vehicle is to analyze the target circuit board. I touched upon circuit board analysis in [Chapter 7](../../iot/obdii/broken-reference/), but in this chapter, I’ll go into more detail about how electronics and chips work. I’ll introduce you to techniques that can be applied to any embedded system in the vehicle.
 
 _**Identifying Model Numbers**_
 
 When reversing a circuit board, first look at the model numbers of the microcontroller chips on the board. These model numbers can help you track down valuable information that can be key to your analysis. Most of the chips you’ll find on vehicle circuit boards are generic—companies rarely make custom ones—so an Internet search of a chip’s model number can provide you with the complete data sheet for that chip.
 
-As mentioned in [Chapter 7](broken-reference/), you’ll sometimes run into custom ASIC processors with custom opcodes, especially in older systems, which will be harder to reprogram. When you encounter older chips like these, remove them from the board and plug them in to an EPROM programmer in order to read their firmware. You should be able to reprogram modern systems directly via debugging software, like JTAG.
+As mentioned in [Chapter 7](../../iot/obdii/broken-reference/), you’ll sometimes run into custom ASIC processors with custom opcodes, especially in older systems, which will be harder to reprogram. When you encounter older chips like these, remove them from the board and plug them in to an EPROM programmer in order to read their firmware. You should be able to reprogram modern systems directly via debugging software, like JTAG.
 
 Once you locate a data sheet, try to identify the microcontrollers and memory locations on each chip to determine how things are wired together and where to find diagnostic pins—a potential way in.
 
 _**Dissecting and Identifying a Chip**_
 
-If you can’t find a model number, sometimes all you’ll have to go on is the chip’s logo (after a while, you’ll find that you start to recognize chip logos) and a few of its product codes. The logo shown in [Figure 8-1](broken-reference/) is for STMicroelectronics. At the top of the chip is the model number—in this case, STM32F407—which may be hard to read because it’s engraved. Often, a light-up magnifier or a cheap USB microscope can prove very handy in reading these markings. Go to [_http://www.st.com/_](http://www.st.com) to find the data sheet for the STM32F series chips, specifically the 407 variety. Much like VIN numbers, model numbers are often broken down into sections representing model number and different variations. There’s no standard for how to break down these numbers, however, and every manufacturer will represent their data differently.
+If you can’t find a model number, sometimes all you’ll have to go on is the chip’s logo (after a while, you’ll find that you start to recognize chip logos) and a few of its product codes. The logo shown in [Figure 8-1](../../iot/obdii/broken-reference/) is for STMicroelectronics. At the top of the chip is the model number—in this case, STM32F407—which may be hard to read because it’s engraved. Often, a light-up magnifier or a cheap USB microscope can prove very handy in reading these markings. Go to [_http://www.st.com/_](http://www.st.com) to find the data sheet for the STM32F series chips, specifically the 407 variety. Much like VIN numbers, model numbers are often broken down into sections representing model number and different variations. There’s no standard for how to break down these numbers, however, and every manufacturer will represent their data differently.
 
 _Figure 8-1: STM32 chipset identification_
 
 Below the chip’s model number is the code—in this case, VGT6—which tells you the specific features, such as USB support, available on the chip. If you look up the model number in conjunction with the ST code, you’ll learn that the STM32F407Vx series is an ARM Cortext M4 chip with support for Ethernet, USB, two CANs, and LIN as well as JTAG and Serial Wire Debug.
 
-To determine the function of the various pins, scan the data sheet to find the package pinout diagrams, and look for the package that matches yours for pin count. For example, as you can see in [Figure 8-1](broken-reference/), each side of the chip has 25 pins for a total of 100, which matches the LQFP100 pinout in the data sheet shown in [Figure 8-2](broken-reference/).
+To determine the function of the various pins, scan the data sheet to find the package pinout diagrams, and look for the package that matches yours for pin count. For example, as you can see in [Figure 8-1](../../iot/obdii/broken-reference/), each side of the chip has 25 pins for a total of 100, which matches the LQFP100 pinout in the data sheet shown in [Figure 8-2](../../iot/obdii/broken-reference/).
 
-Each chip will usually have a dot or dimple at pin 1 (see [Figure 8-1](broken-reference/)), and once you identify pin 1, you can follow the pinout to determine each pin’s function. Sometimes you’ll find two dimples, but one should be slightly more pronounced.
+Each chip will usually have a dot or dimple at pin 1 (see [Figure 8-1](../../iot/obdii/broken-reference/)), and once you identify pin 1, you can follow the pinout to determine each pin’s function. Sometimes you’ll find two dimples, but one should be slightly more pronounced.
 
 Sometimes pin 1 on a chip is indicated by a cut-off corner. If you find nothing on a chip that allows you to identify pin 1, look for things you _can_ identify. For example, if another chip on the board is a common CAN transceiver, you could use a multitool to trace the lines to figure out which pins it connects to. You could then reference the data sheet to see which side of the chip contains these CAN pins. To do this, put your multimeter in continuity mode. Once in continuity mode, it will beep if you touch both pins to the same trace, indicating that they’re connected. Once you’re able to identify just one pin, you can use that information together with the pinout to deduce the pin layout.
 
@@ -2865,17 +2865,17 @@ JTAG is a protocol that allows for chip-level debugging and downloading and uplo
 
 **JTAGulator**
 
-You’ll often find pads on a chip’s circuit board that are broken out from the chip itself and that may give you access to the JTAG pins. To test the exposed pads for JTAG connections, use a tool like JTAGulator, shown in [Figure 8-3](broken-reference/). Plug all of the chip’s exposed pins in to the JTAGulator, and set the voltage to match the chip. JTAGulator should then find any JTAG pins and even walk the JTAG chain—a method of linking chips over JTAG—to see whether any other chips are attached.
+You’ll often find pads on a chip’s circuit board that are broken out from the chip itself and that may give you access to the JTAG pins. To test the exposed pads for JTAG connections, use a tool like JTAGulator, shown in [Figure 8-3](../../iot/obdii/broken-reference/). Plug all of the chip’s exposed pins in to the JTAGulator, and set the voltage to match the chip. JTAGulator should then find any JTAG pins and even walk the JTAG chain—a method of linking chips over JTAG—to see whether any other chips are attached.
 
 _Figure 8-3: JTAGulator with a Bus Pirate cable_
 
-JTAGulator supports either screw terminals or the use of a Bus Pirate cable (as in [Figure 8-3](broken-reference/)) for probing. Both the JTAGulator and the Bus Pirate cable use a serial interface to configure and interact with a chip.
+JTAGulator supports either screw terminals or the use of a Bus Pirate cable (as in [Figure 8-3](../../iot/obdii/broken-reference/)) for probing. Both the JTAGulator and the Bus Pirate cable use a serial interface to configure and interact with a chip.
 
 **Debugging with JTAG**
 
 You can debug a chip with JTAG using just two wires, but it’s more common to use four or five pin connections. Of course, finding the JTAG connection is only the first step; usually, you’ll need to overcome additional protections that prevent you from just downloading the chip’s firmware in order to do anything interesting.
 
-Developers will disable JTAG firmware via either software or hardware. When disabling JTAG in software, the programmer sets the JTD bit, which is usually enabled twice via software during runtime. If the bit it isn’t called twice within a short time, it’s not set. It’s possible to defeat a software protection like this by using a clock or power-glitching attack to skip at least one of these instructions. (We’ll discuss glitching attacks later in “[Fault Injection](broken-reference/)” on [page 148](broken-reference/).)
+Developers will disable JTAG firmware via either software or hardware. When disabling JTAG in software, the programmer sets the JTD bit, which is usually enabled twice via software during runtime. If the bit it isn’t called twice within a short time, it’s not set. It’s possible to defeat a software protection like this by using a clock or power-glitching attack to skip at least one of these instructions. (We’ll discuss glitching attacks later in “[Fault Injection](../../iot/obdii/broken-reference/)” on [page 148](../../iot/obdii/broken-reference/).)
 
 The other way to disable JTAG on a chip is to attempt to permanently disable programming by setting the JTAG fuse—OCDEN and JTAGEN—and thereby disabling both registers. This is harder to bypass with glitch attacks, though voltage glitching or the more invasive optical glitches may succeed. (Optical glitches entail decapping the chip and using a microscope and a laser, so they’re very costly. We won’t be covering them in this book.)
 
@@ -2887,9 +2887,9 @@ Although JTAG is the most commonly used hardware debugging protocol, some microc
 
 The STM32F4DISCOVERY kit (sold by STM) is another tool you can use to debug and program these chips. These are actually developer boards with their own programmer. They cost about $15 and should be in your car hacking tool set. The benefit of using the Discovery kit is that it’s both a cheap programmer and a development board that you can use to to test modifications to the chip’s firmware.
 
-In order to use the Discovery kit as a generic programmer, remove the jumpers from the pins labeled _ST-Link_, and then connect the six pins on the opposite side labeled _SWD_ (see [Figure 8-4](broken-reference/)). Pin 1 starts next to the white dot on the SWD connector.
+In order to use the Discovery kit as a generic programmer, remove the jumpers from the pins labeled _ST-Link_, and then connect the six pins on the opposite side labeled _SWD_ (see [Figure 8-4](../../iot/obdii/broken-reference/)). Pin 1 starts next to the white dot on the SWD connector.
 
-[Table 8-1](broken-reference/) shows the pinout.
+[Table 8-1](../../iot/obdii/broken-reference/) shows the pinout.
 
 **Table 8-1:** Pinout for the STM32F4DISCOVERY kit
 
@@ -2904,13 +2904,13 @@ In order to use the Discovery kit as a generic programmer, remove the jumpers fr
 
 _Figure 8-4: Programming a STM32 chip via the STM32F4DISCOVERY kit_
 
-You’ll most likely need to provide power to the target device, but instead of using pin 1 on the SWD connector, use the 3V pin from the Discovery portion of the board, as shown in [Figure 8-4](broken-reference/). (Notice in the pinout that the Discovery kit doesn’t use all six pins for SWD; pins nRESET and SWO are optional.)
+You’ll most likely need to provide power to the target device, but instead of using pin 1 on the SWD connector, use the 3V pin from the Discovery portion of the board, as shown in [Figure 8-4](../../iot/obdii/broken-reference/). (Notice in the pinout that the Discovery kit doesn’t use all six pins for SWD; pins nRESET and SWO are optional.)
 
 Once you’re connected, you’ll most likely want to read and write to the firmware. If you’re running Linux, you can get the ST-Link from GitHub at [_https://github.com/texane/stlink/_](https://github.com/texane/stlink/). Once you have those utilities installed, you’ll not only be able to read and write to the chip’s flash memory, but you can also start a gdbserver to work as a real-time debugger.
 
 _**The Advanced User Debugger**_
 
-Renesas is a popular automotive chipset used in ECUs (see [Figure 8-5](broken-reference/)). It has its own implementation over JTAG called the _Advanced User Debugger (AUD)_. AUD provides the same functionality as JTAG but with its own proprietary interface. As with SWD, AUD requires an interface specific to it in order to communicate with Renesas chipsets.
+Renesas is a popular automotive chipset used in ECUs (see [Figure 8-5](../../iot/obdii/broken-reference/)). It has its own implementation over JTAG called the _Advanced User Debugger (AUD)_. AUD provides the same functionality as JTAG but with its own proprietary interface. As with SWD, AUD requires an interface specific to it in order to communicate with Renesas chipsets.
 
 _Figure 8-5: 2005 Acura TL ECU with Renesas SH MCU and AUD port_
 
@@ -2930,7 +2930,7 @@ We’ll focus on simpler and cheaper side-channel attacks with the help of the C
 
 _It’s possible to accomplish the attacks I’ll discuss at less of a cost by building a specialized device, but the ChipWhisperer is the cheapest tool that covers all the main bases. Also, ChipWhisperer tutorials target open source designs, which makes them ideal for this book, since we can’t use examples from specific manufacturers due to copyright. I’ll integrate the NewAE tutorials throughout this chapter when demonstrating each attack._
 
-The ChipWhisperer has an optional package that includes a target development board called the MultiTarget Victim Board (see [Figure 8-6](broken-reference/)). This board is mainly used for demonstration and training, and we’ll use it as the target of our demos as well.
+The ChipWhisperer has an optional package that includes a target development board called the MultiTarget Victim Board (see [Figure 8-6](../../iot/obdii/broken-reference/)). This board is mainly used for demonstration and training, and we’ll use it as the target of our demos as well.
 
 _Figure 8-6: MultiTarget Victim Board_
 
@@ -2991,15 +2991,15 @@ We’ll use the AVRDUDESS GUI to program our Victim Board. You can get AVRDUDESS
 
 $ sudo apt-get install libmono-winforms2.0-cil
 
-Next, make sure the Victim Board is set up to use the ATmega328 portion by changing the jumper settings to match the layout in [Figure 8-7](broken-reference/).
+Next, make sure the Victim Board is set up to use the ATmega328 portion by changing the jumper settings to match the layout in [Figure 8-7](../../iot/obdii/broken-reference/).
 
 _Figure 8-7: Jumper settings for the MultiTarget Victim Board_
 
-Your ChipWhisperer should have come with a 20-pin ribbon cable. Plug this cable in to the back of the ChipWhisperer and the USB A/B cable in to the side, as shown in [Figure 8-8](broken-reference/). Dmesg should report seeing an AVRISP mkII plugged in, which is the programmer that we’ll use to program the target board. This will allow us to perform testing without disconnecting the device.
+Your ChipWhisperer should have come with a 20-pin ribbon cable. Plug this cable in to the back of the ChipWhisperer and the USB A/B cable in to the side, as shown in [Figure 8-8](../../iot/obdii/broken-reference/). Dmesg should report seeing an AVRISP mkII plugged in, which is the programmer that we’ll use to program the target board. This will allow us to perform testing without disconnecting the device.
 
 _Figure 8-8: Wiring up the MultiTarget Victim Board_
 
-Finally, attach the SMA cable from the VOUT on the target board to the LNA connector in CH-A on the front of the ChipWhisperer. [Table 8-2](broken-reference/) shows the pinout. We’ll use this setup for our demos unless otherwise specified.
+Finally, attach the SMA cable from the VOUT on the target board to the LNA connector in CH-A on the front of the ChipWhisperer. [Table 8-2](../../iot/obdii/broken-reference/) shows the pinout. We’ll use this setup for our demos unless otherwise specified.
 
 **Table 8-2:** Pinout for the MultiTarget Victim Board
 
@@ -3017,7 +3017,7 @@ In the following example, we’ll explore TinySafeBoot ([_http://jtxp.org/tech/t
 
 _**Prepping Your Test with AVRDUDESS**_
 
-To begin, open AVRDUDESS and select **AVR ISP mkII** from the Programmer drop-down menu. Make sure you have ATmega328P selected in the MCU field, and then click **Detect** to verify that you’re connected to the ATmega328p (see [Figure 8-9](broken-reference/)). Select the flash file _hardware/victims/firmware/ tinysafeboot-20140331_ in the Flash field.
+To begin, open AVRDUDESS and select **AVR ISP mkII** from the Programmer drop-down menu. Make sure you have ATmega328P selected in the MCU field, and then click **Detect** to verify that you’re connected to the ATmega328p (see [Figure 8-9](../../iot/obdii/broken-reference/)). Select the flash file _hardware/victims/firmware/ tinysafeboot-20140331_ in the Flash field.
 
 _Figure 8-9: Programming TinySafeBoot in AVRDUDESS_
 
@@ -3032,18 +3032,18 @@ $ python ChipWhispererCapture.py
 
 The ChipWhisperer has lots of options, so we’ll go step by step through each setting you’ll need to change.
 
-1.  In ChipWhispererCapture, go to the General Settings tab and set the Scope Module to **ChipWhisperer/OpenADC** and the Target Module to **Simple Serial**, as shown in [Figure 8-10](broken-reference/).
+1.  In ChipWhispererCapture, go to the General Settings tab and set the Scope Module to **ChipWhisperer/OpenADC** and the Target Module to **Simple Serial**, as shown in [Figure 8-10](../../iot/obdii/broken-reference/).
 
     _Figure 8-10: Setting the Scope and Target types_
 
     _Figure 8-11: Setting Connection and Baud_
-2. Switch to the Target Settings tab (at the bottom of the window), and change the Connection setting to **ChipWhisperer**. Then under Serial Port Settings, set both TX Baud and RX Baud to **9600**, as shown in [Figure 8-11](broken-reference/).
+2. Switch to the Target Settings tab (at the bottom of the window), and change the Connection setting to **ChipWhisperer**. Then under Serial Port Settings, set both TX Baud and RX Baud to **9600**, as shown in [Figure 8-11](../../iot/obdii/broken-reference/).
 3. At the top of the screen, click the red circle next to Scope with _DIS_ in it. The circle should become green and display _CON_.
-4.  The ChipWhisperer comes with a simple serial terminal interface. Choose **Tools ▸ Open Terminal** to open it. You should see a terminal like the one shown in [Figure 8-12](broken-reference/).
+4.  The ChipWhisperer comes with a simple serial terminal interface. Choose **Tools ▸ Open Terminal** to open it. You should see a terminal like the one shown in [Figure 8-12](../../iot/obdii/broken-reference/).
 
     _Figure 8-12: ChipWhisperer serial terminal_
-5. Set TX on Enter at the bottom of the terminal to **None**, and check the box that says **RX: Show non-ASCII as hex** (see [Figure 8-12](broken-reference/)). Now click **Connect** to enable your text areas.
-6. Enter **@@@** (TinySafeBoot’s start-up password) in the text field to the left of the Send button, and click **Send**. The bootloader should start with TSB and mainly contain information about the firmware version and AVR settings. TSB is just an identifier used by TinySafeBoot, most likely its initials. The output should match that in [Figure 8-12](broken-reference/).
+5. Set TX on Enter at the bottom of the terminal to **None**, and check the box that says **RX: Show non-ASCII as hex** (see [Figure 8-12](../../iot/obdii/broken-reference/)). Now click **Connect** to enable your text areas.
+6. Enter **@@@** (TinySafeBoot’s start-up password) in the text field to the left of the Send button, and click **Send**. The bootloader should start with TSB and mainly contain information about the firmware version and AVR settings. TSB is just an identifier used by TinySafeBoot, most likely its initials. The output should match that in [Figure 8-12](../../iot/obdii/broken-reference/).
 
 _**Setting a Custom Password**_
 
@@ -3054,7 +3054,7 @@ First, close the serial terminal. Then enter the following lines in the Python c
 \>>> self.target.driver.ser.write("@@@")\
 \>>> self.target.driver.ser.read(255)
 
-We use the serial command self.target.driver.ser.write("@@@") to send the current password for the bootloader. Next, we enter the serial command self.target.driver.ser.read(255) to read up to the next 255 bytes from the bootloader to see its response to our sending the password (see [Figure 8-13](broken-reference/)).
+We use the serial command self.target.driver.ser.write("@@@") to send the current password for the bootloader. Next, we enter the serial command self.target.driver.ser.read(255) to read up to the next 255 bytes from the bootloader to see its response to our sending the password (see [Figure 8-13](../../iot/obdii/broken-reference/)).
 
 _Figure 8-13: Sending_ @@@ _via ChipWhisperer’s Python console_
 
@@ -3065,7 +3065,7 @@ For convenience, first assign the read and write commands to their own variables
 
 The password is stored in the last page of the device’s flash memory. We’ll grab that page, remove the confirmation ! character from the response, and write a new password—og—to the firmware.
 
-Return to the Python console, and enter [Listing 8-1](broken-reference/).
+Return to the Python console, and enter [Listing 8-1](../../iot/obdii/broken-reference/).
 
 \>>> write('c')\
 \>>> lastpage = read(255)\
@@ -3084,7 +3084,7 @@ If the login times out, resend @@@ like so:
 
 \>>> write("@@@")
 
-Once you’ve written the new characters to memory, verify that og is the new password with write("og"), followed by a read(255) in the Python console. Notice in [Figure 8-14](broken-reference/) that we first try sending @@@ but that we don’t get a TinySafeBoot response until we send the og password.
+Once you’ve written the new characters to memory, verify that og is the new password with write("og"), followed by a read(255) in the Python console. Notice in [Figure 8-14](../../iot/obdii/broken-reference/) that we first try sending @@@ but that we don’t get a TinySafeBoot response until we send the og password.
 
 _Figure 8-14: Setting the password to_ og
 
@@ -3098,7 +3098,7 @@ call(\["/usr/bin/avrdude", "-c", "avrispmkII", "-p", "m328p"])
 
 _**Setting Up the ChipWhisperer ADC**_
 
-Now, set up the ChipWhisperer ADC so that it knows how to record the power trace. Return to the ChipWhisperer main window, click the Scope tab, and set the values as shown in [Table 8-3](broken-reference/) and [Figure 8-15](broken-reference/).
+Now, set up the ChipWhisperer ADC so that it knows how to record the power trace. Return to the ChipWhisperer main window, click the Scope tab, and set the values as shown in [Table 8-3](../../iot/obdii/broken-reference/) and [Figure 8-15](../../iot/obdii/broken-reference/).
 
 **Table 8-3:** Scope Tab Settings to Set Up the OpenADC for the Victim Board
 
@@ -3126,11 +3126,11 @@ Now, issue the next command with the correct password, but do _not_ click Enter 
 
 \>>> write("og")
 
-Click **1** in the green play icon in the toolbar to record one power trace. Immediately after you do so, click **Enter** in the Python console. A Capture Waveform window should open and show you the power trace recording of the valid password (see [Figure 8-16](broken-reference/)).
+Click **1** in the green play icon in the toolbar to record one power trace. Immediately after you do so, click **Enter** in the Python console. A Capture Waveform window should open and show you the power trace recording of the valid password (see [Figure 8-16](../../iot/obdii/broken-reference/)).
 
 _Figure 8-16: Power trace of a valid password_
 
-The details of [Figure 8-16](broken-reference/) aren’t that important; the point is to give you a feel for what a “good” signal looks like. The thick lines you see are normal processing, and there’s a dip around the 8,000 sample range when the processing instructions changed. (This could be something in the password check, but let’s not get hung up on details at this stage.)
+The details of [Figure 8-16](../../iot/obdii/broken-reference/) aren’t that important; the point is to give you a feel for what a “good” signal looks like. The thick lines you see are normal processing, and there’s a dip around the 8,000 sample range when the processing instructions changed. (This could be something in the password check, but let’s not get hung up on details at this stage.)
 
 Now, enter an invalid password—ff:
 
@@ -3138,7 +3138,7 @@ Now, enter an invalid password—ff:
 \>>> write("@@@")\
 \>>> write("ff")
 
-[Figure 8-17](broken-reference/) shows the power trace for this password.
+[Figure 8-17](../../iot/obdii/broken-reference/) shows the power trace for this password.
 
 _Figure 8-17: Power trace for a password with no valid characters_
 
@@ -3150,7 +3150,7 @@ Now, let’s try a password with a valid first character to see whether we notic
 \>>> write("@@@")\
 \>>> write("of")
 
-In [Figure 8-18](broken-reference/), one additional chunk is active before the device enters the infinite loop. We see normal power usage, followed by the dip at 8,000 that we saw in the first valid reading, and then some more normal usage before the device enters the infinite loop of 0 usage.
+In [Figure 8-18](../../iot/obdii/broken-reference/), one additional chunk is active before the device enters the infinite loop. We see normal power usage, followed by the dip at 8,000 that we saw in the first valid reading, and then some more normal usage before the device enters the infinite loop of 0 usage.
 
 _Figure 8-18: Power trace of a password with a valid first character_
 
@@ -3160,7 +3160,7 @@ _You can determine the size of samples used for one valid character by measuring
 
 _**Scripting the ChipWhisperer with Python**_
 
-Because the ChipWhisperer is written in Python, it’s highly scriptable, so you can script these power traces to create a brute-forcer that can get the password for the bootloader very quickly. By setting a script to check whether the data points of the power trace exceed a set threshold, your brute-forcer can immediately tell whether the target character is correct. By looking at the data values on the y-axis in [Figure 8-18](broken-reference/), we can see that when we have activity, data reaches 0.1, but when we’re in the infinite loop, it hovers around the 0 mark. If the target character is correct, the threshold for our script can be set to 0.1, and if no data in the sample range of a byte reaches 0.1, then we can conclude that we’re in the infinite loop and the password character was incorrect.
+Because the ChipWhisperer is written in Python, it’s highly scriptable, so you can script these power traces to create a brute-forcer that can get the password for the bootloader very quickly. By setting a script to check whether the data points of the power trace exceed a set threshold, your brute-forcer can immediately tell whether the target character is correct. By looking at the data values on the y-axis in [Figure 8-18](../../iot/obdii/broken-reference/), we can see that when we have activity, data reaches 0.1, but when we’re in the infinite loop, it hovers around the 0 mark. If the target character is correct, the threshold for our script can be set to 0.1, and if no data in the sample range of a byte reaches 0.1, then we can conclude that we’re in the infinite loop and the password character was incorrect.
 
 For example, if the password is made up of 255 different characters with a maximum length of 3, the password will be one of 2553, or 16,581,375, possibilities. However, because we can instantly detect when we have a correct character, in a worst-case scenario, the brute-forcer will have to try only 255 × 3, or 765, possibilities. If the character doesn’t match the set password, the bootloader jumps into the infinite loop. On the other hand, if the password check routine waited until the entire password was checked regardless of its correctness, this type of timing analysis couldn’t be done. The fact that the small code on embedded systems is often designed to be as efficient as possible can open it up to devastating timing attacks.
 
@@ -3176,19 +3176,19 @@ _Fault injection_, also known as _glitching_, involves attacking a chip by disru
 
 _**Clock Glitching**_
 
-Any ECU or chip will rely on an internal clock to time its instructions. Each time the microcontroller receives a pulse from the clock, it loads an instruction, and while that instruction is being decoded and executed, the next instruction is being loaded. This means that a steady rhythm of pulses is needed for the instructions to have time to load and execute correctly. But what happens if there’s a hiccup during one of these clock pulses? Consider the clock glitch in [Figure 8-19](broken-reference/).
+Any ECU or chip will rely on an internal clock to time its instructions. Each time the microcontroller receives a pulse from the clock, it loads an instruction, and while that instruction is being decoded and executed, the next instruction is being loaded. This means that a steady rhythm of pulses is needed for the instructions to have time to load and execute correctly. But what happens if there’s a hiccup during one of these clock pulses? Consider the clock glitch in [Figure 8-19](../../iot/obdii/broken-reference/).
 
 _Figure 8-19: Normal clock cycle (top) and glitched clock cycle (bottom)_
 
-Because the Program Counter has time to increment but not enough time to decode and execute the instruction before the next instruction is loaded, the microcontroller will usually skip that instruction. In the bottom cycle of [Figure 8-19](broken-reference/), instruction 3 is skipped because it does not have enough time to execute before another instruction is issued. This can be useful for bypassing security methods, breaking out of loops, or re-enabling JTAG.
+Because the Program Counter has time to increment but not enough time to decode and execute the instruction before the next instruction is loaded, the microcontroller will usually skip that instruction. In the bottom cycle of [Figure 8-19](../../iot/obdii/broken-reference/), instruction 3 is skipped because it does not have enough time to execute before another instruction is issued. This can be useful for bypassing security methods, breaking out of loops, or re-enabling JTAG.
 
 To perform a clock glitch, you need to use a system faster than your target’s system. A field-programmable gate array (FPGA) board is ideal, but you can accomplish this trick with other microcontrollers, too. To perform the glitch, you need to sync with the target’s clock, and when the instruction you want to skip is issued, drive the clock to ground for a partial cycle.
 
-We’ll demonstrate a clock-glitching attack using the ChipWhisperer and some demo software made for this kind of attack. The Victim Board setup is almost the same as for the power attack, except that you’ll need to change the jumpers for the Clock pin (in the middle of the board), which should be set only for FPGAOUT by jumping the pins (see [Figure 8-20](broken-reference/)).
+We’ll demonstrate a clock-glitching attack using the ChipWhisperer and some demo software made for this kind of attack. The Victim Board setup is almost the same as for the power attack, except that you’ll need to change the jumpers for the Clock pin (in the middle of the board), which should be set only for FPGAOUT by jumping the pins (see [Figure 8-20](../../iot/obdii/broken-reference/)).
 
 _Figure 8-20: MultiTarget Victim Board set for glitching_
 
-We’ll set up the ChipWhisperer to control the clock of the ATmega328. Both the general settings and the target settings are the same as in the power attack discussed in “[Setting Up the ChipWhisperer for Serial Communications](broken-reference/)” on [page 140](broken-reference/); the only exception is that we’ll set the baud rate to 38400 for both TX and RX. Enable both the Scope and Target by switching from DIS to CON in the toolbar, as discussed earlier. [Figure 8-21](broken-reference/) and [Table 8-4](broken-reference/) show the complete settings.
+We’ll set up the ChipWhisperer to control the clock of the ATmega328. Both the general settings and the target settings are the same as in the power attack discussed in “[Setting Up the ChipWhisperer for Serial Communications](../../iot/obdii/broken-reference/)” on [page 140](../../iot/obdii/broken-reference/); the only exception is that we’ll set the baud rate to 38400 for both TX and RX. Enable both the Scope and Target by switching from DIS to CON in the toolbar, as discussed earlier. [Figure 8-21](../../iot/obdii/broken-reference/) and [Table 8-4](../../iot/obdii/broken-reference/) show the complete settings.
 
 _Figure 8-21: Scope settings for glitching_
 
@@ -3206,11 +3206,11 @@ These settings give the ChipWhisperer full control of the target board’s clock
 
 $ make MCU=atmega328p
 
-Now, upload the _glitchexample.hex_ file via AVRDUDESS, as we did in “[Prepping Your Test with AVRDUDESS](broken-reference/)” on [page 139](broken-reference/). Once the firmware is loaded, switch to the main ChipWhisperer window and open a serial terminal. Click **Connect**, and then switch to AVRDUDESS and click **Detect**. This should reset the chip so that you see hello appear in the capture terminal. Enter a password, and click **Send**. Assuming you enter the wrong password, the capture terminal should display FOff and hang, as shown in [Figure 8-22](broken-reference/).
+Now, upload the _glitchexample.hex_ file via AVRDUDESS, as we did in “[Prepping Your Test with AVRDUDESS](../../iot/obdii/broken-reference/)” on [page 139](../../iot/obdii/broken-reference/). Once the firmware is loaded, switch to the main ChipWhisperer window and open a serial terminal. Click **Connect**, and then switch to AVRDUDESS and click **Detect**. This should reset the chip so that you see hello appear in the capture terminal. Enter a password, and click **Send**. Assuming you enter the wrong password, the capture terminal should display FOff and hang, as shown in [Figure 8-22](../../iot/obdii/broken-reference/).
 
 _Figure 8-22: A bad password example_
 
-Now return to your editor and look at the _glitchexample_ source code. As shown in [Listing 8-2](broken-reference/), this is a simple password check.
+Now return to your editor and look at the _glitchexample_ source code. As shown in [Listing 8-2](../../iot/obdii/broken-reference/), this is a simple password check.
 
 for(cnt = 0; cnt < 5; cnt++){\
 if (inp\[cnt] != passwd\[cnt]){\
@@ -3239,7 +3239,7 @@ _Listing 8-2: Password check method for_ glitch3()
 
 If an invalid password is entered, passok is set to 0, and the message Foff is printed to the screen; otherwise, Welcome is printed to the screen. Our goal is to introduce a clock glitch that bypasses the password verification either by skipping over the instruction that sets passok to 0 (so that it’s never set to 0) or by jumping straight to the welcome message. We’ll do the latter by manipulating the width and offset percentages in the glitch settings.
 
-[Figure 8-23](broken-reference/) shows some possible places to locate the glitch. Different chips and different instructions react differently depending on where your glitch is placed, so experiment to determine which location works best for your situation. [Figure 8-23](broken-reference/) also shows what a normal clock cycle looks like under a scope. If we use a positive offset in the ChipWhisperer settings, it’ll cause a brief drop in the middle of the clock cycle. If we use a negative offset, it’ll cause a brief spike before the clock cycle.
+[Figure 8-23](../../iot/obdii/broken-reference/) shows some possible places to locate the glitch. Different chips and different instructions react differently depending on where your glitch is placed, so experiment to determine which location works best for your situation. [Figure 8-23](../../iot/obdii/broken-reference/) also shows what a normal clock cycle looks like under a scope. If we use a positive offset in the ChipWhisperer settings, it’ll cause a brief drop in the middle of the clock cycle. If we use a negative offset, it’ll cause a brief spike before the clock cycle.
 
 We’ll set the following glitch options in the ChipWhisperer to cause a brief spike before the clock cycle by using a –10 percent offset:
 
@@ -3250,7 +3250,7 @@ Repeat: 1
 
 _Figure 8-23: Example glitch placements_
 
-Now return to the ChipWhisperer main window to set up the CW Extras, as shown in [Figure 8-24](broken-reference/). This will configure the ChipWhisperer to cause the clock glitch only when it gets a signal from the trigger line.
+Now return to the ChipWhisperer main window to set up the CW Extras, as shown in [Figure 8-24](../../iot/obdii/broken-reference/). This will configure the ChipWhisperer to cause the clock glitch only when it gets a signal from the trigger line.
 
 _Figure 8-24: Glitch setup in the CW Extra Settings_
 
@@ -3264,7 +3264,7 @@ Now that we have the ChipWhisperer set up to listen for a signal on the trigger 
 
 The trigger line is a generic input method used by ChipWhisperer. The goal is to get the trigger line to receive a signal just before the point we want to attack. If we were looking at a piece of hardware and noticed a light come on just before the area we wanted to attack, we could solder the LED to the trigger line in order to make the ChipWhisperer wait until just the right moment.
 
-For this demo, we’ll modify the firmware to make the trigger line go off in the area we want to glitch. First we’ll add some code to the default glitch 3 example shown in [Listing 8-2](broken-reference/). Use your favorite editor to add the defines in [Listing 8-3](broken-reference/), toward the top of the _glitchexample.c_.
+For this demo, we’ll modify the firmware to make the trigger line go off in the area we want to glitch. First we’ll add some code to the default glitch 3 example shown in [Listing 8-2](../../iot/obdii/broken-reference/). Use your favorite editor to add the defines in [Listing 8-3](../../iot/obdii/broken-reference/), toward the top of the _glitchexample.c_.
 
 \#define trigger\_setup() DDRC |= 0x01\
 \#define trigger\_high() PORTC |= 0x01\
@@ -3272,7 +3272,7 @@ For this demo, we’ll modify the firmware to make the trigger line go off in th
 
 _Listing 8-3: Setting up trigger defines in_ glitchexample.c
 
-Place a trigger\_setup() inside the main() method just before it prints _hello_, and then wrap your target with the trigger, as shown in [Listing 8-4](broken-reference/).
+Place a trigger\_setup() inside the main() method just before it prints _hello_, and then wrap your target with the trigger, as shown in [Listing 8-4](../../iot/obdii/broken-reference/).
 
 for(cnt = 0; cnt < 5; cnt++){\
 if (inp\[cnt] != passwd\[cnt]){\
@@ -3284,7 +3284,7 @@ trigger\_low();\
 
 _Listing 8-4: Adding_ trigger\_high _and_ trigger\_low _around_ passok _to trigger a glitch_
 
-Now, recompile make MCU=atmega328p, and reupload the firmware to the Victim Board. (Make sure to set the Glitch Trigger option to Manual in the ChipWhisperer settings before you upload the firmware or you may accidentally glitch the firmware upload.) Once the firmware is uploaded, switch the Glitch Trigger option back to Ext Trigger:Continous. Now, enter any password. If you get a Welcome message, you’ve successfully glitched the device, as shown in [Figure 8-25](broken-reference/).
+Now, recompile make MCU=atmega328p, and reupload the firmware to the Victim Board. (Make sure to set the Glitch Trigger option to Manual in the ChipWhisperer settings before you upload the firmware or you may accidentally glitch the firmware upload.) Once the firmware is uploaded, switch the Glitch Trigger option back to Ext Trigger:Continous. Now, enter any password. If you get a Welcome message, you’ve successfully glitched the device, as shown in [Figure 8-25](../../iot/obdii/broken-reference/).
 
 _Figure 8-25: Successfully glitching password check_
 
@@ -3354,7 +3354,7 @@ IVI systems typically have one or more of these physical inputs that you can use
 
 • High-speed media bus
 
-Vehicles often use CAN to communicate with their components, such as modules, ECUs, IVI systems, and telematic units. Some IVI systems use Ethernet to communicate between high-speed devices, whether to send normal IP traffic or CAN packets using Electronic System Design’s NTCAN or the Ethernet low-level socket interface (ELLSI). (For more on vehicle protocols, see [Chapter 2](broken-reference/).)
+Vehicles often use CAN to communicate with their components, such as modules, ECUs, IVI systems, and telematic units. Some IVI systems use Ethernet to communicate between high-speed devices, whether to send normal IP traffic or CAN packets using Electronic System Design’s NTCAN or the Ethernet low-level socket interface (ELLSI). (For more on vehicle protocols, see [Chapter 2](../../iot/obdii/broken-reference/).)
 
 #### **Attacking Through the Update System** <a href="#calibre_link-568" id="calibre_link-568"></a>
 
@@ -3366,7 +3366,7 @@ _**Identifying Your System**_
 
 In order to fully understand your target IVI system, you must first determine what kind of software it’s running. Next, you need to figure out how to access this software, which often involves looking for the methods the IVI uses to update or load its operating system. Once you understand how the system updates, you’ll have the knowledge you need to identify vulnerabilities and modify the system.
 
-Before you can begin making modifications, you need to know what operating system the IVI is running. The easiest way to do so is to search for the brand of the IVI—first, by looking for a label on the outside of the IVI unit or frame. If you don’t see a label, look for a display option on the interface that displays software version numbers and often the device name. Also, check online to see whether anyone has already researched your target system and, if the system is manufactured by a third party, whether it has a website and firmware updates. Download any firmware or tools you can find for later use. Find out how the system is updated. Is there a map update service available? What other update methods are available? Even if you find that system updates are sent over the air, it’s usually possible to find USB drives or a DVD containing map updates, like the one from a Honda Civic shown in [Figure 9-1](broken-reference/).
+Before you can begin making modifications, you need to know what operating system the IVI is running. The easiest way to do so is to search for the brand of the IVI—first, by looking for a label on the outside of the IVI unit or frame. If you don’t see a label, look for a display option on the interface that displays software version numbers and often the device name. Also, check online to see whether anyone has already researched your target system and, if the system is manufactured by a third party, whether it has a website and firmware updates. Download any firmware or tools you can find for later use. Find out how the system is updated. Is there a map update service available? What other update methods are available? Even if you find that system updates are sent over the air, it’s usually possible to find USB drives or a DVD containing map updates, like the one from a Honda Civic shown in [Figure 9-1](../../iot/obdii/broken-reference/).
 
 _Figure 9-1: NavTeq infotainment unit in an open state_
 
@@ -3376,7 +3376,7 @@ _**Determining the Update File Type**_
 
 System updates are often delivered as compressed files with _.zip_ or _.cab_ file extensions, but sometimes they have nonstandard extensions, like _.bin_ or _.dat_. If the update files have _.exe_ or _.dll_ extensions, you’re probably looking at a Microsoft Windows–based system.
 
-To determine how the files are compressed and their target architecture, view their headers with a hex editor or use a tool such as file available on \*nix-based systems. The file command will report a file’s architecture, such as ARM or, as with the Honda Civic IVI shown in [Figure 9-1](broken-reference/), a Hitachi SuperH SH-4 Processor. This information is useful if you want to compile new code for a device or if you plan on writing or using an exploit against it.
+To determine how the files are compressed and their target architecture, view their headers with a hex editor or use a tool such as file available on \*nix-based systems. The file command will report a file’s architecture, such as ARM or, as with the Honda Civic IVI shown in [Figure 9-1](../../iot/obdii/broken-reference/), a Hitachi SuperH SH-4 Processor. This information is useful if you want to compile new code for a device or if you plan on writing or using an exploit against it.
 
 If the file command hasn’t identified the type of file, you may be looking at a packed image. To analyze a firmware bundle, you can use a tool such as binwalk, which is a Python tool that uses signatures to carve out files from a collected binary. For instance, you can simply run binwalk on your firmware image to see a list of identified file types:
 
@@ -3394,11 +3394,11 @@ _**Modifying the System**_
 
 Once you know your system’s OS, architecture, and update method, the next thing to do is to see whether you can use this information to modify it. Some updates are “protected” by a digital signature, and these can be tricky to update. But often there’s no protection or the update process will simply use an MD5 hash check. The best way to find these protections is to modify the existing update software and trigger an update.
 
-A good starting point for system modification is something with a visible result, like a splash screen or icon because once you successfully change it, you’ll know immediately (see [Figure 9-2](broken-reference/)).
+A good starting point for system modification is something with a visible result, like a splash screen or icon because once you successfully change it, you’ll know immediately (see [Figure 9-2](../../iot/obdii/broken-reference/)).
 
 _Figure 9-2: Example modification: NavTeq unit with a modified splash screen_
 
-[Figure 9-2](broken-reference/) shows how I modified the splash screen of an IVI system by replacing the normal background image with a Jolly Roger flag and the vehicle’s emblem with a character from Street Fighter. Replacing images in your splash screen is a safe way to ensure you can modify the IVI system without much risk of breaking the system.
+[Figure 9-2](../../iot/obdii/broken-reference/) shows how I modified the splash screen of an IVI system by replacing the normal background image with a Jolly Roger flag and the vehicle’s emblem with a character from Street Fighter. Replacing images in your splash screen is a safe way to ensure you can modify the IVI system without much risk of breaking the system.
 
 Find an image in your update file, modify it, then reburn the update DVD and force a system update. (Find out how in the IVI’s manual.) If the update files were compressed in a single archive, be sure to recompress the modified version so that it appears in the same format as before you modified it.
 
@@ -3406,7 +3406,7 @@ If you run into a checksum issue and your update fails, look for a file in the u
 
 The Linux tools crc32, md5sum, and sha1sum will let you quickly calculate the hash of an existing file and compare it to the contents of the original text file. If you can generate a hash that matches that of the existing file, then you’ve found the correct algorithm.
 
-For example, say you find a single file on an update DVD called _Validation.dat_ that lists the contents of the files on the DVD, as shown in [Listing 9-1](broken-reference/). This listing includes the names of three files on the DVD and their associated hashes.
+For example, say you find a single file on an update DVD called _Validation.dat_ that lists the contents of the files on the DVD, as shown in [Listing 9-1](../../iot/obdii/broken-reference/). This listing includes the names of three files on the DVD and their associated hashes.
 
 09AVN.bin b46489c11cc0cf01e2f987c0237263f9\
 PROG\_INFO.MNG 629757e00950898e680a61df41eac192\
@@ -3414,18 +3414,18 @@ UPDATE\_APL.EXE 7e1321b3c8423b30c1cb077a2e3ac4f0
 
 _Listing 9-1: Sample_ Validation.dat _file found on an update DVD_
 
-The length of the hash listed for each file—32 characters—suggests that this might be an MD5 hash. To confirm, use the Linux md5sum tool to generate an MD5 hash for each file. [Listing 9-2](broken-reference/) shows what that would look like for the _09AVN.bin_ file.
+The length of the hash listed for each file—32 characters—suggests that this might be an MD5 hash. To confirm, use the Linux md5sum tool to generate an MD5 hash for each file. [Listing 9-2](../../iot/obdii/broken-reference/) shows what that would look like for the _09AVN.bin_ file.
 
 $ md5sum 09AVN.bin\
 b46489c11cc0cf01e2f987c0237263f9 09AVN.bin
 
 _Listing 9-2: Using_ md5sum _to see the hash of the_ 09AVN.bin _file_
 
-Compare the hash for _09AVN.bin_ in [Listing 9-1](broken-reference/) with the results of running md5sum in [Listing 9-2](broken-reference/), and you’ll see that the hashes match; we’re indeed looking at an MD5 hash. This result tells us that in order to modify _09AVN.bin_, we’d need to recalculate the MD5 hash and update the _Validation.dat_ file that contains all the hashes with the new hash.
+Compare the hash for _09AVN.bin_ in [Listing 9-1](../../iot/obdii/broken-reference/) with the results of running md5sum in [Listing 9-2](../../iot/obdii/broken-reference/), and you’ll see that the hashes match; we’re indeed looking at an MD5 hash. This result tells us that in order to modify _09AVN.bin_, we’d need to recalculate the MD5 hash and update the _Validation.dat_ file that contains all the hashes with the new hash.
 
 Another way to determine the algorithm used to create the hash is to run the strings command on some of the binaries or DLLs in your update package to search for strings in the file, like MD5 or SHA. If the hash is small, like d579793f, and CRC32 doesn’t seem to work, you’re probably looking at a custom hash.
 
-In order to create a custom hash, you need to understand the algorithm used to create that hash, which will require digging in with a disassembler, such as IDA Pro, Hopper, or radare2, which is free. For instance, [Listing 9-3](broken-reference/) shows sample output from a custom CRC algorithm viewed in radare2:
+In order to create a custom hash, you need to understand the algorithm used to create that hash, which will require digging in with a disassembler, such as IDA Pro, Hopper, or radare2, which is free. For instance, [Listing 9-3](../../iot/obdii/broken-reference/) shows sample output from a custom CRC algorithm viewed in radare2:
 
 \| .------> 0x00400733 488b9568fff. mov rdx, \[rbp-0x98]\
 \|- fcn.0040077c 107\
@@ -3454,7 +3454,7 @@ In order to create a custom hash, you need to understand the algorithm used to c
 
 _Listing 9-3: Disassembly of a CRC checksum function in radare2_
 
-Unless you’re good at reading low-level assembler, this may be a bit much to start with, but here we go. The algorithm in [Listing 9-3](broken-reference/) reads in a byte at ➊, multiplies it by 5 at ➋, and then, at ➌, adds it to the hash to calculate the final sum. The rest of the assembly is mainly used by the read loop to process the binary file.
+Unless you’re good at reading low-level assembler, this may be a bit much to start with, but here we go. The algorithm in [Listing 9-3](../../iot/obdii/broken-reference/) reads in a byte at ➊, multiplies it by 5 at ➋, and then, at ➌, adds it to the hash to calculate the final sum. The rest of the assembly is mainly used by the read loop to process the binary file.
 
 _**Apps and Plugins**_
 
@@ -3470,13 +3470,13 @@ If your goal is, for example, to create a malicious update that wiretaps a vehic
 
 For example, consider a navigation system with certain protections designed to prevent a customer from using a DVD-R in the system. The manufacturer’s original idea was to charge owners $250 to purchase updated mapping DVDs, and they wanted to prevent people from simply copying someone else’s DVD.
 
-In its attempt to prevent this type of sharing, the manufacturer added several DVD checks to the navigation system, as shown in the IDA display sample code in [Figure 9-3](broken-reference/). But say as a consumer you want to use a backup copy of your purchased DVD in your system rather than the original because your car gets really hot during the day and you don’t want the DVD to warp.
+In its attempt to prevent this type of sharing, the manufacturer added several DVD checks to the navigation system, as shown in the IDA display sample code in [Figure 9-3](../../iot/obdii/broken-reference/). But say as a consumer you want to use a backup copy of your purchased DVD in your system rather than the original because your car gets really hot during the day and you don’t want the DVD to warp.
 
 While an ordinary consumer isn’t likely to be able to bypass these DVD checks, it would be possible to locate the DVD checks and replace them with no-operation instructions (NOPs), which would make the checks literally do nothing. Then you could upload this modified version of the DVD check to your IVI and use your backup DVD for navigation.
 
 **NOTE**
 
-_All the hacks mentioned so far can be done without removing the unit. However, you could dig even deeper by taking the unit out and going after the chips and memory directly, as discussed in_ [_Chapter 6_](broken-reference/)_._
+_All the hacks mentioned so far can be done without removing the unit. However, you could dig even deeper by taking the unit out and going after the chips and memory directly, as discussed in_ [_Chapter 6_](../../iot/obdii/broken-reference/)_._
 
 _Figure 9-3: IDA view of DVD checks_
 
@@ -3486,17 +3486,17 @@ If you’re more comfortable attacking hardware than software and you’re able 
 
 _**Dissecting the IVI Unit’s Connections**_
 
-If you’re unable to gain access to a vehicle’s system through the update method discussed in the previous section, you can attack the IVI’s wiring and bus lines. Your first step will be to remove the IVI unit and then trace the wires back to the circuit board in order to identify its components and connections, like the ones shown in [Figure 9-4](broken-reference/).
+If you’re unable to gain access to a vehicle’s system through the update method discussed in the previous section, you can attack the IVI’s wiring and bus lines. Your first step will be to remove the IVI unit and then trace the wires back to the circuit board in order to identify its components and connections, like the ones shown in [Figure 9-4](../../iot/obdii/broken-reference/).
 
 _Figure 9-4: Connector view of a double DIN IVI unit_
 
 When you take your IVI unit out, you’ll see a lot of wires because, unlike aftermarket radios, OEM units are heavily connected to the vehicle. The back metal panel on the IVI usually doubles as a heat sink, and each connector is often separated by its functionality. (Some vehicles keep the Bluetooth and cellular piece in another module, so if you’re looking to research a wireless exploit and the IVI unit doesn’t have this wireless module, continue looking for the telematics module.)
 
-By tracing the actual wires or looking at a wiring diagram like the one shown in [Figure 9-5](broken-reference/), you can see that the Bluetooth module is actually a separate piece from the navigation unit (IVI). Notice in the diagram that the Bluetooth unit uses CAN (B-CAN) on pin 18. If you look at the navigation unit’s wiring diagram, you can see that instead of CAN, K-Line (pin 3) is directly attached to the IVI unit. (We discussed these protocols in [Chapter 2](broken-reference/).)
+By tracing the actual wires or looking at a wiring diagram like the one shown in [Figure 9-5](../../iot/obdii/broken-reference/), you can see that the Bluetooth module is actually a separate piece from the navigation unit (IVI). Notice in the diagram that the Bluetooth unit uses CAN (B-CAN) on pin 18. If you look at the navigation unit’s wiring diagram, you can see that instead of CAN, K-Line (pin 3) is directly attached to the IVI unit. (We discussed these protocols in [Chapter 2](../../iot/obdii/broken-reference/).)
 
 _Figure 9-5: Hands-free wiring diagram_
 
-If you can determine whether your target is connected to a network bus, you’ll know just how much your exploit can control. At the very least, the bus directly connected to the target can be influenced by any code you put on the target system. For instance, in the wiring examples shown in [Figure 9-5](broken-reference/), a vulnerability in the Bluetooth module would give us direct CAN access; however, if we exploited the IVI’s navigation system, we’d need to use K-Line instead (see [Figure 9-6](broken-reference/)). You can tell which network you have access to by looking at the wiring diagram in [Figure 9-5](broken-reference/) and seeing whether K-Line or CAN are connected to your target device. Which bus you’re on will affect your payload and what networked systems you’ll be able to influence directly.
+If you can determine whether your target is connected to a network bus, you’ll know just how much your exploit can control. At the very least, the bus directly connected to the target can be influenced by any code you put on the target system. For instance, in the wiring examples shown in [Figure 9-5](../../iot/obdii/broken-reference/), a vulnerability in the Bluetooth module would give us direct CAN access; however, if we exploited the IVI’s navigation system, we’d need to use K-Line instead (see [Figure 9-6](../../iot/obdii/broken-reference/)). You can tell which network you have access to by looking at the wiring diagram in [Figure 9-5](../../iot/obdii/broken-reference/) and seeing whether K-Line or CAN are connected to your target device. Which bus you’re on will affect your payload and what networked systems you’ll be able to influence directly.
 
 _Figure 9-6: K-Line specified in the wiring diagram for the navigation unit_
 
@@ -3504,9 +3504,9 @@ _**Disassembling the IVI Unit**_
 
 If your goal is to directly attack the system hardware or if you don’t have a wiring diagram showing the connections to the entertainment unit, you’ll need to start taking the unit apart. Because IVI units are really compact and they bundle a lot of functionality into a small area, taking them apart means removing lots of screws and several layers of connected circuit boards. The disassembly task is time consuming and complicated and should probably be your last resort.
 
-To begin disassembly, start by removing the case. Each unit comes apart differently, but typically you can remove the front and back plate screws and then work your way down from the top. Once inside, you’ll most likely find a circuit board like the one shown in [Figure 9-7](broken-reference/).
+To begin disassembly, start by removing the case. Each unit comes apart differently, but typically you can remove the front and back plate screws and then work your way down from the top. Once inside, you’ll most likely find a circuit board like the one shown in [Figure 9-7](../../iot/obdii/broken-reference/).
 
-Although the print on the circuit board is a little hard to read, you’ll probably find that many of the pins are labeled. Pay close attention to any connectors that are attached to the circuit board but not connected or that are covered by the heat sink. You’ll often find that certain connectors used during the manufacturing process are left behind, disconnected on the circuit board. These can be a great way in to the IVI unit. For example, [Figure 9-8](broken-reference/) shows a hidden connector revealed once the back panel was removed on the target IVI.
+Although the print on the circuit board is a little hard to read, you’ll probably find that many of the pins are labeled. Pay close attention to any connectors that are attached to the circuit board but not connected or that are covered by the heat sink. You’ll often find that certain connectors used during the manufacturing process are left behind, disconnected on the circuit board. These can be a great way in to the IVI unit. For example, [Figure 9-8](../../iot/obdii/broken-reference/) shows a hidden connector revealed once the back panel was removed on the target IVI.
 
 Hidden connectors are a great place to start when going after a device’s firmware. These connectors often have methods to load and debug the firmware running on the systems, and they can also provide serial-style debugging interfaces that you can use to see what’s happening with the system. In particular, you should look for JTAG and UART interfaces.
 
@@ -3514,7 +3514,7 @@ _Figure 9-7: Many pins and connectors are labeled directly on the PCB._
 
 _Figure 9-8: Nonexposed hidden connector_
 
-At this stage, you should start tracing the pins and looking at data sheets for the onboard chips. After a bit of sleuthing as to where these pins connect, you should have a better idea of what you’re dealing with and the intended purpose of this hidden connector. (See [Chapter 8](broken-reference/) for more on analyzing circuit boards and reverse engineering hardware.)
+At this stage, you should start tracing the pins and looking at data sheets for the onboard chips. After a bit of sleuthing as to where these pins connect, you should have a better idea of what you’re dealing with and the intended purpose of this hidden connector. (See [Chapter 8](../../iot/obdii/broken-reference/) for more on analyzing circuit boards and reverse engineering hardware.)
 
 #### **Infotainment Test Benches** <a href="#calibre_link-576" id="calibre_link-576"></a>
 
@@ -3524,11 +3524,11 @@ _**GENIVI Meta-IVI**_
 
 The GENIVI Alliance ([_http://www.genivi.org/_](http://www.genivi.org)) is an organization whose main objective is to drive the adoption of open source IVI software. Membership is paid, but you can download and participate in the GENIVI software projects for free. Membership, especially board-level membership, in GENIVI is very costly, but you can join the mailing list to participate in some of the development and discussions. The GENIVI system can be run directly on Linux with no need for an IVI. It’s basically a collection of components that you can use to build your own IVI.
 
-In [Figure 9-9](broken-reference/), a high-level block diagram of the GENIVI system shows how the pieces fit together.
+In [Figure 9-9](../../iot/obdii/broken-reference/), a high-level block diagram of the GENIVI system shows how the pieces fit together.
 
 The GENIVI demo platform has some basic human–machine interface (HMI) functionality: the FSA PoC stands for _fuel stop advisor proof-of-concept_ (proof of concept because certain of these apps aren’t used in production). The FSA is part of the navigation system and is designed to alert drivers if they are going to run out of fuel before reaching their destination. The Web browser and audio manager PoCs should be self-explanatory. Another component not shown in the figure is the navigation app. This app is powered by the open source Navit project ([_http://www.navit-project.org/_](http://www.navit-project.org)) and uses a plugin for the freely licensed OpenStreetMap mapping software ([_https://www.openstreetmap.org/_](https://www.openstreetmap.org)).
 
-The GENIVI’s middleware components make up the core GENIVI operating system, and they’re discussed here in the order in which they appear in [Figure 9-9](broken-reference/) (persistency is excluded since there isn’t currently any documentation on this module):
+The GENIVI’s middleware components make up the core GENIVI operating system, and they’re discussed here in the order in which they appear in [Figure 9-9](../../iot/obdii/broken-reference/) (persistency is excluded since there isn’t currently any documentation on this module):
 
 **Diagnostic log and trace (DLT)** An AUTOSAR 4.0–compatible logging and tracing module. (Autosar is simply an automotive standards group; see [_https://www.autosar.org/_](https://www.autosar.org).) Some features of the DLT can use TCP/IP, serial communications, or standard syslog.
 
@@ -3626,7 +3626,7 @@ _Automotive Grade Linux (AGL)_ is an IVI system that you can run on a physical I
 
 As of this writing, you should be able to find a demo image of AGL for VMware (last released in 2013), installation instructions, and a bootable USB version for x86 at the AGL website ([_http://automotivelinux.org/_](http://automotivelinux.org)). These images are designed to run on in-vehicle computer hardware, like the Nexcom VTC-1000, a headless Linux device that comes with CAN and touchscreens. Unlike the GENIVI project, the AGL demonstration images are mainly designed and tested to run on hardware, although it may be possible to run some development images in a VM.
 
-As you can see in [Figure 9-10](broken-reference/), the AGL demonstration image has a very pretty interface, but don’t expect all applications to run smoothly, as many are simply placeholders that are actively being built. Because AGL is normally tested on physical hardware, you’ll have to spend around $1,000 to get the hardware necessary to install AGL smoothly. It’s also possible to get an image to run on a QEMU VM as well. (One nice thing about buying a development IVI is that you can program it to work with any vehicle.)
+As you can see in [Figure 9-10](../../iot/obdii/broken-reference/), the AGL demonstration image has a very pretty interface, but don’t expect all applications to run smoothly, as many are simply placeholders that are actively being built. Because AGL is normally tested on physical hardware, you’ll have to spend around $1,000 to get the hardware necessary to install AGL smoothly. It’s also possible to get an image to run on a QEMU VM as well. (One nice thing about buying a development IVI is that you can program it to work with any vehicle.)
 
 _Figure 9-10: Automotive Grade Linux sample screens_
 
@@ -3668,7 +3668,7 @@ Cellular communication doesn’t require roadside sensors, and existing cellular
 
 **DSRC**
 
-DSRC requires the installation of specialized equipment in modern vehicles and new roadside equipment. Because DSRC is designed specifically for V2V communication, security measures can be implemented prior to widespread adoption. DSRC is also more reliable than cellular communication, with lower latency. (See “[The DSRC Protocol](broken-reference/)” on [page 179](broken-reference/) for more on DSRC.)
+DSRC requires the installation of specialized equipment in modern vehicles and new roadside equipment. Because DSRC is designed specifically for V2V communication, security measures can be implemented prior to widespread adoption. DSRC is also more reliable than cellular communication, with lower latency. (See “[The DSRC Protocol](../../iot/obdii/broken-reference/)” on [page 179](../../iot/obdii/broken-reference/) for more on DSRC.)
 
 **Hybrid**
 
@@ -3716,7 +3716,7 @@ DSRC operates in the 5.85 to 5.925 GHz band reserved for V2V and V2I. The transm
 
 DSRC is based on the wireless 802.11p and 1609.x protocols. DSRC-and Wi-Fi-based systems, such as wireless access for vehicle environments (WAVE), use IEEE 1609.3 specification or the WAVE short-message protocol (WSMP). These messages are single packets with no more than 1,500 bytes and typically less than 500 bytes. (Network sniffers such as Wireshark can decode WAVE packets, which allows for easy sniffing of traffic.)
 
-DSRC data rates depend on the number of users accessing the local system at the same time. A single user on the system would typically see data rates of 6 to 12Mbps, while users in a high-traffic area—say, an eight-lane freeway—would likely see 100 to 500Kbps. A typical DSRC system can handle almost 100 users in high-traffic conditions, but if the vehicles are traveling around 60 km/h, or 37 mph, it’ll usually support around only 32 users. (These data rates are estimated from the Department of Transportation’s paper “Communications Data Delivery System Analysis for Connected Vehicles.”[1](broken-reference/))
+DSRC data rates depend on the number of users accessing the local system at the same time. A single user on the system would typically see data rates of 6 to 12Mbps, while users in a high-traffic area—say, an eight-lane freeway—would likely see 100 to 500Kbps. A typical DSRC system can handle almost 100 users in high-traffic conditions, but if the vehicles are traveling around 60 km/h, or 37 mph, it’ll usually support around only 32 users. (These data rates are estimated from the Department of Transportation’s paper “Communications Data Delivery System Analysis for Connected Vehicles.”[1](../../iot/obdii/broken-reference/))
 
 The number of channels dedicated to the 5.9 GHz range of the DSRC system varies between countries. For example, the US system is designed to support seven channels with one channel that acts as a dedicated control channel reserved for sending short high-priority management packets. The European design supports three channels with no dedicated control channel. This disparity is largely due to the fact that each country has different drivers for the technology: Europe’s system is market driven, while the US system has a strong vehicle safety initiative behind it. Therefore, while the protocols will interoperate, the types of messages supported and sent will differ significantly. (In Japan, DSRC is currently being used for toll collection, but the Japanese are also planning to use a 760 MHz band for crash avoidance. The Japanese 5.8 GHz channels don’t use 802.11p, but they should still support the 1609.2 V2V security framework.)
 
@@ -3866,7 +3866,7 @@ These messages stop either when the condition that triggered them is gone or aft
 
 DENMs can also be sent to cancel or negate an event. For instance, if roadside equipment identified that a vehicle was going the wrong way down a street, it could send an event to notify nearby drivers. Once that driver had moved the vehicle into the proper lane, the equipment could send a cancel event to signal that the risk had passed.
 
-[Table 10-1](broken-reference/) shows the packet structure and byte position of a DENM packet.
+[Table 10-1](../../iot/obdii/broken-reference/) shows the packet structure and byte position of a DENM packet.
 
 **Table 10-1:** Packet Structure and Byte Position of a DENM Packet
 
@@ -3917,11 +3917,11 @@ _To explore the WAVE standard in more detail, you can use the OSI numbers in the
 
 WSMP is used in both service and control channels. WAVE uses IPv6, the most recent Internet protocol, for service channels only. IPv6 is configured by the WAVE management entity (WME) and also handles channel assignments and monitors service announcements. (The WME is unique to WAVE and handles the overhead and maintenance of the protocol.) Control channels are used for service announcements and short messages from safety applications.
 
-WSMP messages are formatted as shown in [Figure 10-1](broken-reference/).
+WSMP messages are formatted as shown in [Figure 10-1](../../iot/obdii/broken-reference/).
 
 _Figure 10-1: WSMP message format_
 
-The type of application provided by a roadside device, or hosted by a vehicle, is defined by the provider service identifier (PSID). The actual announcement of a service comes from a WAVE service announcement (WSA) packet, the structure of which is shown in [Table 10-2](broken-reference/).
+The type of application provided by a roadside device, or hosted by a vehicle, is defined by the provider service identifier (PSID). The actual announcement of a service comes from a WAVE service announcement (WSA) packet, the structure of which is shown in [Table 10-2](../../iot/obdii/broken-reference/).
 
 **Table 10-2:** WAVE Service Announcement Packet
 
@@ -3948,7 +3948,7 @@ Information on vehicle size is transmitted in the following four fields:
 
 • Bumper height (optional)
 
-This information should be accurate to within a fraction of an inch because it’s set by the manufacturer. The attacker could use this size information to accurately determine the make and model of a car. For instance, [Table 10-3](broken-reference/) lists the dimensions for a Honda Accord.
+This information should be accurate to within a fraction of an inch because it’s set by the manufacturer. The attacker could use this size information to accurately determine the make and model of a car. For instance, [Table 10-3](../../iot/obdii/broken-reference/) lists the dimensions for a Honda Accord.
 
 **Table 10-3:** Honda Accord Dimensions
 
@@ -3960,7 +3960,7 @@ Given these dimensions and a bit more information, such as the estimated time a 
 
 #### **Security Concerns** <a href="#calibre_link-587" id="calibre_link-587"></a>
 
-There are other attack potentials in the implementation of V2V, as was investigated by the Crash Avoidance Metrics Partnership (CAMP), a group of several auto manufacturers working to conduct different safety-related studies, in December of 2010. CAMP performed an attack analysis on V2V systems through its Vehicle Safety Consortium (VSC3). The analysis focused primarily on the core DSRC/WAVE protocol, and attempted to match attacker objectives with potential attacks. [Figure 10-2](broken-reference/) shows a summary of the consortium’s findings by attacker objective.
+There are other attack potentials in the implementation of V2V, as was investigated by the Crash Avoidance Metrics Partnership (CAMP), a group of several auto manufacturers working to conduct different safety-related studies, in December of 2010. CAMP performed an attack analysis on V2V systems through its Vehicle Safety Consortium (VSC3). The analysis focused primarily on the core DSRC/WAVE protocol, and attempted to match attacker objectives with potential attacks. [Figure 10-2](../../iot/obdii/broken-reference/) shows a summary of the consortium’s findings by attacker objective.
 
 _Figure 10-2: Attacker objectives crossed with attacks_
 
@@ -4010,7 +4010,7 @@ Currently, however, the systems being developed are planning to use 20 or more c
 
 _**Certificate Provisioning**_
 
-Certificates are generated through a process called certificate provisioning. V2V systems use a lot of short-term certificates, which need to be provisioned on a regular basis in order to replenish a device’s certificates so that it can use them for anonymous messaging. The full details of how privacy works in V2V certificate systems is actually quite complicated, as the CAMP diagram in [Figure 10-3](broken-reference/) shows.
+Certificates are generated through a process called certificate provisioning. V2V systems use a lot of short-term certificates, which need to be provisioned on a regular basis in order to replenish a device’s certificates so that it can use them for anonymous messaging. The full details of how privacy works in V2V certificate systems is actually quite complicated, as the CAMP diagram in [Figure 10-3](../../iot/obdii/broken-reference/) shows.
 
 Prepare yourself for a lot of larvae references—as in caterpillar, cocoon, and butterfly—as we review how the certificate-provisioning process works:
 
@@ -4076,13 +4076,13 @@ _To get the most out of this chapter, you’ll need to have a good understanding
 
 #### **Writing the Exploit in C** <a href="#calibre_link-596" id="calibre_link-596"></a>
 
-We’ll write the exploit for this spoofed CAN signal in C because C compiles to fairly clean assembly that we can reference to make our shellcode. We’ll use vcan0, a virtual CAN device, to test the exploit, but for the real exploit, you’d want to instead use can0 or the actual CAN bus device that you’re targeting. [Listing 11-1](broken-reference/) shows the _temp\_shell_ exploit.
+We’ll write the exploit for this spoofed CAN signal in C because C compiles to fairly clean assembly that we can reference to make our shellcode. We’ll use vcan0, a virtual CAN device, to test the exploit, but for the real exploit, you’d want to instead use can0 or the actual CAN bus device that you’re targeting. [Listing 11-1](../../iot/obdii/broken-reference/) shows the _temp\_shell_ exploit.
 
 **NOTE**
 
-_You’ll need to create a virtual CAN device in order to test this program. See_ [_Chapter 3_](broken-reference/) _for details._
+_You’ll need to create a virtual CAN device in order to test this program. See_ [_Chapter 3_](../../iot/obdii/broken-reference/) _for details._
 
-In [Listing 11-1](broken-reference/), we create a CAN packet with an arbitration ID of 0x510 and set the second byte to 0xFF. The second byte of the 0x510 packet represents the engine temperature. By setting this value to 0xFF, we max out the reported engine temperature, signaling that the vehicle is overheating. The packet needs to be sent repeatedly to be effective.
+In [Listing 11-1](../../iot/obdii/broken-reference/), we create a CAN packet with an arbitration ID of 0x510 and set the second byte to 0xFF. The second byte of the 0x510 packet represents the engine temperature. By setting this value to 0xFF, we max out the reported engine temperature, signaling that the vehicle is overheating. The packet needs to be sent repeatedly to be effective.
 
 \--- temp\_shell.c\
 \#include \<sys/types.h>\
@@ -4121,7 +4121,7 @@ write(s, \&frame, sizeof(struct can\_frame));\
 
 _Listing 11-1: C loop to spam CAN ID 0x510_
 
-[Listing 11-1](broken-reference/) sets up a socket in almost the same way as you’d set up a normal networking socket, except it uses the CAN family PF\_CAN ➊. We use ifr\_name to define which interface we want to listen on—in this case, "vcan0" ➋.
+[Listing 11-1](../../iot/obdii/broken-reference/) sets up a socket in almost the same way as you’d set up a normal networking socket, except it uses the CAN family PF\_CAN ➊. We use ifr\_name to define which interface we want to listen on—in this case, "vcan0" ➋.
 
 We can set up our frame using a simple frame structure that matches our packet, with can\_id ➌ containing the arbitration ID, can\_dlc containing the packet length, and the data\[] array holding the packet contents.
 
@@ -4166,7 +4166,7 @@ To call a kernel system call, use syscall—rather than int 0x80—where %rax ha
 
 Note that the register order is slightly different than when passing arguments to a function.
 
-[Listing 11-2](broken-reference/) shows the resulting assembly code that we store in the _temp\_shell.s_ file.
+[Listing 11-2](../../iot/obdii/broken-reference/) shows the resulting assembly code that we store in the _temp\_shell.s_ file.
 
 \--- temp\_shell.S\
 section .text\
@@ -4242,7 +4242,7 @@ jmp loop
 
 _Listing 11-2: Sending CAN ID 0x510 packets in 64-bit assembly_
 
-The code in [Listing 11-2](broken-reference/) is exactly the same as the C code we wrote in [Listing 11-1](broken-reference/), except that it’s now written in 64-bit assembly.
+The code in [Listing 11-2](../../iot/obdii/broken-reference/) is exactly the same as the C code we wrote in [Listing 11-1](../../iot/obdii/broken-reference/), except that it’s now written in 64-bit assembly.
 
 **NOTE**
 
@@ -4259,7 +4259,7 @@ The size of the object header now shows that the program is around 1008 bytes �
 
 _**Converting Assembly to Shellcode**_
 
-Now that your program is of more suitable size, you can use one line of Bash to convert your object file to shellcode right at the command line, as shown in [Listing 11-3](broken-reference/).
+Now that your program is of more suitable size, you can use one line of Bash to convert your object file to shellcode right at the command line, as shown in [Listing 11-3](../../iot/obdii/broken-reference/).
 
 $ for i in $(objdump -d temp\_shell2.o -M intel |grep "^ " |cut -f2); do echo\
 \-n '\x'$i; done;echo\
@@ -4279,7 +4279,7 @@ This series of commands runs through your compiled object file and pulls out the
 
 _**Removing NULLs**_
 
-But we’re not done yet. If you look at the shellcode in [Listing 11-3](broken-reference/), you’ll notice that we still have some NULL values (\x00) that we need to eliminate. One way to do so is to use a loader, which Metasploit has, to wrap the bytes or rewrite parts of the code to eliminate the NULLs.
+But we’re not done yet. If you look at the shellcode in [Listing 11-3](../../iot/obdii/broken-reference/), you’ll notice that we still have some NULL values (\x00) that we need to eliminate. One way to do so is to use a loader, which Metasploit has, to wrap the bytes or rewrite parts of the code to eliminate the NULLs.
 
 You could also rewrite your assembly to remove NULLs from the final assembly, typically by replacing MOVs and values that would have NULLs in them with a command to erase a register and another command to add the appropriate value. For instance, a command like MOV RDI, 0x03 will convert to hex that has a lot of leading NULLs before the 3. To get around this, you could first XOR RDI to itself (XOR RDI, RDI), which would result in RDI being a NULL, and then increase RDI (INC RDI) three times. You may have to be creative in some spots.
 
@@ -4298,7 +4298,7 @@ xc4\x10\xeb\xd4
 
 _**Creating a Metasploit Payload**_
 
-[Listing 11-4](broken-reference/) is a template for a Metasploit payload that uses our shellcode. Save this payload in _modules/payloads/singles/linux/armle/_, and name it something similar to the action that you’ll be performing, like _flood\_temp.rb_. The example payload in [Listing 11-4](broken-reference/) is designed for an infotainment system on ARM Linux with an Ethernet bus. Instead of modifying temperature, this shellcode unlocks the car doors. The following code is a standard payload structure, other than the payload variable that we set to the desired vehicle shellcode.
+[Listing 11-4](../../iot/obdii/broken-reference/) is a template for a Metasploit payload that uses our shellcode. Save this payload in _modules/payloads/singles/linux/armle/_, and name it something similar to the action that you’ll be performing, like _flood\_temp.rb_. The example payload in [Listing 11-4](../../iot/obdii/broken-reference/) is designed for an infotainment system on ARM Linux with an Ethernet bus. Instead of modifying temperature, this shellcode unlocks the car doors. The following code is a standard payload structure, other than the payload variable that we set to the desired vehicle shellcode.
 
 Require 'msf/core'
 
@@ -4331,7 +4331,7 @@ end
 
 _Listing 11-4: Template for Metasploit payload using our shellcode_
 
-The payload variable ➊ in [Listing 11-4](broken-reference/) translates to the following ARM assembly code:
+The payload variable ➊ in [Listing 11-4](../../iot/obdii/broken-reference/) translates to the following ARM assembly code:
 
 /\* Grab a socket handler for UDP \*/\
 mov %r0, $2 /\* AF\_INET \*/\
@@ -4385,7 +4385,7 @@ add %sp, %sp, $12
 mov %r0, $0\
 bx lr
 
-This code is similar to the shellcode we created in [Listing 11-3](broken-reference/), except that it’s built for ARM rather than x64 Intel, and it functions over Ethernet instead of talking directly to the CAN drivers. Of course, if the infotainment center uses a CAN driver rather than an Ethernet driver, you need to write to the CAN driver instead of the network.
+This code is similar to the shellcode we created in [Listing 11-3](../../iot/obdii/broken-reference/), except that it’s built for ARM rather than x64 Intel, and it functions over Ethernet instead of talking directly to the CAN drivers. Of course, if the infotainment center uses a CAN driver rather than an Ethernet driver, you need to write to the CAN driver instead of the network.
 
 Once you have a payload ready, you can add it to the arsenal of existing Metasploit exploits for use against a vehicle’s infotainment center. Because Metasploit parses the payload file, you can simply choose it as an option to use against any target infotainment unit. If a vulnerability is found, the payload will run and perform the action of the packet you mimicked, such as unlocking the doors, starting the car, and so on.
 
@@ -4403,7 +4403,7 @@ In order to use this exploit against more than one type of vehicle, you’ll nee
 
 _Failure to detect the make of the vehicle could produce unexpected results and could be very dangerous! For example, a packet that on one make of vehicle unlocks the car door could bleed the brakes on another. There’s no way to know for sure where your exploit will run, so be sure to verify the vehicle._
 
-Determining the make of vehicle is analogous to determining which OS version the target host is running, as we did in “[Determining the Update File Type](broken-reference/)” on [page 160](broken-reference/). You may be able to find this information in the memory space of the infotainment unit by adding the ability to scan RAM in your shellcode. Otherwise, there are two ways to determine what type of vehicle your code is running on via the CAN bus: interactive probing and passive CAN bus fingerprinting.
+Determining the make of vehicle is analogous to determining which OS version the target host is running, as we did in “[Determining the Update File Type](../../iot/obdii/broken-reference/)” on [page 160](../../iot/obdii/broken-reference/). You may be able to find this information in the memory space of the infotainment unit by adding the ability to scan RAM in your shellcode. Otherwise, there are two ways to determine what type of vehicle your code is running on via the CAN bus: interactive probing and passive CAN bus fingerprinting.
 
 _**Interactive Probing**_
 
@@ -4411,7 +4411,7 @@ The interactive probing method involves using the ISO-TP packets to query the PI
 
 **Querying the VIN**
 
-Recall from “[Sending Data with ISO-TP and CAN](broken-reference/)” on [page 55](broken-reference/) that you use the OBD-II Mode 2 PID 9 protocol to query the VIN. This protocol uses the ISO-TP multipacket standard, which can be cumbersome to implement in shellcode. You can, however, just take what you need from the ISO-TP standard rather than implementing it in full. For example, because ISO-TP runs as normal CAN traffic, you could send a packet with your shellcode using an ID of 0x7DF and a 3-byte packet payload of 0x02 0x09 0x02; then you could receive normal CAN traffic with an ID 0x7E8. The first packet received will be part of a multipart packet followed by the remaining packets. The first packet has the most significant information in it and may be all you need to differentiate between vehicles.
+Recall from “[Sending Data with ISO-TP and CAN](../../iot/obdii/broken-reference/)” on [page 55](../../iot/obdii/broken-reference/) that you use the OBD-II Mode 2 PID 9 protocol to query the VIN. This protocol uses the ISO-TP multipacket standard, which can be cumbersome to implement in shellcode. You can, however, just take what you need from the ISO-TP standard rather than implementing it in full. For example, because ISO-TP runs as normal CAN traffic, you could send a packet with your shellcode using an ID of 0x7DF and a 3-byte packet payload of 0x02 0x09 0x02; then you could receive normal CAN traffic with an ID 0x7E8. The first packet received will be part of a multipart packet followed by the remaining packets. The first packet has the most significant information in it and may be all you need to differentiate between vehicles.
 
 **NOTE**
 
@@ -4419,11 +4419,11 @@ _You could assemble the multipart packet yourself and then implement a full VIN 
 
 **Decoding the VIN**
 
-The VIN has a fairly simple layout. The first three characters, known as the _World Manufacturer Identifier (WMI) code_, represent the make of the vehicle. The first character in the WMI code determines the region of manufacture. The next two characters are manufacturer specific. (The list is too long to print here, but you can find a list of WMI codes with a simple online search.) For example, in [Chapter 4](broken-reference/) (see [Table 4-4](broken-reference/) on [page 57](broken-reference/)) we had a VIN of 1G1ZT53826F109149, which gave us a WMI of 1G1. According to the WMI codes, this tells us that the make of the car is Chevrolet.
+The VIN has a fairly simple layout. The first three characters, known as the _World Manufacturer Identifier (WMI) code_, represent the make of the vehicle. The first character in the WMI code determines the region of manufacture. The next two characters are manufacturer specific. (The list is too long to print here, but you can find a list of WMI codes with a simple online search.) For example, in [Chapter 4](../../iot/obdii/broken-reference/) (see [Table 4-4](../../iot/obdii/broken-reference/) on [page 57](../../iot/obdii/broken-reference/)) we had a VIN of 1G1ZT53826F109149, which gave us a WMI of 1G1. According to the WMI codes, this tells us that the make of the car is Chevrolet.
 
 The next 6 bytes of the VIN make up the _Vehicle Descriptor Section (VDS)_. The first 2 bytes in the VDS—bytes 4 and 5 of the VIN—tell us the vehicle model and other specs, such as how many doors the vehicle has, the engine size, and so on. For example, in the VIN 1G1ZT53826F109149, the VDS is ZT5382, of which _ZT_ gives us the model. A quick search online tells us that this is a Chevrolet Malibu. (The details of the VDS vary depending on the vehicle and the manufacturer.)
 
-If you need the year your vehicle was made, you’ll have to grab more packets because the year is stored at byte 10. This byte isn’t directly translatable, and you’ll need to use a table to determine the year (see [Table 11-1](broken-reference/)).
+If you need the year your vehicle was made, you’ll have to grab more packets because the year is stored at byte 10. This byte isn’t directly translatable, and you’ll need to use a table to determine the year (see [Table 11-1](../../iot/obdii/broken-reference/)).
 
 **Table 11-1:** Determining the Year of Manufacture
 
@@ -4480,7 +4480,7 @@ The Open Garages tool for passive fingerprinting is called _CAN of Fingers (c0f)
 { "ID": "13F" },{ "ID": "164" },{ "ID": "17C" },{ "ID": "183" },{ "ID": "143" },\
 { "ID": "095" } ], "MainID": "143", "MainInterval": "0.009998683195847732"}
 
-Five fields make up the fingerprint: Make, Model, Year, Trim, and Dynamic. The first four values—Make, Model, Year, and Trim—are all listed as Unknown if they’re not in the database. [Table 11-2](broken-reference/) lists the identified attributes that are unique to the vehicle.
+Five fields make up the fingerprint: Make, Model, Year, Trim, and Dynamic. The first four values—Make, Model, Year, and Trim—are all listed as Unknown if they’re not in the database. [Table 11-2](../../iot/obdii/broken-reference/) lists the identified attributes that are unique to the vehicle.
 
 **Table 11-2:** Vehicle Attributes for Passive Fingerprinting
 
@@ -4496,7 +4496,7 @@ Five fields make up the fingerprint: Make, Model, Year, Trim, and Dynamic. The f
 
 Many CAN signals that fire at intervals will appear in a logfile the same amount of times as each other, with similar intervals between occurrences. c0f will group the signals together by the number of occurrences.
 
-To get a better idea of how c0f determines the common and main IDs, run c0f with the --print-stats option, as shown in [Listing 11-5](broken-reference/).
+To get a better idea of how c0f determines the common and main IDs, run c0f with the --print-stats option, as shown in [Listing 11-5](../../iot/obdii/broken-reference/).
 
 $ bundle exec bin/c0f --logfile test/sample-can.log --print-stats\
 Loading Packets... 6158/6158 |\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\
@@ -4543,9 +4543,9 @@ _Listing 11-5: Running c0f with the --print-stats option_
 
 The common IDs are the grouping of signals that occurred 326 times (the highest count). The main ID is the common ID with the shortest average interval—in this case, signal 0x143 at 0.009998 ms ➋.
 
-The c0f tool saves these fingerprints in a database so that you can passively identify buses, but for the purpose of shellcode development, we can just use main ID and main interval to quickly determine whether we’re on the target we expect to be on. Taking the result shown in [Listing 11-5](broken-reference/) as our target, we’d listen to the CAN socket for signal 0x143 and know that the longest we’d have to wait is 0.009998 ms before aborting if we didn’t see an ID of 0x143. (Just be sure that when you’re checking how much time has passed since you started sniffing the bus, you use a time method with high precision, such as clock\_gettime.) You could get more fine-grained identification by ensuring that you also identified all of the common IDs as well.
+The c0f tool saves these fingerprints in a database so that you can passively identify buses, but for the purpose of shellcode development, we can just use main ID and main interval to quickly determine whether we’re on the target we expect to be on. Taking the result shown in [Listing 11-5](../../iot/obdii/broken-reference/) as our target, we’d listen to the CAN socket for signal 0x143 and know that the longest we’d have to wait is 0.009998 ms before aborting if we didn’t see an ID of 0x143. (Just be sure that when you’re checking how much time has passed since you started sniffing the bus, you use a time method with high precision, such as clock\_gettime.) You could get more fine-grained identification by ensuring that you also identified all of the common IDs as well.
 
-It’s possible to design fingerprints that aren’t supported by c0f. For instance, notice in the c0f statistical output in [Listing 11-5](broken-reference/) that the signal ID 0x039 occurred 215 times ➊. That’s a strange ratio compared to the other common packets. The common packets are occurring about 5 percent of the time, but 0x039 occurs about 3.5 percent of the time and is the only signal with that ratio. Your shellcode could gather a common ID and calculate the ratio of 0x039 occurring to see whether it matches. This could just be a fluke based on current vehicle conditions at the time of the recording, but it might be interesting to investigate. The sample size should be increased and multiple runs should be used to verify findings before embedding the detection into your shellcode.
+It’s possible to design fingerprints that aren’t supported by c0f. For instance, notice in the c0f statistical output in [Listing 11-5](../../iot/obdii/broken-reference/) that the signal ID 0x039 occurred 215 times ➊. That’s a strange ratio compared to the other common packets. The common packets are occurring about 5 percent of the time, but 0x039 occurs about 3.5 percent of the time and is the only signal with that ratio. Your shellcode could gather a common ID and calculate the ratio of 0x039 occurring to see whether it matches. This could just be a fluke based on current vehicle conditions at the time of the recording, but it might be interesting to investigate. The sample size should be increased and multiple runs should be used to verify findings before embedding the detection into your shellcode.
 
 **NOTE**
 
@@ -4583,23 +4583,23 @@ To apply the right demodulator, you first need to be able to identify the type o
 
 **Amplitude-Shift Keying**
 
-When ASK modulation is used, the bits are designated by the amplitude of the signal. [Figure 12-1](broken-reference/) shows a plot of the signal being transmitted in _carrier waves_. A carrier wave is the amplitude of the carrier, and when there’s no wave, that’s the signal’s resting state. When the carrier line is high for a specific duration, which registers as a wave, that’s a binary 1. When the carrier line is at a resting state for a shorter duration, that’s a binary 0.
+When ASK modulation is used, the bits are designated by the amplitude of the signal. [Figure 12-1](../../iot/obdii/broken-reference/) shows a plot of the signal being transmitted in _carrier waves_. A carrier wave is the amplitude of the carrier, and when there’s no wave, that’s the signal’s resting state. When the carrier line is high for a specific duration, which registers as a wave, that’s a binary 1. When the carrier line is at a resting state for a shorter duration, that’s a binary 0.
 
 _Figure 12-1: ASK modulation_
 
-ASK modulation is also known as on-off keying (OOK), and it typically uses a start-and-stop bit. Start-and-stop bits are common ways to separate where a message starts and where it stops. Accounting for start-and-stop bits, [Figure 12-1](broken-reference/) could represent nine bits: 0-1-1-0-1-1-0-1-0.
+ASK modulation is also known as on-off keying (OOK), and it typically uses a start-and-stop bit. Start-and-stop bits are common ways to separate where a message starts and where it stops. Accounting for start-and-stop bits, [Figure 12-1](../../iot/obdii/broken-reference/) could represent nine bits: 0-1-1-0-1-1-0-1-0.
 
 **Frequency-Shift Keying**
 
-Unlike ASK, FSK always has a carrier signal but that signal is instead measured by how quickly it changes—its frequency (see [Figure 12-2](broken-reference/)).
+Unlike ASK, FSK always has a carrier signal but that signal is instead measured by how quickly it changes—its frequency (see [Figure 12-2](../../iot/obdii/broken-reference/)).
 
 _Figure 12-2: FSK modulation_
 
-In FSK, a high-frequency signal is a 0, and a low-frequency signal is a 1. When the carrier waves are close, that’s a 1, and when they’re spaced farther apart, that’s a 0. The bits in [Figure 12-2](broken-reference/) are probably 1-0-0-1-0-0-1-0-1.
+In FSK, a high-frequency signal is a 0, and a low-frequency signal is a 1. When the carrier waves are close, that’s a 1, and when they’re spaced farther apart, that’s a 0. The bits in [Figure 12-2](../../iot/obdii/broken-reference/) are probably 1-0-0-1-0-0-1-0-1.
 
 #### **Hacking with TPMS** <a href="#calibre_link-609" id="calibre_link-609"></a>
 
-The TPMS is a simple device that sits inside the tire and sends data on tire-pressure readings and wheel rotation and temperature, and warnings about certain conditions like low sensor batteries to the ECU (see [Figure 12-3](broken-reference/)). The data is then displayed to the driver via gauges, digital displays, or warning lights. In the fall of 2000, the United States enacted the Transportation Recall Enhancement, Accountability, and Documentation (TREAD) Act, requiring that all new vehicles have a TPMS system installed in order to improve road safety by alerting drivers to underinflated tires. Thanks to TREAD, the TPMS has widespread adoption, making it a prevalent attack target.
+The TPMS is a simple device that sits inside the tire and sends data on tire-pressure readings and wheel rotation and temperature, and warnings about certain conditions like low sensor batteries to the ECU (see [Figure 12-3](../../iot/obdii/broken-reference/)). The data is then displayed to the driver via gauges, digital displays, or warning lights. In the fall of 2000, the United States enacted the Transportation Recall Enhancement, Accountability, and Documentation (TREAD) Act, requiring that all new vehicles have a TPMS system installed in order to improve road safety by alerting drivers to underinflated tires. Thanks to TREAD, the TPMS has widespread adoption, making it a prevalent attack target.
 
 _Figure 12-3: Two TPMS sensors_
 
@@ -4607,7 +4607,7 @@ The TPMS device sits inside the wheel and transmits wirelessly into the wheel we
 
 _**Eavesdropping with a Radio Receiver**_
 
-Most public research on TPMS security is summarized in “Security and Privacy Vulnerabilities of In-Car Wireless Networks: A Tire Pressure Monitoring System Case Study” from researchers at the University of South Carolina and Rutgers University.[1](broken-reference/) The paper shows how the researchers were able to eavesdrop on a TPMS system from 40 m away using a relatively low-cost USRP receiver ($700 to $2,000) to sniff its wireless signals. (As mentioned earlier, you could use a different SDR.) Once the signals have been captured, GNU Radio can be used to filter and demodulate them.
+Most public research on TPMS security is summarized in “Security and Privacy Vulnerabilities of In-Car Wireless Networks: A Tire Pressure Monitoring System Case Study” from researchers at the University of South Carolina and Rutgers University.[1](../../iot/obdii/broken-reference/) The paper shows how the researchers were able to eavesdrop on a TPMS system from 40 m away using a relatively low-cost USRP receiver ($700 to $2,000) to sniff its wireless signals. (As mentioned earlier, you could use a different SDR.) Once the signals have been captured, GNU Radio can be used to filter and demodulate them.
 
 TPMS systems have very weak signals and, therefore, don’t leak data too far from the vehicle. In order to overcome the low leakage factor of a TPMS system, you could add a low-noise amplifier (LNA) to your radio receiver to increase the sniffing range, which should allow you to capture a TPMS signal from the side of the road or from a vehicle traveling alongside the target. You could also implement directional antennas to boost your range.
 
@@ -4619,7 +4619,7 @@ Once you see the TPMS signal, you’ll need to decode it in order for its conten
 
 _**TPMS Packets**_
 
-TPMS packets will typically contain the same information, with some differences between models. [Figure 12-4](broken-reference/) shows an example of a TPMS packet.
+TPMS packets will typically contain the same information, with some differences between models. [Figure 12-4](../../iot/obdii/broken-reference/) shows an example of a TPMS packet.
 
 _Figure 12-4: An example TPMS packet_
 
@@ -4661,7 +4661,7 @@ Anyone who has driven a modern vehicle is likely familiar with the key fob and t
 
 We’ll examine using SDR devices to analyze wireless communications set by the wireless key fobs used to unlock and start vehicles. While older key fobs use a simple fixed code to start the vehicle, most modern systems rely on a rolling code or a challenge–response system that prevents simply recording and playing back a fixed code by challenging the key fob to perform a task, like completing a calculation and returning the correct answer. These calculations require both a bit more power and the use of a battery, which also makes it possible for the key fob to communicate on a higher frequency from a greater distance.
 
-Remote keyless entry systems typically run at 315 MHz in North America and 433.92 MHz in Europe and Asia. You can use GNU Radio to watch the signal sent by a key fob or use a tool like the Gqrx SDR ([_http://gqrx.dk/_](http://gqrx.dk)) for a nice real-time view of the entire bandwidth brought in from your SDR device. Using Gqrx with a high sample rate (bandwidth) allows you to identify the frequency of an RFID signal as it’s sent from a key fob to a vehicle. For example, [Figure 12-5](broken-reference/) shows Gqrx set to listen at 315 MHz (the center, vertical line) and at offset –1,192.350 kHz, as it monitors a key fob unlock request for a Honda. Gqrx has identified two peaks in the signal that are likely to be the unlock requests.
+Remote keyless entry systems typically run at 315 MHz in North America and 433.92 MHz in Europe and Asia. You can use GNU Radio to watch the signal sent by a key fob or use a tool like the Gqrx SDR ([_http://gqrx.dk/_](http://gqrx.dk)) for a nice real-time view of the entire bandwidth brought in from your SDR device. Using Gqrx with a high sample rate (bandwidth) allows you to identify the frequency of an RFID signal as it’s sent from a key fob to a vehicle. For example, [Figure 12-5](../../iot/obdii/broken-reference/) shows Gqrx set to listen at 315 MHz (the center, vertical line) and at offset –1,192.350 kHz, as it monitors a key fob unlock request for a Honda. Gqrx has identified two peaks in the signal that are likely to be the unlock requests.
 
 _Figure 12-5: Gqrx capture of a key fob unlock request_
 
@@ -4671,9 +4671,9 @@ There are plenty of ways to hack key fob systems, and I’ll give examples of a 
 
 **Jamming the Key Fob Signal**
 
-One way to attack a key fob signal is to jam it by passing garbage data within the RFID receiver’s _passband_, the area the receiver is listening to for a valid signal. The width of the passband window includes some extra space where you can add noise to prevent the receiver from changing the rolling code while still allowing the attacker to view the correct key sequence (see [Figure 12-6](broken-reference/)).
+One way to attack a key fob signal is to jam it by passing garbage data within the RFID receiver’s _passband_, the area the receiver is listening to for a valid signal. The width of the passband window includes some extra space where you can add noise to prevent the receiver from changing the rolling code while still allowing the attacker to view the correct key sequence (see [Figure 12-6](../../iot/obdii/broken-reference/)).
 
-While holding onto that valid unlock request in memory, the attacker waits for another request to be sent and records that request, too. The attacker can then replay the first valid packet to the vehicle, causing it to lock or unlock the car, depending on the signal sent by the key fob. When the car owner leaves the vehicle, the attacker has the last valid key stored and can replay it to open the vehicle doors or start the vehicle. This attack was demonstrated by Samy Kamkar at DEF CON 23 on both vehicles and garage door openers.[2](broken-reference/)
+While holding onto that valid unlock request in memory, the attacker waits for another request to be sent and records that request, too. The attacker can then replay the first valid packet to the vehicle, causing it to lock or unlock the car, depending on the signal sent by the key fob. When the car owner leaves the vehicle, the attacker has the last valid key stored and can replay it to open the vehicle doors or start the vehicle. This attack was demonstrated by Samy Kamkar at DEF CON 23 on both vehicles and garage door openers.[2](../../iot/obdii/broken-reference/)
 
 _Figure 12-6: Jamming the passband filter to preserve the key exchange_
 
@@ -4685,7 +4685,7 @@ If an area of memory can be identified to contain this information, then the att
 
 **Brute-Forcing a Key Code**
 
-Some response codes can be accessed by brute force, though the feasibility of a brute-force attack depends on the key code length and algorithm. (We’ll discuss the cryptography behind these key systems in “[Immobilizer Cryptography](broken-reference/)” on [page 220](broken-reference/).) In order for a brute-force attack to succeed, the attacker needs to build custom software to brute-force the key using an SDR, a custom hardware component, or—better yet—a combination of the two. For instance, if the key fob detected brute-forcing attacks, you may want to have some custom hardware reset the key fob on lockout by bouncing the power.
+Some response codes can be accessed by brute force, though the feasibility of a brute-force attack depends on the key code length and algorithm. (We’ll discuss the cryptography behind these key systems in “[Immobilizer Cryptography](../../iot/obdii/broken-reference/)” on [page 220](../../iot/obdii/broken-reference/).) In order for a brute-force attack to succeed, the attacker needs to build custom software to brute-force the key using an SDR, a custom hardware component, or—better yet—a combination of the two. For instance, if the key fob detected brute-forcing attacks, you may want to have some custom hardware reset the key fob on lockout by bouncing the power.
 
 **Forward-Prediction Attacks**
 
@@ -4695,15 +4695,15 @@ If an attacker is able to observe challenge–response exchanges that occur when
 
 Similarly, if an attacker can record numerous valid challenge–response exchanges between the key fob and the transponder, they can store them in a dictionary and then use the collected key pairs to repeatedly request challenges from the transponder until one challenge matches a response in the dictionary. This tricky attack is possible only when the keyless entry system doesn’t use sender verification to make sure that responses are valid. The attacker would also need to be able to continuously request authentication from the transponder.
 
-In order to perform a dictionary attack, the attacker would need to build a system to trigger the key fob request and record the exchange with an SDR. An Arduino wired to the button press of the researcher’s valid key fob would suffice. Assuming the authentication takes place over CAN, it’s also possible to grab the key fob ID over ultra-high frequency and attempt to gather the key stream by replaying and recording the communication over the CAN bus, as discussed in “[Reversing CAN Bus Communications with can-utils and Wireshark](broken-reference/)” on [page 68](broken-reference/). Using custom tools, this would be possible to repeat over any bus network. For more information on this type of attack, see the paper “Broken Keys to the Kingdom”.[3](broken-reference/)
+In order to perform a dictionary attack, the attacker would need to build a system to trigger the key fob request and record the exchange with an SDR. An Arduino wired to the button press of the researcher’s valid key fob would suffice. Assuming the authentication takes place over CAN, it’s also possible to grab the key fob ID over ultra-high frequency and attempt to gather the key stream by replaying and recording the communication over the CAN bus, as discussed in “[Reversing CAN Bus Communications with can-utils and Wireshark](../../iot/obdii/broken-reference/)” on [page 68](../../iot/obdii/broken-reference/). Using custom tools, this would be possible to repeat over any bus network. For more information on this type of attack, see the paper “Broken Keys to the Kingdom”.[3](../../iot/obdii/broken-reference/)
 
 **Dumping the Transponder Memory**
 
-It’s often possible to dump the memory of the transponder to get the secret key. In [Chapter 8](broken-reference/), we examined how to use debugger pins, such as JTAG, as well as side-channel analysis attacks to dump memory from the transponder.
+It’s often possible to dump the memory of the transponder to get the secret key. In [Chapter 8](../../iot/obdii/broken-reference/), we examined how to use debugger pins, such as JTAG, as well as side-channel analysis attacks to dump memory from the transponder.
 
 **Reversing the CAN Bus**
 
-To gain access to a vehicle, an attacker can simulate the lock button press using the CAN bus reversing methods discussed in [Chapter 5](broken-reference/). If the attacker has access to the CAN bus, they can replay lock and unlock packets to control and occasionally even start the vehicle. Sometimes CAN bus wires are even accessible from outside the vehicle; for instance, some vehicles have CAN bus running to the tail lights. An attacker could pop out a tail light and tap into the CAN bus network in order to unlock the vehicle.
+To gain access to a vehicle, an attacker can simulate the lock button press using the CAN bus reversing methods discussed in [Chapter 5](../../iot/obdii/broken-reference/). If the attacker has access to the CAN bus, they can replay lock and unlock packets to control and occasionally even start the vehicle. Sometimes CAN bus wires are even accessible from outside the vehicle; for instance, some vehicles have CAN bus running to the tail lights. An attacker could pop out a tail light and tap into the CAN bus network in order to unlock the vehicle.
 
 **Key Programmers and Transponder Duplication Machines**
 
@@ -4715,7 +4715,7 @@ _Passive keyless entry and start (PKES) systems_ are very similar to traditional
 
 There are typically two types of possible attacks on a PKES system: a relay attack and an amplified relay attack. In a _relay attack_, an attacker places a device next to the car and another next to the owner or holder of the key fob (the target). The device relays the signals between the target’s key fob and the vehicle, enabling the attacker to start the car.
 
-This relay tunnel can be set up to communicate over any channel that’s fast and has a larger range than the normal key fob. For instance, a device placed near the target could set up a cellular tunnel to a laptop near the vehicle. Packets would go from the target’s key fob into the device to be transmitted over cellular and replayed by the laptop. For more information, see “Relay Attacks on Passive Keyless Entry and Start Systems in Modern Cars.”[4](broken-reference/)
+This relay tunnel can be set up to communicate over any channel that’s fast and has a larger range than the normal key fob. For instance, a device placed near the target could set up a cellular tunnel to a laptop near the vehicle. Packets would go from the target’s key fob into the device to be transmitted over cellular and replayed by the laptop. For more information, see “Relay Attacks on Passive Keyless Entry and Start Systems in Modern Cars.”[4](../../iot/obdii/broken-reference/)
 
 An _amplified relay attack_ uses the same basic principles as a relay attack but with only a single amplifier. The attacker stands by the target vehicle and amplifies the signal, and if the target is nearby with the key fob, the vehicle will unlock. This is an unsophisticated attack that simply increases the range of the vehicle’s sensors. It’s been seen in the wild, primarily in residential neighborhoods, prompting a series of news articles advising residents to put their keys in their refrigerator or wrap them in aluminum foil when they’re at home to prevent them from sending a readable signal. Obviously, treating your keys like lunch is silly, but until auto manufacturers provide an alternative solution, I’m afraid you’re stuck with homemade Faraday cages.
 
@@ -4756,7 +4756,7 @@ _This section is designed to assist in your research. Each area should give you 
 
 The Megamos cryptographic system has a particularly interesting history. Megamos “optimized” its key handshake by requiring only one round of challenge and response and eliminating the second round, as outlined earlier. While an attacker attempting to crack a challenge–response key would normally need access to the target key, they could crack Megamos without a key present because the Megamos challenge response is never actually acted on by the vehicle’s transponder. This flaw basically skips the key challenge portion and provides only an encrypted key.
 
-The Megamos memory is a 160-bit EEPROM, organized into 10 words, as shown in [Table 12-1](broken-reference/). Crypt Key is the secret key storage, ID is the 32-bit identifier, LB 0 and LB 1 are the lock bits, and UM is the 30 bits of user memory.
+The Megamos memory is a 160-bit EEPROM, organized into 10 words, as shown in [Table 12-1](../../iot/obdii/broken-reference/). Crypt Key is the secret key storage, ID is the 32-bit identifier, LB 0 and LB 1 are the lock bits, and UM is the 30 bits of user memory.
 
 **Table 12-1:** Layout of the Megamos Memory Space
 
@@ -4768,7 +4768,7 @@ The Megamos memory is a 160-bit EEPROM, organized into 10 words, as shown in [Ta
 | Crypt Key 47 | Crypt Key 32 | LB1, LB0, UM 29 | UM 16       |
 | Crypt Key 31 | Crypt Key 16 | UM 15           | UM 0        |
 
-This algorithm was cracked publicly in 2013 when Flavio D. Garcia, a security researcher at the University of Birmingham, published a paper called “Dismantling Megamos Crypto: Wirelessly Lockpicking a Vehicle Immobilizer”.[5](broken-reference/) Garcia and two fellow researchers from Radboud University Nijmegen, Barış Ege and Roel Verdult, notified the chipmakers, Volkswagen and Thales, nine months prior to the scheduled publication of their paper. Volkswagen and Thales reacted by suing the researchers for having identified the vulnerabilities, and the researchers lost the court case because the algorithm was leaked online. The leaked algorithm was used in pirated software—the Tango Programmer from VAG-info.com—for adding new keys. The researchers acquired this software and reversed the internals of the software to identify the algorithm.
+This algorithm was cracked publicly in 2013 when Flavio D. Garcia, a security researcher at the University of Birmingham, published a paper called “Dismantling Megamos Crypto: Wirelessly Lockpicking a Vehicle Immobilizer”.[5](../../iot/obdii/broken-reference/) Garcia and two fellow researchers from Radboud University Nijmegen, Barış Ege and Roel Verdult, notified the chipmakers, Volkswagen and Thales, nine months prior to the scheduled publication of their paper. Volkswagen and Thales reacted by suing the researchers for having identified the vulnerabilities, and the researchers lost the court case because the algorithm was leaked online. The leaked algorithm was used in pirated software—the Tango Programmer from VAG-info.com—for adding new keys. The researchers acquired this software and reversed the internals of the software to identify the algorithm.
 
 In their paper, the researchers analyzed the algorithm and reported on the vulnerabilities they found, though the actual exploit was apparently not trivial and there were much easier ways to steal a car with a Megamos system. Nevertheless, the research was placed under a gag order, and the findings weren’t made public. Unfortunately, the problem with Megamos still exists, and it’s still insecure—the gag order simply prevents vehicle owners from determining their risk because the research isn’t publicly available. This is a prime example of how the auto industry should _not_ respond to security research.
 
@@ -4776,7 +4776,7 @@ You can find a transcript of the court decision here: [_http://www.bailii.org/ew
 
 In detail the way this works is as follows: both the car computer and the transponder know a secret number. The number is unique to that car. It is called the “secret key”. Both the car computer and the transponder also know a secret algorithm. That is a complex mathematical formula. Given two numbers it will produce a third number. The algorithm is the same for all cars which use the Megamos Crypto chip. Carrying out that calculation is what the Megamos Crypto chip does.
 
-When the process starts the car generates a random number. It is sent to the transponder. Now both computers perform the complex mathematical operation using two numbers they both should know, the random number and the secret key. They each produce a third number. The number is split into two parts called F and G. Both computers now know F and G. The car sends its F to the transponder. The transponder can check that the car has correctly calculated F. That proves to the transponder that the car knows both the secret key and the Megamos Crypto algorithm. The transponder can now be satisfied that the car is genuinely the car it is supposed to be. If the transponder is happy, the transponder sends G to the car. The car checks that G is correct. If it is correct then the car is happy that the transponder also knows the secret key and the Megamos Crypto algorithm. Thus the car can be satisfied that the transponder is genuine. So both devices have confirmed the identity of the other without actually revealing the secret key or the secret algorithm. The car can safely start. The verification of identity in this process depends on the shared secret knowledge. For the process to be secure, both pieces of information need to remain secret—the key and the algorithm.[6](broken-reference/)
+When the process starts the car generates a random number. It is sent to the transponder. Now both computers perform the complex mathematical operation using two numbers they both should know, the random number and the secret key. They each produce a third number. The number is split into two parts called F and G. Both computers now know F and G. The car sends its F to the transponder. The transponder can check that the car has correctly calculated F. That proves to the transponder that the car knows both the secret key and the Megamos Crypto algorithm. The transponder can now be satisfied that the car is genuinely the car it is supposed to be. If the transponder is happy, the transponder sends G to the car. The car checks that G is correct. If it is correct then the car is happy that the transponder also knows the secret key and the Megamos Crypto algorithm. Thus the car can be satisfied that the transponder is genuine. So both devices have confirmed the identity of the other without actually revealing the secret key or the secret algorithm. The car can safely start. The verification of identity in this process depends on the shared secret knowledge. For the process to be secure, both pieces of information need to remain secret—the key and the algorithm.[6](../../iot/obdii/broken-reference/)
 
 In reality, any robust crypto algorithm can be known. In fact, as any cryptographer will tell you, if knowing the math behind an algorithm jeopardizes the security of that algorithm, the algorithm is flawed.
 
@@ -4828,13 +4828,13 @@ Hitag 1 relies on a 32-bit secret key and is susceptible to a brute-force attack
 
 **Crack Status** Broken
 
-Hitag 2 is one of the most widely implemented (and broken) algorithms in vehicles produced around the world. The algorithm was cracked because its stream cipher, shown in [Figure 12-7](broken-reference/), is never fed back into the original state, making the key discoverable.
+Hitag 2 is one of the most widely implemented (and broken) algorithms in vehicles produced around the world. The algorithm was cracked because its stream cipher, shown in [Figure 12-7](../../iot/obdii/broken-reference/), is never fed back into the original state, making the key discoverable.
 
 _Figure 12-7: Hitag 2 cipher_
 
 Hitag 2 keys can be cracked in under a minute by using a type of smart brute-forcing that intelligently picks the next guess rather than trying every possibility. The Hitag 2 system can be brute-forced so quickly because it doesn’t even use its full bit length, and when the transponders are introduced into a system, they don’t produce true random numbers during initialization. Both Hitag 1 and Hitag 2 are also vulnerable to dictionary attacks.
 
-You’ll find numerous papers online that discuss a multitude of weaknesses in Hitag 2, such as “Gone in 360 Seconds: Hijacking with Hitag2”.[7](broken-reference/)
+You’ll find numerous papers online that discuss a multitude of weaknesses in Hitag 2, such as “Gone in 360 Seconds: Hijacking with Hitag2”.[7](../../iot/obdii/broken-reference/)
 
 **Hitag AES**
 
@@ -4868,7 +4868,7 @@ This newer cipher relies on the proven AES algorithm, which means that any weakn
 
 The algorithm used by the digital signal transponder DST-40 was also used in the Exxon-Mobil Speedpass payment system. The DST-40, a 200-round unbalanced Feistel cipher, was reverse engineered by researchers at Johns Hopkins University who created a series of FPGAs to brute-force the key, allowing them to clone the transponders. (FPGAs make it possible to create hardware that’s custom designed to crack algorithms, which makes brute-forcing much more feasible.) Because an FPGA is specialized and can run with parallel inputs, it can often process things much faster than a general-purpose computer.
 
-The attack on DST-40 takes advantage of the transponder’s weak 40-bit key and requires no more than one hour to complete. To perform the attack, the attacker must get two challenge–response pairs from a valid transponder—a relatively easy task, since DST-40 responds to as many as eight queries per second. (See “Security Analysis of Cryptographically-Enabled RFID Device” for more details on this crack.[8](broken-reference/))
+The attack on DST-40 takes advantage of the transponder’s weak 40-bit key and requires no more than one hour to complete. To perform the attack, the attacker must get two challenge–response pairs from a valid transponder—a relatively easy task, since DST-40 responds to as many as eight queries per second. (See “Security Analysis of Cryptographically-Enabled RFID Device” for more details on this crack.[8](../../iot/obdii/broken-reference/))
 
 **DST-80**
 
@@ -4898,13 +4898,13 @@ When DST-40 was cracked, Texas Instruments responded by doubling the key length 
 
 **Crack Status** Broken
 
-Keeloq, shown in [Figure 12-8](broken-reference/), is a very old algorithm, and there have been many published attacks on its encryption. Keeloq can use both a rolling code and a challenge response, and it uses a block cipher based on nonlinear feedback shift register (NLFSR). The manufacturer implementing Keeloq receives a key, which is stored in all receivers. Receivers learn transponder keys by receiving their IDs over a bus line programmed by the auto manufacturer.
+Keeloq, shown in [Figure 12-8](../../iot/obdii/broken-reference/), is a very old algorithm, and there have been many published attacks on its encryption. Keeloq can use both a rolling code and a challenge response, and it uses a block cipher based on nonlinear feedback shift register (NLFSR). The manufacturer implementing Keeloq receives a key, which is stored in all receivers. Receivers learn transponder keys by receiving their IDs over a bus line programmed by the auto manufacturer.
 
 The most effective cryptographic attack in Keeloq uses both a slide and a meet-in-the-middle attack. The attack targets Keeloq’s challenge–response mode and requires the collection of 216 known plaintext messages from a transponder—the recording of which can take just over one hour. The attack typically results only in the ability to clone the transponder, but if the manufacturer’s key derivation is weak, it may be possible for the attacker to deduce the key used on their transponders. However, attacking the crypto has become unnecessary because newer dedicated FPGA clusters make it possible to simply brute-force the key.
 
 _Figure 12-8: Keeloq algorithm_
 
-Keeloq is also susceptible to a power-analysis attack. A power-analysis attack can be used to extract the manufacturer’s key used on the transponders with only two transponder messages. If successful, such an attack typically results only in the ability to clone a transponder in a few minutes by monitoring the power traces on the transponder. Power analysis can also be used to get the manufacturer key, though such an attack could take several hours to perform. Once the attacker has the master key, they can clone any transponder. Finally, because Keeloq takes varying clock cycles when using its lookup table, it’s also susceptible to timing attacks. (For more on power-analysis and timing attacks, see [Chapter 8](broken-reference/).)
+Keeloq is also susceptible to a power-analysis attack. A power-analysis attack can be used to extract the manufacturer’s key used on the transponders with only two transponder messages. If successful, such an attack typically results only in the ability to clone a transponder in a few minutes by monitoring the power traces on the transponder. Power analysis can also be used to get the manufacturer key, though such an attack could take several hours to perform. Once the attacker has the master key, they can clone any transponder. Finally, because Keeloq takes varying clock cycles when using its lookup table, it’s also susceptible to timing attacks. (For more on power-analysis and timing attacks, see [Chapter 8](../../iot/obdii/broken-reference/).)
 
 **Open Source Immobilizer Protocol Stack**
 
@@ -4926,7 +4926,7 @@ So far, we’ve looked at wireless attacks and direct cryptography attacks again
 
 **Attacking Immobilizer Chips**
 
-One way to attack an immobilization system is to physically attack the immobilizer chip. In fact, it’s possible to completely remove the immobilizer chip (typically from a vehicle’s ECU) and still operate a vehicle, though perhaps not quite normally. At the very least, this removal would create a DTC and turn on the MIL, as discussed in “[Diagnostic Trouble Codes](broken-reference/)” on [page 52](broken-reference/). In order to physically remove immobilizer-based security, you can purchase or build an immobilizer bypass chip and then solder it where the original immobilizer chip was to keep the rest of the ECU happy. These chips, sometimes referred to as _immo emulators_, typically cost $20 to $30. You’d still need to have a key cut for the vehicle, but having bypassed any challenge–response security entirely, the key would simply unlock and start the vehicle.
+One way to attack an immobilization system is to physically attack the immobilizer chip. In fact, it’s possible to completely remove the immobilizer chip (typically from a vehicle’s ECU) and still operate a vehicle, though perhaps not quite normally. At the very least, this removal would create a DTC and turn on the MIL, as discussed in “[Diagnostic Trouble Codes](../../iot/obdii/broken-reference/)” on [page 52](../../iot/obdii/broken-reference/). In order to physically remove immobilizer-based security, you can purchase or build an immobilizer bypass chip and then solder it where the original immobilizer chip was to keep the rest of the ECU happy. These chips, sometimes referred to as _immo emulators_, typically cost $20 to $30. You’d still need to have a key cut for the vehicle, but having bypassed any challenge–response security entirely, the key would simply unlock and start the vehicle.
 
 **Brute-Forcing Keypad Entry**
 
@@ -5022,7 +5022,7 @@ No car hacking book would be complete without some discussion of hotwiring—a t
 
 In the past, ignition systems used a vehicle’s key to complete an electrical circuit: turn the key and you’ve connected the starter wire to the ignition and battery wires. No tricky immobilizer system got in the way of the vehicle starting; the security was purely electrical.
 
-To hotwire a susceptible car, you’d remove the steering wheel to expose the ignition cylinder and typically three bundles of wires. Using the car’s manual or simply by tracing the wires, you’d locate the ignition-battery bundle and the starter wire. Next, you’d strip the battery and ignition wires and twist them together (see [Figure 12-9](broken-reference/)). Then, you’d “spark” the bundle with the starter wire to start the car. Once the car started, you’d remove the starter wire.
+To hotwire a susceptible car, you’d remove the steering wheel to expose the ignition cylinder and typically three bundles of wires. Using the car’s manual or simply by tracing the wires, you’d locate the ignition-battery bundle and the starter wire. Next, you’d strip the battery and ignition wires and twist them together (see [Figure 12-9](../../iot/obdii/broken-reference/)). Then, you’d “spark” the bundle with the starter wire to start the car. Once the car started, you’d remove the starter wire.
 
 _Figure 12-9: Simple illustration of which wires to cross_
 
@@ -5032,7 +5032,7 @@ If a car had a steering wheel lock, you’d bypass it by breaking off the metal 
 
 In this chapter, you learned about low-level wireless communications. We went over methods for identifying wireless signals and common attacks against wireless communications. We demonstrated a few hacks using the TPMS to show that even seemingly benign devices are vulnerable to attack. We also reviewed key fob security and demonstrated a few simple hacks there. Vehicle theft is rapidly adapting to modern electronic vehicles, and keyless system attacks are one of the main hacks used in thefts. Understanding the different systems, their strengths and weaknesses, and how to attack them can help you understand how vulnerable your vehicle is to theft. Finally, we discussed some old-school nonelectronic hacks, like manually brute-forcing door keypads and hotwiring.
 
-In [Chapter 13](broken-reference/), we’ll look at a common, and arguably less malicious, type of hacking: performance tuning.
+In [Chapter 13](../../iot/obdii/broken-reference/), we’ll look at a common, and arguably less malicious, type of hacking: performance tuning.
 
 ### **13** **PERFORMANCE TUNING** <a href="#calibre_link-301" id="calibre_link-301"></a>
 
@@ -5106,7 +5106,7 @@ Chip tuning generally requires an _EPROM programmer_, a device that reads, write
 
 Almost all EPROM programmers support only dual in-line package (DIP) chips. If your vehicle’s computer uses surface mount–style chips, you’ll probably need to purchase an appropriate additional adapter. It’s generally a good idea to get any adapters from the same source as the programmer to ensure compatibility. All adapters should be considered custom hardware.
 
-[Figure 13-1](broken-reference/) shows a ROM adapter board installed in a Nissan ECU. The two empty 28-pin sockets in the lower-left corner have been added to the original ECU. Some soldering is often required to modify and add ROM boards such as this one.
+[Figure 13-1](../../iot/obdii/broken-reference/) shows a ROM adapter board installed in a Nissan ECU. The two empty 28-pin sockets in the lower-left corner have been added to the original ECU. Some soldering is often required to modify and add ROM boards such as this one.
 
 _Figure 13-1: A 1992 S13 Nissan KA24DE ECU with a Moates ROM adapter board installed_
 
@@ -5118,7 +5118,7 @@ ROM emulators generally use a USB or serial connection to a PC and software that
 
 **Ostrich2** A ROM emulator designed for 8-bit EPROMs ranging from 4k (2732A) to 512k (4mbit 29F040) and everything in between (27C128, 27C256, 27C512). It is relatively inexpensive at about $185, and features a USB interface with an open command set, as well as many tuning applications that already have native support ([_https://www.moates.net/ostrich-20-the-new-breed-p-169.html_](https://www.moates.net/ostrich-20-the-new-breed-p-169.html)).
 
-**RoadRunner** A ROM emulator aimed at 16-bit EPROMs, like 28F200, 29F400, and 28F800 in a PSOP44 package (see [Figure 13-2](broken-reference/)). It is also relatively inexpensive at about $489 and features a USB interface with an open command set and many tuning applications that already have native support ([_https://www.moates.net/roadrunnerdiy-guts-kit-p-118.html_](https://www.moates.net/roadrunnerdiy-guts-kit-p-118.html)).
+**RoadRunner** A ROM emulator aimed at 16-bit EPROMs, like 28F200, 29F400, and 28F800 in a PSOP44 package (see [Figure 13-2](../../iot/obdii/broken-reference/)). It is also relatively inexpensive at about $489 and features a USB interface with an open command set and many tuning applications that already have native support ([_https://www.moates.net/roadrunnerdiy-guts-kit-p-118.html_](https://www.moates.net/roadrunnerdiy-guts-kit-p-118.html)).
 
 _Figure 13-2: The RoadRunner emulator connected to a Chevrolet 12200411 LS1 PCM_
 
@@ -5132,7 +5132,7 @@ The first flashable ECUs became available around 1996. J2534 DLLs combined with 
 
 **RomRaider**
 
-RomRaider ([_http://www.romraider.com/_](http://www.romraider.com)) is a free, open source tuning tool designed for Subaru vehicles. With that, you can use the Tactrix OpenPort 2.0—a piece of pass-through hardware ([_http://www.tactrix.com/_](http://www.tactrix.com), about $170) that works well with RomRaider. Once you have a pass-through cable hooked up to the ECU, RomRaider allows you to download the ECU’s flash memory. You can then open these flash images with a _definitions_ file, or _def_, which maps the locations and structure of parameters within the image, and provides the formulas to display data in a human-readable format. This mapping lets you quickly locate and change engine parameters without having to disassemble the flash. [Figure 13-3](broken-reference/) shows RomRaider with a flash image and definition loaded.
+RomRaider ([_http://www.romraider.com/_](http://www.romraider.com)) is a free, open source tuning tool designed for Subaru vehicles. With that, you can use the Tactrix OpenPort 2.0—a piece of pass-through hardware ([_http://www.tactrix.com/_](http://www.tactrix.com), about $170) that works well with RomRaider. Once you have a pass-through cable hooked up to the ECU, RomRaider allows you to download the ECU’s flash memory. You can then open these flash images with a _definitions_ file, or _def_, which maps the locations and structure of parameters within the image, and provides the formulas to display data in a human-readable format. This mapping lets you quickly locate and change engine parameters without having to disassemble the flash. [Figure 13-3](../../iot/obdii/broken-reference/) shows RomRaider with a flash image and definition loaded.
 
 _Figure 13-3: RomRaider ECU editor_
 
@@ -5142,7 +5142,7 @@ One alternative to reverse engineering factory computers is to simply replace th
 
 MegaSquirt has its roots in the DIY community and was designed to enable people to program their own engine computers. Early MegaSquirt units typically required you to assemble the board yourself, but these versions often resulted in confusion, with many competing user-assembled hardware designs that were not quite compatible. Current designs have therefore moved toward a pre-made format in order to provide a more consistent and uniform hardware platform.
 
-There are several multiplatform tools available for use with the MegaSquirt hardware. [Figure 13-4](broken-reference/) shows the most popular one: TunerStudio ([_http://www.tunerstudio.com/index.php/tuner-studio/_](http://www.tunerstudio.com/index.php/tuner-studio/), around $60). TunerStudio lets you modify parameters, view sensors and engine operating conditions, record data, and analyze data to make targeted changes.
+There are several multiplatform tools available for use with the MegaSquirt hardware. [Figure 13-4](../../iot/obdii/broken-reference/) shows the most popular one: TunerStudio ([_http://www.tunerstudio.com/index.php/tuner-studio/_](http://www.tunerstudio.com/index.php/tuner-studio/), around $60). TunerStudio lets you modify parameters, view sensors and engine operating conditions, record data, and analyze data to make targeted changes.
 
 _Figure 13-4: TunerStudio gauge cluster_
 
@@ -5208,7 +5208,7 @@ One of the advantages of using a Raspberry Pi over an Arduino is that it allows 
 
 **ChipKit Max32 Development Board and NetworkShield**
 
-The ChipKit board is a development board that together with the NetworkShield can give you a network-interpretable CAN system, as discussed in “[Translating CAN Bus Messages](broken-reference/)” on [page 85](broken-reference/). About $110, this open source hardware solution is touted by the OpenXC standard and supports prebuilt firmware from OpenXC, but you can also write your own firmware for it and do raw CAN.
+The ChipKit board is a development board that together with the NetworkShield can give you a network-interpretable CAN system, as discussed in “[Translating CAN Bus Messages](../../iot/obdii/broken-reference/)” on [page 85](../../iot/obdii/broken-reference/). About $110, this open source hardware solution is touted by the OpenXC standard and supports prebuilt firmware from OpenXC, but you can also write your own firmware for it and do raw CAN.
 
 **ELM327 Chipset**
 
@@ -5224,7 +5224,7 @@ Travis Goodspeed, a well-known hardware hacker, has released an open source, low
 
 **ELM-USB Interface**
 
-OBDTester.com sells a commercial ELM-32x-compatible device for around $60. OBDTester.com are the maintainers of the PyOBD library (see “[Software](broken-reference/)” on [page 246](broken-reference/)).
+OBDTester.com sells a commercial ELM-32x-compatible device for around $60. OBDTester.com are the maintainers of the PyOBD library (see “[Software](../../iot/obdii/broken-reference/)” on [page 246](../../iot/obdii/broken-reference/)).
 
 **CAN232 and CANUSB Interface**
 
@@ -5270,7 +5270,7 @@ USRP ([_http://www.ettus.com/_](http://www.ettus.com)) is a professional, modula
 
 **ChipWhisperer Toolchain**
 
-NewAE Technologies produces the ChipWhisperer ([_http://newae.com/chipwhisperer/_](http://newae.com/chipwhisperer/)). As discussed in “[Side-Channel Analysis with the ChipWhisperer](broken-reference/)” on [page 134](broken-reference/), the ChipWhisperer is a system for side-channel attacks, such as power analysis and clock glitching. Similar systems usually cost $30,000 or more, but the ChipWhisperer is an open source system that costs between $1,000 and $1,500.
+NewAE Technologies produces the ChipWhisperer ([_http://newae.com/chipwhisperer/_](http://newae.com/chipwhisperer/)). As discussed in “[Side-Channel Analysis with the ChipWhisperer](../../iot/obdii/broken-reference/)” on [page 134](../../iot/obdii/broken-reference/), the ChipWhisperer is a system for side-channel attacks, such as power analysis and clock glitching. Similar systems usually cost $30,000 or more, but the ChipWhisperer is an open source system that costs between $1,000 and $1,500.
 
 **Red Pitaya Board**
 
@@ -5286,7 +5286,7 @@ Wireshark ([_https://www.wireshark.org/_](https://www.wireshark.org)) is a popul
 
 _**PyOBD Module**_
 
-PyOBD ([_http://www.obdtester.com/pyobd_](http://www.obdtester.com/pyobd))—also known as _PyOBD2_ and _PyOBD-II_—is a Python module that communicates with ELM327 devices (see [Figures A-1](broken-reference/) and [A-2](broken-reference/)). It’s based on the PySerial library and is designed to give you information on your OBD setup in a convenient interface. For a specific scan tool fork of PyOBD, see Austin Murphy’s OBD2 ScanTool ([_https://github.com/AustinMurphy/OBD2-Scantool/_](https://github.com/AustinMurphy/OBD2-Scantool/)), which is attempting to become a more complete open source solution for diagnostic troubleshooting.
+PyOBD ([_http://www.obdtester.com/pyobd_](http://www.obdtester.com/pyobd))—also known as _PyOBD2_ and _PyOBD-II_—is a Python module that communicates with ELM327 devices (see [Figures A-1](../../iot/obdii/broken-reference/) and [A-2](../../iot/obdii/broken-reference/)). It’s based on the PySerial library and is designed to give you information on your OBD setup in a convenient interface. For a specific scan tool fork of PyOBD, see Austin Murphy’s OBD2 ScanTool ([_https://github.com/AustinMurphy/OBD2-Scantool/_](https://github.com/AustinMurphy/OBD2-Scantool/)), which is attempting to become a more complete open source solution for diagnostic troubleshooting.
 
 _Figure A-1: PyOBD running diagnostic tests_
 
@@ -5294,21 +5294,21 @@ _Figure A-2: PyOBD reading sensor data_
 
 _**Linux Tools**_
 
-Linux supports CAN drivers out of the box, and SocketCAN provides a simple netlink (network card interface) experience when dealing with CAN. You can use its can-utils suite for a command line implementation, and as open source software, it’s easy to extend functionality to other utilities. (See [Chapter 3](broken-reference/) for more on SocketCAN.)
+Linux supports CAN drivers out of the box, and SocketCAN provides a simple netlink (network card interface) experience when dealing with CAN. You can use its can-utils suite for a command line implementation, and as open source software, it’s easy to extend functionality to other utilities. (See [Chapter 3](../../iot/obdii/broken-reference/) for more on SocketCAN.)
 
 _**CANiBUS Server**_
 
-CANiBUS is a web server written in Go by Open Garages (see [Figure A-3](broken-reference/)). This server allows a room full of researchers to simultaneously work on the same vehicle, whether for instructional purposes or team reversing sessions. The Go language is portable to any operating system, but you may have issues with low-level drivers on certain platforms. For example, even if you’re running CANiBUS on Linux, you won’t be able to directly interact with SocketCAN because Go doesn’t support the necessary socket flags to initialize the CAN interface. (This problem could be addressed by implementing socketcand, but as of this writing, that feature has yet to be implemented.) CANiBUS does have a driver for ELM327 that supports generic sniffing. You can learn more about CANiBUS at [_http://wiki.hive13.org/view/CANiBUS/_](http://wiki.hive13.org/view/CANiBUS/) and can download the source from [_https://github.com/Hive13/CANiBUS/_](https://github.com/Hive13/CANiBUS/).
+CANiBUS is a web server written in Go by Open Garages (see [Figure A-3](../../iot/obdii/broken-reference/)). This server allows a room full of researchers to simultaneously work on the same vehicle, whether for instructional purposes or team reversing sessions. The Go language is portable to any operating system, but you may have issues with low-level drivers on certain platforms. For example, even if you’re running CANiBUS on Linux, you won’t be able to directly interact with SocketCAN because Go doesn’t support the necessary socket flags to initialize the CAN interface. (This problem could be addressed by implementing socketcand, but as of this writing, that feature has yet to be implemented.) CANiBUS does have a driver for ELM327 that supports generic sniffing. You can learn more about CANiBUS at [_http://wiki.hive13.org/view/CANiBUS/_](http://wiki.hive13.org/view/CANiBUS/) and can download the source from [_https://github.com/Hive13/CANiBUS/_](https://github.com/Hive13/CANiBUS/).
 
 _Figure A-3: CANiBUS group-based web sniffer_
 
 _**Kayak**_
 
-Kayak ([_http://kayak.2codeornot2code.org/_](http://kayak.2codeornot2code.org)) is a Java-based GUI for analyzing CAN traffic. It has several advanced features, such as GPS tracking and record and playback capabilities. It utilizes socketcand in order to work on other operating systems, so you’ll need at least one Linux-based sniffer to support Kayak. (You’ll find more detail on setup and use in “[Kayak](broken-reference/)” on [page 46](broken-reference/).)
+Kayak ([_http://kayak.2codeornot2code.org/_](http://kayak.2codeornot2code.org)) is a Java-based GUI for analyzing CAN traffic. It has several advanced features, such as GPS tracking and record and playback capabilities. It utilizes socketcand in order to work on other operating systems, so you’ll need at least one Linux-based sniffer to support Kayak. (You’ll find more detail on setup and use in “[Kayak](../../iot/obdii/broken-reference/)” on [page 46](../../iot/obdii/broken-reference/).)
 
 _**SavvyCAN**_
 
-SavvyCAN is a tool written by Collin Kidder of EVTV.me that uses another framework designed by EVTV.me, GVRET, to talk to HW sniffers such as the EVTV Due. SavvyCAN is an open source, Qt GUI–based tool that works on multiple operating systems (see [Figure A-4](broken-reference/)). It includes several very nice features, such as DBC editor, CAN bus graphing, log file diffing, several reverse engineering tools, and all the normal CAN sniffing features you would expect. SavvyCAN doesn’t talk to SocketCAN, but it can read in several different logfile formats, such as Bushmaster logs, Microchip logs, CRTD formats, and generic CSV-formatted logfiles.
+SavvyCAN is a tool written by Collin Kidder of EVTV.me that uses another framework designed by EVTV.me, GVRET, to talk to HW sniffers such as the EVTV Due. SavvyCAN is an open source, Qt GUI–based tool that works on multiple operating systems (see [Figure A-4](../../iot/obdii/broken-reference/)). It includes several very nice features, such as DBC editor, CAN bus graphing, log file diffing, several reverse engineering tools, and all the normal CAN sniffing features you would expect. SavvyCAN doesn’t talk to SocketCAN, but it can read in several different logfile formats, such as Bushmaster logs, Microchip logs, CRTD formats, and generic CSV-formatted logfiles.
 
 _Figure A-4: SavvyCAN GUI_
 
@@ -5322,11 +5322,11 @@ Caring Caribou ([_https://github.com/CaringCaribou/caringcaribou/_](https://gith
 
 _**c0f Fingerprinting Tool**_
 
-CAN of Fingers (c0f) is an open source tool for fingerprinting CAN bus systems that can be found at [_https://github.com/zombieCraig/c0f/_](https://github.com/zombieCraig/c0f/). It has some basic support for identifying patterns in a CAN bus network stream, which can be useful when trying to find a specific signal on a noisy bus. (See “[Using c0f](broken-reference/)” on [page 206](broken-reference/) for an example of c0f at work.)
+CAN of Fingers (c0f) is an open source tool for fingerprinting CAN bus systems that can be found at [_https://github.com/zombieCraig/c0f/_](https://github.com/zombieCraig/c0f/). It has some basic support for identifying patterns in a CAN bus network stream, which can be useful when trying to find a specific signal on a noisy bus. (See “[Using c0f](../../iot/obdii/broken-reference/)” on [page 206](../../iot/obdii/broken-reference/) for an example of c0f at work.)
 
 _**UDSim ECU Simulator**_
 
-UDSim ([_https://github.com/zombieCraig/UDSim/_](https://github.com/zombieCraig/UDSim/)) is a GUI tool that can monitor a CAN bus and automatically learn the devices attached to it by watching communications (see [Figure A-5](broken-reference/)). It’s designed to be used with another diagnostic tool, such as a dealership tool or a scan tool from a local automotive store.
+UDSim ([_https://github.com/zombieCraig/UDSim/_](https://github.com/zombieCraig/UDSim/)) is a GUI tool that can monitor a CAN bus and automatically learn the devices attached to it by watching communications (see [Figure A-5](../../iot/obdii/broken-reference/)). It’s designed to be used with another diagnostic tool, such as a dealership tool or a scan tool from a local automotive store.
 
 _Figure A-5: Sample screen from UDSim as it learns modules off a test bench_
 
@@ -5338,11 +5338,11 @@ Octane ([_http://octane.gmu.edu/_](http://octane.gmu.edu)) is an open source CAN
 
 _**AVRDUDESS GUI**_
 
-AVRDUDESS ([_http://blog.zakkemble.co.uk/avrdudess-a-gui-for-avrdude/_](http://blog.zakkemble.co.uk/avrdudess-a-gui-for-avrdude/)) is a GUI frontend for AVRDUDE written in .NET, though it works fine with Mono on Linux. You’ll see AVRDUDESS in action in “[Prepping Your Test with AVRDUDESS](broken-reference/)” on [page 139](broken-reference/).
+AVRDUDESS ([_http://blog.zakkemble.co.uk/avrdudess-a-gui-for-avrdude/_](http://blog.zakkemble.co.uk/avrdudess-a-gui-for-avrdude/)) is a GUI frontend for AVRDUDE written in .NET, though it works fine with Mono on Linux. You’ll see AVRDUDESS in action in “[Prepping Your Test with AVRDUDESS](../../iot/obdii/broken-reference/)” on [page 139](../../iot/obdii/broken-reference/).
 
 _**RomRaider ECU Tuner**_
 
-RomRaider ([_http://www.romraider.com/_](http://www.romraider.com)) is an open source tuning suite for the Subaru engine control unit that lets you view and log data and tune the ECU (see [Figure A-6](broken-reference/)). It’s one of the few open source ECU tuners, and it can handle 3D views and live data logging. You’ll need a Tactrix Open Port 2.0 cable and Tactrix EcuFlash software in order to download and use the ECU’s firmware. Once you’ve downloaded the flash with EcuFlash, you can edit it with RomRaider. The editor is written in Java and currently works on Windows and Linux, though EcuFlash isn’t supported on Linux.
+RomRaider ([_http://www.romraider.com/_](http://www.romraider.com)) is an open source tuning suite for the Subaru engine control unit that lets you view and log data and tune the ECU (see [Figure A-6](../../iot/obdii/broken-reference/)). It’s one of the few open source ECU tuners, and it can handle 3D views and live data logging. You’ll need a Tactrix Open Port 2.0 cable and Tactrix EcuFlash software in order to download and use the ECU’s firmware. Once you’ve downloaded the flash with EcuFlash, you can edit it with RomRaider. The editor is written in Java and currently works on Windows and Linux, though EcuFlash isn’t supported on Linux.
 
 _Figure A-6: RomRaider tuning editor_
 
@@ -5362,7 +5362,7 @@ All Intrepid hardware devices support uploading scripts to run on the bus in rea
 
 ![image](../../.gitbook/assets/000023)
 
-In [Chapter 4](broken-reference/) we looked at modes and parameter IDs in diagnostic codes. This appendix lists a few more common modes and interesting PIDs for reference.
+In [Chapter 4](../../iot/obdii/broken-reference/) we looked at modes and parameter IDs in diagnostic codes. This appendix lists a few more common modes and interesting PIDs for reference.
 
 #### **Modes Above 0x10** <a href="#calibre_link-645" id="calibre_link-645"></a>
 
@@ -5458,7 +5458,7 @@ _**When to Meet**_
 
 Pick a set date to meet. Most groups meet about once a month, but you can make your meetings as frequent as you like. The timing of your meetings may depend on the type of space you have available and whether you’re sharing it with anyone else.
 
-Check the box(es) next to Public Days for the day(s) you want to be open to the public. Under the checkboxes, enter your Open and Close times. If you want your event to meet less often than weekly, pick which week of the month you’ll meet. For instance, if you want to meet on the first Saturday of every month from 6 to 9 PM, your sheet would look like [Figure C-1](broken-reference/).
+Check the box(es) next to Public Days for the day(s) you want to be open to the public. Under the checkboxes, enter your Open and Close times. If you want your event to meet less often than weekly, pick which week of the month you’ll meet. For instance, if you want to meet on the first Saturday of every month from 6 to 9 PM, your sheet would look like [Figure C-1](../../iot/obdii/broken-reference/).
 
 _Figure C-1: Scheduling meetings on the first Saturday of each month_
 
@@ -5508,7 +5508,7 @@ Here’s the information you need to provide on your managing officers:
 
 _**Equipment**_
 
-Here’s where you should list any equipment available to you or that you plan to have available at the space. See [Appendix A](broken-reference/) for recommendations on hardware and software that will be a help in your Open Garages group. Some tools to list are 3D printers, MIG welders, lifts, rollers, scan tools, and so on. There’s no need to list small things, like screwdrivers and butt connectors.
+Here’s where you should list any equipment available to you or that you plan to have available at the space. See [Appendix A](../../iot/obdii/broken-reference/) for recommendations on hardware and software that will be a help in your Open Garages group. Some tools to list are 3D printers, MIG welders, lifts, rollers, scan tools, and so on. There’s no need to list small things, like screwdrivers and butt connectors.
 
 If certain tools are expensive or require training before they can be used, you might use the Membership Level space to denote that the user must be a paid member to access these tools. You can also use the Skill Ranking space to state the level of skill or training needed in order to operate a particular tool.
 
@@ -5659,2059 +5659,2059 @@ If certain tools are expensive or require training before they can be used, you 
 
 **Numbers**
 
-802.11p standard, [179–180](broken-reference/), [184](broken-reference/)
+802.11p standard, [179–180](../../iot/obdii/broken-reference/), [184](../../iot/obdii/broken-reference/)
 
-8devices USB2CAN converter, [244](broken-reference/)
+8devices USB2CAN converter, [244](../../iot/obdii/broken-reference/)
 
-1609.x standard, [179–180](broken-reference/), [184](broken-reference/)
+1609.x standard, [179–180](../../iot/obdii/broken-reference/), [184](../../iot/obdii/broken-reference/)
 
 **A**
 
-ACM (airbag control module), [61](broken-reference/)
+ACM (airbag control module), [61](../../iot/obdii/broken-reference/)
 
-ACN (automated crash notification) systems, [64](broken-reference/)
+ACN (automated crash notification) systems, [64](../../iot/obdii/broken-reference/)
 
-Advanced Linux Sound Architecture (ALSA) framework, [26](broken-reference/)
+Advanced Linux Sound Architecture (ALSA) framework, [26](../../iot/obdii/broken-reference/)
 
-Advanced User Debugger (AUD), [133–134](broken-reference/)
+Advanced User Debugger (AUD), [133–134](../../iot/obdii/broken-reference/)
 
-airbag control module (ACM), [61](broken-reference/)
+airbag control module (ACM), [61](../../iot/obdii/broken-reference/)
 
-ALSA (Advanced Linux Sound Architecture) framework, [26](broken-reference/)
+ALSA (Advanced Linux Sound Architecture) framework, [26](../../iot/obdii/broken-reference/)
 
-amplified relay attacks, PKES systems, [220](broken-reference/)
+amplified relay attacks, PKES systems, [220](../../iot/obdii/broken-reference/)
 
-amplitude-shift keying (ASK) modulation, [210–211](broken-reference/)
+amplitude-shift keying (ASK) modulation, [210–211](../../iot/obdii/broken-reference/)
 
-analyze.exe tool, [100](broken-reference/)
+analyze.exe tool, [100](../../iot/obdii/broken-reference/)
 
-anonymous certificates, [189](broken-reference/)
+anonymous certificates, [189](../../iot/obdii/broken-reference/)
 
-application-specific integrated circuits (ASICs), [95](broken-reference/)
+application-specific integrated circuits (ASICs), [95](../../iot/obdii/broken-reference/)
 
-apps (IVI system), [163](broken-reference/)
+apps (IVI system), [163](../../iot/obdii/broken-reference/)
 
 arbitration IDs
 
-defined, [18](broken-reference/)
+defined, [18](../../iot/obdii/broken-reference/)
 
-finding, [79–80](broken-reference/)
+finding, [79–80](../../iot/obdii/broken-reference/)
 
-grouping streamed data, [70–71](broken-reference/)
+grouping streamed data, [70–71](../../iot/obdii/broken-reference/)
 
-Arduino shields, [242](broken-reference/)
+Arduino shields, [242](../../iot/obdii/broken-reference/)
 
-Armengaud, Eric, [30](broken-reference/)
+Armengaud, Eric, [30](../../iot/obdii/broken-reference/)
 
-asc2log tool (can-utils package), [41](broken-reference/)
+asc2log tool (can-utils package), [41](../../iot/obdii/broken-reference/)
 
-ASICs (application-specific integrated circuits), [95](broken-reference/)
+ASICs (application-specific integrated circuits), [95](../../iot/obdii/broken-reference/)
 
-ASIL (Automotive Safety Integrity Level) system, [11](broken-reference/), [13](broken-reference/)
+ASIL (Automotive Safety Integrity Level) system, [11](../../iot/obdii/broken-reference/), [13](../../iot/obdii/broken-reference/)
 
-ASK (amplitude-shift keying) modulation, [210–211](broken-reference/)
+ASK (amplitude-shift keying) modulation, [210–211](../../iot/obdii/broken-reference/)
 
 assembly code
 
-converting C code to, [196–198](broken-reference/)
+converting C code to, [196–198](../../iot/obdii/broken-reference/)
 
-converting to shellcode, [199](broken-reference/)
+converting to shellcode, [199](../../iot/obdii/broken-reference/)
 
-asynchronous channel, MOST bus protocol, [25](broken-reference/)
+asynchronous channel, MOST bus protocol, [25](../../iot/obdii/broken-reference/)
 
-AUD (Advanced User Debugger), [133–134](broken-reference/)
+AUD (Advanced User Debugger), [133–134](../../iot/obdii/broken-reference/)
 
-Audio Video Bridging (AVB) standard, [31](broken-reference/)
+Audio Video Bridging (AVB) standard, [31](../../iot/obdii/broken-reference/)
 
-autoignition (detonation), [235](broken-reference/)
+autoignition (detonation), [235](../../iot/obdii/broken-reference/)
 
-automated crash notification (ACN) systems, [64](broken-reference/)
+automated crash notification (ACN) systems, [64](../../iot/obdii/broken-reference/)
 
-Automotive Ethernet bus protocol, [30–31](broken-reference/)
+Automotive Ethernet bus protocol, [30–31](../../iot/obdii/broken-reference/)
 
-automotive racing, [233](broken-reference/)
+automotive racing, [233](../../iot/obdii/broken-reference/)
 
-Automotive Safety Integrity Level (ASIL) system, [11](broken-reference/), [13](broken-reference/)
+Automotive Safety Integrity Level (ASIL) system, [11](../../iot/obdii/broken-reference/), [13](../../iot/obdii/broken-reference/)
 
-auxiliary jacks (IVI systems), [158](broken-reference/)
+auxiliary jacks (IVI systems), [158](../../iot/obdii/broken-reference/)
 
-AVB (Audio Video Bridging) standard, [31](broken-reference/)
+AVB (Audio Video Bridging) standard, [31](../../iot/obdii/broken-reference/)
 
-AVR systems, resetting, [143](broken-reference/)
+AVR systems, resetting, [143](../../iot/obdii/broken-reference/)
 
-AVRDUDESS GUI, [137](broken-reference/), [139–140](broken-reference/), [251](broken-reference/)
+AVRDUDESS GUI, [137](../../iot/obdii/broken-reference/), [139–140](../../iot/obdii/broken-reference/), [251](../../iot/obdii/broken-reference/)
 
 **B**
 
-backdoor attacks, [95](broken-reference/)
+backdoor attacks, [95](../../iot/obdii/broken-reference/)
 
-BCM (broadcast manager) service, [45](broken-reference/), [46](broken-reference/)
+BCM (broadcast manager) service, [45](../../iot/obdii/broken-reference/), [46](../../iot/obdii/broken-reference/)
 
-bcmserver tool (can-utils package), [41](broken-reference/)
+bcmserver tool (can-utils package), [41](../../iot/obdii/broken-reference/)
 
-BerliOS, [35](broken-reference/)
+BerliOS, [35](../../iot/obdii/broken-reference/)
 
-best master clock algorithm, [31](broken-reference/)
+best master clock algorithm, [31](../../iot/obdii/broken-reference/)
 
-BGE (Bus Guardian Enable), [30](broken-reference/)
+BGE (Bus Guardian Enable), [30](../../iot/obdii/broken-reference/)
 
-_.bin_ files, [160](broken-reference/)
+_.bin_ files, [160](../../iot/obdii/broken-reference/)
 
-Binary Editor, [238](broken-reference/)
+Binary Editor, [238](../../iot/obdii/broken-reference/)
 
-binwalk tool, [160](broken-reference/)
+binwalk tool, [160](../../iot/obdii/broken-reference/)
 
-bird’s eye view (Level 0) threats, [3](broken-reference/), [6–7](broken-reference/)
+bird’s eye view (Level 0) threats, [3](../../iot/obdii/broken-reference/), [6–7](../../iot/obdii/broken-reference/)
 
-bitmasks, [71–72](broken-reference/)
+bitmasks, [71–72](../../iot/obdii/broken-reference/)
 
-Bluetooth connection, [9](broken-reference/), [164](broken-reference/), [166–167](broken-reference/), [212](broken-reference/)
+Bluetooth connection, [9](../../iot/obdii/broken-reference/), [164](../../iot/obdii/broken-reference/), [166–167](../../iot/obdii/broken-reference/), [212](../../iot/obdii/broken-reference/)
 
-Bluez daemon, [10](broken-reference/)
+Bluez daemon, [10](../../iot/obdii/broken-reference/)
 
-BMEP (brake mean effective pressure), [235](broken-reference/)
+BMEP (brake mean effective pressure), [235](../../iot/obdii/broken-reference/)
 
-Boone, Jared, [213](broken-reference/)
+Boone, Jared, [213](../../iot/obdii/broken-reference/)
 
-Boothe, Peter, [228](broken-reference/)
+Boothe, Peter, [228](../../iot/obdii/broken-reference/)
 
-bootloaders, brute-forcing, [138–148](broken-reference/)
+bootloaders, brute-forcing, [138–148](../../iot/obdii/broken-reference/)
 
-brake mean effective pressure (BMEP), [235](broken-reference/)
+brake mean effective pressure (BMEP), [235](../../iot/obdii/broken-reference/)
 
-bricking, [89](broken-reference/)
+bricking, [89](../../iot/obdii/broken-reference/)
 
-broadcast manager (BCM) service, [45](broken-reference/), [46](broken-reference/)
+broadcast manager (BCM) service, [45](../../iot/obdii/broken-reference/), [46](../../iot/obdii/broken-reference/)
 
 brute-forcing
 
-diagnostic modes, [58–60](broken-reference/)
+diagnostic modes, [58–60](../../iot/obdii/broken-reference/)
 
-key code, [217](broken-reference/)
+key code, [217](../../iot/obdii/broken-reference/)
 
-keypad entry, [228–230](broken-reference/)
+keypad entry, [228–230](../../iot/obdii/broken-reference/)
 
-secure bootloaders, [138–148](broken-reference/)
+secure bootloaders, [138–148](../../iot/obdii/broken-reference/)
 
-BURN2 programmer, [236](broken-reference/)
+BURN2 programmer, [236](../../iot/obdii/broken-reference/)
 
-Bus Guardian, [30](broken-reference/)
+Bus Guardian, [30](../../iot/obdii/broken-reference/)
 
-Bus Guardian Enable (BGE), [30](broken-reference/)
+Bus Guardian Enable (BGE), [30](../../iot/obdii/broken-reference/)
 
-Bus Pirate cable, [131](broken-reference/)
+Bus Pirate cable, [131](../../iot/obdii/broken-reference/)
 
-bus protocols, [15–16](broken-reference/). _See also names of specific protocols_
+bus protocols, [15–16](../../iot/obdii/broken-reference/). _See also names of specific protocols_
 
-Automotive Ethernet, [30–31](broken-reference/)
+Automotive Ethernet, [30–31](../../iot/obdii/broken-reference/)
 
-Controller Area Network, [16–20](broken-reference/)
+Controller Area Network, [16–20](../../iot/obdii/broken-reference/)
 
-FlexRay, [27–30](broken-reference/)
+FlexRay, [27–30](../../iot/obdii/broken-reference/)
 
-ISO 9141-2, [23](broken-reference/)
+ISO 9141-2, [23](../../iot/obdii/broken-reference/)
 
-Keyword Protocol 2000, [22–23](broken-reference/)
+Keyword Protocol 2000, [22–23](../../iot/obdii/broken-reference/)
 
-Local Interconnect Network, [24](broken-reference/)
+Local Interconnect Network, [24](../../iot/obdii/broken-reference/)
 
-Media Oriented Systems Transport, [24–27](broken-reference/)
+Media Oriented Systems Transport, [24–27](../../iot/obdii/broken-reference/)
 
-OBD-III, [33–34](broken-reference/)
+OBD-III, [33–34](../../iot/obdii/broken-reference/)
 
-SAE J1850, [20–22](broken-reference/)
+SAE J1850, [20–22](../../iot/obdii/broken-reference/)
 
 **C**
 
-C code, [194–202](broken-reference/)
+C code, [194–202](../../iot/obdii/broken-reference/)
 
-c0f (CAN of Fingers) tool, [205–207](broken-reference/), [250](broken-reference/)
+c0f (CAN of Fingers) tool, [205–207](../../iot/obdii/broken-reference/), [250](../../iot/obdii/broken-reference/)
 
-._cab_ files, [160](broken-reference/)
+._cab_ files, [160](../../iot/obdii/broken-reference/)
 
-California Air Resources Board (CARB), [33](broken-reference/)
+California Air Resources Board (CARB), [33](../../iot/obdii/broken-reference/)
 
-CAMP (Crash Avoidance Metricseye view (Level Partnership), [186–187](broken-reference/)
+CAMP (Crash Avoidance Metricseye view (Level Partnership), [186–187](../../iot/obdii/broken-reference/)
 
-CAMs (cooperative awareness messages), [181–183](broken-reference/)
+CAMs (cooperative awareness messages), [181–183](../../iot/obdii/broken-reference/)
 
 CAN (Controller Area Network) bus protocol. _See also_ reverse engineering CANbus
 
-CANopen protocol, [20](broken-reference/)
+CANopen protocol, [20](../../iot/obdii/broken-reference/)
 
-differential signaling, [16–17](broken-reference/)
+differential signaling, [16–17](../../iot/obdii/broken-reference/)
 
-extended packets, [19](broken-reference/)
+extended packets, [19](../../iot/obdii/broken-reference/)
 
-finding connections, [17–18](broken-reference/)
+finding connections, [17–18](../../iot/obdii/broken-reference/)
 
-GMLAN, [20](broken-reference/)
+GMLAN, [20](../../iot/obdii/broken-reference/)
 
-ISO 15765-2, [19–20](broken-reference/)
+ISO 15765-2, [19–20](../../iot/obdii/broken-reference/)
 
-OBD-II connector, [17](broken-reference/)
+OBD-II connector, [17](../../iot/obdii/broken-reference/)
 
-standard packets, [18–19](broken-reference/)
+standard packets, [18–19](../../iot/obdii/broken-reference/)
 
-vulnerabilities, [10](broken-reference/)
+vulnerabilities, [10](../../iot/obdii/broken-reference/)
 
-CAN bus Y-splitter, [245](broken-reference/)
+CAN bus Y-splitter, [245](../../iot/obdii/broken-reference/)
 
 CAN devices
 
-Arduino shields, [242](broken-reference/)
+Arduino shields, [242](../../iot/obdii/broken-reference/)
 
-CAN bus Y-splitter, [245](broken-reference/)
+CAN bus Y-splitter, [245](../../iot/obdii/broken-reference/)
 
-CAN232 dongle, [244](broken-reference/)
+CAN232 dongle, [244](../../iot/obdii/broken-reference/)
 
-CANBus Triple board, [245](broken-reference/)
+CANBus Triple board, [245](../../iot/obdii/broken-reference/)
 
-CANtact, [242–243](broken-reference/)
+CANtact, [242–243](../../iot/obdii/broken-reference/)
 
-CANUSB dongle, [244](broken-reference/)
+CANUSB dongle, [244](../../iot/obdii/broken-reference/)
 
-ChipKit board, [243](broken-reference/)
+ChipKit board, [243](../../iot/obdii/broken-reference/)
 
-ChipWhisperer, [246](broken-reference/)
+ChipWhisperer, [246](../../iot/obdii/broken-reference/)
 
-CrossChasm C5 data logger, [245](broken-reference/)
+CrossChasm C5 data logger, [245](../../iot/obdii/broken-reference/)
 
-ELM327 chipset, [243–244](broken-reference/)
+ELM327 chipset, [243–244](../../iot/obdii/broken-reference/)
 
-ELM-USB connector, [244](broken-reference/)
+ELM-USB connector, [244](../../iot/obdii/broken-reference/)
 
-EVTV due board, [244–245](broken-reference/)
+EVTV due board, [244–245](../../iot/obdii/broken-reference/)
 
-Freematics OBD-II Telematics Kit, [242](broken-reference/)
+Freematics OBD-II Telematics Kit, [242](../../iot/obdii/broken-reference/)
 
-GoodThopter board, [244](broken-reference/)
+GoodThopter board, [244](../../iot/obdii/broken-reference/)
 
-HackRF SDR, [245](broken-reference/)
+HackRF SDR, [245](../../iot/obdii/broken-reference/)
 
-Raspberry Pi, [243](broken-reference/)
+Raspberry Pi, [243](../../iot/obdii/broken-reference/)
 
-Red Pitaya board, [246](broken-reference/)
+Red Pitaya board, [246](../../iot/obdii/broken-reference/)
 
-serial, [39–40](broken-reference/)
+serial, [39–40](../../iot/obdii/broken-reference/)
 
-setting up can-utils to connect to, [36](broken-reference/)
+setting up can-utils to connect to, [36](../../iot/obdii/broken-reference/)
 
-USB2CAN converter, [244](broken-reference/)
+USB2CAN converter, [244](../../iot/obdii/broken-reference/)
 
-USRP SDR, [246](broken-reference/)
+USRP SDR, [246](../../iot/obdii/broken-reference/)
 
-ValueCAN, [252](broken-reference/)
+ValueCAN, [252](../../iot/obdii/broken-reference/)
 
-VSCOM adapter, [244](broken-reference/)
+VSCOM adapter, [244](../../iot/obdii/broken-reference/)
 
-CAN high (CANH) wires, [16–17](broken-reference/)
+CAN high (CANH) wires, [16–17](../../iot/obdii/broken-reference/)
 
-CAN low (CANL) wires, [16–17](broken-reference/)
+CAN low (CANL) wires, [16–17](../../iot/obdii/broken-reference/)
 
 CAN network. _See also_ CAN bus protocol; reverse engineering CAN bus
 
-locating, [67–68](broken-reference/)
+locating, [67–68](../../iot/obdii/broken-reference/)
 
-sending data with, [55](broken-reference/)
+sending data with, [55](../../iot/obdii/broken-reference/)
 
-virtual, [40–41](broken-reference/)
+virtual, [40–41](../../iot/obdii/broken-reference/)
 
-CAN of Fingers (c0f) tool, [205–207](broken-reference/), [250](broken-reference/)
+CAN of Fingers (c0f) tool, [205–207](../../iot/obdii/broken-reference/), [250](../../iot/obdii/broken-reference/)
 
-can0 device, [38](broken-reference/)
+can0 device, [38](../../iot/obdii/broken-reference/)
 
-CAN232 dongle, [244](broken-reference/)
+CAN232 dongle, [244](../../iot/obdii/broken-reference/)
 
-Canberry controller, [243](broken-reference/)
+Canberry controller, [243](../../iot/obdii/broken-reference/)
 
-CANBus Control Panel, [82–83](broken-reference/)
+CANBus Control Panel, [82–83](../../iot/obdii/broken-reference/)
 
-CANBus Triple board, [245](broken-reference/)
+CANBus Triple board, [245](../../iot/obdii/broken-reference/)
 
-canbusload tool (can-utils package), [41](broken-reference/)
+canbusload tool (can-utils package), [41](../../iot/obdii/broken-reference/)
 
-can-calc-bit-timing command (can-utils package), [41](broken-reference/)
+can-calc-bit-timing command (can-utils package), [41](../../iot/obdii/broken-reference/)
 
-can\_dev module, [37–38](broken-reference/)
+can\_dev module, [37–38](../../iot/obdii/broken-reference/)
 
-CANdiy-shield, [242](broken-reference/)
+CANdiy-shield, [242](../../iot/obdii/broken-reference/)
 
-candump utility (can-utils package), [41](broken-reference/), [70](broken-reference/)
+candump utility (can-utils package), [41](../../iot/obdii/broken-reference/), [70](../../iot/obdii/broken-reference/)
 
-canfdtest tool (can-utils package), [42](broken-reference/)
+canfdtest tool (can-utils package), [42](../../iot/obdii/broken-reference/)
 
-cangen command (can-utils package), [42](broken-reference/)
+cangen command (can-utils package), [42](../../iot/obdii/broken-reference/)
 
-cangw tool (can-utils package), [42](broken-reference/)
+cangw tool (can-utils package), [42](../../iot/obdii/broken-reference/)
 
-CANH (CAN high) wires, [16–17](broken-reference/)
+CANH (CAN high) wires, [16–17](../../iot/obdii/broken-reference/)
 
-CANiBUS server, [248](broken-reference/)
+CANiBUS server, [248](../../iot/obdii/broken-reference/)
 
-can-isotp.ko module (can-utils package), [43–44](broken-reference/)
+can-isotp.ko module (can-utils package), [43–44](../../iot/obdii/broken-reference/)
 
-CANL (CAN low) wires, [16–17](broken-reference/)
+CANL (CAN low) wires, [16–17](../../iot/obdii/broken-reference/)
 
-canlogserver utility (can-utils package), [42](broken-reference/)
+canlogserver utility (can-utils package), [42](../../iot/obdii/broken-reference/)
 
-CANopen protocol, [20](broken-reference/)
+CANopen protocol, [20](../../iot/obdii/broken-reference/)
 
-canplayer command (can-utils package), [42](broken-reference/)
+canplayer command (can-utils package), [42](../../iot/obdii/broken-reference/)
 
-cansend tool (can-utils package), [42](broken-reference/)
+cansend tool (can-utils package), [42](../../iot/obdii/broken-reference/)
 
-cansniffer tool (can-utils package), [42](broken-reference/), [71–72](broken-reference/)
+cansniffer tool (can-utils package), [42](../../iot/obdii/broken-reference/), [71–72](../../iot/obdii/broken-reference/)
 
-CANtact, [242–243](broken-reference/)
+CANtact, [242–243](../../iot/obdii/broken-reference/)
 
-CANUSB dongle, [244](broken-reference/)
+CANUSB dongle, [244](../../iot/obdii/broken-reference/)
 
-can-utils package, [20](broken-reference/)
+can-utils package, [20](../../iot/obdii/broken-reference/)
 
-asc2log tool, [41](broken-reference/)
+asc2log tool, [41](../../iot/obdii/broken-reference/)
 
-bcmserver tool, [41](broken-reference/)
+bcmserver tool, [41](../../iot/obdii/broken-reference/)
 
-canbusload tool, [41](broken-reference/)
+canbusload tool, [41](../../iot/obdii/broken-reference/)
 
-can-calc-bit-timing command, [41](broken-reference/)
+can-calc-bit-timing command, [41](../../iot/obdii/broken-reference/)
 
-candump utility, [41](broken-reference/)
+candump utility, [41](../../iot/obdii/broken-reference/)
 
-canfdtest tool, [42](broken-reference/)
+canfdtest tool, [42](../../iot/obdii/broken-reference/)
 
-cangen command, [42](broken-reference/)
+cangen command, [42](../../iot/obdii/broken-reference/)
 
-cangw tool, [42](broken-reference/)
+cangw tool, [42](../../iot/obdii/broken-reference/)
 
-can-isotp.ko module, [43–44](broken-reference/)
+can-isotp.ko module, [43–44](../../iot/obdii/broken-reference/)
 
-canlogserver utility, [42](broken-reference/)
+canlogserver utility, [42](../../iot/obdii/broken-reference/)
 
-canplayer command, [42](broken-reference/)
+canplayer command, [42](../../iot/obdii/broken-reference/)
 
-cansend tool, [42](broken-reference/)
+cansend tool, [42](../../iot/obdii/broken-reference/)
 
-cansniffer, [42](broken-reference/)
+cansniffer, [42](../../iot/obdii/broken-reference/)
 
-configuring built-in chipsets, [37–38](broken-reference/)
+configuring built-in chipsets, [37–38](../../iot/obdii/broken-reference/)
 
-configuring serial CAN devices, [39–40](broken-reference/)
+configuring serial CAN devices, [39–40](../../iot/obdii/broken-reference/)
 
-finding door-unlock control, [77–78](broken-reference/)
+finding door-unlock control, [77–78](../../iot/obdii/broken-reference/)
 
-installing, [36–37](broken-reference/)
+installing, [36–37](../../iot/obdii/broken-reference/)
 
-installing additional kernel modules, [42–43](broken-reference/)
+installing additional kernel modules, [42–43](../../iot/obdii/broken-reference/)
 
-isotpdump tool, [42](broken-reference/)
+isotpdump tool, [42](../../iot/obdii/broken-reference/)
 
-isotprecv utility, [42](broken-reference/)
+isotprecv utility, [42](../../iot/obdii/broken-reference/)
 
-isotpsend command, [42](broken-reference/)
+isotpsend command, [42](../../iot/obdii/broken-reference/)
 
-isotpserver tool, [42](broken-reference/)
+isotpserver tool, [42](../../iot/obdii/broken-reference/)
 
-isotpsniffer, [42](broken-reference/)
+isotpsniffer, [42](../../iot/obdii/broken-reference/)
 
-isotptun utility, [42](broken-reference/)
+isotptun utility, [42](../../iot/obdii/broken-reference/)
 
-log2asc tool, [42](broken-reference/)
+log2asc tool, [42](../../iot/obdii/broken-reference/)
 
-log2long command, [42](broken-reference/)
+log2long command, [42](../../iot/obdii/broken-reference/)
 
-recording and playing back packets, [73](broken-reference/)
+recording and playing back packets, [73](../../iot/obdii/broken-reference/)
 
-setting up virtual CAN network, [40–41](broken-reference/)
+setting up virtual CAN network, [40–41](../../iot/obdii/broken-reference/)
 
-slcan\_attach tool, [42](broken-reference/)
+slcan\_attach tool, [42](../../iot/obdii/broken-reference/)
 
-slcand daemon, [42](broken-reference/)
+slcand daemon, [42](../../iot/obdii/broken-reference/)
 
-slcanpty tool, [42](broken-reference/)
+slcanpty tool, [42](../../iot/obdii/broken-reference/)
 
-CARB (California Air Resources Board), [33](broken-reference/)
+CARB (California Air Resources Board), [33](../../iot/obdii/broken-reference/)
 
-Carberry controller, [243](broken-reference/)
+Carberry controller, [243](../../iot/obdii/broken-reference/)
 
-CaringCaribou (CC), [58–60](broken-reference/), [249](broken-reference/)
+CaringCaribou (CC), [58–60](../../iot/obdii/broken-reference/), [249](../../iot/obdii/broken-reference/)
 
-CAs (certificate authorities), [188](broken-reference/)
+CAs (certificate authorities), [188](../../iot/obdii/broken-reference/)
 
-CC (CaringCaribou), [58–60](broken-reference/), [249](broken-reference/)
+CC (CaringCaribou), [58–60](../../iot/obdii/broken-reference/), [249](../../iot/obdii/broken-reference/)
 
-CDR (crash data retrieval) tools, [62](broken-reference/)
+CDR (crash data retrieval) tools, [62](../../iot/obdii/broken-reference/)
 
 cellular networks
 
-V2V communication and, [178](broken-reference/)
+V2V communication and, [178](../../iot/obdii/broken-reference/)
 
-vulnerabilities, [7–8](broken-reference/)
+vulnerabilities, [7–8](../../iot/obdii/broken-reference/)
 
-certificate authorities (CAs), [188](broken-reference/)
+certificate authorities (CAs), [188](../../iot/obdii/broken-reference/)
 
-certificate provisioning, [189–190](broken-reference/)
+certificate provisioning, [189–190](../../iot/obdii/broken-reference/)
 
-certificate revocation list (CRL), [190](broken-reference/), [191–192](broken-reference/)
+certificate revocation list (CRL), [190](../../iot/obdii/broken-reference/), [191–192](../../iot/obdii/broken-reference/)
 
-Character Sheet, Open Garages, [255–259](broken-reference/)
+Character Sheet, Open Garages, [255–259](../../iot/obdii/broken-reference/)
 
 chip tuning. _See also_ reverse engineering CAN bus
 
-EPROM programmers, [236–237](broken-reference/)
+EPROM programmers, [236–237](../../iot/obdii/broken-reference/)
 
-ROM emulators, [237–238](broken-reference/)
+ROM emulators, [237–238](../../iot/obdii/broken-reference/)
 
-ChipKit board, [243](broken-reference/)
+ChipKit board, [243](../../iot/obdii/broken-reference/)
 
-chipping process, [236](broken-reference/)
+chipping process, [236](../../iot/obdii/broken-reference/)
 
 chipsets
 
-configuring, [37–38](broken-reference/)
+configuring, [37–38](../../iot/obdii/broken-reference/)
 
-identifying, [128–130](broken-reference/)
+identifying, [128–130](../../iot/obdii/broken-reference/)
 
-ChipWhisperer, [134–135](broken-reference/), [246](broken-reference/)
+ChipWhisperer, [134–135](../../iot/obdii/broken-reference/), [246](../../iot/obdii/broken-reference/)
 
-ChipWhisperer ADC, [143–144](broken-reference/)
+ChipWhisperer ADC, [143–144](../../iot/obdii/broken-reference/)
 
-installing, [135–137](broken-reference/)
+installing, [135–137](../../iot/obdii/broken-reference/)
 
-Main Window settings for clockglitch attack, [151](broken-reference/)
+Main Window settings for clockglitch attack, [151](../../iot/obdii/broken-reference/)
 
-prepping Victim Board, [137–138](broken-reference/)
+prepping Victim Board, [137–138](../../iot/obdii/broken-reference/)
 
-scripting with Python, [147–148](broken-reference/)
+scripting with Python, [147–148](../../iot/obdii/broken-reference/)
 
-setting up for serial communication, [140–141](broken-reference/)
+setting up for serial communication, [140–141](../../iot/obdii/broken-reference/)
 
 Chrysler
 
-SAE J1850 protocol, [20](broken-reference/)
+SAE J1850 protocol, [20](../../iot/obdii/broken-reference/)
 
-VPW protocol, [22](broken-reference/)
+VPW protocol, [22](../../iot/obdii/broken-reference/)
 
-ChuangZhou CAN-Bus shield, [242](broken-reference/)
+ChuangZhou CAN-Bus shield, [242](../../iot/obdii/broken-reference/)
 
 circuit boards
 
-chips, [128–130](broken-reference/)
+chips, [128–130](../../iot/obdii/broken-reference/)
 
-model numbers, [128](broken-reference/)
+model numbers, [128](../../iot/obdii/broken-reference/)
 
-CKP (crankshaft position), [121–122](broken-reference/), [124](broken-reference/)
+CKP (crankshaft position), [121–122](../../iot/obdii/broken-reference/), [124](../../iot/obdii/broken-reference/)
 
-clock glitching, [148–154](broken-reference/)
+clock glitching, [148–154](../../iot/obdii/broken-reference/)
 
-COB-ID (communication object identifier), [20](broken-reference/)
+COB-ID (communication object identifier), [20](../../iot/obdii/broken-reference/)
 
-code analysis, [106–107](broken-reference/)
+code analysis, [106–107](../../iot/obdii/broken-reference/)
 
-interactive disassemblers, [110–112](broken-reference/)
+interactive disassemblers, [110–112](../../iot/obdii/broken-reference/)
 
-plain disassemblers, [107–110](broken-reference/)
+plain disassemblers, [107–110](../../iot/obdii/broken-reference/)
 
-codes, DTC, [52–53](broken-reference/)
+codes, DTC, [52–53](../../iot/obdii/broken-reference/)
 
 coding SocketCAN applications
 
-connecting to CAN socket, [44–45](broken-reference/)
+connecting to CAN socket, [44–45](../../iot/obdii/broken-reference/)
 
-procfs interface, [45–46](broken-reference/)
+procfs interface, [45–46](../../iot/obdii/broken-reference/)
 
-setting up CAN frame, [45](broken-reference/)
+setting up CAN frame, [45](../../iot/obdii/broken-reference/)
 
-common vulnerability scoring system (CVSS), [13](broken-reference/)
+common vulnerability scoring system (CVSS), [13](../../iot/obdii/broken-reference/)
 
-communication object identifier (COB-ID), [20](broken-reference/)
+communication object identifier (COB-ID), [20](../../iot/obdii/broken-reference/)
 
-connectors (IVI system), [166–170](broken-reference/)
+connectors (IVI system), [166–170](../../iot/obdii/broken-reference/)
 
-control blocks, MOST bus protocol, [25–26](broken-reference/)
+control blocks, MOST bus protocol, [25–26](../../iot/obdii/broken-reference/)
 
-control channel, MOST bus protocol, [25](broken-reference/)
+control channel, MOST bus protocol, [25](../../iot/obdii/broken-reference/)
 
 Controller Area Network bus protocol. _See_ CAN (Controller Area Network) bus protocol
 
-cooperative awareness messages (CAMs), [181–183](broken-reference/)
+cooperative awareness messages (CAMs), [181–183](../../iot/obdii/broken-reference/)
 
-crankshaft position (CKP), [121–122](broken-reference/), [124](broken-reference/)
+crankshaft position (CKP), [121–122](../../iot/obdii/broken-reference/), [124](../../iot/obdii/broken-reference/)
 
-Crash Avoidance Metrics Partnership (CAMP), [186–187](broken-reference/)
+Crash Avoidance Metrics Partnership (CAMP), [186–187](../../iot/obdii/broken-reference/)
 
-crash data retrieval (CDR) tools, [62](broken-reference/)
+crash data retrieval (CDR) tools, [62](../../iot/obdii/broken-reference/)
 
-CRC32 hash, [162](broken-reference/)
+CRC32 hash, [162](../../iot/obdii/broken-reference/)
 
-crc32 tool, [162](broken-reference/)
+crc32 tool, [162](../../iot/obdii/broken-reference/)
 
-creative packet analysis, [76–80](broken-reference/)
+creative packet analysis, [76–80](../../iot/obdii/broken-reference/)
 
-CRL (certificate revocation list), [190](broken-reference/), [191–192](broken-reference/)
+CRL (certificate revocation list), [190](../../iot/obdii/broken-reference/), [191–192](../../iot/obdii/broken-reference/)
 
-CrossChasm C5 data logger, [245](broken-reference/)
+CrossChasm C5 data logger, [245](../../iot/obdii/broken-reference/)
 
-ctrl\_tx utility, [26](broken-reference/)
+ctrl\_tx utility, [26](../../iot/obdii/broken-reference/)
 
-CVSS (common vulnerability scoring system), [13](broken-reference/)
+CVSS (common vulnerability scoring system), [13](../../iot/obdii/broken-reference/)
 
-cycles, FlexRay, [28–29](broken-reference/)
+cycles, FlexRay, [28–29](../../iot/obdii/broken-reference/)
 
 **D**
 
-_.dat_ files, [160](broken-reference/)
+_.dat_ files, [160](../../iot/obdii/broken-reference/)
 
-data length code (DLC), [19](broken-reference/)
+data length code (DLC), [19](../../iot/obdii/broken-reference/)
 
-data visualization tools, [100](broken-reference/)
+data visualization tools, [100](../../iot/obdii/broken-reference/)
 
-DB9-to-OBDII connector, [32–33](broken-reference/)
+DB9-to-OBDII connector, [32–33](../../iot/obdii/broken-reference/)
 
 debugging hardware
 
-Advanced User Debugger, [133–134](broken-reference/)
+Advanced User Debugger, [133–134](../../iot/obdii/broken-reference/)
 
-JTAG protocol, [130–132](broken-reference/)
+JTAG protocol, [130–132](../../iot/obdii/broken-reference/)
 
-Nexus, [133–134](broken-reference/)
+Nexus, [133–134](../../iot/obdii/broken-reference/)
 
-Serial Wire Debug, [132–133](broken-reference/)
+Serial Wire Debug, [132–133](../../iot/obdii/broken-reference/)
 
-decentralized environmental notification messages (DENMs), [183–184](broken-reference/)
+decentralized environmental notification messages (DENMs), [183–184](../../iot/obdii/broken-reference/)
 
 dedicated short-range communication protocol. _See_ DSRC (dedicated shortrange communication) protocol
 
-_definitions (def)_ file, [239](broken-reference/)
+_definitions (def)_ file, [239](../../iot/obdii/broken-reference/)
 
-DENMs (decentralized environmental notification messages), [183–184](broken-reference/)
+DENMs (decentralized environmental notification messages), [183–184](../../iot/obdii/broken-reference/)
 
-Department of Defense (DoD) threat rating system, [13](broken-reference/)
+Department of Defense (DoD) threat rating system, [13](../../iot/obdii/broken-reference/)
 
-detonation (autoignition), [235](broken-reference/)
+detonation (autoignition), [235](../../iot/obdii/broken-reference/)
 
-device under test (DUT), [137–138](broken-reference/)
+device under test (DUT), [137–138](../../iot/obdii/broken-reference/)
 
-DFRobot CAN-Bus shield, [242](broken-reference/)
+DFRobot CAN-Bus shield, [242](../../iot/obdii/broken-reference/)
 
-diagnostic link connector (DLC), [17](broken-reference/), [51](broken-reference/), [119](broken-reference/). _See also_ diagnostics and logging
+diagnostic link connector (DLC), [17](../../iot/obdii/broken-reference/), [51](../../iot/obdii/broken-reference/), [119](../../iot/obdii/broken-reference/). _See also_ diagnostics and logging
 
 diagnostic trouble codes. _See_ DTCs
 
-diagnostics and logging, [51–65](broken-reference/)
+diagnostics and logging, [51–65](../../iot/obdii/broken-reference/)
 
-automated crash notification systems, [64](broken-reference/)
+automated crash notification systems, [64](../../iot/obdii/broken-reference/)
 
-diagnostic trouble codes, [33](broken-reference/), [52–54](broken-reference/)
+diagnostic trouble codes, [33](../../iot/obdii/broken-reference/), [52–54](../../iot/obdii/broken-reference/)
 
-event data recorder, [61–63](broken-reference/)
+event data recorder, [61–63](../../iot/obdii/broken-reference/)
 
-malicious intent, [64–65](broken-reference/)
+malicious intent, [64–65](../../iot/obdii/broken-reference/)
 
-Unified Diagnostic Services, [54–61](broken-reference/)
+Unified Diagnostic Services, [54–61](../../iot/obdii/broken-reference/)
 
-dictionary attacks, [218](broken-reference/)
+dictionary attacks, [218](../../iot/obdii/broken-reference/)
 
-differential signaling, [16](broken-reference/)
+differential signaling, [16](../../iot/obdii/broken-reference/)
 
-DIP (dual in-line package) chips, [236](broken-reference/)
+DIP (dual in-line package) chips, [236](../../iot/obdii/broken-reference/)
 
 disassemblers
 
-Dis51, [106](broken-reference/)
+Dis51, [106](../../iot/obdii/broken-reference/)
 
-Dis66k, [106](broken-reference/)
+Dis66k, [106](../../iot/obdii/broken-reference/)
 
-interactive, [110–112](broken-reference/)
+interactive, [110–112](../../iot/obdii/broken-reference/)
 
-plain, [107–110](broken-reference/)
+plain, [107–110](../../iot/obdii/broken-reference/)
 
-disassembling IVI unit, [168](broken-reference/)
+disassembling IVI unit, [168](../../iot/obdii/broken-reference/)
 
-DLC (data length code), [19](broken-reference/)
+DLC (data length code), [19](../../iot/obdii/broken-reference/)
 
-DLC (diagnostic link connector), [17](broken-reference/), [51](broken-reference/), [119](broken-reference/). _See also_ diagnostics and logging
+DLC (diagnostic link connector), [17](../../iot/obdii/broken-reference/), [51](../../iot/obdii/broken-reference/), [119](../../iot/obdii/broken-reference/). _See also_ diagnostics and logging
 
-_.dll_ files, [160](broken-reference/)
+_.dll_ files, [160](../../iot/obdii/broken-reference/)
 
-DoD (Department of Defense) threat rating system, [13](broken-reference/)
+DoD (Department of Defense) threat rating system, [13](../../iot/obdii/broken-reference/)
 
 door-unlock control
 
-finding with can-utils package, [77–78](broken-reference/)
+finding with can-utils package, [77–78](../../iot/obdii/broken-reference/)
 
-finding with Kayak, [76–77](broken-reference/)
+finding with Kayak, [76–77](../../iot/obdii/broken-reference/)
 
-DREAD rating system, [11–13](broken-reference/)
+DREAD rating system, [11–13](../../iot/obdii/broken-reference/)
 
-DSRC (dedicated short-range communication) protocol, [179–180](broken-reference/)
+DSRC (dedicated short-range communication) protocol, [179–180](../../iot/obdii/broken-reference/)
 
-defined, [178](broken-reference/)
+defined, [178](../../iot/obdii/broken-reference/)
 
-features and uses, [180–181](broken-reference/)
+features and uses, [180–181](../../iot/obdii/broken-reference/)
 
-roadside systems, [181–184](broken-reference/)
+roadside systems, [181–184](../../iot/obdii/broken-reference/)
 
-tracking vehicles with, [186](broken-reference/)
+tracking vehicles with, [186](../../iot/obdii/broken-reference/)
 
-WAVE standard, [184–186](broken-reference/)
+WAVE standard, [184–186](../../iot/obdii/broken-reference/)
 
-DST-40 algorithm, [225–226](broken-reference/)
+DST-40 algorithm, [225–226](../../iot/obdii/broken-reference/)
 
-DST-80 algorithm, [226](broken-reference/)
+DST-80 algorithm, [226](../../iot/obdii/broken-reference/)
 
 DTCs (diagnostic trouble codes)
 
-codes, [52–53](broken-reference/)
+codes, [52–53](../../iot/obdii/broken-reference/)
 
-erasing, [54](broken-reference/)
+erasing, [54](../../iot/obdii/broken-reference/)
 
-faults, [52](broken-reference/)
+faults, [52](../../iot/obdii/broken-reference/)
 
-OBD-III standard and, [33](broken-reference/)
+OBD-III standard and, [33](../../iot/obdii/broken-reference/)
 
-scan tools, [54](broken-reference/)
+scan tools, [54](../../iot/obdii/broken-reference/)
 
-dual in-line package (DIP) chips, [236](broken-reference/)
+dual in-line package (DIP) chips, [236](../../iot/obdii/broken-reference/)
 
-dumping transponder memory, [218](broken-reference/)
+dumping transponder memory, [218](../../iot/obdii/broken-reference/)
 
-DUT (device under test), [137–138](broken-reference/)
+DUT (device under test), [137–138](../../iot/obdii/broken-reference/)
 
-DVD checks (IVI system), [164–165](broken-reference/)
+DVD checks (IVI system), [164–165](../../iot/obdii/broken-reference/)
 
-dynamic segment (FlexRay cycles), [28](broken-reference/), [30](broken-reference/)
+dynamic segment (FlexRay cycles), [28](../../iot/obdii/broken-reference/), [30](../../iot/obdii/broken-reference/)
 
 **E**
 
 ECU (engine/electronic control unit). _See also_ ECU hacking; ECU test benches; embedded systems
 
-block diagrams, [118–119](broken-reference/)
+block diagrams, [118–119](../../iot/obdii/broken-reference/)
 
-finding, [116–117](broken-reference/)
+finding, [116–117](../../iot/obdii/broken-reference/)
 
-pinouts, [118](broken-reference/)
+pinouts, [118](../../iot/obdii/broken-reference/)
 
-TPMS connection, [8–9](broken-reference/)
+TPMS connection, [8–9](../../iot/obdii/broken-reference/)
 
-tuning, [235–239](broken-reference/)
+tuning, [235–239](../../iot/obdii/broken-reference/)
 
-ECU hacking, [91–92](broken-reference/)
+ECU hacking, [91–92](../../iot/obdii/broken-reference/)
 
-backdoor attacks, [95](broken-reference/)
+backdoor attacks, [95](../../iot/obdii/broken-reference/)
 
-code analysis, [106–112](broken-reference/)
+code analysis, [106–112](../../iot/obdii/broken-reference/)
 
-exploits, [95–96](broken-reference/)
+exploits, [95–96](../../iot/obdii/broken-reference/)
 
-front door attacks, [92–95](broken-reference/)
+front door attacks, [92–95](../../iot/obdii/broken-reference/)
 
-reversing firmware, [96–105](broken-reference/)
+reversing firmware, [96–105](../../iot/obdii/broken-reference/)
 
-ECU test benches, [115–126](broken-reference/)
+ECU test benches, [115–126](../../iot/obdii/broken-reference/)
 
-hall effect sensors, [121–122](broken-reference/)
+hall effect sensors, [121–122](../../iot/obdii/broken-reference/)
 
-simulating sensor signals, [120–121](broken-reference/)
+simulating sensor signals, [120–121](../../iot/obdii/broken-reference/)
 
-simulating vehicle speed, [123–126](broken-reference/)
+simulating vehicle speed, [123–126](../../iot/obdii/broken-reference/)
 
-ECU tuning, [235–236](broken-reference/)
+ECU tuning, [235–236](../../iot/obdii/broken-reference/)
 
-chip tuning, [236–238](broken-reference/)
+chip tuning, [236–238](../../iot/obdii/broken-reference/)
 
-flash tuning, [238–239](broken-reference/)
+flash tuning, [238–239](../../iot/obdii/broken-reference/)
 
-EDR (event data recorder), [61–62](broken-reference/)
+EDR (event data recorder), [61–62](../../iot/obdii/broken-reference/)
 
-reading data from, [62](broken-reference/)
+reading data from, [62](../../iot/obdii/broken-reference/)
 
-restraint control module, [63](broken-reference/)
+restraint control module, [63](../../iot/obdii/broken-reference/)
 
-SAE J1698 standard, [63](broken-reference/)
+SAE J1698 standard, [63](../../iot/obdii/broken-reference/)
 
-sensing and diagnostic module, [63](broken-reference/)
+sensing and diagnostic module, [63](../../iot/obdii/broken-reference/)
 
-Ege, Baris , [222](broken-reference/)
+Ege, Baris , [222](../../iot/obdii/broken-reference/)
 
 electronic control unit. _See_ ECU (engine/electronic control unit)
 
-electronic controllers, [91](broken-reference/). _See also_ ECU hacking
+electronic controllers, [91](../../iot/obdii/broken-reference/). _See also_ ECU hacking
 
-ELLSI (Ethernet low-level socket interface), [158](broken-reference/)
+ELLSI (Ethernet low-level socket interface), [158](../../iot/obdii/broken-reference/)
 
-ELM327 chipset, [54](broken-reference/), [243–244](broken-reference/)
+ELM327 chipset, [54](../../iot/obdii/broken-reference/), [243–244](../../iot/obdii/broken-reference/)
 
-ELM-USB connector, [244](broken-reference/)
+ELM-USB connector, [244](../../iot/obdii/broken-reference/)
 
-EM Micro Megamos algorithm, [221–223](broken-reference/)
+EM Micro Megamos algorithm, [221–223](../../iot/obdii/broken-reference/)
 
-EM4237 algorithm, [223](broken-reference/)
+EM4237 algorithm, [223](../../iot/obdii/broken-reference/)
 
-embedded systems, [127](broken-reference/). _See also_ wireless systems
+embedded systems, [127](../../iot/obdii/broken-reference/). _See also_ wireless systems
 
-circuit boards, [128–130](broken-reference/)
+circuit boards, [128–130](../../iot/obdii/broken-reference/)
 
-debugging hardware, [130–134](broken-reference/)
+debugging hardware, [130–134](../../iot/obdii/broken-reference/)
 
-fault injection, [148–156](broken-reference/)
+fault injection, [148–156](../../iot/obdii/broken-reference/)
 
-power-analysis attacks, [138–148](broken-reference/)
+power-analysis attacks, [138–148](../../iot/obdii/broken-reference/)
 
-side-channel analysis, [134–138](broken-reference/)
+side-channel analysis, [134–138](../../iot/obdii/broken-reference/)
 
-emissions, performance tuning and, [234–235](broken-reference/)
+emissions, performance tuning and, [234–235](../../iot/obdii/broken-reference/)
 
-EMS PCMCIA card, [37](broken-reference/)
+EMS PCMCIA card, [37](../../iot/obdii/broken-reference/)
 
-end-of-data (EOD), VPW protocol, [22](broken-reference/)
+end-of-data (EOD), VPW protocol, [22](../../iot/obdii/broken-reference/)
 
 engine control unit. _See_ ECU (engine/electronic control unit)
 
-EOD (end-of-data), VPW protocol, [22](broken-reference/)
+EOD (end-of-data), VPW protocol, [22](../../iot/obdii/broken-reference/)
 
-epidemic distribution model, [191](broken-reference/)
+epidemic distribution model, [191](../../iot/obdii/broken-reference/)
 
-EPROM programmers, [236–237](broken-reference/)
+EPROM programmers, [236–237](../../iot/obdii/broken-reference/)
 
-Ethernet, [30–31](broken-reference/), [158](broken-reference/)
+Ethernet, [30–31](../../iot/obdii/broken-reference/), [158](../../iot/obdii/broken-reference/)
 
-Ethernet low-level socket interface (ELLSI), [158](broken-reference/)
+Ethernet low-level socket interface (ELLSI), [158](../../iot/obdii/broken-reference/)
 
 ETSI (European Telecommunications Standards Institute)
 
-cooperative awareness messages, [181–183](broken-reference/)
+cooperative awareness messages, [181–183](../../iot/obdii/broken-reference/)
 
-decentralized environmental notification messages, [183–184](broken-reference/)
+decentralized environmental notification messages, [183–184](../../iot/obdii/broken-reference/)
 
-Ettus Research, [210](broken-reference/)
+Ettus Research, [210](../../iot/obdii/broken-reference/)
 
-European DSRC system, [180–181](broken-reference/)
+European DSRC system, [180–181](../../iot/obdii/broken-reference/)
 
 European Telecommunications Standards Institute. _See_ ETSI
 
-Evenchick, Eric, [242](broken-reference/)
+Evenchick, Eric, [242](../../iot/obdii/broken-reference/)
 
 event data recorder. _See_ EDR (event data recorder)
 
 events
 
-event data recorder, [61–63](broken-reference/)
+event data recorder, [61–63](../../iot/obdii/broken-reference/)
 
-triggering with TPMS, [214–215](broken-reference/)
+triggering with TPMS, [214–215](../../iot/obdii/broken-reference/)
 
-EVTV due board, [244–245](broken-reference/)
+EVTV due board, [244–245](../../iot/obdii/broken-reference/)
 
-EVTV.me, [248](broken-reference/)
+EVTV.me, [248](../../iot/obdii/broken-reference/)
 
-_.exe_ files, [160](broken-reference/)
+_.exe_ files, [160](../../iot/obdii/broken-reference/)
 
-exploits, [95–96](broken-reference/)
+exploits, [95–96](../../iot/obdii/broken-reference/)
 
-responsible exploitation, [208](broken-reference/)
+responsible exploitation, [208](../../iot/obdii/broken-reference/)
 
-writing in C code, [194–202](broken-reference/)
+writing in C code, [194–202](../../iot/obdii/broken-reference/)
 
-extended packets, CAN bus protocol, [19](broken-reference/)
+extended packets, CAN bus protocol, [19](../../iot/obdii/broken-reference/)
 
 **F**
 
 fault injection
 
-clock glitching, [148–154](broken-reference/)
+clock glitching, [148–154](../../iot/obdii/broken-reference/)
 
-defined, [148](broken-reference/)
+defined, [148](../../iot/obdii/broken-reference/)
 
-invasive, [156](broken-reference/)
+invasive, [156](../../iot/obdii/broken-reference/)
 
-power glitching, [156](broken-reference/)
+power glitching, [156](../../iot/obdii/broken-reference/)
 
-setting trigger line, [154–155](broken-reference/)
+setting trigger line, [154–155](../../iot/obdii/broken-reference/)
 
-faults, [52](broken-reference/)
+faults, [52](../../iot/obdii/broken-reference/)
 
-field-programmable gate array (FPGA) board, [149](broken-reference/), [225](broken-reference/)
+field-programmable gate array (FPGA) board, [149](../../iot/obdii/broken-reference/), [225](../../iot/obdii/broken-reference/)
 
-file command, [160](broken-reference/)
+file command, [160](../../iot/obdii/broken-reference/)
 
-fire-and-forget structure (CAN packets), [55](broken-reference/)
+fire-and-forget structure (CAN packets), [55](../../iot/obdii/broken-reference/)
 
-firmware, reversing, [96–105](broken-reference/)
+firmware, reversing, [96–105](../../iot/obdii/broken-reference/)
 
-flash tuning (flashing), [238–239](broken-reference/)
+flash tuning (flashing), [238–239](../../iot/obdii/broken-reference/)
 
-FlexRay bus protocol, [27–30](broken-reference/)
+FlexRay bus protocol, [27–30](../../iot/obdii/broken-reference/)
 
-cycles, [28–29](broken-reference/)
+cycles, [28–29](../../iot/obdii/broken-reference/)
 
-hardware, [27](broken-reference/)
+hardware, [27](../../iot/obdii/broken-reference/)
 
-network topology, [27](broken-reference/)
+network topology, [27](../../iot/obdii/broken-reference/)
 
-packet layout, [29–30](broken-reference/)
+packet layout, [29–30](../../iot/obdii/broken-reference/)
 
-sniffing, [30](broken-reference/)
+sniffing, [30](../../iot/obdii/broken-reference/)
 
-time division multiple access scheme, [27–28](broken-reference/)
+time division multiple access scheme, [27–28](../../iot/obdii/broken-reference/)
 
 Ford Motor Company
 
-MAF transfer graph, [98](broken-reference/)
+MAF transfer graph, [98](../../iot/obdii/broken-reference/)
 
-OpenXC, [84–88](broken-reference/)
+OpenXC, [84–88](../../iot/obdii/broken-reference/)
 
-PWM protocol, [21](broken-reference/)
+PWM protocol, [21](../../iot/obdii/broken-reference/)
 
-restraint control module, [63](broken-reference/)
+restraint control module, [63](../../iot/obdii/broken-reference/)
 
-forged packets, sending with TPMS, [215](broken-reference/)
+forged packets, sending with TPMS, [215](../../iot/obdii/broken-reference/)
 
-forward-prediction attacks, [218](broken-reference/)
+forward-prediction attacks, [218](../../iot/obdii/broken-reference/)
 
-FPGA (field-programmable gate array) board, [149](broken-reference/), [225](broken-reference/)
+FPGA (field-programmable gate array) board, [149](../../iot/obdii/broken-reference/), [225](../../iot/obdii/broken-reference/)
 
-frame ID, FleyRay packet, [30](broken-reference/)
+frame ID, FleyRay packet, [30](../../iot/obdii/broken-reference/)
 
-Freematics OBD-II Telematics Kit, [242](broken-reference/)
+Freematics OBD-II Telematics Kit, [242](../../iot/obdii/broken-reference/)
 
-freeze frame data, [52](broken-reference/)
+freeze frame data, [52](../../iot/obdii/broken-reference/)
 
-frequency-shift keying (FSK) modulation, [211](broken-reference/)
+frequency-shift keying (FSK) modulation, [211](../../iot/obdii/broken-reference/)
 
 front door attacks
 
-J2534-1 standard, [92–93](broken-reference/)
+J2534-1 standard, [92–93](../../iot/obdii/broken-reference/)
 
-KWP2000, [94](broken-reference/)
+KWP2000, [94](../../iot/obdii/broken-reference/)
 
-seed-key algorithms, [94–95](broken-reference/)
+seed-key algorithms, [94–95](../../iot/obdii/broken-reference/)
 
-FSK (frequency-shift keying) modulation, [211](broken-reference/)
+FSK (frequency-shift keying) modulation, [211](../../iot/obdii/broken-reference/)
 
-Future Technology Devices International, Ltd (FTDI), [39](broken-reference/)
+Future Technology Devices International, Ltd (FTDI), [39](../../iot/obdii/broken-reference/)
 
-fuzzing, [64](broken-reference/), [88](broken-reference/)
+fuzzing, [64](../../iot/obdii/broken-reference/), [88](../../iot/obdii/broken-reference/)
 
 **G**
 
-Garcia, Flavio D., [222](broken-reference/), [225](broken-reference/)
+Garcia, Flavio D., [222](../../iot/obdii/broken-reference/), [225](../../iot/obdii/broken-reference/)
 
 General Motors
 
-GMLAN bus, [20](broken-reference/)
+GMLAN bus, [20](../../iot/obdii/broken-reference/)
 
-pinout, [31–32](broken-reference/)
+pinout, [31–32](../../iot/obdii/broken-reference/)
 
-SAE J1850 protocol, [20](broken-reference/)
+SAE J1850 protocol, [20](../../iot/obdii/broken-reference/)
 
-sensing and diagnostic module, [63](broken-reference/)
+sensing and diagnostic module, [63](../../iot/obdii/broken-reference/)
 
-VPW protocol, [22](broken-reference/)
+VPW protocol, [22](../../iot/obdii/broken-reference/)
 
-Generalized Vehicle Reverse Engineering Tool (GVRET), [245](broken-reference/)
+Generalized Vehicle Reverse Engineering Tool (GVRET), [245](../../iot/obdii/broken-reference/)
 
 glitching
 
-clock, [148–154](broken-reference/)
+clock, [148–154](../../iot/obdii/broken-reference/)
 
-defined, [148](broken-reference/)
+defined, [148](../../iot/obdii/broken-reference/)
 
-invasive, [156](broken-reference/)
+invasive, [156](../../iot/obdii/broken-reference/)
 
-power, [156](broken-reference/)
+power, [156](../../iot/obdii/broken-reference/)
 
-setting trigger line, [154–155](broken-reference/)
+setting trigger line, [154–155](../../iot/obdii/broken-reference/)
 
-GMLAN bus, [20](broken-reference/)
+GMLAN bus, [20](../../iot/obdii/broken-reference/)
 
-GNU binutils disassembler, [106](broken-reference/)
+GNU binutils disassembler, [106](../../iot/obdii/broken-reference/)
 
-GNU Radio Companion (GRC), [210](broken-reference/), [216](broken-reference/)
+GNU Radio Companion (GRC), [210](../../iot/obdii/broken-reference/), [216](../../iot/obdii/broken-reference/)
 
-Go language, [248](broken-reference/)
+Go language, [248](../../iot/obdii/broken-reference/)
 
-Goodspeed, Travis, [244](broken-reference/)
+Goodspeed, Travis, [244](../../iot/obdii/broken-reference/)
 
-GoodThopter board, [244](broken-reference/)
+GoodThopter board, [244](../../iot/obdii/broken-reference/)
 
-Gqrx SDR, [216](broken-reference/)
+Gqrx SDR, [216](../../iot/obdii/broken-reference/)
 
-GRC (GNU Radio Companion), [210](broken-reference/), [216](broken-reference/)
+GRC (GNU Radio Companion), [210](../../iot/obdii/broken-reference/), [216](../../iot/obdii/broken-reference/)
 
-Great Scott Gadgets, [210](broken-reference/), [245](broken-reference/)
+Great Scott Gadgets, [210](../../iot/obdii/broken-reference/), [245](../../iot/obdii/broken-reference/)
 
-GVRET (Generalized Vehicle Reverse Engineering Tool), [245](broken-reference/)
+GVRET (Generalized Vehicle Reverse Engineering Tool), [245](../../iot/obdii/broken-reference/)
 
 **H**
 
-HackRF One, [210](broken-reference/)
+HackRF One, [210](../../iot/obdii/broken-reference/)
 
-HackRF SDR, [245](broken-reference/)
+HackRF SDR, [245](../../iot/obdii/broken-reference/)
 
-Hall effect sensors, [121–122](broken-reference/)
+Hall effect sensors, [121–122](../../iot/obdii/broken-reference/)
 
-hard (permanent) DTCs, [54](broken-reference/)
+hard (permanent) DTCs, [54](../../iot/obdii/broken-reference/)
 
-hard faults, [52](broken-reference/)
+hard faults, [52](../../iot/obdii/broken-reference/)
 
 hardware
 
-Arduino shields, [242](broken-reference/)
+Arduino shields, [242](../../iot/obdii/broken-reference/)
 
-attacking IVI system via, [166–170](broken-reference/)
+attacking IVI system via, [166–170](../../iot/obdii/broken-reference/)
 
-CAN bus Y-splitter, [245](broken-reference/)
+CAN bus Y-splitter, [245](../../iot/obdii/broken-reference/)
 
-CAN232 dongle, [244](broken-reference/)
+CAN232 dongle, [244](../../iot/obdii/broken-reference/)
 
-CANBus Triple board, [245](broken-reference/)
+CANBus Triple board, [245](../../iot/obdii/broken-reference/)
 
-CANtact, [242–243](broken-reference/)
+CANtact, [242–243](../../iot/obdii/broken-reference/)
 
-CANUSB dongle, [244](broken-reference/)
+CANUSB dongle, [244](../../iot/obdii/broken-reference/)
 
-ChipKit board, [243](broken-reference/)
+ChipKit board, [243](../../iot/obdii/broken-reference/)
 
-ChipWhisperer, [246](broken-reference/)
+ChipWhisperer, [246](../../iot/obdii/broken-reference/)
 
-CrossChasm C5 data logger, [245](broken-reference/)
+CrossChasm C5 data logger, [245](../../iot/obdii/broken-reference/)
 
-debugging, [130–134](broken-reference/)
+debugging, [130–134](../../iot/obdii/broken-reference/)
 
-ELM327 chipset, [243–244](broken-reference/)
+ELM327 chipset, [243–244](../../iot/obdii/broken-reference/)
 
-ELM-USB connector, [244](broken-reference/)
+ELM-USB connector, [244](../../iot/obdii/broken-reference/)
 
-EVTV due board, [244–245](broken-reference/)
+EVTV due board, [244–245](../../iot/obdii/broken-reference/)
 
-FlexRay bus protocol, [27](broken-reference/)
+FlexRay bus protocol, [27](../../iot/obdii/broken-reference/)
 
-Freematics OBD-II Telematics Kit, [242](broken-reference/)
+Freematics OBD-II Telematics Kit, [242](../../iot/obdii/broken-reference/)
 
-GoodThopter board, [244](broken-reference/)
+GoodThopter board, [244](../../iot/obdii/broken-reference/)
 
 hardware, continued
 
-HackRF SDR, [245](broken-reference/)
+HackRF SDR, [245](../../iot/obdii/broken-reference/)
 
-MegaSquirt, [239–240](broken-reference/)
+MegaSquirt, [239–240](../../iot/obdii/broken-reference/)
 
-Raspberry Pi, [243](broken-reference/)
+Raspberry Pi, [243](../../iot/obdii/broken-reference/)
 
-Red Pitaya board, [246](broken-reference/)
+Red Pitaya board, [246](../../iot/obdii/broken-reference/)
 
-USB2CAN converter, [244](broken-reference/)
+USB2CAN converter, [244](../../iot/obdii/broken-reference/)
 
-USRP SDR, [246](broken-reference/)
+USRP SDR, [246](../../iot/obdii/broken-reference/)
 
-VSCOM adapter, [244](broken-reference/)
+VSCOM adapter, [244](../../iot/obdii/broken-reference/)
 
-hashing, [162–163](broken-reference/)
+hashing, [162–163](../../iot/obdii/broken-reference/)
 
-header bits (VPW protocol), [22](broken-reference/)
+header bits (VPW protocol), [22](../../iot/obdii/broken-reference/)
 
-header CRC (FlexRay packet), [29](broken-reference/), [30](broken-reference/)
+header CRC (FlexRay packet), [29](../../iot/obdii/broken-reference/), [30](../../iot/obdii/broken-reference/)
 
-hex editors, [100](broken-reference/)
+hex editors, [100](../../iot/obdii/broken-reference/)
 
-high-speed CAN (HS-CAN) lines, [18](broken-reference/), [32](broken-reference/), [38](broken-reference/)
+high-speed CAN (HS-CAN) lines, [18](../../iot/obdii/broken-reference/), [32](../../iot/obdii/broken-reference/), [38](../../iot/obdii/broken-reference/)
 
-high-speed synchronous interface (HSI), [10](broken-reference/), [13–14](broken-reference/)
+high-speed synchronous interface (HSI), [10](../../iot/obdii/broken-reference/), [13–14](../../iot/obdii/broken-reference/)
 
-Hitag 1 algorithm, [224](broken-reference/)
+Hitag 1 algorithm, [224](../../iot/obdii/broken-reference/)
 
-Hitag 2 algorithm, [224–225](broken-reference/)
+Hitag 2 algorithm, [224–225](../../iot/obdii/broken-reference/)
 
-Hitag AES algorithm, [225](broken-reference/)
+Hitag AES algorithm, [225](../../iot/obdii/broken-reference/)
 
-Horauer, Martin, [30](broken-reference/)
+Horauer, Martin, [30](../../iot/obdii/broken-reference/)
 
-hotwiring, [230](broken-reference/)
+hotwiring, [230](../../iot/obdii/broken-reference/)
 
-HS-CAN (high-speed CAN) lines, [18](broken-reference/), [32](broken-reference/), [38](broken-reference/)
+HS-CAN (high-speed CAN) lines, [18](../../iot/obdii/broken-reference/), [32](../../iot/obdii/broken-reference/), [38](../../iot/obdii/broken-reference/)
 
-HSI (high-speed synchronous interface), [10](broken-reference/), [13–14](broken-reference/)
+HSI (high-speed synchronous interface), [10](../../iot/obdii/broken-reference/), [13–14](../../iot/obdii/broken-reference/)
 
-hybrid approach, V2V communication, [178](broken-reference/)
+hybrid approach, V2V communication, [178](../../iot/obdii/broken-reference/)
 
 **I**
 
 ICSim (instrument cluster simulator)
 
-changing difficulty of, [84](broken-reference/)
+changing difficulty of, [84](../../iot/obdii/broken-reference/)
 
-reading CAN traffic on, [83](broken-reference/)
+reading CAN traffic on, [83](../../iot/obdii/broken-reference/)
 
-setting up, [81–83](broken-reference/)
+setting up, [81–83](../../iot/obdii/broken-reference/)
 
-IDA Pro disassembler, [106](broken-reference/), [110](broken-reference/)
+IDA Pro disassembler, [106](../../iot/obdii/broken-reference/), [110](../../iot/obdii/broken-reference/)
 
-identifier extension (IDE), [19](broken-reference/)
+identifier extension (IDE), [19](../../iot/obdii/broken-reference/)
 
-idle segment (FlexRay cycles), [28](broken-reference/)
+idle segment (FlexRay cycles), [28](../../iot/obdii/broken-reference/)
 
-IEEE 802.1AS standard, [31](broken-reference/)
+IEEE 802.1AS standard, [31](../../iot/obdii/broken-reference/)
 
-IFR (in-frame response) data, VPW protocol, [22](broken-reference/)
+IFR (in-frame response) data, VPW protocol, [22](../../iot/obdii/broken-reference/)
 
-Immo Emulators, [228](broken-reference/)
+Immo Emulators, [228](../../iot/obdii/broken-reference/)
 
-immobilizer systems, [220–221](broken-reference/)
+immobilizer systems, [220–221](../../iot/obdii/broken-reference/)
 
-defined, [8](broken-reference/)
+defined, [8](../../iot/obdii/broken-reference/)
 
-DST-40, [225–226](broken-reference/)
+DST-40, [225–226](../../iot/obdii/broken-reference/)
 
-DST-80, [226](broken-reference/)
+DST-80, [226](../../iot/obdii/broken-reference/)
 
-EM Micro Megamos, [221–223](broken-reference/)
+EM Micro Megamos, [221–223](../../iot/obdii/broken-reference/)
 
-EM4237, [223](broken-reference/)
+EM4237, [223](../../iot/obdii/broken-reference/)
 
-Hitag [1](broken-reference/), [224](broken-reference/)
+Hitag [1](../../iot/obdii/broken-reference/), [224](../../iot/obdii/broken-reference/)
 
-Hitag [2](broken-reference/), [224–225](broken-reference/)
+Hitag [2](../../iot/obdii/broken-reference/), [224–225](../../iot/obdii/broken-reference/)
 
-Hitag AES, [225](broken-reference/)
+Hitag AES, [225](../../iot/obdii/broken-reference/)
 
-Keeloq, [226–227](broken-reference/)
+Keeloq, [226–227](../../iot/obdii/broken-reference/)
 
-Open Source Immobilizer Protocol Stack, [227](broken-reference/)
+Open Source Immobilizer Protocol Stack, [227](../../iot/obdii/broken-reference/)
 
-physical attacks on, [228–230](broken-reference/)
+physical attacks on, [228–230](../../iot/obdii/broken-reference/)
 
-infotainment console, [5–6](broken-reference/), [9](broken-reference/). _See also_ IVI system
+infotainment console, [5–6](../../iot/obdii/broken-reference/), [9](../../iot/obdii/broken-reference/). _See also_ IVI system
 
-in-frame response (IFR) data, VPW protocol, [22](broken-reference/)
+in-frame response (IFR) data, VPW protocol, [22](../../iot/obdii/broken-reference/)
 
 instrument cluster simulator. _See_ ICSim
 
-intelligent transportation system, [177](broken-reference/)
+intelligent transportation system, [177](../../iot/obdii/broken-reference/)
 
-interactive disassemblers, [110–112](broken-reference/)
+interactive disassemblers, [110–112](../../iot/obdii/broken-reference/)
 
-interactive probing method, for determining vehicle make, [203–204](broken-reference/)
+interactive probing method, for determining vehicle make, [203–204](../../iot/obdii/broken-reference/)
 
-internal network controls (IVI systems), [158](broken-reference/)
+internal network controls (IVI systems), [158](../../iot/obdii/broken-reference/)
 
-Intrepid Control Systems, [252](broken-reference/)
+Intrepid Control Systems, [252](../../iot/obdii/broken-reference/)
 
-invasive fault injection, [156](broken-reference/)
+invasive fault injection, [156](../../iot/obdii/broken-reference/)
 
 in-vehicle infotainment system. _See_ IVI (in-vehicle infotainment) system
 
-IPv4 passive fingerprinting, [205](broken-reference/)
+IPv4 passive fingerprinting, [205](../../iot/obdii/broken-reference/)
 
-IPv6 protocol, [185](broken-reference/)
+IPv6 protocol, [185](../../iot/obdii/broken-reference/)
 
-ISO 15765-2 (ISO-TP) protocol, [19–20](broken-reference/), [55](broken-reference/)
+ISO 15765-2 (ISO-TP) protocol, [19–20](../../iot/obdii/broken-reference/), [55](../../iot/obdii/broken-reference/)
 
-ISO 26262 ASIL rating system, [11](broken-reference/), [13](broken-reference/)
+ISO 26262 ASIL rating system, [11](../../iot/obdii/broken-reference/), [13](../../iot/obdii/broken-reference/)
 
-ISO 9141-2 (K-Line) bus protocol, [23](broken-reference/)
+ISO 9141-2 (K-Line) bus protocol, [23](../../iot/obdii/broken-reference/)
 
-ISO-TP (ISO 15765-2) protocol, [19–20](broken-reference/), [55](broken-reference/)
+ISO-TP (ISO 15765-2) protocol, [19–20](../../iot/obdii/broken-reference/), [55](../../iot/obdii/broken-reference/)
 
-isotpdump tool (can-utils package), [42](broken-reference/)
+isotpdump tool (can-utils package), [42](../../iot/obdii/broken-reference/)
 
-isotprecv utility (can-utils package), [42](broken-reference/)
+isotprecv utility (can-utils package), [42](../../iot/obdii/broken-reference/)
 
-isotpsend command (can-utils package), [42](broken-reference/)
+isotpsend command (can-utils package), [42](../../iot/obdii/broken-reference/)
 
-isotpserver tool (can-utils package), [42](broken-reference/)
+isotpserver tool (can-utils package), [42](../../iot/obdii/broken-reference/)
 
-isotpsniffer (can-utils package), [42](broken-reference/)
+isotpsniffer (can-utils package), [42](../../iot/obdii/broken-reference/)
 
-isotptun utility (can-utils package), [42](broken-reference/)
+isotptun utility (can-utils package), [42](../../iot/obdii/broken-reference/)
 
-IVI (in-vehicle infotainment) system, [157–158](broken-reference/)
+IVI (in-vehicle infotainment) system, [157–158](../../iot/obdii/broken-reference/)
 
-acquiring OEM system for testing, [174–175](broken-reference/)
+acquiring OEM system for testing, [174–175](../../iot/obdii/broken-reference/)
 
-attack surfaces, [158](broken-reference/)
+attack surfaces, [158](../../iot/obdii/broken-reference/)
 
-attacking hardware, [166–170](broken-reference/)
+attacking hardware, [166–170](../../iot/obdii/broken-reference/)
 
-attacking through update system, [158–165](broken-reference/)
+attacking through update system, [158–165](../../iot/obdii/broken-reference/)
 
-test benches, [170–174](broken-reference/)
+test benches, [170–174](../../iot/obdii/broken-reference/)
 
 **J**
 
-J2534-1 standard, [92](broken-reference/)
+J2534-1 standard, [92](../../iot/obdii/broken-reference/)
 
-shims, [93](broken-reference/)
+shims, [93](../../iot/obdii/broken-reference/)
 
-sniffers and, [93](broken-reference/)
+sniffers and, [93](../../iot/obdii/broken-reference/)
 
-tools, [93](broken-reference/)
+tools, [93](../../iot/obdii/broken-reference/)
 
-jamming signal, key fobs, [216–217](broken-reference/)
+jamming signal, key fobs, [216–217](../../iot/obdii/broken-reference/)
 
-JSON format, [86](broken-reference/)
+JSON format, [86](../../iot/obdii/broken-reference/)
 
 JTAG protocol
 
-debugging with, [131–132](broken-reference/)
+debugging with, [131–132](../../iot/obdii/broken-reference/)
 
-defined, [130](broken-reference/)
+defined, [130](../../iot/obdii/broken-reference/)
 
-JTAGulator, [131](broken-reference/)
+JTAGulator, [131](../../iot/obdii/broken-reference/)
 
-JTAGulator, [131](broken-reference/)
+JTAGulator, [131](../../iot/obdii/broken-reference/)
 
 **K**
 
-Kamkar, Samy, [217](broken-reference/)
+Kamkar, Samy, [217](../../iot/obdii/broken-reference/)
 
-Kayak, [248](broken-reference/)
+Kayak, [248](../../iot/obdii/broken-reference/)
 
-finding arbitration IDs, [79–80](broken-reference/)
+finding arbitration IDs, [79–80](../../iot/obdii/broken-reference/)
 
-finding door-unlock control, [76–77](broken-reference/)
+finding door-unlock control, [76–77](../../iot/obdii/broken-reference/)
 
-recording and playing back packets, [73–75](broken-reference/)
+recording and playing back packets, [73–75](../../iot/obdii/broken-reference/)
 
-socketcand and, [46–49](broken-reference/)
+socketcand and, [46–49](../../iot/obdii/broken-reference/)
 
-Keeloq algorithm, [226–227](broken-reference/)
+Keeloq algorithm, [226–227](../../iot/obdii/broken-reference/)
 
-kernel device manager (udev), [11](broken-reference/)
+kernel device manager (udev), [11](../../iot/obdii/broken-reference/)
 
-key fobs, [215–216](broken-reference/)
+key fobs, [215–216](../../iot/obdii/broken-reference/)
 
-amplified relay attack, [220](broken-reference/)
+amplified relay attack, [220](../../iot/obdii/broken-reference/)
 
-brute-forcing key code, [217](broken-reference/)
+brute-forcing key code, [217](../../iot/obdii/broken-reference/)
 
-dictionary attacks, [218](broken-reference/)
+dictionary attacks, [218](../../iot/obdii/broken-reference/)
 
-dumping transponder memory, [218](broken-reference/)
+dumping transponder memory, [218](../../iot/obdii/broken-reference/)
 
-forward-prediction attacks, [218](broken-reference/)
+forward-prediction attacks, [218](../../iot/obdii/broken-reference/)
 
-jamming signal, [216–217](broken-reference/)
+jamming signal, [216–217](../../iot/obdii/broken-reference/)
 
-passive keyless entry and start systems, [219–220](broken-reference/)
+passive keyless entry and start systems, [219–220](../../iot/obdii/broken-reference/)
 
-pulling response codes, [217](broken-reference/)
+pulling response codes, [217](../../iot/obdii/broken-reference/)
 
-reversing CAN bus, [218–219](broken-reference/)
+reversing CAN bus, [218–219](../../iot/obdii/broken-reference/)
 
-transponder duplication machines, [219](broken-reference/)
+transponder duplication machines, [219](../../iot/obdii/broken-reference/)
 
-vulnerabilities, [8](broken-reference/)
+vulnerabilities, [8](../../iot/obdii/broken-reference/)
 
-keyslot-only state (FlexRay cycles), [29](broken-reference/)
+keyslot-only state (FlexRay cycles), [29](../../iot/obdii/broken-reference/)
 
-Keyword Protocol 2000 (KWP2000) bus protocol, [22–23](broken-reference/), [94](broken-reference/)
+Keyword Protocol 2000 (KWP2000) bus protocol, [22–23](../../iot/obdii/broken-reference/), [94](../../iot/obdii/broken-reference/)
 
-Kidder, Collin, [248](broken-reference/)
+Kidder, Collin, [248](../../iot/obdii/broken-reference/)
 
-K-Line (ISO 9141-2) bus protocol, [23](broken-reference/)
+K-Line (ISO 9141-2) bus protocol, [23](../../iot/obdii/broken-reference/)
 
-Komodo CAN bus sniffer, [251–252](broken-reference/)
+Komodo CAN bus sniffer, [251–252](../../iot/obdii/broken-reference/)
 
-Kvaser Driver, [11](broken-reference/)
+Kvaser Driver, [11](../../iot/obdii/broken-reference/)
 
-KWP2000 (Keyword Protocol 2000) bus protocol, [22–23](broken-reference/), [94](broken-reference/)
+KWP2000 (Keyword Protocol 2000) bus protocol, [22–23](../../iot/obdii/broken-reference/), [94](../../iot/obdii/broken-reference/)
 
 **L**
 
-LA (linkage authority), [192](broken-reference/)
+LA (linkage authority), [192](../../iot/obdii/broken-reference/)
 
-LAWICEL AB, [244](broken-reference/)
+LAWICEL AB, [244](../../iot/obdii/broken-reference/)
 
-LAWICEL protocol, [242](broken-reference/), [244](broken-reference/)
+LAWICEL protocol, [242](../../iot/obdii/broken-reference/), [244](../../iot/obdii/broken-reference/)
 
-Level 0 [6–7](broken-reference/)
+Level 0 [6–7](../../iot/obdii/broken-reference/)
 
-Level 1 (receivers) threats, [4](broken-reference/), [7–10](broken-reference/)
+Level 1 (receivers) threats, [4](../../iot/obdii/broken-reference/), [7–10](../../iot/obdii/broken-reference/)
 
-Level 2 (receiver breakdown) threats, [5–6](broken-reference/), [10–11](broken-reference/)
+Level 2 (receiver breakdown) threats, [5–6](../../iot/obdii/broken-reference/), [10–11](../../iot/obdii/broken-reference/)
 
-LF (low-frequency) RFID chip, [219](broken-reference/)
+LF (low-frequency) RFID chip, [219](../../iot/obdii/broken-reference/)
 
-library procedures, [97](broken-reference/)
+library procedures, [97](../../iot/obdii/broken-reference/)
 
-LIN (Local Interconnect Network) bus protocol, [24](broken-reference/)
+LIN (Local Interconnect Network) bus protocol, [24](../../iot/obdii/broken-reference/)
 
-linkage authority (LA), [192](broken-reference/)
+linkage authority (LA), [192](../../iot/obdii/broken-reference/)
 
 Linux. _See also_ SocketCAN
 
-Automotive Grade Linux system, [173–174](broken-reference/)
+Automotive Grade Linux system, [173–174](../../iot/obdii/broken-reference/)
 
-ELM327 chipset and, [243–244](broken-reference/)
+ELM327 chipset and, [243–244](../../iot/obdii/broken-reference/)
 
-FlexRay network and, [30](broken-reference/)
+FlexRay network and, [30](../../iot/obdii/broken-reference/)
 
-GENIVI system and, [170–173](broken-reference/)
+GENIVI system and, [170–173](../../iot/obdii/broken-reference/)
 
-hashing tools, [162](broken-reference/)
+hashing tools, [162](../../iot/obdii/broken-reference/)
 
-ICSim, [81–84](broken-reference/)
+ICSim, [81–84](../../iot/obdii/broken-reference/)
 
-infotainment systems, [5–6](broken-reference/)
+infotainment systems, [5–6](../../iot/obdii/broken-reference/)
 
-installing ChipWhisperer software, [135–137](broken-reference/)
+installing ChipWhisperer software, [135–137](../../iot/obdii/broken-reference/)
 
-most4linux project, [26–27](broken-reference/)
+most4linux project, [26–27](../../iot/obdii/broken-reference/)
 
-Raspberry Pi, [243](broken-reference/)
+Raspberry Pi, [243](../../iot/obdii/broken-reference/)
 
-tools, [162](broken-reference/), [247](broken-reference/)
+tools, [162](../../iot/obdii/broken-reference/), [247](../../iot/obdii/broken-reference/)
 
-LNA (low-noise amplifier), [213](broken-reference/)
+LNA (low-noise amplifier), [213](../../iot/obdii/broken-reference/)
 
-Local Interconnect Network (LIN) bus protocol, [24](broken-reference/)
+Local Interconnect Network (LIN) bus protocol, [24](../../iot/obdii/broken-reference/)
 
-location obscurer proxy (LOP), [190](broken-reference/)
+location obscurer proxy (LOP), [190](../../iot/obdii/broken-reference/)
 
-log2asc tool (can-utils package), [42](broken-reference/)
+log2asc tool (can-utils package), [42](../../iot/obdii/broken-reference/)
 
-log2long command (can-utils package), [42](broken-reference/)
+log2long command (can-utils package), [42](../../iot/obdii/broken-reference/)
 
-long-term certificate (LTC), [188](broken-reference/)
+long-term certificate (LTC), [188](../../iot/obdii/broken-reference/)
 
-LOP (location obscurer proxy), [190](broken-reference/)
+LOP (location obscurer proxy), [190](../../iot/obdii/broken-reference/)
 
-low-frequency (LF) RFID chip, [219](broken-reference/)
+low-frequency (LF) RFID chip, [219](../../iot/obdii/broken-reference/)
 
-low-noise amplifier (LNA), [213](broken-reference/)
+low-noise amplifier (LNA), [213](../../iot/obdii/broken-reference/)
 
-low-number-of-coldstarters state (FlexRay cycles), [29](broken-reference/)
+low-number-of-coldstarters state (FlexRay cycles), [29](../../iot/obdii/broken-reference/)
 
-low-speed CAN (LS-CAN) lines, [18](broken-reference/), [32](broken-reference/), [38](broken-reference/)
+low-speed CAN (LS-CAN) lines, [18](../../iot/obdii/broken-reference/), [32](../../iot/obdii/broken-reference/), [38](../../iot/obdii/broken-reference/)
 
-LTC (long-term certificate), [188](broken-reference/)
+LTC (long-term certificate), [188](../../iot/obdii/broken-reference/)
 
 **M**
 
-MA (misbehavior authority), [192](broken-reference/)
+MA (misbehavior authority), [192](../../iot/obdii/broken-reference/)
 
-macroticks, [28](broken-reference/)
+macroticks, [28](../../iot/obdii/broken-reference/)
 
-MAF (mass air flow) sensor, [97](broken-reference/)
+MAF (mass air flow) sensor, [97](../../iot/obdii/broken-reference/)
 
-malfunction indicator lamp (MIL), [51](broken-reference/), [52](broken-reference/)
+malfunction indicator lamp (MIL), [51](../../iot/obdii/broken-reference/), [52](../../iot/obdii/broken-reference/)
 
-malicious intent, [64–65](broken-reference/)
+malicious intent, [64–65](../../iot/obdii/broken-reference/)
 
-Manchester encoding, [214](broken-reference/)
+Manchester encoding, [214](../../iot/obdii/broken-reference/)
 
-mass air flow (MAF) sensor, [97](broken-reference/)
+mass air flow (MAF) sensor, [97](../../iot/obdii/broken-reference/)
 
-MCU (microcontroller unit), [101](broken-reference/), [120](broken-reference/)
+MCU (microcontroller unit), [101](../../iot/obdii/broken-reference/), [120](../../iot/obdii/broken-reference/)
 
-MD5 hash, [162](broken-reference/)
+MD5 hash, [162](../../iot/obdii/broken-reference/)
 
-md5sum tool, [162](broken-reference/)
+md5sum tool, [162](../../iot/obdii/broken-reference/)
 
 Media Oriented Systems Transport bus protocol. _See_ MOST (Media Oriented Systems Transport) bus protocol
 
-Megamos cryptographic system, [221–222](broken-reference/)
+Megamos cryptographic system, [221–222](../../iot/obdii/broken-reference/)
 
-MegaSquirt hardware, [239–240](broken-reference/)
+MegaSquirt hardware, [239–240](../../iot/obdii/broken-reference/)
 
-Meier, Jan-Niklas, [41](broken-reference/), [46](broken-reference/)
+Meier, Jan-Niklas, [41](../../iot/obdii/broken-reference/), [46](../../iot/obdii/broken-reference/)
 
-memory chips, [95](broken-reference/)
+memory chips, [95](../../iot/obdii/broken-reference/)
 
-Metasploit, [193–194](broken-reference/), [200–202](broken-reference/)
+Metasploit, [193–194](../../iot/obdii/broken-reference/), [200–202](../../iot/obdii/broken-reference/)
 
-microcontroller unit (MCU), [101](broken-reference/), [120](broken-reference/)
+microcontroller unit (MCU), [101](../../iot/obdii/broken-reference/), [120](../../iot/obdii/broken-reference/)
 
-mid-speed CAN (MS-CAN) lines, [18](broken-reference/)
+mid-speed CAN (MS-CAN) lines, [18](../../iot/obdii/broken-reference/)
 
-MIL (malfunction indicator lamp), [51](broken-reference/), [52](broken-reference/)
+MIL (malfunction indicator lamp), [51](../../iot/obdii/broken-reference/), [52](../../iot/obdii/broken-reference/)
 
-MIL-STD-882E rating system, [11](broken-reference/), [13](broken-reference/)
+MIL-STD-882E rating system, [11](../../iot/obdii/broken-reference/), [13](../../iot/obdii/broken-reference/)
 
-misbehavior authority (MA), [192](broken-reference/)
+misbehavior authority (MA), [192](../../iot/obdii/broken-reference/)
 
-misbehavior reports, V2V communication, [192](broken-reference/)
+misbehavior reports, V2V communication, [192](../../iot/obdii/broken-reference/)
 
-Moates ROM adapter board, [237](broken-reference/)
+Moates ROM adapter board, [237](../../iot/obdii/broken-reference/)
 
-model numbers, circuit boards, [128](broken-reference/)
+model numbers, circuit boards, [128](../../iot/obdii/broken-reference/)
 
-modes, diagnostic code, [57–60](broken-reference/), [253–254](broken-reference/)
+modes, diagnostic code, [57–60](../../iot/obdii/broken-reference/), [253–254](../../iot/obdii/broken-reference/)
 
-MOST (Media Oriented Systems Transport) bus protocol, [24–25](broken-reference/)
+MOST (Media Oriented Systems Transport) bus protocol, [24–25](../../iot/obdii/broken-reference/)
 
-control blocks, [25–26](broken-reference/)
+control blocks, [25–26](../../iot/obdii/broken-reference/)
 
-hacking, [26–27](broken-reference/)
+hacking, [26–27](../../iot/obdii/broken-reference/)
 
-network layers, [25](broken-reference/)
+network layers, [25](../../iot/obdii/broken-reference/)
 
-most4linux driver, [26–27](broken-reference/)
+most4linux driver, [26–27](../../iot/obdii/broken-reference/)
 
-most\_aplay utility, [26](broken-reference/)
+most\_aplay utility, [26](../../iot/obdii/broken-reference/)
 
-MS-CAN (mid-speed CAN) lines, [18](broken-reference/)
+MS-CAN (mid-speed CAN) lines, [18](../../iot/obdii/broken-reference/)
 
 MultiTarget Victim Board
 
-ChipWhisperer, [135](broken-reference/)
+ChipWhisperer, [135](../../iot/obdii/broken-reference/)
 
-set for glitching, [149](broken-reference/)
+set for glitching, [149](../../iot/obdii/broken-reference/)
 
-Murphy, Austin, [246](broken-reference/)
+Murphy, Austin, [246](../../iot/obdii/broken-reference/)
 
 **N**
 
-NAD (node address for diagnostics), [24](broken-reference/)
+NAD (node address for diagnostics), [24](../../iot/obdii/broken-reference/)
 
-National Highway Traffic Safety Administration (NHTSA), [62](broken-reference/)
+National Highway Traffic Safety Administration (NHTSA), [62](../../iot/obdii/broken-reference/)
 
-NavTeq infotainment unit, [159](broken-reference/)
+NavTeq infotainment unit, [159](../../iot/obdii/broken-reference/)
 
-NeoIV devices, [252](broken-reference/)
+NeoIV devices, [252](../../iot/obdii/broken-reference/)
 
-network layers, MOST bus protocol, [25](broken-reference/)
+network layers, MOST bus protocol, [25](../../iot/obdii/broken-reference/)
 
 network sniffers. _See_ sniffers
 
-NewAE Technologies, [245](broken-reference/)
+NewAE Technologies, [245](../../iot/obdii/broken-reference/)
 
-Nexus interface, [133–134](broken-reference/)
+Nexus interface, [133–134](../../iot/obdii/broken-reference/)
 
-NHTSA (National Highway Traffic Safety Administration), [62](broken-reference/)
+NHTSA (National Highway Traffic Safety Administration), [62](../../iot/obdii/broken-reference/)
 
 Nissan
 
-MAF VQ graph, [98](broken-reference/)
+MAF VQ graph, [98](../../iot/obdii/broken-reference/)
 
-plain dissassembly of 1990 300ZX Twin Turbo ROM, [107–110](broken-reference/)
+plain dissassembly of 1990 300ZX Twin Turbo ROM, [107–110](../../iot/obdii/broken-reference/)
 
-NLFSR (nonlinear feedback shift register), [226](broken-reference/)
+NLFSR (nonlinear feedback shift register), [226](../../iot/obdii/broken-reference/)
 
-node address for diagnostics (NAD), [24](broken-reference/)
+node address for diagnostics (NAD), [24](../../iot/obdii/broken-reference/)
 
-nonlinear feedback shift register (NLFSR), [226](broken-reference/)
+nonlinear feedback shift register (NLFSR), [226](../../iot/obdii/broken-reference/)
 
-no-operation instructions (NOPs), [164](broken-reference/)
+no-operation instructions (NOPs), [164](../../iot/obdii/broken-reference/)
 
-NULL values, removing from code, [199–200](broken-reference/)
+NULL values, removing from code, [199–200](../../iot/obdii/broken-reference/)
 
 **O**
 
-O2OO data logger, [249](broken-reference/)
+O2OO data logger, [249](../../iot/obdii/broken-reference/)
 
-OBD2 ScanTool, [246](broken-reference/)
+OBD2 ScanTool, [246](../../iot/obdii/broken-reference/)
 
-OBD-II connector, [17](broken-reference/), [51](broken-reference/), [119](broken-reference/). _See also_ diagnostics and logging
+OBD-II connector, [17](../../iot/obdii/broken-reference/), [51](../../iot/obdii/broken-reference/), [119](../../iot/obdii/broken-reference/). _See also_ diagnostics and logging
 
-OBD-III bus protocol, [33–34](broken-reference/)
+OBD-III bus protocol, [33–34](../../iot/obdii/broken-reference/)
 
-OBDTester.com, [244](broken-reference/)
+OBDTester.com, [244](../../iot/obdii/broken-reference/)
 
-Octane CAN bus sniffer, [250](broken-reference/)
+Octane CAN bus sniffer, [250](../../iot/obdii/broken-reference/)
 
 OEM (original equipment manufacturer)
 
-front door attacks, [92](broken-reference/)
+front door attacks, [92](../../iot/obdii/broken-reference/)
 
-testing IVI system, [174–175](broken-reference/)
+testing IVI system, [174–175](../../iot/obdii/broken-reference/)
 
-OLS300 emulator, [238](broken-reference/)
+OLS300 emulator, [238](../../iot/obdii/broken-reference/)
 
-on-off keying (OOK), [211](broken-reference/)
+on-off keying (OOK), [211](../../iot/obdii/broken-reference/)
 
-Open Garages, [81](broken-reference/), [205](broken-reference/), [241](broken-reference/), [248](broken-reference/), [255–259](broken-reference/)
+Open Garages, [81](../../iot/obdii/broken-reference/), [205](../../iot/obdii/broken-reference/), [241](../../iot/obdii/broken-reference/), [248](../../iot/obdii/broken-reference/), [255–259](../../iot/obdii/broken-reference/)
 
-Open Source development site, [35](broken-reference/)
+Open Source development site, [35](../../iot/obdii/broken-reference/)
 
-Open Source Immobilizer Protocol Stack, [227](broken-reference/)
+Open Source Immobilizer Protocol Stack, [227](../../iot/obdii/broken-reference/)
 
-Open Systems Interconnection (OSI) model, [25](broken-reference/)
+Open Systems Interconnection (OSI) model, [25](../../iot/obdii/broken-reference/)
 
-OpenXC, [84–85](broken-reference/)
+OpenXC, [84–85](../../iot/obdii/broken-reference/)
 
-hacking, [87–88](broken-reference/)
+hacking, [87–88](../../iot/obdii/broken-reference/)
 
-translating CAN bus messages, [85–86](broken-reference/)
+translating CAN bus messages, [85–86](../../iot/obdii/broken-reference/)
 
-writing to CAN bus, [86](broken-reference/)
+writing to CAN bus, [86](../../iot/obdii/broken-reference/)
 
-optical glitches, [132](broken-reference/)
+optical glitches, [132](../../iot/obdii/broken-reference/)
 
 original equipment manufacturer. _See_ OEM (original equipment manufacturer)
 
-OSI (Open Systems Interconnection) model, [25](broken-reference/)
+OSI (Open Systems Interconnection) model, [25](../../iot/obdii/broken-reference/)
 
-Ostrich2 emulator, [237](broken-reference/)
+Ostrich2 emulator, [237](../../iot/obdii/broken-reference/)
 
 **P**
 
-parameter IDs (PIDs), [57–60](broken-reference/), [254](broken-reference/)
+parameter IDs (PIDs), [57–60](../../iot/obdii/broken-reference/), [254](../../iot/obdii/broken-reference/)
 
-passband, RFID receiver, [216](broken-reference/)
+passband, RFID receiver, [216](../../iot/obdii/broken-reference/)
 
-passive CAN bus fingerprinting, [204–207](broken-reference/)
+passive CAN bus fingerprinting, [204–207](../../iot/obdii/broken-reference/)
 
-passive keyless entry and start (PKES) systems, [219–220](broken-reference/)
+passive keyless entry and start (PKES) systems, [219–220](../../iot/obdii/broken-reference/)
 
 passwords
 
-monitoring power usage when entering, [145–147](broken-reference/)
+monitoring power usage when entering, [145–147](../../iot/obdii/broken-reference/)
 
-setting custom password, [141–143](broken-reference/)
+setting custom password, [141–143](../../iot/obdii/broken-reference/)
 
-payload length, FlexRay packet, [30](broken-reference/)
+payload length, FlexRay packet, [30](../../iot/obdii/broken-reference/)
 
-payloads, [193–194](broken-reference/), [200–202](broken-reference/). _See also_ weaponizing CAN findings
+payloads, [193–194](../../iot/obdii/broken-reference/), [200–202](../../iot/obdii/broken-reference/). _See also_ weaponizing CAN findings
 
-PC (pseudonym certificate), [189](broken-reference/)
+PC (pseudonym certificate), [189](../../iot/obdii/broken-reference/)
 
-PCA (Pseudonym Certificate Authority), [190](broken-reference/)
+PCA (Pseudonym Certificate Authority), [190](../../iot/obdii/broken-reference/)
 
-PCM (powertrain control module), [33](broken-reference/), [51](broken-reference/)
+PCM (powertrain control module), [33](../../iot/obdii/broken-reference/), [51](../../iot/obdii/broken-reference/)
 
-PEAK-System PCAN-USB adapter, [38](broken-reference/)
+PEAK-System PCAN-USB adapter, [38](../../iot/obdii/broken-reference/)
 
-performance tuning, [233–234](broken-reference/)
+performance tuning, [233–234](../../iot/obdii/broken-reference/)
 
-ECU tuning, [235–239](broken-reference/)
+ECU tuning, [235–239](../../iot/obdii/broken-reference/)
 
-stand-alone engine management, [239–240](broken-reference/)
+stand-alone engine management, [239–240](../../iot/obdii/broken-reference/)
 
-trade-offs, [234–235](broken-reference/)
+trade-offs, [234–235](../../iot/obdii/broken-reference/)
 
-permanent (hard) DTCs, [54](broken-reference/)
+permanent (hard) DTCs, [54](../../iot/obdii/broken-reference/)
 
-PF\_CAN protocol family, [36](broken-reference/)
+PF\_CAN protocol family, [36](../../iot/obdii/broken-reference/)
 
-PICAN CAN-Bus board, [243](broken-reference/)
+PICAN CAN-Bus board, [243](../../iot/obdii/broken-reference/)
 
-PIDs (parameter IDs), [57–60](broken-reference/), [254](broken-reference/)
+PIDs (parameter IDs), [57–60](../../iot/obdii/broken-reference/), [254](../../iot/obdii/broken-reference/)
 
-PKES (passive keyless entry and start) systems, [219–220](broken-reference/)
+PKES (passive keyless entry and start) systems, [219–220](../../iot/obdii/broken-reference/)
 
-PKI (public key infrastructure) systems, [188](broken-reference/)
+PKI (public key infrastructure) systems, [188](../../iot/obdii/broken-reference/)
 
-anonymous certificates, [189](broken-reference/)
+anonymous certificates, [189](../../iot/obdii/broken-reference/)
 
-certificate provisioning, [189–190](broken-reference/)
+certificate provisioning, [189–190](../../iot/obdii/broken-reference/)
 
-certificate revocation list, [191–192](broken-reference/)
+certificate revocation list, [191–192](../../iot/obdii/broken-reference/)
 
-misbehavior reports, [192](broken-reference/)
+misbehavior reports, [192](../../iot/obdii/broken-reference/)
 
-vehicle certificates, [188–189](broken-reference/)
+vehicle certificates, [188–189](../../iot/obdii/broken-reference/)
 
-plain disassemblers, [107–110](broken-reference/)
+plain disassemblers, [107–110](../../iot/obdii/broken-reference/)
 
-plastic optical fiber (POF), [24–25](broken-reference/)
+plastic optical fiber (POF), [24–25](../../iot/obdii/broken-reference/)
 
-plug-ins (IVI system), [163](broken-reference/)
+plug-ins (IVI system), [163](../../iot/obdii/broken-reference/)
 
-PoC (proof-of-concept) broadcast manager server, [41](broken-reference/)
+PoC (proof-of-concept) broadcast manager server, [41](../../iot/obdii/broken-reference/)
 
-POF (plastic optical fiber), [24–25](broken-reference/)
+POF (plastic optical fiber), [24–25](../../iot/obdii/broken-reference/)
 
-potentiometers, [120](broken-reference/)
+potentiometers, [120](../../iot/obdii/broken-reference/)
 
-power glitching, [156](broken-reference/)
+power glitching, [156](../../iot/obdii/broken-reference/)
 
-power-analysis attacks, [138–148](broken-reference/), [227](broken-reference/)
+power-analysis attacks, [138–148](../../iot/obdii/broken-reference/), [227](../../iot/obdii/broken-reference/)
 
-powertrain control module (PCM), [33](broken-reference/), [51](broken-reference/)
+powertrain control module (PCM), [33](../../iot/obdii/broken-reference/), [51](../../iot/obdii/broken-reference/)
 
-PRF (pseudorandom function), [220](broken-reference/)
+PRF (pseudorandom function), [220](../../iot/obdii/broken-reference/)
 
-PRNG (pseudorandom number generator), [218](broken-reference/), [220](broken-reference/)
+PRNG (pseudorandom number generator), [218](../../iot/obdii/broken-reference/), [220](../../iot/obdii/broken-reference/)
 
-procfs interface, [45–46](broken-reference/)
+procfs interface, [45–46](../../iot/obdii/broken-reference/)
 
-proof-of-concept (PoC) broadcast manager server, [41](broken-reference/)
+proof-of-concept (PoC) broadcast manager server, [41](../../iot/obdii/broken-reference/)
 
-pseudonym certificate (PC), [189](broken-reference/)
+pseudonym certificate (PC), [189](../../iot/obdii/broken-reference/)
 
-Pseudonym Certificate Authority (PCA), [190](broken-reference/)
+Pseudonym Certificate Authority (PCA), [190](../../iot/obdii/broken-reference/)
 
-pseudorandom function (PRF), [220](broken-reference/)
+pseudorandom function (PRF), [220](../../iot/obdii/broken-reference/)
 
-pseudorandom number generator (PRNG), [218](broken-reference/), [220](broken-reference/)
+pseudorandom number generator (PRNG), [218](../../iot/obdii/broken-reference/), [220](../../iot/obdii/broken-reference/)
 
 public key infrastructure systems. _See_ PKI (public key infrastructure) systems
 
-pulse width modulation (PWM) protocol, [21](broken-reference/)
+pulse width modulation (PWM) protocol, [21](../../iot/obdii/broken-reference/)
 
-PyOBD module, [246–247](broken-reference/)
+PyOBD module, [246–247](../../iot/obdii/broken-reference/)
 
 Python
 
-CaringCaribou, [58–60](broken-reference/), [249](broken-reference/)
+CaringCaribou, [58–60](../../iot/obdii/broken-reference/), [249](../../iot/obdii/broken-reference/)
 
-scripting ChipWhisperer with, [147–148](broken-reference/)
+scripting ChipWhisperer with, [147–148](../../iot/obdii/broken-reference/)
 
 **Q**
 
-QoS (quality of service), [31](broken-reference/)
+QoS (quality of service), [31](../../iot/obdii/broken-reference/)
 
-quadlets, [26](broken-reference/)
+quadlets, [26](../../iot/obdii/broken-reference/)
 
 **R**
 
-RA (Registration Authority), [189](broken-reference/)
+RA (Registration Authority), [189](../../iot/obdii/broken-reference/)
 
-radare2 disassembler, [163](broken-reference/)
+radare2 disassembler, [163](../../iot/obdii/broken-reference/)
 
-radio-frequency identification (RFID), [215](broken-reference/)
+radio-frequency identification (RFID), [215](../../iot/obdii/broken-reference/)
 
-randomize option, ICSim, [84](broken-reference/)
+randomize option, ICSim, [84](../../iot/obdii/broken-reference/)
 
-ransomware, [7](broken-reference/)
+ransomware, [7](../../iot/obdii/broken-reference/)
 
-Raspberry Pi, [243](broken-reference/)
+Raspberry Pi, [243](../../iot/obdii/broken-reference/)
 
 rating systems, threat
 
-CVSS system, [13](broken-reference/)
+CVSS system, [13](../../iot/obdii/broken-reference/)
 
-DREAD system, [11–13](broken-reference/)
+DREAD system, [11–13](../../iot/obdii/broken-reference/)
 
-RCM (restraint control module), [63](broken-reference/)
+RCM (restraint control module), [63](../../iot/obdii/broken-reference/)
 
-ReadDataByID command, [61](broken-reference/)
+ReadDataByID command, [61](../../iot/obdii/broken-reference/)
 
-receiver breakdown (Level 2) threats, [5–6](broken-reference/), [10–11](broken-reference/)
+receiver breakdown (Level 2) threats, [5–6](../../iot/obdii/broken-reference/), [10–11](../../iot/obdii/broken-reference/)
 
-receivers (Level 1) threats, [4](broken-reference/), [7–10](broken-reference/)
+receivers (Level 1) threats, [4](../../iot/obdii/broken-reference/), [7–10](../../iot/obdii/broken-reference/)
 
-Red Pitaya board, [246](broken-reference/)
+Red Pitaya board, [246](../../iot/obdii/broken-reference/)
 
-Registration Authority (RA), [189](broken-reference/)
+Registration Authority (RA), [189](../../iot/obdii/broken-reference/)
 
-relay attacks, PKES systems, [219–220](broken-reference/)
+relay attacks, PKES systems, [219–220](../../iot/obdii/broken-reference/)
 
-remote transmission request (RTR), [19](broken-reference/)
+remote transmission request (RTR), [19](../../iot/obdii/broken-reference/)
 
-Renesas automotive chipset, [133](broken-reference/)
+Renesas automotive chipset, [133](../../iot/obdii/broken-reference/)
 
-response codes, pulling, [217](broken-reference/)
+response codes, pulling, [217](../../iot/obdii/broken-reference/)
 
-restraint control module (RCM), [63](broken-reference/)
+restraint control module (RCM), [63](../../iot/obdii/broken-reference/)
 
 reverse engineering CAN bus
 
-candump tool, [70](broken-reference/)
+candump tool, [70](../../iot/obdii/broken-reference/)
 
-creative packet analysis, [76–80](broken-reference/)
+creative packet analysis, [76–80](../../iot/obdii/broken-reference/)
 
-fuzzing, [88](broken-reference/)
+fuzzing, [88](../../iot/obdii/broken-reference/)
 
-grouping streamed data, [70–73](broken-reference/)
+grouping streamed data, [70–73](../../iot/obdii/broken-reference/)
 
-instrument cluster simulator, [81–84](broken-reference/)
+instrument cluster simulator, [81–84](../../iot/obdii/broken-reference/)
 
-key fobs, [218–219](broken-reference/)
+key fobs, [218–219](../../iot/obdii/broken-reference/)
 
-locating CAN network, [67–68](broken-reference/)
+locating CAN network, [67–68](../../iot/obdii/broken-reference/)
 
-with OpenXC, [84–88](broken-reference/)
+with OpenXC, [84–88](../../iot/obdii/broken-reference/)
 
-recording and playing back packets, [73–75](broken-reference/)
+recording and playing back packets, [73–75](../../iot/obdii/broken-reference/)
 
-troubleshooting, [89](broken-reference/)
+troubleshooting, [89](../../iot/obdii/broken-reference/)
 
-Wireshark, [69](broken-reference/)
+Wireshark, [69](../../iot/obdii/broken-reference/)
 
 reversing firmware
 
-comparing bytes, [101–103](broken-reference/)
+comparing bytes, [101–103](../../iot/obdii/broken-reference/)
 
-identifying tables, [97–101](broken-reference/)
+identifying tables, [97–101](../../iot/obdii/broken-reference/)
 
-library procedures, [97](broken-reference/)
+library procedures, [97](../../iot/obdii/broken-reference/)
 
-microcontroller unit, [101](broken-reference/)
+microcontroller unit, [101](../../iot/obdii/broken-reference/)
 
-ROM data, [103–105](broken-reference/)
+ROM data, [103–105](../../iot/obdii/broken-reference/)
 
-self-diagnostic system, [96–97](broken-reference/)
+self-diagnostic system, [96–97](../../iot/obdii/broken-reference/)
 
-WinOLS, [103–105](broken-reference/)
+WinOLS, [103–105](../../iot/obdii/broken-reference/)
 
-RFID (radio-frequency identification), [215](broken-reference/)
+RFID (radio-frequency identification), [215](../../iot/obdii/broken-reference/)
 
-RoadRunner emulator, [238](broken-reference/)
+RoadRunner emulator, [238](../../iot/obdii/broken-reference/)
 
 roadside DSRC systems
 
-cooperative awareness messages, [181–183](broken-reference/)
+cooperative awareness messages, [181–183](../../iot/obdii/broken-reference/)
 
-decentralized environmental notification messages, [183–184](broken-reference/)
+decentralized environmental notification messages, [183–184](../../iot/obdii/broken-reference/)
 
-ROM data, [103–105](broken-reference/)
+ROM data, [103–105](../../iot/obdii/broken-reference/)
 
-ROM emulators, [237–238](broken-reference/)
+ROM emulators, [237–238](../../iot/obdii/broken-reference/)
 
-RomRaider, [238–239](broken-reference/), [251](broken-reference/)
+RomRaider, [238–239](../../iot/obdii/broken-reference/), [251](../../iot/obdii/broken-reference/)
 
-RTR (remote transmission request), [19](broken-reference/)
+RTR (remote transmission request), [19](../../iot/obdii/broken-reference/)
 
 **S**
 
-SAE J1850 bus protocol, [20–21](broken-reference/)
+SAE J1850 bus protocol, [20–21](../../iot/obdii/broken-reference/)
 
-event data recorder, [63](broken-reference/)
+event data recorder, [63](../../iot/obdii/broken-reference/)
 
-pulse width modulation, [21](broken-reference/)
+pulse width modulation, [21](../../iot/obdii/broken-reference/)
 
-variable pulse width, [22](broken-reference/)
+variable pulse width, [22](../../iot/obdii/broken-reference/)
 
-SavvyCAN, [248–249](broken-reference/)
+SavvyCAN, [248–249](../../iot/obdii/broken-reference/)
 
-SCMS (Security Credentials Management System), [188](broken-reference/)
+SCMS (Security Credentials Management System), [188](../../iot/obdii/broken-reference/)
 
-Scope Tab settings, ChipWhisperer ADC, [143–144](broken-reference/)
+Scope Tab settings, ChipWhisperer ADC, [143–144](../../iot/obdii/broken-reference/)
 
-SDK (software development kit), [164](broken-reference/)
+SDK (software development kit), [164](../../iot/obdii/broken-reference/)
 
-SDM (sensing and diagnostic module), [63](broken-reference/)
+SDM (sensing and diagnostic module), [63](../../iot/obdii/broken-reference/)
 
-SDR (software-defined radio), [210](broken-reference/)
+SDR (software-defined radio), [210](../../iot/obdii/broken-reference/)
 
-Gqrx, [216](broken-reference/)
+Gqrx, [216](../../iot/obdii/broken-reference/)
 
-HackRF, [245](broken-reference/)
+HackRF, [245](../../iot/obdii/broken-reference/)
 
-signal modulation, [210–211](broken-reference/)
+signal modulation, [210–211](../../iot/obdii/broken-reference/)
 
-tracking vehicles with, [186](broken-reference/)
+tracking vehicles with, [186](../../iot/obdii/broken-reference/)
 
-security through obscurity, [220](broken-reference/)
+security through obscurity, [220](../../iot/obdii/broken-reference/)
 
-Security Credentials Management System (SCMS), [188](broken-reference/)
+Security Credentials Management System (SCMS), [188](../../iot/obdii/broken-reference/)
 
-SecurityAccess command, [61](broken-reference/)
+SecurityAccess command, [61](../../iot/obdii/broken-reference/)
 
-seed-key algorithms, [94–95](broken-reference/)
+seed-key algorithms, [94–95](../../iot/obdii/broken-reference/)
 
-SeeedStudio SLD01105P CAN-Bus shield, [242](broken-reference/)
+SeeedStudio SLD01105P CAN-Bus shield, [242](../../iot/obdii/broken-reference/)
 
-self-diagnostic system, [96–97](broken-reference/)
+self-diagnostic system, [96–97](../../iot/obdii/broken-reference/)
 
-sensing and diagnostic module (SDM), [63](broken-reference/)
+sensing and diagnostic module (SDM), [63](../../iot/obdii/broken-reference/)
 
-sensor signals, simulating, [120–121](broken-reference/)
+sensor signals, simulating, [120–121](../../iot/obdii/broken-reference/)
 
-SensorID, TPMS packet, [213–214](broken-reference/)
+SensorID, TPMS packet, [213–214](../../iot/obdii/broken-reference/)
 
-serial CAN devices, [39–40](broken-reference/)
+serial CAN devices, [39–40](../../iot/obdii/broken-reference/)
 
-Serial Wire Debug (SWD), [132–133](broken-reference/)
+Serial Wire Debug (SWD), [132–133](../../iot/obdii/broken-reference/)
 
-SHA-1 hash, [162](broken-reference/)
+SHA-1 hash, [162](../../iot/obdii/broken-reference/)
 
-sha1sum tool, [162](broken-reference/)
+sha1sum tool, [162](../../iot/obdii/broken-reference/)
 
-shellcode, [194](broken-reference/)
+shellcode, [194](../../iot/obdii/broken-reference/)
 
-shims, J2534-1 standard, [93](broken-reference/)
+shims, J2534-1 standard, [93](../../iot/obdii/broken-reference/)
 
-signal generators, [126](broken-reference/)
+signal generators, [126](../../iot/obdii/broken-reference/)
 
-signal modulation, SDR, [210](broken-reference/)
+signal modulation, SDR, [210](../../iot/obdii/broken-reference/)
 
-amplitude-shift keying, [210–211](broken-reference/)
+amplitude-shift keying, [210–211](../../iot/obdii/broken-reference/)
 
-frequency-shift keying, [211](broken-reference/)
+frequency-shift keying, [211](../../iot/obdii/broken-reference/)
 
 simulating
 
-sensor signals, [120–121](broken-reference/)
+sensor signals, [120–121](../../iot/obdii/broken-reference/)
 
-vehicle speed, [123–126](broken-reference/)
+vehicle speed, [123–126](../../iot/obdii/broken-reference/)
 
-slcan\_attach tool (can-utils package), [42](broken-reference/)
+slcan\_attach tool (can-utils package), [42](../../iot/obdii/broken-reference/)
 
-slcand daemon (can-utils package), [39–40](broken-reference/), [42](broken-reference/)
+slcand daemon (can-utils package), [39–40](../../iot/obdii/broken-reference/), [42](../../iot/obdii/broken-reference/)
 
-slcanpty tool (can-utils package), [42](broken-reference/)
+slcanpty tool (can-utils package), [42](../../iot/obdii/broken-reference/)
 
 sniffers
 
-cansniffer, [42](broken-reference/)
+cansniffer, [42](../../iot/obdii/broken-reference/)
 
-FlexRay bus protocol, [30](broken-reference/)
+FlexRay bus protocol, [30](../../iot/obdii/broken-reference/)
 
-fuzzing and, [88](broken-reference/)
+fuzzing and, [88](../../iot/obdii/broken-reference/)
 
-isotpsniffer, [42](broken-reference/)
+isotpsniffer, [42](../../iot/obdii/broken-reference/)
 
-J2534-1 standard and, [93](broken-reference/)
+J2534-1 standard and, [93](../../iot/obdii/broken-reference/)
 
-Komodo CAN bus, [251–252](broken-reference/)
+Komodo CAN bus, [251–252](../../iot/obdii/broken-reference/)
 
-Octane CAN bus, [250](broken-reference/)
+Octane CAN bus, [250](../../iot/obdii/broken-reference/)
 
-WAVE packets and, [179](broken-reference/)
+WAVE packets and, [179](../../iot/obdii/broken-reference/)
 
-SocketCAN, [35–36](broken-reference/), [247](broken-reference/)
+SocketCAN, [35–36](../../iot/obdii/broken-reference/), [247](../../iot/obdii/broken-reference/)
 
-can-utils, [36–44](broken-reference/)
+can-utils, [36–44](../../iot/obdii/broken-reference/)
 
-coding applications, [44–46](broken-reference/)
+coding applications, [44–46](../../iot/obdii/broken-reference/)
 
-Kayak, [46–49](broken-reference/)
+Kayak, [46–49](../../iot/obdii/broken-reference/)
 
-socketcand daemon, [46](broken-reference/)
+socketcand daemon, [46](../../iot/obdii/broken-reference/)
 
-socketcand daemon, [46](broken-reference/)
+socketcand daemon, [46](../../iot/obdii/broken-reference/)
 
-soft faults, [52](broken-reference/)
+soft faults, [52](../../iot/obdii/broken-reference/)
 
 software. _See also_ names of specific software
 
-AVRDUDESS GUI, [251](broken-reference/)
+AVRDUDESS GUI, [251](../../iot/obdii/broken-reference/)
 
-CAN of Fingers, [205–207](broken-reference/), [250](broken-reference/)
+CAN of Fingers, [205–207](../../iot/obdii/broken-reference/), [250](../../iot/obdii/broken-reference/)
 
-CANiBUS server, [248](broken-reference/)
+CANiBUS server, [248](../../iot/obdii/broken-reference/)
 
-CaringCaribou, [58–60](broken-reference/), [249](broken-reference/)
+CaringCaribou, [58–60](../../iot/obdii/broken-reference/), [249](../../iot/obdii/broken-reference/)
 
-Kayak, [248](broken-reference/)
+Kayak, [248](../../iot/obdii/broken-reference/)
 
-Komodo CAN bus sniffer, [251–252](broken-reference/)
+Komodo CAN bus sniffer, [251–252](../../iot/obdii/broken-reference/)
 
-Linux tools, [247](broken-reference/)
+Linux tools, [247](../../iot/obdii/broken-reference/)
 
-O2OO data logger, [249](broken-reference/)
+O2OO data logger, [249](../../iot/obdii/broken-reference/)
 
-Octane CAN bus sniffer, [250](broken-reference/)
+Octane CAN bus sniffer, [250](../../iot/obdii/broken-reference/)
 
-PyOBD module, [246–247](broken-reference/)
+PyOBD module, [246–247](../../iot/obdii/broken-reference/)
 
-RomRaider, [251](broken-reference/)
+RomRaider, [251](../../iot/obdii/broken-reference/)
 
-SavvyCAN, [248–249](broken-reference/)
+SavvyCAN, [248–249](../../iot/obdii/broken-reference/)
 
-UDSim ECU simulator, [250](broken-reference/)
+UDSim ECU simulator, [250](../../iot/obdii/broken-reference/)
 
-Vehicle Spy, [252](broken-reference/)
+Vehicle Spy, [252](../../iot/obdii/broken-reference/)
 
-Wireshark, [246](broken-reference/)
+Wireshark, [246](../../iot/obdii/broken-reference/)
 
-software development kit (SDK), [164](broken-reference/)
+software development kit (SDK), [164](../../iot/obdii/broken-reference/)
 
 software-defined radio. _See_ SDR (software-defined radio)
 
-SparkFun SFE CAN-Bus shield, [242](broken-reference/)
+SparkFun SFE CAN-Bus shield, [242](../../iot/obdii/broken-reference/)
 
-splash screen, modifying, [161](broken-reference/)
+splash screen, modifying, [161](../../iot/obdii/broken-reference/)
 
-spoofing packets, [30](broken-reference/)
+spoofing packets, [30](../../iot/obdii/broken-reference/)
 
-SRR (substitute remote request), [19](broken-reference/)
+SRR (substitute remote request), [19](../../iot/obdii/broken-reference/)
 
-stand-alone engine management, [239–240](broken-reference/)
+stand-alone engine management, [239–240](../../iot/obdii/broken-reference/)
 
-standard packets, [18–19](broken-reference/)
+standard packets, [18–19](../../iot/obdii/broken-reference/)
 
-static segment (FlexRay cycles), [28](broken-reference/), [30](broken-reference/)
+static segment (FlexRay cycles), [28](../../iot/obdii/broken-reference/), [30](../../iot/obdii/broken-reference/)
 
-status bits (FlexRay packet), [29](broken-reference/)
+status bits (FlexRay packet), [29](../../iot/obdii/broken-reference/)
 
-Steininger, Andreas, [30](broken-reference/)
+Steininger, Andreas, [30](../../iot/obdii/broken-reference/)
 
-ST-Link, [132–133](broken-reference/)
+ST-Link, [132–133](../../iot/obdii/broken-reference/)
 
-STM32F4 chips, [132](broken-reference/)
+STM32F4 chips, [132](../../iot/obdii/broken-reference/)
 
-STM32F407Vx chips, [129](broken-reference/)
+STM32F407Vx chips, [129](../../iot/obdii/broken-reference/)
 
-Subaru, [238](broken-reference/), [251](broken-reference/)
+Subaru, [238](../../iot/obdii/broken-reference/), [251](../../iot/obdii/broken-reference/)
 
-substitute remote request (SRR), [19](broken-reference/)
+substitute remote request (SRR), [19](../../iot/obdii/broken-reference/)
 
-SWD (Serial Wire Debug), [132–133](broken-reference/)
+SWD (Serial Wire Debug), [132–133](../../iot/obdii/broken-reference/)
 
-symbol window segment (FlexRay cycles), [28](broken-reference/), [29](broken-reference/)
+symbol window segment (FlexRay cycles), [28](../../iot/obdii/broken-reference/), [29](../../iot/obdii/broken-reference/)
 
-SYNC field, LIN protocol, [24](broken-reference/)
+SYNC field, LIN protocol, [24](../../iot/obdii/broken-reference/)
 
-synchronous channel, MOST bus protocol, [25](broken-reference/)
+synchronous channel, MOST bus protocol, [25](../../iot/obdii/broken-reference/)
 
-sync\_rx utility, [27](broken-reference/)
+sync\_rx utility, [27](../../iot/obdii/broken-reference/)
 
-sync\_tx utility, [27](broken-reference/)
+sync\_tx utility, [27](../../iot/obdii/broken-reference/)
 
-system updates, attacking IVI system via, [158–165](broken-reference/)
+system updates, attacking IVI system via, [158–165](../../iot/obdii/broken-reference/)
 
 **T**
 
-tables, identifying, [97–101](broken-reference/)
+tables, identifying, [97–101](../../iot/obdii/broken-reference/)
 
-tachometers, [77–79](broken-reference/)
+tachometers, [77–79](../../iot/obdii/broken-reference/)
 
-Tactrix OpenPort 2.0, [238](broken-reference/)
+Tactrix OpenPort 2.0, [238](../../iot/obdii/broken-reference/)
 
-TCM (transmission control module), [91](broken-reference/). _See also_ ECU hacking
+TCM (transmission control module), [91](../../iot/obdii/broken-reference/). _See also_ ECU hacking
 
-TCU (transmission control unit), [91](broken-reference/). _See also_ ECU hacking
+TCU (transmission control unit), [91](../../iot/obdii/broken-reference/). _See also_ ECU hacking
 
-TDMA (time division multiple access) scheme, [27–28](broken-reference/)
+TDMA (time division multiple access) scheme, [27–28](../../iot/obdii/broken-reference/)
 
 test benches (IVI system)
 
-Automotive Grade Linux, [173–174](broken-reference/)
+Automotive Grade Linux, [173–174](../../iot/obdii/broken-reference/)
 
-GENIVI Meta-IVI, [170–173](broken-reference/)
+GENIVI Meta-IVI, [170–173](../../iot/obdii/broken-reference/)
 
-threat modeling, [1](broken-reference/)
+threat modeling, [1](../../iot/obdii/broken-reference/)
 
-attack surfaces, [2](broken-reference/)
+attack surfaces, [2](../../iot/obdii/broken-reference/)
 
-handling results, [13–14](broken-reference/)
+handling results, [13–14](../../iot/obdii/broken-reference/)
 
-Level 0 (bird’s eye view), [3](broken-reference/), [6–7](broken-reference/)
+Level 0 (bird’s eye view), [3](../../iot/obdii/broken-reference/), [6–7](../../iot/obdii/broken-reference/)
 
-Level 1 (receivers), [4](broken-reference/), [7–10](broken-reference/)
+Level 1 (receivers), [4](../../iot/obdii/broken-reference/), [7–10](../../iot/obdii/broken-reference/)
 
-Level 2 (receiver breakdown), [5–6](broken-reference/), [10–11](broken-reference/)
+Level 2 (receiver breakdown), [5–6](../../iot/obdii/broken-reference/), [10–11](../../iot/obdii/broken-reference/)
 
-rating systems, [11–13](broken-reference/)
+rating systems, [11–13](../../iot/obdii/broken-reference/)
 
-threat identification, [6–11](broken-reference/)
+threat identification, [6–11](../../iot/obdii/broken-reference/)
 
-time division multiple access (TDMA) scheme, [27–28](broken-reference/)
+time division multiple access (TDMA) scheme, [27–28](../../iot/obdii/broken-reference/)
 
-time-dependent signaling, [22](broken-reference/)
+time-dependent signaling, [22](../../iot/obdii/broken-reference/)
 
-TinySafeBoot, [139](broken-reference/)
+TinySafeBoot, [139](../../iot/obdii/broken-reference/)
 
 tire pressure monitor sensor. _See_ TPMS (tire pressure monitor sensor)
 
 tools. _See also_ names of specific tools
 
-hardware, [241–246](broken-reference/)
+hardware, [241–246](../../iot/obdii/broken-reference/)
 
-software, [246–252](broken-reference/)
+software, [246–252](../../iot/obdii/broken-reference/)
 
-TPMS (tire pressure monitor sensor) , [211–212](broken-reference/)
+TPMS (tire pressure monitor sensor) , [211–212](../../iot/obdii/broken-reference/)
 
-activating signal, [214](broken-reference/)
+activating signal, [214](../../iot/obdii/broken-reference/)
 
-eavesdropping on, [212–213](broken-reference/)
+eavesdropping on, [212–213](../../iot/obdii/broken-reference/)
 
-exploiting connection, [8–9](broken-reference/)
+exploiting connection, [8–9](../../iot/obdii/broken-reference/)
 
-packets, [213–214](broken-reference/)
+packets, [213–214](../../iot/obdii/broken-reference/)
 
-sending forged packets, [215](broken-reference/)
+sending forged packets, [215](../../iot/obdii/broken-reference/)
 
-tracking vehicles with, [214](broken-reference/)
+tracking vehicles with, [214](../../iot/obdii/broken-reference/)
 
-triggering event with, [214–215](broken-reference/)
+triggering event with, [214–215](../../iot/obdii/broken-reference/)
 
 tracking vehicles
 
-with DSRC protocol, [186](broken-reference/)
+with DSRC protocol, [186](../../iot/obdii/broken-reference/)
 
-with TPMS, [214](broken-reference/)
+with TPMS, [214](../../iot/obdii/broken-reference/)
 
-trade-offs, performance tuning, [234–235](broken-reference/)
+trade-offs, performance tuning, [234–235](../../iot/obdii/broken-reference/)
 
-transmission control module (TCM), [91](broken-reference/). _See also_ ECU hacking
+transmission control module (TCM), [91](../../iot/obdii/broken-reference/). _See also_ ECU hacking
 
-transmission control unit (TCU), [91](broken-reference/). _See also_ ECU hacking
+transmission control unit (TCU), [91](../../iot/obdii/broken-reference/). _See also_ ECU hacking
 
-transponder duplication machines, [219](broken-reference/)
+transponder duplication machines, [219](../../iot/obdii/broken-reference/)
 
-transponders, [33–34](broken-reference/), [218](broken-reference/). _See also_ key fobs
+transponders, [33–34](../../iot/obdii/broken-reference/), [218](../../iot/obdii/broken-reference/). _See also_ key fobs
 
-TREAD (Transportation Recall Enhancement, Accountability, and Documentation) Act of 2000, [212](broken-reference/)
+TREAD (Transportation Recall Enhancement, Accountability, and Documentation) Act of 2000, [212](../../iot/obdii/broken-reference/)
 
-trigger wheel, [122](broken-reference/)
+trigger wheel, [122](../../iot/obdii/broken-reference/)
 
-troubleshooting, [89](broken-reference/). _See also_ diagnostics and logging
+troubleshooting, [89](../../iot/obdii/broken-reference/). _See also_ diagnostics and logging
 
-TunerStudio tool, [240](broken-reference/) eye
+TunerStudio tool, [240](../../iot/obdii/broken-reference/) eye
 
-tuning, [233–234](broken-reference/)
+tuning, [233–234](../../iot/obdii/broken-reference/)
 
-ECU tuning, [235–239](broken-reference/)
+ECU tuning, [235–239](../../iot/obdii/broken-reference/)
 
-stand-alone engine management, [239–240](broken-reference/)
+stand-alone engine management, [239–240](../../iot/obdii/broken-reference/)
 
-trade-offs, [234–235](broken-reference/)
+trade-offs, [234–235](../../iot/obdii/broken-reference/)
 
 **U**
 
-UART protocol, [23](broken-reference/)
+UART protocol, [23](../../iot/obdii/broken-reference/)
 
-udev (kernel device manager), [11](broken-reference/)
+udev (kernel device manager), [11](../../iot/obdii/broken-reference/)
 
-UDS (Unified Diagnostic Services), [54–55](broken-reference/)
+UDS (Unified Diagnostic Services), [54–55](../../iot/obdii/broken-reference/)
 
-error responses, [55–57](broken-reference/)
+error responses, [55–57](../../iot/obdii/broken-reference/)
 
-keeping vehicle in diagnostic state, [60–61](broken-reference/)
+keeping vehicle in diagnostic state, [60–61](../../iot/obdii/broken-reference/)
 
-modes and PIDS, [57–60](broken-reference/)
+modes and PIDS, [57–60](../../iot/obdii/broken-reference/)
 
-sending data, [55–57](broken-reference/)
+sending data, [55–57](../../iot/obdii/broken-reference/)
 
-UDSim ECU simulator, [250](broken-reference/)
+UDSim ECU simulator, [250](../../iot/obdii/broken-reference/)
 
-ultra-high-frequency (UHF) signal, [219](broken-reference/)
+ultra-high-frequency (UHF) signal, [219](../../iot/obdii/broken-reference/)
 
 Unified Diagnostic Services. _See_ UDS (Unified Diagnostic Services)
 
-Universal Software Radio Peripheral (USRP), [210](broken-reference/)
+Universal Software Radio Peripheral (USRP), [210](../../iot/obdii/broken-reference/)
 
-Unknown symbol messages, [44](broken-reference/)
+Unknown symbol messages, [44](../../iot/obdii/broken-reference/)
 
-unshielded twisted-pair (UTP) cables, [25](broken-reference/)
+unshielded twisted-pair (UTP) cables, [25](../../iot/obdii/broken-reference/)
 
-update system, attacking IVI system via, [158–165](broken-reference/)
+update system, attacking IVI system via, [158–165](../../iot/obdii/broken-reference/)
 
-USB port connection, [9](broken-reference/)
+USB port connection, [9](../../iot/obdii/broken-reference/)
 
-USB2CAN converter, [244](broken-reference/)
+USB2CAN converter, [244](../../iot/obdii/broken-reference/)
 
-USRP (Universal Software Radio Peripheral), [210](broken-reference/)
+USRP (Universal Software Radio Peripheral), [210](../../iot/obdii/broken-reference/)
 
-USRP SDR, [246](broken-reference/)
+USRP SDR, [246](../../iot/obdii/broken-reference/)
 
-UTP (unshielded twisted-pair) cables, [25](broken-reference/)
+UTP (unshielded twisted-pair) cables, [25](../../iot/obdii/broken-reference/)
 
 **V**
 
-V2I (vehicle-to-infrastructure) communication, [177](broken-reference/)
+V2I (vehicle-to-infrastructure) communication, [177](../../iot/obdii/broken-reference/)
 
-V2V (vehicle-to-vehicle) communication, [177–179](broken-reference/)
+V2V (vehicle-to-vehicle) communication, [177–179](../../iot/obdii/broken-reference/)
 
-acronyms, [179](broken-reference/)
+acronyms, [179](../../iot/obdii/broken-reference/)
 
-DRSC protocol, [179–186](broken-reference/)
+DRSC protocol, [179–186](../../iot/obdii/broken-reference/)
 
-PKI systems, [188–192](broken-reference/)
+PKI systems, [188–192](../../iot/obdii/broken-reference/)
 
-security, [186–187](broken-reference/)
+security, [186–187](../../iot/obdii/broken-reference/)
 
-ValueCAN devices, [252](broken-reference/)
+ValueCAN devices, [252](../../iot/obdii/broken-reference/)
 
-variable pulse width (VPW) protocol, [22](broken-reference/)
+variable pulse width (VPW) protocol, [22](../../iot/obdii/broken-reference/)
 
-vcan module, [40–41](broken-reference/)
+vcan module, [40–41](../../iot/obdii/broken-reference/)
 
-VDS (Vehicle Descriptor Section), [203](broken-reference/)
+VDS (Vehicle Descriptor Section), [203](../../iot/obdii/broken-reference/)
 
-vehicle certificates, [188–189](broken-reference/)
+vehicle certificates, [188–189](../../iot/obdii/broken-reference/)
 
-Vehicle Descriptor Section (VDS), [203](broken-reference/)
+Vehicle Descriptor Section (VDS), [203](../../iot/obdii/broken-reference/)
 
 vehicle identification number. SeeVIN
 
-vehicle interface (VI), [85](broken-reference/)
+vehicle interface (VI), [85](../../iot/obdii/broken-reference/)
 
-vehicle make, determining, [202](broken-reference/)
+vehicle make, determining, [202](../../iot/obdii/broken-reference/)
 
-interactive probing method, [203–204](broken-reference/)
+interactive probing method, [203–204](../../iot/obdii/broken-reference/)
 
-passive CAN bus fingerprinting, [204–207](broken-reference/)
+passive CAN bus fingerprinting, [204–207](../../iot/obdii/broken-reference/)
 
-Vehicle Safety Consortium (VSC3), [186–187](broken-reference/)
+Vehicle Safety Consortium (VSC3), [186–187](../../iot/obdii/broken-reference/)
 
-vehicle speed, simulating, [123–126](broken-reference/)
+vehicle speed, simulating, [123–126](../../iot/obdii/broken-reference/)
 
-Vehicle Spy, [252](broken-reference/)
+Vehicle Spy, [252](../../iot/obdii/broken-reference/)
 
-vehicle-to-infrastructure (V2I) communication, [177](broken-reference/)
+vehicle-to-infrastructure (V2I) communication, [177](../../iot/obdii/broken-reference/)
 
 vehicle-to-vehicle communication. _See_ V2V (vehicle-tovehicle) communication
 
-Verdult, Roel, [222](broken-reference/), [225](broken-reference/)
+Verdult, Roel, [222](../../iot/obdii/broken-reference/), [225](../../iot/obdii/broken-reference/)
 
-VI (vehicle interface), [85](broken-reference/)
+VI (vehicle interface), [85](../../iot/obdii/broken-reference/)
 
-Victim Board, [137–138](broken-reference/)
+Victim Board, [137–138](../../iot/obdii/broken-reference/)
 
 VIN (vehicle identification number)
 
-decoding, [203–204](broken-reference/)
+decoding, [203–204](../../iot/obdii/broken-reference/)
 
-OBD-III standard and, [33](broken-reference/)
+OBD-III standard and, [33](../../iot/obdii/broken-reference/)
 
-querying, [203](broken-reference/)
+querying, [203](../../iot/obdii/broken-reference/)
 
-virtual CAN network, [40–41](broken-reference/)
+virtual CAN network, [40–41](../../iot/obdii/broken-reference/)
 
-VoIP (voice over IP), [31](broken-reference/)
+VoIP (voice over IP), [31](../../iot/obdii/broken-reference/)
 
-Volkswagen Group Research, [36](broken-reference/)
+Volkswagen Group Research, [36](../../iot/obdii/broken-reference/)
 
-VPW (variable pulse width) protocol, [22](broken-reference/)
+VPW (variable pulse width) protocol, [22](../../iot/obdii/broken-reference/)
 
-VQ tables, [98](broken-reference/)
+VQ tables, [98](../../iot/obdii/broken-reference/)
 
-VSC3 (Vehicle Safety Consortium), [186–187](broken-reference/)
+VSC3 (Vehicle Safety Consortium), [186–187](../../iot/obdii/broken-reference/)
 
-VSCOM adapter, [244](broken-reference/)
+VSCOM adapter, [244](../../iot/obdii/broken-reference/)
 
 **W**
 
-WAVE (wireless access for vehicle environments) standard, [184–186](broken-reference/)
+WAVE (wireless access for vehicle environments) standard, [184–186](../../iot/obdii/broken-reference/)
 
-WAVE management entity (WME), [185](broken-reference/)
+WAVE management entity (WME), [185](../../iot/obdii/broken-reference/)
 
-WAVE service announcement (WSA) packet, [185](broken-reference/)
+WAVE service announcement (WSA) packet, [185](../../iot/obdii/broken-reference/)
 
-WAVE short-message protocol (WSMP), [179](broken-reference/), [185](broken-reference/)
+WAVE short-message protocol (WSMP), [179](../../iot/obdii/broken-reference/), [185](../../iot/obdii/broken-reference/)
 
-weaponizing CAN findings, [193–194](broken-reference/)
+weaponizing CAN findings, [193–194](../../iot/obdii/broken-reference/)
 
-determining vehicle make, [202–207](broken-reference/)
+determining vehicle make, [202–207](../../iot/obdii/broken-reference/)
 
-responsible exploitation, [208](broken-reference/)
+responsible exploitation, [208](../../iot/obdii/broken-reference/)
 
-writing exploit in C code, [194–202](broken-reference/)
+writing exploit in C code, [194–202](../../iot/obdii/broken-reference/)
 
-Wi-Fi connection, [8](broken-reference/). _See also_ wireless systems
+Wi-Fi connection, [8](../../iot/obdii/broken-reference/). _See also_ wireless systems
 
-Willem programmer, [236](broken-reference/)
+Willem programmer, [236](../../iot/obdii/broken-reference/)
 
-WinOLS, [103–105](broken-reference/)
+WinOLS, [103–105](../../iot/obdii/broken-reference/)
 
-wireless access for vehicle environments (WAVE) standard, [184–186](broken-reference/)
+wireless access for vehicle environments (WAVE) standard, [184–186](../../iot/obdii/broken-reference/)
 
-wireless inputs (IVI systems), [158](broken-reference/)
+wireless inputs (IVI systems), [158](../../iot/obdii/broken-reference/)
 
-wireless systems, [209](broken-reference/)
+wireless systems, [209](../../iot/obdii/broken-reference/)
 
-immobilizer systems, [220–230](broken-reference/)
+immobilizer systems, [220–230](../../iot/obdii/broken-reference/)
 
-key fobs, [215–220](broken-reference/)
+key fobs, [215–220](../../iot/obdii/broken-reference/)
 
-SDR and, [210–211](broken-reference/)
+SDR and, [210–211](../../iot/obdii/broken-reference/)
 
-TPMS and, [211–215](broken-reference/)
+TPMS and, [211–215](../../iot/obdii/broken-reference/)
 
-Wireshark, [69](broken-reference/), [179](broken-reference/), [246](broken-reference/)
+Wireshark, [69](../../iot/obdii/broken-reference/), [179](../../iot/obdii/broken-reference/), [246](../../iot/obdii/broken-reference/)
 
-wiring (IVI system), [166–170](broken-reference/)
+wiring (IVI system), [166–170](../../iot/obdii/broken-reference/)
 
-WME (WAVE management entity), [185](broken-reference/)
+WME (WAVE management entity), [185](../../iot/obdii/broken-reference/)
 
-WMI (World Manufacturer Identifier) code, [203](broken-reference/)
+WMI (World Manufacturer Identifier) code, [203](../../iot/obdii/broken-reference/)
 
-wpa\_supplicant threats, [10](broken-reference/)
+wpa\_supplicant threats, [10](../../iot/obdii/broken-reference/)
 
-WSA (WAVE service announcement) packet, [185](broken-reference/)
+WSA (WAVE service announcement) packet, [185](../../iot/obdii/broken-reference/)
 
-WSMP (WAVE short-message protocol), [179](broken-reference/), [185](broken-reference/)
+WSMP (WAVE short-message protocol), [179](../../iot/obdii/broken-reference/), [185](../../iot/obdii/broken-reference/)
 
 **Z**
 
-_.zip_ files, [160](broken-reference/)
+_.zip_ files, [160](../../iot/obdii/broken-reference/)
 
 ### **Footnotes** <a href="#calibre_link-859" id="calibre_link-859"></a>
 
@@ -7719,10 +7719,10 @@ _.zip_ files, [160](broken-reference/)
 
 #### **Chapter 12: Attacking Wireless Systems with SDR** <a href="#calibre_link-861" id="calibre_link-861"></a>
 
-[1](broken-reference/). Ishtiaq Rouf et al., “Security and Privacy Vulnerabilities of In-Car Wireless Networks: A Tire Pressure Monitoring System Case Study,” _USENIX Security ’10, Proceedings of the 19th USENIX Conference on Security_, August 2010: 323–338, [_https://www.usenix.org/legacy/events/sec10/tech/full\_papers/Rouf.pdf_](https://www.usenix.org/legacy/events/sec10/tech/full\_papers/Rouf.pdf).
+[1](../../iot/obdii/broken-reference/). Ishtiaq Rouf et al., “Security and Privacy Vulnerabilities of In-Car Wireless Networks: A Tire Pressure Monitoring System Case Study,” _USENIX Security ’10, Proceedings of the 19th USENIX Conference on Security_, August 2010: 323–338, [_https://www.usenix.org/legacy/events/sec10/tech/full\_papers/Rouf.pdf_](https://www.usenix.org/legacy/events/sec10/tech/full\_papers/Rouf.pdf).
 
-[4](broken-reference/). Aurélien Francillon, Boris Danev, and Srdjan Capkun, “Relay Attacks on Passive Keyless Entry and Start Systems in Modern Cars,” _NDSS 2011_ (February 2011) [_https://eprint.iacr.org/2010/332.pdf_](https://eprint.iacr.org/2010/332.pdf).
+[4](../../iot/obdii/broken-reference/). Aurélien Francillon, Boris Danev, and Srdjan Capkun, “Relay Attacks on Passive Keyless Entry and Start Systems in Modern Cars,” _NDSS 2011_ (February 2011) [_https://eprint.iacr.org/2010/332.pdf_](https://eprint.iacr.org/2010/332.pdf).
 
-[5](broken-reference/). Roel Verdult, Flavio D. Garcia, and Barış Ege, “Dismantling Megamos Crypto: Wirelessly Lockpicking a Vehicle Immobilizer,” _Supplement to the Proceedings of the 22nd USENIX Security Symposium_, August 2013: 703–718, [_https://www.usenix.org/sites/default/files/sec15\_supplement.pdf_](https://www.usenix.org/sites/default/files/sec15\_supplement.pdf).
+[5](../../iot/obdii/broken-reference/). Roel Verdult, Flavio D. Garcia, and Barış Ege, “Dismantling Megamos Crypto: Wirelessly Lockpicking a Vehicle Immobilizer,” _Supplement to the Proceedings of the 22nd USENIX Security Symposium_, August 2013: 703–718, [_https://www.usenix.org/sites/default/files/sec15\_supplement.pdf_](https://www.usenix.org/sites/default/files/sec15\_supplement.pdf).
 
-[6](broken-reference/). Volkswagen Aktiengesellschaft v. Garcia & Ors \[2013] E.W.H.C. 1832 (Ch.).
+[6](../../iot/obdii/broken-reference/). Volkswagen Aktiengesellschaft v. Garcia & Ors \[2013] E.W.H.C. 1832 (Ch.).

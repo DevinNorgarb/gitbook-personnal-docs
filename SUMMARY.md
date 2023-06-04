@@ -118,32 +118,32 @@
   * [Testing WEBRTC](software-engineering/webrtc/testing-webrtc.md)
   * [Setting  up STUN and TURN servers](software-engineering/webrtc/setting-up-stun-and-turn-servers.md)
 
-***
+## OBD2&#x20;
 
-* [OBDII](obdii/README.md)
-  * [ELM327 Datasheet](obdii/elm327-datasheet.md)
-  * [Car Hacking](obdii/car-hacking/README.md)
-    * [CuratedPython](obdii/car-hacking/curatedpython.md)
-    * [How to Hack and Upgrade Your Car, Using CAN Bus](iot/obdii/how-to-hack-and-upgrade-your-car-using-can-bus.md)
-    * [The Car Hacker’s Handbook](iot/obdii/the-car-hackers-handbook.md)
-  * [Guides](iot/obdii/guides/README.md)
-    * [Creating A Wireless OBDII Scanner](iot/obdii/guides/creating-a-wireless-obdii-scanner.md)
-  * [Related Projects](obdii/related-projects.md)
-  * [OBDII Simulators](obdii/obdii-simulator-guide/README.md)
-    * [OBD GPS Logger for Linux and OSX](obdii/obdii-simulator-guide/obd-gps-logger-for-linux-and-osx.md)
-    * [OBDSim](obdii/obdii-simulator-guide/obdsim.md)
-    * [OBD GPS Logger Modules](obdii/obdii-simulator-guide/obd-gps-logger-modules.md)
-    * [GitHub: ELM327 Emulator for testing software interfacing OBDII via ELM327 adapter supporting multi-E](obdii/obdii-simulator-guide/github-elm327-emulator-for-testing-software-interfacing-obdii-via-elm327-adapter-supporting-multi-e.md)
-    * [Libraries](obdii/libraries/README.md)
-      * [OBD2 Simulator](obdii/libraries/obd2-simulator.md)
-      * [ELM327-emulator](obdii/libraries/elm327-emulator.md)
-  * [OBD GPS Logger for Linux and OSX](obdii/page-5/obd-gps-logger-for-linux-and-osx.md)
-  * [Vehicle Tracking](obdii/vehicle-tracking/README.md)
-    * [Open Vehicles documentation](obdii/vehicle-tracking/open-vehicles-documentation.md)
-    * [traccar.org](obdii/vehicle-tracking/traccar.org.md)
-  * [obdsim on ubuntu 22.04](obdii/obdsim-on-ubuntu-22.04.md)
-  * [Latest Open Tech From Seeed](obdii/latest-open-tech-from-seeed.md)
-* [a quick crash-course](iot/obdii/a-quick-crash-course.md)
+* [ELM327 Datasheet](obd2/elm327-datasheet.md)
+* [Car Hacking](obd2/car-hacking/README.md)
+  * [CuratedPython](obd2/car-hacking/curatedpython.md)
+  * [How to Hack and Upgrade Your Car, Using CAN Bus](obd2/car-hacking/how-to-hack-and-upgrade-your-car-using-can-bus.md)
+  * [The Car Hacker’s Handbook](obd2/car-hacking/the-car-hackers-handbook.md)
+* [OBDII Simulators](obd2/obdii-simulators/README.md)
+  * [OBD2 simulator on Raspberry Pi using Bluetooth](obd2/obdii-simulators/obd2-simulator-on-raspberry-pi-using-bluetooth.md)
+  * [OBD GPS Logger for Linux and OSX](obd2/obdii-simulators/obd-gps-logger-for-linux-and-osx.md)
+  * [OBDSim](obd2/obdii-simulators/obdsim.md)
+  * [OBD GPS Logger Modules](obd2/obdii-simulators/obd-gps-logger-modules.md)
+  * [GitHub: ELM327 Emulator for testing software interfacing OBDII via ELM327 adapter supporting multi-E](obd2/obdii-simulators/github-elm327-emulator-for-testing-software-interfacing-obdii-via-elm327-adapter-supporting-multi-e.md)
+  * [Libraries](obd2/obdii-simulators/libraries/README.md)
+    * [OBD2 Simulator](obd2/obdii-simulators/libraries/obd2-simulator.md)
+    * [ELM327-emulator](obd2/obdii-simulators/libraries/elm327-emulator.md)
+* [Related Projects](obd2/related-projects.md)
+* [Guides](obd2/guides/README.md)
+  * [Creating A Wireless OBDII Scanner](obd2/guides/creating-a-wireless-obdii-scanner.md)
+* [Vehicle Tracking](obd2/vehicle-tracking/README.md)
+  * [Open Vehicles documentation](obd2/vehicle-tracking/open-vehicles-documentation.md)
+  * [traccar.org](obd2/vehicle-tracking/traccar.org.md)
+* [OBD GPS Logger for Linux and OSX](obd2/obd-gps-logger-for-linux-and-osx.md)
+* [Latest Open Tech From Seeed](obd2/latest-open-tech-from-seeed.md)
+* [obdsim on ubuntu 22.04](obd2/obdsim-on-ubuntu-22.04.md)
+* [a quick crash-course](obd2/a-quick-crash-course.md)
 
 ## 3D Printing
 
@@ -193,10 +193,6 @@
   * [Connection Diagrams](robotics/pixhawk/connection-diagrams.md)
 * [BlueOS](robotics/blueos.md)
 
-***
-
-* [Self Hosting](self-hosting.md)
-
 ## IoT
 
 * [Arduino](iot/arduino/README.md)
@@ -226,7 +222,7 @@
 
 ## Self-Hosting
 
-* [Awesome Self-Hosted](self-hosting-1/awesome-self-hosted.md)
+* [Awesome Self-Hosted](self-hosting/awesome-self-hosted.md)
 
 ## Android Dev
 
@@ -273,7 +269,7 @@
 
 ## Random
 
-* [Torrents & DHT Network](random/torrents-and-dht-network/README.md)
+* [Torrents & DHT Network](random/bittorrent.md)
   * [Magnetico](random/torrents-and-dht-network/magnetico.md)
 * [ADHD and Programming](random/adhd-and-programming/README.md)
   * [Page 4](random/adhd-and-programming/page-4.md)
