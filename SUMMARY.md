@@ -199,6 +199,8 @@
 
 ## IoT
 
+* [Arduino](iot/arduino/README.md)
+  * [elecrow neo 6M GPS Shield](iot/arduino/elecrow-neo-6m-gps-shield.md)
 * [Balena.io](iot/balena.io.md)
 * [Raspberry Pi](iot/raspberry-pi.md)
   * [Awesome Raspberry Pi](iot/raspberry-pi/awesome-raspberry-pi.md)
