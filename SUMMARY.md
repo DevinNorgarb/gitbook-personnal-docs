@@ -256,6 +256,7 @@
 
 ## Pen Testing
 
+* [GOOGLE HACKING ETHICS](pen-testing/google-hacking-ethics.md)
 * [OSINT](pen-testing/osint.md)
 * [Vulnerability Scanning](pen-testing/vulnerability-scanning/README.md)
   * [WordPress Vulnerability Scanning](pen-testing/vulnerability-scanning/wordpress-vulnerability-scanning.md)
