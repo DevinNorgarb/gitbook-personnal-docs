@@ -24,6 +24,7 @@
 
 ## Software Engineering
 
+* [Content Security Policy](software-engineering/content-security-policy.md)
 * [Authentication](software-engineering/authentication/README.md)
   * [OAuth2](software-engineering/authentication/oauth2.md)
 * [AWS](software-engineering/aws/README.md)
@@ -201,6 +202,7 @@
   * [elecrow neo 6M GPS Shield](iot/arduino/elecrow-neo-6m-gps-shield.md)
 * [Balena.io](iot/balena.io.md)
 * [Raspberry Pi](iot/raspberry-pi.md)
+  * [Page 3](iot/raspberry-pi/page-3.md)
   * [Awesome Raspberry Pi](iot/raspberry-pi/awesome-raspberry-pi.md)
   * [Raspberry Pi HotSpot](iot/raspberry-pi/raspberry-pi-hotspot/README.md)
     * [raspap-webgui](iot/raspberry-pi/raspberry-pi-hotspot/raspap-webgui.md)
