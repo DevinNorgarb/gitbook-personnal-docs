@@ -73,7 +73,7 @@ sudo make install
 
 I had an issue with gpsd breaking the build due to some syntax error.  If you also have the same issue run `ccmake ..` from the build directory and ensure your config looks similar to this:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Ensure OBD_DISABLE_GPSD  is set to ON.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Ensure OBD_DISABLE_GPSD  is set to ON.</p></figcaption></figure>
 
 You can then proceed with the installation.&#x20;
 

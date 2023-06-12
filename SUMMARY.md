@@ -99,6 +99,7 @@
 * [ProxMox](software-engineering/proxmox/README.md)
   * [Page 1](software-engineering/proxmox/page-1.md)
 * [Networking](software-engineering/networking/README.md)
+  * [Configure Cloudflare Tunnel in docker-compose.yml](software-engineering/networking/configure-cloudflare-tunnel-in-docker-compose.yml.md)
   * [Web Sockets](software-engineering/networking/web-sockets/README.md)
     * [Page 2](software-engineering/networking/web-sockets/page-2.md)
     * [Socket Client Tool](software-engineering/networking/web-sockets/socket-client-tool.md)
