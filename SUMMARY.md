@@ -299,6 +299,8 @@
 
 ## Resources, Documents, PDF's, etc
 
+* [Embedded Systems](resources-documents-pdfs-etc/embedded-systems/README.md)
+  * [ESP32](resources-documents-pdfs-etc/embedded-systems/esp32.md)
 * [OAuth2  Authentication](resources-documents-pdfs-etc/oauth2-authentication.md)
 * [Geospatial Development](resources-documents-pdfs-etc/geospatial-development.md)
 * [Finance](resources-documents-pdfs-etc/finance.md)
