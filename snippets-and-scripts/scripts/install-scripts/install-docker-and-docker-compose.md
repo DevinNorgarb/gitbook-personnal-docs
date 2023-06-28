@@ -2,6 +2,17 @@
 
 _Estimated reading time: 11 minutes_
 
+> ```
+> curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
+> sudo systemctl enable docker
+> sudo systemctl start docker
+> alias docker-compose='docker compose'
+> echo "alias docker-compose='docker compose'" >> /etc/profile.d/docker-compose.sh
+> source /etc/profile.d/docker-compose.sh
+> ```
+>
+>
+>
 > **Docker Desktop for Linux**
 >
 > Docker Desktop helps you build, share, and run containers easily on Mac and Windows as you do on Linux. We are excited to share that Docker Desktop for Linux (Beta) is now available for you to test. For more information, see Docker Desktop for Linux.
