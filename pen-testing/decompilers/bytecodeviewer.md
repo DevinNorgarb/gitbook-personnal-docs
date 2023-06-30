@@ -1,6 +1,14 @@
+---
+description: https://github.com/Konloch/bytecode-viewer/releases
+---
+
 # ByteCodeViewer
 
 ## Bytecode Viewer <a href="#firstheading" id="firstheading"></a>
+
+[<mark style="color:yellow;">Download here</mark>](https://github.com/Konloch/bytecode-viewer/releases)
+
+{% embed url="https://github.com/Konloch/bytecode-viewer/releases" %}
 
 | A Java Reverse Engineering & Debugging Suite |                                                                 |
 | -------------------------------------------- | --------------------------------------------------------------- |

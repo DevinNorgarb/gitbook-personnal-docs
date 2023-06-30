@@ -261,6 +261,8 @@
 ## Pen Testing
 
 * [decompilers](pen-testing/decompilers/README.md)
+  * [jd-gui](pen-testing/decompilers/jd-gui.md)
+  * [dex2jar](pen-testing/decompilers/dex2jar.md)
   * [ByteCodeViewer](pen-testing/decompilers/bytecodeviewer.md)
 * [Google: Hacking Ethics](pen-testing/google-hacking-ethics.md)
 * [OSINT](pen-testing/osint.md)
