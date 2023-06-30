@@ -45,7 +45,7 @@ obd2kml [-d sqlite database] [-o output file] # Convert to Google Earth
 More specific information is availble in --help or man pages
 ```
 
-The bit is to to compile the firmware.
+The below commands are what is needed to  compile the firmware.
 
 ```bash
 cd obdsim
