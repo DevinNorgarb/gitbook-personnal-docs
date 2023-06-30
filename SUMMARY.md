@@ -232,7 +232,7 @@
 
 ## Android Dev
 
-* [Copy APK file usiung ADB](android-dev/copy-apk-file-usiung-adb.md)
+* [Copy APK file using ADB](android-dev/copy-apk-file-using-adb.md)
 * [PixelExperience on Xiaomi Redmi](android-dev/pixelexperience-on-xiaomi-redmi.md)
 * [compileSdk and targetSdk Version Mappings](android-dev/compilesdk-and-targetsdk-version-mappings.md)
 
