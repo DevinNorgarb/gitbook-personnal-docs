@@ -260,7 +260,9 @@
 
 ## Pen Testing
 
-* [GOOGLE HACKING ETHICS](pen-testing/google-hacking-ethics.md)
+* [decompilers](pen-testing/decompilers/README.md)
+  * [ByteCodeViewer](pen-testing/decompilers/bytecodeviewer.md)
+* [Google: Hacking Ethics](pen-testing/google-hacking-ethics.md)
 * [OSINT](pen-testing/osint.md)
 * [Vulnerability Scanning](pen-testing/vulnerability-scanning/README.md)
   * [WordPress Vulnerability Scanning](pen-testing/vulnerability-scanning/wordpress-vulnerability-scanning.md)
