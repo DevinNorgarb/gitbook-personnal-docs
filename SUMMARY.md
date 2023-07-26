@@ -24,6 +24,8 @@
 
 ## Software Engineering
 
+* [Shopify Dev](software-engineering/shopify-dev/README.md)
+  * [Untitled](software-engineering/shopify-dev/untitled.md)
 * [Content Security Policy](software-engineering/content-security-policy.md)
 * [Authentication](software-engineering/authentication/README.md)
   * [OAuth2](software-engineering/authentication/oauth2.md)
