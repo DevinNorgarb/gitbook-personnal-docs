@@ -10,7 +10,7 @@ This is a list of [Free](https://en.wikipedia.org/wiki/Free\_software) Software 
 
 See Contributing.
 
-***
+
 
 ### Table of contents
 
@@ -108,7 +108,7 @@ See Contributing.
 * Authors
 * License
 
-***
+
 
 ### Software
 
@@ -1989,7 +1989,7 @@ _See also:_ [_Wikimatrix_](https://www.wikimatrix.org/)_,_ [_Wiki Engines - Wiki
 * [XWiki](https://www.xwiki.org) - Second generation wiki that allows the user to extend its functionalities with a powerful extension-based architecture. ([Demo](https://playground.xwiki.org), [Source Code](https://github.com/xwiki/xwiki-platform)) `LGPL-2.1` `Java`
 * [Zim](https://zim-wiki.org/) - Graphical text editor used to maintain a collection of wiki pages. Each page can contain links to other pages, simple formatting and images. ([Source Code](https://github.com/zim-desktop-wiki/zim-desktop-wiki)) `GPL-2.0` `Python`
 
-***
+
 
 ### List of Licenses
 
@@ -2047,13 +2047,13 @@ _See also:_ [_Wikimatrix_](https://www.wikimatrix.org/)_,_ [_Wiki Engines - Wiki
 * `ZPL-1.2` - [Zope Public License 1.2](http://zpl.pub/page/zplv12)
 * `ZPL-2.0` - [Zope Public License 2.0](https://opensource.org/licenses/ZPL-2.0)
 
-***
+
 
 ### Anti-features
 
 * `⚠` - Depends on a proprietary service outside the user's control
 
-***
+
 
 ### External Links
 
@@ -2069,7 +2069,7 @@ _See also:_ [_Wikimatrix_](https://www.wikimatrix.org/)_,_ [_Wiki Engines - Wiki
 * Mirrors: [GitHub.com](https://github.com/awesome-selfhosted/awesome-selfhosted), [Gitlab.com](https://gitlab.com/awesome-selfhosted/awesome-selfhosted)
 * [Track Awesome Selfhosted](https://www.trackawesomelist.com/awesome-selfhosted/awesome-selfhosted/) - Get the latest updates of awesome-selfhosted.
 
-***
+
 
 ### Contributing
 
