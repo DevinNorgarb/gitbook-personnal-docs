@@ -1,3 +1,7 @@
+---
+layout: landing
+---
+
 # Scripts
 
 **Resize LXD btrfs loop file in one line**

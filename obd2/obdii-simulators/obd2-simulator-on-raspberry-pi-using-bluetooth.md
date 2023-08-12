@@ -94,7 +94,7 @@ This should return your device bluetooth mac address, with the output being simi
 Then run:
 
 ```bash
-sudo rfcomm bind 0 DC:A6:32:F6:EA:E8 1
+sudo rfcomm bind 0 Y0:UR:0W:NM:AC 1
 ```
 
 and finally:

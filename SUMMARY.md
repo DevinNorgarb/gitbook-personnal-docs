@@ -14,11 +14,11 @@
     * [Install MAGE](snippets-and-scripts/scripts/install-scripts/install-mage.md)
     * [Install oh-my-zsh](snippets-and-scripts/scripts/install-scripts/install-oh-my-zsh.md)
     * [SDKMan](snippets-and-scripts/scripts/install-scripts/sdkman.md)
-  * [Resize Proxmox root storage](snippets-and-scripts/resize-proxmox-root-storage.md)
-  * [Online Resize Ubuntu/Debian Disk](snippets-and-scripts/online-resize-ubuntu-debian-disk.md)
   * [Scripts](snippets-and-scripts/scripts/README.md)
     * [Run docker commands without needing sudo](snippets-and-scripts/scripts/run-docker-commands-without-needing-sudo.md)
     * [Nginx Proxy Block](snippets-and-scripts/scripts/nginx-proxy-block.md)
+  * [Resize Proxmox root storage](snippets-and-scripts/resize-proxmox-root-storage.md)
+  * [Online Resize Ubuntu/Debian Disk](snippets-and-scripts/online-resize-ubuntu-debian-disk.md)
   * [Magento](snippets-and-scripts/magento.md)
     * [Magento One Line install](snippets-and-scripts/magento/magento-one-line-install.md)
 
@@ -26,7 +26,6 @@
 
 * [Shopify Dev](software-engineering/shopify-dev/README.md)
   * [Laravel app Shopify Webhooks Amazon EventBridge](software-engineering/shopify-dev/laravel-app-shopify-webhooks-amazon-eventbridge.md)
-* [Content Security Policy](software-engineering/content-security-policy.md)
 * [Authentication](software-engineering/authentication/README.md)
   * [OAuth2](software-engineering/authentication/oauth2.md)
 * [AWS](software-engineering/aws/README.md)
@@ -123,6 +122,7 @@
   * [Opensource WebRTC Projects](software-engineering/webrtc/opensource-webrtc-projects.md)
   * [Testing WEBRTC](software-engineering/webrtc/testing-webrtc.md)
   * [Setting  up STUN and TURN servers](software-engineering/webrtc/setting-up-stun-and-turn-servers.md)
+* [Content Security Policy](software-engineering/content-security-policy.md)
 
 ## OBD2&#x20;
 
