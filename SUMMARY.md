@@ -26,7 +26,8 @@
 ## Software Engineering
 
 * [Machine Learning](software-engineering/machine-learning/README.md)
-  * [Page](software-engineering/machine-learning/page.md)
+  * [Google MLKit](software-engineering/machine-learning/google-mlkit/README.md)
+    * [MLKIT](https://developers.google.com/ml-kit/vision/barcode-scanning/android)
 * [Shopify Dev](software-engineering/shopify-dev/README.md)
   * [Laravel app Shopify Webhooks Amazon EventBridge](software-engineering/shopify-dev/laravel-app-shopify-webhooks-amazon-eventbridge.md)
 * [Authentication](software-engineering/authentication/README.md)
