@@ -25,6 +25,16 @@
 
 ## Software Engineering
 
+* [Android App Development](software-engineering/android-app-development/README.md)
+  * [Cordova](software-engineering/android-app-development/cordova.md)
+  * [Capacitor](software-engineering/android-app-development/capacitor.md)
+  * [Custom OS](software-engineering/android-app-development/custom-os/README.md)
+    * [PixelExperience on Xiaomi Redmi](android-dev/pixelexperience-on-xiaomi-redmi.md)
+  * [adb](software-engineering/android-app-development/adb/README.md)
+    * [Copy APK file using ADB](android-dev/copy-apk-file-using-adb.md)
+  * [compileSdk and targetSdk Version Mappings](android-dev/compilesdk-and-targetsdk-version-mappings.md)
+  * [Ionic](software-engineering/android-app-development/ionic.md)
+  * [Quasar.js](software-engineering/android-app-development/quasar.js.md)
 * [Machine Learning](software-engineering/machine-learning/README.md)
   * [Google MLKit](software-engineering/machine-learning/google-mlkit/README.md)
     * [MLKIT](https://developers.google.com/ml-kit/vision/barcode-scanning/android)
@@ -129,12 +139,6 @@
   * [Testing WEBRTC](software-engineering/webrtc/testing-webrtc.md)
   * [Setting  up STUN and TURN servers](software-engineering/webrtc/setting-up-stun-and-turn-servers.md)
 * [Content Security Policy](software-engineering/content-security-policy.md)
-* [Android App Development](software-engineering/android-app-development/README.md)
-  * [Custom OS](software-engineering/android-app-development/custom-os/README.md)
-    * [PixelExperience on Xiaomi Redmi](software-engineering/android-app-development/custom-os/pixelexperience-on-xiaomi-redmi.md)
-  * [adb](software-engineering/android-app-development/adb/README.md)
-    * [Copy APK file using ADB](software-engineering/android-app-development/adb/copy-apk-file-using-adb.md)
-  * [compileSdk and targetSdk Version Mappings](software-engineering/android-app-development/compilesdk-and-targetsdk-version-mappings.md)
 
 ## Android Dev
 
