@@ -70,7 +70,8 @@
     * [Six Reasons Why You Should Run Your Own Bitcoin Node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/six-reasons-why-you-should-run-your-own-bitcoin-node.md)
   * [Trading Bots](software-engineering/cryptocurrencies/trading-bots.md)
 * [Linux](software-engineering/linux/README.md)
-  * [Realtek RTL8188FTV WiFi Adapter on Linux](software-engineering/linux/realtek-rtl8188ftv-wifi-adapter-on-linux.md)
+  * [Firmware](software-engineering/linux/firmware/README.md)
+    * [Realtek RTL8188FTV WiFi Adapter on Linux](software-engineering/linux/firmware/realtek-rtl8188ftv-wifi-adapter-on-linux.md)
   * [MultiArch Apt Sources](software-engineering/linux/multiarch-apt-sources.md)
   * [Grow Filesystem while running](software-engineering/linux/grow-filesystem-while-running.md)
   * [Adding extra swap to a Linux system](software-engineering/linux/adding-extra-swap-to-a-linux-system.md)
@@ -128,6 +129,14 @@
   * [Testing WEBRTC](software-engineering/webrtc/testing-webrtc.md)
   * [Setting  up STUN and TURN servers](software-engineering/webrtc/setting-up-stun-and-turn-servers.md)
 * [Content Security Policy](software-engineering/content-security-policy.md)
+* [Android App Development](software-engineering/android-app-development/README.md)
+  * [Custom OS](software-engineering/android-app-development/custom-os/README.md)
+    * [PixelExperience on Xiaomi Redmi](software-engineering/android-app-development/custom-os/pixelexperience-on-xiaomi-redmi.md)
+  * [adb](software-engineering/android-app-development/adb/README.md)
+    * [Copy APK file using ADB](software-engineering/android-app-development/adb/copy-apk-file-using-adb.md)
+  * [compileSdk and targetSdk Version Mappings](software-engineering/android-app-development/compilesdk-and-targetsdk-version-mappings.md)
+
+## Android Dev
 
 ## OBD2&#x20;
 
@@ -236,12 +245,6 @@
 ## Self-Hosting
 
 * [Awesome Self-Hosted](self-hosting/awesome-self-hosted.md)
-
-## Android Dev
-
-* [Copy APK file using ADB](android-dev/copy-apk-file-using-adb.md)
-* [PixelExperience on Xiaomi Redmi](android-dev/pixelexperience-on-xiaomi-redmi.md)
-* [compileSdk and targetSdk Version Mappings](android-dev/compilesdk-and-targetsdk-version-mappings.md)
 
 ## GIS
 
