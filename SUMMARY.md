@@ -70,7 +70,7 @@
     * [Six Reasons Why You Should Run Your Own Bitcoin Node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/six-reasons-why-you-should-run-your-own-bitcoin-node.md)
   * [Trading Bots](software-engineering/cryptocurrencies/trading-bots.md)
 * [Linux](software-engineering/linux/README.md)
-  * [Page](software-engineering/linux/page.md)
+  * [Realtek RTL8188FTV WiFi Adapter on Linux](software-engineering/linux/realtek-rtl8188ftv-wifi-adapter-on-linux.md)
   * [MultiArch Apt Sources](software-engineering/linux/multiarch-apt-sources.md)
   * [Grow Filesystem while running](software-engineering/linux/grow-filesystem-while-running.md)
   * [Adding extra swap to a Linux system](software-engineering/linux/adding-extra-swap-to-a-linux-system.md)
