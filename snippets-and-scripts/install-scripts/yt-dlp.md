@@ -2,19 +2,6 @@
 
 ## Installation
 
-jxu edited this page on Aug 1 · [16 revisions](https://github.com/yt-dlp/yt-dlp/wiki/Installation/\_history)
-
-#### &#x20;Pages 6
-
-*
-*
-*
-*
-*
-*
-
-**Clone this wiki locally**
-
 You can install yt-dlp either using one of the official releases, or with your favorite package manager
 
 > If you are unfamiliar with the command line, you may use one of the many third-party GUIs available
