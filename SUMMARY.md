@@ -150,6 +150,7 @@
   * [CuratedPython](obd2/car-hacking/curatedpython.md)
   * [How to Hack and Upgrade Your Car, Using CAN Bus](obd2/car-hacking/how-to-hack-and-upgrade-your-car-using-can-bus.md)
   * [The Car Hacker’s Handbook](obd2/car-hacking/the-car-hackers-handbook.md)
+* [The Car Hacker Handbook PDF](obd2/the-car-hacker-handbook-pdf.md)
 * [OBDII Simulators](obd2/obdii-simulators/README.md)
   * [OBD2 simulator on Raspberry Pi using Bluetooth](obd2/obdii-simulators/obd2-simulator-on-raspberry-pi-using-bluetooth.md)
   * [OBD GPS Logger for Linux and OSX](obd2/obdii-simulators/obd-gps-logger-for-linux-and-osx.md)
@@ -320,6 +321,7 @@
 
 ## Resources, Documents, PDF's, etc
 
+* [Car Hacking](resources-documents-pdfs-etc/car-hacking.md)
 * [Embedded Systems](resources-documents-pdfs-etc/embedded-systems/README.md)
   * [ESP32](resources-documents-pdfs-etc/embedded-systems/esp32.md)
 * [OAuth2  Authentication](resources-documents-pdfs-etc/oauth2-authentication.md)
