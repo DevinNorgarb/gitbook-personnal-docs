@@ -161,6 +161,7 @@
     * [OBD2 Simulator](obd2/obdii-simulators/libraries/obd2-simulator.md)
     * [ELM327-emulator](obd2/obdii-simulators/libraries/elm327-emulator.md)
 * [Related Projects](obd2/related-projects/README.md)
+  * [Carloop.io](obd2/related-projects/carloop.io.md)
   * [CANreader](obd2/related-projects/canreader.md)
   * [Open Garages](obd2/related-projects/open-garages.md)
 * [Guides](obd2/guides/README.md)
