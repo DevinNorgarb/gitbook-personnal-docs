@@ -138,12 +138,10 @@
 * [WebRTC](<README (1) (2).md>)
   * [Opensource WebRTC Projects](software-engineering/webrtc/opensource-webrtc-projects.md)
   * [Testing WEBRTC](software-engineering/webrtc/testing-webrtc.md)
-  * [Setting  up STUN and TURN servers](software-engineering/webrtc/setting-up-stun-and-turn-servers.md)
+  * [Setting up STUN and TURN servers](software-engineering/webrtc/setting-up-stun-and-turn-servers.md)
 * [Content Security Policy](software-engineering/content-security-policy.md)
 
-## Android Dev
-
-## OBD2&#x20;
+## OBD2
 
 * [ELM327 Datasheet](obd2/elm327-datasheet.md)
 * [Car Hacking](obd2/car-hacking/README.md)
@@ -328,7 +326,7 @@
 * [Car Hacking](resources-documents-pdfs-etc/car-hacking.md)
 * [Embedded Systems](resources-documents-pdfs-etc/embedded-systems/README.md)
   * [ESP32](resources-documents-pdfs-etc/embedded-systems/esp32.md)
-* [OAuth2  Authentication](resources-documents-pdfs-etc/oauth2-authentication.md)
+* [OAuth2 Authentication](resources-documents-pdfs-etc/oauth2-authentication.md)
 * [Geospatial Development](resources-documents-pdfs-etc/geospatial-development.md)
 * [Finance](resources-documents-pdfs-etc/finance.md)
 * [Databases](resources-documents-pdfs-etc/databases.md)
