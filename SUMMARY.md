@@ -279,6 +279,7 @@
 
 ## Pen Testing
 
+* [Hacking Automotive Ethernet Cameras](pen-testing/hacking-automotive-ethernet-cameras.md)
 * [decompilers](pen-testing/decompilers/README.md)
   * [jd-gui](pen-testing/decompilers/jd-gui.md)
   * [dex2jar](pen-testing/decompilers/dex2jar.md)
