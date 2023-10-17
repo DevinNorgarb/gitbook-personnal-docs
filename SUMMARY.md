@@ -45,6 +45,7 @@
   * [Fulfilment Orders](software-engineering/shopify-dev/fulfilment-orders.md)
   * [Track orders placed through third-party marketplaces](software-engineering/shopify-dev/track-orders-placed-through-third-party-marketplaces.md)
   * [Carrier Services](software-engineering/shopify-dev/carrier-services.md)
+  * [Exploring service discovery attribute in Shopify CarrierService API](software-engineering/shopify-dev/exploring-service-discovery-attribute-in-shopify-carrierservice-api.md)
   * [Laravel app Shopify Webhooks Amazon EventBridge](software-engineering/shopify-dev/laravel-app-shopify-webhooks-amazon-eventbridge.md)
 * [Authentication](software-engineering/authentication/README.md)
   * [OAuth2](software-engineering/authentication/oauth2.md)
