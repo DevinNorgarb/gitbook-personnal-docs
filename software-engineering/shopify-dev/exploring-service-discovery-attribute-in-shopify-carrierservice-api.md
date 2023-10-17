@@ -130,18 +130,20 @@ This can cause confusion in the case when merchant has setup a separate shipping
 #### How rates/services are shown to merchants? <a href="#how-ratesservices-are-shown-to-merchants" id="how-ratesservices-are-shown-to-merchants"></a>
 
 When merchant selects the app from dropdown and a request is sent to third-party app, if they return rates/services, it will be shown in the **SERVICES** section of the modal as shown below:\
-[![Rates returned by third party app](https://res.cloudinary.com/practicaldev/image/fetch/s--9pTvVrbE--/c\_limit%2Cf\_auto%2Cfl\_progressive%2Cq\_auto%2Cw\_880/https://dev-to-uploads.s3.amazonaws.com/i/wy40vgvv3i8rkce1n03b.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--9pTvVrbE--/c\_limit%2Cf\_auto%2Cfl\_progressive%2Cq\_auto%2Cw\_880/https://dev-to-uploads.s3.amazonaws.com/i/wy40vgvv3i8rkce1n03b.png)\
+\
 Two rates returned from third party app for the **US** country.
 
-#### What happens when merchant selects a rate/service? <a href="#what-happens-when-merchant-selects-a-rateservice" id="what-happens-when-merchant-selects-a-rateservice"></a>
+<figure><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--9pTvVrbE--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/wy40vgvv3i8rkce1n03b.png" alt=""><figcaption></figcaption></figure>
 
-If a merchant selects **one rate** from above screenshot, only that rate will be shown on checkout.
+#### What happens when the merchant selects a rate/service? <a href="#what-happens-when-merchant-selects-a-rateservice" id="what-happens-when-merchant-selects-a-rateservice"></a>
 
-Lets take a look at an example. If merchant creates a shipping zone for **USA** and third-party app returns **two rates** in response to **service discovery** request. Merchant selects one of them. **Then only selected rate** will be shown on the **checkout**. Even though third-party will still be providing **two rates** in response to request made on the checkout.
+If a merchant selects **one rate** from the above screenshot, only that rate will be shown on checkout.
+
+Let's take a look at an example. If the merchant creates a shipping zone for the **USA** and the third-party app returns **two rates** in response to a **service discovery** request. Merchant selects one of them. **Then only the selected rate** will be shown on the **checkout**. Even though third-party will still be providing **two rates** in response to request made on the checkout.
 
 ## Conclusion <a href="#conclusion" id="conclusion"></a>
 
-In this post we explored the **service discovery** request sent by Shopify to a third-party shipping rate provider app. We looked at **service\_discovery** attribute, what is it and what happens when it is set to **true**. How service discovery is sent, identifying such request and what data is sent along with this request. We also looked at differences for **Rest of World** shipping zone. In the end, we discovered how rates/services are shown to merchants inside Shopify and what happens on the **checkout** when they select one of them.
+In this post, we explored the **service discovery** request sent by Shopify to a third-party shipping rate provider app. We looked at **service\_discovery** attribute, what is it and what happens when it is set to **true**. How service discovery is sent, identifying such request, and what data is sent along with this request. We also looked at differences for **Rest of World** shipping zones. In the end, we discovered how rates/services are shown to merchants inside Shopify and what happens on the **checkout** when they select one of them.
 
 ***
 
