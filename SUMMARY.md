@@ -26,6 +26,8 @@
 
 ## Software Engineering
 
+* [WebAssemby](software-engineering/webassemby/README.md)
+  * [Shrinking .wasm Code Size](software-engineering/webassemby/shrinking-.wasm-code-size.md)
 * [Android App Development](software-engineering/android-app-development/README.md)
   * [Cordova](software-engineering/android-app-development/cordova.md)
   * [Capacitor](software-engineering/android-app-development/capacitor.md)
@@ -40,6 +42,9 @@
   * [Google MLKit](software-engineering/machine-learning/google-mlkit/README.md)
     * [MLKIT](https://developers.google.com/ml-kit/vision/barcode-scanning/android)
 * [Shopify Dev](software-engineering/shopify-dev/README.md)
+  * [Fulfilment Orders](software-engineering/shopify-dev/fulfilment-orders.md)
+  * [Track orders placed through third-party marketplaces](software-engineering/shopify-dev/track-orders-placed-through-third-party-marketplaces.md)
+  * [Carrier Services](software-engineering/shopify-dev/carrier-services.md)
   * [Laravel app Shopify Webhooks Amazon EventBridge](software-engineering/shopify-dev/laravel-app-shopify-webhooks-amazon-eventbridge.md)
 * [Authentication](software-engineering/authentication/README.md)
   * [OAuth2](software-engineering/authentication/oauth2.md)
