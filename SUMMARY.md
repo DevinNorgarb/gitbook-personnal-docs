@@ -285,8 +285,12 @@
 
 ## Pen Testing
 
+* [Page](pen-testing/page.md)
 * [Hacking Automotive Ethernet Cameras](pen-testing/hacking-automotive-ethernet-cameras.md)
 * [decompilers](pen-testing/decompilers/README.md)
+  * [Android](pen-testing/decompilers/android/README.md)
+    * [smali](pen-testing/decompilers/android/smali.md)
+    * [apktool](pen-testing/decompilers/android/apktool.md)
   * [jd-gui](pen-testing/decompilers/jd-gui.md)
   * [dex2jar](pen-testing/decompilers/dex2jar.md)
   * [ByteCodeViewer](pen-testing/decompilers/bytecodeviewer.md)
