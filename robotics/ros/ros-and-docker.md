@@ -14,7 +14,7 @@ Given that I’m working in academic robotics, all these projects have one thing
 
 ![](https://roboticseabass.files.wordpress.com/2021/04/turtlebot3\_models.png?w=731\&resize=731%2C233)TurtleBot3 models \[Source: [TurtleBot3 Manual by ROBOTIS](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)]
 
-
+***
 
 ### Why Docker with ROS?
 
@@ -30,7 +30,7 @@ While ROS certainly eases the process of getting started with existing software 
 ![](https://i0.wp.com/roboticseabass.com/wp-content/uploads/2021/04/docker\_multiple\_projects.png?resize=750%2C453\&ssl=1)Without some virtualization, juggling these projects on the same machine would be… not ideal.\
 _Icon made by_ [_Freepik_](https://www.flaticon.com/authors/freepik) _from_ [_www.flaticon.com_](https://www.flaticon.com)
 
-
+***
 
 ### Creating a Docker image with ROS
 
@@ -77,7 +77,7 @@ rostopic echo /my_topic
 
 If you happen to have ROS installed on your host machine, you could also try to publish/subscribe between the host and container.
 
-
+***
 
 ### Graphics Inside Docker Containers
 
@@ -171,7 +171,7 @@ apt-get install mesa-utils
 glxgears
 ```
 
-
+***
 
 ### Stack ’em: Multi-Stage Builds
 
@@ -247,7 +247,7 @@ So now, we can start a simulated robot and drive it around with our keyboard… 
 
 ![](https://roboticseabass.files.wordpress.com/2021/04/tb3\_teleop.png?w=750\&resize=750%2C345)
 
-
+***
 
 ### Developing In Docker: Copy vs. Mount
 
@@ -304,7 +304,7 @@ According to the volumes we added to our massive `docker run` command, now the `
 
 When dealing with Python code or scripting languages in general, you can simply modify files on your host and immediately see the changes inside the container. For compiled languages like C++ or anything else that requires building, like updating Catkin packages, you _will_ have to rebuild inside the container. Unless you explicitly mount these build artifacts (for example, the `devel`, `build`, and `logs` folders in a Catkin workspace), these generated files will not be persistent. Depending on how long your Catkin packages take to build, and how often you are rebuilding inside containers, you may want to consider some intelligence with these files in addition to the source files.
 
-
+***
 
 ### Automating Entry Points
 
@@ -405,7 +405,7 @@ make demo-behavior
 
 ![](https://roboticseabass.files.wordpress.com/2021/04/docker\_ros\_demo.png?w=1024\&resize=750%2C437)All these displays brought to you by Docker!
 
-
+***
 
 ### Conclusion
 
