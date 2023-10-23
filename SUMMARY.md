@@ -191,9 +191,8 @@
 
 ## Robotics
 
-* [Mavlink](robotics/mavlink/README.md)
-  * [Communicating with Raspberry Pi via MAVLink — Dev documentation](robotics/mavlink/communicating-with-raspberry-pi-via-mavlink-dev-documentation.md)
-  * [PyMavlink](robotics/mavlink/pymavlink.md)
+* [Communication Protocols](robotics/communication-protocols/README.md)
+  * [Serial](robotics/communication-protocols/serial.md)
 * [ROS](robotics/ros/README.md)
   * [Ros Guide](robotics/ros/ros-guide/README.md)
     * [An Introduction to Robot Operating System: The Ultimate Robot Application Framework](robotics/ros/ros-guide/an-introduction-to-robot-operating-system-the-ultimate-robot-application-framework.md)
@@ -231,6 +230,9 @@
 * [PixHawk](robotics/pixhawk/README.md)
   * [Connection Diagrams](robotics/pixhawk/connection-diagrams.md)
 * [BlueOS](robotics/blueos.md)
+* [Mavlink](robotics/mavlink/README.md)
+  * [Communicating with Raspberry Pi via MAVLink — Dev documentation](robotics/mavlink/communicating-with-raspberry-pi-via-mavlink-dev-documentation.md)
+  * [PyMavlink](robotics/mavlink/pymavlink.md)
 
 ## IoT
 
