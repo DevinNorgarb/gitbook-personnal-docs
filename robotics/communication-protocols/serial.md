@@ -2,6 +2,152 @@
 
 {% embed url="https://forum.arduino.cc/t/serial-input-basics-updated/382007" %}
 
+## Updated Version
+
+_Please note that this is a revised version of the advice in_ [_this earlier Thread 597_](http://forum.arduino.cc/index.php?topic=288234.0) _which has become very long. As far as possible I have kept the code examples identical or simplifed them slightly. It should not be necessary to refer to the older Thread, but feel free to do so._
+
+## Contents <a href="#contents-2" id="contents-2"></a>
+
+The following sections are in this Tutorial
+
+* Introduction
+* Serial data is slow by Arduino standards
+* Example 1 - Receiving single characters
+* Why code is organized into functions
+* Example 2 - Receiving several characters from the Serial Monitor
+* Example 3 - A more complete system
+* How many characters can be received?
+* Things that are not used in the examples
+* serialEvent()
+* Clearing the input buffer
+* Receiving numbers rather than text
+* Example 4 - Receiving a single number from the Serial Monitor
+* Example 5 - Receiving and parsing several pieces of data
+* Binary data
+* Example 6 - Program to receive binary data
+
+Please note that the tutorial continues into the next 2 Posts
+
+## Introduction <a href="#introduction-3" id="introduction-3"></a>
+
+Newcomers often seem to have difficulty with the process of receiving Serial data on the Arduino - especially when they need to receive more than a single character. The fact that there are 18 different functions listed on the [Serial reference 839](http://www.arduino.cc/en/Reference/Serial) page probably does not help
+
+You could write a small book and still not cover every possible situation for data reception. Rather than write pages and pages that few would read I thought it would be more useful to present a few examples which will probably cover all of a newcomer's needs. And when you understand these examples you should be able to figure out solutions for other strange cases.
+
+Almost all serial input data can be covered by three simple situations
+
+A - when only a single character is required\
+B - when only simple manual input from the Serial Monitor is required\
+C - other
+
+## Serial data is slow by Arduino standards <a href="#serial-data-is-slow-by-arduino-standards-4" id="serial-data-is-slow-by-arduino-standards-4"></a>
+
+When anything sends serial data to the Arduino it arrives into the Arduino input buffer at a speed set by the baud rate. At 9600 baud about 960 characters arrive per second which means there is a gap of just over 1 millisecond between characters. The Arduino can do a lot in 1 millisecond so the code that follows is designed not to waste time waiting when there is nothing in the input buffer even if all of the data has not yet arrived. Even at 115200 baud there is still 86 microseconds or 1376 Arduino instructions between characters.
+
+And because data arrives relatively slowly it is easy for the Arduino to empty the serial input buffer even though all of the data has not yet arrived. Many newcomers make the mistake of assuming that something like while (Serial.available() > 0) { will pick up all the data that is sent. But it is far more likely that the WHILE will empty the buffer even though only part of the data has arrived.
+
+## Example 1 - Receiving single characters <a href="#example-1-receiving-single-characters-5" id="example-1-receiving-single-characters-5"></a>
+
+In very many cases all that is needed is to send a single character to the Arduino. Between the upper and lower case letters and the numeric characters there are 62 options. For example you could use 'F' for forward, 'R' for reverse and 'S' for stop.
+
+Code to receive a single character is as simple as this
+
+```cpp
+// Example 1 - Receiving single characters
+
+char receivedChar;
+boolean newData = false;
+
+void setup() {
+    Serial.begin(9600);
+    Serial.println("<Arduino is ready>");
+}
+
+void loop() {
+    recvOneChar();
+    showNewData();
+}
+
+void recvOneChar() {
+    if (Serial.available() > 0) {
+        receivedChar = Serial.read();
+        newData = true;
+    }
+}
+
+void showNewData() {
+    if (newData == true) {
+        Serial.print("This just in ... ");
+        Serial.println(receivedChar);
+        newData = false;
+    }
+}
+```
+
+## Why code is organized into functions <a href="#why-code-is-organized-into-functions-6" id="why-code-is-organized-into-functions-6"></a>
+
+Even though this example is short and simple I have deliberately put the code to receive the character into a separate function called recvOneChar() as that makes it simple to add it into any other program. I also have the code for showing the character in the function showNewData() because you can change that to do whatever you want without upsetting the rest of the code.
+
+If you wish to use the code from any of the examples in your own program I suggest that you just copy the complete functions from the relevant example and create the necessary global variables at the top of your own program.
+
+## Example 2 - Receiving several characters from the Serial Monitor <a href="#example-2-receiving-several-characters-from-the-serial-monitor-7" id="example-2-receiving-several-characters-from-the-serial-monitor-7"></a>
+
+If you need to receive more than a single character from the Serial Monitor (perhaps you want to input people's names) you will need some method of letting the Arduino know when it has received the full message. The simplest way to do this is to set the line-ending to newline.
+
+This is done with the box at the bottom of the Serial Monitor window. You can choose between "No line ending", "Newline", "Carriage return" and "Both NL and CR". When you select the "Newline" option a new-line character ('\n') is added at the end of everything you send.
+
+```cpp
+// Example 2 - Receive with an end-marker
+
+const byte numChars = 32;
+char receivedChars[numChars];   // an array to store the received data
+
+boolean newData = false;
+
+void setup() {
+    Serial.begin(9600);
+    Serial.println("<Arduino is ready>");
+}
+
+void loop() {
+    recvWithEndMarker();
+    showNewData();
+}
+
+void recvWithEndMarker() {
+    static byte ndx = 0;
+    char endMarker = '\n';
+    char rc;
+    
+    while (Serial.available() > 0 && newData == false) {
+        rc = Serial.read();
+
+        if (rc != endMarker) {
+            receivedChars[ndx] = rc;
+            ndx++;
+            if (ndx >= numChars) {
+                ndx = numChars - 1;
+            }
+        }
+        else {
+            receivedChars[ndx] = '\0'; // terminate the string
+            ndx = 0;
+            newData = true;
+        }
+    }
+}
+
+void showNewData() {
+    if (newData == true) {
+        Serial.print("This just in ... ");
+        Serial.println(receivedChars);
+        newData = false;
+    }
+}
+```
+
+This version of the program reads all the characters into an array until it detects the Newline character as an end marker.
+
 
 
 ## Example 3 - A more complete system <a href="#example-3-a-more-complete-system-1" id="example-3-a-more-complete-system-1"></a>
