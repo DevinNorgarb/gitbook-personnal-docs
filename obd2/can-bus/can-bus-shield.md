@@ -26,7 +26,9 @@ CAN-BUS is a common industrial bus because of its long travel distance, medium c
 
 
 Model: [AS54887CAN](http://www.elecrow.com/canbus-shield-p-1133.html)\
-[![CAN-BUS Shield1.jpg](https://www.elecrow.com/wiki/images/thumb/a/ac/CAN-BUS\_Shield1.jpg/400px-CAN-BUS\_Shield1.jpg)](https://www.elecrow.com/wiki/index.php?title=File:CAN-BUS\_Shield1.jpg)
+
+
+<figure><img src="https://www.elecrow.com/wiki/images/thumb/a/ac/CAN-BUS_Shield1.jpg/400px-CAN-BUS_Shield1.jpg" alt=""><figcaption></figcaption></figure>
 
 ### Features
 
@@ -58,9 +60,13 @@ If the folder name include "-master", just remove it.
 
 2\. Open the Arduino-1.0, and you will find 8 examples: receive\_check ,send and receive\_interrupt and so on. Here we'll use send and receive\_check, open it then you should get two programming windows now.
 
-[![Open CAN BUS examples send.jpg](https://www.elecrow.com/wiki/images/thumb/3/37/Open\_CAN\_BUS\_examples\_send.jpg/400px-Open\_CAN\_BUS\_examples\_send.jpg)](https://www.elecrow.com/wiki/index.php?title=File:Open\_CAN\_BUS\_examples\_send.jpg)[![Open CAN BUS examples receive.jpg](https://www.elecrow.com/wiki/images/thumb/a/aa/Open\_CAN\_BUS\_examples\_receive.jpg/400px-Open\_CAN\_BUS\_examples\_receive.jpg)](https://www.elecrow.com/wiki/index.php?title=File:Open\_CAN\_BUS\_examples\_receive.jpg)\
+\
 2.1 Send data:\
 
+
+<figure><img src="https://www.elecrow.com/wiki/images/thumb/3/37/Open_CAN_BUS_examples_send.jpg/400px-Open_CAN_BUS_examples_send.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="https://www.elecrow.com/wiki/images/thumb/a/aa/Open_CAN_BUS_examples_receive.jpg/400px-Open_CAN_BUS_examples_receive.jpg" alt=""><figcaption></figcaption></figure>
 
 ```
 // demo: CAN-BUS Shield, send data

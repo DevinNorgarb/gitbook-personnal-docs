@@ -149,10 +149,12 @@
 
 ## OBD2
 
-* [Libraries](obd2/libraries.md)
+* [Libraries](obd2/libraries/README.md)
+  * [SEEED Arduino CAN](obd2/libraries/seeed-arduino-can.md)
 * [CAN Bus](obd2/can-bus/README.md)
   * [Awesome CAN Bus](obd2/can-bus/awesome-can-bus.md)
   * [CAN Bus Shield](obd2/can-bus/can-bus-shield.md)
+  * [CAN Bus Shield V2.0](obd2/can-bus/can-bus-shield-v2.0.md)
 * [ELM327 Datasheet](obd2/elm327-datasheet.md)
 * [Car Hacking](obd2/car-hacking/README.md)
   * [CuratedPython](obd2/car-hacking/curatedpython.md)
