@@ -149,6 +149,7 @@
 
 ## OBD2
 
+* [Libraries](obd2/libraries.md)
 * [CAN Bus](obd2/can-bus/README.md)
   * [Awesome CAN Bus](obd2/can-bus/awesome-can-bus.md)
   * [CAN Bus Shield](obd2/can-bus/can-bus-shield.md)
