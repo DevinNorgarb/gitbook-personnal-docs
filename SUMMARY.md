@@ -157,6 +157,7 @@
   * [CAN Bus Shield V2.0](obd2/can-bus/can-bus-shield-v2.0.md)
 * [ELM327 Datasheet](obd2/elm327-datasheet.md)
 * [Car Hacking](obd2/car-hacking/README.md)
+  * [Chaos-Sec-Lab](obd2/car-hacking/chaos-sec-lab.md)
   * [CuratedPython](obd2/car-hacking/curatedpython.md)
   * [How to Hack and Upgrade Your Car, Using CAN Bus](obd2/car-hacking/how-to-hack-and-upgrade-your-car-using-can-bus.md)
   * [The Car Hacker’s Handbook](obd2/car-hacking/the-car-hackers-handbook.md)
