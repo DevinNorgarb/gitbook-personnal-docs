@@ -151,6 +151,7 @@
 
 * [CAN Bus](obd2/can-bus/README.md)
   * [Awesome CAN Bus](obd2/can-bus/awesome-can-bus.md)
+  * [CAN Bus Shield](obd2/can-bus/can-bus-shield.md)
 * [ELM327 Datasheet](obd2/elm327-datasheet.md)
 * [Car Hacking](obd2/car-hacking/README.md)
   * [CuratedPython](obd2/car-hacking/curatedpython.md)
