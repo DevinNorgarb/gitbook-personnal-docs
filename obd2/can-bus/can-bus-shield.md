@@ -279,3 +279,18 @@ _"buf"_ is where you store the data.\
 * [Permanent link](https://www.elecrow.com/wiki/index.php?title=CAN-BUS\_Shield\&oldid=63)
 * [Page information](https://www.elecrow.com/wiki/index.php?title=CAN-BUS\_Shield\&action=info)
 * \
+
+
+
+
+
+
+{% file src="../../.gitbook/assets/MCP2515 (1).pdf" %}
+
+{% file src="../../.gitbook/assets/Mcp2551en (1).pdf" %}
+
+{% file src="../../.gitbook/assets/CAN_BUS_Shield_master (1).zip" %}
+
+
+
+{% file src="../../.gitbook/assets/Mcp2551en (1) (1).pdf" %}
