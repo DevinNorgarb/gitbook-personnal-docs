@@ -149,6 +149,8 @@
 
 ## OBD2
 
+* [OVMS](obd2/ovms/README.md)
+  * [Developers](obd2/ovms/developers.md)
 * [Libraries](obd2/libraries/README.md)
   * [SEEED Arduino CAN](obd2/libraries/seeed-arduino-can.md)
 * [CAN Bus](obd2/can-bus/README.md)
