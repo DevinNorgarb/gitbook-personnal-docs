@@ -2,6 +2,7 @@
 
 * [Snippets & Scripts](README.md)
   * [Install Scripts](snippets-and-scripts/scripts/install-scripts/README.md)
+    * [esp-idf](readme/install-scripts/esp-idf.md)
     * [yt-dlp](snippets-and-scripts/install-scripts/yt-dlp.md)
     * [Docker on Kali Linux](snippets-and-scripts/install-scripts/docker-on-kali-linux.md)
     * [ZeroTier VPN](snippets-and-scripts/scripts/install-scripts/zerotier-vpn.md)
