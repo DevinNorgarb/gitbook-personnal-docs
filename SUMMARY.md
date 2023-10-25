@@ -151,6 +151,7 @@
 ## OBD2
 
 * [OVMS](obd2/ovms/README.md)
+  * [How to Build OVMS for ESP32](obd2/ovms/how-to-build-ovms-for-esp32.md)
   * [Developers](obd2/ovms/developers.md)
 * [Libraries](obd2/libraries/README.md)
   * [SEEED Arduino CAN](obd2/libraries/seeed-arduino-can.md)
