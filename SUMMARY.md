@@ -171,7 +171,7 @@
   * [OBD GPS Logger for Linux and OSX](obd2/obdii-simulators/obd-gps-logger-for-linux-and-osx.md)
   * [OBDSim](obd2/obdii-simulators/obdsim.md)
   * [OBD GPS Logger Modules](obd2/obdii-simulators/obd-gps-logger-modules.md)
-  * [GitHub: ELM327 Emulator for testing software interfacing OBDII via ELM327 adapter supporting multi-E](obd2/obdii-simulators/github-elm327-emulator-for-testing-software-interfacing-obdii-via-elm327-adapter-supporting-multi-e.md)
+  * [ELM327 Emulator](obd2/obdii-simulators/github-elm327-emulator-for-testing-software-interfacing-obdii-via-elm327-adapter-supporting-multi-e.md)
   * [Libraries](obd2/obdii-simulators/libraries/README.md)
     * [OBD2 Simulator](obd2/obdii-simulators/libraries/obd2-simulator.md)
     * [ELM327-emulator](obd2/obdii-simulators/libraries/elm327-emulator.md)
