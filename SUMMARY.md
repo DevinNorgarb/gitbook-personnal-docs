@@ -182,6 +182,7 @@
 * [Guides](obd2/guides/README.md)
   * [Creating A Wireless OBDII Scanner](obd2/guides/creating-a-wireless-obdii-scanner.md)
   * [Hackster.io](obd2/guides/hackster.io/README.md)
+    * [Page 3](obd2/guides/hackster.io/page-3.md)
     * [Vehicle Fleet Monitoring](obd2/guides/hackster.io/vehicle-fleet-monitoring.md)
     * [Hack Your Car With Wio Terminal and CAN Bus](obd2/guides/hackster.io/hack-your-car-with-wio-terminal-and-can-bus.md)
 * [Vehicle Tracking](obd2/vehicle-tracking/README.md)
