@@ -181,6 +181,8 @@
   * [Open Garages](obd2/related-projects/open-garages.md)
 * [Guides](obd2/guides/README.md)
   * [Creating A Wireless OBDII Scanner](obd2/guides/creating-a-wireless-obdii-scanner.md)
+  * [Hackster.io](obd2/guides/hackster.io.md)
+* [Hack Your Car With Wio Terminal and CAN Bus](obd2/hack-your-car-with-wio-terminal-and-can-bus.md)
 * [Vehicle Tracking](obd2/vehicle-tracking/README.md)
   * [Open Vehicles documentation](obd2/vehicle-tracking/open-vehicles-documentation.md)
   * [traccar.org](obd2/vehicle-tracking/traccar.org.md)
