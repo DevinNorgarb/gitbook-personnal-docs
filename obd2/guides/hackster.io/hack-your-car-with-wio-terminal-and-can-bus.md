@@ -2,9 +2,9 @@
 
 {% embed url="https://www.hackster.io/longan_labs/hack-your-car-with-wio-terminal-and-can-bus-c6ddf4" %}
 
-{% file src="../.gitbook/assets/Eagle_File_Serial_CAN_Bus-master.zip" %}
+{% file src="../../../.gitbook/assets/Eagle_File_Serial_CAN_Bus-master.zip" %}
 
-{% file src="../.gitbook/assets/OBD-II-Demo-x-Wio-Terminal-master (1).zip" %}
+{% file src="../../../.gitbook/assets/OBD-II-Demo-x-Wio-Terminal-master (1).zip" %}
 
 Hack your car and read the cycling speed, rotation speed, oil temperature and other information, displayed on the Wio Terminal screen.
 
