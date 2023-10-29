@@ -182,6 +182,7 @@
 * [Guides](obd2/guides/README.md)
   * [Creating A Wireless OBDII Scanner](obd2/guides/creating-a-wireless-obdii-scanner.md)
   * [Hackster.io](obd2/guides/hackster.io/README.md)
+    * [MQTT OBD Vehicle Telemetry](obd2/guides/hackster.io/mqtt-obd-vehicle-telemetry.md)
     * [Simple Rally/Racing Dashboard](obd2/guides/hackster.io/simple-rally-racing-dashboard.md)
     * [VEHICLE DATA](obd2/guides/hackster.io/vehicle-data.md)
     * [BlackBox](obd2/guides/hackster.io/blackbox.md)
