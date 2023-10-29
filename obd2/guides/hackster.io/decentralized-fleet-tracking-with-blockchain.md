@@ -1,8 +1,12 @@
-# Page 3
+# Decentralized Fleet Tracking with Blockchain
+
+
 
 {% embed url="https://www.hackster.io/maleficarum/decentralized-fleet-tracking-with-blockchain-f61d6c" %}
 
-##
+{% file src="../../../.gitbook/assets/hologramassettrackker_WqjWGN3zqZ.brd" %}
+
+{% file src="../../../.gitbook/assets/hologramassettrackker_HCV1ofzQy6.sch" %}
 
 {% file src="../../../.gitbook/assets/assetTracker.tgz" %}
 
