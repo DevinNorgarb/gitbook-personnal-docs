@@ -180,6 +180,7 @@
   * [CANreader](obd2/related-projects/canreader.md)
   * [Open Garages](obd2/related-projects/open-garages.md)
 * [Guides](obd2/guides/README.md)
+  * [Freematics + Traccar](obd2/guides/freematics-+-traccar.md)
   * [Creating A Wireless OBDII Scanner](obd2/guides/creating-a-wireless-obdii-scanner.md)
   * [Hackster.io](obd2/guides/hackster.io/README.md)
     * [MQTT OBD Vehicle Telemetry](obd2/guides/hackster.io/mqtt-obd-vehicle-telemetry.md)
