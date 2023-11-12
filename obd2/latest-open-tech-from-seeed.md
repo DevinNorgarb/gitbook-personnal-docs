@@ -11,7 +11,7 @@ Ever heard of CAN-BUS but don’t exactly know what it does? Fret not! We will b
 * CAN-BUS Projects **(Updated)**
 * Getting started with CAN-BUS with Arduino
 
-***
+
 
 #### What is CAN-BUS?
 
@@ -60,7 +60,7 @@ In a vehicle, **safety and reliability** are the two most valued features. CAN-B
 * CAN messages frames are prioritized by ID where the top priority will get bus access and yet frames would not be interrupted.
 * Flash programming, also saves time together with less and simple wiring.
 
-***
+
 
 ### The role of CAN
 
@@ -80,7 +80,7 @@ The multiplex wire and architecture enable signals to be combined and transmitte
 
 It also allows for several features to be added via just software. Furthermore, an ECU is able to use data from another ECU which eliminates the need to install the same sensors in multiple devices.
 
-***
+
 
 ### CAN-BUS Wiring Sequence
 
@@ -93,7 +93,7 @@ It also allows for several features to be added via just software. Furthermore, 
   * For example, if the difference is positive and large then a certain minimum voltage = 1. If the difference is negative = 0
 * For CAN termination, as you can see from the picture above, a single 120 Ohm is generally used at the 2 ends of the CAN network.
 
-***
+
 
 ### CAN Protocol Speed and Range
 
@@ -112,7 +112,7 @@ It also allows for several features to be added via just software. Furthermore, 
   * Extended CAN = 29 CAN
 * While the data can be anywhere from 0 to 8 bytes.
 
-***
+
 
 ### CAN-BUS vs OBD2
 
@@ -123,7 +123,7 @@ I am pretty sure you will come across other “higher-layer protocols” that ar
 * One simple analogy I would use to differentiate between the two of them will be OBD2 is like a language that we speak where we use CAN as a communication device like a phone to talk to someone which in this case a vehicle and its state of health.
 * To read more about OBD2, you can check out the [Wiki Page on OBD.](https://en.wikipedia.org/wiki/On-board\_diagnostics)
 
-***
+
 
 ### Explore Seeed’s CAN-BUS products!
 
@@ -209,7 +209,7 @@ Features of this Serial CAN-BUS module include:
 
 If you want to **record the GPS log** at the same time, this OBD-II CAN Bus GPS Development Kit is highly recommended! The board can be plugged directly into the car via the ODB-II interface and supports Arduino programming. The baseboard of the development kit is integrated with an Atmega32U4 microprocessor. The CAN-Bus library is available to write sketches using Arduino IDE to send and receive messages from the CAN bus network and also allows you to fetch user data from the messages.
 
-***
+
 
 ### CAN-BUS Projects
 
@@ -284,7 +284,7 @@ What you’ll need:
 
 Interested? You can find the full tutorial by [Kenliao on Hackster!](https://www.hackster.io/kenliao/vehicle-gui-can-bus-display-05fb45)
 
-***
+
 
 ### Getting started with CAN-BUS with Arduino
 
@@ -491,7 +491,7 @@ That’s all! Now, you can use the baud rate you need!
 
 Now that you’ve learned how to interface CAN-BUS with the Arduino using the CAN-BUS shield, here are some CAN-BUS projects to get you started!
 
-***
+
 
 ### Summary
 

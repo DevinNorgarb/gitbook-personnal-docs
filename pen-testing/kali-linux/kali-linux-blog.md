@@ -11,7 +11,7 @@ In [Secure Kali Pi (2022)](https://www.kali.org/blog/secure-kali-raspberry-pi/),
 
 After getting internet access, we will use a [**Virtual Private Network**](broken-reference) to remotely connect back to a server of our choosing, which we can also join from anywhere online, thus getting around the requirements of having to port forward on any firewalls.
 
-***
+
 
 ### Ingredients <a href="#ingredients" id="ingredients"></a>
 
@@ -22,7 +22,7 @@ After getting internet access, we will use a [**Virtual Private Network**](broke
 * External server - A pre-created & harden OpenVPN service
   * _Creating this is out-of-scope for this blog post_
 
-***
+
 
 ### Pre-Config Wireless 802.11 <a href="#pre-config-wireless-80211" id="pre-config-wireless-80211"></a>
 
@@ -39,7 +39,7 @@ While wired networking in the initramfs does not require a lot of extras, wirele
 
 Additionally, knowing the [**hostname**](broken-reference) of your Raspberry Pi can help find it, as well as blend in, in your target environment.
 
-***
+
 
 #### Interface Name <a href="#interface-name" id="interface-name"></a>
 
@@ -67,7 +67,7 @@ As long as there is no other hardware plugged into the Raspberry Pi at this stag
     link/ether 2a:54:d3:ee:62:95 brd ff:ff:ff:ff:ff:ff permaddr dc:a6:32:b0:07:cb
 ```
 
-***
+
 
 #### Wi-Fi Modules <a href="#wi-fi-modules" id="wi-fi-modules"></a>
 
@@ -89,7 +89,7 @@ Since we were returned directly to the prompt, this means that “wlan” is not
 
 As we can see in the output above, `brcmfmac` is the driver that is giving us the message. There is a handy command that comes from the [kmod](https://pkg.kali.org/pkg/kmod) package, called [modinfo](https://manpages.debian.org/testing/kmod/modinfo.8.en.html) which will give us information about any module that the kernel has.
 
-***
+
 
 Now we know that the wireless card on the Raspberry Pi uses the `brcmfmac` driver. So lets run `modinfo brcmfmac` and see what information it gives us:
 
@@ -136,7 +136,7 @@ As you can see, there is quite a lot of information given there. A quick overvie
 
 For what we need, the **dependencies section is the key**.
 
-***
+
 
 When we read the man page for [modinfo](https://manpages.debian.org/testing/kmod/modinfo.8.en.html), we see that it offers the `-F` flag to limit the output to certain fields. Since we currently care about the dependencies, let’s re-run `modinfo` passing `-F depends` since that is what we want to know.
 
@@ -179,7 +179,7 @@ Like `brcmutil`, `rfkill` does not have any output, so there are no dependencies
 * `cfg80211`
 * `rfkill`
 
-***
+
 
 #### Wi-Fi Firmware <a href="#wi-fi-firmware" id="wi-fi-firmware"></a>
 
@@ -199,7 +199,7 @@ On Linux systems, the [default firmware search path](https://docs.kernel.org/dri
 
 Notice the wildcards (`*`) in the firmware names. This means that it will match any of those files, so we will simply include all of the firmware that is in `/lib/firmware/brcm`, and this would allow for using wireless on not just our current Raspberry Pi 4, but if we were to plug our [secure Kali Pi](https://www.kali.org/blog/secure-kali-raspberry-pi/) SD Card into a [Raspberry Pi 3](https://www.kali.org/docs/arm/raspberry-pi-3/), or maybe even the [Raspberry Pi Zero 2 W](https://www.kali.org/docs/arm/raspberry-pi-zero-2-w/), we would be able to get wireless on them as well.
 
-***
+
 
 #### Binaries <a href="#binaries" id="binaries"></a>
 
@@ -209,7 +209,7 @@ A typical Kali installation has `NetworkManager` installed, and that handles wir
 
 Additionally, we will want to check we are online in our script using the `wpa_cli` command, which will include that as well.
 
-***
+
 
 ### Change The Hostname <a href="#change-the-hostname" id="change-the-hostname"></a>
 
@@ -246,7 +246,7 @@ ff02::2         ip6-allrouters
 
 You will need to **reboot the system** for the changes to take effect.
 
-***
+
 
 ### Wi-Fi Connection <a href="#wi-fi-connection" id="wi-fi-connection"></a>
 
@@ -256,7 +256,7 @@ Like we did with [secure Kali Pi](https://www.kali.org/blog/secure-kali-raspberr
 
 We already know what the wireless network(s) credentials are, and now we are going to join them.
 
-***
+
 
 First up is the initramfs **hook for the Wi-Fi firmware**.
 
@@ -285,7 +285,7 @@ echo "Copying firmware files for brcm to initramfs"
 cp -r /lib/firmware/brcm ${DESTDIR}/lib/firmware/
 ```
 
-***
+
 
 Next, we will do the **hook for the modules** and **`wpa_supplicant` files** we need. We will use `/etc/initramfs-tools/hooks/enable-wireless` which contains:
 
@@ -319,7 +319,7 @@ copy_exec /sbin/wpa_cli
 copy_file config /etc/initramfs-tools/wpa_supplicant.conf /etc/wpa_supplicant.conf
 ```
 
-***
+
 
 So now that we have our hooks that copy the Wi-Fi firmware, modules, and wpa\_suppliant files, we need to write **a script to use them in the initramfs**.
 
@@ -383,7 +383,7 @@ fi
 configure_networking
 ```
 
-***
+
 
 Additionally, we need to **kill the networking once we are booted**, so that the actual system can use the device and connect properly.
 
@@ -410,7 +410,7 @@ echo "Killing wpa_supplicant so the system takes over later"
 kill $(cat /run/initram-wpa_supplicant.pid)
 ```
 
-***
+
 
 As a reminder, scripts **need to be executable** if you want them to run. _Additionally, if a hook is not marked as executable, initramfs-tools will skip that hook when running `update-initramfs`:_
 
@@ -421,7 +421,7 @@ As a reminder, scripts **need to be executable** if you want them to run. _Addit
 :~$ sudo chmod +x /etc/initramfs-tools/scripts/local-bottom/kill_wireless
 ```
 
-***
+
 
 Now we use the information that we have gathered ahead of time to create our `wpa_supplciant.conf` file to include the SSID & PSK, and any other possible options that the Wi-Fi network connection might need. You can read more information about the file by running `man wpa_supplicant.conf`.
 
@@ -437,7 +437,7 @@ One thing to note here, when you use `wpa_passphrase` to generate the PSK, it in
 :~$ wpa_passphrase "kali wireless" "secure kali wireless" | grep -v \#psk | tee wpa_supplicant.conf
 ```
 
-***
+
 
 If you want to **add multiple wireless networks** to your `wpa_supplicant.conf` file, we can append the file rather than overwriting it:
 
@@ -445,7 +445,7 @@ If you want to **add multiple wireless networks** to your `wpa_supplicant.conf` 
 :~$ wpa_passphrase "kali wireless the second" "even more secure kali wireless" | grep -v \#psk | tee -a wpa_supplicant.conf
 ```
 
-***
+
 
 Now we copy the newly generated configuration into `/etc/initramfs-tools/` as that is where our `enable-wireless` hook expects it to be:
 
@@ -453,7 +453,7 @@ Now we copy the newly generated configuration into `/etc/initramfs-tools/` as th
 :~$ sudo cp -v wpa_supplicant.conf /etc/initramfs-tools/wpa_supplicant.conf
 ```
 
-***
+
 
 As a reminder, we covered which kernel version to use in our [secure Kali Pi](https://www.kali.org/blog/secure-kali-raspberry-pi/#kernel) post, and since we used the [Raspberry Pi 4](https://www.kali.org/docs/arm/raspberry-pi-4/), we will continue to do so here, so our kernel version is `5.15.44-Re4son-v8l+`
 
@@ -505,7 +505,7 @@ As we can see from the output, our initramfs has our **modules**, **firmware**, 
 
 If you are only interested in using the Raspberry Pi as a Wi-Fi client, you can stop here, and unmount everything like we did in our [secure Kali Pi](https://www.kali.org/blog/secure-kali-raspberry-pi/) blog post.
 
-***
+
 
 **Static IP**
 
@@ -532,7 +532,7 @@ console=serial0,115200 console=tty1 root=PARTUUID=da77a68a-02 rootfstype=ext4 fs
 
 As the [documentation](https://docs.kernel.org/admin-guide/nfs/nfsroot.html) states, anything that is not specified uses the default settings, so we simply skip putting anything in between the `:` that we want to skip.
 
-***
+
 
 #### Access Point Mode <a href="#access-point-mode" id="access-point-mode"></a>
 
@@ -563,7 +563,7 @@ The following NEW packages will be installed:
 [...]
 ```
 
-***
+
 
 Now we will set it up and test it, to make sure everything works, before we add it to our initramfs to use:
 
@@ -604,7 +604,7 @@ network={
 
 You can, and should, change the configuration to match your needs. If you would like to set it up to use 5GHz, you would need to change `hw_mode=g` to `hw_mode=a`, but keep in mind that if you are using 5GHz you need to change the channel. [Wikipedia](https://en.wikipedia.org/wiki/List\_of\_WLAN\_channels) has a list of allowed combinations for different countries.
 
-***
+
 
 One setting you may want to change as well, is the `ignore_broadcast_ssid` setting.
 
@@ -622,7 +622,7 @@ If we read the [default configuration file](https://w1.fi/cgit/hostap/plain/host
 ignore_broadcast_ssid=0
 ```
 
-***
+
 
 Now that we have written our `hostapd.conf` we can quickly test if it works by running:
 
@@ -635,7 +635,7 @@ wlan0: AP-ENABLED
 
 If everything is set up correctly, you should see the above output. If you get any errors, you will need to correct those and re-run the command.
 
-***
+
 
 Now that hostapd is set up, and we have tested that it works, lets add it to our initramfs.
 
@@ -726,7 +726,7 @@ echo "Copying firmware files for brcm to initramfs"
 cp -r /lib/firmware/brcm ${DESTDIR}/lib/firmware/
 ```
 
-***
+
 
 Now we add our script, which sets our IP address (`192.168.42.1/24`) for the access point as well as makes hostapd, and DHCP server run, `/etc/initramfs-tools/scripts/init-premount/hostapd`. We will address the networking side after this script:
 
@@ -760,7 +760,7 @@ run_hostapd &
 echo $! >/run/hostapd.pid
 ```
 
-***
+
 
 Additionally, we want to start a DHCP server so that when we connect to the Raspberry Pi’s access point, we get an IP address. Normally, you would use a package like [isc-dhcp-server](https://wiki.debian.org/DHCP\_Server) to run a DHCP server, but since we have already got busybox which has a DHCP server applet enabled in the initramfs, we will just use that instead. We do not need a fully featured DHCP server just to unlock our Raspberry Pi and let it finish booting.
 
@@ -777,7 +777,7 @@ opt dns 8.8.8.8 4.2.2.2   # DNS servers to pass (not really required for our nee
 opt lease 600             # 10 minute DHCP lease
 ```
 
-***
+
 
 And we create our hook which copies in our DHCP config, `/etc/initramfs-tools/hooks/udhcpd`:
 
@@ -804,7 +804,7 @@ esac
 copy_file config /etc/udhcpd.conf /etc/udhcpd.conf
 ```
 
-***
+
 
 Like our previous hooks and scripts, we need to make sure the executable flag is set:
 
@@ -814,7 +814,7 @@ Like our previous hooks and scripts, we need to make sure the executable flag is
 :~$ sudo chmod +x /etc/initramfs-tools/scripts/init-premount/hostapd
 ```
 
-***
+
 
 And now that everything is in place for hostapd support, we need to build the initramfs so that it has our changes in there:
 
@@ -835,7 +835,7 @@ Once we see all the parts are there, we are able to reboot the Raspberry Pi and 
 
 Connect to it, and we should be able to unlock the device via SSH!
 
-***
+
 
 ### Wired Connection <a href="#wired-connection" id="wired-connection"></a>
 
@@ -864,7 +864,7 @@ console=serial0,115200 console=tty1 root=PARTUUID=da77a68a-02 rootfstype=ext4 fs
 
 As the [documentation](https://docs.kernel.org/admin-guide/nfs/nfsroot.html) states, anything that is not specified uses the default settings, so we simply skip putting anything in between the `:` that we want to skip. And we tell it to use the `eth0` device, as that is the default device name for ethernet on the Raspberry Pi.
 
-***
+
 
 ### VPN Tunnel <a href="#vpn-tunnel" id="vpn-tunnel"></a>
 
@@ -876,7 +876,7 @@ Regardless of the reverse service used, network traffic may be filtered by firew
 
 If you have created a new private network by starting an [access point](broken-reference), there is not going to be an upstream gateway configured. As a result, the VPN tunnel will not be able to connect to the internet. You will need to find another way to get online, by either using another mode ([Wi-Fi client](broken-reference)), or another interface (wired ethernet, mobile hotspot etc).
 
-***
+
 
 As always, to use OpenVPN before the system is booted we need our hook to copy the OpenVPN software and our client configuration in to our initramfs.
 
@@ -917,7 +917,7 @@ copy_exec "/lib/aarch64-linux-gnu/libm.so.6"
 cp -p /etc/initramfs-tools/openvpn/client/* ${DESTDIR}/etc/openvpn/client/
 ```
 
-***
+
 
 And then we have to add our OpenVPN script to run in the initramfs, that uses our configuration file to connect to our OpenVPN server. Because this is running before there is any way to interact with the system, we also need to be able to pass the username and password somehow. A quick check of the [openvpn man page](https://manpages.debian.org/testing/openvpn/openvpn.8.en.html) shows us:
 
@@ -945,7 +945,7 @@ The option we want is `--auth-user-pass up`. So we will create a file called `up
 
 If your VPN connection does not require a username/password, you can remove the `--auth-user-pass /etc/openvpn/up` in the `vpnflags` variable below.
 
-***
+
 
 The script, which starts OpenVPN, `/etc/initramfs-tools/scripts/init-premount/openvpn`:
 
@@ -982,7 +982,7 @@ run_openvpn &
 echo $! >/run/openvpn.pid
 ```
 
-***
+
 
 And like with the others, we make sure our hooks and scripts are executable:
 
@@ -991,7 +991,7 @@ And like with the others, we make sure our hooks and scripts are executable:
 :~$ sudo chmod +x /etc/initramfs-tools/scripts/init-premount/openvpn
 ```
 
-***
+
 
 And now that everything is in place for connecting to OpenVPN, we need to build the initramfs so that it has our changes in there:
 
@@ -1006,7 +1006,7 @@ scripts/init-premount/openvpn
 usr/sbin/openvpn
 ```
 
-***
+
 
 Now that the initramfs is updated, and we see that our changes are in there, we are able to reboot the Raspberry Pi. Once it starts booting, and once the network connection is available, it should connect to our OpenVPN server.
 
@@ -1030,7 +1030,7 @@ permitted by applicable law.
 └─$
 ```
 
-***
+
 
 ### Summary <a href="#summary" id="summary"></a>
 
@@ -1053,7 +1053,7 @@ To expand on this future, some improvements which we came up with:
 
 We are sure you can also think outside of the box, and come up with additional ideas too. Please [tweet](https://twitter.com/kalilinux) us your ideas, and progress with your drop box!
 
-***
+
 
 ### Additional Resources <a href="#additional-resources" id="additional-resources"></a>
 

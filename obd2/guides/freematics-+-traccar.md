@@ -47,7 +47,7 @@ HA has a [Traccar integration](https://www.home-assistant.io/integrations/tracca
 
 Unfortunately, the integration doesn't report the fuel state that I wanted, so I set up a [SQL sensor](https://www.home-assistant.io/integrations/sql/) to do that using the query `SELECT JSON_UNQUOTE(JSON_EXTRACT(attributes, '$.12F')) AS fuel FROM tc_positions WHERE deviceid=1 ORDER BY id DESC LIMIT 1;`
 
-\<entry key='\[filter.zero]\(https://filter.zero)'>true\</entry>
+\<entry key='\[filter.zero]\([https://filter.zero)'>true](broken-reference)\</entry>
 
 **(edit)** The query above worked, but sometimes I ended up with an occasional erroneous reading that would throw things out of whack. Also, between updating Traccar and Freematics (I did it at the same time, and while I suspect that the issue is Traccar, I'm not positive), my JSON attributes are now converted to decimal from hex. Below is my new query that accounts for this change and also takes the median value from the last five fuel levels (this works with recent MariaDB releases, but note that the median function isn't a native MySQL capability):
 

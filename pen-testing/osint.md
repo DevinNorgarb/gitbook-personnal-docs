@@ -163,11 +163,11 @@ In order to use Maltego you need to open a free account on their website, after 
 
 Finally, Maltego will show you the results for the specified target, like IP, domains, AS numbers, and much more.
 
-***
+
 
 If you need to explore more Kali Linux utilities, check out this article: [Top 25 Kali Linux Tools](https://securitytrails.com/blog/kali-linux-tools)
 
-***
+
 
 #### [¶](https://securitytrails.com/blog/osint-tools#content-9-recon-ng)9. Recon-Ng
 

@@ -298,7 +298,7 @@ For demo or testing purposes, you can always have a look at a [guestbook](https:
 
 Or, bootstrap some other clusters and register all of them to Argo CD. By doing so, you will have a centralized deployment tool which let you manage all your software delivery to multiple clusters from a single pane of glass.
 
-***
+
 
 **References:**
 
