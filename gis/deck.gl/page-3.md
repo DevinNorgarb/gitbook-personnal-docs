@@ -11,7 +11,7 @@ In my previous article, I covered a few different examples of using DeckGL with 
 We will use a pre-formatted version of the NYC Taxi Trip data from the VisGL team. A single record in the dataset contains three fields: `vendor`, `path`, and `timestamps`.
 
 ```json
-jsonCopy code{
+{
   "vendor": 0,
   "path": [
     [-74.20986, 40.81773],
@@ -32,7 +32,7 @@ jsonCopy code{
 We'll use the TripsLayer from DeckGL, defined as follows:
 
 ```javascript
-javascriptCopy codenew TripsLayer({
+new TripsLayer({
   id: 'trips',
   data: '/data/detailed-trips.json',
   getPath: d => d.path,
@@ -53,7 +53,7 @@ To automate the stepping through time, we can use a `setInterval` or `window.req
 #### Using `setInterval`
 
 ```javascript
-javascriptCopy codeconst [time, setTime] = useState(0);
+const [time, setTime] = useState(0);
 useEffect(() => {
   const interval = setInterval(() => {
     setTime(t => (t + step) % loopLength);
@@ -67,7 +67,7 @@ useEffect(() => {
 This method provides smoother animations and is more efficient for complex visualizations.
 
 ```javascript
-javascriptCopy codeconst [animation] = useState({});
+const [animation] = useState({});
 const animate = () => {
   setTime(t => (t + step) % loopLength);
   animation.id = window.requestAnimationFrame(animate);
@@ -85,7 +85,7 @@ useEffect(() => {
 ### React Component Implementation
 
 ```javascript
-javascriptCopy codeimport React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 // ... other imports ...
 
 const DeckGLTripsAnimateMap = ({ running }) => {
