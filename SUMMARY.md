@@ -294,7 +294,7 @@
   * [Geocoding Accuracy](gis/geocoding/geocoding-accuracy.md)
 * [Tile38](gis/tile38.md)
 * [Deck.gl](gis/deck.gl/README.md)
-  * [Page 3](gis/deck.gl/page-3.md)
+  * [Deck GL Time Frame Animations](gis/deck.gl/deck-gl-time-frame-animations.md)
 * [Vector Tiles](gis/vector-tiles.md)
 * [Uber Big Data](gis/uber-big-data.md)
 * [Mapbox Storytelling](gis/mapbox-storytelling.md)
