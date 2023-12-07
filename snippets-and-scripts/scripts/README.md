@@ -4,6 +4,29 @@ layout: landing
 
 # Scripts
 
+**Split a file in half**
+
+1.  Save the script to a file, say `split_csv.sh`:
+
+    ```bash
+    #!/bin/bash
+    split -l $(( $(wc -l < "$1") / 2 + 1)) "$1" "${2:-part_}"
+    ```
+2.  Make the script executable:
+
+    ```bash
+    chmod +x split_csv.sh
+    ```
+3.  Run the script with your CSV file and an optional prefix:
+
+    ```bash
+    ./split_csv.sh test.csv myprefix_
+    ```
+
+This will split `test.csv` into two parts with filenames starting with `myprefix_`.
+
+***
+
 **Resize LXD btrfs loop file in one line**
 
 ```
@@ -16,7 +39,7 @@ grow_lxd_btrfs_file pritunl-storage-pool 50GB
 
 `lxc storage list`
 
-
+***
 
 #### Kill process running on port
 
@@ -28,11 +51,15 @@ grow_lxd_btrfs_file pritunl-storage-pool 50GB
 watch "curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 ```
 
+***
+
 #### Top Files Sizes &#x20;
 
 ```
- du -a / | sort -n -r | head -n 20
+du -a / | sort -n -r | head -n 20
 ```
+
+***
 
 #### Top Memory Usage
 
