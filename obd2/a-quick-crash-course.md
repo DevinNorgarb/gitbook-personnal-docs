@@ -195,6 +195,6 @@ That’s it! You can now try controlling the speedometer, radio, lights, door lo
 
 Be sure to also check out [Open Garages](https://opengarages.org) and their [videos](https://www.youtube.com/playlist?list=PLBqtCp9s\_lnEOtf6I1DDMEANIzJJLXRhe).
 
-
+***
 
 Learn to code for free. freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as developers. [Get started](https://www.freecodecamp.org/learn/)

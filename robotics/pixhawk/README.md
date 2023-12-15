@@ -1,6 +1,6 @@
 # PixHawk
 
-
+***
 
 ## Pixhawk Wiring Quick Start[¶](https://ardupilot.org/copter/docs/common-pixhawk-wiring-and-quick-start.html#pixhawk-wiring-quick-start)
 

@@ -2,7 +2,9 @@
 
 * [Snippets & Scripts](README.md)
   * [Install Scripts](snippets-and-scripts/scripts/install-scripts/README.md)
-    * [pyenv](readme/install-scripts/pyenv.md)
+    * [python + libraries](readme/install-scripts/python-+-libraries/README.md)
+      * [Poetry](readme/install-scripts/python-+-libraries/poetry.md)
+      * [pyenv](readme/install-scripts/python-+-libraries/pyenv.md)
     * [yarn](readme/install-scripts/yarn.md)
     * [esp-idf](readme/install-scripts/esp-idf.md)
     * [yt-dlp](snippets-and-scripts/install-scripts/yt-dlp.md)
