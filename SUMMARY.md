@@ -261,7 +261,6 @@
 
 ## MicroControllers
 
-* [Page 3](microcontrollers/page-3.md)
 * [nRF24](microcontrollers/nrf24.md)
 * [Arduino](microcontrollers/arduino/README.md)
   * [elecrow neo 6M GPS Shield](microcontrollers/arduino/elecrow-neo-6m-gps-shield.md)
@@ -286,6 +285,7 @@
   * [Overclocking Raspberry Pi 4](microcontrollers/raspberry-pi/overclocking-raspberry-pi-4/README.md)
     * [Pi 4 Overclocking Maximum settings](microcontrollers/raspberry-pi/overclocking-raspberry-pi-4/pi-4-overclocking-maximum-settings.md)
 * [ESP32](microcontrollers/esp32/README.md)
+  * [ESP32 CAM](microcontrollers/esp32/esp32-cam.md)
   * [Pinout](microcontrollers/esp32/pinout.md)
   * [ESP DroneBridge](microcontrollers/esp32/esp-dronebridge.md)
   * [EVIL-ESP](microcontrollers/esp32/evil-esp.md)
