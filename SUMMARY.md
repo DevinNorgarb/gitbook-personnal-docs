@@ -47,6 +47,7 @@
   * [Ionic](software-engineering/android-app-development/ionic.md)
   * [Quasar.js](software-engineering/android-app-development/quasar.js.md)
 * [Machine Learning](software-engineering/machine-learning/README.md)
+  * [openmv.io](software-engineering/machine-learning/openmv.io.md)
   * [Google MLKit](software-engineering/machine-learning/google-mlkit/README.md)
     * [MLKIT](https://developers.google.com/ml-kit/vision/barcode-scanning/android)
 * [Shopify Dev](software-engineering/shopify-dev/README.md)
