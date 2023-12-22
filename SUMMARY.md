@@ -2,6 +2,7 @@
 
 * [Snippets & Scripts](README.md)
   * [Install Scripts](snippets-and-scripts/scripts/install-scripts/README.md)
+    * [composer](readme/install-scripts/composer.md)
     * [python + libraries](readme/install-scripts/python-+-libraries/README.md)
       * [poetry](readme/install-scripts/python-+-libraries/poetry/README.md)
         * [README](readme/install-scripts/python-+-libraries/poetry/readme.md)
