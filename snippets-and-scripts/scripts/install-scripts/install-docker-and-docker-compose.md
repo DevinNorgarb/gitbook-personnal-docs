@@ -7,7 +7,7 @@ _Estimated reading time: 11 minutes_
 > sudo systemctl enable docker
 > sudo systemctl start docker
 > alias docker-compose='docker compose'
-> echo "alias docker-compose='docker compose'" >> /etc/profile.d/docker-compose.sh
+> echo "alias docker-compose='docker compose'" | sudo tee -a /etc/profile.d/docker-compose.sh
 > source /etc/profile.d/docker-compose.sh
 > ```
 >
