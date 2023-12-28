@@ -36,6 +36,7 @@
 ## Software Engineering
 
 * [WebAssemby](software-engineering/webassemby/README.md)
+  * [Go and WASM](software-engineering/webassemby/go-and-wasm.md)
   * [Shrinking .wasm Code Size](software-engineering/webassemby/shrinking-.wasm-code-size.md)
 * [Android App Development](software-engineering/android-app-development/README.md)
   * [Cordova](software-engineering/android-app-development/cordova.md)
@@ -161,6 +162,10 @@
   * [Testing WEBRTC](software-engineering/webrtc/testing-webrtc.md)
   * [Setting up STUN and TURN servers](software-engineering/webrtc/setting-up-stun-and-turn-servers.md)
 * [Content Security Policy](software-engineering/content-security-policy.md)
+* [Devops](software-engineering/devops/README.md)
+  * [Cloud-Init](software-engineering/devops/cloud-init/README.md)
+    * [Cloud-Init Valitation](software-engineering/devops/cloud-init/cloud-init-valitation.md)
+    * [Cloud Init Script to Create a new user](software-engineering/devops/cloud-init/cloud-init-script-to-create-a-new-user.md)
 
 ## OBD2
 
