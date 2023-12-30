@@ -307,6 +307,9 @@
 ## Self-Hosting
 
 * [Awesome Self-Hosted](self-hosting/awesome-self-hosted.md)
+* [Hardware](self-hosting/hardware/README.md)
+  * [IBM SystemX x369](self-hosting/hardware/ibm-systemx-x369.md)
+  * [Dell PowerEdge 2950](self-hosting/hardware/dell-poweredge-2950.md)
 
 ## GIS
 
@@ -341,7 +344,6 @@
 
 ## Pen Testing
 
-* [Page](pen-testing/page.md)
 * [Hacking Automotive Ethernet Cameras](pen-testing/hacking-automotive-ethernet-cameras.md)
 * [decompilers](pen-testing/decompilers/README.md)
   * [Android](pen-testing/decompilers/android/README.md)
