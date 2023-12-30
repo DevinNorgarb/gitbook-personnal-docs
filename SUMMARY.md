@@ -308,7 +308,7 @@
 
 * [Awesome Self-Hosted](self-hosting/awesome-self-hosted.md)
 * [Hardware](self-hosting/hardware/README.md)
-  * [IBM SystemX x369](self-hosting/hardware/ibm-systemx-x369.md)
+  * [IBM SystemX x3690](self-hosting/hardware/ibm-systemx-x3690.md)
   * [Dell PowerEdge 2950](self-hosting/hardware/dell-poweredge-2950.md)
 
 ## GIS
