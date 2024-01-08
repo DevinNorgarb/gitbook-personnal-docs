@@ -32,6 +32,7 @@
   * [Online Resize Ubuntu/Debian Disk](snippets-and-scripts/online-resize-ubuntu-debian-disk.md)
   * [Magento](snippets-and-scripts/magento.md)
     * [Magento One Line install](snippets-and-scripts/magento/magento-one-line-install.md)
+  * [Mac OS Disk Usage Analysis](readme/mac-os-disk-usage-analysis.md)
 
 ## Software Engineering
 
