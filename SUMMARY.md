@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Snippets & Scripts](README.md)
+  * [Android Backup via ADB](readme/android-backup-via-adb.md)
   * [Install Scripts](snippets-and-scripts/scripts/install-scripts/README.md)
     * [composer](readme/install-scripts/composer.md)
     * [python + libraries](readme/install-scripts/python-+-libraries/README.md)
