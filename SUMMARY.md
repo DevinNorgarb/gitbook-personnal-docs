@@ -315,6 +315,8 @@
 
 ## Self-Hosting
 
+* [Sentry Troubleshooting](self-hosting/sentry-troubleshooting.md)
+* [Page](self-hosting/page.md)
 * [Awesome Self-Hosted](self-hosting/awesome-self-hosted.md)
 * [Hardware](self-hosting/hardware/README.md)
   * [IBM SystemX x3690](self-hosting/hardware/ibm-systemx-x3690.md)
