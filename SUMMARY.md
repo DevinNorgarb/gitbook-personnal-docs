@@ -146,6 +146,8 @@
   * [Docker](software-engineering/containerisation/docker.md)
     * [MultiArch Builds](software-engineering/containerisation/docker/multiarch-builds.md)
 * [Browsers](software-engineering/browsers/README.md)
+  * [API's](software-engineering/browsers/apis/README.md)
+    * [Barcode Detection API](software-engineering/browsers/apis/barcode-detection-api.md)
   * [CORS Errors](software-engineering/browsers/cors-errors.md)
 * [ProxMox](software-engineering/proxmox/README.md)
   * [Page 1](software-engineering/proxmox/page-1.md)
