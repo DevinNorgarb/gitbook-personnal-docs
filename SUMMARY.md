@@ -151,7 +151,7 @@
     * [Shape Detection](software-engineering/browsers/apis/shape-detection/README.md)
       * [Accelerated Shape Detection in Images](software-engineering/browsers/apis/shape-detection/accelerated-shape-detection-in-images.md)
     * [Barcode Detection API](software-engineering/browsers/apis/barcode-detection-api.md)
-    * [Page 3](software-engineering/browsers/apis/page-3.md)
+    * [Browser BarcodeDetect API using Image](software-engineering/browsers/apis/browser-barcodedetect-api-using-image.md)
   * [CORS Errors](software-engineering/browsers/cors-errors.md)
 * [ProxMox](software-engineering/proxmox/README.md)
   * [Page 1](software-engineering/proxmox/page-1.md)
