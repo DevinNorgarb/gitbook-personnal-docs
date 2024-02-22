@@ -294,6 +294,8 @@
   * [elecrow neo 6M GPS Shield](microcontrollers/arduino/elecrow-neo-6m-gps-shield.md)
 * [Balena.io](microcontrollers/balena.io.md)
 * [Raspberry Pi](microcontrollers/raspberry-pi/README.md)
+  * [Diet Pi](microcontrollers/raspberry-pi/diet-pi/README.md)
+    * [Diet Pi Supported Software](microcontrollers/raspberry-pi/diet-pi/diet-pi-supported-software.md)
   * [Kodi](microcontrollers/raspberry-pi/kodi/README.md)
     * [Wiki](microcontrollers/raspberry-pi/kodi/wiki.md)
   * [SIM800L GPS/GPRS AT Commands](microcontrollers/raspberry-pi/sim800l-gps-gprs-at-commands.md)
@@ -364,6 +366,7 @@
 
 ## Pen Testing
 
+* [google-dorks](pen-testing/google-dorks.md)
 * [Hacking Automotive Ethernet Cameras](pen-testing/hacking-automotive-ethernet-cameras.md)
 * [decompilers](pen-testing/decompilers/README.md)
   * [Android](pen-testing/decompilers/android/README.md)
