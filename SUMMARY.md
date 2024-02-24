@@ -80,6 +80,8 @@
   * [CSS](software-engineering/programming/frontend/css.md)
 * [Backend](software-engineering/programming/backend/README.md)
   * [PHP](software-engineering/backend/php/README.md)
+    * [Laravel](software-engineering/backend/php/laravel/README.md)
+      * [IoC Container Guide](software-engineering/backend/php/laravel/ioc-container-guide.md)
     * [Docker for PHP Devs](software-engineering/backend/php/docker-for-php-devs.md)
 * [Principles & Practices](software-engineering/principles-and-practices/README.md)
   * [Code Reviews](software-engineering/principles-and-practices/code-reviews/README.md)
