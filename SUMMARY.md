@@ -87,6 +87,7 @@
     * [Docker for PHP Devs](software-engineering/backend/php/docker-for-php-devs.md)
 * [Principles & Practices](software-engineering/principles-and-practices/README.md)
   * [Code Reviews](software-engineering/principles-and-practices/code-reviews/README.md)
+    * [Sentry's take on Code Reviews](software-engineering/principles-and-practices/code-reviews/sentrys-take-on-code-reviews.md)
     * [\[POST\] On Pull Requests](software-engineering/principles-and-practices/code-reviews/post-on-pull-requests.md)
     * [Google - Code Review](software-engineering/principles-and-practices/code-reviews/google-code-review/README.md)
       * [Speed of Code Reviews](software-engineering/principles-and-practices/code-reviews/google-code-review/speed-of-code-reviews.md)
