@@ -154,6 +154,8 @@
   * [Docker](software-engineering/containerisation/docker.md)
     * [MultiArch Builds](software-engineering/containerisation/docker/multiarch-builds.md)
 * [Browsers](software-engineering/browsers/README.md)
+  * [Extensions](software-engineering/browsers/extensions/README.md)
+    * [SingleFile](software-engineering/browsers/extensions/singlefile.md)
   * [API's](software-engineering/browsers/apis/README.md)
     * [Shape Detection](software-engineering/browsers/apis/shape-detection/README.md)
       * [Accelerated Shape Detection in Images](software-engineering/browsers/apis/shape-detection/accelerated-shape-detection-in-images.md)
