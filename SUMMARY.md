@@ -29,6 +29,8 @@
     * [Install oh-my-zsh](snippets-and-scripts/scripts/install-scripts/install-oh-my-zsh.md)
     * [SDKMan](snippets-and-scripts/scripts/install-scripts/sdkman.md)
   * [Scripts](snippets-and-scripts/scripts/README.md)
+    * [Influx](readme/scripts/influx/README.md)
+      * [Influx DB backup](readme/scripts/influx/influx-db-backup.md)
     * [Docker Image Sizes](snippets-and-scripts/scripts/docker-image-sizes.md)
     * [Run docker commands without needing sudo](snippets-and-scripts/scripts/run-docker-commands-without-needing-sudo.md)
     * [Nginx Proxy Block](snippets-and-scripts/scripts/nginx-proxy-block.md)
