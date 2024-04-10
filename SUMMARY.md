@@ -3,6 +3,7 @@
 * [Snippets & Scripts](README.md)
   * [Android Backup via ADB](readme/android-backup-via-adb.md)
   * [Install Scripts](snippets-and-scripts/scripts/install-scripts/README.md)
+    * [rust](readme/install-scripts/rust.md)
     * [pihole](readme/install-scripts/pihole.md)
     * [n8n](readme/install-scripts/n8n.md)
     * [PiVPN](readme/install-scripts/pivpn.md)
