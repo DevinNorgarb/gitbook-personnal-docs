@@ -120,6 +120,8 @@
     * [CSS](software-engineering/tooling/css/README.md)
       * [How to inspect and copy an element's CSS the easy way](software-engineering/tooling/css/how-to-inspect-and-copy-an-elements-css-the-easy-way.md)
 * [Cryptocurrencies](software-engineering/cryptocurrencies/README.md)
+  * [ccxt](software-engineering/cryptocurrencies/ccxt/README.md)
+    * [manual](software-engineering/cryptocurrencies/ccxt/manual.md)
   * [Running your own bitcoin node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/README.md)
     * [how-to: run your own bitcoin node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/how-to-run-your-own-bitcoin-node.md)
     * [Six Reasons Why You Should Run Your Own Bitcoin Node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/six-reasons-why-you-should-run-your-own-bitcoin-node.md)
