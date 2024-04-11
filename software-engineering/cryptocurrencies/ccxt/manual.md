@@ -5,7 +5,7 @@
 * [ccxt](https://github.com/ccxt)/
 * [ccxt](https://github.com/ccxt/ccxt)
 
-Type / to search![](https://avatars.githubusercontent.com/u/12491966?v=4)
+Type / to search
 
 * [Code](https://github.com/ccxt/ccxt)
 * [Issues837](https://github.com/ccxt/ccxt/issues)
