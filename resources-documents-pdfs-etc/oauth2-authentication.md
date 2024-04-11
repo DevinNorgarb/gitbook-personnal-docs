@@ -1,4 +1,4 @@
-# OAuth2  Authentication
+# OAuth2 Authentication
 
 {% file src="../.gitbook/assets/Auth0-Infographic-Building-Constituent-Trust-GovTech (1).pdf" %}
 
