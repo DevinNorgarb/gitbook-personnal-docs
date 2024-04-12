@@ -331,6 +331,7 @@
   * [PCI-Express Bridge “Chip”](microcontrollers-and-socs/raspberry-pi/pci-express-bridge-chip.md)
   * [Argo CD for your private Raspberry Pi k3s cluster](microcontrollers-and-socs/raspberry-pi/argo-cd-for-your-private-raspberry-pi-k3s-cluster.md)
   * [Overclocking Raspberry Pi 4](microcontrollers-and-socs/raspberry-pi/overclocking-raspberry-pi-4/README.md)
+    * [SEED Studio Overclocking Guide](microcontrollers-and-socs/raspberry-pi/overclocking-raspberry-pi-4/seed-studio-overclocking-guide.md)
     * [Pi 4 Overclocking Maximum settings](microcontrollers-and-socs/raspberry-pi/overclocking-raspberry-pi-4/pi-4-overclocking-maximum-settings.md)
 * [ESP32](microcontrollers-and-socs/esp32/README.md)
   * [ESP32 CAM](microcontrollers-and-socs/esp32/esp32-cam.md)
