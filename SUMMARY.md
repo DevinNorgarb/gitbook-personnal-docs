@@ -385,6 +385,7 @@
 
 ## Pen Testing
 
+* [Bluetooth Security Research](pen-testing/bluetooth-security-research.md)
 * [google-dorks](pen-testing/google-dorks.md)
 * [Hacking Automotive Ethernet Cameras](pen-testing/hacking-automotive-ethernet-cameras.md)
 * [decompilers](pen-testing/decompilers/README.md)
