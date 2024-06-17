@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Snippets & Scripts](README.md)
+  * [Backup VPS using rsync](readme/backup-vps-using-rsync.md)
   * [Android Backup via ADB](readme/android-backup-via-adb.md)
   * [Install Scripts](snippets-and-scripts/scripts/install-scripts/README.md)
     * [rust](readme/install-scripts/rust.md)
