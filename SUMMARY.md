@@ -162,6 +162,7 @@
     * [LXC No internet Access](software-engineering/containerisation/lxc-lxd/lxc-no-internet-access.md)
   * [Docker Compose](software-engineering/containerisation/docker-compose.md)
   * [Docker](software-engineering/containerisation/docker.md)
+    * [Run docker without sudo](software-engineering/containerisation/docker/run-docker-without-sudo.md)
     * [MultiArch Builds](software-engineering/containerisation/docker/multiarch-builds.md)
 * [Browsers](software-engineering/browsers/README.md)
   * [Extensions](software-engineering/browsers/extensions/README.md)
