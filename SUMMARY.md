@@ -428,6 +428,26 @@
 
 ## Drones
 
+* [DJI Docs (Android)](drones/dji-docs-android/README.md)
+  * [Choose a language](drones/dji-docs-android/choose-a-language.md)
+  * [Introduction](drones/dji-docs-android/introduction.md)
+  * [Introduction](drones/dji-docs-android/introduction-1.md)
+  * [Creating a Panorama Application](drones/dji-docs-android/creating-a-panorama-application.md)
+  * [Android](drones/dji-docs-android/android.md)
+  * [iOS](drones/dji-docs-android/ios.md)
+  * [Creating a Camera Application](drones/dji-docs-android/creating-a-camera-application.md)
+  * [Importing and Activating DJI SDK in Android Studio Project](drones/dji-docs-android/importing-and-activating-dji-sdk-in-android-studio-project.md)
+  * [Creating a MapView and Waypoint Application](drones/dji-docs-android/creating-a-mapview-and-waypoint-application.md)
+  * [Creating a MapView and Waypoint Applicatio](drones/dji-docs-android/creating-a-mapview-and-waypoint-applicatio.md)
+  * [Creating a Camera Application](drones/dji-docs-android/creating-a-camera-application-1.md)
+  * [Creating a Photo and Video Playback Application](drones/dji-docs-android/creating-a-photo-and-video-playback-application.md)
+  * [iOS](drones/dji-docs-android/ios-1.md)
+  * [Creating a Panorama Application](drones/dji-docs-android/creating-a-panorama-application-1.md)
+  * [Android](drones/dji-docs-android/android-1.md)
+  * [创建智能飞行预设航点功能App](drones/dji-docs-android/chuang-jian-zhi-neng-fei-xing-yu-she-hang-dian-gong-neng-app.md)
+  * [创建航拍相机App](drones/dji-docs-android/chuang-jian-hang-pai-xiang-ji-app.md)
+  * [创建航拍相机App](drones/dji-docs-android/chuang-jian-hang-pai-xiang-ji-app-1.md)
+  * [创建智能飞行预设航点功能App](drones/dji-docs-android/chuang-jian-zhi-neng-fei-xing-yu-she-hang-dian-gong-neng-app-1.md)
 * [dji-firmware-tools](drones/dji-firmware-tools.md)
 * [DroneBridge](drones/dronebridge.md)
 
