@@ -147,6 +147,7 @@
   * [OBD2 Dashboard](software-engineering/grafana/obd2-dashboard.md)
   * [Strava Dashboard](software-engineering/grafana/strava-dashboard.md)
 * [Documentation](software-engineering/documentation/README.md)
+  * [Github README](software-engineering/documentation/github-readme.md)
   * [Tools](software-engineering/documentation/tools.md)
   * [General](software-engineering/documentation/general.md)
 * [Containerisation](software-engineering/containerisation/README.md)
