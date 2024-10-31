@@ -428,6 +428,7 @@
 
 ## Maritime AIS
 
+* [AIS RESEARCH USING A RASPBERRY PI (2022 Update)](maritime-ais/ais-research-using-a-raspberry-pi-2022-update.md)
 * [AISHub RPiAIS](maritime-ais/aishub-rpiais.md)
 * [Marine Traffic SLR350](maritime-ais/marine-traffic-slr350.md)
 
