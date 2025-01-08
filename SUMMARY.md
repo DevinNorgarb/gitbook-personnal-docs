@@ -459,6 +459,8 @@
 
 ## Software Defined Radio
 
+* [What is Open RAN?](software-defined-radio/what-is-open-ran.md)
+* [Canonical Open RAN](software-defined-radio/canonical-open-ran.md)
 * [The BIG List of RTL-SDR Supported Software](software-defined-radio/the-big-list-of-rtl-sdr-supported-software.md)
 
 ## Resources, Documents, PDF's, etc
