@@ -392,9 +392,12 @@
 
 ## Pen Testing
 
+* [Drones](pen-testing/drones/README.md)
+  * [DIY DJI Aeroscope](pen-testing/drones/diy-dji-aeroscope.md)
+* [Automotive](pen-testing/automotive/README.md)
+  * [Hacking Automotive Ethernet Cameras](pen-testing/automotive/hacking-automotive-ethernet-cameras.md)
 * [Bluetooth Security Research](pen-testing/bluetooth-security-research.md)
 * [google-dorks](pen-testing/google-dorks.md)
-* [Hacking Automotive Ethernet Cameras](pen-testing/hacking-automotive-ethernet-cameras.md)
 * [decompilers](pen-testing/decompilers/README.md)
   * [Android](pen-testing/decompilers/android/README.md)
     * [smali](pen-testing/decompilers/android/smali.md)
