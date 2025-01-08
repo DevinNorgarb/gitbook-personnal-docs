@@ -300,7 +300,7 @@ MapView要求在其所在的Activity的生命周期方法中回调该MapView的�
     }
 ```
 
-这个函数会在SDK APIs初始化完成和**DJIDrone.connectToDrone()**调用后被调用。请注意只有在SDK激活成功的情况下才会调用SDK APIs，以上函数在checkPermission返回0的情况下被调用。
+这个函数会在SDK APIs初始化完成和**DJIDrone.connectToDrone()**&#x8C03;用后被调用。请注意只有在SDK激活成功的情况下才会调用SDK APIs，以上函数在checkPermission返回0的情况下被调用。
 
 ```
     new Thread(){
@@ -327,7 +327,7 @@ MapView要求在其所在的Activity的生命周期方法中回调该MapView的�
         }.start();
 ```
 
-为了更新主控信息，我们还需要在**onResume**里调用**public boolean startUpdateTimer(int interval)**，在**onPause**里调用**public boolean stopUpdateTimer()**停止更新。
+为了更新主控信息，我们还需要在**onResume**里调用**public boolean startUpdateTimer(int interval)**，在**onPause**里调用**public boolean stopUpdateTimer()**&#x505C;止更新。
 
 ```
     @Override
@@ -368,7 +368,7 @@ MapView要求在其所在的Activity的生命周期方法中回调该MapView的�
     }
 ```
 
-当我们点击地图时，**public void onMapClick(LatLng point)**这段代码会被执行。DJIGroundStationWaypoint的一个实例会被添加到mGroundStationTask里。
+当我们点击地图时，**public void onMapClick(LatLng point)**&#x8FD9;段代码会被执行。DJIGroundStationWaypoint的一个实例会被添加到mGroundStationTask里。
 
 我们添加“clear”按钮清空所有已添加的航点。点击“clear”按钮时，所有地图上的标记点和mGroundStationTask里所有的航点都会被清空。
 
@@ -452,9 +452,9 @@ MapView要求在其所在的Activity的生命周期方法中回调该MapView的�
     }
 ```
 
-正如我们所看到的那样，首先我们要调用**public void openGroundStation(final DJIGroundStationExecuteCallBack mCallBack)**打开地面站，当地面站打开成功（返回**GroundStationResult.GS\_Result\_Successed**），**public void uploadGroundStationTask(final DJIGroundStationTask task, final DJIGroundStationExecuteCallBack mCallBack)**将会被执行。
+正如我们所看到的那样，首先我们要调用**public void openGroundStation(final DJIGroundStationExecuteCallBack mCallBack)**&#x6253;开地面站，当地面站打开成功（返回**GroundStationResult.GS\_Result\_Successed**），**public void uploadGroundStationTask(final DJIGroundStationTask task, final DJIGroundStationExecuteCallBack mCallBack)**&#x5C06;会被执行。
 
-**注意:**当遇到**GroundStationResult.GS\_Result\_Rc\_Control\_Mode\_Error**这个错误时，意思是你的遥控器模式开关没有拨到F挡，在使用地面站，热点环绕，操纵杆时，遥控器模式开关必须拨到F挡。
+**注意:**&#x5F53;遇到**GroundStationResult.GS\_Result\_Rc\_Control\_Mode\_Error**这个错误时，意思是你的遥控器模式开关没有拨到F挡，在使用地面站，热点环绕，操纵杆时，遥控器模式开关必须拨到F挡。
 
 为了解决这个问题，请将遥控器模式开关拨到F挡（之前版本是A挡）然后尝试重新上传航点，当飞行器上电时模式开关已经置于F挡，则需要来回切换一下才能上传航点。
 
@@ -478,7 +478,7 @@ MapView要求在其所在的Activity的生命周期方法中回调该MapView的�
     }
 ```
 
-在地面站任务进行中，通过调用**public void pauseGroundStationTask(final DJIGroundStationExecuteCallBack mCallBack)**可以暂停任务，调用**public void closeGroundStation(final DJIGroundStationExecuteCallBack mCallBack)**可以关闭地面站
+在地面站任务进行中，通过调用**public void pauseGroundStationTask(final DJIGroundStationExecuteCallBack mCallBack)**&#x53EF;以暂停任务，调用**public void closeGroundStation(final DJIGroundStationExecuteCallBack mCallBack)**&#x53EF;以关闭地面站
 
 ```
         private void stopGroundStationTask(){

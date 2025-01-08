@@ -2,7 +2,7 @@
 description: https://edu-cyberpg.com/Technology/ethics-google-hacking.html
 ---
 
-# GOOGLE HACKING ETHICS
+# Google: Hacking Ethics
 
 ## GOOGLE HACKING ETHICS
 
@@ -37,7 +37,7 @@ Using search engines such as **Google, "search engine hackers"** can easily find
 
 This article outlines the more harmful applications of the Google search engine, techniques that have collectively been termed "Google hacking." The intent of this article is to educate web administrators and the security community in the hopes of eventually stopping this form of information leakage.
 
-**This document is an excerpt of the full **_**Google Hacker's Guide published by Johnny Long,**_ was located at http://johnny.ihackstuff.com which has been replaced with [http://www.hackersforcharity.org/](http://www.hackersforcharity.org/)
+**This document is an excerpt of the full&#x20;**_**Google Hacker's Guide published by Johnny Long,**_ was located at http://johnny.ihackstuff.com which has been replaced with [http://www.hackersforcharity.org/](http://www.hackersforcharity.org/)
 
 VARIOUS OPERATORS AVAILABLE:
 
@@ -79,7 +79,7 @@ There are some exceptions to this rule. If a link on the Microsoft web page poin
 
 Directory listings provide a list of files and directories in a browser window instead of the typical text-and graphics mix generally associated with web pages. These pages offer a great environment for deep information gathering (see Figure 1).
 
-[**Figure 1**](http://ptgmedia.pearsoncmg.com/images/art\_fogie\_googleguide1/elementLinks/fig01.jpg) **A typical directory listing.**
+[**Figure 1**](http://ptgmedia.pearsoncmg.com/images/art_fogie_googleguide1/elementLinks/fig01.jpg) **A typical directory listing.**
 
 Locating directory listings with Google is fairly straightforward. Figure 1 shows that most directory listings begin with the phrase Index of, which also shows in the title. An obvious query to find this type of page might be intitle:index.of, which may find pages with the term index of in the title of the document. Unfortunately, this query will return a large number of false positives, such as pages with the following titles:
 
@@ -118,7 +118,7 @@ intitle:index.of server.at site:aol.com
 
 The result of this query indicates that gprojects.web.aol.com and vidup-r1.blue.aol.com both run Apache web servers.
 
-It's also possible to determine the version of a web server based on default pages installed on that server. When a web server is installed, it generally will ship with a set of default web pages, like the Apache 1.2.6 page shown in [Figure 3](http://ptgmedia.pearsoncmg.com/images/art\_fogie\_googleguide1/elementLinks/fig03.jpg):
+It's also possible to determine the version of a web server based on default pages installed on that server. When a web server is installed, it generally will ship with a set of default web pages, like the Apache 1.2.6 page shown in [Figure 3](http://ptgmedia.pearsoncmg.com/images/art_fogie_googleguide1/elementLinks/fig03.jpg):
 
 **Figure 3 Apache test page.**
 
@@ -157,11 +157,11 @@ Combining a list like this one with a carefully crafted Google search, Google ca
 allinurl:/random_banner/index.cgi
 ```
 
-returns the results shown in [Figure 4](http://ptgmedia.pearsoncmg.com/images/art\_fogie\_googleguide1/elementLinks/fig04.jpg).
+returns the results shown in [Figure 4](http://ptgmedia.pearsoncmg.com/images/art_fogie_googleguide1/elementLinks/fig04.jpg).
 
-[**Figure 4**](http://ptgmedia.pearsoncmg.com/images/art\_fogie\_googleguide1/elementLinks/fig04.jpg) **Sample search using a line from a CGI scanner.**
+[**Figure 4**](http://ptgmedia.pearsoncmg.com/images/art_fogie_googleguide1/elementLinks/fig04.jpg) **Sample search using a line from a CGI scanner.**
 
-A hacker can take sites returned from this Google search, apply a bit of hacker "magic," and eventually get the broken random\_banner program to cough up any file on that web server, including the password file, as shown in [Figure 5](http://ptgmedia.pearsoncmg.com/images/art\_fogie\_googleguide1/elementLinks/fig05.jpg).
+A hacker can take sites returned from this Google search, apply a bit of hacker "magic," and eventually get the broken random\_banner program to cough up any file on that web server, including the password file, as shown in [Figure 5](http://ptgmedia.pearsoncmg.com/images/art_fogie_googleguide1/elementLinks/fig05.jpg).
 
 **Figure 5 Password file captured from a vulnerable site found using a Google search.**
 
@@ -171,7 +171,7 @@ Of the many Google hacking techniques we've looked at, this technique is one of 
 
 ### Google Automated Scanning
 
-Google [frowns on automation](http://www.google.com/terms\_of\_service.html): "You may not send automated queries of any sort to Google's system without express permission in advance from Google. Note that 'sending automated queries' includes, among other things:
+Google [frowns on automation](http://www.google.com/terms_of_service.html): "You may not send automated queries of any sort to Google's system without express permission in advance from Google. Note that 'sending automated queries' includes, among other things:
 
 * using any software which sends queries to Google to determine how a web site or web page 'ranks' on Google for various queries;
 * 'meta-searching' Google; and
@@ -185,11 +185,11 @@ Gooscan is a UNIX (Linux/BSD/Mac OS X) tool that automates queries against Googl
 
 For more information about this tool, including the ethical implications of its use, see http://johnny.ihackstuff.com
 
-[Google Hacking Mini-Guide](http://www.oocities.org/zuhair\_ali/Misc/googlehacks.html) Date: May 7, 2004 By Johnny Long.
+[Google Hacking Mini-Guide](http://www.oocities.org/zuhair_ali/Misc/googlehacks.html) Date: May 7, 2004 By Johnny Long.
 
 #### Googledorks
 
-_**The term "googledork" was coined by the author and originally meant "An inept or foolish person as revealed by Google."**_ After a great deal of media attention, the term came to describe those who "troll the Internet for confidential goods." Either description is fine, really. What matters is that the term _**googledork**_** conveys the concept that sensitive stuff is on the web, and Google can help you find it.** The official googledorks page http://johnny.ihackstuff.com/googledorks lists many different examples of unbelievable things that have been dug up through Google by the maintainer of the page, Johnny Long. Each listing shows the Google search required to find the information, along with a description of why the data found on each page is so interesting.
+_**The term "googledork" was coined by the author and originally meant "An inept or foolish person as revealed by Google."**_ After a great deal of media attention, the term came to describe those who "troll the Internet for confidential goods." Either description is fine, really. What matters is that the term _**googledork**_**&#x20;conveys the concept that sensitive stuff is on the web, and Google can help you find it.** The official googledorks page http://johnny.ihackstuff.com/googledorks lists many different examples of unbelievable things that have been dug up through Google by the maintainer of the page, Johnny Long. Each listing shows the Google search required to find the information, along with a description of why the data found on each page is so interesting.
 
 #### GooPot
 

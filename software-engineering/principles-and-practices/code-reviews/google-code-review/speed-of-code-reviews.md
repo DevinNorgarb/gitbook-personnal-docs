@@ -28,7 +28,7 @@ Instead, wait for a break point in your work before you respond to a request for
 
 ### Fast Responses <a href="#responses" id="responses"></a>
 
-When we talk about the speed of code reviews, it is the _response_ time that we are concerned with, as opposed to how long it takes a CL to get through the whole review and be submitted. The whole process should also be fast, ideally, but **it’s even more important for the **_**individual responses**_** to come quickly than it is for the whole process to happen rapidly.**
+When we talk about the speed of code reviews, it is the _response_ time that we are concerned with, as opposed to how long it takes a CL to get through the whole review and be submitted. The whole process should also be fast, ideally, but **it’s even more important for the&#x20;**_**individual responses**_**&#x20;to come quickly than it is for the whole process to happen rapidly.**
 
 Even if it sometimes takes a long time to get through the entire review _process_, having quick responses from the reviewer throughout the process significantly eases the frustration developers can feel with “slow” code reviews.
 

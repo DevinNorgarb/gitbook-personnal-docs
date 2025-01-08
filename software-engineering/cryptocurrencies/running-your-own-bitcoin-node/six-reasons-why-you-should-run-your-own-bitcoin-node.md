@@ -22,7 +22,7 @@ _Privacy._
 
 When your wallet tells you your bitcoin balance, it asks a RANDOM public Bitcoin node what balance each of your addresses contains. It then gives you the results, and you see your total bitcoin in that wallet. Even empty addresses which you haven’t used get queried. Surveillance companies run some of these nodes. “What the Hell?” Yes, it’s true.
 
-You are telling a random entity, possibly a surveillance company, your IP address (which can be used to identify you), and that you have a Bitcoin wallet, and ALL of your current and future addresses you'll use within that wallet, and all the balances of all those addresses, now and later. Providing this information to surveillance companies is dangerous for many reasons. For example, this data can be leaked intentionally — to the government when requested — or unintentionally (to hackers). Governments may target Bitcoiners with heavy wealth taxes or confiscation, as the US government once did for gold with order [6102](https://en.wikipedia.org/wiki/Executive\_Order\_6102) in 1933, and hackers may target you to extort or trick you out of your bitcoin.
+You are telling a random entity, possibly a surveillance company, your IP address (which can be used to identify you), and that you have a Bitcoin wallet, and ALL of your current and future addresses you'll use within that wallet, and all the balances of all those addresses, now and later. Providing this information to surveillance companies is dangerous for many reasons. For example, this data can be leaked intentionally — to the government when requested — or unintentionally (to hackers). Governments may target Bitcoiners with heavy wealth taxes or confiscation, as the US government once did for gold with order [6102](https://en.wikipedia.org/wiki/Executive_Order_6102) in 1933, and hackers may target you to extort or trick you out of your bitcoin.
 
 ### Reason 2 <a href="#reason-2" id="reason-2"></a>
 
@@ -72,4 +72,4 @@ Running your own node is super cool, and gives you a great appreciation of the p
 
 Hopefully, it is clear now why you should run a node. There are various ways. [If you want individual help, see here](https://armantheparman.com/mentorship/). For the computer illiterate, help is available at [www.bitcoin4boomers.com](http://www.bitcoin4boomers.com/).
 
-_This is a guest post by Arman the Parman. Opinions expressed are entirely their own and do not necessarily reflect those of BTC Inc or_ Bitcoin Magazine_._
+_This is a guest post by Arman the Parman. Opinions expressed are entirely their own and do not necessarily reflect those of BTC Inc or_ Bitcoin Magazin&#x65;_._

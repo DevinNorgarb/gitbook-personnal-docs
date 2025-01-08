@@ -14,11 +14,7 @@ First step of setting up Amazon EventBridge partner integration is done in Shopi
 
 You should be presented with “Create an EventBridge source” modal which lets you setup partner integration for Amazon EventBridge. Firstly, you will need Amazon account id which you can find by logging into your Amazon account and clicking on your account name on the top right. Next, you will need to select region from the dropdown. Lastly, provide “Source name” per your wish.
 
-<div data-full-width="true">
-
-<figure><img src="https://xdoo.hr/wp-content/uploads/2022/07/image-1-1024x754.png" alt="Create EventBridge source modal configured" height="244" width="332"><figcaption><p>Create EventBridge source modal configured</p></figcaption></figure>
-
-</div>
+<div data-full-width="true"><figure><img src="https://xdoo.hr/wp-content/uploads/2022/07/image-1-1024x754.png" alt="Create EventBridge source modal configured" height="244" width="332"><figcaption><p>Create EventBridge source modal configured</p></figcaption></figure></div>
 
 When you click on create, new “Partner event source” will be configured in AWS account. Check it out by going to AWS -> EventBridge -> Select Integration/Partner event sources from the menu. Name will be in the format of _**aws.partner/shopify.com/SHOPIFY\_APP\_ID/NAME\_YOU\_PROVIDED\_IN\_MODAL**_
 
@@ -260,9 +256,9 @@ Congratulations, you have successfully processed Shopify webhooks using Amazon E
 
 **If you want to level up your apps and your codebase, check out other posts on our blog** [**xdoo.hr**](https://xdoo.hr/)**.**\
 \
-_**Do you need help with setting up Shopify webhooks using EventBridge in Laravel app?**_\
+&#xNAN;_**Do you need help with setting up Shopify webhooks using EventBridge in Laravel app?**_\
 \
-_**For anything related to Shopify or Laravel development send us your inquiry to**_ [_**kristijan@xdoo.hr**_](mailto:kristijan@xdoo.hr?subject=I%20need%20help%20with%20Laravel%20Project)!
+&#xNAN;_**For anything related to Shopify or Laravel development send us your inquiry to**_ [_**kristijan@xdoo.hr**_](mailto:kristijan@xdoo.hr?subject=I%20need%20help%20with%20Laravel%20Project)!
 
 Tags: [AWS](https://xdoo.hr/tag/aws/), [EventBridge](https://xdoo.hr/tag/eventbridge/), [Laravel](https://xdoo.hr/tag/laravel/), [Shopify](https://xdoo.hr/tag/shopify/), [SQS](https://xdoo.hr/tag/sqs/), [Webhooks](https://xdoo.hr/tag/webhooks/)
 

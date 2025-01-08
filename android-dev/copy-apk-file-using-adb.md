@@ -23,9 +23,9 @@ adb shell pm path com.example.someapp
 ```
 
 The output will look something like\
-_package:/data/app/com.example.someapp-2.apk_\
+&#xNAN;_&#x70;ackage:/data/app/com.example.someapp-2.apk_\
 or\
-_package:/data/app/com.example.someapp-nfFSVxn\_CTafgra3Fr\_rXQ==/base.apk_
+&#xNAN;_&#x70;ackage:/data/app/com.example.someapp-nfFSVxn\_CTafgra3Fr\_rXQ==/base.apk_
 
 3\) Using the full path name from Step 2, pull the APK file from the Android device to the development box.
 

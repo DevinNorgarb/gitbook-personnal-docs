@@ -66,13 +66,13 @@ In a vehicle, **safety and reliability** are the two most valued features. CAN-B
 
 **What will happen if there is no CAN in the car?**
 
-![](https://blog.seeedstudio.com/wp-content/uploads/2019/11/image-160.png)Ref: [Volkspage](http://www.volkspage.net/technik/ssp/ssp/SSP\_238.pdf)
+![](https://blog.seeedstudio.com/wp-content/uploads/2019/11/image-160.png)Ref: [Volkspage](http://www.volkspage.net/technik/ssp/ssp/SSP_238.pdf)
 
 Without the CAN protocol, electronic modules in vehicles will have to communicate with each other using direct, point-to-point analog signal lines. With each module requiring a direct line connected for communication, not only is it time-consuming, it will be messy with all the excessive amount of wiring as seen in the picture above. And there may be unreliable communication between devices. Excessive wires may require additional equipment, which also creates cost issues.
 
 **What will happen if there is a CAN in the car?**
 
-![](https://blog.seeedstudio.com/wp-content/uploads/2019/11/image-161.png)Ref: [Volkspage](http://www.volkspage.net/technik/ssp/ssp/SSP\_238.pdf)
+![](https://blog.seeedstudio.com/wp-content/uploads/2019/11/image-161.png)Ref: [Volkspage](http://www.volkspage.net/technik/ssp/ssp/SSP_238.pdf)
 
 With CAN protocol, it eliminates the need for all these wirings by enabling electronic devices to communicate with each other with a single multiplex wire that connects each node in the network to the main dashboard as seen in the picture above.
 
@@ -121,21 +121,21 @@ I am pretty sure you will come across other “higher-layer protocols” that ar
 * The CAN standard does not specify how to handle messages larger than 8 bytes or how to decode the raw data. Therefore, a set of standardized protocols are developed to further specify how data is communicated between ECUs of a given network and OBD2 is one of them.
 * OBD which stands for on-board diagnostics is your vehicle’s built-in self-diagnostic system. OBD2 can use one of (many) different bus systems to transfer diagnostic data from and to your car.
 * One simple analogy I would use to differentiate between the two of them will be OBD2 is like a language that we speak where we use CAN as a communication device like a phone to talk to someone which in this case a vehicle and its state of health.
-* To read more about OBD2, you can check out the [Wiki Page on OBD.](https://en.wikipedia.org/wiki/On-board\_diagnostics)
+* To read more about OBD2, you can check out the [Wiki Page on OBD.](https://en.wikipedia.org/wiki/On-board_diagnostics)
 
 ***
 
 ### Explore Seeed’s CAN-BUS products!
 
-[![](https://www.seeedstudio.com/blog/wp-content/uploads/2022/06/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE\_1654488732426-1-1030x207.png)](https://www.seeedstudio.com/vehicle-hacking-tools)
+[![](https://www.seeedstudio.com/blog/wp-content/uploads/2022/06/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_1654488732426-1-1030x207.png)](https://www.seeedstudio.com/vehicle-hacking-tools)
 
 Here at Seeed, we offer a variety of CAN-BUS products for your project needs! As shown below:
 
 **Updated on 2nd Jun 2022**
 
-#### [New Release! LoRa-E5 CAN Development Kit**($39.90)**](https://www.seeedstudio.com/LoRa-E5-CAN-FD-dev-kit-CANBUS-p-5398.html)
+#### [New Release! LoRa-E5 CAN Development Ki&#x74;**($39.90)**](https://www.seeedstudio.com/LoRa-E5-CAN-FD-dev-kit-CANBUS-p-5398.html)
 
-![](https://www.seeedstudio.com/blog/wp-content/uploads/2022/06/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE\_1654652205923.png)
+![](https://www.seeedstudio.com/blog/wp-content/uploads/2022/06/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_1654652205923.png)
 
 LoRa-E5 CAN Development Kit is based on the **LoRa-E5 STM32WLE5JC** Module and supports **CAN FD, CAN2.0, and RS485 communication**. It provides a user-friendly waterproof case and solar charging interface for better outdoor deployment.&#x20;
 
@@ -151,7 +151,7 @@ Features of the LoRa-E5 CAN Development kit include:
 
 If you missed out on the previous updates, please [read the full story](https://www.seeedstudio.com/blog/2022/06/02/we-listen-and-take-action9-a-sense-of-engagement-seeed-builds-the-lora-e5-can-development-kit-together-with-the-community/) on how we listen to the community voices and take action on modifying the devices.
 
-#### [CAN-BUS Shield V2 ](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm\_source=blog\&utm\_medium=blog)[**($24.50)**](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm\_source=blog\&utm\_medium=blog)
+#### [CAN-BUS Shield V2 ](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm_source=blog\&utm_medium=blog)[**($24.50)**](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm_source=blog\&utm_medium=blog)
 
 [![](https://blog.seeedstudio.com/wp-content/uploads/2019/11/image-166.png)](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html)
 
@@ -164,7 +164,7 @@ Features of this CAN-BUS shield include:
 * Screw terminal that easily to connect CAN\_H and CAN\_L
 * SPI Interface up to 10 MHz   &#x20;
 
-#### [CANBed – Arduino CAN-BUS Development Kit (Atmega32U4 with MCP2515 and MCP2551) ](https://www.seeedstudio.com/CANBed-Arduino-CAN-BUS-Development-Kit-Atmega32U4-with-MCP2515-and-MCP2551-p-4365.html?utm\_source=blog\&utm\_medium=blog)[**($14.90)**](https://www.seeedstudio.com/CANBed-Arduino-CAN-BUS-Development-Kit-Atmega32U4-with-MCP2515-and-MCP2551-p-4365.html?utm\_source=blog\&utm\_medium=blog)
+#### [CANBed – Arduino CAN-BUS Development Kit (Atmega32U4 with MCP2515 and MCP2551) ](https://www.seeedstudio.com/CANBed-Arduino-CAN-BUS-Development-Kit-Atmega32U4-with-MCP2515-and-MCP2551-p-4365.html?utm_source=blog\&utm_medium=blog)[**($14.90)**](https://www.seeedstudio.com/CANBed-Arduino-CAN-BUS-Development-Kit-Atmega32U4-with-MCP2515-and-MCP2551-p-4365.html?utm_source=blog\&utm_medium=blog)
 
 [![](https://blog.seeedstudio.com/wp-content/uploads/2019/11/image-168.png)](https://www.seeedstudio.com/CANBed-Arduino-CAN-BUS-Development-Kit-Atmega32U4-with-MCP2515-and-MCP2551-p-4365.html)
 
@@ -178,7 +178,7 @@ Features of the CANBED include:
 
 #### [CANBed FD – Arduino CAN-FD Development Kit ($17.90)](https://www.seeedstudio.com/CANBed-FD-Arduino-CAN-FD-Development-Kit-p-4724.html)
 
-![](https://media-cdn.seeedstudio.com/media/catalog/product/cache/9d0ce51a71ce6a79dfa2a98d65a0f0bd/1/0/102991442\_preview-07.png)
+![](https://media-cdn.seeedstudio.com/media/catalog/product/cache/9d0ce51a71ce6a79dfa2a98d65a0f0bd/1/0/102991442_preview-07.png)
 
 The newest addition to the CAN family, this CAN Bed-FD carries an **MCP2517FD** CAN-BUS controller with SPI interface and MCP2542FD CAN transceiver to achieve the CAN-BUS capability. There is also an ATmega32U4 with Arduino Leonardo bootloader on the board, which allows for easy programming using Arduino IDE.
 
@@ -190,7 +190,7 @@ Features of the CANBed-FD include:
 * Industrial standard 9 pin sub-D connector or 4-pin terminal
 * Work at CAN-FD and CAN 2.0
 
-#### [Serial CAN-BUS Module based on MCP2551 and MCP2515 ](https://www.seeedstudio.com/Serial-CAN-BUS-Module-based-on-MCP2551-and-MCP2515.html?utm\_source=blog\&utm\_medium=blog)[**($14.90)**](https://www.seeedstudio.com/Serial-CAN-BUS-Module-based-on-MCP2551-and-MCP2515.html?utm\_source=blog\&utm\_medium=blog)
+#### [Serial CAN-BUS Module based on MCP2551 and MCP2515 ](https://www.seeedstudio.com/Serial-CAN-BUS-Module-based-on-MCP2551-and-MCP2515.html?utm_source=blog\&utm_medium=blog)[**($14.90)**](https://www.seeedstudio.com/Serial-CAN-BUS-Module-based-on-MCP2551-and-MCP2515.html?utm_source=blog\&utm_medium=blog)
 
 [![](https://blog.seeedstudio.com/wp-content/uploads/2019/11/image-167.png)](https://www.seeedstudio.com/Serial-CAN-BUS-Module-based-on-MCP2551-and-MCP2515.html)
 
@@ -201,9 +201,9 @@ Features of this Serial CAN-BUS module include:
 * UART to CAN-BUS communication
 * Up to 115200 UART baud rate (default 9600)
 * Up to 1Mb/s CAN-BUS baud rate
-* Easy-to-use [Arduino library](https://github.com/Longan-Labs/Serial\_CAN\_Arduino)
+* Easy-to-use [Arduino library](https://github.com/Longan-Labs/Serial_CAN_Arduino)
 
-#### [OBD-II CAN Bus GPS Development Kit ](https://www.seeedstudio.com/OBD-II-CAN-Bus-GPS-Development-Kit-p-2868.html?utm\_source=blog\&utm\_medium=blog)[**($29.90)**](https://www.seeedstudio.com/OBD-II-CAN-Bus-GPS-Development-Kit-p-2868.html?utm\_source=blog\&utm\_medium=blog)
+#### [OBD-II CAN Bus GPS Development Kit ](https://www.seeedstudio.com/OBD-II-CAN-Bus-GPS-Development-Kit-p-2868.html?utm_source=blog\&utm_medium=blog)[**($29.90)**](https://www.seeedstudio.com/OBD-II-CAN-Bus-GPS-Development-Kit-p-2868.html?utm_source=blog\&utm_medium=blog)
 
 [![](https://blog.seeedstudio.com/wp-content/uploads/2019/11/image-169.png)](https://www.seeedstudio.com/OBD-II-CAN-Bus-GPS-Development-Kit-p-2868.html)
 
@@ -213,20 +213,20 @@ If you want to **record the GPS log** at the same time, this OBD-II CAN Bus GPS 
 
 ### CAN-BUS Projects
 
-#### [Volkswagen CAN-BUS Gaming](https://community.seeedstudio.com/project\_detail.html?id=291)
+#### [Volkswagen CAN-BUS Gaming](https://community.seeedstudio.com/project_detail.html?id=291)
 
-![](https://github.com/SeeedDocument/CAN\_BUS\_Shield/blob/master/image/project1.JPG?raw=true)Inspired by Silas Parker
+![](https://github.com/SeeedDocument/CAN_BUS_Shield/blob/master/image/project1.JPG?raw=true)Inspired by Silas Parker
 
 Ever wanted to play a car/truck simulator with a real dashboard on your PC? With the CAN-BUS shield, you can! In this project, I’m trying to control a VW Polo 6R dashboard via CAN Bus with an Arduino Uno and a Seeed CAN Bus Shield.
 
 **What you’ll need:**
 
-* [Seeeduino V4.2 ](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html?utm\_source=blog\&utm\_medium=blog)/ [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm\_source=blog\&utm\_medium=blog)
-* [CAN-BUS Shield V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm\_source=blog\&utm\_medium=blog)
-* [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm\_source=blog\&utm\_medium=blog)
-* [Type-B USB cable for Arduino Diecimila and Freeduino](https://www.seeedstudio.com/Type-B-USB-cable-for-Arduino-Diecimila-and-Freeduino-p-130.html?utm\_source=blog\&utm\_medium=blog)
+* [Seeeduino V4.2 ](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html?utm_source=blog\&utm_medium=blog)/ [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm_source=blog\&utm_medium=blog)
+* [CAN-BUS Shield V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm_source=blog\&utm_medium=blog)
+* [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)
+* [Type-B USB cable for Arduino Diecimila and Freeduino](https://www.seeedstudio.com/Type-B-USB-cable-for-Arduino-Diecimila-and-Freeduino-p-130.html?utm_source=blog\&utm_medium=blog)
 
-Interested? You can check out the full tutorial at [SeeedStudio Community!](https://community.seeedstudio.com/project\_detail.html?id=291)
+Interested? You can check out the full tutorial at [SeeedStudio Community!](https://community.seeedstudio.com/project_detail.html?id=291)
 
 #### [Hacking your Vehicle](https://www.instructables.com/id/Hack-your-vehicle-CAN-BUS-with-Arduino-and-Seeed-C/)
 
@@ -234,51 +234,51 @@ Modern Vehicles all come equipped with a CAN-BUS Controller Area Network, Instea
 
 **What do you need?**
 
-* [Seeeduino V4.2 ](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html?utm\_source=blog\&utm\_medium=blog)/ [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm\_source=blog\&utm\_medium=blog)
-* [CAN-BUS Shield V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm\_source=blog\&utm\_medium=blog)
-* [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm\_source=blog\&utm\_medium=blog)
+* [Seeeduino V4.2 ](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html?utm_source=blog\&utm_medium=blog)/ [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm_source=blog\&utm_medium=blog)
+* [CAN-BUS Shield V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm_source=blog\&utm_medium=blog)
+* [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)
 
 Interested? You can find the full tutorial by [mvilijoen2 on Instructables!](https://www.instructables.com/id/Hack-your-vehicle-CAN-BUS-with-Arduino-and-Seeed-C/)
 
 #### [Seeed Studio CAN-BUS V2.0 Hacking – Getting Started](https://www.instructables.com/Seeed-Studio-CAN-BUS-V20-Hacking-Getting-Started/)
 
-![](https://www.seeedstudio.com/blog/wp-content/uploads/2022/06/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE\_16547575107934.png)
+![](https://www.seeedstudio.com/blog/wp-content/uploads/2022/06/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16547575107934.png)
 
 This instructable is meant for beginners who already know their way around Arduino. In this instructable, you will learn how to return some CAN-BUS data from your vehicle.
 
 What you’ll need:
 
-* [Seeeduino V4.2 ](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html?utm\_source=blog\&utm\_medium=blog)/ [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm\_source=blog\&utm\_medium=blog)
-* [SeeedStudio CAN-BUS Shield](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm\_source=blog\&utm\_medium=blog)
-* [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm\_source=blog\&utm\_medium=blog)
+* [Seeeduino V4.2 ](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html?utm_source=blog\&utm_medium=blog)/ [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm_source=blog\&utm_medium=blog)
+* [SeeedStudio CAN-BUS Shield](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm_source=blog\&utm_medium=blog)
+* [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)
 
 Interested? You can find the full tutorial by [mvilijoen2 on Instructables!](https://www.instructables.com/Seeed-Studio-CAN-BUS-V20-Hacking-Getting-Started/)
 
 #### [CAN Bus Sniffing – Hacking With Arduino!](https://www.youtube.com/watch?v=Y-1AFyOP-tk)
 
-![](https://www.seeedstudio.com/blog/wp-content/uploads/2022/06/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE\_16547576396150-1030x536.png)
+![](https://www.seeedstudio.com/blog/wp-content/uploads/2022/06/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16547576396150-1030x536.png)
 
 This video is going to connect to the Renault Megane 3 vehicle with the Arduino Uno + SeeedStudio CAN Bus Shield V2 and analyze the data/messages passing through the vehicle’s CAN bus (sniffing). If you use CAN Bus Protocol in your vehicles, you can listen to your vehicle with the same actions.
 
 What you’ll need:
 
-* [Seeeduino V4.2 ](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html?utm\_source=blog\&utm\_medium=blog)/ [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm\_source=blog\&utm\_medium=blog)
-* [SeeedStudio CAN-BUS Shield](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm\_source=blog\&utm\_medium=blog)
-* [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm\_source=blog\&utm\_medium=blog)
+* [Seeeduino V4.2 ](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html?utm_source=blog\&utm_medium=blog)/ [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm_source=blog\&utm_medium=blog)
+* [SeeedStudio CAN-BUS Shield](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm_source=blog\&utm_medium=blog)
+* [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)
 
 Interested? You can find the full tutorial by [Bugra on Youtube!](https://www.youtube.com/watch?v=Y-1AFyOP-tk)
 
 #### [Vehicle GUI Can Bus Display](https://www.hackster.io/kenliao/vehicle-gui-can-bus-display-05fb45)
 
-![](https://www.seeedstudio.com/blog/wp-content/uploads/2022/06/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE\_16547576786202.png)
+![](https://www.seeedstudio.com/blog/wp-content/uploads/2022/06/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16547576786202.png)
 
 This project utilizes Can Bus to read sensor values and communicate over serial to the display featuring customizable GUI.
 
 What you’ll need:
 
-* [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm\_source=blog\&utm\_medium=blog)
+* [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm_source=blog\&utm_medium=blog)
 * [Grove – Starter Kit for Arduino](https://www.seeedstudio.com/Grove-Starter-Kit-for-Arduino-p-1855.html)
-* [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm\_source=blog\&utm\_medium=blog)
+* [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)
 * USB-A to Micro-USB Cable
 * Winstar CAN-BUS TFT 5″ display
 
@@ -292,9 +292,9 @@ Getting Started with CAN-BUS can be very fulfilling. It can be daunting as well,
 
 #### What do you need?
 
-* 2 x [Seeeduino V4.2](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html?utm\_source=blog\&utm\_medium=blog)
-* 2 x [CAN-BUS Shield V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm\_source=blog\&utm\_medium=blog)
-* 2 x [Jumper Wire](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm\_source=blog\&utm\_medium=blog)\\
+* 2 x [Seeeduino V4.2](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html?utm_source=blog\&utm_medium=blog)
+* 2 x [CAN-BUS Shield V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm_source=blog\&utm_medium=blog)
+* 2 x [Jumper Wire](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)\\
 
 #### Instructions
 
@@ -312,18 +312,18 @@ Getting Started with CAN-BUS can be very fulfilling. It can be daunting as well,
 * One of the nodes (a node means Seeeduino + CAN\_BUS Shield) acts as a master and the other acts as a slaver. The master will send data to the slaver constantly.
 * Open the sent example (File > Examples > CAN\_BUS\_Shield-master >send) and upload it to the **master** as shown below:
 
-![](https://github.com/SeeedDocument/CAN\_BUS\_Shield/raw/master/image/send%20example.png)
+![](https://github.com/SeeedDocument/CAN_BUS_Shield/raw/master/image/send%20example.png)
 
 * After that, Open the **receive\_check** example (**File > Examples > CAN\_BUS\_Shield-master > receive\_check**) and upload it to the **slaver** as shown below
 
-![](https://github.com/SeeedDocument/CAN\_BUS\_Shield/raw/master/image/receive%20check%20example.png)
+![](https://github.com/SeeedDocument/CAN_BUS_Shield/raw/master/image/receive%20check%20example.png)
 
 **Step 3: View Results**
 
 * Open the Serial Monitor of Arduino IDE (**slaver**), you will get the data sent from the master. Below is a photo of what it will look like:\
 
 
-![](https://raw.githubusercontent.com/SeeedDocument/CAN\_BUS\_Shield/master/image/serial\_monitor.png)
+![](https://raw.githubusercontent.com/SeeedDocument/CAN_BUS_Shield/master/image/serial_monitor.png)
 
 **Step 4: APIs (Application Program Interface)**
 
@@ -456,9 +456,9 @@ We had provided many frequently-used baud rates, as shown below:
 
 Yet you may still find the rate you want. Here we provide software to help you to calculate the baud rate you need.
 
-Click [here](https://github.com/SeeedDocument/CAN\_BUS\_Shield/raw/master/resource/CAN\_Baudrate\_CalcV1.3.zip) to download the software, it’s in Chinese, but it’s easy to use. Here is the interface translated for easier usage:
+Click [here](https://github.com/SeeedDocument/CAN_BUS_Shield/raw/master/resource/CAN_Baudrate_CalcV1.3.zip) to download the software, it’s in Chinese, but it’s easy to use. Here is the interface translated for easier usage:
 
-![](https://github.com/SeeedDocument/CAN\_BUS\_Shield/blob/master/image/CAN\_BUS\_Shield\_SetBaud.jpg?raw=true)
+![](https://github.com/SeeedDocument/CAN_BUS_Shield/blob/master/image/CAN_BUS_Shield_SetBaud.jpg?raw=true)
 
 * Open the software, what you need to do is to set the baud rate you want, then do some simple settings, then click calculate.
 * Then you will get some data, cfg1, cfg2, and cfg3.

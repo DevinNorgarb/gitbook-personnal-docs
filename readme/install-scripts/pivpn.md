@@ -9,7 +9,7 @@ description: simple openvpn or wireguard VPN server.
 * **::: INSTALLATION :::**\
   `curl -L https://install.pivpn.io | bash`\
   \
-  **::: Test (unstable) Branch :::**\
+  &#xNAN;**::: Test (unstable) Branch :::**\
   `curl -L https://test.pivpn.io | TESTING= bash`
 
 

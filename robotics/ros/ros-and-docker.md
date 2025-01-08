@@ -10,9 +10,9 @@ In my [previous post](https://roboticseabass.com/2020/12/30/2020-review-service-
 
 This is where [Docker](https://www.docker.com) came in to make this manageable. I have been heavily relying on it to manage my projects in an isolated manner and generally making sure that everyone else is able to run the same code without having to go through a painstaking manual installation process. It took a while to learn, but now I can’t see myself _not_ \*\*\*\* using Docker.
 
-Given that I’m working in academic robotics, all these projects have one thing in common: they _all_ use the [Robot Operating System (ROS)](https://www.ros.org). In this post, I want to share my experiences with Docker specifically for managing ROS based software projects. To help show this, I have developed an [example GitHub repository](https://github.com/sea-bass/turtlebot3\_behavior\_demos) that uses a simulated [ROBOTIS TurtleBot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview).
+Given that I’m working in academic robotics, all these projects have one thing in common: they _all_ use the [Robot Operating System (ROS)](https://www.ros.org). In this post, I want to share my experiences with Docker specifically for managing ROS based software projects. To help show this, I have developed an [example GitHub repository](https://github.com/sea-bass/turtlebot3_behavior_demos) that uses a simulated [ROBOTIS TurtleBot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview).
 
-![](https://roboticseabass.files.wordpress.com/2021/04/turtlebot3\_models.png?w=731\&resize=731%2C233)TurtleBot3 models \[Source: [TurtleBot3 Manual by ROBOTIS](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)]
+![](https://roboticseabass.files.wordpress.com/2021/04/turtlebot3_models.png?w=731\&resize=731%2C233)TurtleBot3 models \[Source: [TurtleBot3 Manual by ROBOTIS](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)]
 
 ***
 
@@ -27,8 +27,8 @@ While ROS certainly eases the process of getting started with existing software 
 * **Reproducibility:** If you want others to reproduce your work as painlessly as possible, you could provide a detailed README with all the necessary dependencies, installation steps, troubleshooting tips, etc. Alternatively, you could handle all those potentially tricky dependencies inside a Docker container that you can test yourself before sharing that with a (hopefully) much easier set of instructions to get things running.
 * **Switching Between Projects:** Even if you’re a pro ROS system integrator or you’ve developed a watertight installation guide, chances are multiple projects will have conflicting dependencies. If you’re working on projects that use different versions of ROS (or different versions of software in general), then tinkering with your host machine’s environment for context switching may be painful, if not impossible, to get right. See below for an exaggerated (but not unrealistic) situation.
 
-![](https://i0.wp.com/roboticseabass.com/wp-content/uploads/2021/04/docker\_multiple\_projects.png?resize=750%2C453\&ssl=1)Without some virtualization, juggling these projects on the same machine would be… not ideal.\
-_Icon made by_ [_Freepik_](https://www.flaticon.com/authors/freepik) _from_ [_www.flaticon.com_](https://www.flaticon.com)
+![](https://i0.wp.com/roboticseabass.com/wp-content/uploads/2021/04/docker_multiple_projects.png?resize=750%2C453\&ssl=1)Without some virtualization, juggling these projects on the same machine would be… not ideal.\
+&#xNAN;_&#x49;con made by_ [_Freepik_](https://www.flaticon.com/authors/freepik) _from_ [_www.flaticon.com_](https://www.flaticon.com)
 
 ***
 
@@ -179,7 +179,7 @@ One of the great things about Docker is the ability to create [multi-stage build
 
 Now that we have a “core” image that has all our NVIDIA and ROS support, we can create a “base” image on top of that, which installs everything needed to run the standard examples from the [TurtleBot3 manual](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/).
 
-![](https://i0.wp.com/roboticseabass.com/wp-content/uploads/2021/04/docker\_hierarchy\_step1-3.png?resize=750%2C296\&ssl=1)Our proposed container hierarchy… so far.
+![](https://i0.wp.com/roboticseabass.com/wp-content/uploads/2021/04/docker_hierarchy_step1-3.png?resize=750%2C296\&ssl=1)Our proposed container hierarchy… so far.
 
 Our base image would look as follows:
 
@@ -219,7 +219,7 @@ docker build -f dockerfile_nvidia_ros -t nvidia_ros .
 docker build -f dockerfile_tb3_base -t turtlebot3_base .
 ```
 
-Since I don’t want to type out all the `docker run` options anymore (and I presume you don’t want to either), I made a [`run_docker.sh` script](https://github.com/sea-bass/turtlebot3\_behavior\_demos/blob/main/docker/run\_docker.sh) that makes this a little easier. With this script, the following commands are equivalent.
+Since I don’t want to type out all the `docker run` options anymore (and I presume you don’t want to either), I made a [`run_docker.sh` script](https://github.com/sea-bass/turtlebot3_behavior_demos/blob/main/docker/run_docker.sh) that makes this a little easier. With this script, the following commands are equivalent.
 
 ```
 # Original command (broke)
@@ -245,7 +245,7 @@ So now, we can start a simulated robot and drive it around with our keyboard… 
 ./run_docker.sh turtlebot3_base "roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch"
 ```
 
-![](https://roboticseabass.files.wordpress.com/2021/04/tb3\_teleop.png?w=750\&resize=750%2C345)
+![](https://roboticseabass.files.wordpress.com/2021/04/tb3_teleop.png?w=750\&resize=750%2C345)
 
 ***
 
@@ -253,8 +253,8 @@ So now, we can start a simulated robot and drive it around with our keyboard… 
 
 Now it’s time for a third Docker image: our “overlay” image. Now we we’ve tackled all the dependencies such as ROS and the TurtleBot3 packages, we finally get to our own code under development. Here is where we’ll use the code from my GitHub repository, and specifically the files we want to set up are the `tb3_autonomy` and `tb3_world` Catkin packages.
 
-![](https://i0.wp.com/roboticseabass.com/wp-content/uploads/2021/04/docker\_hierarchy\_step2-1.png?resize=750%2C368\&ssl=1)Our proposed container hierarchy… now with the overlay image and mounted volumes.\
-_Icon made by_ [_Freepik_](https://www.flaticon.com/authors/freepik) _from_ [_www.flaticon.com_](https://www.flaticon.com)
+![](https://i0.wp.com/roboticseabass.com/wp-content/uploads/2021/04/docker_hierarchy_step2-1.png?resize=750%2C368\&ssl=1)Our proposed container hierarchy… now with the overlay image and mounted volumes.\
+&#xNAN;_&#x49;con made by_ [_Freepik_](https://www.flaticon.com/authors/freepik) _from_ [_www.flaticon.com_](https://www.flaticon.com)
 
 Our overlay Dockerfile will look as follows:
 
@@ -396,14 +396,14 @@ sim:
 		roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
 
-The full Makefile has can be found [in my GitHub repository](https://github.com/sea-bass/turtlebot3\_behavior\_demos/blob/main/Makefile). This also defines make targets that run our examples in the overlay workspace. For example, the following two commands will respectively start a simulated robot in a demo world and a node that manages the high-level robot behavior to navigate the world.
+The full Makefile has can be found [in my GitHub repository](https://github.com/sea-bass/turtlebot3_behavior_demos/blob/main/Makefile). This also defines make targets that run our examples in the overlay workspace. For example, the following two commands will respectively start a simulated robot in a demo world and a node that manages the high-level robot behavior to navigate the world.
 
 ```
 make demo-world
 make demo-behavior
 ```
 
-![](https://roboticseabass.files.wordpress.com/2021/04/docker\_ros\_demo.png?w=1024\&resize=750%2C437)All these displays brought to you by Docker!
+![](https://roboticseabass.files.wordpress.com/2021/04/docker_ros_demo.png?w=1024\&resize=750%2C437)All these displays brought to you by Docker!
 
 ***
 
@@ -412,8 +412,8 @@ make demo-behavior
 Thank you for braving another post that turned out way more comprehensive than originally intended. I would like to leave you with some resources to further your understanding of these tricky concepts.
 
 * Download my example files from [this GitHub repo](https://github.com/sea-bass/docker-make-ros).
-* Check out Greg Stein’s [Docker Make examples repo](https://github.com/RAIL-group/docker\_make\_examples), especially if you want to use Docker and Unity together. Greg, by the way, was the person who taught me about the Docker + Make combo, so I have to give a shout-out.
-* Directly from the source, look at the [Best Practices for Writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile\_best-practices/) page.
+* Check out Greg Stein’s [Docker Make examples repo](https://github.com/RAIL-group/docker_make_examples), especially if you want to use Docker and Unity together. Greg, by the way, was the person who taught me about the Docker + Make combo, so I have to give a shout-out.
+* Directly from the source, look at the [Best Practices for Writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) page.
 * Check out [`rocker`](https://github.com/osrf/rocker) by OSRF (the makers of ROS).
 * For more advanced multi-container workflows, look at [Docker Compose](https://docs.docker.com/compose/) and its corresponding [ROS Wiki page](http://wiki.ros.org/docker/Tutorials/Compose).
 

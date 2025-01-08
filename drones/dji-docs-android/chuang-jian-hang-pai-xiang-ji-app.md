@@ -156,11 +156,11 @@ _如果您在本教程中遇到任何错误或者bug，请使用Github issue，�
 }
 ```
 
-\-(void) camera:(DJICamera_)camera didReceivedVideoData:(uint8\_t_)videoBuffer length:(int)length 委托方法用来发送视频流信息给**VideoPreviewer**进行解码.
+-(void) camera:(DJICamer&#x61;_)camera didReceivedVideoData:(uint8\_t_)videoBuffer length:(int)length 委托方法用来发送视频流信息给**VideoPreviewer**进行解码.
 
-\-(void) camera:(DJICamera_)camera didUpdateSystemState:(DJICameraSystemState_)systemState 委托方法用来获取相机的状态信息, 它会被频繁调用, 所以你可以在这个委托方法中更新你的App界面状态和相机参数设置.
+-(void) camera:(DJICamer&#x61;_)camera didUpdateSystemState:(DJICameraSystemState_)systemState 委托方法用来获取相机的状态信息, 它会被频繁调用, 所以你可以在这个委托方法中更新你的App界面状态和相机参数设置.
 
-\-(void) droneOnConnectionStatusChanged:(DJIConnectionStatus)status 委托方法用来检查飞行器的连接状态.
+-(void) droneOnConnectionStatusChanged:(DJIConnectionStatus)status 委托方法用来检查飞行器的连接状态.
 
 ### 激活 SDK <a href="#ji-huo-sdk" id="ji-huo-sdk"></a>
 
@@ -304,7 +304,7 @@ APP KEY 激活失败码如下所示:
 
 调用**DJICamera**的以下方法:
 
-\-(void) startTakePhoto:(CameraCaptureMode)captureMode withResult:(DJIExecuteResultBlock)block;
+-(void) startTakePhoto:(CameraCaptureMode)captureMode withResult:(DJIExecuteResultBlock)block;
 
 **CameraCaptureMode** 有以下四种类型:
 
@@ -333,7 +333,7 @@ APP KEY 激活失败码如下所示:
 ```
 
 它们提供了多种方式进行拍照, **CameraSingleCapture** 使用起来很简单, 你不需要在调用**startTakePhoto**方法之前，设置其它参数. 对于 **CameraMultiCapture**, 你需要使用 **DJICamera.h**的\
-**-(void) setMultiCaptureCount:(CameraMultiCaptureCount)count withResultBlock:(DJIExecuteResultBlock)block** 方法来设置多拍参数，并且在block中检查是否设置成功，然后才能调用**startTakePhoto**方法。
+&#xNAN;**-(void) setMultiCaptureCount:(CameraMultiCaptureCount)count withResultBlock:(DJIExecuteResultBlock)block** 方法来设置多拍参数，并且在block中检查是否设置成功，然后才能调用**startTakePhoto**方法。
 
 更多信息, 请查看 **DJICamera.h** 和 **DJICameraSettingsDef.h** 文件。
 
@@ -384,11 +384,11 @@ APP KEY 激活失败码如下所示:
 
 如你所见, 有5种**CameraWorkMode**, 这里我们只使用 **CameraWorkModeCapture** 和 **CameraWorkModeRecord** 两种相机模式. 因为这里使用的是Inspire 1机型, 所以我们要用**DJIInspireCamera.h**文件中的
 
-\-(void) setCameraWorkMode:(CameraWorkMode)mode withResult:(DJIExecuteResultBlock)block 方法来切换相机模式。
+-(void) setCameraWorkMode:(CameraWorkMode)mode withResult:(DJIExecuteResultBlock)block 方法来切换相机模式。
 
 打开 **Main.storyboard**，为UISegmented Control控件添加一个 IBOutlet, 命名为 "changeWorkModeSegmentControl". 还记得**第一部分教程**中DJICameraDelegate 的一个委托方法吗？
 
-\-(void) camera:(DJICamera_)camera didUpdateSystemState:(DJICameraSystemState_)systemState;
+-(void) camera:(DJICamer&#x61;_)camera didUpdateSystemState:(DJICameraSystemState_)systemState;
 
 我们可以用这个委托方法，在切换**CameraWorkModeCapture** 和 **CameraWorkModeRecord** 相机模式时，更新segmented control的状态。
 

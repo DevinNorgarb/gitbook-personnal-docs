@@ -213,7 +213,7 @@ To do this, we will have to write all of this within a “`config.yml`” file t
 sudo nano ~/.cloudflared/config.yml
 ```
 
-**12.**Within this file, you will want to type in the following lines and adjust them for your use case as you go.
+**12.**&#x57;ithin this file, you will want to type in the following lines and adjust them for your use case as you go.
 
 * `[TUNNELNAME]` – Replace this value with the name of your tunnel.
 * `[USERNAME]` – This value will need to be replaced with your user’s name.

@@ -29,11 +29,11 @@ _如果您在本教程中遇到任何错误或者bug，请使用Github issue，�
 
 (1）请先下载 The Mobile SDK：[https://developer.dji.com/mobile-sdk/downloads](https://developer.dji.com/mobile-sdk/downloads)
 
-(2)更新你的无人机的固件： 可以依据文档[http://download.dji-innovations.com/downloads/phantom\_3/cn/How\_to\_Update\_Firmware\_cn.pdf](http://download.dji-innovations.com/downloads/phantom\_3/cn/How\_to\_Update\_Firmware\_cn.pdf)里的飞行器固件升级步骤升级。
+(2)更新你的无人机的固件： 可以依据文档[http://download.dji-innovations.com/downloads/phantom\_3/cn/How\_to\_Update\_Firmware\_cn.pdf](http://download.dji-innovations.com/downloads/phantom_3/cn/How_to_Update_Firmware_cn.pdf)里的飞行器固件升级步骤升级。
 
 （3)请准备一个Android开发环境（如果你现在没有一个Android开发环境).请注意，在这个教程里面，我们只使用了Eclipse 4.2.2.你可以在这里下载: [https://eclipse.org/downloads/packages/eclipse-classic-422/junosr2](https://eclipse.org/downloads/packages/eclipse-classic-422/junosr2).下载完Eclipse 以后，你得下载Eclipse Android Development Tool Plug-in. 可在这下载：[http://developer.android.com/intl/zh-TW/sdk/installing/installing-adt.html](http://developer.android.com/intl/zh-TW/sdk/installing/installing-adt.html)
 
-**注意**： Google对Android Development Tools in Eclipse的支持要结束了。如果你还想继续在Eclipse里完成这个demo或已在Eclipse里完成了这个demo,你可以在这个链接上找到如何把你已完成或正在做的project从Eclipse上移到Android Studio上面去： [http://dji-dev.gitbooks.io/mobile-sdk-tutorials/content/zh-cn/Android/AndroidStudioMigration/Android\_Studio\_Migration\_Tutorial\_ch.html](http://dji-dev.gitbooks.io/mobile-sdk-tutorials/content/zh-cn/Android/AndroidStudioMigration/Android\_Studio\_Migration\_Tutorial\_ch.html)。如果你想在Android Studio上面完成这个教程，Mobile SDK文件夹里面存有一个Android Studio软件包和一个Eclipse软件包，你可以参考Android Studio的SDK DEMO工程或Get Start工程。不过，我们建议你用Eclipse完成这个教程，然后再把你的project转换到Android Studio上面去。
+**注意**： Google对Android Development Tools in Eclipse的支持要结束了。如果你还想继续在Eclipse里完成这个demo或已在Eclipse里完成了这个demo,你可以在这个链接上找到如何把你已完成或正在做的project从Eclipse上移到Android Studio上面去： [http://dji-dev.gitbooks.io/mobile-sdk-tutorials/content/zh-cn/Android/AndroidStudioMigration/Android\_Studio\_Migration\_Tutorial\_ch.html](http://dji-dev.gitbooks.io/mobile-sdk-tutorials/content/zh-cn/Android/AndroidStudioMigration/Android_Studio_Migration_Tutorial_ch.html)。如果你想在Android Studio上面完成这个教程，Mobile SDK文件夹里面存有一个Android Studio软件包和一个Eclipse软件包，你可以参考Android Studio的SDK DEMO工程或Get Start工程。不过，我们建议你用Eclipse完成这个教程，然后再把你的project转换到Android Studio上面去。
 
 ### 配置编程环境 <a href="#pei-zhi-bian-cheng-huan-jing" id="pei-zhi-bian-cheng-huan-jing"></a>
 
@@ -191,7 +191,7 @@ DJIAoaActivity中有添加如下代码支持AOA,
     ...
 ```
 
-以上代码让程序在打开时运行Service支持AOA连接遥控器，然后我们还需要在每一个Activity运行**onPause()**或是**onResume()**回调接口时，相应的暂停或是继续该Service。你可以通过让Activity继承Demo程序中的**DemoBaseActivity**来实现。**DemoBaseActivity**中的代码片段如下，
+以上代码让程序在打开时运行Service支持AOA连接遥控器，然后我们还需要在每一个Activity运行**onPause()**&#x6216;是**onResume()**&#x56DE;调接口时，相应的暂停或是继续该Service。你可以通过让Activity继承Demo程序中的**DemoBaseActivity**来实现。**DemoBaseActivity**中的代码片段如下，
 
 ```
     ...
@@ -210,7 +210,7 @@ DJIAoaActivity中有添加如下代码支持AOA,
 
 (3) 在APP上实现FPV实时视频显示
 
-(1) 在使用SDK APIs之前，我们先需要根据连接的飞机的类型来初始化SDK APIs.使用DJIDrone类里的**public static boolean initWithType(Context mContext, DJIDroneType type)**方法来初始化。
+(1) 在使用SDK APIs之前，我们先需要根据连接的飞机的类型来初始化SDK APIs.使用DJIDrone类里的**public static boolean initWithType(Context mContext, DJIDroneType type)**&#x65B9;法来初始化。
 
 ```
     @Override
@@ -252,13 +252,13 @@ DJIAoaActivity中有添加如下代码支持AOA,
     ...
 ```
 
-(2) 在初始化SDK APIs之后，我需要使用DJIDrone类里面的**public static boolean connectToDrone()**方法连接飞机，
+(2) 在初始化SDK APIs之后，我需要使用DJIDrone类里面的**public static boolean connectToDrone()**&#x65B9;法连接飞机，
 
 ```
     DJIDrone.connectToDrone(); // Connect to the drone
 ```
 
-(3) 现在我们可以实例化一个视频数据的回调接口**DJIReceivedVideoDataCallBack()**, 然后调用API **public public void setReceivedVideoDataCallBack(DJIReceivedVideoDataCallBack mReceivedVideoDataCallBack)**来获取实时视频数据（raw H264格式）。用户可以实现自己的代码去处理该视频数据。这里，我们使用DJI SDK提供的解码器来解码该视频数据，并把解码出来的视频显示在**SurfaceView**。
+(3) 现在我们可以实例化一个视频数据的回调接口**DJIReceivedVideoDataCallBack()**, 然后调用API **public public void setReceivedVideoDataCallBack(DJIReceivedVideoDataCallBack mReceivedVideoDataCallBack)**&#x6765;获取实时视频数据（raw H264格式）。用户可以实现自己的代码去处理该视频数据。这里，我们使用DJI SDK提供的解码器来解码该视频数据，并把解码出来的视频显示在**SurfaceView**。
 
 在 layout **activity\_fpv.xml**里面添加surfaceview, 该layout是**FPVActivity**的界面文件，
 
@@ -301,9 +301,9 @@ DJIAoaActivity中有添加如下代码支持AOA,
     }
 ```
 
-**注意**：需要先调用实例化对象**mDjiGLSurfaceView**的**public boolean start()**方法，然后调用**DJIDrone.getDjiCamera().setReceivedVideoDataCallBack(mReceivedVideoDataCallBack)**把视频数据传递给**mDjiGLSurfaceView**解码并显示视频。
+**注意**：需要先调用实例化对象**mDjiGLSurfaceView**的**public boolean start()**&#x65B9;法，然后调用**DJIDrone.getDjiCamera().setReceivedVideoDataCallBack(mReceivedVideoDataCallBack)**&#x628A;视频数据传递给**mDjiGLSurfaceView**解码并显示视频。
 
-当显示视频的activity关闭时，你需要先调用**DJIDrone.getDjiCamera().setReceivedVideoDataCallBack(null)**停止传递视频数据给**mDjiGLSurfaceView**, 然后再释放**mDjiSurfaceView**。相关代码如下，
+当显示视频的activity关闭时，你需要先调用**DJIDrone.getDjiCamera().setReceivedVideoDataCallBack(null)**&#x505C;止传递视频数据给**mDjiGLSurfaceView**, 然后再释放**mDjiSurfaceView**。相关代码如下，
 
 ```
     ...
@@ -319,7 +319,7 @@ DJIAoaActivity中有添加如下代码支持AOA,
     }
 ```
 
-你应该注意调用**mDjiGLSurfaceView**的方法**public boolean start()**和设置视频数据回调接口给**mDjiGLSurfaceView**传递视频数据的顺序，以及释放**mDjiGLSurfaceView**和停止传递数据给它的顺序。
+你应该注意调用**mDjiGLSurfaceView**的方法**public boolean start()**&#x548C;设置视频数据回调接口给**mDjiGLSurfaceView**传递视频数据的顺序，以及释放**mDjiGLSurfaceView**和停止传递数据给它的顺序。
 
 (4) 编译并运行你的工程，检查一切是否正常。如果在运行后看到移动端出现如下界面，你就可以开始用你自己的APP连接飞机，并享受飞机实时传回航拍视频的乐趣了！&#x20;
 
@@ -346,7 +346,7 @@ DJIAoaActivity中有添加如下代码支持AOA,
 
 ### 实现拍照功能 <a href="#shi-xian-pai-zhao-gong-neng" id="shi-xian-pai-zhao-gong-neng"></a>
 
-我们在FPVActivity中实现了方法**private void captureAction()**来进行拍照。当按下按钮“Capture”, 该方法将被调用，将拍下一张照片存储在飞机上的SD卡上。**private void captureAction()**方法的代码如下，
+我们在FPVActivity中实现了方法**private void captureAction()**&#x6765;进行拍照。当按下按钮“Capture”, 该方法将被调用，将拍下一张照片存储在飞机上的SD卡上。**private void captureAction()**&#x65B9;法的代码如下，
 
 ```
      // function for taking photo
@@ -391,13 +391,13 @@ DJIAoaActivity中有添加如下代码支持AOA,
     }
 ```
 
-在方法**private void captureAction()**中有两步，第一步是设置相机模式；第二步是设置相机拍照模式并拍照。我们把第二步的相关代码放在第一步的回调接口的**onResult()**方法里面，这样可以保证成功运行完第一步后再执行第二步。
+在方法**private void captureAction()**&#x4E2D;有两步，第一步是设置相机模式；第二步是设置相机拍照模式并拍照。我们把第二步的相关代码放在第一步的回调接口的**onResult()**&#x65B9;法里面，这样可以保证成功运行完第一步后再执行第二步。
 
 编译并运行工程，连接飞行器试一下拍照功能，当在按下"capture"按钮后，屏幕闪了一下就说明拍照功能可以使用了。
 
 ### 实现录像功能 <a href="#shi-xian-lu-xiang-gong-neng" id="shi-xian-lu-xiang-gong-neng"></a>
 
-与实现拍照功能类似，我们实现了方法**private void recordAction()**来进行录像功能。当按下“Record”按钮,该方法将被调用，飞机上的相机开始录像。代码如下，
+与实现拍照功能类似，我们实现了方法**private void recordAction()**&#x6765;进行录像功能。当按下“Record”按钮,该方法将被调用，飞机上的相机开始录像。代码如下，
 
 ```
      // function for starting recording

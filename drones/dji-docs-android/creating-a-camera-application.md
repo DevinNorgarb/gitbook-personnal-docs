@@ -129,9 +129,9 @@ Lastly, implement the **DJICameraDelegate** methods, as shown below:
 }
 ```
 
-\-(void)camera:(DJICamera _)camera didReceiveVideoData:(uint8\_t_ )videoBuffer length:(size\_t)size method is used to send the video stream to **VideoPreviewer** to decode.
+-(void)camera:(DJICamera _)camera didReceiveVideoData:(uint8\_t_ )videoBuffer length:(size\_t)size method is used to send the video stream to **VideoPreviewer** to decode.
 
-\-(void) camera:(DJICamera_)camera didUpdateSystemState:(DJICameraSystemState_)systemState method is used to get the camera state from the camera on your aircraft. It will be called frequently, so you can update your user interface or camera settings accordingly here.
+-(void) camera:(DJICamer&#x61;_)camera didUpdateSystemState:(DJICameraSystemState_)systemState method is used to get the camera state from the camera on your aircraft. It will be called frequently, so you can update your user interface or camera settings accordingly here.
 
 ### Activate the SDK <a href="#activate-the-sdk" id="activate-the-sdk"></a>
 

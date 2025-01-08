@@ -587,7 +587,7 @@ DJI PC 模拟器专为 SDK 开发者所设计。模拟器通过 UDP 广播的方
 
 我们加入一个if语句来检查地图的annotation是否等于**aircraftAnnotation** 属性, 如果不等于，我们移除它. 这样做，可以防止飞机的annotation被移除.
 
-为了提供一个更好的用户体验，我们需要在地图的上方加入一个信息栏来显示飞机当前的状态：当前的GPS卫星数，垂直飞行速度，水平飞行速度以及飞机的高度. 让我们在_Main.storyboard\*_的 RootViewController Scene画面里加入UI，如下所示:
+为了提供一个更好的用户体验，我们需要在地图的上方加入一个信息栏来显示飞机当前的状态：当前的GPS卫星数，垂直飞行速度，水平飞行速度以及飞机的高度. 让我们&#x5728;_&#x4D;ain.storyboard\*_&#x7684; RootViewController Scene画面里加入UI，如下所示:
 
 当以上任务完成时。打开 DJIRootViewController.h 文件, 为以上UI元素创建IBOutlets， 导入DJISDK的头文件并且实现 **DJIDroneDelegate** , **DJIMainControllerDelegate**, **DJIAppManagerDelegate** 和 **DJINavigationDelegate** 协议. 我们在demo里使用的是Inspire 1，所以我们需要创建三个属性，一个是 **DJIDrone**的属性，一个是**DJIInspireMainController**的属性，另外一个是 **NSObject**的属性. 同时我们需要创建一个名为 “droneLocation”的**CLLocationCoordinate2D** 属性来记录飞机的位置, 如下所示:
 
