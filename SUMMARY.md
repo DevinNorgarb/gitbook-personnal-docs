@@ -393,9 +393,12 @@
 ## Pen Testing
 
 * [Drones](pen-testing/drones/README.md)
+  * [Rooting Mavic Pro in firmware with Force FCC and Boost and No NFZ](pen-testing/drones/rooting-mavic-pro-in-firmware-with-force-fcc-and-boost-and-no-nfz.md)
+  * [dji-firmware-tools Github Repo](pen-testing/drones/dji-firmware-tools-github-repo.md)
+  * [How To Hack Wiki for DJI Drones](pen-testing/drones/how-to-hack-wiki-for-dji-drones.md)
   * [DIY DJI Aeroscope](pen-testing/drones/diy-dji-aeroscope.md)
 * [Automotive](pen-testing/automotive/README.md)
-  * [Hacking Automotive Ethernet Cameras](pen-testing/automotive/hacking-automotive-ethernet-cameras.md)
+  * [Hacking Automotive Ethernet Cameras](pen-testing/hacking-automotive-ethernet-cameras.md)
 * [Bluetooth Security Research](pen-testing/bluetooth-security-research.md)
 * [google-dorks](pen-testing/google-dorks.md)
 * [decompilers](pen-testing/decompilers/README.md)
