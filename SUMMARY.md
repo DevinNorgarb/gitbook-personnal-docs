@@ -393,6 +393,7 @@
 ## Pen Testing
 
 * [Drones](pen-testing/drones/README.md)
+  * [Video Guide](pen-testing/drones/video-guide.md)
   * [Rooting Mavic Pro in firmware with Force FCC and Boost and No NFZ](pen-testing/drones/rooting-mavic-pro-in-firmware-with-force-fcc-and-boost-and-no-nfz.md)
   * [dji-firmware-tools Github Repo](pen-testing/drones/dji-firmware-tools-github-repo.md)
   * [How To Hack Wiki for DJI Drones](pen-testing/drones/how-to-hack-wiki-for-dji-drones.md)
