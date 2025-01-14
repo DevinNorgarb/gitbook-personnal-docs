@@ -473,6 +473,7 @@
 
 ## Resources, Documents, PDF's, etc
 
+* [Pilots License](resources-documents-pdfs-etc/pilots-license.md)
 * [Car Hacking](resources-documents-pdfs-etc/car-hacking.md)
 * [Embedded Systems](resources-documents-pdfs-etc/embedded-systems/README.md)
   * [ESP32](resources-documents-pdfs-etc/embedded-systems/esp32.md)
