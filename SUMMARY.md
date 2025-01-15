@@ -467,6 +467,7 @@
 
 ## Software Defined Radio
 
+* [Making an SDR Antenna](software-defined-radio/making-an-sdr-antenna.md)
 * [Canonical Open RAN](software-defined-radio/canonical-open-ran/README.md)
   * [What is Open RAN?](software-defined-radio/canonical-open-ran/what-is-open-ran.md)
 * [The BIG List of RTL-SDR Supported Software](software-defined-radio/the-big-list-of-rtl-sdr-supported-software.md)
