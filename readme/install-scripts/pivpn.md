@@ -9,13 +9,13 @@ description: simple openvpn or wireguard VPN server.
 * **::: INSTALLATION :::**\
   `curl -L https://install.pivpn.io | bash`\
   \
-  &#xNAN;**::: Test (unstable) Branch :::**\
+  **::: Test (unstable) Branch :::**\
   `curl -L https://test.pivpn.io | TESTING= bash`
 
 
 
 SIMPLE ::: Yes, that's it! It is \*almost\* that simple.\
-To elaborate a little more, you will want to [install Raspberry Pi OS Lite](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) on a Raspberry pi, we strongly recommend using the latest [Raspberry Pi OS Lite](https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit) image but the normal Raspberry Pi OS image will work as well, preferably enable ssh access and then begin.\
+To elaborate a little more, you will want to [install Raspberry Pi OS Lite](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) on a Raspberry Pi, we strongly recommend using the latest [Raspberry Pi OS Lite](https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit) image but the normal Raspberry Pi OS image will work as well, preferably enable ssh access and then begin.\
 After install, you may need to open a port on your router.\
 There is a (now slightly outdated) guided walkthrough of the install available [here](https://www.sitepoint.com/setting-up-a-home-vpn-using-your-raspberry-pi/).\
 More information is also available on the [PiVPN GitHub](https://github.com/pivpn/pivpn)

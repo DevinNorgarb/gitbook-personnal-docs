@@ -1,11 +1,10 @@
-# pihole
+# Pi-hole
 
-```
+One-step automated install:
+
+```bash
 curl -sSL https://install.pi-hole.net | bash
 ```
-
-\
-Installation
 
 ### One-Step Automated Install[¶](https://docs.pi-hole.net/main/basic-install/#one-step-automated-install) <a href="#one-step-automated-install" id="one-step-automated-install"></a>
 
@@ -39,5 +38,3 @@ sudo bash basic-install.sh
 #### Alternative 3: Use Docker to deploy Pi-hole[¶](https://docs.pi-hole.net/main/basic-install/#alternative-3-use-docker-to-deploy-pi-hole) <a href="#alternative-3-use-docker-to-deploy-pi-hole" id="alternative-3-use-docker-to-deploy-pi-hole"></a>
 
 Please refer to the [Pi-hole docker repo](https://github.com/pi-hole/docker-pi-hole) to use the Official Docker Images.
-
-December 3, 2022
