@@ -2,7 +2,7 @@
 
 ## What the heck is CORS? <a href="#what-the-heck-is-cors" id="what-the-heck-is-cors"></a>
 
-**Cross-origin resource sharing** (**CORS**) is a mechanism that allows to share resources outside of the domain from which the resource is first shared.[1](https://dhanrajsp.me/blog/the-tale-of-bypassing-cors#user-content-fn-1)
+**Cross-origin resource sharing** (**CORS**) is a mechanism that allows sharing resources outside of the domain from which the resource is first shared.[1](https://dhanrajsp.me/blog/the-tale-of-bypassing-cors#user-content-fn-1)
 
 Suppose a user visits _`http://www.example.com`_ and the page attempts a cross-origin request to fetch the user's data from _`http://service.example.com`_. A CORS-compatible browser will attempt to make a cross-origin request to _`service.example.com`_ as follows.
 

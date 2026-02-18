@@ -11,7 +11,7 @@ AWS offers a number of messaging services for transferring data between differen
 
 ## Simple Queue Service (SQS) <a href="#id-6947" id="id-6947"></a>
 
-**SQS** is distributed **queuing** system. Messages are sent into a queue and receivers have to **poll** messages from SQ&#x53;**.** Messages can only be received by a single receivers at a time, meaning that any one receiver can receive a message, process and delete it, but other receivers will not receive the same message later. A main use case for SQS is to decouple or integrate applications, allowing you to send data between the two with the guarantee that all messages get processed.
+**SQS** is distributed **queuing** system. Messages are sent into a queue and receivers have to **poll** messages from SQS. Messages can only be received by a single receiver at a time, meaning that any one receiver can receive a message, process and delete it, but other receivers will not receive the same message later. A main use case for SQS is to decouple or integrate applications, allowing you to send data between the two with the guarantee that all messages get processed.
 
 ### When to use SQS: <a href="#id-4a43" id="id-4a43"></a>
 
@@ -61,6 +61,6 @@ To summarize:
 
 **SQS**: messaging queue, sends data to one consumer at a time\
 **SNS**: notification service, think email and SMS push notifications to multiple consumers\
-**Kinesis:** data streaming service, build for complex real-time processing of data streams accross multiple consumers
+**Kinesis:** data streaming service, built for complex real-time processing of data streams across multiple consumers
 
 \

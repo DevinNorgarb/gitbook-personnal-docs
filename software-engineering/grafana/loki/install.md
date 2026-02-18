@@ -1,17 +1,22 @@
 # Install
 
-```
-Loki Docker Driver
-Install docker plugin
+## Loki Docker Driver
 
+1. Install Docker plugin:
+
+```bash
 docker plugin install grafana/loki-docker-driver:latest --alias loki --grant-all-permissions
-Edit docker daemon config
+```
 
+2. Edit Docker daemon config:
+
+```bash
 sudo nano /etc/docker/daemon.json
-
 ```
 
-```
+3. Add the following configuration (Vector format):
+
+```toml
 [sources.docker-local]
   type = "docker_logs"
   docker_host = "/var/run/docker.sock"

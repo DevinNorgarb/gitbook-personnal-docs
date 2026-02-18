@@ -1,10 +1,9 @@
 # K3s
 
-Install K3s Master
+## Install K3s Master
 
-```
-curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="server --node-ip 10.11.11.2
- --node-external-ip 10.11.11.2 --flannel-iface nm-k3s" sh -
+```bash
+curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="server --node-ip 10.11.11.2 --node-external-ip 10.11.11.2 --flannel-iface nm-k3s" sh -
 ```
 
 

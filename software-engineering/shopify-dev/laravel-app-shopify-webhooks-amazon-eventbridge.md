@@ -44,11 +44,11 @@ This step can be done in multiple different ways per your app needs. Here’s th
 4. Rule to match some events (let’s say only orders related webhooks) and push them to SQS queue or Lambda
 5. Rule to match specific event (let’s say GDPR data request) and push it to SNS (or some other AWS service)
 
-We can achieve that by defining custom patterns as describe in [https://shopify.dev/apps/webhooks/configuration/eventbridge#define-a-custom-event-pattern](https://shopify.dev/apps/webhooks/configuration/eventbridge#define-a-custom-event-pattern). Since we want to keep it as simple as possible for the sake of this tutorial, we will select first option – matching all events and pushing them to SQS queue.
+We can achieve that by defining custom patterns as described in [https://shopify.dev/apps/webhooks/configuration/eventbridge#define-a-custom-event-pattern](https://shopify.dev/apps/webhooks/configuration/eventbridge#define-a-custom-event-pattern). Since we want to keep it as simple as possible for the sake of this tutorial, we will select first option – matching all events and pushing them to SQS queue.
 
 #### 3.1. Defining rule details
 
-In order to create a new rule, lets select Rules from the left menu, select our event bus and clicking on “Create rule” button.
+In order to create a new rule, let's select Rules from the left menu, select our event bus and clicking on “Create rule” button.
 
 <figure><img src="https://xdoo.hr/wp-content/uploads/2022/07/image-6-1024x682.png" alt="Creating new Rule" height="387" width="581"><figcaption><p>Creating new Rule</p></figcaption></figure>
 
@@ -70,7 +70,7 @@ Prerequisite is to create new SQS queue for these events so we can select it und
 
 <figure><img src="https://xdoo.hr/wp-content/uploads/2022/07/image-9-1024x453.png" alt="Creating simple SQS queue" height="236" width="535"><figcaption><p>Creating simple SQS queue</p></figcaption></figure>
 
-After you head back to rule creation step, proceed by selecting “AWS Service”, then selecting “SQS queue” as target and finally selecting newly created “webooks” queue. Leave additional settings on default values, or play with it per requirements and then click button “Next”.
+After you head back to rule creation step, proceed by selecting “AWS Service”, then selecting “SQS queue” as target and finally selecting newly created “webhooks” queue. Leave additional settings on default values, or play with it per requirements and then click button “Next”.
 
 <figure><img src="https://xdoo.hr/wp-content/uploads/2022/07/image-10-1024x844.png" alt="Selecting SQS queue as target" height="370" width="449"><figcaption><p>Selecting SQS queue as target</p></figcaption></figure>
 

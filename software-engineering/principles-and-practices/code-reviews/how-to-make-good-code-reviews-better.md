@@ -36,13 +36,13 @@ Once a reviewer completes their review, they can either mark it approved, block 
 
 Code reviews are usually done asynchronously and in writing through a code review tool. This is usually out of convenience, to enable remote code reviews, and to allow multiple people to review the same code change. But when is it time to stop using the tool—however good it might be—and start talking face to face about the code?
 
-**Good code reviews** leave as many comments and questions as are needed. If the revision does not address all of them, they will note those as well. When the conversation gets into a long back-and-forth, reviewers will try to switch to talking to the author in-person instead of  burning more time using the code review tool.
+**Good code reviews** leave as many comments and questions as are needed. If the revision does not address all of them, they will note those as well. When the conversation gets into a long back-and-forth, reviewers will try to switch to talking to the author in-person instead of burning more time using the code review tool.
 
 **Better code reviews** will proactively reach out to the person making the change after they do a first pass on the code and have lots of comments and questions. These people have learned that they save a lot of time, misunderstandings, and hard feelings this way. The fact that there are many comments on the code indicates that there is likely some misunderstanding on either side. These kinds of misunderstandings are easier identified and resolved by talking things through.
 
 ### **Nitpicks**
 
-Nitpicks are are unimportant comments, where the code could be merged without even addressing these. These could be things like variable declarations being in alphabetical order, unit tests following a certain structure, or brackets being on the same line.
+Nitpicks are unimportant comments, where the code could be merged without even addressing these. These could be things like variable declarations being in alphabetical order, unit tests following a certain structure, or brackets being on the same line.
 
 **Good code reviews** make it clear when changes are unimportant nitpicks. They usually mark comments like these distinctively, adding the _“nit:”_ prefix to them. Too many of these can become frustrating and take the attention away from the more important parts of the review, so reviewers aim to not go overboard with these.
 
@@ -80,7 +80,7 @@ When people come across reviews that feel hostile, they feel they can speak up a
 
 **Get to better code reviews** by continuously improving on the details, but also start looking at changes at a high level as well. Be empathetic in the tone of comments and think of ways outside the code review process to eliminate frequent nitpicks. Make code reviews especially welcoming for new starters and look for systemic solutions for painful cross-time zone reviews. Organizations that are forward-looking encourage investing in tooling and process improvements to make code reviews better, reaping more of the benefits.
 
-——-
+---
 
 _Gergely is currently an engineering lead in Amsterdam. This blog post originally appeared on Gergely’s blog,_ [_The Pragmatic Engineer_](https://blog.pragmaticengineer.com/)_. If you’d like to read more from Gergely, you can subscribe to_ [_his monthly newsletter_](https://blog.pragmaticengineer.com/newsletter/) _for his articles on engineering, tech leadership and distributed systems. If you would like to contribute articles to the Stack Overflow blog, send an email to pitches@stackoverflow.com._
 
