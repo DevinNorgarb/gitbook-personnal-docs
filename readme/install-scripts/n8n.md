@@ -1,8 +1,10 @@
 ---
-description: n8n is an awesome tool for building automated workflows
+description: n8n — Workflow automation tool for building automated workflows
 ---
 
 # n8n
+
+n8n is a workflow automation tool that lets you connect apps and services. Below is a Docker Compose setup to run it locally.
 
 To use Docker Compose with n8n (a workflow automation tool), you can create a `docker-compose.yml` file to define the services and configurations. Here's a basic example to get you started:
 

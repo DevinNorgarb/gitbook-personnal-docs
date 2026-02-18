@@ -1,4 +1,4 @@
-# httpie
+# HTTPie
 
 ### [Installation](https://httpie.io/docs/cli/installation)
 
@@ -71,14 +71,10 @@ To install [Chocolatey](https://chocolatey.org/), see [its installation](https:/
 $ choco install httpie
 ```
 
-RUN
-
 ```
 # Upgrade httpie
 $ choco upgrade httpie
 ```
-
-RUN
 
 #### [Linux](https://httpie.io/docs/cli/linux)
 
@@ -99,8 +95,6 @@ $ sudo apt install httpie
 $ sudo apt update && sudo apt upgrade httpie
 ```
 
-RUN
-
 [**Fedora**](https://httpie.io/docs/cli/fedora)
 
 ```
@@ -108,14 +102,10 @@ RUN
 $ dnf install httpie
 ```
 
-RUN
-
 ```
 # Upgrade httpie
 $ dnf upgrade httpie
 ```
-
-RUN
 
 [**CentOS and RHEL**](https://httpie.io/docs/cli/centos-and-rhel)
 
@@ -131,8 +121,6 @@ $ yum install httpie
 # Upgrade httpie
 $ yum upgrade httpie
 ```
-
-RUN
 
 [**Single binary executables**](https://httpie.io/docs/cli/single-binary-executables)
 
@@ -150,8 +138,6 @@ $ chmod +x ./http ./https
 $ https --download packages.httpie.io/binaries/linux/http-latest -o http
 ```
 
-RUN
-
 [**Snapcraft (Linux)**](https://httpie.io/docs/cli/snapcraft-linux)
 
 To install [Snapcraft](https://snapcraft.io/), see [its installation](https://snapcraft.io/docs/installing-snapd).
@@ -161,14 +147,10 @@ To install [Snapcraft](https://snapcraft.io/), see [its installation](https://sn
 $ snap install httpie
 ```
 
-RUN
-
 ```
 # Upgrade httpie
 $ snap refresh httpie
 ```
-
-RUN
 
 [**Linuxbrew**](https://httpie.io/docs/cli/linuxbrew)
 
@@ -195,8 +177,6 @@ Also works for other Arch-derived distributions like ArcoLinux, EndeavourOS, Art
 $ pacman -Syu httpie
 ```
 
-RUN
-
 ```
 # Upgrade httpie
 $ pacman -Syu
@@ -211,14 +191,10 @@ $ pacman -Syu
 $ pkg install www/py-httpie
 ```
 
-RUN
-
 ```
 # Upgrade httpie
 $ pkg upgrade www/py-httpie
 ```
-
-RUN
 
 #### [Unstable version](https://httpie.io/docs/cli/unstable-version)
 
@@ -229,8 +205,6 @@ You can use the following command to install the development version of HTTPie o
 ```
 $ python -m pip install --upgrade https://github.com/httpie/cli/archive/master.tar.gz
 ```
-
-RUN
 
 There are other ways to install the development version of HTTPie on macOS and Linux.
 
@@ -254,7 +228,5 @@ To verify the installation, you can compare the [version identifier on GitHub](h
 $ http --version
 # 3.X.X.dev0
 ```
-
-RUN
 
 Note that on your machine, the version name will have the `.dev0` suffix.

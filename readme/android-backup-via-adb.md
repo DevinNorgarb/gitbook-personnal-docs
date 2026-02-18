@@ -22,7 +22,7 @@
 4. **Backup your device:**
    *   To create a backup of your device, you can use the ADB command with the `backup` option. For a full backup, you can use a command like the following:
 
-       ```css
+       ```bash
        adb backup -all -f backup.ab
        ```
    * This command will create a backup file named "backup.ab" in the current directory.

@@ -55,7 +55,7 @@ Note
 ESP-IDF uses the version of Python installed by default on macOS.
 
 * Install CMake & Ninja build:
-  *   If you have [HomeBrew](https://brew.sh/), you can run:
+  *   If you have [Homebrew](https://brew.sh/), you can run:
 
       ```
       brew install cmake ninja dfu-util
@@ -66,7 +66,7 @@ ESP-IDF uses the version of Python installed by default on macOS.
       sudo port install cmake ninja dfu-util
       ```
   * Otherwise, consult the [CMake](https://cmake.org/) and [Ninja](https://ninja-build.org/) home pages for macOS installation downloads.
-* It is strongly recommended to also install [ccache](https://ccache.dev/) for faster builds. If you have [HomeBrew](https://brew.sh/), this can be done via `brew install ccache` or `sudo port install ccache` on [MacPorts](https://www.macports.org/install.php).
+* It is strongly recommended to also install [ccache](https://ccache.dev/) for faster builds. If you have [Homebrew](https://brew.sh/), this can be done via `brew install ccache` or `sudo port install ccache` on [MacPorts](https://www.macports.org/install.php).
 
 Note
 
@@ -117,7 +117,7 @@ If the above command returns an error, it means Python 3 is not installed.
 
 Below is an overview of the steps to install Python 3.
 
-> *   Installing with [HomeBrew](https://brew.sh/) can be done as follows:
+> *   Installing with [Homebrew](https://brew.sh/) can be done as follows:
 >
 >     ```
 >     brew install python3

@@ -1,12 +1,12 @@
-# Mac OS Disk Usage Analysis
+# macOS Disk Usage Analysis
 
-I always seem to be running out of storage space on my macbook.&#x20;
+I always seem to be running out of storage space on my MacBook.
 
-I found the default storage analysis tools provided by Apple to be rather underwhelming and rather micky mouse in comparison to my experience using Ubuntu Linux.&#x20;
+I found the default storage analysis tools provided by Apple to be rather underwhelming and basic in comparison to my experience using Ubuntu Linux.
 
-I felt that Baobab and GParted were much much more powerful tools.
+I felt that Baobab and GParted were much more powerful tools.
 
-Unfortunately, GParted is not available for OSX. &#x20;
+Unfortunately, GParted is not available for macOS.
 
 <figure><img src="../.gitbook/assets/2024-01-05_23-50.png" alt=""><figcaption><p>underwhelming OSX default disk usage analysis tool </p></figcaption></figure>
 
@@ -16,9 +16,9 @@ Unfortunately, GParted is not available for OSX. &#x20;
 
 
 
-The solution with a GUI that I found to  be useful is a program called Disk Inventory X&#x20;
+The solution with a GUI that I found to be useful is a program called Disk Inventory X.
 
-It is opensource as described here:\
+It is open source, as described here:
 
 
 _<mark style="color:yellow;">It is absolutely free and released under the</mark>_ [_<mark style="color:yellow;">GPL</mark>_](https://www.gnu.org/copyleft/gpl.html)_<mark style="color:yellow;">. The layout algorithm is based on</mark>_ [_<mark style="color:yellow;">KDirStat</mark>_](https://kdirstat.sourceforge.net/)_<mark style="color:yellow;">. The idea to develop this program came to me when a fellow of mine showed me his creation</mark>_ [_<mark style="color:yellow;">WinDirStat</mark>_](https://windirstat.sourceforge.net/)_<mark style="color:yellow;">.</mark>_\
@@ -34,4 +34,4 @@ And code viewed here:
 
 <figure><img src="../.gitbook/assets/2024-01-05_23-41.png" alt=""><figcaption></figcaption></figure>
 
-Thank you for this software Tjark Derlien.&#x20;
+Thank you for this software, Tjark Derlien.
