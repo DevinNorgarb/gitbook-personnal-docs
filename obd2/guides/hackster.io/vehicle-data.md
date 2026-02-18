@@ -12,25 +12,25 @@
 
 Gather in-vehicle sensor data (temperature, force, etc. ) to help compare with data sent by vehicle sensors.
 
-[Intermediate](https://www.hackster.io/projects?difficulty=intermediate)Work in progress10 hours970![Vehicle Metrics](https://hackster.imgix.net/uploads/attachments/783952/background\_hB6NwJcsv7.jpg?auto=compress%2Cformat\&w=900\&h=675\&fit=min)
+[Intermediate](https://www.hackster.io/projects?difficulty=intermediate)Work in progress10 hours970![Vehicle Metrics](https://hackster.imgix.net/uploads/attachments/783952/background_hB6NwJcsv7.jpg?auto=compress%2Cformat\&w=900\&h=675\&fit=min)
 
 ### Things used in this project
 
-| <h4>Software apps and online services</h4>                                                                                                            |                                                                                                                                                                                                                                                           |   |   |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | - | - |
-|                                                                                                                                                       | <table><thead><tr><th>Atmosphereiot.com</th></tr></thead><tbody><tr><td>As the main programming IDE</td></tr></tbody></table>                                                                                                                             |   |   |
-| Atmosphereiot.com                                                                                                                                     |                                                                                                                                                                                                                                                           |   |   |
-| As the main programming IDE                                                                                                                           |                                                                                                                                                                                                                                                           |   |   |
-| ![Windows 10](https://hackster.imgix.net/uploads/attachments/479128/10.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)                   | <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><a href="https://www.hackster.io/microsoft/products/windows-10?ref=project-9c9ae5">Microsoft Windows 10</a></td></tr><tr><td>Base PC operating system</td></tr></tbody></table> |   |   |
-| [Microsoft Windows 10](https://www.hackster.io/microsoft/products/windows-10?ref=project-9c9ae5)                                                      |                                                                                                                                                                                                                                                           |   |   |
-| Base PC operating system                                                                                                                              |                                                                                                                                                                                                                                                           |   |   |
-| <h4>Hand tools and fabrication machines</h4>                                                                                                          |                                                                                                                                                                                                                                                           |   |   |
-| ![3D Printer (generic)](https://hackster.imgix.net/uploads/image/file/79855/3Drag.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)        | <table><thead><tr><th>3D Printer (generic)</th></tr></thead><tbody><tr><td>To make dashboard holder for the NXP Rapid IOT</td></tr></tbody></table>                                                                                                       |   |   |
-| 3D Printer (generic)                                                                                                                                  |                                                                                                                                                                                                                                                           |   |   |
-| To make dashboard holder for the NXP Rapid IOT                                                                                                        |                                                                                                                                                                                                                                                           |   |   |
-| ![Soldering iron (generic)](https://hackster.imgix.net/uploads/image/file/79853/09507-01.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff) | <table><thead><tr><th>Soldering iron (generic)</th></tr></thead><tbody><tr><td></td></tr></tbody></table>                                                                                                                                                 |   |   |
-| Soldering iron (generic)                                                                                                                              |                                                                                                                                                                                                                                                           |   |   |
-|                                                                                                                                                       |                                                                                                                                                                                                                                                           |   |   |
+| <h4>Software apps and online services</h4>                                                                                                            |                                  |   |   |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | - | - |
+|                                                                                                                                                       | 6c9e5be88b7448179360cda17cdbf012 |   |   |
+| Atmosphereiot.com                                                                                                                                     |                                  |   |   |
+| As the main programming IDE                                                                                                                           |                                  |   |   |
+| ![Windows 10](https://hackster.imgix.net/uploads/attachments/479128/10.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)                   | f1784141eb0a4e6bab93aa92c0f23cb7 |   |   |
+| [Microsoft Windows 10](https://www.hackster.io/microsoft/products/windows-10?ref=project-9c9ae5)                                                      |                                  |   |   |
+| Base PC operating system                                                                                                                              |                                  |   |   |
+| <h4>Hand tools and fabrication machines</h4>                                                                                                          |                                  |   |   |
+| ![3D Printer (generic)](https://hackster.imgix.net/uploads/image/file/79855/3Drag.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)        | 9515b99826cc4bdcb73dd58af9ff8c7c |   |   |
+| 3D Printer (generic)                                                                                                                                  |                                  |   |   |
+| To make dashboard holder for the NXP Rapid IOT                                                                                                        |                                  |   |   |
+| ![Soldering iron (generic)](https://hackster.imgix.net/uploads/image/file/79853/09507-01.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff) | f3a31600248b40159b5b806463cd030f |   |   |
+| Soldering iron (generic)                                                                                                                              |                                  |   |   |
+|                                                                                                                                                       |                                  |   |   |
 
 ### Story
 
@@ -46,7 +46,7 @@ With a proper connection I would have been able to tap into the radio, CD change
 
 #### Crushed Hopes <a href="#toc-crushed-hopes-2" id="toc-crushed-hopes-2"></a>
 
-I was able to find a treasure trove of valuable information on [Stuart Schmitt's website](http://stuartschmitt.com/e\_and\_c\_bus/). With most of the hard work already completed by Stuart I set out to emulate his work and get an Arduino pulling "comfort" data from the E\&C bus.
+I was able to find a treasure trove of valuable information on [Stuart Schmitt's website](http://stuartschmitt.com/e_and_c_bus/). With most of the hard work already completed by Stuart I set out to emulate his work and get an Arduino pulling "comfort" data from the E\&C bus.
 
 Try as I might I was never able to reliably gather "comfort" data from the E\&C bus. My initial thoughts on why I was having so much trouble were that the GMC microcontroller in charge of the E\&C bus was dying and sending intermittent data.However it could just as well be "User Error" that I was never able to identify and fix.
 
@@ -80,7 +80,7 @@ I learned three things during the development of this project.
 
 #### Background used for Vehicle Data app
 
-Add the image as a background in your app.![](https://hackster.imgix.net/uploads/attachments/784082/background\_hhDloUVGP0.jpg)
+Add the image as a background in your app.![](https://hackster.imgix.net/uploads/attachments/784082/background_hhDloUVGP0.jpg)
 
 ### Code
 
@@ -1095,4 +1095,4 @@ This file has been truncated, please download it to see its full contents.
 ```
 
 \
-![](../../../.gitbook/assets/background\_hhDloUVGP0.jpg)
+![](../../../.gitbook/assets/background_hhDloUVGP0.jpg)

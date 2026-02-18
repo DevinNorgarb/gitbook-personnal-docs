@@ -1,7 +1,6 @@
 # Rooting Mavic Pro in firmware with Force FCC and Boost and No NFZ
 
-At the End of this Walkthrough, Your Mavic Pro Will Be:\
-
+At the End of this Walkthrough, Your Mavic Pro Will Be:<br>
 
 * Rooted
 * Running FW 1.4.300 with FW 1.3.700 modifiable controllers
@@ -97,8 +96,7 @@ Go to [github.com/CunningLogic/DUMLRacer/releases](https://github.com/CunningLog
 \
 STEP 4: Run Dumlracer to Root your Mavic:\
 \
-Turn on your Mavic and connect it by USB to your computer. In the Windows search box on the start menu, type "cmd". "Command Prompt" should come up in the search results. Right-click on it and select "Run as an Administrator", responding yes (and entering an admin user and password if necessary) to any security prompts. In the black Command box that appears, type "CD C:\Mavic" (or whatever name you used for the new folder--here forward I will assume "Mavic"). The prompt should change to show you are in that folder. Type "Dir". You should see the "Dumlracer.jar" file in response. Now type:\
-
+Turn on your Mavic and connect it by USB to your computer. In the Windows search box on the start menu, type "cmd". "Command Prompt" should come up in the search results. Right-click on it and select "Run as an Administrator", responding yes (and entering an admin user and password if necessary) to any security prompts. In the black Command box that appears, type "CD C:\Mavic" (or whatever name you used for the new folder--here forward I will assume "Mavic"). The prompt should change to show you are in that folder. Type "Dir". You should see the "Dumlracer.jar" file in response. Now type:<br>
 
 > java -jar DUMLRacer.jar AC
 
@@ -116,8 +114,7 @@ Go to [dl.google.com/android/repository/platform-tools-latest-windows.zip](https
 \
 STEP 6: Test Root with ADB:\
 \
-Start your Mavic back up and wait until it has reconnected to your computer (usually a browser window will open showing the external SD card contents). In the Command Prompt window you used earlier, type "CD ADB". The prompt should now show "C:\Mavic\ADB". Then type the following command:\
-
+Start your Mavic back up and wait until it has reconnected to your computer (usually a browser window will open showing the external SD card contents). In the Command Prompt window you used earlier, type "CD ADB". The prompt should now show "C:\Mavic\ADB". Then type the following command:<br>
 
 > adb shell
 
@@ -133,8 +130,7 @@ As with Dumlracer and adb in the preceding section, we don't really "install" Du
 \
 STEP 2: Download Firmware Files:\
 \
-Go to the [Mavic firmware repository](http://dji.polybotes.feralhosting.com/DJI-Firmware/BIN/Mavic%20Pro%20\(Incl%20Platinum%20and%20Alpine\)/) and download the following .bin files:\
-
+Go to the [Mavic firmware repository](http://dji.polybotes.feralhosting.com/DJI-Firmware/BIN/Mavic%20Pro%20\(Incl%20Platinum%20and%20Alpine\)/) and download the following .bin files:<br>
 
 > V01.03.0700\_Mavic\_dji\_system.bin\
 > V01.04.0300\_Mavic\_dji\_system.bin
@@ -173,8 +169,7 @@ STEP 5: Remove the NFZ Files:\
 \
 DJI’s New NFZ Deletion Protection: DJI has modified the 305 and 306 files in FW 1.4.XXX to detect if the NFZ files are missing from the Mavic and, if so, to give a “Firmware Mismatch” error and refuse takeoff. So, do not delete the NFZ files if you are not going to use the FW .700 305 and 306 controllers. In other words, if you did not flash back to FW .700 and instead are running straight FW 1.04.XXX, if you delete the NFZ files using the procedure below, your Mavic will refuse to fly.\
 \
-To remove the NFZ files from the Mavic, we need to run some commands in ADB, which we installed in Step 5 of "Getting Root". If you’ve never had firmware higher than 1.3.400 and, during this walkthrough, only flashed firmware with 905 files removed, you can skip this step altogether. Otherwise, you can delete the NFZ files by [downloading](https://drive.google.com/open?id=1-AhQBuwe4jzDT-WE-ecHIutHDfMoUeUp) my “del905.bat” file and placing it in the “c:\Mavic\ADB” directory. Then, open a Command Prompt with administrative privileges (in start menu, type "cmd", right click on "Command Prompt" and select "Run as an Administrator"). Type "CD C:\Mavic\adb" to get to the ADB directory. Then type “del905”. Alternatively, you can run the batch file commands manually by entering each of the following in order (excluding italicized explanations):\
-
+To remove the NFZ files from the Mavic, we need to run some commands in ADB, which we installed in Step 5 of "Getting Root". If you’ve never had firmware higher than 1.3.400 and, during this walkthrough, only flashed firmware with 905 files removed, you can skip this step altogether. Otherwise, you can delete the NFZ files by [downloading](https://drive.google.com/open?id=1-AhQBuwe4jzDT-WE-ecHIutHDfMoUeUp) my “del905.bat” file and placing it in the “c:\Mavic\ADB” directory. Then, open a Command Prompt with administrative privileges (in start menu, type "cmd", right click on "Command Prompt" and select "Run as an Administrator"). Type "CD C:\Mavic\adb" to get to the ADB directory. Then type “del905”. Alternatively, you can run the batch file commands manually by entering each of the following in order (excluding italicized explanations):<br>
 
 > adb shell _starts the adb shell so we can work inside the Mavic_\
 > mount -o remount,rw /amt _makes the amt directory read and writable_\
@@ -217,35 +212,29 @@ Remove altitude restrictions
 > g\_config\_flying\_limit\_height\_limit\_enabled: 2\
 > g\_config\_flying\_limit\_limit\_height\_rel: 10000\
 > g\_config\_flying\_limit\_limit\_height\_abs: 10000\
-> g\_config\_flying\_limit\_limit\_height\_abs\_without\_gps : 10000\
->
+> g\_config\_flying\_limit\_limit\_height\_abs\_without\_gps : 10000<br>
 
 Increase auto landing descent speed above 20m
 
-> g\_config\_landing\_auto\_landing\_vel\_L2: -6\
->
+> g\_config\_landing\_auto\_landing\_vel\_L2: -6<br>
 
 Automatically pitch gimbal to horizontal on landing
 
-> g\_config\_landing\_ctrl\_gimbal\_pitch\_to\_horiz\_enable : 1\
->
+> g\_config\_landing\_ctrl\_gimbal\_pitch\_to\_horiz\_enable : 1<br>
 
 Increase return to home speed
 
-> g\_config\_go\_home\_gohome\_idle\_vel: 13\
->
+> g\_config\_go\_home\_gohome\_idle\_vel: 13<br>
 
 Disable go home at point of no return (hotpoint)
 
 > g\_config\_hotpoint\_battery\_low\_go\_home\_enable: 0\
-> g\_config\_hotpoint\_enable\_mode: 0\
->
+> g\_config\_hotpoint\_enable\_mode: 0<br>
 
 Reduce wind warnings
 
 > g\_config\_air\_est\_big\_wind\_level1: 8\
-> g\_config\_air\_est\_big\_wind\_level2: 11\
->
+> g\_config\_air\_est\_big\_wind\_level2: 11<br>
 
 Sport Plus (zippier performance in S mode)
 
@@ -257,8 +246,7 @@ Sport Plus (zippier performance in S mode)
 > g\_config\_mode\_sport\_cfg\_vert\_vel\_down: -10\
 > g\_config\_mode\_sport\_cfg\_vert\_acc\_up: 10\
 > g\_config\_mode\_sport\_cfg\_vert\_acc\_down: -10\
-> g\_config\_fw\_cfg\_max\_speed: 20\
->
+> g\_config\_fw\_cfg\_max\_speed: 20<br>
 
 GPS Mode (P mode) Plus
 
@@ -266,20 +254,17 @@ GPS Mode (P mode) Plus
 > g\_config\_mode\_normal\_cfg\_vert\_vel\_up: 8\
 > g\_config\_mode\_normal\_cfg\_vert\_vel\_down: -6\
 > g\_config\_mode\_normal\_cfg\_vert\_acc\_up: 8\
-> g\_config\_mode\_normal\_cfg\_vert\_acc\_down: -6\
->
+> g\_config\_mode\_normal\_cfg\_vert\_acc\_down: -6<br>
 
 Smoother Flight/Camera in Cinematic Mode
 
 > g\_config\_mode\_cinematic\_cfg\_tilt\_exp\_mid\_point: 0.15\
-> g\_config\_mode\_cinematic\_cfg\_tors\_exp\_mid\_point: 0.10\
->
+> g\_config\_mode\_cinematic\_cfg\_tors\_exp\_mid\_point: 0.10<br>
 
 Smoother Flight/Camera in Tripod Mode
 
 > g\_config\_mode\_tripod\_cfg\_tilt\_exp\_mid\_point: 0.15\
-> g\_config\_mode\_tripod\_cfg\_tors\_exp\_mid\_point: 0.10\
->
+> g\_config\_mode\_tripod\_cfg\_tors\_exp\_mid\_point: 0.10<br>
 
 Remove No Fly Zone restrictons
 
@@ -291,8 +276,7 @@ Remove No Fly Zone restrictons
 > g\_config\_airport\_limit\_cfg\_cfg\_r1\[FLY\_LIMIT\_TYPE\_SPECIAL]\*\*: 65535\
 > g\_config\_airport\_limit\_cfg\_cfg\_h1\[FLY\_LIMIT\_TYPE\_AIRPORT]\*\*: 10000\
 > g\_config\_airport\_limit\_cfg\_cfg\_h1\[FLY\_LIMIT\_TYPE\_SPECIAL]\*\*: 10000\
-> g\_config\_airport\_limit\_cfg\_cfg\_angle\[FLY\_LIMIT\_TYPE\_AIRPORT]\*\*: 89.8\
->
+> g\_config\_airport\_limit\_cfg\_cfg\_angle\[FLY\_LIMIT\_TYPE\_AIRPORT]\*\*: 89.8<br>
 
 \*\*The double asterisked items above are parameters I have identified that I believe may contribute to the reducing of flight performance in an NFZ, even when the NFZ override (the first two settings in the list) have been implemented. These settings seem to allow the Mavic to fly normally in an NFZ, but my opportunities to do real world testing are limited. Some of these may be unnecessary changes from default settings. Reports of any other Mavic user's experiences are welcome.\
 \
@@ -300,14 +284,12 @@ Quick motor start and shutdown\*\*\*
 
 > g\_config\_rc\_cfg\_start\_motor\_verify\_tim\_ms: 10\
 > g\_config\_rc\_cfg\_stop\_motor\_verify\_tim\_ms: 10\
-> g\_config\_rc\_cfg\_emergency\_stop\_verify\_time\_ms: 10\
->
+> g\_config\_rc\_cfg\_emergency\_stop\_verify\_time\_ms: 10<br>
 
 Motor restart while inverted\*\*\*
 
 > g\_cfg\_debug\_motor\_no\_start\_motor\_check: 1\
-> g\_config\_fdi\_open\_close\_auto\_stop\_motor\_check: 1\
->
+> g\_config\_fdi\_open\_close\_auto\_stop\_motor\_check: 1<br>
 
 \*\*\*The first of these last two setting groups ("Quick Motor Start and Shutdown") reduces the time for non-emergency and emergency CSC motor stop from 1 second and 0.2 second, respectively, to 10ms for both. It likewise reduces CSC motor start from 0.2 sec to 10ms. The "Motor Restart While Inverted" group of settings allows restart of the motors wh§ile the Mavic is inverted using CSC. CSC is the "Control Stick Cutoff" done by putting both of the sticks down and in or down and out. In the DJI Go App, you can set this command to work for cutoff only when the Mavic has detected a breakdown (prop interference, inverted, etc.) or, alternat§ively, at any time. I like the short intervals to allow me to chop the engines during a hand catch or in low hover over grass without the Mavic trying to do a backwards, turning, sliding maneuver (the response from the CSC stick positions). However, these brief intervals for the CSC command to kill the motors also mean that you could, theoretically, shut off your engines in flight inadvertently (but would you really ever put the sticks in those positions for flight?).\
 \
@@ -323,8 +305,7 @@ Choosing Which Version of DJI Go:\
 \
 We've got our Mavic all flashed and configured. But now we need DJI Go on our phone or tablet. We can just download and install the most recent version of DJI Go, right? Right . . . unless we want to remove forced updates, or firmware checks, or “phoning home” to the various websites DJI uses to collect data without us knowing. In that case, we need to custom mod our app. And if we want FCC Boost (see “Background for Beginners” above) along with the latest version of DJI Go, we’ve got to go a step further and run two versions of Go side-by-side. Not so simple now, huh? ![](https://static.rcgroups.net/forums/images/smilies/eek.gif)\
 \
-Stock or Modded: What's right for you?\
-
+Stock or Modded: What's right for you?<br>
 
 * If you are running FW 1.04.300 (mixed mod with FW.700 controllers and deleted NFZ is okay), and don’t care about forced login, forced firmware updates, and DJI data collection, then you are probably fine using the newest DJI Go app downloaded from DJI, . . . . . . at least until you are not (they could put additional monitoring checks for modding into future versions). You can still have Force FCC and FCC boost with a stock DJI Go app (see below).
 * If you want fake login, blocking of forced updates, or blocking of "phone home", then you will need to run a modded DJI Go. You can mod it yourself or download one from my share. You can still have Force FCC and FCC boost with a modded DJI Go app (see below).
@@ -337,8 +318,7 @@ Force FCC and FCC Boost are both achievable with stock or modded DJI Go up to ve
 \
 Note about NFZs: As mentioned above under the firmware modding section, removing the No-Fly-Zone files from the Mavic does not fully eliminate NFZs. The DJI Go app also contains an NFZ database. While an NFZ free Mavic will not be grounded, the app will alert about an NFZ and trigger reduced flight performance of the Mavic (unless parameter changes override this--see discussion above). It is possible to remove the NFZ database from the older versions of DJI Go that also allow FCC Boost. Doing so is beyond the scope of this walkthrough, but all of the version 4.1.3 DJI Go and the DJI Go Boost available for download from my [Mavic Pro Share](https://drive.google.com/open?id=1-AhQBuwe4jzDT-WE-ecHIutHDfMoUeUp) have had the NFZ database deleted. DJI has changed the app to make removal of the database in newer versions practically impossible. So, if you go with a newer version (stock or modded), you will have to put up with the alerts.\
 \
-Where to Next?\
-
+Where to Next?<br>
 
 * If you want to run a stock version of DJI Go v. 4.1.10 or earlier with Force FCC or FCC Boost, go to [dji.polybotes.feralhosting.com/DJI-Firmware](http://dji.polybotes.feralhosting.com/DJI-Firmware/BIN/Mavic%20Pro%20\(Incl%20Platinum%20and%20Alpine\)/) and download the older stock version of Go that you want to install, and then skip to “Step 4: Installing the APK”, in the section below. After that, follow the instructions for downloading the config files, but don’t download and install my Boost app (you will just use the config files directly with the older stock Go app).
 * If you want to run a stock version of DJI Go after v. 4.1.10 with Force FCC or FCC Boost, go to [dji.polybotes.feralhosting.com/DJI-Firmware](http://dji.polybotes.feralhosting.com/DJI-Firmware/BIN/Mavic%20Pro%20\(Incl%20Platinum%20and%20Alpine\)/) and download the version of Go that you want to install OR, if you want the newest version of Go, download it and install it directly from the Play Store. If you didn’t install from the Play Store, skip to “Step 4: Installing the APK”, in the section below. If you did install from the Play Store, then skip to “Step 5: Installing FCC Force or FCC Boost” in the section below. Either way, be sure to download and install my Boost app and place the config files as instructed below.
@@ -364,8 +344,7 @@ STEP 2: Download the Android APK Files for DJI Go Versions To Be Modded\
 Starting somewhere around DJI Go v. 4.1.14, DJI put security in the app to block modding efforts. This security feature is called "SecNeo". Fortunately, some versions of the app have made it out in the wild without SecNeo. If you want all of the newest features and functions, you will want the NoSecNeo version of DJI Go 4.1.22 for which I provide a link below. If you don't care about pano and quick shots and want FCC Boost, then you will want the stock DJI Go 4.1.3 for which I provide a link below. You will mod whichever of these in the next step. If you want both FCC Boost and the newest features, then, in addition to the NoSecNeo DJI Go 4.1.22, you will also need a specially modded Side-by-side DJI Go 4.1.3 ("DJI Go Boost") for which I will provide instructions and a download link in a later step below.
 
 > [DJI Go 4.1.22 NoSecNeo](http://www.openpilotlegacy.org/dji.go.v4-4.1.22-3028592-noseceo.apk) _Alternative download from my_ [Mavic Pro Share Folder](https://drive.google.com/open?id=1-AhQBuwe4jzDT-WE-ecHIutHDfMoUeUp)\
-> [DJI Go 4.1.3 Stock](https://www.apkmirror.com/apk/dji-technology-co-ltd/dji-go-4/dji-go-4-4-1-3-release/dji-go-4-4-1-3-android-apk-download/) _Alternative download from my_ [Mavic Pro Share Folder](https://drive.google.com/open?id=1-AhQBuwe4jzDT-WE-ecHIutHDfMoUeUp)\
->
+> [DJI Go 4.1.3 Stock](https://www.apkmirror.com/apk/dji-technology-co-ltd/dji-go-4/dji-go-4-4-1-3-release/dji-go-4-4-1-3-android-apk-download/) _Alternative download from my_ [Mavic Pro Share Folder](https://drive.google.com/open?id=1-AhQBuwe4jzDT-WE-ecHIutHDfMoUeUp)<br>
 
 For other versions of stock DJI Go, go here: [www.apkmirror.com/apk/dji-technology-co-ltd](https://www.apkmirror.com/apk/dji-technology-co-ltd/)\
 \
@@ -419,13 +398,11 @@ First Run of DJI Go 4.1.3 (stock or modded) or DJI Go Boost: If you are trying t
 \
 Running DJI Go Boost: If you are using my DJI Go Boost app, follow the step above for the first run to disable NFZ updates. Also make sure you have copied the “.DJI.configs” file to the “Boost/files” folder (see instructions above). Then, for each flight, do the following to fly your Mavic. At startup of the controller, you will get a pop-up asking you to choose which app to start, select "DJI Go Boost" and select to run "Just Once" if you sometimes will want to fly without Boost (on those occasions, you would select your primary Go App and “Just Once”). If you are always going to fly in Boost, then you can select Boost and select to run “Always.” Either way, let the Boost App start up and get to the status screen. Once you can see out the camera of the Mavic from the boost App, the controller and Mavic are running in Boost. At that point, you can exit the app and manually start the newer version of DJI Go that you installed (modded or stock). Boost will persist until the next time you shut off the Mavic and RC.\
 \
-IMPORTANT: You will not have Boost if any other version of DJI Go loads first, or if you allow DJI Goggles to connect first. The start up sequence is important. To Get Boost:\
-
+IMPORTANT: You will not have Boost if any other version of DJI Go loads first, or if you allow DJI Goggles to connect first. The start up sequence is important. To Get Boost:<br>
 
 > 1\) Start the Mavic\
 > 2\) Start the Controller\
-> 3\) DJI Go Boost App must then start automatically (immediately or by selecting and then clicking “Just Once”)\
->
+> 3\) DJI Go Boost App must then start automatically (immediately or by selecting and then clicking “Just Once”)<br>
 
 \
 If you do not get the opportunity to select the Boost App because another version of Go automatically loads first, you will need to go that App in settings and select for it to no longer be the default app.\
@@ -436,8 +413,7 @@ Note about Live Streaming to Facebook: If livestreaming isn't working after inst
 \
 Going Back to Stock:\
 \
-If you need to return your Mavic to stock, use Dumldore or a current version of DJI Assistant to flash the newest stock firmware. You will additionally want to remove root. You can do so by [downloading](https://drive.google.com/open?id=1-AhQBuwe4jzDT-WE-ecHIutHDfMoUeUp) my “UndoRoot.bat” file and placing it in the “c:\Mavic\ADB” directory. Then, open a Command Prompt with administrative privileges (in start menu, type "cmd", right click on "Command Prompt" and select "Run as an Administrator"). Type "CD C:\Mavic\adb" to get to the ADB directory. Then type “UndoRoot”. Alternatively, you can run the batch file commands manually by entering each of the following in order (excluding italicized explanations):\
-
+If you need to return your Mavic to stock, use Dumldore or a current version of DJI Assistant to flash the newest stock firmware. You will additionally want to remove root. You can do so by [downloading](https://drive.google.com/open?id=1-AhQBuwe4jzDT-WE-ecHIutHDfMoUeUp) my “UndoRoot.bat” file and placing it in the “c:\Mavic\ADB” directory. Then, open a Command Prompt with administrative privileges (in start menu, type "cmd", right click on "Command Prompt" and select "Run as an Administrator"). Type "CD C:\Mavic\adb" to get to the ADB directory. Then type “UndoRoot”. Alternatively, you can run the batch file commands manually by entering each of the following in order (excluding italicized explanations):<br>
 
 > adb shell _starts the adb shell so we can work inside the Mavic_\
 > mount -o remount,rw /vendor _makes the vendor directory read and writable_\

@@ -1,17 +1,17 @@
 # Creating a Panorama Application
 
-* [Implementing the FPV](broken-reference)
-* [Rotating with Virtual Stick](broken-reference)
-* [Shooting a Series of Photos](broken-reference)
-* [Rotating Gimbal to Shoot Photos](broken-reference)
-* [Shooting Photos with DJIWaypointMission](broken-reference)
-* [Selecting and Downloading Photos](broken-reference)
-* [Using OpenCV to Create Panorama](broken-reference)
-  * [Creating Stitching View](broken-reference)
-  * [Importing OpenCV](broken-reference)
-  * [Stitching Photos](broken-reference)
-  * [Cropping the Panorama](broken-reference)
-* [Summary](broken-reference)
+* [Implementing the FPV](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+* [Rotating with Virtual Stick](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+* [Shooting a Series of Photos](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+* [Rotating Gimbal to Shoot Photos](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+* [Shooting Photos with DJIWaypointMission](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+* [Selecting and Downloading Photos](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+* [Using OpenCV to Create Panorama](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+  * [Creating Stitching View](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+  * [Importing OpenCV](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+  * [Stitching Photos](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+  * [Cropping the Panorama](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+* [Summary](/broken/pages/m5KQoMBRKRBJU3koBAl6)
 
 _If you come across any mistakes or bugs in this tutorial, please let us know using a Github issue, a post on the DJI forum, or commenting in the Gitbook. Please feel free to send us Github pull request and help us fix any issues. However, all pull requests related to document must follow the_ [_document style_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 
@@ -938,7 +938,7 @@ Then add the **prepareForSegue** method to pass the downloaded photos to the nex
 
 #### Importing OpenCV <a href="#importing-opencv" id="importing-opencv"></a>
 
-**1.** Build the **opencv2.framework** for iOS. You can check for more details in [Installation OpenCV in iOS](http://docs.opencv.org/doc/tutorials/introduction/ios\_install/ios\_install.html). If you have any difficulties compiling the source code, you can just download this project and copy the **opencv2.framework**.
+**1.** Build the **opencv2.framework** for iOS. You can check for more details in [Installation OpenCV in iOS](http://docs.opencv.org/doc/tutorials/introduction/ios_install/ios_install.html). If you have any difficulties compiling the source code, you can just download this project and copy the **opencv2.framework**.
 
 **2.** Select the project target, go to **Build Phases** -> **Link Binary With Libraries**. Click the "+" button at the bottom and add the**AssetsLibrary.framework** library to your project. Click the "+" button, click on **Add others** and navigate to the directory where **opencv2.framework** is located and click open.
 
@@ -965,7 +965,7 @@ Open your PCH file and add the following lines of code:
 
 #### Stitching Photos <a href="#stitching-photos" id="stitching-photos"></a>
 
-**1.** In the OpenCV, all the image processing operations are usually carried out on the Mat structure. However, on iOS, to render an image on screen it has to be an instance of the UIImage class. In order to convert an OpenCV Mat to an UIImage we can use the Core Graphics framework in iOS. Find more details, please check [Convert UIImage to cv::Mat](http://docs.opencv.org/doc/tutorials/ios/image\_manipulation/image\_manipulation.html#opencviosimagemanipulation). You can define a **OpenCVConversion** class to deal with the conversion issue.
+**1.** In the OpenCV, all the image processing operations are usually carried out on the Mat structure. However, on iOS, to render an image on screen it has to be an instance of the UIImage class. In order to convert an OpenCV Mat to an UIImage we can use the Core Graphics framework in iOS. Find more details, please check [Convert UIImage to cv::Mat](http://docs.opencv.org/doc/tutorials/ios/image_manipulation/image_manipulation.html#opencviosimagemanipulation). You can define a **OpenCVConversion** class to deal with the conversion issue.
 
 Let's implement the **OpenCVConversion.h** file shown as below:
 
@@ -1178,7 +1178,7 @@ Because of the limited computing ability and memory storage of mobile devices, w
 
 **4.** Now add an **UIImageView** in the **Main.storyboard**, set its **Mode** to **Aspect Fit** and create its outlet, called **imageView** in the "StitchingViewController.h" file.
 
-![Image View](../../.gitbook/assets/set\_imageView.png)
+![Image View](../../.gitbook/assets/set_imageView.png)
 
 ![Image View](../../.gitbook/assets/imageView.png)
 
@@ -1233,7 +1233,7 @@ Replace the **StitchingViewController.mm** with the following code:
 
 Now download the latest photos and click the **Stitch** button. After a minute you should be able to see an amazing panorama photo!
 
-![uncropped pano](../../.gitbook/assets/uncropped\_pano.PNG)
+![uncropped pano](../../.gitbook/assets/uncropped_pano.PNG)
 
 #### Cropping the Panorama <a href="#cropping-the-panorama" id="cropping-the-panorama"></a>
 

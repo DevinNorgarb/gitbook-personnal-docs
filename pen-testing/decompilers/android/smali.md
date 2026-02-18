@@ -21,3 +21,13 @@ See [the wiki](https://github.com/JesusFreke/smali/wiki) for more info/news/rele
 * [Registers wiki page](https://github.com/JesusFreke/smali/wiki/Registers)
 * [Types, Methods and Fields wiki page](https://github.com/JesusFreke/smali/wiki/TypesMethodsAndFields)
 * [Official dex format reference](https://source.android.com/devices/tech/dalvik/dex-format.html)
+
+
+
+
+
+{% file src="../../../.gitbook/assets/smali-2.5.2 (1).jar" %}
+
+{% file src="../../../.gitbook/assets/smali-2.5.2 (2).jar" %}
+
+{% file src="../../../.gitbook/assets/baksmali-2.5.2 (1).jar" %}

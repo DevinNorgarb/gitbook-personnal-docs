@@ -1,6 +1,6 @@
 # Google - Code Review
 
-### [Code Review Developer Guide](https://app.gitbook.com/s/T93NGGcwjLm9kGhwgOvv/\~/changes/gi7PufUmdMlaPoOiRdxd/software-engineering/principles-and-practices/code-reviews/code-review-developer-guide)[eng-practices](https://google.github.io/eng-practices/)
+### [Code Review Developer Guide](https://app.gitbook.com/s/T93NGGcwjLm9kGhwgOvv/~/changes/gi7PufUmdMlaPoOiRdxd/software-engineering/principles-and-practices/code-reviews/code-review-developer-guide)[eng-practices](https://google.github.io/eng-practices/)
 
 Note: Always make sure to take into account The Standard of Code Review when considering each of these points.
 
@@ -72,7 +72,7 @@ In the general case, look at _every_ line of code that you have been assigned to
 
 If it’s too hard for you to read the code and this is slowing down the review, then you should let the developer know that and wait for them to clarify it before you try to review it. At Google, we hire great software engineers, and you are one of them. If you can’t understand the code, it’s very likely that other developers won’t either. So you’re also helping future developers understand this code, when you ask the developer to clarify it.
 
-If you understand the code but you don’t feel qualified to do some part of the review, [make sure there is a reviewer](broken-reference) on the CL who is qualified, particularly for complex issues such as privacy, security, concurrency, accessibility, internationalization, etc.
+If you understand the code but you don’t feel qualified to do some part of the review, [make sure there is a reviewer](/broken/pages/nM6vTYKimJlmkGAmxAWh) on the CL who is qualified, particularly for complex issues such as privacy, security, concurrency, accessibility, internationalization, etc.
 
 #### Exceptions <a href="#every-line-exceptions" id="every-line-exceptions"></a>
 

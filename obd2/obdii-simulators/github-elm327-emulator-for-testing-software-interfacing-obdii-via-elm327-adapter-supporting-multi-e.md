@@ -1,12 +1,12 @@
-# GitHub: ELM327 Emulator for testing software interfacing OBDII via ELM327 adapter supporting multi-E
+# ELM327 Emulator
 
 ### ELM327-emulator
 
 **A Python emulator of the ELM327 OBD-II adapter connected to a vehicle supporting multi-ECU simulation.**
 
-_ELM327-emulator_ connects client applications to multiple emulated [ECU](https://en.wikipedia.org/wiki/Engine\_control\_unit)s via [OBD-II](https://en.wikipedia.org/wiki/On-board\_diagnostics) interface through different networking systems, including serial communication (where [pseudo-terminals](https://en.wikipedia.org/wiki/Pseudoterminal) are used if supported by the operating systems), or direct interaction with communication devices, or TCP/IP, or Bluetooth. The software simulates an [ELM327](https://en.wikipedia.org/wiki/ELM327) adapter connected to a vehicle, includes a command-line interface for extensive monitoring and offers a documented Python development framework to implement ECU emulation objects.
+_ELM327-emulator_ connects client applications to multiple emulated [ECU](https://en.wikipedia.org/wiki/Engine_control_unit)s via [OBD-II](https://en.wikipedia.org/wiki/On-board_diagnostics) interface through different networking systems, including serial communication (where [pseudo-terminals](https://en.wikipedia.org/wiki/Pseudoterminal) are used if supported by the operating systems), or direct interaction with communication devices, or TCP/IP, or Bluetooth. The software simulates an [ELM327](https://en.wikipedia.org/wiki/ELM327) adapter connected to a vehicle, includes a command-line interface for extensive monitoring and offers a documented Python development framework to implement ECU emulation objects.
 
-_ELM327-emulator_ is able to support basic ELM327 commands and OBD service requests through stateless request/response method via OBD-II, but can also handle stateful [UDS](https://en.wikipedia.org/wiki/Unified\_Diagnostic\_Services) communication with [ISO-TP](https://en.wikipedia.org/wiki/ISO\_15765-2) Flow Control and [Keyword Protocol 2000](https://en.wikipedia.org/wiki/Keyword\_Protocol\_2000), concurrently emulating multiple ECUs. It is designed to be extended via a plugin architecture to allow easy development of specific tasks implementing workflows, including the possibility to simulate anomalies for testing purposes. Many AT commands are supported, as well as some [OBDLink](https://www.obdlink.com/) AT/ST [commands](https://www.scantool.net/scantool/downloads/98/stn1100-frpm.pdf).
+_ELM327-emulator_ is able to support basic ELM327 commands and OBD service requests through stateless request/response method via OBD-II, but can also handle stateful [UDS](https://en.wikipedia.org/wiki/Unified_Diagnostic_Services) communication with [ISO-TP](https://en.wikipedia.org/wiki/ISO_15765-2) Flow Control and [Keyword Protocol 2000](https://en.wikipedia.org/wiki/Keyword_Protocol_2000), concurrently emulating multiple ECUs. It is designed to be extended via a plugin architecture to allow easy development of specific tasks implementing workflows, including the possibility to simulate anomalies for testing purposes. Many AT commands are supported, as well as some [OBDLink](https://www.obdlink.com/) AT/ST [commands](https://www.scantool.net/scantool/downloads/98/stn1100-frpm.pdf).
 
 _ELM327-emulator_ supports different operating systems including Windows, macOS and UNIX/Linux; it is agnostic of the client application and has been tested with [python-OBD](https://github.com/brendan-w/python-OBD) as well as with many applications on Windows, Linux and on smartphone devices.
 
@@ -462,13 +462,13 @@ _ELM327-emulator_ includes a basic processing of the ISO 15765-2 ISO-TP Layer an
 * ISO-TP Single frame (SF), First frame (FF), Consecutive frame (CF), Flow control frame (FC),
 * Basic input flow control of ISO-TP (with generation of FC output frames); output flow control (handling of FC input frames) is ignored,
 * KWP2000 Checksum byte (CS) at the end of the ISO 14230-2:1999 message block (checksum verification in requests and checksum generation in responses),
-* ISO-TP P1, P2, P3 and P4 [timers](broken-reference).
+* ISO-TP P1, P2, P3 and P4 [timers](/broken/pages/K1H5cynA5Th3WwrjLp5K).
 
 The KWP2000 format is detected by a header >= three bytes.
 
 ### Advanced usage
 
-_ELM327-emulator_ allows changing the UDS P1, P2, P3 and P4 [timers](broken-reference) via the `timer` command. The P4 timer controls the max delay between each entered character and by default is not active (e.g., set to 1440 seconds). The P4 timer can either be configured via `timer P4 value`, or by setting `emulator.counters['req_timeout']`. Decimals are allowed. Some adapters set P4 by default, discarding characters if each of them is not entered within a short time limit (apart from the first one after a CR/Carriage Return). The appropriate emulation for this timeout is to set `emulator.counters['req_timeout']=0.015` (e.g., 15 milliseconds). Typing commands by hand via terminal emulator with such adapters is not possible as the allowed timing is too short. The same happens when setting _req\_timeout_ to 0.015 (or `timer P4 0.015`).
+_ELM327-emulator_ allows changing the UDS P1, P2, P3 and P4 [timers](/broken/pages/K1H5cynA5Th3WwrjLp5K) via the `timer` command. The P4 timer controls the max delay between each entered character and by default is not active (e.g., set to 1440 seconds). The P4 timer can either be configured via `timer P4 value`, or by setting `emulator.counters['req_timeout']`. Decimals are allowed. Some adapters set P4 by default, discarding characters if each of them is not entered within a short time limit (apart from the first one after a CR/Carriage Return). The appropriate emulation for this timeout is to set `emulator.counters['req_timeout']=0.015` (e.g., 15 milliseconds). Typing commands by hand via terminal emulator with such adapters is not possible as the allowed timing is too short. The same happens when setting _req\_timeout_ to 0.015 (or `timer P4 0.015`).
 
 The command prompt also allows configuring the `emulator.answer` dictionary (ref. also previous paragraph), which has the goal to dynamically redefine answers for specific PIDs (`'Pid': '...'`). Its syntax is:
 
@@ -614,7 +614,7 @@ test atsh7e0
 test 010D
 ```
 
-In the above example, which illustrates an in-line expression substitution, the configuration of the ‘SPEED’ PID ([Vehicle speed](https://en.wikipedia.org/wiki/OBD-II\_PIDs#Service\_01)) is replaced with a dynamic answer and the ‘SPEED’ PID will return `7E8 03 41 0D 0A` + line separator for most of the time. With 20% probability, `NO DATA` + line separator is returned. Notice that the last line separator is common to both options.
+In the above example, which illustrates an in-line expression substitution, the configuration of the ‘SPEED’ PID ([Vehicle speed](https://en.wikipedia.org/wiki/OBD-II_PIDs#Service_01)) is replaced with a dynamic answer and the ‘SPEED’ PID will return `7E8 03 41 0D 0A` + line separator for most of the time. With 20% probability, `NO DATA` + line separator is returned. Notice that the last line separator is common to both options.
 
 The following example shows how to dynamically generate an answer via command line by converting decimal numbers to hex string in order to allow comfortable testing of a PID by specifying decimal input values. Suppose that the PID needs to double the input. We use _CUSTOM\_FUEL\_LEVEL_ PID in the example, testing the answer related to 15.5 liters.
 
@@ -642,7 +642,7 @@ test atsh7c0
 test 2129
 ```
 
-The following command sets SPEED ([Vehicle speed](https://en.wikipedia.org/wiki/OBD-II\_PIDs#Service\_01)) to 60 km/h via command line (60 can be changed to any integer value between 0 and 255):
+The following command sets SPEED ([Vehicle speed](https://en.wikipedia.org/wiki/OBD-II_PIDs#Service_01)) to 60 km/h via command line (60 can be changed to any integer value between 0 and 255):
 
 ```
 emulator.answer['SPEED'] = '<header>7E8</header><size>03</size><subd>41 0D</subd><eval>"%.2X" % 60</eval><space /><writeln />'
@@ -654,7 +654,7 @@ test 010D
 
 The output is:
 
-The following command sets RPM ([Engine RPM](https://en.wikipedia.org/wiki/OBD-II\_PIDs#Service\_01)) to 500 via command line:
+The following command sets RPM ([Engine RPM](https://en.wikipedia.org/wiki/OBD-II_PIDs#Service_01)) to 500 via command line:
 
 ```
 emulator.answer['RPM'] = '<exec>ECU_R_ADDR_E + " 04 41 0C %.4X" % int(4 * 500)</exec><writeln />'
@@ -759,12 +759,12 @@ The `timer` command allows showing or changing the UDS timers.
 
 Values are in seconds (floating numbers are allowed).
 
-| Timer name | Description                                                       | Default value | Note                                                                                                                                                                                                                                                     |
-| ---------- | ----------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| P1         | Inter byte time for ECU response                                  | 0             | This timer is implemented by adding a fixed delay to each outputted character. If set to a value different than 0, _ELM327-emulator_ outputs characters one by one, adding the indicated delay value after each of them.                                 |
-| P2         | Time between tester request and ECU response or two ECU responses | 0             | Same as the `delay` command: this timer is implemented by adding a fixed delay (the one indicated in the `timer P2` value) after receiving each request (including also AT/ST commands) and before computing the response.                               |
-| P3         | Time between end of ECU responses and start of new tester request | 5             | The related value controls the expiration timeout between two responses: if expiring within a multiframe or within an active task, the related operation is interrupted and the active tasks of the same ECU are removed, executing the _stop()_ method. |
-| P4         | Inter byte time for tester request                                | 1440          | The related value controls the time between each received request character to keep the whole request valid. If exceeding the timeout, the request is discarded. Changing this value configures the [req\_timeout](broken-reference) counter.            |
+| Timer name | Description                                                       | Default value | Note                                                                                                                                                                                                                                                            |
+| ---------- | ----------------------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| P1         | Inter byte time for ECU response                                  | 0             | This timer is implemented by adding a fixed delay to each outputted character. If set to a value different than 0, _ELM327-emulator_ outputs characters one by one, adding the indicated delay value after each of them.                                        |
+| P2         | Time between tester request and ECU response or two ECU responses | 0             | Same as the `delay` command: this timer is implemented by adding a fixed delay (the one indicated in the `timer P2` value) after receiving each request (including also AT/ST commands) and before computing the response.                                      |
+| P3         | Time between end of ECU responses and start of new tester request | 5             | The related value controls the expiration timeout between two responses: if expiring within a multiframe or within an active task, the related operation is interrupted and the active tasks of the same ECU are removed, executing the _stop()_ method.        |
+| P4         | Inter byte time for tester request                                | 1440          | The related value controls the time between each received request character to keep the whole request valid. If exceeding the timeout, the request is discarded. Changing this value configures the [req\_timeout](/broken/pages/K1H5cynA5Th3WwrjLp5K) counter. |
 
 ### Tasks
 
@@ -774,15 +774,15 @@ In case of stateless requests/responses, an ECU function can be emulated through
 
 When _ELM327-emulator_ starts, it enumerates all available plugins in its _plugins_ subdirectory (_elm/plugins_). Each plugin defines an own task, named with the file name of the plugin. All the file names of the plugins must start with _task\__.
 
-A task is invoked in the dictionary through the `'Task'` tag, that refers to the name of an installed plugin. If a request associating a task is matched (including _Request_ and possibly _Header_ tags), its related task is activated by instantiating the _Task_ class of the invoked plugin. After startup and after processing the request, the task can either terminate or remain active; in the latter case, it receives all subsequent requests related to the same header, allowing to implement a dedicated communication flow within a dedicated namespace. All tasks (regardless they terminate or remain active) take also advantage of a shared namespace, common to all requests addressed to the same ECU (see [ECU Tasks](broken-reference) for further information).
+A task is invoked in the dictionary through the `'Task'` tag, that refers to the name of an installed plugin. If a request associating a task is matched (including _Request_ and possibly _Header_ tags), its related task is activated by instantiating the _Task_ class of the invoked plugin. After startup and after processing the request, the task can either terminate or remain active; in the latter case, it receives all subsequent requests related to the same header, allowing to implement a dedicated communication flow within a dedicated namespace. All tasks (regardless they terminate or remain active) take also advantage of a shared namespace, common to all requests addressed to the same ECU (see [ECU Tasks](/broken/pages/K1H5cynA5Th3WwrjLp5K) for further information).
 
 Tasks are interrupted by the following conditions:
 
 * task termination performed by the plugin itself after processing the request (e.g, returning a method with `False` or with `self.TASK.TERMINATE` as the second value of the return tuple);
 * communication reset (e.g., communication disconnection, or "ATZ", or _reset_ command);
-* expiration of the [P3 timer](broken-reference).
+* expiration of the [P3 timer](/broken/pages/K1H5cynA5Th3WwrjLp5K).
 
-Tasks and plugins can be monitored through the `tasks` [command](broken-reference).
+Tasks and plugins can be monitored through the `tasks` [command](/broken/pages/K1H5cynA5Th3WwrjLp5K).
 
 Multiple tasks can be concurrently instanced with different ECU IDs.
 
@@ -826,7 +826,7 @@ A task can exploit its own namespace, which is related to a specific task instan
 
 Other than storing local variables, the task namespace is useful to persist class properties if the task terminates with `Tasks.RETURN.CONTINUE`, and also to perform preprocessing through the related task methods (`start()`, `stop()`, `run()`), so that any subsequent request of the same ECU will be processed by the same task, until task termination. All subsequent calls of an active task share the same namespace. For instance, if a task is configured as a filter, its namespace can be used while preprocessing all subsequent requests directed to the ECU, which will be sent to the same task until its termination.
 
-The shared namespace for an ECU is named `self.shared` and can be associated to an [ECU Task](broken-reference). For instance, a task can create a variable named `self.shared.my_data = True`, that other tasks can use. The shared namespace can be used by different commands or tasks, if referring the same ECU. This area is created by _ELM327-emulator_ at the first request referring to an ECU (and, if available, the related ECU Task `start()` method is executed). The shared namespace is already active when any task method is run. This shared area is reset by a communication disconnection, or "ATZ", or _reset_ command, or expiration of the P3 timer.
+The shared namespace for an ECU is named `self.shared` and can be associated to an [ECU Task](/broken/pages/K1H5cynA5Th3WwrjLp5K). For instance, a task can create a variable named `self.shared.my_data = True`, that other tasks can use. The shared namespace can be used by different commands or tasks, if referring the same ECU. This area is created by _ELM327-emulator_ at the first request referring to an ECU (and, if available, the related ECU Task `start()` method is executed). The shared namespace is already active when any task method is run. This shared area is reset by a communication disconnection, or "ATZ", or _reset_ command, or expiration of the P3 timer.
 
 The easies way to configure tasks is to use Tasks.RETURN.TERMINATE (so that a task terminates after the execution of the invoked method, e.g., `Task.RETURN.ANSWER(answer)`) and to exploit `self.shared` to store persistent data, shared by different tasks and functions. The easies way to initialize shared data is through the definition of a `start()` method inside the related ECU Task.
 
@@ -866,7 +866,7 @@ With these two termination conditions, the `stop()` method is also executed (use
 
 All ECU task methods return the same three-element tuple of the tasks, where the first element is generally _None_ (if set to an XML string, its data is written as output response), the second one is either `Tasks.RETURN.CONTINUE` or `Tasks.RETURN.TERMINATE` (the latter is generally only for testing), the third one is the preprocessing output, or _None_ for no processing. `TASK_CONTINUE(cmd)` means `None, Tasks.RETURN.CONTINUE, cmd`.
 
-The plugin named [task\_ecu\_11F1.py](../../.gitbook/assets/task\_ecu\_11F1) is an example of ECU Task.
+The plugin named [task\_ecu\_11F1.py](../../.gitbook/assets/task_ecu_11F1) is an example of ECU Task.
 
 #### Example
 
@@ -957,7 +957,7 @@ The plugins named _task\_mt05\_read\_mem\_addr.py_ and _task\_mt05\_write\_mem\_
 
 The plugin named _task\_erase\_memory.py_ shows how to use the `start()` and `run()` methods, as well as `Tasks.RETURN.CONTINUE` which simulates a certain function processing time.
 
-The plugin named [task\_ecu\_11F1.py](../../.gitbook/assets/task\_ecu\_11F1) is an example of memory map run at the first usage of the 11F1 ECU. The _task\_mt05\_..._ plugins assume that the memory map structures are already instantiated by the ECU task.
+The plugin named [task\_ecu\_11F1.py](../../.gitbook/assets/task_ecu_11F1) is an example of memory map run at the first usage of the 11F1 ECU. The _task\_mt05\_..._ plugins assume that the memory map structures are already instantiated by the ECU task.
 
 #### Helper functions
 
@@ -1258,7 +1258,7 @@ ObdMessage Dictionary Generator for "ELM327-emulator".
 
 Sample usage: `obd_dictionary -i /dev/ttyUSB0 -c car.csv -o AurisOutput.py -v -p 10 -d 1 -n mycar`
 
-_obd\_dictionary_ exploits the [command discovery feature](https://python-obd.readthedocs.io/en/latest/Connections/#supported\_commands) of _python-OBD_, which autopopulates the set of builtin commands supported by the vehicle through [queries](https://github.com/brendan-w/python-OBD/blob/8f4a55cd04170d006eb7d1d774fb4bacb1c6282f/obd/obd.py#L102) performed within the [connection phase](https://github.com/brendan-w/python-OBD/blob/8f4a55cd04170d006eb7d1d774fb4bacb1c6282f/obd/obd.py#L65). Optionally, this set can be further enriched with a list of custom PIDs included in an input csv file in [Torque CSV Format](https://torque-bhp.com/wiki/PIDs). The autopopulation feature can be disabled with `-x` option.
+_obd\_dictionary_ exploits the [command discovery feature](https://python-obd.readthedocs.io/en/latest/Connections/#supported_commands) of _python-OBD_, which autopopulates the set of builtin commands supported by the vehicle through [queries](https://github.com/brendan-w/python-OBD/blob/8f4a55cd04170d006eb7d1d774fb4bacb1c6282f/obd/obd.py#L102) performed within the [connection phase](https://github.com/brendan-w/python-OBD/blob/8f4a55cd04170d006eb7d1d774fb4bacb1c6282f/obd/obd.py#L65). Optionally, this set can be further enriched with a list of custom PIDs included in an input csv file in [Torque CSV Format](https://torque-bhp.com/wiki/PIDs). The autopopulation feature can be disabled with `-x` option.
 
 The command allows all the python-OBD interface settings (see `-B`, `-T`, `-C`, `-F`, `-P` command-line options) and a dry-run flag (`-r`), which is very useful to test the OBD-II connection.
 
@@ -1477,7 +1477,7 @@ Scantool from [ScanTool.net](https://www.scantool.net/) is an old software which
 
 Recent repository: [https://github.com/kees/scantool](https://github.com/kees/scantool)
 
-Software ported to Ubuntu 20.04 LTS: [https://github.com/ircama/scantool/tree/pts\_support](https://github.com/ircama/scantool/tree/pts\_support)
+Software ported to Ubuntu 20.04 LTS: [https://github.com/ircama/scantool/tree/pts\_support](https://github.com/ircama/scantool/tree/pts_support)
 
 Installation:
 
@@ -1563,7 +1563,7 @@ When natively running on Windows (to be used when connecting a Windows applicati
 ### Standards
 
 * The UDS Application layer is reported in [ISO 14229-1:2020](https://www.iso.org/standard/72439.html) (former ISO 15765-3, UDS on CAN)
-* [ISO 15765-2](https://en.wikipedia.org/wiki/ISO\_15765-2) (transport protocol and network layer services) describes the CAN protocol
+* [ISO 15765-2](https://en.wikipedia.org/wiki/ISO_15765-2) (transport protocol and network layer services) describes the CAN protocol
 * [ISO 15765-3:2004](https://www.iso.org/standard/33618.html) describes the implementation of unified diagnostic services (UDS on CAN at the Session and Application Layer)
 * [ISO 14229-2:2013](https://www.iso.org/standard/45763.html): UDS Session layer services
 * [ISO 14230-2:1999](https://www.sis.se/api/document/preview/612053/): Keyword Protocol 2000 Data Link Layer
@@ -1572,7 +1572,7 @@ When natively running on Windows (to be used when connecting a Windows applicati
 
 ### Credits
 
-Thanks to [@qqj1228](https://github.com/qqj1228) for implementing support to [com0com Windows driver](broken-reference).
+Thanks to [@qqj1228](https://github.com/qqj1228) for implementing support to [com0com Windows driver](/broken/pages/K1H5cynA5Th3WwrjLp5K).
 
 Thanks to ElmüSoft for several clarifications and to [mickeyl](https://github.com/mickeyl) for some notes on UDS.
 

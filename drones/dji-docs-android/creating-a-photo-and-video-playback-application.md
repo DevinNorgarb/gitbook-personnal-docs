@@ -2,18 +2,18 @@
 
 > Note：This Tutorial and Sample Project is developed based on DJI Android SDK v2.4, an update version for Android SDK v3.1.1 will be published soon.
 
-* [Introduction](broken-reference)
-* [Camera Modes](broken-reference)
-* [Distinguishing the Camera's Playback Status](broken-reference)
-* [UI Components For The Photo Album Application](broken-reference)
-  * [1. GridView for Multiple preview playback mode](broken-reference)
-  * [2. Camera mode UI](broken-reference)
-  * [3. Album gesture control](broken-reference)
-  * [4. Playing Video](broken-reference)
-* [Downloading and Deleting Media files](broken-reference)
-  * [1. Finishing the Download feature](broken-reference)
-  * [2. Automatically downloading media files](broken-reference)
-* [Summary](broken-reference)
+* [Introduction](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+* [Camera Modes](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+* [Distinguishing the Camera's Playback Status](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+* [UI Components For The Photo Album Application](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+  * [1. GridView for Multiple preview playback mode](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+  * [2. Camera mode UI](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+  * [3. Album gesture control](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+  * [4. Playing Video](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+* [Downloading and Deleting Media files](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+  * [1. Finishing the Download feature](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+  * [2. Automatically downloading media files](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+* [Summary](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
 
 _If you come across any mistakes or bugs in this tutorial, please let us know using a Github issue, a post on the DJI forum, or commenting in the Gitbook. Please feel free to send us Github pull request and help us fix any issues. However, all pull requests related to document must follow the_ [_document style_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 
@@ -267,7 +267,7 @@ We've just finished the framework of our application! Now set `PlaybackProtocolA
 
 Before we get started with this subsection, we've got to first make some adjustments:
 
-1. Follow the [Creating a Camera Application](broken-reference) to set up Android Open Accessory (AOA) support
+1. Follow the [Creating a Camera Application](/broken/pages/xsLHMhPQM11Yv2KNh6JN) to set up Android Open Accessory (AOA) support
 2. Change your main activity from `PlaybackProtocolActivity` to `DJIAoaActivity`
 3. Add a DjiGLSurfaceView element to show the first personal view (steps 2 and 3 are also covered in the "Creating a Camera Application" tutorial)
 4. Add item feature `android:visibility="Gone"` to our gridview in `activity_playback_protocol.xml`

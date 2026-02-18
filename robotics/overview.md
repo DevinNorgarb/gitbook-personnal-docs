@@ -1,6 +1,6 @@
 # Overview
 
-> The information in this guide applies to ArduSub V3.5 and up. If you are running an older version, you should [update](broken-reference).
+> The information in this guide applies to ArduSub V3.5 and up. If you are running an older version, you should [update](/broken/pages/a0miDy5oCMF4oi2JaIzr).
 
 ### ArduSub and the ArduPilot Project <a href="#ardusub-and-the-ardupilot-project" id="ardusub-and-the-ardupilot-project"></a>
 

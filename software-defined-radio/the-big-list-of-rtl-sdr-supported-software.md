@@ -36,7 +36,7 @@ SDR# is a simple to use program that also has some advanced features. It has a u
 
 
 
-HDSDR is based on the old WinRAD SDR program. HDSDR supports the RTL-SDR through use of an ExtIO.dll module. To install HDSDR, download the program from the link on the main HDSDR page, then to use the RTL-SDR you will need to download the ExtIO\_RTL2832.dll file an place it into the HDSDR folder. When opening HDSDR, select the newly copied ExtIO\_RTL2832.dll. The other dlls that come with HDSDR will not work with the RTL-SDR, even though they have RTL-SDR in their filename. The official installation instructions [can be found here](http://hdsdr.de/RTLSDR\_with\_HDSDR.pdf).
+HDSDR is based on the old WinRAD SDR program. HDSDR supports the RTL-SDR through use of an ExtIO.dll module. To install HDSDR, download the program from the link on the main HDSDR page, then to use the RTL-SDR you will need to download the ExtIO\_RTL2832.dll file an place it into the HDSDR folder. When opening HDSDR, select the newly copied ExtIO\_RTL2832.dll. The other dlls that come with HDSDR will not work with the RTL-SDR, even though they have RTL-SDR in their filename. The official installation instructions [can be found here](http://hdsdr.de/RTLSDR_with_HDSDR.pdf).
 
 Along with a FFT display and waterfall, HDSDR has some extra advanced features. Users will also find an Audio FFT and waterfall display on the bottom of the screen. The output audio can also be bandpass filtered by dragging the filter borders on the display. Bandpass filtering the audio can really help clean up a noisy signal. The audio processing also supports placing of notch filters either manually or automatically. There are also noise reduction and noise blanker features and an automatic frequency centering algorithm which will automatically center the signal, so you don't need to click exactly in the center of a signal. Traditional ham radio users will also enjoy the S-units signal strength meter and the built in frequency manager.
 
@@ -46,7 +46,7 @@ Along with a FFT display and waterfall, HDSDR has some extra advanced features. 
 
 SDR-RADIO.COM V2 and the newer V3 is a popular SDR program with many advanced features. As such is it a fair amount more difficult to learn and use compared to SDR# and HDSDR. Be sure you install version 2 and not V1.5 as only V2 has RTL-SDR support.
 
-Once sdr-radio is installed, to get it working with the RTL-SDR you will need to compile or download three .dll files (SDRSourceRTL2832U.dll, rtlsdr.dll and libusb-1.0.dll) and place them into the sdr-radio folder. To compile your own dlls see the [instructions here](http://sdrnuke.wces.net/Support/RTLSDRs/BuildingDlls.aspx), otherwise download the dlls directly from the [bottom of this link](http://www.aa5sh.com/?page\_id=65). If the dlls were placed in the correct folder you will be able to add your RTL-SDR as a receiver by clicking on the +Definitions button, and then finding and adding the RTL SDR (USB) option under the search drop down menu.
+Once sdr-radio is installed, to get it working with the RTL-SDR you will need to compile or download three .dll files (SDRSourceRTL2832U.dll, rtlsdr.dll and libusb-1.0.dll) and place them into the sdr-radio folder. To compile your own dlls see the [instructions here](http://sdrnuke.wces.net/Support/RTLSDRs/BuildingDlls.aspx), otherwise download the dlls directly from the [bottom of this link](http://www.aa5sh.com/?page_id=65). If the dlls were placed in the correct folder you will be able to add your RTL-SDR as a receiver by clicking on the +Definitions button, and then finding and adding the RTL SDR (USB) option under the search drop down menu.
 
 Like HDSDR, not only does sdr-radio have a RF FFT signal and waterfall display, but also an optional audio spectrum FFT and waterfall display. Built in are also several DSP features like a noise blanker, noise reduction filter, notch filter and squelch options. The EMNS noise reduction filter is particularly good at automatically cleaning up and clarifying voice signals.
 
@@ -124,7 +124,7 @@ A web based server and interface for remotely accessing RTL-SDRs. Seems to be mo
 
 
 
-Sodira is a Windows application that is capable of decoding AM and FM+RDS radio as well as DRM/DRM+ and time signals DCF77/HBG. It supports the use of the RTL-SDR through use of the ExtIO\_RTL2832.dll module. The same ExtIO\_RTL2832.dll module that is used with HDSDR and whose download is linked to in [this HDSDR tutorial](http://hdsdr.de/RTLSDR\_with\_HDSDR.pdf) can be used with Sodira. Just place the dll in the same folder as Sodira, and then under Configuration->Receiver select the dll file and then click on HW Init + Start to activate the RTL-SDR.
+Sodira is a Windows application that is capable of decoding AM and FM+RDS radio as well as DRM/DRM+ and time signals DCF77/HBG. It supports the use of the RTL-SDR through use of the ExtIO\_RTL2832.dll module. The same ExtIO\_RTL2832.dll module that is used with HDSDR and whose download is linked to in [this HDSDR tutorial](http://hdsdr.de/RTLSDR_with_HDSDR.pdf) can be used with Sodira. Just place the dll in the same folder as Sodira, and then under Configuration->Receiver select the dll file and then click on HW Init + Start to activate the RTL-SDR.
 
 ### [SDR Touch](https://play.google.com/store/apps/details?id=marto.androsdr2\&hl=en) (Android) ([Kindle](https://amzn.to/2KLuhAv)) (Trial/Paid) ([Related Post](https://www.rtl-sdr.com/sdr-touch-brings-rtl-sdr-to-android/))
 
@@ -142,7 +142,7 @@ Also available on Kindle devices via [the Amazon store](https://amzn.to/2KLuhAv)
 
 Wavesink Plus is another Android based RTL-SDR receiver with a free trial and paid full version. Wavesinks main feature is that it is capable of decoding DAB+ and DRM+ digital radio signals. As well as the digital radio signals, it can also receive standard FM and do FM-RDS decoding as well. To use Wavesink, like SDR Touch you will need a decently powerful Android 4.0+ device with USB OTG cable.
 
-### [RFAnalyzer](https://play.google.com/store/apps/details?id=com.mantz\_it.rfanalyzer) (Android) (Free/Paid)
+### [RFAnalyzer](https://play.google.com/store/apps/details?id=com.mantz_it.rfanalyzer) (Android) (Free/Paid)
 
 ### [![rfanalyzer](https://www.rtl-sdr.com/wp-content/uploads/2014/11/rfanalyzer-500x333.jpg)](https://www.rtl-sdr.com/wp-content/uploads/2014/11/rfanalyzer.jpg)&#x20;
 
@@ -152,13 +152,13 @@ Android app similar to SDR Touch. Originally for the HackRF, but now also suppor
 
 
 
-An SDR receiver intended for use with the HPSDR project SDR hardware, but can be used with the RTL-SDR through use of the [RTL\_HPSDR](https://www.rtl-sdr.com/rtl\_hpsdr-rtl-sdr-hpsdr-translation-server/) translation server program. One advantage to cuSDR is that it can support up to seven simultaneous RTL-SDR dongles. cuSDR is still currently under development.
+An SDR receiver intended for use with the HPSDR project SDR hardware, but can be used with the RTL-SDR through use of the [RTL\_HPSDR](https://www.rtl-sdr.com/rtl_hpsdr-rtl-sdr-hpsdr-translation-server/) translation server program. One advantage to cuSDR is that it can support up to seven simultaneous RTL-SDR dongles. cuSDR is still currently under development.
 
 ### [PowerSDR](http://www.flex-radio.com/Products.aspx?topic=powersdr1x) (Windows) (Free)
 
 
 
-PowerSDR is an SDR receiver intended for use with the FlexRadio SDR hardware. It is compatible with the RTL-SDR through use of the [RTL\_HPSDR](https://www.rtl-sdr.com/rtl\_hpsdr-rtl-sdr-hpsdr-translation-server/) translation server program. PowerSDR is capable of supporting up to four simultaneous RTL-SDR dongles.
+PowerSDR is an SDR receiver intended for use with the FlexRadio SDR hardware. It is compatible with the RTL-SDR through use of the [RTL\_HPSDR](https://www.rtl-sdr.com/rtl_hpsdr-rtl-sdr-hpsdr-translation-server/) translation server program. PowerSDR is capable of supporting up to four simultaneous RTL-SDR dongles.
 
 ### [QtRadio](http://napan.ca/ghpsdr3/index.php/RTL-SDR) (Windows/Linux) (Free)
 
@@ -208,7 +208,7 @@ A general purpose receiver like the others, but has transmit capabilities to for
 
 
 
-### [QO-100\_SSB-WebSDR\_DATV-WebSpectrum](https://github.com/dj0abr/QO-100\_SSB-WebSDR\_DATV-WebSpectrum) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/an-rtl-sdr-sdrplay-based-websdr-designed-specifically-for-qo-100-eshail-2-monitoring/))
+### [QO-100\_SSB-WebSDR\_DATV-WebSpectrum](https://github.com/dj0abr/QO-100_SSB-WebSDR_DATV-WebSpectrum) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/an-rtl-sdr-sdrplay-based-websdr-designed-specifically-for-qo-100-eshail-2-monitoring/))
 
 Custom WebSDR software specifically for monitoring Es'Hail-2 with an RTL-SDR or SDRplay.
 
@@ -234,11 +234,11 @@ RTL\_FM is a command line based FM receiver for the RTL-SDR which is bundled in 
 
 SoftFM is a command line FM receiver for the RTL-SDR that is similar to RTL\_FM. The difference is that SoftFM claims to get much better audio results compared to RTL\_FM.
 
-### [RTL\_UDP](https://github.com/sysrun/rtl-sdr) (Windows/Linux) (Free) ([Related Post](https://www.rtl-sdr.com/rtl\_udp-port-rtl\_fm-udp-controls/))
+### [RTL\_UDP](https://github.com/sysrun/rtl-sdr) (Windows/Linux) (Free) ([Related Post](https://www.rtl-sdr.com/rtl_udp-port-rtl_fm-udp-controls/))
 
 RTL\_UDP is a modification of RTL\_FM which allows FM audio to be broadcast over a network or the internet via UDP.
 
-### [Remote RTL\_UDP](http://michelinok76.blogspot.it/2015/04/how-to-configure-your-raspberrypi-or-pc.html) (Android) (Free) ([Related Post](https://www.rtl-sdr.com/remote-rtl\_udp-rtl-sdr-remote-control-android-app/))
+### [Remote RTL\_UDP](http://michelinok76.blogspot.it/2015/04/how-to-configure-your-raspberrypi-or-pc.html) (Android) (Free) ([Related Post](https://www.rtl-sdr.com/remote-rtl_udp-rtl-sdr-remote-control-android-app/))
 
 Allows you to control a rtl\_udp server via an Android app.
 
@@ -254,13 +254,13 @@ An efficient alternative to rtl\_tcp. Designed for the Airspy, but also made com
 
 The only downsides are that it only works with SDR# at the moment, and the server needs more powerful computing hardware as the computations are all performed server side.
 
-### [RTL\_FM\_PYTHON](https://github.com/th0ma5w/rtl\_fm\_python) (Windows/Mac/Linux) (Free)
+### [RTL\_FM\_PYTHON](https://github.com/th0ma5w/rtl_fm_python) (Windows/Mac/Linux) (Free)
 
 
 
 A Python program based on rtl\_fm that allows you to tune to any station using a web interface.
 
-### [RX\_Tools](https://medium.com/@rxseger/rx-tools-command-line-sdr-tools-for-rtl-sdr-bladerf-hackrf-and-more-rx-fm-rx-sdr-rx-power-2e74f59a9e79#.yo12m6dr3) (Windows/Mac/Linux) (Free) ([Related Post](https://www.rtl-sdr.com/rx\_tools-rtl-sdr-command-line-tools-rtl\_power-rtl\_fm-rtl\_sdr-now-compatible-with-almost-any-sdr/))
+### [RX\_Tools](https://medium.com/@rxseger/rx-tools-command-line-sdr-tools-for-rtl-sdr-bladerf-hackrf-and-more-rx-fm-rx-sdr-rx-power-2e74f59a9e79#.yo12m6dr3) (Windows/Mac/Linux) (Free) ([Related Post](https://www.rtl-sdr.com/rx_tools-rtl-sdr-command-line-tools-rtl_power-rtl_fm-rtl_sdr-now-compatible-with-almost-any-sdr/))
 
 An SDR independent implementation of rtl\_fm/rtl\_power etc. Uses the SoapySDR abstraction layer.
 
@@ -270,7 +270,7 @@ An SDR independent implementation of rtl\_fm/rtl\_power etc. Uses the SoapySDR a
 
 RTLSDR Scanner is a simple cross platform python based wideband spectrum analyzer for the RTL-SDR. It can scan an arbitrarily large frequency bandwidth. The scanner also has an auto calibration feature which can help find the PPM offset of a dongle. Newer versions also have a GPS feature, which allows you to interface a hardware GPS receiver to the software and do signal mapping experiments.
 
-### [RTL-SDR Wide Spectrum Analyzer](http://zolli.altervista.org/rtl\_sdr\_wide\_spectrum/index.html) (Windows) (Free) - Wideband Frequency Scanner
+### [RTL-SDR Wide Spectrum Analyzer](http://zolli.altervista.org/rtl_sdr_wide_spectrum/index.html) (Windows) (Free) - Wideband Frequency Scanner
 
 
 
@@ -374,7 +374,7 @@ An Android app that not only decodes ADS-B data, but also plots it on a map and 
 
 
 
-### [Track your flight EUROPE](https://play.google.com/store/apps/details?id=org.qtproject.example.Android\_Application\_ADSB\_final) (Android) (Free) ([Related Post](https://www.rtl-sdr.com/new-ads-b-android-app-for-europe/)) - ADS-B Decoder and Radar
+### [Track your flight EUROPE](https://play.google.com/store/apps/details?id=org.qtproject.example.Android_Application_ADSB_final) (Android) (Free) ([Related Post](https://www.rtl-sdr.com/new-ads-b-android-app-for-europe/)) - ADS-B Decoder and Radar
 
 Android based ADS-B decoder with offline maps for Europe.
 
@@ -388,9 +388,9 @@ A decoder for FLARM, a protocol similar to ADS-B but used for smaller aircraft l
 
 An Android app for listening to weather radio in the US and Canada. Can also decode EAS alerts. To run this program you will need an Android 4.0+ device with a decent processor, a USB OTG cable and an RTL-SDR dongle.
 
-### [rtl\_acars\_ng](https://github.com/gat3way/rtl\_acars\_ng) (Linux) (Free) - ACARS
+### [rtl\_acars\_ng](https://github.com/gat3way/rtl_acars_ng) (Linux) (Free) - ACARS
 
-rtl\_acars\_ng is an improvement of the old rtl\_acars command line based Linux ACARS decoder.  It is capable of scanning multiple frequencies and has a built in airline database. See [this post](https://www.rtl-sdr.com/rtl\_acars-updated/) for some more information.
+rtl\_acars\_ng is an improvement of the old rtl\_acars command line based Linux ACARS decoder.  It is capable of scanning multiple frequencies and has a built in airline database. See [this post](https://www.rtl-sdr.com/rtl_acars-updated/) for some more information.
 
 ### [Acarsdec](http://sourceforge.net/projects/acarsdec/) (Linux) (Free) - ACARS
 
@@ -406,7 +406,7 @@ Software that connects directly to the RTL-SDR and decodes AIS data. Outputs NME
 
 Appears to be a very good AIS decoder. Note that website is in Chinese.
 
-### [rtl\_ais](https://github.com/dgiardini/rtl-ais) (Windows/Linux) (Free) ([Related Post](https://www.rtl-sdr.com/new-rtl-sdr-software-rtl\_ais/)) - AIS
+### [rtl\_ais](https://github.com/dgiardini/rtl-ais) (Windows/Linux) (Free) ([Related Post](https://www.rtl-sdr.com/new-rtl-sdr-software-rtl_ais/)) - AIS
 
 Another AIS decoder that combines rtl\_fm and aisdecoder into a single command line program.
 
@@ -414,7 +414,7 @@ Another AIS decoder that combines rtl\_fm and aisdecoder into a single command l
 
 Currently the AIS decoder that we recommend using.
 
-### [rtl\_ais\_android](https://github.com/ebc81/Rtl\_Ais\_Android) (Android) (Free) ([Related Post](https://www.rtl-sdr.com/a-new-ais-decoder-for-the-rtl-sdr-on-android/)) - AIS
+### [rtl\_ais\_android](https://github.com/ebc81/Rtl_Ais_Android) (Android) (Free) ([Related Post](https://www.rtl-sdr.com/a-new-ais-decoder-for-the-rtl-sdr-on-android/)) - AIS
 
 rtl\_ais but for Android.
 
@@ -434,7 +434,7 @@ Unitrunker is a trunking control channel decoder and controller. It can be used 
 
 
 
-### [Trunk88](http://wiki.trunk88.com/index.php/Main\_Page) (Windows) (Free) - Trunking Control
+### [Trunk88](http://wiki.trunk88.com/index.php/Main_Page) (Windows) (Free) - Trunking Control
 
 A trunking control channel decoder and controller. Supports most Motorola systems. Can connect directly to the RTL-SDR.
 
@@ -446,7 +446,7 @@ SDRTrunk is a java based application for decoding and trunk tracking multiple an
 
 
 
-### [NRF905 Decoder](https://github.com/texane/nrf/tree/master/unit/range/nrf905\_decoder) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/nrf905-rtl-sdr-decoder/)) - Digital Signal Decoder
+### [NRF905 Decoder](https://github.com/texane/nrf/tree/master/unit/range/nrf905_decoder) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/nrf905-rtl-sdr-decoder/)) - Digital Signal Decoder
 
 A decoder for the NRF905 tranceiver.
 
@@ -454,7 +454,7 @@ A decoder for the NRF905 tranceiver.
 
 A decoder for the NRF24-BTLE tranceiver. This protocol is used by many common devices such as mice and keyboards.
 
-### [RTL\_433](https://github.com/merbanan/rtl\_433) (Linux) (Free) - Digital Signal Decoder
+### [RTL\_433](https://github.com/merbanan/rtl_433) (Linux) (Free) - Digital Signal Decoder
 
 A program to decode temperature and many other types of ISM band sensors on the 433 MHz and other ISM bands.
 
@@ -470,7 +470,7 @@ A command line program that allows the decoding of EnergyCount 3000 energy logge
 
 A command line program for decoding smart meters on the 900 MHz ISM band.
 
-### [RTL\_HPSDR](https://github.com/n1gp/rtl\_hpsdr) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/rtl\_hpsdr-rtl-sdr-hpsdr-translation-server/)) - HPSDR
+### [RTL\_HPSDR](https://github.com/n1gp/rtl_hpsdr) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/rtl_hpsdr-rtl-sdr-hpsdr-translation-server/)) - HPSDR
 
 A translation server which allows the RTL-SDR to be used on HPSDR specific software.
 
@@ -486,7 +486,7 @@ A GSM decoder.
 
 An upgraded version of Airprobe.
 
-### [RTL\_Tool\_Kit](https://github.com/banjaxbanjo/rtl\_tool\_kit) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/rtl-sdr-cell-phone-imsi-tmsi-key-sniffer/)) - GSM
+### [RTL\_Tool\_Kit](https://github.com/banjaxbanjo/rtl_tool_kit) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/rtl-sdr-cell-phone-imsi-tmsi-key-sniffer/)) - GSM
 
 An upgraded version of gr-gsm that can also connect and control a test mobile phone.
 
@@ -506,11 +506,11 @@ A GPU accelerated spectrum viewer.
 
 ViewRF is software that displays a FFT RF display on a BeagleBone Black mini computer.
 
-### [rtl\_power](https://github.com/keenerd/rtl-sdr) (Windows/Linux) (Free) ([Related Post](https://www.rtl-sdr.com/new-command-line-utility-rtl\_power/)) - Spectrum Display
+### [rtl\_power](https://github.com/keenerd/rtl-sdr) (Windows/Linux) (Free) ([Related Post](https://www.rtl-sdr.com/new-command-line-utility-rtl_power/)) - Spectrum Display
 
 rtl\_power is a wideband spectrum monitor. This tool let’s you gather signal data over a very wide area of the frequency spectrum, and then that data can be used to find active areas of the spectrum.
 
-### [rtl\_power\_fftw](https://github.com/AD-Vega/rtl-power-fftw) (Windows/Linux) (Free) ([Related Post](https://www.rtl-sdr.com/rtl\_power\_fftw-a-modified-version-of-rtl\_power-designed-for-radio-astronomy/)) - Spectrum Display
+### [rtl\_power\_fftw](https://github.com/AD-Vega/rtl-power-fftw) (Windows/Linux) (Free) ([Related Post](https://www.rtl-sdr.com/rtl_power_fftw-a-modified-version-of-rtl_power-designed-for-radio-astronomy/)) - Spectrum Display
 
 A modified version of rtl\_power that uses more efficient FFT processing libraries.
 
@@ -542,7 +542,7 @@ A collection of tools to locate and track LTE basestation cells which supports t
 
 A fork of LTE-Scanner which supports decoding of Time Division LTE (TD-LTE) signals.
 
-### [rtl\_sdr\_FS20\_decoder](https://github.com/eT0M/rtl\_sdr\_FS20\_decoder) (Linux) (Free) - FS20
+### [rtl\_sdr\_FS20\_decoder](https://github.com/eT0M/rtl_sdr_FS20_decoder) (Linux) (Free) - FS20
 
 A tool for decoding the FS20 protocol which is used in home automation.
 
@@ -558,7 +558,7 @@ PureData and Max/MSP are graphical programming tools for creating music, sound, 
 
 A On-Off Keying (OOK) decoder for radio data commonly found in the 433 MHz ISM band.
 
-### [RTL Bridge](broken-reference) (Windows) (Free) ([Related Post](https://www.rtl-sdr.com/radio-astronomy-rtl-bridge-radio-sky-spectrograph/))
+### [RTL Bridge](/broken/pages/vsEKRSbJ9PMxOotIK1Ju) (Windows) (Free) ([Related Post](https://www.rtl-sdr.com/radio-astronomy-rtl-bridge-radio-sky-spectrograph/))
 
 
 
@@ -604,7 +604,7 @@ Runs a server which broadcasts audio from an RTL-SDR. Has a web interface which 
 
 Allows you to visualise the FFT in various 3D modes.
 
-### [QSpectrumAnalyzer](https://github.com/xmikos/qspectrumanalyzer) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/new-gui-for-rtl\_power-qspectrumanalyzer/)) - rtl\_power GUI
+### [QSpectrumAnalyzer](https://github.com/xmikos/qspectrumanalyzer) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/new-gui-for-rtl_power-qspectrumanalyzer/)) - rtl\_power GUI
 
 A Python based spectrum analyser rtl\_power GUI. Tested on Linux but may work on Windows and OSX too.
 
@@ -746,7 +746,7 @@ Reconstructs unintentionally transmitted signals from monitors/TVs into live vid
 
 Decode WSPR signals with your RTL-SDR
 
-### [rtl\_map](https://github.com/orhun/rtl\_map) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/rtl\_map-a-simple-fft-visualizer-for-rtl-sdr/))
+### [rtl\_map](https://github.com/orhun/rtl_map) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/rtl_map-a-simple-fft-visualizer-for-rtl-sdr/))
 
 A simple FFT visualization tool for the RTL-SDR. Good code reference showing how to access the RTL-SDR.
 
@@ -754,13 +754,13 @@ A simple FFT visualization tool for the RTL-SDR. Good code reference showing how
 
 Simple Android based spectrum explorer with pause and rewind for the RTL-SDR.
 
-### [radiosonde\_auto\_rx](https://github.com/projecthorus/radiosonde\_auto\_rx) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/tracking-radiosondes-with-an-rtl-sdr-and-radiosonde\_auto\_rx/))
+### [radiosonde\_auto\_rx](https://github.com/projecthorus/radiosonde_auto_rx) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/tracking-radiosondes-with-an-rtl-sdr-and-radiosonde_auto_rx/))
 
 Automatically scans for and tracks Radiosondes using an RTL-SDR and rtl\_power.
 
 ### [XRIT Decoder](https://usa-satcom.com/xrit-decoder-for-goes-satellite/) (Windows) (Paid) ([Related Post](https://www.rtl-sdr.com/rtl-sdr-com-goes-16-17-and-gk-2a-weather-satellite-reception-comprehensive-tutorial/))
 
-Can be used with an RTL-SDR to decode LRIT and HRIT GOES weather satellite images. To purchase the software you must [contact Joe](https://usa-satcom.com/contact\_form/) by email.
+Can be used with an RTL-SDR to decode LRIT and HRIT GOES weather satellite images. To purchase the software you must [contact Joe](https://usa-satcom.com/contact_form/) by email.
 
 
 
@@ -784,7 +784,7 @@ SigintOS is a Linux distrobution that includes a program called "SigintOS". It c
 
 A frontend + backend web app that uses RTL-SDRs to capture trunked radio communications, and share them as recordings via a web based interface.
 
-### [EMI\_Mapper](https://github.com/CGrassin/EMI\_mapper) (Linux) (Free) (Related Post)
+### [EMI\_Mapper](https://github.com/CGrassin/EMI_mapper) (Linux) (Free) (Related Post)
 
 Combines a camera with OpenCV, RTL-SDR and an EMI probe to create EMI image heat maps of circuits.
 
@@ -794,7 +794,7 @@ Combines a camera with OpenCV, RTL-SDR and an EMI probe to create EMI image heat
 
 A framework for RTL-SDRs which includes features like spectrum density visualization and remote scanning.
 
-### [rtlSpectrum](https://github.com/dernasherbrezon/rtlSpectrum) (Windows/Linux/OSX) (Free) ([Related Post](https://www.rtl-sdr.com/rtlspectrum-a-new-gui-for-rtl\_power/))
+### [rtlSpectrum](https://github.com/dernasherbrezon/rtlSpectrum) (Windows/Linux/OSX) (Free) ([Related Post](https://www.rtl-sdr.com/rtlspectrum-a-new-gui-for-rtl_power/))
 
 Plots data from rtl\_power.
 
@@ -834,7 +834,7 @@ Another VOR decoder but written in C.
 
 A terminal based retro styled spectrum analyzer for the RTL-SDR.
 
-### [rtl\_power-fm-multipath](https://github.com/jj1bdx/rtl\_power-fm-multipath) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/measuring-broadcast-fm-multipath-distortion-with-an-rtl-sdr/))
+### [rtl\_power-fm-multipath](https://github.com/jj1bdx/rtl_power-fm-multipath) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/measuring-broadcast-fm-multipath-distortion-with-an-rtl-sdr/))
 
 FM broadcasting multipath distortion estimation by D/U ratio measurement
 
@@ -842,7 +842,7 @@ FM broadcasting multipath distortion estimation by D/U ratio measurement
 
 Meteor M2 LRPT satellite image decoder. Connects directly to an RTL-SDR.
 
-### [meteor\_demod](https://github.com/dbdexter-dev/meteor\_demod) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/a-lightweight-meteor-m2-demodulator/))
+### [meteor\_demod](https://github.com/dbdexter-dev/meteor_demod) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/a-lightweight-meteor-m2-demodulator/))
 
 A command line based Meteor M2 demodulator. Requries the use of LRPTofflineDecoder to decode the image.
 
@@ -854,7 +854,7 @@ Client-server radio data collection system. Allows you to collect data from mult
 
 A web based GUI for SpyServer compatible SDRs. (Still a work in progress)
 
-### [rtl-ultrasound](https://github.com/wlmeng11/rtl-ultrasound) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/rtl\_ultrasound-using-a-piezoelectric-transducer-with-an-rtl-sdr-to-create-an-ultrasound-imager/))
+### [rtl-ultrasound](https://github.com/wlmeng11/rtl-ultrasound) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/rtl_ultrasound-using-a-piezoelectric-transducer-with-an-rtl-sdr-to-create-an-ultrasound-imager/))
 
 Code for a hardware system that uses an RTL-SDR in a home brew ultra sound imager.
 
@@ -870,7 +870,7 @@ A P25 Phase 2 decoder which can use the RTL-SDR as a radio.
 
 Turns your Raspberry Pi into a frequency scanning and display tool with an RTL-SDR.
 
-### [rtl\_tcp SDR](https://apps.apple.com/us/app/rtl-tcp-sdr/id1351164646?ls=1) (iOS) (Paid) ([Related Post](https://www.rtl-sdr.com/rtl\_tcp-sdr-ios-software-defined-radio-app-with-spectrum-display/))
+### [rtl\_tcp SDR](https://apps.apple.com/us/app/rtl-tcp-sdr/id1351164646?ls=1) (iOS) (Paid) ([Related Post](https://www.rtl-sdr.com/rtl_tcp-sdr-ios-software-defined-radio-app-with-spectrum-display/))
 
 An iOS app that connects to an rtl\_tcp server running on another device to display and demodulate the spectrum.
 
@@ -886,7 +886,7 @@ RTL-SDR compatible tool for detecting meteor scatter reflections.
 
 Use an RTL-SDR to sniff packets from Minimed Insulin pumps.
 
-### [FM2TXT](https://sourceforge.net/projects/fm2txt-rtlsdr/?source=typ\_redirect) (Windows/Linux/OSX) (Free) ([Related Post](https://www.rtl-sdr.com/fm2txt-automatically-perform-speech-to-text-on-fm-signals/))
+### [FM2TXT](https://sourceforge.net/projects/fm2txt-rtlsdr/?source=typ_redirect) (Windows/Linux/OSX) (Free) ([Related Post](https://www.rtl-sdr.com/fm2txt-automatically-perform-speech-to-text-on-fm-signals/))
 
 Logs FM station speech to a text file via Google text to speech.
 
@@ -916,7 +916,7 @@ MATLAB is a well known mathematical computing language. With this support packag
 
 ### [SDR Lab](http://ha5kfu.sch.bme.hu/sdrlab) (LabVIEW) (Paid) ([Related Post](https://www.rtl-sdr.com/sdrlab-rtl-sdr-interface-labview-educational-purposes/))
 
-[![ha5kfu\_sdrlab\_release](https://www.rtl-sdr.com/wp-content/uploads/2013/09/ha5kfu\_sdrlab\_release.png)](https://www.rtl-sdr.com/wp-content/uploads/2013/09/ha5kfu\_sdrlab\_release.png)
+[![ha5kfu\_sdrlab\_release](https://www.rtl-sdr.com/wp-content/uploads/2013/09/ha5kfu_sdrlab_release.png)](https://www.rtl-sdr.com/wp-content/uploads/2013/09/ha5kfu_sdrlab_release.png)
 
 LabVIEW is a software package usually used for control systems engineering. With SDR Lab, the RTL-SDR is able to interface with LabVIEW.
 
@@ -946,7 +946,7 @@ Simple GPL open source NOAA APT signal decoder. Black and white color only.
 
 PDW is a POCSAG/Flex pager decoding program. Use in conjunction with a general purpose SDR receiver and pipe the audio output to PDW.
 
-### [DSD](http://wiki.radioreference.com/index.php/Digital\_Speech\_Decoder\_\(software\_package\))/[DSD+](https://www.rtl-sdr.com/dsd-version-1-5-released/) (Windows) (Free) ([Related Post](https://www.rtl-sdr.com/rtl-sdr-radio-scanner-tutorial-decoding-digital-voice-p25-with-dsd/)) - Digital Speech Codecs
+### [DSD](http://wiki.radioreference.com/index.php/Digital_Speech_Decoder_\(software_package\))/[DSD+](https://www.rtl-sdr.com/dsd-version-1-5-released/) (Windows) (Free) ([Related Post](https://www.rtl-sdr.com/rtl-sdr-radio-scanner-tutorial-decoding-digital-voice-p25-with-dsd/)) - Digital Speech Codecs
 
 
 
@@ -954,7 +954,7 @@ DSD is an acronym for digital speech decoder. It is a program that is capable of
 
 There is now also the in development [DSD 1.7](https://github.com/szechyjs/dsd) which supports new features like D-Star voice decoding.
 
-### [DREAM](http://sourceforge.net/apps/mediawiki/drm/index.php?title=Main\_Page) (Windows) (Free) ([Related Post](https://www.rtl-sdr.com/tutorial-drm-radio-using-rtl-sdr/)) - DRM
+### [DREAM](http://sourceforge.net/apps/mediawiki/drm/index.php?title=Main_Page) (Windows) (Free) ([Related Post](https://www.rtl-sdr.com/tutorial-drm-radio-using-rtl-sdr/)) - DRM
 
 [![DREAM](https://www.rtl-sdr.com/wp-content/uploads/2013/04/DREAMss.png)](https://www.rtl-sdr.com/wp-content/uploads/2013/04/DREAMss.png)
 
@@ -974,7 +974,7 @@ A free radiosonde decoder. Command line based and supports most common radiosond
 
 Decodes RS41 radiosondes with a Windows GUI.
 
-### [dl-fldigi](http://ukhas.org.uk/projects:dl-fldigi) (Windows/Mac/Linux) (Free) - High Altitude Balloons 
+### [dl-fldigi](http://ukhas.org.uk/projects:dl-fldigi) (Windows/Mac/Linux) (Free) - High Altitude Balloons<br>
 
 A modification of fldigi that can receive telemetry from amateur high altitude balloons (HABs). Use in conjunction with a general purpose SDR receiver and pipe the audio output to dl-fldigi.
 
@@ -990,7 +990,7 @@ PlanePlotter is a commercial advanced graphical ADS-B radar display with a 21 da
 
 GlobeS is a simple lightweight graphical ADS-B radar display. With the RTL-SDR, use in conjunction with an ADS-B decoder.
 
-### [adsbSCOPE](http://www.sprut.de/electronic/pic/projekte/adsb/adsb\_en.html) (Windows) (Free) ([Related Post](https://www.rtl-sdr.com/adsb-aircraft-radar-with-rtl-sdr/)) - ADS-B Radar
+### [adsbSCOPE](http://www.sprut.de/electronic/pic/projekte/adsb/adsb_en.html) (Windows) (Free) ([Related Post](https://www.rtl-sdr.com/adsb-aircraft-radar-with-rtl-sdr/)) - ADS-B Radar
 
 [![ADSBScope Screenshot](https://www.rtl-sdr.com/wp-content/uploads/2013/04/adsbScopeScreenShot1.png)](https://www.rtl-sdr.com/wp-content/uploads/2013/04/adsbScopeScreenShot1.png)
 
@@ -1076,7 +1076,7 @@ Baudline is a free audio spectrum analyzer usually used to analyze radio data si
 
 HROFFT is a specialized audio analysis software program designed for monitoring meteor scatter signals. Use in conjunction with a general purpose SDR receiver and pipe the audio output to HROFFT.
 
-### [multiPSK](http://f6cte.free.fr/index\_anglais.htm) (Windows) (Free for non-commercial use) - Ham digital mode decoder
+### [multiPSK](http://f6cte.free.fr/index_anglais.htm) (Windows) (Free for non-commercial use) - Ham digital mode decoder
 
 multiPSK is a popular ham digital mode decoder and supports a very wide range of digital modes. It also directly supports connecting to the RTL-SDR via RTL\_TCP.exe. You will need to download the [rtlsdr official Windows release](http://sdr.osmocom.org/trac/attachment/wiki/rtl-sdr/RelWithDebInfo.zip), and copy the rtl\_tcp.exe, rtlsdr.dll, pthreadVC2-w64.dll and libusb-1.0.dll into the same directory as multipsk.exe to use this option. Otherwise you can simply pipe the audio from a general purpose SDR receiver into multiPSK.
 
@@ -1120,7 +1120,7 @@ Taxidecoder is a free mobile data terminal (MDT) decoder. It will only work in c
 
 A PHP based web server program which can be used to record, log and analyze trunked radio traffic.
 
-### [LTR Analyzer](http://home.ica.net/\~phoenix/wap/LTR/) (Free) ([Related Post](https://www.rtl-sdr.com/logic-trunked-radio-analyzer-rtl-sdr/)) - LTR
+### [LTR Analyzer](http://home.ica.net/~phoenix/wap/LTR/) (Free) ([Related Post](https://www.rtl-sdr.com/logic-trunked-radio-analyzer-rtl-sdr/)) - LTR
 
 Used to analyze trunked LTR signals.
 
@@ -1128,7 +1128,7 @@ Used to analyze trunked LTR signals.
 
 Can be used to decode end of train, head of train and distributed power unit telemetry which is used on some trains.
 
-### [Xastir](http://xastir.org/index.php/Main\_Page) (Free) ([Related Post](https://www.rtl-sdr.com/using-xastir-rtl-sdr/)) - APRS
+### [Xastir](http://xastir.org/index.php/Main_Page) (Free) ([Related Post](https://www.rtl-sdr.com/using-xastir-rtl-sdr/)) - APRS
 
 Linux software that allows you to visualize APRS signals on a map.
 
@@ -1160,7 +1160,7 @@ A linux script that helps automate I/Q recordins.
 
 Two Linux based programs which work with the piped output of rtl\_sdr to correct for satellite doppler shift and to also demodulate FM.
 
-### [rtl\_heatmap](https://github.com/donothingloop/rtl\_heatmap/) (Free) ([Related Post](https://www.rtl-sdr.com/new-software-rtl\_heatmap-web-based-waterfall-plotter-rtl\_power/)) - FFT Plotting
+### [rtl\_heatmap](https://github.com/donothingloop/rtl_heatmap/) (Free) ([Related Post](https://www.rtl-sdr.com/new-software-rtl_heatmap-web-based-waterfall-plotter-rtl_power/)) - FFT Plotting
 
 Create a heatmap image from an rtl\_power scan.
 
@@ -1182,7 +1182,7 @@ Decodes STD-C Inmarsat signals.
 
 
 
-### [Rtl\_power Heatmap Viewer](https://github.com/DE8MSH/rhv) (Windows/Mac/Linux) (Free) ([Related Post](https://www.rtl-sdr.com/rtl\_power-heatmap-viewer/))
+### [Rtl\_power Heatmap Viewer](https://github.com/DE8MSH/rhv) (Windows/Mac/Linux) (Free) ([Related Post](https://www.rtl-sdr.com/rtl_power-heatmap-viewer/))
 
 
 
@@ -1210,7 +1210,7 @@ An upgrade to Inspectrum which gives it a GUI and more visual decoding features.
 
 Not something you use via piping, but has can be useful for making timelapse waterfall recordings when a program does not have that feature by default. See the related post for more info.
 
-### [d3-waterfall](https://www.dcddcc.com/blog/2016-10-09-wideband-surveying-with-software-defined-radio.html) (HTML5) (Free) ([Related Post](https://www.rtl-sdr.com/software-for-creating-an-interactive-rtl\_power-visualization/))
+### [d3-waterfall](https://www.dcddcc.com/blog/2016-10-09-wideband-surveying-with-software-defined-radio.html) (HTML5) (Free) ([Related Post](https://www.rtl-sdr.com/software-for-creating-an-interactive-rtl_power-visualization/))
 
 A tool for converting rtl\_power scans in csv format into a nice HTML based waterfall graph. Also takes data from sigidwiki.com and overlays it on top of the waterfall.
 
@@ -1236,7 +1236,7 @@ A simple program to deinvert analog radio signals scrambled with voice inversion
 
 Decodes ham QRP modes like FT8 and WSPR.
 
-### [mySdrPlayback](http://www.blackcatsystems.com/software/sdr\_iq\_recording\_playback\_program.html) (OSX) (Free) ([Related Post](https://www.rtl-sdr.com/mysdrplayback-macos-software-for-browsing-through-iq-recordings-from-sdr-sdruno-and-more/))
+### [mySdrPlayback](http://www.blackcatsystems.com/software/sdr_iq_recording_playback_program.html) (OSX) (Free) ([Related Post](https://www.rtl-sdr.com/mysdrplayback-macos-software-for-browsing-through-iq-recordings-from-sdr-sdruno-and-more/))
 
 OSX only software that allows you to browse IQ recordings from SDR#, SDRUno and other software.
 
@@ -1248,7 +1248,7 @@ A retro styled terminal based radar app for displaying ADS-B data.
 
 Plots Iridium satellite tracks with data coming from gr-iridium.
 
-### [radio\_analyser](https://bitbucket.org/zeddy1024/radio\_analyser/src/master/) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/radio-analyser-new-program-for-plotting-dsdplus-statistics/))
+### [radio\_analyser](https://bitbucket.org/zeddy1024/radio_analyser/src/master/) (Linux) (Free) ([Related Post](https://www.rtl-sdr.com/radio-analyser-new-program-for-plotting-dsdplus-statistics/))
 
 Plots talk group statistics from DSDPlus.
 

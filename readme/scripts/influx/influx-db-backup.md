@@ -6,4 +6,4 @@
 influxd backup -portable /path/to/backup/directory
 ```
 
-\
+<br>

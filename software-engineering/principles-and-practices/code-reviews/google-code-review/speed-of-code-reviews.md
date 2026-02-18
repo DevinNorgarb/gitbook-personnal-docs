@@ -34,7 +34,7 @@ Even if it sometimes takes a long time to get through the entire review _process
 
 If you are too busy to do a full review on a CL when it comes in, you can still send a quick response that lets the developer know when you will get to it, suggest other reviewers who might be able to respond more quickly, or provide some initial broad comments. (Note: none of this means you should interrupt coding even to send a response like this—send the response at a reasonable break point in your work.)
 
-**It is important that reviewers spend enough time on review that they are certain their “LGTM” means “this code meets our standards.”** However, individual responses should still ideally be [fast](broken-reference).
+**It is important that reviewers spend enough time on review that they are certain their “LGTM” means “this code meets our standards.”** However, individual responses should still ideally be [fast](/broken/pages/9Yo5AiED0Y0QpZsVciQS).
 
 ### Cross-Time-Zone Reviews <a href="#tz" id="tz"></a>
 

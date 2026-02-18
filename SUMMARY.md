@@ -269,6 +269,9 @@
 
 ## Robotics
 
+* [SITL](robotics/sitl/README.md)
+  * [SITL Erle Robotics: MAV Tools](robotics/sitl/sitl-erle-robotics-mav-tools.md)
+  * [Simulated Vehicle (SITL)](robotics/sitl/simulated-vehicle-sitl.md)
 * [Communication Protocols](robotics/communication-protocols/README.md)
   * [Serial](robotics/communication-protocols/serial.md)
 * [ROS](robotics/ros/README.md)
@@ -304,7 +307,7 @@
   * [QGroundControl Software](robotics/qgroundcontrol-software.md)
   * [Firmware Page](robotics/firmware-page.md)
 * [Robotics](robotics/README.md)
-* [SITL](robotics/sitl.md)
+* [SITL](robotics/sitl-1.md)
 * [PixHawk](robotics/pixhawk/README.md)
   * [Connection Diagrams](robotics/pixhawk/connection-diagrams.md)
 * [BlueOS](robotics/blueos.md)
@@ -364,6 +367,7 @@
   * [Mapbox Geocoding API](gis/geocoding/mapbox-geocoding-api/README.md)
     * [Useful Mapbox Geocoding API Info](gis/geocoding/mapbox-geocoding-api/useful-mapbox-geocoding-api-info.md)
   * [Geocoding Accuracy](gis/geocoding/geocoding-accuracy.md)
+  * [Using the new MVT function in PostGIS](gis/geocoding/using-the-new-mvt-function-in-postgis.md)
 * [Tile38](gis/tile38.md)
 * [Deck.gl](gis/deck.gl/README.md)
   * [Deck GL Time Frame Animations](gis/deck.gl/page-3.md)
@@ -372,6 +376,12 @@
 * [Mapbox Storytelling](gis/mapbox-storytelling.md)
 * [MapBox](gis/mapbox/README.md)
   * [Page](gis/mapbox/page.md)
+* [Pelias Geocoder](gis/pelias-geocoder/README.md)
+  * [Mapzen | Pelias Instance](gis/pelias-geocoder/mapzen-or-pelias-instance.md)
+  * [Docker Pelias](gis/pelias-geocoder/docker-pelias.md)
+  * [pelias](gis/pelias-geocoder/pelias.md)
+  * [Pelias From Scratch](gis/pelias-geocoder/pelias-from-scratch.md)
+* [Modern FOSS Spatial Stack](gis/modern-foss-spatial-stack.md)
 
 ## Web Archiving
 
@@ -438,6 +448,7 @@
 * [AIS RESEARCH USING A RASPBERRY PI (2022 Update)](maritime-ais/ais-research-using-a-raspberry-pi-2022-update.md)
 * [AISHub RPiAIS](maritime-ais/aishub-rpiais.md)
 * [Marine Traffic SLR350](maritime-ais/marine-traffic-slr350.md)
+* [MicroK8s + MetalLB](maritime-ais/microk8s-+-metallb.md)
 
 ## Drones
 
@@ -484,3 +495,26 @@
 * [Databases](resources-documents-pdfs-etc/databases.md)
 * [Programming](resources-documents-pdfs-etc/programming.md)
 * [Software Defined Radio (SDR)](resources-documents-pdfs-etc/software-defined-radio-sdr.md)
+
+## MISC
+
+* [artificial-intelligence](misc/artificial-intelligence/README.md)
+  * [ChatGPT](misc/artificial-intelligence/chatgpt.md)
+* [tutorials](misc/tutorials/README.md)
+  * [Install Ghost blogging platform on Ubuntu](misc/tutorials/install-ghost-blogging-platform-on-ubuntu.md)
+  * [Setting up K3s in LXC containers using Netmaker](misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/README.md)
+    * [Page 1](misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/page-1/README.md)
+      * [The Battle of Interactive Geographic Visualization Part 4](misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/page-1/the-battle-of-interactive-geographic-visualization-part-4.md)
+    * [Artificial Intelligence](misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/artificial-intelligence.md)
+    * [Install K3s](misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/README.md)
+      * [Using ChatGPT to build System Diagrams — Part I](misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/using-chatgpt-to-build-system-diagrams-part-i.md)
+      * [How to use Lando for local development with Laravel](misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/how-to-use-lando-for-local-development-with-laravel/README.md)
+        * [Provision LXC Containers](misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/how-to-use-lando-for-local-development-with-laravel/provision-lxc-containers.md)
+        * [Dante in Oracle Cloud](misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/how-to-use-lando-for-local-development-with-laravel/dante-in-oracle-cloud.md)
+      * [Feeling Guilty Billing Clients?](misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/feeling-guilty-billing-clients/README.md)
+        * [marvinferber BLOG](misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/feeling-guilty-billing-clients/marvinferber-blog.md)
+      * [Cloudflare Tunnel with Docker](misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/cloudflare-tunnel-with-docker.md)
+      * [How to Use Mapbox in QGIS](misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/how-to-use-mapbox-in-qgis.md)
+      * [Arduino](misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/arduino.md)
+      * [From Google Sheets, how to send email based on date](misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/from-google-sheets-how-to-send-email-based-on-date/README.md)
+        * [Using ChatGPT to build system diagrams — Part II](misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/from-google-sheets-how-to-send-email-based-on-date/using-chatgpt-to-build-system-diagrams-part-ii.md)

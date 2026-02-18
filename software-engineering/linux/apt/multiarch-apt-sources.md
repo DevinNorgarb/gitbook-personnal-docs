@@ -1,4 +1,4 @@
-# MultiArch Apt Sources
+# MultiArch apt Sources
 
 ### Setting up apt sources <a href="#setting_up_apt_sources" id="setting_up_apt_sources"></a>
 
@@ -17,4 +17,4 @@ Note: There is a bug in apt versions >=0.9.7 and <0.9.7.2 which means that putti
 
 Don't forget to
 
-\
+<br>

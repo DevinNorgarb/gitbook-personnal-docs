@@ -20,22 +20,21 @@ description: https://github.com/Konloch/bytecode-viewer/releases
 
 I’ll break this post into two sections, the first is the functional part of BCV, the interface, settings, tools, features etc. The second part will contain how to utilize the BCV API/Plugin System to develop your own plugins (if you do decide to create a plugin, please decide to open source it so I can add it to [https://github.com/Konloch/bytecode-viewer/tree/master/plugins](https://github.com/Konloch/bytecode-viewer/tree/master/plugins)).
 
-\
-
+<br>
 
 ### Contents
 
-&#x20;\[[hide](https://wiki.bytecode.club/Bytecode\_Viewer)]&#x20;
+&#x20;\[[hide](https://wiki.bytecode.club/Bytecode_Viewer)]&#x20;
 
-* [1Functionality](https://wiki.bytecode.club/Bytecode\_Viewer#Functionality)
-  * [1.1File](https://wiki.bytecode.club/Bytecode\_Viewer#File)
-  * [1.2View Panes](https://wiki.bytecode.club/Bytecode\_Viewer#View\_Panes)
-  * [1.3Settings](https://wiki.bytecode.club/Bytecode\_Viewer#Settings)
-  * [1.4Plugins](https://wiki.bytecode.club/Bytecode\_Viewer#Plugins)
-* [2API](https://wiki.bytecode.club/Bytecode\_Viewer#API)
-  * [2.1Exceptions](https://wiki.bytecode.club/Bytecode\_Viewer#Exceptions)
-  * [2.2Plugin Console](https://wiki.bytecode.club/Bytecode\_Viewer#Plugin\_Console)
-  * [2.3Bytecode Hooks](https://wiki.bytecode.club/Bytecode\_Viewer#Bytecode\_Hooks)
+* [1Functionality](https://wiki.bytecode.club/Bytecode_Viewer#Functionality)
+  * [1.1File](https://wiki.bytecode.club/Bytecode_Viewer#File)
+  * [1.2View Panes](https://wiki.bytecode.club/Bytecode_Viewer#View_Panes)
+  * [1.3Settings](https://wiki.bytecode.club/Bytecode_Viewer#Settings)
+  * [1.4Plugins](https://wiki.bytecode.club/Bytecode_Viewer#Plugins)
+* [2API](https://wiki.bytecode.club/Bytecode_Viewer#API)
+  * [2.1Exceptions](https://wiki.bytecode.club/Bytecode_Viewer#Exceptions)
+  * [2.2Plugin Console](https://wiki.bytecode.club/Bytecode_Viewer#Plugin_Console)
+  * [2.3Bytecode Hooks](https://wiki.bytecode.club/Bytecode_Viewer#Bytecode_Hooks)
 
 ### Functionality
 
@@ -131,8 +130,8 @@ BCV has a built in tool to assist in hooks, this section will be expanded later.
 
 [Categories](https://wiki.bytecode.club/Special:Categories):&#x20;
 
-* [Pages with syntax highlighting errors](https://wiki.bytecode.club/index.php?title=Category:Pages\_with\_syntax\_highlighting\_errors\&action=edit\&redlink=1)
+* [Pages with syntax highlighting errors](https://wiki.bytecode.club/index.php?title=Category:Pages_with_syntax_highlighting_errors\&action=edit\&redlink=1)
 * [Tools](https://wiki.bytecode.club/Category:Tools)
 * [Java](https://wiki.bytecode.club/Category:Java)
 * [Android](https://wiki.bytecode.club/Category:Android)
-* [Reverse Engineering](https://wiki.bytecode.club/Category:Reverse\_Engineering)
+* [Reverse Engineering](https://wiki.bytecode.club/Category:Reverse_Engineering)

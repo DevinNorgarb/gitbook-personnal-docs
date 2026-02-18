@@ -53,7 +53,7 @@ Read the [Geocoding API documentation](https://docs.mapbox.com/api/search/#geoco
 
 #### Language support <a href="#language-support" id="language-support"></a>
 
-The Mapbox Geocoding API accepts a `language` query parameter, which allows you to specify the language in which you would like to search. One or more languages can be specified using [ISO 639-1 codes](https://en.wikipedia.org/wiki/List\_of\_ISO\_639-1\_codes). Translation availability varies by language and region, and you can expect more consistent results for areas where the specified language is most widely used. Language support has three different levels:
+The Mapbox Geocoding API accepts a `language` query parameter, which allows you to specify the language in which you would like to search. One or more languages can be specified using [ISO 639-1 codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes). Translation availability varies by language and region, and you can expect more consistent results for areas where the specified language is most widely used. Language support has three different levels:
 
 * **Global coverage.** These languages are almost always present for `country`, `region`, and prominent `place` features.
 * **Local coverage.** These languages may lack global coverage, but they are almost always present for `country`, `region`, and prominent `place` features where they are widely used.
@@ -87,7 +87,7 @@ In the case that multiple features have the same `relevance` score, a second fil
 https://api.mapbox.com/geocoding/v5/mapbox.places/paris.json?access_token=YOUR_MAPBOX_ACCESS_TOKEN
 ```
 
-[**Result prioritization in reverse geocoding**](broken-reference)
+[**Result prioritization in reverse geocoding**](/broken/pages/Uk4lRy43oUTqo0RCH04x)
 
 For reverse geocodes, results at a given set of coordinates are sorted by order of **spatial hierarchy**. For example, a more granular feature such as an `address`, `poi`, or `postcode` will return first in the response before feature types like `region` or `country`. The full spatial hierarchy, ordered from the most granular to the largest, is: _point of interest (POI)_, _address_, _neighborhood_, _locality_, _postcode_, _place_, _district_, _region_, and _country_. (For more details about these geographic information types, see the Source data section.)
 

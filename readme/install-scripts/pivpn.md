@@ -4,15 +4,11 @@ description: simple openvpn or wireguard VPN server.
 
 # PiVPN
 
-
-
 * **::: INSTALLATION :::**\
   `curl -L https://install.pivpn.io | bash`\
   \
-  **::: Test (unstable) Branch :::**\
+  &#xNAN;**::: Test (unstable) Branch :::**\
   `curl -L https://test.pivpn.io | TESTING= bash`
-
-
 
 SIMPLE ::: Yes, that's it! It is \*almost\* that simple.\
 To elaborate a little more, you will want to [install Raspberry Pi OS Lite](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) on a Raspberry Pi, we strongly recommend using the latest [Raspberry Pi OS Lite](https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit) image but the normal Raspberry Pi OS image will work as well, preferably enable ssh access and then begin.\

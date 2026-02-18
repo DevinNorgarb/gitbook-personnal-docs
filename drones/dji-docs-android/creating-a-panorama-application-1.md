@@ -2,32 +2,32 @@
 
 > Note：This Tutorial and Sample Project is developed based on DJI Android SDK v2.4, an update version for Android SDK v3.1.1 will be published soon.
 
-* [Setting up and Running the PanoDemo App](broken-reference)
-  * [Setting up your Development Environment](broken-reference)
-  * [Importing the Demo Project into Eclipse](broken-reference)
-  * [Using the PanoDemo App](broken-reference)
-* [Creating your own Panorama App](broken-reference)
-* [Creating the User Interface](broken-reference)
-  * [App permissions and basic layout](broken-reference)
-  * [Creating the User Interface](broken-reference)
-* [Initialization and Setup](broken-reference)
-  * [Initializing the Environment](broken-reference)
-  * [Communicating with your drone](broken-reference)
-* [Taking Photos](broken-reference)
-  * [Starting the Panorama Procedure](broken-reference)
-  * [Capturing Photos](broken-reference)
-* [Downloading Images](broken-reference)
-  * [Switching Camera Modes](broken-reference)
-  * [Selecting Images](broken-reference)
-  * [Downloading Images](broken-reference)
-* [Creating the Panorama](broken-reference)
-  * [Stitching the images together](broken-reference)
-  * [Displaying the results](broken-reference)
-* [Final Touches](broken-reference)
-  * [Adding Phantom 3 Professional Support](broken-reference)
-  * [Handling the Android Life Cycle](broken-reference)
-  * [Bonus: Adding a Battery Indicator](broken-reference)
-* [Summary](broken-reference)
+* [Setting up and Running the PanoDemo App](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  * [Setting up your Development Environment](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  * [Importing the Demo Project into Eclipse](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  * [Using the PanoDemo App](/broken/pages/QqFgQwpukckWPgy8Bnan)
+* [Creating your own Panorama App](/broken/pages/QqFgQwpukckWPgy8Bnan)
+* [Creating the User Interface](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  * [App permissions and basic layout](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  * [Creating the User Interface](/broken/pages/QqFgQwpukckWPgy8Bnan)
+* [Initialization and Setup](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  * [Initializing the Environment](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  * [Communicating with your drone](/broken/pages/QqFgQwpukckWPgy8Bnan)
+* [Taking Photos](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  * [Starting the Panorama Procedure](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  * [Capturing Photos](/broken/pages/QqFgQwpukckWPgy8Bnan)
+* [Downloading Images](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  * [Switching Camera Modes](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  * [Selecting Images](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  * [Downloading Images](/broken/pages/QqFgQwpukckWPgy8Bnan)
+* [Creating the Panorama](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  * [Stitching the images together](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  * [Displaying the results](/broken/pages/QqFgQwpukckWPgy8Bnan)
+* [Final Touches](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  * [Adding Phantom 3 Professional Support](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  * [Handling the Android Life Cycle](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  * [Bonus: Adding a Battery Indicator](/broken/pages/QqFgQwpukckWPgy8Bnan)
+* [Summary](/broken/pages/QqFgQwpukckWPgy8Bnan)
 
 _If you come across any mistakes or bugs in this tutorial, please let us know using a Github issue, a post on the DJI forum, or commenting in the Gitbook. Please feel free to send us Github pull request and help us fix any issues. However, all pull requests related to document must follow the_ [_document style_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 
@@ -43,11 +43,11 @@ In this tutorial, you will learn how to build a cool panorama app. With the help
 
 There are 8 separate required downloads to set up our development environment. Follow each link to download and install each package. The information in brackets next to each link details the version that we have used in creating our demo:
 
-1. [Java Devlopment Kit](http://www.ntu.edu.sg/home/ehchua/programming/howto/JDK\_Howto.html) (jdk 8u45)
+1. [Java Devlopment Kit](http://www.ntu.edu.sg/home/ehchua/programming/howto/JDK_Howto.html) (jdk 8u45)
 2. [Eclipse](http://www.eclipse.org/downloads/) (Eclipse Mars)
 3. [Eclipse Android Development Tools](http://developer.android.com/sdk/installing/installing-adt.html) (ADT 23.0.6)
 4. [Android Native Development Kit](http://developer.android.com/ndk/guides/setup.html) (ndk r10e)
-5. [Eclipse C/C++ Development Tooling](http://eclipse.org/cdt/) (cdt8.7.0) Follow the "Installing and running the CDT" segment of this tutorial for further guidance: [http://www.ibm.com/developerworks/opensource/library/os-ecc/?S\_TACT=105AGX44\&S\_CMP=ART](http://www.ibm.com/developerworks/opensource/library/os-ecc/?S\_TACT=105AGX44\&S\_CMP=ART)
+5. [Eclipse C/C++ Development Tooling](http://eclipse.org/cdt/) (cdt8.7.0) Follow the "Installing and running the CDT" segment of this tutorial for further guidance: [http://www.ibm.com/developerworks/opensource/library/os-ecc/?S\_TACT=105AGX44\&S\_CMP=ART](http://www.ibm.com/developerworks/opensource/library/os-ecc/?S_TACT=105AGX44\&S_CMP=ART)
 6. [Cygwin](http://www.cygwin.com/) (cygwin2.1.0)Follow the "Installing Cygwin" segment of this tutorial for further guidance: [http://mindtherobot.com/blog/452/android-beginners-ndk-setup-step-by-step/](http://mindtherobot.com/blog/452/android-beginners-ndk-setup-step-by-step/)
 7. [OpenCV](http://opencv.org/) (OpenCV2.4.11) Make sure to download "OpenCV for Android"
 8. [DJI Software Development Kit](http://dev.dji.com/) (DJI SDK 2.3.0)
@@ -562,7 +562,7 @@ pprivate void activateDJISDK()
 }
 ```
 
-The purpose of both of these functions have been explained in our very first tutorial [How to Create a Camera Application](http://dji-dev.gitbooks.io/mobile-sdk-tutorials/content/en/Android/FPVDemo/Part1/FPVDemo\_Part1\_en.html), and should be familiar to you if you have developed apps to use with DJI drones before. If you have not yet read or worked through this tutorial, we suggest you start there. If you are familiar with these functions, you will know that you will also have to register your app on the dev.dji.com website and add the APP key to your manifest file.
+The purpose of both of these functions have been explained in our very first tutorial [How to Create a Camera Application](http://dji-dev.gitbooks.io/mobile-sdk-tutorials/content/en/Android/FPVDemo/Part1/FPVDemo_Part1_en.html), and should be familiar to you if you have developed apps to use with DJI drones before. If you have not yet read or worked through this tutorial, we suggest you start there. If you are familiar with these functions, you will know that you will also have to register your app on the dev.dji.com website and add the APP key to your manifest file.
 
 Lastly, add **showToast()**, a small helper function that displays toast messages:
 

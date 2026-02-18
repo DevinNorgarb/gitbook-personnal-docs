@@ -1,27 +1,27 @@
 # 创建智能飞行预设航点功能App
 
-* [使用DJI PC模拟器](broken-reference)
-  * [1. 介绍](broken-reference)
-  * [2. 安装DJI PC模拟器](broken-reference)
-  * [3. 使用DJI PC模拟器](broken-reference)
-* [升级飞机固件](broken-reference)
-* [创建Map View](broken-reference)
-  * [1. 导入Framework 和 库文件](broken-reference)
-  * [2. 创建Map View](broken-reference)
-  * [3. 添加Annotations到MapView中](broken-reference)
-  * [4. 定位MKMapView到特定位置](broken-reference)
-  * [5. 在地图上显示飞机](broken-reference)
-* [重构UI](broken-reference)
-  * [1. 添加并设置新的UIButton](broken-reference)
-* [设置智能飞行任务](broken-reference)
-  * [1. DJIWaypoint](broken-reference)
-  * [2. DJIWaypointMission](broken-reference)
-  * [3. 创建 DJIWaypointConfigViewController](broken-reference)
-* [设置地面站任务](broken-reference)
-  * [1. 添加 DJIWaypointConfigViewController 到 DJIRootViewController中](broken-reference)
-  * [2. 操作地面站任务](broken-reference)
-* [Demo演示](broken-reference)
-* [总结](broken-reference)
+* [使用DJI PC模拟器](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+  * [1. 介绍](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+  * [2. 安装DJI PC模拟器](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+  * [3. 使用DJI PC模拟器](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+* [升级飞机固件](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+* [创建Map View](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+  * [1. 导入Framework 和 库文件](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+  * [2. 创建Map View](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+  * [3. 添加Annotations到MapView中](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+  * [4. 定位MKMapView到特定位置](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+  * [5. 在地图上显示飞机](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+* [重构UI](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+  * [1. 添加并设置新的UIButton](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+* [设置智能飞行任务](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+  * [1. DJIWaypoint](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+  * [2. DJIWaypointMission](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+  * [3. 创建 DJIWaypointConfigViewController](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+* [设置地面站任务](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+  * [1. 添加 DJIWaypointConfigViewController 到 DJIRootViewController中](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+  * [2. 操作地面站任务](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+* [Demo演示](/broken/pages/kQcHNBnR2TMEopT7xG9c)
+* [总结](/broken/pages/kQcHNBnR2TMEopT7xG9c)
 
 _如果您在本教程中遇到任何错误或者bug，请使用Github issue，在DJI论坛发帖或者在Gitbook中评论告知我们。您可以随时给我们发送Github pull request来帮助我们修复错误。关于文档的修改需要符合_[_格式标准_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 
@@ -124,7 +124,7 @@ DJI PC 模拟器专为 SDK 开发者所设计。模拟器通过 UDP 广播的方
 
 #### 1. 导入Framework 和 库文件 <a href="#id-1-dao-ru-framework-he-ku-wen-jian" id="id-1-dao-ru-framework-he-ku-wen-jian"></a>
 
-你已经完成了以上步骤, 可以开始开发应用程序了. 在之前的教程[**创建航拍相机App**](broken-reference), 你学会了如何导入DJI Mobile SDK到你的Xcode工程中，并进行激活操作。如果你还没有阅读, 请先看下再进行以下操作。
+你已经完成了以上步骤, 可以开始开发应用程序了. 在之前的教程[**创建航拍相机App**](/broken/pages/aCEf3yUcdTqHJBqhO82e), 你学会了如何导入DJI Mobile SDK到你的Xcode工程中，并进行激活操作。如果你还没有阅读, 请先看下再进行以下操作。
 
 **1**. 在Xcode中创建一个工程并命名为 "**GSDemo**", 复制 **DJISDK.framework** 到你的 Xcode 工程文件夹中. 然后, 选择工程，并进入 Build Phases -> Link Binary With Libraries. 点击底部的 "+" 按钮添加以下两个库文件到工程中: libstdc++.6.0.9.dylib 和 libz.dylib. 以下是截图:
 

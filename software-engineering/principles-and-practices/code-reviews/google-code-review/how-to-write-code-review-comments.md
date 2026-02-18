@@ -11,7 +11,7 @@
 
 ### Courtesy <a href="#courtesy" id="courtesy"></a>
 
-In general, it is important to be [courteous and respectful](https://chromium.googlesource.com/chromium/src/+/master/docs/cr\_respect.md) while also being very clear and helpful to the developer whose code you are reviewing. One way to do this is to be sure that you are always making comments about the _code_ and never making comments about the _developer_. You don’t always have to follow this practice, but you should definitely use it when saying something that might otherwise be upsetting or contentious. For example:
+In general, it is important to be [courteous and respectful](https://chromium.googlesource.com/chromium/src/+/master/docs/cr_respect.md) while also being very clear and helpful to the developer whose code you are reviewing. One way to do this is to be sure that you are always making comments about the _code_ and never making comments about the _developer_. You don’t always have to follow this practice, but you should definitely use it when saying something that might otherwise be upsetting or contentious. For example:
 
 Bad: “Why did **you** use threads here when there’s obviously no benefit to be gained from concurrency?”
 
@@ -29,7 +29,7 @@ This doesn’t mean the reviewer should be unhelpful, though. In general you sho
 
 However, sometimes direct instructions, suggestions, or even code are more helpful. The primary goal of code review is to get the best CL possible. A secondary goal is improving the skills of developers so that they require less and less review over time.
 
-Remember that people learn from reinforcement of what they are doing well and not just what they could do better. If you see things you like in the CL, comment on those too! Examples: developer cleaned up a messy algorithm, added exemplary test coverage, or you as the reviewer learned something from the CL. Just as with all comments, include [why](broken-reference) you liked something, further encouraging the developer to continue good practices.
+Remember that people learn from reinforcement of what they are doing well and not just what they could do better. If you see things you like in the CL, comment on those too! Examples: developer cleaned up a messy algorithm, added exemplary test coverage, or you as the reviewer learned something from the CL. Just as with all comments, include [why](/broken/pages/rAhFLrU0t9payMfKGIGv) you liked something, further encouraging the developer to continue good practices.
 
 ### Accepting Explanations <a href="#explanations" id="explanations"></a>
 

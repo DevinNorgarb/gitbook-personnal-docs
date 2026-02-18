@@ -6,28 +6,28 @@
 
 Our project is a black box - OPD-Pi using Raspberry Pi.
 
-[Beginner](https://www.hackster.io/projects?difficulty=beginner)Full instructions provided1.5 hours37,921![Black Box - OBD-Pi Using Raspberry Pi](https://hackster.imgix.net/uploads/attachments/498045/blob\_uSjDlEdmBX.blob?auto=compress%2Cformat\&w=900\&h=675\&fit=min)
+[Beginner](https://www.hackster.io/projects?difficulty=beginner)Full instructions provided1.5 hours37,921![Black Box - OBD-Pi Using Raspberry Pi](https://hackster.imgix.net/uploads/attachments/498045/blob_uSjDlEdmBX.blob?auto=compress%2Cformat\&w=900\&h=675\&fit=min)
 
 ### Things used in this project
 
-| <h4>Hardware components</h4>                                                                                                                                                         |                                                                                                                                                                                                                                                    |   |   |   |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | - | - | - |
-| ![Arduino UNO](https://hackster.imgix.net/uploads/attachments/1206251/ph-a000066\_iso\_\(1\)\_ztBMuBhMHo.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)                | <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><a href="https://www.hackster.io/arduino/products/arduino-uno1?ref=project-e363aa">Arduino UNO</a></td></tr><tr><td></td></tr></tbody></table>                           | × | 1 |   |
-| [Arduino UNO](https://www.hackster.io/arduino/products/arduino-uno1?ref=project-e363aa)                                                                                              |                                                                                                                                                                                                                                                    |   |   |   |
-|                                                                                                                                                                                      |                                                                                                                                                                                                                                                    |   |   |   |
-| ![Raspberry Pi 3 Model B](https://hackster.imgix.net/uploads/image/file/127603/Pi\_3-02.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)                                 | <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><a href="https://www.hackster.io/raspberry-pi/products/raspberry-pi-3-model-b?ref=project-e363aa">Raspberry Pi 3 Model B</a></td></tr><tr><td></td></tr></tbody></table> | × | 1 |   |
-| [Raspberry Pi 3 Model B](https://www.hackster.io/raspberry-pi/products/raspberry-pi-3-model-b?ref=project-e363aa)                                                                    |                                                                                                                                                                                                                                                    |   |   |   |
-|                                                                                                                                                                                      |                                                                                                                                                                                                                                                    |   |   |   |
-| ![USB-A to Micro-USB Cable](https://hackster.imgix.net/uploads/image/file/96109/Adafruit\_Industries-ADA592-image\_75px.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff) | <table><thead><tr><th>USB-A to Micro-USB Cable</th></tr></thead><tbody><tr><td></td></tr></tbody></table>                                                                                                                                          | × | 1 |   |
-| USB-A to Micro-USB Cable                                                                                                                                                             |                                                                                                                                                                                                                                                    |   |   |   |
-|                                                                                                                                                                                      |                                                                                                                                                                                                                                                    |   |   |   |
-| <h4>Software apps and online services</h4>                                                                                                                                           |                                                                                                                                                                                                                                                    |   |   |   |
-| ![Arduino IDE](https://hackster.imgix.net/uploads/image/file/144203/IDE\_web.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)                                            | <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><a href="https://www.hackster.io/arduino/products/arduino-ide?ref=project-e363aa">Arduino IDE</a></td></tr><tr><td></td></tr></tbody></table>                            |   |   |   |
-| [Arduino IDE](https://www.hackster.io/arduino/products/arduino-ide?ref=project-e363aa)                                                                                               |                                                                                                                                                                                                                                                    |   |   |   |
-|                                                                                                                                                                                      |                                                                                                                                                                                                                                                    |   |   |   |
-|                                                                                                                                                                                      | <table><thead><tr><th>Raspberry Pi RASPIAN SOFTWARE</th></tr></thead><tbody><tr><td></td></tr></tbody></table>                                                                                                                                     |   |   |   |
-| Raspberry Pi RASPIAN SOFTWARE                                                                                                                                                        |                                                                                                                                                                                                                                                    |   |   |   |
-|                                                                                                                                                                                      |                                                                                                                                                                                                                                                    |   |   |   |
+| <h4>Hardware components</h4>                                                                                                                                                       |                                  |   |   |   |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | - | - | - |
+| ![Arduino UNO](https://hackster.imgix.net/uploads/attachments/1206251/ph-a000066_iso_\(1\)_ztBMuBhMHo.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)                 | 01ea7ad981c84d2a9c62a593f3c85526 | × | 1 |   |
+| [Arduino UNO](https://www.hackster.io/arduino/products/arduino-uno1?ref=project-e363aa)                                                                                            |                                  |   |   |   |
+|                                                                                                                                                                                    |                                  |   |   |   |
+| ![Raspberry Pi 3 Model B](https://hackster.imgix.net/uploads/image/file/127603/Pi_3-02.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)                                | ffe0ee60875e47a6b99e9721e3a20467 | × | 1 |   |
+| [Raspberry Pi 3 Model B](https://www.hackster.io/raspberry-pi/products/raspberry-pi-3-model-b?ref=project-e363aa)                                                                  |                                  |   |   |   |
+|                                                                                                                                                                                    |                                  |   |   |   |
+| ![USB-A to Micro-USB Cable](https://hackster.imgix.net/uploads/image/file/96109/Adafruit_Industries-ADA592-image_75px.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff) | d3eb86c237244541a29ff2b8d92e1284 | × | 1 |   |
+| USB-A to Micro-USB Cable                                                                                                                                                           |                                  |   |   |   |
+|                                                                                                                                                                                    |                                  |   |   |   |
+| <h4>Software apps and online services</h4>                                                                                                                                         |                                  |   |   |   |
+| ![Arduino IDE](https://hackster.imgix.net/uploads/image/file/144203/IDE_web.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)                                           | 08958ff02ced4cc3a1ba67dc4c32370c |   |   |   |
+| [Arduino IDE](https://www.hackster.io/arduino/products/arduino-ide?ref=project-e363aa)                                                                                             |                                  |   |   |   |
+|                                                                                                                                                                                    |                                  |   |   |   |
+|                                                                                                                                                                                    | c0b9ae8fbc4e434580cec6a3b13999b4 |   |   |   |
+| Raspberry Pi RASPIAN SOFTWARE                                                                                                                                                      |                                  |   |   |   |
+|                                                                                                                                                                                    |                                  |   |   |   |
 
 ### Story
 
@@ -35,14 +35,14 @@ In this tutorial, you will learn how to connect your Raspberry Pi to a Bluetooth
 
 #### Step 1: Hardware Required: <a href="#toc-step-1--hardware-required-0" id="toc-step-1--hardware-required-0"></a>
 
-![](https://hackster.imgix.net/uploads/attachments/498048/35\_qkl4EXzAA5.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/498048/35_qkl4EXzAA5.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 * Raspberry Pi Model B or B+
 * Aftermarket head unit (Note: Must support Auxiliary input)
 
 #### Step 2: What Is OBD-II? <a href="#toc-step-2--what-is-obd-ii-1" id="toc-step-2--what-is-obd-ii-1"></a>
 
-![](https://hackster.imgix.net/uploads/attachments/498049/36\_f0o6sKnMQn.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/498049/36_f0o6sKnMQn.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 OBD stands for On-Board Diagnostics, and this standard connector has been mandated in the US since 1996. Now you can think of OBD-II as an on-board computer system that is responsible for monitoring your vehicle’s engine, transmission, and emissions control components.
 
@@ -85,7 +85,7 @@ Install these components using the command:
 
 #### Step 5: Vehicle Installation <a href="#toc-step-5--vehicle-installation-4" id="toc-step-5--vehicle-installation-4"></a>
 
-![](https://hackster.imgix.net/uploads/attachments/498052/37\_WW2u8kXwte.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/498052/37_WW2u8kXwte.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 The vehicle installation is quite simple.
 
@@ -112,7 +112,7 @@ Use the Left and Right arrow keys to cycle through the gauge display.To exit the
 
 #### Step 6: Data Logging <a href="#toc-step-6--data-logging-5" id="toc-step-6--data-logging-5"></a>
 
-![](https://hackster.imgix.net/uploads/attachments/498053/38\_GAHCE759Al.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/498053/38_GAHCE759Al.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 If you would like to log your data run:
 

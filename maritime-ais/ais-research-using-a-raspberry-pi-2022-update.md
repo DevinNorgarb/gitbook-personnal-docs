@@ -19,8 +19,7 @@
 >
 > #### Table of Contents
 >
-> \
->
+> <br>
 
 | <ul><li><a href="https://www.garykessler.net/library/ais_pi.html#hardware">Hardware</a></li><li><a href="https://www.garykessler.net/library/ais_pi.html#raspian">Installing Raspberry Pi OS</a></li><li><a href="https://www.garykessler.net/library/ais_pi.html#config_pi">Configuring the Raspberry Pi</a></li><li><a href="https://www.garykessler.net/library/ais_pi.html#daisy_hat">Installing the dAISy Hat</a></li><li><a href="https://www.garykessler.net/library/ais_pi.html#screen">Installing <em>screen</em></a></li><li><a href="https://www.garykessler.net/library/ais_pi.html#opencpn">OpenCPN</a></li><li><p></p><ul><li><a href="https://www.garykessler.net/library/ais_pi.html#opencpn_pgp">PGP Key Management</a></li><li><a href="https://www.garykessler.net/library/ais_pi.html#opencpn_install">Download and Install OpenCPN</a></li><li><a href="https://www.garykessler.net/library/ais_pi.html#opencpn_config">Run and Configure OpenCPN</a></li><li><a href="https://www.garykessler.net/library/ais_pi.html#opencpn_note">SIDENOTE: Sending data to OpenCPN</a></li></ul></li><li><a href="https://www.garykessler.net/library/ais_pi.html#data">Interpreting the Data</a></li><li><p></p><ul><li><a href="https://www.garykessler.net/library/ais_pi.html#gck_tools">A SMALL SIDENOTE: GCK's AIS Tools</a></li></ul></li><li><a href="https://www.garykessler.net/library/ais_pi.html#copyright">Copyright Notice</a></li></ul> |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -55,8 +54,7 @@
 > 2. (Optional) Watch the [45-second installation video](https://youtu.be/ntaXWS8Lk34).
 > 3. Attach a microSD card to your computer.
 > 4. \
->    ![](https://www.garykessler.net/library/images/ais_imager.png)\
->
+>    ![](https://www.garykessler.net/library/images/ais_imager.png)<br>
 > 5. Execute the Raspberry Pi Imager application:
 > 6.
 >    1. Click the _CHOOSE OS_ button to select the OS to install. You probably want _Raspberry Pi OS (32-bit)_.
@@ -64,8 +62,7 @@
 >    3. Click the _CHOOSE STORAGE_ button to select the SD card on which to install the OS. You probably want _Generic MassStorageClass Media_.
 >    4. Click the _WRITE_ button to write and verify the image on the microSD card.
 >    5. \
->       ![](https://www.garykessler.net/library/images/ais_imager_success.png)\
->
+>       ![](https://www.garykessler.net/library/images/ais_imager_success.png)<br>
 >    6. The OS is installed when you see the message above. Click _CONTINUE_.
 > 7. Exit the Raspberry Pi Imager application.
 >
@@ -77,24 +74,20 @@
 >
 > 1. Insert the microSD card into the Raspberry Pi's SD card slot, attach your I/O devices (i.e., keyboard/mouse/monitor), and power it up.
 > 2. You should see a red LED light up on the Raspberry Pi; this indicates that it is booting. It might take a few minutes, but you will soon see what appears to be a Linux-like desktop!
-> 3. Enter the configuration menu by clicking on the Raspberry icon ![](https://www.garykessler.net/library/images/ais_raspberry_icon.png) in the upper left of the screen, and then select _Preferences, Raspberry Pi Configuration_:![](https://www.garykessler.net/library/images/ais_raspi_config.png)\
->
+> 3. Enter the configuration menu by clicking on the Raspberry icon ![](https://www.garykessler.net/library/images/ais_raspberry_icon.png) in the upper left of the screen, and then select _Preferences, Raspberry Pi Configuration_:![](https://www.garykessler.net/library/images/ais_raspi_config.png)<br>
 > 4. If you entered configuration information above during the microSD card imaging process, your Raspberry Pi is already mostly configured (except missing a couple of essential elements, discussed below). You should step through the configuration tabs to ensure that what you want is there. This is also the place to enter any missing information or change information later.
-> 5. \
->
+> 5. <br>
 > 6.
 >    * The _System_ tab shows the system's _Hostname_. This is also where you can _Change Password_, direct the boot process to the desktop or command line interface (CLI), set the automatic login option, and more.
 > 7. \
->    ![](https://www.garykessler.net/library/images/ais_raspi_config_system.png)\
->
+>    ![](https://www.garykessler.net/library/images/ais_raspi_config_system.png)<br>
 > 8. You will need to make some changes on the _Interfaces_ tab:
 > 9.
 >    * Be sure that the _Serial Port_ slider is set
 >    * If you enabled SSH in the imaging process, confirm that the _SSH_ slider is set. You should probably also enable VNC to allow remote login to the desktop. \[NOTE: You might need to engage port forwarding and/or make other changes to your firewall to allow SSH/VNC traffic into your network. SSH uses TCP port 22 and VNC uses TCP port 5900.]
 >    * If SSH is enabled, you can also easily get FTP access to the device using any FTP client that supports SSH File Transfer Protocol (SFTP). \[Do not confuse SFTP with FTPS; the latter is FTP over SSL/TLS.]
 > 10. \
->     ![](https://www.garykessler.net/library/images/ais_raspi_config_if.png)\
->
+>     ![](https://www.garykessler.net/library/images/ais_raspi_config_if.png)<br>
 > 11. Information on the _Localisation_ tab should be mostly set if you entered information during the imaging process:
 > 12.
 >     * Set your language and country by clicking the _Set Locale..._ button. This information was not provided during the imaging process so enter it here.
@@ -102,8 +95,7 @@
 >     * Set the keyboard model and layout by clicking the _Set Keyboard..._ button.
 >     * If you intend to use WiFi, click the _Set WiFi Country..._ button to select a country.
 > 13. \
->     ![](https://www.garykessler.net/library/images/ais_raspi_config_local.png)\
->
+>     ![](https://www.garykessler.net/library/images/ais_raspi_config_local.png)<br>
 > 14. When the configuration looks ok, click _OK_. You'll be asked if you want to reboot; click the "Yes" button.
 >
 > You can perform the same functions from the command line by opening a terminal window and entering:
@@ -273,8 +265,7 @@
 > Finally... one of the problems that is immediately apparent from the raw output stream is that AIS lacks timestamp information. While OpenCPN displays a timestamp in the Debug Window, that is not part of the AIS message and, therefore, not a part of the raw data stream that can be captured. To remedy this, I wrote a small Perl program called _timestamp\_data_ that can connect to a TCP or UDP socket on a local or remote host, and read a data stream for a specified amount of time. Output is directed to a file complete with a human-readable and Unix epoch-formatted timestamp of when the data was received; fields in the file are delimited with a "pipe" (|) character. Users can, optionally, also see the data in real-time. The program can be found on my [software page](https://www.garykessler.net/software/index.html#timestamp).
 >
 > \
-> ![](https://www.garykessler.net/library/images/ais_timestamp.png)\
->
+> ![](https://www.garykessler.net/library/images/ais_timestamp.png)<br>
 >
 > > SIDENOTE: Sending data to OpenCPNIf you have a file filled with AIS messages, it is also possible to send that data to OpenCPN for display. First, you need to set up OpenCPN to _listen_ on a TCP port rather than send. Just create a new OpenCPN connection on the port of your choice to address 0.0.0.0, as shown above, but check the box to "Receive input on this port."There are a variety of methods with which to send the data to OpenCPN at this point. You could just transmit the entire file via _netcat_:     cat FILENAME | nc localhost PORTUsing the method above will work but all it does is dump the entire AIS message stream to OpenCPN at one time so you just see the last sentence transmitted by each vessel. If you want to slow things down a little, add a delay between the display of each line in the data file using some shell scripting:     cat FILENAME | { while read line; do sleep 2; echo "$line" | nc localhost PORT ; done; }     cat FILENAME | { while read line; do sleep 1; echo "$line" > /dev/tcp/localhost/PORT ; done; }
 > >
@@ -292,8 +283,7 @@
 > >
 > > ![](https://www.garykessler.net/library/images/ais_nmea_simulator_opencpn.png)
 >
-> \
->
+> <br>
 >
 > ***
 >
@@ -341,11 +331,10 @@
 >
 > And, finally... if you are working with NMEA 2000 binary data, take a look at the [CANboat](https://github.com/canboat/canboat/wiki) project. Also, [aisstream.io](https://aisstream.io/) provides a websocket API for real-time AIS data acquisition.
 >
-> \
->
+> <br>
 >
 > ***
 >
 > COPYRIGHT NOTICEAll information on this page © 2019-2024, Gary C. Kessler. Permission to use the material here is extended to any of this page's visitors, as long as appropriate attribution is provided and the information is not altered in any way without express written permission of the author.
 
-\
+<br>

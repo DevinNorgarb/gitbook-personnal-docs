@@ -12,7 +12,7 @@ You can install yt-dlp either using one of the official releases, or with your f
 
 You can simply download the [correct binary file](https://github.com/yt-dlp/yt-dlp#release-files) for your OS
 
-[![Windows](https://camo.githubusercontent.com/5e7d03f7f5cc1dc4cd6797a5ede9af299143001f2fc89a7386b87f3d4828c5d1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d57696e646f77735f7836342d626c75652e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d77696e646f7773)](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe) [![Linux](https://camo.githubusercontent.com/5461aa20146a9fe60de1cc47ac0de9a070a05e73dec54a829d1cf21d85324974/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4c696e75782f4253442d7265642e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d6c696e7578)](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp) [![MacOS](https://camo.githubusercontent.com/65d1ed3107ea8b6ab3c6b06766904cbc6fdd9e7fd961929f81349e38e3229767/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4d61634f532d6c69676874626c75652e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d6170706c65)](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp\_macos) [![Other variants](https://camo.githubusercontent.com/b38bcbc7dbeb210434768a9f20c9fcebf7d25fe6a3438334d910aae7ee277008/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4f746865722d677265792e7376673f7374796c653d666f722d7468652d6261646765)](https://github.com/yt-dlp/yt-dlp#release-files)
+[![Windows](https://camo.githubusercontent.com/5e7d03f7f5cc1dc4cd6797a5ede9af299143001f2fc89a7386b87f3d4828c5d1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d57696e646f77735f7836342d626c75652e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d77696e646f7773)](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe) [![Linux](https://camo.githubusercontent.com/5461aa20146a9fe60de1cc47ac0de9a070a05e73dec54a829d1cf21d85324974/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4c696e75782f4253442d7265642e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d6c696e7578)](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp) [![MacOS](https://camo.githubusercontent.com/65d1ed3107ea8b6ab3c6b06766904cbc6fdd9e7fd961929f81349e38e3229767/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4d61634f532d6c69676874626c75652e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d6170706c65)](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_macos) [![Other variants](https://camo.githubusercontent.com/b38bcbc7dbeb210434768a9f20c9fcebf7d25fe6a3438334d910aae7ee277008/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4f746865722d677265792e7376673f7374796c653d666f722d7468652d6261646765)](https://github.com/yt-dlp/yt-dlp#release-files)
 
 In UNIX-like OSes (MacOS, Linux, BSD), you can also install the same in one of the following ways:
 
@@ -104,9 +104,9 @@ pacman will now automatically download the correct dependencies and keep the pac
 sudo pacman -Syu
 ```
 
-#### [APT](https://en.wikipedia.org/wiki/APT\_\(software\))
+#### [APT](https://en.wikipedia.org/wiki/APT_\(software\))
 
-You can download and install yt-dlp for recent Ubuntu and other related Debian-based distributions by adding the [this PPA](https://launchpad.net/\~tomtomtom/+archive/ubuntu/yt-dlp)
+You can download and install yt-dlp for recent Ubuntu and other related Debian-based distributions by adding the [this PPA](https://launchpad.net/~tomtomtom/+archive/ubuntu/yt-dlp)
 
 ```
 sudo add-apt-repository ppa:tomtomtom/yt-dlp    # Add ppa repo to apt
@@ -222,4 +222,4 @@ To update, run:
 pip install -U yt-dlp
 ```
 
-\
+<br>

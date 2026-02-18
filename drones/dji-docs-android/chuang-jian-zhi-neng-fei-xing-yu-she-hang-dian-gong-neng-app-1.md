@@ -2,19 +2,19 @@
 
 > 注意：本教程和示例代码基于DJI Android SDK 2.4版本撰写开发，针对最新Android SDK 3.1.1版本的教程是示例代码的更新将会在近期发布，请知悉。
 
-* [使用DJI PC模拟器](broken-reference)
-  * [1. 使用说明](broken-reference)
-  * [2.安装和使用DJI PC模拟器](broken-reference)
-  * [3. 怎样使用DJI PC模拟器](broken-reference)
-* [升级固件](broken-reference)
-* [设置地图视图](broken-reference)
-  * [1. 创建地图视图](broken-reference)
-  * [2. 定位飞行器](broken-reference)
-  * [3. 添加和清除航点](broken-reference)
-* [设置已添加的航点和DJIGroundStationTask](broken-reference)
-* [上传航点到飞行器](broken-reference)
-* [开始和停止地面站任务](broken-reference)
-* [总结](broken-reference)
+* [使用DJI PC模拟器](/broken/pages/7u63eHvCuQBMNzxrc483)
+  * [1. 使用说明](/broken/pages/7u63eHvCuQBMNzxrc483)
+  * [2.安装和使用DJI PC模拟器](/broken/pages/7u63eHvCuQBMNzxrc483)
+  * [3. 怎样使用DJI PC模拟器](/broken/pages/7u63eHvCuQBMNzxrc483)
+* [升级固件](/broken/pages/7u63eHvCuQBMNzxrc483)
+* [设置地图视图](/broken/pages/7u63eHvCuQBMNzxrc483)
+  * [1. 创建地图视图](/broken/pages/7u63eHvCuQBMNzxrc483)
+  * [2. 定位飞行器](/broken/pages/7u63eHvCuQBMNzxrc483)
+  * [3. 添加和清除航点](/broken/pages/7u63eHvCuQBMNzxrc483)
+* [设置已添加的航点和DJIGroundStationTask](/broken/pages/7u63eHvCuQBMNzxrc483)
+* [上传航点到飞行器](/broken/pages/7u63eHvCuQBMNzxrc483)
+* [开始和停止地面站任务](/broken/pages/7u63eHvCuQBMNzxrc483)
+* [总结](/broken/pages/7u63eHvCuQBMNzxrc483)
 
 _如果您在本教程中遇到任何错误或者bug，请使用Github issue，在DJI论坛发帖或者在Gitbook中评论告知我们。您可以随时给我们发送Github pull request来帮助我们修复错误。关于文档的修改需要符合_[_格式标准_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 

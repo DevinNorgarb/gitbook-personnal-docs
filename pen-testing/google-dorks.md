@@ -359,7 +359,7 @@ Dorks for Bug Bounty Hunting
 
 * Updated on Jul 10, 2023
 
-#### [TUXCMD ](https://github.com/TUXCMD)/ [Google-Dorks-Full\_list](https://github.com/TUXCMD/Google-Dorks-Full\_list)
+#### [TUXCMD ](https://github.com/TUXCMD)/ [Google-Dorks-Full\_list](https://github.com/TUXCMD/Google-Dorks-Full_list)
 
 &#x20;Star 88
 
@@ -371,9 +371,9 @@ Dorks for Bug Bounty Hunting
 
 </details>
 
-* [ Code](https://github.com/TUXCMD/Google-Dorks-Full\_list)
-* [ Issues](https://github.com/TUXCMD/Google-Dorks-Full\_list/issues)
-* [ Pull requests](https://github.com/TUXCMD/Google-Dorks-Full\_list/pulls)
+* [ Code](https://github.com/TUXCMD/Google-Dorks-Full_list)
+* [ Issues](https://github.com/TUXCMD/Google-Dorks-Full_list/issues)
+* [ Pull requests](https://github.com/TUXCMD/Google-Dorks-Full_list/pulls)
 
 Approx 10.000 lines of Google dorks search queries - Use this for research purposes only
 
@@ -505,4 +505,4 @@ To associate your repository with the google-dorks topic, visit your repo's land
 * Manage cookies
 * Do not share my personal information
 
-\
+<br>

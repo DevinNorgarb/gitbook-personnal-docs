@@ -1,6 +1,6 @@
 # OBD GPS Logger for Linux and OSX
 
-\[ [Modules](broken-reference) | [Screenshots](broken-reference) | [Log Output](broken-reference) | [Supported OSs](broken-reference) | [Download](broken-reference) | [Contact](broken-reference) ]
+\[ [Modules](/broken/pages/FP7EnVaf5BwCdwygYnJv) | [Screenshots](/broken/pages/FP7EnVaf5BwCdwygYnJv) | [Log Output](/broken/pages/FP7EnVaf5BwCdwygYnJv) | [Supported OSs](/broken/pages/FP7EnVaf5BwCdwygYnJv) | [Download](/broken/pages/FP7EnVaf5BwCdwygYnJv) | [Contact](/broken/pages/FP7EnVaf5BwCdwygYnJv) ]
 
 It does exactly what it says on the tin. It logs OBDII and GPS data on Linux, OSX and others.
 
@@ -10,9 +10,9 @@ If you find obdgpslogger useful, please don't hesitate to drop me an email at [c
 
 ### Modules
 
-OBD GPS Logger comes as a bunch of small tools, each intended to complete a single task. [I list these modules](broken-reference) on a page of their own.
+OBD GPS Logger comes as a bunch of small tools, each intended to complete a single task. [I list these modules](/broken/pages/7Gsx09sOrrSAf96TUtPQ) on a page of their own.
 
-Of specific mention is an [OBD II Simulator](broken-reference), which has been given its own page to explore some of its features.
+Of specific mention is an [OBD II Simulator](/broken/pages/EsNvNePDPeoLEq47Nn08), which has been given its own page to explore some of its features.
 
 Each module intended for end users has a manpage in the distribution. A simple text version of the manpages can be found here: [manpages](../../.gitbook/assets/manpages)
 
@@ -54,10 +54,10 @@ The core interest in this application is OBDII. To log from OBDII, you'll need a
 I have all these three devices. I use the OBDLink the most \[it's the fastest at sampling, and has the most powerful set of power-saving settings], followed by the OBDPros. I rarely use the OBDKey anymore:
 
 * [OBDLink device](http://www.scantool.net/obdlink.html)
-* [OBDPros USB](http://www.obdpros.com/product\_info.php?products\_id=133)
+* [OBDPros USB](http://www.obdpros.com/product_info.php?products_id=133)
 * [Bluetooth OBDKey](http://www.obdkey.com/)
 
-If you want to use the GPS logging part, you'll need a [GPS receiver compatible with gpsd](http://gpsd.berlios.de/hardware.html), and gpsd. For bluetooth, I'm using one of these: [Globalsat BT-359](http://www.amazon.com/gp/product/B000GWGHOK) and am very happy with it. In general, though, I prefer the [BU-353](http://store.mp3car.com/BU\_353\_USB\_GPS\_Receiver\_p/gps-002.htm) since you don't have to deal with batteries or turning on and enabling gpsd. \[yay hotplug]
+If you want to use the GPS logging part, you'll need a [GPS receiver compatible with gpsd](http://gpsd.berlios.de/hardware.html), and gpsd. For bluetooth, I'm using one of these: [Globalsat BT-359](http://www.amazon.com/gp/product/B000GWGHOK) and am very happy with it. In general, though, I prefer the [BU-353](http://store.mp3car.com/BU_353_USB_GPS_Receiver_p/gps-002.htm) since you don't have to deal with batteries or turning on and enabling gpsd. \[yay hotplug]
 
 ### Can it hurt my car?
 
@@ -108,7 +108,7 @@ At time of writing, packages are available through your distribution if you're r
 
 OpenSolaris spec files are in the svn packaging, but Oracle have killed Jucr so I no longer have an easy install path for end users.
 
-Packaging is in progress, but not yet official, for [Fedora](https://bugzilla.redhat.com/show\_bug.cgi?id=709125), [OpenSuSE](https://build.opensuse.org/package/binaries?package=obdgpslogger\&project=home%3Arandybb%3Atesting\&repository=openSUSE\_11.4), and Meego. That may have changed by the time you read this.
+Packaging is in progress, but not yet official, for [Fedora](https://bugzilla.redhat.com/show_bug.cgi?id=709125), [OpenSuSE](https://build.opensuse.org/package/binaries?package=obdgpslogger\&project=home%3Arandybb%3Atesting\&repository=openSUSE_11.4), and Meego. That may have changed by the time you read this.
 
 #### Tarball
 
@@ -166,4 +166,4 @@ mp3car have provided me some forum space for this project here: [http://www.mp3c
 [Gary (-;\
 \<chunky@icculus.org>](mailto:chunky@icculus.org)
 
-\
+<br>

@@ -2,14 +2,14 @@
 
 In [Secure Kali Pi (2022)](https://www.kali.org/blog/secure-kali-raspberry-pi/), the first blog post in the Raspberry Pi series, we set up a [Raspberry Pi 4](https://www.kali.org/docs/arm/raspberry-pi-4/) with full disk encryption. We mentioned that we can leave it somewhere as a drop box. This brought up the question, “**If it is not on my local network how do I connect to it to unlock it?**” So we will now answer this by showing a few different ways to connect to our secure Kali Pi drop box. This includes:
 
-* [Wireless 802.11](broken-reference):
-  * As a [client on an existing network(s)](broken-reference) _(only if we know any details ahead of time to pre-configure)_
-  * Create an [access point](broken-reference), to become a new network _(that we can access if we are in physical distance to the device)_
-* [Wired ethernet](broken-reference):
+* [Wireless 802.11](/broken/pages/IwvCQkCy4MUTzbKef7uA):
+  * As a [client on an existing network(s)](/broken/pages/IwvCQkCy4MUTzbKef7uA) _(only if we know any details ahead of time to pre-configure)_
+  * Create an [access point](/broken/pages/IwvCQkCy4MUTzbKef7uA), to become a new network _(that we can access if we are in physical distance to the device)_
+* [Wired ethernet](/broken/pages/IwvCQkCy4MUTzbKef7uA):
   * Using static network settings _(if we know the details ahead of time to pre-configure it)_
   * DHCP to automatically discover network values _(which creates noise)_
 
-After getting internet access, we will use a [**Virtual Private Network**](broken-reference) to remotely connect back to a server of our choosing, which we can also join from anywhere online, thus getting around the requirements of having to port forward on any firewalls.
+After getting internet access, we will use a [**Virtual Private Network**](/broken/pages/IwvCQkCy4MUTzbKef7uA) to remotely connect back to a server of our choosing, which we can also join from anywhere online, thus getting around the requirements of having to port forward on any firewalls.
 
 ***
 
@@ -30,14 +30,14 @@ After getting internet access, we will use a [**Virtual Private Network**](broke
 
 While wired networking in the initramfs does not require a lot of extras, wireless has a few more moving parts. To enable wireless support, we need to find:
 
-* The kernel [Wi-Fi **modules**](broken-reference) that need to be in the initramfs _(Depends on hardware)_
-* The [Wi-Fi **firmware**](broken-reference) files that need to be in the initramfs _(Depends on hardware)_
-* The [Wireless **interface name**](broken-reference) _(Kali defaults to: `wlan0`)_
-* [Additional packages](broken-reference) to increase functionally. Either:
-  * [wpa\_supplicant](https://w1.fi/wpa\_supplicant/) to connect as a client to a wireless network
+* The kernel [Wi-Fi **modules**](/broken/pages/IwvCQkCy4MUTzbKef7uA) that need to be in the initramfs _(Depends on hardware)_
+* The [Wi-Fi **firmware**](/broken/pages/IwvCQkCy4MUTzbKef7uA) files that need to be in the initramfs _(Depends on hardware)_
+* The [Wireless **interface name**](/broken/pages/IwvCQkCy4MUTzbKef7uA) _(Kali defaults to: `wlan0`)_
+* [Additional packages](/broken/pages/IwvCQkCy4MUTzbKef7uA) to increase functionally. Either:
+  * [wpa\_supplicant](https://w1.fi/wpa_supplicant/) to connect as a client to a wireless network
   * [hostapd](https://w1.fi/hostapd/) to create an access point for a new wireless network
 
-Additionally, knowing the [**hostname**](broken-reference) of your Raspberry Pi can help find it, as well as blend in, in your target environment.
+Additionally, knowing the [**hostname**](/broken/pages/IwvCQkCy4MUTzbKef7uA) of your Raspberry Pi can help find it, as well as blend in, in your target environment.
 
 ***
 
@@ -192,7 +192,7 @@ firmware:       brcm/brcmfmac*-sdio.*.txt
 [...]
 ```
 
-On Linux systems, the [default firmware search path](https://docs.kernel.org/driver-api/firmware/fw\_search\_path.html) is `/lib/firmware/` so the full path to the above would be:
+On Linux systems, the [default firmware search path](https://docs.kernel.org/driver-api/firmware/fw_search_path.html) is `/lib/firmware/` so the full path to the above would be:
 
 * `/lib/firmware/brcmfmac*-sdio.*.bin`
 * `/lib/firmware/brcmfmac*-sdio.*.txt`
@@ -538,7 +538,7 @@ As the [documentation](https://docs.kernel.org/admin-guide/nfs/nfsroot.html) sta
 
 You should not use the wireless in both access point mode and client mode at the same time. It **is** possible, however the networks need to be on the same channels, and we do not cover this in order to keep the blog post simple. You should only use client mode, or access point mode, but not both from this blog post. _We will talk about this again at the end of the blog post._
 
-Similarly to how we set up connecting our Raspberry Pi to a wireless network as a [client](broken-reference), if we want to set it up as an access point to connect to, we need to add into the initramfs. Like last time, our Wi-Fi drivers, the firmware just this time, its different software and configurations.
+Similarly to how we set up connecting our Raspberry Pi to a wireless network as a [client](/broken/pages/IwvCQkCy4MUTzbKef7uA), if we want to set it up as an access point to connect to, we need to add into the initramfs. Like last time, our Wi-Fi drivers, the firmware just this time, its different software and configurations.
 
 The package you would use on Linux to set up an access point is [hostapd](https://w1.fi/hostapd/) which does not come installed by default, so we will install it first.
 
@@ -591,7 +591,7 @@ wpa_pairwise=TKIP
 rsn_pairwise=CCMP
 ```
 
-The PSK is a value derived from the SSID of the network and the password. The easiest way to get this is very similar to the way we created the wpa\_supplicant.conf file [above](broken-reference) - we run `wpa_passphrase SecureKaliPi SecureKaliPiWiFi` and then we copy the psk line that is not the plaintext password:
+The PSK is a value derived from the SSID of the network and the password. The easiest way to get this is very similar to the way we created the wpa\_supplicant.conf file [above](/broken/pages/IwvCQkCy4MUTzbKef7uA) - we run `wpa_passphrase SecureKaliPi SecureKaliPiWiFi` and then we copy the psk line that is not the plaintext password:
 
 ```
 :~$ wpa_passphrase SecureKaliPi SecureKaliPiWiFi
@@ -602,7 +602,7 @@ network={
 }
 ```
 
-You can, and should, change the configuration to match your needs. If you would like to set it up to use 5GHz, you would need to change `hw_mode=g` to `hw_mode=a`, but keep in mind that if you are using 5GHz you need to change the channel. [Wikipedia](https://en.wikipedia.org/wiki/List\_of\_WLAN\_channels) has a list of allowed combinations for different countries.
+You can, and should, change the configuration to match your needs. If you would like to set it up to use 5GHz, you would need to change `hw_mode=g` to `hw_mode=a`, but keep in mind that if you are using 5GHz you need to change the channel. [Wikipedia](https://en.wikipedia.org/wiki/List_of_WLAN_channels) has a list of allowed combinations for different countries.
 
 ***
 
@@ -762,7 +762,7 @@ echo $! >/run/hostapd.pid
 
 ***
 
-Additionally, we want to start a DHCP server so that when we connect to the Raspberry Pi’s access point, we get an IP address. Normally, you would use a package like [isc-dhcp-server](https://wiki.debian.org/DHCP\_Server) to run a DHCP server, but since we have already got busybox which has a DHCP server applet enabled in the initramfs, we will just use that instead. We do not need a fully featured DHCP server just to unlock our Raspberry Pi and let it finish booting.
+Additionally, we want to start a DHCP server so that when we connect to the Raspberry Pi’s access point, we get an IP address. Normally, you would use a package like [isc-dhcp-server](https://wiki.debian.org/DHCP_Server) to run a DHCP server, but since we have already got busybox which has a DHCP server applet enabled in the initramfs, we will just use that instead. We do not need a fully featured DHCP server just to unlock our Raspberry Pi and let it finish booting.
 
 First we set up the configuration file for it `/etc/udhcpd.conf` with the following information:
 
@@ -839,7 +839,7 @@ Connect to it, and we should be able to unlock the device via SSH!
 
 ### Wired Connection <a href="#wired-connection" id="wired-connection"></a>
 
-By default, the wired connection on a Raspberry Pi will attempt to use DHCP to connect to a network when it is plugged in. You may want to set a static IP, we need to do similar to [above](broken-reference), and set the IP manually in the `/boot/cmdline.txt` file, which is what the Raspberry Pi uses for the kernel command line arguments.
+By default, the wired connection on a Raspberry Pi will attempt to use DHCP to connect to a network when it is plugged in. You may want to set a static IP, we need to do similar to [above](/broken/pages/IwvCQkCy4MUTzbKef7uA), and set the IP manually in the `/boot/cmdline.txt` file, which is what the Raspberry Pi uses for the kernel command line arguments.
 
 #### Static IP <a href="#static-ip-1" id="static-ip-1"></a>
 
@@ -874,7 +874,7 @@ After we have got our device connected to the network, great! We are now wanting
 
 Regardless of the reverse service used, network traffic may be filtered by firewall rules which may limit what services can be used. For example SSH (22/TCP) or OpenVPN (1194/UDP) default ports may not be allowed out. As a result, think of what typical end-users may often use the network for. Commonly you see a lot of web traffic, so HTTPS (`443/TCP`) should hopefully give a higher chance of success, such as HTTPS (`443/TCP`)! _We will talk about this again at the end of the blog post._
 
-If you have created a new private network by starting an [access point](broken-reference), there is not going to be an upstream gateway configured. As a result, the VPN tunnel will not be able to connect to the internet. You will need to find another way to get online, by either using another mode ([Wi-Fi client](broken-reference)), or another interface (wired ethernet, mobile hotspot etc).
+If you have created a new private network by starting an [access point](/broken/pages/IwvCQkCy4MUTzbKef7uA), there is not going to be an upstream gateway configured. As a result, the VPN tunnel will not be able to connect to the internet. You will need to find another way to get online, by either using another mode ([Wi-Fi client](/broken/pages/IwvCQkCy4MUTzbKef7uA)), or another interface (wired ethernet, mobile hotspot etc).
 
 ***
 
@@ -1062,9 +1062,9 @@ We are sure you can also think outside of the box, and come up with additional i
 * [Cryptmypi Experimental WiFi initramfs hook](https://github.com/unixabg/cryptmypi/blob/master/hooks/0000-experimental-initramfs-wifi.hook)
 * [Enable Wireless networks in Debian Initramfs](https://www.marcfargas.com/posts/enable-wireless-debian-initramfs)
 * [Raspberry Pi Zero W with the root FS mounted over NFS](http://retinal.dehy.de/docs/doku.php?id=technotes:raspberryrootnfs)
-* [Remote Unlock via WiFi](https://wiki.archlinux.org/title/Dm-crypt/Specialties#Remote\_unlock\_via\_WiFi)
+* [Remote Unlock via WiFi](https://wiki.archlinux.org/title/Dm-crypt/Specialties#Remote_unlock_via_WiFi)
 
 **Setting up hostapd**:
 
 * [Raspberry Pi Documentation](https://raspberrypi.com/documentation/computers/configuration.html#setting-up-a-bridged-wireless-access-point)
-* [Per station WPA2 PSK with hostapd](https://0x72326432.com/posts/perstapsk\_en/)
+* [Per station WPA2 PSK with hostapd](https://0x72326432.com/posts/perstapsk_en/)

@@ -22,9 +22,9 @@ To follow this tutorial you need the following components:
 * [FTDI programmer](https://makeradvisor.com/tools/ftdi-programmer-board/)
 * [Female-to-female jumper wires](https://makeradvisor.com/tools/jumper-wires-kit-120-pieces/)
 
-You can use the preceding links or go directly to [MakerAdvisor.com/tools](https://makeradvisor.com/tools/?utm\_source=rnt\&utm\_medium=post\&utm\_campaign=post) to find all the parts for your projects at the best price!
+You can use the preceding links or go directly to [MakerAdvisor.com/tools](https://makeradvisor.com/tools/?utm_source=rnt\&utm_medium=post\&utm_campaign=post) to find all the parts for your projects at the best price!
 
-[![](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2017/10/header-200.png?w=828\&quality=100\&strip=all\&ssl=1)](https://makeradvisor.com/tools/?utm\_source=rnt\&utm\_medium=post\&utm\_campaign=post)
+[![](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2017/10/header-200.png?w=828\&quality=100\&strip=all\&ssl=1)](https://makeradvisor.com/tools/?utm_source=rnt\&utm_medium=post\&utm_campaign=post)
 
 ### Introducing the ESP32-CAM
 
@@ -96,11 +96,7 @@ In your Arduino IDE, go to **File** > **Examples** > **ESP32** > **Camera** and 
 
 The following code should load.
 
-<div data-full-width="true">
-
-<figure><img src="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2019/12/camera-web-server-example-code.png?resize=603%2C571&#x26;quality=100&#x26;strip=all&#x26;ssl=1" alt="ESP32 CameraWebServer Example"><figcaption></figcaption></figure>
-
-</div>
+<div data-full-width="true"><figure><img src="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2019/12/camera-web-server-example-code.png?resize=603%2C571&#x26;quality=100&#x26;strip=all&#x26;ssl=1" alt="ESP32 CameraWebServer Example"><figcaption></figcaption></figure></div>
 
 Before uploading the code, you need to insert your network credentials in the following variables:
 
@@ -186,8 +182,7 @@ Finally, you can do face recognition and detection.
 
 <figure><img src="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2019/03/ESP32-cam-intruder-alert.jpg?resize=750%2C411&#x26;quality=100&#x26;strip=all&#x26;ssl=1" alt="" height="411" width="750"><figcaption></figcaption></figure>
 
-First, you need to enroll a new face. It will make several attempts to save the face. After enrolling a new user, it should detect the face later on (subject 0).\
-
+First, you need to enroll a new face. It will make several attempts to save the face. After enrolling a new user, it should detect the face later on (subject 0).<br>
 
 <figure><img src="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2019/03/esp32-cam-face-recognition-detection.jpg?resize=750%2C391&#x26;quality=100&#x26;strip=all&#x26;ssl=1" alt="" height="391" width="750"><figcaption></figcaption></figure>
 

@@ -2,7 +2,7 @@
 
 
 
-### Introduction[¶](broken-reference)
+### Introduction[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
 
 The OVMS is an **all open source** vehicle remote monitoring, diagnosis and control system.
 
@@ -18,45 +18,45 @@ The **OVMS base component** is a small and inexpensive hardware module that conn
 
 The module provides a **built-in Web App** user interface and remote control via native cellphone Apps available for **Android** and **iOS**. It integrates into home/process automation systems via **MQTT** and provides data logging to SD card and to a server.
 
-### Vehicle Support[¶](broken-reference)
+### Vehicle Support[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
 
 * _Native Integration_
   * Chevrolet Volt / Opel Ampera
   * Chevrolet Bolt EV / Opel Ampera-e
-  * [BMW i3 / i3s](https://docs.openvehicles.com/en/latest/components/vehicle\_bmwi3/docs/index.html)
-  * [Fiat 500e](https://docs.openvehicles.com/en/latest/components/vehicle\_fiat500/docs/index.html)
-  * [Hyundai Ioniq vFL](https://docs.openvehicles.com/en/latest/components/vehicle\_hyundai\_ioniqvfl/docs/index.html)
-  * [Jaguar Ipace](https://docs.openvehicles.com/en/latest/components/vehicle\_jaguaripace/docs/index.html)
-  * [Kia e-Niro / Hyundai Kona](https://docs.openvehicles.com/en/latest/components/vehicle\_kianiroev/docs/index.html)
-  * [Kia Soul EV](https://docs.openvehicles.com/en/latest/components/vehicle\_kiasoulev/docs/index.html)
-  * [Maxus eDeliver 3](https://docs.openvehicles.com/en/latest/components/vehicle\_maxus\_edeliver3/docs/index.html)
-  * [Mercedes-Benz B250E](https://docs.openvehicles.com/en/latest/components/vehicle\_mercedesb250e/docs/index.html)
-  * [MG ZS EV](https://docs.openvehicles.com/en/latest/components/vehicle\_mgev/docs/index.html)
-  * [Mitsubishi Trio (i-MiEV et al)](https://docs.openvehicles.com/en/latest/components/vehicle\_mitsubishi/docs/index.html)
-  * [Nissan Leaf / e-NV200](https://docs.openvehicles.com/en/latest/components/vehicle\_nissanleaf/docs/index.html)
-  * [Renault Twizy](https://docs.openvehicles.com/en/latest/components/vehicle\_renaulttwizy/docs/index.html)
-  * [Renault Zoe / Kangoo](https://docs.openvehicles.com/en/latest/components/vehicle\_renaultzoe/docs/index.html)
-  * [Smart ED Gen.3](https://docs.openvehicles.com/en/latest/components/vehicle\_smarted/docs/index.html)
-  * [Smart ED/EQ Gen.4 (453)](https://docs.openvehicles.com/en/latest/components/vehicle\_smarteq/docs/index.html)
-  * [Tesla Model S](https://docs.openvehicles.com/en/latest/components/vehicle\_teslamodels/docs/index.html)
-  * [Tesla Roadster](https://docs.openvehicles.com/en/latest/components/vehicle\_teslaroadster/docs/index.html)
+  * [BMW i3 / i3s](https://docs.openvehicles.com/en/latest/components/vehicle_bmwi3/docs/index.html)
+  * [Fiat 500e](https://docs.openvehicles.com/en/latest/components/vehicle_fiat500/docs/index.html)
+  * [Hyundai Ioniq vFL](https://docs.openvehicles.com/en/latest/components/vehicle_hyundai_ioniqvfl/docs/index.html)
+  * [Jaguar Ipace](https://docs.openvehicles.com/en/latest/components/vehicle_jaguaripace/docs/index.html)
+  * [Kia e-Niro / Hyundai Kona](https://docs.openvehicles.com/en/latest/components/vehicle_kianiroev/docs/index.html)
+  * [Kia Soul EV](https://docs.openvehicles.com/en/latest/components/vehicle_kiasoulev/docs/index.html)
+  * [Maxus eDeliver 3](https://docs.openvehicles.com/en/latest/components/vehicle_maxus_edeliver3/docs/index.html)
+  * [Mercedes-Benz B250E](https://docs.openvehicles.com/en/latest/components/vehicle_mercedesb250e/docs/index.html)
+  * [MG ZS EV](https://docs.openvehicles.com/en/latest/components/vehicle_mgev/docs/index.html)
+  * [Mitsubishi Trio (i-MiEV et al)](https://docs.openvehicles.com/en/latest/components/vehicle_mitsubishi/docs/index.html)
+  * [Nissan Leaf / e-NV200](https://docs.openvehicles.com/en/latest/components/vehicle_nissanleaf/docs/index.html)
+  * [Renault Twizy](https://docs.openvehicles.com/en/latest/components/vehicle_renaulttwizy/docs/index.html)
+  * [Renault Zoe / Kangoo](https://docs.openvehicles.com/en/latest/components/vehicle_renaultzoe/docs/index.html)
+  * [Smart ED Gen.3](https://docs.openvehicles.com/en/latest/components/vehicle_smarted/docs/index.html)
+  * [Smart ED/EQ Gen.4 (453)](https://docs.openvehicles.com/en/latest/components/vehicle_smarteq/docs/index.html)
+  * [Tesla Model S](https://docs.openvehicles.com/en/latest/components/vehicle_teslamodels/docs/index.html)
+  * [Tesla Roadster](https://docs.openvehicles.com/en/latest/components/vehicle_teslaroadster/docs/index.html)
   * Think City
-  * [Toyota RAV4 EV](https://docs.openvehicles.com/en/latest/components/vehicle\_toyotarav4ev/docs/index.html)
-  * [VW e-Up](https://docs.openvehicles.com/en/latest/components/vehicle\_vweup/docs/index.html)
+  * [Toyota RAV4 EV](https://docs.openvehicles.com/en/latest/components/vehicle_toyotarav4ev/docs/index.html)
+  * [VW e-Up](https://docs.openvehicles.com/en/latest/components/vehicle_vweup/docs/index.html)
 * _General Support_
-  * [DBC File Based](https://docs.openvehicles.com/en/latest/components/vehicle\_dbc/docs/index.html)
-  * [GPS Tracking](https://docs.openvehicles.com/en/latest/components/vehicle\_track/docs/index.html)
-  * [OBD-II Standard](https://docs.openvehicles.com/en/latest/components/vehicle\_obdii/docs/index.html)
+  * [DBC File Based](https://docs.openvehicles.com/en/latest/components/vehicle_dbc/docs/index.html)
+  * [GPS Tracking](https://docs.openvehicles.com/en/latest/components/vehicle_track/docs/index.html)
+  * [OBD-II Standard](https://docs.openvehicles.com/en/latest/components/vehicle_obdii/docs/index.html)
   * Zeva BMS
 
-### Links[¶](broken-reference)
+### Links[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
 
 * _User Resources_
   * _User and Developer Guides: (hint: version selection in left menu at the bottom)_
     * [Stable release (OTA version “main”)](https://docs.openvehicles.com/en/stable/)
     * [Latest nightly build (OTA version “edge”)](https://docs.openvehicles.com/en/latest/)
   * [User Support Forum](https://www.openvehicles.com/forum)
-  * [Android App](https://play.google.com/store/apps/details?id=com.openvehicles.OVMS\&hl=en\_US)
+  * [Android App](https://play.google.com/store/apps/details?id=com.openvehicles.OVMS\&hl=en_US)
   * [iOS App](https://apps.apple.com/us/app/open-vehicles/id490098531)
 * _Distributors_
   * [FastTech (global)](https://www.fasttech.com/search?ovms)
@@ -66,13 +66,13 @@ The module provides a **built-in Web App** user interface and remote control via
   * [Asia-Pacific](https://www.openvehicles.com/)
   * [Germany/Europe](https://dexters-web.de/)
 * _Developers_
-  * [Developer Guide](https://docs.google.com/document/d/1q5M9Lb5jzQhJzPMnkMKwy4Es5YK12ACQejX\_NWEixr0)
+  * [Developer Guide](https://docs.google.com/document/d/1q5M9Lb5jzQhJzPMnkMKwy4Es5YK12ACQejX_NWEixr0)
   * [Developer Mailing List & Archive](http://lists.openvehicles.com/mailman/listinfo/ovmsdev)
   * [Server Source](https://github.com/openvehicles/Open-Vehicle-Server)
   * [Android App Source](https://github.com/openvehicles/Open-Vehicle-Android)
   * [iOS App Source](https://github.com/openvehicles/Open-Vehicle-iOS)
 
-### Hardware[¶](broken-reference)
+### Hardware[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
 
 
 
@@ -107,7 +107,7 @@ The module provides a **built-in Web App** user interface and remote control via
   * Nano (4FF) SIM slot
   * HOLOGRAM.IO nano sim included (can be exchanged if necessary)
 
-#### Extensions[¶](broken-reference)
+#### Extensions[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
 
 The external DB26 DIAG connector provides access to the three CAN buses and offers some free extension ports. The internal PCB expansion connector allows stacked additions of further modules and serves for routing GPIO ports to the external DIAG connector. See schematics for details.
 
@@ -119,7 +119,7 @@ If you plan on developing a hardware extension or just want to do some custom ad
 
 If the kit isn’t available at the distributors, please contact Mark Webb-Johnson [mark@webb-johnson.net](mailto:mark%40webb-johnson.net).
 
-### Development and Contributions[¶](broken-reference)
+### Development and Contributions[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
 
 **New developers are very welcome on any part of the system, and we will gladly provide any help needed to get started.**
 
@@ -147,7 +147,7 @@ Pull requests shall focus on one specific issue / feature / vehicle at a time an
 
 Usage hint: create a branch for each pull request, include only those commits in that branch (by cherry-picking if necessary) that shall be included in the pull request. That way you can push further commits to that branch, Github will automatically add them to an open pull request.
 
-### Donations[¶](broken-reference)
+### Donations[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
 
 The OVMS is a non-profit community project. Hardware production and service can normally be financed by sales, but some things (e.g. prototype development and certifications) need extra money. To help the project, you can make a donation on the OVMS website: [https://www.openvehicles.com/forum](https://www.openvehicles.com/forum)
 
@@ -155,7 +155,7 @@ Please also consider supporting the vehicle developers directly. Check out their
 
 **Thank you!**
 
-### License[¶](broken-reference)
+### License[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
 
 The project includes some third party libraries and components to which their respective licenses apply, see component sources for details.
 

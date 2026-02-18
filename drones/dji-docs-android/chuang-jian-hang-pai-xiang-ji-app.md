@@ -1,16 +1,16 @@
 # 创建航拍相机App
 
-* [下载SDK](broken-reference)
-* [导入SDK](broken-reference)
-* [实现FPV视图功能](broken-reference)
-* [激活 SDK](broken-reference)
-* [连接飞行器](broken-reference)
-* [享受FPV视图](broken-reference)
-* [实现拍照功能](broken-reference)
-* [实现录像功能](broken-reference)
-  * [1. 切换相机模式Camera Mode](broken-reference)
-  * [2. 添加录像按钮](broken-reference)
-* [总结](broken-reference)
+* [下载SDK](/broken/pages/aCEf3yUcdTqHJBqhO82e)
+* [导入SDK](/broken/pages/aCEf3yUcdTqHJBqhO82e)
+* [实现FPV视图功能](/broken/pages/aCEf3yUcdTqHJBqhO82e)
+* [激活 SDK](/broken/pages/aCEf3yUcdTqHJBqhO82e)
+* [连接飞行器](/broken/pages/aCEf3yUcdTqHJBqhO82e)
+* [享受FPV视图](/broken/pages/aCEf3yUcdTqHJBqhO82e)
+* [实现拍照功能](/broken/pages/aCEf3yUcdTqHJBqhO82e)
+* [实现录像功能](/broken/pages/aCEf3yUcdTqHJBqhO82e)
+  * [1. 切换相机模式Camera Mode](/broken/pages/aCEf3yUcdTqHJBqhO82e)
+  * [2. 添加录像按钮](/broken/pages/aCEf3yUcdTqHJBqhO82e)
+* [总结](/broken/pages/aCEf3yUcdTqHJBqhO82e)
 
 _如果您在本教程中遇到任何错误或者bug，请使用Github issue，在DJI论坛发帖或者在Gitbook中评论告知我们。您可以随时给我们发送Github pull request来帮助我们修复错误。关于文档的修改需要符合_[_格式标准_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 

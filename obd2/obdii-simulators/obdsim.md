@@ -52,11 +52,11 @@ If you have a wifi OBDII dongle but your OBDII software is not network-aware, yo
 
 ### Downloading
 
-obdsim is in the same source repository as obdgpslogger. For detailed download and installation directions, please visit [the top level page for obdgpslogger](broken-reference)
+obdsim is in the same source repository as obdgpslogger. For detailed download and installation directions, please visit [the top level page for obdgpslogger](/broken/pages/FP7EnVaf5BwCdwygYnJv)
 
-For windows users, I occasionally release builds. The most recent one is always [obdsimwindows-latest.zip](broken-reference), or you can browse releases in this directory Contained in the zipfile is the obdsim program as well as instructions. Requires [com0com](http://com0com.sourceforge.net/) or similar.
+For windows users, I occasionally release builds. The most recent one is always [obdsimwindows-latest.zip](/broken/pages/GDSi7jf5B7FMYwsBG16r), or you can browse releases in this directory Contained in the zipfile is the obdsim program as well as instructions. Requires [com0com](http://com0com.sourceforge.net/) or similar.
 
 [Gary (-;\
 \<chunky@icculus.org>](mailto:chunky@icculus.org)
 
-\
+<br>

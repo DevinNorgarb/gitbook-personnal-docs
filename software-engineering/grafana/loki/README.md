@@ -4,7 +4,7 @@
 
 By [_Techno Tim_](https://l.technotim.live/twitter)Posted _4 months ago_  Updated _12 days ago_  _4 min_ read
 
-[![Meet Grafana LOKI, a Log Aggregation System for Everything](https://img.youtube.com/vi/h\_GGd7HfKQ8/0.jpg)](https://www.youtube.com/watch?v=h\_GGd7HfKQ8)
+[![Meet Grafana LOKI, a Log Aggregation System for Everything](https://img.youtube.com/vi/h_GGd7HfKQ8/0.jpg)](https://www.youtube.com/watch?v=h_GGd7HfKQ8)
 
 I’ve been on a quest to find a new logging system. I’ve use quite a few in the past, some open source, some proprietary, and some home grown, but recently I’ve decided to switch. I’ve switched to Grafana Loki for all of my logs for all of my systems - this includes machines, devices, docker systems and hosts, and my all of my kubernetes clusters. If you’re thinking of using Grafana and are also looking for a fast way to log all of your systems, join me as we discuss and configure Grafana Loki
 
@@ -72,4 +72,4 @@ Credits to this post for the config file: [grafana/loki#2361 (comment)](https://
 
 If you’re looking to set this up in kubernetes, see [this post](https://docs.technotim.live/posts/grafana-loki-kubernetes/)
 
-\
+<br>

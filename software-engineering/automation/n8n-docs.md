@@ -4,7 +4,7 @@ This is the documentation for [n8n](https://n8n.io/), a [fair-code](http://fairc
 
 It covers everything from setup to usage and development. It's a work in progress and all [contributions](../../.gitbook/assets/contributing) are welcome.
 
-### Where to start[#](broken-reference) <a href="#where-to-start" id="where-to-start"></a>
+### Where to start[#](/broken/pages/ycXdE7nh5aoIDmyTKtbB) <a href="#where-to-start" id="where-to-start"></a>
 
 *   **Quickstarts**
 
@@ -27,7 +27,7 @@ It covers everything from setup to usage and development. It's a work in progres
 
     [ Code in n8n](../../.gitbook/assets/code)
 
-### About n8n[#](broken-reference) <a href="#about-n8n" id="about-n8n"></a>
+### About n8n[#](/broken/pages/ycXdE7nh5aoIDmyTKtbB) <a href="#about-n8n" id="about-n8n"></a>
 
 n8n (pronounced n-eight-n) helps you to connect any app with an API with any other, and manipulate its data with little or no code.
 

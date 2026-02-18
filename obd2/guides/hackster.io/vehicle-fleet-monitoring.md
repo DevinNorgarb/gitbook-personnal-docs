@@ -8,31 +8,45 @@
 
 Use Hologram's cellular network to monitor a fleet of vehicles using OBDII, Raspberry Pi, GPS, and GSM.
 
-[Intermediate](https://www.hackster.io/projects?difficulty=intermediate)Full instructions provided9,706![Vehicle Fleet Monitoring](https://hackster.imgix.net/uploads/attachments/465225/image\_uploaded\_from\_ios\_tQsQdOFApT.jpg?auto=compress%2Cformat\&w=900\&h=675\&fit=min)
+[Intermediate](https://www.hackster.io/projects?difficulty=intermediate)Full instructions provided9,706![Vehicle Fleet Monitoring](https://hackster.imgix.net/uploads/attachments/465225/image_uploaded_from_ios_tQsQdOFApT.jpg?auto=compress%2Cformat\&w=900\&h=675\&fit=min)
 
 ### Things used in this project
 
-| <h4>Hardware components</h4>                                                                                                                              |                                                                                                                                                                                                                                                    |   |   |   |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | - | - | - |
-| ![Hologram Nova](https://hackster.imgix.net/uploads/attachments/358779/nova-icon\_lijwM6pMK7.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff) | <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><a href="https://www.hackster.io/hologram/products/hologram-nova?ref=project-810940">Hologram Nova</a></td></tr><tr><td></td></tr></tbody></table>                       | × | 1 |   |
-| [Hologram Nova](https://www.hackster.io/hologram/products/hologram-nova?ref=project-810940)                                                               |                                                                                                                                                                                                                                                    |   |   |   |
-|                                                                                                                                                           |                                                                                                                                                                                                                                                    |   |   |   |
-| ![Raspberry Pi 3 Model B](https://hackster.imgix.net/uploads/image/file/127603/Pi\_3-02.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)      | <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><a href="https://www.hackster.io/raspberry-pi/products/raspberry-pi-3-model-b?ref=project-810940">Raspberry Pi 3 Model B</a></td></tr><tr><td></td></tr></tbody></table> | × | 1 |   |
-| [Raspberry Pi 3 Model B](https://www.hackster.io/raspberry-pi/products/raspberry-pi-3-model-b?ref=project-810940)                                         |                                                                                                                                                                                                                                                    |   |   |   |
-|                                                                                                                                                           |                                                                                                                                                                                                                                                    |   |   |   |
-|                                                                                                                                                           | <table><thead><tr><th>OBDII ELM327 Reader</th></tr></thead><tbody><tr><td></td></tr></tbody></table>                                                                                                                                               | × | 1 |   |
-| OBDII ELM327 Reader                                                                                                                                       |                                                                                                                                                                                                                                                    |   |   |   |
-|                                                                                                                                                           |                                                                                                                                                                                                                                                    |   |   |   |
-|                                                                                                                                                           | <table><thead><tr><th>GPS Module (Generic)</th></tr></thead><tbody><tr><td>OPTIONAL</td></tr></tbody></table>                                                                                                                                      | × | 1 |   |
-| GPS Module (Generic)                                                                                                                                      |                                                                                                                                                                                                                                                    |   |   |   |
-| OPTIONAL                                                                                                                                                  |                                                                                                                                                                                                                                                    |   |   |   |
-| ![Jumper wires (generic)](https://hackster.imgix.net/uploads/image/file/44496/11026-02.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)       | <table><thead><tr><th>Jumper wires (generic)</th></tr></thead><tbody><tr><td></td></tr></tbody></table>                                                                                                                                            | × | 1 |   |
-| Jumper wires (generic)                                                                                                                                    |                                                                                                                                                                                                                                                    |   |   |   |
-|                                                                                                                                                           |                                                                                                                                                                                                                                                    |   |   |   |
-| <h4>Software apps and online services</h4>                                                                                                                |                                                                                                                                                                                                                                                    |   |   |   |
-|                                                                                                                                                           | <table><thead><tr><th>Adafruit.io</th></tr></thead><tbody><tr><td></td></tr></tbody></table>                                                                                                                                                       |   |   |   |
-| Adafruit.io                                                                                                                                               |                                                                                                                                                                                                                                                    |   |   |   |
-|                                                                                                                                                           |                                                                                                                                                                                                                                                    |   |   |   |
+| **Hardware components**                                                                                                                                  |              |   |   |   |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | - | - | - |
+| ![Hologram Nova](https://hackster.imgix.net/uploads/attachments/358779/nova-icon_lijwM6pMK7.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff) | N4kEbOsrA7xF | × | 1 |   |
+|                                                                                                                                                          |              |   |   |   |
+| [Hologram Nova](https://www.hackster.io/hologram/products/hologram-nova?ref=project-810940)                                                              |              |   |   |   |
+|                                                                                                                                                          |              |   |   |   |
+| [Hologram Nova](https://www.hackster.io/hologram/products/hologram-nova?ref=project-810940)                                                              |              |   |   |   |
+|                                                                                                                                                          |              |   |   |   |
+| ![Raspberry Pi 3 Model B](https://hackster.imgix.net/uploads/image/file/127603/Pi_3-02.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)      | ibufI8rxd3uC | × | 1 |   |
+|                                                                                                                                                          |              |   |   |   |
+| [Raspberry Pi 3 Model B](https://www.hackster.io/raspberry-pi/products/raspberry-pi-3-model-b?ref=project-810940)                                        |              |   |   |   |
+|                                                                                                                                                          |              |   |   |   |
+| [Raspberry Pi 3 Model B](https://www.hackster.io/raspberry-pi/products/raspberry-pi-3-model-b?ref=project-810940)                                        |              |   |   |   |
+|                                                                                                                                                          |              |   |   |   |
+|                                                                                                                                                          | 0guA8V9YufLE | × | 1 |   |
+| OBDII ELM327 Reader                                                                                                                                      |              |   |   |   |
+|                                                                                                                                                          |              |   |   |   |
+| OBDII ELM327 Reader                                                                                                                                      |              |   |   |   |
+|                                                                                                                                                          |              |   |   |   |
+|                                                                                                                                                          | 43LUUxJKXjmg | × | 1 |   |
+| GPS Module (Generic)                                                                                                                                     |              |   |   |   |
+| OPTIONAL                                                                                                                                                 |              |   |   |   |
+| GPS Module (Generic)                                                                                                                                     |              |   |   |   |
+| OPTIONAL                                                                                                                                                 |              |   |   |   |
+| ![Jumper wires (generic)](https://hackster.imgix.net/uploads/image/file/44496/11026-02.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)      | 9QlUOWHiRGqa | × | 1 |   |
+| Jumper wires (generic)                                                                                                                                   |              |   |   |   |
+|                                                                                                                                                          |              |   |   |   |
+| Jumper wires (generic)                                                                                                                                   |              |   |   |   |
+|                                                                                                                                                          |              |   |   |   |
+| **Software apps and online services**                                                                                                                    |              |   |   |   |
+|                                                                                                                                                          | pYlIzVUbL5gu |   |   |   |
+| Adafruit.io                                                                                                                                              |              |   |   |   |
+|                                                                                                                                                          |              |   |   |   |
+| Adafruit.io                                                                                                                                              |              |   |   |   |
+|                                                                                                                                                          |              |   |   |   |
 
 ### Story
 
@@ -67,7 +81,7 @@ If you want to follow along and perhaps even help contribute, you can order the 
 #### A few takeaways before we begin.. <a href="#toc-a-few-takeaways-before-we-begin--5" id="toc-a-few-takeaways-before-we-begin--5"></a>
 
 * [Node.JS](http://node.js/) didn't work out. I spent a lot of time trying to get the node libraries working and found that a lot of them had been neglected a long while and with so many version changes of node in that time, a few things didn't work out as efficiently. So I've switched to Python, which I think is better for beginners as it has less dependencies.
-* I started off with what I didn't realize was a knockoff of the USB ScanTool OBDII reader. This caused some compatibility issues as it had no firmware support. I reccomend using this one [https://www.amazon.com/gp/product/B005ZWM0R4/ref=oh\_aui\_detailpage\_o00\_s00?ie=UTF8\&psc=1](https://www.amazon.com/gp/product/B005ZWM0R4/ref=oh\_aui\_detailpage\_o00\_s00?ie=UTF8\&psc=1)
+* I started off with what I didn't realize was a knockoff of the USB ScanTool OBDII reader. This caused some compatibility issues as it had no firmware support. I reccomend using this one [https://www.amazon.com/gp/product/B005ZWM0R4/ref=oh\_aui\_detailpage\_o00\_s00?ie=UTF8\&psc=1](https://www.amazon.com/gp/product/B005ZWM0R4/ref=oh_aui_detailpage_o00_s00?ie=UTF8\&psc=1)
 
 **Alright, with that in mind, lets get started!**
 
@@ -96,7 +110,7 @@ You'll need a [Hologram.io](http://hologram.io/) account to provision your SIM c
 
 This requires a mastery of USB ports. Not for the faint of heart.
 
-![](https://hackster.imgix.net/uploads/attachments/477866/31731998\_10216002495357643\_3188841976933908480\_n\_LNenYoyuuj.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/477866/31731998_10216002495357643_3188841976933908480_n_LNenYoyuuj.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 #### Setup Adafruit.io account and Dashboard <a href="#toc-setup-adafruit-io-account-and-dashboard-11" id="toc-setup-adafruit-io-account-and-dashboard-11"></a>
 
@@ -118,7 +132,7 @@ If you are more curious about the API or the dashboard visit these links.
 
 [https://cdn-learn.adafruit.com/downloads/pdf/adafruit-io-basics-gps.pdf](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-io-basics-gps.pdf)
 
-![](https://hackster.imgix.net/uploads/attachments/477873/screen\_shot\_2018-05-01\_at\_1\_27\_33\_pm\_cJvNqJhBeg.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)1 / 3
+![](https://hackster.imgix.net/uploads/attachments/477873/screen_shot_2018-05-01_at_1_27_33_pm_cJvNqJhBeg.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)1 / 3
 
 #### Get a Shell to your Raspberry PI <a href="#toc-get-a-shell-to-your-raspberry-pi-12" id="toc-get-a-shell-to-your-raspberry-pi-12"></a>
 
@@ -209,8 +223,6 @@ print(response.value) # returns unit-bearing values thanks to Pint
 
 #### Hologram Vehicle Monitoring
 
-
-
 #### [HologramEducation](https://github.com/HologramEducation) / [hologram-vehicle-monitor](https://github.com/HologramEducation/hologram-vehicle-monitor)
 
 [12](https://github.com/HologramEducation/hologram-vehicle-monitor/watchers) [0](https://github.com/HologramEducation/hologram-vehicle-monitor/forks)
@@ -219,4 +231,4 @@ Relay information from an OBD-II reader to an MQTT broker via Hologram Nova — 
 
 Latest commit to the **master** branch on 4-26-2018
 
-[Download as zip](https://github.com/HologramEducation/hologram-vehicle-monitor/archive/master.zip)\
+[Download as zip](https://github.com/HologramEducation/hologram-vehicle-monitor/archive/master.zip)\\

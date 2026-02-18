@@ -6,27 +6,27 @@
 
 Fancy to see your's vehicle data online in real-time? If so, continue reading!
 
-[Advanced](https://www.hackster.io/projects?difficulty=advanced)Full instructions provided12,538![MQTT OBD Vehicle Telemetry](https://hackster.imgix.net/uploads/attachments/1159022/\_ZqigqGv3WJ.blob?auto=compress%2Cformat\&w=900\&h=675\&fit=min)
+[Advanced](https://www.hackster.io/projects?difficulty=advanced)Full instructions provided12,538![MQTT OBD Vehicle Telemetry](https://hackster.imgix.net/uploads/attachments/1159022/_ZqigqGv3WJ.blob?auto=compress%2Cformat\&w=900\&h=675\&fit=min)
 
 ### Things used in this project
 
-| <h4>Hardware components</h4>                                                                                                                             |                                                                                                                                                                                                                                 |   |   |   |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | - | - | - |
-| ![Arduino MKR1000](https://hackster.imgix.net/uploads/image/file/138055/ABX00004\_Iso\_Both.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff) | <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><a href="https://www.hackster.io/arduino/products/arduino-mkr1000?ref=project-f120c4">Arduino MKR1000</a></td></tr><tr><td></td></tr></tbody></table> | × | 1 |   |
-| [Arduino MKR1000](https://www.hackster.io/arduino/products/arduino-mkr1000?ref=project-f120c4)                                                           |                                                                                                                                                                                                                                 |   |   |   |
-|                                                                                                                                                          |                                                                                                                                                                                                                                 |   |   |   |
-| ![Jumper wires (generic)](https://hackster.imgix.net/uploads/image/file/44496/11026-02.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)      | <table><thead><tr><th>Jumper wires (generic)</th></tr></thead><tbody><tr><td></td></tr></tbody></table>                                                                                                                         | × | 1 |   |
-| Jumper wires (generic)                                                                                                                                   |                                                                                                                                                                                                                                 |   |   |   |
-|                                                                                                                                                          |                                                                                                                                                                                                                                 |   |   |   |
-| ![Breadboard (generic)](https://hackster.imgix.net/uploads/image/file/44494/12002-04.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)        | <table><thead><tr><th>Breadboard (generic)</th></tr></thead><tbody><tr><td></td></tr></tbody></table>                                                                                                                           | × | 1 |   |
-| Breadboard (generic)                                                                                                                                     |                                                                                                                                                                                                                                 |   |   |   |
-|                                                                                                                                                          |                                                                                                                                                                                                                                 |   |   |   |
-|                                                                                                                                                          | <table><thead><tr><th>u-blox NEO-6M</th></tr></thead><tbody><tr><td>GPS module</td></tr></tbody></table>                                                                                                                        | × | 1 |   |
-| u-blox NEO-6M                                                                                                                                            |                                                                                                                                                                                                                                 |   |   |   |
-| GPS module                                                                                                                                               |                                                                                                                                                                                                                                 |   |   |   |
-|                                                                                                                                                          | <table><thead><tr><th>ELM327</th></tr></thead><tbody><tr><td></td></tr></tbody></table>                                                                                                                                         | × | 1 |   |
-| ELM327                                                                                                                                                   |                                                                                                                                                                                                                                 |   |   |   |
-|                                                                                                                                                          |                                                                                                                                                                                                                                 |   |   |   |
+| <h4>Hardware components</h4>                                                                                                                           |                                  |   |   |   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------- | - | - | - |
+| ![Arduino MKR1000](https://hackster.imgix.net/uploads/image/file/138055/ABX00004_Iso_Both.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff) | 64b1cfd238184992b614c9e55487bcd9 | × | 1 |   |
+| [Arduino MKR1000](https://www.hackster.io/arduino/products/arduino-mkr1000?ref=project-f120c4)                                                         |                                  |   |   |   |
+|                                                                                                                                                        |                                  |   |   |   |
+| ![Jumper wires (generic)](https://hackster.imgix.net/uploads/image/file/44496/11026-02.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)    | 1633b4a9115e41d5af69cf55ce97adb1 | × | 1 |   |
+| Jumper wires (generic)                                                                                                                                 |                                  |   |   |   |
+|                                                                                                                                                        |                                  |   |   |   |
+| ![Breadboard (generic)](https://hackster.imgix.net/uploads/image/file/44494/12002-04.jpg?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)      | 8aaaf485eb884a6faa76eaba38015416 | × | 1 |   |
+| Breadboard (generic)                                                                                                                                   |                                  |   |   |   |
+|                                                                                                                                                        |                                  |   |   |   |
+|                                                                                                                                                        | 1789824106ea45fb97352496d39fa953 | × | 1 |   |
+| u-blox NEO-6M                                                                                                                                          |                                  |   |   |   |
+| GPS module                                                                                                                                             |                                  |   |   |   |
+|                                                                                                                                                        | 2389cfec823541ac91b51676a9cd661c | × | 1 |   |
+| ELM327                                                                                                                                                 |                                  |   |   |   |
+|                                                                                                                                                        |                                  |   |   |   |
 
 ### Story
 
@@ -46,7 +46,7 @@ It is important to mention that we are working with free version of IBM Watson C
 
 On figure 3.1 we can see final Node-RED flow, available at the end of this article. Basically You'll need to modify dark-blue nodes - change MQTT credentials based on your IoT platform. All other blocks can stay the same. Maybe there's question why do we have so many function blocks - the answer is, that they are used to split data based on the MQTT topic - e.g. if we have web-app gauge with engine temperature, we will send only engine temperature there and skip other data (RPM, velocity.......).
 
-![Fig. 3.1: Node-RED flow](https://hackster.imgix.net/uploads/attachments/1159070/celkovy\_tok\_mKadI5p77v.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)Fig. 3.1: Node-RED flow
+![Fig. 3.1: Node-RED flow](https://hackster.imgix.net/uploads/attachments/1159070/celkovy_tok_mKadI5p77v.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)Fig. 3.1: Node-RED flow
 
 After successful importing of flow code, hit the Deploy button. To access created web-app UI replace _**/red/xxxxxx**_ in your URL with _**/ui**_
 
@@ -83,13 +83,13 @@ b) MapView - map with annotation mark informing us of vehicle's current location
 
 c) Horizontal-scrolling menu - gauges with ECU's data
 
-![Fig. 5.1: iOS application](https://hackster.imgix.net/uploads/attachments/1159083/3\_IXxAscMXQA.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)Fig. 5.1: iOS application
+![Fig. 5.1: iOS application](https://hackster.imgix.net/uploads/attachments/1159083/3_IXxAscMXQA.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)Fig. 5.1: iOS application
 
 #### 6) Final output of web-app <a href="#toc-6--final-output-of-web-app-6" id="toc-6--final-output-of-web-app-6"></a>
 
 Created Node-RED web-app UI obtains two choices from hamburger menu: Static test - used for retrieving only one value from ECU and Dynamic test - retrieving value from ECU every 2 seconds (based on.ino delays - can be changed). Static test UI is displayed on figure below.
 
-![Fig. 6.1: Node-RED web-app UI](https://hackster.imgix.net/uploads/attachments/1159228/static\_tR4HsJPYxz.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)Fig. 6.1: Node-RED web-app UI
+![Fig. 6.1: Node-RED web-app UI](https://hackster.imgix.net/uploads/attachments/1159228/static_tR4HsJPYxz.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)Fig. 6.1: Node-RED web-app UI
 
 If You have any questions, do not hesitate to ask.
 
@@ -97,7 +97,7 @@ If You have any questions, do not hesitate to ask.
 
 #### ELM327 + NEO-6M connection to Arduino MRK1000
 
-Wiring diagram![](https://hackster.imgix.net/uploads/attachments/1159108/elschema\_26EhSYoQKk.png)
+Wiring diagram![](https://hackster.imgix.net/uploads/attachments/1159108/elschema_26EhSYoQKk.png)
 
 ### Code
 

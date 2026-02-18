@@ -1,15 +1,14 @@
-# Setting  up STUN and TURN servers
+# Setting up STUN and TURN servers
 
 [HOME](https://www.webrtc-experiment.com/) © [Muaz Khan](https://muazkhan.com/) . [@WebRTCWeb](http://twitter.com/WebRTCWeb) . [Github](https://github.com/muaz-khan?tab=repositories) . [Latest issues](https://github.com/muaz-khan/WebRTC-Experiment/issues?state=open) . [What's New?](https://github.com/muaz-khan/WebRTC-Experiment/commits/master)
 
-> This document is aimed to explain TURN server installation steps for different operating systems.\
->
+> This document is aimed to explain TURN server installation steps for different operating systems.<br>
 >
 > 1. CoTURN installation on Ubuntu
 > 2. restund installation on Ubuntu
 > 3. TURN installation on CentOS
 > 4. TURN installation on Windows
-> 5. [reTurnServer installation on Ubuntu](broken-reference)
+> 5. [reTurnServer installation on Ubuntu](/broken/pages/1zkA8mihm9xdxUJI60IS)
 > 6. Pion TURN server
 >
 > You can test a TURN [here LIVE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/) or use "apt-get install stun" and then "stun domain.com:port".
@@ -35,8 +34,7 @@
     vi /etc/apt/sources.list
     ```
 
-    \
-
+    <br>
 
     ### And add above FTP\_domain in the sources-list. E.g.
 
@@ -90,8 +88,7 @@
     vi /etc/turnserver.conf
     ```
 
-    \
-
+    <br>
 
     ### Remove all text from the file, and replace with this:
 
@@ -123,8 +120,7 @@
     vi /etc/turnuserdb.conf
     ```
 
-    \
-
+    <br>
 
     ### Remove all text from the file, and replace with this:
 
@@ -162,8 +158,7 @@
     lsof -n -i4TCP:443 | grep LISTEN
     ```
 
-    \
-
+    <br>
 
     ### Kill "existing" processes using this command:
 
@@ -501,7 +496,7 @@ Note: Below section is taken from [slideshare](http://www.slideshare.net/amitesh
 
 ### Top
 
-### [reTurnServer installation on Ubuntu](broken-reference)
+### [reTurnServer installation on Ubuntu](/broken/pages/1zkA8mihm9xdxUJI60IS)
 
 1.  ### First Step: Install reTurnServer:
 
@@ -606,4 +601,4 @@ A simple extendable Golang TURN server for Windows, Linux, Darwin and FreeBSD.
     ```
 6. To check latest releases: [https://github.com/pions/turn/releases](https://github.com/pions/turn/releases)
 
-\
+<br>

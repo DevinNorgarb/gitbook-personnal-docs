@@ -2,7 +2,7 @@
 
 ### Installing the Companion Computer Software Image <a href="#installing-the-companion-computer-software-image" id="installing-the-companion-computer-software-image"></a>
 
-> The current version of Companion is **v0.0.31**. If your system is out of date you can update by either installing a fresh image with the instructions below or connecting to Wi-Fi and performing a [Software Update](broken-reference).
+> The current version of Companion is **v0.0.31**. If your system is out of date you can update by either installing a fresh image with the instructions below or connecting to Wi-Fi and performing a [Software Update](/broken/pages/LKNT51F1rClueAwLimcY).
 
 The operating system and supporting software is installed by writing a pre-configured `.img` file to an SD Card which is then inserted into the Companion Computer (Raspberry Pi).
 
@@ -23,7 +23,7 @@ Before proceeding, it is recommended to check for the latest updates for the Com
 To perform a companion software update:
 
 1. Plug a _fully charged_ battery into the vehicle and connect the tether to the topside computer.
-2. Navigate to [192.168.2.2:2770/network](http://192.168.2.2:2770/network) in an internet browser (Chrome, Edge, Firefox, etc.) and ensure that the vehicle has access to a WiFi network. If a webpage is not found at this address, verify the network settings are correct. Troubleshooting steps can be found [here](broken-reference).
+2. Navigate to [192.168.2.2:2770/network](http://192.168.2.2:2770/network) in an internet browser (Chrome, Edge, Firefox, etc.) and ensure that the vehicle has access to a WiFi network. If a webpage is not found at this address, verify the network settings are correct. Troubleshooting steps can be found [here](/broken/pages/86F4wjST55Q0soIAtfH2).
 3. Navigate to [192.168.2.2:2770/system](http://192.168.2.2:2770/system). Click the button that says 'Update Companion'. If you do not see this button, then the companion software is up to date.
 4. The update process will take between 5 and 20 minutes depending on the Internet connection speed. Wait for the update process to complete.
 5. When it completes, refresh the browser. The Companion version should be updated, and the update available message should no longer appear.

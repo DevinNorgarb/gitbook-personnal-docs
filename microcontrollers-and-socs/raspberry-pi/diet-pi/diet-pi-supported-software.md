@@ -10,19 +10,18 @@
 
 <summary>How do I run <strong>DietPi-Software</strong> and install <strong>optimised software</strong> items?</summary>
 
-\
-
+<br>
 
 <img src="https://dietpi.com/docs/assets/images/dietpi-software.jpg" alt="DietPi-Software menu screenshot" data-size="original">
 
 </details>
 
-### [Advanced Networking](https://dietpi.com/docs/software/advanced\_networking/)[¶](https://dietpi.com/docs/software/#advanced-networking) <a href="#advanced-networking" id="advanced-networking"></a>
+### [Advanced Networking](https://dietpi.com/docs/software/advanced_networking/)[¶](https://dietpi.com/docs/software/#advanced-networking) <a href="#advanced-networking" id="advanced-networking"></a>
 
-* [**WiFi HotSpot - Turn your device into a wireless hotspot/access point**](https://dietpi.com/docs/software/advanced\_networking/#wifi-hotspot)
-* [**Tor HotSpot - Optional: Routes all WiFi hotspot traffic through the Tor network**](https://dietpi.com/docs/software/advanced\_networking/#tor-hotspot)
-* [**HAProxy - High performance TCP/HTTP load balancer**](https://dietpi.com/docs/software/advanced\_networking/#haproxy)
-* [**frp - Reverse Proxy**](https://dietpi.com/docs/software/advanced\_networking/#frp)
+* [**WiFi HotSpot - Turn your device into a wireless hotspot/access point**](https://dietpi.com/docs/software/advanced_networking/#wifi-hotspot)
+* [**Tor HotSpot - Optional: Routes all WiFi hotspot traffic through the Tor network**](https://dietpi.com/docs/software/advanced_networking/#tor-hotspot)
+* [**HAProxy - High performance TCP/HTTP load balancer**](https://dietpi.com/docs/software/advanced_networking/#haproxy)
+* [**frp - Reverse Proxy**](https://dietpi.com/docs/software/advanced_networking/#frp)
 
 ### [BitTorrent & Download Tools](https://dietpi.com/docs/software/bittorrent/)[¶](https://dietpi.com/docs/software/#bittorrent-download-tools) <a href="#bittorrent-download-tools" id="bittorrent-download-tools"></a>
 
@@ -104,26 +103,26 @@
 * [**VSCodium - FLOSS version of Microsoft VSCode**](https://dietpi.com/docs/software/programming/#vscodium)
 * [**Git - Distributed version control system**](https://dietpi.com/docs/software/programming/#git)
 
-### [Distributed Projects](https://dietpi.com/docs/software/distributed\_projects/)[¶](https://dietpi.com/docs/software/#distributed-projects) <a href="#distributed-projects" id="distributed-projects"></a>
+### [Distributed Projects](https://dietpi.com/docs/software/distributed_projects/)[¶](https://dietpi.com/docs/software/#distributed-projects) <a href="#distributed-projects" id="distributed-projects"></a>
 
-* [**Folding@Home - Use processing power to assist with disease research**](https://dietpi.com/docs/software/distributed\_projects/#foldinghome)
-* [**Tor Relay - Add a node to the Tor network**](https://dietpi.com/docs/software/distributed\_projects/#tor-relay)
-* [**YaCy - Decentralized open source search engine**](https://dietpi.com/docs/software/distributed\_projects/#yacy)
-* [**IPFS Node - Contribute to a decentralized internet**](https://dietpi.com/docs/software/distributed\_projects/#ipfs-node)
-* [**ADS-B Feeder - track airplanes using SDRs and feed the data to ADS-B aggregators**](https://dietpi.com/docs/software/distributed\_projects/#ads-b-feeder)
+* [**Folding@Home - Use processing power to assist with disease research**](https://dietpi.com/docs/software/distributed_projects/#foldinghome)
+* [**Tor Relay - Add a node to the Tor network**](https://dietpi.com/docs/software/distributed_projects/#tor-relay)
+* [**YaCy - Decentralized open source search engine**](https://dietpi.com/docs/software/distributed_projects/#yacy)
+* [**IPFS Node - Contribute to a decentralized internet**](https://dietpi.com/docs/software/distributed_projects/#ipfs-node)
+* [**ADS-B Feeder - track airplanes using SDRs and feed the data to ADS-B aggregators**](https://dietpi.com/docs/software/distributed_projects/#ads-b-feeder)
 
-### [DNS Servers](https://dietpi.com/docs/software/dns\_servers/)[¶](https://dietpi.com/docs/software/#dns-servers) <a href="#dns-servers" id="dns-servers"></a>
+### [DNS Servers](https://dietpi.com/docs/software/dns_servers/)[¶](https://dietpi.com/docs/software/#dns-servers) <a href="#dns-servers" id="dns-servers"></a>
 
-* [**Pi-hole - Network-wide Ad Blocking**](https://dietpi.com/docs/software/dns\_servers/#pi-hole)
-* [**Unbound - A validating, recursive, and caching DNS resolver**](https://dietpi.com/docs/software/dns\_servers/#unbound)
-* [**AdGuard Home - A powerful network-wide ads & trackers blocking DNS server**](https://dietpi.com/docs/software/dns\_servers/#adguard-home)
+* [**Pi-hole - Network-wide Ad Blocking**](https://dietpi.com/docs/software/dns_servers/#pi-hole)
+* [**Unbound - A validating, recursive, and caching DNS resolver**](https://dietpi.com/docs/software/dns_servers/#unbound)
+* [**AdGuard Home - A powerful network-wide ads & trackers blocking DNS server**](https://dietpi.com/docs/software/dns_servers/#adguard-home)
 
-### [File Servers](https://dietpi.com/docs/software/file\_servers/)[¶](https://dietpi.com/docs/software/#file-servers) <a href="#file-servers" id="file-servers"></a>
+### [File Servers](https://dietpi.com/docs/software/file_servers/)[¶](https://dietpi.com/docs/software/#file-servers) <a href="#file-servers" id="file-servers"></a>
 
-* [**ProFTPD - Simple, efficient, lightweight FTP file server**](https://dietpi.com/docs/software/file\_servers/#proftpd)
-* [**Samba - Feature rich file server**](https://dietpi.com/docs/software/file\_servers/#samba)
-* [**vsftpd - Feature rich FTP file server**](https://dietpi.com/docs/software/file\_servers/#vsftpd)
-* [**NFS - Network file system server**](https://dietpi.com/docs/software/file\_servers/#nfs)
+* [**ProFTPD - Simple, efficient, lightweight FTP file server**](https://dietpi.com/docs/software/file_servers/#proftpd)
+* [**Samba - Feature rich file server**](https://dietpi.com/docs/software/file_servers/#samba)
+* [**vsftpd - Feature rich FTP file server**](https://dietpi.com/docs/software/file_servers/#vsftpd)
+* [**NFS - Network file system server**](https://dietpi.com/docs/software/file_servers/#nfs)
 
 ### [Gaming & Emulation](https://dietpi.com/docs/software/gaming/)[¶](https://dietpi.com/docs/software/#gaming-emulation) <a href="#gaming-emulation" id="gaming-emulation"></a>
 
@@ -140,32 +139,32 @@
 * [**Moonlight (CLI) - CLI game streaming client for Sunshine and NVIDIA GameStream**](https://dietpi.com/docs/software/gaming/#moonlight-cli)
 * [**Moonlight (GUI) - GUI game streaming client for Sunshine and NVIDIA GameStream**](https://dietpi.com/docs/software/gaming/#moonlight-gui)
 
-### [Hardware Projects](https://dietpi.com/docs/software/hardware\_projects/)[¶](https://dietpi.com/docs/software/#hardware-projects) <a href="#hardware-projects" id="hardware-projects"></a>
+### [Hardware Projects](https://dietpi.com/docs/software/hardware_projects/)[¶](https://dietpi.com/docs/software/#hardware-projects) <a href="#hardware-projects" id="hardware-projects"></a>
 
-* [**Google AIY - Voice kit “Ok, Google”!**](https://dietpi.com/docs/software/hardware\_projects/#google-aiy)
-* [**Mycroft AI - Open source voice assistant**](https://dietpi.com/docs/software/hardware\_projects/#mycroft-ai)
-* [**PiJuice - PiSupply UPS/battery power system**](https://dietpi.com/docs/software/hardware\_projects/#pijuice)
-* [**RPi.GPIO - GPIO Interface library for RPi (python)**](https://dietpi.com/docs/software/hardware\_projects/#rpigpio)
-* [**WiringPi - GPIO Interface library**](https://dietpi.com/docs/software/hardware\_projects/#wiringpi)
-* [**WebIOPi - Web interface to control RPi GPIO**](https://dietpi.com/docs/software/hardware\_projects/#webiopi)
-* [**Node-RED - Visual tool for wiring together hardware devices, APIs and online services**](https://dietpi.com/docs/software/hardware\_projects/#node-red)
-* [**Mosquitto - Message broker that implements MQTT protocol**](https://dietpi.com/docs/software/hardware\_projects/#mosquitto)
-* [**Blynk Server - iOS and Android apps to control Arduino, ESP8266, Raspberry Pi and similar microcontroller boards over the Internet**](https://dietpi.com/docs/software/hardware\_projects/#blynk-server)
-* [**Audiophonics PI-SPC - Power control module for Raspberry Pi, allowing physical button power on/off**](https://dietpi.com/docs/software/hardware\_projects/#audiophonics-pi-spc)
-* [**Grafana - The open platform for beautiful analytics and monitoring**](https://dietpi.com/docs/software/hardware\_projects/#grafana)
+* [**Google AIY - Voice kit “Ok, Google”!**](https://dietpi.com/docs/software/hardware_projects/#google-aiy)
+* [**Mycroft AI - Open source voice assistant**](https://dietpi.com/docs/software/hardware_projects/#mycroft-ai)
+* [**PiJuice - PiSupply UPS/battery power system**](https://dietpi.com/docs/software/hardware_projects/#pijuice)
+* [**RPi.GPIO - GPIO Interface library for RPi (python)**](https://dietpi.com/docs/software/hardware_projects/#rpigpio)
+* [**WiringPi - GPIO Interface library**](https://dietpi.com/docs/software/hardware_projects/#wiringpi)
+* [**WebIOPi - Web interface to control RPi GPIO**](https://dietpi.com/docs/software/hardware_projects/#webiopi)
+* [**Node-RED - Visual tool for wiring together hardware devices, APIs and online services**](https://dietpi.com/docs/software/hardware_projects/#node-red)
+* [**Mosquitto - Message broker that implements MQTT protocol**](https://dietpi.com/docs/software/hardware_projects/#mosquitto)
+* [**Blynk Server - iOS and Android apps to control Arduino, ESP8266, Raspberry Pi and similar microcontroller boards over the Internet**](https://dietpi.com/docs/software/hardware_projects/#blynk-server)
+* [**Audiophonics PI-SPC - Power control module for Raspberry Pi, allowing physical button power on/off**](https://dietpi.com/docs/software/hardware_projects/#audiophonics-pi-spc)
+* [**Grafana - The open platform for beautiful analytics and monitoring**](https://dietpi.com/docs/software/hardware_projects/#grafana)
 
-### [Home Automation](https://dietpi.com/docs/software/home\_automation/)[¶](https://dietpi.com/docs/software/#home-automation) <a href="#home-automation" id="home-automation"></a>
+### [Home Automation](https://dietpi.com/docs/software/home_automation/)[¶](https://dietpi.com/docs/software/#home-automation) <a href="#home-automation" id="home-automation"></a>
 
-* [**Home Assistant - Open-source home automation platform running on Python 3**](https://dietpi.com/docs/software/home\_automation/#home-assistant)
-* [**Domoticz - Multi platform Home Automation System**](https://dietpi.com/docs/software/home\_automation/#domoticz)
-* [**TasmoAdmin - Administrative website for Tasmota devices**](https://dietpi.com/docs/software/home\_automation/#tasmoadmin)
-* [**openHAB - Open Home Automation Bus, an open source home automation platform**](https://dietpi.com/docs/software/home\_automation/#openhab)
-* [**Homebridge - Bringing HomeKit support where there is none**](https://dietpi.com/docs/software/home\_automation/#homebridge)
+* [**Home Assistant - Open-source home automation platform running on Python 3**](https://dietpi.com/docs/software/home_automation/#home-assistant)
+* [**Domoticz - Multi platform Home Automation System**](https://dietpi.com/docs/software/home_automation/#domoticz)
+* [**TasmoAdmin - Administrative website for Tasmota devices**](https://dietpi.com/docs/software/home_automation/#tasmoadmin)
+* [**openHAB - Open Home Automation Bus, an open source home automation platform**](https://dietpi.com/docs/software/home_automation/#openhab)
+* [**Homebridge - Bringing HomeKit support where there is none**](https://dietpi.com/docs/software/home_automation/#homebridge)
 
-### [Logging Systems](https://dietpi.com/docs/software/log\_system/)[¶](https://dietpi.com/docs/software/#logging-systems) <a href="#logging-systems" id="logging-systems"></a>
+### [Logging Systems](https://dietpi.com/docs/software/log_system/)[¶](https://dietpi.com/docs/software/#logging-systems) <a href="#logging-systems" id="logging-systems"></a>
 
-* [**DietPi-RAMlog - Lightweight RAM logging**](https://dietpi.com/docs/software/log\_system/#dietpi-ramlog)
-* [**Full - Full logging system with Rsyslog and Logrotate**](https://dietpi.com/docs/software/log\_system/#full-logging)
+* [**DietPi-RAMlog - Lightweight RAM logging**](https://dietpi.com/docs/software/log_system/#dietpi-ramlog)
+* [**Full - Full logging system with Rsyslog and Logrotate**](https://dietpi.com/docs/software/log_system/#full-logging)
 
 ### [Media Systems](https://dietpi.com/docs/software/media/)[¶](https://dietpi.com/docs/software/#media-systems) <a href="#media-systems" id="media-systems"></a>
 
@@ -208,19 +207,19 @@
 * [**OctoPrint - Web interface for controlling 3D printers**](https://dietpi.com/docs/software/printing/#octoprint)
 * [**CUPS - Common UNIX printing system**](https://dietpi.com/docs/software/printing/#cups)
 
-### [Remote Desktop & Remote Access](https://dietpi.com/docs/software/remote\_desktop/)[¶](https://dietpi.com/docs/software/#remote-desktop-remote-access) <a href="#remote-desktop-remote-access" id="remote-desktop-remote-access"></a>
+### [Remote Desktop & Remote Access](https://dietpi.com/docs/software/remote_desktop/)[¶](https://dietpi.com/docs/software/#remote-desktop-remote-access) <a href="#remote-desktop-remote-access" id="remote-desktop-remote-access"></a>
 
-#### [Remote Desktop](https://dietpi.com/docs/software/remote\_desktop/#remote-desktop)[¶](https://dietpi.com/docs/software/#remote-desktop) <a href="#remote-desktop" id="remote-desktop"></a>
+#### [Remote Desktop](https://dietpi.com/docs/software/remote_desktop/#remote-desktop)[¶](https://dietpi.com/docs/software/#remote-desktop) <a href="#remote-desktop" id="remote-desktop"></a>
 
-* [**TigerVNC Server - Desktop for remote connection**](https://dietpi.com/docs/software/remote\_desktop/#tigervnc-server)
-* [**RealVNC Server - Desktop for remote connection**](https://dietpi.com/docs/software/remote\_desktop/#realvnc-server)
-* [**XRDP - Remote desktop server for Windows Remote Desktop Client**](https://dietpi.com/docs/software/remote\_desktop/#xrdp)
-* [**NoMachine - Feature rich remote desktop connection**](https://dietpi.com/docs/software/remote\_desktop/#nomachine)
+* [**TigerVNC Server - Desktop for remote connection**](https://dietpi.com/docs/software/remote_desktop/#tigervnc-server)
+* [**RealVNC Server - Desktop for remote connection**](https://dietpi.com/docs/software/remote_desktop/#realvnc-server)
+* [**XRDP - Remote desktop server for Windows Remote Desktop Client**](https://dietpi.com/docs/software/remote_desktop/#xrdp)
+* [**NoMachine - Feature rich remote desktop connection**](https://dietpi.com/docs/software/remote_desktop/#nomachine)
 
-#### [Remote Access](https://dietpi.com/docs/software/remote\_desktop/#remote-access)[¶](https://dietpi.com/docs/software/#remote-access) <a href="#remote-access" id="remote-access"></a>
+#### [Remote Access](https://dietpi.com/docs/software/remote_desktop/#remote-access)[¶](https://dietpi.com/docs/software/#remote-access) <a href="#remote-access" id="remote-access"></a>
 
-* [**Remote.It - Access your device over the internet**](https://dietpi.com/docs/software/remote\_desktop/#remoteit)
-* [**VirtualHere - Share physically attached USB devices from your SBC over the network**](https://dietpi.com/docs/software/remote\_desktop/#virtualhere)
+* [**Remote.It - Access your device over the internet**](https://dietpi.com/docs/software/remote_desktop/#remoteit)
+* [**VirtualHere - Share physically attached USB devices from your SBC over the network**](https://dietpi.com/docs/software/remote_desktop/#virtualhere)
 
 ### [Social & Search](https://dietpi.com/docs/software/social/)[¶](https://dietpi.com/docs/software/#social-search) <a href="#social-search" id="social-search"></a>
 
@@ -238,24 +237,24 @@
 * [**Dropbear - Lightweight SSH Server**](https://dietpi.com/docs/software/ssh/#dropbear)
 * [**OpenSSH - Feature rich SSH server with SFTP/SCP support**](https://dietpi.com/docs/software/ssh/#openssh)
 
-### [System Security](https://dietpi.com/docs/software/system\_security/)[¶](https://dietpi.com/docs/software/#system-security) <a href="#system-security" id="system-security"></a>
+### [System Security](https://dietpi.com/docs/software/system_security/)[¶](https://dietpi.com/docs/software/#system-security) <a href="#system-security" id="system-security"></a>
 
-* [**Let’s Encrypt - Enable HTTPS / SSL**](https://dietpi.com/docs/software/system\_security/#lets-encrypt)
-* [**Fail2Ban - Protects your system from brute-force attacks**](https://dietpi.com/docs/software/system\_security/#fail2ban)
+* [**Let’s Encrypt - Enable HTTPS / SSL**](https://dietpi.com/docs/software/system_security/#lets-encrypt)
+* [**Fail2Ban - Protects your system from brute-force attacks**](https://dietpi.com/docs/software/system_security/#fail2ban)
 
-### [System Stats & Management](https://dietpi.com/docs/software/system\_stats/)[¶](https://dietpi.com/docs/software/#system-stats-management) <a href="#system-stats-management" id="system-stats-management"></a>
+### [System Stats & Management](https://dietpi.com/docs/software/system_stats/)[¶](https://dietpi.com/docs/software/#system-stats-management) <a href="#system-stats-management" id="system-stats-management"></a>
 
-* [**DietPi-Dashboard - Official lightweight standalone DietPi web interface**](https://dietpi.com/docs/software/system\_stats/#dietpi-dashboard)
-* [**DietPi-CloudShell - Lightweight system stats for your LCD display or monitor**](https://dietpi.com/docs/software/system\_stats/#dietpi-cloudshell)
-* [**Linux Dash - Web interface system stats**](https://dietpi.com/docs/software/system\_stats/#linux-dash)
-* [**phpSysInfo - Web interface system stats**](https://dietpi.com/docs/software/system\_stats/#phpsysinfo)
-* [**RPi-Monitor - Web interface system stats**](https://dietpi.com/docs/software/system\_stats/#rpi-monitor)
-* [**Netdata - Web interface system stats**](https://dietpi.com/docs/software/system\_stats/#netdata)
-* [**Webmin - Remote system management with web interface**](https://dietpi.com/docs/software/system\_stats/#webmin)
-* [**K3s - Lightweight Kubernetes**](https://dietpi.com/docs/software/system\_stats/#k3s)
-* [**MicroK8s - Low-ops, minimal production Kubernetes**](https://dietpi.com/docs/software/system\_stats/#microk8s)
-* [**Prometheus Node Exporter - Prometheus exporter for hardware and OS metrics**](https://dietpi.com/docs/software/system\_stats/#prometheus-node-exporter)
-* [**Homer - A modern homepage for your services**](https://dietpi.com/docs/software/system\_stats/#homer)
+* [**DietPi-Dashboard - Official lightweight standalone DietPi web interface**](https://dietpi.com/docs/software/system_stats/#dietpi-dashboard)
+* [**DietPi-CloudShell - Lightweight system stats for your LCD display or monitor**](https://dietpi.com/docs/software/system_stats/#dietpi-cloudshell)
+* [**Linux Dash - Web interface system stats**](https://dietpi.com/docs/software/system_stats/#linux-dash)
+* [**phpSysInfo - Web interface system stats**](https://dietpi.com/docs/software/system_stats/#phpsysinfo)
+* [**RPi-Monitor - Web interface system stats**](https://dietpi.com/docs/software/system_stats/#rpi-monitor)
+* [**Netdata - Web interface system stats**](https://dietpi.com/docs/software/system_stats/#netdata)
+* [**Webmin - Remote system management with web interface**](https://dietpi.com/docs/software/system_stats/#webmin)
+* [**K3s - Lightweight Kubernetes**](https://dietpi.com/docs/software/system_stats/#k3s)
+* [**MicroK8s - Low-ops, minimal production Kubernetes**](https://dietpi.com/docs/software/system_stats/#microk8s)
+* [**Prometheus Node Exporter - Prometheus exporter for hardware and OS metrics**](https://dietpi.com/docs/software/system_stats/#prometheus-node-exporter)
+* [**Homer - A modern homepage for your services**](https://dietpi.com/docs/software/system_stats/#homer)
 
 ### [VPN](https://dietpi.com/docs/software/vpn/)[¶](https://dietpi.com/docs/software/#vpn) <a href="#vpn" id="vpn"></a>
 
@@ -265,27 +264,27 @@
 * [**Tailscale - Zero config VPN**](https://dietpi.com/docs/software/vpn/#tailscale)
 * [**ZeroTier - Free easy to deploy cloud-hosted VPN service**](https://dietpi.com/docs/software/vpn/#zerotier)
 
-### [Web development](https://dietpi.com/docs/software/webserver\_stack/)[¶](https://dietpi.com/docs/software/#web-development) <a href="#web-development" id="web-development"></a>
+### [Web development](https://dietpi.com/docs/software/webserver_stack/)[¶](https://dietpi.com/docs/software/#web-development) <a href="#web-development" id="web-development"></a>
 
-#### [Stacks for web development](https://dietpi.com/docs/software/webserver\_stack/#stacks-for-web-development)[¶](https://dietpi.com/docs/software/#stacks-for-web-development) <a href="#stacks-for-web-development" id="stacks-for-web-development"></a>
+#### [Stacks for web development](https://dietpi.com/docs/software/webserver_stack/#stacks-for-web-development)[¶](https://dietpi.com/docs/software/#stacks-for-web-development) <a href="#stacks-for-web-development" id="stacks-for-web-development"></a>
 
-* [**LAMP web stack - Apache / MariaDB / PHP**](https://dietpi.com/docs/software/webserver\_stack/#lamp-web-stack)
-* [**LASP web stack - Apache / SQLite / PHP**](https://dietpi.com/docs/software/webserver\_stack/#lasp-web-stack)
-* [**LEMP web stack - Nginx / MariaDB / PHP**](https://dietpi.com/docs/software/webserver\_stack/#lemp-web-stack)
-* [**LESP web stack - Nginx / SQLite / PHP**](https://dietpi.com/docs/software/webserver\_stack/#lesp-web-stack)
-* [**LLMP web stack - Lighttpd / MariaDB / PHP**](https://dietpi.com/docs/software/webserver\_stack/#llmp-web-stack)
-* [**LLSP web stack - Lighttpd / SQLite / PHP**](https://dietpi.com/docs/software/webserver\_stack/#llsp-web-stack)
+* [**LAMP web stack - Apache / MariaDB / PHP**](https://dietpi.com/docs/software/webserver_stack/#lamp-web-stack)
+* [**LASP web stack - Apache / SQLite / PHP**](https://dietpi.com/docs/software/webserver_stack/#lasp-web-stack)
+* [**LEMP web stack - Nginx / MariaDB / PHP**](https://dietpi.com/docs/software/webserver_stack/#lemp-web-stack)
+* [**LESP web stack - Nginx / SQLite / PHP**](https://dietpi.com/docs/software/webserver_stack/#lesp-web-stack)
+* [**LLMP web stack - Lighttpd / MariaDB / PHP**](https://dietpi.com/docs/software/webserver_stack/#llmp-web-stack)
+* [**LLSP web stack - Lighttpd / SQLite / PHP**](https://dietpi.com/docs/software/webserver_stack/#llsp-web-stack)
 
-#### [Webservers](https://dietpi.com/docs/software/webserver\_stack/#webservers)[¶](https://dietpi.com/docs/software/#webservers) <a href="#webservers" id="webservers"></a>
+#### [Webservers](https://dietpi.com/docs/software/webserver_stack/#webservers)[¶](https://dietpi.com/docs/software/#webservers) <a href="#webservers" id="webservers"></a>
 
-* [**Apache - Feature-rich webserver**](https://dietpi.com/docs/software/webserver\_stack/#apache)
-* [**Nginx - High performance web server, load balancer & reverse proxy**](https://dietpi.com/docs/software/webserver\_stack/#nginx)
-* [**Lighttpd - Extremely lightweight webserver**](https://dietpi.com/docs/software/webserver\_stack/#lighttpd)
-* [**Tomcat8 - Apache Tomcat server**](https://dietpi.com/docs/software/webserver\_stack/#tomcat)
+* [**Apache - Feature-rich webserver**](https://dietpi.com/docs/software/webserver_stack/#apache)
+* [**Nginx - High performance web server, load balancer & reverse proxy**](https://dietpi.com/docs/software/webserver_stack/#nginx)
+* [**Lighttpd - Extremely lightweight webserver**](https://dietpi.com/docs/software/webserver_stack/#lighttpd)
+* [**Tomcat8 - Apache Tomcat server**](https://dietpi.com/docs/software/webserver_stack/#tomcat)
 
-#### [Programming & Web development Frameworks](https://dietpi.com/docs/software/webserver\_stack/#web-development-programming-frameworks)[¶](https://dietpi.com/docs/software/#programming-web-development-frameworks) <a href="#programming-web-development-frameworks" id="programming-web-development-frameworks"></a>
+#### [Programming & Web development Frameworks](https://dietpi.com/docs/software/webserver_stack/#web-development-programming-frameworks)[¶](https://dietpi.com/docs/software/#programming-web-development-frameworks) <a href="#programming-web-development-frameworks" id="programming-web-development-frameworks"></a>
 
-* [**PHP - Scripting language especially suited to web development**](https://dietpi.com/docs/software/webserver\_stack/#php)
-* [**PHP Composer** - A Dependency Manager for PHP](https://dietpi.com/docs/software/webserver\_stack/#php-composer)
-* [**Flask - Micro web framework powered by Python**](https://dietpi.com/docs/software/webserver\_stack/#flask)
-* [**Node.js** - JavaScript runtime designed to build scalable network applications](https://dietpi.com/docs/software/webserver\_stack/#nodejs)
+* [**PHP - Scripting language especially suited to web development**](https://dietpi.com/docs/software/webserver_stack/#php)
+* [**PHP Composer** - A Dependency Manager for PHP](https://dietpi.com/docs/software/webserver_stack/#php-composer)
+* [**Flask - Micro web framework powered by Python**](https://dietpi.com/docs/software/webserver_stack/#flask)
+* [**Node.js** - JavaScript runtime designed to build scalable network applications](https://dietpi.com/docs/software/webserver_stack/#nodejs)

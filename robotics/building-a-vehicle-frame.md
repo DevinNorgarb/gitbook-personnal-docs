@@ -6,7 +6,7 @@ The first step in building an ArduSub vehicle is to pick a vehicle "frame" from 
 
 ArduSub includes a high-level motor library that can configure motors in any configuration. This library is used to implement a number of supported frame configurations.
 
-All configurations are shown from **top-down view**. Green thrusters indicate counter-clockwise propellers and blue thrusters indicate clockwise propellers (or vice-versa). The numbers next to each thruster correspond to the numbered main output on the [autopilot board](broken-reference) when the ESC signal wires are plugged in.
+All configurations are shown from **top-down view**. Green thrusters indicate counter-clockwise propellers and blue thrusters indicate clockwise propellers (or vice-versa). The numbers next to each thruster correspond to the numbered main output on the [autopilot board](/broken/pages/kBk41GvcnjDrAkQHF5Ef) when the ESC signal wires are plugged in.
 
 Currently supported are:
 
@@ -20,7 +20,7 @@ If the vehicle thruster configuration a user wishes to build is not one of the p
 
 ### Component Selection <a href="#component-selection" id="component-selection"></a>
 
-The minumum required electronic components can be found in the [Hardware Options: Required Hardware](broken-reference) section of this documentation book.
+The minumum required electronic components can be found in the [Hardware Options: Required Hardware](/broken/pages/2hHi5lR93FmRkl7UsZfA) section of this documentation book.
 
 Vehicle frames are commonly built out of corrosion resitant material such as HDPE and aluminum.
 

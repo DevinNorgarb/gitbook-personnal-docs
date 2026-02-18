@@ -45,8 +45,7 @@ If you don't have a NOOBS installation, as is the case with the operating system
 \
 As mentioned earlier, you must control the heat generated. That's why you have to monitor it. We like to use two applets on the status panel, the CPU Usage Monitor and the CPU Temperature Monitor. You know exactly how healthy your system is at a glance.\
 \
-![none](https://qengineering.eu/images/Applets.webp)\
-
+![none](https://qengineering.eu/images/Applets.webp)<br>
 
 **EEPROM.**
 
@@ -75,8 +74,7 @@ However, it turns out that the choice of an overvoltage by the governor is often
 Open the Nano text editor with the following command and place your lines at the end of the file. Close the session with the \<Ctrl+X> key combination. With \<Y> and \<Enter> changes are being saved. Now reboot and your Raspberry Pi 4 runs at the new speed. Please note, the figures given are only examples. You can adjust them to your own good.$ sudo nano /boot/config.txt\
 \# Add your lines at the end.arm\_freq = y\
 gpu\_freq = z# you may skip this lineover\_voltage = x\
-\# Ctrl+X, Y, Enter to save the session# Reboot to run at the new clock frequency$ sudo reboot\
-
+\# Ctrl+X, Y, Enter to save the session# Reboot to run at the new clock frequency$ sudo reboot<br>
 
 ![images/Nano3.webp](https://qengineering.eu/images/Nano3.webp)
 
@@ -84,8 +82,7 @@ gpu\_freq = z# you may skip this lineover\_voltage = x\
 
 Like you can overclock the Raspberry Pi, you can also underclock your Pi.The reason is mainly to reduce power consumption. Not all parts of the chip are affected by the central clock governor, for instance, the USB and Ethernet devices. Clocked at 200 MHz, your RPi consumes about 1.7 Watts.$ sudo nano /boot/config.txt# Add your lines at the end.arm\_freq\_min = 200\
 \# Ctrl+X, Y, Enter to save the session\
-\# Reboot to run at the new clock frequency$ sudo reboot\
-
+\# Reboot to run at the new clock frequency$ sudo reboot<br>
 
 ####
 
@@ -113,13 +110,12 @@ As mentioned earlier, keep an eye on your temperature when your Raspberry is run
 | <p><img src="https://qengineering.eu/images/Raspberry-Pi-4-passive.webp" alt="Raspberry Pi 4 passive cooling"><br></p> | <p><img src="https://qengineering.eu/images/Temps_No_Fan.png" alt="none"><br></p>  |
 | <p><img src="https://qengineering.eu/images/Raspberry-Pi-4_igg67fsb.webp" alt="Raspberry Pi 4 no cooling"><br></p>     | <p><img src="https://qengineering.eu/images/Temps_Nothing.png" alt="none"><br></p> |
 
-When the Raspberry Pi gets too hot, it starts to throttle. Here is an example of this phenomenon. Running a deep learning model is an intensive task. All four cores are used here, each up to 86%. The temperature hits 82 °C (180 °F) and the frequency is lowered, as can be seen from the yellow color in the temperature monitor. Needless to say that this situation should not last too long.\
-
+When the Raspberry Pi gets too hot, it starts to throttle. Here is an example of this phenomenon. Running a deep learning model is an intensive task. All four cores are used here, each up to 86%. The temperature hits 82 °C (180 °F) and the frequency is lowered, as can be seen from the yellow color in the temperature monitor. Needless to say that this situation should not last too long.<br>
 
 ![images/Throttled.webp](https://qengineering.eu/images/Throttled.webp)
 
 #### Final remarks.
 
 Use a new SD card. Old and worn out cards cause problems when the Raspberry Pi is overclocked. They can crash the system when writes are stacked due to slow processing.\
-There is a very powerfull tool which can be used when working with the Raspberry Pi hardware: vcgencmd (VideoCore General Command). We use it all the time. A few examples. More info can be found [here](https://elinux.org/RPI\_vcgencmd\_usage).# to monitor your actual clock in a separate terminal$ watch -n1 vcgencmd measure\_clock arm# to monitor your actual Vcore in a separate terminal$ watch -n1 vcgencmd measure\_volts core\
+There is a very powerfull tool which can be used when working with the Raspberry Pi hardware: vcgencmd (VideoCore General Command). We use it all the time. A few examples. More info can be found [here](https://elinux.org/RPI_vcgencmd_usage).# to monitor your actual clock in a separate terminal$ watch -n1 vcgencmd measure\_clock arm# to monitor your actual Vcore in a separate terminal$ watch -n1 vcgencmd measure\_volts core\
 \# to get lots of information about the current status$ vcgencmd get\_config int

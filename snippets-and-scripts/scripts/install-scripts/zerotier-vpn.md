@@ -14,4 +14,4 @@ _If you have GPG installed, a more secure option is available:_
 
 _After using the script, use apt or yum to manage future updates to zerotier-one_
 
-* \
+* <br>

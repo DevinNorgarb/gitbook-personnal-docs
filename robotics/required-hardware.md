@@ -4,7 +4,7 @@ The following pages detail the minimum required hardware to have a functioning c
 
 To see each component's location and how to connects it in the system, check the connection diagrams.
 
-* [Autopilot](broken-reference): The autopilot board/flight controller board processes the pilot input and sensor data, and controls the motors, lights, servos, and relays on the vehicle. It runs the ArduSub firmware.
+* [Autopilot](/broken/pages/kBk41GvcnjDrAkQHF5Ef): The autopilot board/flight controller board processes the pilot input and sensor data, and controls the motors, lights, servos, and relays on the vehicle. It runs the ArduSub firmware.
 * Companion Computer: The Companion Computer streams video to the Topside Computer, and relays [MAVLink](https://ardupilot.org/dev/docs/mavlink-basics.html) communications between the autopilot and the Topside Computer via Ethernet.
 * Topside Computer: The topside computer is where the live video feed and telemetry information are received and displayed. It accepts operator input from a joystick to allow controlling the connected vehicle.
 * Joystick: A joystick allows the operator to control the vehicle, using stick control movements and button presses.

@@ -12,8 +12,7 @@ Opportunities for development include both extensions to the core framework (suc
 
 ### Open Source and GitHub
 
-\
-
+<br>
 
 The source code for OVMS is stored on GitHub in a public _core project repository_ called 'Open-Vehicle-Monitoring-System-3'. The _GitHub way_ is for developers to create their own GitHub account and to _fork_ their own copy of that core repository. You can then work on your own copy, periodically _pulling_ (merging in) updates from the core repository to your own copy. When you are ready to contribute back, you create a pull request, and the core project maintainers will merge back your improvements.
 

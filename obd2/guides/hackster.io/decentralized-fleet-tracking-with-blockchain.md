@@ -22,36 +22,36 @@ Asset tracking is a trend, but this project intends to work in a decentralized w
 
 ### Things used in this project
 
-| <h4>Hardware components</h4>                                                                                                                                                    |                                                                                                                                                                                                                                                            |   |   |   |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | - | - | - |
-| ![Hologram Nova](https://hackster.imgix.net/uploads/attachments/358779/nova-icon\_lijwM6pMK7.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)                       | <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><a href="https://www.hackster.io/hologram/products/hologram-nova?ref=project-f61d6c">Hologram Nova</a></td></tr><tr><td></td></tr></tbody></table>                               | × | 1 |   |
-| [Hologram Nova](https://www.hackster.io/hologram/products/hologram-nova?ref=project-f61d6c)                                                                                     |                                                                                                                                                                                                                                                            |   |   |   |
-|                                                                                                                                                                                 |                                                                                                                                                                                                                                                            |   |   |   |
-| ![Hologram Global IoT SIM Card](https://hackster.imgix.net/uploads/image/file/162776/Hologram%20Dash.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)               | <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><a href="https://www.hackster.io/hologram/products/hologram-global-iot-sim-card?ref=project-f61d6c">Hologram Global IoT SIM Card</a></td></tr><tr><td></td></tr></tbody></table> | × | 1 |   |
-| [Hologram Global IoT SIM Card](https://www.hackster.io/hologram/products/hologram-global-iot-sim-card?ref=project-f61d6c)                                                       |                                                                                                                                                                                                                                                            |   |   |   |
-|                                                                                                                                                                                 |                                                                                                                                                                                                                                                            |   |   |   |
-| ![Raspberry Pi Zero](https://hackster.imgix.net/uploads/image/file/95278/raspberry-pi-zero-.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)                        | <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><a href="https://www.hackster.io/raspberry-pi/products/raspberry-pi-zero?ref=project-f61d6c">Raspberry Pi Zero</a></td></tr><tr><td></td></tr></tbody></table>                   | × | 1 |   |
-| [Raspberry Pi Zero](https://www.hackster.io/raspberry-pi/products/raspberry-pi-zero?ref=project-f61d6c)                                                                         |                                                                                                                                                                                                                                                            |   |   |   |
-|                                                                                                                                                                                 |                                                                                                                                                                                                                                                            |   |   |   |
-|                                                                                                                                                                                 | <table><thead><tr><th>ELM327 OBDII - bluetooth</th></tr></thead><tbody><tr><td></td></tr></tbody></table>                                                                                                                                                  | × | 1 |   |
-| ELM327 OBDII - bluetooth                                                                                                                                                        |                                                                                                                                                                                                                                                            |   |   |   |
-|                                                                                                                                                                                 |                                                                                                                                                                                                                                                            |   |   |   |
-|                                                                                                                                                                                 | <table><thead><tr><th>NEO-6M GPS</th></tr></thead><tbody><tr><td></td></tr></tbody></table>                                                                                                                                                                | × | 1 |   |
-| NEO-6M GPS                                                                                                                                                                      |                                                                                                                                                                                                                                                            |   |   |   |
-|                                                                                                                                                                                 |                                                                                                                                                                                                                                                            |   |   |   |
-| <h4>Software apps and online services</h4>                                                                                                                                      |                                                                                                                                                                                                                                                            |   |   |   |
-| ![AWS Lambda](https://hackster.imgix.net/uploads/image/file/57873/Screen%20Shot%202015-07-20%20at%206.10.26%20PM.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)   | <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><a href="https://www.hackster.io/AmazonWebServices/products/aws-lambda?ref=project-f61d6c">Amazon Web Services AWS Lambda</a></td></tr><tr><td></td></tr></tbody></table>        |   |   |   |
-| [Amazon Web Services AWS Lambda](https://www.hackster.io/AmazonWebServices/products/aws-lambda?ref=project-f61d6c)                                                              |                                                                                                                                                                                                                                                            |   |   |   |
-|                                                                                                                                                                                 |                                                                                                                                                                                                                                                            |   |   |   |
-| ![AWS IoT](https://hackster.imgix.net/uploads/image/file/85734/ha\_2up\_iot.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)                                        | <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><a href="https://www.hackster.io/AmazonWebServices/products/aws-iot?ref=project-f61d6c">Amazon Web Services AWS IoT</a></td></tr><tr><td></td></tr></tbody></table>              |   |   |   |
-| [Amazon Web Services AWS IoT](https://www.hackster.io/AmazonWebServices/products/aws-iot?ref=project-f61d6c)                                                                    |                                                                                                                                                                                                                                                            |   |   |   |
-|                                                                                                                                                                                 |                                                                                                                                                                                                                                                            |   |   |   |
-| ![AWS DynamoDB](https://hackster.imgix.net/uploads/image/file/57874/Screen%20Shot%202015-07-20%20at%206.11.48%20PM.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff) | <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><a href="https://www.hackster.io/AmazonWebServices/products/aws-dynamodb?ref=project-f61d6c">Amazon Web Services AWS DynamoDB</a></td></tr><tr><td></td></tr></tbody></table>    |   |   |   |
-| [Amazon Web Services AWS DynamoDB](https://www.hackster.io/AmazonWebServices/products/aws-dynamodb?ref=project-f61d6c)                                                          |                                                                                                                                                                                                                                                            |   |   |   |
-|                                                                                                                                                                                 |                                                                                                                                                                                                                                                            |   |   |   |
-| ![AWS EC2](https://hackster.imgix.net/uploads/image/file/57872/Screen%20Shot%202015-07-20%20at%206.09.16%20PM.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)      | <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><a href="https://www.hackster.io/AmazonWebServices/products/aws-ec2?ref=project-f61d6c">Amazon Web Services AWS EC2</a></td></tr><tr><td></td></tr></tbody></table>              |   |   |   |
-| [Amazon Web Services AWS EC2](https://www.hackster.io/AmazonWebServices/products/aws-ec2?ref=project-f61d6c)                                                                    |                                                                                                                                                                                                                                                            |   |   |   |
-|                                                                                                                                                                                 |                                                                                                                                                                                                                                                            |   |   |   |
+| <h4>Hardware components</h4>                                                                                                                                                    |                                  |   |   |   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | - | - | - |
+| ![Hologram Nova](https://hackster.imgix.net/uploads/attachments/358779/nova-icon_lijwM6pMK7.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)                        | f1f7fabee79c475c94590dfdf65bbdca | × | 1 |   |
+| [Hologram Nova](https://www.hackster.io/hologram/products/hologram-nova?ref=project-f61d6c)                                                                                     |                                  |   |   |   |
+|                                                                                                                                                                                 |                                  |   |   |   |
+| ![Hologram Global IoT SIM Card](https://hackster.imgix.net/uploads/image/file/162776/Hologram%20Dash.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)               | de60904846f1430288178d451d10d653 | × | 1 |   |
+| [Hologram Global IoT SIM Card](https://www.hackster.io/hologram/products/hologram-global-iot-sim-card?ref=project-f61d6c)                                                       |                                  |   |   |   |
+|                                                                                                                                                                                 |                                  |   |   |   |
+| ![Raspberry Pi Zero](https://hackster.imgix.net/uploads/image/file/95278/raspberry-pi-zero-.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)                        | 23bd7a2faf044b4cb6f141201a7bfada | × | 1 |   |
+| [Raspberry Pi Zero](https://www.hackster.io/raspberry-pi/products/raspberry-pi-zero?ref=project-f61d6c)                                                                         |                                  |   |   |   |
+|                                                                                                                                                                                 |                                  |   |   |   |
+|                                                                                                                                                                                 | 96b793565d96473c88a577b4fcd19e70 | × | 1 |   |
+| ELM327 OBDII - bluetooth                                                                                                                                                        |                                  |   |   |   |
+|                                                                                                                                                                                 |                                  |   |   |   |
+|                                                                                                                                                                                 | 22aa22d304b941d7b9893b8650a08aac | × | 1 |   |
+| NEO-6M GPS                                                                                                                                                                      |                                  |   |   |   |
+|                                                                                                                                                                                 |                                  |   |   |   |
+| <h4>Software apps and online services</h4>                                                                                                                                      |                                  |   |   |   |
+| ![AWS Lambda](https://hackster.imgix.net/uploads/image/file/57873/Screen%20Shot%202015-07-20%20at%206.10.26%20PM.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)   | 3ef344dc48e045ceac23d1f6a20fec49 |   |   |   |
+| [Amazon Web Services AWS Lambda](https://www.hackster.io/AmazonWebServices/products/aws-lambda?ref=project-f61d6c)                                                              |                                  |   |   |   |
+|                                                                                                                                                                                 |                                  |   |   |   |
+| ![AWS IoT](https://hackster.imgix.net/uploads/image/file/85734/ha_2up_iot.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)                                          | 59192e475daa426a9505c01c6b96c7ce |   |   |   |
+| [Amazon Web Services AWS IoT](https://www.hackster.io/AmazonWebServices/products/aws-iot?ref=project-f61d6c)                                                                    |                                  |   |   |   |
+|                                                                                                                                                                                 |                                  |   |   |   |
+| ![AWS DynamoDB](https://hackster.imgix.net/uploads/image/file/57874/Screen%20Shot%202015-07-20%20at%206.11.48%20PM.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff) | 959c19267ac04c4fb3106174e22cbded |   |   |   |
+| [Amazon Web Services AWS DynamoDB](https://www.hackster.io/AmazonWebServices/products/aws-dynamodb?ref=project-f61d6c)                                                          |                                  |   |   |   |
+|                                                                                                                                                                                 |                                  |   |   |   |
+| ![AWS EC2](https://hackster.imgix.net/uploads/image/file/57872/Screen%20Shot%202015-07-20%20at%206.09.16%20PM.png?auto=compress%2Cformat\&w=48\&h=48\&fit=fill\&bg=ffffff)      | 491d16980f144365bbcfe5f436d44306 |   |   |   |
+| [Amazon Web Services AWS EC2](https://www.hackster.io/AmazonWebServices/products/aws-ec2?ref=project-f61d6c)                                                                    |                                  |   |   |   |
+|                                                                                                                                                                                 |                                  |   |   |   |
 
 ### Story
 
@@ -76,7 +76,7 @@ Having these 3 main features in an operation, the organisations can ensure that 
 
 The project will be built using the following architecture:
 
-![](https://hackster.imgix.net/uploads/attachments/381793/architecture\_AgLCCxTHHF.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/381793/architecture_AgLCCxTHHF.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 The devices (the vehicles) will be collecting it's data using a custom device that can handle the OBDII messages, the gyroscope inclination and the GPS position and will be sent to the backend via GPRS module (Hologram Nova Modem). The message will be received and processed by the hologram platform. Then it will be routed to the Amazon API Gateway, which will act as a some sort of filter and will decide whether the message can be sent to the application or not.
 
@@ -92,21 +92,21 @@ The first step is to build the device that will read the OBDII data & GPS and se
 
 According to the next schematic, we have to connect the GPS's TX pin to the Raspberry's RX pin and GPS's RX to the Raspberry's TX pin to ensure the serial communication. Also remember to wire the 5v and GND between them.
 
-![](https://hackster.imgix.net/uploads/attachments/384557/screen\_shot\_2017-11-24\_at\_10\_07\_45\_pm\_E68Ug7uI8N.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/384557/screen_shot_2017-11-24_at_10_07_45_pm_E68Ug7uI8N.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 After the schematics design, I made a quick PCB and I milled it using my CNC.
 
-![](https://hackster.imgix.net/uploads/attachments/384558/screen\_shot\_2017-11-24\_at\_10\_07\_54\_pm\_HmlefMgjZ3.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/384558/screen_shot_2017-11-24_at_10_07_54_pm_HmlefMgjZ3.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 I do not want to keep the GPS module and the Raspberry within the PCB area; I just want to have the pads of them in the PCB area.
 
 The PCB looks like this:
 
-![](https://hackster.imgix.net/uploads/attachments/388353/photo5555516257684531133\_P2BySfaMy2.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/388353/photo5555516257684531133_P2BySfaMy2.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 I added a gyroscope to detect changes in the the angle of the vehicle to know of a possible accident (This feature is not covered in this version at software level, but I want to have it at hardware level).
 
-![](https://hackster.imgix.net/uploads/attachments/388354/photo5555516257684531132\_qlXyYs9MNJ.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)![](https://hackster.imgix.net/uploads/attachments/388355/photo5555516257684531131\_BseRKBOns1.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/388354/photo5555516257684531132_qlXyYs9MNJ.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)![](https://hackster.imgix.net/uploads/attachments/388355/photo5555516257684531131_BseRKBOns1.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 #### The Controller <a href="#toc-the-controller-3" id="toc-the-controller-3"></a>
 
@@ -134,7 +134,7 @@ $ npm install -g bunyan forever
 
 The `npm init` command initialises our project in the current location; simply provide the information requested by npm. Now we have an empty structure with the node\_modules directory within it.
 
-![](https://hackster.imgix.net/uploads/attachments/382372/screen\_shot\_2017-11-20\_at\_8\_17\_57\_pm\_5Ld5slXE68.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/382372/screen_shot_2017-11-20_at_8_17_57_pm_5Ld5slXE68.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 First we need to include the required dependencies in a script that will be loaded from a main script; this script will be called webserver.js within the lib directory:
 
@@ -223,7 +223,7 @@ node index.js | bunyan -L
 
 If you see a message like this:
 
-![](https://hackster.imgix.net/uploads/attachments/382375/screen\_shot\_2017-11-20\_at\_8\_46\_43\_pm\_0sxvZWvgvE.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/382375/screen_shot_2017-11-20_at_8_46_43_pm_0sxvZWvgvE.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 ... you are running a basic microservice so far.
 
@@ -269,15 +269,15 @@ Before continuing writing our microservice code, we will define the IoT backend 
 
 Go to [https://console.aws.amazon.com](https://console.aws.amazon.com/) and login to your AWS account to define the IoT configuration, and search for IoT:
 
-![](https://hackster.imgix.net/uploads/attachments/382380/screen\_shot\_2017-11-20\_at\_8\_57\_56\_pm\_zrdMjA5uLZ.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/382380/screen_shot_2017-11-20_at_8_57_56_pm_zrdMjA5uLZ.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 On the IoT console, go to Manage > Types. From here we will define the basic structure for our things; _a thing on Amazon IoT is a virtual representation of a real device._
 
-![](https://hackster.imgix.net/uploads/attachments/382381/screen\_shot\_2017-11-20\_at\_8\_58\_36\_pm\_uTP6w6EP2W.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/382381/screen_shot_2017-11-20_at_8_58_36_pm_uTP6w6EP2W.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 Click on the 'Create' button and provide the data in the fields as follows:
 
-![](https://hackster.imgix.net/uploads/attachments/382382/screen\_shot\_2017-11-20\_at\_9\_00\_51\_pm\_98Fx5yLLSz.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/382382/screen_shot_2017-11-20_at_9_00_51_pm_98Fx5yLLSz.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 Each searchable attribute is the data that differentiates each real thing; here I defined a vehicle's model and vehicle's VIN. You may define whatever you want.
 
@@ -287,7 +287,7 @@ Now, to create a virtual representation of our vehicle, go to Manage > Things an
 
 Provide the data that will represent a real vehicle as follows:
 
-![](https://hackster.imgix.net/uploads/attachments/382644/image\_TxgJFrHmG0.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/382644/image_TxgJFrHmG0.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 See that we can define specific data for each vehicle based on the VehicleModelType we had defined before. Click on the 'Create thing' button.
 
@@ -295,11 +295,11 @@ Now, an important thing to do in order to publish data on behalf of our vehicle,
 
 Finally we have to define a policy to be attached to the thing to allow the connection from our client; go to Secure > Policies > Create:
 
-![](https://hackster.imgix.net/uploads/attachments/382805/image\_fxLVUjnq8d.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/382805/image_fxLVUjnq8d.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 Click on 'Advanced mode' option and create a policy as follows:
 
-![](https://hackster.imgix.net/uploads/attachments/382807/image\_lqSHZxUJ50.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/382807/image_lqSHZxUJ50.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 Click on 'Create' and let's attach that policy to the thing; go to Manage > Thing > MyVehicle > Security > Click in the current certificate > click in 'Actions' > attach policy and select the created policy.
 
@@ -335,7 +335,7 @@ module.exports = Thing;
 
 The only thing you need to update is the host property; that data can be obtained from the vehicle's details in the interact tab.
 
-![](https://hackster.imgix.net/uploads/attachments/382653/image\_jskM3HxZfK.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/382653/image_jskM3HxZfK.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 This class handles all the specific data for each device that can configure in the system.
 
@@ -422,11 +422,11 @@ $ curl -X POST -H 'Content-type: application/json' "http://localhost:4500/dh7/as
 
 To see whether the message is received from MQTT, use the test client, subscribing to topic dh7/deviceMessage:
 
-![](https://hackster.imgix.net/uploads/attachments/382804/image\_FBjZLY63Q6.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/382804/image_FBjZLY63Q6.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 If the message is sent and received, you will see the message in the MQTT client.
 
-![](https://hackster.imgix.net/uploads/attachments/382803/image\_0Gr6I6B4po.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/382803/image_0Gr6I6B4po.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 If everything is going as mentioned, we are ready to send any message to out backend with the property `"deviceId":"MyVehicle"` and will be processed properly.
 
@@ -434,17 +434,17 @@ If everything is going as mentioned, we are ready to send any message to out bac
 
 An important feature of Amazon IoT is that we can define rules to filter the incoming messages to be processed if they are important; this can be done by defining rules in a very simple way. To define a rule, go to Act and click on the 'Create' button and provide the rule parameters:
 
-![](https://hackster.imgix.net/uploads/attachments/382809/image\_mzLqmAhjGl.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/382809/image_mzLqmAhjGl.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 We will be looking for each message published to topic dh7/deviceMessage and they will be evaluated for property speed. Click on the 'Add action' button to define which action will be performed if the rule is true:
 
-![](https://hackster.imgix.net/uploads/attachments/382810/image\_ST0xTofKd2.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/382810/image_ST0xTofKd2.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 The message will be processed by a lambda function if the speed >= 50. Click on the 'Create new resource' button to create a new function. The new function widget will appear; we will define a function from scratch, so click on the 'Author from scratch' button. Give to the function a name, create a new role from the template and assign or provide a role name, select 'Basic Edge Lambda permissions' policy template and click 'Create function'.
 
 Select the next values in the function screen:
 
-![](https://hackster.imgix.net/uploads/attachments/382812/image\_CAhA2CdsP2.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/382812/image_CAhA2CdsP2.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 The lambda function will only forward the messages filtered by the rule, and send them back to our backend; Amazon IoT handles the event stream and applies the rules to that stream, giving us only the interesting events.
 
@@ -483,7 +483,7 @@ Remember to update the hostname with the public IP of your server. _At this poin
 
 Once your lambda function is created, you can go back to IoT rule definition and the new function will appear:
 
-![](https://hackster.imgix.net/uploads/attachments/382813/image\_LkTXiz1Omr.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/382813/image_LkTXiz1Omr.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 Select the created function and click on 'Add action' and save the rule.
 
@@ -679,7 +679,7 @@ webserver.start();
 
 Start the server again and you will see (if everything goes fine):
 
-![](https://hackster.imgix.net/uploads/attachments/382851/image\_LWB5b5hPhA.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/382851/image_LWB5b5hPhA.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 Well done, the gateway is now connected to the blockchain.
 
@@ -695,7 +695,7 @@ $ node Vehicle.js --deviceName=MyVehicle
 
 If you see data passing through like this...
 
-![](https://hackster.imgix.net/uploads/attachments/383233/image\_bChcmJaVGp.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/383233/image_bChcmJaVGp.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 ...your work is going well.
 
@@ -749,13 +749,13 @@ asset-tracker-chain: gettransaction d3475fd225574f419a8298ae870f4810ee800b4a4838
 
 This would return the detailed transaction:
 
-![](https://hackster.imgix.net/uploads/attachments/383272/image\_QBywQMWYyy.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/383272/image_QBywQMWYyy.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 The HEX field is all the payload received from the lambda function and contains the vehicle's data encoded in HEX format.
 
 > Tip: You can use [multichain explorer](https://github.com/MultiChain/multichain-explorer) to have a UI and interact with your blockchain.
 
-![Multichain explorer](https://hackster.imgix.net/uploads/attachments/383293/image\_RpoFkyfRJk.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)Multichain explorer
+![Multichain explorer](https://hackster.imgix.net/uploads/attachments/383293/image_RpoFkyfRJk.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)Multichain explorer
 
 Also, we have to record a transaction on the blockchain whenever an alert is received; to do that let's modify the alert endpoint as follows:
 
@@ -783,7 +783,7 @@ We need to start coding the nodejs client that will be running in the Raspberry;
 
 You should have something like this:
 
-![](https://hackster.imgix.net/uploads/attachments/384494/photo5530754839215187883\_bWLFCdnwNm.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/384494/photo5530754839215187883_bWLFCdnwNm.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 Now, let's construct the client that will run in the Raspberry PI and will connect to the car's OBDII port:
 
@@ -929,27 +929,27 @@ Now, we have almost all the parts. Let's try to fetch the car's data; it is impo
 
 If everything goes fine, you should see the new incoming message on the Hologram dashboard:
 
-![](https://hackster.imgix.net/uploads/attachments/385280/image\_lYGJfjt5xU.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385280/image_lYGJfjt5xU.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 Now, we have to route the incoming message to our backend. Click on the create route button near the new message:
 
-![](https://hackster.imgix.net/uploads/attachments/385294/image\_83DzeBcrCH.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385294/image_83DzeBcrCH.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 This will bring you to the 'new route' widget; provide all the required information as follows:
 
-![](https://hackster.imgix.net/uploads/attachments/385288/image\_OnG1Kp2jsm.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385288/image_OnG1Kp2jsm.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 Click on the 'Custom Webhook URL' and provide the public IP of your gateway. Add your (random) custom KEY to validate that the message that is received by your backend were sent by Hologram.
 
-![](https://hackster.imgix.net/uploads/attachments/385289/image\_G9GvPhlip2.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385289/image_G9GvPhlip2.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 Once the message is processed by the Hologram platform, the message will be routed to your backend.
 
-![](https://hackster.imgix.net/uploads/attachments/385295/image\_T6Vtn2acKp.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385295/image_T6Vtn2acKp.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 And you should see in your gateway terminal a message like this:
 
-![](https://hackster.imgix.net/uploads/attachments/385293/image\_umSaP0IIBH.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385293/image_umSaP0IIBH.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 > We are sending our JSON encoded in base64; this is because it is more efficient to send the full payload in base64.
 
@@ -959,55 +959,55 @@ Now its time to configure the API gateway. An API gateway is useful to filter an
 
 Go to your amazon console and load the API Gateway section. Create new API and give whatever name you want.
 
-![](https://hackster.imgix.net/uploads/attachments/385777/image\_Ji6pp5kw6U.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385777/image_Ji6pp5kw6U.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 First we have to create a resource. Name your resource and use the resource path dh7
 
-![](https://hackster.imgix.net/uploads/attachments/385785/image\_4epQjIcv1L.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385785/image_4epQjIcv1L.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 Now, create a new method in the created resource
 
-![](https://hackster.imgix.net/uploads/attachments/385778/image\_YUpzFjnaJS.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385778/image_YUpzFjnaJS.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 With the POST verb
 
-![](https://hackster.imgix.net/uploads/attachments/385779/image\_xpbl7ottbj.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385779/image_xpbl7ottbj.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 And configure it as HTTP integration type and use your gateway public IP and use the event endpoint (http://\<PUBLIC IP>:4500/dh7/assetTracker/event)
 
-![](https://hackster.imgix.net/uploads/attachments/385780/image\_8NvqBQu56g.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385780/image_8NvqBQu56g.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 You will have the configured method as follows:
 
-![](https://hackster.imgix.net/uploads/attachments/385781/image\_MLcU9ekCFn.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385781/image_MLcU9ekCFn.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 Now, test the endpoint. Perhaps you will get an error, but remember that at this would be normal due we have to post a full hologram message.
 
-![](https://hackster.imgix.net/uploads/attachments/385782/image\_HHTvxaEoRk.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385782/image_HHTvxaEoRk.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 Now, lets update the hologram route to send the message to Amazon API gateway instead of our gateway's ip:
 
-![](https://hackster.imgix.net/uploads/attachments/385787/image\_7QJl1lqQVW.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385787/image_7QJl1lqQVW.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 Now, deploy your created API to obtain the listening domain:
 
-![](https://hackster.imgix.net/uploads/attachments/385788/image\_dwFzeDsArM.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385788/image_dwFzeDsArM.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 The domain will be created; this will be listening for incoming requests
 
-![](https://hackster.imgix.net/uploads/attachments/385789/image\_HhUnEPzUEG.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385789/image_HhUnEPzUEG.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 With that domain, we will update the hologram route as follows:
 
-![](https://hackster.imgix.net/uploads/attachments/385790/image\_OraG3FFR8F.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385790/image_OraG3FFR8F.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 Now, lets try the flow 'Simulating from device':
 
-![](https://hackster.imgix.net/uploads/attachments/385792/image\_wu1Mb6dgsn.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385792/image_wu1Mb6dgsn.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 And finally we should see the incoming message in the gateway's log.
 
-![](https://hackster.imgix.net/uploads/attachments/385791/image\_GKlHOEDuNJ.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/385791/image_GKlHOEDuNJ.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 #### Dynamo transaction store. <a href="#toc-dynamo-transaction-store-12" id="toc-dynamo-transaction-store-12"></a>
 
@@ -1055,15 +1055,15 @@ const self = module.exports = {
 
 This file connects to dynamo and save the transaction on it. To store the data, we need to create a table. For this, go to the dynamo console and click in the 'Create table' button:
 
-![](https://hackster.imgix.net/uploads/attachments/391290/image\_EYg0djCVp4.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/391290/image_EYg0djCVp4.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 Give a name to the table (this name is configured in the dynamoDataSource.js; the primary key will be the blockchain transaction id.
 
-![](https://hackster.imgix.net/uploads/attachments/391291/image\_YXk9F58L7M.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/391291/image_YXk9F58L7M.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 After creation we will have a screen like this:
 
-![](https://hackster.imgix.net/uploads/attachments/391292/image\_7mrthPI1Rn.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/391292/image_7mrthPI1Rn.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 Finally we need to include the created file in the [webserver.js](http://webserver.js/)
 
@@ -1092,7 +1092,7 @@ and save the transaction modifying the endpoint as follows:
 
 Once the rule is raised, that will be recorded in the blockchain and sent to the dynamo table:
 
-![](https://hackster.imgix.net/uploads/attachments/391293/image\_3hXPq9wihG.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)![](https://hackster.imgix.net/uploads/attachments/391294/image\_8cWbiPnRq5.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
+![](https://hackster.imgix.net/uploads/attachments/391293/image_3hXPq9wihG.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)![](https://hackster.imgix.net/uploads/attachments/391294/image_8cWbiPnRq5.png?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 We have a transaction (event) that raises a new "transfer" transaction with its details.
 
@@ -1127,4 +1127,4 @@ JavaScriptThis is the vehicle simulator. If you dont have any OBDII device, you 
 No preview (download only).
 ```
 
-\
+<br>

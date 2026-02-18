@@ -17,7 +17,7 @@ _Estimated reading time: 11 minutes_
 >
 > Docker Desktop helps you build, share, and run containers easily on Mac and Windows as you do on Linux. We are excited to share that Docker Desktop for Linux (Beta) is now available for you to test. For more information, see Docker Desktop for Linux.
 
-To get started with Docker Engine on Ubuntu, make sure you [meet the prerequisites](broken-reference), then [install Docker](broken-reference).
+To get started with Docker Engine on Ubuntu, make sure you [meet the prerequisites](/broken/pages/BewGwXRkVbPcrkicVV4R), then [install Docker](/broken/pages/BewGwXRkVbPcrkicVV4R).
 
 ### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 
@@ -46,7 +46,7 @@ $ sudo apt-get remove docker docker-engine docker.io containerd runc
 
 It’s OK if `apt-get` reports that none of these packages are installed.
 
-The contents of `/var/lib/docker/`, including images, containers, volumes, and networks, are preserved. If you do not need to save your existing data, and want to start with a clean installation, refer to the [uninstall Docker Engine](broken-reference) section at the bottom of this page.
+The contents of `/var/lib/docker/`, including images, containers, volumes, and networks, are preserved. If you do not need to save your existing data, and want to start with a clean installation, refer to the [uninstall Docker Engine](/broken/pages/BewGwXRkVbPcrkicVV4R) section at the bottom of this page.
 
 #### Supported storage drivers <a href="#supported-storage-drivers" id="supported-storage-drivers"></a>
 
@@ -58,9 +58,9 @@ Docker Engine uses the `overlay2` storage driver by default. If you need to use 
 
 You can install Docker Engine in different ways, depending on your needs:
 
-* Most users [set up Docker’s repositories](broken-reference) and install from them, for ease of installation and upgrade tasks. This is the recommended approach.
-* Some users download the DEB package and [install it manually](broken-reference) and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet.
-* In testing and development environments, some users choose to use automated [convenience scripts](broken-reference) to install Docker.
+* Most users [set up Docker’s repositories](/broken/pages/BewGwXRkVbPcrkicVV4R) and install from them, for ease of installation and upgrade tasks. This is the recommended approach.
+* Some users download the DEB package and [install it manually](/broken/pages/BewGwXRkVbPcrkicVV4R) and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet.
+* In testing and development environments, some users choose to use automated [convenience scripts](/broken/pages/BewGwXRkVbPcrkicVV4R) to install Docker.
 
 #### Install using the repository <a href="#install-using-the-repository" id="install-using-the-repository"></a>
 
@@ -134,7 +134,7 @@ Docker Engine is installed and running. The `docker` group is created but no use
 
 **Upgrade Docker Engine**
 
-To upgrade Docker Engine, first run `sudo apt-get update`, then follow the [installation instructions](broken-reference), choosing the new version you want to install.
+To upgrade Docker Engine, first run `sudo apt-get update`, then follow the [installation instructions](/broken/pages/BewGwXRkVbPcrkicVV4R), choosing the new version you want to install.
 
 #### Install from a package <a href="#install-from-a-package" id="install-from-a-package"></a>
 
@@ -164,11 +164,11 @@ Docker Engine is installed and running. The `docker` group is created but no use
 
 **Upgrade Docker Engine**
 
-To upgrade Docker Engine, download the newer package file and repeat the [installation procedure](broken-reference), pointing to the new file.
+To upgrade Docker Engine, download the newer package file and repeat the [installation procedure](/broken/pages/BewGwXRkVbPcrkicVV4R), pointing to the new file.
 
 #### Install using the convenience script <a href="#install-using-the-convenience-script" id="install-using-the-convenience-script"></a>
 
-Docker provides a convenience script at [get.docker.com](https://get.docker.com/) to install Docker into development environments quickly and non-interactively. The convenience script is not recommended for production environments, but can be used as an example to create a provisioning script that is tailored to your needs. Also refer to the [install using the repository](broken-reference) steps to learn about installation steps to install using the package repository. The source code for the script is open source, and can be found in the [`docker-install` repository on GitHub](https://github.com/docker/docker-install).
+Docker provides a convenience script at [get.docker.com](https://get.docker.com/) to install Docker into development environments quickly and non-interactively. The convenience script is not recommended for production environments, but can be used as an example to create a provisioning script that is tailored to your needs. Also refer to the [install using the repository](/broken/pages/BewGwXRkVbPcrkicVV4R) steps to learn about installation steps to install using the package repository. The source code for the script is open source, and can be found in the [`docker-install` repository on GitHub](https://github.com/docker/docker-install).
 
 Always examine scripts downloaded from the internet before running them locally. Before installing, make yourself familiar with potential risks and limitations of the convenience script:
 

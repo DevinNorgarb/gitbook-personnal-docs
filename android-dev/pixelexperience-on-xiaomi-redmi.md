@@ -82,4 +82,4 @@ _info\_outlin&#x65;_&#x4E;OTE: The first boot usually takes no longer than 15 mi
 
 After you’ve double checked that you followed the steps precisely, didn’t skip any and still have questions or got stuck, feel free to ask on [our Telegram group](https://t.me/pixelexperiencechat).
 
-\
+<br>

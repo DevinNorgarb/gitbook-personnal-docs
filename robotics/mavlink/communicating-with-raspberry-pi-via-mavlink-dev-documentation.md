@@ -2,11 +2,11 @@
 
 This page explains how to connect and configure a Raspberry Pi (RPi) so that it is able to communicate with a flight controller using the MAVLink protocol over a serial connection. This can be used to perform additional tasks such as image recognition which simply cannot be done by the flight controller due to the memory requirements for storing images.
 
-### Connecting the Flight controller and RPi Hardware[¶](broken-reference)
+### Connecting the Flight controller and RPi Hardware[¶](/broken/pages/q6KXZgAuStLTtrE9sU87)
 
 
 
-Connect the flight controller’s TELEM2 port to the RPi’s Ground, TX and RX pins as shown in the image above. More details on the individual RPi’s pin functions can be found [here](http://elinux.org/RPi\_Low-level\_peripherals).
+Connect the flight controller’s TELEM2 port to the RPi’s Ground, TX and RX pins as shown in the image above. More details on the individual RPi’s pin functions can be found [here](http://elinux.org/RPi_Low-level_peripherals).
 
 The RPi can be powered by connecting +5V source to the +5V pin **or** from USB in.
 
@@ -16,7 +16,7 @@ Tip
 
 Depending on the model of RPi used and internal/external peripherals used, +5V power requirements can vary from 80mA to close to 2.5A. The power budget for the particular system configuration should be assessed to determine the requirements for the +5V supply current. It is usually not recommended that +5v be supplied via the flight controller’s TELEM port connector.
 
-### Setting up the flight controller[¶](broken-reference)
+### Setting up the flight controller[¶](/broken/pages/q6KXZgAuStLTtrE9sU87)
 
 Connect to the flight controller with a ground station (i.e. Mission Planner) and set the following parameters:
 
@@ -24,7 +24,7 @@ Connect to the flight controller with a ground station (i.e. Mission Planner) an
 * [SERIAL2\_BAUD](https://ardupilot.org/copter/docs/parameters.html#serial2-baud) = 921 so the flight controller can communicate with the RPi at 921600 baud.
 * [LOG\_BACKEND\_TYPE](https://ardupilot.org/copter/docs/parameters.html#log-backend-type) = 3 if you are using APSync to stream the dataflash log files to the RPi
 
-### Configure the serial port (UART)[¶](broken-reference)
+### Configure the serial port (UART)[¶](/broken/pages/q6KXZgAuStLTtrE9sU87)
 
 If not already configured, the Raspberry Pi’s serial port (UART) will need to be enabled. Use the Raspberry Pi configuration utility for this.
 
@@ -34,7 +34,7 @@ And in the utility, select “Interfacing Options”:
 
 
 
-RasPiConfiguration Utility[¶](broken-reference)
+RasPiConfiguration Utility[¶](/broken/pages/q6KXZgAuStLTtrE9sU87)
 
 And then “Serial”:
 
@@ -48,7 +48,7 @@ Reboot the Raspberry Pi when you are done.
 
 The Raspberry Pi’s serial port will now be usable on `/dev/serial0`.
 
-### Configure the Wifi[¶](broken-reference)
+### Configure the Wifi[¶](/broken/pages/q6KXZgAuStLTtrE9sU87)
 
 If desired, the Raspberry Pi’s Wifi can be configured to create a Wifi access point. This will allow other clients to connect to the RPi and stream telemetry. See the [official RPi documentation](https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md) for details.
 
@@ -56,11 +56,11 @@ Tip
 
 The built-in Wifi on the Raspberry Pi does not have a large range. If range is an issue, consider a USB Wifi adapter with external antenna.
 
-### Setup the RPi Software[¶](broken-reference)
+### Setup the RPi Software[¶](/broken/pages/q6KXZgAuStLTtrE9sU87)
 
 There are a few different software options for communicating with the flight controller. All use the MAVLink protocol for communication.
 
-#### APSync[¶](broken-reference)
+#### APSync[¶](/broken/pages/q6KXZgAuStLTtrE9sU87)
 
 The easiest way to setup the RPi is to flash one of the existing APSync images:
 
@@ -75,13 +75,13 @@ The easiest way to setup the RPi is to flash one of the existing APSync images:
 
 The APSync image will have the serial port (UART) already enabled.
 
-#### MAVProxy[¶](broken-reference)
+#### MAVProxy[¶](/broken/pages/q6KXZgAuStLTtrE9sU87)
 
 MAVProxy can be used to send commands to the flight controller from the Pi. It can also be used to route telemetry to other network endpoints.
 
 This assumes you have a SSH connection to the Pi. If not, see see the the [RPi Documentation](https://www.raspberrypi.org/documentation/remote-access/ssh/).
 
-See the [MAVProxy Documentation](https://ardupilot.org/mavproxy/docs/getting\_started/download\_and\_installation.html#mavproxy-downloadinstalllinux) for install instructions
+See the [MAVProxy Documentation](https://ardupilot.org/mavproxy/docs/getting_started/download_and_installation.html#mavproxy-downloadinstalllinux) for install instructions
 
 To test the RPi and flight controller are able to communicate with each other first ensure the RPi and flight controller are powered, then in a console on the RPi type:
 
@@ -113,7 +113,7 @@ Note
 
 If the Raspberry PI is heavily loaded, mavproxy.py might not provide a reliable connecton for telemetry routing. This is more likely on older/slower devices like the Raspberry PI Zero. If this happens, consider using mavlink-routerd. See this post on the ArduPilot forum for a detailed discussion: [MavLink Routing with Router software](https://discuss.ardupilot.org/t/mavlink-routing-with-a-router-software/82138#solution-1-3).
 
-#### Mavlink-router[¶](broken-reference)
+#### Mavlink-router[¶](/broken/pages/q6KXZgAuStLTtrE9sU87)
 
 Mavlink-router is used to route telemetry between the RPi’s serial port and any network endpoints. See the [documentation](https://github.com/intel/mavlink-router) for install and running instructions.
 
@@ -135,15 +135,15 @@ Port = 14550
 PortLock = 0
 ```
 
-#### mavp2p[¶](broken-reference)
+#### mavp2p[¶](/broken/pages/q6KXZgAuStLTtrE9sU87)
 
 mavp2p is a flexible and efficient Mavlink proxy / bridge / router, implemented in the form of a command-line utility. Functioning like MAVProxy’s router, mavp2p can replace MAVProxy in companion computers with limited resources. mavp2p has pre-built binaries for most common Raspberry PI architectures. [MAVp2p](https://github.com/aler9/mavp2p).
 
-#### DroneKit[¶](broken-reference)
+#### DroneKit[¶](/broken/pages/q6KXZgAuStLTtrE9sU87)
 
-The most up-to-date instructions for [Installing DroneKit](https://dronekit-python.readthedocs.io/en/latest/guide/quick\_start.html) on Linux are in the DroneKit-Python documentation.
+The most up-to-date instructions for [Installing DroneKit](https://dronekit-python.readthedocs.io/en/latest/guide/quick_start.html) on Linux are in the DroneKit-Python documentation.
 
-#### Rpanion-server[¶](broken-reference)
+#### Rpanion-server[¶](/broken/pages/q6KXZgAuStLTtrE9sU87)
 
 [Rpanion-server](https://www.docs.rpanion.com/software/rpanion-server) is a web-based GUI for configuring flight controller telemetry, logging, video streaming and network configuration.
 
@@ -156,7 +156,7 @@ Installation is via a disk image:
 
 The Rpanion-server image will have the serial port (UART) already enabled.
 
-### Connecting with the Mission Planner[¶](broken-reference)
+### Connecting with the Mission Planner[¶](/broken/pages/q6KXZgAuStLTtrE9sU87)
 
 The flight controller will respond to MAVLink commands received through Telemetry 1 and Telemetry 2 ports (see image at top of this page) meaning that both the RPi and the regular ground station (i.e. Mission planner, etc) can be connected. In addition it is possible to connect the Mission Planner to the MAVProxy application running on the RPi similar to how it is done for SITL.
 

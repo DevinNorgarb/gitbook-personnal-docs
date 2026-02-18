@@ -72,8 +72,7 @@ site:http://www.microsoft.com microsoft
 
 This query searches for the word microsoft, restricting the search to the http://www.microsoft.com web site. How many pages on the Microsoft web server contain the word microsoft? According to Google, all of them! Google searches not only the content of a page, but the title and URL as well. The word microsoft appears in the URL of every page on http://www.microsoft.com. With a single query, an attacker gains a rundown of every web page on a site cached by Google.
 
-There are some exceptions to this rule. If a link on the Microsoft web page points back to the IP address of the Microsoft web server, Google will cache that page as belonging to the IP address, not the http://www.microsoft.com web server. In this special case, an attacker would simply alter the query, replacing the word microsoft with the IP address(es) of the Microsoft web server.\
-
+There are some exceptions to this rule. If a link on the Microsoft web page points back to the IP address of the Microsoft web server, Google will cache that page as belonging to the IP address, not the http://www.microsoft.com web server. In this special case, an attacker would simply alter the query, replacing the word microsoft with the IP address(es) of the Microsoft web server.<br>
 
 #### Finding Directory Listings
 
@@ -142,8 +141,7 @@ The following table provides a brief rundown of some queries that can locate var
 | Many Netscape servers     | allintitle:Netscape Enterprise Server Home Page           |
 | Unknown Netscape server   | allintitle:Netscape FastTrack Server Home Page            |
 
-\
-
+<br>
 
 #### Using Google as a CGI Scanner
 

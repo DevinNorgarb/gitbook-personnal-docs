@@ -22,7 +22,7 @@ DroneBridge for ESP32 is a telemetry/low data rate only solution. There is no su
 * Reliable, low latency, light weight
 * Upload mission etc.
 
-![ESP32 module with VCP](https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/ESP32\_Espressif\_ESP-WROOM-32\_Dev\_Board.jpg/313px-ESP32\_Espressif\_ESP-WROOM-32\_Dev\_Board.jpg)
+![ESP32 module with VCP](https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/ESP32_Espressif_ESP-WROOM-32_Dev_Board.jpg/313px-ESP32_Espressif_ESP-WROOM-32_Dev_Board.jpg)
 
 Blackbox concept. UDP & TCP connections possible. Automatic UDP uni-cast of messages to port 14550 to all connected devices/stations. Allows additional clients to register for UDP. Client must send a packet with length > 0 to UDP port of ESP32.
 
@@ -66,8 +66,7 @@ There are many multiple ways on how to flash the firmware. The easy ones are exp
 **Windows only: Use flash download tools**
 
 1. [Get it here](https://www.espressif.com/en/support/download/other-tools?5)
-2. Erase the flash of the ESP32 befor flashing a new release\
-
+2. Erase the flash of the ESP32 befor flashing a new release<br>
 3.  Select the firmware, bootloader & partition table and set everything as below
 
     ```shell

@@ -298,8 +298,7 @@ Getting Started with CAN-BUS can be very fulfilling. It can be daunting as well,
 
 #### Instructions
 
-**Step 1: Hardware Connection**\
-
+**Step 1: Hardware Connection**<br>
 
 * Firstly, connect each CAN-BUS shield to Seeeduino V4.2 and connect the 2 CAN-BUS shields together via 2 jumper wires as shown below. (CAN\_H to CAN\_H and CAN\_L to CAN\_L)
 
@@ -320,8 +319,7 @@ Getting Started with CAN-BUS can be very fulfilling. It can be daunting as well,
 
 **Step 3: View Results**
 
-* Open the Serial Monitor of Arduino IDE (**slaver**), you will get the data sent from the master. Below is a photo of what it will look like:\
-
+* Open the Serial Monitor of Arduino IDE (**slaver**), you will get the data sent from the master. Below is a photo of what it will look like:<br>
 
 ![](https://raw.githubusercontent.com/SeeedDocument/CAN_BUS_Shield/master/image/serial_monitor.png)
 
@@ -384,8 +382,7 @@ init_Filt(unsigned char num, unsigned char ext, unsigned char ulData);
 INT8U MCP_CAN::checkReceive(void);
 ```
 
-The function will return 1 if a frame arrives, and 0 if nothing arrives.\
-
+The function will return 1 if a frame arrives, and 0 if nothing arrives.<br>
 
 **Get CAN ID**
 
@@ -417,8 +414,7 @@ CAN.sendMsgBuf(0x00, 0, 8, stmp); //send out the message 'stmp' to the bus and t
 
 **Receive Data**
 
-* The following function is used to receive data on the ‘receive’ node:\
-
+* The following function is used to receive data on the ‘receive’ node:<br>
 
 ```
 CAN.readMsgBuf(unsigned char len, unsigned char buf);

@@ -2,7 +2,7 @@
 
 ArduSub communicates with a protocol called MAVLink. Pymavlink is a python implementation of the MAVLink protocol. With pymavlink, it is possible to create a python script to read sensor data and send commands to an ArduSub vehicle.
 
-Please reference the pymavlink [documentation](https://mavlink.io/en/mavgen\_python/), [repository](https://github.com/ArduPilot/pymavlink) and [chat](https://gitter.im/ArduPilot/pymavlink) for further information.
+Please reference the pymavlink [documentation](https://mavlink.io/en/mavgen_python/), [repository](https://github.com/ArduPilot/pymavlink) and [chat](https://gitter.im/ArduPilot/pymavlink) for further information.
 
 ### Safety <a href="#safety" id="safety"></a>
 
@@ -72,24 +72,24 @@ There are 3 types of udp connections for `mavlink_connection`:
 
 #### Shortcut Links <a href="#shortcut-links" id="shortcut-links"></a>
 
-1. [Autopilot connected to the computer via serial](broken-reference)
-2. [Run pyMavlink on the surface computer](broken-reference)
-3. [Run pyMavlink on the companion computer](broken-reference)
-4. [Send Message to QGroundControl](broken-reference)
-5. [Arm/Disarm the vehicle](broken-reference)
-6. [Change flight mode](broken-reference)
-7. [Send RC (Joystick)](broken-reference)
-8. [Send Manual Control](broken-reference)
-9. [Read all parameters](broken-reference)
-10. [Read and write parameters](broken-reference)
-11. [Receive data and filter by message type](broken-reference)
-12. [Request message interval](broken-reference)
-13. [Control Camera Gimbal](broken-reference)
-14. [Set Servo PWM](broken-reference)
-15. [Advanced Servo/Gripper Example](broken-reference)
-16. [Set Target Depth/Attitude](broken-reference)
-17. [Send GPS position](broken-reference)
-18. [Send rangefinder/computer vision distance measurement to the autopilot](broken-reference)
+1. [Autopilot connected to the computer via serial](/broken/pages/1pfNTAir02mgT4TNEtvn)
+2. [Run pyMavlink on the surface computer](/broken/pages/1pfNTAir02mgT4TNEtvn)
+3. [Run pyMavlink on the companion computer](/broken/pages/1pfNTAir02mgT4TNEtvn)
+4. [Send Message to QGroundControl](/broken/pages/1pfNTAir02mgT4TNEtvn)
+5. [Arm/Disarm the vehicle](/broken/pages/1pfNTAir02mgT4TNEtvn)
+6. [Change flight mode](/broken/pages/1pfNTAir02mgT4TNEtvn)
+7. [Send RC (Joystick)](/broken/pages/1pfNTAir02mgT4TNEtvn)
+8. [Send Manual Control](/broken/pages/1pfNTAir02mgT4TNEtvn)
+9. [Read all parameters](/broken/pages/1pfNTAir02mgT4TNEtvn)
+10. [Read and write parameters](/broken/pages/1pfNTAir02mgT4TNEtvn)
+11. [Receive data and filter by message type](/broken/pages/1pfNTAir02mgT4TNEtvn)
+12. [Request message interval](/broken/pages/1pfNTAir02mgT4TNEtvn)
+13. [Control Camera Gimbal](/broken/pages/1pfNTAir02mgT4TNEtvn)
+14. [Set Servo PWM](/broken/pages/1pfNTAir02mgT4TNEtvn)
+15. [Advanced Servo/Gripper Example](/broken/pages/1pfNTAir02mgT4TNEtvn)
+16. [Set Target Depth/Attitude](/broken/pages/1pfNTAir02mgT4TNEtvn)
+17. [Send GPS position](/broken/pages/1pfNTAir02mgT4TNEtvn)
+18. [Send rangefinder/computer vision distance measurement to the autopilot](/broken/pages/1pfNTAir02mgT4TNEtvn)
 
 **Autopilot (E.g: Pixhawk) connected to the computer via serial**
 

@@ -6,11 +6,11 @@ This page shares issues that users have run into and how they were resolved. Hop
 
 **Vehicle has telemetry but does not respond to joystick**
 
-Make sure you followed the instructions in [Joystick/Gamepad Calibration](broken-reference) and that the "Enable joystick input" checkbox is checked.
+Make sure you followed the instructions in [Joystick/Gamepad Calibration](/broken/pages/egCtNlsx87OG4QPY7Tx0) and that the "Enable joystick input" checkbox is checked.
 
 **Vehicle flips itself over**
 
-Check that the motor directions are [configured correctly](broken-reference). Also check that the motors are connected to the correct motor outputs on the flight controller, according to the [supported frame diagrams](broken-reference).
+Check that the motor directions are [configured correctly](/broken/pages/UCZkOp5CG3bXMXonyQR2). Also check that the motors are connected to the correct motor outputs on the flight controller, according to the [supported frame diagrams](/broken/pages/LGhPI5bPmtGbPaJqNiWp).
 
 **Vehicle turns or moves even when not controlled to do so.**
 
@@ -26,7 +26,7 @@ The flight controller attempts to stabilize the vehicle's attitude so that it is
 
 **Verify Network Configuration**
 
-Verify that your [network settings](broken-reference) are correct. Verify your network configuration by entering the command `ipconfig` (Windows) or `ifconfig` (Mac/Linux) on the surface computer command line. The output should show that your Ethernet IP address is 192.168.2.1 and the subnet mask is 255.255.255.0.
+Verify that your [network settings](/broken/pages/LKNT51F1rClueAwLimcY) are correct. Verify your network configuration by entering the command `ipconfig` (Windows) or `ifconfig` (Mac/Linux) on the surface computer command line. The output should show that your Ethernet IP address is 192.168.2.1 and the subnet mask is 255.255.255.0.
 
 _Carefully double check that you have entered these numbers correctly_. The Ethernet IP address should be _exactly_ _**192.168.2.1**_ and the subnet mask should be _exactly_ _**255.255.255.0**_.
 
@@ -161,9 +161,9 @@ Here are some tips for troubleshooting poor video performance:
 
 The output servo rail on the Pixhawk requires a separate 5V power supply. The power module and USB power inputs on the Pixhawk will not power the servo rail. Make sure you have a 5V input on the servo rail via an ESC BEC or standalone BEC.
 
-Check that input/output channels are [configured for camera tilt](broken-reference).
+Check that input/output channels are [configured for camera tilt](/broken/pages/sZep9XtY3quXQ2wjnCT1).
 
-Check that joystick buttons [have been assigned](broken-reference) to camera tilt functions.
+Check that joystick buttons [have been assigned](/broken/pages/egCtNlsx87OG4QPY7Tx0) to camera tilt functions.
 
 #### "No io thread heartbeat" message constantly appears. <a href="#no-io-thread-heartbeat-message-constantly-appears" id="no-io-thread-heartbeat-message-constantly-appears"></a>
 

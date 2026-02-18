@@ -10,8 +10,7 @@ According to Shopify docs, a Carrier Service is:
 
 If we are creating an app that provides **shipping rates** on the checkout, then we need to provide an **endpoint** that will accept a **POST** request from Shopify and then return rates accordingly.
 
-In order to do that, we need to use **CarrierService** API and send a request like below:\
-
+In order to do that, we need to use **CarrierService** API and send a request like below:<br>
 
 ```
 POST /admin/api/2021-01/carrier_services.json
@@ -55,8 +54,7 @@ Unfortunately, there is no special identifier for this request. You can explore 
 #### What data is sent with service discovery request? <a href="#what-data-is-sent-with-service-discovery-request" id="what-data-is-sent-with-service-discovery-request"></a>
 
 Dummy data is sent when Shopify makes the service discovery request. Merchants cannot alter that data ( at the time writing this article, but this may change in future ).\
-Below is the JSON structure of the dummy data sent with service discovery request.\
-
+Below is the JSON structure of the dummy data sent with service discovery request.<br>
 
 ```
 {
@@ -149,4 +147,4 @@ In this post, we explored the **service discovery** request sent by Shopify to a
 
 Unfortunately, this feature is not properly documented in Shopify docs. All the information that is stated above, was found by trial and error approach.
 
-\
+<br>
