@@ -2,7 +2,7 @@
 
 [**Sorry Cypress**](https://sorry-cypress.dev/) is open-source, free alternative to Cypress Dashboard that unlocks unlimited parallelization, test recordings, integration with GitHub, Slack and more.
 
-[**Currents.dev**](https://currents.dev/?utm\_source=github\_readme) - is an enhanced version of Sorry Cypress. It is a managed cloud service that hundreds of companies around the globe use to run **millions** of Cypress tests without breaking the bank. It offers a better security, performance, analytics, integrations and support.
+[**Currents.dev**](https://currents.dev/?utm\_source=github\_readme) - is an enhanced version of Sorry Cypress. It is a managed cloud service that hundreds of companies around the globe use to run **millions** of Cypress tests without breaking the bank. It offers better security, performance, analytics, integrations and support.
 
 ### Table of contents
 
@@ -42,8 +42,5 @@ Follow our [Guide](https://docs.sorry-cypress.dev/guide/get-started).
 
 #### Is it production-ready?
 
-Yes. Have been used by dozens of companies of different sizes around the globe.
+Yes. It has been used by dozens of companies of different sizes around the globe.
 
-####
-
-\

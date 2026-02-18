@@ -1,6 +1,6 @@
 # Cloud Init Script to Create a new user
 
-In oirder to set a hashed pqassword, run this command and enter your paaaword when prompted:
+In order to set a hashed password, run this command and enter your password when prompted:
 
 
 
@@ -13,7 +13,7 @@ The output of the password "test" looks like:
 <pre><code><strong>$6$JhSQSLFN2/bd6u5N$BHAfXwewZ4aqNvtaYxFWfWq8BFU.uYvJc0nHulEZfbWkw3YLKM.1Aql5DHnz0FsTitZUZ8xn1EzxfQLDJin.B0
 </strong></code></pre>
 
-```json
+```yaml
 #cloud-config
 users:
   - default
