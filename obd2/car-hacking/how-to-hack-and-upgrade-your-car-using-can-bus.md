@@ -6,7 +6,7 @@ This document is aimed at those unfamiliar with CAN bus or the reverse engineeri
 
 It is assumed that the reader has moderate programming knowledge and basic electronics knowledge, however, links to resources will be provided in each section for those that need additional information.
 
-#### In this tutorial you will cover:
+#### In this tutorial we will cover:
 
 * What is CAN bus?
 * The basics of an Arduino microcontroller.
@@ -15,13 +15,13 @@ It is assumed that the reader has moderate programming knowledge and basic elect
 * How to retrieve data from a vehicle’s CAN bus network.
 * How to interpret data from a CAN bus network.
 * How to build a software or hardware interface to interpret the data.
-* Required Electronics
+#### Required Electronics
 
-To follow this tutorials content properly, you will need several key items which are listed below. Links to online sellers are included in the equipment sources section.
+To follow this tutorial's content properly, you will need several key items which are listed below. Links to online sellers are included in the equipment sources section.
 
 #### You will need:
 
-* A Spark fun CAN bus shield
+* A SparkFun CAN bus shield
 * A micro SD card.
 * A DB9 to OBD connector, for connecting to the diagnostics port of the vehicle.
 * Arduino UNO
@@ -29,13 +29,13 @@ To follow this tutorials content properly, you will need several key items which
 * Arduino Male to Male, Male to Female and Female to Female jumper wires.
 * Soldering Iron and solder.
 
-Please note that you do not need the exact hardware listed, you can still use this tutorial should you use alternative hardware such as a Seeduino CAN bus shield, however, the code provided will only work with the Sparkfun shield, but can be modified for other hardware.
+Please note that you do not need the exact hardware listed, you can still use this tutorial should you use alternative hardware such as a Seeeduino CAN bus shield, however, the code provided will only work with the Sparkfun shield, but can be modified for other hardware.
 
 ### Step 1: ​Required Knowledge
 
 #### Required Knowledge
 
-In order to follow this tutorial, you need: Some programming experience with C++, Java or similar programming languages, if you are not, there will be some help provided by the tutorial, but please refer to the electronics and programming resources section. Some electronics knowledge, you need to understand basic electronics concepts such as what voltage, current and a circuit are. If you do not know, there will some help provided by the tutorial, but please refer to electronics and programming resources section.
+In order to follow this tutorial, you need: Some programming experience with C++, Java or similar programming languages, if you are not, there will be some help provided by the tutorial, but please refer to the electronics and programming resources section. Some electronics knowledge, you need to understand basic electronics concepts such as what voltage, current and a circuit are. If you do not know, there will be some help provided by the tutorial, but please refer to electronics and programming resources section.
 
 #### Required software: Arduino IDE
 
@@ -64,7 +64,7 @@ Please note, the systems you are working on are electrical, as such, there are p
 * Wear nonconductive or electrically insulating gloves.
 * Avoid wearing clothing that builds a static charge
 
-**When working with systems that cause injure yourself or others, practice safe behaviours.**
+**When working with systems that may cause injury to yourself or others, practice safe behaviours.**
 
 * Do not test systems in areas that put anyone in danger
 * Do not test systems that put yourself in danger without appropriate precautions.

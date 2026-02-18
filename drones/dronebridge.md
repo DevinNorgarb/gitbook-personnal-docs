@@ -8,7 +8,7 @@ description: https://github.com/DroneBridge/DroneBridge
 
 ![DroneBridge](https://raw.githubusercontent.com/seeul8er/DroneBridge/nightly/wiki/DroneBridgeLogo\_text.png)
 
-DroneBridge is a system based on the [WifiBroadcast](https://befinitiv.wordpress.com/wifibroadcast-analog-like-transmission-of-live-video-data/) approach. A bidirectional digital radio link between two endpoints is established using standard WiFi hardware and a custom protocol. DroneBridge is optimized for use in UAV applications and is a complete system. It is intended be a real alternative to other similar systems, such as DJI Lightbridge or OcuSync.
+DroneBridge is a system based on the [WifiBroadcast](https://befinitiv.wordpress.com/wifibroadcast-analog-like-transmission-of-live-video-data/) approach. A bidirectional digital radio link between two endpoints is established using standard WiFi hardware and a custom protocol. DroneBridge is optimized for use in UAV applications and is a complete system. It is intended to be a real alternative to other similar systems, such as DJI Lightbridge or OcuSync.
 
 DroneBridge features support for **Raspberry Pi**, **ESP32** on the UAV/ground station side and an **android app**.
 
@@ -73,7 +73,7 @@ For further information have a look at the [DB for ESP32 main page](https://gith
 
 ### DroneBridge Modules
 
-DroneBridge is highly modularized to provide flexebility and make development easy. There is a common library for Python 3 and C/C++ that handles everything involving the DroneBridge raw protocol. It configures the sockets, inits the protocol and provides methods for easy transmission. Instead of the Android app any other GCS can be used.
+DroneBridge is highly modularized to provide flexibility and make development easy. There is a common library for Python 3 and C/C++ that handles everything involving the DroneBridge raw protocol. It configures the sockets, inits the protocol and provides methods for easy transmission. Instead of the Android app any other GCS can be used.
 
 [Read more in the Wiki](https://dronebridge.gitbook.io/docs/developer-guide/dronebridge-lib-example-usage)
 

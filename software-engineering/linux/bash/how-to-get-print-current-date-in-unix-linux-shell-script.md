@@ -13,7 +13,7 @@ Current date in Unix or Linux shell scripting and store it into a shell variable
 | Requirements      | Linux or Unix                                  |
 | Est. reading time | 3 minutes                                      |
 
-You need to use the following syntax to print current date and time on screen:ADVERTISEMENT\
+You need to use the following syntax to print current date and time on screen:
 
 
 ```
@@ -48,10 +48,10 @@ You can [format and display date using](https://www.cyberciti.biz/faq/linux-unix
 ```
 date +'FORMAT'
  
-### mm/dd/yyyy ###
+### mm/dd/yyyy
 date +'%m/%d/%Y'
  
-## Time in 12 hr format ###
+### Time in 12 hr format ###
 date +'%r'
  
 ## backup dir format ##
