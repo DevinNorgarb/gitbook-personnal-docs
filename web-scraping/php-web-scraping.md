@@ -1,6 +1,6 @@
 # PHP Web Scraping
 
-This list contains PHP libraries related to web scraping and data processing
+This list contains PHP libraries related to web scraping and data processing.
 
 * PHP Web Scraping
   * Network

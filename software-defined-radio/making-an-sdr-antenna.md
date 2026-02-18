@@ -4,9 +4,9 @@ description: Making Antennas for 1090MHz ADS-B Aircraft Tracking
 
 # Making an SDR Antenna
 
-Page found on this link orginally [https://lucsmall.com/2017/02/06/making-antennas-for-1090mhz-ads-b-aircraft-tracking/](https://lucsmall.com/2017/02/06/making-antennas-for-1090mhz-ads-b-aircraft-tracking/)
+Page found on this link originally [https://lucsmall.com/2017/02/06/making-antennas-for-1090mhz-ads-b-aircraft-tracking/](https://lucsmall.com/2017/02/06/making-antennas-for-1090mhz-ads-b-aircraft-tracking/)
 
-Over the southern hemiphere summer of 2016/2017 I made a flurry of antennas tuned to 1090MHz to capture position information from aircraft ADS-B broadcasts. Here I document them, from newest to oldest.
+Over the southern hemisphere summer of 2016/2017 I made a flurry of antennas tuned to 1090MHz to capture position information from aircraft ADS-B broadcasts. Here I document them, from newest to oldest.
 
 The nice thing about making antennas for Gigahertz frequencies is that they tend to be rather compact. The wavelength of a 1090MHz transmission is approximately 275mm. Since the length of the antenna elements shares a relationship with the wavelength, this means you can make antennas with few materials, very inexpensively.
 
@@ -24,7 +24,7 @@ wavelength = 299,792,000 m/s / 1,090,000,000Hz
 
 wavelength = 0.275m = 275mm
 half wavelength = 137.5mm
-quarter wavelength = 68.75mm 
+quarter wavelength = 68.75mm
 ```
 
 For most antenna’s below, it’s the quarter wavelength measurement that we’re interested in. I round this up to **69mm** for convenience.
