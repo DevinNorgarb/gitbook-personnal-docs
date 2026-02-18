@@ -167,7 +167,7 @@ public function originalMethod() {
     try {
         $this->myMethod();
     } catch (Exception $exception) {
-        $this->handle($exception);   
+        $this->handle($exception);
     }
 }
 ```

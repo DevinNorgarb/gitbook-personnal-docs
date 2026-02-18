@@ -42,8 +42,8 @@ This list contains PHP libraries related to web scraping and data processing
 
 * [HTML5 PHP](https://github.com/Masterminds/html5-php) - An HTML5 parser and serializer library.
 * [QueryPath](https://github.com/technosophos/querypath) - a jQuery-like library for working with XML and HTML documents in PHP. It now contains support for HTML5 via the HTML5-PHP project.
-* [DiDOM](https://github.com/Imangazaliev/DiDOM) - super fast HTML parser (because it was build on top of plain PHP).
-* [PHPScraper](https://github.com/spekulatius/phpscraper) - an highly opinionated web-interface.
+* [DiDOM](https://github.com/Imangazaliev/DiDOM) - Super fast HTML parser (because it was built on top of plain PHP).
+* [PHPScraper](https://github.com/spekulatius/phpscraper) - A highly opinionated web interface.
 * [DomCrawler](https://github.com/symfony/dom-crawler) - (Symfony) - The DomCrawler component eases DOM navigation for HTML and XML documents.
 
 ### Text Processing
@@ -65,7 +65,7 @@ _Libraries for parsing and manipulating plain texts._
   * [Device Detector](https://github.com/piwik/device-detector) - Another library for parsing user agent strings.
   * [Mobile-Detect](https://github.com/serbanghita/Mobile-Detect) - A lightweight PHP class for detecting mobile devices (including tablets).
   * [UA Parser](https://github.com/tobie/ua-parser/tree/master/php) - A library for parsing user agent strings.
-* Unites of measure
+* Units of measure
   * [ByteUnits](https://github.com/gabrielelana/byte-units) - A library to parse, format and convert byte units in binary and metric systems.
   * [PHP Units of Measure](https://github.com/triplepoint/php-units-of-measure) - A library for converting between units of measure.
   * [PHP Conversion](https://github.com/Crisu83/php-conversion) - Another library for converting between units of measure.
@@ -88,7 +88,7 @@ _Libraries for parsing and manipulating specific text formats._
   * [CommonMark PHP](https://github.com/thephpleague/commonmark) - A Markdown parser which supports the full [CommonMark spec](http://spec.commonmark.org/).
   * [Parsedown](https://github.com/erusev/parsedown) - Another Markdown parser.
   * [Ciconia](https://github.com/kzykhys/Ciconia) - Another Markdown parser that supports Github flavoured Markdown.
-  * [Cebe Markdown](https://github.com/cebe/markdown) - An fast and extensible Markdown parser.
+  * [Cebe Markdown](https://github.com/cebe/markdown) - A fast and extensible Markdown parser.
 * BBCode
   * [Decoda](https://github.com/milesj/decoda) - A lightweight lexical string parser for BBCode styled markup.
 * JSON

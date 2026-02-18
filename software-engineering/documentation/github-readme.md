@@ -40,7 +40,7 @@ This is a [github action](https://docs.github.com/en/actions) for those who use 
 
     jobs:
       update-Readme:
-        name: Automatically update my README  
+        name: Automatically update my README
         runs-on: ubuntu-latest
         steps:
           - uses: tariksahni/coding-stats-wakatime@v1.0.0
@@ -59,5 +59,5 @@ This is a [github action](https://docs.github.com/en/actions) for those who use 
       push:
         branches: [ master ]
       schedule:
-        - cron: '30 5 * * *' 
+        - cron: '30 5 * * *'
     ```

@@ -31,7 +31,7 @@ If this project is helpful to you and love my work and feel like showing love/ap
 
 **Note**
 
-After v1.0.4 release, Monkey-DL now uses a custom HLSDownloader to download from streams, which is over 10x faster than downloading from FFMPEG. FFMPEG is now optional to be installed in system. FFMPEG will only be used if there is any error occured. So for now, it is safe FFMPEG to be installed as well. FFMPEG dependency will be removed completely soon in a later release
+After v1.0.4 release, Monkey-DL now uses a custom HLSDownloader to download from streams, which is over 10x faster than downloading from FFMPEG. FFMPEG is now optional to be installed in the system. FFMPEG will only be used if any error occurs. So for now, it is safe to have FFMPEG installed as well. FFMPEG dependency will be removed completely soon in a later release.
 
 | Website                                    | Sub/Dub selection | Need recaptcha token? | Supported resolutions                                              | FFMPEG needed? | File Size                     | Additional Notes                                                                              |
 | ------------------------------------------ | ----------------- | --------------------- | ------------------------------------------------------------------ | -------------- | ----------------------------- | --------------------------------------------------------------------------------------------- |
@@ -46,13 +46,13 @@ After v1.0.4 release, Monkey-DL now uses a custom HLSDownloader to download from
 
 ### Download Anime Downloader \[Windows]
 
-> Note : Currently only windows executable is provided (Linux, Mac users go to Build from source)
+> Note: Currently only windows executable is provided (Linux, Mac users go to Build from source)
 
 Download the [Latest Release](https://github.com/Oshan96/Anime-Downloader/releases) from here and extract the zip file
 
 ### Downloading Your Favourite Anime
 
-First of all for websites which require capatcha token, Anime Downloader uses [2captcha](https://www.2captcha.com) to bypass google recaptcha, so you need to purchase one (Check whether your anime website needs captcha token)
+First of all for websites which require captcha token, Anime Downloader uses [2captcha](https://www.2captcha.com) to bypass google recaptcha, so you need to purchase one (Check whether your anime website needs captcha token)
 
 Open settings.json and set [2captcha](https://2captcha.com/) API key in "api\_key"
 
@@ -83,7 +83,7 @@ Navigate to the extracted folder and open a cmd or powershell window from that f
 
 It is same as the CLI version, but provided a graphical user interface to collect necessary parameters.
 
-Note : After v1.0.4 and anove, Anime Downloader was named as "Monkey-DL" and the executable is called "monkey-dl.exe"
+Note: After v1.0.4 and above, Anime Downloader was named as "Monkey-DL" and the executable is called "monkey-dl.exe"
 
 * v1.0.4 and above: Execute the "monkey-dl.exe" to start.
 * v1.0.3 and lower: Execute the "anime-dl.exe" to start.
@@ -96,7 +96,7 @@ python3 ./anime-dl.py
 
 And the GUI will appear as following :
 
-**Note : If you don't have a 2captcha API key, you need to provide "Recaptcha Token" in the given text field for websites require captcha token (check FAQ section)**
+**Note: If you don't have a 2captcha API key, you need to provide "Recaptcha Token" in the given text field for websites require captcha token (check FAQ section)**
 
 ### How to download using anime-dl (CLI)?
 
@@ -111,7 +111,7 @@ Commands List :
   -s, --start           Starting episode
   -e, --end             End episode
   -c, --code            Recaptcha answer token code. Insert this if you don't have 2captcha captcha bypass api_key
-  -t, --threads         Number of parrallel downloads. Will download sequencially if not provided
+  -t, --threads         Number of parallel downloads. Will download sequentially if not provided
   -f, --filler          Whether fillers needed (True/False)
 ```
 
@@ -124,10 +124,10 @@ Above mentioned are the arguments you should use in order to download anime.
 #### Q - How can I download one piece anime episodes from 10 to 20?
 
 ```bash
-./anime-dl.py -u https://9anime.to/watch/one-piece.ov8/169lyx -s 10 -e 20 -n https://www.animefillerlist.com/shows/one-piece 
+./anime-dl.py -u https://9anime.to/watch/one-piece.ov8/169lyx -s 10 -e 20 -n https://www.animefillerlist.com/shows/one-piece
 ```
 
-Explantion of the commands used :
+Explanation of the commands used:
 
 1. \-u https://9anime.to/watch/one-piece.ov8/169lyx : After the "-u" the 9anime.to url for one piece anime is provided
 2. \-s 10 : start downloading from 10th episode (included)
@@ -137,7 +137,7 @@ Explantion of the commands used :
 #### Q - How can I download one piece anime episodes 30 to 70 into "D:\Anime\One Piece" folder?
 
 ```bash
-./anime-dl.py -u https://9anime.to/watch/one-piece.ov8/169lyx -s 30 -e 70 -n https://www.animefillerlist.com/shows/one-piece -d "D:\Anime\One Piece" 
+./anime-dl.py -u https://9anime.to/watch/one-piece.ov8/169lyx -s 30 -e 70 -n https://www.animefillerlist.com/shows/one-piece -d "D:\Anime\One Piece"
 ```
 
 Explanation of commands :
@@ -170,7 +170,7 @@ Answer : Yes ofcourse! If you don't have a 2captcha API key to bypass captcha, y
 
 Let's try it!
 
-> Note : There was a bug in v0.0.2-alpha release regarding this solution, so please download v0.0.3-alpha
+> Note: There was a bug in v0.0.2-alpha release regarding this solution, so please download v0.0.3-alpha
 
 > Assumptions : let's assume you want to download bleach episodes as in the previous question
 
@@ -231,10 +231,10 @@ If the command doesn't work, you may need to run `sudo apt update` first then ru
 
 #### Installing
 
-1. Download the dependancies using requirements.txt file
+1. Download the dependencies using requirements.txt file
 
 ```
-pip install -r requirements.txt 
+pip install -r requirements.txt
 ```
 
 2. Rename settings\_example.json as settings.json
@@ -250,7 +250,7 @@ pip install -r requirements.txt
 
 Anime Downloader is a CLI application which takes command line arguments in execution time
 
-Note : The package structure has been changed and the source (working) directory is now "anime\_downloader/"
+Note: The package structure has been changed and the source (working) directory is now "anime\_downloader/"
 
 First change your working directory to "anime\_downloader/" before running the script
 
@@ -278,14 +278,14 @@ optional arguments:
   -s, --start           Starting episode
   -e, --end             End episode
   -c, --code            Recaptcha answer token code. Insert this if you don't have 2captcha captcha bypass api_key
-  -t, --threads         Number of parrallel downloads. Will download sequencially if not provided
+  -t, --threads         Number of parallel downloads. Will download sequentially if not provided
   -f, --filler          Whether fillers needed (True/False)
 
 ```
 
 ### Examples
 
-Download One Piece episodes from 130 to 180 without filler episodes into "K:\Anime\One-Piece" folder with episode names (3 simultanious downloads a time)
+Download One Piece episodes from 130 to 180 without filler episodes into "K:\Anime\One-Piece" folder with episode names (3 simultaneous downloads at a time)
 
 ```bash
 python3 ./Anime_Downloader -u https://9anime.to/watch/one-piece.ov8/169lyx -s 130 -e 180 -f False -d "F:\Anime\One-Piece" -n https://www.animefillerlist.com/shows/one-piece -t 3

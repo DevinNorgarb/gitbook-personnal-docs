@@ -41,7 +41,7 @@ will not work.
 
 **3. Restricting Unsafe JavaScript**[**¶**](https://cheatsheetseries.owasp.org/cheatsheets/Content\_Security\_Policy\_Cheat\_Sheet.html#3-restricting-unsafe-javascript)
 
-By preventing the page from executing text-to-JavaScript functions like `eval`, the website will be safe from vulnerabilities like the this:
+By preventing the page from executing text-to-JavaScript functions like `eval`, the website will be safe from vulnerabilities like this:
 
 ```
 // A Simple Calculator
