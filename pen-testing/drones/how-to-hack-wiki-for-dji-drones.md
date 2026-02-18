@@ -1,7 +1,5 @@
 # How To Hack Wiki for DJI Drones
 
-
-
 {% embed url="https://wiki.dji-rev.com/howto/start" %}
 
 ## DJI Hacking HowTo Guides <a href="#dji_hacking_howto_guides" id="dji_hacking_howto_guides"></a>

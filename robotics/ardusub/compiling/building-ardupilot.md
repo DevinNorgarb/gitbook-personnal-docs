@@ -1,7 +1,5 @@
 # Building ArduPilot
 
-##
-
 ### Get the Source
 
 Clone the project from GitHub:
@@ -11,7 +9,7 @@ git clone --recursive https://github.com/ArduPilot/ardupilot.git
 cd ardupilot
 ```
 
-Ardupilot is gradually moving from the make-based build system to [Waf](https://waf.io/). The instructions below should be enough for you to build Ardupilot, but you can also read more about the build system in the [Waf Book](https://waf.io/book/).
+ArduPilot is gradually moving from the make-based build system to [Waf](https://waf.io/). The instructions below should be enough for you to build ArduPilot, but you can also read more about the build system in the [Waf Book](https://waf.io/book/).
 
 Waf should always be called from the ardupilot's root directory. Differently from the make-based build, with Waf there's a configure step to choose the board to be used (default is `sitl`).
 
@@ -35,7 +33,7 @@ There are several commands in the build system for advanced usages, but here we 
     ./waf copter
     ```
 
-    If building for the bebop2 the binary must be built statically:
+    If building for the Bebop 2, the binary must be built statically:
 
     ```
     ./waf configure --board bebop --static
