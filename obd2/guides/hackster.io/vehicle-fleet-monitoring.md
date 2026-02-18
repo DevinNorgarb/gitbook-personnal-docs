@@ -66,7 +66,7 @@ If you want to follow along and perhaps even help contribute, you can order the 
 
 #### A few takeaways before we begin.. <a href="#toc-a-few-takeaways-before-we-begin--5" id="toc-a-few-takeaways-before-we-begin--5"></a>
 
-* [Node.JS](http://node.js/) didn't work out. I spent a lot of time trying to get the node libraries working and found that a lot of them had been neglected a long while and with so many version changes of node in that time, a few things didn't work out as efficiently. So I've switched to Python, which I think is better for beginners as it has less dependancies.
+* [Node.JS](http://node.js/) didn't work out. I spent a lot of time trying to get the node libraries working and found that a lot of them had been neglected a long while and with so many version changes of node in that time, a few things didn't work out as efficiently. So I've switched to Python, which I think is better for beginners as it has less dependencies.
 * I started off with what I didn't realize was a knockoff of the USB ScanTool OBDII reader. This caused some compatibility issues as it had no firmware support. I reccomend using this one [https://www.amazon.com/gp/product/B005ZWM0R4/ref=oh\_aui\_detailpage\_o00\_s00?ie=UTF8\&psc=1](https://www.amazon.com/gp/product/B005ZWM0R4/ref=oh\_aui\_detailpage\_o00\_s00?ie=UTF8\&psc=1)
 
 **Alright, with that in mind, lets get started!**
@@ -177,7 +177,7 @@ sudo hologram network connect
 * Start the script
 
 ```
-sudo python 
+sudo python
 ```
 
 #### WHOA!! <a href="#toc-whoa---16" id="toc-whoa---16"></a>

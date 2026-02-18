@@ -2,7 +2,7 @@
 description: 'Credit: https://medevel.com/13-os-webrtc-server/'
 ---
 
-# Opensource WebRTC Projects
+# Open-source WebRTC Projects
 
 ## Top 13 open-source WebRTC projects to build Video conferencing and calling app
 
@@ -10,7 +10,7 @@ WebRTC is an open-source framework that enables real-time communications for the
 
 In contrast, it is the basic protocol that allows web apps and websites to capture and stream videos and audio and exchange data between web browsers.
 
-WebRTC is created first by Google to make peer-to-peer communication possible for web browsers and mobile apps, leading to dozens of video and audio communication apps that we use every day.
+WebRTC was first created by Google to make peer-to-peer communication possible for web browsers and mobile apps, leading to dozens of video and audio communication apps that we use every day.
 
 It is a free and open-source project, which means it does not require any cost to run and use it
 
@@ -40,7 +40,7 @@ Kurento is licensed under Apache 2.0 open-source license.
 
 [Ant Media Server](https://github.com/ant-media/ant-media-server) is a media server for building real-time video and audio communication tools with low latency streaming.
 
-In addition to its support to WebRTC, Ant Media also supports many protocols like CMAF, HLS, RTMP, RCSP, and many others.
+In addition to its support to WebRTC, Ant Media also supports many protocols like CMAF, HLS, RTMP, RTSP, and many others.
 
 Ant Media Server is highly scalable, with 0.5 latency, and can be installed on-premise or on-cloud.
 
@@ -150,7 +150,7 @@ OvenMediaEngine supports many communication inputs/ outputs protocols and comes 
 
 The supported protocols include WebRTC, RTMP, SRT, RTSP, and TS.
 
-OpenMediaEngine comes with a built-in embedded live Transcoder that supports VP8, H264, Opus, AAC, and Pass-Through.
+OvenMediaEngine comes with a built-in embedded live transcoder that supports VP8, H264, Opus, AAC, and Pass-Through.
 
 ### 11- Temasys <a href="#11temasys" id="11temasys"></a>
 
@@ -172,7 +172,7 @@ You can obtain the source code and run it, or customize it for personal and comm
 
 ### 13- PeerJS Server and Library <a href="#13peerjs-server-and-library" id="13peerjs-server-and-library"></a>
 
-[PeerJS](https://peerjs.com/) Library warps the browser's WebRTC implementation with an easy-to-use JavaScript API to build real-time peer-to-peer video and audio calling apps.
+[PeerJS](https://peerjs.com/) Library wraps the browser's WebRTC implementation with an easy-to-use JavaScript API to build real-time peer-to-peer video and audio calling apps.
 
 Both PeerJS client and server are free and open-source for anyone to download, install, run and build video/ audio apps.
 

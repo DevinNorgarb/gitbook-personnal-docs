@@ -59,7 +59,7 @@ Firefox doesn’t have the option “Copy styles” that Chrome has so it’s a 
 
 ![Firefox Devtools (styles panel)](https://d33wubrfki0l68.cloudfront.net/33e34058311b007780b59e094e144cd454cc1132/840d0/assets/images/ffx-devtools-styles-min.jpg)
 
-As you can see, some rules are striked-through (canceled) because they are overriden by properties above that has higher CSS specificity.
+As you can see, some rules are struck-through (canceled) because they are overridden by properties above that have higher CSS specificity.
 
 To copy the element’s CSS on Firefox, you’ll need to select all the text that you’re seeing:
 
@@ -67,7 +67,7 @@ To copy the element’s CSS on Firefox, you’ll need to select all the text tha
 
 But most of the time this is going to give you a very polluted and big code, and it doesn’t copy multiple elements at once.
 
-If you want the code to be smaller and cleaner, you’ll have to remove the overriden rules and selectors by yourself, one by one, or use a tool like [CSS Scan](https://getcssscan.com/?ref=blog-2), which can also copy not only the selected element but also all its child elements with a single click.
+If you want the code to be smaller and cleaner, you’ll have to remove the overridden rules and selectors by yourself, one by one, or use a tool like [CSS Scan](https://getcssscan.com/?ref=blog-2), which can also copy not only the selected element but also all its child elements with a single click.
 
 #### On Safari (without CSS Scan): <a href="#on-safari-without-css-scan" id="on-safari-without-css-scan"></a>
 
@@ -83,7 +83,7 @@ Now, hover over the element you want to copy. Then, right-click on it and choose
 
 On the right panel of the Devtools, it’s the CSS code (styles) we want to copy.
 
-As you can see, some rules are striked-through (canceled) because they are overriden by properties above that has higher CSS specificity.
+As you can see, some rules are struck-through (canceled) because they are overridden by properties above that have higher CSS specificity.
 
 To copy the element’s CSS on Safari, you’ll need to select all the text that you’re seeing:
 
@@ -91,5 +91,4 @@ To copy the element’s CSS on Safari, you’ll need to select all the text that
 
 But most of the time this is going to give you a very polluted and big code, and it doesn’t copy multiple elements at once.
 
-If you want the code to be smaller and cleaner, you’ll have to remove the overriden rules and selectors by yourself, one by one, or use a tool like [CSS Scan](https://getcssscan.com/?ref=blog-2), which can also copy not only the selected element but also all its child elements with a single click.
-
+If you want the code to be smaller and cleaner, you’ll have to remove the overridden rules and selectors by yourself, one by one, or use a tool like [CSS Scan](https://getcssscan.com/?ref=blog-2), which can also copy not only the selected element but also all its child elements with a single click.

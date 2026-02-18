@@ -19,7 +19,7 @@ First create two Linux Bridges on Proxmox VE, which will be used for LAN and WAN
 * Select the host from the server view
 * Navigate to **System > Network**
 
-This example uses `enp4s0` and `enp5s0` interfaces for the firewall, while `enp3s0` is for Proxmox VE management. The naming of interfaces will vary depening on the hardware involved (interface type, bus location, etc.).
+This example uses `enp4s0` and `enp5s0` interfaces for the firewall, while `enp3s0` is for Proxmox VE management. The naming of interfaces will vary depending on the hardware involved (interface type, bus location, etc.).
 
 <figure><img src="https://docs.netgate.com/pfsense/en/latest/_images/pve-01-network.png" alt=""><figcaption></figcaption></figure>
 

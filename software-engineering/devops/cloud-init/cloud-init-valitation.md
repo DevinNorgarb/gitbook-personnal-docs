@@ -1,6 +1,6 @@
-# Cloud-Init Valitation
+# Cloud-Init Validation
 
-To validate the cloud-init config file I used the ubuntu cloud-init cli command like so:
+To validate the cloud-init config file, I used the Ubuntu cloud-init CLI command like so:
 
 ```shell-session
 cloud-init devel schema --config-file test.yml

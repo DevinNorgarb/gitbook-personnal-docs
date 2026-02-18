@@ -32,7 +32,7 @@ $ ip route show default 0.0.0.0/0
 
 default via 192.168.1.1 dev enp5s12 proto static metric 100
 
-Now we are ready to add the appropriate device to the `macvlan` LXD profile. We use the _**lxc profile device add**_ command to add a _device_ _**eth0**_ to the profile _**lanprofile**_. We set _nictype_ to _macvlan_, and _parent_ to _enp5s12_.
+Now we are ready to add the appropriate device to the `macvlan` LXD profile. We use the _**lxc profile device add**_ command to add a _device_ _**eth0**_ to the profile _**macvlan**_. We set _nictype_ to _macvlan_, and _parent_ to _enp5s12_.
 
 $ lxc profile device add macvlan eth0 nic nictype=macvlan parent=enp5s12
 
@@ -68,7 +68,7 @@ Both containers got their IP address from the LAN router. Here is the router adm
 
 Let’s _ping_ from one container to the other.
 
-$ lxc exec net1 -- ping -c 3 192.168.1.7
+$ lxc exec net1 -- ping -c 3 192.168.1.3
 
 PING 192.168.1.7 (192.168.1.7) 56(84) bytes of data.
 

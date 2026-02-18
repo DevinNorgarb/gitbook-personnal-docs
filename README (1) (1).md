@@ -1,5 +1,5 @@
-# Ubuntu set keyboard backlight
+# Ubuntu: Set Keyboard Backlight
 
-```
-xset led 3 
+```bash
+xset led 3
 ```

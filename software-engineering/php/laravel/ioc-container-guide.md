@@ -33,7 +33,7 @@ $paymentService = app()->make(PaymentServiceInterface::class);
 
 **Basic Concepts and Terminology**
 
-To effectively use the Laravel Service Container, it’s important to understand following:
+To effectively use the Laravel Service Container, it’s important to understand the following:
 
 * **Service Provider:** This is basically a class which instructs the container in the built-up of services. It’s the part that binds interfaces to concrete classes or registers services and their configurations.
 * **Binding** : The process of telling the container that when asked for a certain class, it should return a specific implementation.

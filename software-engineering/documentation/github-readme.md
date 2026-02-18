@@ -2,15 +2,15 @@
 description: How to add some life to your Github profile homepage
 ---
 
-# Github README
+# GitHub README
 
 
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-This is a [github action](https://docs.github.com/en/actions) for those who uses [Wakatime](https://wakatime.com/dashboard) to track their coding activity. You can add the stats from wakatime in your github profile's [README](https://github.com/DevinNorgarb/) or any other repository.
+This is a [github action](https://docs.github.com/en/actions) for those who use [Wakatime](https://wakatime.com/dashboard) to track their coding activity. You can add the stats from wakatime in your github profile's [README](https://github.com/DevinNorgarb/) or any other repository.
 
-**Here's an example of my coding activity in last one week**
+**Here's an example of my coding activity over the last week**
 
 
 
@@ -51,8 +51,8 @@ This is a [github action](https://docs.github.com/en/actions) for those who uses
               GITHUB_ACTION: ${{ github.action }}
     ```
 
-    Note: You can chose the duration of your activity from monthly(default) to weekly. For weekly set `SHOW_MONTHLY: false`.
-6.  The workflow will run at 10AM IST everyday or you can force run it by going to Action tab. Or you can add following lines under `on:` to run with every push. Search for 12 AM UTC to find equivalent time in your time zone.
+    Note: You can choose the duration of your activity from monthly(default) to weekly. For weekly set `SHOW_MONTHLY: false`.
+6.  The workflow will run at 10 AM IST every day or you can force run it by going to Action tab. Or you can add following lines under `on:` to run with every push. Search for 12 AM UTC to find equivalent time in your time zone.
 
     ```
     on:

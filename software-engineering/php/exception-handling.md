@@ -10,7 +10,7 @@ _This article was originally written by_ [_Mauro Chojrin_](https://www.honeybadg
 
 In most object-oriented languages, exceptions are an extremely powerful mechanism for dealing with unexpected situations that arise when running your code.
 
-PHP, specially versions 7.0+, allows developers to build robust applications by leveraging this feature.
+PHP, especially versions 7.0+, allows developers to build robust applications by leveraging this feature.
 
 In this article, you'll learn about exceptions, how you can make the most out of their usage, and how to improve your application with the information gathered from occurrences of them once in production.
 

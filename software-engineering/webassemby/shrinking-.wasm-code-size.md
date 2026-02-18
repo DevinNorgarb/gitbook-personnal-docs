@@ -21,7 +21,7 @@ Furthermore, WebAssembly's binary format is optimized for very fast parsing and 
 
 And finally, remember that WebAssembly is also far more optimized than JavaScript for execution speed. You'll want to be sure to measure for runtime comparisons between JavaScript and WebAssembly to factor that in to how important code size is.
 
-All this to say basically don't dismay immediately if your `.wasm` file is larger than expected! Code size may end up only being one of many factors in the end-to-end story. Comparisons between JavaScript and WebAssembly that only look at code size are missing the forest for the trees.
+All this to say basically don't be dismayed immediately if your `.wasm` file is larger than expected! Code size may end up only being one of many factors in the end-to-end story. Comparisons between JavaScript and WebAssembly that only look at code size are missing the forest for the trees.
 
 [Optimizing Builds for Code Size](https://rustwasm.github.io/docs/book/reference/code-size.html#optimizing-builds-for-code-size)
 

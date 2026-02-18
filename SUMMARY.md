@@ -44,7 +44,7 @@
 
 ## Software Engineering
 
-* [WebAssemby](software-engineering/webassemby/README.md)
+* [WebAssembly](software-engineering/webassemby/README.md)
   * [Go and WASM](software-engineering/webassemby/go-and-wasm.md)
   * [Shrinking .wasm Code Size](software-engineering/webassemby/shrinking-.wasm-code-size.md)
 * [Automation](software-engineering/automation/README.md)
@@ -68,7 +68,7 @@
   * [Google MLKit](software-engineering/machine-learning/google-mlkit/README.md)
     * [MLKIT](https://developers.google.com/ml-kit/vision/barcode-scanning/android)
 * [Shopify Dev](software-engineering/shopify-dev/README.md)
-  * [Fulfilment Orders](software-engineering/shopify-dev/fulfilment-orders.md)
+  * [Fulfillment Orders](software-engineering/shopify-dev/fulfilment-orders.md)
   * [Track orders placed through third-party marketplaces](software-engineering/shopify-dev/track-orders-placed-through-third-party-marketplaces.md)
   * [Carrier Services](software-engineering/shopify-dev/carrier-services.md)
   * [Exploring service discovery attribute in Shopify CarrierService API](software-engineering/shopify-dev/exploring-service-discovery-attribute-in-shopify-carrierservice-api.md)
@@ -87,7 +87,7 @@
   * [Exception Handling](software-engineering/php/exception-handling.md)
   * [Laravel](software-engineering/php/laravel/README.md)
     * [IoC Container Guide](software-engineering/php/laravel/ioc-container-guide.md)
-    * [Interia Guide](software-engineering/php/laravel/interia-guide.md)
+    * [Inertia Guide](software-engineering/php/laravel/interia-guide.md)
   * [Docker for PHP Devs](software-engineering/php/docker-for-php-devs.md)
   * [Coroutines](software-engineering/php/coroutines.md)
 * [Principles & Practices](software-engineering/principles-and-practices/README.md)
@@ -147,7 +147,7 @@
   * [OBD2 Dashboard](software-engineering/grafana/obd2-dashboard.md)
   * [Strava Dashboard](software-engineering/grafana/strava-dashboard.md)
 * [Documentation](software-engineering/documentation/README.md)
-  * [Github README](software-engineering/documentation/github-readme.md)
+  * [GitHub README](software-engineering/documentation/github-readme.md)
   * [Tools](software-engineering/documentation/tools.md)
   * [General](software-engineering/documentation/general.md)
 * [Containerisation](software-engineering/containerisation/README.md)
@@ -202,13 +202,13 @@
   * [Rancher](software-engineering/kubernetes/rancher.md)
   * [Single Node Cluster](software-engineering/kubernetes/single-node-cluster.md)
 * [WebRTC](<README (1) (2).md>)
-  * [Opensource WebRTC Projects](software-engineering/webrtc/opensource-webrtc-projects.md)
-  * [Testing WEBRTC](software-engineering/webrtc/testing-webrtc.md)
+  * [Open-source WebRTC Projects](software-engineering/webrtc/opensource-webrtc-projects.md)
+  * [Testing WebRTC](software-engineering/webrtc/testing-webrtc.md)
   * [Setting up STUN and TURN servers](software-engineering/webrtc/setting-up-stun-and-turn-servers.md)
 * [Content Security Policy](software-engineering/content-security-policy.md)
 * [Devops](software-engineering/devops/README.md)
   * [Cloud-Init](software-engineering/devops/cloud-init/README.md)
-    * [Cloud-Init Valitation](software-engineering/devops/cloud-init/cloud-init-valitation.md)
+    * [Cloud-Init Validation](software-engineering/devops/cloud-init/cloud-init-valitation.md)
     * [Cloud Init Script to Create a new user](software-engineering/devops/cloud-init/cloud-init-script-to-create-a-new-user.md)
 
 ## OBD2
@@ -430,7 +430,7 @@
   * [Magnetico](random/torrents-and-dht-network/magnetico.md)
 * [ADHD and Programming](random/adhd-and-programming/README.md)
   * [Page 4](random/adhd-and-programming/page-4.md)
-* [Ubuntu set keyboard backlight](<README (1) (1).md>)
+* [Ubuntu: Set Keyboard Backlight](<README (1) (1).md>)
 * [Firewall rules to allow Chromecast](random/firewall-rules-to-allow-chromecast.md)
 
 ## Maritime AIS
