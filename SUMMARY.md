@@ -82,7 +82,7 @@
 * [Frontend](software-engineering/programming/frontend/README.md)
   * [Javascript](software-engineering/programming/frontend/javascript/README.md)
     * [Quasar + Pinia + Electron Desktop App](software-engineering/programming/frontend/javascript/quasar-+-pinia-+-electron-desktop-app.md)
-    * [Laravel Upgrade from Webpack to Vite](software-engineering/frontend/javascript/laravel-upgrade-from-webpack-to-vite.md)
+    * [Laravel Upgrade from Webpack to Vite](software-engineering/programming/frontend/javascript/laravel-upgrade-from-webpack-to-vite.md)
   * [CSS](software-engineering/programming/frontend/css.md)
 * [PHP](software-engineering/php/README.md)
   * [Exception Handling](software-engineering/php/exception-handling.md)
@@ -268,8 +268,9 @@
 
 ## 3D Printing
 
-* [Gallery](3d-printing/gallery.md)
-* [My problems](3d-printing/my-problems.md)
+* [3D Printing](3d-printing/README.md)
+  * [Gallery](3d-printing/gallery.md)
+  * [My problems](3d-printing/my-problems.md)
 
 ## Robotics
 
@@ -440,12 +441,13 @@
 
 ## Random
 
-* [Torrents & DHT Network](random/bittorrent.md)
-  * [Magnetico](random/torrents-and-dht-network/magnetico.md)
-* [ADHD and Programming](random/adhd-and-programming/README.md)
-  * [ADHD Programming Notes](random/adhd-and-programming/adhd-programming-notes.md)
-* [Ubuntu: Set Keyboard Backlight](random/ubuntu-keyboard-backlight.md)
-* [Firewall rules to allow Chromecast](random/firewall-rules-to-allow-chromecast.md)
+* [Random](random/README.md)
+  * [Torrents & DHT Network](random/bittorrent.md)
+    * [Magnetico](random/torrents-and-dht-network/magnetico.md)
+  * [ADHD and Programming](random/adhd-and-programming/README.md)
+    * [ADHD Programming Notes](random/adhd-and-programming/adhd-programming-notes.md)
+  * [Ubuntu: Set Keyboard Backlight](random/ubuntu-keyboard-backlight.md)
+  * [Firewall rules to allow Chromecast](random/firewall-rules-to-allow-chromecast.md)
 
 ## Maritime AIS
 
