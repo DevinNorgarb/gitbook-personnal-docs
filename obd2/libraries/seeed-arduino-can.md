@@ -1,7 +1,6 @@
 # SEEED Arduino CAN
 
 
-
 {% embed url="https://github.com/DevinNorgarb/Seeed_Arduino_CAN" %}
 
 ## [Seeed Arduino CAN ](https://github.com/DevinNorgarb/Seeed\_Arduino\_CAN#seeed-arduino-can--)[![Build Status](https://camo.githubusercontent.com/9f9657494d60a041ed1eeac25e14278289112485a71ee2d3d05c2207df706c20/68747470733a2f2f7472617669732d63692e636f6d2f53656565642d53747564696f2f43414e5f4255535f536869656c642e7376673f6272616e63683d6d6173746572)](https://travis-ci.com/Seeed-Studio/CAN\_BUS\_Shield) <a href="#user-content-seeed-arduino-can" id="user-content-seeed-arduino-can"></a>

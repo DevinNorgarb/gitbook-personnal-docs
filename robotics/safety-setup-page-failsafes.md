@@ -2,13 +2,13 @@
 
 The Safety Setup page allows you to configure the failsafe settings.
 
-### Failsafe Triggers <a href="#failsafe-triggers" id="failsafe-triggers"></a>
+## Failsafe Triggers <a href="#failsafe-triggers" id="failsafe-triggers"></a>
 
 Individual failsafes are triggered when a certain set of conditions are met. Failsafe actions can be configured individually for each failsafe trigger. When a failsafe is triggered, the cooresponding failsafe action is executed. Some failsafes have additional settings that allow you to adjust the trigger conditions, such as maximum acceptable pressure or temperature.
 
 Failsafe actions are only executed once when a failsafe is triggered. The vehicle can be armed during an active failsafe condition if the arming checks are passing. The flight mode can be changed as long as the failsafe conditions do not prevent it. If an active failsafe is cleared, the failsafe action will be executed again if the failsafe re-triggers.
 
-#### GCS (Ground Control Station) Heartbeat <a href="#gcs-ground-control-station-heartbeat" id="gcs-ground-control-station-heartbeat"></a>
+### GCS (Ground Control Station) Heartbeat <a href="#gcs-ground-control-station-heartbeat" id="gcs-ground-control-station-heartbeat"></a>
 
 Triggered when a HEARTBEAT from the ground control station matching SYSID\_MYGCS hasn't been received for more than 2.5 seconds. The failsafe is cleared immediately when a HEARTBEAT is received.
 
@@ -80,13 +80,13 @@ Fails if any of the _Barometers_ detected at boot are unhealthy. _bug_
 
 Fails if the on board compass is enabled and any of the following are true:
 
-* The compass is unhealthy
-* The compass offsets have not been set and learning offsets is disabled
-* The compass is currently calibrating
-* The compass calibration requires a reboot
-* The compass offsets are too large
-* The current magnetic field vector length is too large
-* Individual compasses have inconsistent measurements
+- The compass is unhealthy
+- The compass offsets have not been set and learning offsets is disabled
+- The compass is currently calibrating
+- The compass calibration requires a reboot
+- The compass offsets are too large
+- The current magnetic field vector length is too large
+- Individual compasses have inconsistent measurements
 
 #### GPS lock <a href="#gps-lock" id="gps-lock"></a>
 
@@ -98,14 +98,14 @@ Fails if the home position is unset and the GPS is not reporting a 3D fix.
 
 Fails if
 
-* Any of the gyros are unhealthy
-* Any of the gyros have a poor calibration
-* Any of the accelerometers are unhealthy
-* Any of the accelerometers have a poor calibration
-* The accelerometer calibration requires a reboot
-* Individual accelerometers have inconsistent measurements
-* Individual gyros have inconsistent measurements
-* The AHRS is unhealthy
+- Any of the gyros are unhealthy
+- Any of the gyros have a poor calibration
+- Any of the accelerometers are unhealthy
+- Any of the accelerometers have a poor calibration
+- The accelerometer calibration requires a reboot
+- Individual accelerometers have inconsistent measurements
+- Individual gyros have inconsistent measurements
+- The AHRS is unhealthy
 
 #### Parameters <a href="#parameters" id="parameters"></a>
 
@@ -141,6 +141,6 @@ Fails if the hardware safety switch is enabled and the hardware safety switch is
 
 Fails if any of the following is true:
 
-* Any gps requires further configuration.
-* Individual gps inputs are giving inconsistent readings.
-* Blending of multiple gps inputs is unhealthy.
+- Any gps requires further configuration.
+- Individual gps inputs are giving inconsistent readings.
+- Blending of multiple gps inputs is unhealthy.

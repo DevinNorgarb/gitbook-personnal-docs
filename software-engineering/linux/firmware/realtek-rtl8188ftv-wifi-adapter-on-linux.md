@@ -9,13 +9,12 @@ description: >-
 ***
 
 
-
 This guide provides a detailed, step-by-step walkthrough for setting up the Realtek RTL8188FTV WiFi adapter on a Linux system. This has been tested on Ubuntu 22.04.1 LTS arm64 running Linux kernel 5.15.0-58-generic. While the guide is tailored for this specific setup, it may be applicable to other distros and versions with slight modifications.
 
-### Prerequisites
+## Prerequisites
 
-* Plug in the Realtek RTL8188FTV WiFi adapter into a USB port on your Linux PC.
-* Ensure your Linux PC is powered on.
+- Plug in the Realtek RTL8188FTV WiFi adapter into a USB port on your Linux PC.
+- Ensure your Linux PC is powered on.
 
 ### Step 1: Open Terminal
 
@@ -31,14 +30,14 @@ Check if your system has recognized the WiFi adapter:
 
     ```bash
     ip a
-    ```
+```
 
     Look for a network interface with a prefix "wlx".
 2.  Alternatively, you can run:
 
     ```bash
     lsusb
-    ```
+```
 
     Look for an entry that says "Realtek Semiconductor Corp. RTL8188FTV 802.11b/g/n 1T1R 2.4G WLAN Adapter".
 
@@ -52,17 +51,17 @@ Keep your system up-to-date with the latest packages:
 
     ```bash
     sudo apt update
-    ```
+```bash
 2.  Upgrade installed packages:
 
     ```bash
     sudo apt upgrade
-    ```
+```bash
 3.  Install net-tools:
 
     ```bash
     sudo apt install net-tools
-    ```
+```
 
 ### Step 4: Add Kelebek Repository
 
@@ -72,12 +71,12 @@ Kelebek is a contributor who has developed the necessary driver for this adapter
 
     ```bash
     sudo add-apt-repository ppa:kelebek333/kablosuz
-    ```
+```bash
 2.  Update package lists again:
 
     ```bash
     sudo apt-get update
-    ```
+```
 
 ### Step 5: Install WiFi Adapter Driver
 
@@ -85,12 +84,12 @@ Kelebek is a contributor who has developed the necessary driver for this adapter
 
     ```bash
     sudo apt-get install rtl8188fu-dkms
-    ```
+```bash
 2.  (Optional) To remove the driver:
 
     ```bash
     sudo apt purge rtl8188fu-dkms
-    ```
+```
 
 > For more details, you can visit the GitHub repository: [Kelebek GitHub](https://github.com/kelebek333/rtl8188fu)
 

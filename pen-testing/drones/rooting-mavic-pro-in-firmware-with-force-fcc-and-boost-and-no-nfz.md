@@ -2,13 +2,13 @@
 
 At the End of this Walkthrough, Your Mavic Pro Will Be:<br>
 
-* Rooted
-* Running FW 1.4.300 with FW 1.3.700 modifiable controllers
-* Will be free of No Fly Zone restrictions (Fly Responsibly!)
-* Will have no altitude restrictions (Again, Fly Responsibly!)
-* Will be configurable for Sport+, wind warning removal, etc.
-* Will have forced FCC with option of boosting from standard 0.5W to 1.5W (Incredible Range!)
-* Will be able to run newest DJI Go features (Quick Shot, Panoramic, etc)
+- Rooted
+- Running FW 1.4.300 with FW 1.3.700 modifiable controllers
+- Will be free of No Fly Zone restrictions (Fly Responsibly!)
+- Will have no altitude restrictions (Again, Fly Responsibly!)
+- Will be configurable for Sport+, wind warning removal, etc.
+- Will have forced FCC with option of boosting from standard 0.5W to 1.5W (Incredible Range!)
+- Will be able to run newest DJI Go features (Quick Shot, Panoramic, etc)
 
 \
 CREDITS: With the exception, perhaps, of figuring out how to run the newest DJI Go app on Android while maintaining boost, I cannot claim credit for anything in this walkthrough. I merely hope, here, to draw together the great work of others in one place with simple instructions for anyone else who would like to configure their Mavic Pro as I have done mine. Deep gratitude to the Original Gangsters (dji.retroroms.info), CunningLogic (Dumlracer), jezzab (Dumldore), bin4ry (Deejayeye modder), Digdat0 (online videos), and Quad808 (online tutorials).\
@@ -307,8 +307,8 @@ We've got our Mavic all flashed and configured. But now we need DJI Go on our ph
 \
 Stock or Modded: What's right for you?<br>
 
-* If you are running FW 1.04.300 (mixed mod with FW.700 controllers and deleted NFZ is okay), and don’t care about forced login, forced firmware updates, and DJI data collection, then you are probably fine using the newest DJI Go app downloaded from DJI, . . . . . . at least until you are not (they could put additional monitoring checks for modding into future versions). You can still have Force FCC and FCC boost with a stock DJI Go app (see below).
-* If you want fake login, blocking of forced updates, or blocking of "phone home", then you will need to run a modded DJI Go. You can mod it yourself or download one from my share. You can still have Force FCC and FCC boost with a modded DJI Go app (see below).
+- If you are running FW 1.04.300 (mixed mod with FW.700 controllers and deleted NFZ is okay), and don’t care about forced login, forced firmware updates, and DJI data collection, then you are probably fine using the newest DJI Go app downloaded from DJI, . . . . . . at least until you are not (they could put additional monitoring checks for modding into future versions). You can still have Force FCC and FCC boost with a stock DJI Go app (see below).
+- If you want fake login, blocking of forced updates, or blocking of "phone home", then you will need to run a modded DJI Go. You can mod it yourself or download one from my share. You can still have Force FCC and FCC boost with a modded DJI Go app (see below).
 
 Force FCC and FCC Boost:\
 \
@@ -320,9 +320,9 @@ Note about NFZs: As mentioned above under the firmware modding section, removing
 \
 Where to Next?<br>
 
-* If you want to run a stock version of DJI Go v. 4.1.10 or earlier with Force FCC or FCC Boost, go to [dji.polybotes.feralhosting.com/DJI-Firmware](http://dji.polybotes.feralhosting.com/DJI-Firmware/BIN/Mavic%20Pro%20\(Incl%20Platinum%20and%20Alpine\)/) and download the older stock version of Go that you want to install, and then skip to “Step 4: Installing the APK”, in the section below. After that, follow the instructions for downloading the config files, but don’t download and install my Boost app (you will just use the config files directly with the older stock Go app).
-* If you want to run a stock version of DJI Go after v. 4.1.10 with Force FCC or FCC Boost, go to [dji.polybotes.feralhosting.com/DJI-Firmware](http://dji.polybotes.feralhosting.com/DJI-Firmware/BIN/Mavic%20Pro%20\(Incl%20Platinum%20and%20Alpine\)/) and download the version of Go that you want to install OR, if you want the newest version of Go, download it and install it directly from the Play Store. If you didn’t install from the Play Store, skip to “Step 4: Installing the APK”, in the section below. If you did install from the Play Store, then skip to “Step 5: Installing FCC Force or FCC Boost” in the section below. Either way, be sure to download and install my Boost app and place the config files as instructed below.
-* If you want to run modded version of DJI Go, with or without Force FCC or FCC Boost, continue on!\\
+- If you want to run a stock version of DJI Go v. 4.1.10 or earlier with Force FCC or FCC Boost, go to [dji.polybotes.feralhosting.com/DJI-Firmware](http://dji.polybotes.feralhosting.com/DJI-Firmware/BIN/Mavic%20Pro%20\(Incl%20Platinum%20and%20Alpine\)/) and download the older stock version of Go that you want to install, and then skip to “Step 4: Installing the APK”, in the section below. After that, follow the instructions for downloading the config files, but don’t download and install my Boost app (you will just use the config files directly with the older stock Go app).
+- If you want to run a stock version of DJI Go after v. 4.1.10 with Force FCC or FCC Boost, go to [dji.polybotes.feralhosting.com/DJI-Firmware](http://dji.polybotes.feralhosting.com/DJI-Firmware/BIN/Mavic%20Pro%20\(Incl%20Platinum%20and%20Alpine\)/) and download the version of Go that you want to install OR, if you want the newest version of Go, download it and install it directly from the Play Store. If you didn’t install from the Play Store, skip to “Step 4: Installing the APK”, in the section below. If you did install from the Play Store, then skip to “Step 5: Installing FCC Force or FCC Boost” in the section below. Either way, be sure to download and install my Boost app and place the config files as instructed below.
+- If you want to run modded version of DJI Go, with or without Force FCC or FCC Boost, continue on!\\
 
 Modifying and Installing DJI Go:\
 \

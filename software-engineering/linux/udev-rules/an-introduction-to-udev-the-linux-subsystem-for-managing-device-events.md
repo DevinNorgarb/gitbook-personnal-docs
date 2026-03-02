@@ -4,7 +4,7 @@ Udev is the Linux subsystem that supplies your computer with device events. In p
 
 This article teaches you how to create a [udev](https://linux.die.net/man/8/udev) script triggered by some udev event, such as plugging in a specific thumb drive. Once you understand the process for working with udev, you can use it to do all manner of things, like loading a specific driver when a gamepad is attached, or performing an automatic backup when you attach your backup drive.
 
-### A basic script <a href="#a-basic-script" id="a-basic-script"></a>
+## A basic script <a href="#a-basic-script" id="a-basic-script"></a>
 
 The best way to work with udev is in small chunks. Don't write the entire script upfront, but instead start with something that simply confirms that udev triggers some custom event.
 
@@ -13,20 +13,20 @@ Depending on your goal for your script, you can't guarantee you will ever see th
 Open your favorite text editor and enter this simple script:
 
 ```
-#!/usr/bin/bash
+## !/usr/bin/bash
 /usr/bin/date >> /tmp/udev.log
 ```
 
 Place this in **/usr/local/bin** or some such place in the default executable path. Call it **trigger.sh** and, of course, make it executable with **chmod +x**.
 
-```
+```php
 $ sudo mv trigger.sh /usr/local/bin
 $ sudo chmod +x /usr/local/bin/trigger.sh
 ```
 
 This script has nothing to do with udev. When it executes, the script places a timestamp in the file **/tmp/udev.log**. Test the script yourself:
 
-```
+```php
 $ /usr/local/bin/trigger.sh
 $ cat /tmp/udev.log
 Tue Oct 31 01:05:28 NZDT 2035
@@ -47,14 +47,14 @@ With the **udevadm monitor** command, you can tap into udev in real time and see
 
 The monitor function prints received events for:
 
-* UDEV: the event udev sends out after rule processing
-* KERNEL: the kernel uevent
+- UDEV: the event udev sends out after rule processing
+- KERNEL: the kernel uevent
 
 With **udevadm monitor** running, plug in a thumb drive and watch as all kinds of information is spewed out onto your screen. Notice that the type of event is an **ADD** event. That's a good way to identify what type of event you want.
 
 The **udevadm monitor** command provides a lot of good info, but you can see it with prettier formatting with the command **udevadm info**, assuming you know where your thumb drive is currently located in your **/dev** tree. If not, unplug and plug your thumb drive back in, then immediately issue this command:
 
-```
+```php
 $ su -c 'dmesg | tail | fgrep -i sd*'
 ```
 
@@ -65,7 +65,7 @@ Alternately, you can use the **lsblk** command to see all drives attached to you
 Now that you have established where your drive is located in your filesystem, you can view udev information about that device with this command:
 
 ```
-# udevadm info -a -n /dev/sdb | less
+## udevadm info -a -n /dev/sdb | less
 ```
 
 This returns a lot of information. Focus on the first block of info for now.
@@ -74,7 +74,7 @@ Your job is to pick out parts of udev's report about a device that are most uniq
 
 The **udevadm info** process reports on a device (specified by the device path), then "walks" up the chain of parent devices. For every device found, it prints all possible attributes using a key-value format. You can compose a rule to match according to the attributes of a device plus attributes from one single parent device.
 
-```
+```python
 looking at device '/devices/000:000/blah/blah//block/sdb':
   KERNEL=="sdb"
   SUBSYSTEM=="block"
@@ -110,7 +110,7 @@ When your system is back online, switch to a text console (with Ctl+Alt+F3 or si
 
 Now, the moment of truth:
 
-```
+```php
 $ cat /tmp/udev.log
 Tue Oct 31 01:35:28 NZDT 2035
 ```
@@ -123,7 +123,7 @@ The problem with this rule is that it's very generic. Plugging in a mouse, a thu
 
 One way to do this is with the vendor ID and product ID. To get these numbers, you can use the **lsusb** command.
 
-```
+```php
 $ lsusb
 Bus 001 Device 002: ID 8087:0024 Slacker Corp. Hub
 Bus 002 Device 002: ID 8087:0024 Slacker Corp. Hub 
@@ -136,7 +136,7 @@ In this example, the **03f0:3307** before **TyCoon Corp.** denotes the idVendor 
 
 You can now include these attributes in your rule.
 
-```
+```python
 SUBSYSTEM=="block", ATTRS{idVendor}=="03f0", ACTION=="add", RUN+="/usr/local/bin/thumb.sh"
 ```
 
@@ -167,7 +167,7 @@ Since that's what I use udev for the most, it's the example I'll use here, but u
 
 A simple version of my backup system is a two-command process:
 
-```
+```php
 SUBSYSTEM=="block", ATTRS{idVendor}=="03f0", ACTION=="add", SYMLINK+="safety%n"
 SUBSYSTEM=="block", ATTRS{idVendor}=="03f0", ACTION=="add", RUN+="/usr/local/bin/trigger.sh"
 ```
@@ -181,7 +181,7 @@ The second line runs the script.
 My backup script looks like this:
 
 ```
-#!/usr/bin/bash
+## !/usr/bin/bash
 mount /dev/safety1 /mnt/hd
 sleep 2
 rsync -az /mnt/hd/ /home/seth/backups/ && umount /dev/safety1

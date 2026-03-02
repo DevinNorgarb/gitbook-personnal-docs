@@ -164,19 +164,19 @@ So, in 2017, the core development team began work on a version 3 (now called ‘
 \
 ![](https://lh7-us.googleusercontent.com/WOtA5j2yi-3rcStN8uxSEnP06nbYsqMzxYmZdS5C3tA0mohZPzHavya8JWS6bBIVZVpx7ejmvAa_AebER9JTM4Ls7ZZS07ZKy-_4TX3z4T6CV8xDnK18Jc-FbTN60vYbGi-8vOYYrgE37PEA_UQfqA)
 
-* Espressif IDF\
+- Espressif IDF\
   (based on Open Source GNU C/C++)
-* ESP32 dual-core ARM processor
-* 16MB flash and 520KB RAM
-* Wifi
-* Bluetooth
-* 3x CAN buses
-* GPIO expansion ports
-* A new DB26 external expansion port
-* An internal expansion slot
-* SD CARD support
-* USB port
-* 3G and 4G modem options
+- ESP32 dual-core ARM processor
+- 16MB flash and 520KB RAM
+- Wifi
+- Bluetooth
+- 3x CAN buses
+- GPIO expansion ports
+- A new DB26 external expansion port
+- An internal expansion slot
+- SD CARD support
+- USB port
+- 3G and 4G modem options
 
 <br>
 
@@ -1080,14 +1080,14 @@ The RegisterCommand() function takes the following arguments:
 
 <br>
 
-* const char\* name – the command token
-* const char\* title – one-line description for command list
-* void (\*execute)(...) – does the work of the command
-* const char \*usage – the "Usage:" line describing parameters
-* int min – minimum number of parameters allowed
-* int max – maximum number of parameters allowed
-* bool secure – true for commands permitted only after "enable"
-* int (\*validate)(...) – validates parameters as explained later
+- const char\* name – the command token
+- const char\* title – one-line description for command list
+- void (\*execute)(...) – does the work of the command
+- const char \*usage – the "Usage:" line describing parameters
+- int min – minimum number of parameters allowed
+- int max – maximum number of parameters allowed
+- bool secure – true for commands permitted only after "enable"
+- int (\*validate)(...) – validates parameters as explained later
 
 <br>
 
@@ -1095,12 +1095,12 @@ It's important to note that many of these arguments can and should be defaulted.
 
 <br>
 
-* execute = NULL
-* usage = ""
-* min = 0
-* max = 0
-* secure = true
-* validate = NULL
+- execute = NULL
+- usage = ""
+- min = 0
+- max = 0
+- secure = true
+- validate = NULL
 
 <br>
 
@@ -1140,9 +1140,9 @@ The usage string syntax conventions for specifying alternative and optional para
 
 <br>
 
-* $C expands to the list of children commands as child1|child2|child3.
-* \[$C] expands to optional children as \[child1|child2|child3].
-* $G$ expands to the usage string of the first child; this would typically used after $C so the usage message shows the list of children and then the parameters or next-level subcommands that can follow the children.  This is useful when the "usage" string is the same for all or most of the children as in this example:
+- $C expands to the list of children commands as child1|child2|child3.
+- \[$C] expands to optional children as \[child1|child2|child3].
+- $G$ expands to the usage string of the first child; this would typically used after $C so the usage message shows the list of children and then the parameters or next-level subcommands that can follow the children.  This is useful when the "usage" string is the same for all or most of the children as in this example:
 
 <br>
 
@@ -1150,20 +1150,20 @@ Usage: power adc|can1|can2|can3|egpio|esp32|sdcard|simcom|spi|wifi deepsleep|dev
 
 <br>
 
-* $Gfoo$ expands to the usage of the child named "foo"; this variant would be used when not all the children have the same usage but it would still be helpful to show the usage of one that's not first.
-* $L lists a separate full usage message for each of the children.  This provides more help than just showing the list of children but at the expense of longer output.
-* For terminal (sub)commands (those with no children) that take additional parameters, the usage string contains explicit text to list the parameters:
+- $Gfoo$ expands to the usage of the child named "foo"; this variant would be used when not all the children have the same usage but it would still be helpful to show the usage of one that's not first.
+- $L lists a separate full usage message for each of the children.  This provides more help than just showing the list of children but at the expense of longer output.
+- For terminal (sub)commands (those with no children) that take additional parameters, the usage string contains explicit text to list the parameters:
 *
-  * Parameter names or descriptions are enclosed in angle brackets to distinguish the them from command tokens, for example "\<metric> \<value>".
-  * Parameters that are optional are further enclosed in square brackets, like
+  - Parameter names or descriptions are enclosed in angle brackets to distinguish the them from command tokens, for example "\<metric> \<value>".
+  - Parameters that are optional are further enclosed in square brackets, like
 
 "\<id> \<name> \[\<value>]".
 
-* When there are alternative forms or meanings for a parameter, the alternatives are separated by vertical bar as in "\[\<task names or ids>|\*|=]" which indicates that the parameter can be either of the characters '\*' or '=' instead of a list of task names or ids.  An variant form encloses the alternatives in curly braces as in
+- When there are alternative forms or meanings for a parameter, the alternatives are separated by vertical bar as in "\[\<task names or ids>|\*|=]" which indicates that the parameter can be either of the characters '\*' or '=' instead of a list of task names or ids.  An variant form encloses the alternatives in curly braces as in
 
 "\<param> {\<instance> | \*}".
 
-* One or more additional lines of explanatory text can be included like this: "\<id>\nUse ID from connection list / 0 to close all".
+- One or more additional lines of explanatory text can be included like this: "\<id>\nUse ID from connection list / 0 to close all".
 
 <br>
 
@@ -1258,14 +1258,14 @@ Once basic support is stubbed, as above, you can start work on actual implementa
 
 <br>
 
-* A short OvmsVehicleXXXInit object handles registration of your vehicle name, with associated vehicle implementation object, at init\_priority 9000. All vehicle initialise at this priority level, unless they are dependent on other vehicle modules.\
+- A short OvmsVehicleXXXInit object handles registration of your vehicle name, with associated vehicle implementation object, at init\_priority 9000. All vehicle initialise at this priority level, unless they are dependent on other vehicle modules.\
   <br>
-* A reception queue, and task, will be created and managed for you automatically.\
+- A reception queue, and task, will be created and managed for you automatically.\
   <br>
-* Create a member function “void IncomingFrameCan1(CAN\_frame\_t\* p\_frame)” in your vehicle implementation object. This will be used to receive incoming CAN bus messages on CAN bus #1. You can also create IncomingFrameCan2 and IncomingFrameCan3 for the other two buses (if you require). The vehicle framework will automatically deliver CAN bus messages to your functions.\
+- Create a member function “void IncomingFrameCan1(CAN\_frame\_t\* p\_frame)” in your vehicle implementation object. This will be used to receive incoming CAN bus messages on CAN bus #1. You can also create IncomingFrameCan2 and IncomingFrameCan3 for the other two buses (if you require). The vehicle framework will automatically deliver CAN bus messages to your functions.\
   \
   <br>
-* Implement the constructor for your vehicle implementation. You will need to define the CAN buses your vehicle requires in the vehicle constructor function, with RegisterCanBus(int bus, CAN\_mode\_t mode, CAN\_speed\_t speed). Here is a simple example:\
+- Implement the constructor for your vehicle implementation. You will need to define the CAN buses your vehicle requires in the vehicle constructor function, with RegisterCanBus(int bus, CAN\_mode\_t mode, CAN\_speed\_t speed). Here is a simple example:\
   \
   OvmsVehicleTeslaRoadster::OvmsVehicleTeslaRoadster()\
   &#x20; {\
@@ -1273,9 +1273,9 @@ Once basic support is stubbed, as above, you can start work on actual implementa
   &#x20; RegisterCanBus(1,CAN\_MODE\_ACTIVE,CAN\_SPEED\_1000KBPS);\
   &#x20; }\
   <br>
-* Implement a destructor for your vehicle implementation to perform any necessary cleanup. The base vehicle module destructor will automatically handle cleanup of the task, queue, and any CAN buses you are using.\
+- Implement a destructor for your vehicle implementation to perform any necessary cleanup. The base vehicle module destructor will automatically handle cleanup of the task, queue, and any CAN buses you are using.\
   <br>
-* Implement your IncomingFrameCanX handlers to process the incoming CAN frames. You will usually be decoding the messages, and updating metrics with the decoded vehicle data, appropriately.
+- Implement your IncomingFrameCanX handlers to process the incoming CAN frames. You will usually be decoding the messages, and updating metrics with the decoded vehicle data, appropriately.
 
 <br>
 
@@ -1347,11 +1347,11 @@ Metrics have several common attributes that deserve further explanation:
 
 <br>
 
-* Last Modified Date: This is accessible via LastModified(). Note that this date is the time the metric was last updated. If a metric is updated, but the value is unchanged, the last modified date will be updated, but the modified bit flags will not.\
+- Last Modified Date: This is accessible via LastModified(). Note that this date is the time the metric was last updated. If a metric is updated, but the value is unchanged, the last modified date will be updated, but the modified bit flags will not.\
   <br>
-* Stale: This is accessible via IsStale(), and setable via SetStale(bool stale). Whenever a metric is updated (irrespective of whether the value has been changed or not), the stale flag is cleared.\
+- Stale: This is accessible via IsStale(), and setable via SetStale(bool stale). Whenever a metric is updated (irrespective of whether the value has been changed or not), the stale flag is cleared.\
   <br>
-* AutoStale: This is configurable when the metric object is created, or with the SetAutoStale(int seconds) function. If set (non zero), the stale flag will be automatically set if the metric value has not been updated for the specified number of seconds.
+- AutoStale: This is configurable when the metric object is created, or with the SetAutoStale(int seconds) function. If set (non zero), the stale flag will be automatically set if the metric value has not been updated for the specified number of seconds.
 
 <br>
 
@@ -1401,15 +1401,15 @@ Configuration values themselves are always stored internally as strings. Conveni
 
 <br>
 
-###
+### 
 
-###
+### 
 
-###
+### 
 
-###
+### 
 
-###
+### 
 
 ### Access config flash filesystem
 
@@ -1697,9 +1697,9 @@ A standard Micro SD card is available on the third SPI bus of the ESP32. This is
 
 The OVMS v3 module has support for three CAN buses.
 
-* CAN1 uses the ESP32’s own on-board CAN controller
-* CAN2 uses a MCP2515 SPI CAN controller
-* CAN3 uses a MCP2515 SPI CAN controller
+- CAN1 uses the ESP32’s own on-board CAN controller
+- CAN2 uses a MCP2515 SPI CAN controller
+- CAN3 uses a MCP2515 SPI CAN controller
 
 All three uses SN65 3.3v transceivers.
 

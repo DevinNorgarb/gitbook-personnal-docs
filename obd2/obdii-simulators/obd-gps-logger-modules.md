@@ -4,9 +4,9 @@ OBD GPS Logger is, in true unix style, a bunch of small programs, each doing a s
 
 Each individual program has its own manpage in the distribution. If you build and "make install", it will push the manpages into your system appropriately. They're also available online in a pre-rendered text format, here: [manpages](../../.gitbook/assets/manpages)
 
-### For users
+## For users
 
-#### obdgpslogger
+### obdgpslogger
 
 This is the core application - the tool that actually logs data from your car, using OBDII.
 

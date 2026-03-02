@@ -1,6 +1,6 @@
 # Code Review Developer Guide
 
-### [eng-practices](https://google.github.io/eng-practices/)
+## [eng-practices](https://google.github.io/eng-practices/)
 
 ### Introduction <a href="#intro" id="intro"></a>
 
@@ -12,21 +12,21 @@ This documentation is the canonical description of Google’s code review proces
 
 This page is an overview of our code review process. There are two other large documents that are a part of this guide:
 
-* [**How To Do A Code Review**](../../../../.gitbook/assets/reviewer): A detailed guide for code reviewers.
-* [**The CL Author’s Guide**](../../../../.gitbook/assets/developer): A detailed guide for developers whose CLs are going through review.
+- [**How To Do A Code Review**](../../../../.gitbook/assets/reviewer): A detailed guide for code reviewers.
+- [**The CL Author’s Guide**](../../../../.gitbook/assets/developer): A detailed guide for developers whose CLs are going through review.
 
 ### What Do Code Reviewers Look For? <a href="#look_for" id="look_for"></a>
 
 Code reviews should look at:
 
-* **Design**: Is the code well-designed and appropriate for your system?
-* **Functionality**: Does the code behave as the author likely intended? Is the way the code behaves good for its users?
-* **Complexity**: Could the code be made simpler? Would another developer be able to easily understand and use this code when they come across it in the future?
-* **Tests**: Does the code have correct and well-designed automated tests?
-* **Naming**: Did the developer choose clear names for variables, classes, methods, etc.?
-* **Comments**: Are the comments clear and useful?
-* **Style**: Does the code follow our [style guides](http://google.github.io/styleguide/)?
-* **Documentation**: Did the developer also update relevant documentation?
+- **Design**: Is the code well-designed and appropriate for your system?
+- **Functionality**: Does the code behave as the author likely intended? Is the way the code behaves good for its users?
+- **Complexity**: Could the code be made simpler? Would another developer be able to easily understand and use this code when they come across it in the future?
+- **Tests**: Does the code have correct and well-designed automated tests?
+- **Naming**: Did the developer choose clear names for variables, classes, methods, etc.?
+- **Comments**: Are the comments clear and useful?
+- **Style**: Does the code follow our [style guides](http://google.github.io/styleguide/)?
+- **Documentation**: Did the developer also update relevant documentation?
 
 See [**How To Do A Code Review**](../../../../.gitbook/assets/reviewer) for more information.
 
@@ -46,5 +46,5 @@ You can also do in-person code reviews where the reviewer asks questions and the
 
 ### See Also <a href="#seealso" id="seealso"></a>
 
-* [How To Do A Code Review](../../../../.gitbook/assets/reviewer): A detailed guide for code reviewers.
-* [The CL Author’s Guide](../../../../.gitbook/assets/developer): A detailed guide for developers whose CLs are going through review.
+- [How To Do A Code Review](../../../../.gitbook/assets/reviewer): A detailed guide for code reviewers.
+- [The CL Author’s Guide](../../../../.gitbook/assets/developer): A detailed guide for developers whose CLs are going through review.

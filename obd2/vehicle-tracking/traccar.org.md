@@ -5,7 +5,6 @@ description: https://www.traccar.org/download/
 # traccar.org
 
 
-
 ![](<../../.gitbook/assets/feature server>)
 
 **Server**

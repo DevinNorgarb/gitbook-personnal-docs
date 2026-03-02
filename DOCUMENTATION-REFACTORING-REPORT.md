@@ -1,7 +1,7 @@
 # Documentation Refactoring Report
 
-**Project:** gitbook-personnal-docs  
-**Date:** March 2, 2025  
+**Project:** gitbook-personnal-docs
+**Date:** March 2, 2025
 **Scope:** Full documentation audit and refactoring plan
 
 ---

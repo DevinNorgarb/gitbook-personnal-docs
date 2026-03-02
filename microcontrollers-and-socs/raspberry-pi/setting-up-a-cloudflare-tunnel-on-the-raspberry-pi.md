@@ -14,24 +14,24 @@ Please note that this guide requires you to have a domain name configured to run
 
 SHOW ALL[Setting up Uptime Kuma on the Raspberry Pi](https://pimylifeup.com/raspberry-pi-uptime-kuma/)109[Setting up a Raspberry Pi Scanner Server using SANE](https://pimylifeup.com/raspberry-pi-scanner-server/)64[Setting up a Valheim Server on the Raspberry Pi](https://pimylifeup.com/raspberry-pi-valheim-server/)110[Setting up FreshRSS on the Raspberry Pi](https://pimylifeup.com/raspberry-pi-freshrss/)63[Setting up a PostgreSQL Database on a Raspberry Pi](https://pimylifeup.com/raspberry-pi-postgresql/)50[Setting up an AirPrint Server on your Raspberry Pi](https://pimylifeup.com/raspberry-pi-airprint/)113[Setting up DAKBoard on the Raspberry Pi](https://pimylifeup.com/raspberry-pi-dakboard/)151[Setting up a LAMP Stack on the Raspberry Pi](https://pimylifeup.com/raspberry-pi-lamp-stack/)62[Setting up your Raspberry Pi as a Syslog Server](https://pimylifeup.com/raspberry-pi-syslog-server/)99[Installing Tailscale to the Raspberry Pi](https://pimylifeup.com/raspberry-pi-tailscale/)89[Installing and Running Wireshark on the Raspberry Pi](https://pimylifeup.com/raspberry-pi-wireshark/)133[Setting up an SQLite Database on a Raspberry Pi](https://pimylifeup.com/raspberry-pi-sqlite/)69[Using NoMachine on the Raspberry Pi](https://pimylifeup.com/raspberry-pi-nomachine/)50[Setting up a WireGuard VPN on the Raspberry Pi](https://pimylifeup.com/raspberry-pi-wireguard/)262[How to Install ZoneMinder on the Raspberry Pi](https://pimylifeup.com/raspberry-pi-zoneminder/)103[Running SerpBear on the Raspberry Pi](https://pimylifeup.com/raspberry-pi-serpbear/)31[How to Set Up Screenly on the Raspberry Pi](https://pimylifeup.com/raspberry-pi-screenly/)80[Running Changedetection.io on the Raspberry Pi](https://pimylifeup.com/raspberry-pi-changedetection/)47[Setting up a Raspberry Pi Captive Portal](https://pimylifeup.com/raspberry-pi-captive-portal/)71[Setting up Grafana on the Raspberry Pi](https://pimylifeup.com/raspberry-pi-grafana/)45[Setting up Raspberry Pi OctoPrint](https://pimylifeup.com/raspberry-pi-octoprint/)25[Setting up Home Assistant on the Raspberry Pi](https://pimylifeup.com/home-assistant-raspberry-pi/)105[Installing Network Manager on Raspberry Pi OS](https://pimylifeup.com/raspberry-pi-network-manager/)129[Raspberry Pi DNS Settings: How to Change the DNS](https://pimylifeup.com/raspberry-pi-dns-settings/)139[How to set up a Raspberry Pi Terraria Server](https://pimylifeup.com/raspberry-pi-terraria-server/)40
 
-### Equipment <a href="#equipment" id="equipment"></a>
+## Equipment <a href="#equipment" id="equipment"></a>
 
 Below is a list of the equipment we used when setting up a Cloudflare tunnel on the Raspberry Pi.
 
-#### Recommended
+### Recommended
 
-* [Raspberry Pi](https://0g.pimylifeup.com/l8KF94/amazon/raspberrypi)
-* [Micro SD Card](https://0g.pimylifeup.com/DUVENo/amazon/microsdcard)
-* [Power Supply](https://0g.pimylifeup.com/TwjJnF/amazon/powersupply)
-* [Ethernet Cable](https://0g.pimylifeup.com/9YIU76/amazon/ethernetcord) or [Wi-Fi](https://0g.pimylifeup.com/89vmLk/amazon/wifidongle)
+- [Raspberry Pi](https://0g.pimylifeup.com/l8KF94/amazon/raspberrypi)
+- [Micro SD Card](https://0g.pimylifeup.com/DUVENo/amazon/microsdcard)
+- [Power Supply](https://0g.pimylifeup.com/TwjJnF/amazon/powersupply)
+- [Ethernet Cable](https://0g.pimylifeup.com/9YIU76/amazon/ethernetcord) or [Wi-Fi](https://0g.pimylifeup.com/89vmLk/amazon/wifidongle)
 
 #### Optional
 
-* [Raspberry Pi Case](https://pimylifeup.com/raspberry-pi-cases/)
-* [HDMI Cable](https://0g.pimylifeup.com/85rGC3/amazon/hdmicables)
-* [Monitor](https://0g.pimylifeup.com/wPP3p3/amazon/computermonitor)
-* [USB Keyboard](https://0g.pimylifeup.com/FiheVF/amazon/usbkeyboard)
-* [USB Mouse](https://0g.pimylifeup.com/2VE9AD/amazon/usbmouse)
+- [Raspberry Pi Case](https://pimylifeup.com/raspberry-pi-cases/)
+- [HDMI Cable](https://0g.pimylifeup.com/85rGC3/amazon/hdmicables)
+- [Monitor](https://0g.pimylifeup.com/wPP3p3/amazon/computermonitor)
+- [USB Keyboard](https://0g.pimylifeup.com/FiheVF/amazon/usbkeyboard)
+- [USB Mouse](https://0g.pimylifeup.com/2VE9AD/amazon/usbmouse)
 
 This tutorial was last tested on a [Raspberry Pi 400](https://pimylifeup.com/raspberry-pi-400/), running the latest version of [Raspberry Pi OS Bullseye](https://pimylifeup.com/download-raspbian/).
 
@@ -60,8 +60,8 @@ Install both of these packages by using the command below in the terminal.
 sudo apt install curl lsb-release
 ```
 
-* `curl` – We will use curl to grab the GPG key for the Cloudflared repository.
-* `lsb-release` – This package allows us to easily retrieve information about the system, such as the release name.
+- `curl` – We will use curl to grab the GPG key for the Cloudflared repository.
+- `lsb-release` – This package allows us to easily retrieve information about the system, such as the release name.
 
 #### Adding the Cloudflare Repository on the Raspberry Pi <a href="#adding-the-cloudflare-repository-on-the-raspberry-pi" id="adding-the-cloudflare-repository-on-the-raspberry-pi"></a>
 
@@ -119,7 +119,7 @@ Ensure you keep Cloudflared open on your device while this process is completed.
 
 You will want to go to the URL displayed in the message and use it to log in to your Cloudflare account.
 
-```
+```bash
 Please open the following URL and log in with your Cloudflare account:
 
 https://dash.cloudflare.com/argotunnel?callback=https%3A%2F%2Flogin.cloudflareaccess.org%2FXXXXXXXXXX
@@ -129,7 +129,7 @@ Leave cloudflared running to download the cert automatically.
 
 **3.** Once your Raspberry Pi is successfully authenticated with the Cloudflare service, you will see the following message.
 
-```
+```bash
 You have successfully logged in.
 If you wish to copy your credentials to a server, they have been saved to:
 /home/pi/.cloudflared/cert.pem
@@ -149,7 +149,7 @@ cloudflared tunnel create TUNNELNAME
 
 You will want to write down the ID as we will need this for later.
 
-```
+```bash
 Tunnel credentials written to /home/pi/.cloudflared/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX.json. cloudflared chose this file based on where your origin certificate was found. Keep this file secret. To revoke these credentials, delete the tunnel.
 
 Created tunnel pimytunnel with id XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
@@ -169,7 +169,7 @@ cloudflared tunnel route dns TUNNELNAME DOMAINNAME
 
 **7.** If the above command worked correctly, you would see a similar message to the one below. This message confirms that Cloudflare created a CNAME that routes to your tunnel.
 
-```
+```bash
 2022-10-18T04:54:54Z INF Added CNAME DOMAINNAME which will route to this tunnel tunnelID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 ```
 
@@ -215,33 +215,33 @@ sudo nano ~/.cloudflared/config.yml
 
 **12.**&#x57;ithin this file, you will want to type in the following lines and adjust them for your use case as you go.
 
-* `[TUNNELNAME]` – Replace this value with the name of your tunnel.
-* `[USERNAME]` – This value will need to be replaced with your user’s name.
-* `[UUID]` – You will need to specify the UUID that you got back in step 5 of this section.
-* `[HOSTNAME]` – Swap this value out with the domain name you are planning to utilize. For example, “`test.pimylifeup.com`“.
-* `[PORT]` – Finally, replace “**PORT**” with the port you want accessible through the tunnel.
-* `[PROTOCOL]` – This is the protocol you want tobe utilized for your service. In the case of a web server, you will want to use “`http`” or “`https`“.\
+- `[TUNNELNAME]` – Replace this value with the name of your tunnel.
+- `[USERNAME]` – This value will need to be replaced with your user’s name.
+- `[UUID]` – You will need to specify the UUID that you got back in step 5 of this section.
+- `[HOSTNAME]` – Swap this value out with the domain name you are planning to utilize. For example, “`test.pimylifeup.com`“.
+- `[PORT]` – Finally, replace “**PORT**” with the port you want accessible through the tunnel.
+- `[PROTOCOL]` – This is the protocol you want tobe utilized for your service. In the case of a web server, you will want to use “`http`” or “`https`“.\
   \
   However, there are a few other options that you can utilize if the service you are using utilizes a different protocol.
-  * `http` – Forward HTTP requests through to the specified service.\
+  - `http` – Forward HTTP requests through to the specified service.\
     \
     E.G., `http://localhost:8080`
-  * `https` – Forward HTTPS requests to the specified service\
+  - `https` – Forward HTTPS requests to the specified service\
     \
     E.G., `https://localhost:8080`
-  * `unix` – Same as HTTP but using a Unix Socket.\
+  - `unix` – Same as HTTP but using a Unix Socket.\
     \
     E.G., `unix:/home/example/exam.sock`
-  * `unix+tls` – Same as HTTPS but utilizing a Unix socket.\
+  - `unix+tls` – Same as HTTPS but utilizing a Unix socket.\
     \
     E.G., `unix+tls:/home/example/exam.sock`
-  * `tcp` – Proxy a service using the TCP protocol to a local service. (For example, a Minecraft server)\
+  - `tcp` – Proxy a service using the TCP protocol to a local service. (For example, a Minecraft server)\
     \
     E.G., `tcp://localhost:25655`
-  * `ssh` – Allows you to proxy an SSH connection to a local service.\
+  - `ssh` – Allows you to proxy an SSH connection to a local service.\
     \
     E.G., `ssh://localhost:22`
-  * `rdp` – Proxies a connection made using RDP to the specified service.\
+  - `rdp` – Proxies a connection made using RDP to the specified service.\
     \
     E.G., `rdp://localhost:338`
 

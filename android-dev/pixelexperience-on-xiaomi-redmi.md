@@ -41,7 +41,7 @@ _info\_outlin&#x65;_&#x4E;OTE: The steps below only need to be run once per devi
 
     You can also boot into fastboot mode via a key combination:
 
-    * With the device powered off, hold Volume Down + Power. Keep holding both buttons until the word “FASTBOOT” appears on the screen, then release.
+    - With the device powered off, hold Volume Down + Power. Keep holding both buttons until the word “FASTBOOT” appears on the screen, then release.
 4.  Once the device is in fastboot mode, verify your PC finds it by typing:
 
     ```
@@ -50,17 +50,17 @@ _info\_outlin&#x65;_&#x4E;OTE: The steps below only need to be run once per devi
 
     If you don’t get any output or an error:
 
-    * on Windows: make sure the device appears in the device manager without a triangle. Try other drivers until the command above works!
-    * on Linux or macOS: If you see `no permissions fastboot` try running `fastboot` as root. When the output is empty, check your USB cable and port!
+    - on Windows: make sure the device appears in the device manager without a triangle. Try other drivers until the command above works!
+    - on Linux or macOS: If you see `no permissions fastboot` try running `fastboot` as root. When the output is empty, check your USB cable and port!
 
     _chec&#x6B;_&#x54;IP: Some devices have buggy USB support while in bootloader mode, if you see `fastboot` hanging with no output when using commands such as `fastboot getvar ...`, `fastboot boot ...`, `fastboot flash ...` you may want to try a different USB port (preferably a USB Type-A 2.0 one) or a USB hub.
 5.  Flash recovery onto your device (replace `<recovery_filename>` with the actual filename!):
 
-    ```
+```python
     fastboot flash recovery <recovery_filename>.img
-    ```
+```python
 6. Now reboot into recovery to verify the installation. Do **not** reboot into the existing OS, since it will overwrite the recovery you just installed!
-   *   With the device powered off, hold Volume Up + Power. Keep holding both buttons until the “MI” logo appears on the screen, then release.
+   -   With the device powered off, hold Volume Up + Power. Keep holding both buttons until the “MI” logo appears on the screen, then release.
 
        _info\_outlin&#x65;_&#x4E;OTE: If you can’t power down the device, try long-pressing the key-combination (if any was used in the instructions above) until the device reboots and follow the instructions above
 
@@ -68,12 +68,12 @@ _info\_outlin&#x65;_&#x4E;OTE: The steps below only need to be run once per devi
 
 1. Download the [PixelExperience installation package](https://download.pixelexperience.org/merlinx) that you would like to install or [build](https://wiki.pixelexperience.org/devices/merlinx/build) the package yourself.
 2. If you are not in recovery, reboot into recovery:
-   * With the device powered off, hold Volume Up + Power. Keep holding both buttons until the “MI” logo appears on the screen, then release.
+   - With the device powered off, hold Volume Up + Power. Keep holding both buttons until the “MI” logo appears on the screen, then release.
 3. Now tap **Factory Reset**, then **Format data / factory reset** and continue with the formatting process. This will remove encryption and delete all files stored in the internal storage, as well as format your cache partition (if you have one).
 4. Return to the main menu.
 5. Sideload the PixelExperience `.zip` package:
-   * On the device, select “Apply Update”, then “Apply from ADB” to begin sideload.
-   * On the host machine, sideload the package using: `adb sideload filename.zip`._chec&#x6B;_&#x54;IP: Normally, adb will report `Total xfer: 1.00x`, but in some cases, even if the process succeeds the output will stop at 47% and report `Total xfer: 0.98x` or `adb: failed to read command: Success`. In some cases it will report `adb: failed to read command: No error` or `adb: failed to read command: Undefined error: 0` which is also fine.
+   - On the device, select “Apply Update”, then “Apply from ADB” to begin sideload.
+   - On the host machine, sideload the package using: `adb sideload filename.zip`._chec&#x6B;_&#x54;IP: Normally, adb will report `Total xfer: 1.00x`, but in some cases, even if the process succeeds the output will stop at 47% and report `Total xfer: 0.98x` or `adb: failed to read command: Success`. In some cases it will report `adb: failed to read command: No error` or `adb: failed to read command: Undefined error: 0` which is also fine.
 6. Once you have installed everything successfully, click the back arrow in the top left of the screen, then “Reboot system now”.
 
 _info\_outlin&#x65;_&#x4E;OTE: The first boot usually takes no longer than 15 minutes, depending on the device. If it takes longer, you may have missed a step, otherwise feel free to [get assistance](https://wiki.pixelexperience.org/devices/merlinx/install/#get-assistance).

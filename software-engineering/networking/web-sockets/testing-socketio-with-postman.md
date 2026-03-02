@@ -1,6 +1,6 @@
 # Testing Socket.IO with Postman
 
-### SOCKET.IO SERVER TESTING <a href="#418c" id="418c"></a>
+## SOCKET.IO SERVER TESTING <a href="#418c" id="418c"></a>
 
 ## How to test your Socket.IO server using Postman <a href="#60be" id="60be"></a>
 
@@ -10,22 +10,22 @@
 
 ### Currently supported features on Postman ✅ <a href="#0b21" id="0b21"></a>
 
-* Creating Socket.IO requests
-* Passing in the socket.io address and request body/payload
-* Supports text , json and binary formats for request body
+- Creating Socket.IO requests
+- Passing in the socket.io address and request body/payload
+- Supports text , json and binary formats for request body
 
 ### Currently unavailable features on Postman ❌ <a href="#44a4" id="44a4"></a>
 
-* **API testing** not supported
-* On socket.io server reconnection, **message history is lost**
-* **Web socket traffic is not tracked** in postman console
-* Unable to **save socket.io request** in postman collection
+- **API testing** not supported
+- On socket.io server reconnection, **message history is lost**
+- **Web socket traffic is not tracked** in postman console
+- Unable to **save socket.io request** in postman collection
 
 ### Connecting to a socket.io server <a href="#bdc8" id="bdc8"></a>
 
 Below is a code snippet of how to initialise/init the server by attaching it to an existing http server in nodejs.
 
-```
+```python
 var server = http.createServer(app);const socketio = require('socket.io');var io = socketio(server);
 ```
 
@@ -33,7 +33,7 @@ var server = http.createServer(app);const socketio = require('socket.io');var io
 
 Currently we have an event **joinRoom** which will take in input from the client and emit an event **roomUsers and roomSettings** to the socket.io server.
 
-```
+```javascript
 io.on('connection',(socket)=>{    console.log('socket is ready for connection');    socket.on('joinRoom', ({ ...roomObject }) => {        const user = userJoin(socket.id, roomObject.user.name, roomObject.room_uuid,roomObject.user.user_uuid);        socket.join(user.room);        socket.emit('message', 'Welcome to application'+user.username);        socket.broadcast            .to(user.room)            .emit(                'message',               `${user.username} has joined the call`            );        io.to(user.room).emit('roomUsers', {            room: user.room,            users: getRoomUsers(user.room)        });        io.to(user.room).emit('roomSettings', {            ...roomObject        });    })
 ```
 

@@ -6,7 +6,7 @@
 
 You may have heard of the term Open Radio Access Networks (RAN) widely used in the telecom industry in recent years. In this blog, we are going to explain what Open RAN is, why it represents an important technology transformation, and how it will impact the telecom ecosystem. It is the first part of a series of blogs that will discuss this popular topic.
 
-#### Mobile telecommunication networks
+## Mobile telecommunication networks
 
 Understanding the importance of Open RAN requires some insight into the foundation it’s deployed on, so let’s start with a quick definition of a mobile network. In simplest terms, mobile networks are a connectivity solution that provides wireless communication capabilities to devices. This could be your phone, tablet, or laptop, but also any type of machines, devices and IoT products with communications capabilities.
 
@@ -14,7 +14,7 @@ Understanding the importance of Open RAN requires some insight into the foundati
 
 A mobile network is important not just because it provides voice calls and Internet connectivity to your phone or laptop, but also various types of data services to a vast range of devices, machines, people and businesses. Whether those devices are on the move or not, the network is designed to provide them with seamless connectivity. This is possible thanks to the _radio access network (RAN)_ infrastructure deployed over a wide area, such as an entire country, and a _core network_ located centrally at a data centre acting as the “brain” of the entire mobile network. The core network performs control operations on user data traffic to ensure that services that users have subscribed to receive the agreed quality of service (QoS) levels.
 
-#### Radio access networks
+### Radio access networks
 
 Now let’s dive in a little bit more into RAN, which is simply a collection of radio towers and data processing elements. At a high level, RAN is the bridge between mobile devices and the core network, providing information exchange between a user’s mobile device and data services hosted elsewhere. It delivers user requests for services in the uplink to the mobile network as well as content uploaded by users, and content downloaded by user devices, such as video streams.
 

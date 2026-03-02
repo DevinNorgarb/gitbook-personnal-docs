@@ -13,17 +13,17 @@ If this project is helpful to you and love my work and feel like showing love/ap
 
 ### Features
 
-* Download Anime from various supported websites
-* Batch download episodes in the given range at once
-* High speed downloads
-* Download multiple episodes at once
-* Select the resolution (from the available resolutions for the website)
-* Select sub/dub (Check whether the website supports selective sub/dub downloads from here)
-* Choose whether filler episodes need to be downloaded or not by selecting "Download fillers" (By providing animefillerlist URL)
-* Name the files in "Episode - {episode\_number} - {episode\_title}" format by providing animefillerlist URL
-* Choose the directory files need to be downloaded into
-* Custom HLSDownloader (Now FFMPEG installation is optional from v1.0.4 upwards)
-* Custom decryptors for encrypted websites
+- Download Anime from various supported websites
+- Batch download episodes in the given range at once
+- High speed downloads
+- Download multiple episodes at once
+- Select the resolution (from the available resolutions for the website)
+- Select sub/dub (Check whether the website supports selective sub/dub downloads from here)
+- Choose whether filler episodes need to be downloaded or not by selecting "Download fillers" (By providing animefillerlist URL)
+- Name the files in "Episode - {episode\_number} - {episode\_title}" format by providing animefillerlist URL
+- Choose the directory files need to be downloaded into
+- Custom HLSDownloader (Now FFMPEG installation is optional from v1.0.4 upwards)
+- Custom decryptors for encrypted websites
 
 ### Supported Websites
 
@@ -62,8 +62,8 @@ _Don't have 2captcha API key? Don't worry! You can still use this to download an
 
 **In order to download from some websites (like animeultima.to) Anime Downloader requires you to have** [**FFMPEG**](https://www.ffmpeg.org/) **to be downloaded (Check whether your anime website needs FFMPEG)**
 
-* You can download FFMPEG from [here](https://www.ffmpeg.org/download.html)
-* And then add the ffmpeg executable to system path Or, in your linux environment,
+- You can download FFMPEG from [here](https://www.ffmpeg.org/download.html)
+- And then add the ffmpeg executable to system path Or, in your linux environment,
 
 ```bash
 sudo apt install ffmpeg
@@ -83,8 +83,8 @@ It is same as the CLI version, but provided a graphical user interface to collec
 
 Note: After v1.0.4 and above, Anime Downloader was named as "Monkey-DL" and the executable is called "monkey-dl.exe"
 
-* v1.0.4 and above: Execute the "monkey-dl.exe" to start.
-* v1.0.3 and lower: Execute the "anime-dl.exe" to start.
+- v1.0.4 and above: Execute the "monkey-dl.exe" to start.
+- v1.0.3 and lower: Execute the "anime-dl.exe" to start.
 
 If you're running from source files, execute the "anime-dl.py" script
 
@@ -100,7 +100,7 @@ And the GUI will appear as following :
 
 First of all, you need to be familiar with the commands you can use with the Anime Downloader.
 
-```
+```php
 Commands List :
   -h, --help            show this help message and exit
   -u, --url             9Anime.to URL for the anime to be downloaded
@@ -221,17 +221,17 @@ If the command doesn't work, you may need to run `sudo apt update` first then ru
 
 ### Building from source
 
-* Clone the project using to your local machine
+- Clone the project using to your local machine
 
 #### Prerequisites
 
-* Make sure python 3.7+ (preferably the latest version) and pip3 is installed
+- Make sure python 3.7+ (preferably the latest version) and pip3 is installed
 
 #### Installing
 
 1. Download the dependencies using requirements.txt file
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
@@ -262,7 +262,7 @@ To see the full available commands, run
 python ./Anime_Downloader.py --help
 ```
 
-```
+```php
 usage: Anime_Downloader.py [-h] -u <URL> -n <TITLE_URL> [-d <DIR>] [-s <START>]
                            [-e <END>] [-c <TS_NO>] [-t <THREADS>] [-f <ISFILLER>]
 
@@ -293,7 +293,7 @@ python3 ./Anime_Downloader -u https://9anime.to/watch/one-piece.ov8/169lyx -s 13
 
 ### Authors
 
-* **Oshan Mendis** - _Author_ - [Oshan96](https://github.com/Oshan96)
+- **Oshan Mendis** - _Author_ - [Oshan96](https://github.com/Oshan96)
 
 ### License
 
@@ -303,12 +303,12 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 Anime Downloader wouldn't be possible without these awesome free and opensource projects!
 
-* [CloudScraper](https://github.com/VeNoMouS/cloudscraper)
-* [Js2Py](https://github.com/PiotrDabkowski/Js2Py)
-* [JsBeautifier](https://github.com/beautify-web/js-beautify)
-* [PyCryptodome](https://github.com/Legrandin/pycryptodome)
-* [PySimpleGUI](https://github.com/PySimpleGUI/PySimpleGUI)
-* [FFMPEG](https://ffmpeg.org/)
+- [CloudScraper](https://github.com/VeNoMouS/cloudscraper)
+- [Js2Py](https://github.com/PiotrDabkowski/Js2Py)
+- [JsBeautifier](https://github.com/beautify-web/js-beautify)
+- [PyCryptodome](https://github.com/Legrandin/pycryptodome)
+- [PySimpleGUI](https://github.com/PySimpleGUI/PySimpleGUI)
+- [FFMPEG](https://ffmpeg.org/)
 
 Special thanks to [u/sln0913](https://www.reddit.com/user/sln0913) for the awesome logo and banner designs!
 

@@ -3,14 +3,13 @@
 {% embed url="https://github.com/tkunic/ros-docker-simple" %}
 
 
-
 ## ROS Docker Simple
 
 A simple template project for [dockerizing](https://www.docker.com/) your [ROS](http://www.ros.org/) code. Have your ROS project set up and running in 3 minutes by putting your catkin workspace in `catkin_ws` and running:
 
 `cp ros-project`&#x20;
 
-```
+```php
 sudo apt-get install docker
 /script/build
 /script/run
@@ -24,7 +23,7 @@ And that's it!
 
 This works with [any supported version of ROS](https://hub.docker.com/\_/ros/), just edit the top line of the Dockerfile. For example, if you want ROS Kinetic:
 
-```
+```php
 FROM ros:kinetic-ros-base
 ```
 
@@ -46,7 +45,7 @@ I recommend [tmux](https://robots.thoughtbot.com/a-tmux-crash-course) as an easy
 
 However, if you really want multiple terminal windows instead, you can open a new terminal window on your host computer and run:
 
-```
+```bash
 docker exec -it ros-docker-simple /bin/bash
 ```
 
@@ -54,7 +53,7 @@ docker exec -it ros-docker-simple /bin/bash
 
 You can give your command as an argument to `script/run`, for example:
 
-```
+```bash
 script/run roslaunch example.launch
 ```
 
@@ -70,7 +69,7 @@ The `docker-compose` tool is the standard way to run multiple containers togethe
 
 Is it this one?
 
-```
+```bash
 docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.26/containers/create: dial unix /var/run/docker.sock: connect: permission denied.
 ```
 
@@ -80,12 +79,12 @@ Reason: your user does not have privileges to run Docker. Put your user into the
 
 Instead of giving it a command like this:
 
-```
+```bash
 script/run "cd /tmp/ && ls"
 ```
 
 Try this:
 
-```
+```bash
 script/run sh -c "cd /tmp/ && ls"
 ```

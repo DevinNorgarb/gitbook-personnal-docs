@@ -1,6 +1,6 @@
 # Page 1
 
-#### Why would I do this?
+## Why would I do this?
 
 Learning Kubernetes has been on my list for awhile but the prices for managed clusters at the cloud providers are just too high for something I want to play around with infrequently. I love the idea of self-hosting my own resources, so I started looking into how to have my own cluster locally.
 
@@ -10,15 +10,15 @@ What I do have is a machine in my closet running Proxmox VE, and there is absolu
 
 So here is that guide.
 
-#### Preface
+### Preface
 
 This setup uses Proxmox VMs as opposed to LXC containers. You could probably make this work with LXC containers, but I have found that when using container tech, a VM works much more smoothly.
 
 My server running Proxmox has the following specs:
 
-* 64GB of RAM
-* 8th gen core i7 4-core/8-thread processor
-* 1 TB NVMe storage
+- 64GB of RAM
+- 8th gen core i7 4-core/8-thread processor
+- 1 TB NVMe storage
 
 I used Debian as my OS for my k3s nodes, but any linux OS should work. Many of the details I list in this guide assume Debian is the OS. You may need to change a few things.
 
@@ -37,7 +37,7 @@ Run `apt-get update` and `apt-get upgrade` to make sure it is fully up-to-date.
 Create a user account for yourself and give it sudo permissions:
 
 ```
-# This assumes you are using a debian flavor of linux
+## This assumes you are using a debian flavor of linux
 adduser YOURNAME
 usermod -aG sudo YOURNAME
 ```
@@ -69,16 +69,16 @@ For this and all machines, a static IP needs to be set. Ideally this should be d
 Edit your `/etc/network/interfaces` file. It should look initially something like this:
 
 ```
-# This file describes the network interfaces available on your system
-# and how to activate them. For more information, see interfaces(5).
+## This file describes the network interfaces available on your system
+## and how to activate them. For more information, see interfaces(5).
 
 source /etc/network/interfaces.d/*
 
-# The loopback network interface
+## The loopback network interface
 auto lo
 iface lo inet loopback
 
-# The primary network interface
+## The primary network interface
 allow-hotplug ens18
 iface ens18 inet dhcp  # CHANGE THIS TO STATIC
 ```
@@ -86,23 +86,23 @@ iface ens18 inet dhcp  # CHANGE THIS TO STATIC
 You want to change it from `dhcp` to `static` on the last line and specify an appropriate `address`, `netmask`, `gateway`, and `dns-nameservers` for your network. My final version looked something like this:
 
 ```
-# This file describes the network interfaces available on your system
-# and how to activate them. For more information, see interfaces(5).
+## This file describes the network interfaces available on your system
+## and how to activate them. For more information, see interfaces(5).
 
 source /etc/network/interfaces.d/*
 
-# The loopback network interface
+## The loopback network interface
 auto lo
 iface lo inet loopback
 
-# The primary network interface
+## The primary network interface
 allow-hotplug ens18
 iface ens18 inet static
         address 10.1.0.202
         netmask 255.255.0.0
         gateway 10.1.0.1
         dns-nameservers 10.1.0.3
-```
+```json
 {% endstep %}
 
 {% step %}
@@ -115,10 +115,10 @@ You need to change the hostname in 2 different places.
 Run this command to change the hostname:
 
 ```
-# Run this on your master node
+## Run this on your master node
 sudo hostnamectl set-hostname k3s-master
 
-# If setting up a worker node you could do this
+## If setting up a worker node you could do this
 sudo hostnamectl set-hostname k3s-agent-1
 ```
 
@@ -126,15 +126,15 @@ Next edit the hostname in the `/etc/hosts` file.
 
 Change the line starting with `127.0.1.1` to your new hostname. Everything else you can leave alone.
 
-```
+```json
 127.0.0.1       localhost
 127.0.1.1       k3s-master
 
-# The following lines are desirable for IPv6 capable hosts
+## The following lines are desirable for IPv6 capable hosts
 ::1     localhost ip6-localhost ip6-loopback
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
-```
+```json
 {% endstep %}
 
 {% step %}
@@ -166,22 +166,22 @@ Connect to the master node via SSH or using the proxmox console and run the inst
 Important note: By default, k3s comes with a service called `klipper-lb` to handle load balancing. This will interfere with MetalLB and needs to be disabled for it to work correctly. The install command below disables klipper-lb.
 {% endhint %}
 
-```
+```python
 curl -sfL https://get.k3s.io | sh -s - server --disable servicelb
 ```
 
 After the install completes you need three pieces of information:
 
-* The static IP address of this master node
-* The master node token generated during the install
-* The kubeconfig file located at `/etc/rancher/k3s/k3s.yaml`. Download this to your local machine.
+- The static IP address of this master node
+- The master node token generated during the install
+- The kubeconfig file located at `/etc/rancher/k3s/k3s.yaml`. Download this to your local machine.
 
 You can get the master node token by reading it from a file on the master node:
 
 ```
-# This must be read with root permissions
+## This must be read with root permissions
 sudo cat /var/lib/rancher/k3s/server/node-token
-```
+```javascript
 {% endstep %}
 
 {% step %}
@@ -189,9 +189,9 @@ sudo cat /var/lib/rancher/k3s/server/node-token
 
 On each worker node you need to run the install script with the two pieces of information above:
 
-```
+```javascript
 curl -sfL https://get.k3s.io | K3S_URL=https://$YOURIPADDRESS:6443 K3S_TOKEN=$YOURNODETOKEN sh -
-```
+```javascript
 {% endstep %}
 
 {% step %}
@@ -199,13 +199,13 @@ curl -sfL https://get.k3s.io | K3S_URL=https://$YOURIPADDRESS:6443 K3S_TOKEN=$YO
 
 On your local machine set the `KUBECONFIG` environmental variable to the path of your `k3s.yaml`. On Linux you could do this:
 
-```
+```javascript
 export KUBECONFIG=/path/to/k3s.yaml
 ```
 
 Now you should be able to connect to and see your cluster nodes:
 
-```
+```json
 kubectl get nodes
 
 ## OUTPUT SHOULD LOOK SOMETHING LIKE
@@ -227,7 +227,7 @@ MetalLB hands out IP addresses to your Kubernetes services. For it to do this sa
 
 Create the following file `values.yaml`:
 
-```
+```python
 configInline:
   address-pools:
    - name: default
@@ -241,10 +241,10 @@ On the final line, specify the range of IP addresses you want MetalLB to hand ou
 Now you can install MetalLB from the helm repo, and pass in this new file you created:
 
 ```
-# Add the helm repo
+## Add the helm repo
 helm repo add metallb https://metallb.github.io/metallb
 
-# Install metallb
+## Install metallb
 helm install metallb metallb/metallb -f values.yaml
 ```
 

@@ -14,7 +14,7 @@ A statement from OpenAirInterface expressed the organization’s excitement at c
 
 _“OpenAirInterface community has been using Canonical tools since its inception for development, orchestration and CI/CD. Canonical plays a pivotal role in the open source cloud-native ecosystem. We are very enthusiastic about working together with Canonical towards the common goal of achieving open-source Open RAN.”_
 
-### Canonical’s role towards 5G Open RAN with open source
+## Canonical’s role towards 5G Open RAN with open source
 
 With a mission to incubate a wider ecosystem for Open RAN and boost adoption of open source technologies in 5G RAN deployments, Canonical is involved in several tracks, focusing on different aspects of Open RAN networks running open source virtual RAN (vRAN) workloads. Some of these tracks will focus on:
 

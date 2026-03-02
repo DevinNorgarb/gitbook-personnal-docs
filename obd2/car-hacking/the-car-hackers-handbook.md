@@ -52,7 +52,7 @@ No Starch Press and the No Starch Press logo are registered trademarks of No Sta
 
 The information in this book is distributed on an “As Is” basis, without warranty. While every precaution has been taken in the preparation of this work, neither the author nor No Starch Press, Inc. shall have any liability to any person or entity with respect to any loss or damage caused or alleged to be caused directly or indirectly by the information contained in it.
 
-### **About the Author** <a href="#calibre_link-673" id="calibre_link-673"></a>
+## **About the Author** <a href="#calibre_link-673" id="calibre_link-673"></a>
 
 Craig Smith ([craig@theialabs.com](mailto:craig@theialabs.com)) runs Theia Labs, a security research firm that focuses on security auditing and building hardware and software prototypes. He is also one of the founders of the Hive13 Hackerspace and Open Garages (@OpenGarages). He has worked for several auto manufacturers, where he provided public research on vehicle security and tools. His specialties are reverse engineering and penetration testing. This book is largely a product of Open Garages and Craig’s desire to get people up to speed on auditing their vehicles.
 

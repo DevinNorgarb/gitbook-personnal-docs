@@ -2,8 +2,7 @@
 
 This page explains how to connect and configure a Raspberry Pi (RPi) so that it is able to communicate with a flight controller using the MAVLink protocol over a serial connection. This can be used to perform additional tasks such as image recognition which simply cannot be done by the flight controller due to the memory requirements for storing images.
 
-### Connecting the Flight controller and RPi Hardware[¶](/broken/pages/q6KXZgAuStLTtrE9sU87)
-
+## Connecting the Flight controller and RPi Hardware[¶](/broken/pages/q6KXZgAuStLTtrE9sU87)
 
 
 Connect the flight controller’s TELEM2 port to the RPi’s Ground, TX and RX pins as shown in the image above. More details on the individual RPi’s pin functions can be found [here](http://elinux.org/RPi_Low-level_peripherals).
@@ -20,9 +19,9 @@ Depending on the model of RPi used and internal/external peripherals used, +5V p
 
 Connect to the flight controller with a ground station (i.e. Mission Planner) and set the following parameters:
 
-* [SERIAL2\_PROTOCOL](https://ardupilot.org/copter/docs/parameters.html#serial2-protocol) = 2 (the default) to enable MAVLink 2 on the serial port.
-* [SERIAL2\_BAUD](https://ardupilot.org/copter/docs/parameters.html#serial2-baud) = 921 so the flight controller can communicate with the RPi at 921600 baud.
-* [LOG\_BACKEND\_TYPE](https://ardupilot.org/copter/docs/parameters.html#log-backend-type) = 3 if you are using APSync to stream the dataflash log files to the RPi
+- [SERIAL2\_PROTOCOL](https://ardupilot.org/copter/docs/parameters.html#serial2-protocol) = 2 (the default) to enable MAVLink 2 on the serial port.
+- [SERIAL2\_BAUD](https://ardupilot.org/copter/docs/parameters.html#serial2-baud) = 921 so the flight controller can communicate with the RPi at 921600 baud.
+- [LOG\_BACKEND\_TYPE](https://ardupilot.org/copter/docs/parameters.html#log-backend-type) = 3 if you are using APSync to stream the dataflash log files to the RPi
 
 ### Configure the serial port (UART)[¶](/broken/pages/q6KXZgAuStLTtrE9sU87)
 
@@ -33,11 +32,9 @@ Type:
 And in the utility, select “Interfacing Options”:
 
 
-
 RasPiConfiguration Utility[¶](/broken/pages/q6KXZgAuStLTtrE9sU87)
 
 And then “Serial”:
-
 
 
 When prompted, select `no` to “Would you like a login shell to be accessible over serial?”.
@@ -64,10 +61,10 @@ There are a few different software options for communicating with the flight con
 
 The easiest way to setup the RPi is to flash one of the existing APSync images:
 
-* Purchase a formatted 8GB or 16GB SD card (16GB is better because some 8GB cards will not be quite large enough to fit the image) and insert into your laptop/desktop computer’s SD card slot
-* Download the latest [image from firmware.ardupilot.org](https://firmware.ardupilot.org/Companion/apsync). Look for the file starting with “apsync-rpi”.
-* Use the [Etcher](https://www.balena.io/etcher/) software to load the image onto the micro SD card.
-*   Insert the micro SD card into into the Pi’s micro SD card slot
+- Purchase a formatted 8GB or 16GB SD card (16GB is better because some 8GB cards will not be quite large enough to fit the image) and insert into your laptop/desktop computer’s SD card slot
+- Download the latest [image from firmware.ardupilot.org](https://firmware.ardupilot.org/Companion/apsync). Look for the file starting with “apsync-rpi”.
+- Use the [Etcher](https://www.balena.io/etcher/) software to load the image onto the micro SD card.
+-   Insert the micro SD card into into the Pi’s micro SD card slot
 
     > Note
     >
@@ -85,18 +82,17 @@ See the [MAVProxy Documentation](https://ardupilot.org/mavproxy/docs/getting_sta
 
 To test the RPi and flight controller are able to communicate with each other first ensure the RPi and flight controller are powered, then in a console on the RPi type:
 
-```
+```php
 python3 mavproxy.py --master=/dev/serial0 --baudrate 921600 --aircraft MyCopter
 ```
 
 Once MAVProxy has started you should be able to type in the following command to display the `ARMING_CHECK` parameters value
 
-```
+```php
 param show ARMING_CHECK
 param set ARMING_CHECK 0
 arm throttle
 ```
-
 
 
 Note
@@ -105,7 +101,7 @@ If you get an error about not being able to find log files or if this example ot
 
 To run MAVProxy as a telemetry router on the Pi, set it up to run as a service and use the –daemon and –non-interactive parameters. For example:
 
-```
+```bash
 mavproxy.py --daemon --non-interactive --default-modules='' --continue --master=/dev/serial0 --baudrate 1500000 --out=udp:pro:14550
 ```
 
@@ -119,7 +115,7 @@ Mavlink-router is used to route telemetry between the RPi’s serial port and an
 
 After installing, edit the mavlink-router config file’s `/etc/mavlink-router/main.conf` UART section to:
 
-```
+```json
 [UartEndpoint to_fc]
 Device = /dev/serial0
 Baud = 921600
@@ -127,7 +123,7 @@ Baud = 921600
 
 You will also need to add an additional UDP endpoint allow other ground stations on the same network to connect to the Pi. Edit the mavlink-router config file `/etc/mavlink-router/main.conf` to include:
 
-```
+```json
 [UdpEndpoint to_14550_external]
 Mode = eavesdropping
 Address = 0.0.0.0
@@ -149,10 +145,10 @@ The most up-to-date instructions for [Installing DroneKit](https://dronekit-pyth
 
 Installation is via a disk image:
 
-* Purchase a formatted 8GB (or larger) micro SD card and insert into your laptop/desktop computer’s SD card slot
-* Download the latest [image](https://www.docs.rpanion.com/software/rpanion-server).
-* Use the [Etcher](https://www.balena.io/etcher/) software to load the image onto the micro SD card.
-* Insert the micro SD card into into the Pi’s micro SD card slot
+- Purchase a formatted 8GB (or larger) micro SD card and insert into your laptop/desktop computer’s SD card slot
+- Download the latest [image](https://www.docs.rpanion.com/software/rpanion-server).
+- Use the [Etcher](https://www.balena.io/etcher/) software to load the image onto the micro SD card.
+- Insert the micro SD card into into the Pi’s micro SD card slot
 
 The Rpanion-server image will have the serial port (UART) already enabled.
 

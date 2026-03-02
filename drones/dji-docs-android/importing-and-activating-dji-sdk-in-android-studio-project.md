@@ -6,7 +6,7 @@ _If you come across any mistakes or bugs in this tutorial, please let us know us
 
 In this tutorial, we will use the Android Studio's HelloWorld template project to show you how to import DJI Android SDK and register the application.
 
-### Creating an Android Studio Project <a href="#creating-an-android-studio-project" id="creating-an-android-studio-project"></a>
+## Creating an Android Studio Project <a href="#creating-an-android-studio-project" id="creating-an-android-studio-project"></a>
 
 Open Android Studio and select **Start a new Android Studio project** to create a new project.
 
@@ -81,7 +81,7 @@ Now, let's double click to open the MainActivity.java file in the `com.dji.impor
 
 Then add `import dji.sdk.SDKManager.DJISDKManager;` at the bottom of the import classes section as shown below:
 
-```
+```php
 package com.dji.importSDKDemo;
 
 import android.os.Bundle;
@@ -109,7 +109,7 @@ Let's double click the AndroidManifest.xml file in the project navigator to open
 
 Then add the following elements code on top of the "application" element:
 
-```
+```html
 <!-- Permissions and features -->
 <uses-sdk
         android:minSdkVersion="19"
@@ -144,7 +144,7 @@ Here, we request permissions that the application must be granted in order for i
 
 Moreover, let's add the following elements as childs of element as shown below:
 
-```
+```html
 <!-- DJI SDK -->
         <uses-library android:name="com.android.future.usb.accessory" />
         <meta-data
@@ -169,7 +169,7 @@ In the code above, you should substitude your **App Key** of the application for
 
 Finally, once you finish all the configurations for AndroidManifest.xml file, you should see the following content:
 
-```
+```html
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dji.importSDKDemo">
@@ -249,7 +249,7 @@ Finally, once you finish all the configurations for AndroidManifest.xml file, yo
 
 After you finish the steps above, open the **MainActivity.java** file and replace the code with the following content:
 
-```
+```python
 package com.dji.importSDKDemo;
 
 import android.content.Intent;

@@ -86,17 +86,17 @@ When you create a resource such as a Compute instance, you decide which availabi
 
 A VCN automatically comes with these default components:
 
-* Default [route table](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingroutetables.htm), with no route rules
-* Default [security list](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/securitylists.htm#Default), with default security rules
-* Default [set of DHCP options](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingDHCP.htm), with default values
+- Default [route table](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingroutetables.htm), with no route rules
+- Default [security list](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/securitylists.htm#Default), with default security rules
+- Default [set of DHCP options](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingDHCP.htm), with default values
 
 You can't delete these default components. However, you can change their contents (for example, the rules in the default security list). You can also create custom versions of each kind of component in a VCN. Limits exist as to how many you can create and the maximum number of rules. For more information, see [Limits by Service](https://docs.oracle.com/iaas/Content/General/Concepts/servicelimits.htm).
 
 Each subnet always has these components associated with it:
 
-* One route table
-* One or more security lists (for the maximum number, see [Limits by Service](https://docs.oracle.com/iaas/Content/General/Concepts/servicelimits.htm))
-* One set of DHCP options
+- One route table
+- One or more security lists (for the maximum number, see [Limits by Service](https://docs.oracle.com/iaas/Content/General/Concepts/servicelimits.htm))
+- One set of DHCP options
 
 During subnet creation, you can decide which route table, security list, and set of DHCP options the subnet uses. If you don't specify a particular component, the subnet automatically uses the VCN's default component. You can [change which components the subnet uses](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/edit_subnet.htm) at any time.
 
@@ -124,16 +124,16 @@ If the VNIC is in a public subnet, then each private IP on that VNIC can have a 
 
 There are two optional gateways (virtual routers) that you can add to your VCN depending on the type of internet access you need:
 
-* Internet gateway: For resources with public IP addresses that need to be reached from the internet (example: a web server) or need to initiate connections to the internet.
-* NAT gateway: For resources without public IP addresses that need to initiate connections to the internet (example: for software updates) but need to be protected from inbound connections from the internet.
+- Internet gateway: For resources with public IP addresses that need to be reached from the internet (example: a web server) or need to initiate connections to the internet.
+- NAT gateway: For resources without public IP addresses that need to initiate connections to the internet (example: for software updates) but need to be protected from inbound connections from the internet.
 
 Just having an internet gateway alone does not expose the instances in the VCN's subnets directly to the internet. The following requirements must also be met:
 
-* The [internet gateway](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingIGs.htm) must be enabled (by default, the internet gateway is enabled upon creation).
-* The subnet must be [public](networking-overview.md#Public).
-* The subnet must have a [route rule](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingroutetables.htm) that directs traffic to the internet gateway.
-* The subnet must have [security list rules](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/securitylists.htm) that allow the traffic (and each instance's firewall must allow the traffic).
-* The instance must have a [public IP address](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingpublicIPs.htm).
+- The [internet gateway](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingIGs.htm) must be enabled (by default, the internet gateway is enabled upon creation).
+- The subnet must be [public](networking-overview.md#Public).
+- The subnet must have a [route rule](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingroutetables.htm) that directs traffic to the internet gateway.
+- The subnet must have [security list rules](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/securitylists.htm) that allow the traffic (and each instance's firewall must allow the traffic).
+- The instance must have a [public IP address](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingpublicIPs.htm).
 
 {% hint style="info" %}
 To access public services such as Object Storage from your VCN without the traffic going over the internet, use a [service gateway](networking-overview.md#service_gateway).
@@ -151,8 +151,8 @@ You can use a service gateway with your VCN to enable private access to public O
 
 There are two ways to connect your on-premises network to Oracle Cloud Infrastructure:
 
-* [Site-to-Site VPN:](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingIPsec.htm) Offers multiple IPSec tunnels between your existing network's edge and your VCN, by way of a [DRG](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingDRGs.htm) that you create and attach to your VCN.
-* [Oracle Cloud Infrastructure FastConnect:](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/fastconnect.htm) Offers a private connection between your existing network's edge and Oracle Cloud Infrastructure. Traffic does not traverse the internet. Both private peering and public peering are supported. That means your on-premises hosts can access private IPv4 or IPv6 addresses in your VCN as well as regional public IPv4 or IPv6 addresses in Oracle Cloud Infrastructure (for example, Object Storage or public [load balancers](https://docs.oracle.com/iaas/Content/Balance/Concepts/balanceoverview.htm) in your VCN).
+- [Site-to-Site VPN:](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingIPsec.htm) Offers multiple IPSec tunnels between your existing network's edge and your VCN, by way of a [DRG](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingDRGs.htm) that you create and attach to your VCN.
+- [Oracle Cloud Infrastructure FastConnect:](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/fastconnect.htm) Offers a private connection between your existing network's edge and Oracle Cloud Infrastructure. Traffic does not traverse the internet. Both private peering and public peering are supported. That means your on-premises hosts can access private IPv4 or IPv6 addresses in your VCN as well as regional public IPv4 or IPv6 addresses in Oracle Cloud Infrastructure (for example, Object Storage or public [load balancers](https://docs.oracle.com/iaas/Content/Balance/Concepts/balanceoverview.htm) in your VCN).
 
 You can use one or both types of the preceding connections. If you use both, you can use them simultaneously, or in a redundant configuration. These connections come to your VCN by way of a single DRG that you create and attach to your VCN. Without that DRG attachment and a route rule for the DRG, traffic does not flow between your VCN and on-premises network. At any time, you can detach the DRG from your VCN but maintain all the remaining components that form the rest of the connection. You could then reattach the DRG again, or attach it to another VCN.
 
@@ -172,9 +172,9 @@ You can connect your VCN to another cloud provider by using Site-to-Site VPN wit
 
 This documentation includes a few basic networking scenarios to help you understand the Networking service and how the components work together in general. See these topics:
 
-* [Scenario A: Public Subnet](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/scenarioa.htm)
-* [Scenario B: Private Subnet with a VPN](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/scenariob.htm)
-* [Scenario C: Public and Private Subnets with a VPN](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/scenarioc.htm)
+- [Scenario A: Public Subnet](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/scenarioa.htm)
+- [Scenario B: Private Subnet with a VPN](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/scenariob.htm)
+- [Scenario C: Public and Private Subnets with a VPN](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/scenarioc.htm)
 
 ### Transit Routing
 
@@ -182,8 +182,8 @@ Scenarios A–C show an on-premises network connected to one or more VCNs by way
 
 The following advanced routing scenarios give an on-premises network access beyond the resources in the connected VCN. Traffic travels from an on-premises network to the DRG, and then _transits through_ the DRG to its destination. See these topics:
 
-* [Transit Routing inside a hub VCN](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/transitrouting.htm): An on-premises network has access to several VCNs in the same region over a single FastConnect private virtual circuit or Site-to-Site VPN. The DRG and attached VCNs are in a hub-and-spoke topology, with the on-premises network connected to the DRG which acts as the hub. The spoke VCNs are peered.
-* [Private Access to Oracle Services](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/transitroutingoracleservices.htm): An on-premises network has private access to Oracle services in the [Oracle Services Network](https://www.oracle.com/cloud/networking/service-gateway/service-gateway-supported-services/) by way of a connected VCN and the VCN's service gateway. The traffic doesn't go over the internet.
+- [Transit Routing inside a hub VCN](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/transitrouting.htm): An on-premises network has access to several VCNs in the same region over a single FastConnect private virtual circuit or Site-to-Site VPN. The DRG and attached VCNs are in a hub-and-spoke topology, with the on-premises network connected to the DRG which acts as the hub. The spoke VCNs are peered.
+- [Private Access to Oracle Services](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/transitroutingoracleservices.htm): An on-premises network has private access to Oracle services in the [Oracle Services Network](https://www.oracle.com/cloud/networking/service-gateway/service-gateway-supported-services/) by way of a connected VCN and the VCN's service gateway. The traffic doesn't go over the internet.
 
 ## Regions and Availability Domains
 
@@ -211,15 +211,15 @@ All addresses from 240.0.0.0 to 255.255.255.255 (Class E) are prohibited for use
 
 These addresses consist of:
 
-* The first IP address in the CIDR (the network address)
-* The last IP address in the CIDR (the broadcast address)
-* The first host address in the CIDR (the subnet default gateway address)
+- The first IP address in the CIDR (the network address)
+- The last IP address in the CIDR (the broadcast address)
+- The first host address in the CIDR (the subnet default gateway address)
 
 For example, in a subnet with CIDR 192.168.0.0/24, these addresses are reserved:
 
-* 192.168.0.0 (the network address)
-* 192.168.0.255 (the broadcast address)
-* 192.168.0.1 (the subnet default gateway address)
+- 192.168.0.0 (the network address)
+- 192.168.0.255 (the broadcast address)
+- 192.168.0.1 (the subnet default gateway address)
 
 The remaining addresses in the CIDR (192.168.0.2 to 192.168.0.254) are available for use.
 
@@ -261,15 +261,15 @@ You can write policies that focus on individual resource-types (for example, sec
 
 A resource-type called `local-peering-gateways` is included within `virtual-network-family` and includes two other resource-types related to local VCN peering (within region):
 
-* `local-peering-from`
-* `local-peering-to`
+- `local-peering-from`
+- `local-peering-to`
 
 The `local-peering-gateways` resource-type covers all permissions related to local peering gateways (LPGs). The `local-peering-from` and `local-peering-to` resource-types are for granting permission to connect two LPGs and define a peering relationship within a single region. For more information, see [Local Peering using an LPG (VCNs in the Same Tenancy)](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/drg-iam.htm#scenario_m__local-LPG) or [Local Peering using an LPG (VCNs in Different Tenancies)](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/drg-iam.htm#scenario_m__local-LPG-xten).
 
 Similarly, a resource-type called `remote-peering-connections` is included within `virtual-network-family` and includes two other resource-types related to remote VCN peering (across regions):
 
-* `remote-peering-from`
-* `remote-peering-to`
+- `remote-peering-from`
+- `remote-peering-to`
 
 The `remote-peering-connections` resource-type covers all permissions related to remote peering connections (RPCs). The `remote-peering-from` and `remote-peering-to` resource-types are for granting permission to connect two RPCs and define a peering relationship across regions. For more information, see [Remote Peering with a Legacy DRG](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/drg-iam.htm#scenario_m__remote-peer-policy) and [Remote Peering with an Upgraded DRG](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/drg-iam.htm#scenario_m__IAM_cross-tenancy).
 
@@ -281,13 +281,13 @@ Be aware that the `inspect` verb not only returns general information about the 
 
 Also, the following types of abilities are available only with the `manage` verb, not the `use` verb:
 
-* Update (enable/disable) `internet-gateways`
-* Update `security-lists`
-* Update `route-tables`
-* Update `dhcp-options`
-* Attach a Dynamic Routing Gateway (DRG) to a Virtual Cloud Network (VCN)
-* Create an IPSec connection between a DRG and customer-premises equipment (CPE)
-* Peer VCNs
+- Update (enable/disable) `internet-gateways`
+- Update `security-lists`
+- Update `route-tables`
+- Update `dhcp-options`
+- Attach a Dynamic Routing Gateway (DRG) to a Virtual Cloud Network (VCN)
+- Create an IPSec connection between a DRG and customer-premises equipment (CPE)
+- Peer VCNs
 
 {% hint style="warning" %}
 Each VCN has various components that directly affect the behavior of the network (route tables, security lists, DHCP options, Internet Gateway, and so on). When you create one of these components, you establish a relationship between that component and the VCN, which means you must be allowed in a policy to both create the component and manage the VCN itself. However, the ability to update that component (to change the route rules, security list rules, and so on) does not require permission to manage the VCN itself, even though changing that component can directly affect the behavior of the network. This design enables least-privilege policies but requires trust in users who can update components.

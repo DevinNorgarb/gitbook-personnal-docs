@@ -12,7 +12,7 @@ If we are creating an app that provides **shipping rates** on the checkout, then
 
 In order to do that, we need to use **CarrierService** API and send a request like below:<br>
 
-```
+```python
 POST /admin/api/2021-01/carrier_services.json
 {
   "carrier_service": {
@@ -29,7 +29,7 @@ There is also another attribute called **service\_discovery** which is set to **
 
 ## Service Discovery <a href="#service-discovery" id="service-discovery"></a>
 
-#### service\_discovery attribute. What is it about? <a href="#servicediscovery-attribute-what-is-it-about" id="servicediscovery-attribute-what-is-it-about"></a>
+### service\_discovery attribute. What is it about? <a href="#servicediscovery-attribute-what-is-it-about" id="servicediscovery-attribute-what-is-it-about"></a>
 
 According to Shopify docs:
 
@@ -56,7 +56,7 @@ Unfortunately, there is no special identifier for this request. You can explore 
 Dummy data is sent when Shopify makes the service discovery request. Merchants cannot alter that data ( at the time writing this article, but this may change in future ).\
 Below is the JSON structure of the dummy data sent with service discovery request.<br>
 
-```
+```json
 {
       "rate":{
          "origin":{
@@ -111,9 +111,9 @@ Below is the JSON structure of the dummy data sent with service discovery reques
 }
 ```
 
-* **origin** contains the address of pickup location for the selected shipping profile.
-* **destination** contains a dummy/random address of the **country** according to created **shipping zone**.
-* **items** attribute is an array which represent dummy cart items.
+- **origin** contains the address of pickup location for the selected shipping profile.
+- **destination** contains a dummy/random address of the **country** according to created **shipping zone**.
+- **items** attribute is an array which represent dummy cart items.
 
 #### Rest of World shipping zone <a href="#rest-of-world-shipping-zone" id="rest-of-world-shipping-zone"></a>
 

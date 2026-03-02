@@ -3,8 +3,7 @@
 In order to set a hashed password, run this command and enter your password when prompted:
 
 
-
-```
+```php
 mkpasswd --method=SHA-512
 ```
 
@@ -13,8 +12,8 @@ The output of the password "test" looks like:
 <pre><code><strong>$6$JhSQSLFN2/bd6u5N$BHAfXwewZ4aqNvtaYxFWfWq8BFU.uYvJc0nHulEZfbWkw3YLKM.1Aql5DHnz0FsTitZUZ8xn1EzxfQLDJin.B0
 </strong></code></pre>
 
-```yaml
-#cloud-config
+```
+## cloud-config
 users:
   - default
   - name: devin
@@ -39,6 +38,6 @@ autoinstall:
 
 Remember to always include `#cloud-config` at the start of the file
 
-```yaml
-#cloud-config
+```
+## cloud-config
 ```

@@ -1,12 +1,11 @@
 # Copy APK file usiung ADB
 
 
-
 The following sequence of commands is what worked for me on a **non-rooted device**:
 
 1\) Determine the package name of the app, e.g. "com.example.someapp". Skip this step if you already know the package name.
 
-```undefined
+```bash
 adb shell pm list packages
 ```
 
@@ -14,7 +13,7 @@ Look through the list of package names and try to find a match between the app i
 
 2\) Get the full path name of the APK file for the desired package.
 
-```lua
+```bash
 adb shell pm path com.example.someapp
 ```
 

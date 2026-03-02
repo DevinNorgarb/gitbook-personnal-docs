@@ -10,9 +10,9 @@ There is a pre-built script at /ardupilot/Tools/environment\_install/install-pre
 
 1.  MacOS will alert you when you enter a command in the terminal that requires Xcode Command Line Tools. You can also install Xcode Command Line Tools manually
 
-    ```
+```go
     xcode-select --install
-    ```
+```go
 2.  Install [Homebrew](http://brew.sh/) for MacOS (Homebrew is a respected package manager for MacOS)
 
     ```
@@ -25,24 +25,24 @@ There is a pre-built script at /ardupilot/Tools/environment\_install/install-pre
     brew update
     brew install genromfs
     brew install gcc-arm-none-eabi
-    ```
+```php
 4.  Install the latest version of awk using brew (make sure **/usr/local/bin** takes precedence in your path):
 
-    ```
+```php
     brew install gawk
-    ```
+```php
 5.  Install _pip_ and _pyserial_ using the following commands:
 
-    ```
+```php
     sudo easy_install pip
     sudo pip install pyserial future empy
-    ```
+```
 
-    ```
+```php
     ** Starting with MacOS Mojave (10.14.x) you might want to install the SDK headers
 
     open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
-    ```
+```php
 6. Follow the [MAVProxy documentation](https://ardupilot.org/mavproxy/docs/getting\_started/download\_and\_installation.html#mavproxy-downloadinstallmac) if you plan to use the simulator.
 
 Now you should be able to build with waf as described in [BUILD.md](https://github.com/ArduPilot/ardupilot/blob/master/BUILD.md).

@@ -1,16 +1,16 @@
 # Creating a Camera Application
 
-* [Download the SDK](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-* [Import the SDK framework](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-* [Implement the First Person View](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-* [Activate the SDK](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-* [Connect the Aircraft](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-* [Enjoy the First Person View](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-* [Implement the Capture function](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-* [Implement the Record function](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-  * [1. Switching Camera Mode](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-  * [2. Add Record Action](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-* [Summary](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
+- [Download the SDK](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
+- [Import the SDK framework](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
+- [Implement the First Person View](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
+- [Activate the SDK](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
+- [Connect the Aircraft](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
+- [Enjoy the First Person View](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
+- [Implement the Capture function](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
+- [Implement the Record function](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
+  - [1. Switching Camera Mode](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
+  - [2. Add Record Action](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
+- [Summary](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
 
 _If you come across any mistakes or bugs in this tutorial, please let us know using a Github issue, a post on the DJI forum, or commenting in the Gitbook. Please feel free to send us Github pull request and help us fix any issues. However, all pull requests related to document must follow the_ [_document style_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 
@@ -22,15 +22,15 @@ You can download the entire project for this tutorial from this [Github Page](ht
 
 We use Phantom 3 Professional as an example to make this demo.
 
-### Download the SDK <a href="#download-the-sdk" id="download-the-sdk"></a>
+## Download the SDK <a href="#download-the-sdk" id="download-the-sdk"></a>
 
 You can download the latest iOS SDK from here: [https://developer.dji.com/mobile-sdk/downloads/](https://developer.dji.com/mobile-sdk/downloads/)
 
 The development package includes:
 
-* SDK demo project (This includes implementation of main features such as camera, flightController, gimbal control, etc)
-* Documentations
-* Framework
+- SDK demo project (This includes implementation of main features such as camera, flightController, gimbal control, etc)
+- Documentations
+- Framework
 
 Minimum Requirement: iOS 8.0 or above
 
@@ -59,15 +59,15 @@ Add a UIView inside the View Controller and set it as an IBOutlet called "**fpvP
 Go to **DJICameraViewController.m** file and import the **DJISDK** and **VideoPreviewer** header files. Then implement two delegate protocols as shown below:
 
 ```
-#import <DJISDK/DJISDK.h>
-#import "VideoPreviewer.h"
+## import <DJISDK/DJISDK.h>
+## import "VideoPreviewer.h"
 
 @interface DJICameraViewController ()<DJICameraDelegate, DJISDKManagerDelegate>
 ```
 
 **4**. In the **viewDidAppear** method, set **fpvPreviewView** instance as a view of **VideoPreviewer** to show the Video Stream and reset it to nil in the **viewWillDisappear** method:
 
-```
+```json
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -115,7 +115,7 @@ Lastly, implement the **DJICameraDelegate** methods, as shown below:
 
 ```
 
-#pragma mark - DJICameraDelegate
+## pragma mark - DJICameraDelegate
 -(void)camera:(DJICamera *)camera didReceiveVideoData:(uint8_t *)videoBuffer length:(size_t)size
 {
     uint8_t* pBuffer = (uint8_t*)malloc(size);
@@ -137,7 +137,7 @@ Lastly, implement the **DJICameraDelegate** methods, as shown below:
 
 Let's create a new method named **registerApp** and invoke it in the viewDidAppear method as shown below:
 
-```
+```php
 - (void)registerApp
 {
     NSString *appKey = @"Enter Your App Key Here";
@@ -197,7 +197,7 @@ In the code above, we invoke the **startConnectionToProduct** method of DJISDKMa
 
 After you finish the steps above, you can now connect your mobile device to your DJI Aircraft to use the application, like checking the FPV View. Here are the guidelines:
 
-*   In order to connect to a DJI Inspire 1, Phantom 3 Professional or Phantom 3 Advanced:
+-   In order to connect to a DJI Inspire 1, Phantom 3 Professional or Phantom 3 Advanced:
 
     **1**. First, turn on your remote controller.
 
@@ -217,7 +217,7 @@ If you can see the live video stream in the application, congratulations! Let's 
 
 Add the following codes to the **captureAction** IBAction method:
 
-```
+```json
 - (IBAction)captureAction:(id)sender {
 
     __weak DJICameraViewController *weakSelf = self;
@@ -336,7 +336,7 @@ Now, open the **Main.storyboard** and add an IBOutlet for the UISegmented Contro
 
 We can update the state of the segmented control when switching between **CameraWorkModeCapture** and **CameraWorkModeRecord** using the previous delegate method like this:
 
-```
+```json
 -(void) camera:(DJICamera*)camera didUpdateSystemState:(DJICameraSystemState*)systemState
 {        
 
@@ -394,7 +394,7 @@ Firstly, we need a BOOL variable to save the status of the record action and a U
 
 Then add a BOOL variable **isRecording** in the class extension of **DJICameraViewController**. Be sure to hide **currentRecordTimeLabel** in the **viewDidLoad** method.
 
-```
+```json
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.currentRecordTimeLabel setHidden:YES];
@@ -430,7 +430,7 @@ We can update the text values for **isRecording** and **currentRecordTimeLabel**
 
 Because the value of **currentRecordingTime** is counted in seconds, so we need to convert it to "mm:ss" format like this:
 
-```
+```json
 - (NSString *)formattingSeconds:(int)seconds
 {
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:seconds];
@@ -445,7 +445,7 @@ Because the value of **currentRecordingTime** is counted in seconds, so we need 
 
 Next, add the following codes to the **recordAction** IBAction method as follows:
 
-```
+```json
 - (IBAction)recordAction:(id)sender {
 
    __weak DJICameraViewController *weakSelf = self;

@@ -118,7 +118,7 @@ void recvWithEndMarker() {
     static byte ndx = 0;
     char endMarker = '\n';
     char rc;
-    
+
     while (Serial.available() > 0 && newData == false) {
         rc = Serial.read();
 
@@ -147,7 +147,6 @@ void showNewData() {
 ```
 
 This version of the program reads all the characters into an array until it detects the Newline character as an end marker.
-
 
 
 ## Example 3 - A more complete system <a href="#example-3-a-more-complete-system-1" id="example-3-a-more-complete-system-1"></a>
@@ -186,7 +185,7 @@ void recvWithStartEndMarkers() {
     char startMarker = '<';
     char endMarker = '>';
     char rc;
- 
+
     while (Serial.available() > 0 && newData == false) {
         rc = Serial.read();
 
@@ -326,7 +325,7 @@ void recvWithEndMarker() {
     static byte ndx = 0;
     char endMarker = '\n';
     char rc;
-    
+
     if (Serial.available() > 0) {
         rc = Serial.read();
 
@@ -443,7 +442,7 @@ void parseData() {      // split the data into its parts
 
     strtokIndx = strtok(tempChars,",");      // get the first part - the string
     strcpy(messageFromPC, strtokIndx); // copy it to messageFromPC
- 
+
     strtokIndx = strtok(NULL, ","); // this continues where the previous call left off
     integerFromPC = atoi(strtokIndx);     // convert this part to an integer
 
@@ -503,7 +502,7 @@ void recvBytesWithStartEndMarkers() {
     byte startMarker = 0x3C;
     byte endMarker = 0x3E;
     byte rb;
-   
+
 
     while (Serial.available() > 0 && newData == false) {
         rb = Serial.read();

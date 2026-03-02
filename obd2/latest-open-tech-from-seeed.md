@@ -4,22 +4,22 @@
 
 Ever heard of CAN-BUS but don’t exactly know what it does? Fret not! We will be discussing everything about CAN-BUS today. I hope that you’ll get a better understanding of it through this blog:
 
-* Introduction to CAN-BUS
-* Why use the CAN protocol
-* CAN-BUS vs OBD2
-* Seeed’s CAN-BUS products **(Updated)**
-* CAN-BUS Projects **(Updated)**
-* Getting started with CAN-BUS with Arduino
+- Introduction to CAN-BUS
+- Why use the CAN protocol
+- CAN-BUS vs OBD2
+- Seeed’s CAN-BUS products **(Updated)**
+- CAN-BUS Projects **(Updated)**
+- Getting started with CAN-BUS with Arduino
 
 ***
 
-#### What is CAN-BUS?
+## What is CAN-BUS?
 
 CAN stands for _Controller Area Network_, it is used to **allow microcontrollers and devices to communicate with each other within a vehicle** without a host computer which allows for control and data acquisition. These devices are also called Electronic Control Units (ECU) and they enable communication between all parts of a vehicle.
 
 Today, you can find up to 70 ECUs in a modern car. CAN is a serial communication bus designed for industrial and automotive applications. For example, they are found in vehicles, farming equipment, industrial environments, etc.
 
-#### How does CAN-BUS work?
+### How does CAN-BUS work?
 
 The fuel level, door sensors, odometer, and many more parts of a car have to communicate with each other somehow, and CAN BUS is what they used to do. These CAN-compatible components, which are called “nodes” are connected with a 3-string copper wire, with no central router to govern the flow of data. Every node can hear the messages of every other node.
 
@@ -35,30 +35,30 @@ In a vehicle, **safety and reliability** are the two most valued features. CAN-B
 
 #### Low Cost
 
-* With its multiplex wiring that combines analog and digital signals and their transmission over a shared medium, it reduces the amount of wiring needed.
-* When adding or reducing some equipment, it can be easily operated, and there is no need to carry out a large-scale transformation of the system, which saves a lot of manpower.
+- With its multiplex wiring that combines analog and digital signals and their transmission over a shared medium, it reduces the amount of wiring needed.
+- When adding or reducing some equipment, it can be easily operated, and there is no need to carry out a large-scale transformation of the system, which saves a lot of manpower.
 
 #### Centralized
 
-* As CAN-BUS supports centralized control over electronic devices that are connected to the network, it allows for central error diagnosis and configuration across all ECUs
-* Error handling is also built into the CAN protocol where nodes can check for errors in transmission while maintaining their own error counter. For example, the protocol supports different error detection capabilities such as bit error, ack error, form error, CRC error, etc.
+- As CAN-BUS supports centralized control over electronic devices that are connected to the network, it allows for central error diagnosis and configuration across all ECUs
+- Error handling is also built into the CAN protocol where nodes can check for errors in transmission while maintaining their own error counter. For example, the protocol supports different error detection capabilities such as bit error, ack error, form error, CRC error, etc.
 
 #### Flexible
 
-* As each CAN-connected ECU can receive all transmitted messages, it can also decide whether it is relevant and act accordingly.
-* The CAN protocol is also a message-based communication protocol where nodes on the bus have no identifying information.
-* With the above features, nodes can easily be added or removed and modified.
-* For beginners, it will be easy to integrate new electronic devices into the CAN-BUS network without any significant programming overhead.
+- As each CAN-connected ECU can receive all transmitted messages, it can also decide whether it is relevant and act accordingly.
+- The CAN protocol is also a message-based communication protocol where nodes on the bus have no identifying information.
+- With the above features, nodes can easily be added or removed and modified.
+- For beginners, it will be easy to integrate new electronic devices into the CAN-BUS network without any significant programming overhead.
 
 #### Robust
 
-* When choosing a communication protocol, durability and reliability are very important. You would want your communication protocol to be self-sustaining and durable for a long period of time without maintenance.
-* With the CAN BUS, the system is robust towards electric disturbances and electromagnetic interference which makes it ideal for vehicles.
+- When choosing a communication protocol, durability and reliability are very important. You would want your communication protocol to be self-sustaining and durable for a long period of time without maintenance.
+- With the CAN BUS, the system is robust towards electric disturbances and electromagnetic interference which makes it ideal for vehicles.
 
 #### Efficient
 
-* CAN messages frames are prioritized by ID where the top priority will get bus access and yet frames would not be interrupted.
-* Flash programming, also saves time together with less and simple wiring.
+- CAN messages frames are prioritized by ID where the top priority will get bus access and yet frames would not be interrupted.
+- Flash programming, also saves time together with less and simple wiring.
 
 ***
 
@@ -86,31 +86,31 @@ It also allows for several features to be added via just software. Furthermore, 
 
 ![](https://blog.seeedstudio.com/wp-content/uploads/2019/11/image-158.png)
 
-* The CAN protocol consists of two wires for bi-directional data transmission as shown above which are
-  * CAN\_H (CAN High)
-  * CAN\_L (CAN Low)
-* The wires act as a differential line which means the CAN signal either 0 or 1, can be represented by the potential difference between the two wires
-  * For example, if the difference is positive and large then a certain minimum voltage = 1. If the difference is negative = 0
-* For CAN termination, as you can see from the picture above, a single 120 Ohm is generally used at the 2 ends of the CAN network.
+- The CAN protocol consists of two wires for bi-directional data transmission as shown above which are
+  - CAN\_H (CAN High)
+  - CAN\_L (CAN Low)
+- The wires act as a differential line which means the CAN signal either 0 or 1, can be represented by the potential difference between the two wires
+  - For example, if the difference is positive and large then a certain minimum voltage = 1. If the difference is negative = 0
+- For CAN termination, as you can see from the picture above, a single 120 Ohm is generally used at the 2 ends of the CAN network.
 
 ***
 
 ### CAN Protocol Speed and Range
 
-* Communication speeds of the CAN protocol range from 10kpbs to 1Mbps.
-  * The speed also depends on the length of wire used. The shorter it is, the faster the communication speed, and the longer it is, the slower the communication speed.
-  * For example, at 40 meters, the speed will be at 1Mbps. At 1000 meters, the speed can be at 50kpbs.
-* The node distance is generally advised to be no more than 0.3 meters / 1 foot.
+- Communication speeds of the CAN protocol range from 10kpbs to 1Mbps.
+  - The speed also depends on the length of wire used. The shorter it is, the faster the communication speed, and the longer it is, the slower the communication speed.
+  - For example, at 40 meters, the speed will be at 1Mbps. At 1000 meters, the speed can be at 50kpbs.
+- The node distance is generally advised to be no more than 0.3 meters / 1 foot.
 
 ### CAN Message
 
-* To fully understand how the CAN protocol works, let us look at the frames sent over the network.
-* The CAN message contains many segments. The 2 main segments, identifier, and data will be the ones transmitting the data.
-* The identifier is used to identify CAN devices in a CAN network while data will be the sensor or control data that have to be sent from one device to another.
-* The identifier or CAN ID is either 11 or 29 bits in length depending on the type of CAN protocol used.
-  * Standard CAN = 11 bit
-  * Extended CAN = 29 CAN
-* While the data can be anywhere from 0 to 8 bytes.
+- To fully understand how the CAN protocol works, let us look at the frames sent over the network.
+- The CAN message contains many segments. The 2 main segments, identifier, and data will be the ones transmitting the data.
+- The identifier is used to identify CAN devices in a CAN network while data will be the sensor or control data that have to be sent from one device to another.
+- The identifier or CAN ID is either 11 or 29 bits in length depending on the type of CAN protocol used.
+  - Standard CAN = 11 bit
+  - Extended CAN = 29 CAN
+- While the data can be anywhere from 0 to 8 bytes.
 
 ***
 
@@ -118,10 +118,10 @@ It also allows for several features to be added via just software. Furthermore, 
 
 I am pretty sure you will come across other “higher-layer protocols” that are related to CAN-BUS like OBD2 **BUT** they are not the same!
 
-* The CAN standard does not specify how to handle messages larger than 8 bytes or how to decode the raw data. Therefore, a set of standardized protocols are developed to further specify how data is communicated between ECUs of a given network and OBD2 is one of them.
-* OBD which stands for on-board diagnostics is your vehicle’s built-in self-diagnostic system. OBD2 can use one of (many) different bus systems to transfer diagnostic data from and to your car.
-* One simple analogy I would use to differentiate between the two of them will be OBD2 is like a language that we speak where we use CAN as a communication device like a phone to talk to someone which in this case a vehicle and its state of health.
-* To read more about OBD2, you can check out the [Wiki Page on OBD.](https://en.wikipedia.org/wiki/On-board_diagnostics)
+- The CAN standard does not specify how to handle messages larger than 8 bytes or how to decode the raw data. Therefore, a set of standardized protocols are developed to further specify how data is communicated between ECUs of a given network and OBD2 is one of them.
+- OBD which stands for on-board diagnostics is your vehicle’s built-in self-diagnostic system. OBD2 can use one of (many) different bus systems to transfer diagnostic data from and to your car.
+- One simple analogy I would use to differentiate between the two of them will be OBD2 is like a language that we speak where we use CAN as a communication device like a phone to talk to someone which in this case a vehicle and its state of health.
+- To read more about OBD2, you can check out the [Wiki Page on OBD.](https://en.wikipedia.org/wiki/On-board_diagnostics)
 
 ***
 
@@ -141,11 +141,11 @@ LoRa-E5 CAN Development Kit is based on the **LoRa-E5 STM32WLE5JC** Module and s
 
 Features of the LoRa-E5 CAN Development kit include:
 
-* Ultra-low power consumption and high-performance
-* Easy testing and rapid prototyping
-* Global LoRaWAN® and LoRa frequency plan supported
-* Long-distance transmission range to 10km (ideal value in open area)
-* Grove compatible interface for additional functions such as GPS, environmental detection, etc&#x20;
+- Ultra-low power consumption and high-performance
+- Easy testing and rapid prototyping
+- Global LoRaWAN® and LoRa frequency plan supported
+- Long-distance transmission range to 10km (ideal value in open area)
+- Grove compatible interface for additional functions such as GPS, environmental detection, etc&#x20;
 
 [LoRa-E5 CAN Development Kit](https://www.seeedstudio.com/LoRa-E5-CAN-FD-dev-kit-CANBUS-p-5398.html) is available to pre-order on **2nd June 2022** with estimated shipping in early July!
 
@@ -159,10 +159,10 @@ This CAN-BUS Shield adopts an **MCP2515** CAN-BUS controller with SPI interface 
 
 Features of this CAN-BUS shield include:
 
-* Implements CAN V2.0B at up to 1 Mb/s &#x20;
-* OBD-II and CAN standard pinout selectable.
-* Screw terminal that easily to connect CAN\_H and CAN\_L
-* SPI Interface up to 10 MHz   &#x20;
+- Implements CAN V2.0B at up to 1 Mb/s &#x20;
+- OBD-II and CAN standard pinout selectable.
+- Screw terminal that easily to connect CAN\_H and CAN\_L
+- SPI Interface up to 10 MHz   &#x20;
 
 #### [CANBed – Arduino CAN-BUS Development Kit (Atmega32U4 with MCP2515 and MCP2551) ](https://www.seeedstudio.com/CANBed-Arduino-CAN-BUS-Development-Kit-Atmega32U4-with-MCP2515-and-MCP2551-p-4365.html?utm_source=blog\&utm_medium=blog)[**($14.90)**](https://www.seeedstudio.com/CANBed-Arduino-CAN-BUS-Development-Kit-Atmega32U4-with-MCP2515-and-MCP2551-p-4365.html?utm_source=blog\&utm_medium=blog)
 
@@ -172,9 +172,9 @@ CANBed – Arduino CAN-BUS Development Kit carries an **Atmega32U4** chip and **
 
 Features of the CANBED include:
 
-* Atmega32U4 with Arduino Leonardo bootloader on the board
-* MCP2515 CAN Bus controller and MCP2551 CAN Bus transceiver
-* BD-II and CAN standard pinout selectable at the sub-D connector
+- Atmega32U4 with Arduino Leonardo bootloader on the board
+- MCP2515 CAN Bus controller and MCP2551 CAN Bus transceiver
+- BD-II and CAN standard pinout selectable at the sub-D connector
 
 #### [CANBed FD – Arduino CAN-FD Development Kit ($17.90)](https://www.seeedstudio.com/CANBed-FD-Arduino-CAN-FD-Development-Kit-p-4724.html)
 
@@ -184,11 +184,11 @@ The newest addition to the CAN family, this CAN Bed-FD carries an **MCP2517FD** 
 
 Features of the CANBed-FD include:
 
-* Wide power input range from 7-28V
-* 2 x 4-Pin Grove connectors compatible with the Grove ecosystem
-* OBD-II and CAN standard pinout selectable at the sub-D connector
-* Industrial standard 9 pin sub-D connector or 4-pin terminal
-* Work at CAN-FD and CAN 2.0
+- Wide power input range from 7-28V
+- 2 x 4-Pin Grove connectors compatible with the Grove ecosystem
+- OBD-II and CAN standard pinout selectable at the sub-D connector
+- Industrial standard 9 pin sub-D connector or 4-pin terminal
+- Work at CAN-FD and CAN 2.0
 
 #### [Serial CAN-BUS Module based on MCP2551 and MCP2515 ](https://www.seeedstudio.com/Serial-CAN-BUS-Module-based-on-MCP2551-and-MCP2515.html?utm_source=blog\&utm_medium=blog)[**($14.90)**](https://www.seeedstudio.com/Serial-CAN-BUS-Module-based-on-MCP2551-and-MCP2515.html?utm_source=blog\&utm_medium=blog)
 
@@ -198,10 +198,10 @@ If your project is space limited, here is a Serial CAN-BUS module that has the f
 
 Features of this Serial CAN-BUS module include:
 
-* UART to CAN-BUS communication
-* Up to 115200 UART baud rate (default 9600)
-* Up to 1Mb/s CAN-BUS baud rate
-* Easy-to-use [Arduino library](https://github.com/Longan-Labs/Serial_CAN_Arduino)
+- UART to CAN-BUS communication
+- Up to 115200 UART baud rate (default 9600)
+- Up to 1Mb/s CAN-BUS baud rate
+- Easy-to-use [Arduino library](https://github.com/Longan-Labs/Serial_CAN_Arduino)
 
 #### [OBD-II CAN Bus GPS Development Kit ](https://www.seeedstudio.com/OBD-II-CAN-Bus-GPS-Development-Kit-p-2868.html?utm_source=blog\&utm_medium=blog)[**($29.90)**](https://www.seeedstudio.com/OBD-II-CAN-Bus-GPS-Development-Kit-p-2868.html?utm_source=blog\&utm_medium=blog)
 
@@ -221,10 +221,10 @@ Ever wanted to play a car/truck simulator with a real dashboard on your PC? With
 
 **What you’ll need:**
 
-* [Seeeduino V4.2 ](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html?utm_source=blog\&utm_medium=blog)/ [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm_source=blog\&utm_medium=blog)
-* [CAN-BUS Shield V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm_source=blog\&utm_medium=blog)
-* [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)
-* [Type-B USB cable for Arduino Diecimila and Freeduino](https://www.seeedstudio.com/Type-B-USB-cable-for-Arduino-Diecimila-and-Freeduino-p-130.html?utm_source=blog\&utm_medium=blog)
+- [Seeeduino V4.2 ](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html?utm_source=blog\&utm_medium=blog)/ [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm_source=blog\&utm_medium=blog)
+- [CAN-BUS Shield V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm_source=blog\&utm_medium=blog)
+- [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)
+- [Type-B USB cable for Arduino Diecimila and Freeduino](https://www.seeedstudio.com/Type-B-USB-cable-for-Arduino-Diecimila-and-Freeduino-p-130.html?utm_source=blog\&utm_medium=blog)
 
 Interested? You can check out the full tutorial at [SeeedStudio Community!](https://community.seeedstudio.com/project_detail.html?id=291)
 
@@ -234,9 +234,9 @@ Modern Vehicles all come equipped with a CAN-BUS Controller Area Network, Instea
 
 **What do you need?**
 
-* [Seeeduino V4.2 ](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html?utm_source=blog\&utm_medium=blog)/ [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm_source=blog\&utm_medium=blog)
-* [CAN-BUS Shield V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm_source=blog\&utm_medium=blog)
-* [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)
+- [Seeeduino V4.2 ](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html?utm_source=blog\&utm_medium=blog)/ [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm_source=blog\&utm_medium=blog)
+- [CAN-BUS Shield V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm_source=blog\&utm_medium=blog)
+- [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)
 
 Interested? You can find the full tutorial by [mvilijoen2 on Instructables!](https://www.instructables.com/id/Hack-your-vehicle-CAN-BUS-with-Arduino-and-Seeed-C/)
 
@@ -248,9 +248,9 @@ This instructable is meant for beginners who already know their way around Ardui
 
 What you’ll need:
 
-* [Seeeduino V4.2 ](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html?utm_source=blog\&utm_medium=blog)/ [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm_source=blog\&utm_medium=blog)
-* [SeeedStudio CAN-BUS Shield](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm_source=blog\&utm_medium=blog)
-* [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)
+- [Seeeduino V4.2 ](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html?utm_source=blog\&utm_medium=blog)/ [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm_source=blog\&utm_medium=blog)
+- [SeeedStudio CAN-BUS Shield](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm_source=blog\&utm_medium=blog)
+- [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)
 
 Interested? You can find the full tutorial by [mvilijoen2 on Instructables!](https://www.instructables.com/Seeed-Studio-CAN-BUS-V20-Hacking-Getting-Started/)
 
@@ -262,9 +262,9 @@ This video is going to connect to the Renault Megane 3 vehicle with the Arduino 
 
 What you’ll need:
 
-* [Seeeduino V4.2 ](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html?utm_source=blog\&utm_medium=blog)/ [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm_source=blog\&utm_medium=blog)
-* [SeeedStudio CAN-BUS Shield](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm_source=blog\&utm_medium=blog)
-* [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)
+- [Seeeduino V4.2 ](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html?utm_source=blog\&utm_medium=blog)/ [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm_source=blog\&utm_medium=blog)
+- [SeeedStudio CAN-BUS Shield](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm_source=blog\&utm_medium=blog)
+- [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)
 
 Interested? You can find the full tutorial by [Bugra on Youtube!](https://www.youtube.com/watch?v=Y-1AFyOP-tk)
 
@@ -276,11 +276,11 @@ This project utilizes Can Bus to read sensor values and communicate over serial 
 
 What you’ll need:
 
-* [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm_source=blog\&utm_medium=blog)
-* [Grove – Starter Kit for Arduino](https://www.seeedstudio.com/Grove-Starter-Kit-for-Arduino-p-1855.html)
-* [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)
-* USB-A to Micro-USB Cable
-* Winstar CAN-BUS TFT 5″ display
+- [Arduino UNO Rev3](https://www.seeedstudio.com/Arduino-Uno-Rev3-p-2995.html?utm_source=blog\&utm_medium=blog)
+- [Grove – Starter Kit for Arduino](https://www.seeedstudio.com/Grove-Starter-Kit-for-Arduino-p-1855.html)
+- [Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)
+- USB-A to Micro-USB Cable
+- Winstar CAN-BUS TFT 5″ display
 
 Interested? You can find the full tutorial by [Kenliao on Hackster!](https://www.hackster.io/kenliao/vehicle-gui-can-bus-display-05fb45)
 
@@ -292,34 +292,34 @@ Getting Started with CAN-BUS can be very fulfilling. It can be daunting as well,
 
 #### What do you need?
 
-* 2 x [Seeeduino V4.2](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html?utm_source=blog\&utm_medium=blog)
-* 2 x [CAN-BUS Shield V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm_source=blog\&utm_medium=blog)
-* 2 x [Jumper Wire](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)\\
+- 2 x [Seeeduino V4.2](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html?utm_source=blog\&utm_medium=blog)
+- 2 x [CAN-BUS Shield V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html?utm_source=blog\&utm_medium=blog)
+- 2 x [Jumper Wire](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html?utm_source=blog\&utm_medium=blog)\\
 
 #### Instructions
 
 **Step 1: Hardware Connection**<br>
 
-* Firstly, connect each CAN-BUS shield to Seeeduino V4.2 and connect the 2 CAN-BUS shields together via 2 jumper wires as shown below. (CAN\_H to CAN\_H and CAN\_L to CAN\_L)
+- Firstly, connect each CAN-BUS shield to Seeeduino V4.2 and connect the 2 CAN-BUS shields together via 2 jumper wires as shown below. (CAN\_H to CAN\_H and CAN\_L to CAN\_L)
 
 ![](https://blog.seeedstudio.com/wp-content/uploads/2019/11/image-163.png)
 
 **Step 2: Setting up Software**
 
-* Download the library for CAN-BUS here and install the library to Arduino IDE after the download has been completed.
-* If you do not know how to install an Arduino library, you can follow the instructions here.
-* One of the nodes (a node means Seeeduino + CAN\_BUS Shield) acts as a master and the other acts as a slaver. The master will send data to the slaver constantly.
-* Open the sent example (File > Examples > CAN\_BUS\_Shield-master >send) and upload it to the **master** as shown below:
+- Download the library for CAN-BUS here and install the library to Arduino IDE after the download has been completed.
+- If you do not know how to install an Arduino library, you can follow the instructions here.
+- One of the nodes (a node means Seeeduino + CAN\_BUS Shield) acts as a master and the other acts as a slaver. The master will send data to the slaver constantly.
+- Open the sent example (File > Examples > CAN\_BUS\_Shield-master >send) and upload it to the **master** as shown below:
 
 ![](https://github.com/SeeedDocument/CAN_BUS_Shield/raw/master/image/send%20example.png)
 
-* After that, Open the **receive\_check** example (**File > Examples > CAN\_BUS\_Shield-master > receive\_check**) and upload it to the **slaver** as shown below
+- After that, Open the **receive\_check** example (**File > Examples > CAN\_BUS\_Shield-master > receive\_check**) and upload it to the **slaver** as shown below
 
 ![](https://github.com/SeeedDocument/CAN_BUS_Shield/raw/master/image/receive%20check%20example.png)
 
 **Step 3: View Results**
 
-* Open the Serial Monitor of Arduino IDE (**slaver**), you will get the data sent from the master. Below is a photo of what it will look like:<br>
+- Open the Serial Monitor of Arduino IDE (**slaver**), you will get the data sent from the master. Below is a photo of what it will look like:<br>
 
 ![](https://raw.githubusercontent.com/SeeedDocument/CAN_BUS_Shield/master/image/serial_monitor.png)
 
@@ -329,56 +329,56 @@ For the APIs of this software, you can:
 
 **Set the Baud Rate**
 
-* This function is used to initialize the baud rate of the CAN Bus system. The available baud rates are listed as follows:
+- This function is used to initialize the baud rate of the CAN Bus system. The available baud rates are listed as follows:
 
 ```
-#define CAN_5KBPS    1
-#define CAN_10KBPS   2
-#define CAN_20KBPS   3
-#define CAN_25KBPS   4
-#define CAN_31K25BPS 5
-#define CAN_33KBPS   6
-#define CAN_40KBPS   7
-#define CAN_50KBPS   8
-#define CAN_80KBPS   9
-#define CAN_83K3BPS  10
-#define CAN_95KBPS   11
-#define CAN_100KBPS  12
-#define CAN_125KBPS  13
-#define CAN_200KBPS  14
-#define CAN_250KBPS  15
-#define CAN_500KBPS  16
-#define CAN_666kbps  17
-#define CAN_1000KBPS 18
+## define CAN_5KBPS    1
+## define CAN_10KBPS   2
+## define CAN_20KBPS   3
+## define CAN_25KBPS   4
+## define CAN_31K25BPS 5
+## define CAN_33KBPS   6
+## define CAN_40KBPS   7
+## define CAN_50KBPS   8
+## define CAN_80KBPS   9
+## define CAN_83K3BPS  10
+## define CAN_95KBPS   11
+## define CAN_100KBPS  12
+## define CAN_125KBPS  13
+## define CAN_200KBPS  14
+## define CAN_250KBPS  15
+## define CAN_500KBPS  16
+## define CAN_666kbps  17
+## define CAN_1000KBPS 18
 ```
 
 **Set Receive Mask and Filter**
 
-* There are 2 receive mask registers and **5** filter registers on the controller chip that guarantees you get data from the target device. They are useful especially in a large network consisting of numerous nodes.
-* We provide two functions for you to utilize these mask and filter registers. They are:
+- There are 2 receive mask registers and **5** filter registers on the controller chip that guarantees you get data from the target device. They are useful especially in a large network consisting of numerous nodes.
+- We provide two functions for you to utilize these mask and filter registers. They are:
 
 Mask
 
-```
+```php
 init_Mask(unsigned char num, unsigned char ext, unsigned char ulData);
 ```
 
 Filter
 
-```
+```php
 init_Filt(unsigned char num, unsigned char ext, unsigned char ulData);
 ```
 
-* num represents which register to use. You can fill 0 or 1 for the mask and 0 to 5 for the filter.
-* ext represents the status of the frame. 0 means it’s a mask or filter for a standard frame. 1 means it’s for an extended frame.
-* ulData represents the content of the mask of the filter.
+- num represents which register to use. You can fill 0 or 1 for the mask and 0 to 5 for the filter.
+- ext represents the status of the frame. 0 means it’s a mask or filter for a standard frame. 1 means it’s for an extended frame.
+- ulData represents the content of the mask of the filter.
 
 **Check Receive**
 
-* The MCP2515 can operate in either a polled mode, where the software checks for a received frame, or uses additional pins to signal that a frame has been received or transmit completed.
-* Use the following function to poll for received frames:
+- The MCP2515 can operate in either a polled mode, where the software checks for a received frame, or uses additional pins to signal that a frame has been received or transmit completed.
+- Use the following function to poll for received frames:
 
-```
+```php
 INT8U MCP_CAN::checkReceive(void);
 ```
 
@@ -386,68 +386,68 @@ The function will return 1 if a frame arrives, and 0 if nothing arrives.<br>
 
 **Get CAN ID**
 
-* When some data arrive, you can use the following function to get the CAN ID of the “send” node.
+- When some data arrive, you can use the following function to get the CAN ID of the “send” node.
 
-```
+```php
 INT32U MCP_CAN::getCanId(void)
 ```
 
 **Send Data**
 
-```
+```php
 CAN.sendMsgBuf(INT8U id, INT8U ext, INT8U len, data_buf);
 ```
 
 It is a function to send data onto the bus. In which:
 
-* id represents where the data comes from.
-* ext represents the status of the frame. ‘0’ means standard frame. ‘1’ means an extended frame.
-* len represents the length of this frame.
-* data\_buf is the content of this message.
+- id represents where the data comes from.
+- ext represents the status of the frame. ‘0’ means standard frame. ‘1’ means an extended frame.
+- len represents the length of this frame.
+- data\_buf is the content of this message.
 
 For example, In the ‘send’ example, we have:
 
-```
+```php
 unsigned char stmp[8] = {0, 1, 2, 3, 4, 5, 6, 7};
 CAN.sendMsgBuf(0x00, 0, 8, stmp); //send out the message 'stmp' to the bus and tell other devices this is a standard frame from 0x00.
 ```
 
 **Receive Data**
 
-* The following function is used to receive data on the ‘receive’ node:<br>
+- The following function is used to receive data on the ‘receive’ node:<br>
 
-```
+```php
 CAN.readMsgBuf(unsigned char len, unsigned char buf);
 ```
 
 In conditions where masks and filters have been set. This function can only get frames that meet the requirements of masks and filters.
 
-* len represents the data length.
-* buf is where you store the data.
+- len represents the data length.
+- buf is where you store the data.
 
 **Generate a New BaudRate**
 
 We had provided many frequently-used baud rates, as shown below:
 
 ```
-#define CAN_5KBPS    1
-#define CAN_10KBPS   2
-#define CAN_20KBPS   3
-#define CAN_25KBPS   4
-#define CAN_31KBPS   5
-#define CAN_33KBPS   6
-#define CAN_40KBPS   7
-#define CAN_50KBPS   8
-#define CAN_80KBPS   9
-#define CAN_83KBPS   10
-#define CAN_95KBPS   11
-#define CAN_100KBPS  12
-#define CAN_125KBPS  13
-#define CAN_200KBPS  14
-#define CAN_250KBPS  15
-#define CAN_500KBPS  16
-#define CAN_666KBPS  17
-#define CAN_1000KBPS 18
+## define CAN_5KBPS    1
+## define CAN_10KBPS   2
+## define CAN_20KBPS   3
+## define CAN_25KBPS   4
+## define CAN_31KBPS   5
+## define CAN_33KBPS   6
+## define CAN_40KBPS   7
+## define CAN_50KBPS   8
+## define CAN_80KBPS   9
+## define CAN_83KBPS   10
+## define CAN_95KBPS   11
+## define CAN_100KBPS  12
+## define CAN_125KBPS  13
+## define CAN_200KBPS  14
+## define CAN_250KBPS  15
+## define CAN_500KBPS  16
+## define CAN_666KBPS  17
+## define CAN_1000KBPS 18
 ```
 
 Yet you may still find the rate you want. Here we provide software to help you to calculate the baud rate you need.
@@ -456,26 +456,26 @@ Click [here](https://github.com/SeeedDocument/CAN_BUS_Shield/raw/master/resource
 
 ![](https://github.com/SeeedDocument/CAN_BUS_Shield/blob/master/image/CAN_BUS_Shield_SetBaud.jpg?raw=true)
 
-* Open the software, what you need to do is to set the baud rate you want, then do some simple settings, then click calculate.
-* Then you will get some data, cfg1, cfg2, and cfg3.
-* You need to add some code to the library.
-* Open mcp\_can\_dfs.h, you need to add the below code at about line 272
+- Open the software, what you need to do is to set the baud rate you want, then do some simple settings, then click calculate.
+- Then you will get some data, cfg1, cfg2, and cfg3.
+- You need to add some code to the library.
+- Open mcp\_can\_dfs.h, you need to add the below code at about line 272
 
 ```
-#define MCP_16MHz_xxxkBPS_CFG1 (cfg1)    // xxx is the baud rate you need
-#define MCP_16MHz_xxxkBPS_CFG2 (cfg2)
-#define MCP_16MHz_xxxkBPS_CFG3 (cfg2)
+## define MCP_16MHz_xxxkBPS_CFG1 (cfg1)    // xxx is the baud rate you need
+## define MCP_16MHz_xxxkBPS_CFG2 (cfg2)
+## define MCP_16MHz_xxxkBPS_CFG3 (cfg2)
 ```
 
-* Then let’s go to about line 390, add the below code:
+- Then let’s go to about line 390, add the below code:
 
 ```
-#define CAN_xxxKBPS NUM       // xxx is the baudrate you need, and NUM is a number, you need to get a different from the other rates.
+## define CAN_xxxKBPS NUM       // xxx is the baudrate you need, and NUM is a number, you need to get a different from the other rates.
 ```
 
-* Open mcp\_can.cpp, goto the function mcp2515\_configRate(at about line 190), then add below code:
+- Open mcp\_can.cpp, goto the function mcp2515\_configRate(at about line 190), then add below code:
 
-```
+```php
 case (CAN_xxxKBPS):
     cfg1 = MCP_16MHz_xxxkBPS_CFG1;
     cfg2 = MCP_16MHz_xxxkBPS_CFG2;

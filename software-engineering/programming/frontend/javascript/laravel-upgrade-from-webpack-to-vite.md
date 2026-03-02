@@ -1,7 +1,6 @@
 # Laravel Upgrade from Webpack to Vite
 
 
-
 ## Upgrade Guide
 
 ### Migrating from Laravel Mix to Vite
@@ -13,7 +12,7 @@
 
 To make use of the new Vite integration, you will need to update to at least version `9.19.0` of the `laravel/framework`:
 
-```
+```bash
 composer require laravel/framework:^9.19.0
 ```
 
@@ -134,7 +133,7 @@ The following function can be used instead:
 
 Additionally, you should ensure you have updated to at least version `0.6.3` of the `inertia-laravel` package:
 
-```
+```php
 composer require inertiajs/inertia-laravel:^0.6.3
 ```
 
@@ -244,7 +243,7 @@ If you are deploying your application to Laravel Vapor, there are a few things y
 
 Ensure you have updated to at least version `1.40.0` of the Vapor CLI package:
 
-```
+```php
 composer require laravel/vapor-cli:^1.40.0
 ```
 
@@ -252,7 +251,7 @@ Next, if you are using the Vapor asset helper in your application, you only need
 
 If you want to use the asset helper with your Vite project, you will also need to ensure you have updated to the latest version:
 
-```
+```python
 npm install laravel-vapor@latest
 ```
 
@@ -337,7 +336,7 @@ If you prefer to build your assets on deploy instead of committing them to your 
 
 You may start the SSR server using `node`:
 
-```
+```bash
 node bootstrap/ssr/ssr.mjs
 ```
 
@@ -371,8 +370,8 @@ For further information on how to use Vite, please check out [the Laravel Vite d
 
 If you have followed the upgrade guide, but are still having issues you should try the following steps:
 
-* Run `php artisan view:clear` to clear any compiled view assets.
-* If your development web server is running on HTTPS, check out the ["Working With A Secure Development Server"](https://laravel.com/docs/9.x/vite#working-with-a-secure-development-server) section of the documentation.
+- Run `php artisan view:clear` to clear any compiled view assets.
+- If your development web server is running on HTTPS, check out the ["Working With A Secure Development Server"](https://laravel.com/docs/9.x/vite#working-with-a-secure-development-server) section of the documentation.
 
 ### Migrating from Vite to Laravel Mix
 
@@ -388,7 +387,7 @@ npm install --save-dev laravel-mix
 
 Create a `webpack.mix.js` file in the root of your project:
 
-```
+```javascript
 const mix = require('laravel-mix');
 
 /*

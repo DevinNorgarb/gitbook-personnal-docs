@@ -47,8 +47,8 @@ function makeRequest(string $url) {
 
 I have two functions here:
 
-* `fakeResponse(string $url, callable $callback)` has a hardcoded response and resolves a specified callback with it.
-* `makeRequest(string $url)` returns a promise that uses `fakeResponse()` to signal that the request is completed.
+- `fakeResponse(string $url, callable $callback)` has a hardcoded response and resolves a specified callback with it.
+- `makeRequest(string $url)` returns a promise that uses `fakeResponse()` to signal that the request is completed.
 
 From the calling code we simply call `makeRequest()` function and receive back promises:
 
@@ -82,8 +82,8 @@ $promise1
 
 In the snippet above we start with `$promise1`. Once it is completed we print its value. We don’t care how much time does it take: less than a second, or an hour. As soon as it is done, we print its value. And then we wait for `$promise2`. And here we can have two scenarios:
 
-* `$promise2` is already finished and we print its value.
-* `$promise2` hasn’t finished yet and wee keep waiting.
+- `$promise2` is already finished and we print its value.
+- `$promise2` hasn’t finished yet and wee keep waiting.
 
 But because of chaining promises together we don’t have to care about that detail, whether the promise is resolved or not. The promise is a time-independent wrapper and it hides these states from us.
 

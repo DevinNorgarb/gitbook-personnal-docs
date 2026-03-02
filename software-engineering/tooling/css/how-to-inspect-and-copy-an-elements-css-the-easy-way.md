@@ -2,7 +2,7 @@
 
 Here are simple steps you can do to inspect and copy the CSS of an element from a website.
 
-#### With CSS Scan (Chrome, Firefox, Safari, and Edge): <a href="#with-css-scan-chrome-firefox-safari-and-edge" id="with-css-scan-chrome-firefox-safari-and-edge"></a>
+## With CSS Scan (Chrome, Firefox, Safari, and Edge): <a href="#with-css-scan-chrome-firefox-safari-and-edge" id="with-css-scan-chrome-firefox-safari-and-edge"></a>
 
 CSS Scan is by far the easiest way to copy an element’s CSS nowadays.
 
@@ -22,7 +22,7 @@ And any element that you hover over, you’ll instantly inspect its CSS code, so
 
 To use the extension, you can try it out a free demo on the [home page](https://getcssscan.com/?ref=blog-2).
 
-#### On Chrome (without CSS Scan): <a href="#on-chrome-without-css-scan" id="on-chrome-without-css-scan"></a>
+### On Chrome (without CSS Scan): <a href="#on-chrome-without-css-scan" id="on-chrome-without-css-scan"></a>
 
 First, hover over the element you want to copy.
 
@@ -42,10 +42,10 @@ And done, the CSS was copied! That’s how you copy CSS from “Inspect element�
 
 ⚠️ The biggest downsides of this approach are that:
 
-* it doesn’t copy child elements (you’ll have to copy element by element, while with [CSS Scan](https://getcssscan.com/?ref=blog-2) you can copy thousands of elements with a single click)
-* it doesn’t copy the element’s pseudo-classes (such as :hover, :active, etc) styles, which are special states, and for example, can be used to change a button’s color when the user’s pointer hovers over it, and many other purposes
-* it copies all CSS variables declared on the :root (even if they aren’t used on the selected element), polluting the code depending on the website.
-* it might take some time if you need to copy lots of elements.
+- it doesn’t copy child elements (you’ll have to copy element by element, while with [CSS Scan](https://getcssscan.com/?ref=blog-2) you can copy thousands of elements with a single click)
+- it doesn’t copy the element’s pseudo-classes (such as :hover, :active, etc) styles, which are special states, and for example, can be used to change a button’s color when the user’s pointer hovers over it, and many other purposes
+- it copies all CSS variables declared on the :root (even if they aren’t used on the selected element), polluting the code depending on the website.
+- it might take some time if you need to copy lots of elements.
 
 While with [CSS Scan](https://getcssscan.com/?ref=blog-2), you can copy not only the selected element but also all its child elements, their pseudo-classes (:hover, :active, etc) styles, all the computed CSS variables, and copy all the elements you want in a faster and easier way - without making all these steps, again, and again.
 

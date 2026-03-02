@@ -4,7 +4,7 @@ Recently, I planned to rewrite my [“Scrum Daily Standup Picker” Electron app
 
 Why? Because I love Vue and want to have a public showcase that I can reference to potential customers.
 
-### Why Quasar?
+## Why Quasar?
 
 [Quasar](https://quasar.dev/) is an MIT licensed open-source Vue.js based framework that targets SPA, SSR, PWA, mobile app, desktop app, and browser extension all using one codebase. It handles the build setup and provides a complete collection of Material Design compliant UI components.
 
@@ -14,21 +14,21 @@ Quasar’s motto is:
 
 Using Quasar drastically saves development time due to these reasons:
 
-* It’s based on Vue.js.
-* It provides many UI components that follow Material Design guidelines.
-* It has a regular release cycle inclusive of new features.
-* It provides support for each build mode (SPA, SSR, PWA, Mobile app, Desktop app & Browser Extension).
-* It has its own CLI that provides a pleasant developer experience. For example, we can build our application as SPA, mobile, or desktop app within the same project folder.
+- It’s based on Vue.js.
+- It provides many UI components that follow Material Design guidelines.
+- It has a regular release cycle inclusive of new features.
+- It provides support for each build mode (SPA, SSR, PWA, Mobile app, Desktop app & Browser Extension).
+- It has its own CLI that provides a pleasant developer experience. For example, we can build our application as SPA, mobile, or desktop app within the same project folder.
 
 [Read more](https://quasar.dev/introduction-to-quasar) about why Quasar might be a good choice for your next project.
 
 ### Install Quasar CLI
 
 ```
-# Node.js >=12.22.1 is required.
+## Node.js >=12.22.1 is required.
 
 $ yarn global add @quasar/cli
-# or
+## or
 $ npm install -g @quasar/cli
 ```
 
@@ -42,7 +42,6 @@ Let’s start by creating a new project using the Quasar CLI:
 | | | | | | |/ _` / __|/ _` | '__|
 | |_| | |_| | (_| \__ \ (_| | |
  \__\_\\__,_|\__,_|___/\__,_|_|
-
 
 
 ? Project name (internal usage for dev) vue3-electron-demo
@@ -68,9 +67,9 @@ We’ll use [Pinia](https://pinia.vuejs.org/) as Vue store library, which is now
 
 First, we need to install Pinia:
 
-```
+```php
 yarn add pinia
-# or with npm
+## or with npm
 npm install pinia
 ```
 
@@ -80,7 +79,7 @@ To be able to register Pinia at our Vue application instance we need to create a
 
 Our boot file is called `pinia.ts` and is located at `src/boot`:
 
-```
+```php
 import { boot } from 'quasar/wrappers';
 import { createPinia } from 'pinia';
 
@@ -91,7 +90,7 @@ export default boot(({ app }) => {
 
 We also need to add this new file to `quasar.conf.js`:
 
-```
+```php
 module.exports = configure(function (ctx) {
   return {
     ...
@@ -109,7 +108,7 @@ We cannot name this folder `store` as this name is reserved for the official Vue
 
 A basic store could look like this:
 
-```
+```python
 import { defineStore } from 'pinia';
 
 // useStore could be anything like useUser, useCart
@@ -137,7 +136,7 @@ export default useStore;
 
 We can use this store in any Vue component:
 
-```
+```python
 <template>Counter: {{ store.counter }}</template>
 
 <script setup lang="ts">
@@ -188,13 +187,13 @@ For example, if we want to show a dialog to open files, Electron provides the [d
 
 First, we need to install `@electron/remote`:
 
-```
+```php
 npm install -D @electron/remote
 ```
 
 Then we need to modify `src-electron/electron-main.js` and initialize `@electron/remote`:
 
-```
+```php
 import { app, BrowserWindow, nativeTheme } from 'electron'
 import { initialize, enable } from '@electron/remote/main'import path from 'path'
 import os from 'os'
@@ -217,7 +216,7 @@ function createWindow () {
       preload: path.resolve(__dirname, process.env.QUASAR_ELECTRON_PRELOAD)
     }
   })
-  
+
   // ....
 
   enable(mainWindow.webContents);}
@@ -225,7 +224,7 @@ function createWindow () {
 
 If we want to use Electron API from our Vue code we need to add some code to `src-electron/electron-preload.js`:
 
-```
+```python
 import { contextBridge } from 'electron';
 import { dialog } from '@electron/remote';
 // 'electronApi' will be available on the global window context
@@ -239,7 +238,7 @@ contextBridge.exposeInMainWorld('electronApi', {
 
 Next we create `src/api/electron-api.ts` to access this code from within our Vue application:
 
-```
+```javascript
 export interface ElectronFileFilter {
   name: string;
   extensions: string[];
@@ -261,7 +260,7 @@ export const electronApi: ElectronApi = (window as { electronApi: ElectronApi })
 
 Now we can use this API anywhere in our Vue component:
 
-```
+```python
 <template>
   <q-btn @click="openElectronFileDialog">Open Electron File Dialog</q-btn>
 </template>

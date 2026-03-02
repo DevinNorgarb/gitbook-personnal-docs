@@ -5,7 +5,6 @@ description: https://cra.mr/2014/05/03/on-pull-requests
 # \[POST] On Pull Requests
 
 
-
 May 3, 2014
 
 You're viewing an archived post which may have broken links or images. If this post was valuable and you'd like me to restore it, let me know!
@@ -14,7 +13,7 @@ A recent conversation came up on Twitter that sparked some discussion about GitH
 
 I both work on a large number of open source projects, and also drove code review initiatves at Disqus and now support them at Dropbox. Given that, I thought I’d give some perspective on my thoughts of GitHub Pull Requests and how it fits with code review.
 
-### What is a Pull Request? <a href="#what-is-a-pull-request" id="what-is-a-pull-request"></a>
+## What is a Pull Request? <a href="#what-is-a-pull-request" id="what-is-a-pull-request"></a>
 
 (A quick tl;dr if you don’t use GitHub)
 
@@ -44,8 +43,8 @@ Now that we’ve pushed up a patch, we’ll see the first, and one of the most i
 
 A couple of terminology you’ll want to get down:
 
-* A GitHub Pull Request is approximately a Phabricator Revision
-* A commit is approximately a Phabricator Diff (which is attached to a Revision)
+- A GitHub Pull Request is approximately a Phabricator Revision
+- A commit is approximately a Phabricator Diff (which is attached to a Revision)
 
 ### Code Ownership in Pull Requests <a href="#code-ownership-in-pull-requests" id="code-ownership-in-pull-requests"></a>
 
@@ -57,14 +56,14 @@ In GitHub, it’s very common that you might be a contributor to a repository bu
 
 Let’s take a simple example:
 
-* Bob makes a change to ‘database.py’.
-* Joe has notifications enabled, sees it’s about the database (which he isn’t responsible for) and archives the email
-* Jim does the same as Joe.
-* Billy has notifications disabled because most people don’t touch the database, and that’s all he cares about. He checks pending pull requests a few times a day.
-* Bob eventually gets smart and puts “@billy” somewhere in a comment or the pull request itself, in hopes that Billy will look at the pending request.
-* Billy looks at the request, but doesn’t have time to deal with it, and he’s hoping his team member Jane gets around to it first.
-* Jane, also frustrated with email, only checks it a few times a day because it’s too noisy. She eventually checks it at the end of the day, and see’s @billy in the comments and assumes he’s going to take a look at it.
-* Bob comes back the next day and starts flipping tables.
+- Bob makes a change to ‘database.py’.
+- Joe has notifications enabled, sees it’s about the database (which he isn’t responsible for) and archives the email
+- Jim does the same as Joe.
+- Billy has notifications disabled because most people don’t touch the database, and that’s all he cares about. He checks pending pull requests a few times a day.
+- Bob eventually gets smart and puts “@billy” somewhere in a comment or the pull request itself, in hopes that Billy will look at the pending request.
+- Billy looks at the request, but doesn’t have time to deal with it, and he’s hoping his team member Jane gets around to it first.
+- Jane, also frustrated with email, only checks it a few times a day because it’s too noisy. She eventually checks it at the end of the day, and see’s @billy in the comments and assumes he’s going to take a look at it.
+- Bob comes back the next day and starts flipping tables.
 
 Take that example, and expand it to 100 engineers. Companies like Google, Facebook, and even Dropbox, have fairly massive repository sets. While you might think that’s the problem, there are many benefits (which I won’t cover in the slightest in this article). If you imagine getting an email for every patch from these hundred engineers, you can quickly see how you might start filtering out the email.
 
@@ -98,9 +97,9 @@ Recently we sponsored a feature in Phabricator which added the concept of “Blo
 
 One of the first things you’ll notice that’s extremely different in Phabricator is how patches actually work. Before describing that, let’s take a look at the metadata GitHub provides:
 
-* Title
-* Message
-* Subscribers (via mention hacks)
+- Title
+- Message
+- Subscribers (via mention hacks)
 
 While both of those are useful, they’re basically lost as soon as you merge the pull request (though you could dig through history if you needed to).
 
@@ -110,11 +109,11 @@ Within Phabricator we have a considerable amount more of metadata, in addition t
 
 These include:
 
-* A link to code review object
-* Assigned Reviewers
-* Reviewed by (who actually accepted it)
-* Who was subscribed (CCs)
-* \[literally anything else you want]
+- A link to code review object
+- Assigned Reviewers
+- Reviewed by (who actually accepted it)
+- Who was subscribed (CCs)
+- \[literally anything else you want]
 
 Now this might seem noisy in some cases (I personally don’t ever dig through the commit log), there’s also the secondary aspects that Phabricator provides around it: the ability to audit history.
 
@@ -136,19 +135,19 @@ While this might require a bit of work on your side, there are several drop-in i
 
 A few other highlights of Phabricator:
 
-* A beautiful command line tool for working with patches (Arcanist)
-* Early repository hosting and mirroring support
-  * Preventing ‘force push’
-  * Blocking a commit until its accepted
-* Side-by-side diffs in code reviews
-* VCS-platform agnostic (svn, hg, and git support currently)
-  * It’s also mostly workflow-agnostic
-* Audit capabilities (e.g. post-commit code review)
-* Media attachments / image macros (e.g. cat gifs everywhere)
-* A non-perfect bug tracker that is 10% better than GitHub and 900000% less complicated than Jira
-* Integrated pastebin (not as fancy as gist, but you can `pbpaste | arc paste`)
-* Rough (UI-wise), but very thorough ACLs that let you butcher your install as much as your heart desires.
-* A few minor email actions (e.g. respond with ‘!accept’ to accept a patch)
+- A beautiful command line tool for working with patches (Arcanist)
+- Early repository hosting and mirroring support
+  - Preventing ‘force push’
+  - Blocking a commit until its accepted
+- Side-by-side diffs in code reviews
+- VCS-platform agnostic (svn, hg, and git support currently)
+  - It’s also mostly workflow-agnostic
+- Audit capabilities (e.g. post-commit code review)
+- Media attachments / image macros (e.g. cat gifs everywhere)
+- A non-perfect bug tracker that is 10% better than GitHub and 900000% less complicated than Jira
+- Integrated pastebin (not as fancy as gist, but you can `pbpaste | arc paste`)
+- Rough (UI-wise), but very thorough ACLs that let you butcher your install as much as your heart desires.
+- A few minor email actions (e.g. respond with ‘!accept’ to accept a patch)
 
 ### In Closing <a href="#in-closing" id="in-closing"></a>
 

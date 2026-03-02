@@ -6,7 +6,7 @@ _**Disclaimer: If your app currently receives webhooks on https endpoint, don’
 
 It is assumed that you already have AWS account and Shopify App.
 
-### 1. Setting up Amazon EventBridge in Shopify app
+## 1. Setting up Amazon EventBridge in Shopify app
 
 First step of setting up Amazon EventBridge partner integration is done in Shopify. To do it, visit “App Setup” screen for your app in Shopify Partners dashboard _https://partners.shopify.com/PARTNER\_ID/apps/APP\_ID/edit_. Find “Event Subscriptions” section and click on “Create source” in Amazon EventBridge card.
 
@@ -93,7 +93,7 @@ POST https://{SHOP_DOMAIN}/admin/api/2022-07/webhooks.json
     }
 }
 
-# Response
+## Response
 
 {
     "webhook": {
@@ -283,9 +283,9 @@ Website
 &#x20;Save my name, email, and website in this browser for the next time I comment.
 
 *
-* &#x20;
+- &#x20;
 *
-* &#x20;
+- &#x20;
 *
-* &#x20;
+- &#x20;
 *

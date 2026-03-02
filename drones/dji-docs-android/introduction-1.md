@@ -1,6 +1,6 @@
 # Introduction
 
-### DJI Mobile SDK 教程 <a href="#djimobilesdk-jiao-cheng" id="djimobilesdk-jiao-cheng"></a>
+## DJI Mobile SDK 教程 <a href="#djimobilesdk-jiao-cheng" id="djimobilesdk-jiao-cheng"></a>
 
 ### 已弃用 <a href="#yi-qi-yong" id="yi-qi-yong"></a>
 

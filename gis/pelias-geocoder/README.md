@@ -16,7 +16,7 @@ Pelias is a search engine for places worldwide, powered by open data. It turns a
 
 We think open data, open source, and open strategy win over proprietary solutions at any part of the stack and we want to ensure the services we offer are in line with that vision. We believe that an open geocoder improves over the long-term only if the community can incorporate truly representative local knowledge.
 
-### Pelias Documentation
+## Pelias Documentation
 
 Here is where you can find all documentation for the [Pelias geocoder](https://github.com/pelias/pelias/).
 
@@ -24,43 +24,43 @@ Here is where you can find all documentation for the [Pelias geocoder](https://g
 
 Endpoint descriptions
 
-* [Forward geocoding](https://github.com/pelias/documentation/blob/master/search.md) (/v1/search) — find a place by searching for an address or name
-* [Reverse geocoding](https://github.com/pelias/documentation/blob/master/reverse.md) (/v1/reverse) — find what is located at a certain coordinate location
-* [Autocomplete](https://github.com/pelias/documentation/blob/master/autocomplete.md) (/v1/autocomplete) — give real-time result suggestions without having to type the whole location
-* [Structured Geocoding](https://github.com/pelias/documentation/blob/master/structured-geocoding.md) (/v1/search/structured) (beta) — find a place with data already separated into housenumber, street, city, etc
-* [Place endpoint](https://github.com/pelias/documentation/blob/master/place.md) (/v1/place) — details on a place returned from a previous query
+- [Forward geocoding](https://github.com/pelias/documentation/blob/master/search.md) (/v1/search) — find a place by searching for an address or name
+- [Reverse geocoding](https://github.com/pelias/documentation/blob/master/reverse.md) (/v1/reverse) — find what is located at a certain coordinate location
+- [Autocomplete](https://github.com/pelias/documentation/blob/master/autocomplete.md) (/v1/autocomplete) — give real-time result suggestions without having to type the whole location
+- [Structured Geocoding](https://github.com/pelias/documentation/blob/master/structured-geocoding.md) (/v1/search/structured) (beta) — find a place with data already separated into housenumber, street, city, etc
+- [Place endpoint](https://github.com/pelias/documentation/blob/master/place.md) (/v1/place) — details on a place returned from a previous query
 
 _Not sure which Endpoint to use? We have a_ [page](https://github.com/pelias/documentation/blob/master/search-workflows.md) _for that_
 
 Query parameters and options
 
-* [Global coverage with prioritized local results](https://github.com/pelias/documentation/blob/master/search.md#prioritize-results-by-proximity)
-* [Language support](https://github.com/pelias/documentation/blob/master/language-codes.md) — see results in different languages
+- [Global coverage with prioritized local results](https://github.com/pelias/documentation/blob/master/search.md#prioritize-results-by-proximity)
+- [Language support](https://github.com/pelias/documentation/blob/master/language-codes.md) — see results in different languages
 
 Response Properties
 
-* [Full list of response properties](https://github.com/pelias/documentation/blob/master/response.md)
-* [Confidence scores, match\_types and other tools for determining result quality](https://github.com/pelias/documentation/blob/master/result_quality.md)
+- [Full list of response properties](https://github.com/pelias/documentation/blob/master/response.md)
+- [Confidence scores, match\_types and other tools for determining result quality](https://github.com/pelias/documentation/blob/master/result_quality.md)
 
 ### Data Sources
 
-* [Pelias data sources](https://github.com/pelias/documentation/blob/master/data-sources.md)
+- [Pelias data sources](https://github.com/pelias/documentation/blob/master/data-sources.md)
 
 ### Running your own Pelias
 
-* [Getting started](https://github.com/pelias/documentation/blob/master/getting_started_install.md) — Start here if you're looking to install Pelias
-* [Pelias from scratch](https://github.com/pelias/documentation/blob/master/pelias_from_scratch.md) — More in-depth instructions for installing Pelias
-* [Full planet build considerations](https://github.com/pelias/documentation/blob/master/full_planet_considerations.md) — Special information on running a full planet Pelias build
-* [Service descriptions](https://github.com/pelias/documentation/blob/master/services.md) — A description of all the Pelias services, and when they are used
-* [Software Requirements](https://github.com/pelias/documentation/blob/master/requirements.md) — A list of all software requirements for Pelias
+- [Getting started](https://github.com/pelias/documentation/blob/master/getting_started_install.md) — Start here if you're looking to install Pelias
+- [Pelias from scratch](https://github.com/pelias/documentation/blob/master/pelias_from_scratch.md) — More in-depth instructions for installing Pelias
+- [Full planet build considerations](https://github.com/pelias/documentation/blob/master/full_planet_considerations.md) — Special information on running a full planet Pelias build
+- [Service descriptions](https://github.com/pelias/documentation/blob/master/services.md) — A description of all the Pelias services, and when they are used
+- [Software Requirements](https://github.com/pelias/documentation/blob/master/requirements.md) — A list of all software requirements for Pelias
 
 ### Pelias project development
 
-* [Release notes](https://github.com/pelias/documentation/blob/master/release-notes.md) — See notable changes in Pelias over time
-* [Development roadmap](https://github.com/pelias/documentation/blob/master/development/roadmap.md) — Plans for future improvements to Pelias
+- [Release notes](https://github.com/pelias/documentation/blob/master/release-notes.md) — See notable changes in Pelias over time
+- [Development roadmap](https://github.com/pelias/documentation/blob/master/development/roadmap.md) — Plans for future improvements to Pelias
 
 ### Misc
 
-* [Glossary of common terms](https://github.com/pelias/documentation/blob/master/glossary.md)
+- [Glossary of common terms](https://github.com/pelias/documentation/blob/master/glossary.md)
 
 Last updated 3 years ago

@@ -2,18 +2,18 @@
 
 > Note：This Tutorial and Sample Project is developed based on DJI Android SDK v2.4, an update version for Android SDK v3.1.1 will be published soon.
 
-* [Introduction](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
-* [Camera Modes](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
-* [Distinguishing the Camera's Playback Status](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
-* [UI Components For The Photo Album Application](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
-  * [1. GridView for Multiple preview playback mode](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
-  * [2. Camera mode UI](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
-  * [3. Album gesture control](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
-  * [4. Playing Video](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
-* [Downloading and Deleting Media files](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
-  * [1. Finishing the Download feature](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
-  * [2. Automatically downloading media files](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
-* [Summary](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+- [Introduction](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+- [Camera Modes](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+- [Distinguishing the Camera's Playback Status](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+- [UI Components For The Photo Album Application](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+  - [1. GridView for Multiple preview playback mode](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+  - [2. Camera mode UI](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+  - [3. Album gesture control](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+  - [4. Playing Video](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+- [Downloading and Deleting Media files](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+  - [1. Finishing the Download feature](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+  - [2. Automatically downloading media files](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
+- [Summary](/broken/pages/wDiqZ2xUdW3J0mUQoBEq)
 
 _If you come across any mistakes or bugs in this tutorial, please let us know using a Github issue, a post on the DJI forum, or commenting in the Gitbook. Please feel free to send us Github pull request and help us fix any issues. However, all pull requests related to document must follow the_ [_document style_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 
@@ -21,7 +21,7 @@ _If you come across any mistakes or bugs in this tutorial, please let us know us
 
 ***
 
-### Introduction <a href="#introduction" id="introduction"></a>
+## Introduction <a href="#introduction" id="introduction"></a>
 
 In this tutorial, you will familiarize yourself with the various Camera Modes the Inspire 1 and Phantom 3 Professional have, how to switch and get the Camera Mode, how to build a friendly UI for a Photo and Video Album app, and how to select and download media files. Let's get started!
 
@@ -37,7 +37,7 @@ Before developing the album app, we should briefly cover the capabilities the SD
 
 In Mobile Android SDK, developers can invoke the method `setCameraMode` to switch between camera modes, and the method `getCameraMode` to get the camera mode. (Please note that the Phantom 2 Series is unique in that it only has two modes: `CameraMode.Camera_Camera_Mode` and `Camera.Camera_USB_Mode`, which are not supported by other more recent drones.)
 
-```
+```php
     //Set up the Camera Mode. 
     DJIDrone.getDjiCamera().setCameraMode(CameraMode, DJIExecuteResultCallback)
 
@@ -49,7 +49,7 @@ In Mobile Android SDK, developers can invoke the method `setCameraMode` to switc
 
 As the introduced above, there are four or three camera modes (depending on the drone you are using). How to correctly recognize the mode you are in is key to developing a good Photo Album application. In the mobile android SDK, there is a callback function that returns current status of the camera's playback status. Developers can set up a callback function that executes when the status has been changed. This callback will be invoked 10 times per second.
 
-```
+```python
     DJIDrone.getDjiCamera().setDJICameraPlayBackStateCallBack(new DJICameraPlayBackStateCallBack() {
         @Override
         public void onResult(DJICameraPlaybackState state) {
@@ -100,12 +100,12 @@ Below is a rough outline for the multiple preview UI. Each of these eight pictur
 
 There are two features of the grid view we should be aware of before we start:
 
-* The grid view is scrollable.
-* The object in each block can be designed by the user.
+- The grid view is scrollable.
+- The object in each block can be designed by the user.
 
 We override the base Gridview to satisfy our requirements (an unscrollable gridview with 8 transparent buttons). The following code block shows how we override GridView. Since it's quite basic, feel free to add more features in your own future apps.
 
-```
+```php
     public class PlaybackGridView extends GridView {
         public PlaybackGridView(Context context) {
             super(context);
@@ -131,7 +131,7 @@ We override the base Gridview to satisfy our requirements (an unscrollable gridv
 
 The method `dispatchTouchEvent(MotionEvent ev)` sets up the unscrollable property of the gridview. To use this to override GridView, developers should use the full path as the item tag. Take our file `activity_playback_protocol.xml` from our demo project as example:
 
-```
+```html
     <?xml version="1.0" encoding="utf-8"?>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -155,7 +155,7 @@ The method `dispatchTouchEvent(MotionEvent ev)` sets up the unscrollable propert
 
 Now we have a basic gridview for the album application. The next file, 'button\_gridview\_item.xml' defines each element of the gridview and provides the block layout.
 
-```
+```html
     <?xml version="1.0" encoding="utf-8"?>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -176,7 +176,7 @@ Now we have a basic gridview for the album application. The next file, 'button\_
 
 Congratulations! You have now collected all the components required to build a multiple playback preview album. The upcoming code will help you to combine them into a good looking UI.
 
-```
+```php
     public class PlaybackProtocolActivity extends Activity implements OnClickListener {
         private PlaybackGridView mGridView;
 
@@ -275,7 +275,7 @@ Before we get started with this subsection, we've got to first make some adjustm
 
 Now we can continue. As we know from section 1, there are four camera modes and each of them allows or prevents certain functions to be invoked. To increase clarity for users, developers should adjust the UI components based on the current camera status. Let's add some buttons in `activity_playback_protocol.xml`.
 
-```
+```html
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="martch_parent"
@@ -459,7 +459,7 @@ This method classifies the UI status into four parts (capture, record, playback 
 
 Besides adjusting the UI, we should also send a request from our app to the drone to change the camera mode. Remember the method `setCameraMode(CameraMode mode)` in Section 1? Now we put it to use:
 
-```
+```php
     private void onPressStatusBtn(final int status) {
         DJIDrone.getDjiCamera().setCameraMode(CameraMode.find(status), new DJIExecuteResultCallback() {
             @Override
@@ -474,7 +474,7 @@ Besides adjusting the UI, we should also send a request from our app to the dron
 
 The parameter `status` tells this method which mode to switch the camera to. We use the following constants as input parameters.
 
-```
+```php
     private final static int CAPTURE = 2;
     private final static int RECORD = 3;
     private final static int PLAYBACK = 4;
@@ -554,7 +554,7 @@ The Inspire 1's and Phantom 3 Professional's remote controllers have buttons for
 
 To listen to the remote controller, we set up `DJIRemoteControllerUpdateAttitudeCallBack`. Add the code below to the onCreate() function, but make sure to declare the variable `mRemoteControllerUpdateAttitudeCallBack` first.
 
-```
+```json
             mRemoteControllerUpdateAttitudeCallBack = new DJIRemoteControllerUpdateAttitudeCallBack() {
 
             @Override
@@ -621,7 +621,7 @@ _For a further understanding of the GestureDetector class, follow this link:_ [_
 
 If you run your application and try to test this method, you may find that nothing happens. The reason for this is that both the gridview and the gesture detectors will try to handle the user's actions. Both of them try to handle an action at the same time, causing failures. To avoid this situation, we need to override the function `dispatchTouchEvent`
 
-```
+```php
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
         if (mGestureDetector.onTouchEvent(event))
@@ -637,7 +637,7 @@ Nice! Some predefined gestures have been added to your app and have made your ap
 
 DJI Camera provides a video preview function for users to enjoy their recorded videos. In the current state of our app, users can enter the single preview playback mode and navigate to their video file by swiping left and right. We would also like for them to be able to click a play or pause button to control video playback when previewing a video file. To implement this, first add two buttons to your `activity.xml` file.
 
-```
+```html
      <RelativeLayout 
         android:layout_width="fill_parent"
         android:layout_height="50dp"
@@ -671,14 +671,14 @@ DJI Camera provides a video preview function for users to enjoy their recorded v
 
 The image resources for these buttons need to be copied into the `drawable-mdpi` folder, and two elements need to be added into the .xml file `drawable`.
 
-```
+```html
     <item android:drawable="drawable/play_video" android:state_pressed="false"></item>
     <item android:drawable="drawable/pause_video" adnroid:state_pressed="false"></item>
 ```
 
 However, there are two types of media files the user can preview while in single preview playback mode, image files and video files. If the play button or the pause button were to appear while the user were previewing a picture, it would be unnecessary and annoying. To combat this we set up a listener in `onCreate()` to detect which type of file the user is currently previewing.
 
-```
+```json
       mCameraPlaybackStateCallBack = new DJICameraPlayBackStateCallBack(){
 
             @Override
@@ -729,8 +729,8 @@ In previous sections, we discussed and implemented three out of four camera mode
 
 Please note that **DNG images and 4k video cannot be downloaded through playback mode**. In addition, the two methods below are not supported by the Inspire 1 or Phantom 3 Professional:
 
-* `fetchMediaData(DJIMedia, DJIExecuteResultCallback)`
-* `fetchMediaThumbnail(DJIMedia, DJIExecuteResultCallback)`
+- `fetchMediaData(DJIMedia, DJIExecuteResultCallback)`
+- `fetchMediaThumbnail(DJIMedia, DJIExecuteResultCallback)`
 
 As we've already implemented all the necessary UI features, the only thing we have left to do is add some logic to our existing buttons. Add the following code into `onClick(View v)`:
 
@@ -778,7 +778,7 @@ As we've already implemented all the necessary UI features, the only thing we ha
 
 We create a `DJIFileDownloadCallBack` object to be added in the `onCreate()` function, as shown below. `DJIFileDownloadCallBack` includes a handler. You can find the handler declaration in our demo code.
 
-```
+```json
     mFileDownloadCallBack = new DJIFileDownloadCallBack() {
 
             @Override
@@ -842,7 +842,7 @@ We create a `DJIFileDownloadCallBack` object to be added in the `onCreate()` fun
 
 For multiple preview downloads, developers should first invoke `enterMultipleEditMode(DJIExecuteResultCallback)` to enter the multiple edition playback mode so that the users can select the media files they want to delete or download. To support selecting media files and entering single preview playback status, the following code should be added in the `getView(int position, View convertView, ViewGroup parent)` function of `ButtonAdapter`.
 
-```
+```json
     mBtn.setOnClickListener(new OnClickListener() {
 
         @Override
@@ -878,7 +878,7 @@ Some developers might want to download the media files from their drone automati
 
 Here's the code to implement automatic downloading, the developer could use `handler` to execute the `ENTERPLAYBACK` function, then the process will be executed automatically:
 
-```
+```json
     private Handler handler = new Handler(new Handler.Callback() {
 
         @Override

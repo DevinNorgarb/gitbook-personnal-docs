@@ -6,13 +6,13 @@ Earlier I wrote that you can make a connection in any direction. For example, yo
 
 Note that LXD 3.0.x only supports _**TCP to TCP**_ proxy devices. Support for UDP and Unix sockets was added in later versions.
 
-### Launching a container and setting up a Web server
+## Launching a container and setting up a Web server
 
 Let’s launch a container, install a Web server, and, then expose the Web server to the local network (or the Internet, if you are using a VPS/Internet server).
 
 First, launch the container.
 
-```
+```php
 $ lxc launch ubuntu:18.04 mycontainer
 Creating mycontainer
 Starting mycontainer
@@ -20,7 +20,7 @@ Starting mycontainer
 
 We get a shell into the container, update the package list and install `nginx`. Finally, verify that `nginx` is running.
 
-```
+```bash
 ubuntu@mycontainer:~$ sudo apt update
 ubuntu@mycontainer:~$ sudo apt install -y nginx
 ubuntu@mycontainer:~$ curl http://localhost
@@ -51,7 +51,7 @@ Note that previously you would specify hostnames when you were creating LXD Prox
 
 Let’s test that the Web server in the container is accessible on the host. We can use both `localhost` (or `127.0.0.1`) on the host to access the website of the container. We can also use the public IP address of the host (in this case, the LAN IP address) to access the container.
 
-```
+```php
 $ curl http://localhost
 ...
  Welcome to nginx! 

@@ -13,7 +13,7 @@ The basic hardware you will need is
 
 <br>
 
-### Contents <a href="#mw-toc-heading" id="mw-toc-heading"></a>
+## Contents <a href="#mw-toc-heading" id="mw-toc-heading"></a>
 
 * [1Basic options](https://kodi.wiki/view/HOW-TO:Install_Kodi_on_Raspberry_Pi?https=1#Basic_options)
 * [2Specific install guides](https://kodi.wiki/view/HOW-TO:Install_Kodi_on_Raspberry_Pi?https=1#Specific_install_guides)
@@ -61,7 +61,7 @@ For installs that don't directly include and/or boot into Kodi automatically.
 
 (Current Version - 18.7)
 
-```
+```python
 sudo apt-get update
 sudo apt-get install kodi
 ```
@@ -72,14 +72,14 @@ PVR Addons
 
 * PVR Addons can be installed directly from the command line:
 
-```
+```python
 sudo apt-get update
 sudo apt-get install PACKAGENAMEHERE
 ```
 
 but replace PACKAGENAMEHERE with the PVR addon required.
 
-```
+```python
 example: sudo apt-get install kodi-pvr-hts
 ```
 

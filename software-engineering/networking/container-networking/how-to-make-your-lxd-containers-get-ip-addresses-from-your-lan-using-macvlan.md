@@ -12,7 +12,7 @@ How can we get some containers to receive an IP address from the LAN and be acce
 
 In this post, we are going to create a new LXD profile and configure _**macvlan**_ in it. Then, we launch new containers under the new profile, or attach existing containers to the new profile (so they get as well a LAN IP address).
 
-### &#x20;<a href="#creating-a-new-lxd-profile-for-macvlan" id="creating-a-new-lxd-profile-for-macvlan"></a>
+## &#x20;<a href="#creating-a-new-lxd-profile-for-macvlan" id="creating-a-new-lxd-profile-for-macvlan"></a>
 
 Let’s see what LXD profiles are available.
 

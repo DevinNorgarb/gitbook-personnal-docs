@@ -4,7 +4,7 @@
 
 Puppeteer offers a Docker image that includes [Chrome for Testing](https://developer.chrome.com/blog/chrome-for-testing/) along with the required dependencies and a pre-installed Puppeteer version. The image is available via the [GitHub Container Registry](https://github.com/puppeteer/puppeteer/pkgs/container/puppeteer). The latest image is tagged as `latest` and other tags match Puppeteer versions. For example,
 
-```
+```php
 docker pull ghcr.io/puppeteer/puppeteer:latest # pulls the latest
 docker pull ghcr.io/puppeteer/puppeteer:16.1.0 # pulls the image that contains Puppeteer v16.1.0
 ```
@@ -15,7 +15,7 @@ The image is meant for running the browser in sandbox mode and therefore, runnin
 
 To use the docker image directly, run:
 
-```
+```php
 docker run -i --init --cap-add=SYS_ADMIN --rm ghcr.io/puppeteer/puppeteer:latest node -e "$(cat path/to/script.js)"
 ```
 

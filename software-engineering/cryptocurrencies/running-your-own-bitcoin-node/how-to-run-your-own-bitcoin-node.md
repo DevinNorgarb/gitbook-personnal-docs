@@ -1,6 +1,6 @@
 # how-to: run your own bitcoin node
 
-### What Is A Full Node? <a href="#what-is-a-full-node" id="what-is-a-full-node"></a>
+## What Is A Full Node? <a href="#what-is-a-full-node" id="what-is-a-full-node"></a>
 
 A full node is a program that fully validates transactions and blocks. Almost all full nodes also help the network by accepting transactions and blocks from other full nodes, validating those transactions and blocks, and then relaying them to further full nodes.
 
@@ -28,21 +28,21 @@ It’s possible and safe to run a full node to support the network and use its w
 
 Bitcoin Core full nodes have certain requirements. If you try running a node on weak hardware, it may work—but you’ll likely spend more time dealing with issues. If you can meet the following requirements, you’ll have an easy-to-use node.
 
-* Desktop or laptop hardware running recent versions of Windows, Mac OS X, or Linux.
-* 7 gigabytes of free disk space, accessible at a minimum read/write speed of 100 MB/s.
-* 2 gigabytes of memory (RAM)
-* A broadband Internet connection with upload speeds of at least 400 kilobits (50 kilobytes) per second
-* An unmetered connection, a connection with high upload limits, or a connection you regularly monitor to ensure it doesn’t exceed its upload limits. It’s common for full nodes on high-speed connections to use 200 gigabytes upload or more a month. Download usage is around 20 gigabytes a month, plus around an additional 340 gigabytes the first time you start your node.
-*   6 hours a day that your full node can be left running. (You can do other things with your computer while running a full node.) More hours would be better, and best of all would be if you can run your node continuously.
+- Desktop or laptop hardware running recent versions of Windows, Mac OS X, or Linux.
+- 7 gigabytes of free disk space, accessible at a minimum read/write speed of 100 MB/s.
+- 2 gigabytes of memory (RAM)
+- A broadband Internet connection with upload speeds of at least 400 kilobits (50 kilobytes) per second
+- An unmetered connection, a connection with high upload limits, or a connection you regularly monitor to ensure it doesn’t exceed its upload limits. It’s common for full nodes on high-speed connections to use 200 gigabytes upload or more a month. Download usage is around 20 gigabytes a month, plus around an additional 340 gigabytes the first time you start your node.
+-   6 hours a day that your full node can be left running. (You can do other things with your computer while running a full node.) More hours would be better, and best of all would be if you can run your node continuously.
 
     **Note:** many operating systems today (Windows, Mac, and Linux) enter a low-power mode after the screensaver activates, slowing or halting network traffic. This is often the default setting on laptops and on all Mac OS X laptops and desktops. Check your screensaver settings and disable automatic “sleep” or “suspend” options to ensure you support the network whenever your computer is running.
 
 #### Possible Problems <a href="#possible-problems" id="possible-problems"></a>
 
-* **Legal:** Bitcoin use is [prohibited or restricted in some areas.](https://en.wikipedia.org/wiki/Legality\_of\_bitcoin\_by\_country)
-* **Bandwidth limits**: Some Internet plans will charge an additional amount for any excess upload bandwidth used that isn’t included in the plan. Worse, some providers may terminate your connection without warning because of overuse. We advise that you check whether your Internet connection is subjected to such limitations and monitor your bandwidth use so that you can stop Bitcoin Core before you reach your upload limit.
-* **Anti-virus:** Several people have placed parts of known computer viruses in the Bitcoin block chain. This block chain data can’t infect your computer, but some anti-virus programs quarantine the data anyway, making it more difficult to run Bitcoin Core. This problem mostly affects computers running Windows.
-* **Attack target:** Bitcoin Core powers the Bitcoin peer-to-peer network, so people who want to disrupt the network may attack Bitcoin Core users in ways that will affect other things you do with your computer, such as an attack that limits your available download bandwidth.
+- **Legal:** Bitcoin use is [prohibited or restricted in some areas.](https://en.wikipedia.org/wiki/Legality\_of\_bitcoin\_by\_country)
+- **Bandwidth limits**: Some Internet plans will charge an additional amount for any excess upload bandwidth used that isn’t included in the plan. Worse, some providers may terminate your connection without warning because of overuse. We advise that you check whether your Internet connection is subjected to such limitations and monitor your bandwidth use so that you can stop Bitcoin Core before you reach your upload limit.
+- **Anti-virus:** Several people have placed parts of known computer viruses in the Bitcoin block chain. This block chain data can’t infect your computer, but some anti-virus programs quarantine the data anyway, making it more difficult to run Bitcoin Core. This problem mostly affects computers running Windows.
+- **Attack target:** Bitcoin Core powers the Bitcoin peer-to-peer network, so people who want to disrupt the network may attack Bitcoin Core users in ways that will affect other things you do with your computer, such as an attack that limits your available download bandwidth.
 
 ### Initial Block Download(IBD) <a href="#initial-block-downloadibd" id="initial-block-downloadibd"></a>
 
@@ -66,19 +66,19 @@ _Optional: Verify the release signatures_
 
 If you know how to use PGP, you should also click the _Verify Release Signatures_ link on the download page to download a signed list of SHA256 file hashes. The 0.11 and later releases are signed by Wladimir J. van der Laan’s releases key with the fingerprint:
 
-```
+```php
 01EA 5486 DE18 A882 D4C2  6845 90C8 019E 36C2 E964
 ```
 
 Earlier releases were signed by Wladimir J. van der Laan’s regular key. That key’s fingerprint is:
 
-```
+```php
 71A3 B167 3540 5025 D447  E8F2 7481 0B01 2346 C9A6
 ```
 
 Even earlier releases were signed by Gavin Andresen’s key. His primary key’s fingerprint is:
 
-```
+```php
 2664 6D99 CBAE C9B8 1982  EF60 29D9 EE6B 1FC7 30C1
 ```
 
@@ -90,7 +90,7 @@ If you logged in graphically, start a terminal. If you logged in another way, we
 
 Locate the file you downloaded and extract it using the `tar` command followed by the argument `xzf` followed by the file name. The argument `xzf` means eXtract the gZipped tar archive File. For example, for a 64-bit tar archive in your current directory, the command is:
 
-```
+```php
 tar xzf bitcoin-22.0-x86_64-linux-gnu.tar.gz
 ```
 
@@ -98,13 +98,13 @@ This will create the directory `bitcoin-22.0` within your current working direct
 
 If you use `sudo` to run commands as root, use the following command line:
 
-```
+```php
 sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-22.0/bin/*
 ```
 
 If you use `su` to run commands as root, use the following command line:
 
-```
+```php
 su -c 'install -m 0755 -o root -g root -t /usr/local/bin bitcoin-22.0/bin/*'
 ```
 
@@ -120,7 +120,7 @@ In order to use Bitcoin Core GUI, you will need several libraries installed. All
 
 If all the required libraries are installed, Bitcoin Core will start. If a required library is missing, an error message similar to the following message will be displayed:
 
-```
+```php
 /usr/local/bin/bitcoin-qt: error while loading shared libraries: libQtGui.so.4: cannot open shared object file: No such file or directory
 ```
 
@@ -194,19 +194,19 @@ _Optional: Verify the release signatures_
 
 If you know how to use PGP, you should also click the _Verify Release Signatures_ link on the download page to download a signed list of SHA256 file hashes. The 0.11 and later releases are signed by Wladimir J. van der Laan’s releases key with the fingerprint:
 
-```
+```php
 01EA 5486 DE18 A882 D4C2  6845 90C8 019E 36C2 E964
 ```
 
 Earlier releases were signed by Wladimir J. van der Laan’s regular key. That key’s fingerprint is:
 
-```
+```php
 71A3 B167 3540 5025 D447  E8F2 7481 0B01 2346 C9A6
 ```
 
 Even earlier releases were signed by Gavin Andresen’s key. His primary key’s fingerprint is:
 
-```
+```php
 2664 6D99 CBAE C9B8 1982  EF60 29D9 EE6B 1FC7 30C1
 ```
 
@@ -252,13 +252,13 @@ To start Bitcoin Core daemon, first open a command window: press the Windows key
 
 If you installed Bitcoin Core into the default directory, type the following at the command prompt:
 
-```
+```php
 C:\Program Files\Bitcoin\daemon\bitcoind
 ```
 
 Bitcoin Core daemon should start. To interact with Bitcoin Core daemon, you will use the command `bitcoin-cli` (Bitcoin command line interface). If you installed Bitcoin Core into the default location, type the following at the command prompt to see whether it works:
 
-```
+```php
 C:\Program Files\Bitcoin\daemon\bitcoin-cli getblockchaininfo
 ```
 
@@ -272,7 +272,7 @@ After it starts, you may find the following commands useful for basic interactio
 
 For example, to safely stop your node, run the following command:
 
-```
+```php
 C:\Program Files\Bitcoin\daemon\bitcoin-cli stop
 ```
 
@@ -286,13 +286,13 @@ Starting your node automatically each time your computer boots makes it easy for
 
 Start File Explorer and go to:
 
-```
+```php
 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
 ```
 
 Right-click on the File Explorer window and choose New → Text file. Name the file `start_bitcoind.bat`. Then right-click on it and choose Open in Notepad (or whatever editor you prefer). Copy and paste the following line into the file.
 
-```
+```php
 C:\Program Files\Bitcoin\daemon\bitcoind
 ```
 
@@ -316,19 +316,19 @@ _Optional: Verify the release signatures_
 
 If you know how to use PGP, you should also click the _Verify Release Signatures_ link on the download page to download a signed list of SHA256 file hashes. The 0.11 and later releases are signed by Wladimir J. van der Laan’s releases key with the fingerprint:
 
-```
+```php
 01EA 5486 DE18 A882 D4C2  6845 90C8 019E 36C2 E964
 ```
 
 Earlier releases were signed by Wladimir J. van der Laan’s regular key. That key’s fingerprint is:
 
-```
+```php
 71A3 B167 3540 5025 D447  E8F2 7481 0B01 2346 C9A6
 ```
 
 Even earlier releases were signed by Gavin Andresen’s key. His primary key’s fingerprint is:
 
-```
+```php
 2664 6D99 CBAE C9B8 1982  EF60 29D9 EE6B 1FC7 30C1
 ```
 
@@ -374,13 +374,13 @@ To start Bitcoin Core daemon, first open a command window: press the Windows key
 
 If you installed Bitcoin Core into the default directory, type the following at the command prompt:
 
-```
+```php
 C:\Program Files\Bitcoin\daemon\bitcoind
 ```
 
 Bitcoin Core daemon should start. To interact with Bitcoin Core daemon, you will use the command `bitcoin-cli` (Bitcoin command line interface). If you installed Bitcoin Core into the default location, type the following at the command prompt to see whether it works:
 
-```
+```php
 C:\Program Files\Bitcoin\daemon\bitcoin-cli getblockchaininfo
 ```
 
@@ -394,7 +394,7 @@ After it starts, you may find the following commands useful for basic interactio
 
 For example, to safely stop your node, run the following command:
 
-```
+```php
 C:\Program Files\Bitcoin\daemon\bitcoin-cli stop
 ```
 
@@ -408,13 +408,13 @@ Starting your node automatically each time your computer boots makes it easy for
 
 Start File Explorer and go to:
 
-```
+```php
 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
 ```
 
 Right-click on the File Explorer window and choose New → Text file. Name the file `start_bitcoind.bat`. Then right-click on it and choose Open in Notepad (or whatever editor you prefer). Copy and paste the following line into the file.
 
-```
+```php
 C:\Program Files\Bitcoin\daemon\bitcoind
 ```
 
@@ -438,19 +438,19 @@ _Optional: Verify the release signatures_
 
 If you know how to use PGP, you should also click the _Verify Release Signatures_ link on the download page to download a signed list of SHA256 file hashes. The 0.11 and later releases are signed by Wladimir J. van der Laan’s releases key with the fingerprint:
 
-```
+```php
 01EA 5486 DE18 A882 D4C2  6845 90C8 019E 36C2 E964
 ```
 
 Earlier releases were signed by Wladimir J. van der Laan’s regular key. That key’s fingerprint is:
 
-```
+```php
 71A3 B167 3540 5025 D447  E8F2 7481 0B01 2346 C9A6
 ```
 
 Even earlier releases were signed by Gavin Andresen’s key. His primary key’s fingerprint is:
 
-```
+```php
 2664 6D99 CBAE C9B8 1982  EF60 29D9 EE6B 1FC7 30C1
 ```
 
@@ -496,7 +496,7 @@ To start Bitcoin Core daemon, first open a command window: press the Windows key
 
 If you installed the Bitcoin Core into the default directory, type the following at the command prompt :
 
-```
+```php
 C:\Program Files\Bitcoin\daemon\bitcoind
 ```
 
@@ -504,7 +504,7 @@ Bitcoin Core daemon should start. You can now try using Bitcoin Cli Utility.
 
 To interact with Bitcoin Core daemon, you will use the command `bitcoin-cli` (Bitcoin command line interface). If you installed Bitcoin Core into the default location, type the following at the command prompt to see whether it works:
 
-```
+```php
 C:\Program Files\Bitcoin\daemon\bitcoin-cli getblockchaininfo
 ```
 
@@ -518,7 +518,7 @@ After it starts, you may find the following commands useful for basic interactio
 
 For example, to safely stop your node, run the following command:
 
-```
+```php
 C:\Program Files\Bitcoin\daemon\bitcoin-cli stop
 ```
 
@@ -532,7 +532,7 @@ Starting your node automatically each time your computer boots makes it easy for
 
 Start File Explorer and go to:
 
-```
+```php
 C:\Users\Example\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\StartUp
 ```
 
@@ -540,7 +540,7 @@ You can also access this folder by executing the following command after reachin
 
 Right-click on the File Explorer window and choose New → Text file. Name the file `start_bitcoind.bat`. Then right-click on it and choose Open in Notepad (or whatever editor you prefer). Copy and paste the following line into the file.
 
-```
+```php
 C:\Program Files\Bitcoin\daemon\bitcoind
 ```
 
@@ -566,19 +566,19 @@ _Optional: Verify the release signatures_
 
 If you know how to use PGP, you should also click the _Verify Release Signatures_ link on the download page to download a signed list of SHA256 file hashes. The 0.11 and later releases are signed by Wladimir J. van der Laan’s releases key with the fingerprint:
 
-```
+```php
 01EA 5486 DE18 A882 D4C2  6845 90C8 019E 36C2 E964
 ```
 
 Earlier releases were signed by Wladimir J. van der Laan’s regular key. That key’s fingerprint is:
 
-```
+```php
 71A3 B167 3540 5025 D447  E8F2 7481 0B01 2346 C9A6
 ```
 
 Even earlier releases were signed by Gavin Andresen’s key. His primary key’s fingerprint is:
 
-```
+```php
 2664 6D99 CBAE C9B8 1982  EF60 29D9 EE6B 1FC7 30C1
 ```
 
@@ -612,7 +612,7 @@ To support the Bitcoin network, you also need to allow incoming connections. Ple
 
 The Bitcoin Core daemon (bitcoind) is not included in the .dmg file you may have downloaded to install Bitcoin-QT. Bitcoind, along with its support binaries, is instead included in the OS X .tar.gz file listed on the official Bitcoin Core download page. To download this file using Terminal, execute the following command:
 
-```
+```php
 curl -O https://bitcoin.org/bin/bitcoin-core-22.0/bitcoin-22.0-osx64.tar.gz
 ```
 
@@ -620,19 +620,19 @@ _Optional: Verify the release signatures_
 
 If you know how to use PGP, you should also click the _Verify Release Signatures_ link on the download page to download a signed list of SHA256 file hashes. The 0.11 and later releases are signed by Wladimir J. van der Laan’s releases key with the fingerprint:
 
-```
+```php
 01EA 5486 DE18 A882 D4C2  6845 90C8 019E 36C2 E964
 ```
 
 Earlier releases were signed by Wladimir J. van der Laan’s regular key. That key’s fingerprint is:
 
-```
+```php
 71A3 B167 3540 5025 D447  E8F2 7481 0B01 2346 C9A6
 ```
 
 Even earlier releases were signed by Gavin Andresen’s key. His primary key’s fingerprint is:
 
-```
+```php
 2664 6D99 CBAE C9B8 1982  EF60 29D9 EE6B 1FC7 30C1
 ```
 
@@ -640,13 +640,13 @@ You should verify these keys belong to their owners using the web of trust or ot
 
 Extract bitcoind and its support binaries from the archive we just downloaded by running this command in Terminal:
 
-```
+```php
 tar -zxf bitcoin-22.0-osx64.tar.gz
 ```
 
 Now we’ll move the executables into your default path to make running and stopping bitcoind easier. To move the executables, run these commands (note that we have to use `sudo` to perform these commands since we are modifying directories owned by root):
 
-```
+```bash
 sudo mkdir -p /usr/local/bin
 sudo cp bitcoin-22.0/bin/bitcoin* /usr/local/bin/.
 ```
@@ -659,7 +659,7 @@ _Optional: Start Your Node At Login_
 
 Starting your node automatically each time you login to your computer makes it easy for you to contribute to the network. The easiest way to do this is to tell Bitcoin Core Daemon to start at login. In OS X, the way to start background programs at login is using a Launch Agent. Here is how to install a Launch Agent for Bitcoin Core daemon on your machine:
 
-```
+```php
 mkdir ~/Library/LaunchAgents
 curl https://raw.githubusercontent.com/bitcoin/bitcoin/master/contrib/init/org.bitcoin.bitcoind.plist > ~/Library/LaunchAgents/org.bitcoin.bitcoind.plist
 ```
@@ -698,8 +698,8 @@ After you press Check Node, the tool will inform you whether your port is open (
 
 For confirmation that you accept inbound connections, you can use Bitcoin Core. Bitcoin Core can’t tell you directly whether you allow inbound connections, but it can tell you whether or not you currently have any inbound connections. If your node has been online for at least 30 minutes, it should normally have inbound connections. If want to check your peer info using Bitcoin Core, choose the appropriate instructions below:
 
-* Peer info in Bitcoin Core GUI
-* Peer info in Bitcoin Core daemon
+- Peer info in Bitcoin Core GUI
+- Peer info in Bitcoin Core daemon
 
 **GUI Peer Info**
 
@@ -713,7 +713,7 @@ If you don’t have inbound connections, please read the instructions for enabli
 
 The [`getconnectioncount`](https://developer.bitcoin.org/reference/rpc/getconnectioncount.html) command will tell you how many connections you have. If you have more than 8 connections, inbound connections are allowed. For example:
 
-```
+```php
 $ bitcoin-cli getconnectioncount
 52
 ```
@@ -738,11 +738,11 @@ In order for your router to direct incoming port 8333 connections to your comput
 
 Start by logging into your router’s administration interface. Most routers can be configured using one of the following URLs, so keep clicking links until you find one that works. If none work, consult your router’s manual.
 
-* [http://192.168.0.1](http://192.168.0.1/) (some Linksys/Cisco models)
-* [http://192.168.1.1](http://192.168.1.1/) (some D-Link/Netgear models)
-* [http://192.168.2.1](http://192.168.2.1/) (some Belkin/SMC models)
-* [http://192.168.123.254](http://192.168.123.254/) (some US Robotics models)
-* [http://10.0.1.1](http://10.0.1.1/) (some Apple models)
+- [http://192.168.0.1](http://192.168.0.1/) (some Linksys/Cisco models)
+- [http://192.168.1.1](http://192.168.1.1/) (some D-Link/Netgear models)
+- [http://192.168.2.1](http://192.168.2.1/) (some Belkin/SMC models)
+- [http://192.168.123.254](http://192.168.123.254/) (some US Robotics models)
+- [http://10.0.1.1](http://10.0.1.1/) (some Apple models)
 
 Upon connecting, you will probably be prompted for a username and password. If you configured a password, enter it now. If not, the [Router Passwords site](http://www.routerpasswords.com/) provides a database of known default username and password pairs.
 
@@ -754,15 +754,15 @@ If that’s the case, find the computer running Bitcoin Core in the list, select
 
 Other routers require a more manual configuration. For these routers, you will need to look up the fixed address (MAC address) for your computer’s network card and add it to the list. This operation differs by operating system:
 
-*   **Windows 7 & 8:** Press Win-R (Windows key plus the R key) to open the Run dialog. Type `cmd` to open the console. Type `ipconfig /all` and find the result that best matches your connection—usually a wireless connection. Look for a line that starts with “Physical Address” and contains a value like this:
+-   **Windows 7 & 8:** Press Win-R (Windows key plus the R key) to open the Run dialog. Type `cmd` to open the console. Type `ipconfig /all` and find the result that best matches your connection—usually a wireless connection. Look for a line that starts with “Physical Address” and contains a value like this:
 
-    ```
+```php
       Physical Address. . . . . . . . . : 01-23-45-67-89-AB
-    ```
+```
 
     Replace all the dashes with colons, so the address looks like this: 01:23:45:67:89:AB. Use that address in the instructions below.
-* **Linux:** open a terminal and type `ifconfig`. Find the result that best matches your connection—a result starting with `wlan` indicates a wireless connection. Find the field that starts with `HWaddr` and copy the immediately following field that looks like 01:23:45:67:89:ab. Use that value in the instructions below.
-* **Mac OS X:** open a terminal and type `ifconfig`. Find the result that best matches your connection—a result starting with `en1` usually indicates a wireless connection. Find the field that starts with `ether:` and copy the immediately following field that looks like 01:23:45:67:89:ab. Use that value in the instructions below.
+- **Linux:** open a terminal and type `ifconfig`. Find the result that best matches your connection—a result starting with `wlan` indicates a wireless connection. Find the field that starts with `HWaddr` and copy the immediately following field that looks like 01:23:45:67:89:ab. Use that value in the instructions below.
+- **Mac OS X:** open a terminal and type `ifconfig`. Find the result that best matches your connection—a result starting with `en1` usually indicates a wireless connection. Find the field that starts with `ether:` and copy the immediately following field that looks like 01:23:45:67:89:ab. Use that value in the instructions below.
 
 Once you have the MAC address, you can fill it into to your router’s manual DHCP assignment table, as illustrated below. Also choose an IP address and make a note of it for the instructions in the next subsection. After entering this information, click the Add or Save button.
 
@@ -790,9 +790,9 @@ We can’t provide direct support, but if you see a way to improve these instruc
 
 Firewalls block inbound connections. To use Bitcoin, you need to configure your computer’s firewall to allow connections to port 8333. This is usually as easy as starting your firewall configuration software and defining a new rule to allow inbound connections to port 8333. For additional information for Windows, see the links below:
 
-* [Instructions for Windows Firewall](http://windows.microsoft.com/en-us/windows/open-port-windows-firewall#1TC=windows-7)
-* [Instructions for Norton Firewall](http://community.norton.com/en/forums/firewall-blocking-program-how-open-ports)
-* [Instructions for Mcafee Personal Firewall](http://service.mcafee.com/FAQDocument.aspx?id=TS100887)
+- [Instructions for Windows Firewall](http://windows.microsoft.com/en-us/windows/open-port-windows-firewall#1TC=windows-7)
+- [Instructions for Norton Firewall](http://community.norton.com/en/forums/firewall-blocking-program-how-open-ports)
+- [Instructions for Mcafee Personal Firewall](http://service.mcafee.com/FAQDocument.aspx?id=TS100887)
 
 Mac OS X comes with its firewall disabled by default, but if you have enabled it, see the section Allowing Specific Applications from the [official Apple guide.](http://support.apple.com/en-us/HT201642)
 
@@ -820,13 +820,13 @@ bitcoin-qt -par=1
 
 Once you’ve decided you like an option, you can add it to the Bitcoin Core configuration file. You can find that file in the following directories:
 
-* Windows: %APPDATA%\Bitcoin\\
-* OSX: $HOME/Library/Application Support/Bitcoin/
-* Linux: $HOME/.bitcoin/
+- Windows: %APPDATA%\Bitcoin\\
+- OSX: $HOME/Library/Application Support/Bitcoin/
+- Linux: $HOME/.bitcoin/
 
 To add an option to the configuration file, just remove its leading dash. You may also need to remove any quotation marks you used in your shell. For example, the `-par` option seen above would look like this in the configuration file:
 
-```
+```python
 par=1
 ```
 
@@ -870,7 +870,7 @@ Disabling listening will result in fewer nodes connected (remember the maximum o
 
 **Reduce maximum connections**
 
-```
+```python
 -maxconnections=<num>
 ```
 
@@ -878,7 +878,7 @@ Reducing the maximum connected nodes to a minimum could be desirable if traffic 
 
 **Blocks-only mode**
 
-```
+```python
 -blocksonly
 ```
 

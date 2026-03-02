@@ -8,10 +8,10 @@ We think open data, open source, and open strategy win over proprietary solution
 
 Links
 
-* Local Installation: https://github.com/pelias/docker
-* Cloud Webservice: https://geocode.earth/
-* Documentation: https://github.com/pelias/documentation
-* Community Chat: https://gitter.im/pelias/pelias
+- Local Installation: https://github.com/pelias/docker
+- Cloud Webservice: https://geocode.earth/
+- Documentation: https://github.com/pelias/documentation
+- Community Chat: https://gitter.im/pelias/pelias
 
 ## Pelias in Docker
 
@@ -31,19 +31,19 @@ This project supports Linux and Mac OSX operating systems. Windows is currently 
 
 Permissions
 
-* Pelias docker containers, and the `pelias` helper script, will not run as a root user.
-* Be sure you are running as a non-root user and that this user can execute `docker` commands. See: https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
+- Pelias docker containers, and the `pelias` helper script, will not run as a root user.
+- Be sure you are running as a non-root user and that this user can execute `docker` commands. See: https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
 
 ### Requirements for Linux
 
-* Install `util-linux` using your distribution's package manager:
-  * Alpine Linux: `sudo apk add util-linux`
-  * Debian/Ubuntu: `sudo apt-get install util-linux`
+- Install `util-linux` using your distribution's package manager:
+  - Alpine Linux: `sudo apk add util-linux`
+  - Debian/Ubuntu: `sudo apt-get install util-linux`
 
 ### Requirements for Mac OSX
 
-* Install GNU coreutils with Homebrew: `brew install coreutils`.
-* Max-out Docker computing resources (Memory-RAM and CPU cores) dedicated to Docker in Docker > Preferences > Advanced.
+- Install GNU coreutils with Homebrew: `brew install coreutils`.
+- Max-out Docker computing resources (Memory-RAM and CPU cores) dedicated to Docker in Docker > Preferences > Advanced.
 
 ### System requirements
 
@@ -53,9 +53,9 @@ At least 8GB RAM is required.
 
 ### How long will it take?
 
-* You should be able to get started with the default Portland-metro area build in under an hour with a fast internet connection.
-* On a machine with \~32 CPU cores, a full planet build can be done in under a day with the right settings.
-* The interpolation build (`pelias prepare interpolation`), which is single threaded, will take 6+ days for the full planet. We generally recommend skipping it when you are first getting started.
+- You should be able to get started with the default Portland-metro area build in under an hour with a fast internet connection.
+- On a machine with \~32 CPU cores, a full planet build can be done in under a day with the right settings.
+- The interpolation build (`pelias prepare interpolation`), which is single threaded, will take 6+ days for the full planet. We generally recommend skipping it when you are first getting started.
 
 For more info on time estimates and hardware requirements for large builds see: https://github.com/pelias/documentation/blob/master/full\_planet\_considerations.md
 
@@ -64,31 +64,31 @@ For more info on time estimates and hardware requirements for large builds see: 
 The following shell script can be used to quickly get started with a Pelias build.
 
 {% code title="quickstart.sh" %}
-```bash
-#!/bin/bash
+```
+## !/bin/bash
 set -x
 
-# change directory to the where you would like to install Pelias
-# cd /path/to/install
+## change directory to the where you would like to install Pelias
+## cd /path/to/install
 
-# clone this repository
+## clone this repository
 git clone https://github.com/pelias/docker.git && cd docker
 
-# install pelias script
-# this is the _only_ setup command that should require `sudo`
+## install pelias script
+## this is the _only_ setup command that should require `sudo`
 sudo ln -s "$(pwd)/pelias" /usr/local/bin/pelias
 
-# cd into the project directory
+## cd into the project directory
 cd projects/portland-metro
 
-# create a directory to store Pelias data files
-# see: https://github.com/pelias/docker#variable-data_dir
-# note: use 'gsed' instead of 'sed' on a Mac
+## create a directory to store Pelias data files
+## see: https://github.com/pelias/docker#variable-data_dir
+## note: use 'gsed' instead of 'sed' on a Mac
 mkdir ./data
 sed -i '/DATA_DIR/d' .env
 echo 'DATA_DIR=./data' >> .env
 
-# run build
+## run build
 pelias compose pull
 pelias elastic start
 pelias elastic wait
@@ -98,9 +98,9 @@ pelias prepare all
 pelias import all
 pelias compose up
 
-# optionally run tests
+## optionally run tests
 pelias test run
-```
+```json
 {% endcode %}
 
 ## Installing the Pelias helper script
@@ -110,16 +110,16 @@ This repository includes a helper script to make basic management of the Pelias 
 Example install steps:
 
 {% code title="install pelias" %}
-```bash
-# change directory to the where you would like to install Pelias
-# cd /path/to/install
+```
+## change directory to the where you would like to install Pelias
+## cd /path/to/install
 
-# clone this repository
+## clone this repository
 git clone https://github.com/pelias/docker.git && cd docker
 
-# install pelias script
+## install pelias script
 sudo ln -s "$(pwd)/pelias" /usr/local/bin/pelias
-```
+```json
 {% endcode %}
 
 Confirm the command is available:
@@ -127,12 +127,12 @@ Confirm the command is available:
 {% code title="which pelias" %}
 ```bash
 which pelias
-```
+```json
 {% endcode %}
 
 Resolving PATH issues
 
-* If you have trouble, check that the target of the symlink is listed on your $PATH:
+- If you have trouble, check that the target of the symlink is listed on your $PATH:
 
 ```bash
 tr ':' '\n' <<< "$PATH"
@@ -154,9 +154,9 @@ Ensure your current working directory contains the files: `.env`, `docker-compos
 
 Variable: DATA\_DIR
 
-* The only mandatory variable in `.env` is `DATA_DIR`.
-* This path reflects the directory Pelias will use to store downloaded data and build its microservices.
-* You must create a new directory for this project, for example:
+- The only mandatory variable in `.env` is `DATA_DIR`.
+- This path reflects the directory Pelias will use to store downloaded data and build its microservices.
+- You must create a new directory for this project, for example:
 
 ```bash
 mkdir /tmp/pelias
@@ -164,7 +164,7 @@ mkdir /tmp/pelias
 
 Then modify `.env` to reflect the new path:
 
-```
+```python
 COMPOSE_PROJECT_NAME=pelias
 DATA_DIR=/tmp/pelias
 ```
@@ -177,19 +177,19 @@ pelias system env
 
 Variable: COMPOSE\_\*
 
-* The compose variables are optional and documented here: https://docs.docker.com/compose/env-file/
-* Note: changing `COMPOSE_PROJECT_NAME` is not advisable unless you know what you are doing. If migrating from the deprecated `pelias/dockerfiles` repository you can set `COMPOSE_PROJECT_NAME=dockerfiles` for backwards compatibility.
+- The compose variables are optional and documented here: https://docs.docker.com/compose/env-file/
+- Note: changing `COMPOSE_PROJECT_NAME` is not advisable unless you know what you are doing. If migrating from the deprecated `pelias/dockerfiles` repository you can set `COMPOSE_PROJECT_NAME=dockerfiles` for backwards compatibility.
 
 Variable: DOCKER\_USER
 
-* This variable is no longer used and will be ignored. You can safely remove it from your `.env` file.
+- This variable is no longer used and will be ignored. You can safely remove it from your `.env` file.
 
 ## CLI commands
 
 List of supported CLI commands:
 
 {% code title="pelias (help)" %}
-```
+```php
 $ pelias
 
 Usage: pelias [command] [action] [options]
@@ -231,7 +231,7 @@ Usage: pelias [command] [action] [options]
   system    check                    ensure the system is correctly configured
   system    env                      display environment variables
   system    update                   update the pelias command by pulling the latest version
-```
+```json
 {% endcode %}
 
 ### Compose commands
@@ -325,33 +325,33 @@ pelias test run
 After a full planet import you can delete large temporary folders. The sizes below are rough estimates.
 
 {% code title="cleanup.sh" %}
-```bash
-# These folders can be entirely deleted after the import into elastic search
+```
+## These folders can be entirely deleted after the import into elastic search
 rm -rf /data/openaddresses # (~43GB)
 rm -rf /data/tiger         # (~13GB)
 rm -rf /data/openstreetmap # (~46GB)
 rm -rf /data/polylines     # (~2.7GB)
 
-# Within the content of the "interpolation" folder (~176GB) we must
-# preserve "street.db" (~7GB) and "address.db" (~25GB), the rest can be deleted
+## Within the content of the "interpolation" folder (~176GB) we must
+## preserve "street.db" (~7GB) and "address.db" (~25GB), the rest can be deleted
 cd /data/interpolation
 rm -rf -- !("street.db"|"address.db")
 
-# Within the content of the "placeholder" folder (~1.4GB), preserve "store.sqlite3" (~0.9GB)
+## Within the content of the "placeholder" folder (~1.4GB), preserve "store.sqlite3" (~0.9GB)
 cd /data/placeholder
 rm -rf -- !("store.sqlite3")
-```
+```json
 {% endcode %}
 
 ## View status and logs
 
-* View containers and ports:
+- View containers and ports:
 
 ```bash
 pelias compose ps
 ```
 
-* Inspect container logs:
+- Inspect container logs:
 
 ```bash
 pelias compose logs
@@ -363,24 +363,24 @@ Once imports are complete and services are running, you can make queries against
 
 API
 
-* http://localhost:4000/v1/search?text=portland
-* http://localhost:4000/v1/search?text=1901%20Main%20St
-* http://localhost:4000/v1/reverse?point.lon=-122.650095\&point.lat=45.533467
+- http://localhost:4000/v1/search?text=portland
+- http://localhost:4000/v1/search?text=1901%20Main%20St
+- http://localhost:4000/v1/reverse?point.lon=-122.650095\&point.lat=45.533467
 
 Placeholder
 
-* http://localhost:4100/demo/#eng
+- http://localhost:4100/demo/#eng
 
 PIP (point in polygon)
 
-* http://localhost:4200/-122.650095/45.533467
+- http://localhost:4200/-122.650095/45.533467
 
 Interpolation
 
-* http://localhost:4300/demo/#13/45.5465/-122.6351
+- http://localhost:4300/demo/#13/45.5465/-122.6351
 
 Libpostal
 
-* http://localhost:4400/parse?address=1730+ne+26th+ave,+portland,+or
+- http://localhost:4400/parse?address=1730+ne+26th+ave,+portland,+or
 
 Last updated: 3 years ago

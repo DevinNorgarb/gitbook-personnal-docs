@@ -14,7 +14,7 @@ So, I logged into http://chat.openai.com/ and here is my conversation.
 
 {% stepper %}
 {% step %}
-### Step 1: Let’s define the use-case
+## Step 1: Let’s define the use-case
 
 I could have defined my own use-case, but I wanted to test all aspects of ChatGPT, so I asked it to define one for me.
 

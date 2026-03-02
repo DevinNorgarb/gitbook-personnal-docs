@@ -4,14 +4,14 @@
 
 I started to discover the power of wiring tasks in Node-RED recently. Since I am a passionate ROS programmer, I was wondering if this flow tool could also help to make robot programming more transparent and reproducible. I was surprised how much more sense I could add to robotic programming by using this visual tool. I am now using my [Turtlebot 2arrow-up-right](http://www.turtlebot.com/) together with ROS indigo and Node-RED. This BLOG post shall be the first of a small series of posts with the intent to share my experiences with a greater community. This first post is about setting up the software. Furthermore, I want to give a very small example how to view a Turtlebots odometry in a Node-RED flow.
 
-#### Installing the Software
+## Installing the Software
 
-* [ROS indigo (on Ubuntu 14.04 )arrow-up-right](http://wiki.ros.org/indigo/Installation/Ubuntu)
-* Kobuki and [Turtlebot packagesarrow-up-right](http://wiki.ros.org/turtlebot/Tutorials/indigo/Turtlebot%20Installation) (either from .deb or [Githubarrow-up-right](https://github.com/turtlebot))
-* [ROSbridge for Robot Web Toolsarrow-up-right](http://wiki.ros.org/rosbridge_suite/Tutorials/RunningRosbridge)
-* [NodeJS (V6.10)arrow-up-right](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
-* [Node-REDarrow-up-right](https://nodered.org/docs/getting-started/installation)
-* Node-RED extra nodes: [node-red-contrib-rosarrow-up-right](https://www.npmjs.com/package/node-red-contrib-ros)
+- [ROS indigo (on Ubuntu 14.04 )arrow-up-right](http://wiki.ros.org/indigo/Installation/Ubuntu)
+- Kobuki and [Turtlebot packagesarrow-up-right](http://wiki.ros.org/turtlebot/Tutorials/indigo/Turtlebot%20Installation) (either from .deb or [Githubarrow-up-right](https://github.com/turtlebot))
+- [ROSbridge for Robot Web Toolsarrow-up-right](http://wiki.ros.org/rosbridge_suite/Tutorials/RunningRosbridge)
+- [NodeJS (V6.10)arrow-up-right](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+- [Node-REDarrow-up-right](https://nodered.org/docs/getting-started/installation)
+- Node-RED extra nodes: [node-red-contrib-rosarrow-up-right](https://www.npmjs.com/package/node-red-contrib-ros)
 
 I assume you already have a basic knowledge of using ROS and, thus, I only link to the installation instructions at this point. The Kobuki and Turtlebot ROS packages can either be installed from the corresponding Ubuntu packages or they can be cloned from the Github repositories directly into your Catkin workspace. I also added a section on how to use this tutorial in the ROS Gazebo simulator only. So, you do not need a real Turtlebot to play around. However, the battery state visualization will not work in the simulator. To enable ROS message transfer for Web interfaces, we also need to install the ROSbridge package.
 
@@ -25,7 +25,7 @@ Run the following to install the necessary ROS packages from the Ubuntu package 
 ```bash
 apt-get install ros-indigo-turtlebot*
 apt-get install ros-indigo-rosbridge-suite
-```
+```php
 {% endcode %}
 {% endstep %}
 
@@ -38,7 +38,7 @@ NodeJS version 6 was used in this tutorial. Do not install the very old .deb pac
 ```bash
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
-```
+```php
 {% endcode %}
 {% endstep %}
 
@@ -51,7 +51,7 @@ Once NodeJS is installed, use NPM to install Node-RED as a global module so it i
 ```bash
 sudo npm install -g --unsafe-perm node-red
 node-red
-```
+```json
 {% endcode %}
 {% endstep %}
 
@@ -64,7 +64,7 @@ Node-RED automatically uses the default workspace directory \~/.node-red/ to sto
 ```bash
 cd ~/.node-red/
 npm install node-red-contrib-ros
-```
+```php
 {% endcode %}
 {% endstep %}
 {% endstepper %}
@@ -82,7 +82,7 @@ Start your robot:
 {% code title="Bringup" %}
 ```bash
 roslaunch turtlebot_bringup minimal.launch
-```
+```json
 {% endcode %}
 {% endstep %}
 
@@ -94,7 +94,7 @@ This runs rosbridge and creates a WebSocket on port 9090 by default:
 {% code title="Start rosbridge" %}
 ```bash
 roslaunch rosbridge_server rosbridge_websocket.launch
-```
+```python
 {% endcode %}
 {% endstep %}
 
@@ -106,7 +106,7 @@ Start Node-RED and create a configuration node in order to communicate with the 
 {% code title="Start Node-RED" %}
 ```bash
 node-red
-```
+```python
 {% endcode %}
 
 Below are screenshots showing the ROS contrib nodes, the subscription node edit dialog, and the ROS server config node edit dialog:
@@ -201,17 +201,17 @@ In this paragraph, we subscribe to the /odom topic and show the output in a debu
         "url": "ws://127.0.0.1:9090"
     }
 ]
-```
+```python
 {% endcode %}
 
 ![](<../../../../../.gitbook/assets/image (60)>)
 
 The image above shows a flow that processes and shows /odom messages from a ROS-based robot:
 
-* subscribe to odom –> each /odom message is injected into the flow from the left
-* limit the potentially high rate of /odom to a reasonable 1/s
-* filter only the pose from /odom message leaving twist, etc. out
-* print the pose object in a debug view on the right
+- subscribe to odom –> each /odom message is injected into the flow from the left
+- limit the potentially high rate of /odom to a reasonable 1/s
+- filter only the pose from /odom message leaving twist, etc. out
+- print the pose object in a debug view on the right
 
 #### Using the Gazebo simulator instead of a real Turtlebot 2
 
@@ -220,7 +220,7 @@ The exact same commands as shown above can also be used when you do not have a r
 {% code title="Turtlebot Gazebo world" %}
 ```bash
 roslaunch turtlebot_gazebo turtlebot_world.launch
-```
+```json
 {% endcode %}
 
 That’s it! Happy hacking 😉

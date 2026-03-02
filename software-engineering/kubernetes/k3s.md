@@ -7,5 +7,4 @@ curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="server --node-ip 10.11.11.2 --n
 ```
 
 
-
 {% embed url="https://github.com/k3s-io/k3s/blob/master/README.md" %}

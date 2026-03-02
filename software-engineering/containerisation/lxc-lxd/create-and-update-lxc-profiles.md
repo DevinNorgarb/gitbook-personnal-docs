@@ -1,8 +1,7 @@
 # Create and Update LXC Profiles
 
 
-
-### About this Hands-on Lab
+## About this Hands-on Lab
 
 A benefit of containers is the ability to create mass amounts of them in a short amount of time. LXD makes ensuring these containers all share the expected container-level instance configurations through the use of container profiles. In this hands-on lab, we will create a profile to use when deploying on a certain storage pool.
 

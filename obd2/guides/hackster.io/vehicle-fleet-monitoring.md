@@ -4,7 +4,7 @@
 
 {% file src="../../../.gitbook/assets/hologram-vehicle-monitor-master.zip" %}
 
-##
+## 
 
 Use Hologram's cellular network to monitor a fleet of vehicles using OBDII, Raspberry Pi, GPS, and GSM.
 
@@ -145,7 +145,7 @@ I prefer serial because it makes it easier when you are working out of a car and
 
 **ProTip:** On the Pi 3, when bluetooth is enabled it interferes with the serial pins. Mount the SD card on a computer and edit the [config.txt](http://config.txt/) file and add this line.
 
-```
+```bash
 dtoverlay=pi3-disable-bt
 ```
 
@@ -159,7 +159,7 @@ All the code and instructions can be found at the github repository here [https:
 
 Run the following in a terminal, it will install the [Hologram,](https://hologram.io/docs/guide/nova/developer-tools/) [Adafruit-IO ](https://github.com/adafruit/io-client-python)and [OBD ](https://github.com/brendan-w/python-OBD)Python SDKs as well as the Hologram CLI.
 
-```
+```bash
 curl -L hologram.io/python-install | bash
 curl -L hologram.io/python-update | bash
 sudo pip install adafruit-io
@@ -176,21 +176,21 @@ git clone https://github.com/HologramEducation/hologram-vehicle-monitor
 
 * Create a file adafruitConfig.py with the following:
 
-```
+```bash
 ADAFRUIT_IO_KEY      = 'YOUR ADAFRUIT IO KEY'
 ADAFRUIT_IO_USERNAME = 'YOUR ADAFRUIT IO USERNAME'
 ```
 
 * Spin up the network connection through the NOVA
 
-```
+```bash
 sudo hologram network connect
 ```
 
 * Plugin the other end of the OBD ScanTool to an active vehicle.
 * Start the script
 
-```
+```bash
 sudo python
 ```
 
@@ -210,7 +210,7 @@ The main example send up values returned from the SPEED command. Below is a basi
 
 Give different ones a shot and see if there is data that you might find more useful from your vehicle.
 
-```
+```python
 import obd
 connection = obd.OBD() # auto-connects to USB or RF port
 cmd = obd.commands.STATUS # select an OBD command (sensor)

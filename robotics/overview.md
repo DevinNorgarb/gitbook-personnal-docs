@@ -2,7 +2,7 @@
 
 > The information in this guide applies to ArduSub V3.5 and up. If you are running an older version, you should [update](/broken/pages/a0miDy5oCMF4oi2JaIzr).
 
-### ArduSub and the ArduPilot Project <a href="#ardusub-and-the-ardupilot-project" id="ardusub-and-the-ardupilot-project"></a>
+## ArduSub and the ArduPilot Project <a href="#ardusub-and-the-ardupilot-project" id="ardusub-and-the-ardupilot-project"></a>
 
 The ArduSub project is a fully-featured open-source solution for remotely operated underwater vehicles (ROVs) and autonomous underwater vehicles (AUVs). ArduSub is a part of the [ArduPilot project](http://ardupilot.org/), and was originally derived from the ArduCopter code. ArduSub has extensive capabilities out of the box including feedback stability control, depth and heading hold, and autonomous navigation.
 
@@ -18,8 +18,8 @@ This book is an on-going work in progress to document the ArduSub software as we
 
 ### License <a href="#license" id="license"></a>
 
-* The ArduSub and ArduPilot code are released under the [GPLv3](https://raw.githubusercontent.com/ArduPilot/ardupilot/master/COPYING.txt) License.
-* This book is released under the [CC-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) License.
+- The ArduSub and ArduPilot code are released under the [GPLv3](https://raw.githubusercontent.com/ArduPilot/ardupilot/master/COPYING.txt) License.
+- This book is released under the [CC-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) License.
 
 ### results matching ""
 

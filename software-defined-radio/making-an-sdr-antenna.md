@@ -14,11 +14,11 @@ The newer antennas use F connectors to attach to my [ruggedised USB DVB-T dongle
 
 [!["A 16 radial spider antenna for ADSB mounted on a tripod, at sunset"](https://lucsmall.com/images/preview/2017-02-06-00-spider-antenna-by-night.png)](https://lucsmall.com/images/2017-02-06-00-spider-antenna-by-night.png)
 
-### Calculations
+## Calculations
 
 Here are the relevant calculations:
 
-```
+```bash
 wavelength = speed of light / frequency
 wavelength = 299,792,000 m/s / 1,090,000,000Hz
 

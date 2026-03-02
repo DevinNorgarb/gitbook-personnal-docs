@@ -6,8 +6,8 @@ This project is a receiver for DJI's Drone-ID protocol. The receiver works eithe
 
 The live receiver was tested with:
 
-* Ettus USRP B205-mini
-* DJI mini 2, DJI Mavic Air 2
+- Ettus USRP B205-mini
+- DJI mini 2, DJI Mavic Air 2
 
 Our software is a proof-of-concept receiver that we used to reverse-engineer an unknown protocol. Hence, it is not optimized for bad RF conditions, performance, or range.
 
@@ -22,7 +22,6 @@ Research Paper attached here:
 <figure><img src="https://github.com/RUB-SysSec/DroneSecurity/raw/public_squash/img/paper_thumbnail.png" alt=""><figcaption></figcaption></figure>
 
 
-
 <figure><img src="https://github.com/RUB-SysSec/DroneSecurity/raw/public_squash/img/result.png" alt=""><figcaption></figcaption></figure>
 
 ### Sample Files
@@ -33,7 +32,7 @@ The samples were directly dumped from the first stage of the live receiver that 
 
 You can use `inspectrum` to visualize the raw sample file:
 
-```
+```bash
 sudo apt install inspectrum
 inspectrum -r 50e6 samples/mini2_sm
 ```
@@ -43,10 +42,9 @@ inspectrum -r 50e6 samples/mini2_sm
 ### Quick Start (Offline)
 
 
-
 Create a virtual environment for Python and install the requirements:
 
-```
+```json
 python3 -m venv .venv
 source .venv/bin/activate
 pip3 install -r requirements.txt 
@@ -54,12 +52,11 @@ pip3 install -r requirements.txt
 
 You can now run the decoder on the sample file:
 
-```
+```json
 ./src/droneid_receiver_offline.py -i samples/mini2_sm
 ```
 
 #### Results
-
 
 
 The script performs detection and decoding just as the live receiver would. It prints the decoded payload for each Drone-ID frame:
@@ -96,7 +93,7 @@ The script performs detection and decoding just as the live receiver would. It p
 
 The summary contains decoding stats and flight path. In the `mini2_sm` sample, the drone did not have GPS coordinates locked yet, and only the smartphone's location is transmitted:
 
-```
+```php
 $ ./src/droneid_receiver_offline.py -i samples/mini2_sm
 … … …
 Frame detection: 10 candidates
@@ -111,7 +108,7 @@ App Coordinates:
 
 For `samples/mavic_air_2` both locations are transmitted:
 
-```
+```php
 $ ./src/droneid_receiver_offline.py -i samples/mavic_air_2
 …
 Decoder: 1 total, CRC OK: 1 (0 CRC errors)
@@ -124,7 +121,6 @@ App Coordinates:
 ## Live Receiver
 
 
-
 The live receiver additionally requires the UHD driver and **quite powerful machines** (for captures at 50 MHz bandwidth).
 
 Environment:
@@ -134,26 +130,25 @@ Environment:
 
 First, setup the Python environment. Due to the UHD driver, this does not work with a virtual environment. If you previously activated a virtual environment, exit that environment first. Install Python requirements:
 
-```
+```bash
 pip3 install -r requirements.txt
 ```
 
 Install UHD:
 
-```
+```bash
 sudo apt install libuhd-dev uhd-host python3-uhd
 ```
 
 Run the receiver:
 
-```
+```php
 ./src/droneid_receiver_live.py 
 ```
 
 The receiver will hop through a list of frequencies and, if a drone is detected, lock on that band.
 
 ### Deeper Dive: Script output
-
 
 
 <figure><img src="https://github.com/RUB-SysSec/DroneSecurity/raw/public_squash/img/pipeline.png" alt=""><figcaption></figcaption></figure>
@@ -166,7 +161,7 @@ The receiver will hop through a list of frequencies and, if a drone is detected,
 
 First, the `SpectrumCapture` class performs _packet detection_ and splits the capture file into individual frames:
 
-```
+```php
 Packet #0, start 0.000076, end 0.000721, length 0.000644, cfo -12207.031250
 Packet #1, start 0.000811, end 0.001456, length 0.000644, cfo 0.000000
 Packet #2, start 0.001546, end 0.002191, length 0.000644, cfo 0.000000
@@ -177,7 +172,7 @@ Some of these packets are false-positives and we do not expect successful decodi
 
 Next, the `Packet` class detects the Zadoff-Chu sequences and performs time and frequency offset corrections. It splits the frames into individual OFDM symbols.
 
-```
+```php
 FFO: -6546.528614
 Found ZC sequences: 600 147
 ZC Offset: -2.867868
@@ -189,7 +184,7 @@ The `Decoder` class gets the OFDM symbols and demodulates the subcarriers using 
 
 CRC check FAIL is easy to spot by looking at the Serial Number (should read 'SecureStorage?'):
 
-```
+```bash
     "serial_number": "Sa#upeStore&q?\u0010\b",
     …
     "crc-packet": "d985",
@@ -200,7 +195,7 @@ CRC Check FAILED!
 
 At the very end, we print some statistics:
 
-```
+```php
 Successfully decoded 14 / 34 packets
 4 Packets with CRC error
 ```
@@ -208,7 +203,6 @@ Successfully decoded 14 / 34 packets
 So in total we decoded 18 packets, 14 with correct CRC. Again, this is _expected_ as the sample file includes Drone-ID Frames with greatly varying quality.
 
 ## FAQ - Frequently Asked Questions
-
 
 
 Is DJI's Drone-ID the same as the standardized, Bluetooth or WiFi-based "Remote ID"?
@@ -236,7 +230,6 @@ Is your receiver the only receiver available?
 > No. The code in [proto17/dji\_droneid](https://github.com/proto17/dji_droneid) was developed in parallel. We think it's great and if you're interested in details, you should take a look at both implementations.
 
 ## Citing the Paper
-
 
 
 If you would like to cite our work, use the following BibTex entry:

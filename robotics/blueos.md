@@ -2,7 +2,7 @@
 
 ## External Integrations/Extensions <a href="#title-text" id="title-text"></a>
 
-* ![](https://symbytech.atlassian.net/wiki/aa-avatar/557058:8b04d9b5-ae98-48b3-b3fe-9f36b1e559fa)
+- ![](https://symbytech.atlassian.net/wiki/aa-avatar/557058:8b04d9b5-ae98-48b3-b3fe-9f36b1e559fa)
 
 Created by [Devin Norgarb](https://symbytech.atlassian.net/wiki/people/557058:8b04d9b5-ae98-48b3-b3fe-9f36b1e559fa?ref=confluence\&src=profilecard)Mar 25, 20235 min read
 

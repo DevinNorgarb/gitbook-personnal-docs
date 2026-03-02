@@ -65,9 +65,9 @@ I believe this makes it clear that it is far more optimal than what is shown on 
 
 To achieve that, we need only three tools. All of them are available with no additional costs in a basic version:
 
-* **Strava App on your mobile**: Could be an app on your mobile or another mobile device which has a GPS on board and is able to track your sport activity.
-* **Strava Web Account**: Strava is a service that allows athletes to track and analyze their workouts and training sessions. It’s widely used for activities such as running and cycling (URL: [https://www.strava.com/dashboard).](https://www.strava.com/dashboard\).)
-* **Grafana Account**: Grafana is open-source visualization and analytics software. It allows you to query, visualize, alert on, and explore your metrics no matter where they are stored (URL: [https://grafana.com/).](https://grafana.com/\).)
+- **Strava App on your mobile**: Could be an app on your mobile or another mobile device which has a GPS on board and is able to track your sport activity.
+- **Strava Web Account**: Strava is a service that allows athletes to track and analyze their workouts and training sessions. It’s widely used for activities such as running and cycling (URL: [https://www.strava.com/dashboard).](https://www.strava.com/dashboard\).)
+- **Grafana Account**: Grafana is open-source visualization and analytics software. It allows you to query, visualize, alert on, and explore your metrics no matter where they are stored (URL: [https://grafana.com/).](https://grafana.com/\).)
 
 ### Precondition: Create a Grafana Account and connect it with Strava <a href="#8841" id="8841"></a>
 

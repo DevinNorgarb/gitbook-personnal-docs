@@ -88,7 +88,7 @@ Locating directory listings with Google is fairly straightforward. Figure 1 show
 
 Judging from the titles of these documents, it's obvious that not only are these web pages intentional, they're also not the directory listings we're looking for. Several alternate queries provide more accurate results:
 
-```
+```python
 intitle:index.of "parent directory"  
 intitle:index.of name size
 ```
@@ -151,7 +151,7 @@ To accomplish its task, a CGI scanner must know what exactly to search for on a 
 
 Combining a list like this one with a carefully crafted Google search, Google can be used as a CGI scanner. Each line can be broken down and used in either an index.of or inurl search to find vulnerable targets. For example, a Google search for this:
 
-```
+```python
 allinurl:/random_banner/index.cgi
 ```
 

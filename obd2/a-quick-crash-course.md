@@ -12,7 +12,7 @@ The following is by no means an exhaustive tutorial. It instead aims to provide 
 
 If you decide to carry out this tutorial in real life, you’ll need a Linux computer (or a virtual Linux machine), and a CAN-to-USB device (which we’ll look into later).
 
-#### A car is a network <a href="#a-car-is-a-network" id="a-car-is-a-network"></a>
+## A car is a network <a href="#a-car-is-a-network" id="a-car-is-a-network"></a>
 
 A car consists of multiple computers to control the engine, transmission, windows, locks, lights, etc. These computers are called [electronic control units](https://en.wikipedia.org/wiki/Electronic\_control\_unit) (ECU) and communicate with each other over a network.
 
@@ -20,12 +20,12 @@ For example, when you press the button on your steering wheel to increase the vo
 
 There are multiple networks in a car, generally at least two:
 
-* One for critical data such as engine and powertrain messages
-* And one for less critical data such as radio and door locks
+- One for critical data such as engine and powertrain messages
+- And one for less critical data such as radio and door locks
 
 The critical network uses a fast and reliable protocol whereas the non-critical network uses a slower, less reliable but cheaper protocol. The number of networks as well as which ECUs are networked together depends on the car make, model and year. An ECU could also be connected to multiple networks.
 
-#### Connecting to a network <a href="#connecting-to-a-network" id="connecting-to-a-network"></a>
+### Connecting to a network <a href="#connecting-to-a-network" id="connecting-to-a-network"></a>
 
 Some networks can be accessed via the OBD-II port. [OBD-II](https://en.wikipedia.org/wiki/On-board\_diagnostics) is mandatory on all cars and light trucks built in the US after 1996 and Europe after 2004.
 
@@ -61,15 +61,15 @@ I use [CANalyze](https://kkuchera.github.io/canalyze/) which I’ve designed for
 
 To communicate with the device you need to install the can-utils package on your Linux machine. You can do this via by typing the following into the Linux prompt:
 
-```
+```bash
 sudo apt-get install can-utils
 ```
 
 Can-utils makes it extremely easy to send, receive and analyze CAN packets. These are the commands that we will use.
 
-* **cansniffer** display only the packets that are changing
-* **candump** dump all received packets
-* **cansend** send a packet
+- **cansniffer** display only the packets that are changing
+- **candump** dump all received packets
+- **cansend** send a packet
 
 Linux has CAN support built in to the kernel via [SocketCAN](https://www.kernel.org/doc/Documentation/networking/can.txt). This makes it easy to write your own additional programs. You can interact with the CAN bus in the same way you would interact with any other network i.e. via sockets.
 
@@ -77,9 +77,9 @@ Linux has CAN support built in to the kernel via [SocketCAN](https://www.kernel.
 
 Before you start reversing, you should have some understanding of how the CAN bus works. It consists of 2 wires and uses differential signaling. Since it’s a bus, multiple devices can be connected to these two wires. When a CAN frame is sent on the bus, it is received by all ECUs but is only processed if it’s useful for the ECU. If multiple CAN frames are sent at the same time, the one with the highest priority wins. A CAN frame has 3 parts that are relevant to us.
 
-* **arbitration identifier** The identifier of a message. An ECU uses it to decide to process or ignore the received frame. It also represents the message’s priority. A lower number has a higher priority. So for example, if you’d be an engineer designing the network, you would give the frame for the deployment of airbags a very high priority or a low arbitration ID. On the other hand you’d give a lower priority or higher arbitration ID to data meant for the door locks.
-* **data length code (DLC)** Indicates the length of the data field in bytes. A CAN frame can have at most 8 bytes of data.
-* **data field** Contains up to 8 bytes of data.
+- **arbitration identifier** The identifier of a message. An ECU uses it to decide to process or ignore the received frame. It also represents the message’s priority. A lower number has a higher priority. So for example, if you’d be an engineer designing the network, you would give the frame for the deployment of airbags a very high priority or a low arbitration ID. On the other hand you’d give a lower priority or higher arbitration ID to data meant for the door locks.
+- **data length code (DLC)** Indicates the length of the data field in bytes. A CAN frame can have at most 8 bytes of data.
+- **data field** Contains up to 8 bytes of data.
 
 #### Reversing the CAN bus <a href="#reversing-the-can-bus" id="reversing-the-can-bus"></a>
 
@@ -93,7 +93,7 @@ In our case, we want to spoof the tachometer so we need to change the RPM by ste
 
 Plug the CAN device into the car’s OBD-II port and the computer’s USB port. Bring up the CAN interface by running the following in your Linux prompt:
 
-```
+```php
 sudo ip link set can0 up type can bitrate 500000
 ```
 
@@ -103,13 +103,13 @@ which brings up the `can0` interface (always `can0` if you only have one device 
 
 When the car is off, the ECUs are usually sleeping so you need to turn on the car or put it in accessory mode. You can look at raw CAN data by running this in your Linux prompt:
 
-```
+```php
 candump can0
 ```
 
 This prints CAN data to the screen as soon as it is received. This however is very unorganized and it is very difficult to see what packets correspond to a certain event. You can press ctrl+c to stop the program. To make the data more readable we use cansniffer which groups the packets by arbitration ID and only shows the packets that are changing. In order to start it run the command in your Linux prompt:
 
-```
+```sql
 cansniffer -c can0
 ```
 
@@ -139,7 +139,7 @@ Finally there are the two bytes `21 C0` that do seem to correspond to a change i
 
 Once you have a candidate, send it onto the CAN bus with the following command in your Linux prompt:
 
-```
+```php
 cansend can0 0C9#8021C0071B101000
 ```
 
@@ -151,7 +151,7 @@ If you just send the packet once, you will probably not see anything change on t
 
 Recall that the rate is given in the first column of cansniffer. There are two ways to get around this aside from disconnecting the ECU that’s generating these messages. One option is to send the packets at a much higher frequency than the ones currently being sent. You can do this by running the following in your Linux prompt:
 
-```
+```sql
 while true; do cansend can0 0C9#8021C0071B101000; sleep 0.002; done
 ```
 
@@ -159,7 +159,7 @@ and substituting the CAN message with the one you’ve identified. Press ctrl+c 
 
 Another option is to monitor the bus, and every time you detect the packet that you want to spoof, send your own packet out immediately after. This can be done by running in your Linux prompt:
 
-```
+```sql
 candump can0 | grep " 0C9 " | while read line; do cansend can0 0C9#8021C0071B101000; done
 ```
 
@@ -171,7 +171,7 @@ If the tachometer changes, good job, you found it! If not, identify the next mes
 
 Now that you have the CAN frame that sets the RPM on the instrument cluster, you can play with the data that you send to see what happens. We have noted that the the two bytes that correspond to RPM behave as a 16bit integer so in order to set the tachometer to 8k RPM, we run the following in your Linux prompt:
 
-```
+```bash
 while true; do cansend can0 0C9#0080000000101000; sleep 0.002; done
 ```
 
@@ -183,15 +183,15 @@ That’s it! You can now try controlling the speedometer, radio, lights, door lo
 
 #### Possible issues <a href="#possible-issues" id="possible-issues"></a>
 
-* While the CAN bus is the most popular network, it’s not the only network. If you can’t find the message you are looking for on the CAN bus, try a different network. Especially non-critical messages such as radio, lights and door locks will probably be on a different network.
-* As mentioned the exact data transmitted over CAN depends on the car’s make, model and year. Some cars use a counter in the CAN message to ensure the same message isn’t processed multiple times. This is slightly more difficult but you should be able to do it with the provided information. Some cars also use a checksum to ensure integrity of the data. Calculating this checksum can be difficult. If you have a Toyota, check out [Adventures in Automotive Networks and Control Units](http://illmatics.com/car\_hacking.pdf), p10, Checksum-Toyota. Everyone should really read the whole paper.
-* When replaying the identified packet on the bus, your CAN to USB device might go into the “bus off” state. This is part of the CAN standard and happens when the device experienced too many errors. This generally happens when there is a lot of traffic on the bus. In order to get around this you can play with delays and timing, maybe try replaying the message immediately after putting the car in accessory mode, try waiting a bit, try it with the car on, etc. If you’ve identified what ECU’s are connected to the bus, you can also pull their fuse to stop them from sending messages and lower the traffic on the bus.
+- While the CAN bus is the most popular network, it’s not the only network. If you can’t find the message you are looking for on the CAN bus, try a different network. Especially non-critical messages such as radio, lights and door locks will probably be on a different network.
+- As mentioned the exact data transmitted over CAN depends on the car’s make, model and year. Some cars use a counter in the CAN message to ensure the same message isn’t processed multiple times. This is slightly more difficult but you should be able to do it with the provided information. Some cars also use a checksum to ensure integrity of the data. Calculating this checksum can be difficult. If you have a Toyota, check out [Adventures in Automotive Networks and Control Units](http://illmatics.com/car\_hacking.pdf), p10, Checksum-Toyota. Everyone should really read the whole paper.
+- When replaying the identified packet on the bus, your CAN to USB device might go into the “bus off” state. This is part of the CAN standard and happens when the device experienced too many errors. This generally happens when there is a lot of traffic on the bus. In order to get around this you can play with delays and timing, maybe try replaying the message immediately after putting the car in accessory mode, try waiting a bit, try it with the car on, etc. If you’ve identified what ECU’s are connected to the bus, you can also pull their fuse to stop them from sending messages and lower the traffic on the bus.
 
 #### Must reads <a href="#must-reads" id="must-reads"></a>
 
-* [Car Hacker’s Handbook](http://opengarages.org/handbook/)
-* Charlie Miller’s and Chris Valasek’s [research](http://illmatics.com/carhacking.html), yes all of it
-* University of California San Diego’s and University of Washington’s [research](http://www.autosec.org/publications.html).
+- [Car Hacker’s Handbook](http://opengarages.org/handbook/)
+- Charlie Miller’s and Chris Valasek’s [research](http://illmatics.com/carhacking.html), yes all of it
+- University of California San Diego’s and University of Washington’s [research](http://www.autosec.org/publications.html).
 
 Be sure to also check out [Open Garages](https://opengarages.org) and their [videos](https://www.youtube.com/playlist?list=PLBqtCp9s\_lnEOtf6I1DDMEANIzJJLXRhe).
 

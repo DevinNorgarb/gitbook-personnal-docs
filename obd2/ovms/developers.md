@@ -1,6 +1,6 @@
 # Developers
 
-##
+## 
 
 ### For Developers and Technicians
 
@@ -18,9 +18,9 @@ The source code for OVMS is stored on GitHub in a public _core project repositor
 
 [SEE OUR VEHICLE FIRMWARE ON GITHUB](https://github.com/openvehicles/)
 
-* [Developer Guide](https://www.openvehicles.com/developers#gbmeebri0g)
-* [Source Code](https://www.openvehicles.com/developers#gbzumz0r6b)
-* [Getting Started Vehicle](https://www.openvehicles.com/developers#gbaqjodltq)
+- [Developer Guide](https://www.openvehicles.com/developers#gbmeebri0g)
+- [Source Code](https://www.openvehicles.com/developers#gbzumz0r6b)
+- [Getting Started Vehicle](https://www.openvehicles.com/developers#gbaqjodltq)
 
 Before we start with **some general suggestions for adding support for a new vehicle**, I would like to say thank you. Your time is valuable and your contributions are appreciated. OVMS is an open source community project, and we rely on our developers to take this project forward. New vehicle support comes from the owners of those vehicles developing that support, along with the help of other experienced developers working on other vehicles or framework components. We work together to extend the project.
 

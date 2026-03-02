@@ -10,7 +10,7 @@ We have a Google Sheet with the list of clients and the invoice due date like th
 
 {% stepper %}
 {% step %}
-### Mark Overdue rows
+## Mark Overdue rows
 
 First, create a feature to mark the overdue rows. The script will iterate through the rows and add an “overdue” column.
 
@@ -144,7 +144,7 @@ function sendEmail(row)
   });
 
 }
-```
+```php
 {% endstep %}
 
 {% step %}

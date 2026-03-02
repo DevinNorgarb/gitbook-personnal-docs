@@ -22,7 +22,7 @@ To run Docker without root privileges, see [Run the Docker daemon as a non-root 
 
 ```console
 $ sudo groupadd docker
-```
+```json
 {% endstep %}
 
 {% step %}
@@ -30,7 +30,7 @@ $ sudo groupadd docker
 
 ```console
 $ sudo usermod -aG docker $USER
-```
+```json
 {% endstep %}
 
 {% step %}
@@ -44,7 +44,7 @@ You can also run the following command to activate the changes to groups:
 
 ```console
 $ newgrp docker
-```
+```json
 {% endstep %}
 
 {% step %}
@@ -62,7 +62,7 @@ This command downloads a test image and runs it in a container. When the contain
 
 If you initially ran Docker CLI commands using `sudo` before adding your user to the `docker` group, you may see the following error:
 
-```
+```json
 WARNING: Error loading config file: /home/user/.docker/config.json - stat /home/user/.docker/config.json: permission denied
 ```
 
@@ -73,7 +73,7 @@ To fix this problem, either remove the `~/.docker/` directory (it's recreated au
 ```console
 $ sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
 $ sudo chmod g+rwx "$HOME/.docker" -R
-```
+```php
 {% endstep %}
 {% endstepper %}
 

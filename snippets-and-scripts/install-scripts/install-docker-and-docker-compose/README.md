@@ -19,16 +19,16 @@ _Estimated reading time: 11 minutes_
 
 To get started with Docker Engine on Ubuntu, make sure you [meet the prerequisites](/broken/pages/BewGwXRkVbPcrkicVV4R), then [install Docker](/broken/pages/BewGwXRkVbPcrkicVV4R).
 
-### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
+## Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 
-#### OS requirements <a href="#os-requirements" id="os-requirements"></a>
+### OS requirements <a href="#os-requirements" id="os-requirements"></a>
 
 To install Docker Engine, you need the 64-bit version of one of these Ubuntu versions:
 
-* Ubuntu Impish 21.10
-* Ubuntu Hirsute 21.04
-* Ubuntu Focal 20.04 (LTS)
-* Ubuntu Bionic 18.04 (LTS)
+- Ubuntu Impish 21.10
+- Ubuntu Hirsute 21.04
+- Ubuntu Focal 20.04 (LTS)
+- Ubuntu Bionic 18.04 (LTS)
 
 Docker Engine is supported on `x86_64` (or `amd64`), `armhf`, `arm64`, and `s390x` architectures.
 
@@ -40,7 +40,7 @@ Docker Engine is supported on `x86_64` (or `amd64`), `armhf`, `arm64`, and `s390
 
 Older versions of Docker were called `docker`, `docker.io`, or `docker-engine`. If these are installed, uninstall them:
 
-```
+```php
 $ sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
 
@@ -58,9 +58,9 @@ Docker Engine uses the `overlay2` storage driver by default. If you need to use 
 
 You can install Docker Engine in different ways, depending on your needs:
 
-* Most users [set up Docker’s repositories](/broken/pages/BewGwXRkVbPcrkicVV4R) and install from them, for ease of installation and upgrade tasks. This is the recommended approach.
-* Some users download the DEB package and [install it manually](/broken/pages/BewGwXRkVbPcrkicVV4R) and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet.
-* In testing and development environments, some users choose to use automated [convenience scripts](/broken/pages/BewGwXRkVbPcrkicVV4R) to install Docker.
+- Most users [set up Docker’s repositories](/broken/pages/BewGwXRkVbPcrkicVV4R) and install from them, for ease of installation and upgrade tasks. This is the recommended approach.
+- Some users download the DEB package and [install it manually](/broken/pages/BewGwXRkVbPcrkicVV4R) and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet.
+- In testing and development environments, some users choose to use automated [convenience scripts](/broken/pages/BewGwXRkVbPcrkicVV4R) to install Docker.
 
 #### Install using the repository <a href="#install-using-the-repository" id="install-using-the-repository"></a>
 
@@ -70,7 +70,7 @@ Before you install Docker Engine for the first time on a new host machine, you n
 
 1.  Update the `apt` package index and install packages to allow `apt` to use a repository over HTTPS:
 
-    ```
+```php
     $ sudo apt-get update
 
     $ sudo apt-get install \
@@ -78,28 +78,28 @@ Before you install Docker Engine for the first time on a new host machine, you n
         curl \
         gnupg \
         lsb-release
-    ```
+```php
 2.  Add Docker’s official GPG key:
 
-    ```
+```php
     $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-    ```
+```php
 3.  Use the following command to set up the **stable** repository. To add the **nightly** or **test** repository, add the word `nightly` or `test` (or both) after the word `stable` in the commands below. Learn about **nightly** and **test** channels.
 
-    ```
+```bash
     $ echo \
       "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
       $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-    ```
+```
 
 **Install Docker Engine**
 
 1.  Update the `apt` package index, and install the _latest version_ of Docker Engine and containerd, or go to the next step to install a specific version:
 
-    ```
+```sql
      $ sudo apt-get update
      $ sudo apt-get install docker-ce docker-ce-cli containerd.io
-    ```
+```
 
     > Got multiple Docker repositories?
     >
@@ -108,25 +108,25 @@ Before you install Docker Engine for the first time on a new host machine, you n
 
     a. List the versions available in your repo:
 
-    ```
+```python
     $ apt-cache madison docker-ce
 
       docker-ce | 5:18.09.1~3-0~ubuntu-xenial | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages
       docker-ce | 5:18.09.0~3-0~ubuntu-xenial | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages
       docker-ce | 18.06.1~ce~3-0~ubuntu       | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages
       docker-ce | 18.06.0~ce~3-0~ubuntu       | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages
-    ```
+```
 
     b. Install a specific version using the version string from the second column, for example, `5:18.09.1~3-0~ubuntu-xenial`.
 
-    ```
+```php
     $ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
-    ```
+```php
 3.  Verify that Docker Engine is installed correctly by running the `hello-world` image.
 
-    ```
+```php
     $ sudo docker run hello-world
-    ```
+```
 
     This command downloads a test image and runs it in a container. When the container runs, it prints a message and exits.
 
@@ -147,16 +147,16 @@ If you cannot use Docker’s repository to install Docker Engine, you can downlo
     > To install a **nightly** or **test** (pre-release) package, change the word `stable` in the above URL to `nightly` or `test`. Learn about **nightly** and **test** channels.
 2.  Install Docker Engine, changing the path below to the path where you downloaded the Docker package.
 
-    ```
+```php
     $ sudo dpkg -i /path/to/package.deb
-    ```
+```
 
     The Docker daemon starts automatically.
 3.  Verify that Docker Engine is installed correctly by running the `hello-world` image.
 
-    ```
+```php
     $ sudo docker run hello-world
-    ```
+```
 
     This command downloads a test image and runs it in a container. When the container runs, it prints a message and exits.
 
@@ -172,11 +172,11 @@ Docker provides a convenience script at [get.docker.com](https://get.docker.com/
 
 Always examine scripts downloaded from the internet before running them locally. Before installing, make yourself familiar with potential risks and limitations of the convenience script:
 
-* The script requires `root` or `sudo` privileges to run.
-* The script attempts to detect your Linux distribution and version and configure your package management system for you, and does not allow you to customize most installation parameters.
-* The script installs dependencies and recommendations without asking for confirmation. This may install a large number of packages, depending on the current configuration of your host machine.
-* By default, the script installs the latest stable release of Docker, containerd, and runc. When using this script to provision a machine, this may result in unexpected major version upgrades of Docker. Always test (major) upgrades in a test environment before deploying to your production systems.
-* The script is not designed to upgrade an existing Docker installation. When using the script to update an existing installation, dependencies may not be updated to the expected version, causing outdated versions to be used.
+- The script requires `root` or `sudo` privileges to run.
+- The script attempts to detect your Linux distribution and version and configure your package management system for you, and does not allow you to customize most installation parameters.
+- The script installs dependencies and recommendations without asking for confirmation. This may install a large number of packages, depending on the current configuration of your host machine.
+- By default, the script installs the latest stable release of Docker, containerd, and runc. When using this script to provision a machine, this may result in unexpected major version upgrades of Docker. Always test (major) upgrades in a test environment before deploying to your production systems.
+- The script is not designed to upgrade an existing Docker installation. When using the script to update an existing installation, dependencies may not be updated to the expected version, causing outdated versions to be used.
 
 > Tip: preview script steps before running
 >
@@ -189,7 +189,7 @@ Always examine scripts downloaded from the internet before running them locally.
 
 This example downloads the script from [get.docker.com](https://get.docker.com/) and runs it to install the latest stable release of Docker on Linux:
 
-```
+```php
 $ curl -fsSL https://get.docker.com -o get-docker.sh
 $ sudo sh get-docker.sh
 Executing docker install script, commit: 7cae5f8b0decc17d6571f9f52eb840fbc13b2737
@@ -208,7 +208,7 @@ Docker also provides a convenience script at [test.docker.com](https://test.dock
 
 To install the latest version of Docker on Linux from the “test” channel, run:
 
-```
+```php
 $ curl -fsSL https://test.docker.com -o test-docker.sh
 $ sudo sh test-docker.sh
 <...>
@@ -222,21 +222,21 @@ If you installed Docker using the convenience script, you should upgrade Docker 
 
 1.  Uninstall the Docker Engine, CLI, and Containerd packages:
 
-    ```
+```bash
     $ sudo apt-get purge docker-ce docker-ce-cli containerd.io
-    ```
+```bash
 2.  Images, containers, volumes, or customized configuration files on your host are not automatically removed. To delete all images, containers, and volumes:
 
-    ```
+```bash
     $ sudo rm -rf /var/lib/docker
     $ sudo rm -rf /var/lib/containerd
-    ```
+```
 
 You must delete any edited configuration files manually.
 
 ### Next steps <a href="#next-steps" id="next-steps"></a>
 
-* Continue to Post-installation steps for Linux.
-* Review the topics in Develop with Docker to learn how to build new applications using Docker.
+- Continue to Post-installation steps for Linux.
+- Review the topics in Develop with Docker to learn how to build new applications using Docker.
 
 requirements, apt, installation, ubuntu, install, uninstall, upgrade, update

@@ -15,12 +15,12 @@ AWS offers a number of messaging services for transferring data between differen
 
 ### When to use SQS: <a href="#id-4a43" id="id-4a43"></a>
 
-* Your architecture requires asynchronous processing with guarantees that all tasks get processed
-* You need a durable and reliable queuing solution that will scale at low cost and require no management on your part
+- Your architecture requires asynchronous processing with guarantees that all tasks get processed
+- You need a durable and reliable queuing solution that will scale at low cost and require no management on your part
 
 ### When not to use SQS: <a href="#id-4b17" id="id-4b17"></a>
 
-* You need to send messages to multiple receivers
+- You need to send messages to multiple receivers
 
 ## Simple Notification Service (SNS) <a href="#c77c" id="c77c"></a>
 
@@ -28,15 +28,15 @@ AWS offers a number of messaging services for transferring data between differen
 
 ### When to use SNS: <a href="#d808" id="d808"></a>
 
-* Your application requires delivering messages asynchronously to multiple consumers at a time but does not require strong delivery guarantees (if you need delivery guarantees you should use SQS queues)
-* You need to trigger asynchronous events across different parts of your application
-* You need to send mobile push notifications or SMS text messages
-* If you want unknown number and type of subscribers to receive messages
+- Your application requires delivering messages asynchronously to multiple consumers at a time but does not require strong delivery guarantees (if you need delivery guarantees you should use SQS queues)
+- You need to trigger asynchronous events across different parts of your application
+- You need to send mobile push notifications or SMS text messages
+- If you want unknown number and type of subscribers to receive messages
 
 ### When not to use SNS: <a href="#debc" id="debc"></a>
 
-* You need strong delivery guarantees for messages
-* Your application sensitive to the latency associated with using AWS APIs via HTTP protocol and you have no need for specialized functions like SMS or mobile push
+- You need strong delivery guarantees for messages
+- Your application sensitive to the latency associated with using AWS APIs via HTTP protocol and you have no need for specialized functions like SMS or mobile push
 
 ## Amazon Kinesis Streams <a href="#id-6420" id="id-6420"></a>
 
@@ -48,14 +48,14 @@ Kinesis integrates well with other AWS services, including AWS Lambda. Kinesis c
 
 ### When to use Kinesis: <a href="#e2b1" id="e2b1"></a>
 
-* Your architecture requires complex real-time processing of data streams
-* You have complex real-time analytics requirements
-* You need to trigger asynchronous events across different parts of your application
+- Your architecture requires complex real-time processing of data streams
+- You have complex real-time analytics requirements
+- You need to trigger asynchronous events across different parts of your application
 
 ### When not to use Kinesis: <a href="#id-33ab" id="id-33ab"></a>
 
-* You only need simple queues
-* You only need simple topics
+- You only need simple queues
+- You only need simple topics
 
 To summarize:
 

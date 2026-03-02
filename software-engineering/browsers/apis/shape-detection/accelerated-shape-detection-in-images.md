@@ -1,7 +1,6 @@
 # Accelerated Shape Detection in Images
 
 
-
 ## Accelerated Shape Detection in Images <a href="#title" id="title"></a>
 
 [Draft Community Group Report](https://www.w3.org/standards/types#CG-DRAFT), 30 January 2023
@@ -17,7 +16,6 @@ This version:[https://wicg.github.io/shape-detection-api](https://wicg.github.io
 This document describes an API providing access to accelerated shape detectors (e.g. human faces) for still images and/or live image feeds.
 
 ### Status of this document <a href="#status" id="status"></a>
-
 
 
 This specification was published by the [Web Platform Incubator Community Group](https://www.w3.org/community/wicg/). It is not a W3C Standard nor is it on the W3C Standards Track. Please note that under the [W3C Community Contributor License Agreement (CLA)](https://www.w3.org/community/about/agreements/cla/) there is a limited opt-out and other conditions apply. Learn more about [W3C Community and Business Groups](http://www.w3.org/community/).
@@ -71,17 +69,17 @@ This section is inspired by [HTML Canvas 2D Context § image-sources-for-2d-re
 
 [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) allows objects implementing any of a number of interfaces to be used as image sources for the detection process.
 
-* When an [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) object represents an [`HTMLImageElement`](https://html.spec.whatwg.org/multipage/embedded-content.html#htmlimageelement), the element’s image must be used as the source image. Specifically, when an [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) object represents an animated image in an [`HTMLImageElement`](https://html.spec.whatwg.org/multipage/embedded-content.html#htmlimageelement), the user agent must use the default image of the animation (the one that the format defines is to be used when animation is not supported or is disabled), or, if there is no such image, the first frame of the animation.
-* When an [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) object represents an [`HTMLVideoElement`](https://html.spec.whatwg.org/multipage/media.html#htmlvideoelement), then the frame at the current playback position when the method with the argument is invoked must be used as the source image when processing the image, and the source image’s dimensions must be the [intrinsic dimensions](https://drafts.csswg.org/css2/conform.html#intrinsic) of the media resource (i.e. after any aspect-ratio correction has been applied).
-* When an [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) object represents an [`HTMLCanvasElement`](https://html.spec.whatwg.org/multipage/canvas.html#htmlcanvaselement), the element’s bitmap must be used as the source image.
+- When an [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) object represents an [`HTMLImageElement`](https://html.spec.whatwg.org/multipage/embedded-content.html#htmlimageelement), the element’s image must be used as the source image. Specifically, when an [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) object represents an animated image in an [`HTMLImageElement`](https://html.spec.whatwg.org/multipage/embedded-content.html#htmlimageelement), the user agent must use the default image of the animation (the one that the format defines is to be used when animation is not supported or is disabled), or, if there is no such image, the first frame of the animation.
+- When an [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) object represents an [`HTMLVideoElement`](https://html.spec.whatwg.org/multipage/media.html#htmlvideoelement), then the frame at the current playback position when the method with the argument is invoked must be used as the source image when processing the image, and the source image’s dimensions must be the [intrinsic dimensions](https://drafts.csswg.org/css2/conform.html#intrinsic) of the media resource (i.e. after any aspect-ratio correction has been applied).
+- When an [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) object represents an [`HTMLCanvasElement`](https://html.spec.whatwg.org/multipage/canvas.html#htmlcanvaselement), the element’s bitmap must be used as the source image.
 
 When the UA is required to use a given type of [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) as input argument for the `detect()` method of whichever detector, it MUST run these steps:
 
-* If any [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) have an effective script origin ([origin](https://html.spec.whatwg.org/multipage/browsers.html#concept-origin)) which is not the same as the Document’s effective script origin, then reject the Promise with a new [`DOMException`](https://webidl.spec.whatwg.org/#idl-DOMException) whose name is [`SecurityError`](https://webidl.spec.whatwg.org/#securityerror).
-* If the [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) is an [`HTMLImageElement`](https://html.spec.whatwg.org/multipage/embedded-content.html#htmlimageelement) object that is in the `Broken` ([HTML Standard §img-error](https://html.spec.whatwg.org/multipage/#img-error)) state, then reject the Promise with a new [`DOMException`](https://webidl.spec.whatwg.org/#idl-DOMException) whose name is [`InvalidStateError`](https://webidl.spec.whatwg.org/#invalidstateerror), and abort any further steps.
-* If the [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) is an [`HTMLImageElement`](https://html.spec.whatwg.org/multipage/embedded-content.html#htmlimageelement) object that is not fully decodable then reject the Promise with a new [`DOMException`](https://webidl.spec.whatwg.org/#idl-DOMException) whose name is [`InvalidStateError`](https://webidl.spec.whatwg.org/#invalidstateerror), and abort any further steps
-* If the [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) is an [`HTMLVideoElement`](https://html.spec.whatwg.org/multipage/media.html#htmlvideoelement) object whose [`readyState`](https://html.spec.whatwg.org/multipage/media.html#dom-media-readystate) attribute is either [`HAVE_NOTHING`](https://html.spec.whatwg.org/multipage/media.html#dom-media-have\_nothing) or [`HAVE_METADATA`](https://html.spec.whatwg.org/multipage/media.html#dom-media-have\_metadata) then reject the Promise with a new [`DOMException`](https://webidl.spec.whatwg.org/#idl-DOMException) whose name is [`InvalidStateError`](https://webidl.spec.whatwg.org/#invalidstateerror), and abort any further steps.
-* If the [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) argument is an [`HTMLCanvasElement`](https://html.spec.whatwg.org/multipage/canvas.html#htmlcanvaselement) whose bitmap’s `origin-clean` ([HTML Standard §concept-canvas-origin-clean](https://html.spec.whatwg.org/multipage/#concept-canvas-origin-clean)) flag is false, then reject the Promise with a new [`DOMException`](https://webidl.spec.whatwg.org/#idl-DOMException) whose name is [`SecurityError`](https://webidl.spec.whatwg.org/#securityerror), and abort any further steps.
+- If any [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) have an effective script origin ([origin](https://html.spec.whatwg.org/multipage/browsers.html#concept-origin)) which is not the same as the Document’s effective script origin, then reject the Promise with a new [`DOMException`](https://webidl.spec.whatwg.org/#idl-DOMException) whose name is [`SecurityError`](https://webidl.spec.whatwg.org/#securityerror).
+- If the [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) is an [`HTMLImageElement`](https://html.spec.whatwg.org/multipage/embedded-content.html#htmlimageelement) object that is in the `Broken` ([HTML Standard §img-error](https://html.spec.whatwg.org/multipage/#img-error)) state, then reject the Promise with a new [`DOMException`](https://webidl.spec.whatwg.org/#idl-DOMException) whose name is [`InvalidStateError`](https://webidl.spec.whatwg.org/#invalidstateerror), and abort any further steps.
+- If the [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) is an [`HTMLImageElement`](https://html.spec.whatwg.org/multipage/embedded-content.html#htmlimageelement) object that is not fully decodable then reject the Promise with a new [`DOMException`](https://webidl.spec.whatwg.org/#idl-DOMException) whose name is [`InvalidStateError`](https://webidl.spec.whatwg.org/#invalidstateerror), and abort any further steps
+- If the [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) is an [`HTMLVideoElement`](https://html.spec.whatwg.org/multipage/media.html#htmlvideoelement) object whose [`readyState`](https://html.spec.whatwg.org/multipage/media.html#dom-media-readystate) attribute is either [`HAVE_NOTHING`](https://html.spec.whatwg.org/multipage/media.html#dom-media-have\_nothing) or [`HAVE_METADATA`](https://html.spec.whatwg.org/multipage/media.html#dom-media-have\_metadata) then reject the Promise with a new [`DOMException`](https://webidl.spec.whatwg.org/#idl-DOMException) whose name is [`InvalidStateError`](https://webidl.spec.whatwg.org/#invalidstateerror), and abort any further steps.
+- If the [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) argument is an [`HTMLCanvasElement`](https://html.spec.whatwg.org/multipage/canvas.html#htmlcanvaselement) whose bitmap’s `origin-clean` ([HTML Standard §concept-canvas-origin-clean](https://html.spec.whatwg.org/multipage/#concept-canvas-origin-clean)) flag is false, then reject the Promise with a new [`DOMException`](https://webidl.spec.whatwg.org/#idl-DOMException) whose name is [`SecurityError`](https://webidl.spec.whatwg.org/#securityerror), and abort any further steps.
 
 Note that if the [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource) is an object with either a horizontal dimension or a vertical dimension equal to zero, then the Promise will be simply resolved with an empty sequence of detected objects.
 
@@ -91,7 +89,7 @@ Note that if the [`ImageBitmapSource`](https://html.spec.whatwg.org/multipage/im
 
 Example implementations of face detection are e.g. [Android FaceDetector](https://developer.android.com/reference/android/media/FaceDetector.html) (or the [Google Play Services vision library](https://developers.google.com/android/reference/com/google/android/gms/vision/face/Face)), Apple’s [CIFaceFeature](https://developer.apple.com/reference/coreimage/cifacefeature?language=objc) / [VNDetectFaceLandmarksRequest](https://developer.apple.com/documentation/vision/vndetectfacelandmarksrequest?language=objc) or [Windows 10 FaceDetector](https://msdn.microsoft.com/library/windows/apps/windows.media.faceanalysis.facedetector.aspx).
 
-```
+```json
 [=(Window,Worker),
  ]
 interface FaceDetector {
@@ -133,17 +131,17 @@ dictionary Landmark {
 
 `locations`, of type FrozenArray<[Point2D](https://w3c.github.io/mediacapture-image/#dictdef-point2d)>A point in the center of the detected landmark, or a [sequence](https://webidl.spec.whatwg.org/#idl-sequence) of points defining the vertices of a simple polygon surrounding the landmark in either a clockwise or counter-clockwise direction.`type`, of type [LandmarkType](https://wicg.github.io/shape-detection-api/#enumdef-landmarktype)Type of the landmark, if known.
 
-```
+```json
 enum LandmarkType {
   ,
   ,
-  
+
 };
 ```
 
 `mouth`The landmark is identified as a human mouth.`eye`The landmark is identified as a human eye.`nose`The landmark is identified as a human nose.Consider adding attributes such as, e.g.:
 
-```
+```json
 [SameObject] readonly attribute unsigned long id;
 ```
 
@@ -157,7 +155,7 @@ to [`DetectedFace`](https://wicg.github.io/shape-detection-api/#dictdef-detected
 
 Example implementations of Barcode/QR code detection are e.g. [Google Play Services](https://developers.google.com/android/reference/com/google/android/gms/vision/barcode/package-summary) or Apple’s [CIQRCodeFeature](https://developer.apple.com/reference/coreimage/ciqrcodefeature?language=objc) / [VNDetectBarcodesRequest](https://developer.apple.com/documentation/vision/vndetectbarcodesrequest?language=objc).
 
-```
+```json
 [=(Window,Worker),
  ]
 interface BarcodeDetector {
@@ -170,8 +168,8 @@ interface BarcodeDetector {
 
 ⚠MDN`BarcodeDetector(optional BarcodeDetectorOptions barcodeDetectorOptions)`Constructs a new [`BarcodeDetector`](https://wicg.github.io/shape-detection-api/#barcodedetector) with barcodeDetectorOptions.
 
-* If barcodeDetectorOptions.[`formats`](https://wicg.github.io/shape-detection-api/#dom-barcodedetectoroptions-formats) is present and empty, then throw a new [`TypeError`](https://webidl.spec.whatwg.org/#exceptiondef-typeerror).
-* If barcodeDetectorOptions.[`formats`](https://wicg.github.io/shape-detection-api/#dom-barcodedetectoroptions-formats) is present and contains [`unknown`](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-unknown), then throw a new [`TypeError`](https://webidl.spec.whatwg.org/#exceptiondef-typeerror).
+- If barcodeDetectorOptions.[`formats`](https://wicg.github.io/shape-detection-api/#dom-barcodedetectoroptions-formats) is present and empty, then throw a new [`TypeError`](https://webidl.spec.whatwg.org/#exceptiondef-typeerror).
+- If barcodeDetectorOptions.[`formats`](https://wicg.github.io/shape-detection-api/#dom-barcodedetectoroptions-formats) is present and contains [`unknown`](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-unknown), then throw a new [`TypeError`](https://webidl.spec.whatwg.org/#exceptiondef-typeerror).
 
 Detectors may potentially allocate and hold significant resources. Where possible, reuse the same [`BarcodeDetector`](https://wicg.github.io/shape-detection-api/#barcodedetector) for several detections.⚠MDN`getSupportedFormats()`This method, when invoked, MUST return a new [`Promise`](https://webidl.spec.whatwg.org/#idl-promise) promise and run the following steps [in parallel](https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel):
 
@@ -184,7 +182,7 @@ The list of supported [`BarcodeFormat`](https://wicg.github.io/shape-detection-a
 
 **2.3.1.** [**`BarcodeDetectorOptions`**](https://wicg.github.io/shape-detection-api/#dictdef-barcodedetectoroptions)
 
-```
+```html
 dictionary BarcodeDetectorOptions {
   <> ;
 };
@@ -194,7 +192,7 @@ dictionary BarcodeDetectorOptions {
 
 **2.3.2.** [**`DetectedBarcode`**](https://wicg.github.io/shape-detection-api/#dictdef-detectedbarcode)
 
-```
+```python
 dictionary DetectedBarcode {
   required  ;
   required  ;
@@ -222,7 +220,7 @@ enum BarcodeFormat {
   ,
   ,
   ,
-  
+
 };
 ```
 
@@ -246,7 +244,7 @@ Slightly modified/extended versions of these examples (and more) can be found in
 
 The following example can also be found in e.g. [this codepen](https://codepen.io/miguelao/pen/PbYpMv?editors=0010) with minimal modifications.
 
-```
+```javascript
 if (window.FaceDetector == undefined) {
   console.error('Face Detection not supported on this platform');
 }
@@ -259,7 +257,7 @@ if (window.BarcodeDetector == undefined) {
 
 The following example can also be found in e.g. [this codepen](https://codepen.io/miguelao/pen/ORYbbm?editors=0010) (or [this one](https://codepen.io/miguelao/pen/PmJWro), with landmarks overlay).
 
-```
+```php
 let faceDetector = new FaceDetector({fastMode: true, maxDetectedFaces: 1});
 // Assuming |theImage| is e.g. a &lt;img> content, or a Blob.
 
@@ -279,7 +277,7 @@ faceDetector.detect(theImage)
 
 The following example can also be found in e.g. [this codepen](https://codepen.io/miguelao/pen/wgrYjZ?editors=0010).
 
-```
+```php
 let barcodeDetector = new BarcodeDetector();
 // Assuming |theImage| is e.g. a &lt;img> content, or a Blob.
 
@@ -321,110 +319,110 @@ Conformance requirements phrased as algorithms or specific steps can be implemen
 
 #### Terms defined by this specification
 
-* ["aztec"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-aztec), in § 2.3.3
-* [aztec](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-aztec), in § 2.3.3
-* [BarcodeDetector](https://wicg.github.io/shape-detection-api/#barcodedetector), in § 2.3
-* [BarcodeDetector()](https://wicg.github.io/shape-detection-api/#dom-barcodedetector-barcodedetector), in § 2.3
-* [BarcodeDetector(barcodeDetectorOptions)](https://wicg.github.io/shape-detection-api/#dom-barcodedetector-barcodedetector), in § 2.3
-* [BarcodeDetectorOptions](https://wicg.github.io/shape-detection-api/#dictdef-barcodedetectoroptions), in § 2.3.1
-* [BarcodeFormat](https://wicg.github.io/shape-detection-api/#enumdef-barcodeformat), in § 2.3.3
-* boundingBox
-  * [dict-member for DetectedBarcode](https://wicg.github.io/shape-detection-api/#dom-detectedbarcode-boundingbox), in § 2.3.2
-  * [dict-member for DetectedFace](https://wicg.github.io/shape-detection-api/#dom-detectedface-boundingbox), in § 2.2.2
-* ["codabar"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-codabar), in § 2.3.3
-* [codabar](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-codabar), in § 2.3.3
-* ["code\_128"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-code\_128), in § 2.3.3
-* [Code 128](https://wicg.github.io/shape-detection-api/#code-128), in § 2.3.3
-* [code\_128](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-code\_128), in § 2.3.3
-* ["code\_39"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-code\_39), in § 2.3.3
-* [Code 39](https://wicg.github.io/shape-detection-api/#code-39), in § 2.3.3
-* [code\_39](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-code\_39), in § 2.3.3
-* ["code\_93"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-code\_93), in § 2.3.3
-* [code\_93](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-code\_93), in § 2.3.3
-* constructor()
-  * [constructor for BarcodeDetector](https://wicg.github.io/shape-detection-api/#dom-barcodedetector-barcodedetector), in § 2.3
-  * [constructor for FaceDetector](https://wicg.github.io/shape-detection-api/#dom-facedetector-facedetector), in § 2.2
-* [constructor(barcodeDetectorOptions)](https://wicg.github.io/shape-detection-api/#dom-barcodedetector-barcodedetector), in § 2.3
-* [constructor(faceDetectorOptions)](https://wicg.github.io/shape-detection-api/#dom-facedetector-facedetector), in § 2.2
-* [cornerPoints](https://wicg.github.io/shape-detection-api/#dom-detectedbarcode-cornerpoints), in § 2.3.2
-* ["data\_matrix"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-data\_matrix), in § 2.3.3
-* [data\_matrix](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-data\_matrix), in § 2.3.3
-* [DetectedBarcode](https://wicg.github.io/shape-detection-api/#dictdef-detectedbarcode), in § 2.3.2
-* [DetectedFace](https://wicg.github.io/shape-detection-api/#dictdef-detectedface), in § 2.2.2
-* detect(image)
-  * [method for BarcodeDetector](https://wicg.github.io/shape-detection-api/#dom-barcodedetector-detect), in § 2.3
-  * [method for FaceDetector](https://wicg.github.io/shape-detection-api/#dom-facedetector-detect), in § 2.2
-* ["ean\_13"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-ean\_13), in § 2.3.3
-* [EAN-13](https://wicg.github.io/shape-detection-api/#ean-13), in § 2.3.3
-* [ean\_13](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-ean\_13), in § 2.3.3
-* ["ean\_8"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-ean\_8), in § 2.3.3
-* [ean\_8](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-ean\_8), in § 2.3.3
-* ["eye"](https://wicg.github.io/shape-detection-api/#dom-landmarktype-eye), in § 2.2.2
-* [eye](https://wicg.github.io/shape-detection-api/#dom-landmarktype-eye), in § 2.2.2
-* [FaceDetector](https://wicg.github.io/shape-detection-api/#facedetector), in § 2.2
-* [FaceDetector()](https://wicg.github.io/shape-detection-api/#dom-facedetector-facedetector), in § 2.2
-* [FaceDetector(faceDetectorOptions)](https://wicg.github.io/shape-detection-api/#dom-facedetector-facedetector), in § 2.2
-* [FaceDetectorOptions](https://wicg.github.io/shape-detection-api/#dictdef-facedetectoroptions), in § 2.2.1
-* [fastMode](https://wicg.github.io/shape-detection-api/#dom-facedetectoroptions-fastmode), in § 2.2.1
-* [format](https://wicg.github.io/shape-detection-api/#dom-detectedbarcode-format), in § 2.3.2
-* [formats](https://wicg.github.io/shape-detection-api/#dom-barcodedetectoroptions-formats), in § 2.3.1
-* [getSupportedFormats()](https://wicg.github.io/shape-detection-api/#dom-barcodedetector-getsupportedformats), in § 2.3
-* ["itf"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-itf), in § 2.3.3
-* [itf](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-itf), in § 2.3.3
-* [Landmark](https://wicg.github.io/shape-detection-api/#dictdef-landmark), in § 2.2.2
-* [landmarks](https://wicg.github.io/shape-detection-api/#dom-detectedface-landmarks), in § 2.2.2
-* [LandmarkType](https://wicg.github.io/shape-detection-api/#enumdef-landmarktype), in § 2.2.2
-* [locations](https://wicg.github.io/shape-detection-api/#dom-landmark-locations), in § 2.2.2
-* [maxDetectedFaces](https://wicg.github.io/shape-detection-api/#dom-facedetectoroptions-maxdetectedfaces), in § 2.2.1
-* ["mouth"](https://wicg.github.io/shape-detection-api/#dom-landmarktype-mouth), in § 2.2.2
-* [mouth](https://wicg.github.io/shape-detection-api/#dom-landmarktype-mouth), in § 2.2.2
-* ["nose"](https://wicg.github.io/shape-detection-api/#dom-landmarktype-nose), in § 2.2.2
-* [nose](https://wicg.github.io/shape-detection-api/#dom-landmarktype-nose), in § 2.2.2
-* ["pdf417"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-pdf417), in § 2.3.3
-* [pdf417](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-pdf417), in § 2.3.3
-* ["qr\_code"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-qr\_code), in § 2.3.3
-* [qr\_code](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-qr\_code), in § 2.3.3
-* [rawValue](https://wicg.github.io/shape-detection-api/#dom-detectedbarcode-rawvalue), in § 2.3.2
-* [type](https://wicg.github.io/shape-detection-api/#dom-landmark-type), in § 2.2.2
-* ["unknown"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-unknown), in § 2.3.3
-* [unknown](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-unknown), in § 2.3.3
-* ["upc\_a"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-upc\_a), in § 2.3.3
-* [UPC-A](https://wicg.github.io/shape-detection-api/#upc-a), in § 2.3.3
-* [upc\_a](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-upc\_a), in § 2.3.3
-* ["upc\_e"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-upc\_e), in § 2.3.3
-* [upc\_e](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-upc\_e), in § 2.3.3
+- ["aztec"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-aztec), in § 2.3.3
+- [aztec](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-aztec), in § 2.3.3
+- [BarcodeDetector](https://wicg.github.io/shape-detection-api/#barcodedetector), in § 2.3
+- [BarcodeDetector()](https://wicg.github.io/shape-detection-api/#dom-barcodedetector-barcodedetector), in § 2.3
+- [BarcodeDetector(barcodeDetectorOptions)](https://wicg.github.io/shape-detection-api/#dom-barcodedetector-barcodedetector), in § 2.3
+- [BarcodeDetectorOptions](https://wicg.github.io/shape-detection-api/#dictdef-barcodedetectoroptions), in § 2.3.1
+- [BarcodeFormat](https://wicg.github.io/shape-detection-api/#enumdef-barcodeformat), in § 2.3.3
+- boundingBox
+  - [dict-member for DetectedBarcode](https://wicg.github.io/shape-detection-api/#dom-detectedbarcode-boundingbox), in § 2.3.2
+  - [dict-member for DetectedFace](https://wicg.github.io/shape-detection-api/#dom-detectedface-boundingbox), in § 2.2.2
+- ["codabar"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-codabar), in § 2.3.3
+- [codabar](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-codabar), in § 2.3.3
+- ["code\_128"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-code\_128), in § 2.3.3
+- [Code 128](https://wicg.github.io/shape-detection-api/#code-128), in § 2.3.3
+- [code\_128](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-code\_128), in § 2.3.3
+- ["code\_39"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-code\_39), in § 2.3.3
+- [Code 39](https://wicg.github.io/shape-detection-api/#code-39), in § 2.3.3
+- [code\_39](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-code\_39), in § 2.3.3
+- ["code\_93"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-code\_93), in § 2.3.3
+- [code\_93](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-code\_93), in § 2.3.3
+- constructor()
+  - [constructor for BarcodeDetector](https://wicg.github.io/shape-detection-api/#dom-barcodedetector-barcodedetector), in § 2.3
+  - [constructor for FaceDetector](https://wicg.github.io/shape-detection-api/#dom-facedetector-facedetector), in § 2.2
+- [constructor(barcodeDetectorOptions)](https://wicg.github.io/shape-detection-api/#dom-barcodedetector-barcodedetector), in § 2.3
+- [constructor(faceDetectorOptions)](https://wicg.github.io/shape-detection-api/#dom-facedetector-facedetector), in § 2.2
+- [cornerPoints](https://wicg.github.io/shape-detection-api/#dom-detectedbarcode-cornerpoints), in § 2.3.2
+- ["data\_matrix"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-data\_matrix), in § 2.3.3
+- [data\_matrix](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-data\_matrix), in § 2.3.3
+- [DetectedBarcode](https://wicg.github.io/shape-detection-api/#dictdef-detectedbarcode), in § 2.3.2
+- [DetectedFace](https://wicg.github.io/shape-detection-api/#dictdef-detectedface), in § 2.2.2
+- detect(image)
+  - [method for BarcodeDetector](https://wicg.github.io/shape-detection-api/#dom-barcodedetector-detect), in § 2.3
+  - [method for FaceDetector](https://wicg.github.io/shape-detection-api/#dom-facedetector-detect), in § 2.2
+- ["ean\_13"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-ean\_13), in § 2.3.3
+- [EAN-13](https://wicg.github.io/shape-detection-api/#ean-13), in § 2.3.3
+- [ean\_13](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-ean\_13), in § 2.3.3
+- ["ean\_8"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-ean\_8), in § 2.3.3
+- [ean\_8](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-ean\_8), in § 2.3.3
+- ["eye"](https://wicg.github.io/shape-detection-api/#dom-landmarktype-eye), in § 2.2.2
+- [eye](https://wicg.github.io/shape-detection-api/#dom-landmarktype-eye), in § 2.2.2
+- [FaceDetector](https://wicg.github.io/shape-detection-api/#facedetector), in § 2.2
+- [FaceDetector()](https://wicg.github.io/shape-detection-api/#dom-facedetector-facedetector), in § 2.2
+- [FaceDetector(faceDetectorOptions)](https://wicg.github.io/shape-detection-api/#dom-facedetector-facedetector), in § 2.2
+- [FaceDetectorOptions](https://wicg.github.io/shape-detection-api/#dictdef-facedetectoroptions), in § 2.2.1
+- [fastMode](https://wicg.github.io/shape-detection-api/#dom-facedetectoroptions-fastmode), in § 2.2.1
+- [format](https://wicg.github.io/shape-detection-api/#dom-detectedbarcode-format), in § 2.3.2
+- [formats](https://wicg.github.io/shape-detection-api/#dom-barcodedetectoroptions-formats), in § 2.3.1
+- [getSupportedFormats()](https://wicg.github.io/shape-detection-api/#dom-barcodedetector-getsupportedformats), in § 2.3
+- ["itf"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-itf), in § 2.3.3
+- [itf](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-itf), in § 2.3.3
+- [Landmark](https://wicg.github.io/shape-detection-api/#dictdef-landmark), in § 2.2.2
+- [landmarks](https://wicg.github.io/shape-detection-api/#dom-detectedface-landmarks), in § 2.2.2
+- [LandmarkType](https://wicg.github.io/shape-detection-api/#enumdef-landmarktype), in § 2.2.2
+- [locations](https://wicg.github.io/shape-detection-api/#dom-landmark-locations), in § 2.2.2
+- [maxDetectedFaces](https://wicg.github.io/shape-detection-api/#dom-facedetectoroptions-maxdetectedfaces), in § 2.2.1
+- ["mouth"](https://wicg.github.io/shape-detection-api/#dom-landmarktype-mouth), in § 2.2.2
+- [mouth](https://wicg.github.io/shape-detection-api/#dom-landmarktype-mouth), in § 2.2.2
+- ["nose"](https://wicg.github.io/shape-detection-api/#dom-landmarktype-nose), in § 2.2.2
+- [nose](https://wicg.github.io/shape-detection-api/#dom-landmarktype-nose), in § 2.2.2
+- ["pdf417"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-pdf417), in § 2.3.3
+- [pdf417](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-pdf417), in § 2.3.3
+- ["qr\_code"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-qr\_code), in § 2.3.3
+- [qr\_code](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-qr\_code), in § 2.3.3
+- [rawValue](https://wicg.github.io/shape-detection-api/#dom-detectedbarcode-rawvalue), in § 2.3.2
+- [type](https://wicg.github.io/shape-detection-api/#dom-landmark-type), in § 2.2.2
+- ["unknown"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-unknown), in § 2.3.3
+- [unknown](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-unknown), in § 2.3.3
+- ["upc\_a"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-upc\_a), in § 2.3.3
+- [UPC-A](https://wicg.github.io/shape-detection-api/#upc-a), in § 2.3.3
+- [upc\_a](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-upc\_a), in § 2.3.3
+- ["upc\_e"](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-upc\_e), in § 2.3.3
+- [upc\_e](https://wicg.github.io/shape-detection-api/#dom-barcodeformat-upc\_e), in § 2.3.3
 
 #### Terms defined by reference
 
-* \[ECMASCRIPT] defines the following terms:
-  * Array
-* \[GEOMETRY-1] defines the following terms:
-  * DOMRectReadOnly
-* \[HTML] defines the following terms:
-  * HAVE\_METADATA
-  * HAVE\_NOTHING
-  * HTMLCanvasElement
-  * HTMLImageElement
-  * HTMLVideoElement
-  * ImageBitmapSource
-  * in parallel
-  * origin
-  * readyState
-* \[IMAGE-CAPTURE] defines the following terms:
-  * Point2D
-* \[WEBIDL] defines the following terms:
-  * DOMException
-  * DOMString
-  * Exposed
-  * FrozenArray
-  * InvalidStateError
-  * Promise
-  * SecureContext
-  * SecurityError
-  * TypeError
-  * boolean
-  * sequence
-  * unsigned short
+- \[ECMASCRIPT] defines the following terms:
+  - Array
+- \[GEOMETRY-1] defines the following terms:
+  - DOMRectReadOnly
+- \[HTML] defines the following terms:
+  - HAVE\_METADATA
+  - HAVE\_NOTHING
+  - HTMLCanvasElement
+  - HTMLImageElement
+  - HTMLVideoElement
+  - ImageBitmapSource
+  - in parallel
+  - origin
+  - readyState
+- \[IMAGE-CAPTURE] defines the following terms:
+  - Point2D
+- \[WEBIDL] defines the following terms:
+  - DOMException
+  - DOMString
+  - Exposed
+  - FrozenArray
+  - InvalidStateError
+  - Promise
+  - SecureContext
+  - SecurityError
+  - TypeError
+  - boolean
+  - sequence
+  - unsigned short
 
 ### References
 
@@ -438,7 +436,7 @@ Conformance requirements phrased as algorithms or specific steps can be implemen
 
 ### IDL Index
 
-```
+```json
 [=(Window,Worker),
  ]
 interface  {
@@ -464,7 +462,7 @@ dictionary  {
 enum  {
   ,
   ,
-  
+
 };
 
 [=(Window,Worker),
@@ -501,7 +499,7 @@ enum  {
   ,
   ,
   ,
-  
+
 };
 ```
 

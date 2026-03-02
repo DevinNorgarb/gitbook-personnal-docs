@@ -8,7 +8,7 @@ To begin, navigate to the **Motors** tab in the sidebar on the left, then procee
 >
 > **Warning** **DO NOT** run thrusters for longer than 30 seconds in air or you will wear out the plastic bearings.
 
-### Manual Motor Direction Setup <a href="#manual-motor-direction-setup" id="manual-motor-direction-setup"></a>
+## Manual Motor Direction Setup <a href="#manual-motor-direction-setup" id="manual-motor-direction-setup"></a>
 
 1. Go to the **Motors** tab in the sidebar on the left.
 2. Read and understand the instructions on the setup page.

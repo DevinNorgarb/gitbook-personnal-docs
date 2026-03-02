@@ -8,7 +8,7 @@ The _Robot Operating System_ (ROS) is not an actual operating system, but a fram
 
 [ROS](http://www.ros.org/) is split up in more than 2000 packages, each package providing specialized functionality. The number of tools connected to the framework are probably its biggest power.
 
-### Why Should I Use Robot OS? <a href="#why-should-i-use-robot-os" id="why-should-i-use-robot-os"></a>
+## Why Should I Use Robot OS? <a href="#why-should-i-use-robot-os" id="why-should-i-use-robot-os"></a>
 
 ROS provides functionality for hardware abstraction, device drivers, communication between processes over multiple machines, tools for testing and visualization, and much more.
 
@@ -18,11 +18,11 @@ The main ways of creating the network are providing requestable services, or def
 
 Developers can assemble a complex system by connecting existing solutions for small problems. The way the system is implemented, it allows us to:
 
-* Replace components with similar interfaces on the fly, removing the need of stopping the system for various changes
-* Multiplexing outputs of multiple components into one input for another component, allowing parallel solving of various problems
-* Connect components made in various programming languages by just implementing the proper connectors to the messaging system, making it easy to develop software by connecting existing modules from various developers
-* Create nodes over a network of devices, without worrying about where code is run and implementing Interprocess communication (IPC) and Remote Procedure Call (RPC) systems
-* Directly connect to feeds on demand from remote hardware without writing any extra code, by employing the previous two bullet points
+- Replace components with similar interfaces on the fly, removing the need of stopping the system for various changes
+- Multiplexing outputs of multiple components into one input for another component, allowing parallel solving of various problems
+- Connect components made in various programming languages by just implementing the proper connectors to the messaging system, making it easy to develop software by connecting existing modules from various developers
+- Create nodes over a network of devices, without worrying about where code is run and implementing Interprocess communication (IPC) and Remote Procedure Call (RPC) systems
+- Directly connect to feeds on demand from remote hardware without writing any extra code, by employing the previous two bullet points
 
 We plan on demonstrating how useful that is by iteratively developing a simple solution. There are several key advantages compared to other approaches. ROS has multi platform support and allows connections between processes over multiple devices via peer-to-peer connections that are handled behind the scene. The design allows support for any language by wrapping the C++ communication classes, or manually developing classes for the language interface.
 
@@ -52,7 +52,7 @@ Installation is platform dependent (and most platforms have packages provided), 
 
 ROS provides its own repositories. The first step is adding them.
 
-```
+```bash
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv-key 0xB01FA116
 sudo apt-get update
@@ -62,13 +62,13 @@ After that you’ll have all hosted packages for all ROS versions available for 
 
 Installing the base packages on desktop has one of three options:
 
-* `sudo apt-get install ros-indigo-ros-base` for a minimal installation
-* `sudo apt-get install ros-indigo-desktop` for having the basic additional GUI tools
-* `sudo apt-get install ros-indigo-desktop-full` for having all official features, including various simulators and libraries for navigation and perception
+- `sudo apt-get install ros-indigo-ros-base` for a minimal installation
+- `sudo apt-get install ros-indigo-desktop` for having the basic additional GUI tools
+- `sudo apt-get install ros-indigo-desktop-full` for having all official features, including various simulators and libraries for navigation and perception
 
 For the best working experience, the full option is recommended. For installation on devices that will only be used to run nodes, the base version is sufficient. No matter what option you choose, you can install any needed package named `package_name` by running:
 
-```
+```bash
 sudo apt-get install ros-indigo-<package-name>
 ```
 
@@ -76,14 +76,14 @@ Underscores are replaced by hyphens in the final name, so `stage_ros` will be in
 
 The next step is to initialize `rosdep`. Packages in ROS can declare what components they depend on. `rosdep` allows you to compile those packages without too much manual dependency handling. To initialize it, call:
 
-```
+```bash
 sudo rosdep init
 rosdep update
 ```
 
 ROS has several environment variables used by its tools. With the default installation, the bash script to initialize them is located in `/opt/ros/indigo/setup.bash`. Variables need to be initialized within every bash session, so the best solution is to add them to `~/.bashrc`.
 
-```
+```bash
 echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
@@ -98,7 +98,7 @@ Ever since _Groovy Galapagos_, ROS workspaces are managed via `catkin`. We need 
 
 To perform this whole workspace configuration, choose an empty directory and execute the following commands:
 
-```
+```bash
 mkdir src
 cd src
 catkin_init_workspace
@@ -114,7 +114,7 @@ Creating any code is a big jump. Let’s first get familiar with some of the sys
 
 To run anything in ROS, a core process needs to be launched. It’s as easy as opening a new terminal window and typing:
 
-```
+```bash
 roscore
 ```
 
@@ -127,16 +127,14 @@ The main role of `roscore` is to tell nodes which other nodes they should connec
 After running `roscore`, we can launch the main GUI tool for ROS: `rqt`. What we see is very underwhelming - an empty window. `rqt` hosts a wide variety of plugins that can be configured into any visual configuration and any number of predefined views.
 
 
-
 For a start, let’s run the _Robot Steering_ plugin, by choosing it in `Plugins > Robot Tools > Robot Steering`. What we get is two sliders, representing the linear and rotational motion we want our robot to have. At the top of the plugin we see a text box with `/cmd_vel` in it. We can rename it to anything we want. It represents the name of the topic to which the steering is publishing. The terminal tools are the best place to see what’s going on in the background.
-
 
 
 #### Terminal Tools <a href="#terminal-tools" id="terminal-tools"></a>
 
 ROS has several powerful tools for inspecting what is happening in the system. The first tool we’ll introduce is `rostopic`. It allows us to inspect topics that nodes can subscribe and publish to. Running `rostopic list` will yield:
 
-```
+```javascript
 /cmd_vel
 /rosout
 /rosout_agg
@@ -207,7 +205,7 @@ buttons: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 You can ignore headers for now. Other than that, we have `axes` and `buttons`, explaining nicely what they represent. Moving axes and pushing buttons on the controller will result in these numbers changing. Using our tools, we can determine that the message type is `sensor_msgs/Joy` and the format is:
 
-```
+```bash
 std_msgs/Header header
   uint32 seq
   time stamp
@@ -220,7 +218,7 @@ int32[] buttons
 
 The first step to writing code is making a package. Within the `src` folder of the workspace, run:
 
-```
+```python
 catkin_create_pkg toptal_tutorial rospy joy geometry_msgs sensor_msgs
 ```
 
@@ -231,7 +229,7 @@ We now have a `toptal_tutorial` folder. Within the folder, create a `scripts` fo
 Let’s create a file called `teleop.py`, and within it we’ll set:
 
 ```
-#!/usr/bin/env python
+## !/usr/bin/env python
 
 import rospy
 from sensor_msgs.msg import Joy
@@ -264,7 +262,7 @@ Our first step is initializing a node with a specific name (in this case, we cal
 Our next step would be to handle our data somehow. We should create a Twist message that changes depending on the input, and then we would publish it to the `cmd_vel` topic.
 
 ```
-#!/usr/bin/env python
+## !/usr/bin/env python
 
 import rospy
 from sensor_msgs.msg import Joy
@@ -297,7 +295,7 @@ First, we add the `Twist` message, and we add support for binding function argum
 We still have one issue. The `/joy` topic can publish at great rates. If we monitor the `rostopic hz /cmd_vel` and move the analog stick in circles, we can see great numbers of messages. Not only does that result in a great amount of communication, but the processes that receive these messages have to process each one of them. There is no need to publish that data so frequently, and we are better off just publishing at a stable rate of 10 Hz. We can accomplish that with the following code.
 
 ```
-#!/usr/bin/env python
+## !/usr/bin/env python
 
 import rospy
 from sensor_msgs.msg import Joy
@@ -339,19 +337,18 @@ The final code will result in the `/cmd_vel` topic getting velocity commands at 
 
 Our first goal is to create an environment in which we can simulate a scenario we want to achieve. The node `stageros` within the `stage_ros` package allows us to run one robot within a 2D stage defined via an image. There is a whole syntax, described within the [`stage_ros` package](http://wiki.ros.org/stage\_ros) for world files and how to generate them. It’s fairly simple, but outside of our scope. Luckily, the package comes with several demo world. First, let’s go to the files’ directory by running:
 
-```
+```bash
 roscd stage_ros
 cd world
 ```
 
 Within the folder there are several files. Let’s run one.
 
-```
+```bash
 rosrun stage_ros stageros willow-erratic.world
 ```
 
 This created several topics. The meaning of each of them is also documented with the package. The important part is that it has `cmd_vel`.
-
 
 
 Within the displayed stage, there is a blue square, representing the robot you control. By using either our code or _Robot Steering_, we can control this robot. Try it out.
@@ -360,7 +357,7 @@ Within the displayed stage, there is a blue square, representing the robot you c
 
 let’s create a `launch` folder within our package, and within it create a file called `teleop.launch`. The final folder structure should look like this:
 
-```
+```html
 toptal_tutorial/
 ├── CMakeLists.txt
 ├── launch
@@ -373,7 +370,7 @@ toptal_tutorial/
 
 Within the `teleop.launch` file we will define a set of nodes and their interconnections.
 
-```
+```php
 <launch>
   <arg name="world_file" default="$(find stage_ros)/world/willow-four-erratics-multisensor.world" />
   <node pkg="stage_ros" type="stageros" name="simulated_world" args="$(arg world_file)"></node>
@@ -387,7 +384,6 @@ Within the `teleop.launch` file we will define a set of nodes and their intercon
 The new world consists of four robots, and each of their topics has a prefix of `robot_<n>`. So, the robot number 0 has a velocity command topic called `robot_0/cmd_vel`. That is why we put our control within a namespace called `robot_0`, to adjust their names to the new form. In that sense, you can think of topic names as folders in a filesystem.
 
 
-
 To run launchfiles, no `roscore` is needed. In a sense, `roscore` is just a special case of a launchfile that does nothing. If a `roscore` is missing, only the first launchfile launched will run a core, while the rest will connect to it. Now, we run the launch with:
 
 ```
@@ -396,7 +392,7 @@ roslaunch toptal_tutorial teleop.launch
 
 If all is correct, this will result in a simulator with 4 robots, one of which is controlled with our gamepad or joystick. This world has a lot more under the hood than the previous one. Each of the four robots has:
 
-```
+```bash
 /robot_<n>/base_pose_ground_truth
 /robot_<n>/base_scan_0
 /robot_<n>/base_scan_1
@@ -419,10 +415,9 @@ We didn’t go too deep into `rqt`, but it is the perfect tool for viewing more 
 Let’s launch `rqt` and remove any opened plugins. Now we’ll open 4 image visualizers (`Plugins > Visualization > Image View`), and place them in a 2x2 grid formation. Finally, in the top left corner of each of the views, let’s choose one of the four stated topics for `robot_0`.
 
 
-
 What we get is stereo vision with depth perception, with low resolution cameras. Bear in mind that we could have even gotten this result without our input system. If we just run this (from within the `stage_ros/world` folder):
 
-```
+```bash
 rosrun stage_ros stageros willow-four-erratics-multisensor.world
 ```
 
@@ -434,11 +429,11 @@ A lot of hardware has full support for ROS, very often provided by third party v
 
 While the last result was a simulation of what we want to achieve, the same can be achieved with the following modifications:
 
-* Install ROS on the onboard computer of your robot
-* Create a launchfile for the onboard computer that connects ROS to the underlying platform and all high level sensors like cameras, laser range finders and others. The needed nodes can already exist, or can be implemented by creating a publisher/subscriber to ROS on one side, and a driver for serial communications on the other
-* Have the launchfile run at startup
-* On your remote computer add `export ROS_MASTER_URI=http://<robot_hostname>:11311/` to your bash startup, making the remote computer look for `roscore` on that given hostname and port
-* Launch `rqt` and/or any scripts for monitoring and controlling the robot
+- Install ROS on the onboard computer of your robot
+- Create a launchfile for the onboard computer that connects ROS to the underlying platform and all high level sensors like cameras, laser range finders and others. The needed nodes can already exist, or can be implemented by creating a publisher/subscriber to ROS on one side, and a driver for serial communications on the other
+- Have the launchfile run at startup
+- On your remote computer add `export ROS_MASTER_URI=http://<robot_hostname>:11311/` to your bash startup, making the remote computer look for `roscore` on that given hostname and port
+- Launch `rqt` and/or any scripts for monitoring and controlling the robot
 
 What this really comes down to is just exporting the proper environment variable on the remote device, and the rest handles itself. Running ROS on a computer cluster only needs that one step being done for every machine.
 

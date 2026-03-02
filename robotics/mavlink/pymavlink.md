@@ -4,7 +4,7 @@ ArduSub communicates with a protocol called MAVLink. Pymavlink is a python imple
 
 Please reference the pymavlink [documentation](https://mavlink.io/en/mavgen_python/), [repository](https://github.com/ArduPilot/pymavlink) and [chat](https://gitter.im/ArduPilot/pymavlink) for further information.
 
-### Safety <a href="#safety" id="safety"></a>
+## Safety <a href="#safety" id="safety"></a>
 
 The autopilot employs a some failsafe mechanisms to keep you and your equipement safe, as well as to prevent your ROV from running away from you during experiments.
 
@@ -17,14 +17,14 @@ When the autopilot is being commanded to move via RC\_CHANNELS\_RAW or MANUAL\_C
 **Ubuntu 20.04**
 
 ```
-# Update list of available packages
+## Update list of available packages
 sudo apt update
 sudo apt -y upgrade
 
-# Install some dependencies
+## Install some dependencies
 sudo apt install -y python3-pip
 
-# Install mavproxy module and everything else needed
+## Install mavproxy module and everything else needed
 pip3 install mavproxy
 ```
 
@@ -36,7 +36,7 @@ With Python and pip installed, run `pip install wheel mavproxy`.
 
 You can test your installation with python interactive shell.
 
-```
+```python
 python
 import pymavlink
 print(pymavlink.__doc__)
@@ -44,7 +44,7 @@ print(pymavlink.__doc__)
 
 Output:
 
-```
+```json
 Python MAVLink library - see http://www.qgroundcontrol.org/mavlink/mavproxy_startpage
 ```
 
@@ -56,19 +56,19 @@ Note that `pymavlink.__doc__` will show some information about the package. This
 
 Pymavlink has 3 types of messages:
 
-* `command_long_send`: To create a raw package
-* `<message_name>_send`: To send simple mavlink messages
-* `mavutil`: Functions to abstract some MAVLink messages
+- `command_long_send`: To create a raw package
+- `<message_name>_send`: To send simple mavlink messages
+- `mavutil`: Functions to abstract some MAVLink messages
 
 #### Connect <a href="#connect" id="connect"></a>
 
 There are 3 types of udp connections for `mavlink_connection`:
 
-* **udpout**: Outputs data to a specified address:port (client).
-* **udpbcast**: Broadcasts and locks to the first client to respond (does not handle multiple clients properly)
-  * Using the IP `192.168.1.255` all devices from `192.168.1.1` to `192.168.1.255` will receive the data.
-* **udpin**: Binds to a specific port in address:port (server), it's necessary to receive data from clients (**udpout**) before starting to send any data.
-* **udp**: Exists for legacy reasons, works as **udpin**.
+- **udpout**: Outputs data to a specified address:port (client).
+- **udpbcast**: Broadcasts and locks to the first client to respond (does not handle multiple clients properly)
+  - Using the IP `192.168.1.255` all devices from `192.168.1.1` to `192.168.1.255` will receive the data.
+- **udpin**: Binds to a specific port in address:port (server), it's necessary to receive data from clients (**udpout**) before starting to send any data.
+- **udp**: Exists for legacy reasons, works as **udpin**.
 
 #### Shortcut Links <a href="#shortcut-links" id="shortcut-links"></a>
 
@@ -93,52 +93,52 @@ There are 3 types of udp connections for `mavlink_connection`:
 
 **Autopilot (E.g: Pixhawk) connected to the computer via serial**
 
-```
+```python
 """
 Example of connecting to an autopilot via serial communication using pymavlink
 """
 
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
 
-# Create the connection
-# Need to provide the serial port and baudrate
+## Create the connection
+## Need to provide the serial port and baudrate
 master = mavutil.mavlink_connection("/dev/ttyACM0", baud=115200)
 
-# Restart the ArduSub board !
+## Restart the ArduSub board !
 master.reboot_autopilot()
 ```
 
 **Run pyMavlink on the surface computer**
 
-```
+```php
 """
 Example of how to connect pymavlink to an autopilot via an UDP connection
 """
 
-# Disable "Bare exception" warning
-# pylint: disable=W0702
+## Disable "Bare exception" warning
+## pylint: disable=W0702
 
 import time
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
 
-# Create the connection
-#  If using a companion computer
-#  the default connection is available
-#  at ip 192.168.2.1 and the port 14550
-# Note: The connection is done with 'udpin' and not 'udpout'.
-#  You can check in http:192.168.2.2:2770/mavproxy that the communication made for 14550
-#  uses a 'udpbcast' (client) and not 'udpin' (server).
-#  If you want to use QGroundControl in parallel with your python script,
-#  it's possible to add a new output port in http:192.168.2.2:2770/mavproxy as a new line.
-#  E.g: --out udpbcast:192.168.2.255:yourport
+## Create the connection
+## If using a companion computer
+## the default connection is available
+## at ip 192.168.2.1 and the port 14550
+## Note: The connection is done with 'udpin' and not 'udpout'.
+## You can check in http:192.168.2.2:2770/mavproxy that the communication made for 14550
+## uses a 'udpbcast' (client) and not 'udpin' (server).
+## If you want to use QGroundControl in parallel with your python script,
+## it's possible to add a new output port in http:192.168.2.2:2770/mavproxy as a new line.
+## E.g: --out udpbcast:192.168.2.255:yourport
 master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')
 
-# Make sure the connection is valid
+## Make sure the connection is valid
 master.wait_heartbeat()
 
-# Get some information !
+## Get some information !
 while True:
     try:
         print(master.recv_match().to_dict())
@@ -146,26 +146,26 @@ while True:
         pass
     time.sleep(0.1)
 
-# Output:
-# {'mavpackettype': 'AHRS2', 'roll': -0.11364290863275528, 'pitch': -0.02841472253203392, 'yaw': 2.0993032455444336, 'altitude': 0.0, 'lat': 0, 'lng': 0}
-# {'mavpackettype': 'AHRS3', 'roll': 0.025831475853919983, 'pitch': 0.006112074479460716, 'yaw': 2.1514968872070312, 'altitude': 0.0, 'lat': 0, 'lng': 0, 'v1': 0.0, 'v2': 0.0, 'v3': 0.0, 'v4': 0.0}
-# {'mavpackettype': 'VFR_HUD', 'airspeed': 0.0, 'groundspeed': 0.0, 'heading': 123, 'throttle': 0, 'alt': 3.129999876022339, 'climb': 3.2699999809265137}
-# {'mavpackettype': 'AHRS', 'omegaIx': 0.0014122836291790009, 'omegaIy': -0.022567369043827057, 'omegaIz': 0.02394154854118824, 'accel_weight': 0.0, 'renorm_val': 0.0, 'error_rp': 0.08894175291061401, 'error_yaw': 0.0990816056728363}
+## Output:
+## {'mavpackettype': 'AHRS2', 'roll': -0.11364290863275528, 'pitch': -0.02841472253203392, 'yaw': 2.0993032455444336, 'altitude': 0.0, 'lat': 0, 'lng': 0}
+## {'mavpackettype': 'AHRS3', 'roll': 0.025831475853919983, 'pitch': 0.006112074479460716, 'yaw': 2.1514968872070312, 'altitude': 0.0, 'lat': 0, 'lng': 0, 'v1': 0.0, 'v2': 0.0, 'v3': 0.0, 'v4': 0.0}
+## {'mavpackettype': 'VFR_HUD', 'airspeed': 0.0, 'groundspeed': 0.0, 'heading': 123, 'throttle': 0, 'alt': 3.129999876022339, 'climb': 3.2699999809265137}
+## {'mavpackettype': 'AHRS', 'omegaIx': 0.0014122836291790009, 'omegaIy': -0.022567369043827057, 'omegaIz': 0.02394154854118824, 'accel_weight': 0.0, 'renorm_val': 0.0, 'error_rp': 0.08894175291061401, 'error_yaw': 0.0990816056728363}
 ```
 
 **Run pyMavlink on the companion computer**
 
-```
+```python
 """
 Example of how to connect to the autopilot by using mavproxy's
 --udpin:0.0.0.0:9000 endpoint from the companion computer itself
 """
 
-# Disable "Bare exception" warning
-# pylint: disable=W0702
+## Disable "Bare exception" warning
+## pylint: disable=W0702
 
 import time
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
 
 def wait_conn():
@@ -183,21 +183,21 @@ def wait_conn():
         msg = master.recv_match()
         time.sleep(0.5)
 
-# Create the connection
-#  Companion is already configured to allow script connections under the port 9000
-# Note: The connection is done with 'udpout' and not 'udpin'.
-#  You can check in http:192.168.1.2:2770/mavproxy that the communication made for 9000
-#  uses a 'udp' (server) and not 'udpout' (client).
+## Create the connection
+## Companion is already configured to allow script connections under the port 9000
+## Note: The connection is done with 'udpout' and not 'udpin'.
+## You can check in http:192.168.1.2:2770/mavproxy that the communication made for 9000
+## uses a 'udp' (server) and not 'udpout' (client).
 master = mavutil.mavlink_connection('udpout:0.0.0.0:9000')
 
-# Send a ping to start connection and wait for any reply.
-#  This function is necessary when using 'udpout',
-#  as described before, 'udpout' connects to 'udpin',
-#  and needs to send something to allow 'udpin' to start
-#  sending data.
+## Send a ping to start connection and wait for any reply.
+## This function is necessary when using 'udpout',
+## as described before, 'udpout' connects to 'udpin',
+## and needs to send something to allow 'udpin' to start
+## sending data.
 wait_conn()
 
-# Get some information !
+## Get some information !
 while True:
     try:
         print(master.recv_match().to_dict())
@@ -205,16 +205,16 @@ while True:
         pass
     time.sleep(0.1)
 
-# Output:
-# {'mavpackettype': 'AHRS2', 'roll': -0.11364290863275528, 'pitch': -0.02841472253203392, 'yaw': 2.0993032455444336, 'altitude': 0.0, 'lat': 0, 'lng': 0}
-# {'mavpackettype': 'AHRS3', 'roll': 0.025831475853919983, 'pitch': 0.006112074479460716, 'yaw': 2.1514968872070312, 'altitude': 0.0, 'lat': 0, 'lng': 0, 'v1': 0.0, 'v2': 0.0, 'v3': 0.0, 'v4': 0.0}
-# {'mavpackettype': 'VFR_HUD', 'airspeed': 0.0, 'groundspeed': 0.0, 'heading': 123, 'throttle': 0, 'alt': 3.129999876022339, 'climb': 3.2699999809265137}
-# {'mavpackettype': 'AHRS', 'omegaIx': 0.0014122836291790009, 'omegaIy': -0.022567369043827057, 'omegaIz': 0.02394154854118824, 'accel_weight': 0.0, 'renorm_val': 0.0, 'error_rp': 0.08894175291061401, 'error_yaw': 0.0990816056728363}
+## Output:
+## {'mavpackettype': 'AHRS2', 'roll': -0.11364290863275528, 'pitch': -0.02841472253203392, 'yaw': 2.0993032455444336, 'altitude': 0.0, 'lat': 0, 'lng': 0}
+## {'mavpackettype': 'AHRS3', 'roll': 0.025831475853919983, 'pitch': 0.006112074479460716, 'yaw': 2.1514968872070312, 'altitude': 0.0, 'lat': 0, 'lng': 0, 'v1': 0.0, 'v2': 0.0, 'v3': 0.0, 'v4': 0.0}
+## {'mavpackettype': 'VFR_HUD', 'airspeed': 0.0, 'groundspeed': 0.0, 'heading': 123, 'throttle': 0, 'alt': 3.129999876022339, 'climb': 3.2699999809265137}
+## {'mavpackettype': 'AHRS', 'omegaIx': 0.0014122836291790009, 'omegaIy': -0.022567369043827057, 'omegaIz': 0.02394154854118824, 'accel_weight': 0.0, 'renorm_val': 0.0, 'error_rp': 0.08894175291061401, 'error_yaw': 0.0990816056728363}
 ```
 
 **Send Message to QGroundControl**
 
-```
+```python
 """
 Example of sending a message to QGroundControl using pymavlink
 
@@ -223,36 +223,36 @@ Full workflow of connecting and displaying readings from a custom sensor at:
 
 """
 
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
 
-# Create the connection to the top-side computer as companion computer/autopilot
+## Create the connection to the top-side computer as companion computer/autopilot
 master = mavutil.mavlink_connection('udpout:localhost:14550', source_system=1)
 
-# Send a message for QGC to read out loud
-#  Severity from https://mavlink.io/en/messages/common.html#MAV_SEVERITY
+## Send a message for QGC to read out loud
+## Severity from https://mavlink.io/en/messages/common.html#MAV_SEVERITY
 master.mav.statustext_send(mavutil.mavlink.MAV_SEVERITY_NOTICE,
                            "QGC will read this".encode())
 ```
 
 **Arm/Disarm the vehicle**
 
-```
+```python
 """
 Example of how to Arm and Disarm an Autopilot with pymavlink
 """
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
 
-# Create the connection
+## Create the connection
 master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')
-# Wait a heartbeat before sending commands
+## Wait a heartbeat before sending commands
 master.wait_heartbeat()
 
-# https://mavlink.io/en/messages/common.html#MAV_CMD_COMPONENT_ARM_DISARM
+## https://mavlink.io/en/messages/common.html#MAV_CMD_COMPONENT_ARM_DISARM
 
-# Arm
-# master.arducopter_arm() or:
+## Arm
+## master.arducopter_arm() or:
 master.mav.command_long_send(
     master.target_system,
     master.target_component,
@@ -260,13 +260,13 @@ master.mav.command_long_send(
     0,
     1, 0, 0, 0, 0, 0, 0)
 
-# wait until arming confirmed (can manually check with master.motors_armed())
+## wait until arming confirmed (can manually check with master.motors_armed())
 print("Waiting for the vehicle to arm")
 master.motors_armed_wait()
 print('Armed!')
 
-# Disarm
-# master.arducopter_disarm() or:
+## Disarm
+## master.arducopter_disarm() or:
 master.mav.command_long_send(
     master.target_system,
     master.target_component,
@@ -274,43 +274,43 @@ master.mav.command_long_send(
     0,
     0, 0, 0, 0, 0, 0, 0)
 
-# wait until disarming confirmed
+## wait until disarming confirmed
 master.motors_disarmed_wait()
 ```
 
 **Change flight mode**
 
-```
+```python
 """
 Example of how to change flight modes using pymavlink
 """
 
 import sys
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
 
-# Create the connection
+## Create the connection
 master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')
-# Wait a heartbeat before sending commands
+## Wait a heartbeat before sending commands
 master.wait_heartbeat()
 
-# Choose a mode
+## Choose a mode
 mode = 'STABILIZE'
 
-# Check if mode is available
+## Check if mode is available
 if mode not in master.mode_mapping():
     print('Unknown mode : {}'.format(mode))
     print('Try:', list(master.mode_mapping().keys()))
     sys.exit(1)
 
-# Get mode ID
+## Get mode ID
 mode_id = master.mode_mapping()[mode]
-# Set new mode
-# master.mav.command_long_send(
-#    master.target_system, master.target_component,
-#    mavutil.mavlink.MAV_CMD_DO_SET_MODE, 0,
-#    0, mode_id, 0, 0, 0, 0, 0) or:
-# master.set_mode(mode_id) or:
+## Set new mode
+## master.mav.command_long_send(
+## master.target_system, master.target_component,
+## mavutil.mavlink.MAV_CMD_DO_SET_MODE, 0,
+## 0, mode_id, 0, 0, 0, 0, 0) or:
+## master.set_mode(mode_id) or:
 master.mav.set_mode_send(
     master.target_system,
     mavutil.mavlink.MAV_MODE_FLAG_CUSTOM_MODE_ENABLED,
@@ -334,24 +334,24 @@ while True:
 
 **Send RC (Joystick)**
 
-```
+```php
 """
 Example of how to use RC_CHANNEL_OVERRIDE messages to force input channels
 in Ardupilot. These effectively replace the input channels (from joystick
 or radio), NOT the output channels going to thrusters and servos.
 """
 
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
 
-# Create the connection
+## Create the connection
 master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')
-# Wait a heartbeat before sending commands
+## Wait a heartbeat before sending commands
 master.wait_heartbeat()
 
-# Create a function to send RC values
-# More information about Joystick channels
-# here: https://www.ardusub.com/operators-manual/rc-input-and-output.html#rc-inputs
+## Create a function to send RC values
+## More information about Joystick channels
+## here: https://www.ardusub.com/operators-manual/rc-input-and-output.html#rc-inputs
 def set_rc_channel_pwm(channel_id, pwm=1500):
     """ Set RC channel pwm value
     Args:
@@ -372,46 +372,46 @@ def set_rc_channel_pwm(channel_id, pwm=1500):
         *rc_channel_values)                  # RC channel list, in microseconds.
 
 
-# Set some roll
+## Set some roll
 set_rc_channel_pwm(2, 1600)
 
-# Set some yaw
+## Set some yaw
 set_rc_channel_pwm(4, 1600)
 
-# The camera pwm value sets the servo speed of a sweep from the current angle to
-#  the min/max camera angle. It does not set the servo position.
-# Set camera tilt to 45º (max) with full speed
+## The camera pwm value sets the servo speed of a sweep from the current angle to
+## the min/max camera angle. It does not set the servo position.
+## Set camera tilt to 45º (max) with full speed
 set_rc_channel_pwm(8, 1900)
 
-# Set channel 12 to 1500us
-# This can be used to control a device connected to a servo output by setting the
-# SERVO[N]_Function to RCIN12 (Where N is one of the PWM outputs)
+## Set channel 12 to 1500us
+## This can be used to control a device connected to a servo output by setting the
+## SERVO[N]_Function to RCIN12 (Where N is one of the PWM outputs)
 set_rc_channel_pwm(12, 1500)
 ```
 
 **Send Manual Control**
 
-```
+```python
 """
 Example of how to send MANUAL_CONTROL messages to the autopilot using
 pymavlink.
 This message is able to fully replace the joystick inputs.
 """
 
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
 
-# Create the connection
+## Create the connection
 master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')
-# Wait a heartbeat before sending commands
+## Wait a heartbeat before sending commands
 master.wait_heartbeat()
 
-# Send a positive x value, negative y, negative z,
-# positive rotation and no button.
-# https://mavlink.io/en/messages/common.html#MANUAL_CONTROL
-# Warning: Because of some legacy workaround, z will work between [0-1000]
-# where 0 is full reverse, 500 is no output and 1000 is full throttle.
-# x,y and r will be between [-1000 and 1000].
+## Send a positive x value, negative y, negative z,
+## positive rotation and no button.
+## https://mavlink.io/en/messages/common.html#MANUAL_CONTROL
+## Warning: Because of some legacy workaround, z will work between [0-1000]
+## where 0 is full reverse, 500 is no output and 1000 is full throttle.
+## x,y and r will be between [-1000 and 1000].
 master.mav.manual_control_send(
     master.target_system,
     500,
@@ -420,8 +420,8 @@ master.mav.manual_control_send(
     500,
     0)
 
-# To active button 0 (first button), 3 (fourth button) and 7 (eighth button)
-# It's possible to check and configure this buttons in the Joystick menu of QGC
+## To active button 0 (first button), 3 (fourth button) and 7 (eighth button)
+## It's possible to check and configure this buttons in the Joystick menu of QGC
 buttons = 1 + 1 << 3 + 1 << 7
 master.mav.manual_control_send(
     master.target_system,
@@ -434,27 +434,27 @@ master.mav.manual_control_send(
 
 **Read all parameters**
 
-```
+```python
 """
 Example of how to read all the parameters from the Autopilot with pymavlink
 """
 
-# Disable "Broad exception" warning
-# pylint: disable=W0703
+## Disable "Broad exception" warning
+## pylint: disable=W0703
 
 import time
 import sys
 
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
 
 
-# Create the connection
+## Create the connection
 master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')
-# Wait a heartbeat before sending commands
+## Wait a heartbeat before sending commands
 master.wait_heartbeat()
 
-# Request all parameters
+## Request all parameters
 master.mav.param_request_list_send(
     master.target_system, master.target_component
 )
@@ -471,38 +471,38 @@ while True:
 
 **Read and write parameters**
 
-```
+```python
 """
 Example code of how to read and write vehicle parameters using pymavlink
 """
 
 import time
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
 
-# Create the connection
+## Create the connection
 master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')
-# Wait a heartbeat before sending commands
+## Wait a heartbeat before sending commands
 master.wait_heartbeat()
 
-# Request parameter
+## Request parameter
 master.mav.param_request_read_send(
     master.target_system, master.target_component,
     b'SURFACE_DEPTH',
     -1
 )
 
-# Print old parameter value
+## Print old parameter value
 message = master.recv_match(type='PARAM_VALUE', blocking=True).to_dict()
 print('name: %s\tvalue: %d' %
       (message['param_id'].decode("utf-8"), message['param_value']))
 
 time.sleep(1)
 
-# Set parameter value
-# Set a parameter value TEMPORARILY to RAM. It will be reset to default on system reboot.
-# Send the ACTION MAV_ACTION_STORAGE_WRITE to PERMANENTLY write the RAM contents to EEPROM.
-# The parameter variable type is described by MAV_PARAM_TYPE in http://mavlink.org/messages/common.
+## Set parameter value
+## Set a parameter value TEMPORARILY to RAM. It will be reset to default on system reboot.
+## Send the ACTION MAV_ACTION_STORAGE_WRITE to PERMANENTLY write the RAM contents to EEPROM.
+## The parameter variable type is described by MAV_PARAM_TYPE in http://mavlink.org/messages/common.
 master.mav.param_set_send(
     master.target_system, master.target_component,
     b'SURFACE_DEPTH',
@@ -510,26 +510,26 @@ master.mav.param_set_send(
     mavutil.mavlink.MAV_PARAM_TYPE_REAL32
 )
 
-# Read ACK
-# IMPORTANT: The receiving component should acknowledge the new parameter value by sending a
-# param_value message to all communication partners.
-# This will also ensure that multiple GCS all have an up-to-date list of all parameters.
-# If the sending GCS did not receive a PARAM_VALUE message within its timeout time,
-# it should re-send the PARAM_SET message.
+## Read ACK
+## IMPORTANT: The receiving component should acknowledge the new parameter value by sending a
+## param_value message to all communication partners.
+## This will also ensure that multiple GCS all have an up-to-date list of all parameters.
+## If the sending GCS did not receive a PARAM_VALUE message within its timeout time,
+## it should re-send the PARAM_SET message.
 message = master.recv_match(type='PARAM_VALUE', blocking=True).to_dict()
 print('name: %s\tvalue: %d' %
       (message['param_id'].decode("utf-8"), message['param_value']))
 
 time.sleep(1)
 
-# Request parameter value to confirm
+## Request parameter value to confirm
 master.mav.param_request_read_send(
     master.target_system, master.target_component,
     b'SURFACE_DEPTH',
     -1
 )
 
-# Print new value in RAM
+## Print new value in RAM
 message = master.recv_match(type='PARAM_VALUE', blocking=True).to_dict()
 print('name: %s\tvalue: %d' %
       (message['param_id'].decode("utf-8"), message['param_value']))
@@ -537,18 +537,18 @@ print('name: %s\tvalue: %d' %
 
 **Receive data and filter by message type**
 
-```
+```python
 """
 Example of how to filter for specific mavlink messages coming from the
 autopilot using pymavlink.
 
 Can also filter within recv_match command - see "Read all parameters" example
 """
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
 
-# Create the connection
-# From topside computer
+## Create the connection
+## From topside computer
 master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')
 
 while True:
@@ -565,21 +565,21 @@ while True:
 
 **Request message interval**
 
-```
+```python
 """
 Example of how to request a message in a desired interval
 """
 
-# Disable "Bare exception" warning
-# pylint: disable=W0702
+## Disable "Bare exception" warning
+## pylint: disable=W0702
 
 import time
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
 
-# Create the connection
+## Create the connection
 master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')
-# Wait a heartbeat before sending commands
+## Wait a heartbeat before sending commands
 master.wait_heartbeat()
 
 def request_message_interval(message_id: int, frequency_hz: float):
@@ -601,13 +601,13 @@ def request_message_interval(message_id: int, frequency_hz: float):
         0, # Target address of message stream (if message has target address fields). 0: Flight-stack default (recommended), 1: address of requestor, 2: broadcast.
     )
 
-# Configure AHRS2 message to be sent at 1Hz
+## Configure AHRS2 message to be sent at 1Hz
 request_message_interval(mavutil.mavlink.MAVLINK_MSG_ID_AHRS2, 1)
 
-# Configure ATTITUDE message to be sent at 2Hz
+## Configure ATTITUDE message to be sent at 2Hz
 request_message_interval(mavutil.mavlink.MAVLINK_MSG_ID_ATTITUDE, 2)
 
-# Get some information !
+## Get some information !
 while True:
     try:
         print(master.recv_match().to_dict())
@@ -618,18 +618,18 @@ while True:
 
 **Control Camera Gimbal**
 
-```
+```python
 """
 Example of controlling a camera gimbal using pymavlink
 """
 
 import time
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
 
-# Create the connection
+## Create the connection
 master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')
-# Wait a heartbeat before sending commands
+## Wait a heartbeat before sending commands
 master.wait_heartbeat()
 
 
@@ -653,7 +653,7 @@ def look_at(tilt, roll=0, pan=0):
         mavutil.mavlink.MAV_MOUNT_MODE_MAVLINK_TARGETING)
 
 
-# cycles the camera up and down
+## cycles the camera up and down
 while True:
     for angle in range(-50, 50):
         look_at(angle*100)
@@ -665,13 +665,13 @@ while True:
 
 **Set Servo PWM**
 
-```
+```python
 """
 Example of how to directly control a Pixhawk servo output with pymavlink.
 """
 
 import time
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
 
 def set_servo_pwm(servo_n, microseconds):
@@ -696,12 +696,12 @@ def set_servo_pwm(servo_n, microseconds):
         0,0,0,0,0     # unused parameters
     )
 
-# Create the connection
+## Create the connection
 master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')
-# Wait a heartbeat before sending commands
+## Wait a heartbeat before sending commands
 master.wait_heartbeat()
 
-# command servo_1 to go from min to max in steps of 50us, over 2 seconds
+## command servo_1 to go from min to max in steps of 50us, over 2 seconds
 for us in range(1100, 1900, 50):
     set_servo_pwm(1, us)
     time.sleep(0.125)
@@ -709,7 +709,7 @@ for us in range(1100, 1900, 50):
 
 **Advanced Servo/Gripper Example**
 
-```
+```php
 """
 Advanced example of how to control servo outputs with pymavlink.
 Includes extended example for controlling a Blue Robotics' gripper.
@@ -718,7 +718,7 @@ Requires Python 3.
 
 """
 
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
 
 class RawServoOutput:
@@ -846,7 +846,7 @@ class Gripper(AuxServoOutput):
         self.set_min()
 
 
-# if running this file as a script:
+## if running this file as a script:
 if __name__ == '__main__':
     from time import sleep
 
@@ -869,16 +869,16 @@ if __name__ == '__main__':
 
 **Set Target Depth/Attitude**
 
-```
+```python
 """
 Example of how to set target depth in depth hold mode with pymavlink
 """
 
 import time
 import math
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
-# Imports for attitude
+## Imports for attitude
 from pymavlink.quaternion import QuaternionBase
 
 def set_target_depth(depth):
@@ -930,59 +930,59 @@ def set_target_attitude(roll, pitch, yaw):
         0, 0, 0, 0 # roll rate, pitch rate, yaw rate, thrust
     )
 
-# Create the connection
+## Create the connection
 master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')
 boot_time = time.time()
-# Wait a heartbeat before sending commands
+## Wait a heartbeat before sending commands
 master.wait_heartbeat()
 
-# arm ArduSub autopilot and wait until confirmed
+## arm ArduSub autopilot and wait until confirmed
 master.arducopter_arm()
 master.motors_armed_wait()
 
-# set the desired operating mode
+## set the desired operating mode
 DEPTH_HOLD = 'ALT_HOLD'
 DEPTH_HOLD_MODE = master.mode_mapping()[DEPTH_HOLD]
 while not master.wait_heartbeat().custom_mode == DEPTH_HOLD_MODE:
     master.set_mode(DEPTH_HOLD)
 
-# set a depth target
+## set a depth target
 set_target_depth(-0.5)
 
-# go for a spin
-# (set target yaw from 0 to 500 degrees in steps of 10, one update per second)
+## go for a spin
+## (set target yaw from 0 to 500 degrees in steps of 10, one update per second)
 roll_angle = pitch_angle = 0
 for yaw_angle in range(0, 500, 10):
     set_target_attitude(roll_angle, pitch_angle, yaw_angle)
     time.sleep(1) # wait for a second
 
-# spin the other way with 3x larger steps
+## spin the other way with 3x larger steps
 for yaw_angle in range(500, 0, -30):
     set_target_attitude(roll_angle, pitch_angle, yaw_angle)
     time.sleep(1)
 
-# clean up (disarm) at the end
+## clean up (disarm) at the end
 master.arducopter_disarm()
 master.motors_disarmed_wait()
 ```
 
 **Send GPS position**
 
-```
+```python
 """
 Example of how to send GPS_INPUT messages to autopilot
 """
 
 import time
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
 
-# Create the connection
+## Create the connection
 master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')
-# Wait a heartbeat before sending commands
+## Wait a heartbeat before sending commands
 master.wait_heartbeat()
 
-# GPS_TYPE need to be MAV
+## GPS_TYPE need to be MAV
 while True:
     time.sleep(0.2)
     master.mav.gps_input_send(
@@ -1013,7 +1013,7 @@ while True:
 
 **Send rangefinder/computer vision distance measurement to the autopilot**
 
-```
+```python
 """
 Example of how to send MAV_DISTANCE_SENSOR messages to integrate a custom distance sensor
 to the autopilot using pymavlink
@@ -1021,10 +1021,10 @@ to the autopilot using pymavlink
 
 import time
 
-# Import mavutil
+## Import mavutil
 from pymavlink import mavutil
 
-# Wait for server connection
+## Wait for server connection
 def wait_conn():
     """
     Sends a ping to the autopilot to stabilish the UDP connection and waits for a reply
@@ -1040,15 +1040,15 @@ def wait_conn():
         msg = master.recv_match()
         time.sleep(0.5)
 
-# Connect to the default listening port for
-# mavproxy on Blue Robotics companion computer
+## Connect to the default listening port for
+## mavproxy on Blue Robotics companion computer
 master = mavutil.mavlink_connection('udpout:localhost:9000')
 
-# Send a ping to start connection and wait for any reply.
+## Send a ping to start connection and wait for any reply.
 wait_conn()
 
-# Configure the autopilot to use mavlink rangefinder, the autopilot
-# will need to be rebooted after this to use the updated setting
+## Configure the autopilot to use mavlink rangefinder, the autopilot
+## will need to be rebooted after this to use the updated setting
 master.mav.param_set_send(
     1,
     1,

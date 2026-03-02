@@ -2,13 +2,13 @@
 
 {% embed url="https://www.aishub.net/ais-dispatcher?tab=linux" %}
 
-### AIS Dispatcher -  Linux
+## AIS Dispatcher -  Linux
 
 AIS Dispatcher for Linux supports wide range of Linux distributions on x86\_64 / ARM architectures (including Raspberry Pi).
 
 ### Installation
 
-```
+```bash
 wget https://www.aishub.net/downloads/dispatcher/install_dispatcher
 chmod 755 install_dispatcher
 sudo ./install_dispatcher
@@ -18,7 +18,7 @@ sudo ./install_dispatcher
 
 Start your browser and open URL:
 
-```
+```python
 http://IPADDRESS:8080 (change IPADDRESS with your IP address)
 ```
 

@@ -1,6 +1,6 @@
 # Handling pushback in code reviews
 
-### [eng-practices](https://google.github.io/eng-practices/)
+## [eng-practices](https://google.github.io/eng-practices/)
 
 Sometimes a developer will push back on a code review. Either they will disagree with your suggestion or they will complain that you are being too strict in general.
 

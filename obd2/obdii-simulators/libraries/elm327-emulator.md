@@ -1,6 +1,6 @@
 # ELM327-emulator
 
-### Project description
+## Project description
 
 **A Python emulator of the ELM327 OBD-II adapter connected to a vehicle supporting multi-ECU simulation.**
 

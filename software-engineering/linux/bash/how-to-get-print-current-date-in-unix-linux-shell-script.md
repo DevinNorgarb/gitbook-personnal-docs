@@ -1,7 +1,6 @@
 # How To Get / Print Current Date in Unix / Linux Shell Script
 
 
-
 Current date in Unix or Linux shell scripting and store it into a shell variable? How do I print the current date using Unix shell script? How can I display the current time in Linux shell script?\
 \
 
@@ -16,7 +15,7 @@ Current date in Unix or Linux shell scripting and store it into a shell variable
 You need to use the following syntax to print current date and time on screen:
 
 
-```
+```php
 date
 date +"%FORMAT"
 var=$(date)
@@ -24,14 +23,14 @@ var=`date`
 echo "$var"
 ```
 
-### Print current date and time in Unix shell script
+## Print current date and time in Unix shell script
 
 To store current date and time to a variable, enter:\
 `now=$(date)`\
 OR\
 `` now=`date` ``
 
-#### Print Current Date in Unix
+### Print Current Date in Unix
 
 To print this date either use the [printf or echo statement](https://www.cyberciti.biz/faq/how-to-write-output-to-terminal/):\
 `echo "$now"`\
@@ -45,15 +44,15 @@ OR\
 
 You can [format and display date using](https://www.cyberciti.biz/faq/linux-unix-formatting-dates-for-display/) the following syntax:
 
-```
+```bash
 date +'FORMAT'
- 
+
 ### mm/dd/yyyy
 date +'%m/%d/%Y'
- 
+
 ### Time in 12 hr format ###
 date +'%r'
- 
+
 ## backup dir format ##
 backup_dir=$(date +'%m/%d/%Y')
 echo "Backup dir for today: /nas04/backups/${backup_dir}"
@@ -63,7 +62,7 @@ echo "Backup dir for today: /nas04/backups/${backup_dir}"
 
 Finding the current date and time in Linux or Unix using the date command
 
-#### A list of date command format codes
+### A list of date command format codes
 
 | FORMAT code | Description                                                         |
 | ----------- | ------------------------------------------------------------------- |
@@ -117,16 +116,16 @@ Finding the current date and time in Linux or Unix using the date command
 ### Sample shell script to display the current date and time
 
 ```
-#!/bin/bash
+## !/bin/bash
 now="$(date)"
 printf "Current date and time %s\n" "$now"
- 
+
 now="$(date +'%d/%m/%Y')"
 printf "Current date in dd/mm/yyyy format %s\n" "$now"
- 
+
 echo "Starting backup at $now, please wait..."
-# command to backup scripts goes here
-# ...
+## command to backup scripts goes here
+## ...
 ```
 
 \

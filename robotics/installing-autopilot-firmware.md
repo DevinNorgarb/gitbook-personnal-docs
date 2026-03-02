@@ -1,6 +1,6 @@
 # Installing Autopilot Firmware
 
-### Installing ArduSub <a href="#installing-ardusub" id="installing-ardusub"></a>
+## Installing ArduSub <a href="#installing-ardusub" id="installing-ardusub"></a>
 
 > The current Stable version of ArduSub is **v4.0.3**. If your firmware is out of date, it may be updated by following one of the methods below.
 

@@ -5,7 +5,6 @@ description: Copy APK file from device to host using ADB
 # Copy APK file using ADB
 
 
-
 The following sequence of commands is what worked for me on a **non-rooted device**:
 
 1\) Determine the package name of the app, e.g. "com.example.someapp". Skip this step if you already know the package name.

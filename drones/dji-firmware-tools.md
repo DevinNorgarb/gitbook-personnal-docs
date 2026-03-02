@@ -1,7 +1,6 @@
 # dji-firmware-tools
 
 
-
 {% embed url="https://github.com/o-gs/dji-firmware-tools" %}
 
 ## dji-firmware-tools
@@ -16,7 +15,7 @@ The project started as an alternative implementation of the parser from [phantom
 
 Here are a few of possible uses of the tools.
 
-#### Calibration after repair
+### Calibration after repair
 
 Replacing some components of the drone may require calibration. The tools are capable of triggering calibration in some devices, mostly gimbals with [Hall sensors](https://en.wikipedia.org/wiki/Hall\_effect\_sensor).
 
@@ -85,7 +84,7 @@ Below the specific tools are described in short. Running them without parameters
 
 To get specifics about command line arguments of each tool, run them with `--help` option. Some tools also have additional remarks in their headers - try viewing them.
 
-#### dji\_xv4\_fwcon.py
+### dji\_xv4\_fwcon.py
 
 DJI Firmware xV4 Container tool; allows extracting modules from package file which starts with `xV4`, or creating container by merging firmware modules. Use this tool first, to extract the BIN file downloaded from DJI, as long as the file starts with `xV4`.
 

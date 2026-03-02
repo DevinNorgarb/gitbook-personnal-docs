@@ -15,7 +15,7 @@ I will put here the whole process to make a guide for new users like me.
 
     ```ruby
     wget http://icculus.org/obdgpslogger/downloads/obdgpslogger-0.16.tar.gz 
-    ```
+```
 
     Or get the most recent version from: [http://icculus.org/obdgpslogger/](http://icculus.org/obdgpslogger/)
 2.  Install OBDSim:
@@ -25,7 +25,7 @@ I will put here the whole process to make a guide for new users like me.
     cd obdgpslogger-0.16
     mkdir build
     cd build
-    ```
+```
 
     I have to install only these libraries, but in your case keep attention to warning messages of cmake and install all that it ask you to install:
 
@@ -34,7 +34,7 @@ I will put here the whole process to make a guide for new users like me.
     cmake .. 
     make obdsim
     cd ../bin/
-    ```
+```bash
 3.  Run OBDSim:
 
     ```bash

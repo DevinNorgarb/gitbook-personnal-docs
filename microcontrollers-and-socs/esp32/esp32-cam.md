@@ -18,9 +18,9 @@ You can watch the video tutorial or keep reading this page for the written instr
 
 To follow this tutorial you need the following components:
 
-* [**ESP32-CAM with OV2640**](https://makeradvisor.com/tools/esp32-cam/) – read [Best ESP32-CAM Dev Boards](https://makeradvisor.com/esp32-camera-cam-boards-review-comparison/)
-* [FTDI programmer](https://makeradvisor.com/tools/ftdi-programmer-board/)
-* [Female-to-female jumper wires](https://makeradvisor.com/tools/jumper-wires-kit-120-pieces/)
+- [**ESP32-CAM with OV2640**](https://makeradvisor.com/tools/esp32-cam/) – read [Best ESP32-CAM Dev Boards](https://makeradvisor.com/esp32-camera-cam-boards-review-comparison/)
+- [FTDI programmer](https://makeradvisor.com/tools/ftdi-programmer-board/)
+- [Female-to-female jumper wires](https://makeradvisor.com/tools/jumper-wires-kit-120-pieces/)
 
 You can use the preceding links or go directly to [MakerAdvisor.com/tools](https://makeradvisor.com/tools/?utm_source=rnt\&utm_medium=post\&utm_campaign=post) to find all the parts for your projects at the best price!
 
@@ -42,24 +42,23 @@ The [ESP32-CAM](https://makeradvisor.com/tools/esp32-cam/) doesn’t come with a
 
 Here is a list with the ESP32-CAM features:
 
-* The smallest 802.11b/g/n Wi-Fi BT SoC module
-* Low power 32-bit CPU,can also serve the application processor
-* Up to 160MHz clock speed, summary computing power up to 600 DMIPS
-* Built-in 520 KB SRAM, external 4MPSRAM
-* Supports UART/SPI/I2C/PWM/ADC/DAC
-* Support OV2640 and OV7670 cameras, built-in flash lamp
-* Support image WiFI upload
-* Support TF card
-* Supports multiple sleep modes
-* Embedded Lwip and FreeRTOS
-* Supports STA/AP/STA+AP operation mode
-* Support Smart Config/AirKiss technology
-* Support for serial port local and remote firmware upgrades (FOTA)
+- The smallest 802.11b/g/n Wi-Fi BT SoC module
+- Low power 32-bit CPU,can also serve the application processor
+- Up to 160MHz clock speed, summary computing power up to 600 DMIPS
+- Built-in 520 KB SRAM, external 4MPSRAM
+- Supports UART/SPI/I2C/PWM/ADC/DAC
+- Support OV2640 and OV7670 cameras, built-in flash lamp
+- Support image WiFI upload
+- Support TF card
+- Supports multiple sleep modes
+- Embedded Lwip and FreeRTOS
+- Supports STA/AP/STA+AP operation mode
+- Support Smart Config/AirKiss technology
+- Support for serial port local and remote firmware upgrades (FOTA)
 
 ### ESP32-CAM Pinout
 
 The following figure shows the ESP32-CAM pinout (AI-Thinker module).
-
 
 
 There are three GND pins and two pins for power: either 3.3V or 5V.
@@ -68,12 +67,12 @@ GPIO 1 and GPIO 3 are the serial pins. You need these pins to upload code to you
 
 The following pins are internally connected to the microSD card reader:
 
-* GPIO 14: CLK
-* GPIO 15: CMD
-* GPIO 2: Data 0
-* GPIO 4: Data 1 (also connected to the on-board LED)
-* GPIO 12: Data 2
-* GPIO 13: Data 3
+- GPIO 14: CLK
+- GPIO 15: CMD
+- GPIO 2: Data 0
+- GPIO 4: Data 1 (also connected to the on-board LED)
+- GPIO 12: Data 2
+- GPIO 13: Data 3
 
 ### Video Streaming Server
 
@@ -85,8 +84,8 @@ Follow the next steps to build a video streaming web server with the ESP32-CAM t
 
 In this example, we use Arduino IDE to program the ESP32-CAM board. So, you need to have Arduino IDE installed as well as the ESP32 add-on. Follow one of the next tutorials to install the ESP32 add-on, if you haven’t already:
 
-* [Installing the ESP32 Board in Arduino IDE (Windows instructions)](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
-* [Installing the ESP32 Board in Arduino IDE (Mac and Linux instructions)](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-mac-and-linux-instructions/)
+- [Installing the ESP32 Board in Arduino IDE (Windows instructions)](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
+- [Installing the ESP32 Board in Arduino IDE (Mac and Linux instructions)](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-mac-and-linux-instructions/)
 
 #### 2. CameraWebServer Example Code
 
@@ -117,14 +116,14 @@ So, comment all the other models and uncomment this one:
 //#define CAMERA_MODEL_ESP_EYE
 //#define CAMERA_MODEL_M5STACK_PSRAM
 //#define CAMERA_MODEL_M5STACK_WIDE
-#define CAMERA_MODEL_AI_THINKER
+## define CAMERA_MODEL_AI_THINKER
 ```
 
 If none of these correspond to the camera you’re using, you need to add the pin assignment for your specific board in the camera\_pins.h tab.
 
 Now, the code is ready to be uploaded to your ESP32.
 
-#### 3. ESP32-CAM Upload Code <a href="#mce_111" id="mce_111"></a>
+### 3. ESP32-CAM Upload Code <a href="#mce_111" id="mce_111"></a>
 
 Connect the ESP32-CAM board to your computer using an FTDI programmer. Follow the next schematic diagram:
 
@@ -192,16 +191,16 @@ And that’s it. Now you have your video streaming web server up and running wit
 
 If you’re getting any of the following errors, read our [**ESP32-CAM Troubleshooting Guide: Most Common Problems Fixed**](https://randomnerdtutorials.com/esp32-cam-troubleshooting-guide/)
 
-* Failed to connect to ESP32: Timed out waiting for packet header
-* Camera init failed with error 0x20001 or similar
-* Brownout detector or Guru meditation error
-* Sketch too big error – Wrong partition scheme selected
-* Board at COMX is not available – COM Port Not Selected
-* Psram error: GPIO isr service is not installed
-* Weak Wi-Fi Signal
-* No IP Address in Arduino IDE Serial Monitor
-* Can’t open web server
-* The image lags/shows lots of latency
+- Failed to connect to ESP32: Timed out waiting for packet header
+- Camera init failed with error 0x20001 or similar
+- Brownout detector or Guru meditation error
+- Sketch too big error – Wrong partition scheme selected
+- Board at COMX is not available – COM Port Not Selected
+- Psram error: GPIO isr service is not installed
+- Weak Wi-Fi Signal
+- No IP Address in Arduino IDE Serial Monitor
+- Can’t open web server
+- The image lags/shows lots of latency
 
 [![](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2020/03/ESP32-CAM-eBook-334.jpg?fit=334%2C334\&quality=100\&strip=all\&ssl=1)](https://randomnerdtutorials.com/esp32-cam-projects-ebook/)
 
@@ -219,9 +218,9 @@ We hope you’ve find this tutorial useful. If you don’t have an ESP32-CAM yet
 
 If you like this project, you may also like other projects with the ESP32-CAM:
 
-* [ESP32-CAM Video Streaming Web Server](https://randomnerdtutorials.com/esp32-cam-video-streaming-web-server-camera-home-assistant/) (works with Home Assistant and Node-RED)
-* [ESP32-CAM Take Photo and Save to MicroSD Card](https://randomnerdtutorials.com/esp32-cam-take-photo-save-microsd-card/)
-* [ESP32-CAM PIR Motion Detector with Photo Capture (saves to microSD card)](https://randomnerdtutorials.com/esp32-cam-pir-motion-detector-photo-capture/)
-* [ESP32-CAM Take Photo and Display in Web Server](https://randomnerdtutorials.com/esp32-cam-take-photo-display-web-server/)
-* [**Build ESP32-CAM Projects (eBook)**](https://randomnerdtutorials.com/esp32-cam-projects-ebook/)
-* [**Read all our ESP32-CAM Projects, Tutorials and Guides**](https://randomnerdtutorials.com/projects-esp32-cam/)
+- [ESP32-CAM Video Streaming Web Server](https://randomnerdtutorials.com/esp32-cam-video-streaming-web-server-camera-home-assistant/) (works with Home Assistant and Node-RED)
+- [ESP32-CAM Take Photo and Save to MicroSD Card](https://randomnerdtutorials.com/esp32-cam-take-photo-save-microsd-card/)
+- [ESP32-CAM PIR Motion Detector with Photo Capture (saves to microSD card)](https://randomnerdtutorials.com/esp32-cam-pir-motion-detector-photo-capture/)
+- [ESP32-CAM Take Photo and Display in Web Server](https://randomnerdtutorials.com/esp32-cam-take-photo-display-web-server/)
+- [**Build ESP32-CAM Projects (eBook)**](https://randomnerdtutorials.com/esp32-cam-projects-ebook/)
+- [**Read all our ESP32-CAM Projects, Tutorials and Guides**](https://randomnerdtutorials.com/projects-esp32-cam/)

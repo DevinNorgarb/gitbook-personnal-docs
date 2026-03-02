@@ -1,6 +1,6 @@
 # Uber Big Data
 
-#### [Uber’s Big Data Platform: 100+ Petabytes with Minute Latency](https://eng.uber.com/uber-big-data-platform/)
+## [Uber’s Big Data Platform: 100+ Petabytes with Minute Latency](https://eng.uber.com/uber-big-data-platform/)
 
 [Reza Shiftehfar](https://eng.uber.com/author/reza-shiftehfar/)October 17, 2018[ 0](https://eng.uber.com/uber-big-data-platform/#respond)![Uber’s Big Data Platform: 100+ Petabytes with Minute Latency](https://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/Header-768x432.jpg)
 
@@ -8,7 +8,7 @@ Uber is committed to delivering safer and more reliable transportation across ou
 
 In this article, we dive into Uber’s Hadoop platform journey and discuss what we are building next to expand this rich and complex ecosystem.
 
-#### Generation 1: The beginning of Big Data at Uber
+### Generation 1: The beginning of Big Data at Uber
 
 Before 2014, our limited amount of data could fit into a few traditional online transaction processing (OLTP) databases (in our case, MySQL and PostgreSQL). To leverage this data, our engineers had to access each database or table individually, and it was left to users to write their own code if they needed to combine data from different databases. At that time, we didn’t have global access or a global view of all our stored data. In fact, our data was scattered across different OLTP databases, total data size was on the order of a few terabytes, and the latency to access this data was very fast (often, sub-minute). Figure 1, below, provides an overview of our data architecture prior to 2014:
 
@@ -95,7 +95,7 @@ Using the Hudi library, we were able to move away from the snapshot-based ingest
 
 [![](https://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/image1-1.png)](https://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/image1-1.png)Figure 5: The third generation of our Big Data platform incorporates faster, incremental data ingestion (using our open source [Marmaray](https://eng.uber.com/marmaray-hadoop-ingestion-open-source/) framework), as well as more efficient storage and serving of data via our open source [Hudi](https://eng.uber.com/hoodie/) library.
 
-####
+#### 
 
 #### Generic data ingestion
 

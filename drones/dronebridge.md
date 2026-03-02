@@ -20,8 +20,8 @@ Please read the [**getting started guide**](https://dronebridge.gitbook.io/docs/
 
 **Disclaimer: Use at your own risk. Malfunction and sudden signal loss can not be ruled out. Use with caution! Do not fly over people or animals. The user is responsible for:**
 
-* **Operating the system within legal limits (e. g. frequency, equivalent isotropically radiated power (EIRP) etc.)**
-* **Any harm or damage caused by using the provided software or parts of it.**
+- **Operating the system within legal limits (e. g. frequency, equivalent isotropically radiated power (EIRP) etc.)**
+- **Any harm or damage caused by using the provided software or parts of it.**
 
 #### v0.7.0 Alpha
 
@@ -35,17 +35,17 @@ Use with caution. RC link has a too high latency. USB connection to DroneBridge 
 
 ![DroneBridge concept](https://github.com/DroneBridge/DroneBridge/blob/master/wiki/oneforall.jpg)
 
-* **300 m - 14+ km range**\* (500 m - 2 km with standard hardware)
-* **1080p video**
-* **110ms glass to glass latency** (using android app)
-* **Cheap**: starting at 80€ for hardware
-* **12 channel RC**
-* **MAVLink support** - LTM telemetry deprecated. Use with mwptools, QGroundControl, Mission Planner etc.
-* **iNAV** & **MAVLink** based flight controller support
-* **Bidirectional**
-* Fully integrated **app for Android**
-* **OSD**
-* **Modular - Write your own powerful plugins**
+- **300 m - 14+ km range**\* (500 m - 2 km with standard hardware)
+- **1080p video**
+- **110ms glass to glass latency** (using android app)
+- **Cheap**: starting at 80€ for hardware
+- **12 channel RC**
+- **MAVLink support** - LTM telemetry deprecated. Use with mwptools, QGroundControl, Mission Planner etc.
+- **iNAV** & **MAVLink** based flight controller support
+- **Bidirectional**
+- Fully integrated **app for Android**
+- **OSD**
+- **Modular - Write your own powerful plugins**
 
 \*Range strongly depends on your setup, environment and legal framework.
 
@@ -53,9 +53,9 @@ Use with caution. RC link has a too high latency. USB connection to DroneBridge 
 
 ![DroneBridge for Android app interface](https://raw.githubusercontent.com/seeul8er/DroneBridge/master/wiki/dp\_app-map-2017-10-29-kleiner.png)
 
-* Easy to use UI & end point of the whole DroneBridge system
-* Low latency video decoding
-* Change settings, calibrate the RC, view telemetry
+- Easy to use UI & end point of the whole DroneBridge system
+- Low latency video decoding
+- Change settings, calibrate the RC, view telemetry
 
 [**Learn more about the app**](https://dronebridge.gitbook.io/docs/dronebridge-for-android/dronebridge-for-android)
 
@@ -83,10 +83,10 @@ DroneBridge is highly modularized to provide flexibility and make development ea
 
 ### Coming Up:
 
-* More documentation
-* Add MavLink and MSP waypoint missions editor to Android App
-* DroneBridge Cockpit: A client/OS for x86 systems to monitor and control your UAV
-* See [**milestones**](https://dronebridge.gitbook.io/docs/dronebridge-for-raspberry-pi/milestones)
+- More documentation
+- Add MavLink and MSP waypoint missions editor to Android App
+- DroneBridge Cockpit: A client/OS for x86 systems to monitor and control your UAV
+- See [**milestones**](https://dronebridge.gitbook.io/docs/dronebridge-for-raspberry-pi/milestones)
 
 ### You are a developer?
 
@@ -98,6 +98,6 @@ There is a nightly branch with the most up to date code! It is not guaranteed th
 
 ### Licenses
 
-* All of the code (especially DroneBridge modules & lib\_dbcommon - C or Python) is under the Apache 2 license if not specified otherwise
-* WifiBroadcast legacy code (video, OSD, .profile, hello\_video) is licensed as specified or under the GPL v2 license
-* All Kernel drivers/patches are under GPL v2 license
+- All of the code (especially DroneBridge modules & lib\_dbcommon - C or Python) is under the Apache 2 license if not specified otherwise
+- WifiBroadcast legacy code (video, OSD, .profile, hello\_video) is licensed as specified or under the GPL v2 license
+- All Kernel drivers/patches are under GPL v2 license

@@ -84,5 +84,5 @@ BarcodeDetector demo: <button id="start" disabled="">start</button>
 </body>
 </html>
 
-```
+```json
 {% endcode %}

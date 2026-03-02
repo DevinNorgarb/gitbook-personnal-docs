@@ -6,13 +6,13 @@ description: Enable the below command to run docker in LXC containers
 
 We’ve long considered nested containers an important use case in LXC. LXD is no different in this regard. If you are using privileged lxd containers (security.privileged: true), then the only thing you need to do is to set the security.nesting flag to true:
 
-```
+```php
 lxc launch ubuntu nestc1 -c security.nesting=true -c security.privileged=true
 ```
 
 or to change an existing container:
 
-```
+```php
 lxc config set nestc1 security.nesting true
 ```
 
@@ -24,7 +24,7 @@ Generally this isn’t too complicated. If you wish to run container c3 in conta
 
 LXD will gain per-tenant uid mappings, but for now you create the allocations by editing /etc/subuid and /etc/subgid (or by using usermod). On the host, we’ll delegate the 196608 ids starting at 500000 to the root user:
 
-```
+```bash
 sed -i ‘/^root:/d’ /etc/subuid /etc/subgid
 echo “root:500000:196608” >> /etc/subuid
 echo “root:500000:196608” >> /etc/subgid
@@ -46,19 +46,19 @@ root:65536:131072
 
 Create your c2 container now,
 
-```
+```go
 lxc launch ubuntu c2 -c security.nesting=true
 ```
 
 log in and this time set the subuid and subgid entires to:
 
-```
+```javascript
 root:65536:65536
 ```
 
 Now you can create c3,
 
-```
+```javascript
 lxc launch ubuntu c3
 ```
 
@@ -66,24 +66,24 @@ You could of course go deeper, if you changed the allocations.
 
 If this all seems a bit too much work, I’ve written a little program (whose functionality may eventually move into LXD in some form or other) called [uidmapviz](https://github.com/hallyn/uidmapviz), which aims to show you what allocations look like, and warns you if a configuration won’t work due to too few subuids.
 
-### Extra tip of the day
+## Extra tip of the day
 
 lxd file push and pull are very handy. Whether the container is running or not, instead of having to get ssh set up in the container or knowing where the rootfs is mounted, you can simply
 
-```
+```python
 lxc image export trusty
 ```
 
 This produces the rootfs and metadata files for the image called ‘trusty’ (assuming it exists) in your current directory. Push them both into the container, using
 
-```
+```python
 lxc file push meta-ubuntu-trusty-14.04-amd64-server-20150928.tar.xz nestc1/meta-ubuntu-trusty-14.04-amd64-server-20150928.tar.xz
 lxc file push ubuntu-trusty-14.04-amd64-server-20150928.tar.xz nestc1/ubuntu-trusty-14.04-amd64-server-20150928.tar.xz
 ```
 
 then in the container…
 
-```
+```python
 lxc image import /meta-ubuntu-trusty-14.04-amd64-server-20150928.tar.xz /ubuntu-trusty-14.04-amd64-server-20150928.tar.xz
 ```
 

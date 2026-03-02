@@ -2,7 +2,7 @@
 
 Start by installing cloud-utils. This contains the growpart tool.
 
-```
+```html
 sudo apt-get install -y cloud-utils
 ```
 
@@ -10,20 +10,20 @@ sudo apt-get install -y cloud-utils
 
 Run growpart
 
-```
+```html
 sudo growpart /dev/sda 2
 ```
 
 The first parameter is the device you want to resize, and the second is the partition. Below is the output:
 
-```
+```html
 devin@postgres-replica:~$ sudo growpart /dev/sda 2
 CHANGED: partition=2 start=4096 old: size=67102720 end=67106816 new: size=134213599 end=134217695
 ```
 
 And then:
 
-```
+```html
 sudo resize2fs /dev/sda2
 ```
 

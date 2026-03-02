@@ -9,7 +9,7 @@ The [Mapbox Geocoding API](https://docs.mapbox.com/api/search/#geocoding) perfor
 
 All geocoding requests require you to submit a _query_, or what you're trying to find. When you make a query, you get a _response_, a JSON-formatted document of the most relevant results from your query. This guide provides an overview of how the Geocoding API works, how to use it, how to provide feedback, and links to relevant documentation to get you started.
 
-### Geocoding demo <a href="#geocoding-demo" id="geocoding-demo"></a>
+## Geocoding demo <a href="#geocoding-demo" id="geocoding-demo"></a>
 
 In the demo below, you can type in a location to make a Geocoding API query view then view the response as raw JSON:
 
@@ -29,15 +29,15 @@ The Mapbox Geocoding API contains [data sources](https://www.mapbox.com/about/ma
 
 The Mapbox Geocoding API source data contains the following types of geographic information, ordered from the most granular to the largest:
 
-* **Points of interest (POI):** A named place including commercial businesses, public buildings, monuments, and parks, among other features.
-* **Address:** A specific mailing address, including the address number if applicable.
-* **Neighborhood:** A colloquial name for a smaller area within a place. Neighborhoods do not necessarily have specific, legally defined boundaries. Only present in some countries.
-* **Locality:** An administrative unit that is smaller than a place. Only present in some countries.
-* **Postcode:** A geographic area of the address component used for sorting mail.
-* **Place:** Cities, towns, and villages. Note that some large cities (such as Tokyo and Istanbul) may be categorized as regions rather than places.
-* **District:** An administrative unit that is larger than a place but smaller than a region. Only present in some countries.
-* **Region:** States, provinces, and prefectures. This is typically the largest sub-national administrative unit of a country. Note that some large cities (such as Tokyo and Istanbul) may be categorized as regions rather than places.
-* **Country:** Generally recognized countries or, in some cases like Hong Kong, an area of quasi-national administrative status that has been given a designated country code under ISO 3166-1.
+- **Points of interest (POI):** A named place including commercial businesses, public buildings, monuments, and parks, among other features.
+- **Address:** A specific mailing address, including the address number if applicable.
+- **Neighborhood:** A colloquial name for a smaller area within a place. Neighborhoods do not necessarily have specific, legally defined boundaries. Only present in some countries.
+- **Locality:** An administrative unit that is smaller than a place. Only present in some countries.
+- **Postcode:** A geographic area of the address component used for sorting mail.
+- **Place:** Cities, towns, and villages. Note that some large cities (such as Tokyo and Istanbul) may be categorized as regions rather than places.
+- **District:** An administrative unit that is larger than a place but smaller than a region. Only present in some countries.
+- **Region:** States, provinces, and prefectures. This is typically the largest sub-national administrative unit of a country. Note that some large cities (such as Tokyo and Istanbul) may be categorized as regions rather than places.
+- **Country:** Generally recognized countries or, in some cases like Hong Kong, an area of quasi-national administrative status that has been given a designated country code under ISO 3166-1.
 
 This hierarchy of feature types is also used to determine what will be returned as the encompassing parent features in a Geocoding API response object's [`context` property](https://docs.mapbox.com/api/search/#geocoding-response-object). For example, if the returned feature is a `place` (like Detroit), then the encompassing parent features in the `context` property will be the `region` (the state of Michigan) and the `country` (United States).
 
@@ -55,9 +55,9 @@ Read the [Geocoding API documentation](https://docs.mapbox.com/api/search/#geoco
 
 The Mapbox Geocoding API accepts a `language` query parameter, which allows you to specify the language in which you would like to search. One or more languages can be specified using [ISO 639-1 codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes). Translation availability varies by language and region, and you can expect more consistent results for areas where the specified language is most widely used. Language support has three different levels:
 
-* **Global coverage.** These languages are almost always present for `country`, `region`, and prominent `place` features.
-* **Local coverage.** These languages may lack global coverage, but they are almost always present for `country`, `region`, and prominent `place` features where they are widely used.
-* **Limited coverage.** These languages are sometimes present, but coverage tends to be inconsistent or geographically constrained.
+- **Global coverage.** These languages are almost always present for `country`, `region`, and prominent `place` features.
+- **Local coverage.** These languages may lack global coverage, but they are almost always present for `country`, `region`, and prominent `place` features where they are widely used.
+- **Limited coverage.** These languages are sometimes present, but coverage tends to be inconsistent or geographically constrained.
 
 For a current list of the languages covered at each level, see the [Geocoding API documentation](https://docs.mapbox.com/api/search/#language-coverage).
 
@@ -83,7 +83,7 @@ https://api.mapbox.com/geocoding/v5/mapbox.places/515%2015th%20St%20NW%2C%20Wash
 
 In the case that multiple features have the same `relevance` score, a second filter called `score` is applied. This is based on the popularity or prominence of a feature. For example, a search for “Paris” will equally match “Paris, France” and “Paris, Texas” — they’ll have the same `relevance` score. The `score` filter helps break this tie on the backend, and surfaces “Paris, France” first since it is a more popular feature:
 
-```
+```python
 https://api.mapbox.com/geocoding/v5/mapbox.places/paris.json?access_token=YOUR_MAPBOX_ACCESS_TOKEN
 ```
 
@@ -93,7 +93,7 @@ For reverse geocodes, results at a given set of coordinates are sorted by order 
 
 This reverse geocoding query example returns features closest to the query point (in the case of point features like `address` and `poi`) and features that contain the query point (in the case of polygon features like `place` or `region`), in order of hierarchy from the most granular (address or POI) to the largest feature (country):
 
-```
+```php
 https://api.mapbox.com/geocoding/v5/mapbox.places/-122.463%2C%2037.7648.json?access_token=YOUR_MAPBOX_ACCESS_TOKEN
 ```
 
@@ -119,9 +119,9 @@ Mapbox Studio uses geocoding in the [dataset editor](https://studio.mapbox.com/d
 
 If you would like to add a search tool to your application to find addresses, POIs, or features near your user's location, we have several wrapper libraries that allow you to integrate the Mapbox Geocoding API into your existing application seamlessly:
 
-* [Mapbox Search SDK for Android](https://docs.mapbox.com/android/search/guides/)
-* [Mapbox Search SDK for iOS](https://docs.mapbox.com/ios/search/guides/)
-* [Mapbox GL Geocoder](https://docs.mapbox.com/mapbox-gl-js/plugins/#mapbox-gl-geocoder) for Mapbox GL JS
+- [Mapbox Search SDK for Android](https://docs.mapbox.com/android/search/guides/)
+- [Mapbox Search SDK for iOS](https://docs.mapbox.com/ios/search/guides/)
+- [Mapbox GL Geocoder](https://docs.mapbox.com/mapbox-gl-js/plugins/#mapbox-gl-geocoder) for Mapbox GL JS
 
 Here's an example of the [Mapbox GL Geocoder](https://docs.mapbox.com/mapbox-gl-js/plugins/#mapbox-gl-geocoder) in a map created with Mapbox GL JS with the query parameter `autocomplete=true`:
 

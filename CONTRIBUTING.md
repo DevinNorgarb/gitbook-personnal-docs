@@ -17,7 +17,7 @@ This repository contains personal documentation organized as a GitBook. Here's h
    title: My New Guide
    description: Optional one-line summary
    ---
-   ```
+```php
 3. Use a single H1 for the page title.
 4. Add the page to `SUMMARY.md` under the correct section.
 

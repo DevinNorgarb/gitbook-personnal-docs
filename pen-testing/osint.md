@@ -10,38 +10,38 @@ When you start an IT security investigation, the first phase you will face is th
 
 We have the right answer to those questions. On this post, we will show you the top best Recon and Intel information gathering tools for IT Security Researchers.
 
-* [How can I use OSINT tools in cybersecurity?](https://securitytrails.com/blog/osint-tools#content-how-can-i-use-osint-tools-in-cybersecurity)
-  * [Find unknown-public assets](https://securitytrails.com/blog/osint-tools#content-find-unknown-public-assets)
-  * [Detect outside critical company data](https://securitytrails.com/blog/osint-tools#content-detect-outside-critical-company-data)
-  * [Group critical data into useful plans](https://securitytrails.com/blog/osint-tools#content-group-critical-data-into-useful-plans)
-* [Best 25 OSINT Tools used by InfoSec Professionals](https://securitytrails.com/blog/osint-tools#content-best-25-osint-tools-used-by-infosec-professionals)
-  * [1. OSINT Framework](https://securitytrails.com/blog/osint-tools#content-1-osint-framework)
-  * [2. CheckUserNames](https://securitytrails.com/blog/osint-tools#content-2-checkusernames)
-  * [3. HaveIbeenPwned](https://securitytrails.com/blog/osint-tools#content-3-haveibeenpwned)
-  * [4. SecurityTrails API](https://securitytrails.com/blog/osint-tools#content-4-securitytrails-api)
-  * [5. Censys](https://securitytrails.com/blog/osint-tools#content-5-censys)
-  * [6. Wappalyzer](https://securitytrails.com/blog/osint-tools#content-6-wappalyzer)
-  * [7. Google Dorks](https://securitytrails.com/blog/osint-tools#content-7-google-dorks)
-  * [8. Maltego](https://securitytrails.com/blog/osint-tools#content-8-maltego)
-  * [9. Recon-Ng](https://securitytrails.com/blog/osint-tools#content-9-recon-ng)
-  * [10. theHarvester](https://securitytrails.com/blog/osint-tools#content-10-theharvester)
-  * [11. Shodan](https://securitytrails.com/blog/osint-tools#content-11-shodan)
-  * [12. Jigsaw](https://securitytrails.com/blog/osint-tools#content-12-jigsaw)
-  * [13. SpiderFoot](https://securitytrails.com/blog/osint-tools#content-13-spiderfoot)
-  * [14. Creepy](https://securitytrails.com/blog/osint-tools#content-14-creepy)
-  * [15. Nmap](https://securitytrails.com/blog/osint-tools#content-15-nmap)
-  * [16. WebShag](https://securitytrails.com/blog/osint-tools#content-16-webshag)
-  * [17. OpenVAS](https://securitytrails.com/blog/osint-tools#content-17-openvas)
-  * [18. Fierce](https://securitytrails.com/blog/osint-tools#content-18-fierce)
-  * [19. Unicornscan](https://securitytrails.com/blog/osint-tools#content-19-unicornscan)
-  * [20. Foca](https://securitytrails.com/blog/osint-tools#content-20-foca)
-  * [21. ZoomEye](https://securitytrails.com/blog/osint-tools#content-21-zoomeye)
-  * [22. OWASP Amass](https://securitytrails.com/blog/osint-tools#content-22-owasp-amass)
-  * [23. IVRE](https://securitytrails.com/blog/osint-tools#content-23-ivre)
-  * [24. Metagoofil](https://securitytrails.com/blog/osint-tools#content-24-metagoofil)
-  * [25. Exiftool](https://securitytrails.com/blog/osint-tools#content-25-exiftool)
+- [How can I use OSINT tools in cybersecurity?](https://securitytrails.com/blog/osint-tools#content-how-can-i-use-osint-tools-in-cybersecurity)
+  - [Find unknown-public assets](https://securitytrails.com/blog/osint-tools#content-find-unknown-public-assets)
+  - [Detect outside critical company data](https://securitytrails.com/blog/osint-tools#content-detect-outside-critical-company-data)
+  - [Group critical data into useful plans](https://securitytrails.com/blog/osint-tools#content-group-critical-data-into-useful-plans)
+- [Best 25 OSINT Tools used by InfoSec Professionals](https://securitytrails.com/blog/osint-tools#content-best-25-osint-tools-used-by-infosec-professionals)
+  - [1. OSINT Framework](https://securitytrails.com/blog/osint-tools#content-1-osint-framework)
+  - [2. CheckUserNames](https://securitytrails.com/blog/osint-tools#content-2-checkusernames)
+  - [3. HaveIbeenPwned](https://securitytrails.com/blog/osint-tools#content-3-haveibeenpwned)
+  - [4. SecurityTrails API](https://securitytrails.com/blog/osint-tools#content-4-securitytrails-api)
+  - [5. Censys](https://securitytrails.com/blog/osint-tools#content-5-censys)
+  - [6. Wappalyzer](https://securitytrails.com/blog/osint-tools#content-6-wappalyzer)
+  - [7. Google Dorks](https://securitytrails.com/blog/osint-tools#content-7-google-dorks)
+  - [8. Maltego](https://securitytrails.com/blog/osint-tools#content-8-maltego)
+  - [9. Recon-Ng](https://securitytrails.com/blog/osint-tools#content-9-recon-ng)
+  - [10. theHarvester](https://securitytrails.com/blog/osint-tools#content-10-theharvester)
+  - [11. Shodan](https://securitytrails.com/blog/osint-tools#content-11-shodan)
+  - [12. Jigsaw](https://securitytrails.com/blog/osint-tools#content-12-jigsaw)
+  - [13. SpiderFoot](https://securitytrails.com/blog/osint-tools#content-13-spiderfoot)
+  - [14. Creepy](https://securitytrails.com/blog/osint-tools#content-14-creepy)
+  - [15. Nmap](https://securitytrails.com/blog/osint-tools#content-15-nmap)
+  - [16. WebShag](https://securitytrails.com/blog/osint-tools#content-16-webshag)
+  - [17. OpenVAS](https://securitytrails.com/blog/osint-tools#content-17-openvas)
+  - [18. Fierce](https://securitytrails.com/blog/osint-tools#content-18-fierce)
+  - [19. Unicornscan](https://securitytrails.com/blog/osint-tools#content-19-unicornscan)
+  - [20. Foca](https://securitytrails.com/blog/osint-tools#content-20-foca)
+  - [21. ZoomEye](https://securitytrails.com/blog/osint-tools#content-21-zoomeye)
+  - [22. OWASP Amass](https://securitytrails.com/blog/osint-tools#content-22-owasp-amass)
+  - [23. IVRE](https://securitytrails.com/blog/osint-tools#content-23-ivre)
+  - [24. Metagoofil](https://securitytrails.com/blog/osint-tools#content-24-metagoofil)
+  - [25. Exiftool](https://securitytrails.com/blog/osint-tools#content-25-exiftool)
 
-### [¶](https://securitytrails.com/blog/osint-tools#content-how-can-i-use-osint-tools-in-cybersecurity)How can I use OSINT tools in cybersecurity?
+## [¶](https://securitytrails.com/blog/osint-tools#content-how-can-i-use-osint-tools-in-cybersecurity)How can I use OSINT tools in cybersecurity?
 
 OSINT, as we explained in our previous article 'What is OSINT?', stands for Open Source Intelligence. And in the same way that military intelligence teams play a critical role in gaining advantage over the enemy, OSINT plays a critical role in the field of cybersecurity.
 
@@ -55,7 +55,7 @@ Adopting the proper OSINT tools will help your company boost your cybersecurity 
 
 While Open Source Intelligence tools are frequently used toward a wide range of goals, they often focus on a few specific areas:
 
-#### [¶](https://securitytrails.com/blog/osint-tools#content-find-unknown-public-assets)Find unknown-public assets
+### [¶](https://securitytrails.com/blog/osint-tools#content-find-unknown-public-assets)Find unknown-public assets
 
 Public assets are all over the place, but the most dangerous assets are the ones you don't see, the unknown infrastructure assets. That's why creating a full map of your entire online infrastructure, as well as the other types of services you use, is the first thing that both the good guys and the bad guys will do during an information-gathering process.
 
@@ -139,11 +139,11 @@ Search engines index a lot of information about almost anything on the internet,
 
 Some popular operators used to perform Google Dorking:
 
-* Filetype: you can use this dork to find any kind of filetypes.
-* Ext: can help you to find files with specific extensions (eg. .txt, .log, etc).
-* Intext: can perform queries helps to search for specific text inside any page.
-* Intitle: it will search for any specific words inside the page title.
-* Inurl: will look out for mentioned words inside the URL of any website.
+- Filetype: you can use this dork to find any kind of filetypes.
+- Ext: can help you to find files with specific extensions (eg. .txt, .log, etc).
+- Intext: can perform queries helps to search for specific text inside any page.
+- Intitle: it will search for any specific words inside the page title.
+- Inurl: will look out for mentioned words inside the URL of any website.
 
 Log files aren't supposed to be indexed by search engines, however, they do, and you can get valuable information from these Google Dorks, as you see below:
 
@@ -235,11 +235,11 @@ You will be able to filter based on exact locations, or even by date. After that
 
 Some of the main features include:
 
-* Host detection: Nmap has the ability to identify hosts inside any network that have certain ports open, or that can send a response to ICMP and TCP packets.
-* IP and DNS information detection: including device type, Mac addresses and even reverse DNS names.
-* Port detection: Nmap can detect any port open on the target network, and let you know the possible running services on it.
-* OS detection: get full OS version detection and hardware specifications of any host connected.
-* Version detection: Nmap is also able to get application name and version number.
+- Host detection: Nmap has the ability to identify hosts inside any network that have certain ports open, or that can send a response to ICMP and TCP packets.
+- IP and DNS information detection: including device type, Mac addresses and even reverse DNS names.
+- Port detection: Nmap can detect any port open on the target network, and let you know the possible running services on it.
+- OS detection: get full OS version detection and hardware specifications of any host connected.
+- Version detection: Nmap is also able to get application name and version number.
 
 #### [¶](https://securitytrails.com/blog/osint-tools#content-16-webshag)16. WebShag
 
@@ -251,10 +251,10 @@ Written in Python, it can be one of your best allies while auditing systems.
 
 Main features include:
 
-* [Port Scan](https://securitytrails.com/blog/best-port-scanners)
-* URL scanning
-* File fuzzing
-* Website crawling
+- [Port Scan](https://securitytrails.com/blog/best-port-scanners)
+- URL scanning
+- File fuzzing
+- Website crawling
 
 In order to avoid getting blocked by remote server security systems, it uses an intelligent IDS evasion system by launching random requests per HTTP proxy server, so you can keep auditing the server without being banned.
 
@@ -288,13 +288,13 @@ The results will be ready within a few minutes, a little bit more than when you 
 
 Main features include:
 
-* Full TCP/IP device/network scan.
-* Asynchronous stateless TCP scanning (including all TCP Flags variations).
-* Asynchronous TCP banner detection.
-* UDP Protocol scanning.
-* A/P OS identification.
-* Application and component detection.
-* Support for SQL Relational Output
+- Full TCP/IP device/network scan.
+- Asynchronous stateless TCP scanning (including all TCP Flags variations).
+- Asynchronous TCP banner detection.
+- UDP Protocol scanning.
+- A/P OS identification.
+- Application and component detection.
+- Support for SQL Relational Output
 
 #### [¶](https://securitytrails.com/blog/osint-tools#content-20-foca)20. Foca
 
@@ -310,12 +310,12 @@ In the cybersecurity world, we researchers are used to popular IoT search engine
 
 What information can you find with ZoomEye?
 
-* IPs interacting with networks and hosts
-* Open ports on remote servers
-* Total number of hosted websites
-* Total number of devices found
-* Interactive map of users hitting different devices
-* Vulnerabilities report
+- IPs interacting with networks and hosts
+- Open ports on remote servers
+- Total number of hosted websites
+- Total number of devices found
+- Interactive map of users hitting different devices
+- Vulnerabilities report
 
 And much more. The public version offers access to a lot of data—but if you want to see what it can really do, we suggest you sign up for a free account. That way you'll get to test the real power of this OSINT tool.
 
@@ -333,10 +333,10 @@ Its framework uses these popular tools to gather network intelligence on any hos
 
 Its web-based interface makes it easy for both beginning and advanced infosec users to perform the following actions:
 
-* Passive reconnaissance by flow analysis (from Zeek, Argus or nfdump)
-* Active reconnaissance by using Zmap and Nmap
-* Fingerprinting analysis
-* Import data from other 3rd party infosec apps, such as Masscan/Nmap
+- Passive reconnaissance by flow analysis (from Zeek, Argus or nfdump)
+- Active reconnaissance by using Zmap and Nmap
+- Fingerprinting analysis
+- Import data from other 3rd party infosec apps, such as Masscan/Nmap
 
 IVRE can be installed by fetching the source from their official Github repo, or from 3rd-party repositories such as Kali Linux repo.
 
@@ -344,13 +344,13 @@ IVRE can be installed by fetching the source from their official Github repo, or
 
 [Metagoofil](https://tools.kali.org/information-gathering/metagoofil) is another great intel-reconnaissance tool that aims to help infosec researchers, IT managers, and red teams to extract metadata from different types of files, such as:
 
-* doc
-* docx
-* pdf
-* xls
-* xlsx
-* ppt
-* pptx
+- doc
+- docx
+- pdf
+- xls
+- xlsx
+- ppt
+- pptx
 
 How does it work? This app performs a deep search on search engines like Google, focusing on these types of files. Once it detects such a file, it will download it to your local storage, then proceed to extract all of its valuable data.
 
@@ -364,11 +364,11 @@ While a lot of OSINT tools focus on data found on public files such as PDF, .DOC
 
 [Exiftool](https://exiftool.org/) reads, writes and extracts metadata from the following types of files:
 
-* EXIF
-* IPTC
-* GPS
-* XMP
-* JFIF
-* [And many others](https://exiftool.org/%23supported)
+- EXIF
+- IPTC
+- GPS
+- XMP
+- JFIF
+- [And many others](https://exiftool.org/%23supported)
 
 It also supports native files from a wide range of cameras, such as: Canon, Casio, FujiFilm, Kodak, Sony, and many others. It's also conveniently available on multiple platforms including Linux, Windows and MacOS.

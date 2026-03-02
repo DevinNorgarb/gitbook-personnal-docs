@@ -6,53 +6,53 @@ description: https://github.com/markshust/docker-magento
 
 **Initial Project Setup**
 
-* [Install Docker Desktop & configure preferences](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9205849)
-* [Set up Magento with the automated onelinesetup script](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/8974570)
-* [Set up Magento manually from a custom Git branch](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064259)
-* [Set up Docker for an existing Magento project](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9283467)
+- [Install Docker Desktop & configure preferences](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9205849)
+- [Set up Magento with the automated onelinesetup script](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/8974570)
+- [Set up Magento manually from a custom Git branch](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064259)
+- [Set up Docker for an existing Magento project](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9283467)
 
 **The Basics of docker-magento**
 
-* [Execute docker-magento helper scripts](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064258)
-* [Start, stop, restart and check container status](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9331008)
-* [Execute bin/magento and composer within Docker containers](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064269)
-* [Install Magento sample data](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/36150902)
+- [Execute docker-magento helper scripts](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064258)
+- [Start, stop, restart and check container status](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9331008)
+- [Execute bin/magento and composer within Docker containers](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064269)
+- [Install Magento sample data](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/36150902)
 
 **Docker Filesystem & Data Volumes**
 
-* [Understand Docker volumes & host bind mounts](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064334)
-* [Manage files & folders within Docker containers](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064338)
+- [Understand Docker volumes & host bind mounts](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064334)
+- [Manage files & folders within Docker containers](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064338)
 
 **PhpStorm**
 
-* [Set up a docker-magento project in PhpStorm](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9748834)
-* [Set up the Magento PhpStorm plugin](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9763893)
+- [Set up a docker-magento project in PhpStorm](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9748834)
+- [Set up the Magento PhpStorm plugin](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9763893)
 
 **Xdebug**
 
-* [Install the Xdebug helper browser plugin for Chrome & PhpStorm](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064478)
-* [Enable disable check the status of Xdebug](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064482)
-* [Configure PhpStorm for Xdebug connections](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064615)
-* [Trigger an Xdebug breakpoint in PhpStorm](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064617)
-* [Trigger an Xdebug breakpoint for CLI commands in PhpStorm](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/36677538)
+- [Install the Xdebug helper browser plugin for Chrome & PhpStorm](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064478)
+- [Enable disable check the status of Xdebug](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064482)
+- [Configure PhpStorm for Xdebug connections](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064615)
+- [Trigger an Xdebug breakpoint in PhpStorm](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064617)
+- [Trigger an Xdebug breakpoint for CLI commands in PhpStorm](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/36677538)
 
 **Customize Server Configurations**
 
-* [Understand the docker-compose application structure](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/36702830)
-* [Increase the PHP memory limit in php.ini](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/36702861)
-* [Increase the Nginx request timeout in nginx.conf](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064349)
-* [Increase the MySQL buffer pool size with command or in my.cnf](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/36703258)
-* [Install a new PHP extension by building a custom Docker image](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064350)
-* [Configure multi-store instances in Docker with Nginx](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/14780970)
+- [Understand the docker-compose application structure](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/36702830)
+- [Increase the PHP memory limit in php.ini](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/36702861)
+- [Increase the Nginx request timeout in nginx.conf](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064349)
+- [Increase the MySQL buffer pool size with command or in my.cnf](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/36703258)
+- [Install a new PHP extension by building a custom Docker image](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064350)
+- [Configure multi-store instances in Docker with Nginx](https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/14780970)
 
-### Usage
+## Usage
 
 This configuration is intended to be used as a Docker-based development environment for Magento 2.
 
 Folders:
 
-* `images`: Docker images for nginx and php
-* `compose`: sample setups with Docker Compose
+- `images`: Docker images for nginx and php
+- `compose`: sample setups with Docker Compose
 
 > The Magento 1 version of this development environment has been deprecated and is no longer supported. PHP 5 was used as it's base, and that version has reached end-of-life. If you still wish to use this setup, please reference [compose/magento-1 on tag 20.1.1](https://github.com/markshust/docker-magento/tree/20.1.1/compose/magento-1), but please be aware these images are no longer maintained.
 
@@ -67,11 +67,11 @@ This configuration has been tested on Mac & Linux. Windows is supported through 
 #### Automated Setup (New Project)
 
 ```
-# Create your project directory then go into it:
+## Create your project directory then go into it:
 mkdir -p ~/Sites/magento
 cd $_
 
-# Run this automated one-liner from the directory you want to install your project.
+## Run this automated one-liner from the directory you want to install your project.
 curl -s https://raw.githubusercontent.com/markshust/docker-magento/master/lib/onelinesetup | bash -s -- magento.test 2.4.6 community
 ```
 
@@ -83,39 +83,39 @@ After the one-liner above completes running, you should be able to access your s
 
 After the above installation is complete, run the following lines to install sample data:
 
-```
+```php
 bin/magento sampledata:deploy
 bin/magento setup:upgrade
 ```
 
-#### Manual Setup
+### Manual Setup
 
 Same result as the one-liner above. Just replace `magento.test` references with the hostname that you wish to use.
 
 **New Projects**
 
 ```
-# Create your project directory then go into it:
+## Create your project directory then go into it:
 mkdir -p ~/Sites/magento
 cd $_
 
-# Download the Docker Compose template:
+## Download the Docker Compose template:
 curl -s https://raw.githubusercontent.com/markshust/docker-magento/master/lib/template | bash
 
-# Download the version of Magento you want to use with:
+## Download the version of Magento you want to use with:
 bin/download 2.4.6 community
-# You can specify the version and type (community, enterprise, mageos, mageos-nightly, mageos-mirror, mageos-hypernode-mirror, or mageos-maxcluster-mirror).
-# The mageos type is an alias for mageos-mirror.
-# If no arguments are passed, "2.4.6" and "community" are the default values used.
+## You can specify the version and type (community, enterprise, mageos, mageos-nightly, mageos-mirror, mageos-hypernode-mirror, or mageos-maxcluster-mirror).
+## The mageos type is an alias for mageos-mirror.
+## If no arguments are passed, "2.4.6" and "community" are the default values used.
 
-# or for Magento core development:
-# bin/start --no-dev
-# bin/setup-composer-auth
-# bin/cli git clone git@github.com:magento/magento2.git .
-# bin/cli git checkout 2.4-develop
-# bin/composer install
+## or for Magento core development:
+## bin/start --no-dev
+## bin/setup-composer-auth
+## bin/cli git clone git@github.com:magento/magento2.git .
+## bin/cli git checkout 2.4-develop
+## bin/composer install
 
-# Run the setup installer for Magento:
+## Run the setup installer for Magento:
 bin/setup magento.test
 
 open https://magento.test
@@ -124,38 +124,38 @@ open https://magento.test
 **Existing Projects**
 
 ```
-# Take a backup of your existing database:
+## Take a backup of your existing database:
 bin/mysqldump > ~/Sites/existing/magento.sql
 
-# Create your project directory then go into it:
+## Create your project directory then go into it:
 mkdir -p ~/Sites/magento
 cd $_
 
-# Download the Docker Compose template:
+## Download the Docker Compose template:
 curl -s https://raw.githubusercontent.com/markshust/docker-magento/master/lib/template | bash
 
-# Replace with existing source code of your existing Magento instance:
+## Replace with existing source code of your existing Magento instance:
 cp -R ~/Sites/existing src
-# or: git clone git@github.com:myrepo.git src
+## or: git clone git@github.com:myrepo.git src
 
-# If your vendor directory was empty, populate it with:
+## If your vendor directory was empty, populate it with:
 bin/composer install
 
-# Start some containers, copy files to them and then restart the containers:
+## Start some containers, copy files to them and then restart the containers:
 bin/start --no-dev
 bin/copytocontainer --all ## Initial copy will take a few minutes...
 
-# Import existing database:
+## Import existing database:
 bin/mysql < ../existing/magento.sql
 
-# Update database connection details to use the above Docker MySQL credentials:
-# Also note: creds for the MySQL server are defined at startup from env/db.env
-# vi src/app/etc/env.php
+## Update database connection details to use the above Docker MySQL credentials:
+## Also note: creds for the MySQL server are defined at startup from env/db.env
+## vi src/app/etc/env.php
 
-# Import app-specific environment settings:
+## Import app-specific environment settings:
 bin/magento app:config:import
 
-# Create a DNS host entry and setup Magento base url
+## Create a DNS host entry and setup Magento base url
 bin/setup-domain yoursite.test
 
 bin/restart
@@ -163,7 +163,7 @@ bin/restart
 open https://magento.test
 ```
 
-#### Elasticsearch vs OpenSearch
+### Elasticsearch vs OpenSearch
 
 OpenSearch is set as the default search engine when setting up this project. Follow the instructions below if you want to use Elasticsearch instead:
 
@@ -175,7 +175,7 @@ OpenSearch is set as the default search engine when setting up this project. Fol
 
 To update your project to the latest version of `docker-magento`, run:
 
-```
+```php
 bin/update
 ```
 
@@ -185,56 +185,56 @@ It is recommended to keep your root docker config files in one repository, and y
 
 ### Custom CLI Commands
 
-* `bin/analyse`: Run `phpstan analyse` within the container to statically analyse code, passing in directory to analyse. Ex. `bin/analyse app/code`
-* `bin/bash`: Drop into the bash prompt of your Docker container. The `phpfpm` container should be mainly used to access the filesystem within Docker.
-* `bin/cache-clean`: Access the [cache-clean](https://github.com/mage2tv/magento-cache-clean) CLI. Note the watcher is automatically started at startup in `bin/start`. Ex. `bin/cache-clean config full_page`
-* `bin/cli`: Run any CLI command without going into the bash prompt. Ex. `bin/cli ls`
-* `bin/clinotty`: Run any CLI command with no TTY. Ex. `bin/clinotty chmod u+x bin/magento`
-* `bin/cliq`: The same as `bin/cli`, but pipes all output to `/dev/null`. Useful for a quiet CLI, or implementing long-running processes.
-* `bin/composer`: Run the composer binary. Ex. `bin/composer install`
-* `bin/copyfromcontainer`: Copy folders or files from container to host. Ex. `bin/copyfromcontainer vendor`
-* `bin/copytocontainer`: Copy folders or files from host to container. Ex. `bin/copytocontainer --all`
-* `bin/cron`: Start or stop the cron service. Ex. `bin/cron start`
-* `bin/dev-urn-catalog-generate`: Generate URN's for PhpStorm and remap paths to local host. Restart PhpStorm after running this command.
-* `bin/devconsole`: Alias for `bin/n98-magerun2 dev:console`
-* `bin/docker-compose`: Support V1 (`docker-compose`) and V2 (`docker compose`) docker compose command, and use custom configuration files, such as `compose.yml` and `compose.dev.yml`
-* `bin/download`: Download specific Magento version from Composer to the container, with optional arguments of the version (2.4.6 \[default]) and type ("community" \[default], "enterprise", or "mageos"). Ex. `bin/download 2.4.6 enterprise`
-* `bin/debug-cli`: Enable Xdebug for bin/magento, with an optional argument of the IDE key. Defaults to PHPSTORM Ex. `bin/debug-cli enable PHPSTORM`
-* `bin/fixowns`: This will fix filesystem ownerships within the container.
-* `bin/fixperms`: This will fix filesystem permissions within the container.
-* `bin/grunt`: Run the grunt binary. Ex. `bin/grunt exec`
-* `bin/install-php-extensions`: Install PHP extension in the container. Ex. `bin/install-php-extensions sourceguardian`
-* `bin/magento`: Run the Magento CLI. Ex: `bin/magento cache:flush`
-* `bin/mftf`: Run the Magento MFTF. Ex: `bin/mftf build:project`
-* `bin/mysql`: Run the MySQL CLI with database config from `env/db.env`. Ex. `bin/mysql -e "EXPLAIN core_config_data"` or`bin/mysql < magento.sql`
-* `bin/mysqldump`: Backup the Magento database. Ex. `bin/mysqldump > magento.sql`
-* `bin/n98-magerun2`: Access the [n98-magerun2](https://github.com/netz98/n98-magerun2) CLI. Ex: `bin/n98-magerun2 dev:console`
-* `bin/node`: Run the node binary. Ex. `bin/node --version`
-* `bin/npm`: Run the npm binary. Ex. `bin/npm install`
-* `bin/phpcbf`: Auto-fix PHP\_CodeSniffer errors with Magento2 options. Ex. `bin/phpcbf <path-to-extension>`
-* `bin/phpcs`: Run PHP\_CodeSniffer with Magento2 options. Ex. `bin/phpcs <path-to-extension>`
-* `bin/phpcs-json-report`: Run PHP\_CodeSniffer with Magento2 options and save to `report.json` file. Ex. `bin/phpcs-json-report <path-to-extension>`
-* `bin/pwa-studio`: (BETA) Start the PWA Studio server. Note that Chrome will throw SSL cert errors and not allow you to view the site, but Firefox will.
-* `bin/redis`: Run a command from the redis container. Ex. `bin/redis redis-cli monitor`
-* `bin/remove`: Remove all containers.
-* `bin/removeall`: Remove all containers, networks, volumes, and images, calling `bin/stopall` before doing so.
-* `bin/removevolumes`: Remove all volumes.
-* `bin/restart`: Stop and then start all containers.
-* `bin/root`: Run any CLI command as root without going into the bash prompt. Ex `bin/root apt-get install nano`
-* `bin/rootnotty`: Run any CLI command as root with no TTY. Ex `bin/rootnotty chown -R app:app /var/www/html`
-* `bin/setup`: Run the Magento setup process to install Magento from the source code, with optional domain name. Defaults to `magento.test`. Ex. `bin/setup magento.test`
-* `bin/setup-composer-auth`: Setup authentication credentials for Composer.
-* `bin/setup-domain`: Setup Magento domain name. Ex: `bin/setup-domain magento.test`
-* `bin/setup-grunt`: Install and configure Grunt JavaScript task runner to compile .less files
-* `bin/setup-pwa-studio`: (BETA) Install PWA Studio (requires NodeJS and Yarn to be installed on the host machine). Pass in your base site domain, otherwise the default `master-7rqtwti-mfwmkrjfqvbjk.us-4.magentosite.cloud` will be used. Ex: `bin/setup-pwa-studio magento.test`
-* `bin/setup-ssl`: Generate an SSL certificate for one or more domains. Ex. `bin/setup-ssl magento.test foo.test`
-* `bin/setup-ssl-ca`: Generate a certificate authority and copy it to the host.
-* `bin/start`: Start all containers, good practice to use this instead of `docker-compose up -d`, as it may contain additional helpers.
-* `bin/status`: Check the container status.
-* `bin/stop`: Stop all project containers.
-* `bin/stopall`: Stop all docker running containers
-* `bin/update`: Update your project to the most recent version of `docker-magento`.
-* `bin/xdebug`: Disable or enable Xdebug. Accepts params `disable` (default) or `enable`. Ex. `bin/xdebug enable`
+- `bin/analyse`: Run `phpstan analyse` within the container to statically analyse code, passing in directory to analyse. Ex. `bin/analyse app/code`
+- `bin/bash`: Drop into the bash prompt of your Docker container. The `phpfpm` container should be mainly used to access the filesystem within Docker.
+- `bin/cache-clean`: Access the [cache-clean](https://github.com/mage2tv/magento-cache-clean) CLI. Note the watcher is automatically started at startup in `bin/start`. Ex. `bin/cache-clean config full_page`
+- `bin/cli`: Run any CLI command without going into the bash prompt. Ex. `bin/cli ls`
+- `bin/clinotty`: Run any CLI command with no TTY. Ex. `bin/clinotty chmod u+x bin/magento`
+- `bin/cliq`: The same as `bin/cli`, but pipes all output to `/dev/null`. Useful for a quiet CLI, or implementing long-running processes.
+- `bin/composer`: Run the composer binary. Ex. `bin/composer install`
+- `bin/copyfromcontainer`: Copy folders or files from container to host. Ex. `bin/copyfromcontainer vendor`
+- `bin/copytocontainer`: Copy folders or files from host to container. Ex. `bin/copytocontainer --all`
+- `bin/cron`: Start or stop the cron service. Ex. `bin/cron start`
+- `bin/dev-urn-catalog-generate`: Generate URN's for PhpStorm and remap paths to local host. Restart PhpStorm after running this command.
+- `bin/devconsole`: Alias for `bin/n98-magerun2 dev:console`
+- `bin/docker-compose`: Support V1 (`docker-compose`) and V2 (`docker compose`) docker compose command, and use custom configuration files, such as `compose.yml` and `compose.dev.yml`
+- `bin/download`: Download specific Magento version from Composer to the container, with optional arguments of the version (2.4.6 \[default]) and type ("community" \[default], "enterprise", or "mageos"). Ex. `bin/download 2.4.6 enterprise`
+- `bin/debug-cli`: Enable Xdebug for bin/magento, with an optional argument of the IDE key. Defaults to PHPSTORM Ex. `bin/debug-cli enable PHPSTORM`
+- `bin/fixowns`: This will fix filesystem ownerships within the container.
+- `bin/fixperms`: This will fix filesystem permissions within the container.
+- `bin/grunt`: Run the grunt binary. Ex. `bin/grunt exec`
+- `bin/install-php-extensions`: Install PHP extension in the container. Ex. `bin/install-php-extensions sourceguardian`
+- `bin/magento`: Run the Magento CLI. Ex: `bin/magento cache:flush`
+- `bin/mftf`: Run the Magento MFTF. Ex: `bin/mftf build:project`
+- `bin/mysql`: Run the MySQL CLI with database config from `env/db.env`. Ex. `bin/mysql -e "EXPLAIN core_config_data"` or`bin/mysql < magento.sql`
+- `bin/mysqldump`: Backup the Magento database. Ex. `bin/mysqldump > magento.sql`
+- `bin/n98-magerun2`: Access the [n98-magerun2](https://github.com/netz98/n98-magerun2) CLI. Ex: `bin/n98-magerun2 dev:console`
+- `bin/node`: Run the node binary. Ex. `bin/node --version`
+- `bin/npm`: Run the npm binary. Ex. `bin/npm install`
+- `bin/phpcbf`: Auto-fix PHP\_CodeSniffer errors with Magento2 options. Ex. `bin/phpcbf <path-to-extension>`
+- `bin/phpcs`: Run PHP\_CodeSniffer with Magento2 options. Ex. `bin/phpcs <path-to-extension>`
+- `bin/phpcs-json-report`: Run PHP\_CodeSniffer with Magento2 options and save to `report.json` file. Ex. `bin/phpcs-json-report <path-to-extension>`
+- `bin/pwa-studio`: (BETA) Start the PWA Studio server. Note that Chrome will throw SSL cert errors and not allow you to view the site, but Firefox will.
+- `bin/redis`: Run a command from the redis container. Ex. `bin/redis redis-cli monitor`
+- `bin/remove`: Remove all containers.
+- `bin/removeall`: Remove all containers, networks, volumes, and images, calling `bin/stopall` before doing so.
+- `bin/removevolumes`: Remove all volumes.
+- `bin/restart`: Stop and then start all containers.
+- `bin/root`: Run any CLI command as root without going into the bash prompt. Ex `bin/root apt-get install nano`
+- `bin/rootnotty`: Run any CLI command as root with no TTY. Ex `bin/rootnotty chown -R app:app /var/www/html`
+- `bin/setup`: Run the Magento setup process to install Magento from the source code, with optional domain name. Defaults to `magento.test`. Ex. `bin/setup magento.test`
+- `bin/setup-composer-auth`: Setup authentication credentials for Composer.
+- `bin/setup-domain`: Setup Magento domain name. Ex: `bin/setup-domain magento.test`
+- `bin/setup-grunt`: Install and configure Grunt JavaScript task runner to compile .less files
+- `bin/setup-pwa-studio`: (BETA) Install PWA Studio (requires NodeJS and Yarn to be installed on the host machine). Pass in your base site domain, otherwise the default `master-7rqtwti-mfwmkrjfqvbjk.us-4.magentosite.cloud` will be used. Ex: `bin/setup-pwa-studio magento.test`
+- `bin/setup-ssl`: Generate an SSL certificate for one or more domains. Ex. `bin/setup-ssl magento.test foo.test`
+- `bin/setup-ssl-ca`: Generate a certificate authority and copy it to the host.
+- `bin/start`: Start all containers, good practice to use this instead of `docker-compose up -d`, as it may contain additional helpers.
+- `bin/status`: Check the container status.
+- `bin/stop`: Stop all project containers.
+- `bin/stopall`: Stop all docker running containers
+- `bin/update`: Update your project to the most recent version of `docker-magento`.
+- `bin/xdebug`: Disable or enable Xdebug. Accepts params `disable` (default) or `enable`. Ex. `bin/xdebug enable`
 
 ### Misc Info
 
@@ -242,7 +242,7 @@ It is recommended to keep your root docker config files in one repository, and y
 
 The most common issue with a failed docker-magento install is getting this error:
 
-```
+```python
 Project directory "/var/www/html/." is not empty error
 ```
 
@@ -252,7 +252,7 @@ The workaround to this is that once you have fixed the issue that was initially 
 
 You can do this by running:
 
-```
+```bash
 bin/removeall
 cd ..
 rm -rf yourproject
@@ -272,19 +272,19 @@ The hostname of each service is the name of the service within the `compose.yaml
 
 To connect to the MySQL CLI tool of the Docker instance, run:
 
-```
+```php
 bin/mysql
 ```
 
 You can use the `bin/mysql` script to import a database, for example a file stored in your local host directory at `magento.sql`:
 
-```
+```php
 bin/mysql < magento.sql
 ```
 
 You also can use `bin/mysqldump` to export the database. The file will appear in your local host directory at `magento.sql`:
 
-```
+```python
 bin/mysqldump > magento.sql
 ```
 
@@ -353,13 +353,13 @@ Otherwise, this project now automatically sets up Xdebug support with VS Code. I
 3. Create a new configuration file inside the project. Go to the `Run and Debug` section in VS Code, then click on `create a launch.json file`.
 4.  Attention to the following configs inside the file:
 
-    * The port must be the same as the port on the xdebug.ini file.
+    - The port must be the same as the port on the xdebug.ini file.
 
-    ```
+```php
       bin/cli cat /usr/local/etc/php/php.ini
-    ```
+```
 
-    ```
+```php
       memory_limit = 4G
       max_execution_time = 1800
       zlib.output_compression = On
@@ -376,11 +376,11 @@ Otherwise, this project now automatically sets up Xdebug support with VS Code. I
       upload_max_filesize = 100M
       post_max_size = 100M
       max_input_vars = 10000
-    ```
+```
 
-    * The pathMappings should have the same folder path as the project inside the Docker container.
+    - The pathMappings should have the same folder path as the project inside the Docker container.
 
-    ```
+```php
       {
           "version": "0.2.0",
           "configurations": [
@@ -396,42 +396,42 @@ Otherwise, this project now automatically sets up Xdebug support with VS Code. I
               }
           ]
       }
-    ```
+```php
 5.  Run the following command in the Windows Powershell. It allows WSL through the firewall, otherwise breakpoints might not be hitten.
 
-    ```
+```php
     New-NetFirewallRule -DisplayName "WSL" -Direction Inbound  -InterfaceAlias "vEthernet (WSL)"  -Action Allow
-    ```
+```
 
 #### Xdebug & PhpStorm
 
 1. First, install the [Chrome Xdebug helper](https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc). After installed, right click on the Chrome icon for it and go to Options. Under IDE Key, select PhpStorm from the list to set the IDE Key to "PHPSTORM", then click Save.
 2. Next, enable Xdebug debugging in the PHP container by running: `bin/xdebug enable`.
 3. Then, open `PhpStorm > Preferences > PHP` and configure:
-   * `CLI Interpreter`
-     * Create a new interpreter from the `From Docker, Vagrant, VM...` list.
-     * Select the Docker Compose option.
-     * For Server, select `Docker`. If you don't have Docker set up as a server, create one and name it `Docker`.
-     * For Configuration files, add both the `compose.yaml` and `compose.dev.yaml` files from your project directory.
-     * For Service, select `phpfpm`, then click OK.
-     * Name this CLI Interpreter `phpfpm`, then click OK again.
-   * `Path mappings`
-     * There is no need to define a path mapping in this area.
+   - `CLI Interpreter`
+     - Create a new interpreter from the `From Docker, Vagrant, VM...` list.
+     - Select the Docker Compose option.
+     - For Server, select `Docker`. If you don't have Docker set up as a server, create one and name it `Docker`.
+     - For Configuration files, add both the `compose.yaml` and `compose.dev.yaml` files from your project directory.
+     - For Service, select `phpfpm`, then click OK.
+     - Name this CLI Interpreter `phpfpm`, then click OK again.
+   - `Path mappings`
+     - There is no need to define a path mapping in this area.
 4. Open `PhpStorm > Preferences > PHP > Debug` and ensure Debug Port is set to `9000,9003`.
 5. Open `PhpStorm > Preferences > PHP > Servers` and create a new server:
-   * For the Name, set this to the value of your domain name (ex. `magento.test`).
-   * For the Host, set this to the value of your domain name (ex. `magento.test`).
-   * Keep port set to `80`.
-   * Check the "Use path mappings" box and map `src` to the absolute path of `/var/www/html`.
+   - For the Name, set this to the value of your domain name (ex. `magento.test`).
+   - For the Host, set this to the value of your domain name (ex. `magento.test`).
+   - Keep port set to `80`.
+   - Check the "Use path mappings" box and map `src` to the absolute path of `/var/www/html`.
 6. Go to `Run > Edit Configurations` and create a new `PHP Remote Debug` configuration.
-   * Set the Name to the name of your domain (ex. `magento.test`).
-   * Check the `Filter debug connection by IDE key` checkbox, select the Server you just setup.
-   * For IDE key, enter `PHPSTORM`. This value should match the IDE Key value set by the Chrome Xdebug Helper.
-   * Click OK to finish setting up the remote debugger in PHPStorm.
+   - Set the Name to the name of your domain (ex. `magento.test`).
+   - Check the `Filter debug connection by IDE key` checkbox, select the Server you just setup.
+   - For IDE key, enter `PHPSTORM`. This value should match the IDE Key value set by the Chrome Xdebug Helper.
+   - Click OK to finish setting up the remote debugger in PHPStorm.
 7. Open up `pub/index.php` and set a breakpoint near the end of the file.
-   * Start the debugger with `Run > Debug 'magento.test'`, then open up a web browser.
-   * Ensure the Chrome Xdebug helper is enabled by clicking on it and selecting Debug. The icon should turn bright green.
-   * Navigate to your Magento store URL, and Xdebug should now trigger the debugger within PhpStorm at the toggled breakpoint.
+   - Start the debugger with `Run > Debug 'magento.test'`, then open up a web browser.
+   - Ensure the Chrome Xdebug helper is enabled by clicking on it and selecting Debug. The icon should turn bright green.
+   - Navigate to your Magento store URL, and Xdebug should now trigger the debugger within PhpStorm at the toggled breakpoint.
 
 #### SSH
 
@@ -441,7 +441,7 @@ Copy `compose.dev-ssh.yaml` to `compose.dev.yaml` before installing Magento to t
 
 Note that you must use your IDE's SSH/SFTP functionality, otherwise changes will not be synced. To re-sync your host environment at any time, run:
 
-```
+```php
 bin/copyfromcontainer --all
 ```
 
@@ -471,7 +471,7 @@ You must also create a new entry in your `/etc/hosts` file using the same IP:
 
 To enable Xdebug on Linux, you may also need to open port 9003 on the firewall by running:
 
-```
+```php
 sudo iptables -A INPUT -p tcp --dport 9003 -j ACCEPT
 ```
 
@@ -479,7 +479,7 @@ You may also have to increase a virtual memory map count on the host system whic
 
 Add the following line to the `/etc/sysctl.conf` file on your host:
 
-```
+```php
 vm.max_map_count=262144
 ```
 
@@ -487,19 +487,19 @@ vm.max_map_count=262144
 
 These docker images have built-in support for Blackfire.io. To use it, first register your server ID and token with the Blackfire agent:
 
-```
+```php
 bin/root blackfire-agent --register --server-id={YOUR_SERVER_ID} --server-token={YOUR_SERVER_TOKEN}
 ```
 
 Next, open up the `bin/start` helper script and uncomment the line:
 
 ```
-#bin/root /etc/init.d/blackfire-agent start
+## bin/root /etc/init.d/blackfire-agent start
 ```
 
 Finally, restart the containers with `bin/restart`. After doing so, everything is now configured and you can use a browser extension to profile your Magento store with Blackfire.
 
-#### MFTF
+### MFTF
 
 To work with MFTF you will need to first enable the `selenium` image in the `compose.dev.yaml` file. Then, you will need to run the following.
 
@@ -509,7 +509,7 @@ To work with MFTF you will need to first enable the `selenium` image in the `com
 4. Run a sample test `bin/mftf run:test AdminLoginSuccessfulTest`.
 5. Update your `nginx.conf` file to allow access to the dev section with the following, before the final `deny all` section:
 
-```
+```php
 location ~* ^/dev/tests/acceptance/utils($|/) {
     root $MAGE_ROOT;
     location ~ ^/dev/tests/acceptance/utils/command.php {
@@ -523,8 +523,8 @@ location ~* ^/dev/tests/acceptance/utils($|/) {
 
 For debugging, you can connect to the selenium image using a VCN client.
 
-* Connect with the VCN option and `127.0.0.1:5900`, (default password: `secret`)
-* Run `bin/mftf doctor` to validate all sections are setup correctly.
+- Connect with the VCN option and `127.0.0.1:5900`, (default password: `secret`)
+- Run `bin/mftf doctor` to validate all sections are setup correctly.
 
 Find more info [here](https://devdocs.magento.com/mftf/docs/getting-started.html) about mftf configuration.
 
@@ -540,7 +540,7 @@ Make your new theme active at Admin > Content > Design > Configuration. Click th
 
 To create a connection to LiveReload, you'll need to insert the LiveReload script into your theme. You can do this by creating a file in your theme at `Magento_Theme/layout/default_head_blocks.xml` with the contents:
 
-```
+```html
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
@@ -553,7 +553,7 @@ The "?port=443" parameter is important, otherwise the `livereload.js` script won
 
 While we're at it, let's also create an initial LESS file so we have something to test. Create a new file in your theme at `web/css/source/_extend.less` with the contents:
 
-```
+```javascript
 body {
     background: white;
 }
@@ -583,7 +583,7 @@ Ensure the LiveReload browser icon has been toggled on, and refresh the page. We
 
 Since this is all set, let's update the CSS file to a different background color:
 
-```
+```bash
 body {
     background: blue;
 }
@@ -591,6 +591,6 @@ body {
 
 Upon saving this file, we will see the Grunt watcher detect the changes, and your browser should automatically load the new style without you needing to refresh the page, and without a full browser refresh.
 
-###
+### 
 
 <br>

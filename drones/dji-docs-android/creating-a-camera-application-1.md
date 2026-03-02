@@ -1,10 +1,10 @@
 # Creating a Camera Application
 
-* [Preparation](/broken/pages/xsLHMhPQM11Yv2KNh6JN)
-* [Setting up your Programming Environment](/broken/pages/xsLHMhPQM11Yv2KNh6JN)
-  * [Android Studio](/broken/pages/xsLHMhPQM11Yv2KNh6JN)
-* [Configure the Project's AndroidManifest File](/broken/pages/xsLHMhPQM11Yv2KNh6JN)
-* [Implement the Stopping Recording Function](/broken/pages/xsLHMhPQM11Yv2KNh6JN)
+- [Preparation](/broken/pages/xsLHMhPQM11Yv2KNh6JN)
+- [Setting up your Programming Environment](/broken/pages/xsLHMhPQM11Yv2KNh6JN)
+  - [Android Studio](/broken/pages/xsLHMhPQM11Yv2KNh6JN)
+- [Configure the Project's AndroidManifest File](/broken/pages/xsLHMhPQM11Yv2KNh6JN)
+- [Implement the Stopping Recording Function](/broken/pages/xsLHMhPQM11Yv2KNh6JN)
 
 _If you come across any mistakes or bugs in this tutorial, please let us know using a Github issue or a post on the DJI forum, or commenting in the Gitbook. Please feel free to send us Github pull request and help us fix any issues. However, all pull requests related to document must follow the_ [_document style_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 
@@ -14,7 +14,7 @@ This tutorial uses Phantom 3 Professional as an example. You can download the fi
 
 You can download the entire project for this tutorial from this [Github Page](https://github.com/DJI-Mobile-SDK/Android-FPVDemo).
 
-### Preparation <a href="#preparation" id="preparation"></a>
+## Preparation <a href="#preparation" id="preparation"></a>
 
 (1) Download the Mobile SDK for Android from the following URL: [https://developer.dji.com/mobile-sdk/downloads](https://developer.dji.com/mobile-sdk/downloads)
 
@@ -591,7 +591,7 @@ That was a lot of code we just threw at you, so let's break it down.
 
 The first thing we need to do is define a CameraMode enum, which we will use to set the mode of the camera onboard our DJI Drone.
 
-```
+```php
 CameraMode cameraMode = CameraMode.ShootPhoto;
 ```
 

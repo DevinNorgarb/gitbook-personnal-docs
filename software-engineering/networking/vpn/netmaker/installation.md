@@ -20,16 +20,16 @@ For information about deploying more advanced configurations, see the [Advanced 
 
 ### 0. Prerequisites[¶](https://docs.netmaker.org/quick-start.html#prerequisites) <a href="#prerequisites" id="prerequisites"></a>
 
-* **Virtual Machine**
-  * Preferably from a cloud provider (e.x: DigitalOcean, Linode, AWS, GCP, etc.)
-  * (We do not recommend Oracle Cloud, as VM’s here have been known to cause network interference.)
-  * Public, static IP
-  * Min 1GB RAM, 1 CPU (4GB RAM, 2CPU preferred for production installs)
-  * 2GB+ of storage
-  * Ubuntu 20.04 Installed
-* **Domain**
-  * A publicly owned domain (e.x. example.com, mysite.biz)
-  * Permission and access to modify DNS records via DNS service (e.x: Route53)
+- **Virtual Machine**
+  - Preferably from a cloud provider (e.x: DigitalOcean, Linode, AWS, GCP, etc.)
+  - (We do not recommend Oracle Cloud, as VM’s here have been known to cause network interference.)
+  - Public, static IP
+  - Min 1GB RAM, 1 CPU (4GB RAM, 2CPU preferred for production installs)
+  - 2GB+ of storage
+  - Ubuntu 20.04 Installed
+- **Domain**
+  - A publicly owned domain (e.x. example.com, mysite.biz)
+  - Permission and access to modify DNS records via DNS service (e.x: Route53)
 
 ### 1. Prepare DNS[¶](https://docs.netmaker.org/quick-start.html#prepare-dns) <a href="#prepare-dns" id="prepare-dns"></a>
 
@@ -37,13 +37,13 @@ Create a wildcard A record pointing to the public IP of your VM. As an example, 
 
 Caddy will create 3 subdomains with this wildcard, EX:
 
-* dashboard.netmaker.example.com
-* api.netmaker.example.com
-* grpc.netmaker.example.com
+- dashboard.netmaker.example.com
+- api.netmaker.example.com
+- grpc.netmaker.example.com
 
 ### 2. Install Dependencies[¶](https://docs.netmaker.org/quick-start.html#install-dependencies) <a href="#install-dependencies" id="install-dependencies"></a>
 
-```
+```bash
 ssh root@your-host
 sudo apt-get update
 sudo apt-get install -y docker.io docker-compose wireguard
@@ -57,19 +57,19 @@ Make sure firewall settings are set for Netmaker both on the VM and with your cl
 
 Make sure the following ports are open both on the VM and in the cloud security groups:
 
-* **443 (tcp):** for Dashboard, REST API, and gRPC
-* **53 (udp and tcp):** for CoreDNS
-* **51821-518XX (udp):** for WireGuard - Netmaker needs one port per network, starting with 51821, so open up a range depending on the number of networks you plan on having. For instance, 51821-51830.
+- **443 (tcp):** for Dashboard, REST API, and gRPC
+- **53 (udp and tcp):** for CoreDNS
+- **51821-518XX (udp):** for WireGuard - Netmaker needs one port per network, starting with 51821, so open up a range depending on the number of networks you plan on having. For instance, 51821-51830.
 
-```
+```python
 sudo ufw allow proto tcp from any to any port 443 && sudo ufw allow 53/udp && sudo ufw allow 53/tcp && sudo ufw allow 51821:51830/udp
 ```
 
 **Again, based on your cloud provider, you may additionally need to set inbound security rules for your server (for instance, on AWS). This will be dependent on your cloud provider. Be sure to check before moving on:**
 
-* allow 443/tcp from all
-* allow 53/udp and 53/tcp from all
-* allow 51821-51830/udp from all
+- allow 443/tcp from all
+- allow 53/udp and 53/tcp from all
+- allow 51821-51830/udp from all
 
 ### 4. Install Netmaker[¶](https://docs.netmaker.org/quick-start.html#install-netmaker) <a href="#install-netmaker" id="install-netmaker"></a>
 
@@ -77,13 +77,13 @@ sudo ufw allow proto tcp from any to any port 443 && sudo ufw allow 53/udp && su
 
 **Note on COREDNS\_IP:** Depending on your cloud provider, the public IP may not be bound directly to the VM on which you are running. In such cases, CoreDNS cannot bind to this IP, and you should use the IP of the default interface on your machine in place of COREDNS\_IP. This command will get you the correct IP for CoreDNS in many cases:
 
-```
+```bash
 ip route get 1 | sed -n 's/^.*src \([0-9.]*\) .*$/\1/p'
 ```
 
 Now, insert the values for your base (wildcard) domain, public ip, and coredns ip.
 
-```
+```php
 wget -O docker-compose.yml https://raw.githubusercontent.com/gravitl/netmaker/master/compose/docker-compose.contained.yml
 sed -i 's/NETMAKER_BASE_DOMAIN/<your base domain>/g' docker-compose.yml
 sed -i 's/SERVER_PUBLIC_IP/<your server ip>/g' docker-compose.yml
@@ -92,7 +92,7 @@ sed -i 's/COREDNS_IP/<default interface ip>/g' docker-compose.yml
 
 Generate a unique master key and insert it:
 
-```
+```php
 tr -dc A-Za-z0-9 </dev/urandom | head -c 30 ; echo ''
 sed -i 's/REPLACE_MASTER_KEY/<your generated key>/g' docker-compose.yml
 ```
@@ -101,7 +101,7 @@ You may want to save this key for future use with the API.
 
 #### Prepare Caddy[¶](https://docs.netmaker.org/quick-start.html#prepare-caddy) <a href="#prepare-caddy" id="prepare-caddy"></a>
 
-```
+```bash
 wget -O /root/Caddyfile https://raw.githubusercontent.com/gravitl/netmaker/master/docker/Caddyfile
 
 sed -i 's/NETMAKER_BASE_DOMAIN/<your base domain>/g' /root/Caddyfile

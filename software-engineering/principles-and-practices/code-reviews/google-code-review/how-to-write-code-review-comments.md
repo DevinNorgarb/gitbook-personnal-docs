@@ -1,13 +1,13 @@
 # How to write code review comments
 
-### [eng-practices](https://google.github.io/eng-practices/)
+## [eng-practices](https://google.github.io/eng-practices/)
 
 ### Summary <a href="#summary" id="summary"></a>
 
-* Be kind.
-* Explain your reasoning.
-* Balance giving explicit directions with just pointing out problems and letting the developer decide.
-* Encourage developers to simplify code or add code comments instead of just explaining the complexity to you.
+- Be kind.
+- Explain your reasoning.
+- Balance giving explicit directions with just pointing out problems and letting the developer decide.
+- Encourage developers to simplify code or add code comments instead of just explaining the complexity to you.
 
 ### Courtesy <a href="#courtesy" id="courtesy"></a>
 

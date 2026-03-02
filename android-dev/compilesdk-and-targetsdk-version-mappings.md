@@ -6,11 +6,11 @@
 
 This is an overview of all Android versions and their corresponding identifiers for Android developers. Anyone is welcome to open [an issue or pull request](https://github.com/ebelinski/apilevels). Happy developing!
 
-* [Definitions](https://apilevels.com/#definitions)
-* &#x20;
-* [Footnotes](https://apilevels.com/#footnotes)
-* &#x20;
-* [See also](https://apilevels.com/#see-also)
+- [Definitions](https://apilevels.com/#definitions)
+- &#x20;
+- [Footnotes](https://apilevels.com/#footnotes)
+- &#x20;
+- [See also](https://apilevels.com/#see-also)
 
 | Version                                                                                                                                                                                                                                                                                               | SDK / API level                                        | [Version code](https://developer.android.com/reference/kotlin/android/os/Build.VERSION\_CODES) | Codename                                         | <p>Cumulative<br>usage <a href="https://apilevels.com/#fn:1">1</a></p> | Year  |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------- | ----- |

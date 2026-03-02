@@ -12,11 +12,11 @@ This is a detailed roadmap to walk you through the installation process.
 
 These are the steps for setting up the ESP-IDF for your ESP32.
 
-* [Step 1. Install Prerequisites](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html#get-started-prerequisites)
-* [Step 2. Get ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html#get-started-get-esp-idf)
-* [Step 3. Set up the Tools](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html#get-started-set-up-tools)
-* [Step 4. Set up the Environment Variables](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html#get-started-set-up-env)
-* [Step 5. First Steps on ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html#get-started-start-a-project)
+- [Step 1. Install Prerequisites](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html#get-started-prerequisites)
+- [Step 2. Get ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html#get-started-get-esp-idf)
+- [Step 3. Set up the Tools](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html#get-started-set-up-tools)
+- [Step 4. Set up the Environment Variables](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html#get-started-set-up-env)
+- [Step 5. First Steps on ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html#get-started-start-a-project)
 
 ### Step 1. Install Prerequisites[](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html#step-1-install-prerequisites)
 
@@ -26,53 +26,53 @@ In order to use ESP-IDF with the ESP32, you need to install some software packag
 
 To compile using ESP-IDF, you need to get the following packages. The command to run depends on which distribution of Linux you are using:
 
-*   Ubuntu and Debian:
+-   Ubuntu and Debian:
 
-    ```
+```php
     sudo apt-get install git wget flex bison gperf python3 python3-pip python3-venv cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0
-    ```
-*   CentOS 7 & 8:
+```php
+-   CentOS 7 & 8:
 
-    ```
+```php
     sudo yum -y update && sudo yum install git wget flex bison gperf python3 cmake ninja-build ccache dfu-util libusbx
-    ```
+```
 
 CentOS 7 is still supported but CentOS version 8 is recommended for a better user experience.
 
-*   Arch:
+-   Arch:
 
-    ```
+```php
     sudo pacman -S --needed gcc git make flex bison gperf python cmake ninja ccache dfu-util libusb
-    ```
+```
 
 Note
 
-* CMake version 3.16 or newer is required for use with ESP-IDF. Run “tools/idf\_tools.py install cmake” to install a suitable version if your OS versions does not have one.
-* If you do not see your Linux distribution in the above list then please check its documentation to find out which command to use for package installation.
+- CMake version 3.16 or newer is required for use with ESP-IDF. Run “tools/idf\_tools.py install cmake” to install a suitable version if your OS versions does not have one.
+- If you do not see your Linux distribution in the above list then please check its documentation to find out which command to use for package installation.
 
 #### For macOS Users[](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html#for-macos-users)
 
 ESP-IDF uses the version of Python installed by default on macOS.
 
-* Install CMake & Ninja build:
-  *   If you have [Homebrew](https://brew.sh/), you can run:
+- Install CMake & Ninja build:
+  -   If you have [Homebrew](https://brew.sh/), you can run:
 
-      ```
+```php
       brew install cmake ninja dfu-util
-      ```
-  *   If you have [MacPorts](https://www.macports.org/install.php), you can run:
+```php
+  -   If you have [MacPorts](https://www.macports.org/install.php), you can run:
 
-      ```
+```php
       sudo port install cmake ninja dfu-util
-      ```
-  * Otherwise, consult the [CMake](https://cmake.org/) and [Ninja](https://ninja-build.org/) home pages for macOS installation downloads.
-* It is strongly recommended to also install [ccache](https://ccache.dev/) for faster builds. If you have [Homebrew](https://brew.sh/), this can be done via `brew install ccache` or `sudo port install ccache` on [MacPorts](https://www.macports.org/install.php).
+```php
+  - Otherwise, consult the [CMake](https://cmake.org/) and [Ninja](https://ninja-build.org/) home pages for macOS installation downloads.
+- It is strongly recommended to also install [ccache](https://ccache.dev/) for faster builds. If you have [Homebrew](https://brew.sh/), this can be done via `brew install ccache` or `sudo port install ccache` on [MacPorts](https://www.macports.org/install.php).
 
 Note
 
 If an error like this is shown during any step:
 
-```
+```php
 xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
 ```
 
@@ -82,20 +82,20 @@ Then you need to install the XCode command line tools to continue. You can insta
 
 If you use Apple M1 platform and see an error like this:
 
-```
+```bash
 WARNING: directory for tool xtensa-esp32-elf version esp-2021r2-patch3-8.4.0 is present, but tool was not found
 ERROR: tool xtensa-esp32-elf has no installed versions. Please run 'install.sh' to install it.
 ```
 
 or:
 
-```
+```php
 zsh: bad CPU type in executable: ~/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
 ```
 
 Then you need to install Apple Rosetta 2 by running
 
-```
+```php
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 ```
 
@@ -103,13 +103,13 @@ Then you need to install Apple Rosetta 2 by running
 
 Based on macOS [Catalina 10.15 release notes](https://developer.apple.com/documentation/macos-release-notes/macos-catalina-10\_15-release-notes), use of Python 2.7 is not recommended and Python 2.7 is not included by default in future versions of macOS. Check what Python you currently have:
 
-```
+```php
 python --version
 ```
 
 If the output is like `Python 2.7.17`, your default interpreter is Python 2.7. If so, also check if Python 3 is not already installed on your computer:
 
-```
+```php
 python3 --version
 ```
 
@@ -136,7 +136,7 @@ To get ESP-IDF, navigate to your installation directory and clone the repository
 
 Open Terminal, and run the following commands:
 
-```
+```php
 mkdir -p ~/esp
 cd ~/esp
 git clone --recursive https://github.com/espressif/esp-idf.git
@@ -150,42 +150,42 @@ Consult [ESP-IDF Versions](https://docs.espressif.com/projects/esp-idf/en/latest
 
 Aside from the ESP-IDF, you also need to install the tools used by ESP-IDF, such as the compiler, debugger, Python packages, etc, for projects supporting ESP32.
 
-```
+```bash
 cd ~/esp/esp-idf
 ./install.sh esp32
 ```
 
 or with Fish shell
 
-```
+```bash
 cd ~/esp/esp-idf
 ./install.fish esp32
 ```
 
 The above commands install tools for ESP32 only. If you intend to develop projects for more chip targets then you should list all of them and run for example:
 
-```
+```bash
 cd ~/esp/esp-idf
 ./install.sh esp32,esp32s2
 ```
 
 or with Fish shell
 
-```
+```bash
 cd ~/esp/esp-idf
 ./install.fish esp32,esp32s2
 ```
 
 In order to install tools for all supported targets please run the following command:
 
-```
+```bash
 cd ~/esp/esp-idf
 ./install.sh all
 ```
 
 or with Fish shell
 
-```
+```bash
 cd ~/esp/esp-idf
 ./install.fish all
 ```
@@ -194,7 +194,7 @@ Note
 
 For macOS users, if an error like this is shown during any step:
 
-```
+```bash
 <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:xxx)
 ```
 
@@ -210,7 +210,7 @@ This setting only controls individual tools downloaded from GitHub releases, it 
 
 To prefer the Espressif download server when installing tools, use the following sequence of commands when running `install.sh`:
 
-```
+```javascript
 cd ~/esp/esp-idf
 export IDF_GITHUB_ASSETS="dl.espressif.com/github_assets"
 ./install.sh
@@ -220,7 +220,7 @@ Note
 
 For users in China, we recommend using our download server located in China for faster download speed.
 
-```
+```javascript
 cd ~/esp/esp-idf
 export IDF_GITHUB_ASSETS="dl.espressif.cn/github_assets"
 ./install.sh
@@ -238,13 +238,13 @@ The installed tools are not yet added to the PATH environment variable. To make 
 
 In the terminal where you are going to use ESP-IDF, run:
 
-```
+```php
 . $HOME/esp/esp-idf/export.sh
 ```
 
 or for fish (supported only since fish version 3.0.0):
 
-```
+```php
 . $HOME/esp/esp-idf/export.fish
 ```
 
@@ -254,9 +254,9 @@ If you plan to use esp-idf frequently, you can create an alias for executing `ex
 
 1.  Copy and paste the following command to your shell’s profile (`.profile`, `.bashrc`, `.zprofile`, etc.)
 
-    ```
+```bash
     alias get_idf='. $HOME/esp/esp-idf/export.sh'
-    ```
+```bash
 2. Refresh the configuration by restarting the terminal session or by running `source [path to profile]`, for example, `source ~/.bashrc`.
 
 Now you can run `get_idf` to set up or refresh the esp-idf environment in any terminal session.
@@ -283,7 +283,7 @@ The ESP-IDF build system does not support spaces in the paths to either ESP-IDF 
 
 Copy the project [get-started/hello\_world](https://github.com/espressif/esp-idf/tree/8fc8f3f4799/examples/get-started/hello\_world) to `~/esp` directory:
 
-```
+```bash
 cd ~/esp
 cp -r $IDF_PATH/examples/get-started/hello_world .
 ```
@@ -298,8 +298,8 @@ Now connect your ESP32 board to the computer and check under which serial port t
 
 Serial ports have the following naming patterns:
 
-* **Linux**: starting with `/dev/tty`
-* **macOS**: starting with `/dev/cu.`
+- **Linux**: starting with `/dev/tty`
+- **macOS**: starting with `/dev/cu.`
 
 If you are not sure how to check the serial port name, please refer to [Establish Serial Connection with ESP32](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/establish-serial-connection.html) for full details.
 
@@ -311,7 +311,7 @@ Keep the port name handy as it is needed in the next steps.
 
 Navigate to your `hello_world` directory, set ESP32 as the target, and run the project configuration utility `menuconfig`.
 
-```
+```bash
 cd ~/esp/hello_world
 idf.py set-target esp32
 idf.py menuconfig
@@ -339,13 +339,13 @@ If you are using one of the supported development boards, you can speed up your 
 
 Build the project by running:
 
-```
+```json
 idf.py build
 ```
 
 This command compiles the application and all ESP-IDF components, then it generates the bootloader, partition table, and application binaries.
 
-```
+```php
 $ idf.py build
 Running cmake in directory /path/to/hello_world/build
 Executing "cmake -G Ninja --warn-uninitialized /path/to/hello_world"...
@@ -437,7 +437,7 @@ To check if “hello\_world” is indeed running, type `idf.py -p PORT monitor` 
 
 This command launches the [IDF Monitor](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/tools/idf-monitor.html) application:
 
-```
+```php
 $ idf.py -p <PORT> monitor
 Running idf_monitor in directory [...]/esp/hello_world/build
 Executing "python [...]/esp-idf/tools/idf_monitor.py -b 115200 [...]/esp/hello_world/build/hello_world.elf"...
@@ -452,7 +452,7 @@ ets Jun  8 2016 00:22:57
 
 After startup and diagnostic logs scroll up, you should see “Hello world!” printed out by the application.
 
-```
+```php
     ...
     Hello world!
     Restarting in 10 seconds...
@@ -478,21 +478,21 @@ If you have such a problem, do the following:
 
 In the current version of ESP-IDF, main XTAL frequencies supported by ESP32 are as follows:
 
-* 26 MHz
-* 40 MHz
+- 26 MHz
+- 40 MHz
 
 Note
 
 You can combine building, flashing and monitoring into one step by running:
 
-```
+```go
 idf.py -p PORT flash monitor
 ```
 
 See also:
 
-* [IDF Monitor](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/tools/idf-monitor.html) for handy shortcuts and more details on using IDF monitor.
-* [idf.py](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/build-system.html#idf-py) for a full reference of `idf.py` commands and options.
+- [IDF Monitor](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/tools/idf-monitor.html) for handy shortcuts and more details on using IDF monitor.
+- [idf.py](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/build-system.html#idf-py) for a full reference of `idf.py` commands and options.
 
 **That is all that you need to get started with ESP32!**
 
@@ -524,7 +524,7 @@ The BSPs are distributed via [IDF Component Manager](https://docs.espressif.com/
 
 **Here is an example of how to add ESP-WROVER-KIT BSP to your project:**
 
-```
+```bash
 idf.py add-dependency esp_wrover_kit
 ```
 
@@ -534,13 +534,13 @@ More examples of BSP usage can be found in [BSP examples folder](https://github.
 
 Erasing the flash is also possible. To erase the entire flash memory you can run the following command:
 
-```
+```python
 idf.py -p PORT erase-flash
 ```
 
 For erasing the OTA data, if present, you can run this command:
 
-```
+```python
 idf.py -p PORT erase-otadata
 ```
 

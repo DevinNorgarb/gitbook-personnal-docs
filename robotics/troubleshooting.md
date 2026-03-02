@@ -2,7 +2,7 @@
 
 This page shares issues that users have run into and how they were resolved. Hopefully this will help to solves issues for others.
 
-### Vehicle Control <a href="#vehicle-control" id="vehicle-control"></a>
+## Vehicle Control <a href="#vehicle-control" id="vehicle-control"></a>
 
 **Vehicle has telemetry but does not respond to joystick**
 
@@ -32,7 +32,7 @@ _Carefully double check that you have entered these numbers correctly_. The Ethe
 
 You should be able to ping the companion computer from the surface computer. On the surface computer's command line enter:
 
-```
+```python
 ping 192.168.2.2
 ```
 
@@ -61,8 +61,8 @@ Check if the Autopilot is connected with following steps:
 1. Navigate to the system page in the Companion web interface
 2. Check the list of detected serial devices for an entry that says `Pixhawk Autopilot`
 3. If you do not see an entry that says `Pixhawk Autopilot`, check the autopilot connection with the Companion computer.
-   * You can test the autopilot and the usb cable by connecting the autopilot directly to your surface computer and checking the connection with QGroundControl.
-   * If you cannot connect to the autopilot:
+   - You can test the autopilot and the usb cable by connecting the autopilot directly to your surface computer and checking the connection with QGroundControl.
+   - If you cannot connect to the autopilot:
      1. Try using a different usb cable. Make sure that the USB cable has data lines, some USB cables only provide power and will not allow communication. You can connect the Pixhawk to the surface computer directly with the USB cable to verify that the USB cable works.
      2. Try connecting the autopilot to a different usb port
      3. Try replacing the autopilot
@@ -121,9 +121,9 @@ Verify that the video streaming service is active; it should be listed under the
 
 **If you are using a Windows computer:**
 
-* Disable/re-enable the network interface
-* Reboot
-* QGC installs three shortcuts: _QGC_, _QGC (GPU Safe Mode)_, and _QGC (GPU Compatibility Mode)_. Try launching QGC with each of these shortcuts
+- Disable/re-enable the network interface
+- Reboot
+- QGC installs three shortcuts: _QGC_, _QGC (GPU Safe Mode)_, and _QGC (GPU Compatibility Mode)_. Try launching QGC with each of these shortcuts
 
 ### Poor video streaming performance <a href="#poor-video-streaming-performance" id="poor-video-streaming-performance"></a>
 
@@ -133,24 +133,24 @@ Here are some tips for troubleshooting poor video performance:
 
 **In general:**
 
-* Bandwidth - Test the bandwidth at [192.168.2.2:2770/network](http://192.168.2.2:2770/network). The maximum theoretical bandwidth on a Raspberry Pi 3 is 100Mbps, if the bandwidth tests achieve greater than 70Mbps, it is a very good connection. Systems with bandwidths below 15Mbps should be diagnosed for issues.
-* Try another cable - Not all cables are created equal; some are really junk.
-* Update Software - Use the latest software to make sure you are getting the best performance.
-* Companion computer power supply - Most companion computers require a power supply capable of providing 5V at 2A. Smaller/weaker power supplies can severely affect performance of the companion computer.
-* Tether interface power supply - If you are using a tether interface board, make sure it has a solid power supply. Some laptop USB ports cannot provide enough power for the tether interface board to perform optimally. Try using a portable USB battery charger.
-* Tether interface connections - Make sure that all connections are well-seated and tight.
-* System resources - Open the system resource monitor and look at how much CPU and RAM your computer is using. Try closing other programs like anti-virus and screen recorders to make more system resources available to programs used to operate the vehicle.
-* Resolution - Modify the video stream Frame Size at [192.168.2.2:2770/camera](http://192.168.2.2:2770/camera). Change it to a value equal to or less than the resolution of your display.
+- Bandwidth - Test the bandwidth at [192.168.2.2:2770/network](http://192.168.2.2:2770/network). The maximum theoretical bandwidth on a Raspberry Pi 3 is 100Mbps, if the bandwidth tests achieve greater than 70Mbps, it is a very good connection. Systems with bandwidths below 15Mbps should be diagnosed for issues.
+- Try another cable - Not all cables are created equal; some are really junk.
+- Update Software - Use the latest software to make sure you are getting the best performance.
+- Companion computer power supply - Most companion computers require a power supply capable of providing 5V at 2A. Smaller/weaker power supplies can severely affect performance of the companion computer.
+- Tether interface power supply - If you are using a tether interface board, make sure it has a solid power supply. Some laptop USB ports cannot provide enough power for the tether interface board to perform optimally. Try using a portable USB battery charger.
+- Tether interface connections - Make sure that all connections are well-seated and tight.
+- System resources - Open the system resource monitor and look at how much CPU and RAM your computer is using. Try closing other programs like anti-virus and screen recorders to make more system resources available to programs used to operate the vehicle.
+- Resolution - Modify the video stream Frame Size at [192.168.2.2:2770/camera](http://192.168.2.2:2770/camera). Change it to a value equal to or less than the resolution of your display.
 
 **If you are using a Raspberry Pi camera:**
 
-* Delete the '--intra 1' setting at [192.168.2.2:2770/camera](http://192.168.2.2:2770/camera) and restart the camera.
-* Update the companion computer software at [192.168.2.2:2770/system](http://192.168.2.2:2770/system).
+- Delete the '--intra 1' setting at [192.168.2.2:2770/camera](http://192.168.2.2:2770/camera) and restart the camera.
+- Update the companion computer software at [192.168.2.2:2770/system](http://192.168.2.2:2770/system).
 
 **If you are using a Windows computer:**
 
-* Upgrade to Windows 10!
-* Try these three suggestions by [Bo Koppel](http://discuss.bluerobotics.com/t/video-delay-in-qgc/1335/5):
+- Upgrade to Windows 10!
+- Try these three suggestions by [Bo Koppel](http://discuss.bluerobotics.com/t/video-delay-in-qgc/1335/5):
   1. When using original power supply that supply laptop (but not charge at the same time) there is something probably in BIOS that slow down graphic card to save energy. That makes processor do some of the graphics calculations. (And actually consume even more energy!) Solution: Go on battery or use a large powersupply (in our case 120W) How to quick check if this is the problem: pull out powersupply, if this is the case, latency disappear in two seconds.
   2. Nvidia powerful graphic cards use an engine called PhysX for games etc. It seams QGC does not use that. Also QGC works default on motherboard graphic card, not on the more powerful Nvidia extension card. Solution: In Nvidias “control panel” select under “Programs” QGC so Nvidia forces QGC to use Nvidia card. Some graphic cards also needs tweeking in Nvidia 3D setup (same place as above line)
   3. Real crazy in a few computers: Switch system fonts from 125% size to 100% (Right click desktop, “adjust screen” then “monitor” translated from Swedish OS) Check the 100% tickbox instead of 125% Log out and log in again, fixed….
@@ -185,6 +185,6 @@ Perform these steps to recalibrate the compass:
 
 We're always trying to make our documentation, instructions, software, and user experience better. If you're having an issue with anything, please report it so that we can address it as soon as possible! Here's where to do that depending on what's wrong:
 
-* **ArduSub Issues:** For anything related to the ArduSub software that runs on the Pixhawk and controls the ROV, reports issues on the [ArduSub Github Issues Page](https://github.com/bluerobotics/ardusub/issues). If you're unsure where your issue should be posted, you can report it here.
-* **QGroundControl Issues:** For anything related to the QGroundControl software, joystick setup, video streaming, etc., please report an issue on the [QGroundControl Github Issues Page](https://github.com/mavlink/qgroundcontrol/issues).
-* **Documentation:** For anything related to the documentation and instructions here, please report an issue on the [ArduSub Documentation Github Issues Page](https://github.com/bluerobotics/ardusub-gitbook/issues).
+- **ArduSub Issues:** For anything related to the ArduSub software that runs on the Pixhawk and controls the ROV, reports issues on the [ArduSub Github Issues Page](https://github.com/bluerobotics/ardusub/issues). If you're unsure where your issue should be posted, you can report it here.
+- **QGroundControl Issues:** For anything related to the QGroundControl software, joystick setup, video streaming, etc., please report an issue on the [QGroundControl Github Issues Page](https://github.com/mavlink/qgroundcontrol/issues).
+- **Documentation:** For anything related to the documentation and instructions here, please report an issue on the [ArduSub Documentation Github Issues Page](https://github.com/bluerobotics/ardusub-gitbook/issues).

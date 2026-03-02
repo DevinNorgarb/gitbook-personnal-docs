@@ -18,9 +18,9 @@ In today’s tutorial, we’ll teach you how you can safely overclock your Pi 4!
 
 In most cases, overclocking is safe and will not void your warranty **if done so in an appropriate manner**. However, you should still be aware that there are several settings that will void the warranty by flipping a hardware switch inside your Pi:
 
-* over\_voltage greater than 6
-* force\_turbo=1
-* temp\_limit greater than 85
+- over\_voltage greater than 6
+- force\_turbo=1
+- temp\_limit greater than 85
 
 There will always be a risk of your Raspberry Pi 4 overheating while being overclocked. This tutorial will teach you the safest method, but please be aware of and accept the risks that you will undertake by continuing!
 
@@ -30,9 +30,9 @@ There will always be a risk of your Raspberry Pi 4 overheating while being overc
 
 Before we get started, let’s first go through what you’ll need for this tutorial. Apart from your [R](https://www.seeedstudio.com/Raspberry-Pi-4-Computer-Model-B-4GB-p-4077.html?utm\_source=blog\&utm\_medium=blog)[asp](https://www.seeedstudio.com/Raspberry-Pi-4-Computer-Model-B-4GB-p-4077.html)[berry Pi 4](https://www.seeedstudio.com/Raspberry-Pi-4-Computer-Model-B-4GB-p-4077.html?utm\_source=blog\&utm\_medium=blog), you’ll need:
 
-* A Raspberry Pi 4 Cooling Solution – Heatsink + Fan recommended
-* SD Card with Raspberry Pi OS Installed
-* A [Reliable Power Supply](https://www.seeedstudio.com/power-c-865.html?utm\_source=blog\&utm\_medium=blog) (official version is highly recommended) to ensure your Pi is not being starved of power
+- A Raspberry Pi 4 Cooling Solution – Heatsink + Fan recommended
+- SD Card with Raspberry Pi OS Installed
+- A [Reliable Power Supply](https://www.seeedstudio.com/power-c-865.html?utm\_source=blog\&utm\_medium=blog) (official version is highly recommended) to ensure your Pi is not being starved of power
 
 #### **Recommended Cooling Solution:** [**Black Warrior ICE Tower CPU Cooling Fan**](https://www.seeedstudio.com/Black-Warrior-ICE-Tower-CPU-Cooling-Fan-for-Raspberry-Pi-Support-Pi-4-p-4319.html?utm\_source=blog\&utm\_medium=blog)
 
@@ -52,7 +52,7 @@ Here’s how you can update your Pi 4 to the latest firmware:
 
 1. Open the terminal on your Raspberry Pi and enter the following code:
 
-```
+```bash
 sudo apt update
 
 sudo apt full-upgrade
@@ -62,7 +62,7 @@ sudo apt full-upgrade
 
 2\. Afterwards, reboot the system for the update to be applied!
 
-```
+```bash
 sudo reboot
 ```
 
@@ -70,13 +70,13 @@ sudo reboot
 
 The next step before you overclock your Pi 4 is to check your CPU base speed. It is good to check the default clock speed to see the changeable value, which can be done by opening the command line and entering the following:
 
-```
+```bash
 Lscpu
 ```
 
 or
 
-```
+```bash
 cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
 ```
 
@@ -88,57 +88,57 @@ This indicates that my Pi 4 CPU base speed is 600MHz, the speed requested by the
 
 To overclock your Pi 4, we’ll mainly be **tinkering with the config.txt file** under core configuration settings. Follow the instructions below carefully to avoid any errors.
 
-* Open your terminal window and enter the following code:
+- Open your terminal window and enter the following code:
 
-```
+```php
 sudo nano /boot/config.txt
 ```
 
-* Scroll down to the section marked:
+- Scroll down to the section marked:
 
 ```
-#uncomment to overclock the arm. 700 MHz is the default.
-#arm_freq=800
+## uncomment to overclock the arm. 700 MHz is the default.
+## arm_freq=800
 ```
 
-* Change the config settings to:
+- Change the config settings to:
 
 ```
-#uncomment to overclock the arm. 700 MHz is the default.
+## uncomment to overclock the arm. 700 MHz is the default.
 over_voltage=2
 arm_freq=1750
 ```
 
-* Save the file with CTRL+O (press RETURN) and use CTRL+X to exit. Now, restart your Raspberry Pi:
+- Save the file with CTRL+O (press RETURN) and use CTRL+X to exit. Now, restart your Raspberry Pi:
 
-```
+```php
 sudo reboot
 ```
 
-* Once your Raspberry Pi boots up again, use the vcgencmd command to check your new, faster clock speed:
+- Once your Raspberry Pi boots up again, use the vcgencmd command to check your new, faster clock speed:
 
-```
+```bash
 watch -n 1 vcgencmd measure_clock arm
 ```
 
 This command will monitor your real-time speed. Browse a few web pages on a few tabs and watch your CPU head on up to 1.75GHz!
 
-#### **Step 5: Overclocking your Pi 4 to even higher clock speed (2GHz)!**
+### **Step 5: Overclocking your Pi 4 to even higher clock speed (2GHz)!**
 
 If you think overclocking it to around 1.75GHz is impressive, let’s take things up a notch, by cranking your Pi 4 CPU to 2.0GHz.
 
 We will need to increase over\_voltage to adjust the core CPU/GPU voltage to accommodate the higher clock speed. We will be cranking the over\_voltage value up to 6, which is the **highest without voiding the warranty**.
 
-* Edit the config.txt file with the following settings:
+- Edit the config.txt file with the following settings:
 
-```
+```bash
 over_voltage=6
 arm_freq=2000
 ```
 
-* Save the file and exit Nano by CTRL+O and CTRL+X. Reboot your Raspberry Pi 4 and run:
+- Save the file and exit Nano by CTRL+O and CTRL+X. Reboot your Raspberry Pi 4 and run:
 
-```
+```bash
 sudo reboot
 watch -n 1 vcgencmd measure_clock arm
 ```
@@ -159,9 +159,9 @@ gpu_freq=750
 
 The gpu\_freq command will set core\_freq, h264\_freq, isp\_freq, v3d\_freq and hevc\_freq all together which drives the L2 cache and memory bus for higher performance. A value of 750 is the highest value we’ve gotten after rigorous testing.
 
-* Save the file and exit Nano by CTRL+O and CTRL+X. Reboot your Pi 4 Now and you should see your device running at 2.147GHz!
+- Save the file and exit Nano by CTRL+O and CTRL+X. Reboot your Pi 4 Now and you should see your device running at 2.147GHz!
 
-```
+```python
 sudo reboot
 watch -n 1 vcgencmd measure_clock arm
 ```
@@ -178,7 +178,7 @@ Thanks for reading! PS. Here is a [list of warning icons](https://www.raspberryp
 
 Keen to learn more? Here are some of our other articles that may interest you:
 
-* [Machine Learning Powered Inventory Tracking with Raspberry Pi](https://blog.seeedstudio.com/2021/03/22/machine-learning-powered-inventory-tracking-with-raspberry-pi/)
-* [Build a Raspberry Pi Security Camera using Raspberry Pi Camera!](https://blog.seeedstudio.com/2021/02/05/build-a-raspberry-pi-security-camera-using-raspberry-pi-camera/)
-* [Build a Raspberry Pi Line Following Robot!](https://blog.seeedstudio.com/2021/02/04/raspberry-pi-line-following-robot/)
-* [How To Configure WiFi on Raspberry Pi: Step By Step Tutorial](https://www.seeedstudio.com/blog/2021/01/25/three-methods-to-configure-raspberry-pi-wifi/)
+- [Machine Learning Powered Inventory Tracking with Raspberry Pi](https://blog.seeedstudio.com/2021/03/22/machine-learning-powered-inventory-tracking-with-raspberry-pi/)
+- [Build a Raspberry Pi Security Camera using Raspberry Pi Camera!](https://blog.seeedstudio.com/2021/02/05/build-a-raspberry-pi-security-camera-using-raspberry-pi-camera/)
+- [Build a Raspberry Pi Line Following Robot!](https://blog.seeedstudio.com/2021/02/04/raspberry-pi-line-following-robot/)
+- [How To Configure WiFi on Raspberry Pi: Step By Step Tutorial](https://www.seeedstudio.com/blog/2021/01/25/three-methods-to-configure-raspberry-pi-wifi/)

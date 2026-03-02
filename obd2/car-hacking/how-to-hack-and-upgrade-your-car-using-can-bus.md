@@ -1,33 +1,33 @@
 # How to Hack and Upgrade Your Car, Using CAN Bus
 
-### Introduction: How to Hack and Upgrade Your Car, Using CAN Bus
+## Introduction: How to Hack and Upgrade Your Car, Using CAN Bus
 
 This document is aimed at those unfamiliar with CAN bus or the reverse engineering process, it will cover some very basic and advanced concepts.
 
 It is assumed that the reader has moderate programming knowledge and basic electronics knowledge, however, links to resources will be provided in each section for those that need additional information.
 
-#### In this tutorial we will cover:
+### In this tutorial we will cover:
 
-* What is CAN bus?
-* The basics of an Arduino microcontroller.
-* Basic electronics knowledge.
-* CAN bus electronics.
-* How to retrieve data from a vehicle’s CAN bus network.
-* How to interpret data from a CAN bus network.
-* How to build a software or hardware interface to interpret the data.
+- What is CAN bus?
+- The basics of an Arduino microcontroller.
+- Basic electronics knowledge.
+- CAN bus electronics.
+- How to retrieve data from a vehicle’s CAN bus network.
+- How to interpret data from a CAN bus network.
+- How to build a software or hardware interface to interpret the data.
 #### Required Electronics
 
 To follow this tutorial's content properly, you will need several key items which are listed below. Links to online sellers are included in the equipment sources section.
 
 #### You will need:
 
-* A SparkFun CAN bus shield
-* A micro SD card.
-* A DB9 to OBD connector, for connecting to the diagnostics port of the vehicle.
-* Arduino UNO
-* Arduino Pin headers for soldering to the CAN shield
-* Arduino Male to Male, Male to Female and Female to Female jumper wires.
-* Soldering Iron and solder.
+- A SparkFun CAN bus shield
+- A micro SD card.
+- A DB9 to OBD connector, for connecting to the diagnostics port of the vehicle.
+- Arduino UNO
+- Arduino Pin headers for soldering to the CAN shield
+- Arduino Male to Male, Male to Female and Female to Female jumper wires.
+- Soldering Iron and solder.
 
 Please note that you do not need the exact hardware listed, you can still use this tutorial should you use alternative hardware such as a Seeeduino CAN bus shield, however, the code provided will only work with the Sparkfun shield, but can be modified for other hardware.
 
@@ -53,23 +53,23 @@ Please note, the systems you are working on are electrical, as such, there are p
 
 **When working with electrical systems that may have high voltage such as elevators.**
 
-* Wear nonconductive or electrically insulating gloves
-* Remove all jewellery
-* Wear long sleeve overalls
-* Wear any other appropriate Personal Protective Equipment (PPE)
+- Wear nonconductive or electrically insulating gloves
+- Remove all jewellery
+- Wear long sleeve overalls
+- Wear any other appropriate Personal Protective Equipment (PPE)
 
 **When working with electrically sensitive systems that may be damaged by static discharge take appropriate steps to protect yourself and others.**
 
-* Wear a grounding wrist strap that is connected to the chassis of the device you are working on.
-* Wear nonconductive or electrically insulating gloves.
-* Avoid wearing clothing that builds a static charge
+- Wear a grounding wrist strap that is connected to the chassis of the device you are working on.
+- Wear nonconductive or electrically insulating gloves.
+- Avoid wearing clothing that builds a static charge
 
 **When working with systems that may cause injury to yourself or others, practice safe behaviours.**
 
-* Do not test systems in areas that put anyone in danger
-* Do not test systems that put yourself in danger without appropriate precautions.
-* Do not do anything to a system without research or investigation into the possible ramifications.
-* Do not leave a system unattended or accessible whilst in a state where it may cause injury.
+- Do not test systems in areas that put anyone in danger
+- Do not test systems that put yourself in danger without appropriate precautions.
+- Do not do anything to a system without research or investigation into the possible ramifications.
+- Do not leave a system unattended or accessible whilst in a state where it may cause injury.
 
 #### Legal requirements
 
@@ -119,12 +119,12 @@ If you are working on a non-automotive system such as an elevator or aircraft, y
 
 Unfortunately, locating these diagrams is a process specific to your vehicle or system, however, recommended avenues to locate these diagrams include:
 
-* Haynes Manual
-* Maintenance manual for the equipment
-* Diagrams glued to internal panels
-* Search engine searches
-* Ask a local garage
-* Ask an authorized dealer or garage
+- Haynes Manual
+- Maintenance manual for the equipment
+- Diagrams glued to internal panels
+- Search engine searches
+- Ask a local garage
+- Ask an authorized dealer or garage
 
 If you are unable to locate a wiring diagram from any of these sources, then there are alternative options.
 
@@ -186,24 +186,24 @@ If you cannot locate the CAN bus lines, then it is likely your vehicle does not 
 
 If you have successfully found CAN bus lines, then you should do the following:
 
-* Make a note of the other wires near the CAN lines or connected to the same device the CAN lines are connected to.
-* Read the voltages from the wires with the multimeter by connecting one probe to ground and the other to each of the wires, noting this information down.
-* Draw a clean diagram of the circuit you are going to interface with.
+- Make a note of the other wires near the CAN lines or connected to the same device the CAN lines are connected to.
+- Read the voltages from the wires with the multimeter by connecting one probe to ground and the other to each of the wires, noting this information down.
+- Draw a clean diagram of the circuit you are going to interface with.
 
 #### 1.8 Next steps
 
 Now that you have successfully accessed the CAN bus lines of your systems you need to think about what types of data you expect to retrieve from the network. For instance, if you are connected to the dashboard clusters, you will be expecting information such as:
 
-* ABS ( Anti-Lock Braking System)
-* ESP ( Electronic Stability Control )
-* SRS (Supplement restrain system AKA: Airbags)
-* Seat belt not in use
-* Tire pressure warning
-* Indicators (independent left and right or joined light)
-* All external lighting configurations ( Beam, dipped, fog, side lights, hazards etc.)
-* Speed
-* Engine Faults.
-* Tachometer ( Distance counter )
+- ABS ( Anti-Lock Braking System)
+- ESP ( Electronic Stability Control )
+- SRS (Supplement restrain system AKA: Airbags)
+- Seat belt not in use
+- Tire pressure warning
+- Indicators (independent left and right or joined light)
+- All external lighting configurations ( Beam, dipped, fog, side lights, hazards etc.)
+- Speed
+- Engine Faults.
+- Tachometer ( Distance counter )
 
 Note the expected information down in a grid like the one in the pictures for this step
 
@@ -262,10 +262,10 @@ If you are following these instructions whilst connected to the diagnostics port
 When making a diagnostic request for data, the query consists of 4 variable bytes.\
 ID, the first byte is ID which is always 2015 ( A data request ).
 
-* Ch1, the second is the query length (Always 2 bytes for SAE Standard)
-* Ch2, the third byte is the mode (Wikipedia, 2017).
-* Ch3, the fourth is the data requested, these are called Parameter ID’s (PIDS)\[1]
-* Ch4 – ch8 are unused in a request.
+- Ch1, the second is the query length (Always 2 bytes for SAE Standard)
+- Ch2, the third byte is the mode (Wikipedia, 2017).
+- Ch3, the fourth is the data requested, these are called Parameter ID’s (PIDS)\[1]
+- Ch4 – ch8 are unused in a request.
 
 You send the following frame to get back diagnostics data:
 
@@ -277,15 +277,15 @@ The unused last five channels may or may not all be used to represent the reques
 
 Most are of a range to be adequately represented when divided into values between 0 and 255. However, some may require more granularity such as RPM.In order to send data into the network, you will need to use the code from the demonstration code entitled “Demo 2”, you will need to changes the values in the bottom of the code for the ID which looks like this: “message.id = 0;” to the Data request ID of 2015. You will also need to change the code for each channel from this: message.data\[0] = 0; to the respective value as explained above.
 
-* message.id = 2015; //The ID for the frame you are sending
-* message.data\[0] = 2; // place your custom value for ch1 here
-* message.data\[1] = 1; // place your custom value for ch2 here
-* message.data\[2] = 17; // place your custom value for ch3 here
-* message.data\[3] = 0; // place your custom value for ch4 here
-* message.data\[4] = 0; // place your custom value for ch5 here
-* message.data\[5] = 0; // place your custom value for ch6 here
-* message.data\[6] = 0; // place your custom value for ch7 here
-* message.data\[7] = 0; // place your custom value for ch8 here
+- message.id = 2015; //The ID for the frame you are sending
+- message.data\[0] = 2; // place your custom value for ch1 here
+- message.data\[1] = 1; // place your custom value for ch2 here
+- message.data\[2] = 17; // place your custom value for ch3 here
+- message.data\[3] = 0; // place your custom value for ch4 here
+- message.data\[4] = 0; // place your custom value for ch5 here
+- message.data\[5] = 0; // place your custom value for ch6 here
+- message.data\[6] = 0; // place your custom value for ch7 here
+- message.data\[7] = 0; // place your custom value for ch8 here
 
 which will result in the following being sent to the CAN network: < 2015, 2, 1, 17,0,0,0,0,0 >
 
@@ -438,19 +438,19 @@ For very simple projects that utilise an Arduino, the generic LCD display may be
 
 **The Nextion 2.4” display:**
 
-* Cost - £12
-* Dimensions – 60 x 40 x 6mm
-* Operation – Completely Independently or in conjunction with other hardware
-* Features – General Purpose Input Outputs, Real Time Clock, RGB Screen, Touchscreen.
-* Control – Can control other hardware or be controlled by other hardware
+- Cost - £12
+- Dimensions – 60 x 40 x 6mm
+- Operation – Completely Independently or in conjunction with other hardware
+- Features – General Purpose Input Outputs, Real Time Clock, RGB Screen, Touchscreen.
+- Control – Can control other hardware or be controlled by other hardware
 
 **Generic Arduino 2.4” display:**
 
-* Cost - £3 + Arduino
-* Dimensions – 60 x 40 x 24mm
-* Operation – Requires Arduino to operate
-* Features – RGB Screen, Touchscreen.
-* Control – Can be controlled by Arduino.
+- Cost - £3 + Arduino
+- Dimensions – 60 x 40 x 24mm
+- Operation – Requires Arduino to operate
+- Features – RGB Screen, Touchscreen.
+- Control – Can be controlled by Arduino.
 
 #### 6.4 Interface using nextion
 
@@ -567,14 +567,14 @@ It is recommended you purchase a kit to learn the basics such as the one linked 
 
 Please learn the following topics:
 
-* Binary numbers
-* DC circuits
-* Input/output devices
+- Binary numbers
+- DC circuits
+- Input/output devices
 
 And for further knowledge to assist with following this document, please learn:
 
-* logic gates
-* Systems
+- logic gates
+- Systems
 
 For Programming knowledge, please refer to: [https://www.arduino.cc/en/Guide/ArduinoUno](https://www.arduino.cc/en/Guide/ArduinoUno)
 
@@ -582,15 +582,15 @@ Followed by: [https://www.arduino.cc/en/Tutorial/BuiltInExample...](https://www.
 
 Please work through the following to understand how the Arduino operates:
 
-* Section 1: Analog Read Serial
-* Section 1: Digital Read Serial
-* Section 2: Button
-* Section 2: Debounce
-* Section 4: Serial Passthrough
-* Section 5: Arrays
-* Section 5: For loop
-* Section 5: If statements
-* Section 5: While statements
+- Section 1: Analog Read Serial
+- Section 1: Digital Read Serial
+- Section 2: Button
+- Section 2: Debounce
+- Section 4: Serial Passthrough
+- Section 5: Arrays
+- Section 5: For loop
+- Section 5: If statements
+- Section 5: While statements
 
 For knowledge relating to networks, please refer to the following resource:
 
@@ -598,9 +598,9 @@ For knowledge relating to networks, please refer to the following resource:
 
 Please read about:
 
-* Bus networks
-* Star networks
-* Point to Point networks
+- Bus networks
+- Star networks
+- Point to Point networks
 
 For knowledge related to locating CAN bus lines, please refer to:
 

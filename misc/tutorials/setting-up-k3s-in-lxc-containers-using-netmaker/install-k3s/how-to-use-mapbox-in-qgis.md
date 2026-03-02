@@ -10,7 +10,7 @@ This tutorial requires that you have an existing Mapbox account and have set up 
 
 {% stepper %}
 {% step %}
-### Create a Map Style in Mapbox
+## Create a Map Style in Mapbox
 
 The first thing you will need to do in Mapbox is to create a map style in your studio ↗: https://www.mapbox.com/studio/. To familiarize yourself with how to do that, visit the Mapbox tutorial on creating styles ↗: https://www.mapbox.com/help/create-a-custom-style/. If you are just interested in a predesigned basemap, select one of the style templates. Type in the name for your new map style.
 

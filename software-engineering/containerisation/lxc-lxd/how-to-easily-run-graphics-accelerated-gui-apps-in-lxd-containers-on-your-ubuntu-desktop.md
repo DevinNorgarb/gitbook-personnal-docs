@@ -8,14 +8,14 @@ In that older post, we saw how to manually setup a LXD container in order to run
 
 In this post, we are going to see how to easily set up our LXD installation in order to be able to launch on demand containers that we can run GUI apps in them. First, we will see the instructions and explanation on how to use them. Then, we explain these instructions in detail. And finally we go through some common troubleshooting issues.
 
-### Prerequisites
+## Prerequisites
 
 The following have been tested with
 
-* the host runs either _**Ubuntu 18.04**_ or _**Ubuntu 16.04**_
-* the containers run either _**Ubuntu 18.04**_ or _**Ubuntu 16.04**_ or _**Ubuntu 14.04**_ or _**Ubuntu 12.04**_
-* LXD version 3.0 or newer (probably works fine with LXD 2.0.8+ as well)
-* works fine with either the LXD _**deb package**_ or the LXD _**snap package**_
+- the host runs either _**Ubuntu 18.04**_ or _**Ubuntu 16.04**_
+- the containers run either _**Ubuntu 18.04**_ or _**Ubuntu 16.04**_ or _**Ubuntu 14.04**_ or _**Ubuntu 12.04**_
+- LXD version 3.0 or newer (probably works fine with LXD 2.0.8+ as well)
+- works fine with either the LXD _**deb package**_ or the LXD _**snap package**_
 
 To verify whether you run the deb package or the snap package, run the command **`which lxd`**. If the output is `/usr/bin/lxd`, then you have the deb package of LXD. Otherwise, if it is `/snap/bin/lxd`, you have the snap package of LXD.
 
@@ -29,7 +29,7 @@ This step is _**only required if**_ you run _**the deb package of LXD**_. If ins
 
 Run on the host (only once) the following command ([source](https://tribaal.io/nicer-mounting-home-in-lxd.html)): (_**Note:**_ if you do not use the _bash_ shell, then _**$UID**_ is the user-id of the current user. You can replace _**$UID**_ with _**$(id -u)**_ in that case.)
 
-```
+```php
 $ echo "root:$UID:1" | sudo tee -a /etc/subuid /etc/subgid
 [sudo] password for myusername: 
 root:1000:1
@@ -46,7 +46,7 @@ Download the file [lxdguiprofile.txt](https://blog.simos.info/wp-content/uploads
 
 Then, create an empty LXD profile with the name _**gui**_. Finally, put the downloaded profile configuration into the newly created _**gui**_ profile.
 
-```
+```php
 $ lxc profile create gui
 Profile gui created
 
@@ -56,7 +56,7 @@ $
 
 Verify that the profile has been created.
 
-```
+```php
 $ lxc profile list
 +---------------+---------+
 | NAME          | USED BY |
@@ -73,7 +73,7 @@ You can view the contents of the profile _**gui**_ by running _**lxc profile sho
 
 Let’s launch some GUI containers in LXD. The _**gui**_ LXD profile only has instructions related to running GUI applications. Due to this, you need to specify first another profile with information on the disk and the networking. The _**default**_ LXD profile is suitable for this. You may use [a _**bridge**_ profile](https://blog.simos.info/how-to-make-your-lxd-containers-get-ip-addresses-from-your-lan-using-a-bridge/) or [_**macvlan**_ profile](https://blog.simos.info/how-to-make-your-lxd-container-get-ip-addresses-from-your-lan/) instead.
 
-```
+```php
 $ lxc launch --profile default --profile gui ubuntu:18.04 gui1804
 Creating gui1804
 Starting gui1804
@@ -87,7 +87,7 @@ You have launched two containers, with Ubuntu 18.04 and Ubuntu 16.04 respectivel
 
 Next, make sure that the containers are up and running. In the LXD profile there are instructions to install additional packages automatically for us. That takes time. Here is how we check. We get a shell as the non-root account _**ubuntu**_ in the container, and _**tail**_ the end of the _**cloud-init**_ log file. It says that it has _**0 failures**_, it took (on this case) about _**22 seconds**_ to complete, and the startup was _**successful**_.
 
-```
+```php
 $ lxc exec gui1804 -- sudo --user ubuntu --login
 To run a command as administrator (user "root"), use "sudo <command>".
 See "man sudo_root" for details.
@@ -147,7 +147,7 @@ In the following subsections, we see some useful examples.
 
 We are creating a GUI container in order to run Firefox from it. It will be a separate and independent instance of Firefox compared to our desktop browser.
 
-```
+```php
 $ lxc launch --profile default --profile gui ubuntu:18.04 firefox
 Creating firefox
 Starting firefox
@@ -166,7 +166,7 @@ ubuntu@firefox:~$ firefox
 
 [redet](http://billposer.org/Software/redet.html) is a Tcl/Tk program that [does not run easily on Ubuntu 18.04](https://askubuntu.com/questions/1031632/tcl-tk-programs-fails-after-upgrade-to-18-04) because it needs some extra packaging effort for newer versions of Ubuntu. One option would have been to install Ubuntu 12.04 in VirtualBox. Here is the LXD alternative: We launch an Ubuntu 12.04 container, then install _**redet**_ and finally run it. It took around 40 seconds from launch to GUI.
 
-```
+```php
 $ lxc launch --profile default --profile gui ubuntu:12.04 redet
 Creating redet
 Starting redet
@@ -190,7 +190,7 @@ Public License as published by the Free Software Foundation.
 
 When you need to run a particular Windows program with Wine, you would prefer not to install all the dependencies on your desktop Ubuntu but rather have them confined into a container. Here is how to do this. We launch a new GUI container called _**wine**_, then [install Wine (package wine-stable, Wine version 3.0) according to the official instructions](https://wiki.winehq.org/Ubuntu), and finally install a Windows program. We can reuse the same container to install more Windows programs.
 
-```
+```php
 $ lxc launch --profile default --profile gui ubuntu:18.04 wine
 Creating wine
 Starting wine
@@ -212,7 +212,7 @@ ubuntu@wine:~$ sudo apt install wine-stable
 
 Then, you can set up the environment to run [winetricks](https://wiki.winehq.org/Winetricks) in order to easily install Windows programs.
 
-```
+```javascript
 ubuntu@wine:~$ echo export PATH=\"/opt/wine-stable/bin:\$PATH\" >> ~/.profile 
 ubuntu@wine:~$ source ~/.profile 
 ubuntu@wine:~$ which wine
@@ -225,7 +225,7 @@ ubuntu@wine:~$ ./winetricks
 
 We have installed Internet Explorer through winetricks and here it is,
 
-```
+```javascript
 ubuntu@wine:~$ wine .wine/drive_c/Program\ Files/Internet\ Explorer/iexplore.exe
 ```
 
@@ -235,7 +235,7 @@ ubuntu@wine:~$ wine .wine/drive_c/Program\ Files/Internet\ Explorer/iexplore.exe
 
 Let’s have a closer look at the _**gui**_ LXD profile contents.
 
-```
+```php
 $ lxc profile show gui
 config:
   environment.DISPLAY: :0
@@ -270,13 +270,13 @@ used_by:
 
 First, there is _**environment.DISPLAY**_, with the default value _**:0**_. This is an environment variable, and has the value of the default display of the host’s X11 server. You may have to change this to :1 if you have more displays (for example, multiple graphics cards). Here is how to set this to :1,
 
-```
+```php
 $ lxc profile set gui environment.DISPLAY :1
 ```
 
 The [raw.idmap](https://github.com/lxc/lxd/blob/master/doc/userns-idmap.md) has a value that refers to the sets of $UID/$GID of the non-root user on the host and in the container. By default on Ubuntu the default ID for the first non-root account is 1000 (both user ID and group ID). This is necessary for the bind-mounting of sockets of the host to the container. If you need to change it, here is how to do it. Because we use the _**both**_ keyword, the first number (i.e. 1000) is the $UID/$GID on the host, and the second number (i.e. 1001) is the $UID/$GID of the non-user account in the container.
 
-```
+```php
 $ lxc profile set gui raw.idmap "both 1000 1001"
 ```
 
@@ -304,7 +304,7 @@ We do not edit this node, it will include the created containers that have this 
 
 If you want to run Internet Exploerr from the container, you can simply run from a terminal window the following,
 
-```
+```php
 $ lxc exec wine -- sudo --login --user ubuntu /opt/wine-stable/bin/wine /home/ubuntu/.wine/drive_c/Program\ Files/Internet\ Explorer/iexplore.exe
 ```
 
@@ -312,7 +312,7 @@ and that’s it.
 
 To make a shortcut, create the following .desktop file on the host and finally use _**desktop-file-install**_ to install into _**/usr/share/applications/**_.
 
-```
+```php
 $ cat > lxd-iexplore.desktop
 [Desktop Entry]
 Version=1.0
@@ -340,7 +340,7 @@ Here is the icon on the Launcher. Simply drag from the File Manager and drop to 
 
 You get this error when you create a container and then very quickly try to connect to it with a shell. Here is how it looks.
 
-```
+```php
 $ lxc launch --profile default --profile gui ubuntu:18.04 gui1804
 Creating gui1804
 Starting gui1804
@@ -356,7 +356,7 @@ The Ubuntu container images come with _**cloud-init**_ instructions that, among 
 
 You got a shell in the newly created container, but when you try to use the audio, you get _**Connection refused**_. Here is how it looks,
 
-```
+```bash
 ubuntu@gui1804:~$ pactl info
 Connection failure: Connection refused
 ubuntu@gui1804:~$
@@ -364,7 +364,7 @@ ubuntu@gui1804:~$
 
 The _**cloud-init**_ instructions in the _**gui**_ LXD profile have commands to install packages and commands to setup the PulseAudio environment variable. The sequence is to install first the packages, and then add _**PULSE\_SERVER**_ in the _**\~/.profile**_. This means that if you get a shell in the container before _**cloud-init**_ has completed, you have missed the addition of _**PULSE\_SERVER**_ in _**\~/.profile**_. As a solution, you can log out and then connect again. Or, do
 
-```
+```python
 ubuntu@gui1804:~$ source ~/.profile
 ubuntu@gui1804:~$ pactl info
 Server String: unix:/tmp/.pulse-native
@@ -377,7 +377,7 @@ Server Protocol Version: 32
 
 Yes, you can. You can assign profiles to a container, then restart the container. Here is how,
 
-```
+```php
 $ lxc profile assign oldcontainer default,gui
 Profiles default,gui applied to oldcontainer
 $ lxc restart oldcontainer
@@ -387,7 +387,7 @@ $ lxc restart oldcontainer
 
 Yes, by assigning the default or any other profile. Then, restart the container.
 
-```
+```php
 $ lxc profile assign gui1804 default
 Profiles default applied to gui1804
 $ lxc restart gui1804

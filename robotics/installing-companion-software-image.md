@@ -1,6 +1,6 @@
 # Installing Companion Software Image
 
-### Installing the Companion Computer Software Image <a href="#installing-the-companion-computer-software-image" id="installing-the-companion-computer-software-image"></a>
+## Installing the Companion Computer Software Image <a href="#installing-the-companion-computer-software-image" id="installing-the-companion-computer-software-image"></a>
 
 > The current version of Companion is **v0.0.31**. If your system is out of date you can update by either installing a fresh image with the instructions below or connecting to Wi-Fi and performing a [Software Update](/broken/pages/LKNT51F1rClueAwLimcY).
 

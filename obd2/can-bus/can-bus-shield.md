@@ -6,19 +6,19 @@
 
 ### Contents
 
-* [1Introduction](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#Introduction)
-* [2Features](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#Features)
-* [3Usage](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#Usage)
-  * [3.1Hardware Installation](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#Hardware_Installation)
-  * [3.2Upload the program](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#Upload_the_program)
-* [4Reference](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#Reference)
-  * [4.11. Set the BaudRate](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#1._Set_the_BaudRate)
-  * [4.22. Set Receive Mask and Filter](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#2._Set_Receive_Mask_and_Filter)
-  * [4.33. Check Receive](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#3._Check_Receive)
-  * [4.44. Get CAN ID](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#4._Get_CAN_ID)
-  * [4.55. Send Data](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#5._Send_Data)
-  * [4.66. Receive Data](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#6._Receive_Data)
-* [5Resources](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#Resources)
+- [1Introduction](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#Introduction)
+- [2Features](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#Features)
+- [3Usage](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#Usage)
+  - [3.1Hardware Installation](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#Hardware_Installation)
+  - [3.2Upload the program](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#Upload_the_program)
+- [4Reference](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#Reference)
+  - [4.11. Set the BaudRate](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#1._Set_the_BaudRate)
+  - [4.22. Set Receive Mask and Filter](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#2._Set_Receive_Mask_and_Filter)
+  - [4.33. Check Receive](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#3._Check_Receive)
+  - [4.44. Get CAN ID](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#4._Get_CAN_ID)
+  - [4.55. Send Data](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#5._Send_Data)
+  - [4.66. Receive Data](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#6._Receive_Data)
+- [5Resources](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield#Resources)
 
 ### Introduction
 
@@ -30,15 +30,15 @@ Model: [AS54887CAN](http://www.elecrow.com/canbus-shield-p-1133.html)<br>
 
 ### Features
 
-* Arduino Mega and Leonardo compatible
-* Implements CAN V2.0B at up to 1 Mb/s
-* SPI Interface up to 10 MHz
-* Standard (11 bit) and extended (29 bit) data and remote frames
-* Two receive buffers with prioritized message storage
-* Industrial standard 9 pin sub-D connector
-* Two LED indicators
-* SD card holder for information storage
-* Dimensions(mm):74.3(L)x53.6(W)x23.5(H)
+- Arduino Mega and Leonardo compatible
+- Implements CAN V2.0B at up to 1 Mb/s
+- SPI Interface up to 10 MHz
+- Standard (11 bit) and extended (29 bit) data and remote frames
+- Two receive buffers with prioritized message storage
+- Industrial standard 9 pin sub-D connector
+- Two LED indicators
+- SD card holder for information storage
+- Dimensions(mm):74.3(L)x53.6(W)x23.5(H)
 
 ### Usage
 
@@ -64,10 +64,10 @@ If the folder name include "-master", just remove it.
 
 <figure><img src="https://www.elecrow.com/wiki/images/thumb/a/aa/Open_CAN_BUS_examples_receive.jpg/400px-Open_CAN_BUS_examples_receive.jpg" alt=""><figcaption></figcaption></figure>
 
-```
+```javascript
 // demo: CAN-BUS Shield, send data
-#include <mcp_can.h>
-#include <SPI.h>
+## include <mcp_can.h>
+## include <SPI.h>
 
 // the cs pin of the version after v1.1 is default to D9
 // v0.9b and v1.0 is default D10
@@ -105,13 +105,13 @@ void loop()
 
 2.2 Receive data<br>
 
-```
+```php
 // demo: CAN-BUS Shield, receive data with check mode
 // send data coming to fast, such as less than 10ms, you can use this way
 
 
-#include <SPI.h>
-#include "mcp_can.h"
+## include <SPI.h>
+## include "mcp_can.h"
 
 
 // the cs pin of the version after v1.1 is default to D9
@@ -150,7 +150,7 @@ void loop()
         CAN.readMsgBuf(&len, buf);    // read data,  len: data length, buf: data buf
 
         unsigned char canId = CAN.getCanId();
-        
+
         Serial.println("-----------------------------");
         Serial.println("get data from ID: ");
         Serial.println(canId);
@@ -228,7 +228,7 @@ _"data\_buf"_ is the content of this message.
 For example, In the 'send' example, we have:
 
 ```
-  
+
 unsigned char stmp[8] = {0, 1, 2, 3, 4, 5, 6, 7};
 
 CAN.sendMsgBuf(0x00, 0, 8, stmp); //send out the message 'stmp' to the bus and tell other devices this is a standard frame from 0x00.
@@ -248,39 +248,36 @@ _"buf"_ is where you store the data.<br>
 
 ### Resources
 
-* [CAN-BUS Source code file for Arduino 1.0](http://www.elecrow.com/wiki/index.php?title=File:CAN_BUS_Shield_master.zip)
-* [MCP2551 datasheet](http://www.elecrow.com/wiki/index.php?title=File:Mcp2551en.pdf)
-* [MCP2515 datasheet](http://www.elecrow.com/wiki/index.php?title=File:MCP2515.pdf)
+- [CAN-BUS Source code file for Arduino 1.0](http://www.elecrow.com/wiki/index.php?title=File:CAN_BUS_Shield_master.zip)
+- [MCP2551 datasheet](http://www.elecrow.com/wiki/index.php?title=File:Mcp2551en.pdf)
+- [MCP2515 datasheet](http://www.elecrow.com/wiki/index.php?title=File:MCP2515.pdf)
 
 ### Navigation menu
 
-* [Log in](https://www.elecrow.com/wiki/index.php?title=Special:UserLogin\&returnto=CAN-BUS+Shield)
-* [Page](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield)
-* [Discussion](https://www.elecrow.com/wiki/index.php?title=Talk:CAN-BUS_Shield\&action=edit\&redlink=1)
+- [Log in](https://www.elecrow.com/wiki/index.php?title=Special:UserLogin\&returnto=CAN-BUS+Shield)
+- [Page](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield)
+- [Discussion](https://www.elecrow.com/wiki/index.php?title=Talk:CAN-BUS_Shield\&action=edit\&redlink=1)
 
 #### Search
 
-* [Elecrow Bazaar](https://www.elecrow.com/)
+- [Elecrow Bazaar](https://www.elecrow.com/)
 
 #### Manu <a href="#p-manu-label" id="p-manu-label"></a>
 
-* [Main page](https://www.elecrow.com/wiki/index.php?title=Main_Page)
-* [recent changes](https://www.elecrow.com/wiki/index.php?title=Special:RecentChanges)
-* [Random page](https://www.elecrow.com/wiki/index.php?title=Special:Random)
-* [Help about MediaWiki](https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents)
+- [Main page](https://www.elecrow.com/wiki/index.php?title=Main_Page)
+- [recent changes](https://www.elecrow.com/wiki/index.php?title=Special:RecentChanges)
+- [Random page](https://www.elecrow.com/wiki/index.php?title=Special:Random)
+- [Help about MediaWiki](https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents)
 
 #### Tools <a href="#p-tb-label" id="p-tb-label"></a>
 
-* [What links here](https://www.elecrow.com/wiki/index.php?title=Special:WhatLinksHere/CAN-BUS_Shield)
-* [Related changes](https://www.elecrow.com/wiki/index.php?title=Special:RecentChangesLinked/CAN-BUS_Shield)
-* [Special pages](https://www.elecrow.com/wiki/index.php?title=Special:SpecialPages)
-* [Printable version](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield\&printable=yes)
-* [Permanent link](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield\&oldid=63)
-* [Page information](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield\&action=info)
-* <br>
-
-
-
+- [What links here](https://www.elecrow.com/wiki/index.php?title=Special:WhatLinksHere/CAN-BUS_Shield)
+- [Related changes](https://www.elecrow.com/wiki/index.php?title=Special:RecentChangesLinked/CAN-BUS_Shield)
+- [Special pages](https://www.elecrow.com/wiki/index.php?title=Special:SpecialPages)
+- [Printable version](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield\&printable=yes)
+- [Permanent link](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield\&oldid=63)
+- [Page information](https://www.elecrow.com/wiki/index.php?title=CAN-BUS_Shield\&action=info)
+- <br>
 
 
 {% file src="../../.gitbook/assets/MCP2515 (1).pdf" %}
@@ -288,7 +285,6 @@ _"buf"_ is where you store the data.<br>
 {% file src="../../.gitbook/assets/Mcp2551en (1).pdf" %}
 
 {% file src="../../.gitbook/assets/CAN_BUS_Shield_master (1).zip" %}
-
 
 
 {% file src="../../.gitbook/assets/Mcp2551en (1) (1).pdf" %}

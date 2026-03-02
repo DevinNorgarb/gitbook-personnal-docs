@@ -5,12 +5,11 @@
 {% file src="../../../.gitbook/assets/frizling_schematics_M8kF26dafQ.fzz" %}
 
 
-
 MKR WiFi 1000 talks to a car through OBD-II interface, and uploads the data to IoT cloud for real-time monitoring and post-processing.
 
 [Intermediate](https://www.hackster.io/projects?difficulty=intermediate)Full instructions provided8 hours51,962![IoT4Car](https://hackster.imgix.net/uploads/attachments/558993/background_image_HckdSnofkc.png?auto=compress%2Cformat\&w=900\&h=675\&fit=min)
 
-### Things used in this project
+## Things used in this project
 
 | <h4>Hardware components</h4>                                                                                                                                                  |                                  |   |   |   |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | - | - | - |
@@ -87,13 +86,13 @@ The real connection is a bit messy due to the limited bread board area, but it f
 
 All right, it is time to program our Arduino MKR board. Since my Arduino MKR board talks with the interpret board through UART, there is no need to install 3rd party libraries. Sending commands to the interpret board is simply like communicating with Serial Monitor. The only thing that I want to emphasize is that the serial port associated with Pin 13 and Pin 14 is **Serial 1**! Arduino MKR board _Serial port_ refers to its USB port which is used to communicate with your computer. Don't forget to initialize **Serial 1** port in the setup() function.
 
-```
+```php
  Serial1.begin(9600);
 ```
 
 And use **Serial 1** to push command to the interpret board.
 
-```
+```php
  Serial1.println(message);
 ```
 
@@ -116,7 +115,7 @@ In this project, I will demonstrate how to get the car speed, the engine RPM, th
 
 Once the commands are sent out, Arduino MKR board will listen to Serial 1 port for any response. It is better to put a delay of 200 ms after sending out the commands. I use the following code to receive response.
 
-```
+```python
 void getResponse(void){
  while(Serial1.available() > 0) {
      // Start by checking if we've received the end of message character ('\r').
@@ -217,7 +216,7 @@ Connect Arduino MKR WiFi 1000, SparkFun OBD-II UART board, SparkFun Logic Level 
 
 C/C++This program will talk to vehicle using the OBDII-UART board, and display the results on the LCD, and upload to freeboard IoT platform
 
-```
+```php
 /*
 * OBDII-UART-Serial version 9
 * This program will talk to vehicle using the OBDII-UART board, 
@@ -256,8 +255,8 @@ C/C++This program will talk to vehicle using the OBDII-UART board, and display t
 // WiFi related 
 //
 ///////////////////////////////////////////////////////
-#include<SPI.h>
-#include<WiFi101.h>
+## include<SPI.h>
+## include<WiFi101.h>
 char ssid[] = "YOUR WIFI SSID";  // wifi ID
 char pass[] = "YOUR WIFI PSWD";   // wifi password
 char server[] = "www.dweet.io";  // freeboard and dweet Settings
@@ -268,7 +267,7 @@ int status = WL_IDLE_STATUS; // the WiFi radio status
 
 
 // include the LDC libaray
-#include <LiquidCrystal.h>
+## include <LiquidCrystal.h>
 const int rs = 12, en = 11, d4 =5, d5 =4, d6 = 3, d7 = 2;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
@@ -305,7 +304,7 @@ void setup() {
   }
   lcd.setCursor(0, 1);
   lcd.println("Connected!");
-  
+
   // Serial1 is the acutal port to talk to vehicle
   Serial1.begin(9600);
   resetBuffer();

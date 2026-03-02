@@ -4,7 +4,7 @@ The Parameters page allows users to find and modify any of the parameters associ
 
 A list with a description of what each parameter does is listed in the Developers: Full Parameters List.
 
-### Finding a Parameter <a href="#finding-a-parameter" id="finding-a-parameter"></a>
+## Finding a Parameter <a href="#finding-a-parameter" id="finding-a-parameter"></a>
 
 The parameters are organized in groups. Select a group of parameters to view by clicking on the buttons to the left.
 

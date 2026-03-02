@@ -11,9 +11,9 @@ Photo by [Clay Banksarrow-up-right](https://unsplash.com/@claybanks?utm_source=m
 
 In this series, three ways of making beautiful geoscatter plots were identified:
 
-* Holoviews — [The Battle of Interactive Geographic Visualization Part 1 — Interactive Geoplot Using One Line of Codearrow-up-right](https://towardsdatascience.com/the-battle-of-interactive-geographic-visualization-part-1-interactive-geoplot-using-one-line-of-8214e9ed1bb4)
-* Plotly Express — [The Battle of Interactive Geographic Visualization Part 2- Interactive Geoplot Using One Line of Codearrow-up-right](https://towardsdatascience.com/the-battle-of-interactive-geographic-visualization-part-2-interactive-geoplot-using-one-line-of-2118af59a77c)
-* Plotly Go — [The Battle of Interactive Geographic Visualization Part 3- Plotly Graph Objects (Go)arrow-up-right](https://towardsdatascience.com/the-battle-of-interactive-geographic-visualization-part-3-plotly-graph-objects-go-c3d3f2a00132)
+- Holoviews — [The Battle of Interactive Geographic Visualization Part 1 — Interactive Geoplot Using One Line of Codearrow-up-right](https://towardsdatascience.com/the-battle-of-interactive-geographic-visualization-part-1-interactive-geoplot-using-one-line-of-8214e9ed1bb4)
+- Plotly Express — [The Battle of Interactive Geographic Visualization Part 2- Interactive Geoplot Using One Line of Codearrow-up-right](https://towardsdatascience.com/the-battle-of-interactive-geographic-visualization-part-2-interactive-geoplot-using-one-line-of-2118af59a77c)
+- Plotly Go — [The Battle of Interactive Geographic Visualization Part 3- Plotly Graph Objects (Go)arrow-up-right](https://towardsdatascience.com/the-battle-of-interactive-geographic-visualization-part-3-plotly-graph-objects-go-c3d3f2a00132)
 
 This article shows how to create a similar plot using Altair.
 
@@ -39,7 +39,7 @@ import geopandas as gpd
 from shapely.geometry import Point
 
 alt.renderers.enable('default')  # Allows the map to be displayed in the notebook/Jupyterlab
-```
+```json
 {% endcode %}
 
 ### Load the dataset
@@ -50,7 +50,7 @@ Load the dataset:
 ```python
 df = pd.read_csv('data/Coffee Brands Footprint.csv', index_col=0)
 df.head()
-```
+```python
 {% endcode %}
 
 ![](<../../../../.gitbook/assets/image (16)>)\
@@ -67,18 +67,18 @@ Unlike Plotly, with Altair you typically import your own shapefiles to provide m
 Load a GeoDataFrame and create a geoshape for the Philippines:
 
 {% code title="load_shapefile.py" %}
-```python
-# Load the geodataframe
+```
+## Load the geodataframe
 gdf = gpd.read_file('Shapefiles/gadm36_PHL_shp/gadm36_PHL_1.shp')
 
-# Options when it comes to boundaries of the shapefile
+## Options when it comes to boundaries of the shapefile
 philippines = alt.Chart(gdf).mark_geoshape(stroke='white', fill='lightgray').encode().properties(
     width=400,
     height=800
 ).project('mercator')
 
 philippines
-```
+```python
 {% endcode %}
 
 ![](<../../../../.gitbook/assets/image (17)>)\
@@ -86,13 +86,13 @@ Image by the Author: Shapefile of the Philippines displayed in Jupyterlab
 
 Notes on the options used:
 
-* alt.Chart — creates an Altair chart from the supplied dataset (here a GeoDataFrame).
-* mark\_geoshape — instructs Altair to render geographic shapes.
-* stroke — boundary line color for the geoshape.
-* fill — fill color for the geoshape.
-* encode — maps dataframe columns to visual attributes.
-* properties — set width, height, and other figure properties.
-* project — projection type (e.g., 'mercator').
+- alt.Chart — creates an Altair chart from the supplied dataset (here a GeoDataFrame).
+- mark\_geoshape — instructs Altair to render geographic shapes.
+- stroke — boundary line color for the geoshape.
+- fill — fill color for the geoshape.
+- encode — maps dataframe columns to visual attributes.
+- properties — set width, height, and other figure properties.
+- project — projection type (e.g., 'mercator').
 
 ### Plotting the geoscatterplot
 
@@ -109,7 +109,7 @@ points = alt.Chart(df).mark_circle(opacity=0.7).encode(
 )
 
 points
-```
+```php
 {% endcode %}
 
 ![](<../../../../.gitbook/assets/image (18)>)\
@@ -117,8 +117,8 @@ GIF by Author: Scatter points generated are not bounded by the shapefile.
 
 Notes:
 
-* For geoscatterplots, supply longitude and latitude with the format "column\_name:Q" (e.g., `lng:Q`). The `:Q` designates a quantitative field and is required.
-* Use `alt.value(...)` when providing a constant value (e.g., fixed point size).
+- For geoscatterplots, supply longitude and latitude with the format "column\_name:Q" (e.g., `lng:Q`). The `:Q` designates a quantitative field and is required.
+- Use `alt.value(...)` when providing a constant value (e.g., fixed point size).
 
 ### Combining the two plots
 
@@ -127,7 +127,7 @@ Altair makes composing charts straightforward. For example, to show the geoshape
 {% code title="combine.py" %}
 ```python
 points | philippines + points
-```
+```php
 {% endcode %}
 
 ![](<../../../../.gitbook/assets/image (19)>)\
@@ -143,14 +143,14 @@ Thanks for reading!
 
 Please check out the related articles:
 
-* [The Battle of Interactive Geographic Visualization Part 1 — Interactive Geoplot Using One Line of Codearrow-up-right](https://towardsdatascience.com/the-battle-of-interactive-geographic-visualization-part-1-interactive-geoplot-using-one-line-of-8214e9ed1bb4)
-* [The Battle of Interactive Geographic Visualization Part 2- Interactive Geoplot Using One Line of Codearrow-up-right](https://towardsdatascience.com/the-battle-of-interactive-geographic-visualization-part-2-interactive-geoplot-using-one-line-of-2118af59a77c)
-* [The Battle of Interactive Geographic Visualization Part 3- Plotly Graph Objects (Go)arrow-up-right](https://towardsdatascience.com/the-battle-of-interactive-geographic-visualization-part-3-plotly-graph-objects-go-c3d3f2a00132)
-* [Mapping Your Favorite Coffee Shop in the Philippines using Google Places API and Foliumarrow-up-right](https://towardsdatascience.com/mapping-your-favorite-coffee-shop-in-the-philippines-using-google-places-api-and-folium-2f9d5ad697bf?source=your_stories_page----------------------------------------)
-* [Visualizing the Philippines’ Population Density using GeoPandasarrow-up-right](https://towardsdatascience.com/psvisualizing-the-philippines-population-density-using-geopandas-ab8190f52ed1?source=your_stories_page----------------------------------------)
+- [The Battle of Interactive Geographic Visualization Part 1 — Interactive Geoplot Using One Line of Codearrow-up-right](https://towardsdatascience.com/the-battle-of-interactive-geographic-visualization-part-1-interactive-geoplot-using-one-line-of-8214e9ed1bb4)
+- [The Battle of Interactive Geographic Visualization Part 2- Interactive Geoplot Using One Line of Codearrow-up-right](https://towardsdatascience.com/the-battle-of-interactive-geographic-visualization-part-2-interactive-geoplot-using-one-line-of-2118af59a77c)
+- [The Battle of Interactive Geographic Visualization Part 3- Plotly Graph Objects (Go)arrow-up-right](https://towardsdatascience.com/the-battle-of-interactive-geographic-visualization-part-3-plotly-graph-objects-go-c3d3f2a00132)
+- [Mapping Your Favorite Coffee Shop in the Philippines using Google Places API and Foliumarrow-up-right](https://towardsdatascience.com/mapping-your-favorite-coffee-shop-in-the-philippines-using-google-places-api-and-folium-2f9d5ad697bf?source=your_stories_page----------------------------------------)
+- [Visualizing the Philippines’ Population Density using GeoPandasarrow-up-right](https://towardsdatascience.com/psvisualizing-the-philippines-population-density-using-geopandas-ab8190f52ed1?source=your_stories_page----------------------------------------)
 
 ## References
 
-* [STACKOVERFLOW: Altair vs Plotly Expressarrow-up-right](https://stackoverflow.com/questions/59845407/plotly-express-vs-altair-vega-lite-for-interactive-plots)
+- [STACKOVERFLOW: Altair vs Plotly Expressarrow-up-right](https://stackoverflow.com/questions/59845407/plotly-express-vs-altair-vega-lite-for-interactive-plots)
 
 Last updated 3 years ago

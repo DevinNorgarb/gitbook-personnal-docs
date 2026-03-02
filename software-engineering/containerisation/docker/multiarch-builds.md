@@ -47,7 +47,7 @@ On macOS, you can use a tool called `docker-binfmt` to register support for fore
 
 1. Install `docker-binfmt` by running the following command in a terminal:
 
-```
+```bash
 brew install docker-binfmt
 ```
 

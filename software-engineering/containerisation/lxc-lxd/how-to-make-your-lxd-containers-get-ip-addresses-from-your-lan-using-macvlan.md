@@ -14,11 +14,11 @@ This can be achieved [using _**macvlan**_ (L2) virtual network interfaces](https
 
 In this post, we are going to create a new LXD profile and configure _**macvlan**_ in it. Then, we launch new containers under the new profile, or attach existing containers to the new profile (so they get as well a LAN IP address).
 
-### Creating a new LXD profile for macvlan
+## Creating a new LXD profile for macvlan
 
 Let’s see what LXD profiles are available.
 
-```
+```php
 $ lxc profile list
 +------------+---------+
 | NAME       | USED BY |
@@ -31,7 +31,7 @@ There is a single profile, called _**default**_, the default profile. It is used
 
 We create a new profile. The new profile is called _**macvlan**_.
 
-```
+```php
 $ lxc profile create macvlan
 Profile macvlan created
 $ lxc profile list
@@ -46,7 +46,7 @@ $ lxc profile list
 
 What are the default settings of a new profile?
 
-```
+```php
 $ lxc profile show macvlan
 config: {}
 description: ""
@@ -58,14 +58,14 @@ $
 
 We need to add a _**nic**_ with _**nictype**_ `macvlan` and _**parent**_ to the appropriate network interface on the host and we are then ready to go. Let’s identify the correct parent, using the _ip route_ command. This command shows the default network route. It also shows the name of the _device_ (_**dev**_), which is in this case _**enp5s12**_. (Before systemd, those used to be _**eth0**_ or _**wlan0.**_ Now, the name varies depending on the specific network cards).
 
-```
+```php
 $ ip route show default 0.0.0.0/0
 default via 192.168.1.1 dev enp5s12 proto static metric 100
 ```
 
 Now we are ready to add the appropriate device to the `macvlan` LXD profile. We use the _**lxc profile device add**_ command to add a _device_ _**eth0**_ to the profile _**lanprofile**_. We set _nictype_ to _macvlan_, and _parent_ to _enp5s12_.
 
-```
+```php
 $ lxc profile device add macvlan eth0 nic nictype=macvlan parent=enp5s12
 Device eth0 added to macvlan
 $ lxc profile show macvlan
@@ -88,7 +88,7 @@ Well, that’s it. We are now ready to launch containers using this new profile,
 
 Let’s launch two containers using the new _**macvlan**_ profile and then check their IP address. We need to specify first the `default` profile, and then the `macvlan` profile. By doing this, the container will get the appropriate base configuration from the first profile, and then the networking will be overridden by the `macvlan` profile.
 
-```
+```php
 $ lxc launch ubuntu:18.04 net1 --profile default --profile macvlan
 Creating net1
 Starting net1
@@ -112,7 +112,7 @@ Both containers got their IP address from the LAN router. Here is the router adm
 
 Let’s _ping_ from one container to the other.
 
-```
+```php
 $ lxc exec net1 -- ping -c 3 192.168.1.7
 PING 192.168.1.7 (192.168.1.7) 56(84) bytes of data.
 64 bytes from 192.168.1.7: icmp_seq=1 ttl=64 time=0.064 ms
@@ -146,7 +146,7 @@ The new _**macvlan**_ LXD containers (that got a LAN IP address) can only see th
 
 A previous version of this tutorial had the old style of how to add a device to a LXD profile. The old style was supposed to work in compatibility mode in newer versions of LXD. But at least in LXD 4.2 it does not, and gives the following error. You should not get this error anymore since I have updated the post. You may get an error if you are using a very old LXD. In that case, report back in the comments please.
 
-```
+```php
 $ lxc profile device set macvlan eth0 nictype macvlan
 Error: Device validation failed "eth0": Cannot use "nictype" property in conjunction with "network" property
 $

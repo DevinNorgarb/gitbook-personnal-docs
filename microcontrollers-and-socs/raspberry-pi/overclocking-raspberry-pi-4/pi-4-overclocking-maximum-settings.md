@@ -1,22 +1,22 @@
 # Pi 4 Overclocking Maximum settings
 
 ```makefile
-# Set the ARM CPU frequency to 2000 MHz
+## Set the ARM CPU frequency to 2000 MHz
 arm_freq=2000
 
-# Set the over-voltage to 6
+## Set the over-voltage to 6
 over_voltage=6
 
-# Set the GPU frequency to 750 MHz
+## Set the GPU frequency to 750 MHz
 gpu_freq=750
 
-# Set the V3D core frequency to 750 MHz
+## Set the V3D core frequency to 750 MHz
 core_freq=750
 
-# Set the SDRAM frequency to 600 MHz
+## Set the SDRAM frequency to 600 MHz
 sdram_freq=600
 
-# Enable over-voltage and temperature warnings
+## Enable over-voltage and temperature warnings
 over_voltage_sdram_p=2
 over_voltage_sdram_i=2
 over_voltage_sdram_c=2

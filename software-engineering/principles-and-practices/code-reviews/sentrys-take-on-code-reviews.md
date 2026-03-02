@@ -92,7 +92,7 @@ For example, if a submitter has written a `for` loop to find an item in an array
 
 TextCopied
 
-```
+```javascript
 for (let i = 0; i < arr.length; i++) {
   if (arr[i] === 'thingiwant') return i;
 }
@@ -103,7 +103,7 @@ It’s fair game to suggest they instead use:
 
 TextCopied
 
-```
+```php
 return arr.find(x => x === 'thingiwant');
 ```
 

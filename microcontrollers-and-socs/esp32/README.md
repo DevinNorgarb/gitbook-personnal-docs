@@ -56,9 +56,9 @@ The ESP32 development board has 25 GPIO pins that can be assigned different func
 
 Although the ESP32 has a lot of pins with various functions, some of them may not be suitable for your projects. The table below shows which pins are safe to use and which pins should be used with caution.
 
-* &#x20;– Your top priority pins. They are perfectly safe to use.
-* &#x20;– Pay close attention because their behavior, particularly during boot, can be unpredictable. Use them only when absolutely necessary.
-* &#x20;– It is recommended that you avoid using these pins.
+- &#x20;– Your top priority pins. They are perfectly safe to use.
+- &#x20;– Pay close attention because their behavior, particularly during boot, can be unpredictable. Use them only when absolutely necessary.
+- &#x20;– It is recommended that you avoid using these pins.
 
 | Label | GPIO | Safe to use? | Reason                                                         |
 | ----- | ---- | ------------ | -------------------------------------------------------------- |
@@ -153,9 +153,9 @@ The ESP32 has a single I2C bus that allows you to connect up to 112 sensors and 
 
 ESP32 features three SPIs (SPI, HSPI, and VSPI) in slave and master modes. These SPIs also support the general-purpose SPI features listed below:
 
-* 4 timing modes of the SPI format transfer
-* Up to 80 MHz and the divided clocks of 80 MHz
-* Up to 64-Byte FIFO
+- 4 timing modes of the SPI format transfer
+- Up to 80 MHz and the divided clocks of 80 MHz
+- Up to 64-Byte FIFO
 
 <figure><img src="https://lastminuteengineers.b-cdn.net/wp-content/uploads/iot/ESP32-SPI-Pins.png" alt="ESP32 SPI Pins" height="346" width="581"><figcaption></figcaption></figure>
 
@@ -171,9 +171,9 @@ As with I2C, you can bit-bang the SPI protocol on any GPIO pins with the `bus.be
 
 The ESP32 dev. board has three UART interfaces, UART0, UART1, and UART2, that support asynchronous communication (RS232 and RS485) and IrDA at up to 5 Mbps.
 
-* UART0 pins are connected to the USB-to-Serial converter and are used for flashing and debugging. Therefore, the UART0 pins are not recommended for use.
-* UART1 pins are reserved for the integrated flash memory chip.
-* UART2, on the other hand, is a safe option for connecting to UART-devices such as GPS, fingerprint sensor, distance sensor, and so on.
+- UART0 pins are connected to the USB-to-Serial converter and are used for flashing and debugging. Therefore, the UART0 pins are not recommended for use.
+- UART1 pins are reserved for the integrated flash memory chip.
+- UART2, on the other hand, is a safe option for connecting to UART-devices such as GPS, fingerprint sensor, distance sensor, and so on.
 
 <figure><img src="https://lastminuteengineers.b-cdn.net/wp-content/uploads/iot/ESP32-UART-Pins.png" alt="ESP32 UART Pins" height="346" width="581"><figcaption></figcaption></figure>
 

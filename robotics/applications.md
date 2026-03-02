@@ -2,16 +2,16 @@
 
 ArduSub provides the functionality needed for a wide variety of applications from simple observation-class ROVs to sophisticated research-class ROVs. Here's a short list of applications that ArduSub-powered ROVs can be used for:
 
-* Observation and exploration
-* Wreck discovery and documenting
-* Photography and videography
-* Boat and equipment inspection
-* Biological sampling and surveying
-* Underwater retrieval
-* Academic and research projects
-* ROV and AUV competitions
+- Observation and exploration
+- Wreck discovery and documenting
+- Photography and videography
+- Boat and equipment inspection
+- Biological sampling and surveying
+- Underwater retrieval
+- Academic and research projects
+- ROV and AUV competitions
 
-### ArduSub in Use <a href="#ardusub-in-use" id="ardusub-in-use"></a>
+## ArduSub in Use <a href="#ardusub-in-use" id="ardusub-in-use"></a>
 
 These videos show ArduSub in use on the Blue Robotics BlueROV1 and [BlueROV2](https://bluerobotics.com/store/rov/bluerov2/). Keep in mind that _ArduSub_ can be used on many different ROV designs from unique DIY configurations to professional vehicles.
 

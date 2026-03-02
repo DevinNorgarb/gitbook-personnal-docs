@@ -14,18 +14,18 @@ Photos and images constitute the largest chunk of the Web, and many include reco
 
 QR/barcode/text detection can be used for:
 
-* user identification/registration, e.g. for [voting purposes](https://twitter.com/RegistertoVote/status/733123511128981508);
-* eCommerce, e.g. [Walmart Pay](https://www.slashgear.com/awalmart-announces-walmart-pay-for-qr-code-based-mobile-payments-10417912/);
-* Augmented Reality overlay, e.g. [here](http://www.multidots.com/augmented-reality/);
-* Driving online-to-offline engagement, fighting fakes [etc](https://www.clickz.com/why-have-qr-codes-taken-off-in-china/23662/).
+- user identification/registration, e.g. for [voting purposes](https://twitter.com/RegistertoVote/status/733123511128981508);
+- eCommerce, e.g. [Walmart Pay](https://www.slashgear.com/awalmart-announces-walmart-pay-for-qr-code-based-mobile-payments-10417912/);
+- Augmented Reality overlay, e.g. [here](http://www.multidots.com/augmented-reality/);
+- Driving online-to-offline engagement, fighting fakes [etc](https://www.clickz.com/why-have-qr-codes-taken-off-in-china/23662/).
 
 Face detection can be used for:
 
-* producing fun effects, e.g. [Snapchat Lenses](https://support.snapchat.com/en-US/a/lenses1);
-* giving hints to encoders or auto focus routines;
-* user name tagging;
-* enhance accesibility by e.g. making objects appear larger as the user gets closer like [HeadTrackr](https://www.auduno.com/headtrackr/examples/targets.html);
-* speeding up Face Recognition by indicating the areas of the image where faces are present.
+- producing fun effects, e.g. [Snapchat Lenses](https://support.snapchat.com/en-US/a/lenses1);
+- giving hints to encoders or auto focus routines;
+- user name tagging;
+- enhance accesibility by e.g. making objects appear larger as the user gets closer like [HeadTrackr](https://www.auduno.com/headtrackr/examples/targets.html);
+- speeding up Face Recognition by indicating the areas of the image where faces are present.
 
 ### Current Related Efforts and Workarounds :wrench:
 
@@ -68,11 +68,11 @@ Android provides both a stand alone software face detector and a interface to th
 
 The availability of the actual hardware detection depends on the actual chip; according to the market share in [1H 2016](http://www.antutu.com/en/view.shtml?id=8256) Qualcomm, MediaTek, Samsung and HiSilicon are the largest individual OEMs and they all have support for Face Detection (all the top-10 phones are covered as well):
 
-* [Qualcomm Snapdragon](https://developer.qualcomm.com/software/snapdragon-sdk-android/facial-recognition) chipset family supports it since \~2013 as part of their ISP.
-* MediaTek as part of [CorePilot 2.0](http://cdn-cw.mediatek.com/White%20Papers/MediaTek\_CorePilot%202.0\_Final.pdf) (introduced in 2015).
-* [Samsung Exynos](http://www.samsung.com/semiconductor/minisite/Exynos/data/Benefits\_of\_Exynos\_5420\_ISP\_for\_Enhanced\_Imaging\_Experience.pdf) (at least 2013).
-* Huawei HiSilicon [Kirin950](http://www.androidauthority.com/huawei-hisilicon-kirin-950-official-653811) since 2015 (this fabless manufacturer is relatively new).
-* It is worth noting that ARM [acquired Apical in 2016](https://www.arm.com/products/graphics-and-multimedia/computer-vision) for its computer vision expertise.
+- [Qualcomm Snapdragon](https://developer.qualcomm.com/software/snapdragon-sdk-android/facial-recognition) chipset family supports it since \~2013 as part of their ISP.
+- MediaTek as part of [CorePilot 2.0](http://cdn-cw.mediatek.com/White%20Papers/MediaTek\_CorePilot%202.0\_Final.pdf) (introduced in 2015).
+- [Samsung Exynos](http://www.samsung.com/semiconductor/minisite/Exynos/data/Benefits\_of\_Exynos\_5420\_ISP\_for\_Enhanced\_Imaging\_Experience.pdf) (at least 2013).
+- Huawei HiSilicon [Kirin950](http://www.androidauthority.com/huawei-hisilicon-kirin-950-official-653811) since 2015 (this fabless manufacturer is relatively new).
+- It is worth noting that ARM [acquired Apical in 2016](https://www.arm.com/products/graphics-and-multimedia/computer-vision) for its computer vision expertise.
 
 Barcode/QR and Text detection is available via Google Play Services [barcode](https://developers.google.com/android/reference/com/google/android/gms/vision/barcode/package-summary) and [text](https://developers.google.com/android/reference/com/google/android/gms/vision/text/package-summary), respectively.
 

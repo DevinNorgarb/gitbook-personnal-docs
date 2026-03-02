@@ -4,16 +4,16 @@
 
 Here’s a step-by-step guide on how to create a personal, cost-free SOCKS5 anonymous proxy with support for UDP ASSOCIATE (RFC1928) in Oracle Cloud. The chosen solution is Dante (Inferno Nettverk A/S) running on an Ubuntu 20.04 instance in Oracle Cloud Free Tier.
 
-### Install Ubuntu Instance
+## Install Ubuntu Instance
 
 We will use an Oracle Cloud Infrastructure Free Tier account to set up a compute instance on Ubuntu.
 
-#### Before You Begin
+### Before You Begin
 
 You must have:
 
-* An Oracle Cloud Infrastructure Free Tier account. https://www.oracle.com/cloud/free/
-* A macOS, Linux, or Windows computer with ssh support installed.
+- An Oracle Cloud Infrastructure Free Tier account. https://www.oracle.com/cloud/free/
+- A macOS, Linux, or Windows computer with ssh support installed.
 
 #### Create a VM instance
 
@@ -163,9 +163,9 @@ Check Dante version:
 
 ```bash
 danted -v
-# Example:
-# Dante v1.4.2.  Copyright (c) 1997 - 2014 Inferno Nettverk A/S, Norway
-```
+## Example:
+## Dante v1.4.2.  Copyright (c) 1997 - 2014 Inferno Nettverk A/S, Norway
+```json
 {% endstep %}
 
 {% step %}
@@ -238,7 +238,7 @@ Enable automatic start after reboot:
 
 ```bash
 sudo systemctl enable danted
-```
+```json
 {% endstep %}
 {% endstepper %}
 
@@ -251,9 +251,9 @@ Run as root:
 ```bash
 sudo su
 
-# iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 1080 -j ACCEPT
-# iptables -I INPUT -p udp --dport 40000:45000 -j ACCEPT
-# iptables-save > /etc/iptables/rules.v4
+## iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 1080 -j ACCEPT
+## iptables -I INPUT -p udp --dport 40000:45000 -j ACCEPT
+## iptables-save > /etc/iptables/rules.v4
 
 exit
 ```
@@ -296,7 +296,7 @@ client pass {
 
 To allow multiple single IPs, add multiple client pass blocks:
 
-```
+```bash
 client pass {
         from: 201.100.103.1/32 to: 0.0.0.0/0
         log: error connect disconnect
@@ -317,7 +317,7 @@ sudo systemctl restart danted
 
 To require username/password authentication, set socksmethod to username in /etc/danted.conf:
 
-```
+```bash
 socksmethod: username
 ```
 
@@ -332,8 +332,8 @@ Dante uses Linux system authentication. Create a restricted user for SOCKS auth:
 ```bash
 sudo su
 
-# useradd -r -s /bin/false danteuser
-# passwd danteuser
+## useradd -r -s /bin/false danteuser
+## passwd danteuser
 ```
 
 Test authentication with curl:

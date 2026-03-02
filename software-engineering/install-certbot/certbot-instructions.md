@@ -4,7 +4,7 @@ default
 
 wildcard
 
-### To use Certbot, you'll need...
+## To use Certbot, you'll need...
 
 comfort with the
 
@@ -29,9 +29,9 @@ optional if you want a :
 
     Execute the following instructions on the command line on the machine to ensure that you have the latest version of `snapd`.
 
-    ```
+```python
     sudo snap install core; sudo snap refresh core
-    ```
+```python
 4.  Remove certbot-auto and any Certbot OS packages
 
     If you have any Certbot packages installed using an OS package manager like `apt`, `dnf`, or `yum`, you should remove them before installing the Certbot snap to ensure that when you run the command `certbot` the snap is used rather than the installation from your OS package manager. The exact command to do this depends on your OS, but common examples are `sudo apt-get remove certbot`, `sudo dnf remove certbot`, or `sudo yum remove certbot`. If you previously used Certbot through the certbot-auto script, you should also remove its installation by following the instructions here.
@@ -39,25 +39,25 @@ optional if you want a :
 
     Run this command on the command line on the machine to install Certbot.
 
-    ```
+```bash
     sudo snap install --classic certbot
-    ```
+```bash
 6.  Prepare the Certbot command
 
     Execute the following instruction on the command line on the machine to ensure that the `certbot` command can be run.
 
-    ```
+```bash
     sudo ln -s /snap/bin/certbot /usr/bin/certbot
-    ```
+```bash
 7.  Choose how you'd like to run Certbot
 
     #### Either get and install your certificates...
 
     Run this command to get a certificate and have Certbot edit your nginx configuration automatically to serve it, turning on HTTPS access in a single step.
 
-    ```
+```bash
     sudo certbot --nginx
-    ```
+```
 
     #### Or, just get a certificate
 
@@ -70,15 +70,15 @@ optional if you want a :
 
     The Certbot packages on your system come with a cron job or systemd timer that will renew your certificates automatically before they expire. You will not need to run Certbot again, unless you change your configuration. You can test automatic renewal for your certificates by running this command:
 
-    ```
+```python
     sudo certbot renew --dry-run
-    ```
+```
 
     The command to renew certbot is installed in one of the following locations:
 
-    * `/etc/crontab/`
-    * `/etc/cron.*/*`
-    * `systemctl list-timers`
+    - `/etc/crontab/`
+    - `/etc/cron.*/*`
+    - `systemctl list-timers`
 9.  Confirm that Certbot worked
 
     To confirm that your site is set up properly, visit `https://yourwebsite.com/` in your browser and look for the lock icon in the URL bar.
@@ -105,9 +105,9 @@ optional if you want a :
 
     Execute the following instructions on the command line on the machine to ensure that you have the latest version of `snapd`.
 
-    ```
+```python
     sudo snap install core; sudo snap refresh core
-    ```
+```python
 14. Remove certbot-auto and any Certbot OS packages
 
     If you have any Certbot packages installed using an OS package manager like `apt`, `dnf`, or `yum`, you should remove them before installing the Certbot snap to ensure that when you run the command `certbot` the snap is used rather than the installation from your OS package manager. The exact command to do this depends on your OS, but common examples are `sudo apt-get remove certbot`, `sudo dnf remove certbot`, or `sudo yum remove certbot`. If you previously used Certbot through the certbot-auto script, you should also remove its installation by following the instructions here.
@@ -138,15 +138,15 @@ optional if you want a :
 
     Run the following command, replacing \<PLUGIN> with the name of your DNS provider.
 
-    ```
+```bash
     sudo snap install certbot-dns-<PLUGIN>
-    ```
+```
 
     For example, if your DNS provider is Cloudflare, you'd run the following command:
 
-    ```
+```bash
     sudo snap install certbot-dns-cloudflare
-    ```
+```bash
 19. Set up credentials
 
     You'll need to set up DNS credentials.
@@ -171,9 +171,9 @@ optional if you want a :
 
     The command to renew certbot is installed in one of the following locations:
 
-    * `/etc/crontab/`
-    * `/etc/cron.*/*`
-    * `systemctl list-timers`
+    - `/etc/crontab/`
+    - `/etc/cron.*/*`
+    - `systemctl list-timers`
 22. Confirm that Certbot worked
 
     To confirm that your site is set up properly, visit `https://yourwebsite.com/` in your browser and look for the lock icon in the URL bar.

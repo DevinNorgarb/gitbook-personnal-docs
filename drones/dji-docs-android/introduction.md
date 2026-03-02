@@ -1,6 +1,6 @@
 # Introduction
 
-### DJI Mobile SDK Tutorials <a href="#dji-mobile-sdk-tutorials" id="dji-mobile-sdk-tutorials"></a>
+## DJI Mobile SDK Tutorials <a href="#dji-mobile-sdk-tutorials" id="dji-mobile-sdk-tutorials"></a>
 
 ### Deprecated <a href="#deprecated" id="deprecated"></a>
 

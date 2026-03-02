@@ -9,7 +9,7 @@ Run your [GitHub Actions](https://developer.github.com/actions/) locally! Why wo
 - **Fast Feedback** - Rather than having to commit/push every time you want to test out the changes you are making to your `.github/workflows/` files (or for any changes to embedded GitHub actions), you can use `act` to run the actions locally. The [environment variables](https://help.github.com/en/actions/configuring-and-managing-workflows/using-environment-variables#default-environment-variables) and [filesystem](https://help.github.com/en/actions/reference/virtual-environments-for-github-hosted-runners#filesystems-on-github-hosted-runners) are all configured to match what GitHub provides.
 - **Local Task Runner** - I love [make](<https://en.wikipedia.org/wiki/Make_(software)>). However, I also hate repeating myself. With `act`, you can use the GitHub Actions defined in your `.github/workflows/` to replace your `Makefile`!
 
-# How Does It Work?
+## How Does It Work?
 
 When you run `act` it reads in your GitHub Actions from `.github/workflows/` and determines the set of actions that need to be run. It uses the Docker API to either pull or build the necessary images, as defined in your workflow files and finally determines the execution path based on the dependencies that were defined. Once it has the execution path, it then uses the Docker API to run containers for each action based on the images prepared earlier. The [environment variables](https://help.github.com/en/actions/configuring-and-managing-workflows/using-environment-variables#default-environment-variables) and [filesystem](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#file-systems) are all configured to match what GitHub provides.
 
@@ -17,11 +17,11 @@ Let's see it in action with a [sample repo](https://github.com/cplee/github-acti
 
 ![Demo](https://github.com/nektos/act/wiki/quickstart/act-quickstart-2.gif)
 
-# Act User Guide
+## Act User Guide
 
 Please look at the [act user guide](https://nektosact.com) for more documentation.
 
-# Installation
+## Installation
 
 ## Necessary prerequisites for running `act`
 
@@ -43,13 +43,13 @@ If you are using Linux, you will need to [install Docker Engine](https://docs.do
 
 ```shell
 brew install act
-```
+```json
 
 or if you want to install version based on latest commit, you can run below (it requires compiler to be installed but Homebrew will suggest you how to install it, if you don't have it):
 
 ```shell
 brew install act --HEAD
-```
+```json
 
 ### [MacPorts](https://www.macports.org) (macOS)
 
@@ -57,7 +57,7 @@ brew install act --HEAD
 
 ```shell
 sudo port install act
-```
+```json
 
 ### [Chocolatey](https://chocolatey.org/) (Windows)
 
@@ -65,7 +65,7 @@ sudo port install act
 
 ```shell
 choco install act-cli
-```
+```json
 
 ### [Scoop](https://scoop.sh/) (Windows)
 
@@ -73,7 +73,7 @@ choco install act-cli
 
 ```shell
 scoop install act
-```
+```json
 
 ### [Winget](https://learn.microsoft.com/en-us/windows/package-manager/) (Windows)
 
@@ -81,7 +81,7 @@ scoop install act
 
 ```shell
 winget install nektos.act
-```
+```json
 
 ### [AUR](https://aur.archlinux.org/packages/act/) (Linux)
 
@@ -89,14 +89,14 @@ winget install nektos.act
 
 ```shell
 yay -Syu act
-```
+```json
 
 ### [COPR](https://copr.fedorainfracloud.org/coprs/rubemlrm/act-cli/) (Linux)
 
 ```shell
 dnf copr enable rubemlrm/act-cli
 dnf install act-cli
-```
+```json
 
 ### [Nix](https://nixos.org) (Linux/macOS)
 
@@ -106,19 +106,19 @@ Global install:
 
 ```sh
 nix-env -iA nixpkgs.act
-```
+```bash
 
 or through `nix-shell`:
 
 ```sh
 nix-shell -p act
-```
+```bash
 
 Using the latest [Nix command](https://nixos.wiki/wiki/Nix_command), you can run directly :
 
 ```sh
 nix run nixpkgs#act
-```
+```bash
 
 ## Installation as GitHub CLI extension
 
@@ -126,7 +126,7 @@ Act can be installed as a [GitHub CLI](https://cli.github.com/) extension:
 
 ```sh
 gh extension install https://github.com/nektos/gh-act
-```
+```bash
 
 ## Other install options
 
@@ -136,50 +136,50 @@ Run this command in your terminal:
 
 ```shell
 curl -s https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
-```
+```bash
 
 ### Manual download
 
 Download the [latest release](https://github.com/nektos/act/releases/latest) and add the path to your binary into your PATH.
 
-# Example commands
+## Example commands
 
 ```sh
-# Command structure:
+## Command structure:
 act [<event>] [options]
 If no event name passed, will default to "on: push"
 If actions handles only one event it will be used as default instead of "on: push"
 
-# List all actions for all events:
+## List all actions for all events:
 act -l
 
-# List the actions for a specific event:
+## List the actions for a specific event:
 act workflow_dispatch -l
 
-# List the actions for a specific job:
+## List the actions for a specific job:
 act -j test -l
 
-# Run the default (`push`) event:
+## Run the default (`push`) event:
 act
 
-# Run a specific event:
+## Run a specific event:
 act pull_request
 
-# Run a specific job:
+## Run a specific job:
 act -j test
 
-# Collect artifacts to the /tmp/artifacts folder:
+## Collect artifacts to the /tmp/artifacts folder:
 act --artifact-server-path /tmp/artifacts
 
-# Run a job in a specific workflow (useful if you have duplicate job names)
+## Run a job in a specific workflow (useful if you have duplicate job names)
 act -j lint -W .github/workflows/checks.yml
 
-# Run in dry-run mode:
+## Run in dry-run mode:
 act -n
 
-# Enable verbose-logging (can be used with any of the above commands)
+## Enable verbose-logging (can be used with any of the above commands)
 act -v
-```
+```bash
 
 ## First `act` run
 
@@ -194,17 +194,17 @@ If your workflow depends on this token, you need to create a [personal access to
 
 ```bash
 act -s GITHUB_TOKEN=[insert token or leave blank and omit equals for secure input]
-```
+```bash
 
 If [GitHub CLI](https://cli.github.com/) is installed, the [`gh auth token`](https://cli.github.com/manual/gh_auth_token) command can be used to automatically pass the token to act
 
 ```bash
 act -s GITHUB_TOKEN="$(gh auth token)"
-```
+```php
 
 **WARNING**: `GITHUB_TOKEN` will be logged in shell history if not inserted through secure input or (depending on your shell config) the command is prefixed with a whitespace.
 
-# Known Issues
+## Known Issues
 
 ## Services
 
@@ -217,7 +217,7 @@ A `MODULE_NOT_FOUND` during `docker cp` command [#228](https://github.com/nektos
 ```yaml
 - name: test action locally
   uses: ./
-```
+```php
 
 In this case, you _must_ use `actions/checkout@v2` with a path that _has the same name as your repository_. If your repository is called _my-action_, then your checkout step would look like:
 
@@ -227,7 +227,7 @@ steps:
     uses: actions/checkout@v2
     with:
       path: "my-action"
-```
+```javascript
 
 If the `path:` value doesn't match the name of the repository, a `MODULE_NOT_FOUND` will be thrown.
 
@@ -239,9 +239,9 @@ You can work around this by setting `DOCKER_HOST` before running `act`, with e.g
 
 ```bash
 export DOCKER_HOST=$(docker context inspect --format '{{.Endpoints.docker.Host}}')
-```
+```bash
 
-# Runners
+## Runners
 
 GitHub Actions offers managed [virtual environments](https://help.github.com/en/actions/reference/virtual-environments-for-github-hosted-runners) for running workflows. In order for `act` to run your workflows locally, it must run a container for the runner defined in your workflow file. Here are the images that `act` uses for each runner type and size:
 
@@ -283,7 +283,7 @@ The `--pull` flag is set to true by default due to a breaking on older default d
 Set `--pull` to false if a local docker image is needed
 ```sh
   act --pull=false
-```
+```php
 
 ## Use an alternative runner image
 
@@ -291,22 +291,22 @@ To use a different image for the runner, use the `-P` option.
 
 ```sh
 act -P <platform>=<docker-image>
-```
+```php
 
 If your workflow uses `ubuntu-18.04`, consider below line as an example for changing Docker image used to run that workflow:
 
 ```sh
 act -P ubuntu-18.04=nektos/act-environments-ubuntu:18.04
-```
+```php
 
 If you use multiple platforms in your workflow, you have to specify them to change which image is used.
 For example, if your workflow uses `ubuntu-18.04`, `ubuntu-16.04` and `ubuntu-latest`, specify all platforms like below
 
 ```sh
 act -P ubuntu-18.04=nektos/act-environments-ubuntu:18.04 -P ubuntu-latest=ubuntu:latest -P ubuntu-16.04=node:16-buster-slim
-```
+```php
 
-# Secrets
+## Secrets
 
 To run `act` with secrets, you can enter them interactively, supply them as environment variables or load them from a file. The following options are available for providing secrets:
 
@@ -315,7 +315,7 @@ To run `act` with secrets, you can enter them interactively, supply them as envi
 - `act --secret-file my.secrets` - load secrets values from `my.secrets` file.
   - secrets file format is the same as `.env` format
 
-# Vars
+## Vars
 
 To run `act` with repository variables that are acessible inside the workflow via ${{ vars.VARIABLE }}, you can enter them interactively or load them from a file. The following options are available for providing github repository variables:
 
@@ -323,29 +323,29 @@ To run `act` with repository variables that are acessible inside the workflow vi
 - `act --var-file my.variables` - load variables values from `my.variables` file.
   - variables file format is the same as `.env` format
 
-# Configuration
+## Configuration
 
 You can provide default configuration flags to `act` by either creating a `./.actrc` or a `~/.actrc` file. Any flags in the files will be applied before any flags provided directly on the command line. For example, a file like below will always use the `nektos/act-environments-ubuntu:18.04` image for the `ubuntu-latest` runner:
 
 ```sh
-# sample .actrc file
+## sample .actrc file
 -P ubuntu-latest=nektos/act-environments-ubuntu:18.04
-```
+```php
 
 Additionally, act supports loading environment variables from an `.env` file. The default is to look in the working directory for the file but can be overridden by:
 
 ```sh
 act --env-file my.env
-```
+```php
 
 `.env`:
 
 ```env
 MY_ENV_VAR=MY_ENV_VAR_VALUE
 MY_2ND_ENV_VAR="my 2nd env var value"
-```
+```php
 
-# Skipping jobs
+## Skipping jobs
 
 You cannot use the `env` context in job level if conditions, but you can add a custom event property to the `github` context. You can use this method also on step level if conditions.
 
@@ -357,7 +357,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: exit 0
-```
+```php
 
 And use this `event.json` file with act otherwise the Job will run:
 
@@ -365,17 +365,17 @@ And use this `event.json` file with act otherwise the Job will run:
 {
     "act": true
 }
-```
+```php
 
 Run act like
 
 ```sh
 act -e event.json
-```
+```php
 
 _Hint: you can add / append `-e event.json` as a line into `./.actrc`_
 
-# Skipping steps
+## Skipping steps
 
 Act adds a special environment variable `ACT` that can be used to skip a step that you
 don't want to run locally. E.g. a step that posts a Slack message or bumps a version number.
@@ -386,9 +386,9 @@ don't want to run locally. E.g. a step that posts a Slack message or bumps a ver
   if: ${{ !env.ACT }}
   run: |
     ...
-```
+```json
 
-# Events
+## Events
 
 Every [GitHub event](https://developer.github.com/v3/activity/events/types) is accompanied by a payload. You can provide these events in JSON format with the `--eventpath` to simulate specific GitHub events kicking off an action. For example:
 
@@ -403,15 +403,15 @@ Every [GitHub event](https://developer.github.com/v3/activity/events/types) is a
     }
   }
 }
-```
+```bash
 
 ```sh
 act pull_request -e pull-request.json
-```
+```bash
 
 Act will properly provide `github.head_ref` and `github.base_ref` to the action as expected.
 
-# Pass Inputs to Manually Triggered Workflows
+## Pass Inputs to Manually Triggered Workflows
 
 Example workflow file
 
@@ -435,7 +435,7 @@ jobs:
       - name: Test with inputs
         run: |
           echo "Hello ${{ github.event.inputs.NAME }} and ${{ github.event.inputs.SOME_VALUE }}!"
-```
+```php
 
 ## via input or input-file flag
 
@@ -454,15 +454,15 @@ Example JSON payload file conveniently named `payload.json`
     "SOME_VALUE": "ABC"
   }
 }
-```
+```php
 
 Command for triggering the workflow
 
 ```sh
 act workflow_dispatch -e payload.json
-```
+```php
 
-# GitHub Enterprise
+## GitHub Enterprise
 
 Act supports using and authenticating against private GitHub Enterprise servers.
 To use your custom GHE server, set the CLI flag `--github-instance` to your hostname (e.g. `github.company.com`).
@@ -471,11 +471,11 @@ Please note that if your GHE server requires authentication, we will use the sec
 
 Please also see the [official documentation for GitHub actions on GHE](https://docs.github.com/en/enterprise-server@3.0/admin/github-actions/about-using-actions-in-your-enterprise) for more information on how to use actions.
 
-# Support
+## Support
 
 Need help? Ask on [Gitter](https://gitter.im/nektos/act)!
 
-# Contributing
+## Contributing
 
 Want to contribute to act? Awesome! Check out the [contributing guidelines](CONTRIBUTING.md) to get involved.
 

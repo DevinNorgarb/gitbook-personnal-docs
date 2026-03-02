@@ -8,14 +8,14 @@ Continuing from my [previous post](https://aruva.medium.com/using-chatgpt-to-bui
 
 C4 diagrams are a way to represent the architecture of a software system and are divided into four main levels:
 
-* Context level — external factors that interact with the system
-* Container level — deployment units and their dependencies
-* Component level — different components of the system
-* Code level — implementation details of the system
+- Context level — external factors that interact with the system
+- Container level — deployment units and their dependencies
+- Component level — different components of the system
+- Code level — implementation details of the system
 
 {% stepper %}
 {% step %}
-### Context Diagram
+## Context Diagram
 
 > **Prompt**: Let’s start by creating a context diagram of the services in Wealth Management\
 > **ChatGPT**: Sure, here’s an example of a context diagram in Mermaid format for a Wealth Management System:

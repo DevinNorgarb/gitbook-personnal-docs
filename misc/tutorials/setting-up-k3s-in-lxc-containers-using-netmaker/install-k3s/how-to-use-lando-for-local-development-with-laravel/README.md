@@ -28,7 +28,7 @@ On a Debian Linux for example you have to run the following two commands in a te
 ```bash
 $ wget https://files.devwithlando.io/lando-stable.deb
 $ sudo dpkg -i lando-stable.deb
-```
+```json
 {% endcode %}
 
 ## Setting up Lando for Laravel
@@ -38,17 +38,17 @@ Open a terminal, navigate to the root folder of your Laravel project and run:
 {% code title="Initialize Lando for Laravel" %}
 ```bash
 $ lando init --source cwd --recipe laravel --webroot public --name myapp
-```
+```json
 {% endcode %}
 
 This command will create a basic `.lando.yml` file in your project root. This file is the starting point for customizing the services and versions you want to use.
 
 Parameters explained:
 
-* `--source cwd` tells Lando that the source code of your project lives in the current working directory.
-* `--recipe laravel` initializes the Lando file with the Laravel recipe.
-* `--webroot public` tells Lando which directory will be the webroot of your project. In Laravel this is typically the `public` folder.
-* `--name myapp` defines the name of your app. Lando will generate a subdomain based on the app name for you to access your project.
+- `--source cwd` tells Lando that the source code of your project lives in the current working directory.
+- `--recipe laravel` initializes the Lando file with the Laravel recipe.
+- `--webroot public` tells Lando which directory will be the webroot of your project. In Laravel this is typically the `public` folder.
+- `--name myapp` defines the name of your app. Lando will generate a subdomain based on the app name for you to access your project.
 
 The generated `.lando.yml` looks like this:
 
@@ -58,7 +58,7 @@ name: myapp
 recipe: laravel
 config:
   webroot: public
-```
+```json
 {% endcode %}
 
 At this point you can already stop and start your development environment:
@@ -66,7 +66,7 @@ At this point you can already stop and start your development environment:
 {% code title="Start Lando" %}
 ```bash
 $ lando start
-```
+```php
 {% endcode %}
 
 Lando will bring up the whole environment. You may have to make small changes to your `.env` file (shown later). The simple Lando file above is enough to start a webserver and a database for Laravel.
@@ -89,7 +89,7 @@ Add to the `config` section of `.lando.yml`:
 ```yaml
 config:
   php: '7.4'
-```
+```php
 {% endcode %}
 
 Available: PHP 5.6, 7.0, 7.1, 7.2, 7.3, 7.4 and 8.0. The current default for the Laravel recipe was PHP 7.3 at the time of the original article.
@@ -100,7 +100,7 @@ Available: PHP 5.6, 7.0, 7.1, 7.2, 7.3, 7.4 and 8.0. The current default for the
 ```yaml
 config:
   composer_version: '1.10.1'
-```
+```php
 {% endcode %}
 
 The current default in the Laravel recipe was 2.0.7 at the time of writing.
@@ -113,7 +113,7 @@ By default the Laravel recipe runs Apache 2.4. To switch to nginx:
 ```yaml
 config:
   via: nginx:1.18
-```
+```php
 {% endcode %}
 
 ### Setting a database
@@ -124,14 +124,14 @@ Default is MySQL 5.7. To use MariaDB or Postgres:
 ```yaml
 config:
   database: mariadb
-```
+```php
 {% endcode %}
 
 {% code title="Use Postgres 9.6" %}
 ```yaml
 config:
   database: postgres:9.6
-```
+```php
 {% endcode %}
 
 ### Setting a caching backend
@@ -142,14 +142,14 @@ Add redis or memcached:
 ```yaml
 config:
   cache: redis:2.8
-```
+```php
 {% endcode %}
 
 {% code title="Use Memcached" %}
 ```yaml
 config:
   cache: memcached
-```
+```php
 {% endcode %}
 
 You can request specific versions for services as shown.
@@ -162,7 +162,7 @@ You can enable Xdebug:
 ```yaml
 config:
   xdebug: true
-```
+```php
 {% endcode %}
 
 You can also add custom config files for services (e.g., custom Nginx config or php.ini). See Lando docs for more details: https://docs.lando.dev/config/laravel.html#configuration
@@ -173,7 +173,7 @@ The Lando docs include which PHP extensions are installed by default per PHP ver
 
 To connect your app to the Lando environment you need to tweak your `.env` file.
 
-* Change `DB_HOST` to `database`.
+- Change `DB_HOST` to `database`.
 
 For MySQL/MariaDB the database settings should look like:
 
@@ -185,7 +185,7 @@ DB_PORT=3306
 DB_DATABASE=laravel
 DB_USERNAME=laravel
 DB_PASSWORD=laravel
-```
+```json
 {% endcode %}
 
 For Postgres:
@@ -198,25 +198,25 @@ DB_PORT=5432
 DB_DATABASE=laravel
 DB_USERNAME=postgres
 DB_PASSWORD=null
-```
+```json
 {% endcode %}
 
-* Configure cache driver host names according to your Lando config. Example for Redis:
+- Configure cache driver host names according to your Lando config. Example for Redis:
 
 {% code title="Redis config in .env" %}
 ```env
 REDIS_HOST=cache
 REDIS_PASSWORD=null
 REDIS_PORT=6379
-```
+```json
 {% endcode %}
 
-* Set `APP_URL` to the domain Lando generates. If you used `myapp` as the app name, Lando generates `myapp.lndo.site`. Lando has a wildcard DNS entry for `*.lndo.site` mapped to 127.0.0.1, so:
+- Set `APP_URL` to the domain Lando generates. If you used `myapp` as the app name, Lando generates `myapp.lndo.site`. Lando has a wildcard DNS entry for `*.lndo.site` mapped to 127.0.0.1, so:
 
 {% code title="APP_URL" %}
 ```env
 APP_URL=http://myapp.lndo.site
-```
+```python
 {% endcode %}
 
 ## Starting Lando
@@ -229,31 +229,31 @@ Open the generated URL (e.g., http://myapp.lndo.site) to see your Laravel app.
 
 Common Lando commands:
 
-* `lando start`: Starts the development environment and all services.
-* `lando stop`: Stops the development environment and all services.
-* `lando destroy`: Destroys the whole environment and removes images from disk.
+- `lando start`: Starts the development environment and all services.
+- `lando stop`: Stops the development environment and all services.
+- `lando destroy`: Destroys the whole environment and removes images from disk.
 
 {% hint style="warning" %}
 Caution: `lando destroy` will also delete your database and everything inside the storage folder!
 {% endhint %}
 
-* `lando artisan`: Runs artisan commands inside the container (e.g., `lando artisan migrate`).
-* `lando composer`: Runs composer inside the container (e.g., `lando composer install`).
-* `lando mysql`: Opens a MySQL shell in the container.
-* `lando php`: Runs PHP commands inside the container.
-* `lando ssh`: SSHs into your app container (where your source code runs).
+- `lando artisan`: Runs artisan commands inside the container (e.g., `lando artisan migrate`).
+- `lando composer`: Runs composer inside the container (e.g., `lando composer install`).
+- `lando mysql`: Opens a MySQL shell in the container.
+- `lando php`: Runs PHP commands inside the container.
+- `lando ssh`: SSHs into your app container (where your source code runs).
 
 Database import/export:
 
-* `lando db-export [file]`: Exports your database to a file.
-* `lando db-import <file>`: Imports a database dump into your database service.
+- `lando db-export [file]`: Exports your database to a file.
+- `lando db-import <file>`: Imports a database dump into your database service.
 
 If you change the `.lando.yml` after you already started the environment at least once, run:
 
 {% code title="Rebuild Lando" %}
 ```bash
 $ lando rebuild
-```
+```php
 {% endcode %}
 
 This recreates the environment with your changes. Persistent data (database, storage folder) remains after rebuild.
@@ -274,7 +274,7 @@ services:
 proxy:
   pma:
     - pma.lndo.site
-```
+```php
 {% endcode %}
 
 This adds a phpMyAdmin service, allows access to the `database` host, and proxies it to `pma.lndo.site` so you can access phpMyAdmin for each project at that subdomain.
@@ -283,8 +283,8 @@ This adds a phpMyAdmin service, allows access to the `database` host, and proxie
 
 Laravel Sail (https://laravel.com/docs/8.x/sail) is another option provided by the Laravel team. Sail is similar in many ways but:
 
-* Sail targets Laravel projects specifically; Lando can be used for any project.
-* Sail has more limited infrastructure version customization (e.g., at the time of writing, limited PHP version choices).
+- Sail targets Laravel projects specifically; Lando can be used for any project.
+- Sail has more limited infrastructure version customization (e.g., at the time of writing, limited PHP version choices).
 
 You can always customize via Dockerfiles, but Lando provides a simpler layer on top of Docker and Docker Compose to easily configure shareable environments per project.
 

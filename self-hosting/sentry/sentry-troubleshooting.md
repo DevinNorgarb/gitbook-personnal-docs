@@ -36,22 +36,22 @@ The _proper_ solution is as follows ([reported](https://github.com/getsentry/sel
 
     ```shell
     docker compose run --rm kafka kafka-consumer-groups --bootstrap-server kafka:9092 --list
-    ```
+```bash
 2.  Get group info:ShellCopied
 
     ```shell
     docker compose run --rm kafka kafka-consumer-groups --bootstrap-server kafka:9092 --group snuba-consumers --describe
-    ```
+```bash
 3.  Watching what is going to happen with offset by using dry-run (optional):ShellCopied
 
     ```shell
     docker compose run --rm kafka kafka-consumer-groups --bootstrap-server kafka:9092 --group snuba-consumers --topic events --reset-offsets --to-latest --dry-run
-    ```
+```bash
 4.  Set offset to latest and execute:ShellCopied
 
     ```shell
     docker compose run --rm kafka kafka-consumer-groups --bootstrap-server kafka:9092 --group snuba-consumers --topic events --reset-offsets --to-latest --execute
-    ```
+```
 
 **Tip**
 
@@ -65,7 +65,7 @@ This option is as follows ([reported](https://github.com/getsentry/self-hosted/i
 
     ```shell
     docker compose run --rm kafka kafka-consumer-groups --bootstrap-server kafka:9092 --all-groups --all-topics --reset-offsets --to-latest --execute
-    ```
+```
 
 Unlike the proper solution, this involves resetting the offsets of all consumer groups and all topics.
 
@@ -79,7 +79,7 @@ The _nuclear option_ is removing all Kafka-related volumes and recreating them w
 
     ```shell
     docker compose down --volumes
-    ```
+```bash
 2.  Remove the Kafka & Zookeeper related volumes:
 
     ShellCopied
@@ -87,21 +87,21 @@ The _nuclear option_ is removing all Kafka-related volumes and recreating them w
     ```shell
     docker volume rm sentry-kafka
     docker volume rm sentry-zookeeper
-    ```
+```bash
 3.  Run the install script again:
 
     ShellCopied
 
     ```shell
     ./install.sh
-    ```
+```bash
 4.  Start the instance:
 
     ShellCopied
 
     ```shell
     docker compose up -d
-    ```
+```
 
 #### Reducing disk usage <a href="#reducing-disk-usage" id="reducing-disk-usage"></a>
 
@@ -117,7 +117,7 @@ If you are seeing an error such as
 
 TextCopied
 
-```
+```python
 Background workers haven’t checked in recently. It seems that you have a backlog of 200 tasks. Either your workers aren’t running or you need more capacity.
 ```
 
@@ -146,9 +146,9 @@ An example script below:
 ShellCopied
 
 ```shell
-# Only keep the last 7 days of nodestore data. We heavily use performance monitoring.
+## Only keep the last 7 days of nodestore data. We heavily use performance monitoring.
 docker compose run --rm -T web cleanup --days 7 -m nodestore -l debug
-# This ensures pg-repack exists before running as the container gets recreated on upgrades
+## This ensures pg-repack exists before running as the container gets recreated on upgrades
 docker compose run --rm -T postgres bash -c "apt update && apt install -y --no-install-recommends postgresql-14-repack && su postgres -c 'pg_repack -E info -t nodestore_node'"
 ```
 
@@ -171,7 +171,7 @@ Occasionally, you might see an error like this
 
 TextCopied
 
-```
+```php
 container for service "${servicename}" is unhealthy
 ```
 
@@ -204,12 +204,12 @@ To apply new Docker daemon configuration, restart your Docker service with `syst
 
 Make sure you are using [valid private IP ranges](https://en.wikipedia.org/wiki/Reserved\_IP\_addresses), that is between these ranges:
 
-* `10.0.0.0/8` (address range of `10.0.0.0`–`10.255.255.255`)
-* `100.64.0.0/10` (address range of `100.64.0.0`–`100.127.255.255`)
-* `172.16.0.0/12` (address range of `172.16.0.0`–`172.31.255.255`)
-* `192.0.0.0/24` (address range of `192.0.0.0`–`192.0.0.255`)
-* `192.168.0.0/16` (address range of `192.168.0.0`–`192.168.255.255`)
-* `198.18.0.0/15` (address range of `198.18.0.0`–`198.19.255.255`)
+- `10.0.0.0/8` (address range of `10.0.0.0`–`10.255.255.255`)
+- `100.64.0.0/10` (address range of `100.64.0.0`–`100.127.255.255`)
+- `172.16.0.0/12` (address range of `172.16.0.0`–`172.31.255.255`)
+- `192.0.0.0/24` (address range of `192.0.0.0`–`192.0.0.255`)
+- `192.168.0.0/16` (address range of `192.168.0.0`–`192.168.255.255`)
+- `198.18.0.0/15` (address range of `198.18.0.0`–`198.19.255.255`)
 
 For further reading, you can see Matthew Stratiotto's article on [The definitive guide to docker's default-address-pools option](https://straz.to/2021-09-08-docker-address-pools/).
 
@@ -246,7 +246,7 @@ ShellCopied
 docker container prune
 docker builder prune
 docker image prune --all
-# WARNING: Executing "volume prune" might delete `sentry-vroom` volume as it's not an external volume.
+## WARNING: Executing "volume prune" might delete `sentry-vroom` volume as it's not an external volume.
 docker volume prune
 docker network prune
 ```

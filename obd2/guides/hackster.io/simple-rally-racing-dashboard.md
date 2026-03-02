@@ -1,12 +1,10 @@
 # Simple Rally/Racing Dashboard
 
 
-
 {% embed url="https://www.hackster.io/Ankel2000/simple-rally-racing-dashboard-061883" %}
 
 
-
-##
+## 
 
 An attempt to achieve: 1. Shifter LEDs with RPM display 2. Manual gearbox sensing and display 3. CAN bus values forwarding to RaceChrono.
 
@@ -103,9 +101,7 @@ I started with [Tinkercad](https://www.tinkercad.com/) for the very beginning, b
 #### RPM+Gear enclosure with components
 
 
-
 #### Enclosure 3D model
-
 
 
 ### Schematics
@@ -121,29 +117,29 @@ Proteus simulation
 Arduino
 
 ```
-#define DEBUG
-#define noDEMO
+## define DEBUG
+## define noDEMO
 
-#include "debug.h"
-#include "vars.h"
-#include "Config.h"
-#include <Adafruit_NeoPixel.h>
-#include <LiquidCrystal.h>
-#include <menu.h>
-#include <menuIO/serialOut.h>
-#include <menuIO/liquidCrystalOut.h>
-#include <SoftwareSerial.h>
+## include "debug.h"
+## include "vars.h"
+## include "Config.h"
+## include <Adafruit_NeoPixel.h>
+## include <LiquidCrystal.h>
+## include <menu.h>
+## include <menuIO/serialOut.h>
+## include <menuIO/liquidCrystalOut.h>
+## include <SoftwareSerial.h>
 //#include <LedControl.h>
-#include <LEDMatrixDriver.hpp>
-#include <mcp_can.h>
-#include <SPI.h>
+## include <LEDMatrixDriver.hpp>
+## include <mcp_can.h>
+## include <SPI.h>
 
 /*
  * GLOBAL VARIABLES
  */
 
-#define RPM_MIN RPM_TRIGGER[0]
-#define CONFIG configuration.data
+## define RPM_MIN RPM_TRIGGER[0]
+## define CONFIG configuration.data
 
 // GEARS 8x8 LED Matrix
 //LedControl        gears_lcd (PIN_GEARS_data,PIN_GEARS_clock,PIN_GEARS_select,PIN_GEARS_devices);
@@ -163,7 +159,7 @@ Configuration configuration(gears_lcd,neoring);
  */
 using namespace Menu;
 bool lcd_menu_active=false;
-#define MENU_MAX_DEPTH 3
+## define MENU_MAX_DEPTH 3
 
 // TODO: performance hit when using Configuration class members ? at least in VIRTUAL:
 Menu::result menu_rpm_brightness(eventMask e,navNode& nav,prompt& item) {
@@ -183,7 +179,7 @@ Menu::result menu_save_config() {
   return quit;
 }
 
-#define MENU_PROCESSING \
+## define MENU_PROCESSING \
   lcd.clear();\
   lcd.setCursor(0,0);\
   lcd.print(F(">> PROCESSING <<"));
@@ -350,8 +346,8 @@ void setup() {
 }
 
 void loop() {
-  
-#ifdef DEMO
+
+## ifdef DEMO
 unsigned short r;
 for (byte g=1;g<7;g++)
 {
@@ -365,7 +361,7 @@ for (byte g=1;g<7;g++)
     lcd.print(r);
   }
 }
-#endif
+## endif
 
   int lcd_button=analogRead(PIN_LCD_INPUT);
 
@@ -477,7 +473,7 @@ void rpm_fill(int rpm)
     if (neoring.canShow()) neoring.show();
     return;
   }
-  
+
   // Flashing all
   if (rpm >= CONFIG.RPM_TRIGGER[RPM_FLASH])
   {
@@ -488,7 +484,7 @@ void rpm_fill(int rpm)
     neoring.fill(RPM_COLOR[RPM_FLASH]);neoring.show();
     return;
   }
-  
+
   // Normal operation, fill the LEDs according to RPMs
   for (byte position=0;position < NEORING_LEDS;position++)
   {
@@ -557,7 +553,7 @@ uint32_t myColorHSV(uint16_t hue, uint8_t val) {
 
   if (val<128) {val=map(val,0,127,0,255);sat=255;}
   else if (val>=128) {sat=map(val,128,255,255,0);val=255;}
-  
+
   // Convert hue to R,G,B (nested ifs faster than divide+mod+switch):
   if(hue < 510) {         // Red to Green-1
     b = 0;

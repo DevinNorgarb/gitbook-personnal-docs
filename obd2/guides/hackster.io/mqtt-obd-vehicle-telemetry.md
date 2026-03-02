@@ -2,7 +2,7 @@
 
 {% embed url="https://www.hackster.io/jassak/mqtt-obd-vehicle-telemetry-f120c4" %}
 
-##
+## 
 
 Fancy to see your's vehicle data online in real-time? If so, continue reading!
 
@@ -115,7 +115,7 @@ Wiring diagram![](https://hackster.imgix.net/uploads/attachments/1159108/elschem
 
 SwiftFor iOS application
 
-```
+```python
 //
 //  MapView.swift
 //  RingViewRPM
@@ -134,14 +134,14 @@ struct MapView: UIViewRepresentable {
     var dlzka = 34.011286
     var sirka = -116.166868
     @State var prava:Bool=true
-    
+
     func makeUIView(context: Context) -> MKMapView {
         MKMapView(frame: .zero)
     }
-    
+
     func updateUIView(_ uiView: MKMapView, context: Context) {
-        
-    
+
+
         let coordinate = CLLocationCoordinate2D(
             latitude: dlzka, longitude: sirka)
         let sponka=MKPointAnnotation()
@@ -153,11 +153,10 @@ struct MapView: UIViewRepresentable {
         let annotations = uiView.annotations
         uiView.removeAnnotations(annotations)
         uiView.addAnnotation(sponka)
-        
-        
+
+
 }
-    
-    
-    
+
+
 }
 ```

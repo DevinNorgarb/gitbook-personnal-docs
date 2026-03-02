@@ -6,20 +6,20 @@ The SITL (Software In The Loop) simulator allows you to run APM without any hard
 
 Installation (Ubuntu)
 
-* Refer to the APM wiki for installation instructions: http://dev.ardupilot.com/wiki/setting-up-sitl-on-linux/
+- Refer to the APM wiki for installation instructions: http://dev.ardupilot.com/wiki/setting-up-sitl-on-linux/
 
 Launch the simulator
 
 {% stepper %}
 {% step %}
-### Launch SITL
+## Launch SITL
 
 Run:
 
 {% code title="Launch SITL" %}
 ```bash
 sim_vehicle.sh -w
-```
+```json
 {% endcode %}
 
 This launches the SITL simulator with the default settings.
@@ -39,7 +39,7 @@ Install the command-line tools (including GCC) for macOS, then install Python mo
 sudo easy_install pip
 sudo pip install pexpect
 sudo pip install pyserial
-```
+```python
 {% endcode %}
 {% endstep %}
 
@@ -51,7 +51,7 @@ Install via pip:
 {% code title="Install MAVLink and MAVProxy" %}
 ```bash
 sudo pip install pymavlink MAVProxy
-```
+```python
 {% endcode %}
 {% endstep %}
 
@@ -65,9 +65,9 @@ Clone the repositories and run the setup in each:
 git clone https://github.com/tridge/MAVProxy
 git clone https://github.com/tridge/mavlink
 
-# In each cloned directory:
+## In each cloned directory:
 sudo python setup.py build install
-```
+```json
 {% endcode %}
 {% endstep %}
 
@@ -84,7 +84,7 @@ git checkout macos
 cd ArduCopter
 make configure
 make sitl
-```
+```php
 {% endcode %}
 
 A relevant commit: https://github.com/erlerobot/ardupilot/commit/337bd7bf1f6d285934e887ddb06563960d0aa157
@@ -97,7 +97,7 @@ Refer to the APM wiki for additional setup details: http://dev.ardupilot.com/wik
 
 Source:
 
-* https://groups.google.com/forum/#!searchin/drones-discuss/SITL$20mac$20os/drones-discuss/kLx9kJAT9As/5UnGEn-mSQsJ
-* https://github.com/erlerobot/ardupilot/commit/337bd7bf1f6d285934e887ddb06563960d0aa157
+- https://groups.google.com/forum/#!searchin/drones-discuss/SITL$20mac$20os/drones-discuss/kLx9kJAT9As/5UnGEn-mSQsJ
+- https://github.com/erlerobot/ardupilot/commit/337bd7bf1f6d285934e887ddb06563960d0aa157
 
 Last updated 3 years ago

@@ -1,6 +1,6 @@
 # CL in review
 
-### [eng-practices](https://google.github.io/eng-practices/)
+## [eng-practices](https://google.github.io/eng-practices/)
 
 ### Summary <a href="#summary" id="summary"></a>
 
@@ -28,8 +28,8 @@ If you see some major design problems with this part of the CL, you should send 
 
 There are two major reasons it’s so important to send these major design comments out immediately:
 
-* Developers often mail a CL and then immediately start new work based on that CL while they wait for review. If there are major design problems in the CL you’re reviewing, they’re also going to have to re-work their later CL. You want to catch them before they’ve done too much extra work on top of the problematic design.
-* Major design changes take longer to do than small changes. Developers nearly all have deadlines; in order to make those deadlines and still have quality code in the codebase, the developer needs to start on any major re-work of the CL as soon as possible.
+- Developers often mail a CL and then immediately start new work based on that CL while they wait for review. If there are major design problems in the CL you’re reviewing, they’re also going to have to re-work their later CL. You want to catch them before they’ve done too much extra work on top of the problematic design.
+- Major design changes take longer to do than small changes. Developers nearly all have deadlines; in order to make those deadlines and still have quality code in the codebase, the developer needs to start on any major re-work of the CL as soon as possible.
 
 ### Step Three: Look through the rest of the CL in an appropriate sequence <a href="#step_three" id="step_three"></a>
 

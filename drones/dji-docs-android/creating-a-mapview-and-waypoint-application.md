@@ -1,27 +1,27 @@
 # Creating a MapView and Waypoint Application
 
-* [Using The DJI PC Simulator](/broken/pages/yestYBrXPiu4GcPCneis)
-  * [1. Introduction](/broken/pages/yestYBrXPiu4GcPCneis)
-  * [2. Installing and setup the DJI PC Simulator](/broken/pages/yestYBrXPiu4GcPCneis)
-  * [3. Using the DJI PC Simulator](/broken/pages/yestYBrXPiu4GcPCneis)
-* [Upgrading Your Aircraft's Firmware](/broken/pages/yestYBrXPiu4GcPCneis)
-* [Setup The Map View](/broken/pages/yestYBrXPiu4GcPCneis)
-  * [1. Importing The Framework and Libraries](/broken/pages/yestYBrXPiu4GcPCneis)
-  * [2. Creating the Map View](/broken/pages/yestYBrXPiu4GcPCneis)
-  * [3. Adding Annotations to the MapView](/broken/pages/yestYBrXPiu4GcPCneis)
-  * [4. Focusing the MKMapView](/broken/pages/yestYBrXPiu4GcPCneis)
-  * [5. Showing the Aircraft on Map View](/broken/pages/yestYBrXPiu4GcPCneis)
-* [Refactoring the UI](/broken/pages/yestYBrXPiu4GcPCneis)
-  * [1. Adding & Handling the New UIButtons](/broken/pages/yestYBrXPiu4GcPCneis)
-* [Configuring DJIWaypoint and DJIWaypointMission](/broken/pages/yestYBrXPiu4GcPCneis)
-  * [DJIWaypoint](/broken/pages/yestYBrXPiu4GcPCneis)
-  * [DJIWaypointMission](/broken/pages/yestYBrXPiu4GcPCneis)
-  * [Creating The DJIWaypointConfigViewController](/broken/pages/yestYBrXPiu4GcPCneis)
-* [Implementing the DJIWaypoint Mission](/broken/pages/yestYBrXPiu4GcPCneis)
-  * [Adding the DJIWaypointConfigViewController to DJIRootViewController](/broken/pages/yestYBrXPiu4GcPCneis)
-  * [Handling The DJIWaypoint Mission](/broken/pages/yestYBrXPiu4GcPCneis)
-* [Showtime](/broken/pages/yestYBrXPiu4GcPCneis)
-* [Summary](/broken/pages/yestYBrXPiu4GcPCneis)
+- [Using The DJI PC Simulator](/broken/pages/yestYBrXPiu4GcPCneis)
+  - [1. Introduction](/broken/pages/yestYBrXPiu4GcPCneis)
+  - [2. Installing and setup the DJI PC Simulator](/broken/pages/yestYBrXPiu4GcPCneis)
+  - [3. Using the DJI PC Simulator](/broken/pages/yestYBrXPiu4GcPCneis)
+- [Upgrading Your Aircraft's Firmware](/broken/pages/yestYBrXPiu4GcPCneis)
+- [Setup The Map View](/broken/pages/yestYBrXPiu4GcPCneis)
+  - [1. Importing The Framework and Libraries](/broken/pages/yestYBrXPiu4GcPCneis)
+  - [2. Creating the Map View](/broken/pages/yestYBrXPiu4GcPCneis)
+  - [3. Adding Annotations to the MapView](/broken/pages/yestYBrXPiu4GcPCneis)
+  - [4. Focusing the MKMapView](/broken/pages/yestYBrXPiu4GcPCneis)
+  - [5. Showing the Aircraft on Map View](/broken/pages/yestYBrXPiu4GcPCneis)
+- [Refactoring the UI](/broken/pages/yestYBrXPiu4GcPCneis)
+  - [1. Adding & Handling the New UIButtons](/broken/pages/yestYBrXPiu4GcPCneis)
+- [Configuring DJIWaypoint and DJIWaypointMission](/broken/pages/yestYBrXPiu4GcPCneis)
+  - [DJIWaypoint](/broken/pages/yestYBrXPiu4GcPCneis)
+  - [DJIWaypointMission](/broken/pages/yestYBrXPiu4GcPCneis)
+  - [Creating The DJIWaypointConfigViewController](/broken/pages/yestYBrXPiu4GcPCneis)
+- [Implementing the DJIWaypoint Mission](/broken/pages/yestYBrXPiu4GcPCneis)
+  - [Adding the DJIWaypointConfigViewController to DJIRootViewController](/broken/pages/yestYBrXPiu4GcPCneis)
+  - [Handling The DJIWaypoint Mission](/broken/pages/yestYBrXPiu4GcPCneis)
+- [Showtime](/broken/pages/yestYBrXPiu4GcPCneis)
+- [Summary](/broken/pages/yestYBrXPiu4GcPCneis)
 
 _If you come across any mistakes or bugs in this tutorial, please let us know using a Github issue, a post on the DJI forum, or commenting in the Gitbook. Please feel free to send us Github pull request and help us fix any issues. However, all pull requests related to document must follow the_ [_document style_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 
@@ -31,9 +31,9 @@ In this tutorial, you will learn how to implement the DJIWaypoint Mission featur
 
 You can download the demo project from this [Github Page](https://github.com/DJI-Mobile-SDK/iOS-GSDemo).
 
-### Using The DJI PC Simulator <a href="#using-the-dji-pc-simulator" id="using-the-dji-pc-simulator"></a>
+## Using The DJI PC Simulator <a href="#using-the-dji-pc-simulator" id="using-the-dji-pc-simulator"></a>
 
-#### 1. Introduction <a href="#id-1-introduction" id="id-1-introduction"></a>
+### 1. Introduction <a href="#id-1-introduction" id="id-1-introduction"></a>
 
 The DJI PC Simulator is a flight simulator designed for SDK developers. The simulator creates a virtual 3D environment and provides data analysis from flight data transmitted to the PC via the UDP protocol.
 
@@ -45,8 +45,8 @@ The DJI PC Simulator is a flight simulator designed for SDK developers. The simu
 
 First, you should download the DJI PC Simulator and WIN Driver from here: [https://developer.dji.com/mobile-sdk/downloads](https://developer.dji.com/mobile-sdk/downloads) :
 
-* DJI PC Simulator Installer & User Manual V1.0
-* WIN Driver Installer
+- DJI PC Simulator Installer & User Manual V1.0
+- WIN Driver Installer
 
 You must install the driver before running the simulator. Since the simulator only supports Windows, you should find a PC or install a Virtual Manchine(Like VMWare or Parallels Desktop) to run Windows on your Mac. Now, double click the **DJI\_ WIN\_Driver \_Installer.exe** file to install it. If a dialog box saying "Please power on MC and connect it to PC via USB!" pops up, just ignore it, click **"YES"**, and follow the rest of the instructions to install the driver.
 
@@ -60,8 +60,8 @@ Then, double click the **DJISimulator-Installer.exe** file and follow the instru
 
 **Note**:
 
-* The aircraft will not take off if the latitude and longitude values are near a [No Fly Zone](http://flysafe.dji.com/no-fly).
-* Select **show log window** under the Log Settings tab to display the log window, as seen below:
+- The aircraft will not take off if the latitude and longitude values are near a [No Fly Zone](http://flysafe.dji.com/no-fly).
+- Select **show log window** under the Log Settings tab to display the log window, as seen below:
 
 ***
 
@@ -71,8 +71,8 @@ Then, double click the **DJISimulator-Installer.exe** file and follow the instru
 
 **Note**:
 
-* Do **NOT** launch the DJI Pilot app when the DJI PC Simulator is running.
-* Do **NOT** mount the propellers on the aircraft when the DJI PC Simulator is running, in case the motors start by accident. That would be extremely dangerous.
+- Do **NOT** launch the DJI Pilot app when the DJI PC Simulator is running.
+- Do **NOT** mount the propellers on the aircraft when the DJI PC Simulator is running, in case the motors start by accident. That would be extremely dangerous.
 
 ***
 
@@ -102,23 +102,23 @@ For more info about DJI PC Simulator, please check the **DJI PC Simulator user m
 
 It's important to make sure your aircraft's firmware supports the DJI Mobile SDK before going through the following steps. Please download the latest firmware version from here based on the aircraft you have: [https://developer.dji.com/mobile-sdk/downloads/](https://developer.dji.com/mobile-sdk/downloads/) :
 
-* Phantom 3 Professional Firmware
-* Phantom 3 Advanced Firmware
-* Inspire 1 Firmware
+- Phantom 3 Professional Firmware
+- Phantom 3 Advanced Firmware
+- Inspire 1 Firmware
 
 It's not necessary to upgrade the Remote Controller's firmware, just put the downloaded **bin** file in the SD Card, insert it to your aircraft's camera, and restart it to upgrade. It may take 10 \~ 30 minutes to finish the upgrade.
 
 For the Inspire 1, you can check the upgrade status of the firmware by identifying the sound pattern from the aircraft:
 
-* Upgrading: D D D D ... (fast)
-* Upgrade Success: D DD ...
-* Upgrade Failed or Error: long beep sound
+- Upgrading: D D D D ... (fast)
+- Upgrade Success: D DD ...
+- Upgrade Failed or Error: long beep sound
 
 For the Phantom 3, you can check upgrade status of the firmware by looking at the camera status indicator:
 
-* Upgrading: camera status indicator will blink green and red
-* Upgrade Success: camera sattus indicator will stop blinking
-* Upgrade Failed or Error: camera status indicator will show solid red
+- Upgrading: camera status indicator will blink green and red
+- Upgrade Success: camera sattus indicator will stop blinking
+- Upgrade Failed or Error: camera status indicator will show solid red
 
 Regardless of what aircraft you are using, you can check whether or not the firmware was upgraded by checking the **txt** file generated during the upgrade process. For the Phantom 3 Professional, the txt file is named **"P3X\_FW\_RESULT\_AB.txt"**, and for the Inspire 1, it's named **"WM610\_FW\_RESULT\_AB.txt"**. Here are example contents of the **txt** file:
 
@@ -137,9 +137,9 @@ Now, let's delete the **ViewController.h** and **ViewController.m** files, which
 After that, open the **DJIRootViewController.m** file, create an IBOutlet for the MKMapView, name it "**mapView**" and link it to the MKMapView in **Main.storyboard**. Import the following header files and implement MKMapView's delegate method:
 
 ```
-#import "DJIRootViewController.h"
-#import <DJISDK/DJISDK.h>
-#import <MapKit/MapKit.h>
+## import "DJIRootViewController.h"
+## import <DJISDK/DJISDK.h>
+## import <MapKit/MapKit.h>
 
 @interface DJIRootViewController() <MKMapViewDelegate>
 
@@ -150,13 +150,13 @@ After that, open the **DJIRootViewController.m** file, create an IBOutlet for th
 
 Now, let's build and run the project. If everything is as it should be, you should see the following screenshot:
 
-#### 3. Adding Annotations to the MapView <a href="#id-3-adding-annotations-to-the-mapview" id="id-3-adding-annotations-to-the-mapview"></a>
+### 3. Adding Annotations to the MapView <a href="#id-3-adding-annotations-to-the-mapview" id="id-3-adding-annotations-to-the-mapview"></a>
 
 Currently, the map view is simple. Let's add something interesting to it. Create a new **NSObject** file named **DJIMapController**, which will be used to deal with the MKAnnotations(or for our purposes, Waypoints) logic on the map. Open the DJIMapController.h file and add the following code to it:
 
 ```
-#import <UIKit/UIKit.h>
-#import <MapKit/MapKit.h>
+## import <UIKit/UIKit.h>
+## import <MapKit/MapKit.h>
 
 @interface DJIMapController : NSObject
 
@@ -187,7 +187,7 @@ Here, we create an NSMutableArray called **editPoints** to store waypoint object
 Let's go to the DJIMapController.m file and replace the original code with the following:
 
 ```
-#import "DJIMapController.h"
+## import "DJIMapController.h"
 
 @implementation DJIMapController
 
@@ -241,7 +241,7 @@ Go back to the DJIRootViewController.m file, import the DJIMapController.h heade
 
 Once that is complete, open the DJIMapController.m file, initialize the **mapController** and **tapGesture** variables, and add the **tapGesture** to mapView to add waypoints. Furthermore, we need a boolean variable named "**isEditingPoints**" to store the edit waypoint state, which will also change the title of **editBtn** accordingly. Lastly, implement tapGesture's action method **addWayPoints**, as shown below:
 
-```
+```json
 @interface DJIRootViewController ()<MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic, assign)BOOL isEditingPoints;
@@ -257,7 +257,7 @@ Once that is complete, open the DJIMapController.m file, initialize the **mapCon
 
 }
 
-#pragma mark Custom Methods
+## pragma mark Custom Methods
 
 - (void)addWaypoints:(UITapGestureRecognizer *)tapGesture
 {
@@ -285,7 +285,7 @@ Once that is complete, open the DJIMapController.m file, initialize the **mapCon
 
 }
 
-#pragma mark MKMapViewDelegate Method
+## pragma mark MKMapViewDelegate Method
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
     if ([annotation isKindOfClass:[MKPointAnnotation class]]) {
@@ -301,7 +301,7 @@ Once that is complete, open the DJIMapController.m file, initialize the **mapCon
 
 In the above code, we also added an NSNotification observer to check the DJI Mobile SDK's state, to make sure it was sucessfully registered. At the same time, we implement the **addWaypoints** gesture action by calling DJIMapController's
 
-```
+```python
  - (void)addPoint:(CGPoint)point withMapView:(MKMapView *)mapView
 ```
 
@@ -309,17 +309,17 @@ method to add waypoints to the map. Next, we implement the IBAction method **edi
 
 When you are done with all the steps above, build and run your project and try to add waypoints on the map. If everything is fine, you will see the following animation:
 
-#### 4. Focusing the MKMapView <a href="#id-4-focusing-the-mkmapview" id="id-4-focusing-the-mkmapview"></a>
+### 4. Focusing the MKMapView <a href="#id-4-focusing-the-mkmapview" id="id-4-focusing-the-mkmapview"></a>
 
 You may be wondering why the map's location is different from your current location and why it is difficult to find your location on the map. Focusing the map to your current location quickly would be helpful for the application. To implement that feature, we need to use **CLLocationManager**.
 
 Open the DJIRootViewController.m file and import CoreLocation's header file. Create a CLLocationManager property named "locationManager". Then create a CLLocationCoordinate2D property named "userLocation" to store the user's location data. Next, implement CLLocationManager's **CLLocationManagerDelegate** protocol in the class, as shown below:
 
 ```
-#import <DJIRootViewController.h>
-#import <DJISDK/DJISDK.h>
-#import <MapKit/MapKit.h>
-#import <CoreLocation/CoreLocation.h>
+## import <DJIRootViewController.h>
+## import <DJISDK/DJISDK.h>
+## import <MapKit/MapKit.h>
+## import <CoreLocation/CoreLocation.h>
 
 @interface DJIRootViewController()<MKMapViewDelegate, CLLocationManagerDelegate>
 
@@ -340,7 +340,7 @@ In the code above, we also added a UIButton named "Focus Map" in DJIRootViewCont
 
 Once you are done, go back to DJIRootViewController.m file and add the following code:
 
-```
+```json
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -368,7 +368,7 @@ Once you are done, go back to DJIRootViewController.m file and add the following
     return NO;
 }
 
-#pragma mark CLLocation Methods
+## pragma mark CLLocation Methods
 -(void) startUpdateLocation
 {
     if ([CLLocationManager locationServicesEnabled]) {
@@ -401,7 +401,7 @@ Once you are done, go back to DJIRootViewController.m file and add the following
     }
 }
 
-#pragma mark - CLLocationManagerDelegate
+## pragma mark - CLLocationManagerDelegate
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     CLLocation* location = [locations lastObject];
@@ -417,7 +417,7 @@ Next, add a NSLocationAlwaysUsageDescription or NSLocationWhenInUseUsageDescript
 
 It's time to build and run the project to check the focus map feature. When you launch the app for the first time, a pop up alert asking for your permission to access your location will appear. Select **Allow** and press the **Focus Map** button. If the map view animates to your current location like the following animation, congratulations, you have finished the **Focus Map** feature!
 
-#### 5. Showing the Aircraft on Map View <a href="#id-5-showing-the-aircraft-on-map-view" id="id-5-showing-the-aircraft-on-map-view"></a>
+### 5. Showing the Aircraft on Map View <a href="#id-5-showing-the-aircraft-on-map-view" id="id-5-showing-the-aircraft-on-map-view"></a>
 
 Now, we can focus the mapView to our current location, which is a good start! However, let's do something more interesting. We're going to simulate the aircraft's GPS location using the DJI PC Simulator and show it on our map view.
 
@@ -425,10 +425,10 @@ You may know how to setup the DJI PC Simulator, and its basic usage. If you want
 
 Let's come back to the code. Create a new subclass of **MKAnnotationView** named "DJIAircraftAnnotationView" and a new subclass of NSObject named **DJIAircraftAnnotation**. Below is the code:
 
-* DJIAircraftAnnotationView.h
+- DJIAircraftAnnotationView.h
 
 ```
-#import <MapKit/MapKit.h>
+## import <MapKit/MapKit.h>
 
 @interface DJIAircraftAnnotationView : MKAnnotationView
 
@@ -437,10 +437,10 @@ Let's come back to the code. Create a new subclass of **MKAnnotationView** named
 @end
 ```
 
-* DJIAircraftAnnotationView.m
+- DJIAircraftAnnotationView.m
 
 ```
-#import "DJIAircraftAnnotationView.h"
+## import "DJIAircraftAnnotationView.h"
 
 @implementation DJIAircraftAnnotationView
 
@@ -467,11 +467,11 @@ Let's come back to the code. Create a new subclass of **MKAnnotationView** named
 
 In the code above, we create a MKAnnotationView for the aircraft, add a method named **updateHeading** to change the aircraft's rotation, and set its image to "aircraft.png"(You can get the image from this tutorial's demo project.) in the init method. Also, we disable the DJIAircraftAnnotationView's draggable property. Take a look at the code below:
 
-* DJIAircraftAnnotation.h
+- DJIAircraftAnnotation.h
 
 ```
-#import <MapKit/MapKit.h>
-#import "DJIAircraftAnnotationView.h"
+## import <MapKit/MapKit.h>
+## import "DJIAircraftAnnotationView.h"
 
 @interface DJIAircraftAnnotation : NSObject<MKAnnotation>
 
@@ -487,10 +487,10 @@ In the code above, we create a MKAnnotationView for the aircraft, add a method n
 @end
 ```
 
-* DJIAircraftAnnotation.m
+- DJIAircraftAnnotation.m
 
 ```
-#import "DJIAircraftAnnotation.h"
+## import "DJIAircraftAnnotation.h"
 
 @implementation DJIAircraftAnnotation
 
@@ -522,18 +522,18 @@ The **DJIAircraftAnnotation** class implements the **MKAnnotation** protocol. It
 Once you're done with that, open the DJIMapController.h file and import the DJIAircraftAnnotation.h file:
 
 ```
-#import "DJIAircraftAnnotation.h"
+## import "DJIAircraftAnnotation.h"
 ```
 
 Then create a property of an instance of DJIAircraftAnnotation and name it **aircraftAnnotation**.
 
-```
+```sql
 @property (nonatomic, strong) DJIAircraftAnnotation* aircraftAnnotation;
 ```
 
 Furthermore, add two new methods to update the aircraft's location and it's heading on the map.
 
-```
+```json
 /**
  *  Update Aircraft's location in Map View
  */
@@ -547,7 +547,7 @@ Furthermore, add two new methods to update the aircraft's location and it's head
 
 Next, let's come back to the DJIMapController.m file and implement the two methods we just added:
 
-```
+```json
 -(void)updateAircraftLocation:(CLLocationCoordinate2D)location withMapView:(MKMapView *)mapView
 {
     if (self.aircraftAnnotation == nil) {
@@ -568,7 +568,7 @@ Next, let's come back to the DJIMapController.m file and implement the two metho
 
 Also, since we don't want the **aircraftAnnotation** removed by the **cleanAllPointsWithMapView** method in the DJIMapController.m file, we need to modify it, as shown below:
 
-```
+```python
 - (void)cleanAllPointsWithMapView:(MKMapView *)mapView
 {
     [_editPoints removeAllObjects];
@@ -590,10 +590,10 @@ To provide a better user experience, we need to add a status view on top of the 
 Once that's done, open DJIRootViewController.m file, create IBOutlets for the above UI elements and import DJISDK's header file and implement "DJIFlightControllerDelegate" and "DJISDKManagerDelegate" protocols. Also, we need to create a CLLocationCoordinate2D property named **droneLocation** to record the aircraft's location, as shown below:
 
 ```
-#import <DJIRootViewController.h>
-#import <DJISDK/DJISDK.h>
-#import <MapKit/MapKit.h>
-#import <CoreLocation/CoreLocation.h>
+## import <DJIRootViewController.h>
+## import <DJISDK/DJISDK.h>
+## import <MapKit/MapKit.h>
+## import <CoreLocation/CoreLocation.h>
 
 @interface DJIRootViewController()<MKMapViewDelegate, CLLocationManagerDelegate, DJISDKManagerDelegate, DJIFlightControllerDelegate>
 
@@ -626,7 +626,7 @@ Now, let's initialize the UI elements' values in a new method called **initUI**.
 }
 ```
 
-```
+```json
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -651,7 +651,7 @@ Next, implement the "DJISDKManagerDelegate" method as follows:
 
 ```
 
-#pragma mark DJISDKManagerDelegate Methods
+## pragma mark DJISDKManagerDelegate Methods
 
 - (void)sdkManagerDidRegisterAppWithError:(NSError *_Nullable)error
 {
@@ -683,13 +683,13 @@ In the code above, we can implement DJISDKManager's **sdkManagerDidRegisterAppWi
 You may notice that there is a "DemoUtility" class here, let's implement it now. Create a new NSObject class and named it as "DemoUtility", replace its .h file and .m file with the followings:
 
 ```
-#ifndef DemoUtility_h
-#define DemoUtility_h
-#define WeakRef(__obj) __weak typeof(self) __obj = self
-#define WeakReturn(__obj) if(__obj ==nil)return;
-#define DEGREE(x) ((x)*180.0/M_PI)
-#define RADIAN(x) ((x)*M_PI/180.0)
-#endif
+## ifndef DemoUtility_h
+## define DemoUtility_h
+## define WeakRef(__obj) __weak typeof(self) __obj = self
+## define WeakReturn(__obj) if(__obj ==nil)return;
+## define DEGREE(x) ((x)*180.0/M_PI)
+## define RADIAN(x) ((x)*M_PI/180.0)
+## endif
 
 extern void ShowMessage(NSString *title, NSString *message, id target, NSString *cancleBtnTitle);
 
@@ -700,8 +700,8 @@ extern void ShowMessage(NSString *title, NSString *message, id target, NSString 
 ```
 
 ```
-#import "DemoUtility.h"
-#import <DJISDK/DJISDK.h>
+## import "DemoUtility.h"
+## import <DJISDK/DJISDK.h>
 
 inline void ShowMessage(NSString *title, NSString *message, id target, NSString *cancleBtnTitle)
 {
@@ -726,7 +726,7 @@ inline void ShowMessage(NSString *title, NSString *message, id target, NSString 
 
 Then in the **viewWillDisappear** method, we need to invoke the "stopUpdatingLocation" method of CLLocationManager to stop update location as shown below:
 
-```
+```json
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
@@ -736,7 +736,7 @@ Then in the **viewWillDisappear** method, we need to invoke the "stopUpdatingLoc
 
 Moreover, update the **focusMapAction** method to set **droneLocation** as the center of the map view's region, as shown below:
 
-```
+```php
 - (IBAction)focusMapAction:(id)sender {
 
     if (CLLocationCoordinate2DIsValid(self.droneLocation)) {
@@ -752,7 +752,7 @@ Moreover, update the **focusMapAction** method to set **droneLocation** as the c
 
 Next, We need to modify the **MKMapViewDelegate** method to what is shown below. It will check the annotation variable's class and set its annotationView as a **DJIAircraftAnnotationView** Class type object:
 
-```
+```json
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
     if ([annotation isKindOfClass:[MKPointAnnotation class]]) {
@@ -774,7 +774,7 @@ Next, We need to modify the **MKMapViewDelegate** method to what is shown below.
 Furthermore, let's implement the **DJIFlightControllerDelegate** method:
 
 ```
-#pragma mark DJIFlightControllerDelegate
+## pragma mark DJIFlightControllerDelegate
 
 - (void)flightController:(DJIFlightController *)fc didUpdateSystemState:(DJIFlightControllerCurrentState *)state
 {
@@ -823,7 +823,7 @@ Next, drag eight UIButtons to the view and change their names to "Edit", "Back",
 Then add IBOutlets and IBActions for each of the eight buttons in the DJIGSButtonViewController.h file. Also, we will add an Enum named **DJIGSViewMode** with the two different modes the application could be in. Next, we add serveral delegate methods to be implemented by the delegate viewcontroller when IBAction methods for the buttons are trigger. Lastly, add the method **switchToMode:inGSButtonVC:** to update the state of the buttons when the **DJIGSViewMode** changed. Take a look at the code below:
 
 ```
-#import <UIKit/UIKit.h>
+## import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, DJIGSViewMode) {
     DJIGSViewMode_ViewMode,
@@ -873,7 +873,7 @@ typedef NS_ENUM(NSUInteger, DJIGSViewMode) {
 Once you've taken care of that, open the DJIGSButtonViewController.m file to replace all the code in the file with the following code:
 
 ```
-#import "DJIGSButtonViewController.h"
+## import "DJIGSButtonViewController.h"
 
 @implementation DJIGSButtonViewController
 
@@ -887,7 +887,7 @@ Once you've taken care of that, open the DJIGSButtonViewController.m file to rep
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Property Method
+## pragma mark - Property Method
 - (void)setMode:(DJIGSViewMode)mode
 {
     _mode = mode;
@@ -901,7 +901,7 @@ Once you've taken care of that, open the DJIGSButtonViewController.m file to rep
     [_configBtn setHidden:(mode == DJIGSViewMode_ViewMode)];
 }
 
-#pragma mark - IBAction Methods
+## pragma mark - IBAction Methods
 
 - (IBAction)backBtnAction:(id)sender {
     [self setMode:DJIGSViewMode_ViewMode];
@@ -963,15 +963,15 @@ Now, let's go to the DJIRootViewController.m file and delete the **editButton** 
 Then, import the DJIGSButtonViewController.h header file. Create a property of type "DJIGSButtonViewController" named **gsButtonVC** and implement DJIGSButtonViewController's **DJIGSButtonViewControllerDelegate** protocol within the class, as shown below:
 
 ```
-#import "DJIRootViewController.h"
-#import <MapKit/MapKit.h>
-#import <CoreLocation/CoreLocation.h>
-#import <DJISDK/DJISDK.h>
-#import "DJIMapController.h"
-#import "DJIGSButtonViewController.h"
-#import "DemoUtility.h"
+## import "DJIRootViewController.h"
+## import <MapKit/MapKit.h>
+## import <CoreLocation/CoreLocation.h>
+## import <DJISDK/DJISDK.h>
+## import "DJIMapController.h"
+## import "DJIGSButtonViewController.h"
+## import "DemoUtility.h"
 
-#define kEnterNaviModeFailedAlertTag 1001
+## define kEnterNaviModeFailedAlertTag 1001
 
 @interface DJIRootViewController ()<DJIGSButtonViewControllerDelegate, MKMapViewDelegate, CLLocationManagerDelegate, DJISDKManagerDelegate, DJIFlightControllerDelegate>
 @property (nonatomic, assign)BOOL isEditingPoints;
@@ -980,14 +980,14 @@ Then, import the DJIGSButtonViewController.h header file. Create a property of t
 
 Furthermore, initialize the **gsButtonVC** property in the initUI method and move the original **focusMapAction** method's content to a new method named **focusMap**, as shown below:
 
-```
+```json
 self.gsButtonVC = [[DJIGSButtonViewController alloc] initWithNibName:@"DJIGSButtonViewController" bundle:[NSBundle mainBundle]];
 [self.gsButtonVC.view setFrame:CGRectMake(0, self.topBarView.frame.origin.y + self.topBarView.frame.size.height, self.gsButtonVC.view.frame.size.width, self.gsButtonVC.view.frame.size.height)];
 self.gsButtonVC.delegate = self;
 [self.view addSubview:self.gsButtonVC.view];
 ```
 
-```
+```json
 - (void)focusMap
 {
     if (CLLocationCoordinate2DIsValid(self.droneLocation)) {
@@ -1004,7 +1004,7 @@ self.gsButtonVC.delegate = self;
 Finally, implement **DJIGSButtonViewController**'s delegate methods, as shown below:
 
 ```
-#pragma mark - DJIGSButtonViewController Delegate Methods
+## pragma mark - DJIGSButtonViewController Delegate Methods
 - (void)stopBtnActionInGSButtonVC:(DJIGSButtonViewController *)GSBtnVC
 {
 }
@@ -1058,13 +1058,13 @@ Now, let's build and run the project and try to press the **Edit** and **Back** 
 
 Let's go to **DJIWaypoint.h** file and check it out. For example, you can use:
 
-```
+```bash
 -(id) initWithCoordinate:(CLLocationCoordinate2D)coordinate;
 ```
 
 to create a waypoint object with a specific coordinate. Once you create a waypoint, you can add a **DJIWaypointAction** to it by calling:
 
-```
+```python
 -(BOOL) addAction:(DJIWaypointAction*)action;
 ```
 
@@ -1074,13 +1074,13 @@ Moreover, with waypoints, you have the ability to set the coordinate, altitude, 
 
 A DJIWaypointMission is used when you want to upload, start and stop a Waypoint Mission. You can add waypoints of type **DJIWaypoint** using the method:
 
-```
+```python
 - (void)addWaypoint:(DJIWaypoint *_Nonnull)waypoint;
 ```
 
 On the contrary, you can also delete waypoints from a task by using the method:
 
-```
+```bash
 - (void)removeWaypoint:(DJIWaypoint *_Nonnull)waypoint;
 ```
 
@@ -1103,7 +1103,7 @@ At the bottom, we add two UIButtons for the **Cancel** and **Finish** actions. F
 Now, let's create IBOutlets and IBActions for each of the UI elements in the DJIWaypointConfigViewController.h file, as shown below:
 
 ```
-#import <UIKit/UIKit.h>
+## import <UIKit/UIKit.h>
 
 @class DJIWaypointConfigViewController;
 
@@ -1135,7 +1135,7 @@ Here, we also create two "DJIWaypointConfigViewControllerDelegate" delegate meth
 Next, let's replace the code in the DJIWaypointConfigViewController.m file with the following code:
 
 ```
-#import "DJIWaypointConfigViewController.h"
+## import "DJIWaypointConfigViewController.h"
 @interface DJIWaypointConfigViewController ()
 @end
 
@@ -1185,7 +1185,7 @@ In the code above, we create an **initUI** method, which is called in the viewDi
 Now,let's go to DJIRootViewController.m file, add the DJIWaypointConfigViewController.h header file at the top, and create a property of type **DJIWaypointConfigViewController** with the name "waypointConfigVC". Then, implement the DJIWaypointConfigViewControllerDelegate protocol, as shown below:
 
 ```
-#import "DJIWaypointConfigViewController.h"
+## import "DJIWaypointConfigViewController.h"
 
 @interface DJIRootViewController ()<DJIGSButtonViewControllerDelegate, DJIWaypointConfigViewControllerDelegate, MKMapViewDelegate, CLLocationManagerDelegate, DJISDKManagerDelegate, DJIFlightControllerDelegate>
 
@@ -1196,7 +1196,7 @@ Now,let's go to DJIRootViewController.m file, add the DJIWaypointConfigViewContr
 
 Next, let's add some code to initialize the **waypointConfigVC** instance variable and set its delegate as "DJIRootViewController" at the bottom of the **initUI** method:
 
-```
+```json
 -(void) initUI
 {
     self.modeLabel.text = @"N/A";
@@ -1236,7 +1236,7 @@ In the code above, we set the **alpha** property of the **waypointConfigVC**'s v
 Furthermore, implement the **DJIWaypointConfigViewControllerDelegate** methods, as shown below:
 
 ```
-#pragma mark - DJIWaypointConfigViewControllerDelegate Methods
+## pragma mark - DJIWaypointConfigViewControllerDelegate Methods
 
 - (void)cancelBtnActionInDJIWaypointConfigViewController:(DJIWaypointConfigViewController *)waypointConfigVC
 {
@@ -1262,7 +1262,7 @@ Furthermore, implement the **DJIWaypointConfigViewControllerDelegate** methods, 
 
 In the first delegate method, we use a class method from UIView to animate the changing **alpha** value of **waypointConfigVC**'s view:
 
-```
+```json
 + (void)animateWithDuration:(NSTimeInterval)duration animations:(void (^)(void))animations NS_AVAILABLE_IOS(4_0);
 ```
 
@@ -1270,7 +1270,7 @@ In the second delegate method, we do the same thing as we did in the first deleg
 
 Lastly, replace the code in the **configBtnActionInGSButtonVC:** method with the following code to show the **waypointConfigVC**'s view when the user presses the **Config** button:
 
-```
+```json
 - (void)configBtnActionInGSButtonVC:(DJIGSButtonViewController *)GSBtnVC
 {
     WeakRef(weakSelf);
@@ -1285,17 +1285,17 @@ Lastly, replace the code in the **configBtnActionInGSButtonVC:** method with the
 
 Once that's done, let's build and run the project. Try to show the **waypointConfigVC**'s view by pressing the **Edit** button and **Config** button:
 
-#### Handling The DJIWaypoint Mission <a href="#handling-the-djiwaypoint-mission" id="handling-the-djiwaypoint-mission"></a>
+### Handling The DJIWaypoint Mission <a href="#handling-the-djiwaypoint-mission" id="handling-the-djiwaypoint-mission"></a>
 
 Now let's go back to DJIRootViewController.m file. Create a property of type **DJIWaypointMission** and named it as "waypointMission" as shown below:
 
-```
+```json
 @property(nonatomic, strong) DJIWaypointMission* waypointMission;
 ```
 
 Next, replace the code in **configBtnActionInGSButtonVC** delegate method with the followings:
 
-```
+```json
 - (void)configBtnActionInGSButtonVC:(DJIGSButtonViewController *)GSBtnVC
 {
     WeakRef(weakSelf);
@@ -1334,7 +1334,7 @@ In the code above, we create a local NSArray variable named **wayPoints** and as
 
 Next, we use a for loop to get the **CLLocation** for each waypoint from the **wayPoints** array and check if its **coordinate** is valid by using the method:
 
-```
+```json
 BOOL CLLocationCoordinate2DIsValid(CLLocationCoordinate2D coord);
 ```
 
@@ -1342,7 +1342,7 @@ Finally, if the coordinate is valid, we create a waypoint of type **DJIWaypoint*
 
 Once that is complete, let's go to DJIWaypointConfigViewController's delegate method **finishBtnActionInDJIWaypointConfigViewController** and replace the code inside with the followings:
 
-```
+```json
 - (void)finishBtnActionInDJIWaypointConfigViewController:(DJIWaypointConfigViewController *)waypointConfigVC
 {
     WeakRef(weakSelf);
@@ -1379,7 +1379,7 @@ Above, we use a for loop to set the **altitude** property of each DJIWaypoint in
 
 Furthermore, let's implement **startBtnActionInGSButtonVC** as shown below:
 
-```
+```json
 - (void)startBtnActionInGSButtonVC:(DJIGSButtonViewController *)GSBtnVC
 {
     [self.missionManager startMissionExecutionWithCompletion:^(NSError * _Nullable error) {
@@ -1397,7 +1397,7 @@ Here, call the **startMissionExecutionWithCompletion** method of DJIMissionManag
 
 Finally, let's implement the **stopMissionExecutionWithCompletion** method of DJIMissionManager in the **DJIGSButtonViewController** delegate method to stop the waypoint mission, as shown below:
 
-```
+```json
 - (void)stopBtnActionInGSButtonVC:(DJIGSButtonViewController *)GSBtnVC
 {
     [self.missionManager stopMissionExecutionWithCompletion:^(NSError * _Nullable error) {

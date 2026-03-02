@@ -1,45 +1,45 @@
 # HTTPie
 
-### [Installation](https://httpie.io/docs/cli/installation)
+## [Installation](https://httpie.io/docs/cli/installation)
 
-* [Universal](https://httpie.io/docs/cli/installation#universal)
-* [macOS](https://httpie.io/docs/cli/installation#macos)
-* [Windows](https://httpie.io/docs/cli/installation#windows)
-* [Linux](https://httpie.io/docs/cli/installation#linux)
-* [FreeBSD](https://httpie.io/docs/cli/installation#freebsd)
+- [Universal](https://httpie.io/docs/cli/installation#universal)
+- [macOS](https://httpie.io/docs/cli/installation#macos)
+- [Windows](https://httpie.io/docs/cli/installation#windows)
+- [Linux](https://httpie.io/docs/cli/installation#linux)
+- [FreeBSD](https://httpie.io/docs/cli/installation#freebsd)
 
-#### [Universal](https://httpie.io/docs/cli/universal)
+### [Universal](https://httpie.io/docs/cli/universal)
 
 [**PyPI**](https://httpie.io/docs/cli/pypi)
 
 Please make sure you have Python 3.7 or newer (`python --version`).
 
 ```
-# Install httpie
+## Install httpie
 $ python -m pip install --upgrade pip wheel
 $ python -m pip install httpie
 ```
 
 ```
-# Upgrade httpie
+## Upgrade httpie
 $ python -m pip install --upgrade pip wheel
 $ python -m pip install --upgrade httpie
 ```
 
-#### [macOS](https://httpie.io/docs/cli/macos)
+### [macOS](https://httpie.io/docs/cli/macos)
 
 [**Homebrew**](https://httpie.io/docs/cli/homebrew)
 
 To install [Homebrew](https://brew.sh/), see [its installation](https://docs.brew.sh/Installation).
 
 ```
-# Install httpie
+## Install httpie
 $ brew update
 $ brew install httpie
 ```
 
 ```
-# Upgrade httpie
+## Upgrade httpie
 $ brew update
 $ brew upgrade httpie
 ```
@@ -49,41 +49,41 @@ $ brew upgrade httpie
 To install [MacPorts](https://www.macports.org/), see [its installation](https://www.macports.org/install.php).
 
 ```
-# Install httpie
+## Install httpie
 $ port selfupdate
 $ port install httpie
 ```
 
 ```
-# Upgrade httpie
+## Upgrade httpie
 $ port selfupdate
 $ port upgrade httpie
 ```
 
-#### [Windows](https://httpie.io/docs/cli/windows)
+### [Windows](https://httpie.io/docs/cli/windows)
 
 [**Chocolatey**](https://httpie.io/docs/cli/chocolatey)
 
 To install [Chocolatey](https://chocolatey.org/), see [its installation](https://chocolatey.org/install).
 
 ```
-# Install httpie
+## Install httpie
 $ choco install httpie
 ```
 
 ```
-# Upgrade httpie
+## Upgrade httpie
 $ choco upgrade httpie
 ```
 
-#### [Linux](https://httpie.io/docs/cli/linux)
+### [Linux](https://httpie.io/docs/cli/linux)
 
 [**Debian and Ubuntu**](https://httpie.io/docs/cli/debian-and-ubuntu)
 
 Also works for other Debian-derived distributions like MX Linux, Linux Mint, deepin, Pop!\_OS, KDE neon, Zorin OS, elementary OS, Kubuntu, Devuan, Linux Lite, Peppermint OS, Lubuntu, antiX, Xubuntu, etc.
 
 ```
-# Install httpie
+## Install httpie
 $ curl -SsL https://packages.httpie.io/deb/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/httpie.gpg
 $ sudo echo "deb [arch=amd64 signed-by=/usr/share/keyrings/httpie.gpg] https://packages.httpie.io/deb ./" > /etc/apt/sources.list.d/httpie.list
 $ sudo apt update
@@ -91,19 +91,19 @@ $ sudo apt install httpie
 ```
 
 ```
-# Upgrade httpie
+## Upgrade httpie
 $ sudo apt update && sudo apt upgrade httpie
 ```
 
 [**Fedora**](https://httpie.io/docs/cli/fedora)
 
 ```
-# Install httpie
+## Install httpie
 $ dnf install httpie
 ```
 
 ```
-# Upgrade httpie
+## Upgrade httpie
 $ dnf upgrade httpie
 ```
 
@@ -112,13 +112,13 @@ $ dnf upgrade httpie
 Also works for other RHEL-derived distributions like ClearOS, Oracle Linux, etc.
 
 ```
-# Install httpie
+## Install httpie
 $ yum install epel-release
 $ yum install httpie
 ```
 
 ```
-# Upgrade httpie
+## Upgrade httpie
 $ yum upgrade httpie
 ```
 
@@ -127,14 +127,14 @@ $ yum upgrade httpie
 Get the standalone HTTPie Linux executables when you don't want to go through the full installation process.
 
 ```
-# Install httpie
+## Install httpie
 $ https --download packages.httpie.io/binaries/linux/http-latest -o http
 $ ln -ls ./http ./https
 $ chmod +x ./http ./https
 ```
 
 ```
-# Upgrade httpie
+## Upgrade httpie
 $ https --download packages.httpie.io/binaries/linux/http-latest -o http
 ```
 
@@ -143,12 +143,12 @@ $ https --download packages.httpie.io/binaries/linux/http-latest -o http
 To install [Snapcraft](https://snapcraft.io/), see [its installation](https://snapcraft.io/docs/installing-snapd).
 
 ```
-# Install httpie
+## Install httpie
 $ snap install httpie
 ```
 
 ```
-# Upgrade httpie
+## Upgrade httpie
 $ snap refresh httpie
 ```
 
@@ -157,13 +157,13 @@ $ snap refresh httpie
 To install [Linuxbrew](https://docs.brew.sh/Homebrew-on-Linux), see [its installation](https://docs.brew.sh/Homebrew-on-Linux#install).
 
 ```
-# Install httpie
+## Install httpie
 $ brew update
 $ brew install httpie
 ```
 
 ```
-# Upgrade httpie
+## Upgrade httpie
 $ brew update
 $ brew upgrade httpie
 ```
@@ -173,36 +173,36 @@ $ brew upgrade httpie
 Also works for other Arch-derived distributions like ArcoLinux, EndeavourOS, Artix Linux, etc.
 
 ```
-# Install httpie
+## Install httpie
 $ pacman -Syu httpie
 ```
 
 ```
-# Upgrade httpie
+## Upgrade httpie
 $ pacman -Syu
 ```
 
-#### [FreeBSD](https://httpie.io/docs/cli/freebsd)
+### [FreeBSD](https://httpie.io/docs/cli/freebsd)
 
 [**FreshPorts**](https://httpie.io/docs/cli/freshports)
 
 ```
-# Install httpie
+## Install httpie
 $ pkg install www/py-httpie
 ```
 
 ```
-# Upgrade httpie
+## Upgrade httpie
 $ pkg upgrade www/py-httpie
 ```
 
-#### [Unstable version](https://httpie.io/docs/cli/unstable-version)
+### [Unstable version](https://httpie.io/docs/cli/unstable-version)
 
 If you want to try out the latest version of HTTPie that hasn't been officially released yet, you can install the development or unstable version directly from the master branch on GitHub. However, keep in mind that the development version is a work in progress and may not be as reliable as the stable version.
 
 You can use the following command to install the development version of HTTPie on Linux, macOS, Windows, or FreeBSD operating systems. With this command, the code present in the `master` branch is downloaded and installed using `pip`.
 
-```
+```php
 $ python -m pip install --upgrade https://github.com/httpie/cli/archive/master.tar.gz
 ```
 
@@ -210,23 +210,23 @@ There are other ways to install the development version of HTTPie on macOS and L
 
 You can install it using Homebrew by running the following commands:
 
-```
+```php
 $ brew uninstall --force httpie
 $ brew install --HEAD httpie
 ```
 
 You can install it using Snapcraft by running the following commands:
 
-```
+```php
 $ snap remove httpie
 $ snap install httpie --edge
 ```
 
 To verify the installation, you can compare the [version identifier on GitHub](https://github.com/httpie/cli/blob/master/httpie/\_\_init\_\_.py#L6) with the one available on your machine. You can check the version of HTTPie on your machine by using the command `http --version`.
 
-```
+```php
 $ http --version
-# 3.X.X.dev0
+## 3.X.X.dev0
 ```
 
 Note that on your machine, the version name will have the `.dev0` suffix.

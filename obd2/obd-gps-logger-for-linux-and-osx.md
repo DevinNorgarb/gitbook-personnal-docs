@@ -8,7 +8,7 @@ It can then take that logged data, and write useful output formats
 
 If you find obdgpslogger useful, please don't hesitate to drop me an email at [chunky@icculus.org](mailto:chunky@icculus.org) and let me know of any success, failures, or questions you might have!
 
-### Modules
+## Modules
 
 OBD GPS Logger comes as a bunch of small tools, each intended to complete a single task. [I list these modules](/broken/pages/Hf6Ut5p5ayL5hbfzGUqt) on a page of their own.
 
@@ -53,9 +53,9 @@ The core interest in this application is OBDII. To log from OBDII, you'll need a
 
 I have all these three devices. I use the OBDLink the most \[it's the fastest at sampling, and has the most powerful set of power-saving settings], followed by the OBDPros. I rarely use the OBDKey anymore:
 
-* [OBDLink device](http://www.scantool.net/obdlink.html)
-* [OBDPros USB](http://www.obdpros.com/product_info.php?products_id=133)
-* [Bluetooth OBDKey](http://www.obdkey.com/)
+- [OBDLink device](http://www.scantool.net/obdlink.html)
+- [OBDPros USB](http://www.obdpros.com/product_info.php?products_id=133)
+- [Bluetooth OBDKey](http://www.obdkey.com/)
 
 If you want to use the GPS logging part, you'll need a [GPS receiver compatible with gpsd](http://gpsd.berlios.de/hardware.html), and gpsd. For bluetooth, I'm using one of these: [Globalsat BT-359](http://www.amazon.com/gp/product/B000GWGHOK) and am very happy with it. In general, though, I prefer the [BU-353](http://store.mp3car.com/BU_353_USB_GPS_Receiver_p/gps-002.htm) since you don't have to deal with batteries or turning on and enabling gpsd. \[yay hotplug]
 
@@ -95,10 +95,10 @@ Longer, opaque version: I have run it on ARM Linux, x86 Linux, x86\_64 Linux, PP
 
 Some links to typical documents \[direct links to svn versions]:
 
-* [README](http://svn.icculus.org/obdgpslogger/trunk/README?view=markup)
-* [ChangeLog](http://svn.icculus.org/obdgpslogger/trunk/ChangeLog?view=markup)
-* [TODO](http://svn.icculus.org/obdgpslogger/trunk/TODO?view=markup)
-* [COPYING](http://svn.icculus.org/obdgpslogger/trunk/COPYING?view=markup). The license is GPLv2+.
+- [README](http://svn.icculus.org/obdgpslogger/trunk/README?view=markup)
+- [ChangeLog](http://svn.icculus.org/obdgpslogger/trunk/ChangeLog?view=markup)
+- [TODO](http://svn.icculus.org/obdgpslogger/trunk/TODO?view=markup)
+- [COPYING](http://svn.icculus.org/obdgpslogger/trunk/COPYING?view=markup). The license is GPLv2+.
 
 #### Distribution Packages
 
@@ -122,7 +122,7 @@ There's a macintel bundle, with included gpsd, here: [OBDGPSLogger-0.11-Darwin.d
 
 This is probably more recent than the numbered tarball above, but may have issues
 
-```
+```bash
 svn co svn://svn.icculus.org/obdgpslogger/trunk obdgpslogger
 ```
 
@@ -134,7 +134,7 @@ I strongly suggest installing gpsd first.
 
 Build it using cmake:
 
-```
+```bash
 mkdir build
 cd build
 cmake .. # or ccmake to edit options
@@ -150,10 +150,10 @@ On Windows, the software works with [cygwin](http://www.cygwin.com/). \[obdsim a
 
 You need the following packages \[install them through cygwin's setup.exe, selecting some of them may select others automatically, you should leave those ones on]:
 
-* devel/cmake
-* devel/gcc
-* devel/make
-* devel/subversion
+- devel/cmake
+- devel/gcc
+- devel/make
+- devel/subversion
 
 Open Cygwin from the desktop or start menu entry, and then run the same commands as "building" above
 

@@ -6,7 +6,7 @@ This following article is about building and running pfSense® software on a vir
 
 A basic, working, virtual machine will exist by the end of this article.
 
-### Assumptions[¶](https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-proxmox-ve.html#assumptions)
+## Assumptions[¶](https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-proxmox-ve.html#assumptions)
 
 * Proxmox VE host is up and running
 * Host has at least two network interfaces available for WAN and LAN.

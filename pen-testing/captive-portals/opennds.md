@@ -4,7 +4,7 @@ description: https://opennds.readthedocs.io/en/stable/
 
 # OpenNDS
 
-### 1. The openNDS project
+## 1. The openNDS project
 
 openNDS (open Network Demarcation Service) is a high performance, small footprint, Captive Portal.
 
@@ -48,9 +48,9 @@ From openNDS v9.5.0, The CPI method is supported in both forms and enabled by de
 
 Immediately after installing, a simple three stage dynamic html splash page sequence is served to connecting clients. Client logins are recorded in a log.
 
-* The first page asks the user to accept the portal Terms of Service.
-* The second page welcomes the user.
-* Depending on the client device CPD implementation, a third page may be displayed. It confirms the user has access to the Internet.
+- The first page asks the user to accept the portal Terms of Service.
+- The second page welcomes the user.
+- Depending on the client device CPD implementation, a third page may be displayed. It confirms the user has access to the Internet.
 
 ### 4. Username/Email-address Login Default. (_Enabled in the configuration file_)
 
@@ -70,9 +70,9 @@ Third party traffic control packages can also be used, for example to provide sy
 
 Many methods of customising openNDS exist:
 
-* **simple changes to content** using basic html and css edits.
-* **theme specifications** allowing full control of look and feel with the option of configuration defined form fields generating dynamic html.
-* **full third party development** where openNDS is used as the "Engine" behind the most sophisticated Captive Portal systems.
+- **simple changes to content** using basic html and css edits.
+- **theme specifications** allowing full control of look and feel with the option of configuration defined form fields generating dynamic html.
+- **full third party development** where openNDS is used as the "Engine" behind the most sophisticated Captive Portal systems.
 
 ### 6. The Portal
 

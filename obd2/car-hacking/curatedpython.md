@@ -4,9 +4,9 @@ description: Credit https://curatedpython.com/p/yacht-yet-cantoolz-cantoolz/inde
 
 # CuratedPython
 
-### CANToolz
+## CANToolz
 
-#### a.k.a.
+### a.k.a.
 
 . It provides multiple modules that can be chained using CANToolz's `pipe` system and used by security researchers, automotive/OEM security testers in black-box analysis.
 
@@ -24,9 +24,9 @@ The framework is really module-oriented, where one could use one, two, a couple 
 
 More details and use-case examples available on:
 
-* Author's blog
-* CANToolz's Telegram group.
-* CANToolz's Wiki.
+- Author's blog
+- CANToolz's Telegram group.
+- CANToolz's Wiki.
 
 ### Supported hardware
 
@@ -42,13 +42,13 @@ More hardware could be supported. Feel free to open a request.
 
 Using manual installation (installing missing dependencies as well):
 
-```
+```php
 $ python setup.py install
 ```
 
 The installation process will create a `cantoolz` alias command in your bin/ folder. To start `cantoolz`, simply run:
 
-```
+```php
 $ cantoolz -g w -c examples/can_sniff.py
 ```
 
@@ -56,7 +56,7 @@ Then go to CANToolz's web interface at http://localhost:4444
 
 Help is available with:
 
-```
+```php
 $ cantoolz -h
 ```
 
@@ -95,20 +95,20 @@ We are working on supporting other types of I/O hardware and modules. Please joi
 
 ### Usage Examples
 
-* CAN Switch filter scanner
-* Checking which CAN frames can be passed from diagnostic interface to HU and back
-* MITM with firewall (ECU ID detection)
-* Checking what packets are responsible for chosen "action"
-* Replay discovery
-* Checking what packets are responsible for chosen "action"
-* Ping discovery (with ISO TP and UDS support)
-* UDS detection, etc.
+- CAN Switch filter scanner
+- Checking which CAN frames can be passed from diagnostic interface to HU and back
+- MITM with firewall (ECU ID detection)
+- Checking what packets are responsible for chosen "action"
+- Replay discovery
+- Checking what packets are responsible for chosen "action"
+- Ping discovery (with ISO TP and UDS support)
+- UDS detection, etc.
 
 And many other possible scenarios. Some of them can be found in the example folder of this repository.
 
 Just use modules as "needed":
 
-* Example with DIFF mode, to find door unlock commands.
+- Example with DIFF mode, to find door unlock commands.
 
 ### Sniffing and UDS detection example
 
@@ -120,9 +120,9 @@ Therefore, use it as-is!
 
 ### A question/comment?
 
-* IRC: #cantoolz @ freenode.net
-* Telegram: https://t.me/CANToolz
+- IRC: #cantoolz @ freenode.net
+- Telegram: https://t.me/CANToolz
 
 ### With best regards
 
-* Alexey Sintsov (@asintsov) / \[email protected] -- Creator of CANtoolz
+- Alexey Sintsov (@asintsov) / \[email protected] -- Creator of CANtoolz

@@ -12,16 +12,16 @@ The way I set it up is slight different than what Cloudflare’s documentation s
 
 ## Tunnel Setup
 
-* Login to Cloudflare Zero Trust Dashboard (it used to be called Cloudflare Teams): https://dash.teams.cloudflare.com/
-* Click on Access > Tunnels
+- Login to Cloudflare Zero Trust Dashboard (it used to be called Cloudflare Teams): https://dash.teams.cloudflare.com/
+- Click on Access > Tunnels
 
 ![](<../../../../.gitbook/assets/image (62)>)
 
-* Click on Create a tunnel
+- Click on Create a tunnel
 
 ![](<../../../../.gitbook/assets/image (63)>)
 
-* Give your tunnel a name (example: Blog Example)
+- Give your tunnel a name (example: Blog Example)
 
 ![](<../../../../.gitbook/assets/image (64)>)
 
@@ -33,7 +33,7 @@ After saving your tunnel you are presented with the install command for cloudfla
 
 Note: I altered the Base64 encoding to better show how it works.
 
-* Use something like CyberChef (https://gchq.github.io/CyberChef/) or another Base64 decoder to decode the install command that Cloudflare provided.
+- Use something like CyberChef (https://gchq.github.io/CyberChef/) or another Base64 decoder to decode the install command that Cloudflare provided.
 
 This is the Base64 encoded string in my example:
 
@@ -47,17 +47,17 @@ Here is the same input and output directly on CyberChef:
 
 https://gchq.github.io/CyberChef/#recipe=From\_Base64('A-Za-z0-9%2B/%3D',true,false)\&input=ZXlKaElqb2lUWGxCWTJOdmRXNTBWR0ZuTVRJeklpd2lkQ0k2SWsxNVZIVnVibVZzU1VReE1qTWlMQ0p6SWpvaVRYbFVkVzV1Wld4VFpXTnlaWFF4TWpNaWZRPT0
 
-* Make note of the decoded Base64 as we will need it later on.
+- Make note of the decoded Base64 as we will need it later on.
 
 ## URLs
 
 Now we need to create what the external URL will be for the web application.
 
-* Enter what you want the external URL to be for the web application. Example: blogexample.thedxt.ca
+- Enter what you want the external URL to be for the web application. Example: blogexample.thedxt.ca
 
 ![](<../../../../.gitbook/assets/image (66)>)
 
-* Enter the internal URL for the web application. Example: http://192.168.3.41:3343
+- Enter the internal URL for the web application. Example: http://192.168.3.41:3343
 
 ![](<../../../../.gitbook/assets/image (67)>)
 
@@ -69,15 +69,15 @@ You should now see your tunnel summary page.
 
 This is how I like to build my Docker Compose setups — feel free to do it whichever way you prefer.
 
-* Make a new folder for your Docker Compose setup (example: cloudflared-blog-example).
-* Make another new folder for the persistent data for the cloudflared client (example: cloudflared-example-data).
+- Make a new folder for your Docker Compose setup (example: cloudflared-blog-example).
+- Make another new folder for the persistent data for the cloudflared client (example: cloudflared-example-data).
 
 ## Credentials File
 
 We need to create a credentials file for cloudflared to use, using the Base64 info we decoded earlier from the cloudflared install command.
 
-* In the cloudflared-example-data folder make a new JSON file named with your Tunnel ID. Example: MyTunnelID123.json
-* In the Tunnel ID JSON file enter your Account Tag, your Tunnel Secret and your Tunnel ID in this format:
+- In the cloudflared-example-data folder make a new JSON file named with your Tunnel ID. Example: MyTunnelID123.json
+- In the Tunnel ID JSON file enter your Account Tag, your Tunnel Secret and your Tunnel ID in this format:
 
 `{"AccountTag":"Your Account Tag","TunnelSecret":"Your Tunnel Secret","TunnelID":"Your Tunnel ID"}`
 
@@ -89,20 +89,20 @@ We have just created the cloudflared credentials file.
 
 ## Config File
 
-* In the cloudflared-example-data folder create a file called config.yml
-* Add the following information to config.yml:
-  * Tunnel ID: `tunnel: Your Tunnel ID`
-  * Reference the credentials file you created earlier: `credentials-file: /root/.cloudflared/YourTunnelID.json`
-* Create the ingress section:
-  * Start with: `ingress:`
-  * Add your external hostname and the internal service mapping, for example:
-    * hostname: blogexample.thedxt.ca service: http://192.168.3.41:3343
-  * Add the catch-all rule to return 404 if nothing matches:
-    * service: http\_status:404
+- In the cloudflared-example-data folder create a file called config.yml
+- Add the following information to config.yml:
+  - Tunnel ID: `tunnel: Your Tunnel ID`
+  - Reference the credentials file you created earlier: `credentials-file: /root/.cloudflared/YourTunnelID.json`
+- Create the ingress section:
+  - Start with: `ingress:`
+  - Add your external hostname and the internal service mapping, for example:
+    - hostname: blogexample.thedxt.ca service: http://192.168.3.41:3343
+  - Add the catch-all rule to return 404 if nothing matches:
+    - service: http\_status:404
 
 Example config.yml:
 
-```
+```bash
 tunnel: MyTunnelID123
 credentials-file: /root/.cloudflared/MyTunnelID123.json
 
@@ -118,7 +118,7 @@ Create docker-compose.yml in the cloudflared-blog-example folder.
 
 Example docker-compose.yml:
 
-```
+```yaml
 ---
 version: "3.2"
 services:
@@ -132,7 +132,7 @@ services:
     restart: unless-stopped
 ```
 
-* Start your Docker container.
+- Start your Docker container.
 
 If everything is configured correctly your tunnel should now be up and showing as active in your Cloudflare Zero Trust dashboard.
 
@@ -162,12 +162,12 @@ If you want to take this a step further you can also put Cloudflare Access in fr
 
 An alternative approach uses the token form of the install command and avoids creating the credentials/config files manually. I’m showing both methods because the more verbose method explains how everything ties together; the token method is simpler to deploy.
 
-* Make a docker-compose.yml file.
-* Copy the cloudflared install command — you need everything after --no-autoupdate including the Base64 token.
+- Make a docker-compose.yml file.
+- Copy the cloudflared install command — you need everything after --no-autoupdate including the Base64 token.
 
 Example docker-compose.yml using the token method:
 
-```
+```bash
 ---
 version: "3.2"
 services:
@@ -181,8 +181,8 @@ services:
 
 ## Further reading
 
-* Cloudflare Tunnel documentation: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
-* Cloudflare cloudflared Docker tags: https://hub.docker.com/r/cloudflare/cloudflared/tags
-* Related post: https://thedxt.ca/2022/06/settings-up-cloudflare-access/
+- Cloudflare Tunnel documentation: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+- Cloudflare cloudflared Docker tags: https://hub.docker.com/r/cloudflare/cloudflared/tags
+- Related post: https://thedxt.ca/2022/06/settings-up-cloudflare-access/
 
 Last updated 2 years ago

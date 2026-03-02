@@ -16,7 +16,7 @@ Given that I’m working in academic robotics, all these projects have one thing
 
 ***
 
-### Why Docker with ROS?
+## Why Docker with ROS?
 
 In my [Continuous Integration](https://roboticseabass.com/2020/05/12/continuous-integration-with-github-docker-and-jenkins/) post, I motivated the need to isolate software environments, and pointed to the difference between virtual machines and containers. To recap, Docker is one platform for managing containers. The official [Why Docker?](https://www.docker.com/why-docker) page has the best possible description for containerization: _solving the “it works on my machine” headache_.
 
@@ -24,8 +24,8 @@ That gets into our next question: If ROS is designed with stable, long-term supp
 
 While ROS certainly eases the process of getting started with existing software packages and/or distributing your own packages, I still think there are key reasons that make it worthwhile to use containers. Namely,
 
-* **Reproducibility:** If you want others to reproduce your work as painlessly as possible, you could provide a detailed README with all the necessary dependencies, installation steps, troubleshooting tips, etc. Alternatively, you could handle all those potentially tricky dependencies inside a Docker container that you can test yourself before sharing that with a (hopefully) much easier set of instructions to get things running.
-* **Switching Between Projects:** Even if you’re a pro ROS system integrator or you’ve developed a watertight installation guide, chances are multiple projects will have conflicting dependencies. If you’re working on projects that use different versions of ROS (or different versions of software in general), then tinkering with your host machine’s environment for context switching may be painful, if not impossible, to get right. See below for an exaggerated (but not unrealistic) situation.
+- **Reproducibility:** If you want others to reproduce your work as painlessly as possible, you could provide a detailed README with all the necessary dependencies, installation steps, troubleshooting tips, etc. Alternatively, you could handle all those potentially tricky dependencies inside a Docker container that you can test yourself before sharing that with a (hopefully) much easier set of instructions to get things running.
+- **Switching Between Projects:** Even if you’re a pro ROS system integrator or you’ve developed a watertight installation guide, chances are multiple projects will have conflicting dependencies. If you’re working on projects that use different versions of ROS (or different versions of software in general), then tinkering with your host machine’s environment for context switching may be painful, if not impossible, to get right. See below for an exaggerated (but not unrealistic) situation.
 
 ![](https://i0.wp.com/roboticseabass.com/wp-content/uploads/2021/04/docker_multiple_projects.png?resize=750%2C453\&ssl=1)Without some virtualization, juggling these projects on the same machine would be… not ideal.\
 &#xNAN;_&#x49;con made by_ [_Freepik_](https://www.flaticon.com/authors/freepik) _from_ [_www.flaticon.com_](https://www.flaticon.com)
@@ -36,38 +36,38 @@ While ROS certainly eases the process of getting started with existing software 
 
 First things first: If you can, you should _absolutely_ rely on the prebuilt [OSRF ROS images on Docker Hub](https://hub.docker.com/r/osrf/ros). Once you’ve installed Docker, you can directly pull one of these images with a single command. For example, to get the full ROS Noetic desktop install directly from the source:
 
-```
+```bash
 docker pull osrf/ros:noetic-desktop-full
 ```
 
 Once you’ve set this up, you can go into a container and do your ROS activities. For example, the following line will start a ROS master inside a container.
 
-```
+```bash
 docker run -it osrf/ros:noetic-desktop-full roscore
 ```
 
 Now open another Terminal, enter a Bash shell inside the container, and see if you can list the available ROS topics:
 
-```
+```bash
 docker run -it osrf/ros:noetic-desktop-full bash
-# rostopic list
+## rostopic list
 ERROR: Unable to communicate with master!
 ```
 
 As you see, this did not work because each container is completely isolated unless you explicitly allow them to talk to each other. There are [many Docker networking options](https://docs.docker.com/network/), but one common one is to allow the containers to share the same network as the host. Try the same lines again with the following extra arguments:
 
-```
+```bash
 docker run -it --net=host osrf/ros:noetic-desktop-full roscore
 
 docker run -it --net=host osrf/ros:noetic-desktop-full bash
-# rostopic list
+## rostopic list
 /rosout
 /rosout_agg
 ```
 
 Now, you could open a few Terminals inside your container and see if you can publish and subscribe to ROS topics using the command-line tools. For example, try running the following commands in 3 separate Terminals, ensuring you start the Docker container with host networking.
 
-```
+```bash
 roscore 
 
 rostopic pub -r 1 /my_topic std_msgs/String '{data: "hello"}'
@@ -83,13 +83,13 @@ If you happen to have ROS installed on your host machine, you could also try to 
 
 Now we should have an isolated ROS development environment with some TurtleBot3 packages… but if you try running anything with graphics you’ll find this isn’t going to immediately work out the gate. For example, try the following command (the `-it` arguments denote interactive shells so you can actually see the output).
 
-```
+```php
 docker run -it --net=host osrf/ros:noetic-desktop-full bash -it -c "roslaunch gazebo_ros empty_world.launch"
 ```
 
 According to the [ROS Wiki](http://wiki.ros.org/docker/Tutorials/GUI), there are several ways to get graphics to work from inside a Docker container — and this is key for ROS workflows full of visual tools like RViz, rqt, and Gazebo. Taking the simplest (but least secure) of the approaches, which is to allow Docker to use the host machine’s X11 socket, we can do the following:
 
-```
+```python
 xhost + 
 
 docker run -it --net=host \
@@ -104,7 +104,7 @@ docker run -it --net=host \
 
 However, in my experience this approach is not bulletproof. In fact, the instructions from the ROS Wiki on their own do not work on my personal laptop. This is where the [NVIDIA Container Toolkit](https://github.com/NVIDIA/nvidia-docker) comes in. As long as you have an NVIDIA GPU with the right drivers (which in Ubuntu is a feat in itself, to be honest), you can get around some of the pesky display issues and additionally get support for other GPU accelerated tasks such as CUDA and OpenGL. Once you install the NVIDIA Container Toolkit, the above command gets a few more pieces tacked on. For example:
 
-```
+```python
 docker run -it --net=host --gpus all \
     --env="NVIDIA_DRIVER_CAPABILITIES=all" \
     --env="DISPLAY" \
@@ -118,16 +118,16 @@ One more recommendation — which I know is a backpedal from my original suggest
 
 While you’ll have to edit your Dockerfile to install ROS, it’s undoubtedly easier than figuring out how to get NVIDIA drivers into an existing ROS image. Here’s a minimal example whose steps are directly based on the [official ROS Noetic install instructions](http://wiki.ros.org/noetic/Installation/Ubuntu).
 
-```
+```python
 FROM nvidia/cudagl:11.1.1-base-ubuntu20.04
 
-# Minimal setup
+## Minimal setup
 RUN apt-get update \
  && apt-get install -y locales lsb-release
 ARG DEBIAN_FRONTEND=noninteractive
 RUN dpkg-reconfigure locales
 
-# Install ROS Noetic
+## Install ROS Noetic
 RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 RUN apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 RUN apt-get update \
@@ -142,10 +142,10 @@ RUN echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 Then, you can build this new image, which I’m naming `nvidia_ros`, and test out all of the promised capabilities.
 
 ```
-# Build the Dockerfile
+## Build the Dockerfile
 docker build -t nvidia_ros .
 
-# Start a terminal
+## Start a terminal
 docker run -it --net=host --gpus all \
     --env="NVIDIA_DRIVER_CAPABILITIES=all" \
     --env="DISPLAY" \
@@ -158,15 +158,15 @@ docker run -it --net=host --gpus all \
 Once you’re inside the Docker container, you can run some tests like the following:
 
 ```
-# Test GUI based tools
+## Test GUI based tools
 rqt
 gazebo
 roscore & rviz
 
-# Check CUDA functionality
+## Check CUDA functionality
 nvidia-smi
 
-# Check OpenGL functionality
+## Check OpenGL functionality
 apt-get install mesa-utils
 glxgears
 ```
@@ -183,16 +183,16 @@ Now that we have a “core” image that has all our NVIDIA and ROS support, we 
 
 Our base image would look as follows:
 
-```
+```python
 FROM nvidia_ros:latest
 
-# Change the default shell to Bash
+## Change the default shell to Bash
 SHELL [ "/bin/bash" , "-c" ]
 
-# Install Git
+## Install Git
 RUN apt-get update && apt-get install -y git
 
-# Create a Catkin workspace and clone TurtleBot3 repos
+## Create a Catkin workspace and clone TurtleBot3 repos
 RUN source /opt/ros/noetic/setup.bash \
  && mkdir -p /turtlebot3_ws/src \
  && cd /turtlebot3_ws/src \
@@ -202,19 +202,19 @@ RUN source /opt/ros/noetic/setup.bash \
  && git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 RUN echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc
 
-# Build the Catkin workspace and ensure it's sourced
+## Build the Catkin workspace and ensure it's sourced
 RUN source /opt/ros/noetic/setup.bash \
  && cd turtlebot3_ws \
  && catkin_make
 RUN echo "source /turtlebot3_ws/devel/setup.bash" >> ~/.bashrc
 
-# Set the working folder at startup
+## Set the working folder at startup
 WORKDIR /turtlebot3_ws
 ```
 
 Then we can build both our images, where the `-f` flag refers to the file name to use and `-t` refers to the name of the target container. Otherwise, Docker will by default look for a file in the current folder named `Dockerfile`.
 
-```
+```python
 docker build -f dockerfile_nvidia_ros -t nvidia_ros .
 docker build -f dockerfile_tb3_base -t turtlebot3_base .
 ```
@@ -222,7 +222,7 @@ docker build -f dockerfile_tb3_base -t turtlebot3_base .
 Since I don’t want to type out all the `docker run` options anymore (and I presume you don’t want to either), I made a [`run_docker.sh` script](https://github.com/sea-bass/turtlebot3_behavior_demos/blob/main/docker/run_docker.sh) that makes this a little easier. With this script, the following commands are equivalent.
 
 ```
-# Original command (broke)
+## Original command (broke)
 docker run -it --net=host --gpus all \
     --env="NVIDIA_DRIVER_CAPABILITIES=all" \
     --env="DISPLAY" \
@@ -231,15 +231,15 @@ docker run -it --net=host --gpus all \
     turtlebot3_base \
     roslaunch gazebo_ros empty_world.launch
 
-# Command from our script (woke)
+## Command from our script (woke)
 ./run_docker.sh turtlebot3_base "roslaunch gazebo_ros empty_world.launch"
 
-# We'll see even more abstraction later (bespoke)
+## We'll see even more abstraction later (bespoke)
 ```
 
 So now, we can start a simulated robot and drive it around with our keyboard… all from inside Docker containers. From two separate Terminals, try this out:
 
-```
+```php
 ./run_docker.sh turtlebot3_base "roslaunch turtlebot3_gazebo turtlebot3_world.launch"
 
 ./run_docker.sh turtlebot3_base "roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch"
@@ -258,10 +258,10 @@ Now it’s time for a third Docker image: our “overlay” image. Now we we’v
 
 Our overlay Dockerfile will look as follows:
 
-```
+```python
 FROM turtlebot3_base:latest
 
-# Create an overlay Catkin workspace
+## Create an overlay Catkin workspace
 RUN source /opt/ros/noetic/setup.bash \
  && mkdir -p /overlay_ws/src \
  && cd /overlay_ws \ 
@@ -273,22 +273,22 @@ RUN source /opt/ros/noetic/setup.bash \
  && catkin config --extend /turtlebot3_ws/devel \
  && catkin build -j4
 
-# Set up the work directory and entrypoint
+## Set up the work directory and entrypoint
 WORKDIR /overlay_ws
 ```
 
 As we plan to modify this code regularly during development, we need to think about how to add these files to our Docker image. Specifically, we have two options:
 
-* **Copying files:** This is what is shown in the Dockerfile above. Whenever you modify a file on the host, you have to rebuild the entire image for the changes to go through. Docker does have a build cache, so building will at least resume from the line in which you copy files over. Alternatively, if you modify the files inside a container, those changes will not persist once you exit the container.
-* **Mounting volumes:** This is the better option if you want persistent files that are shared between the host machine and your containers. Unlike copied files, which are available at build time, mounted files are only available at runtime (that is, after build). So if you need any of your source files to actually build an image, consider copying only the files you need while building.
+- **Copying files:** This is what is shown in the Dockerfile above. Whenever you modify a file on the host, you have to rebuild the entire image for the changes to go through. Docker does have a build cache, so building will at least resume from the line in which you copy files over. Alternatively, if you modify the files inside a container, those changes will not persist once you exit the container.
+- **Mounting volumes:** This is the better option if you want persistent files that are shared between the host machine and your containers. Unlike copied files, which are available at build time, mounted files are only available at runtime (that is, after build). So if you need any of your source files to actually build an image, consider copying only the files you need while building.
 
 Of course, once you are done developing the act of copying your code (or cloning it from source control) is a one-and-done thing… unless you expect your end users to still be modifying the code. So mounting volumes can still be useful even for deployment. You just don’t necessarily want to mount _everything_.
 
 ```
-# Build the Dockerfile
+## Build the Dockerfile
 docker build -f dockerfile_tb3_overlay -t turtlebot3_overlay .
 
-# Start a terminal with mounted volumes
+## Start a terminal with mounted volumes
 docker run -it --net=host --gpus all \
     --env="NVIDIA_DRIVER_CAPABILITIES=all" \
     --env="DISPLAY" \
@@ -314,7 +314,7 @@ Here I also want to introduce the concept of an [entrypoint](https://docs.docker
 
 You can add an entrypoint to a Dockerfile as follows:
 
-```
+```php
 COPY ./docker/entrypoint.sh /
 ENTRYPOINT [ "/entrypoint.sh" ]
 ```
@@ -322,9 +322,9 @@ ENTRYPOINT [ "/entrypoint.sh" ]
 … where the `entrypoint.sh` file in our case looks as follows. In brief, we are sourcing the necessary Catkin workspaces (if they have been built and have an associated `setup.bash` file), and defining some environment variables needed for our simulation. Most importantly, the shebang operator at the beginning (`#!/bin/bash`) is instructing the container to use Bash as its default shell so the `sourc`e commands actually work, and so we don’t have to explicitly use the `bash -it -c "command"` syntax we had been relying on up untli now.
 
 ```
-#!/bin/bash
+## !/bin/bash
 
-# Source ROS and Catkin workspaces
+## Source ROS and Catkin workspaces
 source /opt/ros/noetic/setup.bash
 if [ -f /turtlebot3_ws/devel/setup.bash ]
 then
@@ -336,11 +336,11 @@ then
 fi
 echo "Sourced Catkin workspace!"
 
-# Set environment variables
+## Set environment variables
 export TURTLEBOT3_MODEL=waffle_pi
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$(rospack find tb3_worlds)/models
 
-# Execute the command passed into this entrypoint
+## Execute the command passed into this entrypoint
 exec "[email protected]"
 ```
 
@@ -348,7 +348,7 @@ We already saw how writing a script around `docker run` was useful for abstracti
 
 First, we can create variables so that we can reuse all the volumes and environment variables across various `docker run` commands. Finally!
 
-```
+```python
 DOCKER_VOLUMES = \
 	--volume="${PWD}/tb3_autonomy":"/overlay_ws/src/tb3_autonomy":rw \
 	--volume="${PWD}/tb3_worlds":"/overlay_ws/src/tb3_worlds":rw \
@@ -363,17 +363,17 @@ DOCKER_ARGS = ${DOCKER_VOLUMES} ${DOCKER_ENV_VARS}
 Next, we can create [phony targets](https://www.gnu.org/software/make/manual/make.html#Phony-Targets) to build all our Docker images. Notice the chain of prerequisites from core to base to overlay images. So you can directly instruct a build of the overlay image and the other two targets will execute run first.
 
 ```
-# Build the core image
+## Build the core image
 .PHONY: build-core
 build-core:
 	@docker build -f ./docker/dockerfile_nvidia_ros -t nvidia_ros .
 
-# Build the base image
+## Build the base image
 .PHONY: build-base
 build-base:
 	@docker build -f ./docker/dockerfile_tb3_base -t turtlebot3_base .
 
-# Build the overlay image (depends on base image build)
+## Build the overlay image (depends on base image build)
 .PHONY: build
 build: build-base
 	@docker build -f ./docker/dockerfile_tb3_overlay -t turtlebot3_overlay .
@@ -382,13 +382,13 @@ build: build-base
 After that, we can create task-specific targets; that is, targets that will run commands inside Docker once we’ve defined our convenience variables and built our containers.
 
 ```
-# Start a terminal inside the Docker container
+## Start a terminal inside the Docker container
 .PHONY: term
 term:
 	@docker run -it --net=host --gpus all \
 		${DOCKER_ARGS} turtlebot3_overlay bash
 
-# Start basic simulation included with TurtleBot3 packages
+## Start basic simulation included with TurtleBot3 packages
 .PHONY: sim
 sim:
 	@docker run -it --net=host --gpus all \
@@ -398,7 +398,7 @@ sim:
 
 The full Makefile has can be found [in my GitHub repository](https://github.com/sea-bass/turtlebot3_behavior_demos/blob/main/Makefile). This also defines make targets that run our examples in the overlay workspace. For example, the following two commands will respectively start a simulated robot in a demo world and a node that manages the high-level robot behavior to navigate the world.
 
-```
+```php
 make demo-world
 make demo-behavior
 ```
@@ -411,10 +411,10 @@ make demo-behavior
 
 Thank you for braving another post that turned out way more comprehensive than originally intended. I would like to leave you with some resources to further your understanding of these tricky concepts.
 
-* Download my example files from [this GitHub repo](https://github.com/sea-bass/docker-make-ros).
-* Check out Greg Stein’s [Docker Make examples repo](https://github.com/RAIL-group/docker_make_examples), especially if you want to use Docker and Unity together. Greg, by the way, was the person who taught me about the Docker + Make combo, so I have to give a shout-out.
-* Directly from the source, look at the [Best Practices for Writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) page.
-* Check out [`rocker`](https://github.com/osrf/rocker) by OSRF (the makers of ROS).
-* For more advanced multi-container workflows, look at [Docker Compose](https://docs.docker.com/compose/) and its corresponding [ROS Wiki page](http://wiki.ros.org/docker/Tutorials/Compose).
+- Download my example files from [this GitHub repo](https://github.com/sea-bass/docker-make-ros).
+- Check out Greg Stein’s [Docker Make examples repo](https://github.com/RAIL-group/docker_make_examples), especially if you want to use Docker and Unity together. Greg, by the way, was the person who taught me about the Docker + Make combo, so I have to give a shout-out.
+- Directly from the source, look at the [Best Practices for Writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) page.
+- Check out [`rocker`](https://github.com/osrf/rocker) by OSRF (the makers of ROS).
+- For more advanced multi-container workflows, look at [Docker Compose](https://docs.docker.com/compose/) and its corresponding [ROS Wiki page](http://wiki.ros.org/docker/Tutorials/Compose).
 
 See you in other posts, in which I will actually talk about the robotics examples contained in the example repository. After all, software tools like Docker and ROS are a means to an end, and for us that end is to do cool stuff with robots.

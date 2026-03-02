@@ -1,6 +1,6 @@
 # ZeroTier VPN
 
-#### Linux (DEB/RPM)
+## Linux (DEB/RPM)
 
 Debian and RPM based distributions including Debian, Ubuntu, CentOS, RHEL, Fedora, and others are supported via a script that adds the right repository and installs the package.Other Linux distributions may have their own packages. If not try [building and installing from source](https://github.com/zerotier/ZeroTierOne).
 
@@ -14,4 +14,4 @@ _If you have GPG installed, a more secure option is available:_
 
 _After using the script, use apt or yum to manage future updates to zerotier-one_
 
-* <br>
+- <br>

@@ -34,29 +34,29 @@ To create the `docker` group and add your user:
     ```none
     WARNING: Error loading config file: /home/user/.docker/config.json -
     stat /home/user/.docker/config.json: permission denied
-    ```
+```
 
     This error indicates that the permission settings for the `~/.docker/` directory are incorrect, due to having used the `sudo` command earlier.
 
     To fix this problem, either remove the `~/.docker/` directory (it’s recreated automatically, but any custom settings are lost), or change its ownership and permissions using the following commands:
 
-    ```
+```php
     $ sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
     $ sudo chmod g+rwx "$HOME/.docker" -R
-    ```
+```
 
-### Configure Docker to start on boot with systemd
+## Configure Docker to start on boot with systemd
 
 Many modern Linux distributions use [systemd](https://docs.docker.com/config/daemon/systemd/) to manage which services start when the system boots. On Debian and Ubuntu, the Docker service starts on boot by default. To automatically start Docker and containerd on boot for other Linux distributions using systemd, run the following commands:
 
-```
+```php
 $ sudo systemctl enable docker.service
 $ sudo systemctl enable containerd.service
 ```
 
 To stop this behavior, use `disable` instead.
 
-```
+```php
 $ sudo systemctl disable docker.service
 $ sudo systemctl disable containerd.service
 ```
@@ -69,11 +69,11 @@ Docker provides [logging drivers](https://docs.docker.com/config/containers/logg
 
 To avoid issues with overusing disk for log data, consider one of the following options:
 
-* Configure the `json-file` logging driver to turn on [log rotation](https://docs.docker.com/config/containers/logging/json-file/)
-* Use an [alternative logging driver](https://docs.docker.com/config/containers/logging/configure/#configure-the-default-logging-driver) such as the [“local” logging driver](https://docs.docker.com/config/containers/logging/local/) that performs log rotation by default
-* Use a logging driver that sends logs to a remote logging aggregator.
+- Configure the `json-file` logging driver to turn on [log rotation](https://docs.docker.com/config/containers/logging/json-file/)
+- Use an [alternative logging driver](https://docs.docker.com/config/containers/logging/configure/#configure-the-default-logging-driver) such as the [“local” logging driver](https://docs.docker.com/config/containers/logging/local/) that performs log rotation by default
+- Use a logging driver that sends logs to a remote logging aggregator.
 
 ### Next steps
 
-* Take a look at the [Get started](https://docs.docker.com/get-started/) training modules to learn how to build an image and run it as a containerized application.
-* Review the topics in [Develop with Docker](https://docs.docker.com/develop/) to learn how to build new applications using Docker.
+- Take a look at the [Get started](https://docs.docker.com/get-started/) training modules to learn how to build an image and run it as a containerized application.
+- Review the topics in [Develop with Docker](https://docs.docker.com/develop/) to learn how to build new applications using Docker.

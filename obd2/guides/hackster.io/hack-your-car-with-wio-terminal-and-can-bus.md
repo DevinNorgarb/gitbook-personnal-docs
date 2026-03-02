@@ -10,7 +10,7 @@ Hack your car and read the cycling speed, rotation speed, oil temperature and ot
 
 [Intermediate](https://www.hackster.io/projects?difficulty=intermediate)Full instructions provided1,760![Hack Your Car With Wio Terminal and CAN Bus](https://hackster.imgix.net/uploads/attachments/1279245/_NWDIaPWC5C.blob?auto=compress%2Cformat\&w=900\&h=675\&fit=min)
 
-### Things used in this project
+## Things used in this project
 
 | <h4>Hardware components</h4>                                                                                                                                       |                                  |   |   |   |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------- | - | - | - |
@@ -112,11 +112,9 @@ More CAN Bus gadgets: [Longan Labs Official Site](https://www.longan-labs.cc/)
 #### Schematics of Serial CAN Bus Module in the Dev Kit
 
 
-
 ### Code
 
 #### Arduino Library for the demo of OBD-II and Wio Terminal
-
 
 
 #### [Longan-Labs](https://github.com/Longan-Labs) / [OBD-II-Demo-x-Wio-Terminal](https://github.com/Longan-Labs/OBD-II-Demo-x-Wio-Terminal)

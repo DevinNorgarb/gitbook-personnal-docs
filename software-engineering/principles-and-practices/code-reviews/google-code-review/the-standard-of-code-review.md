@@ -1,6 +1,6 @@
 # The Standard of Code Review
 
-### [eng-practices](https://google.github.io/eng-practices/)
+## [eng-practices](https://google.github.io/eng-practices/)
 
 The primary purpose of code review is to make sure that the overall code health of Google’s code base is improving over time. All of the tools and processes of code review are designed to this end.
 
@@ -32,10 +32,10 @@ Code review can have an important function of teaching developers something new 
 
 ### Principles <a href="#principles" id="principles"></a>
 
-* Technical facts and data overrule opinions and personal preferences.
-* On matters of style, the [style guide](http://google.github.io/styleguide/) is the absolute authority. Any purely style point (whitespace, etc.) that is not in the style guide is a matter of personal preference. The style should be consistent with what is there. If there is no previous style, accept the author’s.
-* **Aspects of software design are almost never a pure style issue or just a personal preference.** They are based on underlying principles and should be weighed on those principles, not simply by personal opinion. Sometimes there are a few valid options. If the author can demonstrate (either through data or based on solid engineering principles) that several approaches are equally valid, then the reviewer should accept the preference of the author. Otherwise the choice is dictated by standard principles of software design.
-* If no other rule applies, then the reviewer may ask the author to be consistent with what is in the current codebase, as long as that doesn’t worsen the overall code health of the system.
+- Technical facts and data overrule opinions and personal preferences.
+- On matters of style, the [style guide](http://google.github.io/styleguide/) is the absolute authority. Any purely style point (whitespace, etc.) that is not in the style guide is a matter of personal preference. The style should be consistent with what is there. If there is no previous style, accept the author’s.
+- **Aspects of software design are almost never a pure style issue or just a personal preference.** They are based on underlying principles and should be weighed on those principles, not simply by personal opinion. Sometimes there are a few valid options. If the author can demonstrate (either through data or based on solid engineering principles) that several approaches are equally valid, then the reviewer should accept the preference of the author. Otherwise the choice is dictated by standard principles of software design.
+- If no other rule applies, then the reviewer may ask the author to be consistent with what is in the current codebase, as long as that doesn’t worsen the overall code health of the system.
 
 ### Resolving Conflicts <a href="#conflicts" id="conflicts"></a>
 

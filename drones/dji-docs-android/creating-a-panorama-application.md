@@ -1,17 +1,17 @@
 # Creating a Panorama Application
 
-* [Implementing the FPV](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-* [Rotating with Virtual Stick](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-* [Shooting a Series of Photos](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-* [Rotating Gimbal to Shoot Photos](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-* [Shooting Photos with DJIWaypointMission](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-* [Selecting and Downloading Photos](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-* [Using OpenCV to Create Panorama](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-  * [Creating Stitching View](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-  * [Importing OpenCV](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-  * [Stitching Photos](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-  * [Cropping the Panorama](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-* [Summary](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+- [Implementing the FPV](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+- [Rotating with Virtual Stick](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+- [Shooting a Series of Photos](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+- [Rotating Gimbal to Shoot Photos](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+- [Shooting Photos with DJIWaypointMission](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+- [Selecting and Downloading Photos](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+- [Using OpenCV to Create Panorama](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+  - [Creating Stitching View](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+  - [Importing OpenCV](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+  - [Stitching Photos](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+  - [Cropping the Panorama](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+- [Summary](/broken/pages/m5KQoMBRKRBJU3koBAl6)
 
 _If you come across any mistakes or bugs in this tutorial, please let us know using a Github issue, a post on the DJI forum, or commenting in the Gitbook. Please feel free to send us Github pull request and help us fix any issues. However, all pull requests related to document must follow the_ [_document style_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 
@@ -23,7 +23,7 @@ In this tutorial, you will learn how to build a cool panorama app. With the help
 
 You can download the demo project from this [Github Page](https://github.com/DJI-Mobile-SDK/iOS-PanoramaDemo).
 
-### Implementing the FPV <a href="#implementing-the-fpv" id="implementing-the-fpv"></a>
+## Implementing the FPV <a href="#implementing-the-fpv" id="implementing-the-fpv"></a>
 
 **1.** Import the DJI SDK and the FFMPEG decoding library. If you don't know how to do this please refer to the tutorial [How to create a Camera Application](https://github.com/DJI-Mobile-SDK/iOS-FPVDemo).
 
@@ -34,7 +34,7 @@ You can download the demo project from this [Github Page](https://github.com/DJI
 **3.** Add a UIView inside the View Controller and set it as an IBOutlet called "**fpvPreviewView**" in the **CaptureViewController.h**:
 
 ```
-#import <UIKit/UIKit.h>
+## import <UIKit/UIKit.h>
 
 @interface CaptureViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIView *fpvPreviewView;
@@ -44,19 +44,19 @@ You can download the demo project from this [Github Page](https://github.com/DJI
 Import the **DJISDK** and **VideoPreviewer** header files to **CaptureViewController.m**. Then implement two delegate protocols as shown below:
 
 ```
-#import "CaptureViewController.h"
-#import <DJISDK/DJISDK.h>
-#import "VideoPreviewer.h"
+## import "CaptureViewController.h"
+## import <DJISDK/DJISDK.h>
+## import "VideoPreviewer.h"
 
-#define weakSelf(__TARGET__) __weak typeof(self) __TARGET__=self
-#define weakReturn(__TARGET__) if(__TARGET__==nil)return;
+## define weakSelf(__TARGET__) __weak typeof(self) __TARGET__=self
+## define weakReturn(__TARGET__) if(__TARGET__==nil)return;
 
 @interface CaptureViewController ()<DJICameraDelegate, DJISDKManagerDelegate>{
 ```
 
 **4**. In the **viewDidLoad** method, set **fpvPreviewView** instance as a view of **VideoPreviewer** to show the Video Stream, then invoke the **registerApp** method to register the app:
 
-```
+```json
 - (void)viewDidLoad {
 {
     [super viewDidLoad];
@@ -96,7 +96,7 @@ Also, implement the DJISDKManagerDelegate methods to do initial setup after regi
     return nil;
 }
 
-#pragma mark DJISDKManagerDelegate Method
+## pragma mark DJISDKManagerDelegate Method
 
 - (void)sdkManagerDidRegisterAppWithError:(NSError *)error {
 
@@ -127,7 +127,7 @@ Furthermore, implement the **DJICameraDelegate** methods, as shown below:
 
 ```
 
-#pragma mark - DJICameraDelegate Method
+## pragma mark - DJICameraDelegate Method
 -(void)camera:(DJICamera *)camera didReceiveVideoData:(uint8_t *)videoBuffer length:(size_t)size
 {
     uint8_t* pBuffer = (uint8_t*)malloc(size);
@@ -155,11 +155,11 @@ In order to generate a panorama, you need to take a series of photos from differ
 **2.** Next, let's define the angle for each rotation and invoke the **rotateDroneWithJoystick** method in **-(IBAction)onCaptureButtonClicked:(id)sender**:
 
 ```
-#define PHOTO_NUMBER 8
-#define ROTATE_ANGLE 45.0
+## define PHOTO_NUMBER 8
+## define ROTATE_ANGLE 45.0
 ```
 
-```
+```json
 -(IBAction)onCaptureButtonClicked:(id)sender {
     [self rotateDroneWithJoystick];
 }
@@ -270,13 +270,13 @@ If you are not familiar with the DJI PC Simulator, please check the [DJI PC Simu
 
 We can invoke the following DJICamera method to shoot photos:
 
-```
+```json
 - (void)startShootPhoto:(DJICameraShootPhotoMode)shootMode withCompletion:(DJICompletionBlock)block;
 ```
 
 Let's implement the **rotateDroneWithJoystick** method as shown below to make the drone shoot photos automatically once it finish 45 degrees' rotation each time:
 
-```
+```json
 - (void)rotateDroneWithJoystick {
 
  weakSelf(target);
@@ -329,7 +329,7 @@ If you have an Inspire 1, you will benefit from being able to shoot photos witho
 
 **1.** let's implement the `- (DJIGimbal*) fetchGimbal` method to fetch the gimbal component:
 
-```
+```json
 - (DJIGimbal*) fetchGimbal {
     if (![DJISDKManager product]) {
         return nil;
@@ -343,7 +343,7 @@ If you have an Inspire 1, you will benefit from being able to shoot photos witho
 
 It is necessary to reset the gimbal's position before rotating and shooting photos, otherwise the gimbal may reach the maximum angle of yaw axis when rotating 360 degrees. We can call **DJIGimbal**'s `resetGimbalWithCompletion` method to reset the gimbal's pitch, roll and yaw back to the origin values. Here is the code:
 
-```
+```python
 //Reset Gimbal at the beginning
     DJIGimbal *gimbal = [self fetchGimbal];
 
@@ -359,7 +359,7 @@ It is necessary to reset the gimbal's position before rotating and shooting phot
 **2.** Rotate the gimbal clockwise from the origin position to 360 degrees(45 degrees each time), then take photos between each rotation. Let's implement the **rotateGimbal** method as shown below:
 
 ```
-#pragma mark - Rotate Gimbal Methods
+## pragma mark - Rotate Gimbal Methods
 - (void)rotateGimbal {
 
     DJICamera *camera = [self fetchCamera];
@@ -422,7 +422,7 @@ As it's shown above, we set the DJICamera's cameraMode to **DJICameraModeShootPh
 
 **3.** Rewrite the **onCaptureButtonClicked** method as shown below:
 
-```
+```php
 -(IBAction)onCaptureButtonClicked:(id)sender {
     [self rotateGimbal];
 }
@@ -460,7 +460,7 @@ Here we create a **prepareMissionProgressAlert** to show the prepare mission pro
 
 Moreover, initialize the **isMissionStarted** and **aircraftLocation** properties in the ViewDidLoad method:
 
-```
+```json
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -477,7 +477,7 @@ Moreover, initialize the **isMissionStarted** and **aircraftLocation** propertie
 **2.** There are three delegate methods need to be implemented, the **DJISDKManagerDelegate**, **DJIMissionManagerDelegate** and **DJIFlightControllerDelegate** methods:
 
 ```
-#pragma mark DJISDKManagerDelegate Methods
+## pragma mark DJISDKManagerDelegate Methods
 - (void)sdkManagerProductDidChangeFrom:(DJIBaseProduct *)oldProduct to:(DJIBaseProduct *)newProduct
 {
     DJICamera* camera = [self fetchCamera];
@@ -501,7 +501,7 @@ Moreover, initialize the **isMissionStarted** and **aircraftLocation** propertie
     }
 }
 
-#pragma mark - DJIMissionManagerDelegate Methods
+## pragma mark - DJIMissionManagerDelegate Methods
 - (void)missionManager:(DJIMissionManager *)manager didFinishMissionExecution:(NSError *)error
 {
     if (error) {
@@ -522,7 +522,7 @@ Moreover, initialize the **isMissionStarted** and **aircraftLocation** propertie
 
 }
 
-#pragma mark - DJIFlightControllerDelegate Method
+## pragma mark - DJIFlightControllerDelegate Method
 - (void)flightController:(DJIFlightController *)fc didUpdateSystemState:(DJIFlightControllerCurrentState *)state
 {
     self.aircraftLocation = CLLocationCoordinate2DMake(state.aircraftLocation.latitude, state.aircraftLocation.longitude);
@@ -580,7 +580,7 @@ Finally, add the two DJIWaypoint to the DJIWaypointMision object and set its **f
 
 **4.** Once it's finished, let's create two new methods called `- (void)prepareWaypointMission` and `- (void)startWaypointMission` to upload waypoint mission to the drone and start the mission. Here is the code:
 
-```
+```json
 - (void)prepareWaypointMission {
 
     self.mission = [self initializeMission];
@@ -638,7 +638,7 @@ Finally, add the two DJIWaypoint to the DJIWaypointMision object and set its **f
 
 In the `prepareWaypointMission` method, we firstly call the `initializeMission` method and assign the DJIMission object to the **mission** property. Then we invoke DJIMissionManager's following method to upload waypoint mission task to the drone:
 
-```
+```sql
 - (void)prepareMission:(DJIMission *_Nonnull)mission withProgress:(DJIMissionProgressHandler)preparationProgress withCompletion:(DJICompletionBlock)completion;
 ```
 
@@ -646,13 +646,13 @@ We can check the mission preparation progress and update the **prepareMissionPro
 
 In the `startWaypointMission` method we call the following method of DJIMissionManager to start the waypoint mission:
 
-```
+```json
 - (void)startMissionExecutionWithCompletion:(DJICompletionBlock)completion;
 ```
 
 **5.** Since the DJIWaypointMission relies on good GPS signal quality, you should check the GPS signal status before executing the waypoint mission. At the same time, you should also check whether the **aircraftLocation** is valid. Let's implement the **rotateDroneWithWaypointMission** method as shown below:
 
-```
+```json
 - (void)rotateDroneWithWaypointMission {
     if (CLLocationCoordinate2DIsValid(self.aircraftLocation) && self.gpsSignalStatus != DJIGPSSignalStatusLevel0 && self.gpsSignalStatus != DJIGPSSignalStatusLevel1) {
         [self prepareWaypointMission];
@@ -665,7 +665,7 @@ In the `startWaypointMission` method we call the following method of DJIMissionM
 
 **6.** Lastly, replace the **onCaptureButtonClicked** method with the followings:
 
-```
+```json
 -(IBAction)onCaptureButtonClicked:(id)sender {
     [self rotateDroneWithWaypointMission];
 }
@@ -677,7 +677,7 @@ So far we have three methods to rotate the drone and shoot photos, we had better
 
 Let's update the **onCaptureButtonClicked** method as shown below:
 
-```
+```php
 -(IBAction)onCaptureButtonClicked:(id)sender {
 
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Select Mode" message:@"" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Rotate Aircraft", @"Rotate Gimbal", @"WaypointMission", nil];
@@ -689,13 +689,13 @@ Let's update the **onCaptureButtonClicked** method as shown below:
 Here we use **kCaptureModeAlertTag** to distinguish the three types of alert views:
 
 ```
-#define kCaptureModeAlertTag 100
+## define kCaptureModeAlertTag 100
 ```
 
 Implement the **UIAlertView** delegate method:
 
 ```
-#pragma mark UIAlertView Delegate Methods
+## pragma mark UIAlertView Delegate Methods
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if (alertView.tag == kCaptureModeAlertTag) {
@@ -724,13 +724,13 @@ In order to download multiple photos, you should go through a series of playback
 
 **2.** Add a new variable **selectedPhotoNumber** to record the number of photos selected in the class extension of "CaptureViewController.m" file:
 
-```
+```json
    @property (nonatomic, assign) __block int selectedPhotoNumber;
 ```
 
 Now, let's implement the **DJIPlaybackDelegate** method as shown below to update the selected photo num:
 
-```
+```json
 - (void)playbackManager:(DJIPlaybackManager *)playbackManager didUpdatePlaybackState:(DJICameraPlaybackState *)playbackState
 {
     self.selectedPhotoNumber = playbackState.numberOfSelectedFiles;
@@ -739,7 +739,7 @@ Now, let's implement the **DJIPlaybackDelegate** method as shown below to update
 
 **3.** Implement the **onDownloadButtonClicked** method to enter playback mode:
 
-```
+```json
 -(IBAction)onDownloadButtonClicked:(id)sender {
 
     weakSelf(target);
@@ -760,7 +760,7 @@ Here we set the DJICamera's cameraMode as **DJICameraModePlayback**. If it succe
 
 **4**. Once it's done, let's implement the `selectPhotos` method to select the latest photos you capture for the panorama:
 
-```
+```json
 -(void)selectPhotos {
 
     weakSelf(target);
@@ -806,7 +806,7 @@ The default selected photo is the last photo. Select all photos in the last page
 
 Create and implement the `-(void)downloadPhotos` method as shown below:
 
-```
+```json
 -(void)downloadPhotos {
     __block int finishedFileCount = 0;
     __block NSMutableData* downloadedFileData;
@@ -887,7 +887,7 @@ Create and implement the `-(void)downloadPhotos` method as shown below:
 
 In the code above, we firstly add several variables and init the **imageArray** object. Then call the DJIPlaybackManager's following method to download the selected photos:
 
-```
+```sql
 - (void)downloadSelectedFilesWithPreparation:(DJIFileDownloadPreparingBlock)prepareBlock process:(DJIFileDownloadingBlock)dataBlock fileCompletion:(DJIFileDownloadCompletionBlock)fileCompletionBlock overallCompletion:(DJICompletionBlock)overallCompletionBlock;
 ```
 
@@ -917,13 +917,13 @@ Then create a new view controller called **StitchingViewController** and add it 
 
 **2.** Let's add an instance variable **imageArray** in the **StitchingViewController.h**:
 
-```
+```json
 @property (strong,nonatomic) NSMutableArray * imageArray;
 ```
 
 Then add the **prepareForSegue** method to pass the downloaded photos to the next view controller in **CaptureViewController.m**:
 
-```
+```json
 //Pass the downloaded photos to StitchingViewController
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([segue.identifier isEqualToString:@"Stitching"]) {
@@ -951,25 +951,25 @@ Then add the **prepareForSegue** method to pass the downloaded photos to the nex
 Open your PCH file and add the following lines of code:
 
 ```
-#ifdef __cplusplus
+## ifdef __cplusplus
     #import <opencv2/opencv.hpp>
-#endif
+## endif
 
-#ifdef __OBJC__
+## ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
-#endif
+## endif
 ```
 
 **4.** Build your project. If nothing wrong happens, you may successfully setup the OpenCV library in your Xcode project.
 
-#### Stitching Photos <a href="#stitching-photos" id="stitching-photos"></a>
+### Stitching Photos <a href="#stitching-photos" id="stitching-photos"></a>
 
 **1.** In the OpenCV, all the image processing operations are usually carried out on the Mat structure. However, on iOS, to render an image on screen it has to be an instance of the UIImage class. In order to convert an OpenCV Mat to an UIImage we can use the Core Graphics framework in iOS. Find more details, please check [Convert UIImage to cv::Mat](http://docs.opencv.org/doc/tutorials/ios/image_manipulation/image_manipulation.html#opencviosimagemanipulation). You can define a **OpenCVConversion** class to deal with the conversion issue.
 
 Let's implement the **OpenCVConversion.h** file shown as below:
 
-```
+```python
 @interface OpenCVConversion : NSObject
 
 + (cv::Mat)cvMatFromUIImage:(UIImage *)image;//convert UIImage to cv::Mat
@@ -983,7 +983,7 @@ Let's implement the **OpenCVConversion.h** file shown as below:
 Next, implement the **OpenCVConversion.mm** file:
 
 ```
-#import "OpenCVConversion.h"
+## import "OpenCVConversion.h"
 
 @implementation OpenCVConversion
 
@@ -1081,20 +1081,20 @@ Next, implement the **OpenCVConversion.mm** file:
 **2.** In order to call OpenCV functions in objective-C, you should create a header file and a C++ file as the stitching wrapper file. Input a vector of cv::Mat and the reference of cv::Mat. This function will tell whether the stitching is successful and return the stitched cv::Mat through a **result** reference. The code in **StitchingWrapper.h** is shown below.
 
 ```
-#ifndef Stitching_Header_h
-#define Stitching_Header_h
+## ifndef Stitching_Header_h
+## define Stitching_Header_h
 
 bool stitch (const cv::vector <cv::Mat> & images, cv::Mat &result);
 
-#endif
+## endif
 ```
 
 Then implement the **StitchingWrapper.cpp** file with the following code:
 
 ```
-#include "stitchingWrapper.h"
-#include "opencv2/highgui/highgui.hpp"
-#include "opencv2/stitching/stitcher.hpp"
+## include "stitchingWrapper.h"
+## include "opencv2/highgui/highgui.hpp"
+## include "opencv2/stitching/stitcher.hpp"
 
 using namespace cv;
 
@@ -1112,7 +1112,7 @@ bool stitch (const cv::vector <cv::Mat> & images, cv::Mat &result) {
 **3.** Now you can customize your stitching method in the new class called **Stitching**. Here is the class method declaration for stitching implemented in the **Stitching.h** file. Users can input an image array and a reference of cv::Mat, it will return the stitching result:
 
 ```
-#import <Foundation/Foundation.h>
+## import <Foundation/Foundation.h>
 
 @interface Stitching : NSObject
 + (bool) stitchImageWithArray:(NSMutableArray*)imageArray andResult:(cv::Mat &) result;
@@ -1122,11 +1122,11 @@ bool stitch (const cv::vector <cv::Mat> & images, cv::Mat &result) {
 Here is the code for **Stitching.mm** file:
 
 ```
-#import "Stitching.h"
-#import "StitchingWrapper.h"
-#import "OpenCVConversion.h"
+## import "Stitching.h"
+## import "StitchingWrapper.h"
+## import "OpenCVConversion.h"
 
-#define COMPRESS_RATIO 0.2
+## define COMPRESS_RATIO 0.2
 
 @implementation Stitching
 
@@ -1185,9 +1185,9 @@ Because of the limited computing ability and memory storage of mobile devices, w
 Replace the **StitchingViewController.mm** with the following code:
 
 ```
-#import "StitchingViewController.h"
-#import "Stitching.h"
-#import "OpenCVConversion.h"
+## import "StitchingViewController.h"
+## import "Stitching.h"
+## import "OpenCVConversion.h"
 
 @implementation StitchingViewController
 
@@ -1235,7 +1235,7 @@ Now download the latest photos and click the **Stitch** button. After a minute y
 
 ![uncropped pano](../../.gitbook/assets/uncropped_pano.PNG)
 
-#### Cropping the Panorama <a href="#cropping-the-panorama" id="cropping-the-panorama"></a>
+### Cropping the Panorama <a href="#cropping-the-panorama" id="cropping-the-panorama"></a>
 
 So far, you have made an excellent panorama, but the uneven black edges are pretty annoying. Let's improve our code and make your panorama perfect!
 
@@ -1244,7 +1244,7 @@ So far, you have made an excellent panorama, but the uneven black edges are pret
 Replace the code in **Cropping.h** file with the followings:
 
 ```
-#import <Foundation/Foundation.h>
+## import <Foundation/Foundation.h>
 
 @interface Cropping : NSObject
 + (bool) cropWithMat: (const cv::Mat &)src andResult:(cv::Mat &)dest;
@@ -1254,9 +1254,9 @@ Replace the code in **Cropping.h** file with the followings:
 Then implementation the `+ (bool) cropWithMat: (const cv::Mat &)src andResult:(cv::Mat *)dest` method in the **Cropping.mm** file like this:
 
 ```
-#import "Cropping.h"
+## import "Cropping.h"
 
-#define CUTBLACKTHREASHOLD 0.05
+## define CUTBLACKTHREASHOLD 0.05
 
 @implementation Cropping
 
@@ -1341,10 +1341,10 @@ The `bool checkBlackRow(const cv::Mat& roi, int y)` function checks whether the 
 **2.** Rewrite the **Stitching.mm** file as shown below:
 
 ```
-#import "StitchingViewController.h"
-#import "Stitching.h"
-#import "OpenCVConversion.h"
-#import "Cropping.h"
+## import "StitchingViewController.h"
+## import "Stitching.h"
+## import "OpenCVConversion.h"
+## import "Cropping.h"
 
 @implementation StitchingViewController
 

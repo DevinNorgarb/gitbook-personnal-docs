@@ -16,7 +16,7 @@ sudo iptables-save > ~/iptables-rules
 
 Then I ran these rules to effectively disable `iptables` by allowing all traffic through:
 
-```
+```html
 iptables -P INPUT ACCEPT
 iptables -P OUTPUT ACCEPT
 iptables -P FORWARD ACCEPT
@@ -25,7 +25,7 @@ iptables -F
 
 To clear all iptables rules at once, run this command:
 
-```
+```html
 iptables --flush
 ```
 

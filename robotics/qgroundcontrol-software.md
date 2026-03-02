@@ -4,18 +4,18 @@ QGroundControl (QGC) is the Graphical User Interface (GUI) for ArduSub, which pr
 
 Key Features:
 
-* Full setup/configuration of ArduSub powered vehicles.
-* Video streaming with instrument display overlays.
-* Map display showing vehicle position, track, and waypoints for vehicles using an underwater positioning system.
+- Full setup/configuration of ArduSub powered vehicles.
+- Video streaming with instrument display overlays.
+- Map display showing vehicle position, track, and waypoints for vehicles using an underwater positioning system.
 
 The QGC user interface is implemented using [Qt QML](http://doc.qt.io/qt-5/qtqml-index.html). QML provides for hardware acceleration which is a key feature on lower powered devices such as tablets or phones. QML also provides features which allows creation of a single user interface which can adapt itself to differing screen sizes and resolution.
 
-### Versioning <a href="#versioning" id="versioning"></a>
+## Versioning <a href="#versioning" id="versioning"></a>
 
 There are two versions of QGroundControl software:
 
-* Stable (4.0.X): The recommended build for most users.
-* Daily (Development HEAD | Git Revision | Date | Time): Development build, updated frequently. These builds are for development purposes only and not recommended for regular use.
+- Stable (4.0.X): The recommended build for most users.
+- Daily (Development HEAD | Git Revision | Date | Time): Development build, updated frequently. These builds are for development purposes only and not recommended for regular use.
 
 ### What Version is Installed? <a href="#what-version-is-installed" id="what-version-is-installed"></a>
 

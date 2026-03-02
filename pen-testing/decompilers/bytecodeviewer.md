@@ -104,7 +104,7 @@ The principal behind the plugin system is very simple, once the plugin is loaded
 
 All exceptions that are unexpected and require the user to report them should be handled like this:
 
-```
+```php
 try {
    ...
 } catch(Exception e) {
@@ -116,7 +116,7 @@ try {
 
 All messages to the user that aren’t alerts should use the Plugin Console an example of this is:
 
-```
+```php
  PluginConsole gui = new PluginConsole("Skeleton");
  gui.setVisible(true);
  gui.appendText("executed skeleton");

@@ -2,7 +2,7 @@
 
 There are two types of logs that can be used to diagnose problems while running ArduSub, or to retrieve data for post-processing.
 
-### Telemetry logs <a href="#telemetry-logs" id="telemetry-logs"></a>
+## Telemetry logs <a href="#telemetry-logs" id="telemetry-logs"></a>
 
 Ground Control Station (GCS) software will store all of the autopilot telemtry in a log. These telemetry logs contain all of the MAVLink messages received in their binary format. MAVProxy and QGroundControl save telemetry logs locally in a **.tlog** file. Telemetry logs are the preferred way of diagnosing most problems.
 
@@ -20,7 +20,7 @@ DataFlash logs can be retrieved in two ways:
 
 1. Remove the Micro SD card from the Pixhawk and plug it into your computer to view and transfer the logs using a file explorer like a regular USB drive.
 2. Download the logs remotely via QGroundControl or MAVProxy.
-   *   Log downloading via QGroundControl
+   -   Log downloading via QGroundControl
 
        Click the Analyze icon at the top of the window. The icon looks like a magnifying glass over a document.
 
@@ -29,7 +29,7 @@ DataFlash logs can be retrieved in two ways:
        Select the log you would like to download, and click 'Download'.
 
        Multiple logs can be downloaded by highlighting the desired logs before clicking 'Download'.
-   *   Log downloading via MAVProxy
+   -   Log downloading via MAVProxy
 
        While connected to the autopilot via MAVProxy, type 'log list' in the MAVProxy console to list the available DataFlash logs onboard the autopilot.
 
@@ -57,7 +57,7 @@ To install mavlogdump.py, install pymavlink from pip:
 
 To use mavlogdump.py, refer to the output of `mavlogdump.py --help`:
 
-```
+```json
 usage: mavlogdump.py [-h] [--no-timestamps] [--planner] [--robust] [-f]
                      [--condition CONDITION] [-q] [-o OUTPUT] [-p]
                      [--format FORMAT] [--csv_sep CSV_SEP] [--types TYPES]
@@ -130,19 +130,19 @@ The output can be filtered based on message type, and also based on conditions i
 
 Export all ATTITUDE messages to a .csv file:
 
-```
+```javascript
 mavlogdump.py --types=ATTITUDE --format=csv test.tlog > test.csv
 ```
 
 Export all SCALED\_PRESSURE2 messages to a .csv file, filter by showing only messages while vehicle was armed
 
-```
+```javascript
 mavlogdump.py --types=SCALED_PRESSURE2 --condition HEARTBEAT.system_status==4 --format=csv test.tlog > test.csv
 ```
 
 Export all messages to a human readable file, filter to discrete time span (only two seconds here)
 
-```
+```bash
  mavlogdump.py --condition 'SYSTEM_TIME.time_unix_usec>1526496245000000 and SYSTEM_TIME.time_unix_usec<1526496247000000' test.tlog > test.log
 ```
 

@@ -14,10 +14,10 @@ Programming
 
 I used [Visual Studio Code](https://code.visualstudio.com/) with [PlatformIO](https://platformio.org/) as described in the [developer's guide](https://freematics.com/pages/products/freematics-one-plus/guide/). Download the [repository](https://github.com/stanleyhuangyc/Freematics) and open the firmware\_v5/telelogger folder in VS Code. In **config.h**, update things to match your preferences. My changes include:
 
-* `#define CELL_APN "hologram"`
-* `#define SERVER_HOST "[externally accessible dynamic DNS hostname]"`
-* `#define SERVER_PORT 5170` (this is the default Traccar port for the Freematics protocol, which I setup to port forward from my WAN to Freematics.
-* `#define DATASET_INTERVAL 15000` (the default is 3000 ms, and I don't want to use up the cellular data with updates that often)
+- `#define CELL_APN "hologram"`
+- `#define SERVER_HOST "[externally accessible dynamic DNS hostname]"`
+- `#define SERVER_PORT 5170` (this is the default Traccar port for the Freematics protocol, which I setup to port forward from my WAN to Freematics.
+- `#define DATASET_INTERVAL 15000` (the default is 3000 ms, and I don't want to use up the cellular data with updates that often)
 
 I also updated **telelogger.ino** to get the device to send over fuel level data by adding `{PID_FUEL_LEVEL, 1},` on line 53. You can add other OBDs if you want, they're all defined in the [OBD.h](https://github.com/stanleyhuangyc/Freematics/blob/master/libraries/FreematicsPlus/utility/OBD.h) file.
 

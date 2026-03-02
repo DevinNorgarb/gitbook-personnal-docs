@@ -21,19 +21,19 @@ sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o
 sudo chmod a+rx /usr/local/bin/yt-dlp  # Make executable
 ```
 
-```
+```php
 sudo wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /usr/local/bin/yt-dlp
 sudo chmod a+rx /usr/local/bin/yt-dlp  # Make executable
 ```
 
-```
+```php
 sudo aria2c https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp --dir /usr/local/bin -o yt-dlp
 sudo chmod a+rx /usr/local/bin/yt-dlp  # Make executable
 ```
 
 To update, run:
 
-```
+```php
 sudo yt-dlp -U
 ```
 
@@ -43,19 +43,19 @@ To use shell completion (autocomplete), look for the completion files in the [so
 
 You can install the [PyPI package](https://pypi.org/project/yt-dlp) with:
 
-```
+```php
 python3 -m pip install -U yt-dlp
 ```
 
 You can install without any of the optional dependencies using:
 
-```
+```php
 python3 -m pip install --no-deps -U yt-dlp
 ```
 
 If you want to be on the cutting edge, you can also install the master branch with:
 
-```
+```php
 python3 -m pip install -U pip setuptools wheel
 python3 -m pip install --force-reinstall https://github.com/yt-dlp/yt-dlp/archive/master.tar.gz
 ```
@@ -64,7 +64,7 @@ On some systems, you may need to use `py` or `python` instead of `python3`
 
 To update, run:
 
-```
+```json
 python3 -m pip install -U yt-dlp
 ```
 
@@ -80,13 +80,13 @@ python3 -m pip install -U yt-dlp
 
 macOS or Linux users that are using Homebrew can also install it by:
 
-```
+```python
 brew install yt-dlp
 ```
 
 To update, run:
 
-```
+```python
 brew upgrade yt-dlp
 ```
 
@@ -94,13 +94,13 @@ brew upgrade yt-dlp
 
 Arch Linux users can install it from the official community repository:
 
-```
+```bash
 sudo pacman -Syu yt-dlp
 ```
 
 pacman will now automatically download the correct dependencies and keep the package up-to-date whenever you update your system with:
 
-```
+```bash
 sudo pacman -Syu
 ```
 
@@ -108,7 +108,7 @@ sudo pacman -Syu
 
 You can download and install yt-dlp for recent Ubuntu and other related Debian-based distributions by adding the [this PPA](https://launchpad.net/~tomtomtom/+archive/ubuntu/yt-dlp)
 
-```
+```bash
 sudo add-apt-repository ppa:tomtomtom/yt-dlp    # Add ppa repo to apt
 sudo apt update                                 # Update package list
 sudo apt install yt-dlp                         # Install yt-dlp
@@ -116,7 +116,7 @@ sudo apt install yt-dlp                         # Install yt-dlp
 
 Your system's package manager will now automatically download the correct dependencies and keep the package updated with the rest of your system whenever you run:
 
-```
+```bash
 sudo apt update
 sudo apt install yt-dlp
 ```
@@ -125,13 +125,13 @@ sudo apt install yt-dlp
 
 You can install yt-dlp on macOS using MacPorts:
 
-```
+```bash
 sudo port install yt-dlp
 ```
 
 To update, run:
 
-```
+```bash
 sudo port selfupdate
 sudo port upgrade yt-dlp
 ```
@@ -148,19 +148,19 @@ doas apk -U add yt-dlp
 
 Or alternatively, without any optional dependencies:
 
-```
+```php
 doas apk -U add yt-dlp-core
 ```
 
 yt-dlp should upgrade with your system. If you want to do that explicitly:
 
-```
+```php
 doas apk -U upgrade yt-dlp
 ```
 
 To uninstall:
 
-```
+```php
 doas apk del yt-dlp
 ```
 
@@ -170,37 +170,37 @@ On [postmarketOS](https://postmarketos.org/) you might have to use `sudo` instea
 
 #### [Scoop](https://scoop.sh/)
 
-```
+```bash
 scoop install yt-dlp
 ```
 
 To update, run:
 
-```
+```bash
 scoop update yt-dlp
 ```
 
 #### [Chocolatey](https://community.chocolatey.org/packages/yt-dlp)
 
-```
+```bash
 choco install yt-dlp
 ```
 
 To update, run:
 
-```
+```php
 choco upgrade yt-dlp
 ```
 
 #### [winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/)
 
-```
+```php
 winget install yt-dlp
 ```
 
 To update, run:
 
-```
+```php
 winget upgrade yt-dlp
 ```
 
@@ -208,7 +208,7 @@ winget upgrade yt-dlp
 
 You can use yt-dlp on Android using [Termux](https://termux.dev/). Once Termux is installed, open it and run the following commands:
 
-```
+```html
 termux-setup-storage                 # Allow termux to download files into your phone's storage
 pkg update && pkg upgrade            # Update all packages
 pkg install libexpat openssl python  # Install python
@@ -218,7 +218,7 @@ pkg install ffmpeg                   # OPTIONAL: Install ffmpeg
 
 To update, run:
 
-```
+```html
 pip install -U yt-dlp
 ```
 

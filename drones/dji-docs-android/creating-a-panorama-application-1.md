@@ -2,32 +2,32 @@
 
 > Note：This Tutorial and Sample Project is developed based on DJI Android SDK v2.4, an update version for Android SDK v3.1.1 will be published soon.
 
-* [Setting up and Running the PanoDemo App](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  * [Setting up your Development Environment](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  * [Importing the Demo Project into Eclipse](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  * [Using the PanoDemo App](/broken/pages/QqFgQwpukckWPgy8Bnan)
-* [Creating your own Panorama App](/broken/pages/QqFgQwpukckWPgy8Bnan)
-* [Creating the User Interface](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  * [App permissions and basic layout](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  * [Creating the User Interface](/broken/pages/QqFgQwpukckWPgy8Bnan)
-* [Initialization and Setup](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  * [Initializing the Environment](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  * [Communicating with your drone](/broken/pages/QqFgQwpukckWPgy8Bnan)
-* [Taking Photos](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  * [Starting the Panorama Procedure](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  * [Capturing Photos](/broken/pages/QqFgQwpukckWPgy8Bnan)
-* [Downloading Images](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  * [Switching Camera Modes](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  * [Selecting Images](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  * [Downloading Images](/broken/pages/QqFgQwpukckWPgy8Bnan)
-* [Creating the Panorama](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  * [Stitching the images together](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  * [Displaying the results](/broken/pages/QqFgQwpukckWPgy8Bnan)
-* [Final Touches](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  * [Adding Phantom 3 Professional Support](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  * [Handling the Android Life Cycle](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  * [Bonus: Adding a Battery Indicator](/broken/pages/QqFgQwpukckWPgy8Bnan)
-* [Summary](/broken/pages/QqFgQwpukckWPgy8Bnan)
+- [Setting up and Running the PanoDemo App](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  - [Setting up your Development Environment](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  - [Importing the Demo Project into Eclipse](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  - [Using the PanoDemo App](/broken/pages/QqFgQwpukckWPgy8Bnan)
+- [Creating your own Panorama App](/broken/pages/QqFgQwpukckWPgy8Bnan)
+- [Creating the User Interface](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  - [App permissions and basic layout](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  - [Creating the User Interface](/broken/pages/QqFgQwpukckWPgy8Bnan)
+- [Initialization and Setup](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  - [Initializing the Environment](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  - [Communicating with your drone](/broken/pages/QqFgQwpukckWPgy8Bnan)
+- [Taking Photos](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  - [Starting the Panorama Procedure](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  - [Capturing Photos](/broken/pages/QqFgQwpukckWPgy8Bnan)
+- [Downloading Images](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  - [Switching Camera Modes](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  - [Selecting Images](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  - [Downloading Images](/broken/pages/QqFgQwpukckWPgy8Bnan)
+- [Creating the Panorama](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  - [Stitching the images together](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  - [Displaying the results](/broken/pages/QqFgQwpukckWPgy8Bnan)
+- [Final Touches](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  - [Adding Phantom 3 Professional Support](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  - [Handling the Android Life Cycle](/broken/pages/QqFgQwpukckWPgy8Bnan)
+  - [Bonus: Adding a Battery Indicator](/broken/pages/QqFgQwpukckWPgy8Bnan)
+- [Summary](/broken/pages/QqFgQwpukckWPgy8Bnan)
 
 _If you come across any mistakes or bugs in this tutorial, please let us know using a Github issue, a post on the DJI forum, or commenting in the Gitbook. Please feel free to send us Github pull request and help us fix any issues. However, all pull requests related to document must follow the_ [_document style_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 
@@ -37,9 +37,9 @@ _Note: For the DJI Inspire 1 and the Phantom 3 Professional, using the DJI SDK a
 
 In this tutorial, you will learn how to build a cool panorama app. With the help of the powerful DJI SDK and OpenCV libraries, this is actually quite easy. You will be using Intelligent Navigation's Waypoint feature and Joystick to rotate the aircraft to take photos. Let's get started!
 
-### Setting up and Running the PanoDemo App <a href="#setting-up-and-running-the-panodemo-app" id="setting-up-and-running-the-panodemo-app"></a>
+## Setting up and Running the PanoDemo App <a href="#setting-up-and-running-the-panodemo-app" id="setting-up-and-running-the-panodemo-app"></a>
 
-#### Setting up your Development Environment <a href="#setting-up-your-development-environment" id="setting-up-your-development-environment"></a>
+### Setting up your Development Environment <a href="#setting-up-your-development-environment" id="setting-up-your-development-environment"></a>
 
 There are 8 separate required downloads to set up our development environment. Follow each link to download and install each package. The information in brackets next to each link details the version that we have used in creating our demo:
 
@@ -68,11 +68,11 @@ We've already gone ahead and created a working panorama app for you to reference
 
 5.Ensure that the following folders have been added to your System Path. Some of them should have already been added in the process of following the tutorials linked in part 1.
 
-* C:\Program Files\Java\jdk1.8.0\_45\bin;
-* D:\DJI\PanoramaDemo\release\NDK\android-ndk-r10e;
-* D:\DJI\PanoramaDemo\release\NDK\android-ndk-r10e\build;
-* D:\DJI\PanoramaDemo\release\NDK\android-ndk-r10e\prebuilt\windows-x86\_64\bin
-* C:\OpenCV-2.4.11-android-sdk\OpenCV-android-sdk\sdk\native\jni;
+- C:\Program Files\Java\jdk1.8.0\_45\bin;
+- D:\DJI\PanoramaDemo\release\NDK\android-ndk-r10e;
+- D:\DJI\PanoramaDemo\release\NDK\android-ndk-r10e\build;
+- D:\DJI\PanoramaDemo\release\NDK\android-ndk-r10e\prebuilt\windows-x86\_64\bin
+- C:\OpenCV-2.4.11-android-sdk\OpenCV-android-sdk\sdk\native\jni;
 
 #### Using the PanoDemo App <a href="#using-the-panodemo-app" id="using-the-panodemo-app"></a>
 
@@ -114,7 +114,7 @@ Right click on your project and select Properties -> Android. Check that under t
 
 Our app is going to need to use a few permissions in order to function. Let's get these all out of the way in one go. Add the following permissions and features into your **Android Manifest** file:
 
-```
+```html
 <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -154,7 +154,7 @@ The important permissions here allow us to connect via USB to the DJI remote con
 
 In the same **AndroidManifest.xml** file, alter your **\<application** **... >** section to look something like this:
 
-```
+```php
 <application
     // These 3 lines should have been automatically generated
     android:allowBackup="true"
@@ -176,7 +176,7 @@ The three lines we added remove the title bar from the layout, allow hardware ac
 
 Within your **MainActivity** **\<activity** **... >** section, add the following code:
 
-```
+```html
 <activity
     android:name=".MainActivity"
     android:label="@string/app_name"
@@ -204,7 +204,7 @@ Change your **MainActivity** (or your main activity) class so that it extends **
 
 Lastly, we're going to want our device's screen to stay on while our app goes through its automated process of creating a panorama. Add the following line of code to your **onCreate()** method to keep your device awake.
 
-```
+```python
 @Override
 protected void onCreate(Bundle savedInstanceState)
 {
@@ -223,16 +223,16 @@ Run your app. It doesn't contain anything right now, but you will notice that it
 
 Our app will consist of several view elements:
 
-* **mDjiGLSurfaceView** - A DjiGLSurfaceView view, which is a widget provided by the DJI mobile SDK. It acts as a specialized SurfaceView view that displays live video feed from the Drone's camera.
-* **commonMessageTextView** - The TextView element at the top of the app, used to display information on the app's current status.
-* **startButton** - The button used to start up the video feed.
-* **stitchingButton** - The button at the bottom of the app. Used to start the photo capture and stitching process.
+- **mDjiGLSurfaceView** - A DjiGLSurfaceView view, which is a widget provided by the DJI mobile SDK. It acts as a specialized SurfaceView view that displays live video feed from the Drone's camera.
+- **commonMessageTextView** - The TextView element at the top of the app, used to display information on the app's current status.
+- **startButton** - The button used to start up the video feed.
+- **stitchingButton** - The button at the bottom of the app. Used to start the photo capture and stitching process.
 
 There also exists a **batteryTextView**, but as this is not very relevant to the app's purpose, we'll be leaving this out for now. Stay tuned till the end of the tutorial for a bonus segment on how to add it though!
 
 Add these elements to your **activity\_main.xml** file. Here's our xml code as reference. All of this is contained within a relative layout:
 
-```
+```html
 <dji.sdk.widget.DjiGLSurfaceView
     android:id="@+id/mDjiSurfaceView"
     android:layout_width="match_parent"
@@ -277,7 +277,7 @@ In our code we reference a **start\_gray** resource. That's the image we use for
 
 You'll also notice that we reference three string values that don't exist for you yet. We're going to be referencing quite a few string resources, and instead of going through the hassle of adding them to our **strings.xml** resource file as we encounter them, let's just add them all right now. Copy the following code into your **strings.xml** file (res/values):
 
-```
+```html
 <!-- UI -->
     <string name="dji_sdk_activate_error">DJI SDK activation error</string>
     <string name="stitching">Stitching</string>
@@ -297,7 +297,7 @@ You'll also notice that we reference three string values that don't exist for yo
 
 Now that we have a UI ready to use, we have to initialize it. Head into your **onCreate** method and add a line calling **initUIControls()**, which is a method we're about to create. If your coding environment hasn't automatically created an **onCreate** method, add it as shown below:
 
-```
+```json
 @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -311,7 +311,7 @@ Now that we have a UI ready to use, we have to initialize it. Head into your **o
 
 Now add the following variables to your **MainActivity** class:
 
-```
+```json
 private DjiGLSurfaceView mDjiGLSurfaceView;
 private TextView commonMessageTextView;
 private LinearLayout centerLinearLayout;
@@ -322,7 +322,7 @@ private ProgressDialog mDownloadDialog;
 
 Create a method **initUIControls()** as shown below:
 
-```
+```json
 private void initUIControls()
 {
     //Assign variables to their corresponding views
@@ -350,7 +350,7 @@ In the third part we customize our different view elements so that they appear a
 
 We're also going to initialize a download progress dialog box. We'll start and display this progress bar quite a bit later on, when we're downloading images from the drone to our device, but we're going to initialize it now:
 
-```
+```json
 private void initDownloadProgressDialog()
 {
     mDownloadDialog = new ProgressDialog(MainActivity.this);
@@ -364,7 +364,7 @@ private void initDownloadProgressDialog()
 
 Call **initDownloadProgressDialog()** at the end of **initUIControls()**:
 
-```
+```php
 private void initUIControls()
 {
     ...
@@ -375,7 +375,7 @@ private void initUIControls()
 
 Lastly, because we're setting onClickListeners, we're going to need to implement OnClickListener:
 
-```
+```php
 public class MainActivity extends ActionBarActivity implements OnClickListener {
 ...
 }
@@ -391,14 +391,14 @@ Although we've successfully initialized our UI, there's still more to our app th
 
 **initStitchingImageDirectory()** will create directories for the source of our panorama, where we'll find the images to stitch together into a panorama, and for the result of our panorama. First add the following variables in the main class. Make sure to replace "APPNAME" with the name of your own app.
 
-```
+```php
 private final String STITCHING_SOURCE_IMAGES_DIRECTORY = Environment.getExternalStorageDirectory().getPath()+"/APPNAME/";
 private final String STITCHING_RESULT_IMAGES_DIRECTORY = Environment.getExternalStorageDirectory().getPath()+"/APPNAME/result/";
 ```
 
 Now create the function **initStitchingImageDirectory()**.
 
-```
+```json
 private void initStitchingImageDirectory()
 {
     //check if directories already exist. If not, create
@@ -421,7 +421,7 @@ Our app will store the raw images it takes in the "APPNAME" folder. Once the ima
 
 **initOpenCVLoader()** loads and initializes the OpenCV library from the current application package through the **initDebug()** function. If **initDebug()** fails, we use the OpenCV manager to load the OpenCV library instead.
 
-```
+```php
 private boolean initOpenCVLoader()
 {
     if (!OpenCVLoader.initDebug())
@@ -443,7 +443,7 @@ The above is a pretty standard usage of the OpenCV methods. Learn more at [http:
 
 Add the following into your class:
 
-```
+```json
 private static final String TAG = "APPNAMEMainActivity";  //debug TAG. Edit to suit the name of your own app
 
 private void showLOG(String str)
@@ -474,7 +474,7 @@ The constant **TAG** is just a string we'll use whenever we call **Log.e()** to 
 
 **initDjiSDK()** takes care of all the necessary setup required to use the DJI mobile SDK in your app, then initiates and connects to the drone.
 
-```
+```php
 private void initDJISDK()
 {
     startDJIAoa();
@@ -492,7 +492,7 @@ You will notice that this code is made specifically for use with the Inspire 1. 
 
 Add the code for **startDJIAoa()**, as well as the boolean **isDJIAoaStarted**.
 
-```
+```json
 private static boolean isDJIAoaStarted = false;  //DJIAoa
 
 private void startDJIAoa()
@@ -527,7 +527,7 @@ The purpose of the boolean is to ensure that we only start up DJIAoa if it isn't
 
 Add **activateDJISDK()**:
 
-```
+```json
 pprivate void activateDJISDK()
 {
     new Thread()
@@ -566,7 +566,7 @@ The purpose of both of these functions have been explained in our very first tut
 
 Lastly, add **showToast()**, a small helper function that displays toast messages:
 
-```
+```json
 private void showToast(String str)
 {
     Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
@@ -575,7 +575,7 @@ private void showToast(String str)
 
 **initDJICamera()** creates a schedule so that **CheckCameraConnectionTask()**, a **TimerTask**, is carried out every 3 seconds:
 
-```
+```php
 private Timer checkCameraConnectionTimer = new Timer();
 private void initDJICamera()
 {
@@ -586,7 +586,7 @@ private void initDJICamera()
 
 **CheckCameraConnectionTask** uses **checkCameraConnectState** to check if the app is connected to the drone's camera. If so, the start button turns green and will be enabled. If not, the start button remains gray and disabled. Add **CheckCameraConnectionTask**:
 
-```
+```php
 class CheckCameraConnectionTask extends TimerTask
 {
     @Override
@@ -617,7 +617,7 @@ class CheckCameraConnectionTask extends TimerTask
 
 **checkCameraConnectState()** uses the mobile SDK function **getCamerConnectIsOk()** to check the connection state. Add the function as shown below:
 
-```
+```json
 private boolean checkCameraConnectState(){
     //check connection
     boolean cameraConnectState = DJIDrone.getDjiCamera().getCameraConnectIsOk();
@@ -638,7 +638,7 @@ Combined, these functions allow **initDJICamera** to start a schedule which will
 
 Call these four functions in your **onCreate()** function, as shown below.
 
-```
+```json
 @Override
 protected void onCreate(Bundle savedInstanceState)
 {
@@ -668,7 +668,7 @@ We're going to want our **startButton** to start the communication between the d
 
 Add the following variables to your class:
 
-```
+```php
 private DJIDroneType mDroneType;
 
 //Callback functions to implement
@@ -683,7 +683,7 @@ private final int COMMON_MESSAGE_DURATION_TIME = 2500;  //in milliseconds
 
 First, add the following code. This is just to create a helper function **showCommonMessage()** that we will be using quite often in our code. It sets the **commonMessageTextView** element to display a given message, but only for a short period of time as allotted by **COMMON\_MESSAGE\_DURATION\_TIME**.
 
-```
+```php
 private Timer commonMessageTimer = new Timer();
 
 class commonMessageCleanTask extends TimerTask
@@ -780,7 +780,7 @@ The rest of the function defines four different callback function, sets them, th
 
 Finally, add to your **onClick()** function so that it calls **startDJICamera** when **startButton** is pressed.
 
-```
+```bash
 @Override
 public void onClick(View v) {
     switch (v.getId()) {
@@ -807,7 +807,7 @@ At this point, our app is ready and connected to our drone. The callback functio
 
 In the previous section we added some code so that pressing **startButton** will call **stitchingButton.setEnabled(true)**. If you recall, **stitchingButton** is the button at the bottom of the app that, when pressed, will start the panorama capturing process. Let's add some functionality to our **onClickListener** to support that. In our **onClick()** method, add the following switch case:
 
-```
+```php
 case R.id.stitchingButton:
     cleanSourceFolder();
     stitchingButton.setEnabled(false);
@@ -826,7 +826,7 @@ case R.id.stitchingButton:
 
 The first function we want to call when the user presses **stitchingButton** is **cleanSourceFolder()**, which clears all files (but not folders) out of our source image directory:
 
-```
+```python
 private void cleanSourceFolder()
 {
     File sourceDirectory = new File(STITCHING_SOURCE_IMAGES_DIRECTORY);
@@ -843,7 +843,7 @@ private void cleanSourceFolder()
 
 We get our source directory from the constant **STITCHING\_SOURCE\_IMAGES\_DIRECTORY**, which we had already defined previously. Here it is again to refresh your memory:
 
-```
+```json
 private final String STITCHING_SOURCE_IMAGES_DIRECTORY = Environment.getExternalStorageDirectory().getPath()+"/APPNAME/";
 ```
 
@@ -851,7 +851,7 @@ Next, if we are connected to an Inspire 1 drone, we carry out some code which wi
 
 Create a new handler:
 
-```
+```json
 private Handler handler = new Handler(new Handler.Callback() {
     @Override
     public boolean handleMessage(Message msg)
@@ -863,7 +863,7 @@ private Handler handler = new Handler(new Handler.Callback() {
 
 We're going to be sending our handler different messages for it to respond to by carrying out appropriate code. Add a switch statement to the **handleMessage()** method in our handler, with a single case **HANDLER\_INSPIRE1\_CAPTURE\_IMAGES**:
 
-```
+```python
 switch (msg.what)
 {
     case HANDLER_INSPIRE1_CAPTURE_IMAGES:
@@ -893,7 +893,7 @@ private boolean isCheckCaptureImageFailure = false;  //check dji camera capture 
 
 We have coded our handler so that if we send it the message **HANDLER\_INSPIRE1\_CAPTURE\_IMAGES** it'll carry out our code in the appropriate switch case. Let's add the following code to that case:
 
-```
+```json
 case HANDLER_INSPIRE1_CAPTURE_IMAGES:
 {
     new Thread()
@@ -995,7 +995,7 @@ case HANDLER_INSPIRE1_CAPTURE_IMAGES:
 
 Create the method **DJICameraTakePhoto()**:
 
-```
+```json
 private void DJICameraTakePhoto()
 {
     CameraCaptureMode mode = CameraCaptureMode.Camera_Single_Capture;
@@ -1024,7 +1024,7 @@ private void DJICameraTakePhoto()
 
 Add the following switch cases to your handler's **handleMessage()** method:
 
-```
+```json
 case HANDLER_SHOW_COMMON_MESSAGE:
 {
     showCommonMessage((String)msg.obj);
@@ -1060,14 +1060,14 @@ This rotates the gimbal to its most counter-clockwise position. This ensures tha
 
 Once the gimbal has reached its required position, we exit the while loop and execute the following two lines, setting the speed of the gimbal to 0 to halt its movement:
 
-```
+```json
 DJIGimbalRotation mYaw_init_stop = new DJIGimbalRotation(true,false,false, 0);
 DJIDrone.getDjiGimbal().updateGimbalAttitude(null,null,mYaw_init_stop);
 ```
 
 Once the gimbal is in its starting orientation, we take 8 photos, rotating the gimbal by **360/CAPTURE\_IMAGE\_NUMBER** each time. This is carried out in this for loop:
 
-```
+```json
 for(int i=-180;i<180;i+=(360/CAPTURE_IMAGE_NUMBER))
 {
     imgIndex++;
@@ -1113,7 +1113,7 @@ As we've just finished taking photos, the drone is in **Capture Mode**. From the
 
 Let's confirm with the app user before setting off this chain of events. In our handler's **HANDLER\_INSPIRE1\_CAPTURE\_IMAGES** case, upon successfully taking 8 photos it sends itself a **HANDLER\_SHOW\_STITCHING\_OR\_NOT\_DIALOG** message, which we've left blank. Now we'll add the code to present a dialog box asking the user to confirm that they want to continue with the process:
 
-```
+```json
 case HANDLER_SHOW_STITCHING_OR_NOT_DIALOG:
 {
     //capture complete,show dialog,user determing stitching or cancel
@@ -1142,13 +1142,13 @@ case HANDLER_SHOW_STITCHING_OR_NOT_DIALOG:
 
 Clicking the positive button in the dialog box that is created here will send the handler a **HANDLER\_SET\_DJI\_CAMERA\_PALYBACK\_MODE** message, while pressing the negative button resets the stitching button text and enables it, effectively returning the user back to the beginning. Let's add the code to handle **HANDLER\_SET\_DJI\_CAMERA\_PALYBACK\_MODE**. First the constant:
 
-```
+```json
 private final int HANDLER_SET_DJI_CAMERA_PALYBACK_MODE = 2004;
 ```
 
 Then the code in the handler:
 
-```
+```json
 case HANDLER_SET_DJI_CAMERA_PALYBACK_MODE:
 {
     //set camera playback mode to pull back images
@@ -1193,11 +1193,11 @@ This code puts the drone into **Playback Mode**. This is done using the **setCam
 
 Referring to the flowchart at the beginning of this section, we still have to navigate into **Multiple Preview Mode**, and then into **Multiple Edit Mode**. You can see that the code above calls **HANDLER\_SET\_DJI\_CAMERA\_MULTI\_PREVIEW\_MODE** in the callback function, which we'll add right now:
 
-```
+```json
 private final int HANDLER_SET_DJI_CAMERA_MULTI_PREVIEW_MODE = 2005;
 ```
 
-```
+```json
 case HANDLER_SET_DJI_CAMERA_MULTI_PREVIEW_MODE:
 {
     //enter multi preview mode
@@ -1238,11 +1238,11 @@ case HANDLER_SET_DJI_CAMERA_MULTI_PREVIEW_MODE:
 
 Likewise, **HANDLER\_SET\_DJI\_CAMERA\_MULTI\_PREVIEW\_MODE** calls **HANDLER\_SET\_DJI\_CAMERA\_MULTI\_EDIT\_MODE**. Let's add that in now. The code should be looking quite repetitive now:
 
-```
+```json
 private final int HANDLER_SET_DJI_CAMERA_MULTI_EDIT_MODE = 2006;
 ```
 
-```
+```json
 case HANDLER_SET_DJI_CAMERA_MULTI_EDIT_MODE:
 {
     //enter multi edit mode
@@ -1285,11 +1285,11 @@ case HANDLER_SET_DJI_CAMERA_MULTI_EDIT_MODE:
 
 Now that our camera is in **Multiple Edit Mode**, we can proceed to select the last 8 photos taken and download them. We'll do this by first selecting all the photos in the current page - each page can contain at most 8 photos. If we have selected 8 photos, we can go ahead and download. If we have selected less than 8 photos, we navigate back a page and select the remaining photos. Here's the code for **HANDLER\_SET\_DJI\_CAMERA\_SELECT\_PAGE**, which is the starting point of what we just described. This code will select all the images on the current page through the function **selectAllFilesInPage()**:
 
-```
+```json
 private final int HANDLER_SET_DJI_CAMERA_SELECT_PAGE = 2007;
 ```
 
-```
+```json
 case HANDLER_SET_DJI_CAMERA_SELECT_PAGE:
 {
     //select page(max 8)
@@ -1339,12 +1339,12 @@ case HANDLER_SET_DJI_CAMERA_SELECT_PAGE:
 
 Here's **HANDLER\_SET\_DJI\_CAMERA\_PREVIOUS\_PAGE** and **HANDLER\_SET\_DJI\_CAMERA\_SELECT\_FILE\_AT\_INDEX**, which are called only if there aren't 8 images displayed and selected on the current page. the code in these two sections will access the previous page of images and select the remaining images needed:
 
-```
+```json
 private final int HANDLER_SET_DJI_CAMERA_PREVIOUS_PAGE = 2008;
 private final int HANDLER_SET_DJI_CAMERA_SELECT_FILE_AT_INDEX = 2009;
 ```
 
-```
+```json
 case HANDLER_SET_DJI_CAMERA_PREVIOUS_PAGE:
 {
     //if no enough in this page,go back previous page
@@ -1385,7 +1385,7 @@ case HANDLER_SET_DJI_CAMERA_PREVIOUS_PAGE:
 
 We use **multiplePreviewPreviousPage()** to navigate to the previous page.
 
-```
+```json
 case HANDLER_SET_DJI_CAMERA_SELECT_FILE_AT_INDEX:
 {
     new Thread()
@@ -1442,13 +1442,13 @@ Individual images are selected using the **selectFileAtIndex()** function.
 
 Once we have all 8 photos selected, we just need to download them. Lets do that in **HANDLER\_SET\_DJI\_CAMERA\_DOWNLOAD\_SELECTED**:
 
-```
+```json
 private final int HANDLER_SET_DJI_CAMERA_DOWNLOAD_SELECTED = 2010;
 ```
 
 We're also going to have to add the following constants and variables:
 
-```
+```json
 private final String DOWNLOAD_IMAGE_DIRECTORY = "APPNAME";
 private boolean isCheckDownloadImageFailure = false;
 private int downloadImageFailedCount = 0;
@@ -1456,7 +1456,7 @@ private int downloadImageFailedCount = 0;
 
 And the following functions:
 
-```
+```json
 private void showDownloadProgressDialog()
 {
     if(mDownloadDialog != null)
@@ -1478,7 +1478,7 @@ Do you remember way back when we initialized a Download Progress Dialog called *
 
 Add the following code to your handler:
 
-```
+```json
 case HANDLER_SET_DJI_CAMERA_DOWNLOAD_SELECTED:
 {
     //download file
@@ -1585,20 +1585,20 @@ case HANDLER_SET_DJI_CAMERA_DOWNLOAD_SELECTED:
 
 That may seem like a big chunk of code, but it is just a single call to **downloadAllSelectedFiles()** and a definition of the callback function to use. The callback itself has several functions to call to handle the different stages of the download life cycle:
 
-* **OnStart()** calls **showDownloadProgressDialog()**.
-* **OnError()** only acts if the boolean **isCheckDownloadImageFailure** is set to true, which is your choice to do so or not. If so, it will increment a variable **downloadImageFailedCount** and show a common message alerting the user of a download error.
-* **OnProgressUpdate()** takes in an int **progress** and uses it to update **mDownloadDialog**. If the download is complete, it hides **mDownloadDialog** instead.
-* **OnEnd()** sends the handler **HANDLER\_SET\_DJI\_CAMERA\_FINISH\_DOWNLOAD\_FILES**, which finished up the download and shows a common message verifying whether the download has succeeded or failed. It then sends the handler **HANDLER\_SET\_DJI\_CAMERA\_CAPTURE\_MODE**. If the download has failed, it sends the handler **HANDLER\_SET\_STITCHING\_BUTTON\_TEXT** and **HANDLER\_ENABLE\_STITCHING\_BUTTON**, returning the app to a state ready to take another panorama. Otherwise, it calls **HANDLER\_START\_STITCHING** to start stitching the photos together into a panorama.
+- **OnStart()** calls **showDownloadProgressDialog()**.
+- **OnError()** only acts if the boolean **isCheckDownloadImageFailure** is set to true, which is your choice to do so or not. If so, it will increment a variable **downloadImageFailedCount** and show a common message alerting the user of a download error.
+- **OnProgressUpdate()** takes in an int **progress** and uses it to update **mDownloadDialog**. If the download is complete, it hides **mDownloadDialog** instead.
+- **OnEnd()** sends the handler **HANDLER\_SET\_DJI\_CAMERA\_FINISH\_DOWNLOAD\_FILES**, which finished up the download and shows a common message verifying whether the download has succeeded or failed. It then sends the handler **HANDLER\_SET\_DJI\_CAMERA\_CAPTURE\_MODE**. If the download has failed, it sends the handler **HANDLER\_SET\_STITCHING\_BUTTON\_TEXT** and **HANDLER\_ENABLE\_STITCHING\_BUTTON**, returning the app to a state ready to take another panorama. Otherwise, it calls **HANDLER\_START\_STITCHING** to start stitching the photos together into a panorama.
 
 Add the following handler switch cases:
 
-```
+```json
 private final int HANDLER_START_STITCHING = 1002;
 private final int HANDLER_SET_DJI_CAMERA_CAPTURE_MODE = 2003;
 private final int HANDLER_SET_DJI_CAMERA_FINISH_DOWNLOAD_FILES = 2011;
 ```
 
-```
+```json
 case HANDLER_SET_DJI_CAMERA_FINISH_DOWNLOAD_FILES:
 {
     //finish download
@@ -1670,7 +1670,7 @@ public native int jnistitching(String[] source,String result,double scale);
 
 And the code for **HANDLER\_START\_STITCHING**:
 
-```
+```json
 case HANDLER_START_STITCHING:
 {
     if(isDIsableDJIVideoPreviewDuringStitching)
@@ -1724,7 +1724,7 @@ case HANDLER_START_STITCHING:
 
 And these smaller helper cases/functions:
 
-```
+```json
 case HANDLER_DISABLE_DJI_VIDEO_PREVIEW:
 {
     DJIDrone.getDjiCamera().setReceivedVideoDataCallBack(null);
@@ -1737,7 +1737,7 @@ case HANDLER_ENABLE_DJI_VIDEO_PREVIEW:
 }
 ```
 
-```
+```json
 private String[] getDirectoryFilelist(String directory)
 {
     String[] filelist;
@@ -1777,7 +1777,7 @@ There are two threads in **HANDLER\_START\_STITCHING**. The first disables the v
 
 The actual stitching process is carried out in a function called **jnistitching**. One of the objects that we declared at the beginning of this section was:
 
-```
+```php
 public native int jnistitching(String[] source,String result,double scale);
 ```
 
@@ -1796,7 +1796,7 @@ LOCAL_SRC_FILES := PanoDemo.cpp // Here too
 
 Replace the contents of your **APPNAME.cpp** file with the demo project's **PanoDemo.cpp** file. Locate these 4 lines of code:
 
-```
+```go
 JNIEXPORT jstring JNICALL Java_com_dji_dev_panodemo_MainActivity_testjni(JNIEnv *env, jobject obj)
 ...
 JNIEXPORT jint JNICALL Java_com_dji_dev_panodemo_MainActivity_jnistitching(JNIEnv *env, jobject obj, jobjectArray source, jstring result, jdouble scale);
@@ -1812,7 +1812,7 @@ Now, when our code calls the function **jnistitching()**, it'll carry out the C+
 
 The **jnistitching()** method, in the **APPNAME.cpp** file, calls upon a function **javaShowJniStitchingCostTime()** at the end of its code. It expects to find this function back in our **MainActivity.java** file, so we'll just quickly add an empty function so that our code can compile:
 
-```
+```json
 private void javaShowJniStitchingCostTime(double costTime)
 {
     // Show jnistitching cost time
@@ -1821,7 +1821,7 @@ private void javaShowJniStitchingCostTime(double costTime)
 
 Lastly, we need to load the library of C++ functions that we want to use. Add the following at the top of your class, above all your constants and global variables:
 
-```
+```javascript
 //Load jni library
 static
 {
@@ -1837,7 +1837,7 @@ Ideally, we'd like the user to know when the panorama has finished being process
 
 Let's go back and edit our **javaShowJniStitchingCostTime()** function so that it sends our handler a message:
 
-```
+```json
 private void javaShowJniStitchingCostTime(double costTime)
 {
     handler.sendMessage(handler.obtainMessage(HANDLER_JAVA_SHOW_JNI_STITCHING_COST_TIME,""+costTime));
@@ -1846,13 +1846,13 @@ private void javaShowJniStitchingCostTime(double costTime)
 
 Now lets add some code to our handler so it knows how to handle this message:
 
-```
+```json
 private final int HANDLER_JAVA_SHOW_JNI_STITCHING_COST_TIME = 1004;
 ```
 
 And:
 
-```
+```json
 case HANDLER_JAVA_SHOW_JNI_STITCHING_COST_TIME:
 {
     String costTime_str=(String)msg.obj;  //original str like this:19.492691
@@ -1876,11 +1876,11 @@ case HANDLER_JAVA_SHOW_JNI_STITCHING_COST_TIME:
 
 This code just displays a dialog box. **HANDLER\_SHOW\_STITCHING\_RESULT\_IMAGEVIEW** will handle actually taking the user to the image:
 
-```
+```php
 private final int HANDLER_SHOW_STITCHING_RESULT_IMAGEVIEW = 1006;
 ```
 
-```
+```php
 case HANDLER_SHOW_STITCHING_RESULT_IMAGEVIEW:
 {
     //use android system imageview
@@ -1910,13 +1910,13 @@ Consequently, instead of rotating the gimbal to take photos, we're going to have
 
 One of the global variables I had you declare was a **DJIDroneType** object **mDroneType**. In **startDJICamera()**, a function called when the start button is pressed, we execute this line:
 
-```
+```json
 mDroneType = DJIDrone.getDroneType();
 ```
 
 With this variable in place, we can go into our **onClick()** function, and under the R.id.stitchingButton switch case, edit the if statement to include an extra scenario:
 
-```
+```json
 if(mDroneType==DJIDroneType.DJIDrone_Inspire1)
 {
     handler.sendMessage(handler.obtainMessage(HANDLER_INSPIRE1_CAPTURE_IMAGES,""));
@@ -1952,11 +1952,11 @@ Now if your app is connected to a Phantom 3 Professional, when **stitchingButton
 
 Add the code for **HANDLER\_PHANTOM3PROFESSIONAL\_CAPTURE\_IMAGES** as shown below:
 
-```
+```json
 private final int HANDLER_PHANTOM3PROFESSIONAL_CAPTURE_IMAGES = 2001;
 ```
 
-```
+```json
 case HANDLER_PHANTOM3PROFESSIONAL_CAPTURE_IMAGES:
 {
     new Thread()
@@ -2157,7 +2157,7 @@ case HANDLER_PHANTOM3PROFESSIONAL_CAPTURE_IMAGES:
 
 Add the global variable:
 
-```
+```php
 private boolean isGroundstationOpenSuccess = false;
 ```
 
@@ -2177,11 +2177,11 @@ Our last segment of code checks the integer **captureImageFailedCount** which, i
 
 With Flight Control, we've primarily used functions such as **sendFlightControlData()** to control the drone. Now we'll be using Waypoints to achieve the same results. Add the following switch case into your handler:
 
-```
+```php
 private final int HANDLER_PHANTOM3PROFESSIONAL_WA_CAPTURE_IMAGES = 2002;
 ```
 
-```
+```php
 case HANDLER_PHANTOM3PROFESSIONAL_WA_CAPTURE_IMAGES:
 {
       //use waypoint action
@@ -2339,14 +2339,14 @@ case HANDLER_PHANTOM3PROFESSIONAL_WA_CAPTURE_IMAGES:
 
 In the above code we make use of the drone's current position through the variables **droneAltitude**, **droneLocationLatitude** and **droneLocationLongitude**. Start by initializing them as global variables:
 
-```
+```json
 private double droneAltitude=0.0;  //drone altitude
 private double droneLocationLatitude = 0.0, droneLocationLongitude = 0.0;  //drone gps data
 ```
 
 Next, in your **startDJICamera()** function, where we have declared and initialized all our callbacks, add a new callback:
 
-```
+```json
 //main controller
 mDjiMcuUpdateStateCallBack=new DJIMcuUpdateStateCallBack()
 {
@@ -2362,7 +2362,7 @@ mDjiMcuUpdateStateCallBack=new DJIMcuUpdateStateCallBack()
 
 And declare it:
 
-```
+```php
 private DJIMcuUpdateStateCallBack mDjiMcuUpdateStateCallBack;
 ```
 
@@ -2400,7 +2400,7 @@ We then create a Groundstation Task **task** and add these three waypoints to it
 
 You may find it strange that we end it there, as at no point have we sent a **HANDLER\_SHOW\_STITCHING\_OR\_NOT\_DIALOG** message to the handler, which allows the user to proceed with the panorama procedure. What we're going to do instead is define a **DJIGroundStationExecutionPushInfoCallBack**, which will be called upon execution of groundstation tasks. Once again, in **startDJICamera()**, add a new callback:
 
-```
+```json
 mDjiGroundStationExecutionPushInfoCallBack=new DJIGroundStationExecutionPushInfoCallBack()
 {
     @Override
@@ -2456,14 +2456,14 @@ mDjiGroundStationExecutionPushInfoCallBack=new DJIGroundStationExecutionPushInfo
 
 Add the following at the end of **startDJICamera()**:
 
-```
+```php
 DJIDrone.getDjiGroundStation().setGroundStationExecutionPushInfoCallBack(mDjiGroundStationExecutionPushInfoCallBack);
 DJIDrone.getDjiGroundStation().startUpdateTimer(1000);
 ```
 
 The callback function we just implemented will check through the following if statement
 
-```
+```bash
 if(info.eventType==GroundStationExecutionPushType.Navi_Mission_Finish)
 ```
 
@@ -2473,7 +2473,7 @@ to see if the groundstation has finished executing the tasks we assigned it, and
 
 When the app pauses, we're going to want to pause our Aoa service, and unpause it upon resuming the app. Edit your **onResume()** and **onPause()** functions to look like this, or if they don't exist, add them as shown below:
 
-```
+```python
 @Override
 protected void onResume()
 {
@@ -2491,7 +2491,7 @@ protected void onPause()
 
 Additionally, when the app is destroyed, we'll want to disconnect from the drone and clean up all our callback functions by setting them to null. This is handled **destroyDJICamera()**, which we'll call from **onDestroy()**:
 
-```
+```json
 @Override
 protected void onDestroy()
 {
@@ -2527,7 +2527,7 @@ Adding a battery indicator to our app will be a simple process of creating a tex
 
 Let's start by editing the **activity\_main.xml** file. Add the following TextView element to your relative layout:
 
-```
+```html
 <TextView
     android:id="@+id/batteryTextView"
     android:layout_width="wrap_content"
@@ -2541,13 +2541,13 @@ Let's start by editing the **activity\_main.xml** file. Add the following TextVi
 
 Now, right above our **initUIControls()** add the following object:
 
-```
+```json
 private TextView batteryTextView;
 ```
 
 And inside of **initUIControls()**, add the following two lines:
 
-```
+```json
 private void initUIControls()
 {
     ...
@@ -2562,7 +2562,7 @@ private void initUIControls()
 
 Now, in **startDJICamera()**, where we previously defined and set all our callback functions, add the following code to define and set our battery update callback function:
 
-```
+```php
 mBattryUpdateInfoCallBack = new DJIBatteryUpdateInfoCallBack(){
     @Override
     public void onResult(final DJIBatteryProperty state)
@@ -2585,7 +2585,7 @@ This callback function uses the **remainPowerPercent** field of the **DJIBattery
 
 Finally, add the following line in **destroyDJICamera**, to clean up the battery callback function when the app closes:
 
-```
+```python
 DJIDrone.getDjiBattery().setBatteryUpdateInfoCallBack(null);
 ```
 
@@ -2595,8 +2595,8 @@ Run your app and enjoy it in all its original glory, now complete with a battery
 
 Congratulations on reaching the end of this tutorial! We covered a _lot_ of material and played with many parts of the mobile SDK, including:
 
-* Connecting to and displaying a live video feed from the drone
-* Controlling the gimbal or the drone to rotate the camera
-* Taking photos using the camera
-* Navigating through playback modes to select and download images
-* Using native code to process images We suggest you go back and play with these individual topics on your own, maybe building an app or two yourself! Good luck, and have fun!
+- Connecting to and displaying a live video feed from the drone
+- Controlling the gimbal or the drone to rotate the camera
+- Taking photos using the camera
+- Navigating through playback modes to select and download images
+- Using native code to process images We suggest you go back and play with these individual topics on your own, maybe building an app or two yourself! Good luck, and have fun!

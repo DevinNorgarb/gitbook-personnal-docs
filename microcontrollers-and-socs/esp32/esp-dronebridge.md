@@ -10,17 +10,17 @@ DroneBridge for ESP32 is a telemetry/low data rate only solution. There is no su
 
 ### Features
 
-* Bi-directional link: MAVLink, MSP & LTM
-* Affordable: \~7€
-* Up to 150m range
-* Weight: <10 g
-* Supported by: DroneBridge for Android (app), mwptools, QGroundControl, impload etc.
-* Easy to set up: Power connection + UART connection to flight controller
-* Fully configurable through easy to use web interface
-* Parsing of LTM & MSPv2 for more reliable connection and less packet loss
-* Fully transparent telemetry downlink option for continuous streams like MAVLink or and other protocol
-* Reliable, low latency, light weight
-* Upload mission etc.
+- Bi-directional link: MAVLink, MSP & LTM
+- Affordable: \~7€
+- Up to 150m range
+- Weight: <10 g
+- Supported by: DroneBridge for Android (app), mwptools, QGroundControl, impload etc.
+- Easy to set up: Power connection + UART connection to flight controller
+- Fully configurable through easy to use web interface
+- Parsing of LTM & MSPv2 for more reliable connection and less packet loss
+- Fully transparent telemetry downlink option for continuous streams like MAVLink or and other protocol
+- Reliable, low latency, light weight
+- Upload mission etc.
 
 ![ESP32 module with VCP](https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/ESP32_Espressif_ESP-WROOM-32_Dev_Board.jpg/313px-ESP32_Espressif_ESP-WROOM-32_Dev_Board.jpg)
 
@@ -32,11 +32,11 @@ All ESP32 development boards will work. No additional PSRAM required. You will n
 
 Examples for boards that will work:
 
-* AZDelivery DevKit C
-* [TinyPICO - ESP32 Development Board - V2](https://www.adafruit.com/product/4335)
-* [Adafruit HUZZAH32 – ESP32 Feather Board](https://www.adafruit.com/product/3405)
-* [Adafruit AirLift – ESP32 WiFi Co-Processor Breakout Board](https://www.adafruit.com/product/4201) (requires FTDI adapter for flashing firmware)
-* [Adafruit HUZZAH32](https://www.adafruit.com/product/4172) (requires FTDI adapter for flashing firmware)
+- AZDelivery DevKit C
+- [TinyPICO - ESP32 Development Board - V2](https://www.adafruit.com/product/4335)
+- [Adafruit HUZZAH32 – ESP32 Feather Board](https://www.adafruit.com/product/3405)
+- [Adafruit AirLift – ESP32 WiFi Co-Processor Breakout Board](https://www.adafruit.com/product/4201) (requires FTDI adapter for flashing firmware)
+- [Adafruit HUZZAH32](https://www.adafruit.com/product/4172) (requires FTDI adapter for flashing firmware)
 
 DroneBridge for ESP32 is tested with an DOIT ESP32 development board.
 
@@ -57,7 +57,7 @@ There are many multiple ways on how to flash the firmware. The easy ones are exp
 3. `esptool.py -p COM4 erase_flash`
 4.  ```shell
     esptool.py -p COM4 -b 460800 --before default_reset --after hard_reset --chip esp32  write_flash --flash_mode dio --flash_size detect --flash_freq 40m 0x1000 bootloader.bin 0x8000 partition-table.bin 0x10000 db_esp32.bin 0x110000 www.bin
-    ```
+```
 
     You might need to press the boot button on your ESP to start the upload/flash process.
 
@@ -74,7 +74,7 @@ There are many multiple ways on how to flash the firmware. The easy ones are exp
      0x1000 bootloader/bootloader.bin
      0x10000 db_esp32.bin
      0x110000 www.bin
-    ```
+```bash
 4. Hit Start and power cycle your ESP32 after flashing
 
 #### Wiring

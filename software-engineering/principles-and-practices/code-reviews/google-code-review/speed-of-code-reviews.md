@@ -1,6 +1,6 @@
 # Speed of Code Reviews
 
-### [eng-practices](https://google.github.io/eng-practices/)
+## [eng-practices](https://google.github.io/eng-practices/)
 
 ### Why Should Code Reviews Be Fast? <a href="#why" id="why"></a>
 
@@ -8,9 +8,9 @@
 
 When code reviews are slow, several things happen:
 
-* **The velocity of the team as a whole is decreased.** Yes, the individual who doesn’t respond quickly to the review gets other work done. However, new features and bug fixes for the rest of the team are delayed by days, weeks, or months as each CL waits for review and re-review.
-* **Developers start to protest the code review process.** If a reviewer only responds every few days, but requests major changes to the CL each time, that can be frustrating and difficult for developers. Often, this is expressed as complaints about how “strict” the reviewer is being. If the reviewer requests the _same_ substantial changes (changes which really do improve code health), but responds _quickly_ every time the developer makes an update, the complaints tend to disappear. **Most complaints about the code review process are actually resolved by making the process faster.**
-* **Code health can be impacted.** When reviews are slow, there is increased pressure to allow developers to submit CLs that are not as good as they could be. Slow reviews also discourage code cleanups, refactorings, and further improvements to existing CLs.
+- **The velocity of the team as a whole is decreased.** Yes, the individual who doesn’t respond quickly to the review gets other work done. However, new features and bug fixes for the rest of the team are delayed by days, weeks, or months as each CL waits for review and re-review.
+- **Developers start to protest the code review process.** If a reviewer only responds every few days, but requests major changes to the CL each time, that can be frustrating and difficult for developers. Often, this is expressed as complaints about how “strict” the reviewer is being. If the reviewer requests the _same_ substantial changes (changes which really do improve code health), but responds _quickly_ every time the developer makes an update, the complaints tend to disappear. **Most complaints about the code review process are actually resolved by making the process faster.**
+- **Code health can be impacted.** When reviews are slow, there is increased pressure to allow developers to submit CLs that are not as good as they could be. Slow reviews also discourage code cleanups, refactorings, and further improvements to existing CLs.
 
 ### How Fast Should Code Reviews Be? <a href="#fast" id="fast"></a>
 
@@ -42,8 +42,8 @@ When dealing with time zone differences, try to get back to the author while the
 
 In order to speed up code reviews, there are certain situations in which a reviewer should give LGTM/Approval even though they are also leaving unresolved comments on the CL. This is done when either:
 
-* The reviewer is confident that the developer will appropriately address all the reviewer’s remaining comments.
-* The remaining changes are minor and don’t _have_ to be done by the developer.
+- The reviewer is confident that the developer will appropriately address all the reviewer’s remaining comments.
+- The remaining changes are minor and don’t _have_ to be done by the developer.
 
 The reviewer should specify which of these options they intend, if it is not otherwise clear.
 

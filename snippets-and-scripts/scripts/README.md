@@ -11,17 +11,17 @@ layout: landing
     ```bash
     #!/bin/bash
     split -l $(( $(wc -l < "$1") / 2 + 1)) "$1" "${2:-part_}"
-    ```
+```bash
 2.  Make the script executable:
 
     ```bash
     chmod +x split_csv.sh
-    ```
+```bash
 3.  Run the script with your CSV file and an optional prefix:
 
     ```bash
     ./split_csv.sh test.csv myprefix_
-    ```
+```
 
 This will split `test.csv` into two parts with filenames starting with `myprefix_`.
 
@@ -29,11 +29,11 @@ This will split `test.csv` into two parts with filenames starting with `myprefix
 
 **Resize LXD btrfs loop file in one line**
 
-```
+```python
  grow_lxd_btrfs_file() { STORAGE_POOL="$1" ; NEW_SIZE="$2" ; STORAGE_POOL_SOURCE="$(lxc storage get "$STORAGE_POOL" source)" ; sudo truncate -s "$NEW_SIZE" "$STORAGE_POOL_SOURCE" ; STORAGE_POOL_LOOP_DEVICE="$(losetup -j "$STORAGE_POOL_SOURCE" | awk -F': ' '{print $1}' | head -1)" ; sudo losetup -c "$STORAGE_POOL_LOOP_DEVICE" ; LXD_PID=$(pgrep lxd | head -1) ; NS_MOUNT_POINT=$(sudo nsenter -t "$LXD_PID" -m -- findmnt -no target "$STORAGE_POOL_LOOP_DEVICE") ; sudo btrfs filesystem resize max "/proc/$LXD_PID/root/$NS_MOUNT_POINT" ; lxd sql global "UPDATE storage_pools_config SET value = '$NEW_SIZE' WHERE key = 'size' AND storage_pool_id IN (SELECT id FROM storage_pools WHERE name = '$STORAGE_POOL')" ; }
 ```
 
-```
+```python
 grow_lxd_btrfs_file pritunl-storage-pool 50GB
 ```
 
@@ -41,13 +41,13 @@ grow_lxd_btrfs_file pritunl-storage-pool 50GB
 
 ***
 
-#### Kill process running on port
+## Kill process running on port
 
 `lsof -t -i tcp:1234 | xargs kill`
 
-#### Run a speedtest from the CLI
+### Run a speedtest from the CLI
 
-```
+```bash
 watch "curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 ```
 
@@ -55,7 +55,7 @@ watch "curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/spee
 
 #### Top Files Sizes &#x20;
 
-```
+```bash
 du -a / | sort -n -r | head -n 20
 ```
 

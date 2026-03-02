@@ -15,7 +15,6 @@ Unfortunately, GParted is not available for macOS.
 <figure><img src="../.gitbook/assets/2024-01-05_23-49.png" alt=""><figcaption></figcaption></figure>
 
 
-
 The solution with a GUI that I found to be useful is a program called Disk Inventory X.
 
 It is open source, as described here:

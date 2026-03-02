@@ -13,7 +13,7 @@
 >
 > You can test a TURN [here LIVE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/) or use "apt-get install stun" and then "stun domain.com:port".
 
-### Top
+## Top
 
 ### CoTURN installation on Ubuntu
 
@@ -22,41 +22,41 @@
 1. Make sure that you're using latest up-to-dated Ubuntu (TLS 14+)
 2.  ### Find a useful FTP link for your region.
 
-    ```
+```bash
     https://packages.debian.org/jessie/amd64/coturn/download
-    ```
+```
 
     \
     Simply copy the link. Don't try any command yet.
 3.  ### Modify sources.list file:
 
-    ```
+```bash
     vi /etc/apt/sources.list
-    ```
+```
 
     <br>
 
     ### And add above FTP\_domain in the sources-list. E.g.
 
-    ```
+```
     # at the bottom of the sources.list file
 
     # assuming that you found this domain:
     # http://ftp.hk.debian.org/debian
 
     deb http://ftp.hk.debian.org/debian jessie main
-    ```
+```bash
 4.  ### Make sure you have installed "Aptitude":
 
-    ```
+```
     # https://wiki.debian.org/Aptitude
 
     # update-to-latest version
     aptitude update
-    ```
+```javascript
 5.  ### If "aptitude update" fails:
 
-    ```
+```
     # replace "8B48AD6246925553" and "7638D0442B90D010" with the error_key displayed on your OWN-screen
 
     # GPG error: http://ftp.hk.debian.org jessie Release:
@@ -70,29 +70,29 @@
 
     gpg --keyserver pgpkeys.mit.edu --recv-key  7638D0442B90D010
     gpg -a --export 7638D0442B90D010 | apt-key add -
-    ```
+```bash
 6.  ### Try "Aptitude" again if failed on initial try:
 
-    ```
+```python
     aptitude update
-    ```
+```python
 7.  ### Now install "coturn" package using "aptitude":
 
-    ```
+```
     # below command may require [sudo] privileges
     aptitude install coturn
-    ```
+```python
 8.  ### Modify following file after "coturn" installation:
 
-    ```
+```python
     vi /etc/turnserver.conf
-    ```
+```
 
     <br>
 
     ### Remove all text from the file, and replace with this:
 
-    ```
+```
     # you can listen ports 3478 and 5349 instead of 80/443
     listening-port=80
     tls-listening-port=443
@@ -113,23 +113,23 @@
     pkey=/etc/ssl/private.key
 
     no-stdout-log
-    ```
+```python
 9.  ### Modify following file after modifying above "turnserver.conf":
 
-    ```
+```python
     vi /etc/turnuserdb.conf
-    ```
+```
 
     <br>
 
     ### Remove all text from the file, and replace with this:
 
-    ```
+```bash
     yourName:yourPassword
-    ```
+```bash
 10. ### Instead of "turnuserdb.conf", you can try following as well:
 
-    ```
+```
     # rquires: apt-get install sqlite3 libsqlite3-dev
     # now: find / -name 'turndb'
 
@@ -143,44 +143,44 @@
     user=youruser:yourpassword # add this
 
     # source: askubuntu.com/a/819264
-    ```
+```bash
 11. ### Now type following command:
 
-    ```
+```bash
     turnserver
-    ```
+```bash
 12. ### Try following if above "turnserver" command fails:
 
-    ```
+```
     # you can listen ports 3478 and 5349 instead of 80/443
 
     lsof -n -i4TCP:80 | grep LISTEN
     lsof -n -i4TCP:443 | grep LISTEN
-    ```
+```
 
     <br>
 
     ### Kill "existing" processes using this command:
 
-    ```
+```bash
     kill processId
-    ```
+```bash
 13. ### Now type following command again and it should work:
 
-    ```
+```php
     turnserver
-    ```
+```php
 14. ### Make sure that ports 80/443 (or 3478/5349) are opened in the firewall:
 
-    ```
+```
     # you can listen ports 3478 and 5349 instead of 80/443
 
     iptables -A INPUT -p udp --dport 80 -j ACCEPT
     iptables -A INPUT -p udp --dport 443 -j ACCEPT
-    ```
+```php
 15. ### Run following command:
 
-    ```
+```
     # pm2 is strongly recommended
     # https://github.com/Unitech/pm2
     pm2 start turnserver
@@ -191,22 +191,22 @@
 
     # or simply
     nohup turnserver &
-    ```
+```bash
 16. ### Now check all UDP+TCP ports:
 
-    ```
+```
     # recommended
     netstat -tulpn
 
     # or
     netstat -nat | grep LISTEN
-    ```
+```
 
     \
     You will see that port 80/443 is listened by turnserver (both for UDP/TCP).
 17. ### Otherwise (alternative coTURN installation solutions):
 
-    ```
+```bash
     // Please follow this link:
     groups.google.com/d/msg/easyrtc/ypjJ5Yu3wZM/u5Lq6VNfabcJ
 
@@ -223,7 +223,7 @@
     make && make install 
 
     // or: stackoverflow.com/a/52408246
-    ```
+```
 
 ### Top
 
@@ -233,7 +233,7 @@
 
 1.  ### Download "re":
 
-    ```
+```bash
     mkdir /home/restund
     cd /home/restund
 
@@ -243,10 +243,10 @@
     cd re-0.4.17
     make
     make install          # "sudo" is preferred
-    ```
+```bash
 2.  ### Download "restund":
 
-    ```
+```
     # via: http://www.creytiv.com/pub/
     # choose latest version
     # replace "0.4.12" with latesat version (06-Oct-2015)
@@ -256,12 +256,12 @@
     cd restund-0.4.12
     make
     make install          # "sudo" is preferred
-    ```
+```bash
 3.  ### Modify "etc/restund.conf" file:
 
     It will be located at: restund-0.4.12/etc/restund.conf
 
-    ```
+```
     # cd etc && vi restund.conf
     # "etc" is a directory inside "restund-0.4.12"
 
@@ -300,35 +300,35 @@
 
     syncinterval        600
     auth_nonce_expiry   3600
-    ```
+```bash
 4.  ### Modify "etc/restund.auth" file:
 
     It will be located at: restund-0.4.12/etc/restund.auth
 
-    ```
+```
     # remove default credentials
-    ```
+```
 
     First of all, execute this command:
 
-    ```
+```bash
     cd ..
     util/genha1.sh username yourdomain.com password
-    ```
+```
 
     Above command will print something. Copy whatever is printed; and paste inside "etc/restund.auth":
 
-    ```
+```php
     cd etc
     vi restund.auth
 
 
     # copy/paste inside the "restund.auth" file
     username:sha1
-    ```
+```php
 5.  ### Copy all "etc" files to "/etc/"
 
-    ```
+```php
     cd ..
 
     # move .conf and .auth files to /etc/ directory
@@ -355,12 +355,12 @@
     filedb: module loaded (/etc/restund.auth)
     syslog: module loaded facility=24
     status: module loaded (udp=your-ip:33000 http=your-ip:4050)
-    ```
+```
 
     You can open stats server here: http://your-ip:4050
 7.  ### If webrtc access to "restund" fails:
 
-    ```
+```php
     iptables -I INPUT 1 -i eth0 -p udp --dport 33000 -j ACCEPT
 
     iptables -I INPUT 1 -i eth0 -p udp --dport 4455 -j ACCEPT
@@ -370,7 +370,7 @@
     iptables -I INPUT 1 -i eth0 -p tcp --dport 5544 -j ACCEPT
 
     iptables -I INPUT 1 -i eth0 -p tcp --dport 4050 -j ACCEPT
-    ```
+```php
 8. Now open this: http://your-ip.com:4050/
 
 ### Top
@@ -381,13 +381,13 @@
 
 1.  ### First Step: Download & Install Prerequisite for CentOS
 
-    ```
+```php
     yum install -y make gcc cc gcc-c++ wget
     yum install -y openssl-devel libevent libevent-devel mysql-devel mysql-server
-    ```
+```php
 2.  ### Second Step: Download & Install LibEvent modules
 
-    ```
+```php
     wget https://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz
     tar xvfz libevent-2.0.21-stable.tar.gz
     cd libevent-2.0.21-stable && ./configure
@@ -395,18 +395,18 @@
 
     # you can use "sudo" if permission-denied kind of erros occurred.
     # sudo make && sudo make install && cd ..
-    ```
+```bash
 3.  ### Third Step: [Download & Install](https://code.google.com/p/rfc5766-turn-server/wiki/newDownloadsSite) TURN modules
 
-    ```
+```bash
     wget http://turnserver.open-sys.org/downloads/v3.2.3.8/turnserver-3.2.3.8.tar.gz
     tar -xvzf turnserver-3.2.3.8.tar.gz
     cd turnserver-3.2.3.8 && ./configure
     make && make install
-    ```
+```bash
 4.  ### Fifth Step: Configure "turnserver.conf" file
 
-    ```
+```bash
     vi /etc/turnserver/turnserver.conf
 
     # setting static accounts
@@ -423,7 +423,7 @@
 
     # if you don't want to save settings; and quite. Simply type:
     :q
-    ```
+```
 
     You can:
 
@@ -438,7 +438,7 @@
     9. You can set credentials for stun-only option as well; usually STUN-binding requests are anonymous.
 5.  ### Sixth Step: Run TURN server instance
 
-    ```
+```bash
     cd /etc/turnserver/
 
     turnserver -v -r  ip:port -a -b turnuserdb.conf -c turnserver.conf -u turn-username -r ip:port -p turn-password
@@ -447,21 +447,21 @@
     1. Replace "ip:port" with yours! E.g. 127.1.1:2222:
     2. ```
        turnserver -v -r  127.1.1:2222 -a -b turnuserdb.conf -c turnserver.conf -u turn-username -r 127.1.1:2222 -p turn-password
-       ```
+```bash
     3. Replace "turn-username" with custom-username; and "turn-password" with custom-password.
     4. ```
        turnserver -v -r  127.1.1:2222 -a -b turnuserdb.conf -c turnserver.conf -u custom-username -r 127.1.1:2222 -p custom-password
-       ```
+```bash
 6.  ### Last Step: "Permanently" run TURN server instance
 
-    ```
+```python
     nohup turnserver -v -r  ip:port -a -b turnuserdb.conf -c turnserver.conf -u turn-username -r ip:port -p turn-password &
-    ```
+```
 
     1. You can see that the entire TURN execution command is placed between "nohup" and "&".
     2. ```
        nohup TURN-execution-command &
-       ```
+```
 
 ### Top
 
@@ -481,17 +481,17 @@ Note: Below section is taken from [slideshare](http://www.slideshare.net/amitesh
 4. During "make" command invocation; you'll face error like "**error: 'struct sockaddr\_in' has no member named 'sin\_len'**"
 5.  Edit "na\_turn\_ioaddr.c" and comment line number "169":
 
-    ```
+```python
     vi /turnserver-1.8.4.0/src/client/na_turn_ioaddr.c
 
     # commenting line number #169
     # addr->s4.sin_len = sizeof(struct sockaddr_in);
-    ```
+```python
 6. Now, "make" and "make install" commands for TURN modules installation will work.
 7. Then copy "turnserver.conf" file from "../examples/etc/" directory to "/usr/local/etc/":
 8. ```
    cp /turnserver-1.8.4.0/examples/etc/turnserver.conf /usr/local/etc/
-   ```
+```python
 9. Now, you can follow "fifth" step from previous section to edit "turnserver.conf" for setting "username", "password", "listening-port" and "listening-ip".
 
 ### Top
@@ -500,16 +500,16 @@ Note: Below section is taken from [slideshare](http://www.slideshare.net/amitesh
 
 1.  ### First Step: Install reTurnServer:
 
-    ```
+```
     # Ubuntu
     apt-get install resiprocate-turn-server
 
     # CentOS
     yum install resiprocate-turn-server
-    ```
+```bash
 2.  ### Second Step: Edit "/etc/reTurn/reTurnServer.config" file:
 
-    ```
+```bash
     TurnAddress = your-first-ip
     AltStunAddress = your-second-ip
 
@@ -523,10 +523,10 @@ Note: Below section is taken from [slideshare](http://www.slideshare.net/amitesh
 
     # for more info:
     # https://github.com/resiprocate/resiprocate/blob/master/reTurn/reTurnServer.config
-    ```
+```bash
 3.  ### Next Step: Edit "/etc/reTurn/users.txt" file:
 
-    ```
+```
     # first of all, execute this command:
     # echo -n username:domain.com:password | md5sum
 
@@ -536,26 +536,26 @@ Note: Below section is taken from [slideshare](http://www.slideshare.net/amitesh
 
     # more info:
     # https://github.com/resiprocate/resiprocate/blob/master/reTurn/users.txt
-    ```
+```php
 4.  ### Last Step: ReStart reTurnServer:
 
-    ```
+```php
     service resiprocate-turn-server restart
-    ```
+```php
 5.  You can check ports and addresses reTurnServer is listenning on:
 
-    ```
+```php
     netstat -nlp | grep reTurnServer
-    ```
+```php
 6.  In your HTML-JavaScript file, you will use original password, NOT the HashString:
 
-    ```
+```bash
     iceServer => {
       urls: 'turn:domain.com:3478',
       credential: 'orignal-password', // NOT Hash
       username: 'username'
     }
-    ```
+```
 
 ### Top
 
@@ -565,40 +565,40 @@ A simple extendable Golang TURN server for Windows, Linux, Darwin and FreeBSD.
 
 1.  Create a new directory (optional):
 
-    ```
+```javascript
     mkdir pions
     cd pions
-    ```
+```javascript
 2.  Download the TURN server's source: (replace "1.0.3" with [latest release](https://github.com/pions/turn/releases))
 
-    ```
+```javascript
     wget -q https://github.com/pions/turn/releases/download/1.0.3/simple-turn-linux-amd64
 
     # linux:   simple-turn-linux-386 or simple-turn-linux-amd64
     # darwin:  simple-turn-darwin-amd64
     # freebsd: simple-turn-freebsd-386 and simple-turn-freebsd-amd64
     # windows: simple-turn-windows-386.exe and simple-turn-windows-amd64.exe
-    ```
+```php
 3.  Give read-write permissions to the DIR:
 
-    ```
+```php
     chmod +x simple-turn-linux-amd64
-    ```
+```php
 4.  Set username, password and port: (using EXPORT commands)
 
-    ```
+```php
     export USERS='username=password'
     export REALM=domain.com
     export UDP_PORT=3478
-    ```
+```php
 5.  Now run the pions turn server:
 
-    ```
+```php
     ./simple-turn-linux-amd64
 
     # or use nohup
     nohup ./simple-turn-linux-amd64 &
-    ```
+```html
 6. To check latest releases: [https://github.com/pions/turn/releases](https://github.com/pions/turn/releases)
 
 <br>

@@ -4,7 +4,7 @@
 
 Running the full sorry-cypress kit - setting up web dashboard to store and browse test results. The [basic](https://docs.sorry-cypress.dev/guide/get-started) setup of sorry-cypress is already quite useful - we can run cypress tests in parallel without any limitations. However, we want to store and see the test results and explore errors, screenshots and videos.
 
-#### Running sorry-cypress kit <a href="#persisting-test-results" id="persisting-test-results"></a>
+### Running sorry-cypress kit <a href="#persisting-test-results" id="persisting-test-results"></a>
 
 We are going to run the full sorry-cypress kit:
 
@@ -15,14 +15,14 @@ We are going to run the full sorry-cypress kit:
 
 We are going to run all the services locally using `docker-compose`# get docker-compose filecurl --output docker-compose.minio.yml https://raw.githubusercontent.com/sorry-cypress/sorry-cypress/master/docker-compose.minio.yml​# start the servicesdocker-compose -f ./docker-compose.minio.yml up
 
-* Make sure to install a modern version of [docker-compose](https://docs.docker.com/compose/install/)​
-* Shut down any stale sorry-cypress services with `docker kill`
+- Make sure to install a modern version of [docker-compose](https://docs.docker.com/compose/install/)​
+- Shut down any stale sorry-cypress services with `docker kill`
 
 After successfully running docker-compose, we have:
 
-* `director` service on [http://localhost:1234](http://localhost:1234/)​
-* `API` service on [http://localhost:4000](http://localhost:4000/)​
-* `Dashboard` running on [http://localhost:8080](http://localhost:8080/)​
+- `director` service on [http://localhost:1234](http://localhost:1234/)​
+- `API` service on [http://localhost:4000](http://localhost:4000/)​
+- `Dashboard` running on [http://localhost:8080](http://localhost:8080/)​
 
 Open the dashboard at [http://localhost:8080](http://localhost:8080/)​Create a project with the id you wrote as value for `projectId` in your `currents.config.js` file (e.g., "yyy").Empty sorry-cypress dashboard
 

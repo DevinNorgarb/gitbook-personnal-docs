@@ -1,8 +1,7 @@
 # Open Vehicles documentation
 
 
-
-### Introduction[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
+## Introduction[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
 
 The OVMS is an **all open source** vehicle remote monitoring, diagnosis and control system.
 
@@ -20,92 +19,91 @@ The module provides a **built-in Web App** user interface and remote control via
 
 ### Vehicle Support[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
 
-* _Native Integration_
-  * Chevrolet Volt / Opel Ampera
-  * Chevrolet Bolt EV / Opel Ampera-e
-  * [BMW i3 / i3s](https://docs.openvehicles.com/en/latest/components/vehicle_bmwi3/docs/index.html)
-  * [Fiat 500e](https://docs.openvehicles.com/en/latest/components/vehicle_fiat500/docs/index.html)
-  * [Hyundai Ioniq vFL](https://docs.openvehicles.com/en/latest/components/vehicle_hyundai_ioniqvfl/docs/index.html)
-  * [Jaguar Ipace](https://docs.openvehicles.com/en/latest/components/vehicle_jaguaripace/docs/index.html)
-  * [Kia e-Niro / Hyundai Kona](https://docs.openvehicles.com/en/latest/components/vehicle_kianiroev/docs/index.html)
-  * [Kia Soul EV](https://docs.openvehicles.com/en/latest/components/vehicle_kiasoulev/docs/index.html)
-  * [Maxus eDeliver 3](https://docs.openvehicles.com/en/latest/components/vehicle_maxus_edeliver3/docs/index.html)
-  * [Mercedes-Benz B250E](https://docs.openvehicles.com/en/latest/components/vehicle_mercedesb250e/docs/index.html)
-  * [MG ZS EV](https://docs.openvehicles.com/en/latest/components/vehicle_mgev/docs/index.html)
-  * [Mitsubishi Trio (i-MiEV et al)](https://docs.openvehicles.com/en/latest/components/vehicle_mitsubishi/docs/index.html)
-  * [Nissan Leaf / e-NV200](https://docs.openvehicles.com/en/latest/components/vehicle_nissanleaf/docs/index.html)
-  * [Renault Twizy](https://docs.openvehicles.com/en/latest/components/vehicle_renaulttwizy/docs/index.html)
-  * [Renault Zoe / Kangoo](https://docs.openvehicles.com/en/latest/components/vehicle_renaultzoe/docs/index.html)
-  * [Smart ED Gen.3](https://docs.openvehicles.com/en/latest/components/vehicle_smarted/docs/index.html)
-  * [Smart ED/EQ Gen.4 (453)](https://docs.openvehicles.com/en/latest/components/vehicle_smarteq/docs/index.html)
-  * [Tesla Model S](https://docs.openvehicles.com/en/latest/components/vehicle_teslamodels/docs/index.html)
-  * [Tesla Roadster](https://docs.openvehicles.com/en/latest/components/vehicle_teslaroadster/docs/index.html)
-  * Think City
-  * [Toyota RAV4 EV](https://docs.openvehicles.com/en/latest/components/vehicle_toyotarav4ev/docs/index.html)
-  * [VW e-Up](https://docs.openvehicles.com/en/latest/components/vehicle_vweup/docs/index.html)
-* _General Support_
-  * [DBC File Based](https://docs.openvehicles.com/en/latest/components/vehicle_dbc/docs/index.html)
-  * [GPS Tracking](https://docs.openvehicles.com/en/latest/components/vehicle_track/docs/index.html)
-  * [OBD-II Standard](https://docs.openvehicles.com/en/latest/components/vehicle_obdii/docs/index.html)
-  * Zeva BMS
+- _Native Integration_
+  - Chevrolet Volt / Opel Ampera
+  - Chevrolet Bolt EV / Opel Ampera-e
+  - [BMW i3 / i3s](https://docs.openvehicles.com/en/latest/components/vehicle_bmwi3/docs/index.html)
+  - [Fiat 500e](https://docs.openvehicles.com/en/latest/components/vehicle_fiat500/docs/index.html)
+  - [Hyundai Ioniq vFL](https://docs.openvehicles.com/en/latest/components/vehicle_hyundai_ioniqvfl/docs/index.html)
+  - [Jaguar Ipace](https://docs.openvehicles.com/en/latest/components/vehicle_jaguaripace/docs/index.html)
+  - [Kia e-Niro / Hyundai Kona](https://docs.openvehicles.com/en/latest/components/vehicle_kianiroev/docs/index.html)
+  - [Kia Soul EV](https://docs.openvehicles.com/en/latest/components/vehicle_kiasoulev/docs/index.html)
+  - [Maxus eDeliver 3](https://docs.openvehicles.com/en/latest/components/vehicle_maxus_edeliver3/docs/index.html)
+  - [Mercedes-Benz B250E](https://docs.openvehicles.com/en/latest/components/vehicle_mercedesb250e/docs/index.html)
+  - [MG ZS EV](https://docs.openvehicles.com/en/latest/components/vehicle_mgev/docs/index.html)
+  - [Mitsubishi Trio (i-MiEV et al)](https://docs.openvehicles.com/en/latest/components/vehicle_mitsubishi/docs/index.html)
+  - [Nissan Leaf / e-NV200](https://docs.openvehicles.com/en/latest/components/vehicle_nissanleaf/docs/index.html)
+  - [Renault Twizy](https://docs.openvehicles.com/en/latest/components/vehicle_renaulttwizy/docs/index.html)
+  - [Renault Zoe / Kangoo](https://docs.openvehicles.com/en/latest/components/vehicle_renaultzoe/docs/index.html)
+  - [Smart ED Gen.3](https://docs.openvehicles.com/en/latest/components/vehicle_smarted/docs/index.html)
+  - [Smart ED/EQ Gen.4 (453)](https://docs.openvehicles.com/en/latest/components/vehicle_smarteq/docs/index.html)
+  - [Tesla Model S](https://docs.openvehicles.com/en/latest/components/vehicle_teslamodels/docs/index.html)
+  - [Tesla Roadster](https://docs.openvehicles.com/en/latest/components/vehicle_teslaroadster/docs/index.html)
+  - Think City
+  - [Toyota RAV4 EV](https://docs.openvehicles.com/en/latest/components/vehicle_toyotarav4ev/docs/index.html)
+  - [VW e-Up](https://docs.openvehicles.com/en/latest/components/vehicle_vweup/docs/index.html)
+- _General Support_
+  - [DBC File Based](https://docs.openvehicles.com/en/latest/components/vehicle_dbc/docs/index.html)
+  - [GPS Tracking](https://docs.openvehicles.com/en/latest/components/vehicle_track/docs/index.html)
+  - [OBD-II Standard](https://docs.openvehicles.com/en/latest/components/vehicle_obdii/docs/index.html)
+  - Zeva BMS
 
 ### Links[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
 
-* _User Resources_
-  * _User and Developer Guides: (hint: version selection in left menu at the bottom)_
-    * [Stable release (OTA version “main”)](https://docs.openvehicles.com/en/stable/)
-    * [Latest nightly build (OTA version “edge”)](https://docs.openvehicles.com/en/latest/)
-  * [User Support Forum](https://www.openvehicles.com/forum)
-  * [Android App](https://play.google.com/store/apps/details?id=com.openvehicles.OVMS\&hl=en_US)
-  * [iOS App](https://apps.apple.com/us/app/open-vehicles/id490098531)
-* _Distributors_
-  * [FastTech (global)](https://www.fasttech.com/search?ovms)
-  * [Medlock & Sons (North America)](https://medlockandsons.com/product/ovms-v3/)
-  * [OpenEnergyMonitor (UK/Europe)](https://shop.openenergymonitor.com/ovms/)
-* _Servers_
-  * [Asia-Pacific](https://www.openvehicles.com/)
-  * [Germany/Europe](https://dexters-web.de/)
-* _Developers_
-  * [Developer Guide](https://docs.google.com/document/d/1q5M9Lb5jzQhJzPMnkMKwy4Es5YK12ACQejX_NWEixr0)
-  * [Developer Mailing List & Archive](http://lists.openvehicles.com/mailman/listinfo/ovmsdev)
-  * [Server Source](https://github.com/openvehicles/Open-Vehicle-Server)
-  * [Android App Source](https://github.com/openvehicles/Open-Vehicle-Android)
-  * [iOS App Source](https://github.com/openvehicles/Open-Vehicle-iOS)
+- _User Resources_
+  - _User and Developer Guides: (hint: version selection in left menu at the bottom)_
+    - [Stable release (OTA version “main”)](https://docs.openvehicles.com/en/stable/)
+    - [Latest nightly build (OTA version “edge”)](https://docs.openvehicles.com/en/latest/)
+  - [User Support Forum](https://www.openvehicles.com/forum)
+  - [Android App](https://play.google.com/store/apps/details?id=com.openvehicles.OVMS\&hl=en_US)
+  - [iOS App](https://apps.apple.com/us/app/open-vehicles/id490098531)
+- _Distributors_
+  - [FastTech (global)](https://www.fasttech.com/search?ovms)
+  - [Medlock & Sons (North America)](https://medlockandsons.com/product/ovms-v3/)
+  - [OpenEnergyMonitor (UK/Europe)](https://shop.openenergymonitor.com/ovms/)
+- _Servers_
+  - [Asia-Pacific](https://www.openvehicles.com/)
+  - [Germany/Europe](https://dexters-web.de/)
+- _Developers_
+  - [Developer Guide](https://docs.google.com/document/d/1q5M9Lb5jzQhJzPMnkMKwy4Es5YK12ACQejX_NWEixr0)
+  - [Developer Mailing List & Archive](http://lists.openvehicles.com/mailman/listinfo/ovmsdev)
+  - [Server Source](https://github.com/openvehicles/Open-Vehicle-Server)
+  - [Android App Source](https://github.com/openvehicles/Open-Vehicle-Android)
+  - [iOS App Source](https://github.com/openvehicles/Open-Vehicle-iOS)
 
 ### Hardware[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
 
 
-
-* [Module Schematics and PCB Layouts](https://github.com/openvehicles/Open-Vehicle-Monitoring-System-3/tree/master/vehicle/hardware)
-* **Base Module (v3.0-3.3)**
-  * Black injection-moulded plastic enclosure, approximately 99x73x29 mm excl. plugs
-  * ESP32 WROVER processor (16MB flash, 4MB SPI RAM, 520KB SRAM, dual core 160/240MHz Xtensa LX6 processor)
-  * WIFI 802.11 b/g/n
-  * Bluetooth v4.2 BR/EDR and BLE
-  * 3x CAN buses
-  * 1x Micro USB connector (for flash download and serial console)
-  * 1x Micro SD card slot
-  * 1x Internal expansion slot
-  * 8x EGPIO, 2x GPIO
-  * 1x GSM antenna connector
-  * 1x GPS antenna connector
-  * 1x DB9 vehicle connector
-  * 1x DB26 expansion connector
-* **Modem Module v3.0-3.2**
-  * US edition is SIM5360A (Dual-Band UMTS/HSPA+ 850/1900MHz, Quad-Band GSM/GPRS/EDGE 850/900/1800/1900MHz)
-  * EU edition is SIM5360J(E) (Dual-Band UMTS/HSPA+ 900/2100MHz, Quad-Band GSM/GPRS/EDGE 850/900/1800/1900MHz)
-  * 3G (EV-DO/HSPA+) dual band modem
-  * Includes 2G (GSM/GPRS) and 2.5G (EDGE) quad band
-  * GPS/GNSS
-  * Nano (4FF) SIM slot
-  * HOLOGRAM.IO nano sim included (can be exchanged if necessary)
-* **Modem Module v3.3**
-  * World edition: SIM7600G (Multi-Band LTE-FDD/LTE-TDD/HSPA+ and GSM/GPRS/EDGE)
-  * 4G (LTE-FDD/LTE-TDD) multi band modem
-  * Includes 3G (EV-DO/HSPA+), 2G (GSM/GPRS) and 2.5G (EDGE) quad band
-  * GPS/GNSS
-  * Nano (4FF) SIM slot
-  * HOLOGRAM.IO nano sim included (can be exchanged if necessary)
+- [Module Schematics and PCB Layouts](https://github.com/openvehicles/Open-Vehicle-Monitoring-System-3/tree/master/vehicle/hardware)
+- **Base Module (v3.0-3.3)**
+  - Black injection-moulded plastic enclosure, approximately 99x73x29 mm excl. plugs
+  - ESP32 WROVER processor (16MB flash, 4MB SPI RAM, 520KB SRAM, dual core 160/240MHz Xtensa LX6 processor)
+  - WIFI 802.11 b/g/n
+  - Bluetooth v4.2 BR/EDR and BLE
+  - 3x CAN buses
+  - 1x Micro USB connector (for flash download and serial console)
+  - 1x Micro SD card slot
+  - 1x Internal expansion slot
+  - 8x EGPIO, 2x GPIO
+  - 1x GSM antenna connector
+  - 1x GPS antenna connector
+  - 1x DB9 vehicle connector
+  - 1x DB26 expansion connector
+- **Modem Module v3.0-3.2**
+  - US edition is SIM5360A (Dual-Band UMTS/HSPA+ 850/1900MHz, Quad-Band GSM/GPRS/EDGE 850/900/1800/1900MHz)
+  - EU edition is SIM5360J(E) (Dual-Band UMTS/HSPA+ 900/2100MHz, Quad-Band GSM/GPRS/EDGE 850/900/1800/1900MHz)
+  - 3G (EV-DO/HSPA+) dual band modem
+  - Includes 2G (GSM/GPRS) and 2.5G (EDGE) quad band
+  - GPS/GNSS
+  - Nano (4FF) SIM slot
+  - HOLOGRAM.IO nano sim included (can be exchanged if necessary)
+- **Modem Module v3.3**
+  - World edition: SIM7600G (Multi-Band LTE-FDD/LTE-TDD/HSPA+ and GSM/GPRS/EDGE)
+  - 4G (LTE-FDD/LTE-TDD) multi band modem
+  - Includes 3G (EV-DO/HSPA+), 2G (GSM/GPRS) and 2.5G (EDGE) quad band
+  - GPS/GNSS
+  - Nano (4FF) SIM slot
+  - HOLOGRAM.IO nano sim included (can be exchanged if necessary)
 
 #### Extensions[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
 
@@ -114,7 +112,6 @@ The external DB26 DIAG connector provides access to the three CAN buses and offe
 A very nice first extension module has been developed by Marko Juhanne: [OVMS-SWCAN](https://github.com/mjuhanne/OVMS-SWCAN)
 
 If you plan on developing a hardware extension or just want to do some custom adaptations, have a look at our prototyping PCB kit. It’s available in packs of 3 PCBs and includes headers and mounting material:
-
 
 
 If the kit isn’t available at the distributors, please contact Mark Webb-Johnson [mark@webb-johnson.net](mailto:mark%40webb-johnson.net).
@@ -129,17 +126,17 @@ Everything is open, and APIs are public. Other car modules can talk to the serve
 
 **If you’d like to contribute, please accept our code of conduct:**
 
-* Introduce yourself on the developer mailing list
-* Be kind & polite
-* Understand the framework concepts
-* Ask if you need help
-* Present your plans if in doubt
-* Write decent code
-* If you extend modules, stick to their code style
-* Write brief but descriptive commit comments
-* Add user level descriptions to the change history
-* Provide documentation in the user guide
-* Use pull requests to submit your code for inclusion
+- Introduce yourself on the developer mailing list
+- Be kind & polite
+- Understand the framework concepts
+- Ask if you need help
+- Present your plans if in doubt
+- Write decent code
+- If you extend modules, stick to their code style
+- Write brief but descriptive commit comments
+- Add user level descriptions to the change history
+- Provide documentation in the user guide
+- Use pull requests to submit your code for inclusion
 
 **A note on pull requests:**
 

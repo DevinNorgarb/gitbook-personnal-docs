@@ -1,6 +1,6 @@
 # Building a Vehicle Frame
 
-### Frame Selection <a href="#frame-selection" id="frame-selection"></a>
+## Frame Selection <a href="#frame-selection" id="frame-selection"></a>
 
 The first step in building an ArduSub vehicle is to pick a vehicle "frame" from which to mount and orient thrusters. Some frames use less thrusters, while others have better manueverability (strafe, pitch/roll stability).
 
@@ -14,7 +14,7 @@ Currently supported are:
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <p><img src="../.gitbook/assets/simplerov 3" alt=""></p><p><strong>ROV</strong> with a single vertical thruster. (Frame: <code>simplerov</code>)</p>                    | <p><img src="../.gitbook/assets/simplerov 4" alt=""></p><p><strong>ROV</strong> with side-by-side vertical thrusters. (Frame: <code>simplerov</code>)</p>                                                                               | <p><img src="../.gitbook/assets/simplerov 5" alt=""></p><p><strong>ROV</strong> with a lateral thruster and side-by-side vertical thrusters. (Frame: <code>simplerov</code>)</p>                                                                                                                                                                       |
 
-#### Custom Frame <a href="#custom-frame" id="custom-frame"></a>
+### Custom Frame <a href="#custom-frame" id="custom-frame"></a>
 
 If the vehicle thruster configuration a user wishes to build is not one of the pre-build frames, then a custom frame may be configured in using this documentation: [Making a Custom Configuration](http://www.ardusub.com/developers/developers.html#making-a-custom-configuration)
 

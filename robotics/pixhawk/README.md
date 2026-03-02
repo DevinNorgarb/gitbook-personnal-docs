@@ -72,10 +72,10 @@ For Copter see [Connect ESCs and Motors](https://ardupilot.org/copter/docs/conne
 
 In overview, for copters connect each signal wire from the PDB to the main output signal (S) pins by motor number:
 
-* Pin 1 = Motor 1 - - Pin 5 = Motor 5
-* Pin 2 = Motor 2 - - Pin 6 = Motor 6
-* Pin 3 = Motor 3 - - Pin 7 = Motor 7
-* Pin 4 = Motor 4 - - Pin 8 = Motor 8
+- Pin 1 = Motor 1 - - Pin 5 = Motor 5
+- Pin 2 = Motor 2 - - Pin 6 = Motor 6
+- Pin 3 = Motor 3 - - Pin 7 = Motor 7
+- Pin 4 = Motor 4 - - Pin 8 = Motor 8
 
 ### Connect other peripherals[¶](https://ardupilot.org/copter/docs/common-pixhawk-wiring-and-quick-start.html#connect-other-peripherals)
 
@@ -85,6 +85,6 @@ Information about connecting these peripherals to Pixhawk is found in the respec
 
 ### Related information[¶](https://ardupilot.org/copter/docs/common-pixhawk-wiring-and-quick-start.html#related-information)
 
-* [Pixhawk Overview](https://ardupilot.org/copter/docs/common-pixhawk-overview.html#common-pixhawk-overview) - includes specifications, pin assignments etc.
-* [Powering the Pixhawk](https://ardupilot.org/copter/docs/common-powering-the-pixhawk.html)
-* [Advanced Pixhawk Quadcopter Wiring Chart](https://ardupilot.org/copter/docs/advanced-pixhawk-quadcopter-wiring-chart.html)
+- [Pixhawk Overview](https://ardupilot.org/copter/docs/common-pixhawk-overview.html#common-pixhawk-overview) - includes specifications, pin assignments etc.
+- [Powering the Pixhawk](https://ardupilot.org/copter/docs/common-powering-the-pixhawk.html)
+- [Advanced Pixhawk Quadcopter Wiring Chart](https://ardupilot.org/copter/docs/advanced-pixhawk-quadcopter-wiring-chart.html)

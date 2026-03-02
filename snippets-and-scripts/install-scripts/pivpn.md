@@ -4,7 +4,7 @@ description: simple openvpn or wireguard VPN server.
 
 # PiVPN
 
-* **::: INSTALLATION :::**\
+- **::: INSTALLATION :::**\
   `curl -L https://install.pivpn.io | bash`\
   \
   &#xNAN;**::: Test (unstable) Branch :::**\
@@ -25,12 +25,12 @@ Provided free of charge on your server is a new 'pivpn' command. Simply run pivp
 SECURE ::: Even though this installer makes everything so trivial, it doesn't mean it gives you trivial security settings.\
 Everything has been upgraded right out of the box beyond the default settings to harden the security of the server and client. Starting with offering you the ability to enable unattended-upgrades which will automatically patch your server with security updates. Next, the server configuration will only use the latest TLS protocol. Both the data and control channels use upgraded AES and SHA256 encryption and hash algorithms. Options are pre-configured to verify your server certificate to battle MITM attack vectors. All this and more are configured out of the box by the pivpn installer. This is a detailed level of hardening you'll have a difficult time finding elsewhere.
 
-#### About
+## About
 
 PiVPN is a set of shell scripts developed to easily turn your Raspberry Pi™ into a VPN server using two free, open-source protocols:
 
-* [Wireguard](https://www.wireguard.com/)
-* [OpenVPN](https://openvpn.net/)
+- [Wireguard](https://www.wireguard.com/)
+- [OpenVPN](https://openvpn.net/)
 
 This script's primary mission in life is to allow a user to have as cost-effective as possible VPN at home without being a technical wizard, hence the design of PiVPN to work on a Raspberry Pi ($35) with a one-command installer followed by easy management of the VPN with the 'pivpn' command.\
 \
@@ -45,18 +45,18 @@ PiVPN should also work with most Ubuntu and Debian based distributions, includin
 There are a few driving factors that make this very important to us, and we believe, the community at large. In this post-Snowden era where our privacy and security are infringed upon, not only by bad actors but potentially by those whom we thought should be protecting these very ideals, normal citizens must take matters into their own hands. The trouble with this, many times, is that if you are not very technical you may not know how to begin. I believe the EFF has helped lower the barrier of encrypted sites with its [Let's Encrypt ](https://www.eff.org/deeplinks/2014/11/certificate-authority-encrypt-entire-web)initiative. Allowing many to now have their sites on encrypted channels. To us, the next logical step here is also ensuring the pipe you are using is as secure as possible. This not only could include unknown networks at airports, Starbucks, and generic public hot-spots; but also your ISP. To that end, We'd like to make sure these scripts also work on a Debian image from an Amazon free-tier server. It is important that more and more people have access to protecting their traffic online. It's clear others won't hand you this protection. PiVPN tries to make it easier for you to grab.\
 Enjoy!
 
-#### Features
+### Features
 
-* Supports OpenVPN 2.4
-* Supports WireGuard
-* Elliptic curve encryption keys up to 512 bit
-* Integrates with Bitwarden
-* iOS keychain support
-* Supports multiple DNS providers
-* Supports Custom DNS Servers
-* Custom Search Domains (OpenVPN Only)
-* Runs with [Pi-Hole®](https://pi-hole.net/)
-* Doesn't need to be a Raspberry Pi™, It runs on any x86\_64 system
-* Supports unattended installation for automated deployments
+- Supports OpenVPN 2.4
+- Supports WireGuard
+- Elliptic curve encryption keys up to 512 bit
+- Integrates with Bitwarden
+- iOS keychain support
+- Supports multiple DNS providers
+- Supports Custom DNS Servers
+- Custom Search Domains (OpenVPN Only)
+- Runs with [Pi-Hole®](https://pi-hole.net/)
+- Doesn't need to be a Raspberry Pi™, It runs on any x86\_64 system
+- Supports unattended installation for automated deployments
 
 For more information on PiVPN be sure to check the [PiVPN documentation](https://docs.pivpn.io/)

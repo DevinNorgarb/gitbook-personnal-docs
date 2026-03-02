@@ -10,24 +10,24 @@ We hope you enjoy using RaspAP as much as we do creating it. Tell us how you use
 
 ![](https://i.imgur.com/uhBFoOB.png) ![](https://i.imgur.com/EiIpdOS.gif) ![](https://i.imgur.com/eCjUS1H.gif) ![](https://i.imgur.com/5FT2BcS.gif) ![](https://i.imgur.com/RKaBFrZ.gif)
 
-### Contents
+## Contents
 
-* Prerequisites
-* Quick installer
-* Join Insiders
-* WireGuard support
-* OpenVPN support
-* Ad Blocking
-* Bridged AP
-* Simultaneous AP and Wifi client
-* Manual installation
-* 802.11ac 5GHz support
-* Supported operating systems
-* Multilingual support
-* HTTPS support
-* How to contribute
-* Reporting issues
-* License
+- Prerequisites
+- Quick installer
+- Join Insiders
+- WireGuard support
+- OpenVPN support
+- Ad Blocking
+- Bridged AP
+- Simultaneous AP and Wifi client
+- Manual installation
+- 802.11ac 5GHz support
+- Supported operating systems
+- Multilingual support
+- HTTPS support
+- How to contribute
+- Reporting issues
+- License
 
 ### Prerequisites
 
@@ -35,7 +35,7 @@ Start with a clean install of the [latest release of Raspberry Pi OS (32-bit) Li
 
 1. Update Raspbian, including the kernel and firmware, followed by a reboot:
 
-```
+```python
 sudo apt-get update
 sudo apt-get full-upgrade
 sudo reboot
@@ -58,12 +58,12 @@ The [installer](https://docs.raspap.com/quick/) will complete the steps in the m
 
 After the reboot at the end of the installation the wireless network will be configured as an access point as follows:
 
-* IP address: 10.3.141.1
-  * Username: admin
-  * Password: secret
-* DHCP range: 10.3.141.50 — 10.3.141.254
-* SSID: `raspi-webgui`
-* Password: ChangeMe
+- IP address: 10.3.141.1
+  - Username: admin
+  - Password: secret
+- DHCP range: 10.3.141.50 — 10.3.141.254
+- SSID: `raspi-webgui`
+- Password: ChangeMe
 
 **Note:** As the name suggests, the Quick Installer is a great way to quickly setup a new AP. However, it does not automagically detect the unique configuration of your system. Best results are obtained by connecting to ethernet (`eth0`) or as a WiFi client, also known as managed mode, with `wlan0`. For the latter, refer to [this FAQ](https://docs.raspap.com/faq/#headless). Special instructions for the Pi Zero W are [available here](https://docs.raspap.com/ap-sta/).
 

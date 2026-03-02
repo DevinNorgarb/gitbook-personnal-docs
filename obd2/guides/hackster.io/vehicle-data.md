@@ -4,10 +4,9 @@
 
 <figure><img src="../../../.gitbook/assets/background_hhDloUVGP0 (1).jpg" alt=""><figcaption></figcaption></figure>
 
-##
+## 
 
 ## Vehicle Metrics
-
 
 
 Gather in-vehicle sensor data (temperature, force, etc. ) to help compare with data sent by vehicle sensors.
@@ -89,7 +88,7 @@ Add the image as a background in your app.![](https://hackster.imgix.net/uploads
 C/C++Using the Temp., Humidity, Air Quality, Acceleration, Gyroscope and Pressure sensors, poll and log the data via Cloud storage/database.
 
 ```
-#include "callbacks.h"
+## include "callbacks.h"
 
 //HEADER START
 
@@ -114,9 +113,9 @@ ATMO_Status_t Interval_setup(ATMO_Value_t *in, ATMO_Value_t *out) {
 		ATMO_PROPERTY(Interval, time), 
 		&intervalHandle
 	);
-	
+
 	return ATMO_Status_Success;
-	
+
 }
 
 
@@ -163,7 +162,7 @@ return ATMO_Status_Success;
 
 ATMO_Status_t ENS210TemperatureHumidity_readTemperature(ATMO_Value_t *in, ATMO_Value_t *out) {
     float tempC;
-    
+
     if(ATMO_ENS210_GetTemperatureFloat(&tempC) == ATMO_ENS210_Status_Success)
     {
         ATMO_CreateValueFloat(out, tempC);
@@ -172,7 +171,7 @@ ATMO_Status_t ENS210TemperatureHumidity_readTemperature(ATMO_Value_t *in, ATMO_V
     {
         ATMO_CreateValueVoid(out);
     }
-    
+
     return ATMO_Status_Success;
 }
 
@@ -188,7 +187,7 @@ ATMO_Status_t ENS210TemperatureHumidity_readHumidity(ATMO_Value_t *in, ATMO_Valu
     {
         ATMO_CreateValueVoid(out);
     }
-    
+
     return ATMO_Status_Success;
 }
 
@@ -240,14 +239,14 @@ ATMO_Status_t CCS811AirQuality_readTVOC(ATMO_Value_t *in, ATMO_Value_t *out) {
     {
         ATMO_CreateValueVoid(out);
     }
-    
+
     return ATMO_Status_Success;
 }
 
 
 ATMO_Status_t CCS811AirQuality_readCO2(ATMO_Value_t *in, ATMO_Value_t *out) {
     uint16_t co2;
-    
+
     if(ATMO_CCS811_GetCO2(&co2) == ATMO_CCS811_Status_Success)
     {
         ATMO_CreateValueInt(out, (int)co2);
@@ -256,7 +255,7 @@ ATMO_Status_t CCS811AirQuality_readCO2(ATMO_Value_t *in, ATMO_Value_t *out) {
     {
         ATMO_CreateValueVoid(out);
     }
-  
+
     return ATMO_Status_Success;
 }
 
@@ -321,7 +320,7 @@ ATMO_Status_t FXOS8700AccelerometerMagnetometer_setup(ATMO_Value_t *in, ATMO_Val
 	ATMO_FXOS8700_Init(&config);
 
     return ATMO_Status_Success;
-	
+
 }
 
 
@@ -714,10 +713,10 @@ ATMO_Status_t TempCharacteristic_setup(ATMO_Value_t *in, ATMO_Value_t *out) {
 		ATMO_PROPERTY(TempCharacteristic, instance),
 		&ATMO_VARIABLE(TempCharacteristic, bleServiceHandle), 
 		ATMO_PROPERTY(TempCharacteristic, bleServiceUuid));
-	
+
 	uint8_t property = 0;
 	uint8_t permission = 0;
-	
+
 	property |= ATMO_PROPERTY(TempCharacteristic, read) ? ATMO_BLE_Property_Read : 0;
 	property |= ATMO_PROPERTY(TempCharacteristic, write) ? ATMO_BLE_Property_Write : 0;
 	property |= ATMO_PROPERTY(TempCharacteristic, notify) ? ATMO_BLE_Property_Notify : 0;
@@ -726,28 +725,28 @@ ATMO_Status_t TempCharacteristic_setup(ATMO_Value_t *in, ATMO_Value_t *out) {
 	permission |= ATMO_PROPERTY(TempCharacteristic, write) ? ATMO_BLE_Permission_Write : 0;
 
 	ATMO_DATATYPE types[3] = {ATMO_PROPERTY(TempCharacteristic, writeDataType), ATMO_PROPERTY(TempCharacteristic, readDataType), ATMO_PROPERTY(TempCharacteristic, notifyDataType)};
-	
+
 	ATMO_BLE_GATTSAddCharacteristic(
 		ATMO_PROPERTY(TempCharacteristic, instance),
 		&ATMO_VARIABLE(TempCharacteristic, bleCharacteristicHandle), 
 		ATMO_VARIABLE(TempCharacteristic, bleServiceHandle), 
 		ATMO_PROPERTY(TempCharacteristic, bleCharacteristicUuid), 
 		property, permission, ATMO_GetMaxValueSize(3, 64, types));
-	
+
 	ATMO_BLE_GATTSRegisterCharacteristicAbilityHandle(
 		ATMO_PROPERTY(TempCharacteristic, instance),
 		ATMO_VARIABLE(TempCharacteristic, bleCharacteristicHandle), 
 		ATMO_BLE_Characteristic_Written, 
 		ATMO_ABILITY(TempCharacteristic, written));
-	
+
 	return ATMO_Status_Success;
-	
+
 }
 
 
 ATMO_Status_t TempCharacteristic_setValue(ATMO_Value_t *in, ATMO_Value_t *out) {
 
-	
+
 	// Convert to the desired write data type
 	ATMO_Value_t convertedValue;
 	ATMO_InitValue(&convertedValue);
@@ -759,11 +758,11 @@ ATMO_Status_t TempCharacteristic_setValue(ATMO_Value_t *in, ATMO_Value_t *out) {
 		convertedValue.size, 
 		(uint8_t *)convertedValue.data,
 		NULL);
-	
+
 	ATMO_FreeValue(&convertedValue);
-		
+
 	return ATMO_Status_Success;
-	
+
 }
 
 
@@ -771,7 +770,7 @@ ATMO_Status_t TempCharacteristic_written(ATMO_Value_t *in, ATMO_Value_t *out) {
 
 	ATMO_CreateValueConverted(out, ATMO_PROPERTY(TempCharacteristic, writeDataType), in);
 	return ATMO_Status_Success;
-	
+
 }
 
 
@@ -796,10 +795,10 @@ ATMO_Status_t AirCharacteristic_setup(ATMO_Value_t *in, ATMO_Value_t *out) {
 		ATMO_PROPERTY(AirCharacteristic, instance),
 		&ATMO_VARIABLE(AirCharacteristic, bleServiceHandle), 
 		ATMO_PROPERTY(AirCharacteristic, bleServiceUuid));
-	
+
 	uint8_t property = 0;
 	uint8_t permission = 0;
-	
+
 	property |= ATMO_PROPERTY(AirCharacteristic, read) ? ATMO_BLE_Property_Read : 0;
 	property |= ATMO_PROPERTY(AirCharacteristic, write) ? ATMO_BLE_Property_Write : 0;
 	property |= ATMO_PROPERTY(AirCharacteristic, notify) ? ATMO_BLE_Property_Notify : 0;
@@ -808,28 +807,28 @@ ATMO_Status_t AirCharacteristic_setup(ATMO_Value_t *in, ATMO_Value_t *out) {
 	permission |= ATMO_PROPERTY(AirCharacteristic, write) ? ATMO_BLE_Permission_Write : 0;
 
 	ATMO_DATATYPE types[3] = {ATMO_PROPERTY(AirCharacteristic, writeDataType), ATMO_PROPERTY(AirCharacteristic, readDataType), ATMO_PROPERTY(AirCharacteristic, notifyDataType)};
-	
+
 	ATMO_BLE_GATTSAddCharacteristic(
 		ATMO_PROPERTY(AirCharacteristic, instance),
 		&ATMO_VARIABLE(AirCharacteristic, bleCharacteristicHandle), 
 		ATMO_VARIABLE(AirCharacteristic, bleServiceHandle), 
 		ATMO_PROPERTY(AirCharacteristic, bleCharacteristicUuid), 
 		property, permission, ATMO_GetMaxValueSize(3, 64, types));
-	
+
 	ATMO_BLE_GATTSRegisterCharacteristicAbilityHandle(
 		ATMO_PROPERTY(AirCharacteristic, instance),
 		ATMO_VARIABLE(AirCharacteristic, bleCharacteristicHandle), 
 		ATMO_BLE_Characteristic_Written, 
 		ATMO_ABILITY(AirCharacteristic, written));
-	
+
 	return ATMO_Status_Success;
-	
+
 }
 
 
 ATMO_Status_t AirCharacteristic_setValue(ATMO_Value_t *in, ATMO_Value_t *out) {
 
-	
+
 	// Convert to the desired write data type
 	ATMO_Value_t convertedValue;
 	ATMO_InitValue(&convertedValue);
@@ -841,11 +840,11 @@ ATMO_Status_t AirCharacteristic_setValue(ATMO_Value_t *in, ATMO_Value_t *out) {
 		convertedValue.size, 
 		(uint8_t *)convertedValue.data,
 		NULL);
-	
+
 	ATMO_FreeValue(&convertedValue);
-		
+
 	return ATMO_Status_Success;
-	
+
 }
 
 
@@ -853,7 +852,7 @@ ATMO_Status_t AirCharacteristic_written(ATMO_Value_t *in, ATMO_Value_t *out) {
 
 	ATMO_CreateValueConverted(out, ATMO_PROPERTY(AirCharacteristic, writeDataType), in);
 	return ATMO_Status_Success;
-	
+
 }
 
 
@@ -878,10 +877,10 @@ ATMO_Status_t AccelCharacteristic_setup(ATMO_Value_t *in, ATMO_Value_t *out) {
 		ATMO_PROPERTY(AccelCharacteristic, instance),
 		&ATMO_VARIABLE(AccelCharacteristic, bleServiceHandle), 
 		ATMO_PROPERTY(AccelCharacteristic, bleServiceUuid));
-	
+
 	uint8_t property = 0;
 	uint8_t permission = 0;
-	
+
 	property |= ATMO_PROPERTY(AccelCharacteristic, read) ? ATMO_BLE_Property_Read : 0;
 	property |= ATMO_PROPERTY(AccelCharacteristic, write) ? ATMO_BLE_Property_Write : 0;
 	property |= ATMO_PROPERTY(AccelCharacteristic, notify) ? ATMO_BLE_Property_Notify : 0;
@@ -890,28 +889,28 @@ ATMO_Status_t AccelCharacteristic_setup(ATMO_Value_t *in, ATMO_Value_t *out) {
 	permission |= ATMO_PROPERTY(AccelCharacteristic, write) ? ATMO_BLE_Permission_Write : 0;
 
 	ATMO_DATATYPE types[3] = {ATMO_PROPERTY(AccelCharacteristic, writeDataType), ATMO_PROPERTY(AccelCharacteristic, readDataType), ATMO_PROPERTY(AccelCharacteristic, notifyDataType)};
-	
+
 	ATMO_BLE_GATTSAddCharacteristic(
 		ATMO_PROPERTY(AccelCharacteristic, instance),
 		&ATMO_VARIABLE(AccelCharacteristic, bleCharacteristicHandle), 
 		ATMO_VARIABLE(AccelCharacteristic, bleServiceHandle), 
 		ATMO_PROPERTY(AccelCharacteristic, bleCharacteristicUuid), 
 		property, permission, ATMO_GetMaxValueSize(3, 64, types));
-	
+
 	ATMO_BLE_GATTSRegisterCharacteristicAbilityHandle(
 		ATMO_PROPERTY(AccelCharacteristic, instance),
 		ATMO_VARIABLE(AccelCharacteristic, bleCharacteristicHandle), 
 		ATMO_BLE_Characteristic_Written, 
 		ATMO_ABILITY(AccelCharacteristic, written));
-	
+
 	return ATMO_Status_Success;
-	
+
 }
 
 
 ATMO_Status_t AccelCharacteristic_setValue(ATMO_Value_t *in, ATMO_Value_t *out) {
 
-	
+
 	// Convert to the desired write data type
 	ATMO_Value_t convertedValue;
 	ATMO_InitValue(&convertedValue);
@@ -923,11 +922,11 @@ ATMO_Status_t AccelCharacteristic_setValue(ATMO_Value_t *in, ATMO_Value_t *out) 
 		convertedValue.size, 
 		(uint8_t *)convertedValue.data,
 		NULL);
-	
+
 	ATMO_FreeValue(&convertedValue);
-		
+
 	return ATMO_Status_Success;
-	
+
 }
 
 
@@ -935,7 +934,7 @@ ATMO_Status_t AccelCharacteristic_written(ATMO_Value_t *in, ATMO_Value_t *out) {
 
 	ATMO_CreateValueConverted(out, ATMO_PROPERTY(AccelCharacteristic, writeDataType), in);
 	return ATMO_Status_Success;
-	
+
 }
 
 
@@ -960,10 +959,10 @@ ATMO_Status_t GyroCharacteristic_setup(ATMO_Value_t *in, ATMO_Value_t *out) {
 		ATMO_PROPERTY(GyroCharacteristic, instance),
 		&ATMO_VARIABLE(GyroCharacteristic, bleServiceHandle), 
 		ATMO_PROPERTY(GyroCharacteristic, bleServiceUuid));
-	
+
 	uint8_t property = 0;
 	uint8_t permission = 0;
-	
+
 	property |= ATMO_PROPERTY(GyroCharacteristic, read) ? ATMO_BLE_Property_Read : 0;
 	property |= ATMO_PROPERTY(GyroCharacteristic, write) ? ATMO_BLE_Property_Write : 0;
 	property |= ATMO_PROPERTY(GyroCharacteristic, notify) ? ATMO_BLE_Property_Notify : 0;
@@ -972,28 +971,28 @@ ATMO_Status_t GyroCharacteristic_setup(ATMO_Value_t *in, ATMO_Value_t *out) {
 	permission |= ATMO_PROPERTY(GyroCharacteristic, write) ? ATMO_BLE_Permission_Write : 0;
 
 	ATMO_DATATYPE types[3] = {ATMO_PROPERTY(GyroCharacteristic, writeDataType), ATMO_PROPERTY(GyroCharacteristic, readDataType), ATMO_PROPERTY(GyroCharacteristic, notifyDataType)};
-	
+
 	ATMO_BLE_GATTSAddCharacteristic(
 		ATMO_PROPERTY(GyroCharacteristic, instance),
 		&ATMO_VARIABLE(GyroCharacteristic, bleCharacteristicHandle), 
 		ATMO_VARIABLE(GyroCharacteristic, bleServiceHandle), 
 		ATMO_PROPERTY(GyroCharacteristic, bleCharacteristicUuid), 
 		property, permission, ATMO_GetMaxValueSize(3, 64, types));
-	
+
 	ATMO_BLE_GATTSRegisterCharacteristicAbilityHandle(
 		ATMO_PROPERTY(GyroCharacteristic, instance),
 		ATMO_VARIABLE(GyroCharacteristic, bleCharacteristicHandle), 
 		ATMO_BLE_Characteristic_Written, 
 		ATMO_ABILITY(GyroCharacteristic, written));
-	
+
 	return ATMO_Status_Success;
-	
+
 }
 
 
 ATMO_Status_t GyroCharacteristic_setValue(ATMO_Value_t *in, ATMO_Value_t *out) {
 
-	
+
 	// Convert to the desired write data type
 	ATMO_Value_t convertedValue;
 	ATMO_InitValue(&convertedValue);
@@ -1005,11 +1004,11 @@ ATMO_Status_t GyroCharacteristic_setValue(ATMO_Value_t *in, ATMO_Value_t *out) {
 		convertedValue.size, 
 		(uint8_t *)convertedValue.data,
 		NULL);
-	
+
 	ATMO_FreeValue(&convertedValue);
-		
+
 	return ATMO_Status_Success;
-	
+
 }
 
 
@@ -1017,7 +1016,7 @@ ATMO_Status_t GyroCharacteristic_written(ATMO_Value_t *in, ATMO_Value_t *out) {
 
 	ATMO_CreateValueConverted(out, ATMO_PROPERTY(GyroCharacteristic, writeDataType), in);
 	return ATMO_Status_Success;
-	
+
 }
 
 
@@ -1042,10 +1041,10 @@ ATMO_Status_t PressureCharacteristic_setup(ATMO_Value_t *in, ATMO_Value_t *out) 
 		ATMO_PROPERTY(PressureCharacteristic, instance),
 		&ATMO_VARIABLE(PressureCharacteristic, bleServiceHandle), 
 		ATMO_PROPERTY(PressureCharacteristic, bleServiceUuid));
-	
+
 	uint8_t property = 0;
 	uint8_t permission = 0;
-	
+
 	property |= ATMO_PROPERTY(PressureCharacteristic, read) ? ATMO_BLE_Property_Read : 0;
 	property |= ATMO_PROPERTY(PressureCharacteristic, write) ? ATMO_BLE_Property_Write : 0;
 	property |= ATMO_PROPERTY(PressureCharacteristic, notify) ? ATMO_BLE_Property_Notify : 0;
@@ -1054,28 +1053,28 @@ ATMO_Status_t PressureCharacteristic_setup(ATMO_Value_t *in, ATMO_Value_t *out) 
 	permission |= ATMO_PROPERTY(PressureCharacteristic, write) ? ATMO_BLE_Permission_Write : 0;
 
 	ATMO_DATATYPE types[3] = {ATMO_PROPERTY(PressureCharacteristic, writeDataType), ATMO_PROPERTY(PressureCharacteristic, readDataType), ATMO_PROPERTY(PressureCharacteristic, notifyDataType)};
-	
+
 	ATMO_BLE_GATTSAddCharacteristic(
 		ATMO_PROPERTY(PressureCharacteristic, instance),
 		&ATMO_VARIABLE(PressureCharacteristic, bleCharacteristicHandle), 
 		ATMO_VARIABLE(PressureCharacteristic, bleServiceHandle), 
 		ATMO_PROPERTY(PressureCharacteristic, bleCharacteristicUuid), 
 		property, permission, ATMO_GetMaxValueSize(3, 64, types));
-	
+
 	ATMO_BLE_GATTSRegisterCharacteristicAbilityHandle(
 		ATMO_PROPERTY(PressureCharacteristic, instance),
 		ATMO_VARIABLE(PressureCharacteristic, bleCharacteristicHandle), 
 		ATMO_BLE_Characteristic_Written, 
 		ATMO_ABILITY(PressureCharacteristic, written));
-	
+
 	return ATMO_Status_Success;
-	
+
 }
 
 
 ATMO_Status_t PressureCharacteristic_setValue(ATMO_Value_t *in, ATMO_Value_t *out) {
 
-	
+
 	// Convert to the desired write data type
 	ATMO_Value_t convertedValue;
 	ATMO_InitValue(&convertedValue);
@@ -1087,7 +1086,7 @@ ATMO_Status_t PressureCharacteristic_setValue(ATMO_Value_t *in, ATMO_Value_t *ou
 		convertedValue.size, 
 		(uint8_t *)convertedValue.data,
 		NULL);
-	
+
 	ATMO_FreeValue(&convertedValue);
 ...
 

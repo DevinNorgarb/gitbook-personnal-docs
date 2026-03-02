@@ -43,12 +43,12 @@ If you want a CAN Bus Analyzer to debug your CAN Bus, this [USB-CAN Analyzer](ht
 
 ### Features[​](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/#features) <a href="#features" id="features"></a>
 
-* Implements CAN V2.0B speed up to **1 Mb/s**
-* SPI Interface speed up to **10 MHz**
-* Standard (**11 bit**) and extended (**29 bit**) data and remote frames
-* Two receive buffers with prioritized message storage
-* Industrial standard DB-9 connector
-* LED indicators
+- Implements CAN V2.0B speed up to **1 Mb/s**
+- SPI Interface speed up to **10 MHz**
+- Standard (**11 bit**) and extended (**29 bit**) data and remote frames
+- Two receive buffers with prioritized message storage
+- Industrial standard DB-9 connector
+- LED indicators
 
 NOTE
 
@@ -61,10 +61,10 @@ CAN BUS Shield Work well with Arduino UNO (ATmega328), Arduino Mega (ATmega1280/
 1. **DB9 Interface** - to connect to OBDII Interface via a DBG-OBD Cable.
 2. **V\_OBD** - It gets power from OBDII Interface (from DB9)
 3. **Led Indicator**:
-   * **PWR**: power
-   * **TX**: blink when the data is sending
-   * **RX**: blink when there's data receiving
-   * **INT**: data interrupt
+   - **PWR**: power
+   - **TX**: blink when the data is sending
+   - **RX**: blink when there's data receiving
+   - **INT**: data interrupt
 4. **Terminal** - CAN\_H and CAN\_L
 5. **Arduino UNO pinout**
 6. **Serial Grove connector**
@@ -97,15 +97,15 @@ When we produced the new batch of CAN-BUS Shield V2, the wire of the back pads w
 
 SPI\_CS pin of V1.2 is connected to **D9** by default. If you want to change to **D10**, please follow below instructions.
 
-* Step1: Take a look at the backside of the PCBA, you will find a pad named CS.
+- Step1: Take a look at the backside of the PCBA, you will find a pad named CS.
 
 ![pir](https://files.seeedstudio.com/wiki/CAN_BUS_Shield/image/zhanshitu1.png)
 
-* Step2: Cut the wire between pad9 and the middle pad.
+- Step2: Cut the wire between pad9 and the middle pad.
 
 ![pir](https://files.seeedstudio.com/wiki/CAN_BUS_Shield/image/zhanshitu2.png)
 
-* Step3:Solder the middle pad and pad 10.
+- Step3:Solder the middle pad and pad 10.
 
 ![pir](https://files.seeedstudio.com/wiki/CAN_BUS_Shield/image/zhanshitu3.png)
 
@@ -154,7 +154,7 @@ CAN\_H to CAN\_H, CAN\_L to CAN\_L
 
 Please follow [how to install an arduino library](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) procedures to install CAN BUS shield library.
 
-* Download the [**Seeed\_Arduino\_CAN**](https://github.com/Seeed-Studio/Seeed_Arduino_CAN) Arduino library here.
+- Download the [**Seeed\_Arduino\_CAN**](https://github.com/Seeed-Studio/Seeed_Arduino_CAN) Arduino library here.
 
 Install the library to your Arduino IDE when it is downloaded.
 
@@ -171,15 +171,15 @@ Open the **send** example (**File > Examples > Seeed\_Arduino\_CAN > send**) and
 Or copy the following to the Arduino IDE and upload:
 
 ```
-#include <SPI.h>
-#include "mcp2515_can.h"
+## include <SPI.h>
+## include "mcp2515_can.h"
 
 /*SAMD core*/
-#ifdef ARDUINO_SAMD_VARIANT_COMPLIANCE
+## ifdef ARDUINO_SAMD_VARIANT_COMPLIANCE
     #define SERIAL SerialUSB
-#else
+## else
     #define SERIAL Serial
-#endif
+## endif
 
 const int SPI_CS_PIN = 9;
 mcp2515_can CAN(SPI_CS_PIN); // Set CS pin
@@ -231,27 +231,27 @@ This function is used to initialize the baud rate of the CAN Bus system.
 The available baud rates are listed as follows:
 
 ```
-#define CAN_5KBPS    1
-#define CAN_10KBPS   2
-#define CAN_20KBPS   3
-#define CAN_25KBPS   4
-#define CAN_31K25BPS 5
-#define CAN_33KBPS   6
-#define CAN_40KBPS   7
-#define CAN_50KBPS   8
-#define CAN_80KBPS   9
-#define CAN_83K3BPS  10
-#define CAN_95KBPS   11
-#define CAN_100KBPS  12
-#define CAN_125KBPS  13
-#define CAN_200KBPS  14
-#define CAN_250KBPS  15
-#define CAN_500KBPS  16
-#define CAN_666kbps  17
-#define CAN_1000KBPS 18
+## define CAN_5KBPS    1
+## define CAN_10KBPS   2
+## define CAN_20KBPS   3
+## define CAN_25KBPS   4
+## define CAN_31K25BPS 5
+## define CAN_33KBPS   6
+## define CAN_40KBPS   7
+## define CAN_50KBPS   8
+## define CAN_80KBPS   9
+## define CAN_83K3BPS  10
+## define CAN_95KBPS   11
+## define CAN_100KBPS  12
+## define CAN_125KBPS  13
+## define CAN_200KBPS  14
+## define CAN_250KBPS  15
+## define CAN_500KBPS  16
+## define CAN_666kbps  17
+## define CAN_1000KBPS 18
 ```
 
-#### 2.Set Receive Mask and Filter[​](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/#2set-receive-mask-and-filter) <a href="#id-2set-receive-mask-and-filter" id="id-2set-receive-mask-and-filter"></a>
+### 2.Set Receive Mask and Filter[​](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/#2set-receive-mask-and-filter) <a href="#id-2set-receive-mask-and-filter" id="id-2set-receive-mask-and-filter"></a>
 
 There are **2** receive mask registers and **5** filter registers on the controller chip that guarantee you getting data from the target device. They are useful especially in a large network consisting of numerous nodes.
 
@@ -259,19 +259,19 @@ We provide two functions for you to utilize these mask and filter registers. The
 
 **Mask:**
 
-```
+```bash
 init_Mask(unsigned char num, unsigned char ext, unsigned char ulData);
 ```
 
 **Filter:**
 
-```
+```php
 init_Filt(unsigned char num, unsigned char ext, unsigned char ulData);
 ```
 
-* **num** represents which register to use. You can fill 0 or 1 for mask and 0 to 5 for filter.
-* **ext** represents the status of the frame. 0 means it's a mask or filter for a standard frame. 1 means it's for a extended frame.
-* **ulData** represents the content of the mask of filter.
+- **num** represents which register to use. You can fill 0 or 1 for mask and 0 to 5 for filter.
+- **ext** represents the status of the frame. 0 means it's a mask or filter for a standard frame. 1 means it's for a extended frame.
+- **ulData** represents the content of the mask of filter.
 
 #### 3.Check Receive[​](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/#3check-receive) <a href="#id-3check-receive" id="id-3check-receive"></a>
 
@@ -279,7 +279,7 @@ The MCP2515 can operate in either a polled mode, where the software checks for a
 
 Use the following function to poll for received frames.
 
-```
+```php
 INT8U MCP_CAN::checkReceive(void);
 ```
 
@@ -289,26 +289,26 @@ The function will return 1 if a frame arrives, and 0 if nothing arrives.
 
 When some data arrive, you can use the following function to get the CAN ID of the "send" node.
 
-```
+```php
 INT32U MCP_CAN::getCanId(void)
 ```
 
 #### 5.Send Data[​](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/#5send-data) <a href="#id-5send-data" id="id-5send-data"></a>
 
-```
+```php
 CAN.sendMsgBuf(INT8U id, INT8U ext, INT8U len, data_buf);
 ```
 
 It is a function to send data onto the bus. In which:
 
-* **id** represents where the data comes from.
-* **ext** represents the status of the frame. '0' means standard frame. '1' means extended frame.
-* **len** represents the length of this frame.
-* **data\_buf** is the content of this message.
+- **id** represents where the data comes from.
+- **ext** represents the status of the frame. '0' means standard frame. '1' means extended frame.
+- **len** represents the length of this frame.
+- **data\_buf** is the content of this message.
 
 For example, In the 'send' example, we have:
 
-```
+```php
 unsigned char stmp[8] = {0, 1, 2, 3, 4, 5, 6, 7};
 CAN.sendMsgBuf(0x00, 0, 8, stmp); //send out the message 'stmp' to the bus and tell other devices this is a standard frame from 0x00.
 ```
@@ -317,48 +317,48 @@ CAN.sendMsgBuf(0x00, 0, 8, stmp); //send out the message 'stmp' to the bus and t
 
 The following function is used to receive data on the 'receive' node:
 
-```
+```php
 CAN.readMsgBuf(unsigned char len, unsigned char buf);
 ```
 
 In conditions that masks and filters have been set. This function can only get frames that meet the requirements of masks and filters.
 
-* **len** represents the data length.
-* **buf** is where you store the data.
+- **len** represents the data length.
+- **buf** is where you store the data.
 
 #### 7.init\_CS[​](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/#7init_cs) <a href="#id-7init_cs" id="id-7init_cs"></a>
 
 it is very usefule for you to use two CAN-BUS shields with one Arduino.we provide CS\_CAN pin to select for you.if you cannot kown how to use CS\_CAN pin , you can go to [CS\_CAN pin](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/#cs_can-pin) to learn.
 
-```
+```bash
 void MCP_CAN::init_CS(byte _CS)
 ```
 
-* **\_CS** represents what you select pin.(9 or 10)
+- **\_CS** represents what you select pin.(9 or 10)
 
 ### Generate a New BaudRate[​](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/#generate-a-new-baudrate) <a href="#generate-a-new-baudrate" id="generate-a-new-baudrate"></a>
 
 We had provided many frequently-used baud rates, as below:
 
 ```
-#define CAN_5KBPS    1
-#define CAN_10KBPS   2
-#define CAN_20KBPS   3
-#define CAN_25KBPS   4
-#define CAN_31KBPS   5
-#define CAN_33KBPS   6
-#define CAN_40KBPS   7
-#define CAN_50KBPS   8
-#define CAN_80KBPS   9
-#define CAN_83KBPS   10
-#define CAN_95KBPS   11
-#define CAN_100KBPS  12
-#define CAN_125KBPS  13
-#define CAN_200KBPS  14
-#define CAN_250KBPS  15
-#define CAN_500KBPS  16
-#define CAN_666KBPS  17
-#define CAN_1000KBPS 18
+## define CAN_5KBPS    1
+## define CAN_10KBPS   2
+## define CAN_20KBPS   3
+## define CAN_25KBPS   4
+## define CAN_31KBPS   5
+## define CAN_33KBPS   6
+## define CAN_40KBPS   7
+## define CAN_50KBPS   8
+## define CAN_80KBPS   9
+## define CAN_83KBPS   10
+## define CAN_95KBPS   11
+## define CAN_100KBPS  12
+## define CAN_125KBPS  13
+## define CAN_200KBPS  14
+## define CAN_250KBPS  15
+## define CAN_500KBPS  16
+## define CAN_666KBPS  17
+## define CAN_1000KBPS 18
 ```
 
 Yet you may still can't find the rate you want. Here we provide a software to help you to calculate the baud rate you need.
@@ -376,20 +376,20 @@ You need to add some code to the library.
 Open **mcp\_can\_dfs.h**, you need to add below code at about line 272:
 
 ```
-#define MCP_16MHz_xxxkBPS_CFG1 (cfg1)    // xxx is the baud rate you need
-#define MCP_16MHz_xxxkBPS_CFG2 (cfg2)
-#define MCP_16MHz_xxxkBPS_CFG3 (cfg2)
+## define MCP_16MHz_xxxkBPS_CFG1 (cfg1)    // xxx is the baud rate you need
+## define MCP_16MHz_xxxkBPS_CFG2 (cfg2)
+## define MCP_16MHz_xxxkBPS_CFG3 (cfg2)
 ```
 
 Then let's go to about line 390, add below code:
 
 ```
-#define CAN_xxxKBPS NUM       // xxx is the baudrate you need, and NUM is a number, you need to get a different from the other rates.
+## define CAN_xxxKBPS NUM       // xxx is the baudrate you need, and NUM is a number, you need to get a different from the other rates.
 ```
 
 Open **mcp\_can.cpp**, goto the function **mcp2515\_configRate**(at about line 190), then add below code:
 
-```
+```php
 case (CAN_xxxKBPS):
     cfg1 = MCP_16MHz_xxxkBPS_CFG1;
     cfg2 = MCP_16MHz_xxxkBPS_CFG2;
@@ -429,12 +429,12 @@ From each node (IE Switch pod that controls your windows or electric door locks)
 
 **Q1: I can't get data from other CAN device.**
 
-* Check if the connection is right
-* Check if the baud rate setting is right
+- Check if the connection is right
+- Check if the baud rate setting is right
 
 **Q2: The serial monitor print Init Fail.**
 
-* Check if the CS pin setting is matched with the code. For CAN Bus Shield V1.1/1.2, CS pin is connected to D9, others are to D10.
+- Check if the CS pin setting is matched with the code. For CAN Bus Shield V1.1/1.2, CS pin is connected to D9, others are to D10.
 
 ### Schematic Online Viewer[​](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/#schematic-online-viewer) <a href="#schematic-online-viewer" id="schematic-online-viewer"></a>
 
@@ -442,16 +442,16 @@ From each node (IE Switch pod that controls your windows or electric door locks)
 
 ***
 
-* **\[PDF]**[CAN-BUS Shield V2.0 Schmatics](https://files.seeedstudio.com/wiki/CAN-BUS-Shield-V2.0/res/CAN-BUS%20Shield%20%20v2.0.pdf)
-* **\[Eagle]**[Schematic & PCB of CAN-BUS Shield V2.0](https://files.seeedstudio.com/wiki/CAN-BUS-Shield-V2.0/res/CAN-BUS%20Shield%20%20v2.0.rar)
-* **\[Library]**[Arduino Library for CAN-BUS Shield](https://github.com/Seeed-Studio/CAN_BUS_Shield)
-* **\[Datasheet]**[MCP2515 datasheet](https://files.seeedstudio.com/wiki/CAN_BUS_Shield/resource/MCP2515.pdf)
-* **\[Datasheet]**[MCP2551 datasheet](https://files.seeedstudio.com/wiki/CAN_BUS_Shield/resource/Mcp2551.pdf)
-* **\[Demo]**[An OBD Demo](https://github.com/Seeed-Studio/CANBUS_SHIELD_OBD_RECIPLE)
-* **\[Tool]**[MCP2515 Baud Rate Tool](https://files.seeedstudio.com/wiki/CAN_BUS_Shield/resource/CAN_Baudrate_CalcV1.3.zip)
-* **\[Tool]**[USB-CAN Analyzer](https://www.seeedstudio.com/USB-CAN-Analyzer-p-2888.html)
-* **\[Cable]**[DB9 to OBD2 Cable](https://www.seeedstudio.com/DB9-to-OBD2-Cable-With-Switch-p-2872.html)
-* **\[Drawing]**[CAN BUS Shield v2.0 Drawing in PDF](https://files.seeedstudio.com/wiki/CAN-BUS-Shield-V2.0/res/CAN-BUS%C2%A0SHIELD%C2%A0V2.0.pdf)
-* **\[Drawing]**[CAN BUS Shield v2.0 Drawing in DXF](https://files.seeedstudio.com/wiki/CAN-BUS-Shield-V2.0/res/CAN-BUS%C2%A0SHIELD%C2%A0V2.0.dxf.zip)
+- **\[PDF]**[CAN-BUS Shield V2.0 Schmatics](https://files.seeedstudio.com/wiki/CAN-BUS-Shield-V2.0/res/CAN-BUS%20Shield%20%20v2.0.pdf)
+- **\[Eagle]**[Schematic & PCB of CAN-BUS Shield V2.0](https://files.seeedstudio.com/wiki/CAN-BUS-Shield-V2.0/res/CAN-BUS%20Shield%20%20v2.0.rar)
+- **\[Library]**[Arduino Library for CAN-BUS Shield](https://github.com/Seeed-Studio/CAN_BUS_Shield)
+- **\[Datasheet]**[MCP2515 datasheet](https://files.seeedstudio.com/wiki/CAN_BUS_Shield/resource/MCP2515.pdf)
+- **\[Datasheet]**[MCP2551 datasheet](https://files.seeedstudio.com/wiki/CAN_BUS_Shield/resource/Mcp2551.pdf)
+- **\[Demo]**[An OBD Demo](https://github.com/Seeed-Studio/CANBUS_SHIELD_OBD_RECIPLE)
+- **\[Tool]**[MCP2515 Baud Rate Tool](https://files.seeedstudio.com/wiki/CAN_BUS_Shield/resource/CAN_Baudrate_CalcV1.3.zip)
+- **\[Tool]**[USB-CAN Analyzer](https://www.seeedstudio.com/USB-CAN-Analyzer-p-2888.html)
+- **\[Cable]**[DB9 to OBD2 Cable](https://www.seeedstudio.com/DB9-to-OBD2-Cable-With-Switch-p-2872.html)
+- **\[Drawing]**[CAN BUS Shield v2.0 Drawing in PDF](https://files.seeedstudio.com/wiki/CAN-BUS-Shield-V2.0/res/CAN-BUS%C2%A0SHIELD%C2%A0V2.0.pdf)
+- **\[Drawing]**[CAN BUS Shield v2.0 Drawing in DXF](https://files.seeedstudio.com/wiki/CAN-BUS-Shield-V2.0/res/CAN-BUS%C2%A0SHIELD%C2%A0V2.0.dxf.zip)
 
 <br>

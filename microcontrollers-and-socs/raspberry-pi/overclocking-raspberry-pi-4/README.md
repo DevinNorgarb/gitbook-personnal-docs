@@ -4,7 +4,7 @@
 
 Raspberry Pi Zero 2Last updated: November 8, 2021
 
-#### Introduction.
+### Introduction.
 
 In this tutorial safe overclocking of the Raspberry Pi 4 will be discussed.The first part offers a simple electronic background so that you get a good idea of what is actually happening and what precautions you need to take. After a few important preparations, we end with the practical instructions.Theory.The BCM2711 chip on the Raspberry Pi 4 consists of millions of transistors, they are the digital building bricks. Most elements have two complementary transistors at the output. If transistor A is 'on' the output is drawn to the supply voltage Vcc, giving the output a status '1'. On the other hand, if transistor B is 'on', A is 'off', the output is pulled to Vdd, and a '0' appears at the output.\
 \
@@ -57,7 +57,7 @@ Check always if you have the latest EEPROM (electrically erasable programmable r
 
 Previously, the highest achievable clock frequency was limited to 1850. Above that, you had to install a Raspbian beta version. Fortunately, this limit has now been discontinued since NOOBS 3.3.1. Now you can easily increase the clock frequency to above 2000 MHz if you want. The highest stable frequency during our experiments was 1950 MHz.
 
-####
+#### 
 
 Practice.The actual overclocking is surprisingly simple. One line of text, arm\_freq=xxxx, in the /boot/config.txt will do. The table below, some frequencies are given. Up to 2140 MHz, the Raspberry Pi 4 still works, but it will crash when all four cores are running simultaneously. So be cautious. If the CPU gets above the 60°C (140°F), a frequency of even 1950 MHz can crash your RPi.
 
@@ -84,7 +84,7 @@ Like you can overclock the Raspberry Pi, you can also underclock your Pi.The rea
 \# Ctrl+X, Y, Enter to save the session\
 \# Reboot to run at the new clock frequency$ sudo reboot<br>
 
-####
+#### 
 
 Power consumption.As expected, power consumption will increase in proportion to the clock frequency. Below is a table with the power consumption of the Raspberry Pi 4 at different clock frequencies. The first line shows a Raspberry Pi which has been shut down. Even then, the electronics on the board still consume 300 mA. The second line reflects the situation when the Pi is running idle. All other lines indicate the power consumption of a Raspberry Pi 4 running with four cores simultaneously at full speed. The maximum allowable temperature is inversely proportional to the core voltage. This temperature is shown in the fourth column.
 

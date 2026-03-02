@@ -11,7 +11,7 @@ Use YAML frontmatter at the top of each markdown file:
 title: Page Title
 description: Optional one-line summary (for tooltips/search)
 ---
-```
+```php
 
 - **Section READMEs** (landing pages): Add `layout: landing` where appropriate.
 - **Content pages**: Add `title` matching the H1; add `description` for external links or credits where useful.

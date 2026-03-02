@@ -4,10 +4,10 @@
 
 ### &#x20;What you'll learn[​](https://docs.cypress.io/guides/overview/why-cypress#What-youll-learn) <a href="#what-youll-learn" id="what-youll-learn"></a>
 
-* What Cypress is and why you should use it
-* Our mission, and what we believe in
-* Key Cypress features
-* Types of tests Cypress is designed for
+- What Cypress is and why you should use it
+- Our mission, and what we believe in
+- Key Cypress features
+- Types of tests Cypress is designed for
 
 ### In a nutshell[​](https://docs.cypress.io/guides/overview/why-cypress#In-a-nutshell) <a href="#in-a-nutshell" id="in-a-nutshell"></a>
 
@@ -15,10 +15,10 @@ Cypress is a next generation front end testing tool built for the modern web. We
 
 We make it possible to:
 
-* [Set up tests](https://docs.cypress.io/guides/overview/why-cypress#Setting-up-tests)
-* [Write tests](https://docs.cypress.io/guides/overview/why-cypress#Writing-tests)
-* [Run tests](https://docs.cypress.io/guides/overview/why-cypress#Running-tests)
-* [Debug Tests](https://docs.cypress.io/guides/overview/why-cypress#Debugging-tests)
+- [Set up tests](https://docs.cypress.io/guides/overview/why-cypress#Setting-up-tests)
+- [Write tests](https://docs.cypress.io/guides/overview/why-cypress#Writing-tests)
+- [Run tests](https://docs.cypress.io/guides/overview/why-cypress#Running-tests)
+- [Debug Tests](https://docs.cypress.io/guides/overview/why-cypress#Debugging-tests)
 
 Cypress is most often compared to Selenium; however Cypress is both fundamentally and architecturally different. Cypress is not constrained by the same restrictions as Selenium.
 
@@ -30,10 +30,10 @@ Our users are typically developers or QA engineers building web applications usi
 
 Cypress enables you to write all types of tests:
 
-* [End-to-end tests](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)
-* [Component tests](https://docs.cypress.io/guides/component-testing/overview)
-* Integration tests
-* Unit tests
+- [End-to-end tests](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)
+- [Component tests](https://docs.cypress.io/guides/component-testing/overview)
+- Integration tests
+- Unit tests
 
 Cypress can test anything that runs in a browser.
 
@@ -41,8 +41,8 @@ Cypress can test anything that runs in a browser.
 
 Cypress consists of a free, [open source](https://github.com/cypress-io/cypress), [locally installed](https://docs.cypress.io/guides/getting-started/installing-cypress) application **and** Cypress Cloud for [recording your tests](https://docs.cypress.io/guides/cloud/introduction).
 
-* **First:** Cypress helps you set up and start writing tests every day while you build your application locally. _TDD at its best!_
-* **Later:** After building up a suite of tests and [integrating Cypress](https://docs.cypress.io/guides/continuous-integration/introduction) with your CI Provider, [Cypress Cloud](https://docs.cypress.io/guides/cloud/introduction) can record your test runs. You'll never have to wonder: _Why did this fail?_
+- **First:** Cypress helps you set up and start writing tests every day while you build your application locally. _TDD at its best!_
+- **Later:** After building up a suite of tests and [integrating Cypress](https://docs.cypress.io/guides/continuous-integration/introduction) with your CI Provider, [Cypress Cloud](https://docs.cypress.io/guides/cloud/introduction) can record your test runs. You'll never have to wonder: _Why did this fail?_
 
 ### Our mission[​](https://docs.cypress.io/guides/overview/why-cypress#Our-mission) <a href="#our-mission" id="our-mission"></a>
 
@@ -60,16 +60,16 @@ We believe testing needs a lot of ❤️ and we are here to build a tool, a serv
 
 Cypress comes fully baked, batteries included. Here is a list of things it can do that no other testing framework can:
 
-* **Time Travel:** Cypress takes snapshots as your tests run. Hover over commands in the [Command Log](https://docs.cypress.io/guides/core-concepts/cypress-app#Command-Log) to see exactly what happened at each step.
-* **Debuggability:** Stop guessing why your tests are failing. [Debug directly](https://docs.cypress.io/guides/guides/debugging) from familiar tools like Developer Tools. Our readable errors and stack traces make debugging lightning fast.
-* **Automatic Waiting:** Never add waits or sleeps to your tests. Cypress [automatically waits](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress#Cypress-is-Not-Like-jQuery) for commands and assertions before moving on. No more async hell.
-* **Spies, Stubs, and Clocks:** Verify and [control the behavior](https://docs.cypress.io/guides/guides/stubs-spies-and-clocks) of functions, server responses, or timers. The same functionality you love from unit testing is right at your fingertips.
-* **Network Traffic Control:** Easily [control, stub, and test edge cases](https://docs.cypress.io/guides/guides/network-requests) without involving your server. You can stub network traffic however you like.
-* **Consistent Results:** Our architecture doesn't use Selenium or WebDriver. Say hello to fast, consistent and reliable tests that are flake-free.
-* **Screenshots, Videos, and Test Replay:** View screenshots taken automatically on failure, or videos, if enabled, of your entire test suite when run from the CLI. Record to [Cypress Cloud](https://docs.cypress.io/guides/cloud/introduction) and replay the test as it executed during the run for zero-configuration debugging using [Test Replay](https://docs.cypress.io/guides/cloud/test-replay).
-* **Cross Browser Testing:** Run tests within Firefox and Chrome-family browsers (including Edge and Electron) locally and [optimally in a Continuous Integration pipeline](https://docs.cypress.io/guides/guides/cross-browser-testing).
-* **Smart Orchestration:** Once you're set up to record to Cypress Cloud, easily [parallelize](https://docs.cypress.io/guides/cloud/smart-orchestration/parallelization) your test suite, rerun failed specs first with [Spec Prioritization](https://docs.cypress.io/guides/cloud/smart-orchestration/spec-prioritization), and cancel test runs on failures with [Auto Cancellation](https://docs.cypress.io/guides/cloud/smart-orchestration/run-cancellation) for tight feedback loops.
-* **Flake Detection:** Discover and diagnose unreliable tests with Cypress Cloud's [Flaky test management](https://docs.cypress.io/guides/cloud/flaky-test-management).
+- **Time Travel:** Cypress takes snapshots as your tests run. Hover over commands in the [Command Log](https://docs.cypress.io/guides/core-concepts/cypress-app#Command-Log) to see exactly what happened at each step.
+- **Debuggability:** Stop guessing why your tests are failing. [Debug directly](https://docs.cypress.io/guides/guides/debugging) from familiar tools like Developer Tools. Our readable errors and stack traces make debugging lightning fast.
+- **Automatic Waiting:** Never add waits or sleeps to your tests. Cypress [automatically waits](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress#Cypress-is-Not-Like-jQuery) for commands and assertions before moving on. No more async hell.
+- **Spies, Stubs, and Clocks:** Verify and [control the behavior](https://docs.cypress.io/guides/guides/stubs-spies-and-clocks) of functions, server responses, or timers. The same functionality you love from unit testing is right at your fingertips.
+- **Network Traffic Control:** Easily [control, stub, and test edge cases](https://docs.cypress.io/guides/guides/network-requests) without involving your server. You can stub network traffic however you like.
+- **Consistent Results:** Our architecture doesn't use Selenium or WebDriver. Say hello to fast, consistent and reliable tests that are flake-free.
+- **Screenshots, Videos, and Test Replay:** View screenshots taken automatically on failure, or videos, if enabled, of your entire test suite when run from the CLI. Record to [Cypress Cloud](https://docs.cypress.io/guides/cloud/introduction) and replay the test as it executed during the run for zero-configuration debugging using [Test Replay](https://docs.cypress.io/guides/cloud/test-replay).
+- **Cross Browser Testing:** Run tests within Firefox and Chrome-family browsers (including Edge and Electron) locally and [optimally in a Continuous Integration pipeline](https://docs.cypress.io/guides/guides/cross-browser-testing).
+- **Smart Orchestration:** Once you're set up to record to Cypress Cloud, easily [parallelize](https://docs.cypress.io/guides/cloud/smart-orchestration/parallelization) your test suite, rerun failed specs first with [Spec Prioritization](https://docs.cypress.io/guides/cloud/smart-orchestration/spec-prioritization), and cancel test runs on failures with [Auto Cancellation](https://docs.cypress.io/guides/cloud/smart-orchestration/run-cancellation) for tight feedback loops.
+- **Flake Detection:** Discover and diagnose unreliable tests with Cypress Cloud's [Flaky test management](https://docs.cypress.io/guides/cloud/flaky-test-management).
 
 #### &#x20;Setting up tests[​](https://docs.cypress.io/guides/overview/why-cypress#Setting-up-tests) <a href="#setting-up-tests" id="setting-up-tests"></a>
 
@@ -95,7 +95,7 @@ Cypress can be used to write several different types of tests. This can provide 
 
 Cypress was originally designed to run end-to-end (E2E) tests on anything that runs in a browser. A typical E2E test visits the application in a browser and performs actions via the UI just like a real user would.
 
-```
+```php
 it('adds todos', () => {
   cy.visit('https://example.cypress.io/')
   cy.get('[data-testid="new-todo"]')
@@ -110,7 +110,7 @@ it('adds todos', () => {
 
 You can also use Cypress to mount components from supported web frameworks and execute [component tests](https://docs.cypress.io/guides/component-testing/overview).
 
-```
+```php
 import TodoList from './components/TodoList'
 
 it('contains the correct number of todos', () => {
@@ -129,7 +129,7 @@ it('contains the correct number of todos', () => {
 
 Cypress can perform arbitrary HTTP calls, thus you can use it for API testing.
 
-```
+```bash
 it('adds a todo', () => {
   cy.request({
     url: '/todos',

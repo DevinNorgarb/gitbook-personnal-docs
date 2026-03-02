@@ -6,7 +6,7 @@ Available sensors are displayed as a list of buttons beside the sidebar. Sensors
 
 ![](<../.gitbook/assets/reference ardusub sensors>)
 
-### Accelerometer Calibration <a href="#accelerometer-calibration" id="accelerometer-calibration"></a>
+## Accelerometer Calibration <a href="#accelerometer-calibration" id="accelerometer-calibration"></a>
 
 ![](<../.gitbook/assets/reference ardusub sensors accelerometer>)
 

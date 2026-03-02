@@ -10,9 +10,9 @@ Most of our applications are [Ember](https://emberjs.com/) or [React](https://re
 
 ![](../.gitbook/assets/image)
 
-* Continuous/Incremental Zooming — Traditional web maps require a fixed zoom level, and usually need to re-render vectors and fetch new raster tiles when the user zooms in and out. Because it renders individual features continuously using WebGL, MapboxGL allows for smooth scrolling with the scroll wheel, and smooth fly-to animations.
-* Camera Control & 3D — The map can be tilted and rotated, allowing users to come up with various [non-north-up views](https://chriswhong.github.io/doitt-tiles-mapboxgl/#14.04/40.7823/-73.9661/-61/27) that may better fit their needs. Features can be extruded and visualized as 3D objects (You can [see these in action in ZoLa’s 3d Buildings Layer](https://zola.planninglabs.nyc/?threed-buildings=true#15.33/40.6915/-73.9867/-13.6/60)).
-* Granular Control of Style/Symbology — With MapboxGL , everything on the map is (usually) a vector, even the basemap. Layers are all defined with JSON objects that define things like opacity & color, and even include the ability to add zoom-dependent styles, filtering criteria, etc.
+- Continuous/Incremental Zooming — Traditional web maps require a fixed zoom level, and usually need to re-render vectors and fetch new raster tiles when the user zooms in and out. Because it renders individual features continuously using WebGL, MapboxGL allows for smooth scrolling with the scroll wheel, and smooth fly-to animations.
+- Camera Control & 3D — The map can be tilted and rotated, allowing users to come up with various [non-north-up views](https://chriswhong.github.io/doitt-tiles-mapboxgl/#14.04/40.7823/-73.9661/-61/27) that may better fit their needs. Features can be extruded and visualized as 3D objects (You can [see these in action in ZoLa’s 3d Buildings Layer](https://zola.planninglabs.nyc/?threed-buildings=true#15.33/40.6915/-73.9867/-13.6/60)).
+- Granular Control of Style/Symbology — With MapboxGL , everything on the map is (usually) a vector, even the basemap. Layers are all defined with JSON objects that define things like opacity & color, and even include the ability to add zoom-dependent styles, filtering criteria, etc.
 
 Packages have been built to get mapboxGL to play well with popular frontend frameworks. We’ve used and extended ember-mapbox-gl and react-mapbox-gl in our projects. In simpler projects we just use mapboxGL’s APIs natively.
 
@@ -22,9 +22,9 @@ In our more complex mapping applications, we end up needing to group many mapbox
 
 In [ZoLa](https://zola.planning.nyc.gov/), an emberjs app, our mapboxGL style configs live as part of a broader configuration object we’ve called a LayerGroup. Since they are just JSON, they are easy to compose and manipulate. The LayerGroup configuration can also contain:
 
-* Metadata, for display on the About page
-* Default Visibility
-* Interactivity (tooltip definition and hover functionality)
+- Metadata, for display on the About page
+- Default Visibility
+- Interactivity (tooltip definition and hover functionality)
 
 We’ve built our own framework around MapboxGL and Ember, allowing us to build the complex layer palette you see in ZoLa, including custom UI for some layergroups, config-driven metadata, etc. (it’s baked into ZoLa, but someday we hope to split it out into its own open source package for others to use)
 
@@ -131,7 +131,7 @@ export default {
     },
   ],
 };
-```
+```json
 {% endcode %}
 
 Backend

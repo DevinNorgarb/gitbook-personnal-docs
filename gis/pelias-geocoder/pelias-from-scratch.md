@@ -155,7 +155,7 @@ Here's a bash snippet that will download all the repositories and install node m
 
 {% code title="clone-and-install.sh" %}
 ```
-```
+```json
 {% endcode %}
 
 ***
@@ -175,9 +175,9 @@ https://github.com/pelias/config/blob/master/config/defaults.json#L2
 Example snippet:
 
 {% code title="esclient example" %}
-```
+```json
 ... // rest of config
-```
+```json
 {% endcode %}
 
 You can change `localhost` and specify multiple hosts. The entire `esclient` section is sent to the elasticsearch-js module, so its options are valid.
@@ -188,7 +188,7 @@ The `imports` section defines settings for each importer. `adminLookup` has its 
 
 {% code title="imports defaults" %}
 ```
-```
+```json
 {% endcode %}
 
 Note: The datapath must be an absolute path. Change the defaults as needed.
@@ -207,9 +207,9 @@ https://www.elastic.co/guide/en/elasticsearch/guide/master/heap-sizing.html
 
 Make sure Elasticsearch is running and connectable before continuing. Monitoring tools that can help:
 
-* https://github.com/bleskes/sense (Sense)
-* https://mobz.github.io/elasticsearch-head/ (head)
-* https://www.elastic.co/products/marvel (Marvel)
+- https://github.com/bleskes/sense (Sense)
+- https://mobz.github.io/elasticsearch-head/ (head)
+- https://www.elastic.co/products/marvel (Marvel)
 
 ***
 
@@ -221,7 +221,7 @@ Run:
 
 {% code title="create index" %}
 ```
-```
+```json
 {% endcode %}
 
 The Elasticsearch schema is analogous to a table layout in a relational DB. Pelias requires specific schema settings.
@@ -234,7 +234,7 @@ Now that the schema is set up, begin importing data. For each importer:
 
 {% code title="run importer" %}
 ```
-```
+```json
 {% endcode %}
 
 Depending on how much data you've imported, this can take a while. You can expect up to \~7000 records per second per importer.
@@ -247,7 +247,7 @@ If you have previously run a build and want to start another, it's generally a g
 
 {% code title="drop and recreate index" %}
 ```
-```
+```python
 {% endcode %}
 
 When in doubt, delete the index, re-create it, and start fresh.
@@ -292,7 +292,7 @@ The Pelias API needs to know about each of the other services. Configure in `pel
 
 {% code title="api services in pelias.json" %}
 ```
-```
+```json
 {% endcode %}
 
 ### Start the API
@@ -301,7 +301,7 @@ Start the API:
 
 {% code title="start api" %}
 ```
-```
+```json
 {% endcode %}
 
 ***
@@ -314,9 +314,9 @@ A request to http://localhost:3100 should display a link to the documentation.
 
 Here are some queries to try:
 
-* http://localhost:3100/v1/search?text=london — search for the city of London.
-* http://localhost:3100/v1/autocomplete?text=londo — autocomplete for London (partial match).
-* http://localhost:3100/v1/reverse?point.lon=-73.986027\&point.lat=40.748517 — reverse geocode near the Empire State Building.
+- http://localhost:3100/v1/search?text=london — search for the city of London.
+- http://localhost:3100/v1/autocomplete?text=londo — autocomplete for London (partial match).
+- http://localhost:3100/v1/reverse?point.lon=-73.986027\&point.lat=40.748517 — reverse geocode near the Empire State Building.
 
 For more information, see the documentation index:
 

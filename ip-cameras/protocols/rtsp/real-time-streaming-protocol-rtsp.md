@@ -56,7 +56,6 @@ Table of Contents
         + 3.1 RTSP Version .......................................... 
 
 
-
 Schulzrinne, et. al.        Standards Track                     [Page 1]
 ```
 
@@ -115,7 +114,6 @@ Schulzrinne, et. al.        Standards Track                     [Page 1]
              o 11.3.1 405 Method Not Allowed ........................ 
              o 11.3.2 451 Parameter Not Understood .................. 
              o 11.3.3 452 Conference Not Found ...................... 
-
 
 
 Schulzrinne, et. al.        Standards Track                     [Page 2]
@@ -178,7 +176,6 @@ Schulzrinne, et. al.        Standards Track                     [Page 2]
         + 12.36 Server .............................................. 
 
 
-
 Schulzrinne, et. al.        Standards Track                     [Page 3]
 ```
 
@@ -235,9 +232,6 @@ Schulzrinne, et. al.        Standards Track                     [Page 3]
    * F Acknowledgements ............................................. 
    * References ..................................................... 
    * Full Copyright Statement ....................................... 
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                     [Page 4]
@@ -299,8 +293,6 @@ Schulzrinne, et. al.        Standards Track                     [Page 4]
      IP address hosts several document trees.
 
 
-
-
 Schulzrinne, et. al.        Standards Track                     [Page 5]
 ```
 
@@ -359,9 +351,6 @@ Schulzrinne, et. al.        Standards Track                     [Page 5]
           greater than or equal to one.
 
 
-
-
-
 Schulzrinne, et. al.        Standards Track                     [Page 6]
 ```
 
@@ -418,9 +407,6 @@ Schulzrinne, et. al.        Standards Track                     [Page 6]
           presentation may originate from different media servers. A
           media server may reside on the same or a different host as the
           web server the presentation is invoked from.
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                     [Page 7]
@@ -483,7 +469,6 @@ Schulzrinne, et. al.        Standards Track                     [Page 7]
           starting the stream with PLAY or RECORD, and closing the
 
 
-
 Schulzrinne, et. al.        Standards Track                     [Page 8]
 ```
 
@@ -540,9 +525,6 @@ Schulzrinne, et. al.        Standards Track                     [Page 8]
           initiation protocol either provides or can be used to create a
           unique conference identifier. In particular, SIP [12] or H.323
           [13] may be used to invite a server to a conference.
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                     [Page 9]
@@ -605,7 +587,6 @@ Schulzrinne, et. al.        Standards Track                     [Page 9]
      this is left to either a "social protocol" or some other floor
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 10]
 ```
 
@@ -664,7 +645,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 10]
    presentation is made up of are defined by a presentation description
    file, the format of which is outside the scope of this specification.
    The presentation description file may be obtained by the client using
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 11]
@@ -727,7 +707,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 11]
    delivery continues even if no RTSP requests are received by the media
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 12]
 ```
 
@@ -786,7 +765,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 12]
    responds. In RTSP, both the media client and media server can issue
    requests. RTSP requests are also not stateless; they may set
    parameters and continue to control a media stream long after the
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 13]
@@ -849,7 +827,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 13]
                  (in dotted decimal form), as defined by 
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 14]
 ```
 
@@ -908,7 +885,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 14]
    in the presentation and the URLs for the individual streams. A
    presentation description may name a stream "a.mov" and the whole
    presentation "b.mov".
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 15]
@@ -971,7 +947,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 15]
    one-hundredth of a frame.
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 16]
 ```
 
@@ -1030,7 +1005,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 16]
      The syntax conforms to ISO 8601. The npt-sec notation is optimized
      for automatic generation, the ntp-hhmmss notation for consumption
      by human readers. The "now" constant allows clients to request to
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 17]
@@ -1092,8 +1066,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 17]
        companies);
 
 
-
-
 Schulzrinne, et. al.        Standards Track                    [Page 18]
 ```
 
@@ -1151,8 +1123,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 18]
  Message Body
 
    See [H4.3]
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 19]
@@ -1215,7 +1185,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 19]
    version in use.
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 20]
 ```
 
@@ -1271,10 +1240,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 20]
    Note that in contrast to HTTP/1.1 [2], RTSP requests always contain
    the absolute URL (that is, including the scheme, host and port)
    rather than just the absolute path.
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 21]
@@ -1337,7 +1302,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 21]
    Phrase.
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 22]
 ```
 
@@ -1369,34 +1333,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 22]
    protocol. Note that RTSP adopts most HTTP/1.1 [2] status codes and
    adds RTSP-specific status codes starting at x50 to avoid conflicts
    with newly defined HTTP status codes.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 23]
@@ -1456,10 +1392,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 23]
                 |     extension-code
 
 
-
-
-
-
 Schulzrinne, et. al.        Standards Track                    [Page 24]
 ```
 
@@ -1501,24 +1433,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 24]
    302            Moved Temporarily                all
    303            See Other                        all
    305            Use Proxy                        all
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 25]
@@ -1579,9 +1493,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 25]
    Request-URI.
 
 
-
-
-
 Schulzrinne, et. al.        Standards Track                    [Page 26]
 ```
 
@@ -1639,8 +1550,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 26]
    to be defined without changing the protocol, but these fields cannot
    be assumed to be recognizable by the recipient. Unrecognized header
    fields SHOULD be ignored by the recipient and forwarded by proxies.
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 27]
@@ -1703,7 +1612,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 27]
      take advantage of the application-layer retransmission since the
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 28]
 ```
 
@@ -1752,17 +1660,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 28]
    methods may be defined in the future. Method names may not start with
    a $ character (decimal 24) and must be a token. Methods are
    summarized in Table 2.
-
-
-
-
-
-
-
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 29]
@@ -1818,12 +1715,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 29]
    Note that these are necessarily fictional features (one would hope
    that we would not purposefully overlook a truly useful feature just
    so that we could have a strong example in this section).
-
-
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 30]
@@ -1886,7 +1777,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 30]
      information via DESCRIBE, and when not to. By forcing a DESCRIBE
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 31]
 ```
 
@@ -1945,7 +1835,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 31]
 
            v=0
            o=mhandley 2890844526 2890845468 IN IP4 126.16.64.4
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 32]
@@ -2008,7 +1897,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 32]
    identifier, the server MUST bundle this setup request into the
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 33]
 ```
 
@@ -2067,9 +1955,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 33]
    further action and can be used by the client to test server liveness.
 
 
-
-
-
 Schulzrinne, et. al.        Standards Track                    [Page 34]
 ```
 
@@ -2124,11 +2009,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 34]
 
    A media server only supporting playback MUST support the npt format
    and MAY support the clock and smpte formats.
-
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 35]
@@ -2191,7 +2071,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 35]
    request is for NPT 16, the server stops after completing the first
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 36]
 ```
 
@@ -2250,7 +2129,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 36]
 
            packets_received
            jitter
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 37]
@@ -2313,7 +2191,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 37]
      S->C: RTSP/1.0 451 Invalid Parameter
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 38]
 ```
 
@@ -2370,9 +2247,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 38]
 
    A media server supporting recording of live presentations MUST
    support the clock range format; the smpte format does not make sense.
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 39]
@@ -2435,7 +2309,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 39]
            Transport: RTP/AVP/TCP;interleaved=0-1
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 40]
 ```
 
@@ -2488,13 +2361,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 40]
    redirecting stream requests to a server topologically closer to the
    client.  Mechanisms to determine topological proximity are beyond the
    scope of this specification.
-
-
-
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 41]
@@ -2553,11 +2419,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 41]
    seeking.
 
 
-
-
-
-
-
 Schulzrinne, et. al.        Standards Track                    [Page 42]
 ```
 
@@ -2609,16 +2470,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 42]
    option for which there is no support.
 
 
-
-
-
-
-
-
-
-
-
-
 Schulzrinne, et. al.        Standards Track                    [Page 43]
 ```
 
@@ -2648,36 +2499,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 43]
    this header field is meaningful; the designation "entity" refers to
    all methods that return a message body. Within this specification,
    DESCRIBE and GET_PARAMETER fall into this class.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 44]
@@ -2734,11 +2555,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 44]
    User-Agent           R      opt.      all
    Via                  g      opt.      all
    WWW-Authenticate     r      opt.      all
-
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 45]
@@ -2798,8 +2614,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 45]
    available to the client, expressed as a positive integer and measured
    in bits per second. The bandwidth available to the client may change
    during an RTSP session, e.g., due to modem retraining.
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 46]
@@ -2862,7 +2676,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 46]
                             |   "must-revalidate"
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 47]
 ```
 
@@ -2921,7 +2734,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 47]
           Timeout) status. However, if a group of caches is being
           operated as a unified system with good internal connectivity,
           such a request MAY be forwarded within that group of caches.
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 48]
@@ -2984,7 +2796,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 48]
    See [H14.12]
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 49]
 ```
 
@@ -3040,10 +2851,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 49]
    DESCRIBE response:
           The Expires header indicates a date and time after which the
           description should be considered stale.
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 50]
@@ -3103,8 +2910,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 50]
  If-Match
 
    See [H14.25].
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 51]
@@ -3167,7 +2972,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 51]
    acknowledged by the proxy to the client if not supported. Servers
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 52]
 ```
 
@@ -3225,8 +3029,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 52]
      the current location to a given point. The start of playback can be
      scheduled for any time in the future, although a server may refuse
      to keep server resources for extended idle periods.
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 53]
@@ -3289,7 +3091,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 53]
    transmitted with every exchange.
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 54]
 ```
 
@@ -3345,12 +3146,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 54]
      reports to check drift against the mapping.
 
 
-
-
-
-
-
-
 Schulzrinne, et. al.        Standards Track                    [Page 55]
 ```
 
@@ -3403,13 +3198,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 55]
    Example of playing in reverse at 3.5 times normal rate:
 
      Scale: -3.5
-
-
-
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 56]
@@ -3472,7 +3260,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 56]
    to lack of activity (see Section A). The timeout is measured in
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 57]
 ```
 
@@ -3533,7 +3320,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 57]
    indicate the values actually chosen.
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 58]
 ```
 
@@ -3590,9 +3376,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 58]
      this is more a feature of transport than media initialization, the
      authoritative source for this information should be in the SETUP
      response.
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 59]
@@ -3652,8 +3435,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 59]
           which the client has chosen to receive media data and control
           information.  It is specified as a range, e.g.,
           client_port=3456-3457.
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 60]
@@ -3716,7 +3497,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 60]
      firewalls.
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 61]
 ```
 
@@ -3775,7 +3555,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 61]
    proxy delivers the continuous media data to the client, while
    possibly making a local copy for later reuse. The exact behavior
    allowed to the cache is given by the cache-response directives
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 62]
@@ -3838,7 +3617,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 62]
            Content-Type: application/sdp
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 63]
 ```
 
@@ -3897,7 +3675,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 63]
      A->C: RTSP/1.0 200 OK
            CSeq: 2
            Session: 12345678
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 64]
@@ -3960,7 +3737,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 64]
    multiple streams. It also illustrates the use of aggregate URLs.
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 65]
 ```
 
@@ -4019,7 +3795,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 65]
            CSeq: 4
            Range: npt=0-
            Session: 12345678
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 66]
@@ -4082,7 +3857,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 66]
           Accept: application/x-rtsp-mh, application/sdp
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 67]
 ```
 
@@ -4141,7 +3915,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 67]
 
     C->S  PLAY rtsp://foo.com/test.wav/streamid=0 RTSP/1.0
           CSeq: 3
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 68]
@@ -4204,7 +3977,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 68]
            CSeq: 2
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 69]
 ```
 
@@ -4265,7 +4037,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 69]
            Transport: RTP/AVP;multicast;destination=225.219.201.15;
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 70]
 ```
 
@@ -4323,8 +4094,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 70]
            CSeq: 91
            Transport: RTP/AVP;multicast;destination=224.0.1.11;
                       port=21010-21011;mode=record;ttl=127
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 71]
@@ -4387,7 +4156,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 71]
    CRLF               =      CR LF
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 72]
 ```
 
@@ -4446,7 +4214,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 72]
           RTSP and HTTP servers will presumably have similar logging
           mechanisms, and thus should be equally guarded in protecting
           the contents of those logs, thus protecting the privacy of the
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 73]
@@ -4509,7 +4276,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 73]
    provide additional guidance on security issues.
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 74]
 ```
 
@@ -4565,10 +4331,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 74]
           to probe the server for weaknesses and entry points and MAY
           arbitrarily disconnect and ignore further requests clients
           which are deemed to be in violation of local security policy.
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 75]
@@ -4631,7 +4393,6 @@ Appendix A: RTSP Protocol State Machines
    explicit SETUP is required for the object (for example, it is
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 76]
 ```
 
@@ -4691,8 +4452,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 76]
           The server is recording media data.
 
 
-
-
 Schulzrinne, et. al.        Standards Track                    [Page 77]
 ```
 
@@ -4743,15 +4502,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 77]
                      PAUSE             Ready
                      TEARDOWN          Init
                      SETUP             Recording
-
-
-
-
-
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 78]
@@ -4809,10 +4559,6 @@ Appendix B: Interaction with RTP
    timestamp value of the first packet arriving after repositioning. The
    sequence parameter of the RTP-Info () header provides
    the first sequence number of the next segment.
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 79]
@@ -4873,9 +4619,6 @@ Appendix C: Use of SDP for RTSP Session Descriptions
    Implementations should look for a base URL in the following order:
 
 
-
-
-
 Schulzrinne, et. al.        Standards Track                    [Page 80]
 ```
 
@@ -4929,12 +4672,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 80]
    attribute. The syntax of the "fmtp" attribute is specific to the
    encoding(s) that the attribute refers to. Note that the packetization
    interval is conveyed using the "ptime" attribute.
-
-
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 81]
@@ -4997,7 +4734,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 81]
      a=etag:158bb3e7c7fd62ce67f12b533f06b83a
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 82]
 ```
 
@@ -5057,8 +4793,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 82]
    MUST contain its own "a=control" attribute.
 
 
-
-
 Schulzrinne, et. al.        Standards Track                    [Page 83]
 ```
 
@@ -5088,36 +4822,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 83]
    rtsp://example.com/movie/trackID=2 to set up the video and audio
    streams, respectively. The URL rtsp://example.com/movie/ controls the
    whole movie.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 84]
@@ -5175,10 +4879,6 @@ Appendix D: Minimal RTSP implementation
      the requirements above do not make sense. Therefore, the
      recommendations above serve only as guidelines instead of strict
      requirements.
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 85]
@@ -5239,9 +4939,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 85]
      requirements.
 
 
-
-
-
 Schulzrinne, et. al.        Standards Track                    [Page 86]
 ```
 
@@ -5294,15 +4991,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 86]
      * Implement Basic Authentication and Digest Authentication
 
 
-
-
-
-
-
-
-
-
-
 Schulzrinne, et. al.        Standards Track                    [Page 87]
 ```
 
@@ -5343,27 +5031,6 @@ Appendix E: Authors' Addresses
    EMail: robla@real.com
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Schulzrinne, et. al.        Standards Track                    [Page 88]
 ```
 
@@ -5394,35 +5061,6 @@ Appendix F: Acknowledgements
    Sujal Patel, Ema Patki, Alagu Periyannan, Igor Plotnikov, Pinaki
    Shah, David Singer, Jeff Smith, Alexander Sokolsky, Dale Stammen, and
    John Francis Stracke.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 89]
@@ -5485,7 +5123,6 @@ References
           Switzerland, May 1996.
 
 
-
 Schulzrinne, et. al.        Standards Track                    [Page 90]
 ```
 
@@ -5538,15 +5175,6 @@ Schulzrinne, et. al.        Standards Track                    [Page 90]
           June 1995.
 
 
-
-
-
-
-
-
-
-
-
 Schulzrinne, et. al.        Standards Track                    [Page 91]
 ```
 
@@ -5584,28 +5212,6 @@ Full Copyright Statement
    BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION
    HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF
    MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Schulzrinne, et. al.        Standards Track                    [Page 92]

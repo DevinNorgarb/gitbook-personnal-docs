@@ -28,11 +28,11 @@ Kurento is written with C/C++ and uses several GStreamer functions. It is starte
 
 **Kurento's features**
 
-* Networked streaming protocols, including HTTP, RTP, and WebRTC.
-* Group communications (MCUs and SFUs functionality) support both media mixing and media routing/dispatching.
-* Generic support for the computational vision and augmented reality filters.
-* Media storage supporting writing operations for WebM and MP4 and playing in all formats supported by GStreamer.
-* Automatic media transcoding between any of the codecs supported by GStreamer including VP8, H.264, H.263, AMR, OPUS, Speex, G.711, etc.
+- Networked streaming protocols, including HTTP, RTP, and WebRTC.
+- Group communications (MCUs and SFUs functionality) support both media mixing and media routing/dispatching.
+- Generic support for the computational vision and augmented reality filters.
+- Media storage supporting writing operations for WebM and MP4 and playing in all formats supported by GStreamer.
+- Automatic media transcoding between any of the codecs supported by GStreamer including VP8, H.264, H.263, AMR, OPUS, Speex, G.711, etc.
 
 Kurento is licensed under Apache 2.0 open-source license.
 
@@ -48,21 +48,21 @@ Ant Media comes with two editions, an enterprise edition with a commercial licen
 
 **Features for Ant Media Server (Community Edition)**
 
-* Ultra-Low Latency Adaptive One to Many WebRTC Live Streaming in **Enterprise Edition**
-* Adaptive Bitrate for Live Streams (WebRTC, MP4, HLS) in **Enterprise Edition**
-* VP8 & H264 Support in WebRTC **Enterprise Edition**
-* Data Channel Support in WebRTC **Enterprise Edition**
-* Horizontal(Clustering) and Vertical Scaling **Enterprise Edition**
-* SFU in One to Many WebRTC Streams in **Enterprise Edition**
-* Live Stream Publishing from RTMP to WebRTC **Enterprise Edition**
-* RTMP Ingesting
-* WebRTC to RTMP Adapter
-* IP Camera Support
-* Recording Live Streams (MP4 and HLS)
-* Restream to Social Media Simultaneously(Facebook and YouTube in **Enterprise Edition**)
-* One-Time Token Control in **Enterprise Edition**
-* Object Detection in **Enterprise Edition**
-* Ant Media Server is bundled with Android, iOS, and JavaScript SDKs. SDKs are available for free.
+- Ultra-Low Latency Adaptive One to Many WebRTC Live Streaming in **Enterprise Edition**
+- Adaptive Bitrate for Live Streams (WebRTC, MP4, HLS) in **Enterprise Edition**
+- VP8 & H264 Support in WebRTC **Enterprise Edition**
+- Data Channel Support in WebRTC **Enterprise Edition**
+- Horizontal(Clustering) and Vertical Scaling **Enterprise Edition**
+- SFU in One to Many WebRTC Streams in **Enterprise Edition**
+- Live Stream Publishing from RTMP to WebRTC **Enterprise Edition**
+- RTMP Ingesting
+- WebRTC to RTMP Adapter
+- IP Camera Support
+- Recording Live Streams (MP4 and HLS)
+- Restream to Social Media Simultaneously(Facebook and YouTube in **Enterprise Edition**)
+- One-Time Token Control in **Enterprise Edition**
+- Object Detection in **Enterprise Edition**
+- Ant Media Server is bundled with Android, iOS, and JavaScript SDKs. SDKs are available for free.
 
 ### 3- Open-EasyRTC <a href="#3open-easyrtc" id="3open-easyrtc"></a>
 
@@ -86,21 +86,21 @@ If you like building your apps with REST-API, then you are lucky as openVidu got
 
 Here are its current features:
 
-* redistribution of arbitrary numbers of audio and video streams;
-* text chat;
-* recording to disk;
-* user statuses ("raise hand", etc.; not yet used by the default client);
-* choice of audio and video codecs (full functionality for VP8, VP9, and H.264, preliminary support for AV1);
-* Simulcast;
-* Scalable Video Coding (SVC) for VP8 and VP9;
-* NACK-based loss recovery, in both the client-server and server → client directions;
-* PLI-based repair;
-* automatic restarting of failed flows (on ICE failure);
-* congestion control in the server → client direction (both loss-based and using REMB indications);
-* congestion control in the client → server direction (loss-based, partial REMB support);
-* dynamic tuning of buffer sizes depending on the clients' RTT;
-* hashed passwords;
-* built-in TURN server.
+- redistribution of arbitrary numbers of audio and video streams;
+- text chat;
+- recording to disk;
+- user statuses ("raise hand", etc.; not yet used by the default client);
+- choice of audio and video codecs (full functionality for VP8, VP9, and H.264, preliminary support for AV1);
+- Simulcast;
+- Scalable Video Coding (SVC) for VP8 and VP9;
+- NACK-based loss recovery, in both the client-server and server → client directions;
+- PLI-based repair;
+- automatic restarting of failed flows (on ICE failure);
+- congestion control in the server → client direction (both loss-based and using REMB indications);
+- congestion control in the client → server direction (loss-based, partial REMB support);
+- dynamic tuning of buffer sizes depending on the clients' RTT;
+- hashed passwords;
+- built-in TURN server.
 
 ### 6- SaltyRTC <a href="#6saltyrtc" id="6saltyrtc"></a>
 
@@ -130,15 +130,15 @@ It can be used to create group video chat apps or one-to-many conferencing apps 
 
 MediaSoup comes with low-latency support, and Rust/ Node.JS servers. It supports data message exchange (via WebRTC DataChannels, SCTP over plain UDP, and direct termination in Node.js/Rust). It also offers built-in Simulcast and SVC support.
 
-* ECMAScript 6/Idiomatic Rust low-level API.
-* Multi-stream: multiple audio/video streams over a single ICE + DTLS transport.
-* IPv6 ready.
-* ICE / DTLS / RTP / RTCP over UDP and TCP.
-* Simulcast and SVC support.
-* Congestion control.
-* Sender and receiver bandwidth estimation with spatial/temporal layers distribution algorithm.
-* Data message exchange (via WebRTC DataChannels, SCTP over plain UDP, and direct termination in Node.js/Rust).
-* Extremely powerful (media worker thread/subprocess coded in C++ on top of libuv).
+- ECMAScript 6/Idiomatic Rust low-level API.
+- Multi-stream: multiple audio/video streams over a single ICE + DTLS transport.
+- IPv6 ready.
+- ICE / DTLS / RTP / RTCP over UDP and TCP.
+- Simulcast and SVC support.
+- Congestion control.
+- Sender and receiver bandwidth estimation with spatial/temporal layers distribution algorithm.
+- Data message exchange (via WebRTC DataChannels, SCTP over plain UDP, and direct termination in Node.js/Rust).
+- Extremely powerful (media worker thread/subprocess coded in C++ on top of libuv).
 
 Here is a sample project that uses [MediaSoup](https://github.com/edumeet/edumeet).
 

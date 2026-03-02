@@ -16,7 +16,7 @@ ArduSub is hosted and maintained on [github](https://github.com/ardupilot/ardupi
 
 Before compiling ArduSub, first checkout the ArduSub-stable tag into a new branch (here we call it new-branch):
 
-```
+```php
 git fetch --tags
 git checkout ArduSub-stable -b new-branch
 git submodule update --init --recursive
@@ -24,9 +24,9 @@ git submodule update --init --recursive
 
 To set up your build environment, follow these instructions:
 
-* [Mac Instructions](http://ardupilot.org/dev/docs/building-setup-mac.html)
-* [Linux Instructions](http://ardupilot.org/dev/docs/building-setup-linux.html)
-* [Windows Instructions](http://ardupilot.org/dev/docs/building-setup-windows.html)
+- [Mac Instructions](http://ardupilot.org/dev/docs/building-setup-mac.html)
+- [Linux Instructions](http://ardupilot.org/dev/docs/building-setup-linux.html)
+- [Windows Instructions](http://ardupilot.org/dev/docs/building-setup-windows.html)
 
 > Skip the clone instructions in the links above, as they could cause you to use **master** instead of **ArduSub-stable** and lead the install scripts to install a different set of tools.
 
@@ -40,13 +40,13 @@ Waf is a global build system for ArduPilot repository, it's necessary to be insi
 
 To configure waf to build ArduSub for Pixhawk 1:
 
-```
+```php
 ./waf configure --board Pixhawk1
 ```
 
 And to compile:
 
-```
+```php
 ./waf sub
 ```
 
@@ -58,7 +58,7 @@ This only works with a direct USB connection to the Pixhawk, and to upload the c
 
 **waf**: Use `--upload` with the vehicle type (only works after configuring and building with `waf` before).
 
-```
+```bash
 ./waf --upload sub
 ```
 
@@ -78,7 +78,7 @@ The code begins running immediately once uploaded. For Linux-based autopilots, i
 
 One of the biggest additions to the ArduSub code is a six degree-of-freedom motor library that allows a wide variety of motor configurations to be set up easily. The motors libraries for each configuration are built on a set of higher-level motor classes as follows:
 
-```
+```php
 AP_Motors
     |---- AP_MotorsMulticopter
                    |---- AP_MotorsMatrix
@@ -87,7 +87,7 @@ AP_Motors
 
 To add a new motor configuration, you will need to add your custom motor setup to [AP\_Motors6DOF.cpp](https://github.com/ardupilot/ardupilot/blob/master/libraries/AP\_Motors/AP\_Motors6DOF.cpp). Find the following line, and add your frame configuration there. The frame is configured at boot according to the FRAME\_CONFIG parameter. You will need to change this parameter to CUSTOM to use your custom frame.
 
-```
+```php
 case AS_MOTORS_CUSTOM_FRAME:
     // Put your custom motor setup here
 ```

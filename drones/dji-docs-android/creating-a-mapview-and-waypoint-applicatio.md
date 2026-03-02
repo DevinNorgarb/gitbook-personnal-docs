@@ -2,21 +2,21 @@
 
 > Note：This Tutorial and Sample Project is developed based on DJI Android SDK v2.4, an update version for Android SDK v3.1.1 will be published soon.
 
-### Creating a MapView and Waypoint Application <a href="#creating-a-mapview-and-waypoint-application" id="creating-a-mapview-and-waypoint-application"></a>
+## Creating a MapView and Waypoint Application <a href="#creating-a-mapview-and-waypoint-application" id="creating-a-mapview-and-waypoint-application"></a>
 
-* [Using the DJI PC Simulator](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-  * [1. Introduction](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-  * [2. Install and setup DJI PC Simulator](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-  * [3. How to use DJI PC Simulator](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-* [Upgrade the Aircraft's Firmware](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-* [Setup the Map View](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-  * [1. Create a map view](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-  * [2. Locate the Aircraft](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-  * [3. Add and clear the waypoints](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-* [Configure the Navigation Task](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-* [Upload the Task to the Aircraft](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-* [Start and Stop the DJIGroundStationTask](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-* [Summary](/broken/pages/OHCdO20m6l7PeJYbHzoD)
+- [Using the DJI PC Simulator](/broken/pages/OHCdO20m6l7PeJYbHzoD)
+  - [1. Introduction](/broken/pages/OHCdO20m6l7PeJYbHzoD)
+  - [2. Install and setup DJI PC Simulator](/broken/pages/OHCdO20m6l7PeJYbHzoD)
+  - [3. How to use DJI PC Simulator](/broken/pages/OHCdO20m6l7PeJYbHzoD)
+- [Upgrade the Aircraft's Firmware](/broken/pages/OHCdO20m6l7PeJYbHzoD)
+- [Setup the Map View](/broken/pages/OHCdO20m6l7PeJYbHzoD)
+  - [1. Create a map view](/broken/pages/OHCdO20m6l7PeJYbHzoD)
+  - [2. Locate the Aircraft](/broken/pages/OHCdO20m6l7PeJYbHzoD)
+  - [3. Add and clear the waypoints](/broken/pages/OHCdO20m6l7PeJYbHzoD)
+- [Configure the Navigation Task](/broken/pages/OHCdO20m6l7PeJYbHzoD)
+- [Upload the Task to the Aircraft](/broken/pages/OHCdO20m6l7PeJYbHzoD)
+- [Start and Stop the DJIGroundStationTask](/broken/pages/OHCdO20m6l7PeJYbHzoD)
+- [Summary](/broken/pages/OHCdO20m6l7PeJYbHzoD)
 
 _If you come across any mistakes or bugs in this tutorial, please let us know using a Github issue, a post on the DJI forum, or commenting in the Gitbook. Please feel free to send us Github pull request and help us fix any issues. However, all pull requests related to document must follow the_ [_document style_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 
@@ -40,8 +40,8 @@ The DJI PC Simulator is a flight simulator dedicated for SDK developers. The sim
 
 Download the DJI PC Simulator installation files and WIN Driver from : [https://developer.dji.com/mobile-sdk/downloads](https://developer.dji.com/mobile-sdk/downloads)
 
-* DJI PC Simulator Installer & User Manual V1.0
-* WIN Driver Installer
+- DJI PC Simulator Installer & User Manual V1.0
+- WIN Driver Installer
 
 You must install the WIN driver before installing the simulator. For Mac users, it is recommended to run the simulator in a virtual environment(e.g. VMWare or Parallels Desktop). Double click the DJI\_WIN\_Driver\_Installer.exe to install the windows driver. If the window prompts the following message **"Please power on MC and connect it to PC via USB!"** , ignore it and click "YES" to follow the on-screen instruction and complete the installation.
 
@@ -55,8 +55,8 @@ Finally, double click the **DJISimulator-Installer.exe** file and follow the on-
 
 **Note**:
 
-* Ensure the home point is set outside of the No Fly Zone.
-* Select "Show Log Window" under the "Log Settings" tag to show the flight lot as shown below:
+- Ensure the home point is set outside of the No Fly Zone.
+- Select "Show Log Window" under the "Log Settings" tag to show the flight lot as shown below:
 
 ***
 
@@ -66,8 +66,8 @@ Finally, double click the **DJISimulator-Installer.exe** file and follow the on-
 
 **Note**:
 
-* DO NOT launch the DJI Pilot app when the DJI PC Simulator is running.
-* Remove the propeller from the aircraft when using the DJI PC Simulator.
+- DO NOT launch the DJI Pilot app when the DJI PC Simulator is running.
+- Remove the propeller from the aircraft when using the DJI PC Simulator.
 
 ***
 
@@ -87,17 +87,17 @@ Download and update the aircraft's firmware to its beta version before attemptin
 
 Choose and download one of the following firmware from : [https://developer.dji.com/mobile-sdk/downloads](https://developer.dji.com/mobile-sdk/downloads) :
 
-* Phantom 3 Professional Firmware
-* Inspire 1 Firmware
+- Phantom 3 Professional Firmware
+- Inspire 1 Firmware
 
 It is not required to update Remote Controller's firmware. Place the **bin** file in the SD card and insert it to the Micro USB port on the camera, and restart the aircraft and then the update process will start automatically. It may take 10 \~ 30 minutes to finish.
 
 Verify the result via the beeping pattern from the gimbals or the blinking pattern of the camera status indicator. Refer to the table below for the beeping pattern:
 
-* Upgrading: B B B B...
-* Upgrade Success: B BB...
-* Upgrade Failed: B...
-* Critical Error: D D D...
+- Upgrading: B B B B...
+- Upgrade Success: B BB...
+- Upgrade Failed: B...
+- Critical Error: D D D...
 
 Also, you can check the firmware upgrade status by checking the **txt** file generated during the upgrade process.
 
@@ -125,7 +125,7 @@ Add Google Play services library reference to your project by right clicking **P
 
 After Google Play services library is added as a dependency for your project. Open **manifest** file for your app and add the following tag as a child of the **\\** element:
 
-```
+```php
     <meta-data android:name="com.google.android.gms.version"
         android:value="@integer/google_play_services_version" />
 ```
@@ -150,7 +150,7 @@ Click the project. In the sidebar on the left, select **Credentials**. If your p
 
 In AndroidManifest.xml, add the following element as a child of \ element,
 
-```
+```html
     <meta-data
         android:name="com.google.android.geo.API_KEY"
         android:value="API_KEY" />
@@ -162,7 +162,7 @@ Substitute your API key for API\_KEY in the value attribute.
 
 1.Specify Android permissions: specify the permissions your application needs, by adding **\\** elements as children of the \ element in **AndroidManifest.xml**.
 
-```
+```html
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -174,7 +174,7 @@ For the details of description on the permissions, refer to [https://developers.
 
 1. Requirement for OpenGL ES version 2
 
-```
+```php
     <uses-feature android:glEsVersion="0x00020000" android:required="true" />
 ```
 
@@ -182,7 +182,7 @@ After the above configurations are done, now you can use the following codes to 
 
 First, add the following xml codes in the app's layout where you want to load the map(In our demo, it is **activity\_gsdemo.xml**):
 
-```
+```python
     ...
     <fragment
         android:id="@+id/map"
@@ -194,7 +194,7 @@ First, add the following xml codes in the app's layout where you want to load th
 
 Second, add the following codes in your Activity.
 
-```
+```php
     import android.os.Bundle;
     import android.support.v4.app.FragmentActivity;
     import com.google.android.gms.maps.CameraUpdateFactory;
@@ -243,7 +243,7 @@ Second, add the following codes in your Activity.
 
 **Note:** As class can only extend one parent class, hence, GSDemoActivity can not extend DemoBaseActivity as it has already extended FragmentActivity. Here we add **ServiceManager.getInstance().pauseService(false);** in GSDemoActivity's callback **onResume**, and add **ServiceManager.getInstance().pauseService(true);** in GSDemoActivity's callback **onPause**.
 
-```
+```sql
      @Override
     protected void onResume(){
         super.onResume();
@@ -267,7 +267,7 @@ When Google map is successfully loaded. You can then use a marker on the map to 
 
 Implement **public interface DJIMcuUpdateStateCallBack** interface to obtain the location of the aircraft. We set up this interface in MainController module of DJI SDK using **public void setMcuUpdateStateCallBack(DJIMcuUpdateStateCallBack mCallBack)**. Then we update the marker that shows the aircraft's location on the map. Code example are listed as below:
 
-```
+```python
     // Update the drone location based on states from MCU.
     private void updateDroneLocation(){
         // Set the McuUpdateSateCallBack
@@ -308,7 +308,7 @@ Implement **public interface DJIMcuUpdateStateCallBack** interface to obtain the
 
 We will call this function after initiating the SDK APIs and calling **DJIDrone.connectToDrone()**. Please note that when calling the SDK APIs for the aircraft's modules are only possible after the activation is completed. We call the above function after the **checkPermission** returns 0:
 
-```
+```python
     new Thread(){
             public void run() {
                 try {
@@ -335,7 +335,7 @@ We will call this function after initiating the SDK APIs and calling **DJIDrone.
 
 To update the Main Controller system state, we still need to call the **public boolean startUpdateTimer(int interval)** in the callback **onResume**. We can pause timer for updating by calling **public boolean stopUpdateTimer()** in the callback **onPause**.
 
-```
+```php
     @Override
     protected void onResume(){
         super.onResume();
@@ -401,7 +401,7 @@ Second, add **OnClickListener** Interface in the activity(**GSDemoActivity** in 
 
 Third, register the "Locate" button in the activity
 
-```
+```bash
     private Button locate;
 
     ...
@@ -479,7 +479,7 @@ We first add a new button "Config". When users click the button, a new configura
 
 We use a dialog to load the configuration setting view. The settings include the altitude of waypoints, whether to repeat the task, the horizontal speed of the aircraft during the task, the action after the task finished, the heading of the aircraft during the task (altitude and speed is a field of class **DJIGroundStationWaypoint**. Here we set all the waypoints' altitude or speed the same as a simple example. Users can also set different values for different waypoints' altitude or speed). We do not show the codes for the dialog here. When users click "Finish" after inputting a value or selecting an option for each item, the following function will be called to set the fields of **DJIGroundStationTask** and **DJIGroundStationWaypoint**:
 
-```
+```bash
         private void configGroundStationTask(){
         mGroundStationTask.isLoop = repeatGSTask;
         mGroundStationTask.finishAction=actionAfterFinishTask;
@@ -535,7 +535,7 @@ When all waypoints are uploaded successfully , the DJI PC Simulator log will pro
 
 After uploading the task to the aircraft, execute the **DJIGroundStationTask**. When the "Start" button is clicked, the following codes will be executed, in which the function **public void startGroundStationTask(final DJIGroundStationExecuteCallBack mCallBack)** will be called.
 
-```
+```php
         private void startGroundStationTask(){
         DJIDrone.getDjiGroundStation().startGroundStationTask(new DJIGroundStationExecuteCallBack(){
 

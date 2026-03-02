@@ -27,7 +27,7 @@ Install or update the tool on all platforms using pip:
 {% code title="Install DroneKit-SITL" %}
 ```bash
 pip install dronekit-sitl -UI
-```
+```json
 {% endcode %}
 
 ### Running SITL
@@ -37,7 +37,7 @@ To run the latest Copter binary (downloading binaries if needed):
 {% code title="Start latest Copter (default) - listens on 127.0.0.1:5760" %}
 ```bash
 dronekit-sitl copter
-```
+```json
 {% endcode %}
 
 SITL will start and wait for TCP connections on 127.0.0.1:5760.
@@ -47,7 +47,7 @@ To specify a particular vehicle/version and parameters (home location, vehicle m
 {% code title="Start a specific vehicle and home location" %}
 ```bash
 dronekit-sitl plane-3.3.0 --home=-35.363261,149.165230,584,353
-```
+```php
 {% endcode %}
 
 Other useful arguments:
@@ -71,7 +71,7 @@ DroneKit-SITL waits for TCP connections on 127.0.0.1:5760. DroneKit-Python scrip
 {% code title="Connect from DroneKit-Python" %}
 ```python
 vehicle = connect('tcp:127.0.0.1:5760', wait_ready=True)
-```
+```php
 {% endcode %}
 
 After something connects to port 5760, SITL will wait for additional connections on subsequent ports (5763, 5766, 5769, etc.).
@@ -90,16 +90,16 @@ You can natively build SITL from source on Linux, Windows and macOS, or from wit
 
 Differences when building from source:
 
-* MAVProxy is included and started by default. Use MAVProxy terminal to control the autopilot.
-* You connect to SITL via UDP on 127.0.0.1:14550. Use MAVProxy’s output add to add additional ports.
-* You may need to disable arming checks and load autotest parameters to run examples.
-* It is easier to add a virtual rangefinder and add a virtual gimbal for testing.
+- MAVProxy is included and started by default. Use MAVProxy terminal to control the autopilot.
+- You connect to SITL via UDP on 127.0.0.1:14550. Use MAVProxy’s output add to add additional ports.
+- You may need to disable arming checks and load autotest parameters to run examples.
+- It is easier to add a virtual rangefinder and add a virtual gimbal for testing.
 
 ArduPilot wiki guides for native builds:
 
-* http://dev.ardupilot.com/wiki/setting-up-sitl-on-linux/
-* http://dev.ardupilot.com/wiki/simulation-2/sitl-simulator-software-in-the-loop/sitl-native-on-windows/
-* http://dev.ardupilot.com/wiki/setting-up-sitl-using-vagrant/
+- http://dev.ardupilot.com/wiki/setting-up-sitl-on-linux/
+- http://dev.ardupilot.com/wiki/simulation-2/sitl-simulator-software-in-the-loop/sitl-native-on-windows/
+- http://dev.ardupilot.com/wiki/setting-up-sitl-using-vagrant/
 
 ## Connecting an additional Ground Station
 
@@ -113,7 +113,7 @@ Add new ports in the MAVProxy console using:
 
 ```bash
 output add 127.0.0.1:14552
-```
+```python
 {% endstep %}
 
 {% step %}
@@ -126,7 +126,7 @@ output add 127.0.0.1:14552
 {% code title="Start MAVProxy to forward to UDP ports" %}
 ```bash
 mavproxy.py --master tcp:127.0.0.1:5760 --sitl 127.0.0.1:5501 --out 127.0.0.1:14550 --out 127.0.0.1:14551
-```
+```json
 {% endcode %}
 {% endstep %}
 {% endstepper %}
@@ -142,8 +142,8 @@ vehicle = connect('127.0.0.1:14550', wait_ready=True)
 ```
 
 2. Connect Mission Planner to the second UDP port:
-   * Download and install Mission Planner: http://ardupilot.com/downloads/?did=82
-   * In Mission Planner, ensure the top-right selection says UDP, click Connect, and enter the port number (e.g. 14552).
+   - Download and install Mission Planner: http://ardupilot.com/downloads/?did=82
+   - In Mission Planner, ensure the top-right selection says UDP, click Connect, and enter the port number (e.g. 14552).
 
 After connecting, vehicle parameters will be loaded into Mission Planner and the vehicle displayed on the map.
 

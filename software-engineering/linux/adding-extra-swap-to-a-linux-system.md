@@ -4,7 +4,7 @@ description: Adding extra Swap Space
 
 # Adding extra swap to a Linux system
 
-#### Add Swap Space <a href="#add-swap-space" id="add-swap-space"></a>
+## Add Swap Space <a href="#add-swap-space" id="add-swap-space"></a>
 
 Small compute instances with limited memory can slow things down and overload the CPU.  You want to add 2x of your available RAM in swap space in my case, this is 1.2GB of swap for 600MB of RAM. Create your swap file:
 

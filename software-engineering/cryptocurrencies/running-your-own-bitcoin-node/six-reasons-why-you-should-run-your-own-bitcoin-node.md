@@ -16,7 +16,7 @@ Running your own node means you don’t ask other people what their copy of Bitc
 
 So with the preamble done, let me next explain why it is important to run your own node:
 
-### Reason 1 <a href="#reason-1" id="reason-1"></a>
+## Reason 1 <a href="#reason-1" id="reason-1"></a>
 
 _Privacy._
 

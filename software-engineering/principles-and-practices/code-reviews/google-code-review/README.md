@@ -1,6 +1,6 @@
 # Google - Code Review
 
-### [Code Review Developer Guide](https://app.gitbook.com/s/T93NGGcwjLm9kGhwgOvv/~/changes/gi7PufUmdMlaPoOiRdxd/software-engineering/principles-and-practices/code-reviews/code-review-developer-guide)[eng-practices](https://google.github.io/eng-practices/)
+## [Code Review Developer Guide](https://app.gitbook.com/s/T93NGGcwjLm9kGhwgOvv/~/changes/gi7PufUmdMlaPoOiRdxd/software-engineering/principles-and-practices/code-reviews/code-review-developer-guide)[eng-practices](https://google.github.io/eng-practices/)
 
 Note: Always make sure to take into account The Standard of Code Review when considering each of these points.
 
@@ -78,8 +78,8 @@ If you understand the code but you don’t feel qualified to do some part of the
 
 What if it doesn’t make sense for you to review every line? For example, you are one of multiple reviewers on a CL and may be asked:
 
-* To review only certain files that are part of a larger change.
-* To review only certain aspects of the CL, such as the high-level design, privacy or security implications, etc.
+- To review only certain files that are part of a larger change.
+- To review only certain aspects of the CL, such as the high-level design, privacy or security implications, etc.
 
 In these cases, note in a comment which parts you reviewed. Prefer giving LGTM with comments .
 
@@ -99,18 +99,18 @@ If you see something nice in the CL, tell the developer, especially when they ad
 
 In doing a code review, you should make sure that:
 
-* The code is well-designed.
-* The functionality is good for the users of the code.
-* Any UI changes are sensible and look good.
-* Any parallel programming is done safely.
-* The code isn’t more complex than it needs to be.
-* The developer isn’t implementing things they _might_ need in the future but don’t know they need now.
-* Code has appropriate unit tests.
-* Tests are well-designed.
-* The developer used clear names for everything.
-* Comments are clear and useful, and mostly explain _why_ instead of _what_.
-* Code is appropriately documented (generally in g3doc).
-* The code conforms to our style guides.
+- The code is well-designed.
+- The functionality is good for the users of the code.
+- Any UI changes are sensible and look good.
+- Any parallel programming is done safely.
+- The code isn’t more complex than it needs to be.
+- The developer isn’t implementing things they _might_ need in the future but don’t know they need now.
+- Code has appropriate unit tests.
+- Tests are well-designed.
+- The developer used clear names for everything.
+- Comments are clear and useful, and mostly explain _why_ instead of _what_.
+- Code is appropriately documented (generally in g3doc).
+- The code conforms to our style guides.
 
 Make sure to review **every line** of code you’ve been asked to review, look at the **context**, make sure you’re **improving code health**, and compliment developers on **good things** that they do.
 

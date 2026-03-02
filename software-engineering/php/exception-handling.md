@@ -30,7 +30,7 @@ As in many other languages, exceptions are supposed to be wrapped with `try...ca
 For instance, you have a method that looks somewhat like this:\
 
 
-```
+```php
 public function doSomethingVeryUsefulOrThrowException()
 {
     if ($this->weirdConditionHappened()) {
@@ -45,7 +45,7 @@ public function doSomethingVeryUsefulOrThrowException()
 If you were to call this method at some other point in your code, you would probably want to use something like the following structure:\
 
 
-```
+```php
 try {
     $helperObject->doSomethingVeryUsefulOrThrowException();
 } catch (Exception $exception) {
@@ -58,7 +58,7 @@ This way, you can clearly separate the _happy path_ from the error-handling logi
 Occasionally, you may need to perform a series of tasks regardless of whether an exception is thrown. For these situations, you have the `finally` keyword. To complete the example, it would look like this:\
 
 
-```
+```php
 public function myMethod() {
     try {
         $helperObject->doSomethingVeryUsefulOrThrowException();
@@ -79,7 +79,7 @@ When you first start working with exceptions, it can be very tempting to throw t
 Let's use an example of a method requiring an email address as a parameter:\
 
 
-```
+```php
 public function sendEmailTo(string $recipient)
 {
     if (filter_var($recipient, FILTER_VALIDATE_EMAIL) === false) {
@@ -92,7 +92,7 @@ public function sendEmailTo(string $recipient)
 If you must use this method to send an email message to an address retrieved from the UI, you could rely on the method throwing an exception if the input is incorrect and write your code as follows:\
 
 
-```
+```php
 try {
     $emailSender->sendEmailTo($_POST['email']);
 } catch (Exception $exception) {
@@ -115,14 +115,14 @@ While functions like [`trigger_error`](https://www.php.net/manual/es/function.tr
 One interesting fact about Exceptions is the ability to create your own. It's really easy, too; all you have to do is create a class that extends the `Exception` class:\
 
 
-```
+```php
 class MyException extends Exception {}
 ```
 
 Why would you do that? Well, when defining your `try...catch` blocks, you can have more than one `catch` for the same `try`. Therefore, if you make a call to a method that could throw different exceptions given some previously unknown conditions, you might want to react differently depending on which one happens. It would look something like this:\
 
 
-```
+```php
 public function myMethod()
 {
     try {
@@ -152,7 +152,7 @@ The first is the case when you implement a `catch` around the call to a potentia
 Another way to deal with an exception is to do nothing. The code would look like this:\
 
 
-```
+```php
 public function myMethod() {
     $helperObject->doSomethingVeryUsefulOrThrowException();
     $this->completeProcess();
@@ -162,7 +162,7 @@ public function myMethod() {
 If the method `doSomethingVeryUsefulOrThrowException` does throw an exception, since there's no `try...catch` around the call, the exception will simply go up to the immediate caller. Therefore, you could use the following:\
 
 
-```
+```php
 public function originalMethod() {
     try {
         $this->myMethod();
@@ -179,7 +179,7 @@ However, what if no one handles the exception? Well, in this case, the whole pro
 Finally, there's a third way to deal with a thrown exception. It’s a mix between the first two: handle **and** propagate. What? How would that be? Let me illustrate with an example:\
 
 
-```
+```php
 public function myMethod() {
     try {
         $helperObject->doSomethingVeryUsefulOrThrowException();
@@ -202,7 +202,7 @@ The basic answer is, you should handle an exception at the point in the program 
 The following is an example of something you _shouldn't do_, although it's unfortunately fairly common:\
 
 
-```
+```php
 public function myMethod() {
     try {
         $helperObject->doSomethingVeryUsefulOrThrowException();
@@ -223,7 +223,7 @@ You'd end up with bloated logs that don't provide much useful information.
 You're probably thinking that it never makes sense to re-throw an exception. Let me give you another, perhaps useful, example:\
 
 
-```
+```php
 public function myMethod() {
     try {
         $helperObject->doSomethingVeryUsefulOrThrowException();
@@ -250,12 +250,12 @@ In these situations, you'll want to get as much information as possible about ex
 Depending on how your PHP is configured, you'll find this information in a log file. It will look something like this:\
 
 
-```
+```php
 PHP Fatal error:  Uncaught Exception in script.php:35
 Stack trace:
-#0 script.php.php(19): MyClass->methodThatThrowsDifferentExceptions()
-#1 script.php.php(43): MyClass->myMethod()
-#2 {main}
+## 0 script.php.php(19): MyClass->methodThatThrowsDifferentExceptions()
+## 1 script.php.php(43): MyClass->myMethod()
+## 2 {main}
   thrown in script.php.php on line 35
 ```
 
@@ -284,7 +284,7 @@ The best part is that bringing this power to your applications is a breeze. All 
 Here is a code sample:\
 
 
-```
+```php
 <?php
 
 require_once 'vendor/autoload.php';

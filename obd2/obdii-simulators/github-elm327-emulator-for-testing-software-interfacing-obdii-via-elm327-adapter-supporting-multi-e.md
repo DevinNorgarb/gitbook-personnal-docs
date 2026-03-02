@@ -1,6 +1,6 @@
 # ELM327 Emulator
 
-### ELM327-emulator
+## ELM327-emulator
 
 **A Python emulator of the ELM327 OBD-II adapter connected to a vehicle supporting multi-ECU simulation.**
 
@@ -18,7 +18,7 @@ _ELM327-emulator_ also offers a feature that compares the emulation with the dir
 
 Check that the [Python](https://www.python.org/) version is 3.6 or higher (`python3 -V`), then install _ELM327-emulator_ with the following command:
 
-```
+```php
 python3 -m pip install ELM327-emulator
 ```
 
@@ -30,9 +30,9 @@ _obd_ (_python-OBD_) is needed for _obd\_dictionary_. It is better to use an upd
 
 Alternatively to the above mentioned installation method, the following steps allow installing the latest version from GitHub.
 
-*   Optional preliminary configuration with Ubuntu (if not already done):
+-   Optional preliminary configuration with Ubuntu (if not already done):
 
-    ```
+```php
     sudo apt-get update
     sudo apt-get -y upgrade
     sudo add-apt-repository universe # this is only needed if "sudo apt install python3-pip" fails
@@ -40,21 +40,21 @@ Alternatively to the above mentioned installation method, the following steps al
     sudo apt install -y python3-pip
     python3 -m pip install --upgrade pip
     sudo apt install -y git
-    ```
-* Optional preliminary configuration with Windows:
-  * install the latest version of [Python](https://www.python.org/downloads/windows/) (also available from [Microsoft Store](https://www.microsoft.com/en-us/p/python-39/9p7qfqmjrfp7?activetab=pivot:overviewtab));
-  * if you want to install _ELM327-emulator_ from GitHub, install _git_ from [Git-scm](https://git-scm.com/download/win) or using the [Git for Windows installer](https://gitforwindows.org/);
-  * if the interface to use is a COM port (e.g., not TCP/IP or Bluetooth), also install [com0com](https://sourceforge.net/projects/com0com/) (no installation is needed when using TCP/IP or Bluetooth interfaces);
-  * optionally, check that PIP is upgraded (`python3 -m pip install --upgrade pip`).
-* Run this command:
+```php
+- Optional preliminary configuration with Windows:
+  - install the latest version of [Python](https://www.python.org/downloads/windows/) (also available from [Microsoft Store](https://www.microsoft.com/en-us/p/python-39/9p7qfqmjrfp7?activetab=pivot:overviewtab));
+  - if you want to install _ELM327-emulator_ from GitHub, install _git_ from [Git-scm](https://git-scm.com/download/win) or using the [Git for Windows installer](https://gitforwindows.org/);
+  - if the interface to use is a COM port (e.g., not TCP/IP or Bluetooth), also install [com0com](https://sourceforge.net/projects/com0com/) (no installation is needed when using TCP/IP or Bluetooth interfaces);
+  - optionally, check that PIP is upgraded (`python3 -m pip install --upgrade pip`).
+- Run this command:
 
-```
+```bash
   python3 -m pip install git+https://github.com/ircama/ELM327-emulator
 ```
 
 To uninstall:
 
-```
+```bash
 python3 -m pip uninstall -y ELM327-emulator
 ```
 
@@ -84,7 +84,7 @@ When using serial communication, with UNIX/Linux OSs, this code uses pty pseudo-
 
 The description of the _ELM327-emulator_ command-line option is the following:
 
-```
+```php
 usage: elm [-h] [-V] [-e] [-l] [-t] [-d] [-b FILE] [-p PORT] [-P DEVICE_PORT] [-a BAUDRATE] [-v LOG] [-s SCENARIO] [-n INET_PORT]
            [-H INET_FORWARD_HOST] [-N INET_FORWARD_PORT] [-S FORWARD_SERIAL_PORT] [-B FORWARD_SERIAL_BAUDRATE] [-T FORWARD_TIMEOUT]
 
@@ -126,13 +126,13 @@ ELM327-emulator v3.0.0 - ELM327 OBD-II adapter emulator
 
 The communication port to be used by the application interfacing the emulator is displayed when starting the program. E.g. on UNIX/Linux:
 
-```
+```python
 ELM327-emulator is running on /dev/pts/0
 ```
 
 When running on Windows, the following message is shown:
 
-```
+```python
 ELM327-emulator is running on com0com serial port pair reading from COM3
 ```
 
@@ -140,11 +140,11 @@ ELM327-emulator is running on com0com serial port pair reading from COM3
 
 A [dictionary](https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries) named _ObdMessage_ is used to define commands and PIDs. The dictionary includes more sections (named scenarios):
 
-* `'AT'`: set of default AT and ST commands
-* `'default'`: set of default PIDs
-* `'car'`: PIDs of a Toyota Auris Hybrid vehicle
-* `'mt05'`: basic set of PIDs of an MT05 ECU from Delphi used in many motorbikes and ATV's
-* any additional custom section can be used to define specific scenarios
+- `'AT'`: set of default AT and ST commands
+- `'default'`: set of default PIDs
+- `'car'`: PIDs of a Toyota Auris Hybrid vehicle
+- `'mt05'`: basic set of PIDs of an MT05 ECU from Delphi used in many motorbikes and ATV's
+- any additional custom section can be used to define specific scenarios
 
 Default settings include both the 'AT' and the 'default' scenarios.
 
@@ -154,19 +154,19 @@ If a custom scenario is selected through the _scenario_ command, any key defined
 
 The key used in the dictionary consists of a unique identifier for each PID. Allowed case-insensitive values for each key (PID):
 
-* `'Request'`: received data; a [regular expression](https://docs.python.org/3/library/re.html) can be used
-* `'Descr'`: string describing the PID
-* `'Exec'`: command to be executed
-* `'Log'`: _logging.debug_ argument
-* `'Info'`: _logging.info_ argument
-* `'Warning'`: _logging.warning_ argument
-* `'ResponseFooter'`: run a function and returns a footer to the response (a [lambda function](https://docs.python.org/3/reference/expressions.html#lambda) can be used)
-* `'ResponseHeader'`: run a function and returns a header to the response (a [lambda function](https://docs.python.org/3/reference/expressions.html#lambda) can be used)
-* `'Response'`: returned data; can be a string, or a list/tuple of strings; if more strings are included (e.g., if a tuple or a list is used), the emulator selects one of them each time, according to the criteria defined by the `choose` command, which can be either sequential (default) or random.
-* `'Action'`: can be set to 'skip' in order to skip the processing of the PID
-* `'Header'`: if set, process the command only if the corresponding header (CAN ID) matches
-* `'Priority'=number`: when set, the key has higher priority than the default (highest number = 1, lowest = 10 = default)
-* `'Task'`: if set, the related header/request activates a specific task referring to an installed plugin.
+- `'Request'`: received data; a [regular expression](https://docs.python.org/3/library/re.html) can be used
+- `'Descr'`: string describing the PID
+- `'Exec'`: command to be executed
+- `'Log'`: _logging.debug_ argument
+- `'Info'`: _logging.info_ argument
+- `'Warning'`: _logging.warning_ argument
+- `'ResponseFooter'`: run a function and returns a footer to the response (a [lambda function](https://docs.python.org/3/reference/expressions.html#lambda) can be used)
+- `'ResponseHeader'`: run a function and returns a header to the response (a [lambda function](https://docs.python.org/3/reference/expressions.html#lambda) can be used)
+- `'Response'`: returned data; can be a string, or a list/tuple of strings; if more strings are included (e.g., if a tuple or a list is used), the emulator selects one of them each time, according to the criteria defined by the `choose` command, which can be either sequential (default) or random.
+- `'Action'`: can be set to 'skip' in order to skip the processing of the PID
+- `'Header'`: if set, process the command only if the corresponding header (CAN ID) matches
+- `'Priority'=number`: when set, the key has higher priority than the default (highest number = 1, lowest = 10 = default)
+- `'Task'`: if set, the related header/request activates a specific task referring to an installed plugin.
 
 The emulator provides a monitoring front-end, supporting commands and controlling the backend thread which executes the actual process.
 
@@ -208,20 +208,20 @@ In addition to the previously listed keywords, any Python command is allowed to 
 Examples of usage of the `choice` command:
 
 ```
-# Use sequential mode with default weight:
+## Use sequential mode with default weight:
 choice SEQUENTIAL
 
-# Use random mode with default weight:
+## Use random mode with default weight:
 choice RANDOM
 
-# Use sequential mode with weight 30 (each step occurs after 30 requests):
+## Use sequential mode with weight 30 (each step occurs after 30 requests):
 choice SEQUENTIAL 10
 
-# Use sequential mode with weights [10, 1, 0.5].
-# Digits represent the relative probability of respective values in the "Response" list.
-# Missing weights are replaced with 1. In the example,
-# the first value in the list is 10 times more likely to be selected than the second,
-# which is twice the third; this third is half the fourth and all the subsequent values.
+## Use sequential mode with weights [10, 1, 0.5].
+## Digits represent the relative probability of respective values in the "Response" list.
+## Missing weights are replaced with 1. In the example,
+## the first value in the list is 10 times more likely to be selected than the second,
+## which is twice the third; this third is half the fourth and all the subsequent values.
 choice RANDOM 10 1 0.5
 ```
 
@@ -231,7 +231,7 @@ At the command prompt, cursors and [keyboard shortcuts](https://github.com/chzye
 
 _ELM327-emulator_ allows testing OBD-II requests through the _test_ command directly via the command line, like in this example, where the '010C' pid is tested:
 
-```
+```bash
 python3 -m elm -s car
 test 010c
 test ath1
@@ -326,8 +326,8 @@ The _cmd\_spaces_ setting is the same as:
 
 `cmd_cra` keeps the value set by _ATCRA_ when setting and resetting the receive address filter. The following metacharacters are accepted:
 
-* _X_ for any single hex digit,
-* _W_ for any sequence of hex digits (one or more).
+- _X_ for any single hex digit,
+- _W_ for any sequence of hex digits (one or more).
 
 Example.
 
@@ -355,7 +355,7 @@ emulator.counters["cmd_can"] = True
 
 The above setting also implies the following ones, which are automatically changed by each subsequent CAN request:
 
-```
+```php
 self.counters['cmd_set_header'] # using the first three hex digits of the request
 self.counters['cmd_caf'] = False
 self.counters['cmd_use_header'] = True
@@ -363,7 +363,7 @@ self.counters['cmd_use_header'] = True
 
 Example of usage of _cmd\_can_:
 
-```
+```php
 scenario car
 emulator.counters["cmd_can"] = True
 test 7E0 02 01 0C
@@ -402,7 +402,7 @@ test atz
 
 The returned output is:
 
-```
+```python
 ______Raw command:_______________
 '<writeln>\x00\x00\x00\x00\r\rELM327 v1.4b</writeln>'
 
@@ -412,7 +412,7 @@ ______Command output:____________
 
 The output is then written to the application when using the following command:
 
-```
+```python
 write <writeln>\x00\x00\x00\x00\r\rELM327 v1.4b</writeln>
 ```
 
@@ -434,19 +434,19 @@ For more complex actions, the `Edit` class can be used with its `answer()` metho
 
 The following example sets an edited response for 15 seconds, then restores the default answer.
 
-```
+```php
 with Edit(emulator, 'VIN') as e: e.answer(10, "AA BB CC DD"); time.sleep(15)
 ```
 
 The following is a more complex command where the answer changes every three seconds:
 
-```
+```php
 with Edit(emulator, 'VIN') as e: \n\t for i in ['AA' 'BB' 'CC' 'DD']: \n\t\t e.answer(10, "01 02 03 " + i) \n\t\t time.sleep(3)
 ```
 
 The `edit` command uses PIDs in the current scenario. To change scenario, use the `scenario` command. Example to change the value of FCLCINT1 (C/L Fuel Corr Int Cyl 1) on the MONITOR pid (2101, Delco "Mode 1 Message") in the "mt05" scenario (Delphi MT05 ECU) to "AA BB" (spaces between hex digits are optional):
 
-```
+```bash
 scenario mt05
 edit MONITOR 0x0E AA BB
 ```
@@ -457,12 +457,12 @@ Notice that the mt05 scenario is automatically set by the 'UDS\_START\_COMM' PID
 
 _ELM327-emulator_ includes a basic processing of the ISO 15765-2 ISO-TP Layer and KWP2000 ISO 14230-2:1999 Data Link layer. The following elements are implemented:
 
-* 3-byte and 4-byte KWP2000 header with frame length management (the "Format" byte always assumes address information and physical addressing; other cases are ignored),
-* ISO-TP 11 bit CAN identifier (29 bit CAN identifiers are not supported)
-* ISO-TP Single frame (SF), First frame (FF), Consecutive frame (CF), Flow control frame (FC),
-* Basic input flow control of ISO-TP (with generation of FC output frames); output flow control (handling of FC input frames) is ignored,
-* KWP2000 Checksum byte (CS) at the end of the ISO 14230-2:1999 message block (checksum verification in requests and checksum generation in responses),
-* ISO-TP P1, P2, P3 and P4 [timers](/broken/pages/K1H5cynA5Th3WwrjLp5K).
+- 3-byte and 4-byte KWP2000 header with frame length management (the "Format" byte always assumes address information and physical addressing; other cases are ignored),
+- ISO-TP 11 bit CAN identifier (29 bit CAN identifiers are not supported)
+- ISO-TP Single frame (SF), First frame (FF), Consecutive frame (CF), Flow control frame (FC),
+- Basic input flow control of ISO-TP (with generation of FC output frames); output flow control (handling of FC input frames) is ignored,
+- KWP2000 Checksum byte (CS) at the end of the ISO 14230-2:1999 message block (checksum verification in requests and checksum generation in responses),
+- ISO-TP P1, P2, P3 and P4 [timers](/broken/pages/K1H5cynA5Th3WwrjLp5K).
 
 The KWP2000 format is detected by a header >= three bytes.
 
@@ -472,15 +472,15 @@ _ELM327-emulator_ allows changing the UDS P1, P2, P3 and P4 [timers](/broken/pag
 
 The command prompt also allows configuring the `emulator.answer` dictionary (ref. also previous paragraph), which has the goal to dynamically redefine answers for specific PIDs (`'Pid': '...'`). Its syntax is:
 
-```
+```bash
 emulator.answer = { 'pid' : 'answer', 'pid' : 'answer', ... }
 ```
 
 Example:
 
-```
+```bash
 emulator.answer = { 'SPEED': '<writeln>NO DATA</writeln>', 'RPM': '<writeln>NO DATA</writeln>' }
-# Or, alternatively:
+## Or, alternatively:
 emulator.answer['SPEED']='<writeln>NO DATA</writeln>'
 emulator.answer['RPM']='<writeln>NO DATA</writeln>'
 test 010d
@@ -491,9 +491,9 @@ The above example forces SPEED and RPM PIDs to always return "NO DATA".
 
 To reset the _emulator.answer_ string to its default value:
 
-```
+```bash
 emulator.answer = {}
-# Or, alternatively:
+## Or, alternatively:
 del emulator.answer['SPEED']
 del emulator.answer['RPM']
 test 010d
@@ -525,7 +525,7 @@ emulator.threadState = emulator.THREAD.PAUSED; time.sleep(10); emulator.threadSt
 
 Example of an automation that simulates the off/on ignition states:
 
-```
+```bash
 CMD> for i in range(10): emulator.scenario="car" if i % 2 else "engineoff"; print(emulator.scenario); time.sleep(10)
 engineoff
 car
@@ -580,13 +580,13 @@ The _exec_ tag for instance can be used to embed real-time delays between string
 
 Further processing can be achieved through a _lambda function_ applied to `ResponseHeader`, `ResponseFooter`. It has to manage the following parameters: _self_, _cmd_, _pid_, _uc\_val_ (e.g., `lambda self, cmd, pid, uc_val:`).
 
-* cmd: the request, received by the client application
-* pid: the PID identifier (which can be used as key to index `self.counters` and `ObdMessage`)
-* uc\_val: `ObdMessage` dictionary related to `pid` with all keys converted to uppercase (e.g., `uc_val['RESPONSE']`).
+- cmd: the request, received by the client application
+- pid: the PID identifier (which can be used as key to index `self.counters` and `ObdMessage`)
+- uc\_val: `ObdMessage` dictionary related to `pid` with all keys converted to uppercase (e.g., `uc_val['RESPONSE']`).
 
 Example of PID definition within the `ObdMessage` dictionary:
 
-```
+```php
         'ELM_PIDS_A': {
             'Request': '^0100$',
             'Descr': 'PIDS_A',
@@ -622,7 +622,7 @@ Preliminarily, test number conversion with the command line:
 
 Apply it to _CUSTOM\_FUEL\_LEVEL_ PID so that it returns `7C8 03 61 29 1F \r'`:
 
-```
+```php
 emulator.answer['CUSTOM_FUEL_LEVEL'] = '<header>7C8</header><size>03</size><subd>61 29</subd><eval>"%.2X" % int(15.5*2)</eval><space /><writeln />'
 scenario car
 test ath1
@@ -692,7 +692,7 @@ test 0100
 
 The output is:
 
-```
+```php
 'BUS INIT: OK\r\r>'
 
 '48 6B 13 41 00 BE 1F B8 11 AD \r\r>'
@@ -700,13 +700,13 @@ The output is:
 
 The _ELM\_PIDS\_A_ counter (`emulator.counters["ELM_PIDS_A"]`) can be reset with:
 
-```
+```php
 emulator.counters["ELM_PIDS_A"] = 0
 ```
 
 The following example shows how to use the `verify` command (without single or double commas) to quickly test the conversion of an XML response; `write` does the same and also writes the produced output to the opened device.
 
-```
+```php
 python3 -m elm -s car
 test ath1
 test ats0
@@ -735,7 +735,7 @@ Then the result will be the same: `7E8 10 14 49 02 01 53 42 31 \r7E8 21 5A 53 33
 
 Example of _neg\_answer_ tag:
 
-```
+```bash
 test ath1
 verify <rh>7E0</rh><rd>010F</rd><neg_answer>44</neg_answer>
 ```
@@ -744,7 +744,7 @@ The result will be `7E8 03 7F 01 44 \r\r>`.
 
 Example of _flow_ tag:
 
-```
+```bash
 test ath1
 verify <flow>20 00</flow>
 ```
@@ -778,9 +778,9 @@ A task is invoked in the dictionary through the `'Task'` tag, that refers to the
 
 Tasks are interrupted by the following conditions:
 
-* task termination performed by the plugin itself after processing the request (e.g, returning a method with `False` or with `self.TASK.TERMINATE` as the second value of the return tuple);
-* communication reset (e.g., communication disconnection, or "ATZ", or _reset_ command);
-* expiration of the [P3 timer](/broken/pages/K1H5cynA5Th3WwrjLp5K).
+- task termination performed by the plugin itself after processing the request (e.g, returning a method with `False` or with `self.TASK.TERMINATE` as the second value of the return tuple);
+- communication reset (e.g., communication disconnection, or "ATZ", or _reset_ command);
+- expiration of the [P3 timer](/broken/pages/K1H5cynA5Th3WwrjLp5K).
 
 Tasks and plugins can be monitored through the `tasks` [command](/broken/pages/K1H5cynA5Th3WwrjLp5K).
 
@@ -790,9 +790,9 @@ All plugins shall implement a class named _Task_ derived from the _Tasks_ class.
 
 In a plugin, at least the _run()_ method should be implemented, overriding the default method of the _Tasks_ class. Allowed methods:
 
-* `def start(self, cmd, *_)`: invoked to process the first request of a just created task (not required)
-* `def stop(self, cmd, *_)`: invoked to process a request before interrupting the task (not required). Default is to return `Tasks.RETURN.ERROR` (do nothing).
-* `def run(self, cmd, *_)`: invoked on any request after the first one; if _start()_ is not implemented, _run()_ is always invoked.
+- `def start(self, cmd, *_)`: invoked to process the first request of a just created task (not required)
+- `def stop(self, cmd, *_)`: invoked to process a request before interrupting the task (not required). Default is to return `Tasks.RETURN.ERROR` (do nothing).
+- `def run(self, cmd, *_)`: invoked on any request after the first one; if _start()_ is not implemented, _run()_ is always invoked.
 
 Task methods are called after processing the ISO-TP data link, so the request passed to the task methods includes the whole message, where the associated multiframe (consisting of multiple frames received from the communication port) is already assembled and interpreted into a single data string of consecutive hex values, without spaces. Tasks methods return an XML response string as the first value of the return tuple; this XML string will be subsequently processed by the embedded ISO-TP data link, generating the output strings then sent to the communication port.
 
@@ -800,23 +800,23 @@ A multiframe is internally processed as a special temporary task named 'ISO-TP r
 
 All methods return a tuple of three elements:
 
-* an XML response string, which will be subsequently interpreted by the ISO-TP processor and then written to the client application; _None_ means nothing to output;
-* a boolean (_True_ = `Tasks.RETURN.CONTINUE`, or _False_ = `Tasks.RETURN.TERMINATE`), to indicate whether the task remains active or terminates;
-*   a request string (e.g., _cmd_) which will be processed by _ELM327-emulator_ after the transmission of the XML response string; the value can be:
+- an XML response string, which will be subsequently interpreted by the ISO-TP processor and then written to the client application; _None_ means nothing to output;
+- a boolean (_True_ = `Tasks.RETURN.CONTINUE`, or _False_ = `Tasks.RETURN.TERMINATE`), to indicate whether the task remains active or terminates;
+-   a request string (e.g., _cmd_) which will be processed by _ELM327-emulator_ after the transmission of the XML response string; the value can be:
 
-    * _None_, meaning no subsequent request string to be processed, or
-    * the same unchanged request of the task method invocation, where the returned request is sent to the standard processing of its dictionary response elements (without re-executing the same task), or
-    * a different data than _cmd_ in the task method, so that a full reprocessing of the new request is done (including running a task if defined).
+    - _None_, meaning no subsequent request string to be processed, or
+    - the same unchanged request of the task method invocation, where the returned request is sent to the standard processing of its dictionary response elements (without re-executing the same task), or
+    - a different data than _cmd_ in the task method, so that a full reprocessing of the new request is done (including running a task if defined).
 
     This third element of the return tuple allows a task to also act as a filter or preprocessor, that receives a request (_cmd_), accounts it, possibly transforms it and forwards it to the standard processor.
 
 Special return values:
 
-* `Task.RETURN.ANSWER(answer)`, or `(answer, Tasks.RETURN.TERMINATE, None)`: used with standard positive or negative answers, terminating the task (without any further request processing after the task is terminated);
-* `Task.RETURN.PASSTHROUGH(cmd)`, or `(None, Tasks.RETURN.TERMINATE, cmd)`: if the task returns the same unchanged cmd in the request, it is generally used for pure pass-through, like performing some accounting in the task, or logging, and then terminating the task while sending the same request to the standard processing of its dictionary response elements; if the task changes the returned data, a full reprocessing of the request is done;
-* `Task.RETURN.ERROR`, or `(None, Tasks.RETURN.TERMINATE, None)`: used for error conditions; no output written while terminating the task;
-* `Task.RETURN.INCOMPLETE`, or `(None, Tasks.RETURN.CONTINUE, None)`, used to allow internal processing of the request, without producing output and keeping the task active, so that the same task will also process all subsequent input requests addressed to the same ECU, until the task is terminated.
-* `Tasks.RETURN.TASK_CONTINUE(cmd)`, or `(None, Tasks.RETURN.CONTINUE, cmd)` used for instance in ECU Tasks in order to pass the request to the subsequent processor, by keeping the ECU Task active for all subsequent requests, with its ECU namespace.
+- `Task.RETURN.ANSWER(answer)`, or `(answer, Tasks.RETURN.TERMINATE, None)`: used with standard positive or negative answers, terminating the task (without any further request processing after the task is terminated);
+- `Task.RETURN.PASSTHROUGH(cmd)`, or `(None, Tasks.RETURN.TERMINATE, cmd)`: if the task returns the same unchanged cmd in the request, it is generally used for pure pass-through, like performing some accounting in the task, or logging, and then terminating the task while sending the same request to the standard processing of its dictionary response elements; if the task changes the returned data, a full reprocessing of the request is done;
+- `Task.RETURN.ERROR`, or `(None, Tasks.RETURN.TERMINATE, None)`: used for error conditions; no output written while terminating the task;
+- `Task.RETURN.INCOMPLETE`, or `(None, Tasks.RETURN.CONTINUE, None)`, used to allow internal processing of the request, without producing output and keeping the task active, so that the same task will also process all subsequent input requests addressed to the same ECU, until the task is terminated.
+- `Tasks.RETURN.TASK_CONTINUE(cmd)`, or `(None, Tasks.RETURN.CONTINUE, cmd)` used for instance in ECU Tasks in order to pass the request to the subsequent processor, by keeping the ECU Task active for all subsequent requests, with its ECU namespace.
 
 Check the _Tasks_ class in [elm.py](../../.gitbook/assets/elm) for a list of the available variables initialized by its `__init__()` method.
 
@@ -836,8 +836,8 @@ An ECU Task is an optional request preprocessor which owns the shared namespace 
 
 The plugin of the ECU Task shall be named "task\_ecu\_" followed by the hex header digits (case-insensitive) of the (source/destination) CAN id of the ECU (then followed by ".py"). For instance, in case of a request directed to an ECU with CAN id "7E0" (`ATSH 7E0`), the task ECU plugin shall be named "task\_ecu\_7E0.py". In case of `ATSH 8011F1`, the related ECU task shall be named "task\_ecu\_11F1.py". Hex digits accept the following metacharacters:
 
-* _X_ for any single hex digit,
-* _W_ for any sequence of hex digits (one or more).
+- _X_ for any single hex digit,
+- _W_ for any sequence of hex digits (one or more).
 
 The plugin shall implement a class named _Task_ derived from the _EcuTasks_ class.
 
@@ -847,7 +847,7 @@ The allowed methods are the same as the normal tasks. The `start()` method of th
 
 Example of a plugin implementing an ECU Task which fully disables the ECU processing, always returning "NO DATA" (`"NO DATA", EcuTasks.RETURN.TERMINATE, None`):
 
-```
+```php
 from elm import EcuTasks
 
 class Task(EcuTasks):
@@ -859,8 +859,8 @@ The `run()` method of the ECU is invoked on any request after the first one; if 
 
 The ECU tasks is terminated when a method returns with `self.TASK.TERMINATE` (or _False_) in the return tuple, or by the following conditions:
 
-* communication reset (e.g., communication disconnection, or "ATZ", or _reset_ command);
-* expiration of the P3 timer.
+- communication reset (e.g., communication disconnection, or "ATZ", or _reset_ command);
+- expiration of the P3 timer.
 
 With these two termination conditions, the `stop()` method is also executed (useful for instance to remove login parameters after P3 timer expiration). The default definition of the `stop()` method is to return `Tasks.RETURN.ERROR` (do nothing).
 
@@ -872,7 +872,7 @@ The plugin named [task\_ecu\_11F1.py](../../.gitbook/assets/task_ecu_11F1) is an
 
 For instance, a plugin named _plugins/task\_routine.py_ defines the task _task\_routine_, which is configured in the dictionary element 'A\_ROUTINE', like the following example:
 
-```
+```python
         'UDS_START_DIAG_SESS': {
             'Request': '^1085' + ELM_FOOTER, # 85 = Flash Programming Session
             'Descr': 'UDS Start Diagnostic Session',
@@ -912,10 +912,10 @@ In such example, a request of type `3101...` will start the task _task\_routine_
 
 The following code shows a sample of 7E0 ECU task related to the Python plugin named "task\_ecu\_7E0.py"; the `start()` method is executed the first time the ECU is used, while the `stop()` method is executed on expiration of the P3 timer; both reset the login state to _False_:
 
-```
+```php
 from elm import EcuTasks
 
-# 7E0 ECU task
+## 7E0 ECU task
 class Task(EcuTasks):
     def start(self, cmd, *_):
         self.auth_successful = False
@@ -932,7 +932,7 @@ Notice that `self.auth_successful` in the ECU task can be used in place of `self
 
 The following code shows a basic task related to the Python plugin named "task\_routine.py"; the assumption is that the default `self.shared.auth_successful` state (`False`) in the ECU shared namespace is already set by the ECU task:
 
-```
+```php
 from elm import Tasks
 
 class Task(Tasks): # UDS Routine Control (31): Start (01)
@@ -959,7 +959,7 @@ The plugin named _task\_erase\_memory.py_ shows how to use the `start()` and `ru
 
 The plugin named [task\_ecu\_11F1.py](../../.gitbook/assets/task_ecu_11F1) is an example of memory map run at the first usage of the 11F1 ECU. The _task\_mt05\_..._ plugins assume that the memory map structures are already instantiated by the ECU task.
 
-#### Helper functions
+### Helper functions
 
 Within a task, the helper function `self.task_request_matched(request)` checks whether the request in the argument (typically returned by `self.multiline_request()`) matches the original request that invoked the task. This is because a task might be called more times if remaining active; this function can for instance differentiate a possible TesterPresent check (which can be forwarded to the standard processor) from the task request (which can be processed within the task, without forwarding it).
 
@@ -971,10 +971,10 @@ The helper function `self.task_get_request()` gets the original request command 
 
 _ELM327-emulator_ allows the following interfaces:
 
-* serial communication using a pseudo-terminal, as default mode on non Windows operating systems (without options),
-* TCP/IP networking, when using option `-n`, followed by the TCP/IP port,
-* serial COM port, when using option `-p`, default mode with Windows (the option is followed by the port name and allows setting a baud rate with the `-a` option),
-* standard communication, when using option `-P`.
+- serial communication using a pseudo-terminal, as default mode on non Windows operating systems (without options),
+- TCP/IP networking, when using option `-n`, followed by the TCP/IP port,
+- serial COM port, when using option `-p`, default mode with Windows (the option is followed by the port name and allows setting a baud rate with the `-a` option),
+- standard communication, when using option `-P`.
 
 #### Usage of a pseudo-terminal
 
@@ -984,7 +984,7 @@ On non Windows operating systems, the default mode (without communication option
 
 The `-n` options uses a TCP socket; the most commonly used one is 35000.
 
-```
+```bash
 python3 -m elm -s car -n 35000
 ```
 
@@ -994,13 +994,13 @@ The `-p` option exploits the [pyserial](https://pypi.org/project/pyserial/) libr
 
 To open a specific Windows port:
 
-```
+```bash
 python3 -m elm -s car -p COM3
 ```
 
 To open a specific Windows port (which is the same as `python3 -m elm -s car` because corresponds to default values):
 
-```
+```bash
 python3 -m elm -s car -p COM3 -a 38400
 ```
 
@@ -1016,7 +1016,7 @@ With Windows, run "Settings", "Bluetooth & other devices", "More Bluetooth optio
 
 Then run:
 
-```
+```bash
 python -m elm -p COM4 -s car
 ```
 
@@ -1028,13 +1028,13 @@ After creating a Bluetooth special file on a UNIX/Linux system implementing an R
 
 Install Bluetooth tools and daemons:
 
-```
+```json
 sudo apt-get install bluez
 ```
 
 Pairing the devices:
 
-```
+```json
 bluetoothctl
 [bluetooth]# power on
 [bluetooth]# agent on
@@ -1079,19 +1079,19 @@ Note: the `-l` option may be needed in some cases and is important when the Blue
 
 The _/dev/rfcomm0_ device driver can be manually created in order to avoid the error _"Can't open RFCOMM device: Permission denied"_ when running _rfcomm_ as a standard user (an not as root). First run _rfcomm_ as superuser and connect a client:
 
-```
+```php
 sudo rm -f /dev/rfcomm0; sudo rfcomm listen /dev/rfcomm0 1 ls -l /dev/rfcomm0
 ```
 
 After a client connection, you should get:
 
-```
+```php
 crw-rw---- 1 root dialout 216, 0 mar 28 11:17 /dev/rfcomm0
 ```
 
 Create the special file with the same major\_number and minor\_number, using 666 permissions and change ownership:
 
-```
+```php
 sudo mknod -m 666 /dev/rfcomm0 c 216 0
 sudo chown $USER /dev/rfcomm0
 ```
@@ -1112,10 +1112,10 @@ Data read from the OBD-II port are grouped together basing on a timeout paramete
 
 Example.
 
-* In a window, run a simulated OBD-II interface connected via TCP network: `python3 -m elm -s car -n 20000`. Then optionally set `loglevel debug`.
-* In another window, run _ELM327-emulator_ configured as forwarder to the local TCP port 20000 and exposing a network port 35000: `python3 -m elm -s car -n 35000 -N 20000 -H localhost`.
-* In a third window, run a telnet client: `elnet localhost 35000`. Write `at@1` and press enter. Check the logs in the other windows.
-* Close the telnet client. Run an _OBD_ application, select Wifi communication, IP address 127.0.0.1, port 35000. Check the logs in the other windows. You should succeed in connecting the application.
+- In a window, run a simulated OBD-II interface connected via TCP network: `python3 -m elm -s car -n 20000`. Then optionally set `loglevel debug`.
+- In another window, run _ELM327-emulator_ configured as forwarder to the local TCP port 20000 and exposing a network port 35000: `python3 -m elm -s car -n 35000 -N 20000 -H localhost`.
+- In a third window, run a telnet client: `elnet localhost 35000`. Write `at@1` and press enter. Check the logs in the other windows.
+- Close the telnet client. Run an _OBD_ application, select Wifi communication, IP address 127.0.0.1, port 35000. Check the logs in the other windows. You should succeed in connecting the application.
 
 ### Logging and monitoring
 
@@ -1127,9 +1127,9 @@ To read the current log level:
 
 To set log level to debug:
 
-```
+```bash
 loglevel 10
-# or
+## or
 loglevel debug
 ```
 
@@ -1137,7 +1137,7 @@ Press TAB to get the autocompletion of the available loglevel values (either num
 
 Alternatively, the logging level can be set through `logging.getLogger().handlers[n].setLevel()`. To check that _console_ is the first handler (e.g., `handlers[0]`), run `for n, l in enumerate(logging.getLogger().handlers): print(n, l.name)`. For instance, if _console_ refers to the first handler (default settings of the provided `elm.yaml` file), the following commands will change the logging level:
 
-```
+```python
 logging.getLogger().handlers[0].setLevel(logging.DEBUG)
 logging.getLogger().handlers[0].setLevel(logging.INFO)
 logging.getLogger().handlers[0].setLevel(logging.WARNING)
@@ -1153,39 +1153,39 @@ To browse the log files, [lnav](https://github.com/tstack/lnav) is suggested.
 
 Command to count the number of different PIDs (OBD Commands) used by the client (excluding AT Commands):
 
-```
+```python
 reduce(lambda x, key: x + (1 if re.match('^[A-Z]', key) and not key.startswith('AT_') and emulator.counters[key] > 0 else 0), emulator.counters, 0)
 ```
 
 The following command returns the total number of OBD Commands (PID queries issued by the client excluding AT Commands):
 
-```
+```python
 reduce(lambda x, key: x + (emulator.counters[key] if re.match('^[A-Z]', key) and not key.startswith('AT_') else 0), emulator.counters, 0)
 ```
 
 To only count AT Commands:
 
-```
+```python
 reduce(lambda x, key: x + (emulator.counters[key] if key.startswith('AT_') else 0), emulator.counters, 0)
 ```
 
 Print the average number of processed commands per second within a 5 seconds period:
 
-```
+```bash
 test at@1 # add at least one command
 a=emulator.counters['commands'];time.sleep(5);print((emulator.counters['commands']-a)/5)
 ```
 
 Same as before, printing the average number of processed commands per second within a 1 second period for 20 times:
 
-```
+```bash
 test at@1 # add at least one command
 for i in range(20): \n\t a=emulator.counters['commands'] \n\t time.sleep(1) \n\t print((emulator.counters['commands']-a)/1)
 ```
 
 To save a CSV file including the _emulator.counters_ dictionary:
 
-```
+```bash
 with open('mycounters.csv', 'w') as f: f.write('\r\n'.join([x + ', ' + repr(emulator.counters[x]) for x in emulator.counters]))
 ```
 
@@ -1201,7 +1201,7 @@ Notice that querying the vehicle might be invasive and some commands can change 
 
 _obd\_dictionary_ can be run as:
 
-```
+```python
 python3 -m obd_dictionary --help
 ```
 
@@ -1209,7 +1209,7 @@ or simply:
 
 Command line arguments:
 
-```
+```python
 usage: obd_dictionary [-h] -i DEVICE [-c CSV_FILE] [-o FILE] [-v] [-V] [-p PROBES] [-B BAUDRATE]
                       [-T TIMEOUT] [-C] [-F] [-P PROTOCOL] [-d DELAY] [-D DELAY_COMMANDS] [-n CAR_NAME]
                       [-b] [-r] [-x] [-t [FILE]] [-m]
@@ -1272,7 +1272,7 @@ See also [this post](https://github.com/brendan-w/python-OBD/issues/93#issuecomm
 
 For better analysis, the `-r` output can be piped to [lnav](http://lnav.org/) (the following command tests the USB connection):
 
-```
+```python
 python3 -m obd_dictionary -i /dev/ttyUSB0 -B 38400 -r 2>&1 | lnav
 ```
 
@@ -1280,7 +1280,7 @@ When the tests provide successful connection, the `-r` option can be removed and
 
 _obd\_dictionary_ can be also used to test _elm_. Run `python3 -m elm -s car`. Read the pseudo-tty, say _/dev/pts/2_ (this mode uses the serial communication). Run _obd\_dictionary_:
 
-```
+```python
 python3 -m obd_dictionary -i /dev/pts/2 2>&1 | lnav
 ```
 
@@ -1291,7 +1291,7 @@ In general, _ELM327-emulator_ should already manage all needed AT Commands withi
 The file produced by _obd\_dictionary_ provides the same information model of _obd\_message.py_. It can be used to replace the default module or can be dynamically imported in _ELM327-emulator_ through the `merge` command, which loads an _ObdMessage_ dictionary and merges it to _emulator.ObdMessage_. Example of _merge_ process:
 
 ```
-# Create AurisOutput.py
+## Create AurisOutput.py
 obd_dictionary -i /dev/ttyUSB0 -c auris.csv -o AurisOutput.py -n Auris
 python3 -m elm # run ELM327-emulator
 merge AurisOutput
@@ -1304,7 +1304,7 @@ A merged scenario can be removed via `del emulator.ObdMessage['<name of the scen
 
 To produce a complete dictionary file that can replace _obd\_dictionary_:
 
-```
+```bash
 obd_dictionary -i /dev/ttyUSB0 -c auris.csv -o AurisOutput.py -n default -t elm/obd_message.py
 ```
 
@@ -1314,10 +1314,10 @@ _ELM327-emulator_ can be run in batch mode to allow automating tests and backgro
 
 _elm_ offers four operation modes:
 
-* interactive (providing a command line prompt). This is activated by default, when neither `-b` option nor `-d` is used;
-* batch mode with input commands, activated when the `-b` option (`-b file` or `-b -`e.g., `-b -` for standard log output, or `-b output_file_name`). This mode reads the standard input for the same commands that can be issued by the user in interactive mode;
-* batch mode light, only available with UNIX/Linux, without input commands (no separate thread is created and the command interpreter is not used). This is activated when both `-b` and `-d` options are used;
-* daemon mode without input commands, only available with UNIX/Linux, allowing starting and stop the process in UNIX/Linux daemon mode, with `-d` option (start) and `-t` (terminate).
+- interactive (providing a command line prompt). This is activated by default, when neither `-b` option nor `-d` is used;
+- batch mode with input commands, activated when the `-b` option (`-b file` or `-b -`e.g., `-b -` for standard log output, or `-b output_file_name`). This mode reads the standard input for the same commands that can be issued by the user in interactive mode;
+- batch mode light, only available with UNIX/Linux, without input commands (no separate thread is created and the command interpreter is not used). This is activated when both `-b` and `-d` options are used;
+- daemon mode without input commands, only available with UNIX/Linux, allowing starting and stop the process in UNIX/Linux daemon mode, with `-d` option (start) and `-t` (terminate).
 
 In daemon mode, a lock file is used to prevent multiple instances.
 
@@ -1326,7 +1326,7 @@ Note: with Windows, options `-d` and `-t` are not available.
 The following script shows an example of batch mode usage. _obd\_dictionary_ is run after starting _ELM327-emulator_ in background and is used here as example of external application interfacing the emulator. The output of the emulator is saved to $FILE and the background process id is saved to $EMUL\_PID.
 
 ```
-#!/usr/bin/env bash
+## !/usr/bin/env bash
 
 set -o errexit
 set -o pipefail
@@ -1354,7 +1354,7 @@ rm "${FILE}"
 
 All arguments are optional.
 
-```
+```php
 from elm import Elm
 
 emulator = Elm(
@@ -1376,7 +1376,7 @@ emulator = Elm(
 
 Interactive mode uses the Context Manager:
 
-```
+```python
 from elm import Elm
 import time
 
@@ -1389,7 +1389,7 @@ with Elm() as session:
 
 Example of TCP/IP network usage:
 
-```
+```python
 from elm import Elm
 import time
 
@@ -1401,7 +1401,7 @@ with Elm(net_port=35000) as session:
 
 Batch mode without interaction does not need the Context Manager:
 
-```
+```python
 from elm import Elm
 
 emulator = Elm(batch_mode=True)
@@ -1426,7 +1426,7 @@ With UNIX/Linux, the serial communication can be tested with _screen_.
 
 In another terminal:
 
-```
+```php
 sudo apt-get install screen
 screen /dev/pts/3
 ```
@@ -1435,7 +1435,7 @@ The TCP/IP networking can be tested via _telnet_.
 
 In another terminal:
 
-```
+```php
 sudo apt-get install telnet
 telnet localhost 35000
 ```
@@ -1444,8 +1444,8 @@ telnet localhost 35000
 
 [python-OBD](https://github.com/brendan-w/python-OBD) is a Python module for handling realtime sensor data from OBD-II vehicle ports supporting ELM327 OBD-II adapters. _obd\_dictionary_ (which internally exploits python-OBD) can be used to test it. For instance, with Linux:
 
-* open a terminal and run `python3 -m elm -s car` (read the returned pty port)
-* open another terminal and run `python3 -m obd_dictionary -i /dev/pts/0 | less` (use the same port returned by _ELM327-emulator_)
+- open a terminal and run `python3 -m elm -s car` (read the returned pty port)
+- open another terminal and run `python3 -m obd_dictionary -i /dev/pts/0 | less` (use the same port returned by _ELM327-emulator_)
 
 ### OBD Auto Doctor
 
@@ -1465,7 +1465,7 @@ Run _OBD Auto Doctor_ with `obdautodoctor`. Then select File, Open connection, C
 
 _OBD Auto Doctor_ also supports TCP/IP communication. Run _ELM327-emulator_ using TCP/IP networking:
 
-```
+```python
 python -m elm -s car -n 35000
 ```
 
@@ -1481,7 +1481,7 @@ Software ported to Ubuntu 20.04 LTS: [https://github.com/ircama/scantool/tree/pt
 
 Installation:
 
-```
+```python
 git clone --branch pts_support https://github.com/Ircama/scantool.git
 sudo apt install liballegro4.4 liballegro4-dev allegro4-doc
 make clean
@@ -1492,7 +1492,7 @@ To run the application: `./scantool`
 
 This version of _scantool_ allows configuring a pseudo-tty support by editing _\~/.scantoolrc_. See related _readme.txt_. With Ubuntu, this can be automated by _ELM327-emulator_ via the following plugin:
 
-```
+```python
 import fileinput
 import os
 import re
@@ -1510,7 +1510,7 @@ def scantool(port):
 
 Close _scantool_, save a file named _scantool.py_ including the above reported plugin. Run _ELM327-emulator_:
 
-```
+```python
 python3 -m elm -s car
 from scantool import scantool;scantool(emulator.slave_name) # load and run the plugin
 ```
@@ -1529,7 +1529,7 @@ _ELM327-emulator_ is already able to provide a basic emulation of the Delphi MT0
 
 When using a C program to connect to the _ELM327-emulator_, you can optionally configure a raw terminal. Connecting to the _ELM327-emulator_ should look similar to below (error checking ommitted).
 
-```
+```sql
 /* Open the device */
 fd = open("/dev/pts/...", O_RDWR | O_NOCTTY | O_SYNC);
 ...
@@ -1562,13 +1562,13 @@ When natively running on Windows (to be used when connecting a Windows applicati
 
 ### Standards
 
-* The UDS Application layer is reported in [ISO 14229-1:2020](https://www.iso.org/standard/72439.html) (former ISO 15765-3, UDS on CAN)
-* [ISO 15765-2](https://en.wikipedia.org/wiki/ISO_15765-2) (transport protocol and network layer services) describes the CAN protocol
-* [ISO 15765-3:2004](https://www.iso.org/standard/33618.html) describes the implementation of unified diagnostic services (UDS on CAN at the Session and Application Layer)
-* [ISO 14229-2:2013](https://www.iso.org/standard/45763.html): UDS Session layer services
-* [ISO 14230-2:1999](https://www.sis.se/api/document/preview/612053/): Keyword Protocol 2000 Data Link Layer
-* [ISO 14230-3:1999](https://www.sis.se/api/document/preview/895162/): Keyword Protocol 2000 Application Layer
-* OBD-II pids: SAE J1979 E/E Diagnostic Test Modes / ISO 15031
+- The UDS Application layer is reported in [ISO 14229-1:2020](https://www.iso.org/standard/72439.html) (former ISO 15765-3, UDS on CAN)
+- [ISO 15765-2](https://en.wikipedia.org/wiki/ISO_15765-2) (transport protocol and network layer services) describes the CAN protocol
+- [ISO 15765-3:2004](https://www.iso.org/standard/33618.html) describes the implementation of unified diagnostic services (UDS on CAN at the Session and Application Layer)
+- [ISO 14229-2:2013](https://www.iso.org/standard/45763.html): UDS Session layer services
+- [ISO 14230-2:1999](https://www.sis.se/api/document/preview/612053/): Keyword Protocol 2000 Data Link Layer
+- [ISO 14230-3:1999](https://www.sis.se/api/document/preview/895162/): Keyword Protocol 2000 Application Layer
+- OBD-II pids: SAE J1979 E/E Diagnostic Test Modes / ISO 15031
 
 ### Credits
 

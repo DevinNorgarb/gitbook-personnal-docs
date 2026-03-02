@@ -1,6 +1,6 @@
 # OBD2 Simulator
 
-### Story
+## Story
 
 It was troublesome to have to prepare a vehicle when making OBD2 device and related services. With this OBD2 simulator, you can develop OBD2 equipment on the desk without going to the garage.
 

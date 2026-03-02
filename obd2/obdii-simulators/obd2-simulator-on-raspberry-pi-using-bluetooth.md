@@ -6,13 +6,13 @@ description: ...that actually works
 
 Start off by cloning the below repo
 
-```
+```python
 git clone git@github.com:DevinNorgarb/obdsim-arm64.git
 ```
 
 Here is the README
 
-```
+```python
 OBDII/GPS Logging Tool
 What?
 
@@ -51,11 +51,11 @@ The below commands are what is needed to  compile the firmware.
 cd obdsim
 ```
 
-```
+```bash
 mkdir build
 ```
 
-```
+```python
 cd build
 ```
 
@@ -63,7 +63,7 @@ cd build
 cmake .. # or ccmake .. to edit options (TAKE NOTE)
 ```
 
-```
+```php
 make
 ```
 
@@ -80,10 +80,9 @@ You can then proceed with the installation.&#x20;
 If you are wanting to use Bluetooth to connect your mobile phone to, so that you can use Torque, you will need to enable a few more settings.
 
 
-
 Please replace the "DC:A6:32:F6:EA:E8"  with your own mac address when running the below command.&#x20;
 
-```
+```bash
 sudo hciconfig
 ```
 

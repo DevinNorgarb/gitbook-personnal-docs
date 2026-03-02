@@ -8,7 +8,7 @@ Plenty of people and organizations have shared their code review best practices 
 
 **Better code reviews** are where engineers keep improving how they do code reviews. These code reviews look at the code change in the context of the codebase, of who is requesting it and in what situation. These reviews adjust their approach based on the context and situation. The goal not only being a high-quality review, but also to help the developers and teams requesting the review to be more productive.
 
-### **Areas Covered by the Code Review**
+## **Areas Covered by the Code Review**
 
 **Good code reviews** look at the change itself and how it fits into the codebase. They will look through the[ clarity of the title and description](https://blog.pragmaticengineer.com/pull-request-or-diff-best-practices/) and[ “why” of the change](https://blog.pragmaticengineer.com/pull-request-or-diff-best-practices#the-why-of-the-change). They cover the correctness of the code, test coverage, functionality changes, and confirm that they follow the coding guides and best practices. They will point out obvious improvements, such as hard to understand code, unclear names, commented out code, untested code, or unhandled edge cases. They will also note when too many changes are crammed into one review, and suggest keeping code changes single-purposed or breaking the change into more focused parts.
 

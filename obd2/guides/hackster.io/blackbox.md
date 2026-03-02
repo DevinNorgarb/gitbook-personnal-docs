@@ -67,23 +67,23 @@ Note: For the following command line instructions, do not type the '#', that is 
 Before proceeding, run:
 
 ```
-#  sudo apt-get update
-#  sudo apt-get upgrade
-#  sudo apt-get autoremove
-#  sudo reboot
+## sudo apt-get update
+## sudo apt-get upgrade
+## sudo apt-get autoremove
+## sudo reboot
 ```
 
 Install these components using the command:
 
 ```
-#  sudo apt-get install python-serial
-#  sudo apt-get install bluetooth bluez-utils blueman
-#  sudo apt-get install python-wxgtk2.8 python-wxtools wx2.8-i18n libwxgtk2.8-dev
-#  sudo apt-get install git-core
-#  sudo reboot
+## sudo apt-get install python-serial
+## sudo apt-get install bluetooth bluez-utils blueman
+## sudo apt-get install python-wxgtk2.8 python-wxtools wx2.8-i18n libwxgtk2.8-dev
+## sudo apt-get install git-core
+## sudo reboot
 ```
 
-#### Step 5: Vehicle Installation <a href="#toc-step-5--vehicle-installation-4" id="toc-step-5--vehicle-installation-4"></a>
+### Step 5: Vehicle Installation <a href="#toc-step-5--vehicle-installation-4" id="toc-step-5--vehicle-installation-4"></a>
 
 ![](https://hackster.imgix.net/uploads/attachments/498052/37_WW2u8kXwte.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
@@ -93,7 +93,7 @@ The vehicle installation is quite simple.
 * 2\. Insert the OBD-II Bluetooth adapter into the SAE J196216 (OBD Port) connector.
 
 ```
-# startx 
+## startx 
 ```
 
 * 7\. Launch BlueZ, the Bluetooth stack for Linux. Pair + Trust your ELM327 Bluetooth Adapter and Connect To: SPP Dev. You should see the Notification "Serial port connected to /dev/rfcomm0"
@@ -103,22 +103,22 @@ Note: Click the Bluetooth icon, bottom right (Desktop) to configure your device.
 * 8\. Open up Terminal and run:
 
 ```
-#  cd pyobd-pi
-#  sudo su
-#  python obd_gui.py
+## cd pyobd-pi
+## sudo su
+## python obd_gui.py
 ```
 
 Use the Left and Right arrow keys to cycle through the gauge display.To exit the program just press Control and C or Alt and Esc.
 
-#### Step 6: Data Logging <a href="#toc-step-6--data-logging-5" id="toc-step-6--data-logging-5"></a>
+### Step 6: Data Logging <a href="#toc-step-6--data-logging-5" id="toc-step-6--data-logging-5"></a>
 
 ![](https://hackster.imgix.net/uploads/attachments/498053/38_GAHCE759Al.jpg?auto=compress%2Cformat\&w=740\&h=555\&fit=max)
 
 If you would like to log your data run:
 
 ```
-#  cd pyobd-pi
-#  python obd_recorder.py
+## cd pyobd-pi
+## python obd_recorder.py
 ```
 
 The logged data file will be saved under: _/home/username/pyobd-pi/log/_**Enjoy and drive safe!**

@@ -6,7 +6,7 @@
 
 [#webdev](https://dev.to/t/webdev)[#laravel](https://dev.to/t/laravel)[#beginners](https://dev.to/t/beginners)[#php](https://dev.to/t/php)
 
-#### Laravel Service Containers and Providers <a href="#laravel-service-containers-and-providers" id="laravel-service-containers-and-providers"></a>
+### Laravel Service Containers and Providers <a href="#laravel-service-containers-and-providers" id="laravel-service-containers-and-providers"></a>
 
 The Laravel Service Container is a powerful tool for managing dependencies of classes and doing the injection of dependencies. This basically means that if a certain class is dependent on something else, then this dependency is injected into it at runtime. Laravel service providers are the central place for all Laravel application bootstrapping. They bind services into the service container, and configure events, routes, and filters. Laravel service containers and providers work together to build the most modular applications.
 
@@ -14,7 +14,7 @@ The Laravel Service Container is a powerful tool for managing dependencies of cl
 
 The Service Container in Laravel is almost a box that classes manage their dependencies with. It is almost the brain of the Laravel dependency injection system: for the most part, through the declaration in a big container of how and when to load multiple little pieces of the application. It helps in resolving classes and their dependencies automatically, thus complex class dependencies can be managed with a lesser amount of effort, and the associated design is more decoupled.
 
-```
+```php
 use App\Interfaces\PaymentServiceInterface;
 use App\Services\StripePaymentService;
 
@@ -26,7 +26,7 @@ app()->bind(PaymentServiceInterface::class, StripePaymentService::class);
 
 The Service Container is important in Laravel for a number of reasons. It abstracts away the process of binding your class dependencies, making your code more maintainable and testable. This makes its design flexible and modular because implementations of interfaces can be easily changed without having to change the consuming code.
 
-```
+```php
 // Resolving a class instance through the service container
 $paymentService = app()->make(PaymentServiceInterface::class);
 ```
@@ -39,7 +39,7 @@ To effectively use the Laravel Service Container, it’s important to understand
 * **Binding** : The process of telling the container that when asked for a certain class, it should return a specific implementation.
 * **Resolution** : Involves the process of creating the configured instance of a class in the container; upon configuration, it is automatically provided with all necessary dependencies.
 
-```
+```php
 // Registering a service provider
 public function register()
 {
@@ -57,7 +57,7 @@ Service Providers in Laravel are central to how the framework bootstraps and set
 
 Service Providers in Laravel serve as the primary way to group and manage the initialization of services like database connections, mail services, and custom application services. They tell Laravel about the services your application needs to function and how these services should be constructed.
 
-```
+```php
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -78,7 +78,7 @@ class AppServiceProvider extends ServiceProvider
 
 Service Providers work by extending the `ServiceProvider` class and implementing its `register` and `boot` methods. The `register` method is where you can bind services into the Laravel Service Container. The `boot` method is called after all services have been registered, making it ideal for event listening, middleware registration, and routes setup.
 
-```
+```php
 public function register()
 {
     $this->app->singleton(Interface::class, Implementation::class);
@@ -94,7 +94,7 @@ public function boot()
 
 Registering services with providers is straightforward. Within the `register` method of a service provider, you tell Laravel how to create instances of a service by binding interfaces to concrete classes. This binding instructs Laravel’s Service Container to create an instance of the concrete class whenever the interface is requested.
 
-```
+```php
 public function register()
 {
     $this->app->bind('App\Contracts\PaymentGateway', function ($app) {
@@ -121,7 +121,7 @@ The Service Container in Laravel is a powerful tool for managing class dependenc
 
 Binding refers to the process of telling the Service Container how to create an instance of a service. Resolving is the process of retrieving an instance of the service from the container. Laravel provides a simple, fluid interface for defining these behaviors.
 
-```
+```php
 // Binding a service
 app()->bind('HelpService', function ($app) {
     return new \App\Services\HelpService();
@@ -139,7 +139,7 @@ Laravel offers several types of bindings to cater to different use cases:
 * **Instance Bindings** : Bind a specific instance of a class to the container.
 * **Alias Bindings** : Define a short, memorable name that refers to another binding.
 
-```
+```php
 // Singleton binding
 app()->singleton('Logger', \App\Services\LoggerService::class);
 
@@ -154,7 +154,7 @@ $app->alias('Logger', 'log');
 
 The lifecycle of the Service Container involves the registration of bindings, resolution of services, and the eventual service usage within the application. During the application’s bootstrapping phase, service providers register services with the container. As the application runs, services are resolved either lazily (on-demand) or eagerly (at boot), depending on how they are registered.
 
-```
+```php
 // ServiceProvider's register method
 public function register()
 {
@@ -176,7 +176,7 @@ See how Laravel Service Container helps in managing such dependencies within an 
 
 A singleton service in Laravel ensures that only one instance of a service is created throughout the application’s lifecycle.
 
-```
+```php
 // Registering a singleton service in a service provider
 $this->app->singleton('App\Services\LogService', function ($app) {
     return new \App\Services\LogService();
@@ -189,7 +189,7 @@ In this example, whenever the `LogService` is resolved from the service containe
 
 Dependency injection is a core feature of the Laravel framework, allowing for a class’s dependencies to be automatically resolved and injected. This is commonly seen in controllers and middleware, where services required by these classes can be injected directly into their constructors or methods. Find the detail about [_laravel middleware here_.](https://techtales.blog/laravel-middleware-guide-basics-to-advanced/)
 
-```
+```php
 // Injecting a service into a controller
 use App\Services\PaymentService;
 
@@ -215,7 +215,7 @@ In the example above, the `PaymentService` is automatically resolved and injecte
 
 Sometimes, you may need to resolve services dynamically based on some runtime value or condition. Laravel’s service container provides a flexible way to achieve this through its `make` method.
 
-```
+```python
 // Dynamically resolving a service from the service container
 $paymentGatewayName = 'stripe'; // This could be dynamically determined
 $paymentGateway = app()->make('App\Services\PaymentGateways\\' . ucfirst($paymentGatewayName) . 'Gateway');
@@ -231,7 +231,7 @@ Diving deeper into Laravel container and service providers, we explore ways to e
 
 Creating your own service providers in Laravel is a powerful way to modularize your application’s setup. You can package related service registrations and bootstrapping operations, making your code cleaner and more maintainable.
 
-```
+```php
 use Illuminate\Support\ServiceProvider;
 
 class CustomServiceProvider extends ServiceProvider
@@ -256,7 +256,7 @@ Here, `CustomServiceProvider` registers a custom service in the `register` metho
 
 Deferred providers in Laravel are a way to delay the loading of a service provider until one of its services is actually needed. This can reduce your application’s load time by loading certain providers when necessary.
 
-```
+```php
 use Illuminate\Support\ServiceProvider;
 
 class DeferredServiceProvider extends ServiceProvider
@@ -283,7 +283,7 @@ In the example above, `DeferredServiceProvider` won’t be loaded until `deferre
 
 Extending Laravel with custom services involves creating services that can be reused across different parts of your application. It’s a way to add additional functionality to the Laravel framework or to integrate third-party services.
 
-```
+```bash
 $this->app->extend('existing.service', function($service, $app) {
     return new CustomEnhancedService($service);
 });
@@ -299,7 +299,7 @@ When working with Laravel Service Containers and providers, developers may encou
 
 Debugging issues related to the Service Container often involves understanding the flow of service registration and resolution. When a service doesn’t behave as expected, first check if it’s correctly registered and then ensure it’s properly resolved within the container.
 
-```
+```php
 Log::debug('Registering service:', ['service' => MyService::class]);
 $this->app->bind(MyService::class, function ($app) {
     return new MyService();
@@ -312,7 +312,7 @@ Adding logging statements before and after service registration can help identif
 
 Provider registration errors usually happen when a service provider is not properly registered in the `config/app.php` file or if there’s a typo in the namespace. Ensure that the provider is correctly listed in the `providers` array.
 
-```
+```php
 'providers' => [
     /*
      * Application Service Providers...
@@ -328,7 +328,7 @@ Double-check the namespace and path of your custom service provider in the `prov
 
 Service resolution exceptions occur when the container is unable to resolve a service due to a missing binding or a circular dependency. To handle these exceptions, ensure that all services are correctly registered and that there are no cyclic dependencies.
 
-```
+```bash
 try {
     $service = app()->make('NonExistentService');
 } catch (\Illuminate\Contracts\Container\BindingResolutionException $e) {

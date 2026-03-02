@@ -6,25 +6,25 @@ Update: This post was written a while ago, and many of these instructions for se
 
 For the past few months, Mapzen has been hard at work developing Pelias (https://github.com/pelias/pelias), a lightweight, modular implementation of a geocoder that’s easy for others to set up on top of their own datasets: everything from proprietary data bundles to OpenStreetMap planet dumps. Pelias is now fairly mature and approaching feature completeness, to the point that you can — wait for it — build your very own local instance. Here’s how. In this post, we’ll briefly take a look at the inner workings of geocoders in general, Pelias specifically, and then build Pelias on top of an OpenAddresses (http://openaddresses.io/) address dataset.
 
-### How it works
+## How it works
 
 A geocoder consists of two fundamental components. The first is an API sitting on top of a database containing reams of geographic data, like records matching longitude and latitude points to textual names, that responds to requests and implements all kinds of search logic on top of what the underlying data-store already provides. The second component is the collection of data pipelines used to normalize, filter, and import geographic data into that database. Pelias relies on elasticsearch (http://www.elasticsearch.org/), an easily scalable database optimized for text search, and provides an API (https://github.com/pelias/pelias#im-a-developer-can-i-get-access-to-the-api) with three primary endpoints:
 
-* reverse geocoding, or matching a name to a point
-* search (forward geocoding), or matching a point to a name
-* suggest, or query suggestion on the fly that tries to infer the text the user might want to search for
+- reverse geocoding, or matching a name to a point
+- search (forward geocoding), or matching a point to a name
+- suggest, or query suggestion on the fly that tries to infer the text the user might want to search for
 
 We’re developing import pipelines for numerous popular open datasets, described in detail below.
 
-#### Existing importer
+### Existing importer
 
 Pelias is dataset agnostic, meaning that it will work with any geographic data as long as it’s massaged into the proper format. Mapzen is actively developing importers for the following popular datasets:
 
-* OpenStreetMap (https://github.com/pelias/openstreetmap), a global address/street/region dataset
-* OpenAddresses (https://github.com/pelias/openaddresses), a steadily growing aggregation of normalized municipal address datasets
-* TIGER (https://github.com/pelias/tiger), a street survey of the United States published by the US Census Bureau
-* GeoNames (https://github.com/pelias/geonames), a global point-of-interest dataset
-* Quattroshapes (https://github.com/pelias/quattroshapes-pipeline), a global polygon dump at various levels of granularity
+- OpenStreetMap (https://github.com/pelias/openstreetmap), a global address/street/region dataset
+- OpenAddresses (https://github.com/pelias/openaddresses), a steadily growing aggregation of normalized municipal address datasets
+- TIGER (https://github.com/pelias/tiger), a street survey of the United States published by the US Census Bureau
+- GeoNames (https://github.com/pelias/geonames), a global point-of-interest dataset
+- Quattroshapes (https://github.com/pelias/quattroshapes-pipeline), a global polygon dump at various levels of granularity
 
 #### Custom importer
 
@@ -64,7 +64,7 @@ git clone https://github.com/pelias/vagrant
 cd vagrant
 vagrant plugin install vagrant-berkshelf
 vagrant plugin install vagrant-omnibus
-```
+```json
 {% endcode %}
 
 You’re now ready to begin building the image, but first we’ll need to configure the datasets so that it automagically imports once everything’s set up. Create a new file called `pelias_settings.rb` in the root of the Vagrant repo (should be your current directory), and add the following:
@@ -94,7 +94,7 @@ Vagrant.configure('2') do |config|
     ]
   end
 end
-```
+```python
 {% endcode %}
 
 This configuration file, based closely on this more complete version (https://github.com/pelias/vagrant/blob/master/pelias\_settings.example.rb), will instruct Vagrant to perform certain actions while building (like `'create_index' => true`, which creates the Pelias elasticsearch index), and optionally import some datasets — in this case, the OpenStreetMap data for New York.
@@ -109,7 +109,7 @@ You can change the link to any other OSM PBF, like the ones we provide for numer
     'new-york'      => 'https://s3.amazonaws.com/metro-extracts.mapzen.com/new-york_new-york.osm.pbf'
   }
 }
-```
+```python
 {% endcode %}
 
 Since we’re only importing OpenAddresses data in the import section below, we’ll skip any OSM imports for now.
@@ -119,7 +119,7 @@ Finally, the one command to rule them all:
 {% code title="Start Vagrant with the settings file" %}
 ```bash
 PELIAS_VAGRANT_CFG="$(pwd)/pelias_settings.rb" vagrant up
-```
+```json
 {% endcode %}
 
 Make sure you have a stable Internet connection before running it because the bootstrapping process will download a lot of software. This can take anywhere between 10 and 20 minutes. The logging will make it obvious if something breaks; if so, try running it again. Errors related to timed-out requests are often the results of a slow network or unresponsive servers—in that case wait a bit before retrying. If you’re still experiencing problems, raise an issue (https://github.com/pelias/vagrant/issues/new).
@@ -151,7 +151,7 @@ mkdir openaddresses-data
 unzip -d openaddresses-data openaddresses-processed.zip
 mkdir my_dataset
 cp openaddresses-data/us-ny-nyc.csv my_dataset
-```
+```php
 {% endcode %}
 
 The newly created `my_dataset` directory will contain all of the OpenAddresses files we’ll import into Pelias; `us-ny-nyc.csv` (New York City) was chosen to get you started, but feel free to use any other file or copy more of them into the directory.
@@ -164,7 +164,7 @@ git clone https://github.com/pelias/openaddresses
 cd openaddresses
 npm install
 node import.js ../my_dataset
-```
+```json
 {% endcode %}
 
 The last command will kick off the import. You should see status output similar to:
