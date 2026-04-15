@@ -1,5 +1,13 @@
 .cursor/plans/documentation_refactoring_plan_5e095b8e.plan.md
 .cursor/plans/markdown_repository_refactor_aa9510be.plan.md
 
-# mdBook output
+# VitePress / Node
+node_modules/
+.vitepress/dist/
+.vitepress/cache/
+/index.md
+docs-audit-report.json
+docs-audit-report.md
+
+# Legacy mdBook output (if run locally)
 /book/

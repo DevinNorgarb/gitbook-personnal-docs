@@ -1,6 +1,6 @@
 # Overview
 
-Personal notes and references on software, hardware, robotics, GIS, and related topics. The site is built with [mdBook](https://github.com/rust-lang/mdBook); the sidebar follows **[SUMMARY.md](SUMMARY.md)**.
+Personal notes and references on software, hardware, robotics, GIS, and related topics. The site is built with [VitePress](https://vitepress.dev/); the sidebar is generated from **[SUMMARY.md](SUMMARY.md)** (`npm run docs:gen-sidebar`).
 
 ## Browse by topic
 
@@ -31,14 +31,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add or edit pages.
 
 See [.github/DOCUMENTATION-STYLE-GUIDE.md](.github/DOCUMENTATION-STYLE-GUIDE.md) for documentation conventions.
 
-## Published site (mdBook on GitHub Pages)
+## Published site (VitePress on GitHub Pages)
 
-The book is built with [mdBook](https://github.com/rust-lang/mdBook) from this repository (see [`book.toml`](book.toml) and [`SUMMARY.md`](SUMMARY.md)).
+- **Prerequisites**: [Node.js](https://nodejs.org/) 20+ and `npm ci`.
+- **Local preview**: `npm run docs:dev` (runs `README.md` → `index.md` sync, regenerates the sidebar from `SUMMARY.md`, then starts VitePress). Open the printed URL (default port **5173**), with base path **`/gitbook-personnal-docs/`**.
+- **Production build**: `npm run docs:build` writes to [`.vitepress/dist/`](.vitepress/dist/) (gitignored).
+- **GitHub Pages**: pushes to `main` or `master` run [`.github/workflows/vitepress.yml`](.github/workflows/vitepress.yml), which deploys **`.vitepress/dist`** to the **`gh-pages`** branch. In **Settings → Pages**, use branch **`gh-pages`** at **`/`**. The site URL is [https://devinnorgarb.github.io/gitbook-personnal-docs/](https://devinnorgarb.github.io/gitbook-personnal-docs/) (include the repo path; adjust the owner name on forks).
 
-- **Local preview**: install mdBook, then run `mdbook serve` from the repository root and open the URL it prints (usually `http://127.0.0.1:3000/gitbook-personnal-docs/`).
-- **Static build**: `mdbook build` writes HTML to the `book/` directory (ignored by git).
-- **GitHub Pages**: pushing to `main` or `master` runs [`.github/workflows/mdbook.yml`](.github/workflows/mdbook.yml), which deploys the built site to the `gh-pages` branch. In the repository **Settings → Pages**, set the source to that branch (folder `/`). The public URL is typically [https://devinnorgarb.github.io/gitbook-personnal-docs/](https://devinnorgarb.github.io/gitbook-personnal-docs/) (adjust the owner name if your fork uses a different GitHub username).
+**Audit reports**: `npm run docs:audit` writes `docs-audit-report.json` and `docs-audit-report.md` (gitignored); CI uploads them as a workflow artifact.
 
-**If Settings → Pages shows no “Visit site” link or the page is blank:** (1) Open the **full project URL** above — not `https://<user>.github.io/` alone; mdBook is built with `site-url = /gitbook-personnal-docs/` in [`book.toml`](book.toml), so CSS and navigation load only under that path. (2) In **Actions**, confirm the latest **mdBook** workflow on `main`/`master` completed successfully (a failed `mdbook build` never updates `gh-pages`). (3) Under **Code**, switch the branch to **`gh-pages`** and confirm you see `index.html` at the root; if the branch is missing or empty, push a fix to `main` and wait for the workflow to finish, then refresh Pages after a minute or two.
-
-GitBook-only constructs in markdown were converted for portable rendering; see [`scripts/convert_gitbook_tags.py`](scripts/convert_gitbook_tags.py) if you need to apply similar conversions to new imports.
+GitBook-only constructs in markdown were converted for portable rendering; see [`scripts/convert_gitbook_tags.py`](scripts/convert_gitbook_tags.py) if you need similar conversions for new imports.

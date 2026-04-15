@@ -1,4 +1,4 @@
-name: mdBook
+name: VitePress
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: mdbook-${{ github.workflow }}-${{ github.ref }}
+  group: vitepress-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -18,13 +18,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup mdBook
-        uses: peaceiris/actions-mdbook@v2
+      - uses: actions/setup-node@v4
         with:
-          mdbook-version: "0.5.2"
+          node-version: "22"
+          cache: npm
 
-      - name: Build
-        run: mdbook build
+      - run: npm ci
+
+      - name: Documentation audit
+        run: npm run docs:audit
+
+      - name: Upload audit report
+        uses: actions/upload-artifact@v4
+        with:
+          name: docs-audit-report
+          path: |
+            docs-audit-report.json
+            docs-audit-report.md
 
       - name: Check links (non-blocking)
         uses: lycheeverse/lychee-action@v2
@@ -32,13 +42,16 @@ jobs:
           args: --no-progress --max-concurrency 8 --exclude-path .cursor --exclude-mail -- './**/*.md'
         continue-on-error: true
 
-      - name: Disable Jekyll on Pages
-        run: touch book/.nojekyll
+      - name: Build VitePress site
+        run: npm run docs:build
+
+      - name: Disable Jekyll on GitHub Pages
+        run: touch .vitepress/dist/.nojekyll
 
       - name: Deploy to gh-pages
         if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./book
+          publish_dir: ./.vitepress/dist
           force_orphan: true

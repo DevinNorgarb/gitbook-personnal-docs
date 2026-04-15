@@ -36,15 +36,15 @@ description: Optional one-line summary (for tooltips/search)
 
 ## GitBook-Specific Syntax
 
-This repository was imported from GitBook. For **mdBook / GitHub Pages**, use portable markdown instead of GitBook tags:
+This repository was imported from GitBook. For **VitePress / GitHub Pages**, use portable markdown instead of GitBook tags:
 
 - **File / PDF downloads**: `[filename](relative-or-asset-path)` (see [`scripts/convert_gitbook_tags.py`](../scripts/convert_gitbook_tags.py) for historical conversions).
 - **Callouts**: use blockquotes with a bold label (for example `> **Note**`).
 - **Embeds**: use a normal markdown link or angle-bracket URL `<https://...>`.
 
-## Publishing (mdBook)
+## Publishing (VitePress)
 
-- Install [mdBook](https://github.com/rust-lang/mdBook), then from the repository root run `mdbook build` (output in `book/`) or `mdbook serve` for local preview.
-- Navigation and chapter order are defined in [SUMMARY.md](../SUMMARY.md); add new pages there when you add documentation.
-- GitHub Actions builds the book and publishes the `book/` directory to the `gh-pages` branch when you push to `main` or `master`.
-- After the first deploy, enable **GitHub Pages** from the `gh-pages` branch (or follow your repository’s Pages settings). The site URL is typically `https://<user>.github.io/<repo>/`; [book.toml](../book.toml) sets `site-url` for that path.
+- Install Node.js 20+, then `npm ci`, `npm run docs:dev` (preview) or `npm run docs:build` (static output in `.vitepress/dist/`).
+- Navigation is defined in [SUMMARY.md](../SUMMARY.md); run `npm run docs:gen-sidebar` (or `docs:prep`) to regenerate [`.vitepress/sidebar.generated.mjs`](../.vitepress/sidebar.generated.mjs) after editing `SUMMARY.md`.
+- GitHub Actions ([`.github/workflows/vitepress.yml`](../.github/workflows/vitepress.yml)) builds and publishes to the `gh-pages` branch on pushes to `main`/`master`.
+- Site `base` is set in [`.vitepress/config.ts`](../.vitepress/config.ts) (`/gitbook-personnal-docs/`). The public URL is typically `https://<user>.github.io/<repo>/`.
