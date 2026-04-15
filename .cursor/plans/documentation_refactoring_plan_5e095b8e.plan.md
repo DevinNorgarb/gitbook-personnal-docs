@@ -3,6 +3,7 @@ name: Documentation Refactoring Plan
 overview: "A phased plan to refactor the gitbook-personnal-docs repository: add missing documentation, standardize markdown formatting, fix structural inconsistencies, and resolve broken links—building on the existing DOCUMENTATION-REFACTORING-REPORT.md audit."
 todos: []
 isProject: false
+
 ---
 
 # Documentation Refactoring Plan

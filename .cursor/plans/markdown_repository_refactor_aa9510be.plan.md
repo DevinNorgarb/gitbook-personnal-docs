@@ -16,6 +16,7 @@ isProject: false
 **Non-negotiable (from your prompt):**
 
 - Do not delete or remove meaningful content.
+-
 - Preserve all valid relative links; do not alter code inside code blocks.
 - Keep original file names and locations.
 - Only improve formatting, structure, and completeness.
@@ -49,7 +50,9 @@ For **each** `.md` file, apply the following in order:
 
 ```). If the file uses
 
-`````` or `
+`
+
+````` or `
 
 ``` ` (with spaces), normalize to
 
