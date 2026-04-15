@@ -513,7 +513,7 @@ PureData and Max/MSP are graphical programming tools for creating music, sound, 
 
 A On-Off Keying (OOK) decoder for radio data commonly found in the 433 MHz ISM band.
 
-### [RTL Bridge](/broken/pages/vsEKRSbJ9PMxOotIK1Ju) (Windows) (Free) ([Related Post](https://www.rtl-sdr.com/radio-astronomy-rtl-bridge-radio-sky-spectrograph/))
+### RTL Bridge (Windows) (Free) ([Related Post](https://www.rtl-sdr.com/radio-astronomy-rtl-bridge-radio-sky-spectrograph/))
 
 
 RTL Bridge allows a connection between the RTL-SDR dongle and the Radio-SkyPipe and Radio-Sky Spectrograph radio astronomy software.

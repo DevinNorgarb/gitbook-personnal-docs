@@ -6,20 +6,20 @@ description: >-
 
 # Pilots License
 
-{% file src="../.gitbook/assets/AIM_Bsc_w_Chg_1_2_and_3_dtd_9-5-24.pdf" %}
+[AIM_Bsc_w_Chg_1_2_and_3_dtd_9-5-24.pdf](../.gitbook/assets/AIM_Bsc_w_Chg_1_2_and_3_dtd_9-5-24.pdf)
 
-{% file src="../.gitbook/assets/faa-h-8083-25c (1).pdf" %}
+[faa-h-8083-25c (1).pdf](<../.gitbook/assets/faa-h-8083-25c (1).pdf>)
 
-{% file src="../.gitbook/assets/risk_management_handbook_2A.pdf" %}
+[risk_management_handbook_2A.pdf](../.gitbook/assets/risk_management_handbook_2A.pdf)
 
-{% file src="../.gitbook/assets/faa-h-8083-19A.pdf" %}
+[faa-h-8083-19A.pdf](../.gitbook/assets/faa-h-8083-19A.pdf)
 
-{% file src="../.gitbook/assets/faa-h-8083-25c.pdf" %}
+[faa-h-8083-25c.pdf](../.gitbook/assets/faa-h-8083-25c.pdf)
 
-{% file src="../.gitbook/assets/FAA-H-8083-16B.pdf" %}
+[FAA-H-8083-16B.pdf](../.gitbook/assets/FAA-H-8083-16B.pdf)
 
-{% file src="../.gitbook/assets/FAA-H-8083-28A_FAA_Web.pdf" %}
+[FAA-H-8083-28A_FAA_Web.pdf](../.gitbook/assets/FAA-H-8083-28A_FAA_Web.pdf)
 
-{% file src="../.gitbook/assets/FAA-H-8083-15B.pdf" %}
+[FAA-H-8083-15B.pdf](../.gitbook/assets/FAA-H-8083-15B.pdf)
 
-{% file src="../.gitbook/assets/remote_pilot_study_guide.pdf" %}
+[remote_pilot_study_guide.pdf](../.gitbook/assets/remote_pilot_study_guide.pdf)

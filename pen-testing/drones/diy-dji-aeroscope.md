@@ -15,7 +15,7 @@ Our software is a proof-of-concept receiver that we used to reverse-engineer an 
 
 Research Paper attached here:
 
-{% file src="../../.gitbook/assets/ndss2023_f217_paper.pdf" %}
+[ndss2023_f217_paper.pdf](../../.gitbook/assets/ndss2023_f217_paper.pdf)
 
 {% @github-files/github-code-block url="https://github.com/RUB-SysSec/DroneSecurity" %}
 

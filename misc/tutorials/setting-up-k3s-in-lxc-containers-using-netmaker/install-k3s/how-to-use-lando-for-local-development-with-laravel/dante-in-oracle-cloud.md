@@ -19,23 +19,19 @@ You must have:
 
 Use the Create a VM Instance wizard to create the compute instance. The wizard will create the instance, a VCN/subnet, and an SSH key pair.
 
-{% stepper %}
-{% step %}
 ### Start the Create VM Instance wizard
 
 * From the main landing page, select Create a VM instance.
 * The Create compute instance page appears with sections for Placement, Image and shape, Networking, Add SSH keys, and Boot volume.
-{% endstep %}
 
-{% step %}
+
 ### Name and compartment
 
 * Name: `<name-for-the-instance>`
 * Create in compartment: `<your-compartment-name>`\
   Enter a value for the name, or leave the system-supplied default.
-{% endstep %}
 
-{% step %}
+
 ### Placement
 
 * Click Edit.
@@ -44,41 +40,35 @@ Use the Create a VM Instance wizard to create the compute instance. The wizard w
   * Availability domain: AD-1
   * Capacity type: On-demand capacity
   * Fault domain: Let Oracle choose
-{% endstep %}
 
-{% step %}
+
 ### Image and Shape
 
 * Click Edit → Change image → Select the latest Ubuntu image (e.g., Canonical Ubuntu 20.04).
 * Take default values for Shape (e.g., VM.Standard.E2.1.Micro — 1 OCPU, 1 GB RAM).
-{% endstep %}
 
-{% step %}
+
 ### Networking
 
 * Use the default VCN/subnet created by the wizard.
 * Assign a public IPv4 address: Yes
-{% endstep %}
 
-{% step %}
+
 ### Add SSH keys
 
 * Select Generate a key pair for me (or provide your own public key).
 * Click Save Private Key and Save Public Key to download the keys.
-{% endstep %}
 
-{% step %}
+
 ### Boot volume
 
 * Leave default values. Leave all check boxes unchecked.
-{% endstep %}
 
-{% step %}
+
 ### Create
 
 * Click Create. Provisioning may take several minutes.
-{% endstep %}
-{% endstepper %}
+
 
 You now have an Ubuntu instance ready to run Dante.
 
@@ -86,17 +76,14 @@ You now have an Ubuntu instance ready to run Dante.
 
 The Create VM Instance wizard created a VCN. Add ingress rules to allow TCP 1080 and UDP port range 40000-45000.
 
-{% stepper %}
-{% step %}
 ### Open VCN details
 
 1. Open the navigation menu → Networking → Virtual Cloud Networks.
 2. Select the VCN created with your instance.
 3. Click the public subnet link (your-subnet-name).
 4. Click the Default Security List link.
-{% endstep %}
 
-{% step %}
+
 ### Add TCP ingress rule for SOCKS5
 
 * Click Add Ingress Rules.
@@ -109,9 +96,8 @@ The Create VM Instance wizard created a VCN. Add ingress rules to allow TCP 1080
   * Destination Port Range: 1080
   * Description: Allow SOCKS5 TCP connections
 * Click Add Ingress Rules.
-{% endstep %}
 
-{% step %}
+
 ### Add UDP ingress rule for UDP ASSOCIATE
 
 * Click Add Ingress Rules.
@@ -124,8 +110,7 @@ The Create VM Instance wizard created a VCN. Add ingress rules to allow TCP 1080
   * Destination Port Range: 40000-45000
   * Description: Allow SOCKS5 UDP ASSOCIATE
 * Click Add Ingress Rules.
-{% endstep %}
-{% endstepper %}
+
 
 Your VCN is now configured for Dante SOCKS5 server access.
 
@@ -133,8 +118,6 @@ Your VCN is now configured for Dante SOCKS5 server access.
 
 Follow these steps to install Dante and configure SOCKS5 with UDP ASSOCIATE.
 
-{% stepper %}
-{% step %}
 ### Connect to your instance
 
 1. In Oracle Console: Compute → Instances → Click your instance. Note the Public IP Address.
@@ -147,9 +130,8 @@ ssh -i <your-private-key-file> ubuntu@<x.x.x.x>
 ```
 
 This logs you into the instance. You can run sudo commands.
-{% endstep %}
 
-{% step %}
+
 ### Install Dante
 
 Run:
@@ -165,10 +147,9 @@ Check Dante version:
 danted -v
 ## Example:
 ## Dante v1.4.2.  Copyright (c) 1997 - 2014 Inferno Nettverk A/S, Norway
-```json
-{% endstep %}
+```
 
-{% step %}
+
 ### Identify server interface
 
 Check network interfaces to determine the internal/external interface (example uses ens3):
@@ -178,9 +159,8 @@ ip a
 ```
 
 Example shows ens3 with an IP like 10.0.0.196/24.
-{% endstep %}
 
-{% step %}
+
 ### Backup and edit configuration
 
 Backup default config:
@@ -222,9 +202,8 @@ socks block {
 ```
 
 Save and exit.
-{% endstep %}
 
-{% step %}
+
 ### Start and enable Dante
 
 Start and check status:
@@ -238,9 +217,8 @@ Enable automatic start after reboot:
 
 ```bash
 sudo systemctl enable danted
-```json
-{% endstep %}
-{% endstepper %}
+```
+
 
 ### Configure iptables
 
@@ -279,9 +257,10 @@ If tests fail, check Dante logs at /var/log/socks.log.
 
 The default configuration allows anonymous access. To restrict access, either limit by IP address or enable username/password authentication.
 
-{% hint style="info" %}
-Restricting access is recommended — anonymous public proxies can be abused.
-{% endhint %}
+> **Note**
+>
+> Restricting access is recommended — anonymous public proxies can be abused.
+
 
 #### Limit by IP Address
 

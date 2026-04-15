@@ -13,8 +13,6 @@ C4 diagrams are a way to represent the architecture of a software system and are
 - Component level — different components of the system
 - Code level — implementation details of the system
 
-{% stepper %}
-{% step %}
 ## Context Diagram
 
 > **Prompt**: Let’s start by creating a context diagram of the services in Wealth Management\
@@ -37,9 +35,8 @@ This diagram shows the main actors that interact with the Wealth Management Syst
 * The `Market` interacts with the `Market Data Service`.
 
 This gives an overview of the main interactions between actors and services, useful for understanding the high-level architecture.
-{% endstep %}
 
-{% step %}
+
 ### Container Diagram
 
 Looks good so far. Next, let’s build a container-level diagram for one of the services.
@@ -62,9 +59,8 @@ This diagram shows the containers that comprise the Portfolio Management Service
 * The `Portfolio Management Database` stores portfolio-related data, such as assets and current value.
 * The `Load Balancer` distributes incoming traffic among instances of the `Portfolio Management API` running in the `Kubernetes Cluster`.
 * The `Kubernetes Cluster` manages scaling, availability, and deployment of the containers.
-{% endstep %}
 
-{% step %}
+
 ### Component Diagram
 
 > **Prompt**: Next lets create the component level diagram for portfolio management api with all relevant details\
@@ -105,9 +101,8 @@ Component Diagram for Portfolio Management Worker
 * `Portfolio Updater` — updates portfolios based on market changes; communicates with `Market Data Service`.
 * `Market Data Service` — provides market data to the updater.
 * `Portfolio Service` — performs portfolio management operations and persists data to the `Portfolio Management Database`.
-{% endstep %}
 
-{% step %}
+
 ### Code Diagram
 
 > **Prompt:** Can you also do the code diagram for Portfolio Management API\
@@ -142,5 +137,5 @@ This was a blog post to depict the capabilities of ChatGPT, especially on the C4
 Interested in Mindmaps — read the blog post on using PlantUML with ChatGPT to create awesome Mindmaps: https://link.medium.com/q5YglIQ74wb
 
 Last updated 2 years ago
-{% endstep %}
-{% endstepper %}
+
+

@@ -1,6 +1,6 @@
 # IoC Container Guide
 
-{% embed url="https://dev.to/mktheitguy/laravel-a-comprehensive-guide-to-service-container-and-providers-3oj1" %}
+<https://dev.to/mktheitguy/laravel-a-comprehensive-guide-to-service-container-and-providers-3oj1>
 
 ## Laravel: A Comprehensive Guide to Service Container and Providers
 

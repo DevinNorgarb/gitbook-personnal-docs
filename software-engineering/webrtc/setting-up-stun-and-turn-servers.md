@@ -8,7 +8,7 @@
 > 2. restund installation on Ubuntu
 > 3. TURN installation on CentOS
 > 4. TURN installation on Windows
-> 5. [reTurnServer installation on Ubuntu](/broken/pages/1zkA8mihm9xdxUJI60IS)
+> 5. reTurnServer installation on Ubuntu
 > 6. Pion TURN server
 >
 > You can test a TURN [here LIVE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/) or use "apt-get install stun" and then "stun domain.com:port".
@@ -496,7 +496,7 @@ Note: Below section is taken from [slideshare](http://www.slideshare.net/amitesh
 
 ### Top
 
-### [reTurnServer installation on Ubuntu](/broken/pages/1zkA8mihm9xdxUJI60IS)
+### reTurnServer installation on Ubuntu
 
 1.  ### First Step: Install reTurnServer:
 

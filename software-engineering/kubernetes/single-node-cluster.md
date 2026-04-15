@@ -1,18 +1,18 @@
 # Single Node Cluster
 
-{% embed url="https://www.virtualizationhowto.com/2021/07/kubernetes-lxc-containers-configuration-lab-setup" %}
+<https://www.virtualizationhowto.com/2021/07/kubernetes-lxc-containers-configuration-lab-setup>
 Tutorial that made&#x20;
 {% endembed %}
 
-{% embed url="https://github.com/justmeandopensource/kubernetes" %}
+<https://github.com/justmeandopensource/kubernetes>
 useful bootstrap library
 {% endembed %}
 
-{% embed url="https://ubuntu.com/blog/externally-exposing-a-lxd-based-kubernetes-service" %}
+<https://ubuntu.com/blog/externally-exposing-a-lxd-based-kubernetes-service>
 Exposing the new cluster
 {% endembed %}
 
-{% embed url="https://github.com/kubernetes/kubernetes/issues/70202" %}
+<https://github.com/kubernetes/kubernetes/issues/70202>
 \=
 {% endembed %}
 

@@ -8,32 +8,30 @@ The Docker daemon binds to a Unix socket, not a TCP port. By default it's the `r
 
 If you don't want to preface the `docker` command with `sudo`, create a Unix group called `docker` and add users to it. When the Docker daemon starts, it creates a Unix socket accessible by members of the `docker` group. On some Linux distributions, the system automatically creates this group when installing Docker Engine using a package manager. In that case, there is no need for you to manually create the group.
 
-{% hint style="warning" %}
-The `docker` group grants root-level privileges to the user. For details on how this impacts security in your system, see [Docker Daemon Attack Surface](https://docs.docker.com/engine/security/#docker-daemon-attack-surface).
-{% endhint %}
+> **Warning**
+>
+> The `docker` group grants root-level privileges to the user. For details on how this impacts security in your system, see [Docker Daemon Attack Surface](https://docs.docker.com/engine/security/#docker-daemon-attack-surface).
 
-{% hint style="info" %}
-To run Docker without root privileges, see [Run the Docker daemon as a non-root user (Rootless mode)](https://docs.docker.com/engine/security/rootless/).
-{% endhint %}
 
-{% stepper %}
-{% step %}
+> **Note**
+>
+> To run Docker without root privileges, see [Run the Docker daemon as a non-root user (Rootless mode)](https://docs.docker.com/engine/security/rootless/).
+
+
 ### Create the `docker` group
 
 ```console
 $ sudo groupadd docker
-```json
-{% endstep %}
+```
 
-{% step %}
+
 ### Add your user to the `docker` group
 
 ```console
 $ sudo usermod -aG docker $USER
-```json
-{% endstep %}
+```
 
-{% step %}
+
 ### Re-evaluate group membership
 
 Log out and log back in so that your group membership is re-evaluated.
@@ -44,10 +42,9 @@ You can also run the following command to activate the changes to groups:
 
 ```console
 $ newgrp docker
-```json
-{% endstep %}
+```
 
-{% step %}
+
 ### Verify that you can run Docker without `sudo`
 
 ```console
@@ -55,9 +52,8 @@ $ docker run hello-world
 ```
 
 This command downloads a test image and runs it in a container. When the container runs, it prints a message and exits.
-{% endstep %}
 
-{% step %}
+
 ### Fix permissions if you see a permissions error
 
 If you initially ran Docker CLI commands using `sudo` before adding your user to the `docker` group, you may see the following error:
@@ -73,9 +69,8 @@ To fix this problem, either remove the `~/.docker/` directory (it's recreated au
 ```console
 $ sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
 $ sudo chmod g+rwx "$HOME/.docker" -R
-```php
-{% endstep %}
-{% endstepper %}
+```
+
 
 ## Configure Docker to start on boot with systemd
 

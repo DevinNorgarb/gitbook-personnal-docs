@@ -1,7 +1,5 @@
 # Provision LXC Containers
 
-{% stepper %}
-{% step %}
 ## On the host
 
 ### Ensure these modules are loaded
@@ -24,10 +22,9 @@ The first time I tried to get this working, once the cluster was up, the traefik
 ```json
 echo 'net.ipv4.ip_forward=1' >> /etc/sysctl.conf
 sysctl --system
-```json
-{% endstep %}
+```
 
-{% step %}
+
 ### Create the k3s container
 
 #### Uncheck unprivileged container
@@ -45,9 +42,8 @@ sysctl --system
 #### Results
 
 ![confirm.png](../../../../../.gitbook/assets/confirm.png)
-{% endstep %}
 
-{% step %}
+
 ### Back on the Host
 
 Edit the config file for the container (`/etc/pve/lxc/$ID.conf`) and add the following:
@@ -57,10 +53,9 @@ lxc.apparmor.profile: unconfined
 lxc.cgroup.devices.allow: a
 lxc.cap.drop:
 lxc.mount.auto: "proc:rw sys:rw"
-```php
-{% endstep %}
+```
 
-{% step %}
+
 ### In the container
 
 #### /etc/rc.local
@@ -85,10 +80,9 @@ Then run this:
 ```json
 chmod +x /etc/rc.local
 reboot
-```json
-{% endstep %}
+```
 
-{% step %}
+
 ### Installing k8s
 
 #### k3sup Installation
@@ -117,9 +111,8 @@ kube-system   helm-install-traefik-glt48               0/1     Completed   0    
 kube-system   coredns-7944c66d8d-67lxp                 1/1     Running     0          69m
 kube-system   traefik-758cd5fc85-wzcst                 1/1     Running     0          68m
 kube-system   svclb-traefik-cwd9h                      2/2     Running     0          42m
-```json
-{% endstep %}
-{% endstepper %}
+```
+
 
 ### References
 

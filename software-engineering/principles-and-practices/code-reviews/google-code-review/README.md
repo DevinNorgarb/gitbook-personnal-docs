@@ -72,7 +72,7 @@ In the general case, look at _every_ line of code that you have been assigned to
 
 If it’s too hard for you to read the code and this is slowing down the review, then you should let the developer know that and wait for them to clarify it before you try to review it. At Google, we hire great software engineers, and you are one of them. If you can’t understand the code, it’s very likely that other developers won’t either. So you’re also helping future developers understand this code, when you ask the developer to clarify it.
 
-If you understand the code but you don’t feel qualified to do some part of the review, [make sure there is a reviewer](/broken/pages/nM6vTYKimJlmkGAmxAWh) on the CL who is qualified, particularly for complex issues such as privacy, security, concurrency, accessibility, internationalization, etc.
+If you understand the code but you don’t feel qualified to do some part of the review, make sure there is a reviewer on the CL who is qualified, particularly for complex issues such as privacy, security, concurrency, accessibility, internationalization, etc.
 
 #### Exceptions <a href="#every-line-exceptions" id="every-line-exceptions"></a>
 

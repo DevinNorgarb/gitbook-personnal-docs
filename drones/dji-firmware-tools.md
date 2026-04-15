@@ -1,7 +1,7 @@
 # dji-firmware-tools
 
 
-{% embed url="https://github.com/o-gs/dji-firmware-tools" %}
+<https://github.com/o-gs/dji-firmware-tools>
 
 ## dji-firmware-tools
 

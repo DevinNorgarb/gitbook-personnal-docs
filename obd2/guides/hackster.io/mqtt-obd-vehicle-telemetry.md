@@ -1,6 +1,6 @@
 # MQTT OBD Vehicle Telemetry
 
-{% embed url="https://www.hackster.io/jassak/mqtt-obd-vehicle-telemetry-f120c4" %}
+<https://www.hackster.io/jassak/mqtt-obd-vehicle-telemetry-f120c4>
 
 ## 
 

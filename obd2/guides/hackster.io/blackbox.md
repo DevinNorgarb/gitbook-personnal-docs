@@ -1,6 +1,6 @@
 # BlackBox
 
-{% embed url="https://www.hackster.io/SURYATEJA/black-box-obd-pi-using-raspberry-pi-e363aa" %}
+<https://www.hackster.io/SURYATEJA/black-box-obd-pi-using-raspberry-pi-e363aa>
 
 ## Black Box - OBD-Pi Using Raspberry Pi
 

@@ -1,7 +1,7 @@
 # Simple Rally/Racing Dashboard
 
 
-{% embed url="https://www.hackster.io/Ankel2000/simple-rally-racing-dashboard-061883" %}
+<https://www.hackster.io/Ankel2000/simple-rally-racing-dashboard-061883>
 
 
 ## 

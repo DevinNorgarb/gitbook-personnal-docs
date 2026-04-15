@@ -2,32 +2,32 @@
 
 > Note：This Tutorial and Sample Project is developed based on DJI Android SDK v2.4, an update version for Android SDK v3.1.1 will be published soon.
 
-- [Setting up and Running the PanoDemo App](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  - [Setting up your Development Environment](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  - [Importing the Demo Project into Eclipse](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  - [Using the PanoDemo App](/broken/pages/QqFgQwpukckWPgy8Bnan)
-- [Creating your own Panorama App](/broken/pages/QqFgQwpukckWPgy8Bnan)
-- [Creating the User Interface](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  - [App permissions and basic layout](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  - [Creating the User Interface](/broken/pages/QqFgQwpukckWPgy8Bnan)
-- [Initialization and Setup](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  - [Initializing the Environment](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  - [Communicating with your drone](/broken/pages/QqFgQwpukckWPgy8Bnan)
-- [Taking Photos](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  - [Starting the Panorama Procedure](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  - [Capturing Photos](/broken/pages/QqFgQwpukckWPgy8Bnan)
-- [Downloading Images](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  - [Switching Camera Modes](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  - [Selecting Images](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  - [Downloading Images](/broken/pages/QqFgQwpukckWPgy8Bnan)
-- [Creating the Panorama](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  - [Stitching the images together](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  - [Displaying the results](/broken/pages/QqFgQwpukckWPgy8Bnan)
-- [Final Touches](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  - [Adding Phantom 3 Professional Support](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  - [Handling the Android Life Cycle](/broken/pages/QqFgQwpukckWPgy8Bnan)
-  - [Bonus: Adding a Battery Indicator](/broken/pages/QqFgQwpukckWPgy8Bnan)
-- [Summary](/broken/pages/QqFgQwpukckWPgy8Bnan)
+- Setting up and Running the PanoDemo App
+  - Setting up your Development Environment
+  - Importing the Demo Project into Eclipse
+  - Using the PanoDemo App
+- Creating your own Panorama App
+- Creating the User Interface
+  - App permissions and basic layout
+  - Creating the User Interface
+- Initialization and Setup
+  - Initializing the Environment
+  - Communicating with your drone
+- Taking Photos
+  - Starting the Panorama Procedure
+  - Capturing Photos
+- Downloading Images
+  - Switching Camera Modes
+  - Selecting Images
+  - Downloading Images
+- Creating the Panorama
+  - Stitching the images together
+  - Displaying the results
+- Final Touches
+  - Adding Phantom 3 Professional Support
+  - Handling the Android Life Cycle
+  - Bonus: Adding a Battery Indicator
+- Summary
 
 _If you come across any mistakes or bugs in this tutorial, please let us know using a Github issue, a post on the DJI forum, or commenting in the Gitbook. Please feel free to send us Github pull request and help us fix any issues. However, all pull requests related to document must follow the_ [_document style_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 

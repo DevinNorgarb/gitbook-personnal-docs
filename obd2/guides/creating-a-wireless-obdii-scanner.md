@@ -1,3 +1,3 @@
 # Creating A Wireless OBDII Scanner
 
-{% file src="../../../.gitbook/assets/JOHNKEENANIIIMQP2009.pdf" %}
+[JOHNKEENANIIIMQP2009.pdf](../../../.gitbook/assets/JOHNKEENANIIIMQP2009.pdf)

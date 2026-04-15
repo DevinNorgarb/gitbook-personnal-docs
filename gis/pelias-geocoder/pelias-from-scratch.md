@@ -10,57 +10,47 @@ It assumes some knowledge of the command line and Node.js. If anything is confus
 
 These are the steps for fully installing Pelias:
 
-{% stepper %}
-{% step %}
 ### Check requirements
 
 Verify that the hardware and software requirements are met:
 
 https://github.com/pelias/documentation/blob/master/pelias\_from\_scratch.md#system-requirements
-{% endstep %}
 
-{% step %}
+
 ### Decide which datasets to use and download them
 
 https://github.com/pelias/documentation/blob/master/pelias\_from\_scratch.md#choose-your-datasets
-{% endstep %}
 
-{% step %}
+
 ### Download the Pelias code
 
 https://github.com/pelias/documentation/blob/master/pelias\_from\_scratch.md#download-the-pelias-repositories
-{% endstep %}
 
-{% step %}
+
 ### Customize Pelias configuration file `~/pelias.json`
 
 https://github.com/pelias/documentation/blob/master/pelias\_from\_scratch.md#customize-pelias-config
-{% endstep %}
 
-{% step %}
+
 ### Install the Elasticsearch schema using pelias-schema
 
 https://github.com/pelias/documentation/blob/master/pelias\_from\_scratch.md#set-up-the-elasticsearch-schema
-{% endstep %}
 
-{% step %}
+
 ### Use one or more importers to load data into Elasticsearch
 
 https://github.com/pelias/documentation/blob/master/pelias\_from\_scratch.md#run-the-importers
-{% endstep %}
 
-{% step %}
+
 ### Install and start the Pelias services
 
 https://github.com/pelias/documentation/blob/master/pelias\_from\_scratch.md#install-and-start-the-pelias-services
-{% endstep %}
 
-{% step %}
+
 ### Start the API server to begin handling queries
 
 https://github.com/pelias/documentation/blob/master/pelias\_from\_scratch.md#start-the-api
-{% endstep %}
-{% endstepper %}
+
 
 ***
 
@@ -131,25 +121,20 @@ Street data (polylines): To download and import street data from OSM, a separate
 
 At a minimum, you'll need the following repositories:
 
-{% stepper %}
-{% step %}
 ### pelias/schema
 
 https://github.com/pelias/schema/
-{% endstep %}
 
-{% step %}
+
 ### pelias/api and other Pelias services
 
 https://github.com/pelias/api/
-{% endstep %}
 
-{% step %}
+
 ### Importer(s)
 
 (e.g. whosonfirst, geonames, openaddresses, openstreetmap, polylines)
-{% endstep %}
-{% endstepper %}
+
 
 Here's a bash snippet that will download all the repositories and install node module dependencies:
 
@@ -254,25 +239,20 @@ When in doubt, delete the index, re-create it, and start fresh.
 
 The only time when restarting importers without deleting is recommended is if all the following are true:
 
-{% stepper %}
-{% step %}
 ### You are trying to re-import the exact same data again
 
 For example, because the build failed, or you are testing changes to an importer. Pelias importers will not create duplicate records if importing the same data, however, they can't account for changes in the data itself.
-{% endstep %}
 
-{% step %}
+
 ### The Pelias schema has not changed
 
 Elasticsearch has no concept similar to a schema migration; any schema changes require deleting and re-importing all data.
-{% endstep %}
 
-{% step %}
+
 ### You are not concerned with ensuring maximum performance
 
 Elasticsearch internally deletes old versions of a record and creates a new one. Re-writing the same or similar documents repeatedly can create a larger Elasticsearch index with slightly worse performance.
-{% endstep %}
-{% endstepper %}
+
 
 ***
 

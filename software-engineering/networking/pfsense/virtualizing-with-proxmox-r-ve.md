@@ -1,6 +1,6 @@
 # Virtualizing with Proxmox® VE
 
-{% embed url="https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-proxmox-ve.html" %}
+<https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-proxmox-ve.html>
 
 This following article is about building and running pfSense® software on a virtual machine under Proxmox Virtual Environment (VE). The guide also applies to any newer Proxmox VE version. Article covers Proxmox VE networking setup and firewall virtual machine setup process. The guide does not cover how to install Proxmox VE.
 

@@ -1,3 +1,3 @@
 # TCPDump
 
-{% embed url="https://danielmiessler.com/study/tcpdump" %}
+<https://danielmiessler.com/study/tcpdump>

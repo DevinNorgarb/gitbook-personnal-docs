@@ -1,3 +1,3 @@
 # Trading Bots
 
-{% embed url="https://www.freqtrade.io" %}
+<https://www.freqtrade.io>

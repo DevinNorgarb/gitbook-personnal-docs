@@ -1,6 +1,6 @@
 # Hacking Automotive Ethernet Cameras
 
-{% embed url="https://argus-sec.com/blog/cyber-security-blog/hacking-automotive-ethernet-cameras/" %}
+<https://argus-sec.com/blog/cyber-security-blog/hacking-automotive-ethernet-cameras/>
 
 Go ahead, google the words “autonomous vehicle camera”. You will find almost 3.5 million  articles about the future of autonomous vehicles and the extensive impact cameras and other sensors will have on the future. Autonomous vehicles will be enabled by Advanced Driver Assistance Systems (ADAS) through built-in RADAR and [LiDAR](https://en.wikipedia.org/wiki/Lidar) systems, allowing it to “see and sense” the world around them, including other vehicles, pedestrians, traffic signs, potential hazards, and more.
 

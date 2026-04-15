@@ -12,8 +12,6 @@ I wanted to confirm if ChatGPT could generate diagrams for a use case explanatio
 
 So, I logged into http://chat.openai.com/ and here is my conversation.
 
-{% stepper %}
-{% step %}
 ## Step 1: Let’s define the use-case
 
 I could have defined my own use-case, but I wanted to test all aspects of ChatGPT, so I asked it to define one for me.
@@ -21,9 +19,8 @@ I could have defined my own use-case, but I wanted to test all aspects of ChatGP
 ![](<../../../../.gitbook/assets/image (21)>)
 
 Use case definition
-{% endstep %}
 
-{% step %}
+
 ### Step 2: Let’s define a Data Model for the use-case
 
 Looks good to me, let’s start by defining the data model — so I asked ChatGPT to do it and this is what I got:
@@ -40,9 +37,8 @@ ChatGPT: I can describe the structure of the data model in a tabular format usin
 ![](<../../../../.gitbook/assets/image (23)>)
 
 data structure
-{% endstep %}
 
-{% step %}
+
 ### Step 3: Let’s define relationships — Entity Relationship Diagram
 
 Prompt: this is perfect, I would like to depict the relationships in a mermaid diagram, can you give me the markdown code to do this\
@@ -57,9 +53,8 @@ And copying this in a markdown editor enclosed within {mermaid} tags, I got:
 ![](<../../../../.gitbook/assets/image (25)>)
 
 data model in mermaid
-{% endstep %}
 
-{% step %}
+
 ### Step 4: Sequence Diagram
 
 Next, I tried to make hypothetical prompts to check responses. My first intention was to get a sequence diagram created.
@@ -82,9 +77,8 @@ and copying this is in a markdown editor:
 ![](<../../../../.gitbook/assets/image (27)>)
 
 sequence diagram
-{% endstep %}
 
-{% step %}
+
 ### Step 5: State Transition Diagram
 
 Let me ask about a `State Transition` diagram.
@@ -160,8 +154,7 @@ Diagrammatic Representation:
 ![](<../../../../.gitbook/assets/image (32)>)
 
 This is awesome. Truly impressive on what can be achieved with ChatGPT and Mermaid
-{% endstep %}
-{% endstepper %}
+
 
 I next moved on to describing and building more diagrams using the C4 model and will add them to a follow up post: https://medium.com/@aruva/using-chatgpt-to-build-system-diagrams-part-ii-a17d02f0dcb7
 

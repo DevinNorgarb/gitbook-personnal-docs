@@ -1,6 +1,6 @@
 # Canonical Open RAN
 
-{% embed url="https://ubuntu.com/blog/telco-canonical-and-oai-to-collaborate-on-open-source-telecom-network-infrastructure-for-open-ran" %}
+<https://ubuntu.com/blog/telco-canonical-and-oai-to-collaborate-on-open-source-telecom-network-infrastructure-for-open-ran>
 
 Canonical is excited to announce that we are collaborating with [OpenAirInterface (OAI)](https://openairinterface.org/) to drive the development and promotion of open source software for open radio access networks ([Open RAN](https://canonical.com/blog/what-is-open-ran)). Canonical will bring automation in software lifecycle management to OAI’s RAN stack, alongside additional infrastructure capabilities. This will better enable telcos to adopt open source software as the telecom industry transitions to Open RAN running on COTS hardware.
 

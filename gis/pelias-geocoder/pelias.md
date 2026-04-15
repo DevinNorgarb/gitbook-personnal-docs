@@ -4,7 +4,7 @@
 
 Pelias is a geocoder powered completely by open data, available freely to everyone.
 
-[![](https://devthedev.gitbook.io/guides/~gitbook/image?url=https%3A%2F%2Fimg.shields.io%2Fgithub%2Flicense%2Fpelias%2Fapi%3Fstyle%3Dflat%26color%3Dorange\&width=300\&dpr=3\&quality=100\&sign=21ed443d\&sv=2)](https://en.wikipedia.org/wiki/MIT_License) [![](https://devthedev.gitbook.io/guides/~gitbook/image?url=https%3A%2F%2Fimg.shields.io%2Fdocker%2Fpulls%2Fpelias%2Fapi%3Fstyle%3Dflat%26color%3Dinformational\&width=300\&dpr=3\&quality=100\&sign=d054882e\&sv=2)](https://hub.docker.com/u/pelias) [![](https://devthedev.gitbook.io/guides/~gitbook/image?url=https%3A%2F%2Fimg.shields.io%2Fgitter%2Froom%2Fpelias%2Fpelias%3Fstyle%3Dflat%26color%3Dyellow\&width=300\&dpr=3\&quality=100\&sign=7ef5f381\&sv=2)](https://gitter.im/pelias/pelias)
+[![](https://img.shields.io/github/license/pelias/api?style=flat&color=orange)](https://en.wikipedia.org/wiki/MIT_License) [![](https://img.shields.io/docker/pulls/pelias/api?style=flat&color=informational)](https://hub.docker.com/u/pelias) [![](https://img.shields.io/gitter/room/pelias/pelias?style=flat&color=yellow)](https://gitter.im/pelias/pelias)
 
 Links:
 

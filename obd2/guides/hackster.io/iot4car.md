@@ -1,8 +1,8 @@
 # IoT4Car
 
-{% embed url="https://www.hackster.io/frankzhao/iot4car-1b07f1" %}
+<https://www.hackster.io/frankzhao/iot4car-1b07f1>
 
-{% file src="../../../.gitbook/assets/frizling_schematics_M8kF26dafQ.fzz" %}
+[frizling_schematics_M8kF26dafQ.fzz](../../../.gitbook/assets/frizling_schematics_M8kF26dafQ.fzz)
 
 
 MKR WiFi 1000 talks to a car through OBD-II interface, and uploads the data to IoT cloud for real-time monitoring and post-processing.

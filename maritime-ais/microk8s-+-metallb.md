@@ -20,8 +20,6 @@ Setup MicroK8s
 
 Install MicroK8s
 
-{% stepper %}
-{% step %}
 ## Install MicroK8s (server)
 
 On your server, install MicroK8s via snap:
@@ -41,9 +39,8 @@ sudo chown -f -R $USER ~/.kube
 ## Then logout/login or run: newgrp microk8s
 ```json
 {% endcode %}
-{% endstep %}
 
-{% step %}
+
 ### Wait for MicroK8s to be ready
 
 Monitor the cluster provisioning status (may take a few minutes):
@@ -62,9 +59,8 @@ microk8s kubectl get nodes
 microk8s kubectl get services
 ```json
 {% endcode %}
-{% endstep %}
 
-{% step %}
+
 ### Enable addons
 
 Enable fundamental addons (DNS and storage):
@@ -74,8 +70,7 @@ Enable fundamental addons (DNS and storage):
 microk8s enable dns storage
 ```python
 {% endcode %}
-{% endstep %}
-{% endstepper %}
+
 
 Remote Access
 

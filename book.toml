@@ -1,0 +1,16 @@
+[book]
+title = "Personal Documentation"
+description = "Software engineering, hardware, robotics, GIS, and more."
+authors = ["Devin Norgarb"]
+language = "en"
+src = "."
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+git-repository-url = "https://github.com/DevinNorgarb/gitbook-personnal-docs"
+edit-url-template = "https://github.com/DevinNorgarb/gitbook-personnal-docs/edit/main/{path}"
+site-url = "/gitbook-personnal-docs/"
+no-section-label = true

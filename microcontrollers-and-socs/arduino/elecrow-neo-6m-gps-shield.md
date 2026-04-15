@@ -7,4 +7,4 @@ description: >-
 
 Wiring Diagram
 
-{% file src="../../.gitbook/assets/ELEC_GPS_Shield_v1.1.pdf" %}
+[ELEC_GPS_Shield_v1.1.pdf](../../.gitbook/assets/ELEC_GPS_Shield_v1.1.pdf)

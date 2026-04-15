@@ -2,9 +2,10 @@
 
 When you work with Oracle Cloud Infrastructure, one of the first steps is to set up a Virtual Cloud Network (VCN) for cloud resources. This topic gives you an overview of Oracle Cloud Infrastructure Networking components and typical scenarios for using a VCN.
 
-{% hint style="info" %}
-Watch a [video introduction](https://apexapps.oracle.com/pls/apex/f?p=44785:265:0:::265:P265_CONTENT_ID:32072) to the service.
-{% endhint %}
+> **Note**
+>
+> Watch a [video introduction](https://apexapps.oracle.com/pls/apex/f?p=44785:265:0:::265:P265_CONTENT_ID:32072) to the service.
+
 
 ## Networking Components
 
@@ -100,9 +101,10 @@ Each subnet always has these components associated with it:
 
 During subnet creation, you can decide which route table, security list, and set of DHCP options the subnet uses. If you don't specify a particular component, the subnet automatically uses the VCN's default component. You can [change which components the subnet uses](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/edit_subnet.htm) at any time.
 
-{% hint style="info" %}
-Security lists are one way to control traffic in and out of the VCN's resources. You can also use [network security groups](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/networksecuritygroups.htm).
-{% endhint %}
+> **Note**
+>
+> Security lists are one way to control traffic in and out of the VCN's resources. You can also use [network security groups](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/networksecuritygroups.htm).
+
 
 ## Connectivity Choices
 
@@ -135,11 +137,12 @@ Just having an internet gateway alone does not expose the instances in the VCN's
 - The subnet must have [security list rules](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/securitylists.htm) that allow the traffic (and each instance's firewall must allow the traffic).
 - The instance must have a [public IP address](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingpublicIPs.htm).
 
-{% hint style="info" %}
-To access public services such as Object Storage from your VCN without the traffic going over the internet, use a [service gateway](networking-overview.md#service_gateway).
+> **Note**
+>
+> To access public services such as Object Storage from your VCN without the traffic going over the internet, use a [service gateway](networking-overview.md#service_gateway).
+>
+> Traffic through an internet gateway between a VCN and a public IP address that is part of Oracle Cloud Infrastructure (such as Object Storage) is routed without being sent over the internet.
 
-Traffic through an internet gateway between a VCN and a public IP address that is part of Oracle Cloud Infrastructure (such as Object Storage) is routed without being sent over the internet.
-{% endhint %}
 
 You can also give a subnet indirect access to the internet by setting up an internet proxy in your on-premises network and then connecting that network to your VCN by way of a DRG. For more information, see [Access to Your On-Premises Network](networking-overview.md#on_prem_access).
 
@@ -289,9 +292,10 @@ Also, the following types of abilities are available only with the `manage` verb
 - Create an IPSec connection between a DRG and customer-premises equipment (CPE)
 - Peer VCNs
 
-{% hint style="warning" %}
-Each VCN has various components that directly affect the behavior of the network (route tables, security lists, DHCP options, Internet Gateway, and so on). When you create one of these components, you establish a relationship between that component and the VCN, which means you must be allowed in a policy to both create the component and manage the VCN itself. However, the ability to update that component (to change the route rules, security list rules, and so on) does not require permission to manage the VCN itself, even though changing that component can directly affect the behavior of the network. This design enables least-privilege policies but requires trust in users who can update components.
-{% endhint %}
+> **Warning**
+>
+> Each VCN has various components that directly affect the behavior of the network (route tables, security lists, DHCP options, Internet Gateway, and so on). When you create one of these components, you establish a relationship between that component and the VCN, which means you must be allowed in a policy to both create the component and manage the VCN itself. However, the ability to update that component (to change the route rules, security list rules, and so on) does not require permission to manage the VCN itself, even though changing that component can directly affect the behavior of the network. This design enables least-privilege policies but requires trust in users who can update components.
+
 
 For more information about policy verbs, see [Policy Basics](https://docs.oracle.com/iaas/Content/Identity/Concepts/policies.htm#Policy).
 

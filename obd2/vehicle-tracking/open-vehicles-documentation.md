@@ -1,7 +1,7 @@
 # Open Vehicles documentation
 
 
-## Introduction[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
+## Introduction¶
 
 The OVMS is an **all open source** vehicle remote monitoring, diagnosis and control system.
 
@@ -17,7 +17,7 @@ The **OVMS base component** is a small and inexpensive hardware module that conn
 
 The module provides a **built-in Web App** user interface and remote control via native cellphone Apps available for **Android** and **iOS**. It integrates into home/process automation systems via **MQTT** and provides data logging to SD card and to a server.
 
-### Vehicle Support[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
+### Vehicle Support¶
 
 - _Native Integration_
   - Chevrolet Volt / Opel Ampera
@@ -48,7 +48,7 @@ The module provides a **built-in Web App** user interface and remote control via
   - [OBD-II Standard](https://docs.openvehicles.com/en/latest/components/vehicle_obdii/docs/index.html)
   - Zeva BMS
 
-### Links[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
+### Links¶
 
 - _User Resources_
   - _User and Developer Guides: (hint: version selection in left menu at the bottom)_
@@ -71,7 +71,7 @@ The module provides a **built-in Web App** user interface and remote control via
   - [Android App Source](https://github.com/openvehicles/Open-Vehicle-Android)
   - [iOS App Source](https://github.com/openvehicles/Open-Vehicle-iOS)
 
-### Hardware[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
+### Hardware¶
 
 
 - [Module Schematics and PCB Layouts](https://github.com/openvehicles/Open-Vehicle-Monitoring-System-3/tree/master/vehicle/hardware)
@@ -105,7 +105,7 @@ The module provides a **built-in Web App** user interface and remote control via
   - Nano (4FF) SIM slot
   - HOLOGRAM.IO nano sim included (can be exchanged if necessary)
 
-#### Extensions[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
+#### Extensions¶
 
 The external DB26 DIAG connector provides access to the three CAN buses and offers some free extension ports. The internal PCB expansion connector allows stacked additions of further modules and serves for routing GPIO ports to the external DIAG connector. See schematics for details.
 
@@ -116,7 +116,7 @@ If you plan on developing a hardware extension or just want to do some custom ad
 
 If the kit isn’t available at the distributors, please contact Mark Webb-Johnson [mark@webb-johnson.net](mailto:mark%40webb-johnson.net).
 
-### Development and Contributions[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
+### Development and Contributions¶
 
 **New developers are very welcome on any part of the system, and we will gladly provide any help needed to get started.**
 
@@ -144,7 +144,7 @@ Pull requests shall focus on one specific issue / feature / vehicle at a time an
 
 Usage hint: create a branch for each pull request, include only those commits in that branch (by cherry-picking if necessary) that shall be included in the pull request. That way you can push further commits to that branch, Github will automatically add them to an open pull request.
 
-### Donations[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
+### Donations¶
 
 The OVMS is a non-profit community project. Hardware production and service can normally be financed by sales, but some things (e.g. prototype development and certifications) need extra money. To help the project, you can make a donation on the OVMS website: [https://www.openvehicles.com/forum](https://www.openvehicles.com/forum)
 
@@ -152,7 +152,7 @@ Please also consider supporting the vehicle developers directly. Check out their
 
 **Thank you!**
 
-### License[¶](/broken/pages/WCSao9g22WfFHKCDhMQB)
+### License¶
 
 The project includes some third party libraries and components to which their respective licenses apply, see component sources for details.
 

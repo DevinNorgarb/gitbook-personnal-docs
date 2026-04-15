@@ -26,8 +26,6 @@ You also need to install `kubectl` on your local machine. I do not describe how 
 
 To install MetalLB I used `helm`. To do this you will need helm installed on your local machine.
 
-{% stepper %}
-{% step %}
 ### Create a template VM
 
 Create a new virtual machine and install your favorite version of Linux. For mine I used `Debian 10`.
@@ -49,9 +47,8 @@ Shutdown the VM.
 Right click on the VM and click `convert to template` and name it something like k3s-template.
 
 ![](<../../../../.gitbook/assets/image (12)>)
-{% endstep %}
 
-{% step %}
+
 ### Create the master node from the template
 
 Right click the template and click clone. Set the name as something like `k3s-master` and set the `Mode` to `full clone`.
@@ -59,9 +56,8 @@ Right click the template and click clone. Set the name as something like `k3s-ma
 ![](<../../../../.gitbook/assets/image (13)>)
 
 Once the clone is complete, start that new VM.
-{% endstep %}
 
-{% step %}
+
 ### Set a static IP
 
 For this and all machines, a static IP needs to be set. Ideally this should be done with an address outside of your DHCP pool of addresses.
@@ -102,10 +98,9 @@ iface ens18 inet static
         netmask 255.255.0.0
         gateway 10.1.0.1
         dns-nameservers 10.1.0.3
-```json
-{% endstep %}
+```
 
-{% step %}
+
 ### Change the hostname of the system
 
 Next change the hostname of the system to something unique. I used the naming scheme `k3s-master` and `k3s-agent-1`, `k3s-agent-2`... and so on.
@@ -134,16 +129,14 @@ Change the line starting with `127.0.1.1` to your new hostname. Everything else 
 ::1     localhost ip6-localhost ip6-loopback
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
-```json
-{% endstep %}
+```
 
-{% step %}
+
 ### Reboot
 
 Now reboot the machine. Once it's back on, make sure it has the correct hostname and has the correct static IP address you set.
-{% endstep %}
 
-{% step %}
+
 ### Repeat for additional nodes
 
 Repeat the above for all nodes you want to add to the cluster. Just make sure they all have unique IP addresses and unique hostnames.
@@ -153,18 +146,18 @@ You can name them anything you want, but make sure you at least know which one i
 On my cluster I created one master and two worker nodes.
 
 ![](<../../../../.gitbook/assets/image (14)>)
-{% endstep %}
 
-{% step %}
+
 ### Install k3s on the master node
 
 This process should only be completed on the node designated to be the master node.
 
 Connect to the master node via SSH or using the proxmox console and run the install script.
 
-{% hint style="warning" %}
-Important note: By default, k3s comes with a service called `klipper-lb` to handle load balancing. This will interfere with MetalLB and needs to be disabled for it to work correctly. The install command below disables klipper-lb.
-{% endhint %}
+> **Warning**
+>
+> Important note: By default, k3s comes with a service called `klipper-lb` to handle load balancing. This will interfere with MetalLB and needs to be disabled for it to work correctly. The install command below disables klipper-lb.
+
 
 ```python
 curl -sfL https://get.k3s.io | sh -s - server --disable servicelb
@@ -182,9 +175,8 @@ You can get the master node token by reading it from a file on the master node:
 ## This must be read with root permissions
 sudo cat /var/lib/rancher/k3s/server/node-token
 ```javascript
-{% endstep %}
 
-{% step %}
+
 ### Install k3s on the worker nodes
 
 On each worker node you need to run the install script with the two pieces of information above:
@@ -192,9 +184,8 @@ On each worker node you need to run the install script with the two pieces of in
 ```javascript
 curl -sfL https://get.k3s.io | K3S_URL=https://$YOURIPADDRESS:6443 K3S_TOKEN=$YOURNODETOKEN sh -
 ```javascript
-{% endstep %}
 
-{% step %}
+
 ### Connect to your new cluster
 
 On your local machine set the `KUBECONFIG` environmental variable to the path of your `k3s.yaml`. On Linux you could do this:
@@ -216,9 +207,8 @@ k3s-master    Ready    control-plane,master   16d   v1.21.3+k3s1
 ```
 
 You now have a working Kubernetes cluster created with Proxmox VMs.
-{% endstep %}
 
-{% step %}
+
 ### Installing MetalLB
 
 Getting MetalLB up and running is extremely simple using helm. Note: You need helm installed on your local machine to do this.
@@ -249,11 +239,10 @@ helm install metallb metallb/metallb -f values.yaml
 ```
 
 Once all of the pods come online you should be able to create services of `type: LoadBalancer` and MetalLB will assign them an IP address from your pool.
-{% endstep %}
 
-{% step %}
+
 ### Congratulations
 
 Everything is complete. You can now experiment and learn Kubernetes locally without having to pay any cloud provider!
-{% endstep %}
-{% endstepper %}
+
+

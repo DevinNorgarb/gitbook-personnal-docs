@@ -71,9 +71,10 @@ $ lando start
 
 Lando will bring up the whole environment. You may have to make small changes to your `.env` file (shown later). The simple Lando file above is enough to start a webserver and a database for Laravel.
 
-{% hint style="info" %}
-The `lando init` command has an interactive mode. If you start the command without parameters or skip parameters, it will ask for the missing information interactively.
-{% endhint %}
+> **Note**
+>
+> The `lando init` command has an interactive mode. If you start the command without parameters or skip parameters, it will ask for the missing information interactively.
+
 
 ## Customizing the environment
 
@@ -233,9 +234,10 @@ Common Lando commands:
 - `lando stop`: Stops the development environment and all services.
 - `lando destroy`: Destroys the whole environment and removes images from disk.
 
-{% hint style="warning" %}
-Caution: `lando destroy` will also delete your database and everything inside the storage folder!
-{% endhint %}
+> **Warning**
+>
+> Caution: `lando destroy` will also delete your database and everything inside the storage folder!
+
 
 - `lando artisan`: Runs artisan commands inside the container (e.g., `lando artisan migrate`).
 - `lando composer`: Runs composer inside the container (e.g., `lando composer install`).

@@ -1,8 +1,9 @@
 # Mapzen | Pelias Instance
 
-{% hint style="info" %}
-Update: This post was written a while ago, and many of these instructions for setting up Pelias are out of date. Please see our new installation instructions (http://pelias.io/install.html), which are being actively updated.
-{% endhint %}
+> **Note**
+>
+> Update: This post was written a while ago, and many of these instructions for setting up Pelias are out of date. Please see our new installation instructions (http://pelias.io/install.html), which are being actively updated.
+
 
 For the past few months, Mapzen has been hard at work developing Pelias (https://github.com/pelias/pelias), a lightweight, modular implementation of a geocoder that’s easy for others to set up on top of their own datasets: everything from proprietary data bundles to OpenStreetMap planet dumps. Pelias is now fairly mature and approaching feature completeness, to the point that you can — wait for it — build your very own local instance. Here’s how. In this post, we’ll briefly take a look at the inner workings of geocoders in general, Pelias specifically, and then build Pelias on top of an OpenAddresses (http://openaddresses.io/) address dataset.
 
@@ -50,8 +51,6 @@ apt-get install virtualbox vagrant
 
 If not, install them manually from VirtualBox (https://www.virtualbox.org/wiki/Downloads) and Vagrant (https://www.vagrantup.com/downloads.html). Lastly, install ChefDK (https://downloads.chef.io/chef-dk/).
 
-{% stepper %}
-{% step %}
 ### Building the image
 
 Update: This post was written a while ago, and many of these instructions for setting up Pelias are out of date. Please see our new installation instructions (http://pelias.io/install.html), which are being actively updated.
@@ -137,9 +136,8 @@ Expect to see:
 ```
 
 Then run `vagrant ssh` to get inside the Pelias box.
-{% endstep %}
 
-{% step %}
+
 ### Importing a dataset
 
 Now, we’ll import a small OpenAddresses dataset. Start by downloading the OpenAddresses bundle to the Vagrant box (this means you still need to be `ssh`’d in), which consists of a large number of CSV files containing addresses for entire countries, states, and cities at a time.
@@ -186,8 +184,7 @@ The last command will kick off the import. You should see status output similar 
 ```
 
 Pay attention to the indexed value: this is the number of documents successfully indexed in elasticsearch.
-{% endstep %}
-{% endstepper %}
+
 
 ### See it on a map
 

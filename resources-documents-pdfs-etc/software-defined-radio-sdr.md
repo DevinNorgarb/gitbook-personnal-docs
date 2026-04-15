@@ -1,7 +1,7 @@
 # Software Defined Radio (SDR)
 
-{% file src="../.gitbook/assets/SDR4Engineers.pdf" %}
+[SDR4Engineers.pdf](../.gitbook/assets/SDR4Engineers.pdf)
 
-{% file src="../.gitbook/assets/The-Hobbyists-Guide-To-RTL-SDR-Carl-Laufer.pdf" %}
+[The-Hobbyists-Guide-To-RTL-SDR-Carl-Laufer.pdf](../.gitbook/assets/The-Hobbyists-Guide-To-RTL-SDR-Carl-Laufer.pdf)
 
-{% file src="../.gitbook/assets/SDRSharp_Big_Book_v5.5 (1).pdf" %}
+[SDRSharp_Big_Book_v5.5 (1).pdf](<../.gitbook/assets/SDRSharp_Big_Book_v5.5 (1).pdf>)

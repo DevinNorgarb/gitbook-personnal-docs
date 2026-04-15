@@ -15,8 +15,6 @@ I started to discover the power of wiring tasks in Node-RED recently. Since I am
 
 I assume you already have a basic knowledge of using ROS and, thus, I only link to the installation instructions at this point. The Kobuki and Turtlebot ROS packages can either be installed from the corresponding Ubuntu packages or they can be cloned from the Github repositories directly into your Catkin workspace. I also added a section on how to use this tutorial in the ROS Gazebo simulator only. So, you do not need a real Turtlebot to play around. However, the battery state visualization will not work in the simulator. To enable ROS message transfer for Web interfaces, we also need to install the ROSbridge package.
 
-{% stepper %}
-{% step %}
 ### Install ROS packages from Ubuntu package source
 
 Run the following to install the necessary ROS packages from the Ubuntu package repositories:
@@ -27,9 +25,8 @@ apt-get install ros-indigo-turtlebot*
 apt-get install ros-indigo-rosbridge-suite
 ```php
 {% endcode %}
-{% endstep %}
 
-{% step %}
+
 ### Install NodeJS (version 6)
 
 NodeJS version 6 was used in this tutorial. Do not install the very old .deb packaged Version of NodeJS that comes with the Ubuntu 14.04 sources. Use the NodeSource setup script for v6:
@@ -40,9 +37,8 @@ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```php
 {% endcode %}
-{% endstep %}
 
-{% step %}
+
 ### Install Node-RED globally
 
 Once NodeJS is installed, use NPM to install Node-RED as a global module so it is available for all users. You can already start Node-RED without ROS support after installation.
@@ -53,9 +49,8 @@ sudo npm install -g --unsafe-perm node-red
 node-red
 ```json
 {% endcode %}
-{% endstep %}
 
-{% step %}
+
 ### Install the Node-RED ROS contrib nodes into the Node-RED workspace
 
 Node-RED automatically uses the default workspace directory \~/.node-red/ to store flows and additional nodes. Install the ROS node to this workspace:
@@ -66,15 +61,12 @@ cd ~/.node-red/
 npm install node-red-contrib-ros
 ```php
 {% endcode %}
-{% endstep %}
-{% endstepper %}
+
 
 #### Booting the Software Stack
 
 We need to start the ROS nodes necessary to control our (real) Turtlebot. Also, we start the Node-RED environment and use the ROS node (inside Node-RED) to send and receive ROS messages. You may find it confusing to use the word node for ROS programs as well as for graphical representations in a workflow at the same time. Unfortunately, I am not fully able to avoid this confusion, but I will try to use the word node mostly in the context of Node-RED, not ROS. Let’s boot!
 
-{% stepper %}
-{% step %}
 ### Start the Turtlebot bringup package
 
 Start your robot:
@@ -84,9 +76,8 @@ Start your robot:
 roslaunch turtlebot_bringup minimal.launch
 ```json
 {% endcode %}
-{% endstep %}
 
-{% step %}
+
 ### Start rosbridge for Web access
 
 This runs rosbridge and creates a WebSocket on port 9090 by default:
@@ -96,9 +87,8 @@ This runs rosbridge and creates a WebSocket on port 9090 by default:
 roslaunch rosbridge_server rosbridge_websocket.launch
 ```python
 {% endcode %}
-{% endstep %}
 
-{% step %}
+
 ### Start Node-RED
 
 Start Node-RED and create a configuration node in order to communicate with the ROS master:
@@ -114,8 +104,7 @@ Below are screenshots showing the ROS contrib nodes, the subscription node edit 
 ![](<../../../../../.gitbook/assets/image (57)>) ![](<../../../../../.gitbook/assets/image (58)>) ![](<../../../../../.gitbook/assets/image (59)>)
 
 Congratulations, we have managed to make contact with the ROS system from a Node-RED flow. In the next step, we will subscribe to a topic and process the data we get.
-{% endstep %}
-{% endstepper %}
+
 
 #### The first flow that contains a ROS subscription
 

@@ -1,6 +1,6 @@
 # OBD GPS Logger for Linux and OSX
 
-\[ [Modules](/broken/pages/FP7EnVaf5BwCdwygYnJv) | [Screenshots](/broken/pages/FP7EnVaf5BwCdwygYnJv) | [Log Output](/broken/pages/FP7EnVaf5BwCdwygYnJv) | [Supported OSs](/broken/pages/FP7EnVaf5BwCdwygYnJv) | [Download](/broken/pages/FP7EnVaf5BwCdwygYnJv) | [Contact](/broken/pages/FP7EnVaf5BwCdwygYnJv) ]
+\ [Modules | Screenshots | Log Output | Supported OSs | Download | Contact ]
 
 It does exactly what it says on the tin. It logs OBDII and GPS data on Linux, OSX and others.
 
@@ -10,9 +10,9 @@ If you find obdgpslogger useful, please don't hesitate to drop me an email at [c
 
 ## Modules
 
-OBD GPS Logger comes as a bunch of small tools, each intended to complete a single task. [I list these modules](/broken/pages/7Gsx09sOrrSAf96TUtPQ) on a page of their own.
+OBD GPS Logger comes as a bunch of small tools, each intended to complete a single task. I list these modules on a page of their own.
 
-Of specific mention is an [OBD II Simulator](/broken/pages/EsNvNePDPeoLEq47Nn08), which has been given its own page to explore some of its features.
+Of specific mention is an OBD II Simulator, which has been given its own page to explore some of its features.
 
 Each module intended for end users has a manpage in the distribution. A simple text version of the manpages can be found here: [manpages](../../.gitbook/assets/manpages)
 

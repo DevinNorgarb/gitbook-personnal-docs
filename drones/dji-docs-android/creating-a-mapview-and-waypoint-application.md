@@ -1,27 +1,27 @@
 # Creating a MapView and Waypoint Application
 
-- [Using The DJI PC Simulator](/broken/pages/yestYBrXPiu4GcPCneis)
-  - [1. Introduction](/broken/pages/yestYBrXPiu4GcPCneis)
-  - [2. Installing and setup the DJI PC Simulator](/broken/pages/yestYBrXPiu4GcPCneis)
-  - [3. Using the DJI PC Simulator](/broken/pages/yestYBrXPiu4GcPCneis)
-- [Upgrading Your Aircraft's Firmware](/broken/pages/yestYBrXPiu4GcPCneis)
-- [Setup The Map View](/broken/pages/yestYBrXPiu4GcPCneis)
-  - [1. Importing The Framework and Libraries](/broken/pages/yestYBrXPiu4GcPCneis)
-  - [2. Creating the Map View](/broken/pages/yestYBrXPiu4GcPCneis)
-  - [3. Adding Annotations to the MapView](/broken/pages/yestYBrXPiu4GcPCneis)
-  - [4. Focusing the MKMapView](/broken/pages/yestYBrXPiu4GcPCneis)
-  - [5. Showing the Aircraft on Map View](/broken/pages/yestYBrXPiu4GcPCneis)
-- [Refactoring the UI](/broken/pages/yestYBrXPiu4GcPCneis)
-  - [1. Adding & Handling the New UIButtons](/broken/pages/yestYBrXPiu4GcPCneis)
-- [Configuring DJIWaypoint and DJIWaypointMission](/broken/pages/yestYBrXPiu4GcPCneis)
-  - [DJIWaypoint](/broken/pages/yestYBrXPiu4GcPCneis)
-  - [DJIWaypointMission](/broken/pages/yestYBrXPiu4GcPCneis)
-  - [Creating The DJIWaypointConfigViewController](/broken/pages/yestYBrXPiu4GcPCneis)
-- [Implementing the DJIWaypoint Mission](/broken/pages/yestYBrXPiu4GcPCneis)
-  - [Adding the DJIWaypointConfigViewController to DJIRootViewController](/broken/pages/yestYBrXPiu4GcPCneis)
-  - [Handling The DJIWaypoint Mission](/broken/pages/yestYBrXPiu4GcPCneis)
-- [Showtime](/broken/pages/yestYBrXPiu4GcPCneis)
-- [Summary](/broken/pages/yestYBrXPiu4GcPCneis)
+- Using The DJI PC Simulator
+  - 1. Introduction
+  - 2. Installing and setup the DJI PC Simulator
+  - 3. Using the DJI PC Simulator
+- Upgrading Your Aircraft's Firmware
+- Setup The Map View
+  - 1. Importing The Framework and Libraries
+  - 2. Creating the Map View
+  - 3. Adding Annotations to the MapView
+  - 4. Focusing the MKMapView
+  - 5. Showing the Aircraft on Map View
+- Refactoring the UI
+  - 1. Adding & Handling the New UIButtons
+- Configuring DJIWaypoint and DJIWaypointMission
+  - DJIWaypoint
+  - DJIWaypointMission
+  - Creating The DJIWaypointConfigViewController
+- Implementing the DJIWaypoint Mission
+  - Adding the DJIWaypointConfigViewController to DJIRootViewController
+  - Handling The DJIWaypoint Mission
+- Showtime
+- Summary
 
 _If you come across any mistakes or bugs in this tutorial, please let us know using a Github issue, a post on the DJI forum, or commenting in the Gitbook. Please feel free to send us Github pull request and help us fix any issues. However, all pull requests related to document must follow the_ [_document style_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 

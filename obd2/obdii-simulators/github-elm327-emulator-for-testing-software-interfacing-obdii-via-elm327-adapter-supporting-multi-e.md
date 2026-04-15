@@ -462,13 +462,13 @@ _ELM327-emulator_ includes a basic processing of the ISO 15765-2 ISO-TP Layer an
 - ISO-TP Single frame (SF), First frame (FF), Consecutive frame (CF), Flow control frame (FC),
 - Basic input flow control of ISO-TP (with generation of FC output frames); output flow control (handling of FC input frames) is ignored,
 - KWP2000 Checksum byte (CS) at the end of the ISO 14230-2:1999 message block (checksum verification in requests and checksum generation in responses),
-- ISO-TP P1, P2, P3 and P4 [timers](/broken/pages/K1H5cynA5Th3WwrjLp5K).
+- ISO-TP P1, P2, P3 and P4 timers.
 
 The KWP2000 format is detected by a header >= three bytes.
 
 ### Advanced usage
 
-_ELM327-emulator_ allows changing the UDS P1, P2, P3 and P4 [timers](/broken/pages/K1H5cynA5Th3WwrjLp5K) via the `timer` command. The P4 timer controls the max delay between each entered character and by default is not active (e.g., set to 1440 seconds). The P4 timer can either be configured via `timer P4 value`, or by setting `emulator.counters['req_timeout']`. Decimals are allowed. Some adapters set P4 by default, discarding characters if each of them is not entered within a short time limit (apart from the first one after a CR/Carriage Return). The appropriate emulation for this timeout is to set `emulator.counters['req_timeout']=0.015` (e.g., 15 milliseconds). Typing commands by hand via terminal emulator with such adapters is not possible as the allowed timing is too short. The same happens when setting _req\_timeout_ to 0.015 (or `timer P4 0.015`).
+_ELM327-emulator_ allows changing the UDS P1, P2, P3 and P4 timers via the `timer` command. The P4 timer controls the max delay between each entered character and by default is not active (e.g., set to 1440 seconds). The P4 timer can either be configured via `timer P4 value`, or by setting `emulator.counters['req_timeout']`. Decimals are allowed. Some adapters set P4 by default, discarding characters if each of them is not entered within a short time limit (apart from the first one after a CR/Carriage Return). The appropriate emulation for this timeout is to set `emulator.counters['req_timeout']=0.015` (e.g., 15 milliseconds). Typing commands by hand via terminal emulator with such adapters is not possible as the allowed timing is too short. The same happens when setting _req\_timeout_ to 0.015 (or `timer P4 0.015`).
 
 The command prompt also allows configuring the `emulator.answer` dictionary (ref. also previous paragraph), which has the goal to dynamically redefine answers for specific PIDs (`'Pid': '...'`). Its syntax is:
 
@@ -764,7 +764,7 @@ Values are in seconds (floating numbers are allowed).
 | P1         | Inter byte time for ECU response                                  | 0             | This timer is implemented by adding a fixed delay to each outputted character. If set to a value different than 0, _ELM327-emulator_ outputs characters one by one, adding the indicated delay value after each of them.                                        |
 | P2         | Time between tester request and ECU response or two ECU responses | 0             | Same as the `delay` command: this timer is implemented by adding a fixed delay (the one indicated in the `timer P2` value) after receiving each request (including also AT/ST commands) and before computing the response.                                      |
 | P3         | Time between end of ECU responses and start of new tester request | 5             | The related value controls the expiration timeout between two responses: if expiring within a multiframe or within an active task, the related operation is interrupted and the active tasks of the same ECU are removed, executing the _stop()_ method.        |
-| P4         | Inter byte time for tester request                                | 1440          | The related value controls the time between each received request character to keep the whole request valid. If exceeding the timeout, the request is discarded. Changing this value configures the [req\_timeout](/broken/pages/K1H5cynA5Th3WwrjLp5K) counter. |
+| P4         | Inter byte time for tester request                                | 1440          | The related value controls the time between each received request character to keep the whole request valid. If exceeding the timeout, the request is discarded. Changing this value configures the req\_timeout counter. |
 
 ### Tasks
 
@@ -774,15 +774,15 @@ In case of stateless requests/responses, an ECU function can be emulated through
 
 When _ELM327-emulator_ starts, it enumerates all available plugins in its _plugins_ subdirectory (_elm/plugins_). Each plugin defines an own task, named with the file name of the plugin. All the file names of the plugins must start with _task\__.
 
-A task is invoked in the dictionary through the `'Task'` tag, that refers to the name of an installed plugin. If a request associating a task is matched (including _Request_ and possibly _Header_ tags), its related task is activated by instantiating the _Task_ class of the invoked plugin. After startup and after processing the request, the task can either terminate or remain active; in the latter case, it receives all subsequent requests related to the same header, allowing to implement a dedicated communication flow within a dedicated namespace. All tasks (regardless they terminate or remain active) take also advantage of a shared namespace, common to all requests addressed to the same ECU (see [ECU Tasks](/broken/pages/K1H5cynA5Th3WwrjLp5K) for further information).
+A task is invoked in the dictionary through the `'Task'` tag, that refers to the name of an installed plugin. If a request associating a task is matched (including _Request_ and possibly _Header_ tags), its related task is activated by instantiating the _Task_ class of the invoked plugin. After startup and after processing the request, the task can either terminate or remain active; in the latter case, it receives all subsequent requests related to the same header, allowing to implement a dedicated communication flow within a dedicated namespace. All tasks (regardless they terminate or remain active) take also advantage of a shared namespace, common to all requests addressed to the same ECU (see ECU Tasks for further information).
 
 Tasks are interrupted by the following conditions:
 
 - task termination performed by the plugin itself after processing the request (e.g, returning a method with `False` or with `self.TASK.TERMINATE` as the second value of the return tuple);
 - communication reset (e.g., communication disconnection, or "ATZ", or _reset_ command);
-- expiration of the [P3 timer](/broken/pages/K1H5cynA5Th3WwrjLp5K).
+- expiration of the P3 timer.
 
-Tasks and plugins can be monitored through the `tasks` [command](/broken/pages/K1H5cynA5Th3WwrjLp5K).
+Tasks and plugins can be monitored through the `tasks` command.
 
 Multiple tasks can be concurrently instanced with different ECU IDs.
 
@@ -826,7 +826,7 @@ A task can exploit its own namespace, which is related to a specific task instan
 
 Other than storing local variables, the task namespace is useful to persist class properties if the task terminates with `Tasks.RETURN.CONTINUE`, and also to perform preprocessing through the related task methods (`start()`, `stop()`, `run()`), so that any subsequent request of the same ECU will be processed by the same task, until task termination. All subsequent calls of an active task share the same namespace. For instance, if a task is configured as a filter, its namespace can be used while preprocessing all subsequent requests directed to the ECU, which will be sent to the same task until its termination.
 
-The shared namespace for an ECU is named `self.shared` and can be associated to an [ECU Task](/broken/pages/K1H5cynA5Th3WwrjLp5K). For instance, a task can create a variable named `self.shared.my_data = True`, that other tasks can use. The shared namespace can be used by different commands or tasks, if referring the same ECU. This area is created by _ELM327-emulator_ at the first request referring to an ECU (and, if available, the related ECU Task `start()` method is executed). The shared namespace is already active when any task method is run. This shared area is reset by a communication disconnection, or "ATZ", or _reset_ command, or expiration of the P3 timer.
+The shared namespace for an ECU is named `self.shared` and can be associated to an ECU Task. For instance, a task can create a variable named `self.shared.my_data = True`, that other tasks can use. The shared namespace can be used by different commands or tasks, if referring the same ECU. This area is created by _ELM327-emulator_ at the first request referring to an ECU (and, if available, the related ECU Task `start()` method is executed). The shared namespace is already active when any task method is run. This shared area is reset by a communication disconnection, or "ATZ", or _reset_ command, or expiration of the P3 timer.
 
 The easies way to configure tasks is to use Tasks.RETURN.TERMINATE (so that a task terminates after the execution of the invoked method, e.g., `Task.RETURN.ANSWER(answer)`) and to exploit `self.shared` to store persistent data, shared by different tasks and functions. The easies way to initialize shared data is through the definition of a `start()` method inside the related ECU Task.
 
@@ -1572,7 +1572,7 @@ When natively running on Windows (to be used when connecting a Windows applicati
 
 ### Credits
 
-Thanks to [@qqj1228](https://github.com/qqj1228) for implementing support to [com0com Windows driver](/broken/pages/K1H5cynA5Th3WwrjLp5K).
+Thanks to [@qqj1228](https://github.com/qqj1228) for implementing support to com0com Windows driver.
 
 Thanks to ElmüSoft for several clarifications and to [mickeyl](https://github.com/mickeyl) for some notes on UDS.
 

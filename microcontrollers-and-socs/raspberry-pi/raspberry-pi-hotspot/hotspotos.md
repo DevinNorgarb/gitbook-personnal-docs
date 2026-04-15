@@ -1,4 +1,4 @@
 # HotSpotOS
 
 
-{% embed url="https://github.com/guysoft/HotSpotOS" %}
+<https://github.com/guysoft/HotSpotOS>

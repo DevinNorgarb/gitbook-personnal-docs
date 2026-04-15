@@ -1,15 +1,13 @@
 # From Google Sheets, how to send email based on date
 
-![](https://devthedev.gitbook.io/guides/~gitbook/image?url=https%3A%2F%2Fblog.gsmart.in%2Fwp-content%2Fuploads%2F2019%2F05%2Fe837b90f2df7063ed1584d05fb1d4390e376ead004b0144493f9c47ca7ecb3_640-150x100.jpg\&width=768\&dpr=3\&quality=100\&sign=5aca5fe8\&sv=2)
+![](https://blog.gsmart.in/wp-content/uploads/2019/05/e837b90f2df7063ed1584d05fb1d4390e376ead004b0144493f9c47ca7ecb3_640-150x100.jpg)
 
 Suppose you want to send reminder emails automatically from your Google Sheets. The email needs to be sent when the invoice is overdue. So it requires checking the current date with the invoice due date. This guide shows how to do that in Google Sheets using Google Apps Script.
 
 We have a Google Sheet with the list of clients and the invoice due date like this:
 
-![](https://devthedev.gitbook.io/guides/~gitbook/image?url=https%3A%2F%2Fblog.gsmart.in%2Fwp-content%2Fuploads%2F2019%2F05%2Finvoice-due-google-sheet-1024x802.png\&width=300\&dpr=3\&quality=100\&sign=b53d8281\&sv=2)
+![](https://blog.gsmart.in/wp-content/uploads/2019/05/invoice-due-google-sheet-1024x802.png)
 
-{% stepper %}
-{% step %}
 ## Mark Overdue rows
 
 First, create a feature to mark the overdue rows. The script will iterate through the rows and add an “overdue” column.
@@ -44,16 +42,16 @@ function doOverdueCheck()
 }
 ```
 
-{% hint style="info" %}
-Note about Date Fields
+> **Note**
+>
+> Note about Date Fields
+>
+> The date fields in the Google Sheet return JavaScript Date objects when you call getValue() on that cell. This makes the rest of the check easy. Note that the dates (today and invoice date) are normalized to 0 hours first (so that only the date part is compared).
 
-The date fields in the Google Sheet return JavaScript Date objects when you call getValue() on that cell. This makes the rest of the check easy. Note that the dates (today and invoice date) are normalized to 0 hours first (so that only the date part is compared).
-{% endhint %}
 
 After entering this code: File → Save and then close and re-open the Google Sheet. It should show the new menu item. Try running “Mark Overdue”.
-{% endstep %}
 
-{% step %}
+
 ### Extract the overdue record
 
 Now that we have the overdue records, extract the information from the row so that we can customize the email.
@@ -91,9 +89,8 @@ function getOverDueInfo(row)
 ```
 
 This code extracts the client details from the row and computes values like the number of days since the invoice is due. You’ll use this overdue information to compose the email.
-{% endstep %}
 
-{% step %}
+
 ### Compose the email
 
 Create an HTML template in the script editor: File → New → select HTML. Here is a sample HTML email template (save it as client-email.html or a similar name in the script project):
@@ -144,10 +141,9 @@ function sendEmail(row)
   });
 
 }
-```php
-{% endstep %}
+```
 
-{% step %}
+
 ### Sending emails to all overdue clients
 
 Iterate through the rows, find overdue clients and send the email.
@@ -194,9 +190,8 @@ function onOpen()
 This requires you to open the sheet and run “Send Emails” manually.
 
 * Or automate the process with a time-driven trigger (described next).
-{% endstep %}
 
-{% step %}
+
 ### Automating emails from your Google Sheet
 
 To automate, install a trigger from the Google Apps Script editor:
@@ -208,11 +203,10 @@ To automate, install a trigger from the Google Apps Script editor:
 5. Choose the timer type (for example, “Week timer”, “Every Monday”).
 6. Save.
 
-![](https://devthedev.gitbook.io/guides/~gitbook/image?url=https%3A%2F%2Fblog.gsmart.in%2Fwp-content%2Fuploads%2F2019%2F05%2Fautomating-google-sheet-emails-1024x916.png\&width=768\&dpr=3\&quality=100\&sign=79c869aa\&sv=2)
+![](https://blog.gsmart.in/wp-content/uploads/2019/05/automating-google-sheet-emails-1024x916.png)
 
 You can get the complete script here: https://gist.github.com/prasanthmj/ad3b6ea51e2f651a99d56e1875099196
-{% endstep %}
-{% endstepper %}
+
 
 See also
 

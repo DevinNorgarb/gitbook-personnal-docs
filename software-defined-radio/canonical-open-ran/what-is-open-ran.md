@@ -1,6 +1,6 @@
 # What is Open RAN?
 
-{% embed url="https://ubuntu.com/blog/what-is-open-ran" %}
+<https://ubuntu.com/blog/what-is-open-ran>
 
 **Tags:** [Open RAN](https://ubuntu.com/blog/tag/open-ran) , [Telco](https://ubuntu.com/blog/tag/telco) , [Telco 5G](https://ubuntu.com/blog/tag/telco-5g) , [telco edge cloud](https://ubuntu.com/blog/tag/telco-edge-cloud)
 

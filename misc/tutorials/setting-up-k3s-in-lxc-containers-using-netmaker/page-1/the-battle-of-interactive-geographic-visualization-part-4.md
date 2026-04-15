@@ -56,9 +56,10 @@ df.head()
 ![](<../../../../.gitbook/assets/image (16)>)\
 Image by Author: The first five observations of our dataset.
 
-{% hint style="warning" %}
-A bit of warning when using Altair: Altair uses data transformers and requires all columns to be JSON-serializable. Do not include geometric (non-JSON-serializable) data types among your dataframe columns.
-{% endhint %}
+> **Warning**
+>
+> A bit of warning when using Altair: Altair uses data transformers and requires all columns to be JSON-serializable. Do not include geometric (non-JSON-serializable) data types among your dataframe columns.
+
 
 Unlike Plotly, with Altair you typically import your own shapefiles to provide map boundaries. GADM (https://gadm.org/) is a common source for shapefiles.
 

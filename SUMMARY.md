@@ -67,7 +67,7 @@
 - [Machine Learning](software-engineering/machine-learning/README.md)
   - [openmv.io](software-engineering/machine-learning/openmv.io.md)
   - [Google MLKit](software-engineering/machine-learning/google-mlkit/README.md)
-    - [MLKIT](https://developers.google.com/ml-kit/vision/barcode-scanning/android)
+    - [ML Kit barcode (Android)](software-engineering/machine-learning/google-mlkit/mlkit-barcode-android.md)
 - [Shopify Dev](software-engineering/shopify-dev/README.md)
   - [Fulfillment Orders](software-engineering/shopify-dev/fulfilment-orders.md)
   - [Track orders placed through third-party marketplaces](software-engineering/shopify-dev/track-orders-placed-through-third-party-marketplaces.md)

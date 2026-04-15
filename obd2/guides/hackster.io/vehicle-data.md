@@ -1,6 +1,6 @@
 # VEHICLE DATA
 
-{% embed url="https://www.hackster.io/bxmas13/vehicle-metrics-9c9ae5" %}
+<https://www.hackster.io/bxmas13/vehicle-metrics-9c9ae5>
 
 <figure><img src="../../../.gitbook/assets/background_hhDloUVGP0 (1).jpg" alt=""><figcaption></figcaption></figure>
 

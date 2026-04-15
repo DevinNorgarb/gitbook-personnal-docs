@@ -1,3 +1,3 @@
 # ESP32
 
-{% file src="../../.gitbook/assets/kolban-ESP32.pdf" %}
+[kolban-ESP32.pdf](../../.gitbook/assets/kolban-ESP32.pdf)

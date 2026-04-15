@@ -4,19 +4,19 @@
 
 ## Creating a MapView and Waypoint Application <a href="#creating-a-mapview-and-waypoint-application" id="creating-a-mapview-and-waypoint-application"></a>
 
-- [Using the DJI PC Simulator](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-  - [1. Introduction](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-  - [2. Install and setup DJI PC Simulator](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-  - [3. How to use DJI PC Simulator](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-- [Upgrade the Aircraft's Firmware](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-- [Setup the Map View](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-  - [1. Create a map view](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-  - [2. Locate the Aircraft](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-  - [3. Add and clear the waypoints](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-- [Configure the Navigation Task](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-- [Upload the Task to the Aircraft](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-- [Start and Stop the DJIGroundStationTask](/broken/pages/OHCdO20m6l7PeJYbHzoD)
-- [Summary](/broken/pages/OHCdO20m6l7PeJYbHzoD)
+- Using the DJI PC Simulator
+  - 1. Introduction
+  - 2. Install and setup DJI PC Simulator
+  - 3. How to use DJI PC Simulator
+- Upgrade the Aircraft's Firmware
+- Setup the Map View
+  - 1. Create a map view
+  - 2. Locate the Aircraft
+  - 3. Add and clear the waypoints
+- Configure the Navigation Task
+- Upload the Task to the Aircraft
+- Start and Stop the DJIGroundStationTask
+- Summary
 
 _If you come across any mistakes or bugs in this tutorial, please let us know using a Github issue, a post on the DJI forum, or commenting in the Gitbook. Please feel free to send us Github pull request and help us fix any issues. However, all pull requests related to document must follow the_ [_document style_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 

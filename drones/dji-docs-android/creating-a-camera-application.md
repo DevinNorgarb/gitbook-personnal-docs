@@ -1,16 +1,16 @@
 # Creating a Camera Application
 
-- [Download the SDK](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-- [Import the SDK framework](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-- [Implement the First Person View](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-- [Activate the SDK](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-- [Connect the Aircraft](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-- [Enjoy the First Person View](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-- [Implement the Capture function](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-- [Implement the Record function](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-  - [1. Switching Camera Mode](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-  - [2. Add Record Action](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
-- [Summary](/broken/pages/fZHKw9V4jxIm0VpsnoUc)
+- Download the SDK
+- Import the SDK framework
+- Implement the First Person View
+- Activate the SDK
+- Connect the Aircraft
+- Enjoy the First Person View
+- Implement the Capture function
+- Implement the Record function
+  - 1. Switching Camera Mode
+  - 2. Add Record Action
+- Summary
 
 _If you come across any mistakes or bugs in this tutorial, please let us know using a Github issue, a post on the DJI forum, or commenting in the Gitbook. Please feel free to send us Github pull request and help us fix any issues. However, all pull requests related to document must follow the_ [_document style_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 

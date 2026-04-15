@@ -1,6 +1,6 @@
 # Shopify Remote UI
 
-{% embed url="https://shopify.engineering/remote-rendering-ui-extensibility" %}
+<https://shopify.engineering/remote-rendering-ui-extensibility>
 
 ## Remote Rendering: Shopify’s Take on Extensible UI
 

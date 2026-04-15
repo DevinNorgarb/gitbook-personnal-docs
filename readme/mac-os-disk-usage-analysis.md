@@ -25,11 +25,11 @@ _<mark style="color:yellow;">It is absolutely free and released under the</mark>
 
 It can be downloaded here:
 
-{% embed url="https://derlien.com/downloads/index.html" %}
+<https://derlien.com/downloads/index.html>
 
 And code viewed here:
 
-{% embed url="https://gitlab.com/tderlien/disk-inventory-x" %}
+<https://gitlab.com/tderlien/disk-inventory-x>
 
 <figure><img src="../.gitbook/assets/2024-01-05_23-41.png" alt=""><figcaption></figcaption></figure>
 

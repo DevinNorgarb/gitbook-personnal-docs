@@ -87,7 +87,7 @@ In the case that multiple features have the same `relevance` score, a second fil
 https://api.mapbox.com/geocoding/v5/mapbox.places/paris.json?access_token=YOUR_MAPBOX_ACCESS_TOKEN
 ```
 
-[**Result prioritization in reverse geocoding**](/broken/pages/Uk4lRy43oUTqo0RCH04x)
+**Result prioritization in reverse geocoding**
 
 For reverse geocodes, results at a given set of coordinates are sorted by order of **spatial hierarchy**. For example, a more granular feature such as an `address`, `poi`, or `postcode` will return first in the response before feature types like `region` or `country`. The full spatial hierarchy, ordered from the most granular to the largest, is: _point of interest (POI)_, _address_, _neighborhood_, _locality_, _postcode_, _place_, _district_, _region_, and _country_. (For more details about these geographic information types, see the Source data section.)
 

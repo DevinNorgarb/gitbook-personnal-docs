@@ -1,6 +1,6 @@
 # Exception Handling
 
-{% embed url="https://dev.to/honeybadger/a-guide-to-exception-handling-in-php-4cah" %}
+<https://dev.to/honeybadger/a-guide-to-exception-handling-in-php-4cah>
 
 ## A guide to exception handling in PHP
 

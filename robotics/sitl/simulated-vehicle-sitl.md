@@ -12,13 +12,14 @@ DroneKit-SITL is the simplest, fastest and easiest way to run SITL on Windows, L
 
 For more information, see the project on GitHub: https://github.com/dronekit/dronekit-sitl
 
-{% hint style="warning" %}
-DroneKit-SITL is still relatively experimental and there are only a few pre-built vehicles (some are old/unstable).
+> **Warning**
+>
+> DroneKit-SITL is still relatively experimental and there are only a few pre-built vehicles (some are old/unstable).
+>
+> Binaries are built and tested on Windows 10, Ubuntu Linux, and macOS “El Capitan”. Binaries are only available for x86 architectures. ARM builds (e.g. for Raspberry Pi) are not supported.
+>
+> Please report issues on GitHub: https://github.com/dronekit/dronekit-sitl/issues
 
-Binaries are built and tested on Windows 10, Ubuntu Linux, and macOS “El Capitan”. Binaries are only available for x86 architectures. ARM builds (e.g. for Raspberry Pi) are not supported.
-
-Please report issues on GitHub: https://github.com/dronekit/dronekit-sitl/issues
-{% endhint %}
 
 ### Installation
 
@@ -60,9 +61,10 @@ dronekit-sitl --reset       # Delete all downloaded vehicle binaries.
 dronekit-sitl ./path [args...]  # Start SITL instance at target file location.
 ```
 
-{% hint style="info" %}
-You can also use dronekit-sitl to start a SITL executable you built locally. Put the file path of the executable in the SITL\_BINARY environment variable, or supply it as the first argument.
-{% endhint %}
+> **Note**
+>
+> You can also use dronekit-sitl to start a SITL executable you built locally. Put the file path of the executable in the SITL\_BINARY environment variable, or supply it as the first argument.
+
 
 ### Connecting to DroneKit-SITL
 
@@ -76,9 +78,10 @@ vehicle = connect('tcp:127.0.0.1:5760', wait_ready=True)
 
 After something connects to port 5760, SITL will wait for additional connections on subsequent ports (5763, 5766, 5769, etc.).
 
-{% hint style="warning" %}
-While you can connect to these additional ports, some users report problems when viewing running examples with Mission Planner. If you need to connect a ground station and DroneKit at the same time, we recommend using MAVProxy (see “Connecting an additional Ground Station”).
-{% endhint %}
+> **Warning**
+>
+> While you can connect to these additional ports, some users report problems when viewing running examples with Mission Planner. If you need to connect a ground station and DroneKit at the same time, we recommend using MAVProxy (see “Connecting an additional Ground Station”).
+
 
 ### DroneKit-SITL Python API
 
@@ -105,8 +108,6 @@ ArduPilot wiki guides for native builds:
 
 You can connect a ground station to an unused port to which messages are forwarded. The most reliable way to add new ports is to use MAVProxy.
 
-{% stepper %}
-{% step %}
 ### If you built SITL from source (MAVProxy already running)
 
 Add new ports in the MAVProxy console using:
@@ -114,9 +115,8 @@ Add new ports in the MAVProxy console using:
 ```bash
 output add 127.0.0.1:14552
 ```python
-{% endstep %}
 
-{% step %}
+
 ### If you are using DroneKit-SITL
 
 1. Install MAVProxy for your system:
@@ -128,8 +128,7 @@ output add 127.0.0.1:14552
 mavproxy.py --master tcp:127.0.0.1:5760 --sitl 127.0.0.1:5501 --out 127.0.0.1:14550 --out 127.0.0.1:14551
 ```json
 {% endcode %}
-{% endstep %}
-{% endstepper %}
+
 
 Once you have available ports you can connect your DroneKit script to one UDP address and your Ground Control Station to another.
 
@@ -147,8 +146,9 @@ vehicle = connect('127.0.0.1:14550', wait_ready=True)
 
 After connecting, vehicle parameters will be loaded into Mission Planner and the vehicle displayed on the map.
 
-{% hint style="info" %}
-If you’re using the DroneKit-SITL Python API you will instead have to connect to SITL’s TCP port (since you cannot set up MAVProxy in that API). So if DroneKit connects to TCP port 5760, you would connect your GCS to 5763.
+> **Note**
+>
+> If you’re using the DroneKit-SITL Python API you will instead have to connect to SITL’s TCP port (since you cannot set up MAVProxy in that API). So if DroneKit connects to TCP port 5760, you would connect your GCS to 5763.
+>
+> Note that a few examples may not behave perfectly using this approach. If you need to observe them in a GCS you should run SITL externally and use MAVProxy to connect to it.
 
-Note that a few examples may not behave perfectly using this approach. If you need to observe them in a GCS you should run SITL externally and use MAVProxy to connect to it.
-{% endhint %}

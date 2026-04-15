@@ -1,6 +1,6 @@
 # Sentry's take on Code Reviews
 
-{% embed url="https://develop.sentry.dev/code-review/" %}
+<https://develop.sentry.dev/code-review/>
 
 ## Code Review
 

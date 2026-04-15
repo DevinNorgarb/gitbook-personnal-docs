@@ -1,6 +1,6 @@
 # Dockerizing an existing ROS project
 
-{% embed url="https://github.com/tkunic/ros-docker-simple" %}
+<https://github.com/tkunic/ros-docker-simple>
 
 
 ## ROS Docker Simple

@@ -115,7 +115,7 @@
 
 ### 2.5 GitBook-specific syntax
 
-**`{% file src="..." %}`** – Used in ~25+ files for PDF/file embeds. GitBook-only; may not render elsewhere.
+**`[...](...)`** – Used in ~25+ files for PDF/file embeds. GitBook-only; may not render elsewhere.
 
 **Affected:** `resources-documents-pdfs-etc/`, `pen-testing/decompilers/android/smali.md`, etc.
 

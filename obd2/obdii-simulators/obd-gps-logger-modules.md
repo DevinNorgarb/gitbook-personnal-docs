@@ -22,7 +22,7 @@ The other major difference that obdgui provides is that it has a set of GUI dial
 
 For testing without going down to your car, obdgpslogger's repository contains an ELM327 simulator. obdsim is deliberately kept independant of obdgpslogger at the source level; they share some libraries, but this sim can be used with other OBDII applications.
 
-One of the main features of this simulator is that it uses plugins for actual number generation. Please visit the [page specifically for obdsim for more information](/broken/pages/EsNvNePDPeoLEq47Nn08)
+One of the main features of this simulator is that it uses plugins for actual number generation. Please visit the page specifically for obdsim for more information
 
 #### obd2kml
 

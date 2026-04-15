@@ -1,6 +1,6 @@
 # AISHub RPiAIS
 
-{% embed url="https://www.aishub.net/ais-dispatcher?tab=linux" %}
+<https://www.aishub.net/ais-dispatcher?tab=linux>
 
 ## AIS Dispatcher -  Linux
 

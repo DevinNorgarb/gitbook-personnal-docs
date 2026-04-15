@@ -280,11 +280,11 @@ _"buf"_ is where you store the data.<br>
 - <br>
 
 
-{% file src="../../.gitbook/assets/MCP2515 (1).pdf" %}
+[MCP2515 (1).pdf](<../../.gitbook/assets/MCP2515 (1).pdf>)
 
-{% file src="../../.gitbook/assets/Mcp2551en (1).pdf" %}
+[Mcp2551en (1).pdf](<../../.gitbook/assets/Mcp2551en (1).pdf>)
 
-{% file src="../../.gitbook/assets/CAN_BUS_Shield_master (1).zip" %}
+[CAN_BUS_Shield_master (1).zip](<../../.gitbook/assets/CAN_BUS_Shield_master (1).zip>)
 
 
-{% file src="../../.gitbook/assets/Mcp2551en (1) (1).pdf" %}
+[Mcp2551en (1) (1).pdf](<../../.gitbook/assets/Mcp2551en (1) (1).pdf>)

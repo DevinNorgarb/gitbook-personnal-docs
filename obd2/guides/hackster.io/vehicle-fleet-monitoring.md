@@ -1,8 +1,8 @@
 # Vehicle Fleet Monitoring
 
-{% embed url="https://hackster.io/virgilvox/vehicle-fleet-monitoring-810940" %}
+<https://hackster.io/virgilvox/vehicle-fleet-monitoring-810940>
 
-{% file src="../../../.gitbook/assets/hologram-vehicle-monitor-master.zip" %}
+[hologram-vehicle-monitor-master.zip](../../../.gitbook/assets/hologram-vehicle-monitor-master.zip)
 
 ## 
 

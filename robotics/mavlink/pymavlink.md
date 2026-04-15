@@ -72,24 +72,24 @@ There are 3 types of udp connections for `mavlink_connection`:
 
 #### Shortcut Links <a href="#shortcut-links" id="shortcut-links"></a>
 
-1. [Autopilot connected to the computer via serial](/broken/pages/1pfNTAir02mgT4TNEtvn)
-2. [Run pyMavlink on the surface computer](/broken/pages/1pfNTAir02mgT4TNEtvn)
-3. [Run pyMavlink on the companion computer](/broken/pages/1pfNTAir02mgT4TNEtvn)
-4. [Send Message to QGroundControl](/broken/pages/1pfNTAir02mgT4TNEtvn)
-5. [Arm/Disarm the vehicle](/broken/pages/1pfNTAir02mgT4TNEtvn)
-6. [Change flight mode](/broken/pages/1pfNTAir02mgT4TNEtvn)
-7. [Send RC (Joystick)](/broken/pages/1pfNTAir02mgT4TNEtvn)
-8. [Send Manual Control](/broken/pages/1pfNTAir02mgT4TNEtvn)
-9. [Read all parameters](/broken/pages/1pfNTAir02mgT4TNEtvn)
-10. [Read and write parameters](/broken/pages/1pfNTAir02mgT4TNEtvn)
-11. [Receive data and filter by message type](/broken/pages/1pfNTAir02mgT4TNEtvn)
-12. [Request message interval](/broken/pages/1pfNTAir02mgT4TNEtvn)
-13. [Control Camera Gimbal](/broken/pages/1pfNTAir02mgT4TNEtvn)
-14. [Set Servo PWM](/broken/pages/1pfNTAir02mgT4TNEtvn)
-15. [Advanced Servo/Gripper Example](/broken/pages/1pfNTAir02mgT4TNEtvn)
-16. [Set Target Depth/Attitude](/broken/pages/1pfNTAir02mgT4TNEtvn)
-17. [Send GPS position](/broken/pages/1pfNTAir02mgT4TNEtvn)
-18. [Send rangefinder/computer vision distance measurement to the autopilot](/broken/pages/1pfNTAir02mgT4TNEtvn)
+1. Autopilot connected to the computer via serial
+2. Run pyMavlink on the surface computer
+3. Run pyMavlink on the companion computer
+4. Send Message to QGroundControl
+5. Arm/Disarm the vehicle
+6. Change flight mode
+7. Send RC (Joystick)
+8. Send Manual Control
+9. Read all parameters
+10. Read and write parameters
+11. Receive data and filter by message type
+12. Request message interval
+13. Control Camera Gimbal
+14. Set Servo PWM
+15. Advanced Servo/Gripper Example
+16. Set Target Depth/Attitude
+17. Send GPS position
+18. Send rangefinder/computer vision distance measurement to the autopilot
 
 **Autopilot (E.g: Pixhawk) connected to the computer via serial**
 

@@ -1,5 +1,5 @@
 # ELM327 Datasheet
 
 
-{% file src="../.gitbook/assets/ELM327DSL.pdf" %}
+[ELM327DSL.pdf](../.gitbook/assets/ELM327DSL.pdf)
 

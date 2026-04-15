@@ -8,8 +8,6 @@ These map styles can also be loaded into the free and open source desktop GIS so
 
 This tutorial requires that you have an existing Mapbox account and have set up at least one map style. To get started with Mapbox, sign up for free ↗: https://www.mapbox.com/signup/?referrer=gislounge.com
 
-{% stepper %}
-{% step %}
 ## Create a Map Style in Mapbox
 
 The first thing you will need to do in Mapbox is to create a map style in your studio ↗: https://www.mapbox.com/studio/. To familiarize yourself with how to do that, visit the Mapbox tutorial on creating styles ↗: https://www.mapbox.com/help/create-a-custom-style/. If you are just interested in a predesigned basemap, select one of the style templates. Type in the name for your new map style.
@@ -23,9 +21,8 @@ Either customize the map style in the editor or use the default template style. 
 Select “Share, develop & use”. Scroll down to the section that says “Use with WMTS service”. Click the toggle button to select QGIS. Then copy the URL provided in the WMTS endpoint box — you will need this URL when you open QGIS.
 
 ![WMTS endpoint URL](<../../../../.gitbook/assets/image (49)>)
-{% endstep %}
 
-{% step %}
+
 ### Loading the Mapbox Style in QGIS Using WMTS Service
 
 Open QGIS. On the far left are icons for loading different data types into QGIS. Select the globe icon to load a layer from a WMTS Server.
@@ -54,5 +51,5 @@ Notes:
 * You can load other GIS data on top of the Mapbox style and change the projection. In the example shown, a shapefile of ocean debris landings was added and reprojected from Mapbox’s default Web Mercator to a Pacific-centric WGS 1984 PDC Mercator projection.
 
 ![Reprojected data over Mapbox style](<../../../../.gitbook/assets/image (55)>)
-{% endstep %}
-{% endstepper %}
+
+

@@ -1,7 +1,7 @@
 # Databases
 
-{% file src="../.gitbook/assets/Kimball_The-Data-Warehouse-Toolkit-3rd-Edition.pdf" %}
+[Kimball_The-Data-Warehouse-Toolkit-3rd-Edition.pdf](../.gitbook/assets/Kimball_The-Data-Warehouse-Toolkit-3rd-Edition.pdf)
 
-{% file src="../.gitbook/assets/next-level-database-techniques-for-developers.pdf" %}
+[next-level-database-techniques-for-developers.pdf](../.gitbook/assets/next-level-database-techniques-for-developers.pdf)
 
-{% file src="../.gitbook/assets/hadoop_-beginners-guide.pdf" %}
+[hadoop_-beginners-guide.pdf](../.gitbook/assets/hadoop_-beginners-guide.pdf)

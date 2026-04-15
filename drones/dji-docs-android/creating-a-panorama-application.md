@@ -1,17 +1,17 @@
 # Creating a Panorama Application
 
-- [Implementing the FPV](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-- [Rotating with Virtual Stick](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-- [Shooting a Series of Photos](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-- [Rotating Gimbal to Shoot Photos](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-- [Shooting Photos with DJIWaypointMission](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-- [Selecting and Downloading Photos](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-- [Using OpenCV to Create Panorama](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-  - [Creating Stitching View](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-  - [Importing OpenCV](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-  - [Stitching Photos](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-  - [Cropping the Panorama](/broken/pages/m5KQoMBRKRBJU3koBAl6)
-- [Summary](/broken/pages/m5KQoMBRKRBJU3koBAl6)
+- Implementing the FPV
+- Rotating with Virtual Stick
+- Shooting a Series of Photos
+- Rotating Gimbal to Shoot Photos
+- Shooting Photos with DJIWaypointMission
+- Selecting and Downloading Photos
+- Using OpenCV to Create Panorama
+  - Creating Stitching View
+  - Importing OpenCV
+  - Stitching Photos
+  - Cropping the Panorama
+- Summary
 
 _If you come across any mistakes or bugs in this tutorial, please let us know using a Github issue, a post on the DJI forum, or commenting in the Gitbook. Please feel free to send us Github pull request and help us fix any issues. However, all pull requests related to document must follow the_ [_document style_](https://github.com/dji-sdk/Mobile-SDK-Tutorial/issues/19)
 

@@ -1,6 +1,6 @@
 # Serial
 
-{% embed url="https://forum.arduino.cc/t/serial-input-basics-updated/382007" %}
+<https://forum.arduino.cc/t/serial-input-basics-updated/382007>
 
 ## Updated Version
 

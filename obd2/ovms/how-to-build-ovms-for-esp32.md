@@ -1813,6 +1813,6 @@ The OVMS v3 module includes a DB9 external expansion connector, compatible with 
 
 <br>
 
-{% file src="../../.gitbook/assets/OVMS v3 Developer Guide.pdf" %}
+[OVMS v3 Developer Guide.pdf](<../../.gitbook/assets/OVMS v3 Developer Guide.pdf>)
 
-{% file src="../../.gitbook/assets/OVMS v3 Developer Guide.rtf" %}
+[OVMS v3 Developer Guide.rtf](<../../.gitbook/assets/OVMS v3 Developer Guide.rtf>)

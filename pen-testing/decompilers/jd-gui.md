@@ -4,4 +4,4 @@ description: Java Decompiler
 
 # jd-gui
 
-{% embed url="http://java-decompiler.github.io/" %}
+<http://java-decompiler.github.io/>

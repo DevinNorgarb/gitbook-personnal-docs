@@ -38,7 +38,7 @@ description: Optional one-line summary (for tooltips/search)
 
 This repository uses GitBook. The following syntax is supported:
 
-- `{% file src="..." %}` – File/PDF embeds
-- `{% hint %}`, `{% stepper %}`, `{% embed %}` – GitBook blocks
+- `[...](...)` – File/PDF embeds
+- `{% hint %}`, ``, `{% embed %}` – GitBook blocks
 
 If migrating away from GitBook, convert these to standard markdown links or asset references.

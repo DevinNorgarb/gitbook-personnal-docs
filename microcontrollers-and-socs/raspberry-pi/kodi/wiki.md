@@ -1,6 +1,6 @@
 # Wiki
 
-{% embed url="https://kodi.wiki/view/HOW-TO:Install_Kodi_on_Raspberry_Pi?https=1" %}
+<https://kodi.wiki/view/HOW-TO:Install_Kodi_on_Raspberry_Pi?https=1>
 
 | [![Home icon grey.png](https://kodi.wiki/images/a/aa/Home_icon_grey.png)](https://kodi.wiki/view/Main_Page) |   |   | ![▶](https://kodi.wiki/images/5/5f/TriangleArrow-Right.png) [Raspberry Pi](https://kodi.wiki/view/Raspberry_Pi) | ![▶](https://kodi.wiki/images/5/5f/TriangleArrow-Right.png) HOW-TO:Install Kodi on Raspberry Pi |
 | ----------------------------------------------------------------------------------------------------------- | - | - | --------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
