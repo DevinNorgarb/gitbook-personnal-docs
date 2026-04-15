@@ -14,11 +14,13 @@ Launch the simulator
 
 Run:
 
-{% code title="Launch SITL" %}
+**Launch SITL**
+
 ```bash
 sim_vehicle.sh -w
 ```json
-{% endcode %}
+
+
 
 This launches the SITL simulator with the default settings.
 
@@ -29,31 +31,36 @@ Installation (Mac OS)
 
 Install the command-line tools (including GCC) for macOS, then install Python modules:
 
-{% code title="Install pip and Python dependencies" %}
+**Install pip and Python dependencies**
+
 ```bash
 sudo easy_install pip
 sudo pip install pexpect
 sudo pip install pyserial
 ```python
-{% endcode %}
+
+
 
 
 ### 2. Install MAVLink and MAVProxy (recommended)
 
 Install via pip:
 
-{% code title="Install MAVLink and MAVProxy" %}
+**Install MAVLink and MAVProxy**
+
 ```bash
 sudo pip install pymavlink MAVProxy
 ```python
-{% endcode %}
+
+
 
 
 ### 3. Alternative: install MAVLink and MAVProxy from source
 
 Clone the repositories and run the setup in each:
 
-{% code title="Clone and install from source" %}
+**Clone and install from source**
+
 ```bash
 git clone https://github.com/tridge/MAVProxy
 git clone https://github.com/tridge/mavlink
@@ -61,14 +68,16 @@ git clone https://github.com/tridge/mavlink
 ## In each cloned directory:
 sudo python setup.py build install
 ```json
-{% endcode %}
+
+
 
 
 ### 4. Get the APM branch that compiles on macOS and build SITL
 
 The erlerobot ardupilot macOS branch contains relevant changes:
 
-{% code title="Clone ardupilot and build SITL on macOS" %}
+**Clone ardupilot and build SITL on macOS**
+
 ```bash
 git clone https://github.com/erlerobot/ardupilot
 cd ardupilot
@@ -77,7 +86,8 @@ cd ArduCopter
 make configure
 make sitl
 ```php
-{% endcode %}
+
+
 
 A relevant commit: https://github.com/erlerobot/ardupilot/commit/337bd7bf1f6d285934e887ddb06563960d0aa157
 

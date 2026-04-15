@@ -116,10 +116,10 @@ def convert_content(text: str) -> str:
         return f"[{name}]{link_target(raw_path)}"
 
     text = re.sub(
-        r"\{%\s*file\s+src=[\"']([^\"']+)[\"']\s*%\}",
+        r"\{%\s*file\s+src=(['\"])(.*?)\1\s*%\}",
         file_repl,
         text,
-        flags=re.IGNORECASE,
+        flags=re.IGNORECASE | re.DOTALL,
     )
 
     # {% hint style="info" %} ... {% endhint %}
@@ -156,16 +156,30 @@ def convert_content(text: str) -> str:
         flags=re.DOTALL | re.IGNORECASE,
     )
 
-    # {% code title="..." %} ... {% endcode %}
-    def code_repl(m: re.Match[str]) -> str:
-        title = m.group(1).strip()
+    # {% code title="..." %} ... {% endcode %} (optional extra attributes on opening tag)
+    def code_repl2(m: re.Match[str]) -> str:
+        title = (m.group(1) or "").strip() or "Code"
         body = m.group(2).strip()
         body = re.sub(r"```(json|php)\s*\n", "```\n", body)
         return f"**{title}**\n\n{body}\n\n"
 
     text = re.sub(
-        r"\{%\s*code\s+title=[\"']([^\"']+)[\"']\s*%\}\s*(.*?)\s*\{%\s*endcode\s*%\}",
-        code_repl,
+        r"\{%\s*code\s+title=[\"']([^\"']*)[\"'][^%]*%\}\s*(.*?)\s*\{%\s*endcode\s*%\}",
+        code_repl2,
+        text,
+        flags=re.DOTALL | re.IGNORECASE,
+    )
+
+    text = re.sub(
+        r"\{%\s*@github-files/github-code-block\s+url=[\"']([^\"']+)[\"']\s*%\}",
+        r"[View on GitHub](\1)",
+        text,
+        flags=re.IGNORECASE,
+    )
+
+    text = re.sub(
+        r"\{%\s*content-ref\s+url=[\"']([^\"']+)[\"']\s*%\}\s*(.*?)\s*\{%\s*endcontent-ref\s*%\}",
+        lambda m: m.group(2).strip(),
         text,
         flags=re.DOTALL | re.IGNORECASE,
     )

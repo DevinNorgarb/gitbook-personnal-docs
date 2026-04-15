@@ -24,22 +24,26 @@ You can find detailed instructions how to install Lando on your system in the do
 
 On a Debian Linux for example you have to run the following two commands in a terminal:
 
-{% code title="Install Lando on Debian" %}
+**Install Lando on Debian**
+
 ```bash
 $ wget https://files.devwithlando.io/lando-stable.deb
 $ sudo dpkg -i lando-stable.deb
 ```json
-{% endcode %}
+
+
 
 ## Setting up Lando for Laravel
 
 Open a terminal, navigate to the root folder of your Laravel project and run:
 
-{% code title="Initialize Lando for Laravel" %}
+**Initialize Lando for Laravel**
+
 ```bash
 $ lando init --source cwd --recipe laravel --webroot public --name myapp
 ```json
-{% endcode %}
+
+
 
 This command will create a basic `.lando.yml` file in your project root. This file is the starting point for customizing the services and versions you want to use.
 
@@ -52,22 +56,26 @@ Parameters explained:
 
 The generated `.lando.yml` looks like this:
 
-{% code title=".lando.yml (generated)" %}
+**.lando.yml (generated)**
+
 ```yaml
 name: myapp
 recipe: laravel
 config:
   webroot: public
 ```json
-{% endcode %}
+
+
 
 At this point you can already stop and start your development environment:
 
-{% code title="Start Lando" %}
+**Start Lando**
+
 ```bash
 $ lando start
 ```php
-{% endcode %}
+
+
 
 Lando will bring up the whole environment. You may have to make small changes to your `.env` file (shown later). The simple Lando file above is enough to start a webserver and a database for Laravel.
 
@@ -86,23 +94,27 @@ Below are some commonly used customizations.
 
 Add to the `config` section of `.lando.yml`:
 
-{% code title="PHP version" %}
+**PHP version**
+
 ```yaml
 config:
   php: '7.4'
 ```php
-{% endcode %}
+
+
 
 Available: PHP 5.6, 7.0, 7.1, 7.2, 7.3, 7.4 and 8.0. The current default for the Laravel recipe was PHP 7.3 at the time of the original article.
 
 ### Setting a Composer version
 
-{% code title="Composer version" %}
+**Composer version**
+
 ```yaml
 config:
   composer_version: '1.10.1'
 ```php
-{% endcode %}
+
+
 
 The current default in the Laravel recipe was 2.0.7 at the time of writing.
 
@@ -110,48 +122,58 @@ The current default in the Laravel recipe was 2.0.7 at the time of writing.
 
 By default the Laravel recipe runs Apache 2.4. To switch to nginx:
 
-{% code title="Use nginx" %}
+**Use nginx**
+
 ```yaml
 config:
   via: nginx:1.18
 ```php
-{% endcode %}
+
+
 
 ### Setting a database
 
 Default is MySQL 5.7. To use MariaDB or Postgres:
 
-{% code title="Use MariaDB" %}
+**Use MariaDB**
+
 ```yaml
 config:
   database: mariadb
 ```php
-{% endcode %}
 
-{% code title="Use Postgres 9.6" %}
+
+
+**Use Postgres 9.6**
+
 ```yaml
 config:
   database: postgres:9.6
 ```php
-{% endcode %}
+
+
 
 ### Setting a caching backend
 
 Add redis or memcached:
 
-{% code title="Use Redis" %}
+**Use Redis**
+
 ```yaml
 config:
   cache: redis:2.8
 ```php
-{% endcode %}
 
-{% code title="Use Memcached" %}
+
+
+**Use Memcached**
+
 ```yaml
 config:
   cache: memcached
 ```php
-{% endcode %}
+
+
 
 You can request specific versions for services as shown.
 
@@ -159,12 +181,14 @@ You can request specific versions for services as shown.
 
 You can enable Xdebug:
 
-{% code title="Enable Xdebug" %}
+**Enable Xdebug**
+
 ```yaml
 config:
   xdebug: true
 ```php
-{% endcode %}
+
+
 
 You can also add custom config files for services (e.g., custom Nginx config or php.ini). See Lando docs for more details: https://docs.lando.dev/config/laravel.html#configuration
 
@@ -178,7 +202,8 @@ To connect your app to the Lando environment you need to tweak your `.env` file.
 
 For MySQL/MariaDB the database settings should look like:
 
-{% code title=".env (MySQL/MariaDB)" %}
+**.env (MySQL/MariaDB)**
+
 ```env
 DB_CONNECTION=mysql
 DB_HOST=database
@@ -187,11 +212,13 @@ DB_DATABASE=laravel
 DB_USERNAME=laravel
 DB_PASSWORD=laravel
 ```json
-{% endcode %}
+
+
 
 For Postgres:
 
-{% code title=".env (Postgres)" %}
+**.env (Postgres)**
+
 ```env
 DB_CONNECTION=pgsql
 DB_HOST=database
@@ -200,25 +227,30 @@ DB_DATABASE=laravel
 DB_USERNAME=postgres
 DB_PASSWORD=null
 ```json
-{% endcode %}
+
+
 
 - Configure cache driver host names according to your Lando config. Example for Redis:
 
-{% code title="Redis config in .env" %}
+**Redis config in .env**
+
 ```env
 REDIS_HOST=cache
 REDIS_PASSWORD=null
 REDIS_PORT=6379
 ```json
-{% endcode %}
+
+
 
 - Set `APP_URL` to the domain Lando generates. If you used `myapp` as the app name, Lando generates `myapp.lndo.site`. Lando has a wildcard DNS entry for `*.lndo.site` mapped to 127.0.0.1, so:
 
-{% code title="APP_URL" %}
+**APP_URL**
+
 ```env
 APP_URL=http://myapp.lndo.site
 ```python
-{% endcode %}
+
+
 
 ## Starting Lando
 
@@ -252,11 +284,13 @@ Database import/export:
 
 If you change the `.lando.yml` after you already started the environment at least once, run:
 
-{% code title="Rebuild Lando" %}
+**Rebuild Lando**
+
 ```bash
 $ lando rebuild
 ```php
-{% endcode %}
+
+
 
 This recreates the environment with your changes. Persistent data (database, storage folder) remains after rebuild.
 
@@ -266,7 +300,8 @@ You can use any database client (DBeaver, SequelPro, etc.) with the same credent
 
 Alternatively, add phpMyAdmin as an extra service in `.lando.yml` to provide a unified web UI for different projects:
 
-{% code title="Add phpMyAdmin to .lando.yml" %}
+**Add phpMyAdmin to .lando.yml**
+
 ```yaml
 services:
   pma:
@@ -277,7 +312,8 @@ proxy:
   pma:
     - pma.lndo.site
 ```php
-{% endcode %}
+
+
 
 This adds a phpMyAdmin service, allows access to the `database` host, and proxies it to `pma.lndo.site` so you can access phpMyAdmin for each project at that subdomain.
 

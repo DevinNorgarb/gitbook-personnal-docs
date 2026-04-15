@@ -17,7 +17,7 @@ Research Paper attached here:
 
 [ndss2023_f217_paper.pdf](../../.gitbook/assets/ndss2023_f217_paper.pdf)
 
-{% @github-files/github-code-block url="https://github.com/RUB-SysSec/DroneSecurity" %}
+[View on GitHub](https://github.com/RUB-SysSec/DroneSecurity)
 
 <figure><img src="https://github.com/RUB-SysSec/DroneSecurity/raw/public_squash/img/paper_thumbnail.png" alt=""><figcaption></figcaption></figure>
 

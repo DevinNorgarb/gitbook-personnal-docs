@@ -138,10 +138,12 @@ https://github.com/pelias/api/
 
 Here's a bash snippet that will download all the repositories and install node module dependencies:
 
-{% code title="clone-and-install.sh" %}
+**clone-and-install.sh**
+
 ```
 ```json
-{% endcode %}
+
+
 
 ***
 
@@ -159,11 +161,13 @@ https://github.com/pelias/config/blob/master/config/defaults.json#L2
 
 Example snippet:
 
-{% code title="esclient example" %}
-```json
+**esclient example**
+
+```
 ... // rest of config
 ```json
-{% endcode %}
+
+
 
 You can change `localhost` and specify multiple hosts. The entire `esclient` section is sent to the elasticsearch-js module, so its options are valid.
 
@@ -171,10 +175,12 @@ Where to find the downloaded data files
 
 The `imports` section defines settings for each importer. `adminLookup` has its own section and its value applies to all importers. Defaults:
 
-{% code title="imports defaults" %}
+**imports defaults**
+
 ```
 ```json
-{% endcode %}
+
+
 
 Note: The datapath must be an absolute path. Change the defaults as needed.
 
@@ -204,10 +210,12 @@ Pelias requires specific configuration settings in Elasticsearch. With `pelias.j
 
 Run:
 
-{% code title="create index" %}
+**create index**
+
 ```
 ```json
-{% endcode %}
+
+
 
 The Elasticsearch schema is analogous to a table layout in a relational DB. Pelias requires specific schema settings.
 
@@ -217,10 +225,12 @@ The Elasticsearch schema is analogous to a table layout in a relational DB. Peli
 
 Now that the schema is set up, begin importing data. For each importer:
 
-{% code title="run importer" %}
+**run importer**
+
 ```
 ```json
-{% endcode %}
+
+
 
 Depending on how much data you've imported, this can take a while. You can expect up to \~7000 records per second per importer.
 
@@ -230,10 +240,12 @@ Aside: When to delete the data already in Elasticsearch
 
 If you have previously run a build and want to start another, it's generally a good idea to delete the existing Pelias index and re-create it:
 
-{% code title="drop and recreate index" %}
+**drop and recreate index**
+
 ```
 ```python
-{% endcode %}
+
+
 
 When in doubt, delete the index, re-create it, and start fresh.
 
@@ -270,19 +282,23 @@ When in doubt, install everything except the interpolation engine (it requires a
 
 The Pelias API needs to know about each of the other services. Configure in `pelias.json`. Example to use all services running locally on default ports:
 
-{% code title="api services in pelias.json" %}
+**api services in pelias.json**
+
 ```
 ```json
-{% endcode %}
+
+
 
 ### Start the API
 
 Start the API:
 
-{% code title="start api" %}
+**start api**
+
 ```
 ```json
-{% endcode %}
+
+
 
 ***
 

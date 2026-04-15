@@ -57,18 +57,21 @@ Update: This post was written a while ago, and many of these instructions for se
 
 Once you’ve successfully installed the above dependencies, run:
 
-{% code title="Clone Vagrant and install plugins" %}
+**Clone Vagrant and install plugins**
+
 ```bash
 git clone https://github.com/pelias/vagrant
 cd vagrant
 vagrant plugin install vagrant-berkshelf
 vagrant plugin install vagrant-omnibus
 ```json
-{% endcode %}
+
+
 
 You’re now ready to begin building the image, but first we’ll need to configure the datasets so that it automagically imports once everything’s set up. Create a new file called `pelias_settings.rb` in the root of the Vagrant repo (should be your current directory), and add the following:
 
-{% code title="pelias_settings.rb" %}
+**pelias_settings.rb**
+
 ```ruby
 Vagrant.configure('2') do |config|
   config.vm.provision :chef_solo do |chef|
@@ -94,13 +97,15 @@ Vagrant.configure('2') do |config|
   end
 end
 ```python
-{% endcode %}
+
+
 
 This configuration file, based closely on this more complete version (https://github.com/pelias/vagrant/blob/master/pelias\_settings.example.rb), will instruct Vagrant to perform certain actions while building (like `'create_index' => true`, which creates the Pelias elasticsearch index), and optionally import some datasets — in this case, the OpenStreetMap data for New York.
 
 You can change the link to any other OSM PBF, like the ones we provide for numerous other cities as metro extracts (https://mapzen.com/metro-extracts/), or forgo that import entirely by setting `'index_data'` to `false`, like so:
 
-{% code title="Disable OSM import example" %}
+**Disable OSM import example**
+
 ```ruby
 'osm' => {
   'index_data' => false,
@@ -109,17 +114,20 @@ You can change the link to any other OSM PBF, like the ones we provide for numer
   }
 }
 ```python
-{% endcode %}
+
+
 
 Since we’re only importing OpenAddresses data in the import section below, we’ll skip any OSM imports for now.
 
 Finally, the one command to rule them all:
 
-{% code title="Start Vagrant with the settings file" %}
+**Start Vagrant with the settings file**
+
 ```bash
 PELIAS_VAGRANT_CFG="$(pwd)/pelias_settings.rb" vagrant up
 ```json
-{% endcode %}
+
+
 
 Make sure you have a stable Internet connection before running it because the bootstrapping process will download a lot of software. This can take anywhere between 10 and 20 minutes. The logging will make it obvious if something breaks; if so, try running it again. Errors related to timed-out requests are often the results of a slow network or unresponsive servers—in that case wait a bit before retrying. If you’re still experiencing problems, raise an issue (https://github.com/pelias/vagrant/issues/new).
 
@@ -142,7 +150,8 @@ Then run `vagrant ssh` to get inside the Pelias box.
 
 Now, we’ll import a small OpenAddresses dataset. Start by downloading the OpenAddresses bundle to the Vagrant box (this means you still need to be `ssh`’d in), which consists of a large number of CSV files containing addresses for entire countries, states, and cities at a time.
 
-{% code title="Download and prepare OpenAddresses data" %}
+**Download and prepare OpenAddresses data**
+
 ```bash
 wget http://s3.amazonaws.com/openaddresses/openaddresses-processed.zip
 mkdir openaddresses-data
@@ -150,20 +159,23 @@ unzip -d openaddresses-data openaddresses-processed.zip
 mkdir my_dataset
 cp openaddresses-data/us-ny-nyc.csv my_dataset
 ```php
-{% endcode %}
+
+
 
 The newly created `my_dataset` directory will contain all of the OpenAddresses files we’ll import into Pelias; `us-ny-nyc.csv` (New York City) was chosen to get you started, but feel free to use any other file or copy more of them into the directory.
 
 Then, install the OpenAddresses importer:
 
-{% code title="Install and run OpenAddresses importer" %}
+**Install and run OpenAddresses importer**
+
 ```bash
 git clone https://github.com/pelias/openaddresses
 cd openaddresses
 npm install
 node import.js ../my_dataset
 ```json
-{% endcode %}
+
+
 
 The last command will kick off the import. You should see status output similar to:
 

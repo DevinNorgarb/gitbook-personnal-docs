@@ -12,8 +12,8 @@ This documentation is the canonical description of Google’s code review proces
 
 This page is an overview of our code review process. There are two other large documents that are a part of this guide:
 
-- [**How To Do A Code Review**](../../../../.gitbook/assets/reviewer): A detailed guide for code reviewers.
-- [**The CL Author’s Guide**](../../../../.gitbook/assets/developer): A detailed guide for developers whose CLs are going through review.
+- [**How To Do A Code Review**](https://google.github.io/eng-practices/review/reviewer/): A detailed guide for code reviewers.
+- [**The CL Author’s Guide**](https://google.github.io/eng-practices/review/developer/): A detailed guide for developers whose CLs are going through review.
 
 ### What Do Code Reviewers Look For? <a href="#look_for" id="look_for"></a>
 
@@ -28,7 +28,7 @@ Code reviews should look at:
 - **Style**: Does the code follow our [style guides](http://google.github.io/styleguide/)?
 - **Documentation**: Did the developer also update relevant documentation?
 
-See [**How To Do A Code Review**](../../../../.gitbook/assets/reviewer) for more information.
+See [**How To Do A Code Review**](https://google.github.io/eng-practices/review/reviewer/) for more information.
 
 #### Picking the Best Reviewers <a href="#best_reviewers" id="best_reviewers"></a>
 
@@ -46,5 +46,5 @@ You can also do in-person code reviews where the reviewer asks questions and the
 
 ### See Also <a href="#seealso" id="seealso"></a>
 
-- [How To Do A Code Review](../../../../.gitbook/assets/reviewer): A detailed guide for code reviewers.
-- [The CL Author’s Guide](../../../../.gitbook/assets/developer): A detailed guide for developers whose CLs are going through review.
+- [How To Do A Code Review](https://google.github.io/eng-practices/review/reviewer/): A detailed guide for code reviewers.
+- [The CL Author’s Guide](https://google.github.io/eng-practices/review/developer/): A detailed guide for developers whose CLs are going through review.

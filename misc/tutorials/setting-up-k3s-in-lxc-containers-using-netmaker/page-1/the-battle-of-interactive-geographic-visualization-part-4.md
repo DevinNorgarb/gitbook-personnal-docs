@@ -31,7 +31,8 @@ When resizing plots, Altair preserves elements of the plot layout as more catego
 
 Load the required packages:
 
-{% code title="imports.py" %}
+**imports.py**
+
 ```python
 import pandas as pd
 import altair as alt
@@ -40,18 +41,21 @@ from shapely.geometry import Point
 
 alt.renderers.enable('default')  # Allows the map to be displayed in the notebook/Jupyterlab
 ```json
-{% endcode %}
+
+
 
 ### Load the dataset
 
 Load the dataset:
 
-{% code title="load_data.py" %}
+**load_data.py**
+
 ```python
 df = pd.read_csv('data/Coffee Brands Footprint.csv', index_col=0)
 df.head()
 ```python
-{% endcode %}
+
+
 
 ![](<../../../../.gitbook/assets/image (16)>)\
 Image by Author: The first five observations of our dataset.
@@ -67,7 +71,8 @@ Unlike Plotly, with Altair you typically import your own shapefiles to provide m
 
 Load a GeoDataFrame and create a geoshape for the Philippines:
 
-{% code title="load_shapefile.py" %}
+**load_shapefile.py**
+
 ```
 ## Load the geodataframe
 gdf = gpd.read_file('Shapefiles/gadm36_PHL_shp/gadm36_PHL_1.shp')
@@ -80,7 +85,8 @@ philippines = alt.Chart(gdf).mark_geoshape(stroke='white', fill='lightgray').enc
 
 philippines
 ```python
-{% endcode %}
+
+
 
 ![](<../../../../.gitbook/assets/image (17)>)\
 Image by the Author: Shapefile of the Philippines displayed in Jupyterlab
@@ -99,7 +105,8 @@ Notes on the options used:
 
 Create the scatter points using longitude and latitude columns:
 
-{% code title="points.py" %}
+**points.py**
+
 ```python
 points = alt.Chart(df).mark_circle(opacity=0.7).encode(
     longitude='lng:Q',
@@ -111,7 +118,8 @@ points = alt.Chart(df).mark_circle(opacity=0.7).encode(
 
 points
 ```php
-{% endcode %}
+
+
 
 ![](<../../../../.gitbook/assets/image (18)>)\
 GIF by Author: Scatter points generated are not bounded by the shapefile.
@@ -125,11 +133,13 @@ Notes:
 
 Altair makes composing charts straightforward. For example, to show the geoshape and the points side-by-side / combined:
 
-{% code title="combine.py" %}
+**combine.py**
+
 ```python
 points | philippines + points
 ```php
-{% endcode %}
+
+
 
 ![](<../../../../.gitbook/assets/image (19)>)\
 GIF by the Author: Two graphs can be added by simply using the ‘+’ sign.

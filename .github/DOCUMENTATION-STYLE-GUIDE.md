@@ -36,9 +36,15 @@ description: Optional one-line summary (for tooltips/search)
 
 ## GitBook-Specific Syntax
 
-This repository uses GitBook. The following syntax is supported:
+This repository was imported from GitBook. For **mdBook / GitHub Pages**, use portable markdown instead of GitBook tags:
 
-- `[...](...)` – File/PDF embeds
-- `{% hint %}`, ``, `{% embed %}` – GitBook blocks
+- **File / PDF downloads**: `[filename](relative-or-asset-path)` (see [`scripts/convert_gitbook_tags.py`](../scripts/convert_gitbook_tags.py) for historical conversions).
+- **Callouts**: use blockquotes with a bold label (for example `> **Note**`).
+- **Embeds**: use a normal markdown link or angle-bracket URL `<https://...>`.
 
-If migrating away from GitBook, convert these to standard markdown links or asset references.
+## Publishing (mdBook)
+
+- Install [mdBook](https://github.com/rust-lang/mdBook), then from the repository root run `mdbook build` (output in `book/`) or `mdbook serve` for local preview.
+- Navigation and chapter order are defined in [SUMMARY.md](../SUMMARY.md); add new pages there when you add documentation.
+- GitHub Actions builds the book and publishes the `book/` directory to the `gh-pages` branch when you push to `main` or `master`.
+- After the first deploy, enable **GitHub Pages** from the `gh-pages` branch (or follow your repository’s Pages settings). The site URL is typically `https://<user>.github.io/<repo>/`; [book.toml](../book.toml) sets `site-url` for that path.

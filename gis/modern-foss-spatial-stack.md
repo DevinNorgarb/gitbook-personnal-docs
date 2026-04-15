@@ -30,7 +30,8 @@ We’ve built our own framework around MapboxGL and Ember, allowing us to build 
 
 Here’s a layergroup config for NYC tax lots, including a categorical symbol layer for land use types:
 
-{% code title="layergroup.js" %}
+**layergroup.js**
+
 ```javascript
 export default {
   id: 'pluto',
@@ -132,7 +133,8 @@ export default {
   ],
 };
 ```json
-{% endcode %}
+
+
 
 Backend
 

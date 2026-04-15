@@ -25,31 +25,37 @@ For more information, see the project on GitHub: https://github.com/dronekit/dro
 
 Install or update the tool on all platforms using pip:
 
-{% code title="Install DroneKit-SITL" %}
+**Install DroneKit-SITL**
+
 ```bash
 pip install dronekit-sitl -UI
 ```json
-{% endcode %}
+
+
 
 ### Running SITL
 
 To run the latest Copter binary (downloading binaries if needed):
 
-{% code title="Start latest Copter (default) - listens on 127.0.0.1:5760" %}
+**Start latest Copter (default) - listens on 127.0.0.1:5760**
+
 ```bash
 dronekit-sitl copter
 ```json
-{% endcode %}
+
+
 
 SITL will start and wait for TCP connections on 127.0.0.1:5760.
 
 To specify a particular vehicle/version and parameters (home location, vehicle model, etc.):
 
-{% code title="Start a specific vehicle and home location" %}
+**Start a specific vehicle and home location**
+
 ```bash
 dronekit-sitl plane-3.3.0 --home=-35.363261,149.165230,584,353
 ```php
-{% endcode %}
+
+
 
 Other useful arguments:
 
@@ -70,11 +76,13 @@ dronekit-sitl ./path [args...]  # Start SITL instance at target file location.
 
 DroneKit-SITL waits for TCP connections on 127.0.0.1:5760. DroneKit-Python scripts running on the same computer can connect using:
 
-{% code title="Connect from DroneKit-Python" %}
+**Connect from DroneKit-Python**
+
 ```python
 vehicle = connect('tcp:127.0.0.1:5760', wait_ready=True)
 ```php
-{% endcode %}
+
+
 
 After something connects to port 5760, SITL will wait for additional connections on subsequent ports (5763, 5766, 5769, etc.).
 
@@ -123,11 +131,13 @@ output add 127.0.0.1:14552
    * http://dronecode.github.io/MAVProxy/html/getting\_started/download\_and\_installation.html
 2. In a second terminal spawn MAVProxy to forward messages from TCP 127.0.0.1:5760 to UDP ports (example):
 
-{% code title="Start MAVProxy to forward to UDP ports" %}
+**Start MAVProxy to forward to UDP ports**
+
 ```bash
 mavproxy.py --master tcp:127.0.0.1:5760 --sitl 127.0.0.1:5501 --out 127.0.0.1:14550 --out 127.0.0.1:14551
 ```json
-{% endcode %}
+
+
 
 
 Once you have available ports you can connect your DroneKit script to one UDP address and your Ground Control Station to another.

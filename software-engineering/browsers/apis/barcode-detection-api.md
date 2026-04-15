@@ -2,7 +2,8 @@
 
 [https://htmlpreview.github.io/?https://gist.githubusercontent.com/derac/9dfa8884bb04df59ac498d3bac4a93da/raw/25f660ba8486774a8ac281f8442e8b58b1afbaaf/index.html](https://htmlpreview.github.io/?https://gist.githubusercontent.com/derac/9dfa8884bb04df59ac498d3bac4a93da/raw/25f660ba8486774a8ac281f8442e8b58b1afbaaf/index.html)
 
-{% code title="" overflow="wrap" lineNumbers="true" fullWidth="true" %}
+**Code**
+
 ```html
 <html>
 <head>
@@ -85,4 +86,5 @@ BarcodeDetector demo: <button id="start" disabled="">start</button>
 </html>
 
 ```json
-{% endcode %}
+
+

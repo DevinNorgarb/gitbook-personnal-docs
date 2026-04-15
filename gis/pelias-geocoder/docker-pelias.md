@@ -63,7 +63,8 @@ For more info on time estimates and hardware requirements for large builds see: 
 
 The following shell script can be used to quickly get started with a Pelias build.
 
-{% code title="quickstart.sh" %}
+**quickstart.sh**
+
 ```
 ## !/bin/bash
 set -x
@@ -101,7 +102,8 @@ pelias compose up
 ## optionally run tests
 pelias test run
 ```json
-{% endcode %}
+
+
 
 ## Installing the Pelias helper script
 
@@ -109,7 +111,8 @@ This repository includes a helper script to make basic management of the Pelias 
 
 Example install steps:
 
-{% code title="install pelias" %}
+**install pelias**
+
 ```
 ## change directory to the where you would like to install Pelias
 ## cd /path/to/install
@@ -120,15 +123,18 @@ git clone https://github.com/pelias/docker.git && cd docker
 ## install pelias script
 sudo ln -s "$(pwd)/pelias" /usr/local/bin/pelias
 ```json
-{% endcode %}
+
+
 
 Confirm the command is available:
 
-{% code title="which pelias" %}
+**which pelias**
+
 ```bash
 which pelias
 ```json
-{% endcode %}
+
+
 
 Resolving PATH issues
 
@@ -188,8 +194,9 @@ Variable: DOCKER\_USER
 
 List of supported CLI commands:
 
-{% code title="pelias (help)" %}
-```php
+**pelias (help)**
+
+```
 $ pelias
 
 Usage: pelias [command] [action] [options]
@@ -232,7 +239,8 @@ Usage: pelias [command] [action] [options]
   system    env                      display environment variables
   system    update                   update the pelias command by pulling the latest version
 ```json
-{% endcode %}
+
+
 
 ### Compose commands
 
@@ -324,7 +332,8 @@ pelias test run
 
 After a full planet import you can delete large temporary folders. The sizes below are rough estimates.
 
-{% code title="cleanup.sh" %}
+**cleanup.sh**
+
 ```
 ## These folders can be entirely deleted after the import into elastic search
 rm -rf /data/openaddresses # (~43GB)
@@ -341,7 +350,8 @@ rm -rf -- !("street.db"|"address.db")
 cd /data/placeholder
 rm -rf -- !("store.sqlite3")
 ```json
-{% endcode %}
+
+
 
 ## View status and logs
 

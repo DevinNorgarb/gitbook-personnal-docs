@@ -34,3 +34,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add or edit pages.
 ## Style Guide
 
 See [.github/DOCUMENTATION-STYLE-GUIDE.md](.github/DOCUMENTATION-STYLE-GUIDE.md) for documentation conventions.
+
+## Published site (mdBook on GitHub Pages)
+
+The book is built with [mdBook](https://github.com/rust-lang/mdBook) from this repository (see [`book.toml`](book.toml) and [`SUMMARY.md`](SUMMARY.md)).
+
+- **Local preview**: install mdBook, then run `mdbook serve` from the repository root and open the URL it prints (usually `http://127.0.0.1:3000/gitbook-personnal-docs/`).
+- **Static build**: `mdbook build` writes HTML to the `book/` directory (ignored by git).
+- **GitHub Pages**: pushing to `main` or `master` runs [`.github/workflows/mdbook.yml`](.github/workflows/mdbook.yml), which deploys the built site to the `gh-pages` branch. In the repository **Settings → Pages**, set the source to that branch (folder `/`). The public URL is typically [https://devinnorgarb.github.io/gitbook-personnal-docs/](https://devinnorgarb.github.io/gitbook-personnal-docs/) (adjust the owner name if your fork uses a different GitHub username).
+
+GitBook-only constructs in markdown were converted for portable rendering; see [`scripts/convert_gitbook_tags.py`](scripts/convert_gitbook_tags.py) if you need to apply similar conversions to new imports.

@@ -1,20 +1,12 @@
 # Single Node Cluster
 
-<https://www.virtualizationhowto.com/2021/07/kubernetes-lxc-containers-configuration-lab-setup>
-Tutorial that made&#x20;
-{% endembed %}
+[Kubernetes LXC lab setup (VirtualizationHowTo)](https://www.virtualizationhowto.com/2021/07/kubernetes-lxc-containers-configuration-lab-setup)
 
-<https://github.com/justmeandopensource/kubernetes>
-useful bootstrap library
-{% endembed %}
+[useful bootstrap library](https://github.com/justmeandopensource/kubernetes)
 
-<https://ubuntu.com/blog/externally-exposing-a-lxd-based-kubernetes-service>
-Exposing the new cluster
-{% endembed %}
+[Exposing the new cluster](https://ubuntu.com/blog/externally-exposing-a-lxd-based-kubernetes-service)
 
 <https://github.com/kubernetes/kubernetes/issues/70202>
-\=
-{% endembed %}
 
 Remember to add these to this file `/run/flannel/subnet.env`
 
@@ -35,4 +27,3 @@ K3D
 Kubeadm
 
 Juju [https://juju.is/tutorials](https://juju.is/tutorials)
-

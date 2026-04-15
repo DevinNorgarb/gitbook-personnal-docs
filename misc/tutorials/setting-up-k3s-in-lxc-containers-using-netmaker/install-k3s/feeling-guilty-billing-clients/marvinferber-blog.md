@@ -19,48 +19,56 @@ I assume you already have a basic knowledge of using ROS and, thus, I only link 
 
 Run the following to install the necessary ROS packages from the Ubuntu package repositories:
 
-{% code title="Install ROS Turtlebot and rosbridge" %}
+**Install ROS Turtlebot and rosbridge**
+
 ```bash
 apt-get install ros-indigo-turtlebot*
 apt-get install ros-indigo-rosbridge-suite
 ```php
-{% endcode %}
+
+
 
 
 ### Install NodeJS (version 6)
 
 NodeJS version 6 was used in this tutorial. Do not install the very old .deb packaged Version of NodeJS that comes with the Ubuntu 14.04 sources. Use the NodeSource setup script for v6:
 
-{% code title="Install NodeJS v6" %}
+**Install NodeJS v6**
+
 ```bash
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```php
-{% endcode %}
+
+
 
 
 ### Install Node-RED globally
 
 Once NodeJS is installed, use NPM to install Node-RED as a global module so it is available for all users. You can already start Node-RED without ROS support after installation.
 
-{% code title="Install and start Node-RED" %}
+**Install and start Node-RED**
+
 ```bash
 sudo npm install -g --unsafe-perm node-red
 node-red
 ```json
-{% endcode %}
+
+
 
 
 ### Install the Node-RED ROS contrib nodes into the Node-RED workspace
 
 Node-RED automatically uses the default workspace directory \~/.node-red/ to store flows and additional nodes. Install the ROS node to this workspace:
 
-{% code title="Install node-red-contrib-ros" %}
+**Install node-red-contrib-ros**
+
 ```bash
 cd ~/.node-red/
 npm install node-red-contrib-ros
 ```php
-{% endcode %}
+
+
 
 
 #### Booting the Software Stack
@@ -71,33 +79,39 @@ We need to start the ROS nodes necessary to control our (real) Turtlebot. Also, 
 
 Start your robot:
 
-{% code title="Bringup" %}
+**Bringup**
+
 ```bash
 roslaunch turtlebot_bringup minimal.launch
 ```json
-{% endcode %}
+
+
 
 
 ### Start rosbridge for Web access
 
 This runs rosbridge and creates a WebSocket on port 9090 by default:
 
-{% code title="Start rosbridge" %}
+**Start rosbridge**
+
 ```bash
 roslaunch rosbridge_server rosbridge_websocket.launch
 ```python
-{% endcode %}
+
+
 
 
 ### Start Node-RED
 
 Start Node-RED and create a configuration node in order to communicate with the ROS master:
 
-{% code title="Start Node-RED" %}
+**Start Node-RED**
+
 ```bash
 node-red
 ```python
-{% endcode %}
+
+
 
 Below are screenshots showing the ROS contrib nodes, the subscription node edit dialog, and the ROS server config node edit dialog:
 
@@ -110,8 +124,9 @@ Congratulations, we have managed to make contact with the ROS system from a Node
 
 In this paragraph, we subscribe to the /odom topic and show the output in a debug view. You can copy/paste the flow from below to try a simple /odom subscriber.
 
-{% code title="Odom Subscription flow (Node-RED JSON)" %}
-```json
+**Odom Subscription flow (Node-RED JSON)**
+
+```
 [
     {
         "id": "f0068d88.1517f",
@@ -191,7 +206,8 @@ In this paragraph, we subscribe to the /odom topic and show the output in a debu
     }
 ]
 ```python
-{% endcode %}
+
+
 
 ![](<../../../../../.gitbook/assets/image (60)>)
 
@@ -206,11 +222,13 @@ The image above shows a flow that processes and shows /odom messages from a ROS-
 
 The exact same commands as shown above can also be used when you do not have a real robot. Only one command has to be changed in order to get data from a Turtlebot 2 in the Gazebo simulator. Substitute the first command (bringup package) by:
 
-{% code title="Turtlebot Gazebo world" %}
+**Turtlebot Gazebo world**
+
 ```bash
 roslaunch turtlebot_gazebo turtlebot_world.launch
 ```json
-{% endcode %}
+
+
 
 That’s it! Happy hacking 😉
 
