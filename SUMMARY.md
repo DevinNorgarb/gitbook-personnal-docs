@@ -411,6 +411,7 @@
   - [dji-firmware-tools Github Repo](pen-testing/drones/dji-firmware-tools-github-repo.md)
   - [How To Hack Wiki for DJI Drones](pen-testing/drones/how-to-hack-wiki-for-dji-drones.md)
   - [DIY DJI Aeroscope](pen-testing/drones/diy-dji-aeroscope.md)
+  - [DJI Pilot Android Application Security Analysis](pen-testing/drones/synacktiv-dji-pilot-android-application-security-analysis.md)
 - [Automotive](pen-testing/automotive/README.md)
   - [Hacking Automotive Ethernet Cameras](pen-testing/hacking-automotive-ethernet-cameras.md)
 - [Bluetooth Security Research](pen-testing/bluetooth-security-research.md)
