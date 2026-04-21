@@ -62,6 +62,7 @@
   - [compileSdk and targetSdk Version Mappings](android-dev/compilesdk-and-targetsdk-version-mappings.md)
   - [Ionic](software-engineering/android-app-development/ionic.md)
   - [Quasar.js](software-engineering/android-app-development/quasar.js.md)
+  - [Android Runtime - How Dalvik and ART Work](software-engineering/android-app-development/android-runtime-how-dalvik-and-art-work.md)
 - [Machine Learning](software-engineering/machine-learning/README.md)
   - [openmv.io](software-engineering/machine-learning/openmv.io.md)
   - [Google MLKit](software-engineering/machine-learning/google-mlkit/README.md)
