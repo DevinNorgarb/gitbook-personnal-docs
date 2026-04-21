@@ -409,6 +409,7 @@
   - [Video Guide](pen-testing/drones/video-guide.md)
   - [Rooting Mavic Pro in firmware with Force FCC and Boost and No NFZ](pen-testing/drones/rooting-mavic-pro-in-firmware-with-force-fcc-and-boost-and-no-nfz.md)
   - [dji-firmware-tools Github Repo](pen-testing/drones/dji-firmware-tools-github-repo.md)
+  - [DJI RC2 Reverse Engineering Research Notes](pen-testing/drones/github-dji-rc2-research.md)
   - [How To Hack Wiki for DJI Drones](pen-testing/drones/how-to-hack-wiki-for-dji-drones.md)
   - [DIY DJI Aeroscope](pen-testing/drones/diy-dji-aeroscope.md)
   - [DJI Pilot Android Application Security Analysis](pen-testing/drones/synacktiv-dji-pilot-android-application-security-analysis.md)
