@@ -34,9 +34,9 @@ See [.github/DOCUMENTATION-STYLE-GUIDE.md](.github/DOCUMENTATION-STYLE-GUIDE.md)
 ## Published site (VitePress on GitHub Pages)
 
 - **Prerequisites**: [Node.js](https://nodejs.org/) 20+ and `npm ci`.
-- **Local preview**: `npm run docs:dev` (runs `README.md` → `index.md` sync, regenerates the sidebar from `SUMMARY.md`, then starts VitePress). Open the printed URL (default port **5173**), with base path **`/gitbook-personnal-docs/`**.
+- **Local preview**: `npm run docs:dev` (runs `README.md` → `index.md` sync, regenerates the sidebar from `SUMMARY.md`, then starts VitePress). Open the printed URL (default port **5173**), served at the root path **`/`**.
 - **Production build**: `npm run docs:build` writes to [`.vitepress/dist/`](.vitepress/dist/) (gitignored).
-- **GitHub Pages**: pushes to `main` or `master` run [`.github/workflows/vitepress.yml`](.github/workflows/vitepress.yml), which deploys **`.vitepress/dist`** to the **`gh-pages`** branch. In **Settings → Pages**, use branch **`gh-pages`** at **`/`**. The site URL is [https://devinnorgarb.github.io/gitbook-personnal-docs/](https://devinnorgarb.github.io/gitbook-personnal-docs/) (include the repo path; adjust the owner name on forks).
+- **GitHub Pages**: pushes to `main` or `master` run [`.github/workflows/vitepress.yml`](.github/workflows/vitepress.yml), which deploys **`.vitepress/dist`** to the **`gh-pages`** branch. In **Settings → Pages**, use branch **`gh-pages`** at **`/`**. The primary site URL is [https://docs.f1y.ing/](https://docs.f1y.ing/) (if no custom domain is configured, use the repository path URL for the Pages host).
 
 **Audit reports**: `npm run docs:audit` writes `docs-audit-report.json` and `docs-audit-report.md` (gitignored); CI uploads them as a workflow artifact.
 
