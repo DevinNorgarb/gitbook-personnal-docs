@@ -425,6 +425,7 @@
   - [Android](pen-testing/decompilers/android/README.md)
     - [smali](pen-testing/decompilers/android/smali.md)
     - [apktool](pen-testing/decompilers/android/apktool.md)
+    - [Oat2Dex (Medium)](pen-testing/decompilers/android/medium-oat2dex-android-pentesting.md)
   - [jd-gui](pen-testing/decompilers/jd-gui.md)
   - [dex2jar](pen-testing/decompilers/dex2jar.md)
   - [ByteCodeViewer](pen-testing/decompilers/bytecodeviewer.md)
