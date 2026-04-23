@@ -17,7 +17,7 @@ export default [
           },
           {
             "text": "Install Scripts",
-            "link": "/snippets-and-scripts/install-scripts/",
+            "link": "/snippets-and-scripts/install-scripts/README",
             "items": [
               {
                 "text": "Rust",
@@ -45,15 +45,15 @@ export default [
               },
               {
                 "text": "Python + Libraries",
-                "link": "/snippets-and-scripts/install-scripts/python-libraries/",
+                "link": "/snippets-and-scripts/install-scripts/python-libraries/README",
                 "items": [
                   {
                     "text": "poetry",
-                    "link": "/snippets-and-scripts/install-scripts/python-libraries/poetry/"
+                    "link": "/snippets-and-scripts/install-scripts/python-libraries/poetry/README"
                   },
                   {
                     "text": "pyenv",
-                    "link": "/snippets-and-scripts/install-scripts/python-libraries/pyenv/"
+                    "link": "/snippets-and-scripts/install-scripts/python-libraries/pyenv/README"
                   }
                 ]
               },
@@ -95,7 +95,7 @@ export default [
               },
               {
                 "text": "Docker",
-                "link": "/snippets-and-scripts/install-scripts/install-docker-and-docker-compose/",
+                "link": "/snippets-and-scripts/install-scripts/install-docker-and-docker-compose/README",
                 "items": [
                   {
                     "text": "Docker without root privileges",
@@ -127,11 +127,11 @@ export default [
           },
           {
             "text": "Scripts",
-            "link": "/snippets-and-scripts/scripts/",
+            "link": "/snippets-and-scripts/scripts/README",
             "items": [
               {
                 "text": "Influx",
-                "link": "/readme/scripts/influx/",
+                "link": "/readme/scripts/influx/README",
                 "items": [
                   {
                     "text": "Influx DB backup",
@@ -184,7 +184,7 @@ export default [
     "items": [
       {
         "text": "WebAssembly",
-        "link": "/software-engineering/webassembly/",
+        "link": "/software-engineering/webassembly/README",
         "items": [
           {
             "text": "Go and WASM",
@@ -198,7 +198,7 @@ export default [
       },
       {
         "text": "Automation",
-        "link": "/software-engineering/automation/",
+        "link": "/software-engineering/automation/README",
         "items": [
           {
             "text": "n8n Docs",
@@ -206,7 +206,7 @@ export default [
           },
           {
             "text": "Browser",
-            "link": "/software-engineering/automation/browser/",
+            "link": "/software-engineering/automation/browser/README",
             "items": [
               {
                 "text": "Cypress",
@@ -226,7 +226,7 @@ export default [
       },
       {
         "text": "Android App Development",
-        "link": "/software-engineering/android-app-development/",
+        "link": "/software-engineering/android-app-development/README",
         "items": [
           {
             "text": "Cordova",
@@ -238,7 +238,7 @@ export default [
           },
           {
             "text": "Custom OS",
-            "link": "/software-engineering/android-app-development/custom-os/",
+            "link": "/software-engineering/android-app-development/custom-os/README",
             "items": [
               {
                 "text": "PixelExperience on Xiaomi Redmi",
@@ -248,7 +248,7 @@ export default [
           },
           {
             "text": "adb",
-            "link": "/software-engineering/android-app-development/adb/",
+            "link": "/software-engineering/android-app-development/adb/README",
             "items": [
               {
                 "text": "Copy APK file using ADB",
@@ -267,12 +267,16 @@ export default [
           {
             "text": "Quasar.js",
             "link": "/software-engineering/android-app-development/quasar.js"
+          },
+          {
+            "text": "Android Runtime - How Dalvik and ART Work",
+            "link": "/software-engineering/android-app-development/android-runtime-how-dalvik-and-art-work"
           }
         ]
       },
       {
         "text": "Machine Learning",
-        "link": "/software-engineering/machine-learning/",
+        "link": "/software-engineering/machine-learning/README",
         "items": [
           {
             "text": "openmv.io",
@@ -280,7 +284,7 @@ export default [
           },
           {
             "text": "Google MLKit",
-            "link": "/software-engineering/machine-learning/google-mlkit/",
+            "link": "/software-engineering/machine-learning/google-mlkit/README",
             "items": [
               {
                 "text": "ML Kit barcode (Android)",
@@ -292,7 +296,7 @@ export default [
       },
       {
         "text": "Shopify Dev",
-        "link": "/software-engineering/shopify-dev/",
+        "link": "/software-engineering/shopify-dev/README",
         "items": [
           {
             "text": "Fulfillment Orders",
@@ -322,7 +326,7 @@ export default [
       },
       {
         "text": "Authentication",
-        "link": "/software-engineering/authentication/",
+        "link": "/software-engineering/authentication/README",
         "items": [
           {
             "text": "OAuth2",
@@ -332,7 +336,7 @@ export default [
       },
       {
         "text": "AWS",
-        "link": "/software-engineering/aws/",
+        "link": "/software-engineering/aws/README",
         "items": [
           {
             "text": "SQS vs SNS vs Kinesis",
@@ -342,11 +346,11 @@ export default [
       },
       {
         "text": "Frontend",
-        "link": "/software-engineering/programming/frontend/",
+        "link": "/software-engineering/programming/frontend/README",
         "items": [
           {
             "text": "Javascript",
-            "link": "/software-engineering/programming/frontend/javascript/",
+            "link": "/software-engineering/programming/frontend/javascript/README",
             "items": [
               {
                 "text": "Quasar + Pinia + Electron Desktop App",
@@ -366,7 +370,7 @@ export default [
       },
       {
         "text": "PHP",
-        "link": "/software-engineering/php/",
+        "link": "/software-engineering/php/README",
         "items": [
           {
             "text": "Exception Handling",
@@ -374,7 +378,7 @@ export default [
           },
           {
             "text": "Laravel",
-            "link": "/software-engineering/php/laravel/",
+            "link": "/software-engineering/php/laravel/README",
             "items": [
               {
                 "text": "IoC Container Guide",
@@ -398,11 +402,11 @@ export default [
       },
       {
         "text": "Principles & Practices",
-        "link": "/software-engineering/principles-and-practices/",
+        "link": "/software-engineering/principles-and-practices/README",
         "items": [
           {
             "text": "Code Reviews",
-            "link": "/software-engineering/principles-and-practices/code-reviews/",
+            "link": "/software-engineering/principles-and-practices/code-reviews/README",
             "items": [
               {
                 "text": "Sentry's take on Code Reviews",
@@ -410,7 +414,7 @@ export default [
               },
               {
                 "text": "Google - Code Review",
-                "link": "/software-engineering/principles-and-practices/code-reviews/google-code-review/",
+                "link": "/software-engineering/principles-and-practices/code-reviews/google-code-review/README",
                 "items": [
                   {
                     "text": "Speed of Code Reviews",
@@ -448,15 +452,15 @@ export default [
       },
       {
         "text": "Tooling",
-        "link": "/software-engineering/tooling/",
+        "link": "/software-engineering/tooling/README",
         "items": [
           {
             "text": "Testing",
-            "link": "/software-engineering/tooling-extras/testing/",
+            "link": "/software-engineering/tooling-extras/testing/README",
             "items": [
               {
                 "text": "Frontend",
-                "link": "/software-engineering/tooling-extras/testing/frontend/",
+                "link": "/software-engineering/tooling-extras/testing/frontend/README",
                 "items": [
                   {
                     "text": "Sorry Cypress",
@@ -468,11 +472,11 @@ export default [
           },
           {
             "text": "Miscellaneous",
-            "link": "/software-engineering/tooling/miscellaneous/",
+            "link": "/software-engineering/tooling/miscellaneous/README",
             "items": [
               {
                 "text": "Creating Bootable Drives",
-                "link": "/software-engineering/tooling-extras/miscellaneous/creating-bootable-drives/",
+                "link": "/software-engineering/tooling-extras/miscellaneous/creating-bootable-drives/README",
                 "items": [
                   {
                     "text": "Ventoy",
@@ -496,7 +500,7 @@ export default [
           },
           {
             "text": "Linux",
-            "link": "/software-engineering/tooling/linux/",
+            "link": "/software-engineering/tooling/linux/README",
             "items": [
               {
                 "text": "LXC/LXD",
@@ -506,11 +510,11 @@ export default [
           },
           {
             "text": "Backend",
-            "link": "/software-engineering/tooling/backend/",
+            "link": "/software-engineering/tooling/backend/README",
             "items": [
               {
                 "text": "Install Certbot",
-                "link": "/software-engineering/install-certbot/",
+                "link": "/software-engineering/install-certbot/README",
                 "items": [
                   {
                     "text": "Certbot Instructions",
@@ -522,11 +526,11 @@ export default [
           },
           {
             "text": "Frontend",
-            "link": "/software-engineering/tooling/frontend/",
+            "link": "/software-engineering/tooling/frontend/README",
             "items": [
               {
                 "text": "CSS",
-                "link": "/software-engineering/tooling/css/",
+                "link": "/software-engineering/tooling/css/README",
                 "items": [
                   {
                     "text": "How to inspect and copy an element's CSS the easy way",
@@ -540,11 +544,11 @@ export default [
       },
       {
         "text": "Cryptocurrencies",
-        "link": "/software-engineering/cryptocurrencies/",
+        "link": "/software-engineering/cryptocurrencies/README",
         "items": [
           {
             "text": "ccxt",
-            "link": "/software-engineering/cryptocurrencies/ccxt/",
+            "link": "/software-engineering/cryptocurrencies/ccxt/README",
             "items": [
               {
                 "text": "manual",
@@ -554,7 +558,7 @@ export default [
           },
           {
             "text": "Running your own bitcoin node",
-            "link": "/software-engineering/cryptocurrencies/running-your-own-bitcoin-node/",
+            "link": "/software-engineering/cryptocurrencies/running-your-own-bitcoin-node/README",
             "items": [
               {
                 "text": "how-to: run your own bitcoin node",
@@ -574,11 +578,11 @@ export default [
       },
       {
         "text": "Linux",
-        "link": "/software-engineering/linux/",
+        "link": "/software-engineering/linux/README",
         "items": [
           {
             "text": "Firmware",
-            "link": "/software-engineering/linux/firmware/",
+            "link": "/software-engineering/linux/firmware/README",
             "items": [
               {
                 "text": "Realtek RTL8188FTV WiFi Adapter on Linux",
@@ -588,7 +592,7 @@ export default [
           },
           {
             "text": "apt",
-            "link": "/software-engineering/linux/apt/",
+            "link": "/software-engineering/linux/apt/README",
             "items": [
               {
                 "text": "MultiArch apt Sources",
@@ -610,7 +614,7 @@ export default [
           },
           {
             "text": "udev rules",
-            "link": "/software-engineering/linux/udev-rules/",
+            "link": "/software-engineering/linux/udev-rules/README",
             "items": [
               {
                 "text": "An introduction to Udev: The Linux subsystem for managing device events",
@@ -628,7 +632,7 @@ export default [
           },
           {
             "text": "Bash",
-            "link": "/software-engineering/linux/bash/",
+            "link": "/software-engineering/linux/bash/README",
             "items": [
               {
                 "text": "How To Get / Print Current Date in Unix / Linux Shell Script",
@@ -640,11 +644,11 @@ export default [
       },
       {
         "text": "Grafana",
-        "link": "/software-engineering/grafana/",
+        "link": "/software-engineering/grafana/README",
         "items": [
           {
             "text": "Loki",
-            "link": "/software-engineering/grafana/loki/",
+            "link": "/software-engineering/grafana/loki/README",
             "items": [
               {
                 "text": "Install",
@@ -664,7 +668,7 @@ export default [
       },
       {
         "text": "Documentation",
-        "link": "/software-engineering/documentation/",
+        "link": "/software-engineering/documentation/README",
         "items": [
           {
             "text": "GitHub README",
@@ -682,11 +686,11 @@ export default [
       },
       {
         "text": "Containerisation",
-        "link": "/software-engineering/containerisation/",
+        "link": "/software-engineering/containerisation/README",
         "items": [
           {
             "text": "LXC/LXD",
-            "link": "/software-engineering/containerisation/lxc-lxd/",
+            "link": "/software-engineering/containerisation/lxc-lxd/README",
             "items": [
               {
                 "text": "Troubleshooting",
@@ -746,11 +750,11 @@ export default [
           },
           {
             "text": "Hypervisors",
-            "link": "/software-engineering/containerisation/hypervisors/",
+            "link": "/software-engineering/containerisation/hypervisors/README",
             "items": [
               {
                 "text": "ProxMox",
-                "link": "/software-engineering/containerisation/hypervisors/proxmox/",
+                "link": "/software-engineering/containerisation/hypervisors/proxmox/README",
                 "items": [
                   {
                     "text": "Page 1",
@@ -764,11 +768,11 @@ export default [
       },
       {
         "text": "Browsers",
-        "link": "/software-engineering/browsers/",
+        "link": "/software-engineering/browsers/README",
         "items": [
           {
             "text": "Extensions",
-            "link": "/software-engineering/browsers/extensions/",
+            "link": "/software-engineering/browsers/extensions/README",
             "items": [
               {
                 "text": "SingleFile",
@@ -778,11 +782,11 @@ export default [
           },
           {
             "text": "API's",
-            "link": "/software-engineering/browsers/apis/",
+            "link": "/software-engineering/browsers/apis/README",
             "items": [
               {
                 "text": "Shape Detection",
-                "link": "/software-engineering/browsers/apis/shape-detection/",
+                "link": "/software-engineering/browsers/apis/shape-detection/README",
                 "items": [
                   {
                     "text": "Accelerated Shape Detection in Images",
@@ -808,11 +812,11 @@ export default [
       },
       {
         "text": "Networking",
-        "link": "/software-engineering/networking/",
+        "link": "/software-engineering/networking/README",
         "items": [
           {
             "text": "netfilter",
-            "link": "/software-engineering/networking/netfilter/",
+            "link": "/software-engineering/networking/netfilter/README",
             "items": [
               {
                 "text": "Increase Netfilter Table Size",
@@ -822,7 +826,7 @@ export default [
           },
           {
             "text": "Web Sockets",
-            "link": "/software-engineering/networking/web-sockets/",
+            "link": "/software-engineering/networking/web-sockets/README",
             "items": [
               {
                 "text": "Testing Socket.IO with Postman",
@@ -844,7 +848,7 @@ export default [
           },
           {
             "text": "VPN",
-            "link": "/software-engineering/networking/vpn/",
+            "link": "/software-engineering/networking/vpn/README",
             "items": [
               {
                 "text": "Install Pritunl Client",
@@ -860,7 +864,7 @@ export default [
               },
               {
                 "text": "NetMaker",
-                "link": "/software-engineering/networking/vpn/netmaker/",
+                "link": "/software-engineering/networking/vpn/netmaker/README",
                 "items": [
                   {
                     "text": "Installation",
@@ -872,7 +876,7 @@ export default [
           },
           {
             "text": "Container Networking",
-            "link": "/software-engineering/networking/container-networking/",
+            "link": "/software-engineering/networking/container-networking/README",
             "items": [
               {
                 "text": "How to make your LXD containers get IP addresses from your LAN using macvlan",
@@ -882,7 +886,7 @@ export default [
           },
           {
             "text": "Cloudflare Tunnels",
-            "link": "/software-engineering/networking/cloudflare-tunnels/",
+            "link": "/software-engineering/networking/cloudflare-tunnels/README",
             "items": [
               {
                 "text": "Configure Cloudflare Tunnel in docker-compose.yml",
@@ -892,7 +896,7 @@ export default [
           },
           {
             "text": "PFSense",
-            "link": "/software-engineering/networking/pfsense/",
+            "link": "/software-engineering/networking/pfsense/README",
             "items": [
               {
                 "text": "Virtualizing with Proxmox® VE",
@@ -902,7 +906,7 @@ export default [
           },
           {
             "text": "Oracle VCN Docs",
-            "link": "/software-engineering/networking/oracle-vcn-docs/",
+            "link": "/software-engineering/networking/oracle-vcn-docs/README",
             "items": [
               {
                 "text": "Exposing Ports on Oracle Cloud",
@@ -918,7 +922,7 @@ export default [
       },
       {
         "text": "Kubernetes",
-        "link": "/software-engineering/kubernetes/",
+        "link": "/software-engineering/kubernetes/README",
         "items": [
           {
             "text": "K3s",
@@ -936,7 +940,7 @@ export default [
       },
       {
         "text": "WebRTC",
-        "link": "/software-engineering/webrtc/",
+        "link": "/software-engineering/webrtc/README",
         "items": [
           {
             "text": "Open-source WebRTC Projects",
@@ -958,11 +962,11 @@ export default [
       },
       {
         "text": "Devops",
-        "link": "/software-engineering/devops/",
+        "link": "/software-engineering/devops/README",
         "items": [
           {
             "text": "Cloud-Init",
-            "link": "/software-engineering/devops/cloud-init/",
+            "link": "/software-engineering/devops/cloud-init/README",
             "items": [
               {
                 "text": "Cloud-Init Validation",
@@ -983,7 +987,7 @@ export default [
     "items": [
       {
         "text": "OVMS",
-        "link": "/obd2/ovms/",
+        "link": "/obd2/ovms/README",
         "items": [
           {
             "text": "How to Build OVMS for ESP32",
@@ -997,7 +1001,7 @@ export default [
       },
       {
         "text": "Libraries",
-        "link": "/obd2/libraries/",
+        "link": "/obd2/libraries/README",
         "items": [
           {
             "text": "SEEED Arduino CAN",
@@ -1007,7 +1011,7 @@ export default [
       },
       {
         "text": "CAN Bus",
-        "link": "/obd2/can-bus/",
+        "link": "/obd2/can-bus/README",
         "items": [
           {
             "text": "Awesome CAN Bus",
@@ -1029,7 +1033,7 @@ export default [
       },
       {
         "text": "Car Hacking",
-        "link": "/obd2/car-hacking/",
+        "link": "/obd2/car-hacking/README",
         "items": [
           {
             "text": "Chaos-Sec-Lab",
@@ -1055,7 +1059,7 @@ export default [
       },
       {
         "text": "OBDII Simulators",
-        "link": "/obd2/obdii-simulators/",
+        "link": "/obd2/obdii-simulators/README",
         "items": [
           {
             "text": "OBD2 simulator on Raspberry Pi using Bluetooth",
@@ -1079,7 +1083,7 @@ export default [
           },
           {
             "text": "Libraries",
-            "link": "/obd2/obdii-simulators/libraries/",
+            "link": "/obd2/obdii-simulators/libraries/README",
             "items": [
               {
                 "text": "OBD2 Simulator",
@@ -1095,7 +1099,7 @@ export default [
       },
       {
         "text": "Related Projects",
-        "link": "/obd2/related-projects/",
+        "link": "/obd2/related-projects/README",
         "items": [
           {
             "text": "Carloop.io",
@@ -1113,7 +1117,7 @@ export default [
       },
       {
         "text": "Guides",
-        "link": "/obd2/guides/",
+        "link": "/obd2/guides/README",
         "items": [
           {
             "text": "Freematics + Traccar",
@@ -1125,7 +1129,7 @@ export default [
           },
           {
             "text": "Hackster.io",
-            "link": "/obd2/guides/hackster.io/",
+            "link": "/obd2/guides/hackster.io/README",
             "items": [
               {
                 "text": "MQTT OBD Vehicle Telemetry",
@@ -1165,7 +1169,7 @@ export default [
       },
       {
         "text": "Vehicle Tracking",
-        "link": "/obd2/vehicle-tracking/",
+        "link": "/obd2/vehicle-tracking/README",
         "items": [
           {
             "text": "Open Vehicles documentation",
@@ -1200,7 +1204,7 @@ export default [
     "items": [
       {
         "text": "3D Printing",
-        "link": "/3d-printing/",
+        "link": "/3d-printing/README",
         "items": [
           {
             "text": "Gallery",
@@ -1219,7 +1223,7 @@ export default [
     "items": [
       {
         "text": "SITL",
-        "link": "/robotics/sitl/",
+        "link": "/robotics/sitl/README",
         "items": [
           {
             "text": "SITL Erle Robotics: MAV Tools",
@@ -1233,7 +1237,7 @@ export default [
       },
       {
         "text": "Communication Protocols",
-        "link": "/robotics/communication-protocols/",
+        "link": "/robotics/communication-protocols/README",
         "items": [
           {
             "text": "Serial",
@@ -1243,11 +1247,11 @@ export default [
       },
       {
         "text": "ROS",
-        "link": "/robotics/ros/",
+        "link": "/robotics/ros/README",
         "items": [
           {
             "text": "Ros Guide",
-            "link": "/robotics/ros/ros-guide/",
+            "link": "/robotics/ros/ros-guide/README",
             "items": [
               {
                 "text": "An Introduction to Robot Operating System: The Ultimate Robot Application Framework",
@@ -1265,7 +1269,7 @@ export default [
           },
           {
             "text": "Init ROS Melodic",
-            "link": "/robotics/ros/init-ros-melodic/",
+            "link": "/robotics/ros/init-ros-melodic/README",
             "items": [
               {
                 "text": "ROS Wiki",
@@ -1281,7 +1285,7 @@ export default [
         "items": [
           {
             "text": "Compiling",
-            "link": "/robotics/ardusub/compiling/",
+            "link": "/robotics/ardusub/compiling/README",
             "items": [
               {
                 "text": "Building ArduPilot",
@@ -1381,7 +1385,7 @@ export default [
       },
       {
         "text": "Robotics",
-        "link": "/robotics/"
+        "link": "/robotics/README"
       },
       {
         "text": "SITL",
@@ -1389,7 +1393,7 @@ export default [
       },
       {
         "text": "PixHawk",
-        "link": "/robotics/pixhawk/",
+        "link": "/robotics/pixhawk/README",
         "items": [
           {
             "text": "Connection Diagrams",
@@ -1403,7 +1407,7 @@ export default [
       },
       {
         "text": "Mavlink",
-        "link": "/robotics/mavlink/",
+        "link": "/robotics/mavlink/README",
         "items": [
           {
             "text": "Communicating with Raspberry Pi via MAVLink — Dev documentation",
@@ -1426,7 +1430,7 @@ export default [
       },
       {
         "text": "Arduino",
-        "link": "/microcontrollers-and-socs/arduino/",
+        "link": "/microcontrollers-and-socs/arduino/README",
         "items": [
           {
             "text": "elecrow neo 6M GPS Shield",
@@ -1440,11 +1444,11 @@ export default [
       },
       {
         "text": "Raspberry Pi",
-        "link": "/microcontrollers-and-socs/raspberry-pi/",
+        "link": "/microcontrollers-and-socs/raspberry-pi/README",
         "items": [
           {
             "text": "Diet Pi",
-            "link": "/microcontrollers-and-socs/raspberry-pi/diet-pi/",
+            "link": "/microcontrollers-and-socs/raspberry-pi/diet-pi/README",
             "items": [
               {
                 "text": "Diet Pi Supported Software",
@@ -1454,7 +1458,7 @@ export default [
           },
           {
             "text": "Kodi",
-            "link": "/microcontrollers-and-socs/raspberry-pi/kodi/",
+            "link": "/microcontrollers-and-socs/raspberry-pi/kodi/README",
             "items": [
               {
                 "text": "Wiki",
@@ -1480,7 +1484,7 @@ export default [
           },
           {
             "text": "Raspberry Pi HotSpot",
-            "link": "/microcontrollers-and-socs/raspberry-pi/raspberry-pi-hotspot/",
+            "link": "/microcontrollers-and-socs/raspberry-pi/raspberry-pi-hotspot/README",
             "items": [
               {
                 "text": "raspap-webgui",
@@ -1506,7 +1510,7 @@ export default [
           },
           {
             "text": "Install ProxMox on a Raspberry Pi",
-            "link": "/microcontrollers-and-socs/raspberry-pi/install-proxmox-on-a-raspberry-pi/",
+            "link": "/microcontrollers-and-socs/raspberry-pi/install-proxmox-on-a-raspberry-pi/README",
             "items": [
               {
                 "text": "pimox/pimox7",
@@ -1524,7 +1528,7 @@ export default [
           },
           {
             "text": "Overclocking Raspberry Pi 4",
-            "link": "/microcontrollers-and-socs/raspberry-pi/overclocking-raspberry-pi-4/",
+            "link": "/microcontrollers-and-socs/raspberry-pi/overclocking-raspberry-pi-4/README",
             "items": [
               {
                 "text": "SEED Studio Overclocking Guide",
@@ -1540,7 +1544,7 @@ export default [
       },
       {
         "text": "ESP32",
-        "link": "/microcontrollers-and-socs/esp32/",
+        "link": "/microcontrollers-and-socs/esp32/README",
         "items": [
           {
             "text": "ESP32 CAM",
@@ -1579,7 +1583,7 @@ export default [
     "items": [
       {
         "text": "Sentry",
-        "link": "/self-hosting/sentry/",
+        "link": "/self-hosting/sentry/README",
         "items": [
           {
             "text": "Sentry Troubleshooting",
@@ -1593,7 +1597,7 @@ export default [
       },
       {
         "text": "Hardware",
-        "link": "/self-hosting/hardware/",
+        "link": "/self-hosting/hardware/README",
         "items": [
           {
             "text": "IBM SystemX x3690",
@@ -1612,11 +1616,11 @@ export default [
     "items": [
       {
         "text": "Geocoding",
-        "link": "/gis/geocoding/",
+        "link": "/gis/geocoding/README",
         "items": [
           {
             "text": "Mapbox Geocoding API",
-            "link": "/gis/geocoding/mapbox-geocoding-api/",
+            "link": "/gis/geocoding/mapbox-geocoding-api/README",
             "items": [
               {
                 "text": "Useful Mapbox Geocoding API Info",
@@ -1640,7 +1644,7 @@ export default [
       },
       {
         "text": "Deck.gl",
-        "link": "/gis/deck.gl/",
+        "link": "/gis/deck.gl/README",
         "items": [
           {
             "text": "Deck GL Time Frame Animations",
@@ -1662,7 +1666,7 @@ export default [
       },
       {
         "text": "MapBox",
-        "link": "/gis/mapbox/",
+        "link": "/gis/mapbox/README",
         "items": [
           {
             "text": "Page",
@@ -1672,7 +1676,7 @@ export default [
       },
       {
         "text": "Pelias Geocoder",
-        "link": "/gis/pelias-geocoder/",
+        "link": "/gis/pelias-geocoder/README",
         "items": [
           {
             "text": "Mapzen | Pelias Instance",
@@ -1712,11 +1716,11 @@ export default [
     "items": [
       {
         "text": "Protocols",
-        "link": "/ip-cameras/protocols/",
+        "link": "/ip-cameras/protocols/README",
         "items": [
           {
             "text": "RTSP",
-            "link": "/ip-cameras/protocols/rtsp/",
+            "link": "/ip-cameras/protocols/rtsp/README",
             "items": [
               {
                 "text": "Real Time Streaming Protocol (RTSP)",
@@ -1754,7 +1758,7 @@ export default [
     "items": [
       {
         "text": "Drones",
-        "link": "/pen-testing/drones/",
+        "link": "/pen-testing/drones/README",
         "items": [
           {
             "text": "Video Guide",
@@ -1769,18 +1773,38 @@ export default [
             "link": "/pen-testing/drones/dji-firmware-tools-github-repo"
           },
           {
+            "text": "DJI RC2 Reverse Engineering Research Notes",
+            "link": "/pen-testing/drones/github-dji-rc2-research"
+          },
+          {
+            "text": "DUMLdore (DevinNorgarb fork)",
+            "link": "/pen-testing/drones/github-devinnorgarb-dumldore"
+          },
+          {
+            "text": "DJI RM500 local privilege escalation (icanhack)",
+            "link": "/pen-testing/drones/icanhack-dji-rm500-privilege-escalation"
+          },
+          {
             "text": "How To Hack Wiki for DJI Drones",
             "link": "/pen-testing/drones/how-to-hack-wiki-for-dji-drones"
           },
           {
             "text": "DIY DJI Aeroscope",
             "link": "/pen-testing/drones/diy-dji-aeroscope"
+          },
+          {
+            "text": "DJI Pilot Android Application Security Analysis",
+            "link": "/pen-testing/drones/synacktiv-dji-pilot-android-application-security-analysis"
+          },
+          {
+            "text": "Drone Encrypted Flight Logs (Yuneec ST-16)",
+            "link": "/pen-testing/drones/jamie-sharpe-drones-encrypted-flight-logs"
           }
         ]
       },
       {
         "text": "Automotive",
-        "link": "/pen-testing/automotive/",
+        "link": "/pen-testing/automotive/README",
         "items": [
           {
             "text": "Hacking Automotive Ethernet Cameras",
@@ -1798,11 +1822,11 @@ export default [
       },
       {
         "text": "decompilers",
-        "link": "/pen-testing/decompilers/",
+        "link": "/pen-testing/decompilers/README",
         "items": [
           {
             "text": "Android",
-            "link": "/pen-testing/decompilers/android/",
+            "link": "/pen-testing/decompilers/android/README",
             "items": [
               {
                 "text": "smali",
@@ -1838,7 +1862,7 @@ export default [
       },
       {
         "text": "Vulnerability Scanning",
-        "link": "/pen-testing/vulnerability-scanning/",
+        "link": "/pen-testing/vulnerability-scanning/README",
         "items": [
           {
             "text": "WordPress Vulnerability Scanning",
@@ -1856,7 +1880,7 @@ export default [
       },
       {
         "text": "Kali Linux",
-        "link": "/pen-testing/kali-linux/",
+        "link": "/pen-testing/kali-linux/README",
         "items": [
           {
             "text": "Kali Linux Blog",
@@ -1866,7 +1890,7 @@ export default [
       },
       {
         "text": "Captive Portals",
-        "link": "/pen-testing/captive-portals/",
+        "link": "/pen-testing/captive-portals/README",
         "items": [
           {
             "text": "fluxion",
@@ -1897,7 +1921,7 @@ export default [
     "items": [
       {
         "text": "Random",
-        "link": "/random/",
+        "link": "/random/README",
         "items": [
           {
             "text": "Torrents & DHT Network",
@@ -1911,7 +1935,7 @@ export default [
           },
           {
             "text": "ADHD and Programming",
-            "link": "/random/adhd-and-programming/",
+            "link": "/random/adhd-and-programming/README",
             "items": [
               {
                 "text": "ADHD Programming Notes",
@@ -1961,7 +1985,7 @@ export default [
       },
       {
         "text": "DJI Docs (Android)",
-        "link": "/drones/dji-docs-android/",
+        "link": "/drones/dji-docs-android/README",
         "items": [
           {
             "text": "Choose a language",
@@ -2060,7 +2084,7 @@ export default [
       },
       {
         "text": "Canonical Open RAN",
-        "link": "/software-defined-radio/canonical-open-ran/",
+        "link": "/software-defined-radio/canonical-open-ran/README",
         "items": [
           {
             "text": "What is Open RAN?",
@@ -2087,7 +2111,7 @@ export default [
       },
       {
         "text": "Embedded Systems",
-        "link": "/resources-documents-pdfs-etc/embedded-systems/",
+        "link": "/resources-documents-pdfs-etc/embedded-systems/README",
         "items": [
           {
             "text": "ESP32",
@@ -2126,7 +2150,7 @@ export default [
     "items": [
       {
         "text": "artificial-intelligence",
-        "link": "/misc/artificial-intelligence/",
+        "link": "/misc/artificial-intelligence/README",
         "items": [
           {
             "text": "ChatGPT",
@@ -2136,7 +2160,7 @@ export default [
       },
       {
         "text": "tutorials",
-        "link": "/misc/tutorials/",
+        "link": "/misc/tutorials/README",
         "items": [
           {
             "text": "Install Ghost blogging platform on Ubuntu",
@@ -2144,11 +2168,11 @@ export default [
           },
           {
             "text": "Setting up K3s in LXC containers using Netmaker",
-            "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/",
+            "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/README",
             "items": [
               {
                 "text": "Page 1",
-                "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/page-1/",
+                "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/page-1/README",
                 "items": [
                   {
                     "text": "The Battle of Interactive Geographic Visualization Part 4",
@@ -2162,7 +2186,7 @@ export default [
               },
               {
                 "text": "Install K3s",
-                "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/",
+                "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/README",
                 "items": [
                   {
                     "text": "Using ChatGPT to build System Diagrams — Part I",
@@ -2170,7 +2194,7 @@ export default [
                   },
                   {
                     "text": "How to use Lando for local development with Laravel",
-                    "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/how-to-use-lando-for-local-development-with-laravel/",
+                    "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/how-to-use-lando-for-local-development-with-laravel/README",
                     "items": [
                       {
                         "text": "Provision LXC Containers",
@@ -2184,7 +2208,7 @@ export default [
                   },
                   {
                     "text": "Feeling Guilty Billing Clients?",
-                    "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/feeling-guilty-billing-clients/",
+                    "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/feeling-guilty-billing-clients/README",
                     "items": [
                       {
                         "text": "marvinferber BLOG",
@@ -2206,7 +2230,7 @@ export default [
                   },
                   {
                     "text": "From Google Sheets, how to send email based on date",
-                    "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/from-google-sheets-how-to-send-email-based-on-date/",
+                    "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/from-google-sheets-how-to-send-email-based-on-date/README",
                     "items": [
                       {
                         "text": "Using ChatGPT to build system diagrams — Part II",
