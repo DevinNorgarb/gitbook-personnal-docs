@@ -42,7 +42,7 @@ $ lxc profile show macvlan
 
 Well, that’s it. We are now ready to launch containers using this new profile, and they will get an IP address from the DHCP server of the LAN.
 
-### &#x20;<a href="#launching-lxd-containers-with-the-new-profile" id="launching-lxd-containers-with-the-new-profile"></a>
+### &#x20; (Part 2) <a href="#and-x20-part-2" id="and-x20-part-2"></a>
 
 Let’s launch two containers using the new _**macvlan**_ profile and then check their IP address. We need to specify first the `default` profile, and then the `macvlan` profile. By doing this, the container will get the appropriate base configuration from the first profile, and then the networking will be overridden by the `macvlan` profile.
 
@@ -86,7 +86,7 @@ rtt min/avg/max/mdev = 0.064/0.071/0.082/0.007 ms
 
 You can _**ping**_ these containers from other computers on your LAN! But the host and these `macvlan` containers cannot communicate over the network. This has to do with how macvlan works in the Linux kernel.
 
-### &#x20;<a href="#troubleshooting" id="troubleshooting"></a>
+### &#x20; (Part 3) <a href="#and-x20-part-3" id="and-x20-part-3"></a>
 
 **Help! I cannot **_**ping**_** between the host and the containers!**
 
@@ -110,7 +110,7 @@ $ lxc profile device set macvlan eth0 nictype macvlan
 
 Error: Device validation failed "eth0": Cannot use "nictype" property in conjunction with "network" property
 
-### &#x20;<a href="#summary" id="summary"></a>
+### &#x20; (Part 4) <a href="#and-x20-part-4" id="and-x20-part-4"></a>
 
 With this tutorial, you are able to create containers that get an IP address from the LAN (same source as the host), using macvlan.
 

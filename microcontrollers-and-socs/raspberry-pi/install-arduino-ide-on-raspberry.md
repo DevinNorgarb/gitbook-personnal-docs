@@ -13,7 +13,7 @@ If you are a university student with friends who are studying electrical enginee
 
 Let’s use a pencil as an example because it allows you to write something on paper. If you don’t write, it won’t help you and the same is true for Arduino, which works when you program it. Arduino IDE provides you the environment where you can write your codes and check whether they are working fine. You cannot control a device using the Adriano module if you haven’t done proper coding on the IDE. In order to test the code before uploading it on the Arduino module, you will need an IDE for that purpose. If you are able to run your code successfully on your Arduino IDE you can then be able to upload it on the Arduino module.
 
-### How to install Arduino IDE on Raspberry Pi
+### How to install Arduino IDE on Raspberry Pi (Part 2)
 
 In this article, we will tell you how you can install Arduino IDE on Raspberry Pi by following the steps carefully. If you skip a step, you won’t be able to do your task on Arduino.
 

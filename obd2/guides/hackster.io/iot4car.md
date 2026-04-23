@@ -206,7 +206,7 @@ Working on the project is fun and educative. I enjoy the feeling of debugging a 
 
 ### Schematics
 
-#### IoT4Car
+#### IoT4Car (Part 2)
 
 Connect Arduino MKR WiFi 1000, SparkFun OBD-II UART board, SparkFun Logic Level Shifter, and LCD 1602
 

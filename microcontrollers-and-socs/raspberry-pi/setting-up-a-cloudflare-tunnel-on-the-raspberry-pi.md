@@ -99,7 +99,7 @@ To install this package, you will want to run the following command.
 sudo apt install cloudflared
 ```
 
-### Setting up a Cloudflare Tunnel on the Raspberry Pi <a href="#setting-up-a-cloudflare-tunnel-on-the-raspberry-pi" id="setting-up-a-cloudflare-tunnel-on-the-raspberry-pi"></a>
+### Configure the Cloudflare Tunnel on Raspberry Pi <a href="#configure-the-cloudflare-tunnel-on-raspberry-pi" id="configure-the-cloudflare-tunnel-on-raspberry-pi"></a>
 
 Now that we have prepared our Raspberry Pi, we can set up the Cloudflare tunnel. This tunnel is where your traffic will be run over
 

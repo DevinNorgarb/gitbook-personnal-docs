@@ -1,6 +1,6 @@
 # CAN Bus Shield V2.0
 
-## CAN-BUS Shield V2.0
+## CAN-BUS Shield V2.0 (Part 2)
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/CAN_BUS_Shield/image/shiyitu1.png" alt=""></div>
 
