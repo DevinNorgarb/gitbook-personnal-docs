@@ -5,7 +5,8 @@ export default defineConfig({
   title: "Personal Documentation",
   description:
     "Software engineering, hardware, robotics, GIS, and related notes.",
-  base: "/gitbook-personnal-docs/",
+  // Custom domain serves docs at the root.
+  base: "/",
   vite: {
     // GitBook assets: mixed-case extensions and extensionless filenames under .gitbook/assets/
     assetsInclude: [

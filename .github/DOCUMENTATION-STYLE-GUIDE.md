@@ -47,4 +47,4 @@ This repository was imported from GitBook. For **VitePress / GitHub Pages**, use
 - Install Node.js 20+, then `npm ci`, `npm run docs:dev` (preview) or `npm run docs:build` (static output in `.vitepress/dist/`).
 - Navigation is defined in [SUMMARY.md](../SUMMARY.md); run `npm run docs:gen-sidebar` (or `docs:prep`) to regenerate [`.vitepress/sidebar.generated.mjs`](../.vitepress/sidebar.generated.mjs) after editing `SUMMARY.md`.
 - GitHub Actions ([`.github/workflows/vitepress.yml`](../.github/workflows/vitepress.yml)) builds and publishes to the `gh-pages` branch on pushes to `main`/`master`.
-- Site `base` is set in [`.vitepress/config.ts`](../.vitepress/config.ts) (`/gitbook-personnal-docs/`). The public URL is typically `https://<user>.github.io/<repo>/`.
+- Site `base` is set in [`.vitepress/config.ts`](../.vitepress/config.ts) (`/` for the custom domain). The public URL is [https://docs.f1y.ing/](https://docs.f1y.ing/).
