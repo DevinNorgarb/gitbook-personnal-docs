@@ -4,7 +4,7 @@ description: https://edu-cyberpg.com/Technology/ethics-google-hacking.html
 
 # Google: Hacking Ethics
 
-## GOOGLE HACKING ETHICS (Part 2)
+## GOOGLE HACKING ETHICS <a href="#google-hacking-ethics-part-2" id="google-hacking-ethics-part-2"></a>
 
 [googlehackers (1).pdf](<../.gitbook/assets/googlehackers (1).pdf>)
 

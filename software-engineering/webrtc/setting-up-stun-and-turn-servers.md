@@ -225,7 +225,7 @@
     // or: stackoverflow.com/a/52408246
 ```
 
-### Top (Part 2)
+### Top <a href="#top-part-2" id="top-part-2"></a>
 
 ### restund installation on Ubuntu ([via](https://www.html5rocks.com/en/tutorials/webrtc/infrastructure/#deploying-stun-and-turn-servers))
 
@@ -373,7 +373,7 @@
 ```php
 8. Now open this: http://your-ip.com:4050/
 
-### Top (Part 3)
+### Top <a href="#top-part-3" id="top-part-3"></a>
 
 ### TURN installation on CentOS
 
@@ -494,7 +494,7 @@ Note: Below section is taken from [slideshare](http://www.slideshare.net/amitesh
 ```python
 9. Now, you can follow "fifth" step from previous section to edit "turnserver.conf" for setting "username", "password", "listening-port" and "listening-ip".
 
-### Top (Part 4)
+### Top <a href="#top-part-4" id="top-part-4"></a>
 
 ### reTurnServer installation on Ubuntu
 
@@ -557,7 +557,7 @@ Note: Below section is taken from [slideshare](http://www.slideshare.net/amitesh
     }
 ```
 
-### Top (Part 5)
+### Top <a href="#top-part-5" id="top-part-5"></a>
 
 ### Pion TURN server
 

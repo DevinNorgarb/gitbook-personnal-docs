@@ -1,7 +1,7 @@
 # Accelerated Shape Detection in Images
 
 
-## Accelerated Shape Detection in Images (Part 2) <a href="#accelerated-shape-detection-in-images-part-2" id="accelerated-shape-detection-in-images-part-2"></a>
+## Accelerated Shape Detection in Images <a href="#accelerated-shape-detection-in-images-part-2" id="accelerated-shape-detection-in-images-part-2"></a>
 
 [Draft Community Group Report](https://www.w3.org/standards/types#CG-DRAFT), 30 January 2023
 

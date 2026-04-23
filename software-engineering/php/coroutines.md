@@ -117,7 +117,7 @@ ReactKernel::start(function () {
 
 We are still making three requests _“in parallel”_, but now we sequence responses with `yield` keyword. And again we print results as each promise finishes but only once the previous one is done.
 
-### Coroutines (Part 2) <a href="#coroutines-part-2" id="coroutines-part-2"></a>
+### Coroutines <a href="#coroutines-part-2" id="coroutines-part-2"></a>
 
 Coroutine is a way of splitting an operation or a process into chunks with some execution in each chunk. As a result, it turns out that instead of executing the whole operation an once (which will cause a noticeable application freeze), it will be done little by little, until the whole required volume of actions is completed.
 

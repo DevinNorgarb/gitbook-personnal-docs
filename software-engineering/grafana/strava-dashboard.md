@@ -1,6 +1,6 @@
 # Strava Dashboard
 
-## The Grafana Principle: Doing Data Analytics for Sport Activities entirely in the Cloud (Part 1) <a href="#edb6" id="edb6"></a>
+## The Grafana Principle: Doing Data Analytics for Sport Activities entirely in the Cloud <a href="#edb6" id="edb6"></a>
 
 ### Monitoring and Analysing the Training Activities for you and your Team is easy even without Programming Knowledge <a href="#161c" id="161c"></a>
 
