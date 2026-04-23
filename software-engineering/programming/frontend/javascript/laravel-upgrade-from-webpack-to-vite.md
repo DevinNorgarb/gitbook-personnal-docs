@@ -407,7 +407,7 @@ mix.js('resources/js/app.js', 'public/js')
     ]);
 ```
 
-#### Update NPM scripts (Part 2)
+#### Update NPM scripts <a href="#update-npm-scripts-part-2" id="update-npm-scripts-part-2"></a>
 
 Update your NPM scripts in `package.json`:
 
@@ -445,7 +445,7 @@ Vite requires a helper function to import page components which is not required 
   });
 ```
 
-#### Update environment variables (Part 2)
+#### Update environment variables <a href="#update-environment-variables-part-2" id="update-environment-variables-part-2"></a>
 
 You will need to update the environment variables that are explicitly exposed in your `.env` files and in hosting environments such as Forge to use the `MIX_` prefix instead of `VITE_`:
 

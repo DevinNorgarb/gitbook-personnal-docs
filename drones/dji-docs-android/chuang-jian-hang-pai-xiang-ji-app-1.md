@@ -340,7 +340,7 @@ DJIAoaActivity中有添加如下代码支持AOA,
 - 在你的移动设备上启动 WIFI ，然后连接到名字类似Phantom-xxxxxx (xxxxxx是你的中继器SSID数字)的WIFI网络上
 - 飞行器相机的实时视频就会显示在你的移动设备上
 
-### 享受FPV视图 (Part 2) <a href="#fpv-part-2" id="fpv-part-2"></a>
+### 享受FPV视图 <a href="#fpv-part-2" id="fpv-part-2"></a>
 
 如果你可以在app中看到飞机的视频流，那么恭喜，你已经完成了第一部分教程的内容了！下图是app的截屏：&#x20;
 

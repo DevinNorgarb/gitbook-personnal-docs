@@ -11,7 +11,7 @@
 
 </details>
 
-## google-dorks (Part 2)
+## google-dorks <a href="#google-dorks-part-2" id="google-dorks-part-2"></a>
 
 ### [opsdisk ](https://github.com/opsdisk)/ [pagodo](https://github.com/opsdisk/pagodo)
 
