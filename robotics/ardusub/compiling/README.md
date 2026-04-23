@@ -12,7 +12,7 @@ ArduSub is hosted and maintained on [github](https://github.com/ardupilot/ardupi
     git submodule update --init --recursive
 ```
 
-### Compiling <a href="#compiling" id="compiling"></a>
+### Build ArduSub <a href="#build-ardusub" id="build-ardusub"></a>
 
 Before compiling ArduSub, first checkout the ArduSub-stable tag into a new branch (here we call it new-branch):
 

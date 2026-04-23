@@ -37,21 +37,6 @@ export default defineConfig({
   themeConfig: {
     search: {
       provider: "local",
-      options: {
-        miniSearch: {
-          // Use one indexed section per page to avoid duplicate anchor-id crashes
-          // caused by imported docs with repeated heading anchors.
-          _splitIntoSections: (_path, html) => {
-            const text = html
-              .replace(/<script[\s\S]*?<\/script>/gi, " ")
-              .replace(/<style[\s\S]*?<\/style>/gi, " ")
-              .replace(/<[^>]+>/g, " ")
-              .replace(/\s+/g, " ")
-              .trim();
-            return [{ text, titles: [] }];
-          },
-        },
-      },
     },
     sidebar,
     socialLinks: [

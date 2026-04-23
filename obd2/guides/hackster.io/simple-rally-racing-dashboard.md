@@ -98,7 +98,7 @@ I started with [Tinkercad](https://www.tinkercad.com/) for the very beginning, b
 
 ![](https://hackster.imgix.net/uploads/attachments/1121283/export_with_components_in_VOnjuxnCkK.jpg)
 
-#### RPM+Gear enclosure with components
+#### RPM+Gear enclosure with components (Part 2)
 
 
 #### Enclosure 3D model
@@ -106,7 +106,7 @@ I started with [Tinkercad](https://www.tinkercad.com/) for the very beginning, b
 
 ### Schematics
 
-#### Schematics
+#### Schematics (Part 2)
 
 Proteus simulation
 

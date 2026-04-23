@@ -1,6 +1,6 @@
 # Lights Setup Page
 
-## Lights Setup Page <a href="#lights-setup-page" id="lights-setup-page"></a>
+## Overview <a href="#overview" id="overview"></a>
 
 ArduSub supports controlling up to two independent lights channels.
 

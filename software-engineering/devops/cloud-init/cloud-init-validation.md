@@ -2,7 +2,7 @@
 
 To validate the cloud-init config file, I used the Ubuntu cloud-init CLI command like so:
 
-```shell-session
+```shell
 cloud-init devel schema --config-file test.yml
 ```
 

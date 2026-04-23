@@ -3,7 +3,7 @@
 
 <https://github.com/o-gs/dji-firmware-tools>
 
-## dji-firmware-tools
+## dji-firmware-tools (Part 2)
 
 Tools for extracting, modding and re-packaging firmwares of [DJI](http://www.dji.com) multirotor drones.
 

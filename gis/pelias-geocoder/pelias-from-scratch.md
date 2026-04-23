@@ -268,7 +268,7 @@ Elasticsearch internally deletes old versions of a record and creates a new one.
 
 ***
 
-## Install and start the Pelias Services
+## Install and start the Pelias Services (Part 2)
 
 Pelias is made up of several different services, each providing specific functionality.
 

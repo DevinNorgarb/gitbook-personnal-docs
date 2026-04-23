@@ -948,7 +948,7 @@ Some submitted request for proposals to integrate OBD-III into vehicles claim to
 
 It’s important to note that even if OBD-III sends only DTC and VIN, it’s trivial to add additional metadata, such as location, time, and history of the vehicle passing the transponder. For the most part, OBD-III is the bogeyman under the bed. As of this writing, it has yet to be deployed with a transponder approach, although phone-home systems such as OnStar are being deployed to notify the car dealer of various security or safety issues.
 
-#### **Summary** <a href="#calibre_link-480" id="calibre_link-480"></a>
+#### **Summary** (Part 2) <a href="#summary-part-2" id="summary-part-2"></a>
 
 When working on your target vehicle, you may run into a number of different buses and protocols. When you do, examine the pins that your OBD-II connector uses for your particular vehicle to help you determine what tools you’ll need and what to expect when reversing your vehicle’s network.
 
@@ -1388,7 +1388,7 @@ Kayak can easily record and play back packet capture sessions, and it supports C
 
 Kayak is a great open source tool that can work on any platform. In addition, it has a friendly GUI with advanced features that allow you to define the CAN packets you see and view them graphically.
 
-#### **Summary** <a href="#calibre_link-491" id="calibre_link-491"></a>
+#### **Summary** (Part 3) <a href="#summary-part-3" id="summary-part-3"></a>
 
 In this chapter, you learned how to use SocketCAN as a unified interface for CAN devices and how to set up your device and apply the appropriate bit rate for your CAN bus. I reviewed all of the default CAN utilities in the can-utils package that come with SocketCAN support, and I showed you how to write low-level C code to directly interface with the CAN sockets. Finally, you learned how to use socketcand to allow remote interaction with your CAN devices and set up Kayak to work with socketcand. Now that you’ve set up communication with your vehicle, you’re just about ready to try out some attacks.
 
@@ -1816,7 +1816,7 @@ An attacker fuzzing a vehicle’s system might check for fired DTCs and use the 
 
 Accessing and fuzzing manufacturer-specific PIDs—by flashing firmware or using mode 0x08—can lead to interesting results. Because each manufacturer interface is kept secret, it’s difficult to assess the actual risk of the network. Unfortunately, security professionals will need to reverse or fuzz these proprietary interfaces to determine what is exposed before work can be done to determine whether there are vulnerabilities. Malicious actors will need to do the same thing, although they won’t be motivated to share their findings. If they can keep undocumented entry points and weaknesses a secret, then their exploit will last longer without being detected. Having secret interfaces into the vehicle doesn’t increase security; the vulnerabilities are there regardless of whether people are allowed to discuss them. Because there’s money in selling these codes (sometimes upward of $50,000), the industry has little incentive to embrace the community.
 
-#### **Summary** <a href="#calibre_link-502" id="calibre_link-502"></a>
+#### **Summary** (Part 4) <a href="#summary-part-4" id="summary-part-4"></a>
 
 In this chapter, you have gone beyond traditional CAN packets to understand more complex protocols such as ISO-TP. You have learned how CAN packets can be linked together to write larger messages or to create two-directional communications over CAN. You also learned how to read and clear any DTCs. You looked at how to find undocumented diagnostic services and saw what types of data are recorded about you and your driving habits. You also explored some ways in which diagnostic services can be used by malicious parties.
 
@@ -2352,7 +2352,7 @@ This will only occur if you’re injecting packets in a moving vehicle, which is
 
 Reverse engineering the CAN bus should never result in bricking—that is, breaking the vehicle so completely that it can do nothing. To brick a vehicle, you would need to mess around with the firmware, which would put the vehicle or component out of warranty and is done at your own risk.
 
-#### **Summary** <a href="#calibre_link-519" id="calibre_link-519"></a>
+#### **Summary** (Part 5) <a href="#summary-part-5" id="summary-part-5"></a>
 
 In this chapter, you learned how to identify CAN wires from the jumble of wires under the dash, and how to use tools like cansniffer and Kayak to sniff traffic and identify what the different packets were doing. You also learned how to group CAN traffic to make changes easier to identify than they would be when using more traditional packet-sniffing tools, such as Wireshark.
 
@@ -2598,7 +2598,7 @@ _Figure 6-17: IDA diagram showing a custom-written routine for NVRAM real-time p
 
 _Figure 6-18: IDA diagram of code for checking fuel injectors on NSX ECU_
 
-#### **Summary** <a href="#calibre_link-535" id="calibre_link-535"></a>
+#### **Summary** (Part 6) <a href="#summary-part-6" id="summary-part-6"></a>
 
 Because hacking on the ECU often involves processors that are smaller than those used in more powerful modern devices, such as cell phones, the tools used for reversing the firmware differ for each target. By using a combination of techniques, such as data visualization to locate tables, and by reversing the firmware directly, you can identify the areas you’re interested in modifying. The methods discussed in this chapter are techniques commonly used by performance tuners to adjust how a vehicle handles fuel efficiency. All can be used to unlock features hidden in the code of your vehicle. We’ll look at performance tuning in more detail in **Chapter 13**.
 
@@ -2809,7 +2809,7 @@ Looks like we have a DTC set. Querying PID 0x03 returned a 4-byte DTC (0x0068C10
 
 If you don’t want to use an Arduino to send signals, you can also buy a signal generator. A professional one will cost at least $150, but you can also get one from SparkFun for around $50 ([_http://www.sparkfun.com/products/11394/_](http://www.sparkfun.com/products/11394/)). Another great alternative is the JimStim for Megasquirt. This can be purchased as a kit or fully assembled for $90 from DIYAutoTune ([_http://www.diyautotune.com/catalog/jimstim-15-megasquirt-stimulator-wheel-simulator-assembled-p-178.html_](http://www.diyautotune.com/catalog/jimstim-15-megasquirt-stimulator-wheel-simulator-assembled-p-178.html)).
 
-#### **Summary** <a href="#calibre_link-544" id="calibre_link-544"></a>
+#### **Summary** (Part 7) <a href="#summary-part-7" id="summary-part-7"></a>
 
 In this chapter you learned how to build an ECU test bench as an affordable solution to safe vehicle security testing. We went over where you can get parts for building a test bench and how to read wiring diagrams so you know how to hook those parts up. You also learned how to build a more advanced test bench that can simulate engine signals, in order to trick components into thinking the vehicle is present.
 
@@ -3306,7 +3306,7 @@ Because invasive fault injection attacks are more time-consuming and expensive t
 
 Invasive fault injection involves physically unpacking the chip, typically with acid (nitric acid and acetone) and using an electron microscope to image the chip. You can work on just the top or bottom layer of the chip or map out each layer and decipher the logic gates and internals. You can also use microprobes and a microprobe station to inject the exact signal you want into your target. By the same token, you could use targeted lasers or even directed heat to cause optical faults to slow down processes in that region. For instance, if a move instruction is supposed to take two clock cycles, you can slow the registry retrieval to make it late for the next instruction.
 
-#### **Summary** <a href="#calibre_link-565" id="calibre_link-565"></a>
+#### **Summary** (Part 8) <a href="#summary-part-8" id="summary-part-8"></a>
 
 In this chapter, you’ve learned several advanced techniques for attacking embedded systems; these techniques will become only more valuable as automotive security improves. You learned how to identify chips and monitor power usage to create a profile of good operations. We tested whether password checks could be attacked by monitoring the power output of bad characters in passwords, ultimately to create a brute-forcing application using power analysis to cut the password brute-force time down to seconds. We also saw how clock and power glitching can make instructions skip at key points in the firmware’s execution, such as during validation security checks or when setting JTAG security.
 
@@ -3640,7 +3640,7 @@ Unfortunately, pulling a radio out of a modern vehicle without destroying it isn
 
 You’ll need to refer to the wiring diagram for your IVI system in order to get it to start on its own, but you can leave out most of the wires that you’re not testing. If you’re building an OEM-based unit, it may be worth your while to completely disassemble the unit and to connect any test connectors so that you’ll not only have the normal IVI system running but also be able to access any of the hidden connectors.
 
-#### **Summary** <a href="#calibre_link-580" id="calibre_link-580"></a>
+#### **Summary** (Part 9) <a href="#summary-part-9" id="summary-part-9"></a>
 
 You should now be comfortable analyzing your existing radio system. We’ve covered how to safely work in a VM or test environment to find vulnerabilities in IVI systems. These systems hold a lot of code and are the most powerful electronic systems in a vehicle. Mastery of the IVI units will give you full control of your target, and there’s no part of a vehicle with a greater concentration of attack surface than the IVI system. When performing security research, an IVI and telematics system will provide you with the most valuable vulnerabilities, and you’ll find that the vulnerabilities found in these systems will often be remote or wireless and directly connected to the vehicle’s bus lines.
 
@@ -4056,7 +4056,7 @@ One interesting scenario to consider is that of a vehicle with a low CRL update 
 
 When performing security testing, make sure to include these possible scenarios in your research.
 
-#### **Summary** <a href="#calibre_link-594" id="calibre_link-594"></a>
+#### **Summary** (Part 10) <a href="#summary-part-10" id="summary-part-10"></a>
 
 This chapter discussed the plan for V2V communication. V2V devices are still in development and many deployment decisions are still to be made. As this technology rolls out, the various vendors will interpret the rules differently and in ways that could lead to interesting security gaps. Hopefully as these early devices start to trickle out into the marketplace, this chapter will be a useful guide for performing security audits.
 
@@ -4559,7 +4559,7 @@ When sharing exploit code, consider adding a bogus identification routine or com
 
 Security developers need access to exploits to test the strength of their protections. New ideas from both the attack and defense teams need to be shared, but do so responsibly.
 
-#### **Summary** <a href="#calibre_link-605" id="calibre_link-605"></a>
+#### **Summary** (Part 11) <a href="#summary-part-11" id="summary-part-11"></a>
 
 In this chapter, you learned how to build working payloads from your research. You took proof-of-concept C code, converted it to payloads in assembly, and then converted your assembly to shellcodes that you could use with Metasploit to make your payloads more modular. You also learned safe ways to ensure that your payloads wouldn’t accidentally be run on unexpected vehicles with the help of VIN decoding and passive CAN bus identification techniques. You even learned some ways to prevent script kiddies from taking your code and injecting it into random vehicles.
 
@@ -5028,7 +5028,7 @@ _Figure 12-9: Simple illustration of which wires to cross_
 
 If a car had a steering wheel lock, you’d bypass it by breaking off the metal keyhole spring and breaking the lock, or sometimes just by forcing the wheel to turn until you broke the lock.
 
-#### **Summary** <a href="#calibre_link-621" id="calibre_link-621"></a>
+#### **Summary** (Part 12) <a href="#summary-part-12" id="summary-part-12"></a>
 
 In this chapter, you learned about low-level wireless communications. We went over methods for identifying wireless signals and common attacks against wireless communications. We demonstrated a few hacks using the TPMS to show that even seemingly benign devices are vulnerable to attack. We also reviewed key fob security and demonstrated a few simple hacks there. Vehicle theft is rapidly adapting to modern electronic vehicles, and keyless system attacks are one of the main hacks used in thefts. Understanding the different systems, their strengths and weaknesses, and how to attack them can help you understand how vulnerable your vehicle is to theft. Finally, we discussed some old-school nonelectronic hacks, like manually brute-forcing door keypads and hotwiring.
 
@@ -5146,7 +5146,7 @@ There are several multiplatform tools available for use with the MegaSquirt hard
 
 _Figure 13-4: TunerStudio gauge cluster_
 
-#### **Summary** <a href="#calibre_link-627" id="calibre_link-627"></a>
+#### **Summary** (Part 13) <a href="#summary-part-13" id="summary-part-13"></a>
 
 This chapter shows how an understanding of a vehicle’s embedded systems can be used to change its behavior. We’ve seen how almost any changes made to a vehicle, even mechanical modifications, require some reprogramming of the vehicle’s computer. We’ve looked at how alterations in standard factory settings result in performance trade-offs and compromises, such that the “best” settings for a vehicle will always depend on your specific goals. We’ve also shown a few examples of performance tuning methods, including chip and flash tuning, and presented some common hardware and software tools used for tuning cars.
 

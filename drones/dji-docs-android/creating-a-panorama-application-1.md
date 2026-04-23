@@ -219,7 +219,7 @@ protected void onCreate(Bundle savedInstanceState)
 
 Run your app. It doesn't contain anything right now, but you will notice that it starts up in landscape mode, and does not contain a title bar!
 
-#### Creating the User Interface <a href="#creating-the-user-interface" id="creating-the-user-interface"></a>
+#### Building the User Interface Layout <a href="#building-the-user-interface-layout" id="building-the-user-interface-layout"></a>
 
 Our app will consist of several view elements:
 
@@ -1438,7 +1438,7 @@ case HANDLER_SET_DJI_CAMERA_SELECT_FILE_AT_INDEX:
 
 Individual images are selected using the **selectFileAtIndex()** function.
 
-#### Downloading Images <a href="#downloading-images" id="downloading-images"></a>
+#### Downloading Captured Images <a href="#downloading-captured-images" id="downloading-captured-images"></a>
 
 Once we have all 8 photos selected, we just need to download them. Lets do that in **HANDLER\_SET\_DJI\_CAMERA\_DOWNLOAD\_SELECTED**:
 

@@ -11,7 +11,7 @@
 
 [simulator.tgz](../../../.gitbook/assets/simulator.tgz)
 
-## Decentralized Fleet Tracking with Blockchain
+## Decentralized Fleet Tracking with Blockchain (Part 2)
 
 Asset tracking is a trend, but this project intends to work in a decentralized way storing each action, event or alert in a blockchain.
 

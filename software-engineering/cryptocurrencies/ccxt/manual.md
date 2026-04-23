@@ -23,7 +23,7 @@ Type / to search
 
 </details>
 
-## Manual
+## Manual (Part 2)
 
 Travis CI User edited this page yesterday · [1606 revisions](https://github.com/ccxt/ccxt/wiki/Manual/\_history)
 

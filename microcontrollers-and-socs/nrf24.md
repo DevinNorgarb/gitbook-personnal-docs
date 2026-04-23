@@ -97,7 +97,7 @@ Here are the two codes for the wireless communication and below is the descripti
 
 #### Transmitter Code
 
-```arduino
+```cpp
 /*
 * Arduino Wireless Communication Tutorial
 *     Example 1 - Transmitter Code
@@ -131,7 +131,7 @@ void loop() {
 
 ### Receiver Code
 
-```arduino
+```cpp
 /*
 * Arduino Wireless Communication Tutorial
 *       Example 1 - Receiver Code
@@ -170,13 +170,13 @@ void loop() {
 
 So we need to include the basic SPI and the newly installed RF24 libraries and create an RF24 object. The two arguments here are the CSN and CE pins.
 
-```arduino
+```cpp
 RF24 radio(7, 8); // CE, CSNCode language: Arduino (arduino)
 ```
 
 Next we need to create a byte array which will represent the address, or the so called pipe through which the two modules will communicate.
 
-```arduino
+```cpp
 const byte address[6] = "00001";Code language: Arduino (arduino)
 ```
 
@@ -184,19 +184,19 @@ We can change the value of this address to any 5 letter string and this enables 
 
 In the setup section we need to initialize the radio object and using the radio.openWritingPipe() function we set the address of the receiver to which we will send data, the 5 letter string we previously set.
 
-```arduino
+```cpp
 radio.openWritingPipe(address);Code language: Arduino (arduino)
 ```
 
 On the other side, at the receiver, using the radio.setReadingPipe() function we set the same address and in that way we enable the communication between the two modules.
 
-```arduino
+```cpp
 radio.openReadingPipe(0, address);Code language: Arduino (arduino)
 ```
 
 Then using the radio.setPALevel() function we set the Power Amplifier level, in our case I will set it to minimum as my modules are very close to each other.
 
-```arduino
+```cpp
 radio.setPALevel(RF24_PA_MIN);Code language: Arduino (arduino)
 ```
 
@@ -204,19 +204,19 @@ Note that if using a higher level it is recommended to use a bypass capacitors a
 
 Next we have the radio.stopListening() function which sets module as transmitter, and on the other side, we have the radio.startListening() function which sets the module as receiver.
 
-```arduino
+```cpp
 // at the Transmitter
 radio.stopListening();Code language: Arduino (arduino)
 ```
 
-```arduino
+```cpp
 // at the Receiver
 radio.startListening();Code language: Arduino (arduino)
 ```
 
 In the loop section, at the transmitter, we create an array of characters to which we assign the message “Hello World”. Using the radio.write() function we will send that message to the receiver. The first argument here is the variable that we want to be sent.
 
-```arduino
+```cpp
 void loop() {
  const char text[] = "Hello World";
  radio.write(&text, sizeof(text));
@@ -230,7 +230,7 @@ Using the radio.write() function we can send maximum of 32 bytes at a time.
 
 On the other side, at the receiver, in the loop section using the radio.available() function we check whether there is data to be received. If that’s true, first we create an array of 32 elements, called “text”, in which we will save the incoming data.
 
-```arduino
+```cpp
 void loop() {
   if (radio.available()) {
     char text[32] = "";
@@ -277,7 +277,7 @@ Here are the two codes and their description below.
 
 **Transmitter Code**
 
-```arduino
+```cpp
 /*
 * Arduino Wireless Communication Tutorial
 *     Example 2 - Transmitter Code
@@ -328,7 +328,7 @@ void loop() {
 
 **Receiver Code**
 
-```arduino
+```cpp
 /*
 * Arduino Wireless Communication Tutorial
 *     Example 2 - Receiver Code
@@ -378,19 +378,19 @@ void loop() {
 
 What’s different here from the previous example is that we need to create two pipes or addresses for the bi-directional communication.
 
-```arduino
+```cpp
 const byte addresses[][6] = {"00001", "00002"};Code language: Arduino (arduino)
 ```
 
 In the setup section we need to define both pipes, and note that the writing address at the first Arduino needs to be the reading address at the second Arduino, and vice versa, the reading address at the first Arduino needs to be the writing address at the second Arduino.
 
-```arduino
+```cpp
 // at the Transmitter
 radio.openWritingPipe(addresses[1]); // 00001
 radio.openReadingPipe(1, addresses[0]); // 00002Code language: Arduino (arduino)
 ```
 
-```arduino
+```cpp
 // at the Receiver
 radio.openWritingPipe(addresses[0]); // 00002
 radio.openReadingPipe(1, addresses[1]); // 00001Code language: Arduino (arduino)
@@ -398,7 +398,7 @@ radio.openReadingPipe(1, addresses[1]); // 00001Code language: Arduino (arduino)
 
 In the loop section using the radio.stopListening() function we set the first Arduino as transmitter, read and map the value of Joystick from 0 to 180, and using the radio.write() function send the data to the receiver.
 
-```arduino
+```cpp
 radio.stopListening();
 int potValue = analogRead(A0);
 int angleValue = map(potValue, 0, 1023, 0, 180);
@@ -407,7 +407,7 @@ radio.write(&angleValue, sizeof(angleValue));Code language: Arduino (arduino)
 
 On the other side, using the radio.startListening() function we set the second Arduino as receiver and we check whether there is available data. While there is data available we will read it, save it to the “angleV” variable and then use that value to rotate the servo motor.
 
-```arduino
+```cpp
 radio.startListening();
   if ( radio.available()) {
     while (radio.available()) {
@@ -425,7 +425,7 @@ Let’s take a look at one more example code using the NRF24L01 modules. Everyth
 
 **Transmitter Code**
 
-```arduino
+```cpp
 /*
   Arduino Wireless Communication Tutorial
       Example 1 - Transmitter Code
@@ -471,7 +471,7 @@ void loop() {
 
 So, we can create a struct which is actually a collection of various types of variables.
 
-```arduino
+```cpp
 // Max size of this struct is 32 bytes - NRF24L01 buffer limit
 struct Data_Package {
   byte a = 0;
@@ -489,7 +489,7 @@ We should keep in mind that the maximum size of this struct data can be 32 bytes
 
 **Receiver Code**
 
-```arduino
+```cpp
 /*
   Arduino Wireless Communication Tutorial
         Example 1 - Receiver Code
