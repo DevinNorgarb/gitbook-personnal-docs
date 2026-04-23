@@ -19,19 +19,19 @@ sudo apt-get install qemu-user-static
 
 2. Download the `multiarch/qemu-user-static` Docker image for the `linux/arm64` platform:
 
-```arduino
+```cpp
 docker pull multiarch/qemu-user-static:register
 ```
 
 3. Register the `qemu-user-static` binary as the default interpreter for the `linux/arm64` platform:
 
-```arduino
+```cpp
 docker run --rm --privileged multiarch/qemu-user-static:register --reset
 ```
 
 4. Try running your Docker image again:
 
-```arduino
+```cpp
 docker run my_image
 ```
 
@@ -61,7 +61,7 @@ This command will enable support for various foreign architectures, including `l
 
 3. Try running your Docker image again:
 
-```arduino
+```cpp
 docker run my_image
 ```
 
