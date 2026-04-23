@@ -54,4 +54,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./.vitepress/dist
+          cname: docs.f1y.ing
           force_orphan: true
