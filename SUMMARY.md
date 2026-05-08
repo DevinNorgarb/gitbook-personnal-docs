@@ -32,6 +32,7 @@
   - [Scripts](snippets-and-scripts/scripts/README.md)
     - [Influx](readme/scripts/influx/README.md)
       - [Influx DB backup](readme/scripts/influx/influx-db-backup.md)
+      - [TP-Link Tapo/Kasa to InfluxDB (Ben Tasker)](readme/scripts/influx/bentasker-co-uk-tplink-tapo-kasa-influxdb.md)
     - [Docker Image Sizes](snippets-and-scripts/scripts/docker-image-sizes.md)
     - [Run docker commands without needing sudo](snippets-and-scripts/scripts/run-docker-commands-without-needing-sudo.md)
     - [Nginx Proxy Block](snippets-and-scripts/scripts/nginx-proxy-block.md)
