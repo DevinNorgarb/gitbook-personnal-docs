@@ -12,7 +12,7 @@ const ROOT = path.resolve(__dirname, "..");
 const SUMMARY = path.join(ROOT, "SUMMARY.md");
 const OUT = path.join(ROOT, ".vitepress", "sidebar.generated.mjs");
 
-/** path/to/file.md → VitePress link (README.md at repo root → `/` when index.md is synced from README) */
+/** path/to/file.md → VitePress link */
 function mdToLink(filePath) {
   const normalized = filePath.replace(/\\/g, "/").trim();
   if (!/\.md$/i.test(normalized)) {
@@ -23,8 +23,11 @@ function mdToLink(filePath) {
   const last = segments[segments.length - 1] || "";
   if (/^readme$/i.test(last)) {
     const dir = segments.slice(0, -1).join("/");
+    // Root README.md is synced to index.md and served at `/`.
     if (!dir) return "/";
-    return "/" + dir + "/";
+    // Section README pages are emitted as `/path/README.html` with cleanUrls=false.
+    // Linking to `/path/README` avoids 404s on `/path/`.
+    return "/" + dir + "/README";
   }
   return "/" + base;
 }
