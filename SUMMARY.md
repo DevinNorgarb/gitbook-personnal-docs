@@ -355,6 +355,7 @@
   - [EVIL-ESP](microcontrollers-and-socs/esp32/evil-esp.md)
   - [esp32-wifi-penetration-tool](microcontrollers-and-socs/esp32/esp32-wifi-penetration-tool.md)
   - [esptool](microcontrollers-and-socs/esp32/esptool.md)
+- [Sonoff RFR3 — 433 MQTT gateway mod](microcontrollers-and-socs/vivio-wordpress-com-sonoff-rfr3-433-mqtt-gateway-mod.md)
 - [Painless Mesh](microcontrollers-and-socs/painless-mesh.md)
 
 ## Self-Hosting
