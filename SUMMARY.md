@@ -350,6 +350,7 @@
     - [Pi 4 Overclocking Maximum settings](microcontrollers-and-socs/raspberry-pi/overclocking-raspberry-pi-4/pi-4-overclocking-maximum-settings.md)
 - [ESP32](microcontrollers-and-socs/esp32/README.md)
   - [ESP32 CAM](microcontrollers-and-socs/esp32/esp32-cam.md)
+  - [ESP32-C3 datasheet (EN)](microcontrollers-and-socs/esp32/michiel-vanderwulp-be-esp32-c3-datasheet.md)
   - [Pinout](microcontrollers-and-socs/esp32/pinout.md)
   - [ESP DroneBridge](microcontrollers-and-socs/esp32/esp-dronebridge.md)
   - [EVIL-ESP](microcontrollers-and-socs/esp32/evil-esp.md)
