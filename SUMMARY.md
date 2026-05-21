@@ -323,6 +323,7 @@
 ## MicroControllers & SoC's
 
 - [nRF24](microcontrollers-and-socs/nrf24.md)
+- [MQ135 Air Quality Sensor (Bobbo117 / GitHub)](microcontrollers-and-socs/github-bobbo117-mq135-air-quality-sensor.md)
 - [Arduino](microcontrollers-and-socs/arduino/README.md)
   - [elecrow neo 6M GPS Shield](microcontrollers-and-socs/arduino/elecrow-neo-6m-gps-shield.md)
 - [Balena.io](microcontrollers-and-socs/balena.io.md)
