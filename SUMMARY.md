@@ -323,6 +323,7 @@
 ## MicroControllers & SoC's
 
 - [nRF24](microcontrollers-and-socs/nrf24.md)
+- [Last Minute Engineers — nRF24L01 Arduino](microcontrollers-and-socs/lastminuteengineers-nrf24l01-arduino-wireless.md)
 - [Arduino](microcontrollers-and-socs/arduino/README.md)
   - [elecrow neo 6M GPS Shield](microcontrollers-and-socs/arduino/elecrow-neo-6m-gps-shield.md)
 - [Balena.io](microcontrollers-and-socs/balena.io.md)
