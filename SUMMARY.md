@@ -92,6 +92,7 @@
   - [Docker for PHP Devs](software-engineering/php/docker-for-php-devs.md)
   - [Coroutines](software-engineering/php/coroutines.md)
 - [Principles & Practices](software-engineering/principles-and-practices/README.md)
+  - [Architectural Decision Records (adr.github.io)](software-engineering/principles-and-practices/adr.github.io-architectural-decision-records-overview.md)
   - [Code Reviews](software-engineering/principles-and-practices/code-reviews/README.md)
     - [Sentry's take on Code Reviews](software-engineering/principles-and-practices/code-reviews/sentrys-take-on-code-reviews.md)
     - [\[POST\] On Pull Requests](software-engineering/principles-and-practices/code-reviews/post-on-pull-requests.md)
