@@ -38,7 +38,7 @@ description: Optional one-line summary (for tooltips/search)
 
 This repository was imported from GitBook. For **VitePress / GitHub Pages**, use portable markdown instead of GitBook tags:
 
-- **File / PDF downloads**: `[filename](relative-or-asset-path)` (see [`scripts/convert_gitbook_tags.py`](../scripts/convert_gitbook_tags.py) for historical conversions).
+- **File / PDF downloads**: `[filename](relative-or-asset-path)` (see [`scripts/archive/`](../scripts/archive/) for historical conversions).
 - **Callouts**: use blockquotes with a bold label (for example `> **Note**`).
 - **Embeds**: use a normal markdown link or angle-bracket URL `<https://...>`.
 

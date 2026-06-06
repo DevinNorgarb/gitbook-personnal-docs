@@ -21,19 +21,19 @@ sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o
 sudo chmod a+rx /usr/local/bin/yt-dlp  # Make executable
 ```
 
-```php
+```console
 sudo wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /usr/local/bin/yt-dlp
 sudo chmod a+rx /usr/local/bin/yt-dlp  # Make executable
 ```
 
-```php
+```console
 sudo aria2c https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp --dir /usr/local/bin -o yt-dlp
 sudo chmod a+rx /usr/local/bin/yt-dlp  # Make executable
 ```
 
 To update, run:
 
-```php
+```console
 sudo yt-dlp -U
 ```
 
@@ -43,19 +43,19 @@ To use shell completion (autocomplete), look for the completion files in the [so
 
 You can install the [PyPI package](https://pypi.org/project/yt-dlp) with:
 
-```php
+```console
 python3 -m pip install -U yt-dlp
 ```
 
 You can install without any of the optional dependencies using:
 
-```php
+```console
 python3 -m pip install --no-deps -U yt-dlp
 ```
 
 If you want to be on the cutting edge, you can also install the master branch with:
 
-```php
+```console
 python3 -m pip install -U pip setuptools wheel
 python3 -m pip install --force-reinstall https://github.com/yt-dlp/yt-dlp/archive/master.tar.gz
 ```
@@ -148,19 +148,19 @@ doas apk -U add yt-dlp
 
 Or alternatively, without any optional dependencies:
 
-```php
+```console
 doas apk -U add yt-dlp-core
 ```
 
 yt-dlp should upgrade with your system. If you want to do that explicitly:
 
-```php
+```console
 doas apk -U upgrade yt-dlp
 ```
 
 To uninstall:
 
-```php
+```console
 doas apk del yt-dlp
 ```
 
@@ -188,19 +188,19 @@ choco install yt-dlp
 
 To update, run:
 
-```php
+```console
 choco upgrade yt-dlp
 ```
 
 #### [winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/)
 
-```php
+```console
 winget install yt-dlp
 ```
 
 To update, run:
 
-```php
+```console
 winget upgrade yt-dlp
 ```
 

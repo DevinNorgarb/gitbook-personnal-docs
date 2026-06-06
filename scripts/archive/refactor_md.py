@@ -15,7 +15,7 @@ import re
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent
+REPO_ROOT = Path(__file__).resolve().parents[2]
 SKIP_DIRS = {".git", "node_modules", "__pycache__"}
 
 # Language hints for code blocks (keyword -> lang)

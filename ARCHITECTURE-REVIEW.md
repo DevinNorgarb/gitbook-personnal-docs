@@ -17,7 +17,7 @@ Executable logic is concentrated in modules wired through `package.json`:
 | `docs:dev` / `docs:build` | VitePress via `.vitepress/config.ts` |
 | `docs:audit` | `scripts/docs-audit.mjs` |
 
-Additional tooling (not wired to npm): `scripts/convert_gitbook_tags.py`, `refactor_md.py` (orphan at repo root).
+Additional tooling (archived, not wired to npm): `scripts/archive/convert_gitbook_tags.py`, `scripts/archive/refactor_md.py`.
 
 The deepest friction is not missing abstractions in application code — it is **duplicate content, inconsistent asset layout, legacy migration debris, and untested doc tooling** sitting on top of a large heterogeneous knowledge graph.
 
@@ -132,7 +132,15 @@ The deepest friction is not missing abstractions in application code — it is *
 - **Leverage** for tooling: syntax highlighting and any future fence-aware audit work correctly.
 - Removes ~1.7 GB of misleading local state.
 
-**Status:** Not started
+**Status:** Complete — PR [#26](https://github.com/DevinNorgarb/gitbook-personnal-docs/pull/26)
+
+**Done:**
+
+- Archived `refactor_md.py` and `convert_gitbook_tags.py` under `scripts/archive/` with README
+- Removed orphan `.gitbook/assets/Makefile` via git
+- Fixed broken code fences in `snippets-and-scripts/scripts/README.md`
+- Normalized `` ```php `` → `` ```console `` in `snippets-and-scripts/` install/runbook pages
+- Documented that gitignored `book/` is safe to delete locally
 
 ---
 

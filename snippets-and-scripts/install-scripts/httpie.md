@@ -202,7 +202,7 @@ If you want to try out the latest version of HTTPie that hasn't been officially 
 
 You can use the following command to install the development version of HTTPie on Linux, macOS, Windows, or FreeBSD operating systems. With this command, the code present in the `master` branch is downloaded and installed using `pip`.
 
-```php
+```console
 $ python -m pip install --upgrade https://github.com/httpie/cli/archive/master.tar.gz
 ```
 
@@ -210,21 +210,21 @@ There are other ways to install the development version of HTTPie on macOS and L
 
 You can install it using Homebrew by running the following commands:
 
-```php
+```console
 $ brew uninstall --force httpie
 $ brew install --HEAD httpie
 ```
 
 You can install it using Snapcraft by running the following commands:
 
-```php
+```console
 $ snap remove httpie
 $ snap install httpie --edge
 ```
 
 To verify the installation, you can compare the [version identifier on GitHub](https://github.com/httpie/cli/blob/master/httpie/\_\_init\_\_.py#L6) with the one available on your machine. You can check the version of HTTPie on your machine by using the command `http --version`.
 
-```php
+```console
 $ http --version
 ## 3.X.X.dev0
 ```
