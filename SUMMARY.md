@@ -1,8 +1,10 @@
 # Table of contents
 
 - [Home](README.md)
-  - [Backup VPS using rsync](readme/backup-vps-using-rsync.md)
-  - [Android Backup via ADB](readme/android-backup-via-adb.md)
+  - [Operations](snippets-and-scripts/operations/README.md)
+    - [Backup VPS using rsync](snippets-and-scripts/operations/backup-vps-using-rsync.md)
+    - [Android Backup via ADB](snippets-and-scripts/operations/android-backup-via-adb.md)
+    - [macOS Disk Usage Analysis](snippets-and-scripts/operations/mac-os-disk-usage-analysis.md)
   - [Install Scripts](snippets-and-scripts/install-scripts/README.md)
     - [Rust](snippets-and-scripts/install-scripts/rust.md)
     - [Pi-hole](snippets-and-scripts/install-scripts/pihole.md)
@@ -30,9 +32,9 @@
     - [Install oh-my-zsh](snippets-and-scripts/install-scripts/install-oh-my-zsh.md)
     - [SDKMan](snippets-and-scripts/install-scripts/sdkman.md)
   - [Scripts](snippets-and-scripts/scripts/README.md)
-    - [Influx](readme/scripts/influx/README.md)
-      - [Influx DB backup](readme/scripts/influx/influx-db-backup.md)
-      - [TP-Link Tapo/Kasa to InfluxDB (Ben Tasker)](readme/scripts/influx/bentasker-co-uk-tplink-tapo-kasa-influxdb.md)
+    - [Influx](snippets-and-scripts/scripts/influx/README.md)
+      - [Influx DB backup](snippets-and-scripts/scripts/influx/influx-db-backup.md)
+      - [TP-Link Tapo/Kasa to InfluxDB (Ben Tasker)](snippets-and-scripts/scripts/influx/bentasker-co-uk-tplink-tapo-kasa-influxdb.md)
     - [Docker Image Sizes](snippets-and-scripts/scripts/docker-image-sizes.md)
     - [Run docker commands without needing sudo](snippets-and-scripts/scripts/run-docker-commands-without-needing-sudo.md)
     - [Nginx Proxy Block](snippets-and-scripts/scripts/nginx-proxy-block.md)
@@ -40,8 +42,6 @@
   - [Online Resize Ubuntu/Debian Disk](snippets-and-scripts/online-resize-ubuntu-debian-disk.md)
   - [Magento](snippets-and-scripts/magento.md)
     - [Magento One Line install](snippets-and-scripts/magento/magento-one-line-install.md)
-  - [macOS Disk Usage Analysis](readme/mac-os-disk-usage-analysis.md)
-
 ## Software Engineering
 
 - [WebAssembly](software-engineering/webassembly/README.md)

@@ -7,6 +7,7 @@ This repository contains personal documentation originally organized like GitBoo
 - **SUMMARY.md** – Defines the navigation structure. All pages must be listed here to appear in the table of contents.
 - **Sections** – Top-level folders (e.g. `software-engineering/`, `obd2/`, `gis/`) each contain related documentation.
 - **README.md** – Section and subsection overviews. Use these as landing pages.
+- **Operations runbooks** – Backup and ops notes go under `snippets-and-scripts/operations/` (not a top-level `readme/` folder).
 
 ## Adding a New Page
 

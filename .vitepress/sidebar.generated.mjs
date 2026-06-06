@@ -8,12 +8,22 @@ export default [
         "link": "/",
         "items": [
           {
-            "text": "Backup VPS using rsync",
-            "link": "/readme/backup-vps-using-rsync"
-          },
-          {
-            "text": "Android Backup via ADB",
-            "link": "/readme/android-backup-via-adb"
+            "text": "Operations",
+            "link": "/snippets-and-scripts/operations/README",
+            "items": [
+              {
+                "text": "Backup VPS using rsync",
+                "link": "/snippets-and-scripts/operations/backup-vps-using-rsync"
+              },
+              {
+                "text": "Android Backup via ADB",
+                "link": "/snippets-and-scripts/operations/android-backup-via-adb"
+              },
+              {
+                "text": "macOS Disk Usage Analysis",
+                "link": "/snippets-and-scripts/operations/mac-os-disk-usage-analysis"
+              }
+            ]
           },
           {
             "text": "Install Scripts",
@@ -131,15 +141,15 @@ export default [
             "items": [
               {
                 "text": "Influx",
-                "link": "/readme/scripts/influx/README",
+                "link": "/snippets-and-scripts/scripts/influx/README",
                 "items": [
                   {
                     "text": "Influx DB backup",
-                    "link": "/readme/scripts/influx/influx-db-backup"
+                    "link": "/snippets-and-scripts/scripts/influx/influx-db-backup"
                   },
                   {
                     "text": "TP-Link Tapo/Kasa to InfluxDB (Ben Tasker)",
-                    "link": "/readme/scripts/influx/bentasker-co-uk-tplink-tapo-kasa-influxdb"
+                    "link": "/snippets-and-scripts/scripts/influx/bentasker-co-uk-tplink-tapo-kasa-influxdb"
                   }
                 ]
               },
@@ -174,10 +184,6 @@ export default [
                 "link": "/snippets-and-scripts/magento/magento-one-line-install"
               }
             ]
-          },
-          {
-            "text": "macOS Disk Usage Analysis",
-            "link": "/readme/mac-os-disk-usage-analysis"
           }
         ]
       }
