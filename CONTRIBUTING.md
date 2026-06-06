@@ -21,7 +21,7 @@ This repository contains personal documentation originally organized like GitBoo
    ```
 
 3. Use a single H1 for the page title.
-4. Add the page to `SUMMARY.md` under the correct section, then run `npm run docs:gen-sidebar` (or `npm run docs:prep`) and commit the updated [`.vitepress/sidebar.generated.mjs`](.vitepress/sidebar.generated.mjs) so VitePress navigation stays in sync.
+4. Add the page to `SUMMARY.md` under the correct section, then run `npm run docs:gen-sidebar` (or `npm run docs:prep`) and commit the updated [`.vitepress/sidebar.generated.mjs`](.vitepress/sidebar.generated.mjs) so VitePress navigation stays in sync. CI runs `npm run docs:check-sidebar` to fail on drift.
 
 ## Editing SUMMARY.md
 
