@@ -22,6 +22,7 @@ export default defineConfig({
     "README.md",
     "SUMMARY.md",
     "DOCUMENTATION-REFACTORING-REPORT.md",
+    "ARCHITECTURE-REVIEW.md",
     "docs-audit-report.md",
     "CONTRIBUTING.md",
     ".cursor/**",
