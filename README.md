@@ -38,6 +38,6 @@ See [.github/DOCUMENTATION-STYLE-GUIDE.md](.github/DOCUMENTATION-STYLE-GUIDE.md)
 - **Production build**: `npm run docs:build` writes to [`.vitepress/dist/`](.vitepress/dist/) (gitignored).
 - **GitHub Pages**: pushes to `main` or `master` run [`.github/workflows/vitepress.yml`](.github/workflows/vitepress.yml), which deploys **`.vitepress/dist`** to the **`gh-pages`** branch. In **Settings → Pages**, use branch **`gh-pages`** at **`/`**. The primary site URL is [https://docs.f1y.ing/](https://docs.f1y.ing/) (if no custom domain is configured, use the repository path URL for the Pages host).
 
-**Audit reports**: `npm run docs:audit` writes `docs-audit-report.json` and `docs-audit-report.md` (gitignored); CI uploads them as a workflow artifact.
+**Audit reports**: `npm run docs:audit` writes `docs-audit-report.json` and `docs-audit-report.md` (gitignored); CI uploads them as a workflow artifact. Configure thresholds and CI gates in [`audit.config.json`](audit.config.json); pass `--fail-on broken_images` to exit non-zero on violations.
 
 GitBook-only constructs in markdown were converted for portable rendering; see [`scripts/archive/`](scripts/archive/) for archived migration tooling if you need similar conversions for new imports.

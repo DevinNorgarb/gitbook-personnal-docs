@@ -9,7 +9,8 @@
     "docs:dev": "npm run docs:prep && vitepress dev .",
     "docs:build": "npm run docs:prep && vitepress build .",
     "docs:preview": "vitepress preview .",
-    "docs:audit": "node scripts/docs-audit.mjs"
+    "docs:audit": "node scripts/docs-audit.mjs",
+    "docs:test": "node --test scripts/audit-markdown.test.mjs"
   },
   "devDependencies": {
     "vitepress": "^1.6.3",

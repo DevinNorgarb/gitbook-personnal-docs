@@ -1,0 +1,30 @@
+{
+  "thinWords": 60,
+  "skipAuditFiles": [
+    "SUMMARY.md",
+    "CONTRIBUTING.md",
+    "DOCUMENTATION-REFACTORING-REPORT.md",
+    "ARCHITECTURE-REVIEW.md",
+    "docs-audit-report.md",
+    "index.md"
+  ],
+  "skipAuditPrefixes": [".github/", ".cursor/", "scripts/fixtures/"],
+  "hotspots": [
+    {
+      "id": "k3s-tutorial-mix",
+      "pathIncludes": "misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/",
+      "note": "Known mixed-topic folder per DOCUMENTATION-REFACTORING-REPORT"
+    },
+    {
+      "id": "ip-cameras-path",
+      "pathIncludes": "ip-cameras/awesome-web-archiving",
+      "note": "IP camera content under awesome-web-archiving path"
+    },
+    {
+      "id": "android-dev-top-level",
+      "pathIncludes": "android-dev/",
+      "note": "android-dev/ at repo root while SUMMARY nests under Software Engineering"
+    }
+  ],
+  "ciFailOn": []
+}

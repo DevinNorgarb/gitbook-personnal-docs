@@ -25,6 +25,9 @@ jobs:
 
       - run: npm ci
 
+      - name: Audit tests
+        run: npm run docs:test
+
       - name: Documentation audit
         run: npm run docs:audit
 
