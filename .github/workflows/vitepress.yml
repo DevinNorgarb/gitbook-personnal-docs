@@ -43,6 +43,8 @@ jobs:
         continue-on-error: true
 
       - name: Build VitePress site
+        env:
+          VITE_SENTRY_DSN: ${{ secrets.VITE_SENTRY_DSN }}
         run: npm run docs:build
 
       - name: Disable Jekyll on GitHub Pages
