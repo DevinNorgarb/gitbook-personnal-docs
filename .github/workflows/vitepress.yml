@@ -25,6 +25,12 @@ jobs:
 
       - run: npm ci
 
+      - name: Navigation tests
+        run: npm run docs:test
+
+      - name: Check sidebar drift
+        run: npm run docs:check-sidebar
+
       - name: Documentation audit
         run: npm run docs:audit
 

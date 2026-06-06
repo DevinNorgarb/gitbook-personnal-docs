@@ -6,6 +6,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  parseSummaryMarkdownPaths,
+  parseSummaryNavContext,
+} from "./lib/navigation.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -49,39 +53,6 @@ function wordCount(s) {
     .replace(/<[^>]+>/g, " ")
     .replace(/[#>*_`\[\]()]/g, " ");
   return t.split(/\s+/).filter(Boolean).length;
-}
-
-function parseSummaryPaths() {
-  const summaryPath = path.join(ROOT, "SUMMARY.md");
-  const raw = fs.readFileSync(summaryPath, "utf8");
-  const paths = new Set();
-  const re = /\]\(([^)]+\.md)\)/gi;
-  let m;
-  while ((m = re.exec(raw)) !== null) {
-    paths.add(m[1].replace(/\\/g, "/").trim());
-  }
-  return paths;
-}
-
-/** Map rel path -> nearest ## section title in SUMMARY */
-function parseSummaryNavContext() {
-  const raw = fs.readFileSync(path.join(ROOT, "SUMMARY.md"), "utf8");
-  const lines = raw.split(/\r?\n/);
-  let section = "Overview";
-  /** @type {Map<string, string>} */
-  const fileToSection = new Map();
-  for (const line of lines) {
-    if (/^##\s+/.test(line)) {
-      section = line.replace(/^##\s+/, "").trim();
-      continue;
-    }
-    const match = line.match(/\]\(([^)]+\.md)\)/i);
-    if (match) {
-      const p = match[1].replace(/\\/g, "/").trim();
-      fileToSection.set(p, section);
-    }
-  }
-  return fileToSection;
 }
 
 function extractMdLinksAndImages(content) {
@@ -133,8 +104,9 @@ const HOTSPOTS = [
 ];
 
 function main() {
-  const summaryPaths = parseSummaryPaths();
-  const navContext = parseSummaryNavContext();
+  const summaryRaw = fs.readFileSync(path.join(ROOT, "SUMMARY.md"), "utf8");
+  const summaryPaths = parseSummaryMarkdownPaths(summaryRaw);
+  const navContext = parseSummaryNavContext(summaryRaw);
   const allMd = [...walkMarkdown(ROOT)];
   const summaryRelSet = new Set([...summaryPaths]);
 
