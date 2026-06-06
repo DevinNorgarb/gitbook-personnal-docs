@@ -136,6 +136,10 @@ export default [
                   {
                     "text": "Influx DB backup",
                     "link": "/readme/scripts/influx/influx-db-backup"
+                  },
+                  {
+                    "text": "TP-Link Tapo/Kasa to InfluxDB (Ben Tasker)",
+                    "link": "/readme/scripts/influx/bentasker-co-uk-tplink-tapo-kasa-influxdb"
                   }
                 ]
               },
@@ -242,7 +246,7 @@ export default [
             "items": [
               {
                 "text": "PixelExperience on Xiaomi Redmi",
-                "link": "/android-dev/pixelexperience-on-xiaomi-redmi"
+                "link": "/software-engineering/android-app-development/custom-os/pixelexperience-on-xiaomi-redmi"
               }
             ]
           },
@@ -252,13 +256,13 @@ export default [
             "items": [
               {
                 "text": "Copy APK file using ADB",
-                "link": "/android-dev/copy-apk-file-using-adb"
+                "link": "/software-engineering/android-app-development/adb/copy-apk-file-using-adb"
               }
             ]
           },
           {
             "text": "compileSdk and targetSdk Version Mappings",
-            "link": "/android-dev/compilesdk-and-targetsdk-version-mappings"
+            "link": "/software-engineering/android-app-development/compilesdk-and-targetsdk-version-mappings"
           },
           {
             "text": "Ionic",
@@ -387,6 +391,20 @@ export default [
               {
                 "text": "Inertia Guide",
                 "link": "/software-engineering/php/laravel/inertia-guide"
+              },
+              {
+                "text": "How to use Lando for local development with Laravel",
+                "link": "/software-engineering/php/laravel/how-to-use-lando-for-local-development-with-laravel/README",
+                "items": [
+                  {
+                    "text": "Provision LXC Containers",
+                    "link": "/software-engineering/php/laravel/how-to-use-lando-for-local-development-with-laravel/provision-lxc-containers"
+                  },
+                  {
+                    "text": "Dante in Oracle Cloud",
+                    "link": "/software-engineering/php/laravel/how-to-use-lando-for-local-development-with-laravel/dante-in-oracle-cloud"
+                  }
+                ]
               }
             ]
           },
@@ -404,6 +422,10 @@ export default [
         "text": "Principles & Practices",
         "link": "/software-engineering/principles-and-practices/README",
         "items": [
+          {
+            "text": "Architectural Decision Records (adr.github.io)",
+            "link": "/software-engineering/principles-and-practices/adr.github.io-architectural-decision-records-overview"
+          },
           {
             "text": "Code Reviews",
             "link": "/software-engineering/principles-and-practices/code-reviews/README",
@@ -891,6 +913,10 @@ export default [
               {
                 "text": "Configure Cloudflare Tunnel in docker-compose.yml",
                 "link": "/software-engineering/networking/cloudflare-tunnels/configure-cloudflare-tunnel-in-docker-compose.yml"
+              },
+              {
+                "text": "Cloudflare Tunnel with Docker",
+                "link": "/software-engineering/networking/cloudflare-tunnels/cloudflare-tunnel-with-docker"
               }
             ]
           },
@@ -1429,12 +1455,24 @@ export default [
         "link": "/microcontrollers-and-socs/nrf24"
       },
       {
+        "text": "MQ135 Air Quality Sensor (Bobbo117 / GitHub)",
+        "link": "/microcontrollers-and-socs/github-bobbo117-mq135-air-quality-sensor"
+      },
+      {
+        "text": "Last Minute Engineers — nRF24L01 Arduino",
+        "link": "/microcontrollers-and-socs/lastminuteengineers-nrf24l01-arduino-wireless"
+      },
+      {
         "text": "Arduino",
         "link": "/microcontrollers-and-socs/arduino/README",
         "items": [
           {
             "text": "elecrow neo 6M GPS Shield",
             "link": "/microcontrollers-and-socs/arduino/elecrow-neo-6m-gps-shield"
+          },
+          {
+            "text": "Arduino (K3s tutorial notes)",
+            "link": "/microcontrollers-and-socs/arduino/k3s-tutorial-arduino"
           }
         ]
       },
@@ -1551,6 +1589,10 @@ export default [
             "link": "/microcontrollers-and-socs/esp32/esp32-cam"
           },
           {
+            "text": "ESP32-C3 datasheet (EN)",
+            "link": "/microcontrollers-and-socs/esp32/michiel-vanderwulp-be-esp32-c3-datasheet"
+          },
+          {
             "text": "Pinout",
             "link": "/microcontrollers-and-socs/esp32/pinout"
           },
@@ -1569,8 +1611,16 @@ export default [
           {
             "text": "esptool",
             "link": "/microcontrollers-and-socs/esp32/esptool"
+          },
+          {
+            "text": "2.4 GHz RF, antenna, and PCB layout references",
+            "link": "/microcontrollers-and-socs/esp32/esp32-2-4ghz-rf-antenna-pcb-layout-references"
           }
         ]
+      },
+      {
+        "text": "Sonoff RFR3 — 433 MQTT gateway mod",
+        "link": "/microcontrollers-and-socs/vivio-wordpress-com-sonoff-rfr3-433-mqtt-gateway-mod"
       },
       {
         "text": "Painless Mesh",
@@ -1663,6 +1713,10 @@ export default [
       {
         "text": "Mapbox Storytelling",
         "link": "/gis/mapbox-storytelling"
+      },
+      {
+        "text": "How to Use Mapbox in QGIS",
+        "link": "/gis/how-to-use-mapbox-in-qgis"
       },
       {
         "text": "MapBox",
@@ -1835,6 +1889,10 @@ export default [
               {
                 "text": "apktool",
                 "link": "/pen-testing/decompilers/android/apktool"
+              },
+              {
+                "text": "Oat2Dex (Medium)",
+                "link": "/pen-testing/decompilers/android/medium-oat2dex-android-pentesting"
               }
             ]
           },
@@ -2155,6 +2213,10 @@ export default [
           {
             "text": "ChatGPT",
             "link": "/misc/artificial-intelligence/chatgpt"
+          },
+          {
+            "text": "Using ChatGPT to build System Diagrams — Part I",
+            "link": "/misc/artificial-intelligence/using-chatgpt-to-build-system-diagrams-part-i"
           }
         ]
       },
@@ -2165,6 +2227,26 @@ export default [
           {
             "text": "Install Ghost blogging platform on Ubuntu",
             "link": "/misc/tutorials/install-ghost-blogging-platform-on-ubuntu"
+          },
+          {
+            "text": "From Google Sheets, how to send email based on date",
+            "link": "/misc/tutorials/from-google-sheets-how-to-send-email-based-on-date/README",
+            "items": [
+              {
+                "text": "Using ChatGPT to build system diagrams — Part II",
+                "link": "/misc/tutorials/from-google-sheets-how-to-send-email-based-on-date/using-chatgpt-to-build-system-diagrams-part-ii"
+              }
+            ]
+          },
+          {
+            "text": "Feeling Guilty Billing Clients?",
+            "link": "/misc/tutorials/feeling-guilty-billing-clients/README",
+            "items": [
+              {
+                "text": "marvinferber BLOG",
+                "link": "/misc/tutorials/feeling-guilty-billing-clients/marvinferber-blog"
+              }
+            ]
           },
           {
             "text": "Setting up K3s in LXC containers using Netmaker",
@@ -2186,59 +2268,7 @@ export default [
               },
               {
                 "text": "Install K3s",
-                "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/README",
-                "items": [
-                  {
-                    "text": "Using ChatGPT to build System Diagrams — Part I",
-                    "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/using-chatgpt-to-build-system-diagrams-part-i"
-                  },
-                  {
-                    "text": "How to use Lando for local development with Laravel",
-                    "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/how-to-use-lando-for-local-development-with-laravel/README",
-                    "items": [
-                      {
-                        "text": "Provision LXC Containers",
-                        "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/how-to-use-lando-for-local-development-with-laravel/provision-lxc-containers"
-                      },
-                      {
-                        "text": "Dante in Oracle Cloud",
-                        "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/how-to-use-lando-for-local-development-with-laravel/dante-in-oracle-cloud"
-                      }
-                    ]
-                  },
-                  {
-                    "text": "Feeling Guilty Billing Clients?",
-                    "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/feeling-guilty-billing-clients/README",
-                    "items": [
-                      {
-                        "text": "marvinferber BLOG",
-                        "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/feeling-guilty-billing-clients/marvinferber-blog"
-                      }
-                    ]
-                  },
-                  {
-                    "text": "Cloudflare Tunnel with Docker",
-                    "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/cloudflare-tunnel-with-docker"
-                  },
-                  {
-                    "text": "How to Use Mapbox in QGIS",
-                    "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/how-to-use-mapbox-in-qgis"
-                  },
-                  {
-                    "text": "Arduino",
-                    "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/arduino"
-                  },
-                  {
-                    "text": "From Google Sheets, how to send email based on date",
-                    "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/from-google-sheets-how-to-send-email-based-on-date/README",
-                    "items": [
-                      {
-                        "text": "Using ChatGPT to build system diagrams — Part II",
-                        "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/from-google-sheets-how-to-send-email-based-on-date/using-chatgpt-to-build-system-diagrams-part-ii"
-                      }
-                    ]
-                  }
-                ]
+                "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/README"
               }
             ]
           }

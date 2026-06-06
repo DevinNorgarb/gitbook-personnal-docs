@@ -12,44 +12,44 @@ This tutorial requires that you have an existing Mapbox account and have set up 
 
 The first thing you will need to do in Mapbox is to create a map style in your studio ↗: https://www.mapbox.com/studio/. To familiarize yourself with how to do that, visit the Mapbox tutorial on creating styles ↗: https://www.mapbox.com/help/create-a-custom-style/. If you are just interested in a predesigned basemap, select one of the style templates. Type in the name for your new map style.
 
-![Map style editor](<../../../../.gitbook/assets/image (47)>)
+![Map style editor](<../.gitbook/assets/image (47)>)
 
 Either customize the map style in the editor or use the default template style. From your styles page, click on the menu option for the style you want to load into QGIS.
 
-![Map styles list](<../../../../.gitbook/assets/image (48)>)
+![Map styles list](<../.gitbook/assets/image (48)>)
 
 Select “Share, develop & use”. Scroll down to the section that says “Use with WMTS service”. Click the toggle button to select QGIS. Then copy the URL provided in the WMTS endpoint box — you will need this URL when you open QGIS.
 
-![WMTS endpoint URL](<../../../../.gitbook/assets/image (49)>)
+![WMTS endpoint URL](<../.gitbook/assets/image (49)>)
 
 
 ### Loading the Mapbox Style in QGIS Using WMTS Service
 
 Open QGIS. On the far left are icons for loading different data types into QGIS. Select the globe icon to load a layer from a WMTS Server.
 
-![WMTS icon in QGIS](<../../../../.gitbook/assets/image (50)>)
+![WMTS icon in QGIS](<../.gitbook/assets/image (50)>)
 
 Make sure the Layer option is highlighted and then select “New”. Under Connection Details type in a name for the service (e.g. Mapbox) and paste in the URL you copied from Mapbox. Hit OK.
 
-![WMTS connection dialog](<../../../../.gitbook/assets/image (51)>)
+![WMTS connection dialog](<../.gitbook/assets/image (51)>)
 
 This returns you to the “Add Layer(s) from a WM(T)S Server” dialog. The “Connect” button should now be highlighted. Click “Connect” and you should see your Mapbox style name listed.
 
-![Connect to Mapbox WMTS](<../../../../.gitbook/assets/image (52)>)
+![Connect to Mapbox WMTS](<../.gitbook/assets/image (52)>)
 
 Highlight the entry, give the layer a name for the QGIS Layers panel, then click Add and then Close.
 
-![Map style added to QGIS](<../../../../.gitbook/assets/image (53)>)
+![Map style added to QGIS](<../.gitbook/assets/image (53)>)
 
 Your Mapbox style will now be added to the layers panel in QGIS.
 
-![Mapbox style in QGIS layers](<../../../../.gitbook/assets/image (54)>)
+![Mapbox style in QGIS layers](<../.gitbook/assets/image (54)>)
 
 Notes:
 
 * The style loads as a flat (raster) layer: you can pan and zoom, but you cannot toggle individual Mapbox style layers on/off from QGIS as you can in Mapbox Studio. Style behaviors such as scale-dependent rendering and labeling are preserved; zooming will show style changes.
 * You can load other GIS data on top of the Mapbox style and change the projection. In the example shown, a shapefile of ocean debris landings was added and reprojected from Mapbox’s default Web Mercator to a Pacific-centric WGS 1984 PDC Mercator projection.
 
-![Reprojected data over Mapbox style](<../../../../.gitbook/assets/image (55)>)
+![Reprojected data over Mapbox style](<../.gitbook/assets/image (55)>)
 
 

@@ -1,6 +1,6 @@
 # marvinferber BLOG
 
-![](<../../../../../.gitbook/assets/image (56)>)
+![](<../../../.gitbook/assets/image (56)>)
 
 I started to discover the power of wiring tasks in Node-RED recently. Since I am a passionate ROS programmer, I was wondering if this flow tool could also help to make robot programming more transparent and reproducible. I was surprised how much more sense I could add to robotic programming by using this visual tool. I am now using my [Turtlebot 2arrow-up-right](http://www.turtlebot.com/) together with ROS indigo and Node-RED. This BLOG post shall be the first of a small series of posts with the intent to share my experiences with a greater community. This first post is about setting up the software. Furthermore, I want to give a very small example how to view a Turtlebots odometry in a Node-RED flow.
 
@@ -115,7 +115,7 @@ node-red
 
 Below are screenshots showing the ROS contrib nodes, the subscription node edit dialog, and the ROS server config node edit dialog:
 
-![](<../../../../../.gitbook/assets/image (57)>) ![](<../../../../../.gitbook/assets/image (58)>) ![](<../../../../../.gitbook/assets/image (59)>)
+![](<../../../.gitbook/assets/image (57)>) ![](<../../../.gitbook/assets/image (58)>) ![](<../../../.gitbook/assets/image (59)>)
 
 Congratulations, we have managed to make contact with the ROS system from a Node-RED flow. In the next step, we will subscribe to a topic and process the data we get.
 
@@ -209,7 +209,7 @@ In this paragraph, we subscribe to the /odom topic and show the output in a debu
 
 
 
-![](<../../../../../.gitbook/assets/image (60)>)
+![](<../../../.gitbook/assets/image (60)>)
 
 The image above shows a flow that processes and shows /odom messages from a ROS-based robot:
 
@@ -232,4 +232,4 @@ roslaunch turtlebot_gazebo turtlebot_world.launch
 
 That’s it! Happy hacking 😉
 
-![](<../../../../../.gitbook/assets/image (56)>)
+![](<../../../.gitbook/assets/image (56)>)

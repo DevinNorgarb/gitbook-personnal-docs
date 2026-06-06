@@ -18,13 +18,13 @@ C4 diagrams are a way to represent the architecture of a software system and are
 > **Prompt**: Let’s start by creating a context diagram of the services in Wealth Management\
 > **ChatGPT**: Sure, here’s an example of a context diagram in Mermaid format for a Wealth Management System:
 
-![](<../../../../../.gitbook/assets/image (35)>)
+![](<../../../.gitbook/assets/image (35)>)
 
 context diagram
 
 and in the markdown editor
 
-![](<../../../../../.gitbook/assets/image (36)>)
+![](<../../../.gitbook/assets/image (36)>)
 
 context diagram
 
@@ -44,13 +44,13 @@ Looks good so far. Next, let’s build a container-level diagram for one of the 
 > **Prompt**: Let’s take the Portfolio service and break it down by creating a container diagram for its sub-functionalities\
 > **ChatGPT**: Sure, here’s an example of a container diagram in Mermaid format for the Portfolio Management Service of a Wealth Management System:
 
-![](<../../../../../.gitbook/assets/image (37)>)
+![](<../../../.gitbook/assets/image (37)>)
 
 Container diagram
 
 and markdown diagram
 
-![](<../../../../../.gitbook/assets/image (38)>)
+![](<../../../.gitbook/assets/image (38)>)
 
 This diagram shows the containers that comprise the Portfolio Management Service and their dependencies.
 
@@ -66,11 +66,11 @@ This diagram shows the containers that comprise the Portfolio Management Service
 > **Prompt**: Next lets create the component level diagram for portfolio management api with all relevant details\
 > **ChatGPT**: Here’s an example of a component diagram in Mermaid format for the Portfolio Management API
 
-![](<../../../../../.gitbook/assets/image (39)>)
+![](<../../../.gitbook/assets/image (39)>)
 
 and the corresponding mermaid diagram
 
-![](<../../../../../.gitbook/assets/image (40)>)
+![](<../../../.gitbook/assets/image (40)>)
 
 Component diagram for Portfolio Management API
 
@@ -89,11 +89,11 @@ Follow-up:
 > **Prompt**: can we do the same for portfolio management worker container\
 > **ChatGPT**: Sure, here’s an example of a component diagram in Mermaid format for the Portfolio Management Worker container:
 
-![](<../../../../../.gitbook/assets/image (41)>)
+![](<../../../.gitbook/assets/image (41)>)
 
 and the mermaid diagram
 
-![](<../../../../../.gitbook/assets/image (42)>)
+![](<../../../.gitbook/assets/image (42)>)
 
 Component Diagram for Portfolio Management Worker
 
@@ -108,17 +108,17 @@ Component Diagram for Portfolio Management Worker
 > **Prompt:** Can you also do the code diagram for Portfolio Management API\
 > **ChatGPT**: Sure, here’s an example of a code diagram in Mermaid format for the Portfolio Management API:
 
-![](<../../../../../.gitbook/assets/image (43)>)
+![](<../../../.gitbook/assets/image (43)>)
 
 However, when creating this in the markdown editor with Mermaid.js, it failed to indicate cyclical dependencies. The corrected graph removes those cycles:
 
-![](<../../../../../.gitbook/assets/image (44)>)
+![](<../../../.gitbook/assets/image (44)>)
 
 Corrected Code Graph
 
 and the mermaid diagram
 
-![](<../../../../../.gitbook/assets/image (45)>)
+![](<../../../.gitbook/assets/image (45)>)
 
 Portfolio Management API code packages:
 

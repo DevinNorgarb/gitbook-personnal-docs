@@ -2,12 +2,14 @@
 .cursor/plans/markdown_repository_refactor_aa9510be.plan.md
 
 # VitePress / Node
+.env.local
 node_modules/
 .vitepress/dist/
 .vitepress/cache/
 /index.md
 docs-audit-report.json
 docs-audit-report.md
+docs-asset-audit-report.md
 
 # Legacy mdBook output (if run locally)
 /book/

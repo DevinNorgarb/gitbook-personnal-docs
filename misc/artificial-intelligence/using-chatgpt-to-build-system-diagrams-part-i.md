@@ -4,7 +4,7 @@ Interested in Mindmaps — read our blog post on using plantUML with ChatGPT to 
 
 The popularity of ChatGPT keeps growing and it’s now being used in a wide range of applications. As a software architect, I had the opportunity to explore ChatGPT’s capabilities for use within the financial domain, specifically for Wealth Management.
 
-![](<../../../../.gitbook/assets/image (20)>)
+![](<../../.gitbook/assets/image (20)>)
 
 Photo by [Christina @ wocintechchat.comarrow-up-right](https://unsplash.com/@wocintechchat?utm_source=medium\&utm_medium=referral) on [Unsplasharrow-up-right](https://unsplash.com/?utm_source=medium\&utm_medium=referral)
 
@@ -16,7 +16,7 @@ So, I logged into http://chat.openai.com/ and here is my conversation.
 
 I could have defined my own use-case, but I wanted to test all aspects of ChatGPT, so I asked it to define one for me.
 
-![](<../../../../.gitbook/assets/image (21)>)
+![](<../../.gitbook/assets/image (21)>)
 
 Use case definition
 
@@ -25,7 +25,7 @@ Use case definition
 
 Looks good to me, let’s start by defining the data model — so I asked ChatGPT to do it and this is what I got:
 
-![](<../../../../.gitbook/assets/image (22)>)
+![](<../../.gitbook/assets/image (22)>)
 
 data model definition
 
@@ -34,7 +34,7 @@ That sounds about right, let's see what it can do for diagrams. I wanted to dril
 Prompt: `describe the data model in more detail or tabular format using markdown`\
 ChatGPT: I can describe the structure of the data model in a tabular format using markdown.
 
-![](<../../../../.gitbook/assets/image (23)>)
+![](<../../.gitbook/assets/image (23)>)
 
 data structure
 
@@ -44,13 +44,13 @@ data structure
 Prompt: this is perfect, I would like to depict the relationships in a mermaid diagram, can you give me the markdown code to do this\
 ChatGPT: I apologize, but as a text-based model, I am not able to generate Mermaid diagrams or any other visual diagrams. However, I can provide you with an example of how the relationships could be represented in Mermaid syntax:
 
-![](<../../../../.gitbook/assets/image (24)>)
+![](<../../.gitbook/assets/image (24)>)
 
 mermaid syntax for data relationships
 
 And copying this in a markdown editor enclosed within {mermaid} tags, I got:
 
-![](<../../../../.gitbook/assets/image (25)>)
+![](<../../.gitbook/assets/image (25)>)
 
 data model in mermaid
 
@@ -68,13 +68,13 @@ ChatGPT: Sure, a `Buy` transaction would have an impact on the following tables:
 
 Here is an example of how the process could be represented in a Mermaid sequence diagram:
 
-![](<../../../../.gitbook/assets/image (26)>)
+![](<../../.gitbook/assets/image (26)>)
 
 sequence diagram for a buy transaction
 
 and copying this is in a markdown editor:
 
-![](<../../../../.gitbook/assets/image (27)>)
+![](<../../.gitbook/assets/image (27)>)
 
 sequence diagram
 
@@ -97,7 +97,7 @@ ChatGPT: It is common for financial accounts to have different states, such as n
 
 Here is an example of how the states of an account could be represented in a Mermaid state diagram:
 
-![](<../../../../.gitbook/assets/image (28)>)
+![](<../../.gitbook/assets/image (28)>)
 
 Sequence Diagram (state diagram image)
 
@@ -106,13 +106,13 @@ Looks like this format is older and may break due to cyclical dependencies. So I
 Prompt: can you try giving the state diagram markdown syntax in new format using `[*]`\
 ChatGPT: Sure, here is an example of how a state diagram for a wealth management system's account management component could be represented in Mermaid using the new format with `[*]`:
 
-![](<../../../../.gitbook/assets/image (29)>)
+![](<../../.gitbook/assets/image (29)>)
 
 mermaid representation of state diagram
 
 Markdown Editor Representation:
 
-![](<../../../../.gitbook/assets/image (30)>)
+![](<../../.gitbook/assets/image (30)>)
 
 This diagram shows the different states of an account and the possible transitions between them.
 
@@ -145,13 +145,13 @@ This diagram shows the different states of an account and the possible transitio
 * The account can transition from `Frozen` state to `Closed` state by closing it.
 * The account can transition from `Closed` state to `Expired` state if the account is expired.
 
-![](<../../../../.gitbook/assets/image (31)>)
+![](<../../.gitbook/assets/image (31)>)
 
 extended state diagram
 
 Diagrammatic Representation:
 
-![](<../../../../.gitbook/assets/image (32)>)
+![](<../../.gitbook/assets/image (32)>)
 
 This is awesome. Truly impressive on what can be achieved with ChatGPT and Mermaid
 
