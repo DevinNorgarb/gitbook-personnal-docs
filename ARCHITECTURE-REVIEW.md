@@ -96,7 +96,7 @@ The deepest friction is not missing abstractions in application code — it is *
 - **Leverage** for contributors: edit `SUMMARY.md`, run one command, trust the output.
 - Regression tests on the interface catch nested-list edge cases before deploy.
 
-**Status:** Complete — PR [#27](https://github.com/DevinNorgarb/gitbook-personnal-docs/pull/27)
+**Status:** Complete — PR [#28](https://github.com/DevinNorgarb/gitbook-personnal-docs/pull/28)
 
 **Done:**
 
