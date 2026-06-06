@@ -114,7 +114,13 @@ The deepest friction is not missing abstractions in application code — it is *
 - **Leverage** for navigation: one place to search.
 - Audit hotspots for structural mismatches shrink.
 
-**Status:** Not started
+**Status:** Complete — PR [#30](https://github.com/DevinNorgarb/gitbook-personnal-docs/pull/30)
+
+**Done:**
+
+- Relocated `readme/` pages into `snippets-and-scripts/operations/` and `snippets-and-scripts/scripts/influx/`
+- Added Operations landing page; updated `SUMMARY.md` and CONTRIBUTING convention
+- Removed empty `readme/` tree (paths preserved in git history)
 
 ---
 
