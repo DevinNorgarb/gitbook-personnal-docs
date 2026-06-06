@@ -78,7 +78,14 @@ The deepest friction is not missing abstractions in application code — it is *
 - **Leverage** for the publishing module: asset resolution becomes predictable, so link/image audit in `docs-audit.mjs` can be stricter.
 - Fewer VitePress config exceptions.
 
-**Status:** Not started
+**Status:** Complete — PR [#31](https://github.com/DevinNorgarb/gitbook-personnal-docs/pull/31)
+
+**Done:**
+
+- Documented topic-local asset convention in `.github/ASSET-CONVENTION.md`
+- Added `npm run docs:audit-assets` to list unreferenced `.gitbook/assets/` blobs
+- Quarantined unreferenced `sensor_data_for_vehicle_interior.c` to `scripts/archive/` via git
+- Added exemplar `microcontrollers-and-socs/assets/README.md`
 
 ---
 

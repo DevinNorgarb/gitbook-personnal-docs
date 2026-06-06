@@ -22,6 +22,11 @@ description: Optional one-line summary (for tooltips/search)
 - **No skipped levels**: Use H2 → H3 → H4 in order; do not jump from H2 to H4.
 - **Consistency**: The H1 should match the `title` in frontmatter and reflect the page purpose.
 
+## Assets
+
+- **New content**: Store images and PDFs under `<section>/assets/<source-slug>/` with lowercase extensions. See [ASSET-CONVENTION.md](ASSET-CONVENTION.md).
+- **Legacy imports**: `.gitbook/assets/` is read-only for new work; migrate references when editing a page.
+
 ## File Naming
 
 - Use **kebab-case** for all file and folder names (e.g. `laravel-upgrade-from-webpack-to-vite.md`).
