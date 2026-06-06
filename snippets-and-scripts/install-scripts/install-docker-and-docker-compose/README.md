@@ -40,7 +40,7 @@ Docker Engine is supported on `x86_64` (or `amd64`), `armhf`, `arm64`, and `s390
 
 Older versions of Docker were called `docker`, `docker.io`, or `docker-engine`. If these are installed, uninstall them:
 
-```php
+```console
 $ sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
 
@@ -70,7 +70,7 @@ Before you install Docker Engine for the first time on a new host machine, you n
 
 1.  Update the `apt` package index and install packages to allow `apt` to use a repository over HTTPS:
 
-```php
+```console
     $ sudo apt-get update
 
     $ sudo apt-get install \
@@ -78,12 +78,12 @@ Before you install Docker Engine for the first time on a new host machine, you n
         curl \
         gnupg \
         lsb-release
-```php
+```console
 2.  Add Docker’s official GPG key:
 
-```php
+```console
     $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-```php
+```console
 3.  Use the following command to set up the **stable** repository. To add the **nightly** or **test** repository, add the word `nightly` or `test` (or both) after the word `stable` in the commands below. Learn about **nightly** and **test** channels.
 
 ```bash
@@ -119,12 +119,12 @@ Before you install Docker Engine for the first time on a new host machine, you n
 
     b. Install a specific version using the version string from the second column, for example, `5:18.09.1~3-0~ubuntu-xenial`.
 
-```php
+```console
     $ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
-```php
+```console
 3.  Verify that Docker Engine is installed correctly by running the `hello-world` image.
 
-```php
+```console
     $ sudo docker run hello-world
 ```
 
@@ -147,14 +147,14 @@ If you cannot use Docker’s repository to install Docker Engine, you can downlo
     > To install a **nightly** or **test** (pre-release) package, change the word `stable` in the above URL to `nightly` or `test`. Learn about **nightly** and **test** channels.
 2.  Install Docker Engine, changing the path below to the path where you downloaded the Docker package.
 
-```php
+```console
     $ sudo dpkg -i /path/to/package.deb
 ```
 
     The Docker daemon starts automatically.
 3.  Verify that Docker Engine is installed correctly by running the `hello-world` image.
 
-```php
+```console
     $ sudo docker run hello-world
 ```
 
@@ -189,7 +189,7 @@ Always examine scripts downloaded from the internet before running them locally.
 
 This example downloads the script from [get.docker.com](https://get.docker.com/) and runs it to install the latest stable release of Docker on Linux:
 
-```php
+```console
 $ curl -fsSL https://get.docker.com -o get-docker.sh
 $ sudo sh get-docker.sh
 Executing docker install script, commit: 7cae5f8b0decc17d6571f9f52eb840fbc13b2737
@@ -208,7 +208,7 @@ Docker also provides a convenience script at [test.docker.com](https://test.dock
 
 To install the latest version of Docker on Linux from the “test” channel, run:
 
-```php
+```console
 $ curl -fsSL https://test.docker.com -o test-docker.sh
 $ sudo sh test-docker.sh
 <...>

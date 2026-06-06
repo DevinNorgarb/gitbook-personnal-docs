@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Convert GitBook-specific markdown tags to portable markdown for mdBook / GitHub Pages.
-Run from repo root: python3 scripts/convert_gitbook_tags.py
+Run from repo root: python3 scripts/archive/convert_gitbook_tags.py
 """
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 from urllib.parse import unquote
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 SKIP_PARTS = frozenset({".cursor", "book", ".git"})
 
 

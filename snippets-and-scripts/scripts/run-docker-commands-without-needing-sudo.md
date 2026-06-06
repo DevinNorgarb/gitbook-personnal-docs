@@ -40,7 +40,7 @@ To create the `docker` group and add your user:
 
     To fix this problem, either remove the `~/.docker/` directory (it’s recreated automatically, but any custom settings are lost), or change its ownership and permissions using the following commands:
 
-```php
+```console
     $ sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
     $ sudo chmod g+rwx "$HOME/.docker" -R
 ```
@@ -49,14 +49,14 @@ To create the `docker` group and add your user:
 
 Many modern Linux distributions use [systemd](https://docs.docker.com/config/daemon/systemd/) to manage which services start when the system boots. On Debian and Ubuntu, the Docker service starts on boot by default. To automatically start Docker and containerd on boot for other Linux distributions using systemd, run the following commands:
 
-```php
+```console
 $ sudo systemctl enable docker.service
 $ sudo systemctl enable containerd.service
 ```
 
 To stop this behavior, use `disable` instead.
 
-```php
+```console
 $ sudo systemctl disable docker.service
 $ sudo systemctl disable containerd.service
 ```

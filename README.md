@@ -40,4 +40,4 @@ See [.github/DOCUMENTATION-STYLE-GUIDE.md](.github/DOCUMENTATION-STYLE-GUIDE.md)
 
 **Audit reports**: `npm run docs:audit` writes `docs-audit-report.json` and `docs-audit-report.md` (gitignored); CI uploads them as a workflow artifact.
 
-GitBook-only constructs in markdown were converted for portable rendering; see [`scripts/convert_gitbook_tags.py`](scripts/convert_gitbook_tags.py) if you need similar conversions for new imports.
+GitBook-only constructs in markdown were converted for portable rendering; see [`scripts/archive/`](scripts/archive/) for archived migration tooling if you need similar conversions for new imports.

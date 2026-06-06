@@ -146,6 +146,7 @@ function main() {
     if (rel.startsWith(".github/")) continue;
     if (rel === "SUMMARY.md" || rel === "CONTRIBUTING.md") continue;
     if (rel === "DOCUMENTATION-REFACTORING-REPORT.md") continue;
+    if (rel === "ARCHITECTURE-REVIEW.md") continue;
     if (rel === "docs-audit-report.md") continue;
     if (rel === "index.md") continue;
 

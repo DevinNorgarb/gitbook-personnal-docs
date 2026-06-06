@@ -83,7 +83,7 @@ After the one-liner above completes running, you should be able to access your s
 
 After the above installation is complete, run the following lines to install sample data:
 
-```php
+```console
 bin/magento sampledata:deploy
 bin/magento setup:upgrade
 ```
@@ -175,7 +175,7 @@ OpenSearch is set as the default search engine when setting up this project. Fol
 
 To update your project to the latest version of `docker-magento`, run:
 
-```php
+```console
 bin/update
 ```
 
@@ -272,13 +272,13 @@ The hostname of each service is the name of the service within the `compose.yaml
 
 To connect to the MySQL CLI tool of the Docker instance, run:
 
-```php
+```console
 bin/mysql
 ```
 
 You can use the `bin/mysql` script to import a database, for example a file stored in your local host directory at `magento.sql`:
 
-```php
+```console
 bin/mysql < magento.sql
 ```
 
@@ -355,11 +355,11 @@ Otherwise, this project now automatically sets up Xdebug support with VS Code. I
 
     - The port must be the same as the port on the xdebug.ini file.
 
-```php
+```console
       bin/cli cat /usr/local/etc/php/php.ini
 ```
 
-```php
+```console
       memory_limit = 4G
       max_execution_time = 1800
       zlib.output_compression = On
@@ -380,7 +380,7 @@ Otherwise, this project now automatically sets up Xdebug support with VS Code. I
 
     - The pathMappings should have the same folder path as the project inside the Docker container.
 
-```php
+```console
       {
           "version": "0.2.0",
           "configurations": [
@@ -396,10 +396,10 @@ Otherwise, this project now automatically sets up Xdebug support with VS Code. I
               }
           ]
       }
-```php
+```console
 5.  Run the following command in the Windows Powershell. It allows WSL through the firewall, otherwise breakpoints might not be hitten.
 
-```php
+```console
     New-NetFirewallRule -DisplayName "WSL" -Direction Inbound  -InterfaceAlias "vEthernet (WSL)"  -Action Allow
 ```
 
@@ -441,7 +441,7 @@ Copy `compose.dev-ssh.yaml` to `compose.dev.yaml` before installing Magento to t
 
 Note that you must use your IDE's SSH/SFTP functionality, otherwise changes will not be synced. To re-sync your host environment at any time, run:
 
-```php
+```console
 bin/copyfromcontainer --all
 ```
 
@@ -471,7 +471,7 @@ You must also create a new entry in your `/etc/hosts` file using the same IP:
 
 To enable Xdebug on Linux, you may also need to open port 9003 on the firewall by running:
 
-```php
+```console
 sudo iptables -A INPUT -p tcp --dport 9003 -j ACCEPT
 ```
 
@@ -479,7 +479,7 @@ You may also have to increase a virtual memory map count on the host system whic
 
 Add the following line to the `/etc/sysctl.conf` file on your host:
 
-```php
+```console
 vm.max_map_count=262144
 ```
 
@@ -487,7 +487,7 @@ vm.max_map_count=262144
 
 These docker images have built-in support for Blackfire.io. To use it, first register your server ID and token with the Blackfire agent:
 
-```php
+```console
 bin/root blackfire-agent --register --server-id={YOUR_SERVER_ID} --server-token={YOUR_SERVER_TOKEN}
 ```
 
@@ -509,7 +509,7 @@ To work with MFTF you will need to first enable the `selenium` image in the `com
 4. Run a sample test `bin/mftf run:test AdminLoginSuccessfulTest`.
 5. Update your `nginx.conf` file to allow access to the dev section with the following, before the final `deny all` section:
 
-```php
+```console
 location ~* ^/dev/tests/acceptance/utils($|/) {
     root $MAGE_ROOT;
     location ~ ^/dev/tests/acceptance/utils/command.php {

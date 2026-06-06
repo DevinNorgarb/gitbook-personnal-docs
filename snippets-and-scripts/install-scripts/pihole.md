@@ -22,7 +22,7 @@ If you would prefer to review the code before installation, we provide these alt
 
 ### Alternative 1: Clone our repository and run[¶](https://docs.pi-hole.net/main/basic-install/#alternative-1-clone-our-repository-and-run) <a href="#alternative-1-clone-our-repository-and-run" id="alternative-1-clone-our-repository-and-run"></a>
 
-```php
+```console
 git clone --depth 1 https://github.com/pi-hole/pi-hole.git Pi-hole
 cd "Pi-hole/automated install/"
 sudo bash basic-install.sh
@@ -30,7 +30,7 @@ sudo bash basic-install.sh
 
 #### Alternative 2: Manually download the installer and run[¶](https://docs.pi-hole.net/main/basic-install/#alternative-2-manually-download-the-installer-and-run) <a href="#alternative-2-manually-download-the-installer-and-run" id="alternative-2-manually-download-the-installer-and-run"></a>
 
-```php
+```console
 wget -O basic-install.sh https://install.pi-hole.net
 sudo bash basic-install.sh
 ```

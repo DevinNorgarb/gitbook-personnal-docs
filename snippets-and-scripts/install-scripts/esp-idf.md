@@ -28,12 +28,12 @@ To compile using ESP-IDF, you need to get the following packages. The command to
 
 -   Ubuntu and Debian:
 
-```php
+```console
     sudo apt-get install git wget flex bison gperf python3 python3-pip python3-venv cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0
-```php
+```console
 -   CentOS 7 & 8:
 
-```php
+```console
     sudo yum -y update && sudo yum install git wget flex bison gperf python3 cmake ninja-build ccache dfu-util libusbx
 ```
 
@@ -41,7 +41,7 @@ CentOS 7 is still supported but CentOS version 8 is recommended for a better use
 
 -   Arch:
 
-```php
+```console
     sudo pacman -S --needed gcc git make flex bison gperf python cmake ninja ccache dfu-util libusb
 ```
 
@@ -57,14 +57,14 @@ ESP-IDF uses the version of Python installed by default on macOS.
 - Install CMake & Ninja build:
   -   If you have [Homebrew](https://brew.sh/), you can run:
 
-```php
+```console
       brew install cmake ninja dfu-util
-```php
+```console
   -   If you have [MacPorts](https://www.macports.org/install.php), you can run:
 
-```php
+```console
       sudo port install cmake ninja dfu-util
-```php
+```console
   - Otherwise, consult the [CMake](https://cmake.org/) and [Ninja](https://ninja-build.org/) home pages for macOS installation downloads.
 - It is strongly recommended to also install [ccache](https://ccache.dev/) for faster builds. If you have [Homebrew](https://brew.sh/), this can be done via `brew install ccache` or `sudo port install ccache` on [MacPorts](https://www.macports.org/install.php).
 
@@ -72,7 +72,7 @@ Note
 
 If an error like this is shown during any step:
 
-```php
+```console
 xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
 ```
 
@@ -89,13 +89,13 @@ ERROR: tool xtensa-esp32-elf has no installed versions. Please run 'install.sh' 
 
 or:
 
-```php
+```console
 zsh: bad CPU type in executable: ~/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
 ```
 
 Then you need to install Apple Rosetta 2 by running
 
-```php
+```console
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 ```
 
@@ -103,13 +103,13 @@ Then you need to install Apple Rosetta 2 by running
 
 Based on macOS [Catalina 10.15 release notes](https://developer.apple.com/documentation/macos-release-notes/macos-catalina-10\_15-release-notes), use of Python 2.7 is not recommended and Python 2.7 is not included by default in future versions of macOS. Check what Python you currently have:
 
-```php
+```console
 python --version
 ```
 
 If the output is like `Python 2.7.17`, your default interpreter is Python 2.7. If so, also check if Python 3 is not already installed on your computer:
 
-```php
+```console
 python3 --version
 ```
 
@@ -136,7 +136,7 @@ To get ESP-IDF, navigate to your installation directory and clone the repository
 
 Open Terminal, and run the following commands:
 
-```php
+```console
 mkdir -p ~/esp
 cd ~/esp
 git clone --recursive https://github.com/espressif/esp-idf.git
@@ -238,13 +238,13 @@ The installed tools are not yet added to the PATH environment variable. To make 
 
 In the terminal where you are going to use ESP-IDF, run:
 
-```php
+```console
 . $HOME/esp/esp-idf/export.sh
 ```
 
 or for fish (supported only since fish version 3.0.0):
 
-```php
+```console
 . $HOME/esp/esp-idf/export.fish
 ```
 
@@ -345,7 +345,7 @@ idf.py build
 
 This command compiles the application and all ESP-IDF components, then it generates the bootloader, partition table, and application binaries.
 
-```php
+```console
 $ idf.py build
 Running cmake in directory /path/to/hello_world/build
 Executing "cmake -G Ninja --warn-uninitialized /path/to/hello_world"...
@@ -437,7 +437,7 @@ To check if “hello\_world” is indeed running, type `idf.py -p PORT monitor` 
 
 This command launches the [IDF Monitor](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/tools/idf-monitor.html) application:
 
-```php
+```console
 $ idf.py -p <PORT> monitor
 Running idf_monitor in directory [...]/esp/hello_world/build
 Executing "python [...]/esp-idf/tools/idf_monitor.py -b 115200 [...]/esp/hello_world/build/hello_world.elf"...
@@ -452,7 +452,7 @@ ets Jun  8 2016 00:22:57
 
 After startup and diagnostic logs scroll up, you should see “Hello world!” printed out by the application.
 
-```php
+```console
     ...
     Hello world!
     Restarting in 10 seconds...
