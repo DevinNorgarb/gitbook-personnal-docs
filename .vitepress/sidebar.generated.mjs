@@ -136,6 +136,10 @@ export default [
                   {
                     "text": "Influx DB backup",
                     "link": "/readme/scripts/influx/influx-db-backup"
+                  },
+                  {
+                    "text": "TP-Link Tapo/Kasa to InfluxDB (Ben Tasker)",
+                    "link": "/readme/scripts/influx/bentasker-co-uk-tplink-tapo-kasa-influxdb"
                   }
                 ]
               },
@@ -404,6 +408,10 @@ export default [
         "text": "Principles & Practices",
         "link": "/software-engineering/principles-and-practices/README",
         "items": [
+          {
+            "text": "Architectural Decision Records (adr.github.io)",
+            "link": "/software-engineering/principles-and-practices/adr.github.io-architectural-decision-records-overview"
+          },
           {
             "text": "Code Reviews",
             "link": "/software-engineering/principles-and-practices/code-reviews/README",
@@ -1429,6 +1437,14 @@ export default [
         "link": "/microcontrollers-and-socs/nrf24"
       },
       {
+        "text": "MQ135 Air Quality Sensor (Bobbo117 / GitHub)",
+        "link": "/microcontrollers-and-socs/github-bobbo117-mq135-air-quality-sensor"
+      },
+      {
+        "text": "Last Minute Engineers — nRF24L01 Arduino",
+        "link": "/microcontrollers-and-socs/lastminuteengineers-nrf24l01-arduino-wireless"
+      },
+      {
         "text": "Arduino",
         "link": "/microcontrollers-and-socs/arduino/README",
         "items": [
@@ -1551,6 +1567,10 @@ export default [
             "link": "/microcontrollers-and-socs/esp32/esp32-cam"
           },
           {
+            "text": "ESP32-C3 datasheet (EN)",
+            "link": "/microcontrollers-and-socs/esp32/michiel-vanderwulp-be-esp32-c3-datasheet"
+          },
+          {
             "text": "Pinout",
             "link": "/microcontrollers-and-socs/esp32/pinout"
           },
@@ -1569,8 +1589,16 @@ export default [
           {
             "text": "esptool",
             "link": "/microcontrollers-and-socs/esp32/esptool"
+          },
+          {
+            "text": "2.4 GHz RF, antenna, and PCB layout references",
+            "link": "/microcontrollers-and-socs/esp32/esp32-2-4ghz-rf-antenna-pcb-layout-references"
           }
         ]
+      },
+      {
+        "text": "Sonoff RFR3 — 433 MQTT gateway mod",
+        "link": "/microcontrollers-and-socs/vivio-wordpress-com-sonoff-rfr3-433-mqtt-gateway-mod"
       },
       {
         "text": "Painless Mesh",
@@ -1835,6 +1863,10 @@ export default [
               {
                 "text": "apktool",
                 "link": "/pen-testing/decompilers/android/apktool"
+              },
+              {
+                "text": "Oat2Dex (Medium)",
+                "link": "/pen-testing/decompilers/android/medium-oat2dex-android-pentesting"
               }
             ]
           },

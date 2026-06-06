@@ -60,7 +60,14 @@ The deepest friction is not missing abstractions in application code — it is *
 - **Leverage** — every install guide and snippet page inherits the same truth.
 - Tests (or audit rules) can assert "at most one canonical page per procedure ID" instead of manual dedup hunts.
 
-**Status:** Not started
+**Status:** Complete — PR [#24](https://github.com/DevinNorgarb/gitbook-personnal-docs/pull/24)
+
+**Done:**
+
+- Canonical runbook: `snippets-and-scripts/install-scripts/install-docker-and-docker-compose/docker-without-root-privileges.md`
+- Variant pages (`run-docker-commands-without-needing-sudo.md`, `run-docker-without-sudo.md`) are short stubs linking to canonical
+- Orphan duplicate `run-docker-without-needing-sudo.md` removed via git
+- `docker-on-kali-linux.md` links to canonical instead of inlining steps
 
 ---
 

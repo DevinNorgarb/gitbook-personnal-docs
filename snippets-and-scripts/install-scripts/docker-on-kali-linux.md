@@ -18,14 +18,7 @@ kali@kali:~$ docker
 kali@kali:~$
 ```
 
-You can now get started with using docker, with `sudo`. If you want to add yourself to the docker group to use `docker` without `sudo`, an additional step is needed:
-
-```console
-kali@kali:~$ sudo usermod -aG docker $USER
-kali@kali:~$
-```
-
-The final thing is to **logout and in again**.
+You can now get started with using docker, with `sudo`. To run `docker` without `sudo`, follow the [Docker without root privileges](install-docker-and-docker-compose/docker-without-root-privileges.md) runbook (add your user to the `docker` group, then log out and back in).
 
 If you would like to use a Kali Docker image, we have a doc page for that [here](https://www.kali.org/docs/containers/using-kali-docker-images/).
 
