@@ -3,9 +3,15 @@ import * as Sentry from "@sentry/vue";
 
 export default {
   extends: DefaultTheme,
-  enhanceApp({ app, router }) {
+  enhanceApp({ app }) {
+    // VitePress SSR renders every page at build time; Sentry's Vue Router
+    // integration expects vue-router and crashes during that pass.
+    if (import.meta.env.SSR) {
+      return;
+    }
+
     const dsn = import.meta.env.VITE_SENTRY_DSN;
-    if (!import.meta.env.PROD || !dsn) {
+    if (!dsn) {
       return;
     }
 
@@ -14,13 +20,18 @@ export default {
       dsn,
       sendDefaultPii: true,
       integrations: [
-        Sentry.browserTracingIntegration({ router }),
-        Sentry.replayIntegration(),
+        // No router option — VitePress router is not vue-router. History API
+        // navigation is still traced for client-side page changes.
+        Sentry.browserTracingIntegration(),
+        Sentry.replayIntegration({
+          maskAllText: false,
+          blockAllMedia: false,
+        }),
       ],
       tracesSampleRate: 1.0,
-      tracePropagationTargets: ["localhost", /^https:\/\/docs\.f1y\.ing/],
-      replaysSessionSampleRate: 0.1,
+      replaysSessionSampleRate: 1.0,
       replaysOnErrorSampleRate: 1.0,
+      profilesSampleRate: 1.0,
       enableLogs: true,
     });
   },
