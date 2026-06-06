@@ -29,19 +29,19 @@ sysctl --system
 
 #### Uncheck unprivileged container
 
-![general.png](../../../../../.gitbook/assets/general.png)
+![general.png](../../../../.gitbook/assets/general.png)
 
 #### Set swap to 0
 
-![memory.png](../../../../../.gitbook/assets/memory.png)
+![memory.png](../../../../.gitbook/assets/memory.png)
 
 #### Enable DHCP
 
-![network.png](../../../../../.gitbook/assets/network.png)
+![network.png](../../../../.gitbook/assets/network.png)
 
 #### Results
 
-![confirm.png](../../../../../.gitbook/assets/confirm.png)
+![confirm.png](../../../../.gitbook/assets/confirm.png)
 
 
 ### Back on the Host

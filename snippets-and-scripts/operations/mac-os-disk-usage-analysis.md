@@ -8,11 +8,11 @@ I felt that Baobab and GParted were much more powerful tools.
 
 Unfortunately, GParted is not available for macOS.
 
-<figure><img src="../.gitbook/assets/2024-01-05_23-50.png" alt=""><figcaption><p>underwhelming OSX default disk usage analysis tool </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2024-01-05_23-50.png" alt=""><figcaption><p>underwhelming OSX default disk usage analysis tool </p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/2024-01-05_23-48.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2024-01-05_23-48.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/2024-01-05_23-49.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2024-01-05_23-49.png" alt=""><figcaption></figcaption></figure>
 
 
 The solution with a GUI that I found to be useful is a program called Disk Inventory X.
@@ -31,6 +31,6 @@ And code viewed here:
 
 <https://gitlab.com/tderlien/disk-inventory-x>
 
-<figure><img src="../.gitbook/assets/2024-01-05_23-41.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2024-01-05_23-41.png" alt=""><figcaption></figcaption></figure>
 
 Thank you for this software, Tjark Derlien.

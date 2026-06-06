@@ -1,6 +1,6 @@
 # Dante in Oracle Cloud
 
-![](<../../../../../.gitbook/assets/image (61)>)
+![](<../../../../.gitbook/assets/image (61)>)
 
 Here’s a step-by-step guide on how to create a personal, cost-free SOCKS5 anonymous proxy with support for UDP ASSOCIATE (RFC1928) in Oracle Cloud. The chosen solution is Dante (Inferno Nettverk A/S) running on an Ubuntu 20.04 instance in Oracle Cloud Free Tier.
 

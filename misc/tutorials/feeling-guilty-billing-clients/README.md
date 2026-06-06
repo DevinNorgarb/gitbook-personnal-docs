@@ -1,6 +1,6 @@
 # Feeling Guilty Billing Clients?
 
-![](<../../../../../.gitbook/assets/image (33)>)
+![](<../../../.gitbook/assets/image (33)>)
 
 “I feel so bad asking for money” a writer friend said to me in response to my suggestion that she start a Patreon account. She runs her own blog but despite it being successful in terms of views and shares she makes no money from it. Another woman I know provides regular informative threads and personal advice via twitter and she too says she feels bad about sharing her [kofi arrow-up-right](http://ko-fi.com/) account with her numerous followers. Both women feel bad about asking for financial remuneration for their considerable efforts. This attitude is common amongst women writers and creators who undervalue their offerings and output.
 

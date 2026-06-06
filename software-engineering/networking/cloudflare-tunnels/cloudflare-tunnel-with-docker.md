@@ -15,21 +15,21 @@ The way I set it up is slight different than what Cloudflare’s documentation s
 - Login to Cloudflare Zero Trust Dashboard (it used to be called Cloudflare Teams): https://dash.teams.cloudflare.com/
 - Click on Access > Tunnels
 
-![](<../../../../.gitbook/assets/image (62)>)
+![](<../../../.gitbook/assets/image (62)>)
 
 - Click on Create a tunnel
 
-![](<../../../../.gitbook/assets/image (63)>)
+![](<../../../.gitbook/assets/image (63)>)
 
 - Give your tunnel a name (example: Blog Example)
 
-![](<../../../../.gitbook/assets/image (64)>)
+![](<../../../.gitbook/assets/image (64)>)
 
 ## Base64
 
 After saving your tunnel you are presented with the install command for cloudflared which contains a Base64 encoded string that has a lot of useful info in it that we will need.
 
-![](<../../../../.gitbook/assets/image (65)>)
+![](<../../../.gitbook/assets/image (65)>)
 
 Note: I altered the Base64 encoding to better show how it works.
 
@@ -55,15 +55,15 @@ Now we need to create what the external URL will be for the web application.
 
 - Enter what you want the external URL to be for the web application. Example: blogexample.thedxt.ca
 
-![](<../../../../.gitbook/assets/image (66)>)
+![](<../../../.gitbook/assets/image (66)>)
 
 - Enter the internal URL for the web application. Example: http://192.168.3.41:3343
 
-![](<../../../../.gitbook/assets/image (67)>)
+![](<../../../.gitbook/assets/image (67)>)
 
 You should now see your tunnel summary page.
 
-![](<../../../../.gitbook/assets/image (68)>)
+![](<../../../.gitbook/assets/image (68)>)
 
 ## Docker Compose Setup
 
@@ -136,19 +136,19 @@ services:
 
 If everything is configured correctly your tunnel should now be up and showing as active in your Cloudflare Zero Trust dashboard.
 
-![](<../../../../.gitbook/assets/image (69)>)
+![](<../../../.gitbook/assets/image (69)>)
 
 If you check your DNS entries in Cloudflare you will see a new CNAME record pointing to YourTunnelID.cfargotunnel.com
 
-![](<../../../../.gitbook/assets/image (70)>)
+![](<../../../.gitbook/assets/image (70)>)
 
 Here is my internal web application running internally.
 
-![](<../../../../.gitbook/assets/image (71)>)
+![](<../../../.gitbook/assets/image (71)>)
 
 Now that the Cloudflare Tunnel is up and running I can reach it externally via blogexample.thedxt.ca
 
-![](<../../../../.gitbook/assets/image (72)>)
+![](<../../../.gitbook/assets/image (72)>)
 
 You have now just created a web application that can run without any port forwards. I think this will keep working even if you have a dynamic WAN IP, however I haven’t tested it. I suspect that if you have a dynamic WAN IP you could just stop and start your Docker container to reestablish your tunnel with your new WAN IP.
 

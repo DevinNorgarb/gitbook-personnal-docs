@@ -36,6 +36,10 @@ Entries follow this format:
 - The display name in brackets is what appears in the navigation.
 - Indentation (spaces) defines the hierarchy.
 
+## Assets
+
+New images and downloads use **topic-local** paths per [.github/ASSET-CONVENTION.md](.github/ASSET-CONVENTION.md). Do not add files under `.gitbook/assets/`. Run `npm run docs:audit-assets` to list unreferenced legacy blobs before quarantine.
+
 ## Style Guide
 
 See [.github/DOCUMENTATION-STYLE-GUIDE.md](.github/DOCUMENTATION-STYLE-GUIDE.md) for:
