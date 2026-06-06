@@ -8,7 +8,7 @@ export default defineConfig({
   // Custom domain serves docs at the root.
   base: "/",
   vite: {
-    // GitBook assets: mixed-case extensions and extensionless filenames under .gitbook/assets/
+    // Legacy GitBook import store — see .github/ASSET-CONVENTION.md (prefer topic-local assets/)
     assetsInclude: [
       /\.gitbook\/assets\//,
       "**/*.PNG",

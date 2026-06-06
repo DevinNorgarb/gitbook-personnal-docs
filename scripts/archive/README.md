@@ -6,6 +6,7 @@ One-shot scripts used during the GitBook → VitePress migration. Kept for refer
 |--------|---------|
 | [`convert_gitbook_tags.py`](convert_gitbook_tags.py) | Convert `{% embed %}`, hints, and proxy images to portable markdown |
 | [`refactor_md.py`](refactor_md.py) | Bulk markdown hygiene (headings, fences, list markers) |
+| [`sensor_data_for_vehicle_interior.c`](sensor_data_for_vehicle_interior.c) | Quarantined vehicle-interior sensor boilerplate (no markdown references) |
 
 Run from repo root, for example:
 

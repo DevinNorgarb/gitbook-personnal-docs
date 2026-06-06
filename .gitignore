@@ -9,6 +9,7 @@ node_modules/
 /index.md
 docs-audit-report.json
 docs-audit-report.md
+docs-asset-audit-report.md
 
 # Legacy mdBook output (if run locally)
 /book/
