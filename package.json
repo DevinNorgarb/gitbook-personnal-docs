@@ -5,13 +5,14 @@
   "scripts": {
     "docs:gen-index": "node scripts/sync-index-from-readme.mjs",
     "docs:gen-sidebar": "node scripts/summary-to-vitepress-sidebar.mjs",
+    "docs:check-sidebar": "node scripts/check-sidebar-drift.mjs",
+    "docs:test": "node --test scripts/navigation.test.mjs scripts/audit-markdown.test.mjs",
     "docs:prep": "npm run docs:gen-index && npm run docs:gen-sidebar",
     "docs:dev": "npm run docs:prep && vitepress dev .",
     "docs:build": "npm run docs:prep && vitepress build .",
     "docs:preview": "vitepress preview .",
     "docs:audit": "node scripts/docs-audit.mjs",
-    "docs:audit-assets": "node scripts/audit-asset-refs.mjs",
-    "docs:test": "node --test scripts/audit-markdown.test.mjs"
+    "docs:audit-assets": "node scripts/audit-asset-refs.mjs"
   },
   "devDependencies": {
     "vitepress": "^1.6.3",

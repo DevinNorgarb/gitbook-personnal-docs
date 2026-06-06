@@ -13,6 +13,10 @@ import {
   resolveLocal,
   wordCount,
 } from "./lib/audit-markdown.mjs";
+import {
+  parseSummaryMarkdownPaths,
+  parseSummaryNavContext,
+} from "./lib/navigation.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -61,36 +65,6 @@ function* walkMarkdown(dir) {
   }
 }
 
-function parseSummaryPaths() {
-  const raw = fs.readFileSync(path.join(ROOT, "SUMMARY.md"), "utf8");
-  const paths = new Set();
-  const re = /\]\(([^)]+\.md)\)/gi;
-  let m;
-  while ((m = re.exec(raw)) !== null) {
-    paths.add(m[1].replace(/\\/g, "/").trim());
-  }
-  return paths;
-}
-
-function parseSummaryNavContext() {
-  const raw = fs.readFileSync(path.join(ROOT, "SUMMARY.md"), "utf8");
-  const lines = raw.split(/\r?\n/);
-  let section = "Overview";
-  /** @type {Map<string, string>} */
-  const fileToSection = new Map();
-  for (const line of lines) {
-    if (/^##\s+/.test(line)) {
-      section = line.replace(/^##\s+/, "").trim();
-      continue;
-    }
-    const match = line.match(/\]\(([^)]+\.md)\)/i);
-    if (match) {
-      fileToSection.set(match[1].replace(/\\/g, "/").trim(), section);
-    }
-  }
-  return fileToSection;
-}
-
 function shouldSkipFile(rel, config) {
   if (config.skipAuditFiles?.includes(rel)) return true;
   for (const prefix of config.skipAuditPrefixes ?? []) {
@@ -110,8 +84,9 @@ function matchHotspots(rel, config) {
 }
 
 export function runAudit(config) {
-  const summaryPaths = parseSummaryPaths();
-  const navContext = parseSummaryNavContext();
+  const summaryRaw = fs.readFileSync(path.join(ROOT, "SUMMARY.md"), "utf8");
+  const summaryPaths = parseSummaryMarkdownPaths(summaryRaw);
+  const navContext = parseSummaryNavContext(summaryRaw);
   const allMd = [...walkMarkdown(ROOT)];
   const summaryRelSet = new Set([...summaryPaths]);
   const thinWords = config.thinWords ?? 60;
