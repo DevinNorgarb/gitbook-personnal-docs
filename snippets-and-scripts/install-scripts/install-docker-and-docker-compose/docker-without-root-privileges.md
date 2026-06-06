@@ -100,6 +100,40 @@ To avoid issues with overusing disk for log data, consider one of the following 
 * Use an [alternative logging driver](https://docs.docker.com/engine/logging/configure/#configure-the-default-logging-driver) such as the ["local" logging driver](https://docs.docker.com/engine/logging/drivers/local/) that performs log rotation by default.
 * Use a logging driver that sends logs to a remote logging aggregator.
 
+## Restart the Docker daemon (Ubuntu)
+
+After adding your user to the `docker` group, restart the daemon so membership takes effect:
+
+```console
+$ sudo service docker restart
+```
+
+On Ubuntu 14.04–15.10, the service name is `docker.io`:
+
+```console
+$ sudo service docker.io restart
+```
+
+## After removing Docker Desktop
+
+If you installed Docker Desktop first, then removed it and installed Docker Engine, switch the Docker context back to the engine:
+
+```console
+$ docker context use default
+```
+
+Docker Desktop can leave the context pointing at Desktop rather than the engine. See [How to Troubleshoot “Cannot Connect to the Docker Daemon” Errors](https://www.howtogeek.com/devops/how-to-troubleshoot-cannot-connect-to-the-docker-daemon-errors/) and [Stack Overflow: docker not working without sudo in Ubuntu 22.04](https://stackoverflow.com/questions/73671461/docker-not-working-without-sudo-in-ubuntu-22-04).
+
+## Alternative: add user with `gpasswd`
+
+Instead of `usermod`, you can add the current user with:
+
+```console
+$ sudo gpasswd -a $USER docker
+```
+
+Log out and back in (or run `newgrp docker`) before verifying with `docker run hello-world`.
+
 ## Next steps
 
 * Take a look at the [Docker workshop](https://docs.docker.com/get-started/workshop/) to learn how to build an image and run it as a containerized application.

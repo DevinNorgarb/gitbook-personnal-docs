@@ -84,22 +84,9 @@ function resolveLocal(fromFile, url) {
 
 const HOTSPOTS = [
   {
-    id: "k3s-tutorial-mix",
-    test: (rel) =>
-      rel.includes(
-        "misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/",
-      ),
-    note: "Known mixed-topic folder per DOCUMENTATION-REFACTORING-REPORT",
-  },
-  {
     id: "ip-cameras-path",
     test: (rel) => rel.includes("ip-cameras/awesome-web-archiving"),
     note: "IP camera content under awesome-web-archiving path",
-  },
-  {
-    id: "android-dev-top-level",
-    test: (rel) => rel.startsWith("android-dev/"),
-    note: "android-dev/ at repo root while SUMMARY nests under Software Engineering",
   },
 ];
 

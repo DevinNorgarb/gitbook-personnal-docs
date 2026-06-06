@@ -60,7 +60,14 @@ The deepest friction is not missing abstractions in application code — it is *
 - **Leverage** — every install guide and snippet page inherits the same truth.
 - Tests (or audit rules) can assert "at most one canonical page per procedure ID" instead of manual dedup hunts.
 
-**Status:** Not started
+**Status:** Complete — PR [#24](https://github.com/DevinNorgarb/gitbook-personnal-docs/pull/24)
+
+**Done:**
+
+- Canonical runbook: `snippets-and-scripts/install-scripts/install-docker-and-docker-compose/docker-without-root-privileges.md`
+- Variant pages (`run-docker-commands-without-needing-sudo.md`, `run-docker-without-sudo.md`) are short stubs linking to canonical
+- Orphan duplicate `run-docker-without-needing-sudo.md` removed via git
+- `docker-on-kali-linux.md` links to canonical instead of inlining steps
 
 ---
 
@@ -78,7 +85,14 @@ The deepest friction is not missing abstractions in application code — it is *
 - **Leverage** for the publishing module: asset resolution becomes predictable, so link/image audit in `docs-audit.mjs` can be stricter.
 - Fewer VitePress config exceptions.
 
-**Status:** Not started
+**Status:** Complete — PR [#32](https://github.com/DevinNorgarb/gitbook-personnal-docs/pull/32)
+
+**Done:**
+
+- Documented topic-local asset convention in `.github/ASSET-CONVENTION.md`
+- Added `npm run docs:audit-assets` to list unreferenced `.gitbook/assets/` blobs
+- Quarantined unreferenced `sensor_data_for_vehicle_interior.c` to `scripts/archive/` via git
+- Added exemplar `microcontrollers-and-socs/assets/README.md`
 
 ---
 
@@ -120,7 +134,13 @@ The deepest friction is not missing abstractions in application code — it is *
 - **Leverage** for navigation: one place to search.
 - Audit hotspots for structural mismatches shrink.
 
-**Status:** Not started
+**Status:** Complete — PR [#30](https://github.com/DevinNorgarb/gitbook-personnal-docs/pull/30)
+
+**Done:**
+
+- Relocated `readme/` pages into `snippets-and-scripts/operations/` and `snippets-and-scripts/scripts/influx/`
+- Added Operations landing page; updated `SUMMARY.md` and CONTRIBUTING convention
+- Removed empty `readme/` tree (paths preserved in git history)
 
 ---
 
@@ -164,7 +184,13 @@ The deepest friction is not missing abstractions in application code — it is *
 - **Leverage** for AI navigation and human browsing: folder path predicts SUMMARY section.
 - Audit becomes config-driven rather than a growing inline array.
 
-**Status:** Not started
+**Status:** Complete — PR [#25](https://github.com/DevinNorgarb/gitbook-personnal-docs/pull/25)
+
+**Done:**
+
+- Moved `android-dev/` pages into `software-engineering/android-app-development/`; removed typo orphan via git
+- Relocated off-topic pages out of `install-k3s/` into GIS, Laravel, Cloudflare Tunnels, Arduino, AI, and misc tutorials
+- Updated `SUMMARY.md` and cross-links; removed resolved `docs-audit.mjs` hotspots
 
 ---
 
