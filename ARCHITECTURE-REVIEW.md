@@ -78,7 +78,7 @@ The deepest friction is not missing abstractions in application code — it is *
 - **Leverage** for the publishing module: asset resolution becomes predictable, so link/image audit in `docs-audit.mjs` can be stricter.
 - Fewer VitePress config exceptions.
 
-**Status:** Complete — PR [#31](https://github.com/DevinNorgarb/gitbook-personnal-docs/pull/31)
+**Status:** Complete — PR [#32](https://github.com/DevinNorgarb/gitbook-personnal-docs/pull/32)
 
 **Done:**
 
