@@ -158,7 +158,13 @@ The deepest friction is not missing abstractions in application code — it is *
 - **Leverage** for AI navigation and human browsing: folder path predicts SUMMARY section.
 - Audit becomes config-driven rather than a growing inline array.
 
-**Status:** Not started
+**Status:** Complete — PR [#25](https://github.com/DevinNorgarb/gitbook-personnal-docs/pull/25)
+
+**Done:**
+
+- Moved `android-dev/` pages into `software-engineering/android-app-development/`; removed typo orphan via git
+- Relocated off-topic pages out of `install-k3s/` into GIS, Laravel, Cloudflare Tunnels, Arduino, AI, and misc tutorials
+- Updated `SUMMARY.md` and cross-links; removed resolved `docs-audit.mjs` hotspots
 
 ---
 
