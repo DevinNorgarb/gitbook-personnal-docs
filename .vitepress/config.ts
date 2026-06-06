@@ -27,6 +27,7 @@ export default defineConfig({
     "CONTRIBUTING.md",
     ".cursor/**",
     ".github/**",
+    "scripts/fixtures/**",
     "book/**",
     "node_modules/**",
     "package-lock.json",
