@@ -2,6 +2,7 @@
 .cursor/plans/markdown_repository_refactor_aa9510be.plan.md
 
 # VitePress / Node
+.env.local
 node_modules/
 .vitepress/dist/
 .vitepress/cache/
