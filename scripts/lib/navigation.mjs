@@ -38,7 +38,8 @@ function parseListItem(line) {
 }
 
 /** Parse SUMMARY markdown into VitePress sidebar groups */
-export function parseSummaryToSidebarGroups(raw) {
+export function parseSummaryToSidebarGroups(raw, options = {}) {
+  const { collapse = true } = options;
   const lines = raw.split(/\r?\n/);
 
   /** @type {{ text: string, items: any[] }[]} */
@@ -101,7 +102,34 @@ export function parseSummaryToSidebarGroups(raw) {
     g.items = dedupe(g.items);
   }
 
-  return groups.filter((g) => g.items.length > 0);
+  return finalizeSidebarGroups(groups, { collapse });
+}
+
+/**
+ * Mark sidebar groups as collapsible (`collapsed: true` → closed by default,
+ * toggle in UI; active route's ancestors auto-expand).
+ * @param {any[]} items
+ */
+export function applySidebarCollapse(items) {
+  if (!items?.length) return items;
+  for (const item of items) {
+    if (item.items?.length) {
+      item.collapsed = true;
+      applySidebarCollapse(item.items);
+    }
+  }
+  return items;
+}
+
+/** @param {any[]} groups @param {{ collapse?: boolean }} [options] */
+export function finalizeSidebarGroups(groups, { collapse = true } = {}) {
+  const filtered = groups.filter((g) => g.items.length > 0);
+  if (!collapse) return filtered;
+  for (const group of filtered) {
+    group.collapsed = true;
+    applySidebarCollapse(group.items);
+  }
+  return filtered;
 }
 
 /** All `.md` paths linked from SUMMARY markdown */

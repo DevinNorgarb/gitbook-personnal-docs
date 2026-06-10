@@ -28,13 +28,21 @@ test("parseSummaryToSidebarGroups handles sections, nesting, and dedupe", () => 
   assert.equal(groups.length, 2);
   assert.equal(groups[0].text, "Alpha");
   assert.equal(groups[1].text, "Beta");
+  assert.equal(groups[0].collapsed, true);
+  assert.equal(groups[1].collapsed, true);
 
   const alpha = groups[0].items;
   assert.equal(alpha[0].link, "/");
   assert.equal(alpha[1].link, "/alpha/README");
   assert.equal(alpha[1].items.length, 1);
   assert.equal(alpha[1].items[0].link, "/alpha/child");
+  assert.equal(alpha[1].collapsed, true);
   assert.equal(alpha.length, 2);
+});
+
+test("parseSummaryToSidebarGroups can omit collapse toggles", () => {
+  const groups = parseSummaryToSidebarGroups(fixture, { collapse: false });
+  assert.equal(groups[0].collapsed, undefined);
 });
 
 test("parseSummaryMarkdownPaths collects md links", () => {
