@@ -516,6 +516,7 @@
 - [artificial-intelligence](misc/artificial-intelligence/README.md)
   - [ChatGPT](misc/artificial-intelligence/chatgpt.md)
   - [Using ChatGPT to build System Diagrams — Part I](misc/artificial-intelligence/using-chatgpt-to-build-system-diagrams-part-i.md)
+  - [Awesome Cursor Skills](misc/artificial-intelligence/github-awesome-cursor-skills.md)
 - [tutorials](misc/tutorials/README.md)
   - [Install Ghost blogging platform on Ubuntu](misc/tutorials/install-ghost-blogging-platform-on-ubuntu.md)
   - [From Google Sheets, how to send email based on date](misc/tutorials/from-google-sheets-how-to-send-email-based-on-date/README.md)

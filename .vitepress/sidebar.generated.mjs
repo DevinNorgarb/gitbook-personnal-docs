@@ -2185,6 +2185,10 @@ export default [
           {
             "text": "Using ChatGPT to build System Diagrams — Part I",
             "link": "/misc/artificial-intelligence/using-chatgpt-to-build-system-diagrams-part-i"
+          },
+          {
+            "text": "Awesome Cursor Skills",
+            "link": "/misc/artificial-intelligence/github-awesome-cursor-skills"
           }
         ]
       },
