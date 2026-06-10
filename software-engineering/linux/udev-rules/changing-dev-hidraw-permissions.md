@@ -1,5 +1,5 @@
 ---
-description: https://askubuntu.com/a/15643/593957
+description: "\"https://askubuntu.com/a/15643/593957\""
 ---
 
 # Changing /dev/hidraw permissions

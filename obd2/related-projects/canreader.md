@@ -1,5 +1,5 @@
 ---
-description: https://github.com/autowp/CANreader
+description: "\"https://github.com/autowp/CANreader\""
 ---
 
 # CANreader

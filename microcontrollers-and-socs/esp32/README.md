@@ -1,5 +1,6 @@
 ---
-description: https://lastminuteengineers.com/esp32-pinout-reference/
+description: "\"\\\"https://lastminuteengineers.com/esp32-pinout-reference/\\\"\""
+title: ESP32
 ---
 
 # ESP32
@@ -220,3 +221,14 @@ The EN pin is the enable pin for the ESP32, pulled high by default. When pulled 
 The EN pin is also connected to a pushbutton switch that can pull the pin LOW and trigger a reset.
 
 <figure><img src="https://lastminuteengineers.b-cdn.net/wp-content/uploads/iot/ESP32-Enable-Pin.png" alt="esp32 enable pin" height="385" width="581"><figcaption></figcaption></figure>
+
+## In this section
+
+- [ESP32 CAM](./esp32-cam.md) — This article is a quick getting-started guide for the ESP32-CAM board. We’ll show you how to setup a video streaming web server with face re
+- [ESP32-C3 datasheet (EN)](./michiel-vanderwulp-be-esp32-c3-datasheet.md) — Imported copy of the ESP32-C3 English datasheet mirrored on Michiel van der Wulp’s domotica site (ESP32-C3 Super Mini module notes).
+- [Pinout](./pinout.md) — ![](../../.gitbook/assets/ESP32-Pinout.png)
+- [ESP DroneBridge](./esp-dronebridge.md) — A DroneBridge enabled firmware for the popular ESP32 modules from Espressif Systems. Probably the cheapest way to communicate with your dron
+- [EVIL-ESP](./evil-esp.md) — "https://github.com/tomellericcardo/EVIL-ESP"
+- [esp32-wifi-penetration-tool](./esp32-wifi-penetration-tool.md)
+- [esptool](./esptool.md)
+- [2.4 GHz RF, antenna, and PCB layout references](./esp32-2-4ghz-rf-antenna-pcb-layout-references.md) — Curated bibliography and layout guidelines from vendor app notes, FCC filings, and Espressif hardware design docs (imported 2026-05-26).

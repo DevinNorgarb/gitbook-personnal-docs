@@ -1,5 +1,5 @@
 ---
-description: https://github.com/o-gs/dji-firmware-tools
+description: "\"https://github.com/o-gs/dji-firmware-tools\""
 ---
 
 # dji-firmware-tools Github Repo

@@ -1,5 +1,5 @@
 ---
-description: https://github.com/markshust/docker-magento
+description: "\"https://github.com/markshust/docker-magento\""
 ---
 
 # Magento One Line install

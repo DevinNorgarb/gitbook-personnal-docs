@@ -1,4 +1,5 @@
 # Capacitor
 
+Cross-platform native runtime for web apps. See also [Cordova](./cordova.md).
 
-ordova
+- [Capacitor docs](https://capacitorjs.com/docs)

@@ -1,3 +1,8 @@
+---
+title: PixHawk
+description: "\"\\\"<figure><img src=\\\\\\\"../../.gitbook/assets/Connection-Diagram-R1.png\\\\\\\" alt=\\\\\\\"\\\\\\\"><figcaption></figcaption></figure>\\\"\""
+---
+
 # PixHawk
 
 ***
@@ -88,3 +93,7 @@ Information about connecting these peripherals to Pixhawk is found in the respec
 - [Pixhawk Overview](https://ardupilot.org/copter/docs/common-pixhawk-overview.html#common-pixhawk-overview) - includes specifications, pin assignments etc.
 - [Powering the Pixhawk](https://ardupilot.org/copter/docs/common-powering-the-pixhawk.html)
 - [Advanced Pixhawk Quadcopter Wiring Chart](https://ardupilot.org/copter/docs/advanced-pixhawk-quadcopter-wiring-chart.html)
+
+## In this section
+
+- [Connection Diagrams](./connection-diagrams.md) — The following connection diagrams show how to connect devices to the ArduSub control system.

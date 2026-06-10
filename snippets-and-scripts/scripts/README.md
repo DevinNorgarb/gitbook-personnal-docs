@@ -1,5 +1,7 @@
 ---
 layout: landing
+title: Scripts
+description: "\"\\\"Get docker image sizes sorted by size; This page is a navigation entry in the **Scripts** section. The canonical runbook covers group setup, permission fixes, systemd boot configu\\\"\""
 ---
 
 # Scripts
@@ -68,3 +70,10 @@ du -a / | sort -n -r | head -n 20
 ```bash
 ps aux --sort=-%mem | head
 ```
+
+## In this section
+
+- [Influx](./influx/README.md) — Imported notes from Ben Tasker on polling Kasa/Tapo plugs into InfluxDB via Docker
+- [Docker Image Sizes](./docker-image-sizes.md) — Get docker image sizes sorted by size
+- [Run docker commands without needing sudo](./run-docker-commands-without-needing-sudo.md) — This page is a navigation entry in the **Scripts** section. The canonical runbook covers group setup, permission fixes, systemd boot configu
+- [Nginx Proxy Block](./nginx-proxy-block.md)

@@ -1,7 +1,7 @@
+<!-- Hidden from nav/build — see nav.hidden.json. Canonical: misc/artificial-intelligence/chatgpt.md -->
+
 # Artificial Intelligence
 
-[ChatGPTchevron-right](../../artificial-intelligence/chatgpt.md)
+> **Canonical page:** [ChatGPT](../../artificial-intelligence/chatgpt.md)
 
-[NextChatGPTchevron-right](../../artificial-intelligence/chatgpt.md)
-
-Last updated 2 years ago
+Misplaced import from the K3s tutorial folder.

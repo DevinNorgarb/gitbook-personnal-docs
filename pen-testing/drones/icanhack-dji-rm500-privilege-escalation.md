@@ -1,6 +1,6 @@
 ---
 title: Local privilege escalation on DJI RM500 (djilink / Binder)
-description: Imported note from https://icanhack.nl/blog/dji-rm500-privilege-escalation/
+description: "\"Imported note from https://icanhack.nl/blog/dji-rm500-privilege-escalation/\""
 ---
 
 # Local privilege escalation on DJI RM500 (djilink / Binder)

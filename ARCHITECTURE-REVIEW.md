@@ -208,7 +208,14 @@ The deepest friction is not missing abstractions in application code — it is *
 - **Leverage** for CI: the same interface that generates reports can gate merges.
 - Tests survive refactors because they target the audit interface, not internal regex details.
 
-**Status:** Not started
+**Status:** Complete — PR [#29](https://github.com/DevinNorgarb/gitbook-personnal-docs/pull/29)
+
+**Done:**
+
+- External `audit.config.json` for thresholds, skip lists, and hotspots
+- `--fail-on` CLI flags (defaults to `ciFailOn` from config; empty = report-only)
+- Extracted `scripts/lib/audit-markdown.mjs` with fixture tests
+- CI runs audit tests before report generation
 
 ---
 

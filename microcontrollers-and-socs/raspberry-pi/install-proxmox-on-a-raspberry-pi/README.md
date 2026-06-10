@@ -1,7 +1,6 @@
 ---
-description: >-
-  https://raspberrytips.com/proxmox-on-raspberry-pi/
-  https://github.com/pimox/pimox7
+description: "\"\\\">-\\\"\""
+title: Install ProxMox on a Raspberry Pi
 ---
 
 # Install ProxMox on a Raspberry Pi
@@ -205,3 +204,7 @@ Learn the essentials, step-by-step, without losing time understanding useless co
 [Get the e-book now.](https://raspberrytips.com/masterpython-eb)
 
 You can also find all my recommendations for tools and hardware [on this page](https://raspberrytips.com/resources/?e=1).
+
+## In this section
+
+- [pimox/pimox7](./pimox-pimox7.md)

@@ -1,0 +1,21 @@
+[
+  "robotics/README.md",
+  "software-engineering/tooling/barrier-remote-keyboard-and-mouse.md",
+  "software-engineering/tooling/miscellaneous.md",
+  "drones/marine-traffic-slr350.md",
+  "drones/page-3.md",
+  "software-defined-radio/page-3.md",
+  "software-defined-radio/dronebridge.md",
+  "microcontrollers-and-socs/assets/README.md",
+  "software-engineering/networking/container-networking/how-to-make-your-lxd-containers-get-ip-addresses-from-your-lan-using-macvlan.md",
+  "misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/page-1/README.md",
+  "misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/artificial-intelligence.md",
+  "drones/dji-docs-android/introduction-1.md",
+  "drones/dji-docs-android/creating-a-mapview-and-waypoint-applicatio.md",
+  "drones/dji-docs-android/creating-a-camera-application.md",
+  "drones/dji-docs-android/creating-a-panorama-application.md",
+  "drones/dji-docs-android/ios-1.md",
+  "drones/dji-docs-android/android-1.md",
+  "drones/dji-docs-android/chuang-jian-hang-pai-xiang-ji-app-1.md",
+  "drones/dji-docs-android/chuang-jian-zhi-neng-fei-xing-yu-she-hang-dian-gong-neng-app-1.md"
+]

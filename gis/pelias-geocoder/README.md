@@ -1,3 +1,8 @@
+---
+title: Pelias Geocoder
+description: "\"\\\"For the past few months, Mapzen has been hard at work developing Pelias (https://github.com/pelias/pelias), a lightweight, modular implement; Pelias is a geocoder powered completely by open data, available freely to everyone.\\\"\""
+---
+
 # Pelias Geocoder
 
 [![](<../../.gitbook/assets/image (46)>)](https://raw.githubusercontent.com/pelias/design/master/logo/pelias_github/Github_markdown_hero.png)
@@ -64,3 +69,10 @@ Response Properties
 - [Glossary of common terms](https://github.com/pelias/documentation/blob/master/glossary.md)
 
 Last updated 3 years ago
+
+## In this section
+
+- [Mapzen | Pelias Instance](./mapzen-or-pelias-instance.md) — For the past few months, Mapzen has been hard at work developing Pelias (https://github.com/pelias/pelias), a lightweight, modular implement
+- [Docker Pelias](./docker-pelias.md) — Pelias is a geocoder powered completely by open data, available freely to everyone.
+- [pelias](./pelias.md)
+- [Pelias From Scratch](./pelias-from-scratch.md) — These instructions will help you set up the Pelias geocoder from scratch. We strongly recommend using our Docker tools for your first Pelias

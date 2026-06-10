@@ -1,3 +1,8 @@
+---
+title: Google - Code Review
+description: "\"\\\"**At Google, we optimize for the speed at which a team of developers can produce a product together**, as opposed to optimizing for the spee; In general, it is important to be [courteous and respectful](https://chromium.googlesource.com/chromium/src/+/master/docs/cr_respect.md) whi\\\"\""
+---
+
 # Google - Code Review
 
 ## [Code Review Developer Guide](https://app.gitbook.com/s/T93NGGcwjLm9kGhwgOvv/~/changes/gi7PufUmdMlaPoOiRdxd/software-engineering/principles-and-practices/code-reviews/code-review-developer-guide)[eng-practices](https://google.github.io/eng-practices/)
@@ -115,3 +120,12 @@ In doing a code review, you should make sure that:
 Make sure to review **every line** of code you’ve been asked to review, look at the **context**, make sure you’re **improving code health**, and compliment developers on **good things** that they do.
 
 Next: Navigating a CL in Review
+
+## In this section
+
+- [Speed of Code Reviews](./speed-of-code-reviews.md) — **At Google, we optimize for the speed at which a team of developers can produce a product together**, as opposed to optimizing for the spee
+- [How to write code review comments](./how-to-write-code-review-comments.md) — In general, it is important to be [courteous and respectful](https://chromium.googlesource.com/chromium/src/+/master/docs/cr_respect.md) whi
+- [The Standard of Code Review](./the-standard-of-code-review.md) — The primary purpose of code review is to make sure that the overall code health of Google’s code base is improving over time. All of the too
+- [Code Review Developer Guide](./code-review-developer-guide.md) — A code review is a process where someone other than the author(s) of a piece of code examines that code.
+- [Handling pushback in code reviews](./handling-pushback-in-code-reviews.md) — Sometimes a developer will push back on a code review. Either they will disagree with your suggestion or they will complain that you are bei
+- [CL in review](./cl-in-review.md) — Now that you know what to look for, what’s the most efficient way to manage a review that’s spread across multiple files?

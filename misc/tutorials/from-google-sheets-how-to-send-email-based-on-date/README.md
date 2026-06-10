@@ -1,3 +1,8 @@
+---
+title: From Google Sheets, how to send email based on date
+description: "\"\\\"Continuing from my [previous post](https://aruva.medium.com/using-chatgpt-to-build-system-diagrams-part-i-69efc7603926), I wanted to focus o\\\"\""
+---
+
 # From Google Sheets, how to send email based on date
 
 ![](https://blog.gsmart.in/wp-content/uploads/2019/05/e837b90f2df7063ed1584d05fb1d4390e376ead004b0144493f9c47ca7ecb3_640-150x100.jpg)
@@ -215,3 +220,7 @@ See also
 * How to send HTML email in Google Apps Script: https://blog.gsmart.in/google-apps-script-send-html-email/
 * How to send email when cell value changes in Google Sheets: https://blog.gsmart.in/send-email-when-cell-value-changes-in-google-sheets/
 * How to send email from Google Sheets: https://blog.gsmart.in/send-email-from-google-sheets/
+
+## In this section
+
+- [Using ChatGPT to build system diagrams — Part II](./using-chatgpt-to-build-system-diagrams-part-ii.md) — Continuing from my [previous post](https://aruva.medium.com/using-chatgpt-to-build-system-diagrams-part-i-69efc7603926), I wanted to focus o

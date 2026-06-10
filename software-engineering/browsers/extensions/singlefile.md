@@ -1,5 +1,5 @@
 ---
-description: https://github.com/gildas-lormeau/SingleFile
+description: "\"https://github.com/gildas-lormeau/SingleFile\""
 ---
 
 # SingleFile

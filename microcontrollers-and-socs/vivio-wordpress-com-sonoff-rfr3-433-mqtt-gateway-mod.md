@@ -1,6 +1,6 @@
 ---
 title: Sonoff RFR3 DIY — 433 MHz MQTT gateway mod
-description: Imported note from Vivio's Blog (WordPress) — hardware mod and Tasmota setup for Sonoff RFR3 as RF gateway.
+description: "\"Imported note from Vivio's Blog (WordPress) — hardware mod and Tasmota setup for Sonoff RFR3 as RF gateway.\""
 ---
 
 # Sonoff RFR3 DIY — 433 MHz MQTT gateway mod

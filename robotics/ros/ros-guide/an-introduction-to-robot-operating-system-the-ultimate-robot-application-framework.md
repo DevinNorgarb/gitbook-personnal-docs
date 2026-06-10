@@ -1,5 +1,5 @@
 ---
-description: 'Credit: https://www.toptal.com/robotics/introduction-to-robot-operating-system'
+description: "\"'Credit: https://www.toptal.com/robotics/introduction-to-robot-operating-system'\""
 ---
 
 # An Introduction to Robot Operating System: The Ultimate Robot Application Framework

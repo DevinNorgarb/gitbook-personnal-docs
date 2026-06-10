@@ -1,7 +1,5 @@
 ---
-description: >-
-  Awesome tutorail from RoboticSeaBass found here
-  https://roboticseabass.com/2021/04/21/docker-and-ros/
+description: "\">-\""
 ---
 
 # ROS and Docker

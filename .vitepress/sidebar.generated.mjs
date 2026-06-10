@@ -904,13 +904,7 @@ export default [
           },
           {
             "text": "Container Networking",
-            "link": "/software-engineering/networking/container-networking/README",
-            "items": [
-              {
-                "text": "How to make your LXD containers get IP addresses from your LAN using macvlan",
-                "link": "/software-engineering/networking/container-networking/how-to-make-your-lxd-containers-get-ip-addresses-from-your-lan-using-macvlan"
-              }
-            ]
+            "link": "/software-engineering/networking/container-networking/README"
           },
           {
             "text": "Cloudflare Tunnels",
@@ -1416,10 +1410,6 @@ export default [
         ]
       },
       {
-        "text": "Robotics",
-        "link": "/robotics/README"
-      },
-      {
         "text": "SITL",
         "link": "/robotics/sitl-1"
       },
@@ -1705,6 +1695,10 @@ export default [
           {
             "text": "Deck GL Time Frame Animations",
             "link": "/gis/deck.gl/deck-gl-time-frame-animations"
+          },
+          {
+            "text": "Interactive Geographic Visualization Part 4 (Altair)",
+            "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/page-1/the-battle-of-interactive-geographic-visualization-part-4"
           }
         ]
       },
@@ -2060,12 +2054,8 @@ export default [
             "link": "/drones/dji-docs-android/introduction"
           },
           {
-            "text": "Introduction",
-            "link": "/drones/dji-docs-android/introduction-1"
-          },
-          {
             "text": "Creating a Panorama Application",
-            "link": "/drones/dji-docs-android/creating-a-panorama-application"
+            "link": "/drones/dji-docs-android/creating-a-panorama-application-1"
           },
           {
             "text": "Android",
@@ -2077,7 +2067,7 @@ export default [
           },
           {
             "text": "Creating a Camera Application",
-            "link": "/drones/dji-docs-android/creating-a-camera-application"
+            "link": "/drones/dji-docs-android/creating-a-camera-application-1"
           },
           {
             "text": "Importing and Activating DJI SDK in Android Studio Project",
@@ -2088,28 +2078,8 @@ export default [
             "link": "/drones/dji-docs-android/creating-a-mapview-and-waypoint-application"
           },
           {
-            "text": "Creating a MapView and Waypoint Applicatio",
-            "link": "/drones/dji-docs-android/creating-a-mapview-and-waypoint-applicatio"
-          },
-          {
-            "text": "Creating a Camera Application",
-            "link": "/drones/dji-docs-android/creating-a-camera-application-1"
-          },
-          {
             "text": "Creating a Photo and Video Playback Application",
             "link": "/drones/dji-docs-android/creating-a-photo-and-video-playback-application"
-          },
-          {
-            "text": "iOS",
-            "link": "/drones/dji-docs-android/ios-1"
-          },
-          {
-            "text": "Creating a Panorama Application",
-            "link": "/drones/dji-docs-android/creating-a-panorama-application-1"
-          },
-          {
-            "text": "Android",
-            "link": "/drones/dji-docs-android/android-1"
           },
           {
             "text": "创建智能飞行预设航点功能App",
@@ -2118,14 +2088,6 @@ export default [
           {
             "text": "创建航拍相机App",
             "link": "/drones/dji-docs-android/chuang-jian-hang-pai-xiang-ji-app"
-          },
-          {
-            "text": "创建航拍相机App",
-            "link": "/drones/dji-docs-android/chuang-jian-hang-pai-xiang-ji-app-1"
-          },
-          {
-            "text": "创建智能飞行预设航点功能App",
-            "link": "/drones/dji-docs-android/chuang-jian-zhi-neng-fei-xing-yu-she-hang-dian-gong-neng-app-1"
           }
         ]
       },
@@ -2262,20 +2224,6 @@ export default [
             "text": "Setting up K3s in LXC containers using Netmaker",
             "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/README",
             "items": [
-              {
-                "text": "Page 1",
-                "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/page-1/README",
-                "items": [
-                  {
-                    "text": "The Battle of Interactive Geographic Visualization Part 4",
-                    "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/page-1/the-battle-of-interactive-geographic-visualization-part-4"
-                  }
-                ]
-              },
-              {
-                "text": "Artificial Intelligence",
-                "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/artificial-intelligence"
-              },
               {
                 "text": "Install K3s",
                 "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/README"

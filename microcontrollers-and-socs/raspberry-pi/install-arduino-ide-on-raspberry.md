@@ -1,5 +1,5 @@
 ---
-description: https://linuxhint.com/install-arduino-ide-raspberry-pi/
+description: "\"https://linuxhint.com/install-arduino-ide-raspberry-pi/\""
 ---
 
 # Install Arduino IDE on Raspberry

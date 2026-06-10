@@ -1,5 +1,13 @@
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { defineConfig } from "vitepress";
 import sidebar from "./sidebar.generated.mjs";
+
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const navHidden = JSON.parse(
+  fs.readFileSync(path.join(root, "nav.hidden.json"), "utf8"),
+);
 
 export default defineConfig({
   title: "Personal Documentation",
@@ -27,11 +35,13 @@ export default defineConfig({
     "CONTRIBUTING.md",
     ".cursor/**",
     ".github/**",
+    "scripts/fixtures/**",
     "book/**",
     "node_modules/**",
     "package-lock.json",
     "pnpm-lock.yaml",
     "yarn.lock",
+    ...navHidden,
   ],
   ignoreDeadLinks: true,
   cleanUrls: false,

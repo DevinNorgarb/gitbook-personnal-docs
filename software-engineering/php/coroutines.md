@@ -1,9 +1,5 @@
 ---
-description: >-
-  Article originally available here:
-  https://sergeyzhuk.me/2018/10/26/from-promise-to-coroutines/ but was down when
-  creating this. The alternative is to use this url.
-  https://web.archive.org/web/2023100
+description: "\">-\""
 ---
 
 # Coroutines

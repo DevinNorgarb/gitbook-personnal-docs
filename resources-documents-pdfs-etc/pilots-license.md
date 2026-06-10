@@ -1,7 +1,5 @@
 ---
-description: >-
-  Attached are some documents I have come across that are useful to read to
-  prepare before applying to obtain RPL PPL.
+description: "\">-\""
 ---
 
 # Pilots License

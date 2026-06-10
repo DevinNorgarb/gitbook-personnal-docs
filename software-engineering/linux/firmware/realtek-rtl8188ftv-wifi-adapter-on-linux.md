@@ -1,7 +1,5 @@
 ---
-description: >-
-  How to install the necessary firmware to use the Realtek RTL8188FTV wifi
-  adapter/dongle on Ubuntu.
+description: "\">-\""
 ---
 
 # Realtek RTL8188FTV WiFi Adapter on Linux

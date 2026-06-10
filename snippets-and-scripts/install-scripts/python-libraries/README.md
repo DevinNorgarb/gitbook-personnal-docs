@@ -1,7 +1,13 @@
+---
+title: Python + Libraries
+description: "\"\\\"&#x20;`curl -sSL https://install.python-poetry.org | python3 -`&#x20;; `curl https://pyenv.run | bash`\\\"\""
+---
+
 # Python + Libraries
 
+Notes and links for **Python + Libraries**.
 
-## Overview
+## In this section
 
-This section contains documentation for **Python Libraries**.
-
+- [poetry](./poetry/README.md) — Python dependency management with Poetry
+- [pyenv](./pyenv/README.md) — `curl https://pyenv.run | bash`

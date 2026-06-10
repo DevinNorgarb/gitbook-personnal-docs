@@ -1,5 +1,5 @@
 ---
-description: https://github.com/DevinNorgarb/obd-visualiser
+description: "\"https://github.com/DevinNorgarb/obd-visualiser\""
 ---
 
 # OBD2 Dashboard

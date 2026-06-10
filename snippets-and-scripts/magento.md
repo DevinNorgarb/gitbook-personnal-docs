@@ -1,5 +1,6 @@
 ---
 description: Useful Magento CLI commands
+title: Magento
 ---
 
 # Magento
@@ -196,3 +197,6 @@ Available commands:
 
 ```
 
+## In this section
+
+- [Magento One Line install](./magento/magento-one-line-install.md) — "https://github.com/markshust/docker-magento"

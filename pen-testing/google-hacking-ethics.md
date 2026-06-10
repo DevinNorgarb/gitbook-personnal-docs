@@ -1,5 +1,5 @@
 ---
-description: https://edu-cyberpg.com/Technology/ethics-google-hacking.html
+description: "\"https://edu-cyberpg.com/Technology/ethics-google-hacking.html\""
 ---
 
 # Google: Hacking Ethics

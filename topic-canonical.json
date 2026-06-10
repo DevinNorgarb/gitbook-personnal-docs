@@ -1,0 +1,38 @@
+{
+  "topics": [
+    {
+      "id": "lxc-lxd",
+      "title": "LXC/LXD",
+      "canonical": "software-engineering/containerisation/lxc-lxd/README.md",
+      "aliases": [
+        "software-engineering/tooling/linux/lxc-lxd.md"
+      ],
+      "hidden": [
+        "software-engineering/networking/container-networking/how-to-make-your-lxd-containers-get-ip-addresses-from-your-lan-using-macvlan.md"
+      ]
+    },
+    {
+      "id": "docker-without-sudo",
+      "title": "Docker without root privileges",
+      "canonical": "snippets-and-scripts/install-scripts/install-docker-and-docker-compose/docker-without-root-privileges.md",
+      "aliases": [
+        "software-engineering/containerisation/docker/run-docker-without-sudo.md",
+        "snippets-and-scripts/scripts/run-docker-commands-without-needing-sudo.md"
+      ]
+    },
+    {
+      "id": "dronebridge",
+      "title": "DroneBridge",
+      "canonical": "drones/dronebridge.md",
+      "hidden": ["software-defined-radio/dronebridge.md"]
+    },
+    {
+      "id": "lxd-macvlan",
+      "title": "LXD macvlan LAN IPs",
+      "canonical": "software-engineering/containerisation/lxc-lxd/how-to-make-your-lxd-containers-get-ip-addresses-from-your-lan-using-macvlan.md",
+      "hidden": [
+        "software-engineering/networking/container-networking/how-to-make-your-lxd-containers-get-ip-addresses-from-your-lan-using-macvlan.md"
+      ]
+    }
+  ]
+}

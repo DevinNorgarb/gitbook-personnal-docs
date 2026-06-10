@@ -1,8 +1,12 @@
+---
+title: adb
+description: Copy APK file from device to host using ADB
+---
+
 # adb
 
+Notes and links for **adb**.
 
-## Overview
+## In this section
 
-This section contains documentation for **Adb**.
-
-
+- [Copy APK file using ADB](./copy-apk-file-using-adb.md) — Copy APK file from device to host using ADB

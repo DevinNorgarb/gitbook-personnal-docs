@@ -1,8 +1,12 @@
+---
+title: ccxt
+description: Type / to search
+---
+
 # ccxt
 
+Notes and links for **ccxt**.
 
-## Overview
+## In this section
 
-This section contains documentation for **Ccxt**.
-
-
+- [manual](./manual.md) — Type / to search

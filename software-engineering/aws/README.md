@@ -1,9 +1,12 @@
+---
+title: AWS
+description: "\"\\\">-\\\"\""
+---
+
 # AWS
 
+Notes and links for **AWS**.
 
-## Overview
+## In this section
 
-This section contains documentation for **Aws**.
-
-
-## &#x20;<a href="#5c93" id="5c93"></a>
+- [SQS vs SNS vs Kinesis](./sqs-vs-sns-vs-kinesis.md)

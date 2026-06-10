@@ -1,3 +1,8 @@
+---
+title: Feeling Guilty Billing Clients?
+description: "\"\\\"![](<../../../.gitbook/assets/image (56)>)\\\"\""
+---
+
 # Feeling Guilty Billing Clients?
 
 ![](<../../../.gitbook/assets/image (33)>)
@@ -23,3 +28,7 @@ The most sustainable changes are incremental, so I’d advise not trying to jump
 EDITED to add, as a result of all the feedback I’ve had from this and my other work I finally did it! I set up a Patreon — Whoohoo! (Link below!)
 
 _Last updated 3 years ago_
+
+## In this section
+
+- [marvinferber BLOG](./marvinferber-blog.md)
