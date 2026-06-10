@@ -330,6 +330,7 @@
 - [Last Minute Engineers — nRF24L01 Arduino](microcontrollers-and-socs/lastminuteengineers-nrf24l01-arduino-wireless.md)
 - [Arduino](microcontrollers-and-socs/arduino/README.md)
   - [elecrow neo 6M GPS Shield](microcontrollers-and-socs/arduino/elecrow-neo-6m-gps-shield.md)
+  - [Serial Input Basics (forum)](microcontrollers-and-socs/arduino/forum-arduino-serial-input-basics.md)
   - [Arduino (K3s tutorial notes)](microcontrollers-and-socs/arduino/k3s-tutorial-arduino.md)
 - [Balena.io](microcontrollers-and-socs/balena.io.md)
 - [Raspberry Pi](microcontrollers-and-socs/raspberry-pi/README.md)

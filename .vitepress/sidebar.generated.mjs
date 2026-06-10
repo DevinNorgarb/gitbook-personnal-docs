@@ -1561,6 +1561,10 @@ export default [
             "link": "/microcontrollers-and-socs/arduino/elecrow-neo-6m-gps-shield"
           },
           {
+            "text": "Serial Input Basics (forum)",
+            "link": "/microcontrollers-and-socs/arduino/forum-arduino-serial-input-basics"
+          },
+          {
             "text": "Arduino (K3s tutorial notes)",
             "link": "/microcontrollers-and-socs/arduino/k3s-tutorial-arduino"
           }
