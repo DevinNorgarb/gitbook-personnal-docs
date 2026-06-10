@@ -1,3 +1,8 @@
+---
+title: Compiling
+description: "\"\\\"Clone the project from GitHub:; This article shows how to manually setup a minimal build environment on MacOS (ver 10.6 onwards).\\\"\""
+---
+
 # Compiling
 
 ## Developers <a href="#developers" id="developers"></a>
@@ -121,3 +126,8 @@ To use the newly created frame, set the **FRAME\_CONFIG** parameter to "Custom" 
 Sponsored by [Blue Robotics](http://www.bluerobotics.com/). Code released under the [GPLv3 License](https://github.com/ardupilot/ardupilot/blob/master/COPYING.txt). Documentation released under the [CC-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).\
 [Submit a Documentation GitHub Issue here](https://github.com/bluerobotics/ardusub-gitbook/issues/) to report any errors, suggestions, or missing information in this documentation.\
 [Submit an ArduSub GitHub Issue here](https://github.com/ArduPilot/ardupilot/issues/new/choose) to report issues with the ArduSub software.
+
+## In this section
+
+- [Building ArduPilot](./building-ardupilot.md) — Clone the project from GitHub:
+- [For MacOS](./for-macos.md) — This article shows how to manually setup a minimal build environment on MacOS (ver 10.6 onwards).

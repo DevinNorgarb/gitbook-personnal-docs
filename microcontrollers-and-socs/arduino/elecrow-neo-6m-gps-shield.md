@@ -1,6 +1,5 @@
 ---
-description: >-
-  https://www.hackster.io/CiferTech/how-to-make-pocket-gps-with-gps-neo-6m-and-esp32-472c49
+description: "\">-\""
 ---
 
 # elecrow neo 6M GPS Shield

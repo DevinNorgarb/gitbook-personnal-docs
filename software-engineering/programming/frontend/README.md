@@ -1,8 +1,13 @@
+---
+title: Frontend
+description: "\"\\\"*This page documents **CSS**.*\\\"\""
+---
+
 # Frontend
 
+Notes and links for **Frontend**.
 
-## Overview
+## In this section
 
-This section contains documentation for **Frontend**.
-
-
+- [Javascript](./javascript/README.md) — "\"Recently, I planned to rewrite my [“Scrum Daily Standup Picker” Electron application](https://github.com/Mokkapps/scrum-daily-standup-pic
+- [CSS](./css.md) — *This page documents **CSS**.*

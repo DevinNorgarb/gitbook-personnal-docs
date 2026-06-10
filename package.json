@@ -4,10 +4,11 @@
   "type": "module",
   "scripts": {
     "docs:gen-index": "node scripts/sync-index-from-readme.mjs",
+    "docs:gen-section-indexes": "node scripts/sync-section-indexes-from-summary.mjs",
     "docs:gen-sidebar": "node scripts/summary-to-vitepress-sidebar.mjs",
     "docs:check-sidebar": "node scripts/check-sidebar-drift.mjs",
-    "docs:test": "node --test scripts/navigation.test.mjs scripts/audit-markdown.test.mjs",
-    "docs:prep": "npm run docs:gen-index && npm run docs:gen-sidebar",
+    "docs:test": "node --test scripts/navigation.test.mjs scripts/audit-markdown.test.mjs scripts/section-index.test.mjs",
+    "docs:prep": "npm run docs:gen-section-indexes && npm run docs:gen-index && npm run docs:gen-sidebar",
     "docs:dev": "npm run docs:prep && vitepress dev .",
     "docs:build": "npm run docs:prep && vitepress build .",
     "docs:preview": "vitepress preview .",

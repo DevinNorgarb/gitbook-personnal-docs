@@ -1,5 +1,5 @@
 ---
-description: https://go.dev/dl/
+description: "\"https://go.dev/dl/\""
 ---
 
 # Install Golang

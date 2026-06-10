@@ -1,5 +1,5 @@
 ---
-title: How nRF24L01+ Works & Interfaces with Arduino (Last Minute Engineers)
+title: "\"How nRF24L01+ Works & Interfaces with Arduino (Last Minute Engineers)\""
 description: Imported reference — nRF24L01 hardware, protocols, Arduino wiring (RF24), and examples (one-way, struct payloads, bidirectional).
 ---
 

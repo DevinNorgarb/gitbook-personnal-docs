@@ -1,3 +1,8 @@
+---
+title: SITL
+description: The SITL (Software In The Loop) simulator allows you to run APM without any hardware. It is a build of the autopilot code using an ordinary ; The SITL (Software In The Loop) simulator allows you to create and test DroneKit-Python apps without a real vehicle (from your developer des
+---
+
 # SITL
 
 I removed the navigation and related metadata, but the snippet you provided only contained navigation links and a "last updated" note — there’s no main page content to convert into GitBook-optimized markdown.
@@ -10,3 +15,8 @@ Please paste the page's main content (the article/body) you want converted, and 
 - Use GitBook advanced blocks where appropriate while preserving all links and original meaning.
 
 If you want, I can also show an example of how a converted page would look given a short sample. Which would you prefer?
+
+## In this section
+
+- [SITL Erle Robotics: MAV Tools](./sitl-erle-robotics-mav-tools.md) — The SITL (Software In The Loop) simulator allows you to run APM without any hardware. It is a build of the autopilot code using an ordinary
+- [Simulated Vehicle (SITL)](./simulated-vehicle-sitl.md) — The SITL (Software In The Loop) simulator allows you to create and test DroneKit-Python apps without a real vehicle (from your developer des

@@ -1,8 +1,12 @@
+---
+title: Extensions
+description: "\"\\\"https://github.com/gildas-lormeau/SingleFile\\\"\""
+---
+
 # Extensions
 
+Notes and links for **Extensions**.
 
-## Overview
+## In this section
 
-This section contains documentation for **Extensions**.
-
-
+- [SingleFile](./singlefile.md) — "https://github.com/gildas-lormeau/SingleFile"

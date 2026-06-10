@@ -1,3 +1,8 @@
+---
+title: How to use Lando for local development with Laravel
+description: "\"\\\"The first time I tried to get this working, once the cluster was up, the traefik pods were in CrashloopBackoff due to ip\\\\\\\\_forwarding being d; ![](<../../../../.gitbook/assets/image (61)>)\\\"\""
+---
+
 # How to use Lando for local development with Laravel
 
 One of the common problems when working on web apps is that you need to have a local environment that is as close as possible to the production environment. If you are working in a team it is important that you can share the local environment one way or the other too. If you only have one project it is not that big of a deal to install the needed services in the same versions as in your production environment. But as soon as you have multiple projects, chances are high that the production environments differ from project to project. And I'm not even talking about legacy projects with outdated dependencies like end-of-life PHP versions.
@@ -331,3 +336,8 @@ We at Ideenreich (https://web-ideenreich.at/) use Lando in all our projects dail
 If you have any questions about how we use Lando feel free to contact me on Twitter or by mail.
 
 Last updated 3 years ago
+
+## In this section
+
+- [Provision LXC Containers](./provision-lxc-containers.md) — The first time I tried to get this working, once the cluster was up, the traefik pods were in CrashloopBackoff due to ip\_forwarding being d
+- [Dante in Oracle Cloud](./dante-in-oracle-cloud.md)

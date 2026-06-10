@@ -1,3 +1,8 @@
+---
+title: Related Projects
+description: "\"\\\"https://github.com/autowp/CANreader\\\"\""
+---
+
 # Related Projects
 
 ## Raspberry Pi
@@ -13,3 +18,9 @@
 - [OBD2 on GitHub Topics](https://github.com/topics/obd2)
 - [obd-utils](https://github.com/Nishkalkashyap/obd-utils)
 - [kocur/obd2](https://github.com/kocur/obd2)
+
+## In this section
+
+- [Carloop.io](./carloop.io.md)
+- [CANreader](./canreader.md) — "https://github.com/autowp/CANreader"
+- [Open Garages](./open-garages.md)

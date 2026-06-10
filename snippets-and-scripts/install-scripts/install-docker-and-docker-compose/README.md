@@ -1,3 +1,8 @@
+---
+title: Docker
+description: These optional post-installation procedures describe how to configure your Linux host machine to work better with Docker.
+---
+
 # Docker
 
 _Estimated reading time: 11 minutes_
@@ -240,3 +245,7 @@ You must delete any edited configuration files manually.
 - Review the topics in Develop with Docker to learn how to build new applications using Docker.
 
 requirements, apt, installation, ubuntu, install, uninstall, upgrade, update
+
+## In this section
+
+- [Docker without root privileges](./docker-without-root-privileges.md) — These optional post-installation procedures describe how to configure your Linux host machine to work better with Docker.

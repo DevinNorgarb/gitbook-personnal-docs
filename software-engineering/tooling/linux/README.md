@@ -1,8 +1,12 @@
+---
+title: Linux
+description: "\"\\\"*This page documents **LXC/LXD**.*\\\"\""
+---
+
 # Linux
 
+Notes and links for **Linux**.
 
-## Overview
+## In this section
 
-This section contains documentation for **Linux**.
-
-
+- [LXC/LXD](./lxc-lxd.md) — This page is a navigation alias under **Tooling → Linux**. All LXC/LXD runbooks (commands, storage, networking, troubleshooting) live in the

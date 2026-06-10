@@ -1,5 +1,5 @@
 ---
-description: https://github.com/Konloch/bytecode-viewer/releases
+description: "\"https://github.com/Konloch/bytecode-viewer/releases\""
 ---
 
 # ByteCodeViewer

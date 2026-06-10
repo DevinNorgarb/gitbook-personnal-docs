@@ -1,5 +1,5 @@
 ---
-description: Credit https://curatedpython.com/p/yacht-yet-cantoolz-cantoolz/index.html
+description: "\"Credit https://curatedpython.com/p/yacht-yet-cantoolz-cantoolz/index.html\""
 ---
 
 # CuratedPython

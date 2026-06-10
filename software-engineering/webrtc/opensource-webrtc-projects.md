@@ -1,5 +1,5 @@
 ---
-description: 'Credit: https://medevel.com/13-os-webrtc-server/'
+description: "\"'Credit: https://medevel.com/13-os-webrtc-server/'\""
 ---
 
 # Open-source WebRTC Projects

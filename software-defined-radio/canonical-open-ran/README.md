@@ -1,3 +1,8 @@
+---
+title: Canonical Open RAN
+description: "\"\\\"**Tags:** [Open RAN](https://ubuntu.com/blog/tag/open-ran) , [Telco](https://ubuntu.com/blog/tag/telco) , [Telco 5G](https://ubuntu.com/blog\\\"\""
+---
+
 # Canonical Open RAN
 
 <https://ubuntu.com/blog/telco-canonical-and-oai-to-collaborate-on-open-source-telecom-network-infrastructure-for-open-ran>
@@ -50,3 +55,7 @@ Get in touch with us for your telco deployment needs and your transition to open
 * [Fast and reliable telco edge clouds with Intel FlexRAN and Real-time Ubuntu for 5G URLLC scenarios](https://ubuntu.com/blog/intel-flexran-and-real-time-ubuntu-for-5g-urllc)
 * [Telecom security: How to safeguard your open source telco infrastructure](https://ubuntu.com/blog/telecom-security-how-to-safeguard-your-open-source-telco-infrastructure)
 * [Bringing automation to telco edge clouds at scale](https://ubuntu.com/blog/bringing-automation-to-telco-edge-clouds-at-scale)
+
+## In this section
+
+- [What is Open RAN?](./what-is-open-ran.md) — **Tags:** [Open RAN](https://ubuntu.com/blog/tag/open-ran) , [Telco](https://ubuntu.com/blog/tag/telco) , [Telco 5G](https://ubuntu.com/blog

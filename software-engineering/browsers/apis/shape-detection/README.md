@@ -1,3 +1,8 @@
+---
+title: Shape Detection
+description: "\"\\\"This version:[https://wicg.github.io/shape-detection-api](https://wicg.github.io/shape-detection-api)Issue Tracking:[GitHub](https://github.\\\"\""
+---
+
 # Shape Detection
 
 ## Shape Detection API Specification :stars::movie\_camera:
@@ -117,3 +122,7 @@ curl https://api.csswg.org/bikeshed/ -F file=@index.bs -F output=err
 ```
 
 and try to figure out why `bikeshed` did not like the `.bs` :'(
+
+## In this section
+
+- [Accelerated Shape Detection in Images](./accelerated-shape-detection-in-images.md) — This version:[https://wicg.github.io/shape-detection-api](https://wicg.github.io/shape-detection-api)Issue Tracking:[GitHub](https://github.

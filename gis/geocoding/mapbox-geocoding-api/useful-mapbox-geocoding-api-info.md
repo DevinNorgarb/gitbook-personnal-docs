@@ -1,6 +1,5 @@
 ---
-description: >-
-  https://docs.mapbox.com/help/getting-started/geocoding/#result-prioritization-in-reverse-geocoding
+description: "\">-\""
 ---
 
 # Useful Mapbox Geocoding API Info

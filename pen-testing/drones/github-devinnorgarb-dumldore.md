@@ -1,6 +1,6 @@
 ---
 title: DUMLdore (DevinNorgarb fork) — firmware flashing tool
-description: Imported note from https://github.com/DevinNorgarb/DUMLdore
+description: "\"Imported note from https://github.com/DevinNorgarb/DUMLdore\""
 ---
 
 # DUMLdore (DevinNorgarb fork) — firmware flashing tool

@@ -1,3 +1,8 @@
+---
+title: Loki
+description: "\"\\\"1. Install Docker plugin:\\\"\""
+---
+
 # Loki
 
 ## Meet Grafana LOKI, a Log Aggregation System for Everything
@@ -73,3 +78,7 @@ Credits to this post for the config file: [grafana/loki#2361 (comment)](https://
 If you’re looking to set this up in kubernetes, see [this post](https://docs.technotim.live/posts/grafana-loki-kubernetes/)
 
 <br>
+
+## In this section
+
+- [Install](./install.md) — 1. Install Docker plugin:

@@ -1,6 +1,5 @@
 ---
-description: >-
-  https://campfirecode.medium.com/sqs-vs-sns-vs-kinesis-which-aws-messaging-service-to-use-1fa3aa6be97d
+description: "\">-\""
 ---
 
 # SQS vs SNS vs Kinesis

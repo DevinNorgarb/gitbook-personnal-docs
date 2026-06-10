@@ -1,5 +1,5 @@
 ---
-description: https://github.com/beefproject/beef/wiki/Installation
+description: "\"https://github.com/beefproject/beef/wiki/Installation\""
 ---
 
 # BeEF

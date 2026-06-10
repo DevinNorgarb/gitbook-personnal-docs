@@ -1,6 +1,6 @@
 ---
 title: DJI RC2 Reverse Engineering Research Notes
-description: Imported note from https://github.com/whitelewi1-ctrl/dji-rc2-research
+description: "\"Imported note from https://github.com/whitelewi1-ctrl/dji-rc2-research\""
 ---
 
 # DJI RC2 Reverse Engineering Research Notes

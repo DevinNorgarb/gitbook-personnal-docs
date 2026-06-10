@@ -1,6 +1,5 @@
 ---
-description: >-
-  https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html
+description: "\">-\""
 ---
 
 # Content Security Policy
