@@ -23,7 +23,8 @@ export default [
                 "text": "macOS Disk Usage Analysis",
                 "link": "/snippets-and-scripts/operations/mac-os-disk-usage-analysis"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Install Scripts",
@@ -65,7 +66,8 @@ export default [
                     "text": "pyenv",
                     "link": "/snippets-and-scripts/install-scripts/python-libraries/pyenv/README"
                   }
-                ]
+                ],
+                "collapsed": true
               },
               {
                 "text": "HTTPie",
@@ -111,7 +113,8 @@ export default [
                     "text": "Docker without root privileges",
                     "link": "/snippets-and-scripts/install-scripts/install-docker-and-docker-compose/docker-without-root-privileges"
                   }
-                ]
+                ],
+                "collapsed": true
               },
               {
                 "text": "Install NVM",
@@ -133,7 +136,8 @@ export default [
                 "text": "SDKMan",
                 "link": "/snippets-and-scripts/install-scripts/sdkman"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Scripts",
@@ -151,7 +155,8 @@ export default [
                     "text": "TP-Link Tapo/Kasa to InfluxDB (Ben Tasker)",
                     "link": "/snippets-and-scripts/scripts/influx/bentasker-co-uk-tplink-tapo-kasa-influxdb"
                   }
-                ]
+                ],
+                "collapsed": true
               },
               {
                 "text": "Docker Image Sizes",
@@ -165,7 +170,8 @@ export default [
                 "text": "Nginx Proxy Block",
                 "link": "/snippets-and-scripts/scripts/nginx-proxy-block"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Resize Proxmox root storage",
@@ -183,11 +189,14 @@ export default [
                 "text": "Magento One Line install",
                 "link": "/snippets-and-scripts/magento/magento-one-line-install"
               }
-            ]
+            ],
+            "collapsed": true
           }
-        ]
+        ],
+        "collapsed": true
       }
-    ]
+    ],
+    "collapsed": true
   },
   {
     "text": "Software Engineering",
@@ -204,7 +213,8 @@ export default [
             "text": "Shrinking .wasm Code Size",
             "link": "/software-engineering/webassembly/shrinking-.wasm-code-size"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Automation",
@@ -230,9 +240,11 @@ export default [
                 "text": "Puppeteer",
                 "link": "/software-engineering/automation/browser/puppeteer"
               }
-            ]
+            ],
+            "collapsed": true
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Android App Development",
@@ -254,7 +266,8 @@ export default [
                 "text": "PixelExperience on Xiaomi Redmi",
                 "link": "/software-engineering/android-app-development/custom-os/pixelexperience-on-xiaomi-redmi"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "adb",
@@ -264,7 +277,8 @@ export default [
                 "text": "Copy APK file using ADB",
                 "link": "/software-engineering/android-app-development/adb/copy-apk-file-using-adb"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "compileSdk and targetSdk Version Mappings",
@@ -282,7 +296,8 @@ export default [
             "text": "Android Runtime - How Dalvik and ART Work",
             "link": "/software-engineering/android-app-development/android-runtime-how-dalvik-and-art-work"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Machine Learning",
@@ -300,9 +315,11 @@ export default [
                 "text": "ML Kit barcode (Android)",
                 "link": "/software-engineering/machine-learning/google-mlkit/mlkit-barcode-android"
               }
-            ]
+            ],
+            "collapsed": true
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Shopify Dev",
@@ -332,7 +349,8 @@ export default [
             "text": "Laravel app Shopify Webhooks Amazon EventBridge",
             "link": "/software-engineering/shopify-dev/laravel-app-shopify-webhooks-amazon-eventbridge"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Authentication",
@@ -342,7 +360,8 @@ export default [
             "text": "OAuth2",
             "link": "/software-engineering/authentication/oauth2"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "AWS",
@@ -352,7 +371,8 @@ export default [
             "text": "SQS vs SNS vs Kinesis",
             "link": "/software-engineering/aws/sqs-vs-sns-vs-kinesis"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Frontend",
@@ -370,13 +390,15 @@ export default [
                 "text": "Laravel Upgrade from Webpack to Vite",
                 "link": "/software-engineering/programming/frontend/javascript/laravel-upgrade-from-webpack-to-vite"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "CSS",
             "link": "/software-engineering/programming/frontend/css"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "PHP",
@@ -410,9 +432,11 @@ export default [
                     "text": "Dante in Oracle Cloud",
                     "link": "/software-engineering/php/laravel/how-to-use-lando-for-local-development-with-laravel/dante-in-oracle-cloud"
                   }
-                ]
+                ],
+                "collapsed": true
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Docker for PHP Devs",
@@ -422,7 +446,8 @@ export default [
             "text": "Coroutines",
             "link": "/software-engineering/php/coroutines"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Principles & Practices",
@@ -468,15 +493,18 @@ export default [
                     "text": "CL in review",
                     "link": "/software-engineering/principles-and-practices/code-reviews/google-code-review/cl-in-review"
                   }
-                ]
+                ],
+                "collapsed": true
               },
               {
                 "text": "How to Make Good Code Reviews Better",
                 "link": "/software-engineering/principles-and-practices/code-reviews/how-to-make-good-code-reviews-better"
               }
-            ]
+            ],
+            "collapsed": true
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Tooling",
@@ -494,9 +522,11 @@ export default [
                     "text": "Sorry Cypress",
                     "link": "/software-engineering/tooling-extras/testing/frontend/sorry-cypress"
                   }
-                ]
+                ],
+                "collapsed": true
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Miscellaneous",
@@ -514,13 +544,15 @@ export default [
                     "text": "i-Ventoy",
                     "link": "/software-engineering/tooling-extras/miscellaneous/creating-bootable-drives/i-ventoy"
                   }
-                ]
+                ],
+                "collapsed": true
               },
               {
                 "text": "Barrier - Remote keyboard and mouse",
                 "link": "/software-engineering/tooling/miscellaneous/barrier-remote-keyboard-and-mouse"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Networking",
@@ -534,7 +566,8 @@ export default [
                 "text": "LXC/LXD",
                 "link": "/software-engineering/tooling/linux/lxc-lxd"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Backend",
@@ -548,9 +581,11 @@ export default [
                     "text": "Certbot Instructions",
                     "link": "/software-engineering/install-certbot/certbot-instructions"
                   }
-                ]
+                ],
+                "collapsed": true
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Frontend",
@@ -564,11 +599,14 @@ export default [
                     "text": "How to inspect and copy an element's CSS the easy way",
                     "link": "/software-engineering/tooling/css/how-to-inspect-and-copy-an-elements-css-the-easy-way"
                   }
-                ]
+                ],
+                "collapsed": true
               }
-            ]
+            ],
+            "collapsed": true
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Cryptocurrencies",
@@ -582,7 +620,8 @@ export default [
                 "text": "manual",
                 "link": "/software-engineering/cryptocurrencies/ccxt/manual"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Running your own bitcoin node",
@@ -596,13 +635,15 @@ export default [
                 "text": "Six Reasons Why You Should Run Your Own Bitcoin Node",
                 "link": "/software-engineering/cryptocurrencies/running-your-own-bitcoin-node/six-reasons-why-you-should-run-your-own-bitcoin-node"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Trading Bots",
             "link": "/software-engineering/cryptocurrencies/trading-bots"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Linux",
@@ -616,7 +657,8 @@ export default [
                 "text": "Realtek RTL8188FTV WiFi Adapter on Linux",
                 "link": "/software-engineering/linux/firmware/realtek-rtl8188ftv-wifi-adapter-on-linux"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "apt",
@@ -630,7 +672,8 @@ export default [
                 "text": "Ubuntu 22.04 LTS (ARM/RISC-V) (Jammy Jellyfish) -- Full sources.list",
                 "link": "/software-engineering/linux/apt/ubuntu-22.04-lts-arm-risc-v-jammy-jellyfish-full-sources.list"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Grow Filesystem while running",
@@ -652,7 +695,8 @@ export default [
                 "text": "Changing /dev/hidraw permissions",
                 "link": "/software-engineering/linux/udev-rules/changing-dev-hidraw-permissions"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "systemd",
@@ -666,9 +710,11 @@ export default [
                 "text": "How To Get / Print Current Date in Unix / Linux Shell Script",
                 "link": "/software-engineering/linux/bash/how-to-get-print-current-date-in-unix-linux-shell-script"
               }
-            ]
+            ],
+            "collapsed": true
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Grafana",
@@ -682,7 +728,8 @@ export default [
                 "text": "Install",
                 "link": "/software-engineering/grafana/loki/install"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "OBD2 Dashboard",
@@ -692,7 +739,8 @@ export default [
             "text": "Strava Dashboard",
             "link": "/software-engineering/grafana/strava-dashboard"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Documentation",
@@ -710,7 +758,8 @@ export default [
             "text": "General",
             "link": "/software-engineering/documentation/general"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Containerisation",
@@ -756,7 +805,8 @@ export default [
                 "text": "LXC No internet Access",
                 "link": "/software-engineering/containerisation/lxc-lxd/lxc-no-internet-access"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Docker Compose",
@@ -774,7 +824,8 @@ export default [
                 "text": "MultiArch Builds",
                 "link": "/software-engineering/containerisation/docker/multiarch-builds"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Hypervisors",
@@ -788,11 +839,14 @@ export default [
                     "text": "Page 1",
                     "link": "/software-engineering/containerisation/hypervisors/proxmox/page-1"
                   }
-                ]
+                ],
+                "collapsed": true
               }
-            ]
+            ],
+            "collapsed": true
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Browsers",
@@ -806,7 +860,8 @@ export default [
                 "text": "SingleFile",
                 "link": "/software-engineering/browsers/extensions/singlefile"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "API's",
@@ -820,7 +875,8 @@ export default [
                     "text": "Accelerated Shape Detection in Images",
                     "link": "/software-engineering/browsers/apis/shape-detection/accelerated-shape-detection-in-images"
                   }
-                ]
+                ],
+                "collapsed": true
               },
               {
                 "text": "Barcode Detection API",
@@ -830,13 +886,15 @@ export default [
                 "text": "Browser BarcodeDetect API using Image",
                 "link": "/software-engineering/browsers/apis/browser-barcodedetect-api-using-image"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "CORS Errors",
             "link": "/software-engineering/browsers/cors-errors"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Networking",
@@ -850,7 +908,8 @@ export default [
                 "text": "Increase Netfilter Table Size",
                 "link": "/software-engineering/networking/netfilter/increase-netfilter-table-size"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Web Sockets",
@@ -864,7 +923,8 @@ export default [
                 "text": "Socket Client Tool",
                 "link": "/software-engineering/networking/web-sockets/socket-client-tool"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "NetShoot",
@@ -898,9 +958,11 @@ export default [
                     "text": "Installation",
                     "link": "/software-engineering/networking/vpn/netmaker/installation"
                   }
-                ]
+                ],
+                "collapsed": true
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Container Networking",
@@ -918,7 +980,8 @@ export default [
                 "text": "Cloudflare Tunnel with Docker",
                 "link": "/software-engineering/networking/cloudflare-tunnels/cloudflare-tunnel-with-docker"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "PFSense",
@@ -928,7 +991,8 @@ export default [
                 "text": "Virtualizing with Proxmox® VE",
                 "link": "/software-engineering/networking/pfsense/virtualizing-with-proxmox-r-ve"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Oracle VCN Docs",
@@ -942,9 +1006,11 @@ export default [
                 "text": "Networking Overview",
                 "link": "/software-engineering/networking/oracle-vcn-docs/networking-overview"
               }
-            ]
+            ],
+            "collapsed": true
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Kubernetes",
@@ -962,7 +1028,8 @@ export default [
             "text": "Single Node Cluster",
             "link": "/software-engineering/kubernetes/single-node-cluster"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "WebRTC",
@@ -980,7 +1047,8 @@ export default [
             "text": "Setting up STUN and TURN servers",
             "link": "/software-engineering/webrtc/setting-up-stun-and-turn-servers"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Content Security Policy",
@@ -1002,11 +1070,14 @@ export default [
                 "text": "Cloud Init Script to Create a new user",
                 "link": "/software-engineering/devops/cloud-init/cloud-init-script-to-create-a-new-user"
               }
-            ]
+            ],
+            "collapsed": true
           }
-        ]
+        ],
+        "collapsed": true
       }
-    ]
+    ],
+    "collapsed": true
   },
   {
     "text": "OBD2",
@@ -1023,7 +1094,8 @@ export default [
             "text": "Developers",
             "link": "/obd2/ovms/developers"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Libraries",
@@ -1033,7 +1105,8 @@ export default [
             "text": "SEEED Arduino CAN",
             "link": "/obd2/libraries/seeed-arduino-can"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "CAN Bus",
@@ -1051,7 +1124,8 @@ export default [
             "text": "CAN Bus Shield V2.0",
             "link": "/obd2/can-bus/can-bus-shield-v2.0"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "ELM327 Datasheet",
@@ -1077,7 +1151,8 @@ export default [
             "text": "The Car Hacker’s Handbook",
             "link": "/obd2/car-hacking/the-car-hackers-handbook"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "The Car Hacker Handbook PDF",
@@ -1119,9 +1194,11 @@ export default [
                 "text": "ELM327-emulator",
                 "link": "/obd2/obdii-simulators/libraries/elm327-emulator"
               }
-            ]
+            ],
+            "collapsed": true
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Related Projects",
@@ -1139,7 +1216,8 @@ export default [
             "text": "Open Garages",
             "link": "/obd2/related-projects/open-garages"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Guides",
@@ -1189,9 +1267,11 @@ export default [
                 "text": "Hack Your Car With Wio Terminal and CAN Bus",
                 "link": "/obd2/guides/hackster.io/hack-your-car-with-wio-terminal-and-can-bus"
               }
-            ]
+            ],
+            "collapsed": true
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Vehicle Tracking",
@@ -1205,7 +1285,8 @@ export default [
             "text": "traccar.org",
             "link": "/obd2/vehicle-tracking/traccar.org"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "OBD GPS Logger for Linux and OSX",
@@ -1223,7 +1304,8 @@ export default [
         "text": "a quick crash-course",
         "link": "/obd2/a-quick-crash-course"
       }
-    ]
+    ],
+    "collapsed": true
   },
   {
     "text": "3D Printing",
@@ -1240,9 +1322,11 @@ export default [
             "text": "My problems",
             "link": "/3d-printing/my-problems"
           }
-        ]
+        ],
+        "collapsed": true
       }
-    ]
+    ],
+    "collapsed": true
   },
   {
     "text": "Robotics",
@@ -1259,7 +1343,8 @@ export default [
             "text": "Simulated Vehicle (SITL)",
             "link": "/robotics/sitl/simulated-vehicle-sitl"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Communication Protocols",
@@ -1269,7 +1354,8 @@ export default [
             "text": "Serial",
             "link": "/robotics/communication-protocols/serial"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "ROS",
@@ -1283,7 +1369,8 @@ export default [
                 "text": "An Introduction to Robot Operating System: The Ultimate Robot Application Framework",
                 "link": "/robotics/ros/ros-guide/an-introduction-to-robot-operating-system-the-ultimate-robot-application-framework"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "ROS and Docker",
@@ -1301,9 +1388,11 @@ export default [
                 "text": "ROS Wiki",
                 "link": "/robotics/ros/init-ros-melodic/ros-wiki"
               }
-            ]
+            ],
+            "collapsed": true
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "ArduSub",
@@ -1321,7 +1410,8 @@ export default [
                 "text": "For MacOS",
                 "link": "/robotics/ardusub/compiling/for-macos"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Troubleshooting",
@@ -1407,7 +1497,8 @@ export default [
             "text": "Firmware Page",
             "link": "/robotics/firmware-page"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "SITL",
@@ -1421,7 +1512,8 @@ export default [
             "text": "Connection Diagrams",
             "link": "/robotics/pixhawk/connection-diagrams"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "BlueOS",
@@ -1439,9 +1531,11 @@ export default [
             "text": "PyMavlink",
             "link": "/robotics/mavlink/pymavlink"
           }
-        ]
+        ],
+        "collapsed": true
       }
-    ]
+    ],
+    "collapsed": true
   },
   {
     "text": "MicroControllers & SoC's",
@@ -1470,7 +1564,8 @@ export default [
             "text": "Arduino (K3s tutorial notes)",
             "link": "/microcontrollers-and-socs/arduino/k3s-tutorial-arduino"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Balena.io",
@@ -1488,7 +1583,8 @@ export default [
                 "text": "Diet Pi Supported Software",
                 "link": "/microcontrollers-and-socs/raspberry-pi/diet-pi/diet-pi-supported-software"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Kodi",
@@ -1498,7 +1594,8 @@ export default [
                 "text": "Wiki",
                 "link": "/microcontrollers-and-socs/raspberry-pi/kodi/wiki"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "SIM800L GPS/GPRS AT Commands",
@@ -1536,7 +1633,8 @@ export default [
                 "text": "RPI-Wireless-Hotspot",
                 "link": "/microcontrollers-and-socs/raspberry-pi/raspberry-pi-hotspot/rpi-wireless-hotspot"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Setting up a Cloudflare Tunnel on the Raspberry Pi",
@@ -1550,7 +1648,8 @@ export default [
                 "text": "pimox/pimox7",
                 "link": "/microcontrollers-and-socs/raspberry-pi/install-proxmox-on-a-raspberry-pi/pimox-pimox7"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "PCI-Express Bridge “Chip”",
@@ -1572,9 +1671,11 @@ export default [
                 "text": "Pi 4 Overclocking Maximum settings",
                 "link": "/microcontrollers-and-socs/raspberry-pi/overclocking-raspberry-pi-4/pi-4-overclocking-maximum-settings"
               }
-            ]
+            ],
+            "collapsed": true
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "ESP32",
@@ -1612,7 +1713,8 @@ export default [
             "text": "2.4 GHz RF, antenna, and PCB layout references",
             "link": "/microcontrollers-and-socs/esp32/esp32-2-4ghz-rf-antenna-pcb-layout-references"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Sonoff RFR3 — 433 MQTT gateway mod",
@@ -1622,7 +1724,8 @@ export default [
         "text": "Painless Mesh",
         "link": "/microcontrollers-and-socs/painless-mesh"
       }
-    ]
+    ],
+    "collapsed": true
   },
   {
     "text": "Self-Hosting",
@@ -1635,7 +1738,8 @@ export default [
             "text": "Sentry Troubleshooting",
             "link": "/self-hosting/sentry/sentry-troubleshooting"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Awesome Self-Hosted",
@@ -1653,9 +1757,11 @@ export default [
             "text": "Dell PowerEdge 2950",
             "link": "/self-hosting/hardware/dell-poweredge-2950"
           }
-        ]
+        ],
+        "collapsed": true
       }
-    ]
+    ],
+    "collapsed": true
   },
   {
     "text": "GIS",
@@ -1672,7 +1778,8 @@ export default [
                 "text": "Useful Mapbox Geocoding API Info",
                 "link": "/gis/geocoding/mapbox-geocoding-api/useful-mapbox-geocoding-api-info"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Geocoding Accuracy",
@@ -1682,7 +1789,8 @@ export default [
             "text": "Using the new MVT function in PostGIS",
             "link": "/gis/geocoding/using-the-new-mvt-function-in-postgis"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Tile38",
@@ -1700,7 +1808,8 @@ export default [
             "text": "Interactive Geographic Visualization Part 4 (Altair)",
             "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/page-1/the-battle-of-interactive-geographic-visualization-part-4"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Vector Tiles",
@@ -1726,7 +1835,8 @@ export default [
             "text": "Page",
             "link": "/gis/mapbox/page"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Pelias Geocoder",
@@ -1748,13 +1858,15 @@ export default [
             "text": "Pelias From Scratch",
             "link": "/gis/pelias-geocoder/pelias-from-scratch"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Modern FOSS Spatial Stack",
         "link": "/gis/modern-foss-spatial-stack"
       }
-    ]
+    ],
+    "collapsed": true
   },
   {
     "text": "Web Archiving",
@@ -1763,7 +1875,8 @@ export default [
         "text": "Awesome Web Archiving",
         "link": "/web-archiving/awesome-web-archiving"
       }
-    ]
+    ],
+    "collapsed": true
   },
   {
     "text": "IP Cameras",
@@ -1780,15 +1893,18 @@ export default [
                 "text": "Real Time Streaming Protocol (RTSP)",
                 "link": "/ip-cameras/protocols/rtsp/real-time-streaming-protocol-rtsp"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "ONVIF",
             "link": "/ip-cameras/protocols/onvif"
           }
-        ]
+        ],
+        "collapsed": true
       }
-    ]
+    ],
+    "collapsed": true
   },
   {
     "text": "Web Scraping",
@@ -1805,7 +1921,8 @@ export default [
         "text": "PHP Web Scraping",
         "link": "/web-scraping/php-web-scraping"
       }
-    ]
+    ],
+    "collapsed": true
   },
   {
     "text": "Pen Testing",
@@ -1854,7 +1971,8 @@ export default [
             "text": "Drone Encrypted Flight Logs (Yuneec ST-16)",
             "link": "/pen-testing/drones/jamie-sharpe-drones-encrypted-flight-logs"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Automotive",
@@ -1864,7 +1982,8 @@ export default [
             "text": "Hacking Automotive Ethernet Cameras",
             "link": "/pen-testing/hacking-automotive-ethernet-cameras"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Bluetooth Security Research",
@@ -1894,7 +2013,8 @@ export default [
                 "text": "Oat2Dex (Medium)",
                 "link": "/pen-testing/decompilers/android/medium-oat2dex-android-pentesting"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "jd-gui",
@@ -1908,7 +2028,8 @@ export default [
             "text": "ByteCodeViewer",
             "link": "/pen-testing/decompilers/bytecodeviewer"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Google: Hacking Ethics",
@@ -1934,7 +2055,8 @@ export default [
             "text": "Top 5 Wordpress Vulnerability Scanners",
             "link": "/pen-testing/vulnerability-scanning/top-5-wordpress-vulnerability-scanners"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Kali Linux",
@@ -1944,7 +2066,8 @@ export default [
             "text": "Kali Linux Blog",
             "link": "/pen-testing/kali-linux/kali-linux-blog"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "Captive Portals",
@@ -1962,7 +2085,8 @@ export default [
             "text": "OpenNDS",
             "link": "/pen-testing/captive-portals/opennds"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "SQLMap",
@@ -1972,7 +2096,8 @@ export default [
         "text": "BeEF",
         "link": "/pen-testing/beef"
       }
-    ]
+    ],
+    "collapsed": true
   },
   {
     "text": "Random",
@@ -1989,7 +2114,8 @@ export default [
                 "text": "Magnetico",
                 "link": "/random/torrents-and-dht-network/magnetico"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "ADHD and Programming",
@@ -1999,7 +2125,8 @@ export default [
                 "text": "ADHD Programming Notes",
                 "link": "/random/adhd-and-programming/adhd-programming-notes"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Ubuntu: Set Keyboard Backlight",
@@ -2009,9 +2136,11 @@ export default [
             "text": "Firewall rules to allow Chromecast",
             "link": "/random/firewall-rules-to-allow-chromecast"
           }
-        ]
+        ],
+        "collapsed": true
       }
-    ]
+    ],
+    "collapsed": true
   },
   {
     "text": "Maritime AIS",
@@ -2032,7 +2161,8 @@ export default [
         "text": "MicroK8s + MetalLB",
         "link": "/maritime-ais/microk8s-+-metallb"
       }
-    ]
+    ],
+    "collapsed": true
   },
   {
     "text": "Drones",
@@ -2089,7 +2219,8 @@ export default [
             "text": "创建航拍相机App",
             "link": "/drones/dji-docs-android/chuang-jian-hang-pai-xiang-ji-app"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "dji-firmware-tools",
@@ -2099,7 +2230,8 @@ export default [
         "text": "DroneBridge",
         "link": "/drones/dronebridge"
       }
-    ]
+    ],
+    "collapsed": true
   },
   {
     "text": "Software Defined Radio",
@@ -2116,13 +2248,15 @@ export default [
             "text": "What is Open RAN?",
             "link": "/software-defined-radio/canonical-open-ran/what-is-open-ran"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "The BIG List of RTL-SDR Supported Software",
         "link": "/software-defined-radio/the-big-list-of-rtl-sdr-supported-software"
       }
-    ]
+    ],
+    "collapsed": true
   },
   {
     "text": "Resources, Documents, PDF's, etc",
@@ -2143,7 +2277,8 @@ export default [
             "text": "ESP32",
             "link": "/resources-documents-pdfs-etc/embedded-systems/esp32"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "OAuth2 Authentication",
@@ -2169,7 +2304,8 @@ export default [
         "text": "Software Defined Radio (SDR)",
         "link": "/resources-documents-pdfs-etc/software-defined-radio-sdr"
       }
-    ]
+    ],
+    "collapsed": true
   },
   {
     "text": "MISC",
@@ -2190,7 +2326,8 @@ export default [
             "text": "Awesome Cursor Skills",
             "link": "/misc/artificial-intelligence/github-awesome-cursor-skills"
           }
-        ]
+        ],
+        "collapsed": true
       },
       {
         "text": "tutorials",
@@ -2208,7 +2345,8 @@ export default [
                 "text": "Using ChatGPT to build system diagrams — Part II",
                 "link": "/misc/tutorials/from-google-sheets-how-to-send-email-based-on-date/using-chatgpt-to-build-system-diagrams-part-ii"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Feeling Guilty Billing Clients?",
@@ -2218,7 +2356,8 @@ export default [
                 "text": "marvinferber BLOG",
                 "link": "/misc/tutorials/feeling-guilty-billing-clients/marvinferber-blog"
               }
-            ]
+            ],
+            "collapsed": true
           },
           {
             "text": "Setting up K3s in LXC containers using Netmaker",
@@ -2228,10 +2367,13 @@ export default [
                 "text": "Install K3s",
                 "link": "/misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/README"
               }
-            ]
+            ],
+            "collapsed": true
           }
-        ]
+        ],
+        "collapsed": true
       }
-    ]
+    ],
+    "collapsed": true
   }
 ]
