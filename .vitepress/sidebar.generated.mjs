@@ -1353,6 +1353,18 @@ export default [
           {
             "text": "Serial",
             "link": "/robotics/communication-protocols/serial"
+          },
+          {
+            "text": "UART",
+            "link": "/robotics/communication-protocols/uart"
+          },
+          {
+            "text": "I2C",
+            "link": "/robotics/communication-protocols/i2c"
+          },
+          {
+            "text": "SPI",
+            "link": "/robotics/communication-protocols/spi"
           }
         ],
         "collapsed": true
