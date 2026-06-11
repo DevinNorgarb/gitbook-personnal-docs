@@ -2,6 +2,8 @@
 
 <https://forum.arduino.cc/t/serial-input-basics-updated/382007>
 
+See also: [UART](./uart.md) (hardware and wiring), [I2C](./i2c.md), [SPI](./spi.md).
+
 ## Updated Version
 
 _Please note that this is a revised version of the advice in_ [_this earlier Thread 597_](http://forum.arduino.cc/index.php?topic=288234.0) _which has become very long. As far as possible I have kept the code examples identical or simplifed them slightly. It should not be necessary to refer to the older Thread, but feel free to do so._
