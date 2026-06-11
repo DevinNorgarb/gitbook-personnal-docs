@@ -1667,6 +1667,10 @@ export default [
               {
                 "text": "It's FOSS — Proxmox install",
                 "link": "/microcontrollers-and-socs/raspberry-pi/install-proxmox-on-a-raspberry-pi/itsfoss-install-proxmox-raspberry-pi"
+              },
+              {
+                "text": "Pi My Life Up — PXVirt install",
+                "link": "/microcontrollers-and-socs/raspberry-pi/install-proxmox-on-a-raspberry-pi/pimylifeup-raspberry-pi-proxmox"
               }
             ],
             "collapsed": true
