@@ -1647,6 +1647,10 @@ export default [
               {
                 "text": "pimox/pimox7",
                 "link": "/microcontrollers-and-socs/raspberry-pi/install-proxmox-on-a-raspberry-pi/pimox-pimox7"
+              },
+              {
+                "text": "It's FOSS — Proxmox install",
+                "link": "/microcontrollers-and-socs/raspberry-pi/install-proxmox-on-a-raspberry-pi/itsfoss-install-proxmox-raspberry-pi"
               }
             ],
             "collapsed": true
