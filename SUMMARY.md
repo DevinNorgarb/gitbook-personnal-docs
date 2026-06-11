@@ -32,6 +32,7 @@
     - [Install oh-my-zsh](snippets-and-scripts/install-scripts/install-oh-my-zsh.md)
     - [SDKMan](snippets-and-scripts/install-scripts/sdkman.md)
   - [Scripts](snippets-and-scripts/scripts/README.md)
+    - [Proxmox VE Helper Scripts (community-scripts.org)](snippets-and-scripts/scripts/community-scripts-org/README.md)
     - [Influx](snippets-and-scripts/scripts/influx/README.md)
       - [Influx DB backup](snippets-and-scripts/scripts/influx/influx-db-backup.md)
       - [TP-Link Tapo/Kasa to InfluxDB (Ben Tasker)](snippets-and-scripts/scripts/influx/bentasker-co-uk-tplink-tapo-kasa-influxdb.md)

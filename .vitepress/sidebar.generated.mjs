@@ -144,6 +144,10 @@ export default [
             "link": "/snippets-and-scripts/scripts/README",
             "items": [
               {
+                "text": "Proxmox VE Helper Scripts (community-scripts.org)",
+                "link": "/snippets-and-scripts/scripts/community-scripts-org/README"
+              },
+              {
                 "text": "Influx",
                 "link": "/snippets-and-scripts/scripts/influx/README",
                 "items": [

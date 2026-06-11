@@ -73,6 +73,7 @@ ps aux --sort=-%mem | head
 
 ## In this section
 
+- [Proxmox VE Helper Scripts (community-scripts.org)](./community-scripts-org/README.md) — One-line LXC/VM installs from [community-scripts.org](https://community-scripts.org/) (Nginx Proxy Manager, post-pve-install, Home Assistant, Immich, …)
 - [Influx](./influx/README.md) — Imported notes from Ben Tasker on polling Kasa/Tapo plugs into InfluxDB via Docker
 - [Docker Image Sizes](./docker-image-sizes.md) — Get docker image sizes sorted by size
 - [Run docker commands without needing sudo](./run-docker-commands-without-needing-sudo.md) — This page is a navigation entry in the **Scripts** section. The canonical runbook covers group setup, permission fixes, systemd boot configu
