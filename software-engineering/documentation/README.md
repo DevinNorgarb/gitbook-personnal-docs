@@ -1,14 +1,26 @@
 ---
 title: Documentation
-description: How to add some life to your Github profile homepage
+description: Personal and project documentation — Obsidian, READMEs, and writing resources.
 ---
 
 # Documentation
 
-[https://obsidian.md/](https://obsidian.md)
+Resources for **personal knowledge bases**, **GitHub presentation**, and **technical writing**.
+
+## Source
+
+- [Obsidian](https://obsidian.md/)
 
 ## In this section
 
-- [GitHub README](./github-readme.md) — How to add some life to your Github profile homepage
-- [Tools](./tools.md)
-- [General](./general.md)
+| Page | Focus |
+|------|--------|
+| [GitHub README](./github-readme.md) | Profile and repo homepage polish |
+| [Tools](./tools.md) | Obsidian — linked notes and plugins |
+| [General](./general.md) | Video on documentation practices |
+
+## Quick picks
+
+- **Daily notes + wikilinks** in Obsidian for capture
+- **README-driven development** for open-source repos
+- **Publish** notes via Obsidian Publish or export to this docs site
