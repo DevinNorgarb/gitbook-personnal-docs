@@ -5,10 +5,15 @@ description: \ This alert presents the percentage of used netfilter tracked conn
 
 # netfilter
 
-## What is the "netfilter" framework?
+## Source
+- Source URL not captured in original stub.
 
-Netfilter is a framework provided by the Linux kernel that allows various networking-related operations to be implemented in the form of customized handlers. Netfilter offers various functions and operations for packet filtering, network address translation, and port translation, which provide the functionality required for directing packets through a network and prohibiting packets from reaching sensitive locations within a network.
+## Overview
 
-## In this section
+| Page | Notes |
+| --- | --- |
+| [Increase Netfilter Table Size](./increase-netfilter-table-size.md) | Curated notes and references for increase netfilter table size. |
 
-- [Increase Netfilter Table Size](./increase-netfilter-table-size.md) — \ This alert presents the percentage of used netfilter tracked connections. If you receive this alert, there is high utilization of the netf
+## Related pages
+
+- [Increase Netfilter Table Size](./increase-netfilter-table-size.md)

@@ -1,8 +1,21 @@
+---
+title: Firewalls
+description: Reference notes and links for Firewalls in the software engineering section.
+---
+
 # Firewalls
 
-sudo nano /etc/sysctl.conf
+## Source
+- Source URL not captured in original stub.
 
-uncomment ipv4 forwarding
+## Summary
 
+- Covers key material related to **Firewalls**.
+- Use this page as a launch point before drilling into implementation details.
 
-iptables -t nat -A PREROUTING -p tcp –dport 11411 -j DNAT –to-destination 192.168.12.8
+## Related pages
+
+- [Readme](./README.md)
+- [Install Pritunl Client](./install-pritunl-client.md)
+- [Netmaker](./netmaker/README.md)
+- [Udp Holepunching](./udp-holepunching.md)

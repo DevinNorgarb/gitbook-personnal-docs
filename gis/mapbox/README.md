@@ -1,12 +1,19 @@
 ---
 title: MapBox
-description: "\"\\\"*This page documents **Page**.*\\\"\""
+description: \"\\\"*This page documents **Page**.*\\\"\
 ---
 
 # MapBox
 
-Notes and links for **MapBox**.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
 
-- [Page](./page.md) — *This page documents **Page**.*
+| Page | Notes |
+| --- | --- |
+| [Page](./page.md) | Curated notes and references for page. |
+
+## Related pages
+
+- [Page](./page.md)

@@ -1,14 +1,22 @@
 ---
-title: "\"\\\"Torrents & DHT Network\\\"\""
+title: \"\\\"Torrents & DHT Network\\\"\
 description: Autonomous (self-hosted) BitTorrent DHT search engine suite.
 ---
 
-# Torrents & DHT Network
+# \"\\\"Torrents & DHT Network\\\"\
 
-## Overview
+## Source
+- Source URL not captured in original stub.
 
-*This page documents **Torrents & DHT Network**.*
+## Summary
 
-## In this section
+- Covers key material related to **\"\\\"Torrents & DHT Network\\\"\**.
+- Use this page as a launch point before drilling into implementation details.
 
-- [Magnetico](./torrents-and-dht-network/magnetico.md) — Autonomous (self-hosted) BitTorrent DHT search engine suite.
+## Related pages
+
+- [Magnetico](./torrents-and-dht-network/magnetico.md)
+- [Readme](./README.md)
+- [Adhd And Programming](./adhd-and-programming/README.md)
+- [Firewall Rules To Allow Chromecast](./firewall-rules-to-allow-chromecast.md)
+- [Ubuntu Keyboard Backlight](./ubuntu-keyboard-backlight.md)

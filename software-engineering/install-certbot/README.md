@@ -1,12 +1,25 @@
 ---
 title: Install Certbot
-description: "\"\\\"Instructions for installing and using Certbot for Let's Encrypt SSL/TLS certificates\\\"\""
+description: \"\\\"Instructions for installing and using Certbot for Let's Encrypt SSL/TLS certificates\\\"\
 ---
 
 # Install Certbot
 
-Instructions for installing and using Certbot to obtain and manage SSL/TLS certificates from Let's Encrypt.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
+
+| Page | Notes |
+| --- | --- |
+| [Certbot Instructions](./certbot-instructions.md) | Curated notes and references for certbot instructions. |
+
+## Install / Run
+
+```bash
+# Add project-specific install or run commands here
+```
+
+## Related pages
 
 - [Certbot Instructions](./certbot-instructions.md)

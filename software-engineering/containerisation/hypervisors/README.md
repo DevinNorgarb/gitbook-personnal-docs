@@ -5,8 +5,15 @@ description: Hypervisors — ProxMox
 
 # Hypervisors
 
-Notes and links for **Hypervisors**.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
 
-- [ProxMox](./proxmox/README.md) — "\"*This page documents **Page 1**.*\""
+| Page | Notes |
+| --- | --- |
+| [Proxmox](./proxmox/README.md) | Curated notes and references for proxmox. |
+
+## Related pages
+
+- [ProxMox](./proxmox/README.md)

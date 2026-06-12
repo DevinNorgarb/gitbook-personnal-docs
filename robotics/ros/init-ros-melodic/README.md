@@ -5,8 +5,15 @@ description: ROS Melodic install notes — Ubuntu packages and wiki references
 
 # Init ROS Melodic
 
-ROS Melodic installation notes for Ubuntu and related setup links.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
 
-- [ROS Wiki](./ros-wiki.md) — We are building Debian packages for several Ubuntu platforms, listed below. These packages are more efficient than source-based builds and a
+| Page | Notes |
+| --- | --- |
+| [ROS Wiki](./ros-wiki.md) | Curated notes and references for ros wiki. |
+
+## Related pages
+
+- [ROS Wiki](./ros-wiki.md)

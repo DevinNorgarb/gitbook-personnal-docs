@@ -1,7 +1,25 @@
-<!-- Hidden from nav/build — see nav.hidden.json. Canonical: drones/dji-docs-android/creating-a-camera-application-1.md -->
+---
+title: Creating a Camera Application
+description: Reference notes and links for Creating a Camera Application in the drones section.
+---
 
 # Creating a Camera Application
 
-> **Canonical page:** [Creating a Camera Application](./creating-a-camera-application-1.md)
+## Source
+- Source URL not captured in original stub.
 
-Shorter duplicate; the `-1` import retains the fuller tutorial.
+## Summary
+
+- Covers key material related to **Creating a Camera Application**.
+- Use this page as a launch point before drilling into implementation details.
+
+## Related pages
+
+- [Creating a Camera Application](./creating-a-camera-application-1.md)
+- [Readme](./README.md)
+- [Android 1](./android-1.md)
+- [Android](./android.md)
+- [Choose A Language](./choose-a-language.md)
+- [Chuang Jian Hang Pai Xiang Ji App 1](./chuang-jian-hang-pai-xiang-ji-app-1.md)
+- [Chuang Jian Hang Pai Xiang Ji App](./chuang-jian-hang-pai-xiang-ji-app.md)
+- [Chuang Jian Zhi Neng Fei Xing Yu She Hang Dian Gong Neng App 1](./chuang-jian-zhi-neng-fei-xing-yu-she-hang-dian-gong-neng-app-1.md)

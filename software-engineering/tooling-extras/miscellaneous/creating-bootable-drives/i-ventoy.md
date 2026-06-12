@@ -1,7 +1,21 @@
+---
+title: i-Ventoy
+description: Reference notes and links for i-Ventoy in the software engineering section.
+---
+
 # i-Ventoy
 
-For creating PXE boot disks
+## Source
+- https://www.youtube.com/watch?v=sv0sVLjyPqw
+- https://www.iventoy.com/en/index.html
 
-<https://www.youtube.com/watch?v=sv0sVLjyPqw>
+## Summary
 
-<https://www.iventoy.com/en/index.html>
+- Covers key material related to **i-Ventoy**.
+- Consolidates the original source links for quick retrieval.
+- Use this page as a launch point before drilling into implementation details.
+
+## Related pages
+
+- [Readme](./README.md)
+- [Ventoy](./ventoy.md)

@@ -1,8 +1,25 @@
+---
+title: Cordova
+description: Reference notes and links for Cordova in the software engineering section.
+---
+
 # Cordova
 
+## Source
+- Source URL not captured in original stub.
 
-## Overview
+## Summary
 
-*This page documents **Cordova**.*
+- Covers key material related to **Cordova**.
+- Use this page as a launch point before drilling into implementation details.
 
+## Related pages
 
+- [Readme](./README.md)
+- [ADB](./adb/README.md)
+- [Android Runtime How Dalvik And Art Work](./android-runtime-how-dalvik-and-art-work.md)
+- [Capacitor](./capacitor.md)
+- [Compilesdk And Targetsdk Version Mappings](./compilesdk-and-targetsdk-version-mappings.md)
+- [Custom Os](./custom-os/README.md)
+- [Ionic](./ionic.md)
+- [Quasar.js](./quasar.js.md)

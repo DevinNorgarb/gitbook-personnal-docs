@@ -1,12 +1,21 @@
 ---
-coverY: 0
 title: apt
 description: Apt defaults to using the set of architectures reported by dpkg, and any unqualified architecture deb lines in /etc/apt/sources.list, which
 ---
 
 # apt
 
-## In this section
+## Source
+- Source URL not captured in original stub.
 
-- [MultiArch apt Sources](./multiarch-apt-sources.md) — apt-sources can be architecture qualified with this syntax. This is very useful on Ubuntu's split archive. It is not normally necessary on D
+## Overview
+
+| Page | Notes |
+| --- | --- |
+| [Multiarch Apt Sources](./multiarch-apt-sources.md) | Curated notes and references for multiarch apt sources. |
+| [Ubuntu 22.04 Lts Arm Risc V Jammy Jellyfish Full Sources.list](./ubuntu-22.04-lts-arm-risc-v-jammy-jellyfish-full-sources.list.md) | Curated notes and references for ubuntu 22.04 lts arm risc v jammy jellyfish full sources.list. |
+
+## Related pages
+
+- [MultiArch apt Sources](./multiarch-apt-sources.md)
 - [Ubuntu 22.04 LTS (ARM/RISC-V) (Jammy Jellyfish) -- Full sources.list](./ubuntu-22.04-lts-arm-risc-v-jammy-jellyfish-full-sources.list.md)

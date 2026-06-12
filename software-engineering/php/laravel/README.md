@@ -1,14 +1,23 @@
 ---
 title: Laravel
-description: "\"\\\"The Laravel Service Container is a powerful tool for managing dependencies of classes and doing the injection of dependencies. This basicall; *This page documents **Inertia Guide**.*\\\"\""
+description: \"\\\"The Laravel Service Container is a powerful tool for managing dependencies of classes and doing the injection of dependencies. This basicall; *This page documents **Inertia Guide**.*\\\"\
 ---
 
 # Laravel
 
-Notes and links for **Laravel**.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
 
-- [IoC Container Guide](./ioc-container-guide.md) — The Laravel Service Container is a powerful tool for managing dependencies of classes and doing the injection of dependencies. This basicall
-- [Inertia Guide](./inertia-guide.md) — *This page documents **Inertia Guide**.*
-- [How to use Lando for local development with Laravel](./how-to-use-lando-for-local-development-with-laravel/README.md) — "\"The first time I tried to get this working, once the cluster was up, the traefik pods were in CrashloopBackoff due to ip\\\\_forwarding b
+| Page | Notes |
+| --- | --- |
+| [How To Use Lando For Local Development With Laravel](./how-to-use-lando-for-local-development-with-laravel/README.md) | Curated notes and references for how to use lando for local development with laravel. |
+| [Inertia Guide](./inertia-guide.md) | Curated notes and references for inertia guide. |
+| [Ioc Container Guide](./ioc-container-guide.md) | Curated notes and references for ioc container guide. |
+
+## Related pages
+
+- [IoC Container Guide](./ioc-container-guide.md)
+- [Inertia Guide](./inertia-guide.md)
+- [How to use Lando for local development with Laravel](./how-to-use-lando-for-local-development-with-laravel/README.md)

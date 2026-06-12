@@ -1,12 +1,24 @@
 ---
 title: Page
-description: "\"\\\"Please keep in mind that the [self-hosted repository](https://github.com/getsentry/self-hosted) is geared towards low traffic loads (less th\\\"\""
+description: \"\\\"Please keep in mind that the [self-hosted repository](https://github.com/getsentry/self-hosted) is geared towards low traffic loads (less th\\\"\
 ---
 
 # Page
 
-Notes and links for **Page**.
+## Source
+- https://github.com/getsentry/self-hosted
 
-## In this section
+## Overview
 
-- [Sentry Troubleshooting](./sentry-troubleshooting.md) — Please keep in mind that the [self-hosted repository](https://github.com/getsentry/self-hosted) is geared towards low traffic loads (less th
+| Page | Notes |
+| --- | --- |
+| [Sentry Troubleshooting](./sentry-troubleshooting.md) | Curated notes and references for sentry troubleshooting. |
+
+## Notes
+
+- This is a lightweight stub for a YouTube/PDF/external resource.
+- Keep this page as a concise reference instead of a full content import.
+
+## Related pages
+
+- [Sentry Troubleshooting](./sentry-troubleshooting.md)

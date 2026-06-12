@@ -1,15 +1,31 @@
 ---
 title: decompilers
-description: "\"\\\"Java Decompiler; https://github.com/Konloch/bytecode-viewer/releases\\\"\""
+description: \"\\\"Java Decompiler; https://github.com/Konloch/bytecode-viewer/releases\\\"\
 ---
 
 # decompilers
 
-Notes and links for **decompilers**.
+## Source
+- https://github.com/Konloch/bytecode-viewer/releases\\\"\""
+- https://github.com/Konloch/bytecode-viewer/releases"
 
-## In this section
+## Overview
 
-- [Android](./android/README.md) — "\"smali/baksmali is an assembler/disassembler for the dex format used by dalvik, Android's Java VM implementation. The syntax is loosely ba
-- [jd-gui](./jd-gui.md) — Java Decompiler
+| Page | Notes |
+| --- | --- |
+| [Android](./android/README.md) | Curated notes and references for android. |
+| [Bytecodeviewer](./bytecodeviewer.md) | Curated notes and references for bytecodeviewer. |
+| [Dex2jar](./dex2jar.md) | Curated notes and references for dex2jar. |
+| [Jd Gui](./jd-gui.md) | Curated notes and references for jd gui. |
+
+## Notes
+
+- This is a lightweight stub for a YouTube/PDF/external resource.
+- Keep this page as a concise reference instead of a full content import.
+
+## Related pages
+
+- [Android](./android/README.md)
+- [jd-gui](./jd-gui.md)
 - [dex2jar](./dex2jar.md)
-- [ByteCodeViewer](./bytecodeviewer.md) — "https://github.com/Konloch/bytecode-viewer/releases"
+- [ByteCodeViewer](./bytecodeviewer.md)

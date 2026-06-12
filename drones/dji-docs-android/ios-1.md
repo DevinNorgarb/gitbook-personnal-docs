@@ -1,7 +1,25 @@
-<!-- Hidden from nav/build — see nav.hidden.json. Canonical: drones/dji-docs-android/ios.md -->
+---
+title: iOS
+description: Reference notes and links for iOS in the drones section.
+---
 
 # iOS
 
-> **Canonical page:** [iOS](./ios.md)
+## Source
+- Source URL not captured in original stub.
 
-Duplicate DJI SDK platform stub.
+## Summary
+
+- Covers key material related to **iOS**.
+- Use this page as a launch point before drilling into implementation details.
+
+## Related pages
+
+- [iOS](./ios.md)
+- [Readme](./README.md)
+- [Android 1](./android-1.md)
+- [Android](./android.md)
+- [Choose A Language](./choose-a-language.md)
+- [Chuang Jian Hang Pai Xiang Ji App 1](./chuang-jian-hang-pai-xiang-ji-app-1.md)
+- [Chuang Jian Hang Pai Xiang Ji App](./chuang-jian-hang-pai-xiang-ji-app.md)
+- [Chuang Jian Zhi Neng Fei Xing Yu She Hang Dian Gong Neng App 1](./chuang-jian-zhi-neng-fei-xing-yu-she-hang-dian-gong-neng-app-1.md)

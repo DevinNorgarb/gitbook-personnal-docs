@@ -5,8 +5,13 @@ description: Frontend — CSS
 
 # Frontend
 
-Notes and links for **Frontend**.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
 
-- [CSS](../css/README.md) — Here are simple steps you can do to inspect and copy the CSS of an element from a website.
+- This section currently has no child pages linked from this README.
+
+## Related pages
+
+- [CSS](../css/README.md)

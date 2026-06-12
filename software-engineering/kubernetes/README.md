@@ -1,14 +1,23 @@
 ---
 title: Kubernetes
-description: "\"\\\"R; Remember to add these to this file `/run/flannel/subnet.env`\\\"\""
+description: \"\\\"R; Remember to add these to this file `/run/flannel/subnet.env`\\\"\
 ---
 
 # Kubernetes
 
-Notes and links for **Kubernetes**.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
+
+| Page | Notes |
+| --- | --- |
+| [K3s](./k3s.md) | Curated notes and references for k3s. |
+| [Rancher](./rancher.md) | Curated notes and references for rancher. |
+| [Single Node Cluster](./single-node-cluster.md) | Curated notes and references for single node cluster. |
+
+## Related pages
 
 - [K3s](./k3s.md)
-- [Rancher](./rancher.md) — Kubernetes cluster management platform.
-- [Single Node Cluster](./single-node-cluster.md) — Remember to add these to this file `/run/flannel/subnet.env`
+- [Rancher](./rancher.md)
+- [Single Node Cluster](./single-node-cluster.md)

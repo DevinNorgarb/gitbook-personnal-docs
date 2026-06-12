@@ -1,14 +1,25 @@
 ---
 title: Code Reviews
-description: "\"\\\"Code review is mandatory at Sentry. This adds overhead to each change, but ensures that simple, often overlooked problems are more easily av; Note: Always make sure to take into account The Standard of Code Review when considering each of these points.\\\"\""
+description: \"\\\"Code review is mandatory at Sentry. This adds overhead to each change, but ensures that simple, often overlooked problems are more easily av; Note: Always make sure to take into account The Standard of Code Review when considering each of these points.\\\"\
 ---
 
 # Code Reviews
 
-Notes and links for **Code Reviews**.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
 
-- [Sentry's take on Code Reviews](./sentrys-take-on-code-reviews.md) — Code review is mandatory at Sentry. This adds overhead to each change, but ensures that simple, often overlooked problems are more easily av
-- [Google - Code Review](./google-code-review/README.md) — "\"**At Google, we optimize for the speed at which a team of developers can produce a product together**, as opposed to optimizing for the s
-- [How to Make Good Code Reviews Better](./how-to-make-good-code-reviews-better.md) — I have been doing day-to-day code reviews for over a decade now. The benefits of code reviews are plenty: someone spot checks your work for
+| Page | Notes |
+| --- | --- |
+| [Google Code Review](./google-code-review/README.md) | Curated notes and references for google code review. |
+| [How To Make Good Code Reviews Better](./how-to-make-good-code-reviews-better.md) | Curated notes and references for how to make good code reviews better. |
+| [Post On Pull Requests](./post-on-pull-requests.md) | Curated notes and references for post on pull requests. |
+| [Sentrys Take On Code Reviews](./sentrys-take-on-code-reviews.md) | Curated notes and references for sentrys take on code reviews. |
+
+## Related pages
+
+- [Sentry's take on Code Reviews](./sentrys-take-on-code-reviews.md)
+- [Google - Code Review](./google-code-review/README.md)
+- [How to Make Good Code Reviews Better](./how-to-make-good-code-reviews-better.md)
+- [Post On Pull Requests](./post-on-pull-requests.md)
