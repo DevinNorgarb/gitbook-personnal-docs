@@ -1,5 +1,6 @@
 import DefaultTheme from "vitepress/theme";
 import * as Sentry from "@sentry/vue";
+import "./custom.css";
 
 export default {
   extends: DefaultTheme,

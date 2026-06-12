@@ -10,9 +10,10 @@ const navHidden = JSON.parse(
 );
 
 export default defineConfig({
-  title: "Personal Documentation",
+  title: "Devin Norgarb",
+  titleTemplate: ":title · Notes",
   description:
-    "Software engineering, hardware, robotics, GIS, and related notes.",
+    "Public knowledge base — software engineering, embedded systems, robotics, GIS, and project notes.",
   // Custom domain serves docs at the root.
   base: "/",
   vite: {
@@ -49,6 +50,18 @@ export default defineConfig({
     search: {
       provider: "local",
     },
+    nav: [
+      { text: "Home", link: "/" },
+      {
+        text: "Snippets",
+        link: "/snippets-and-scripts/install-scripts/README",
+      },
+      {
+        text: "Software",
+        link: "/software-engineering/webassembly/README",
+      },
+      { text: "Robotics", link: "/robotics/communication-protocols/README" },
+    ],
     sidebar,
     socialLinks: [
       {
@@ -57,8 +70,8 @@ export default defineConfig({
       },
     ],
     footer: {
-      message: "Personal notes",
-      copyright: "Built with VitePress",
+      message: "Curated technical notes — open source on GitHub",
+      copyright: "Devin Norgarb",
     },
   },
 });
