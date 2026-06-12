@@ -1,13 +1,25 @@
 ---
 title: Web Sockets
-description: "\"\\\"![](https://miro.medium.com/max/942/1\\\\\\\\*SD2DJOX\\\\\\\\_RgOZk9y1fJL\\\\\\\\_Zg.png); Testing Websockets\\\"\""
+description: WebSocket testing tools and Socket.IO debugging notes.
 ---
 
 # Web Sockets
 
-Notes and links for **Web Sockets**.
+Resources for **testing WebSocket** connections and debugging **Socket.IO** traffic during development.
 
 ## In this section
 
-- [Testing Socket.IO with Postman](./testing-socketio-with-postman.md) — ![](https://miro.medium.com/max/942/1\*SD2DJOX\_RgOZk9y1fJL\_Zg.png)
-- [Socket Client Tool](./socket-client-tool.md) — Testing Websockets
+| Page | Focus |
+|------|--------|
+| [Testing Socket.IO with Postman](./testing-socketio-with-postman.md) | Debug Socket.IO from Postman |
+| [Socket Client Tool](./socket-client-tool.md) | Browser-based WS/Socket.IO testers |
+
+## When to use
+
+- Validate handshake, auth headers, and message payloads before production
+- Reproduce intermittent disconnects with manual ping/pong tests
+- Compare raw WebSocket vs Socket.IO event framing
+
+## Related
+
+- [Networking](../README.md)
