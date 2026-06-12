@@ -1,13 +1,37 @@
 ---
 title: Libraries
-description: "\"\\\"It was troublesome to have to prepare a vehicle when making OBD2 device and related services. With this OBD2 simulator, you can develop OBD2; **A Python emulator of the ELM327 OBD-II adapter connected to a vehicle supporting multi-ECU simulation.**\\\"\""
+description: Python OBD-II simulators — ELM327 emulator and OBD2 simulator.
 ---
 
 # Libraries
 
-[https://pypi.org/project/ELM327-emulator/](https://pypi.org/project/ELM327-emulator/)
+Python libraries for **simulating OBD-II / ELM327** adapters during app development without a vehicle.
+
+## Source
+
+- [ELM327-emulator on PyPI](https://pypi.org/project/ELM327-emulator/)
 
 ## In this section
 
-- [OBD2 Simulator](./obd2-simulator.md) — It was troublesome to have to prepare a vehicle when making OBD2 device and related services. With this OBD2 simulator, you can develop OBD2
-- [ELM327-emulator](./elm327-emulator.md) — **A Python emulator of the ELM327 OBD-II adapter connected to a vehicle supporting multi-ECU simulation.**
+| Package | Role |
+|---------|------|
+| [OBD2 Simulator](./obd2-simulator.md) | Full OBD2 stack simulation for device testing |
+| [ELM327-emulator](./elm327-emulator.md) | Multi-ECU ELM327 adapter emulator |
+
+## ELM327-emulator highlights
+
+- Serial, TCP/IP, or Bluetooth transport
+- Stateless OBD-II + stateful UDS / ISO-TP / KWP2000
+- Plugin architecture for custom ECU scenarios (`scenario car` = Toyota Auris Hybrid flow)
+- Works with **python-OBD** and mobile OBD apps
+
+## Install
+
+```bash
+pip install ELM327-emulator
+```
+
+## Related
+
+- [OBDII Simulators](../README.md)
+- [Creating A Wireless OBDII Scanner](../../guides/creating-a-wireless-obdii-scanner.md)

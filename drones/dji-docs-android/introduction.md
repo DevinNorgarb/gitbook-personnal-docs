@@ -1,7 +1,36 @@
+---
+title: Introduction
+description: DJI Mobile SDK — deprecated GitBook, use official developer docs.
+---
+
 # Introduction
 
-## DJI Mobile SDK Tutorials <a href="#dji-mobile-sdk-tutorials" id="dji-mobile-sdk-tutorials"></a>
+Entry point for **DJI Mobile SDK** Android/iOS integration — building apps that control DJI aircraft and consume live video telemetry.
 
-### Deprecated <a href="#deprecated" id="deprecated"></a>
+## Source
 
-This Gitbook is now deprecated, please refer to the iOS & Android tutorial sections in DJI Developer Website: [https://developer.dji.com/mobile-sdk/documentation/introduction/index.html](https://developer.dji.com/mobile-sdk/documentation/introduction/index.html).
+- [DJI Mobile SDK documentation](https://developer.dji.com/mobile-sdk/documentation/introduction/index.html) (**current**)
+- This GitBook mirror is **deprecated** per DJI
+
+## Deprecated notice
+
+> This Gitbook is now deprecated. Refer to the iOS & Android tutorial sections on the DJI Developer Website.
+
+## What the Mobile SDK provides
+
+- Aircraft connection and flight control APIs
+- Live video decoder hooks
+- Mission waypoints, follow-me, and payload SDK bridges (product-dependent)
+- Sample apps for Android Studio / Xcode
+
+## Getting started
+
+1. Register at [developer.dji.com](https://developer.dji.com/)
+2. Create an app → obtain API key
+3. Download Mobile SDK for your target platform
+4. Follow platform tutorials (permissions, USB, network link to remote controller)
+
+## Related
+
+- [DJI Docs Android](./README.md)
+- [DJI firmware tools](../../pen-testing/drones/dji-firmware-tools-github-repo.md)
