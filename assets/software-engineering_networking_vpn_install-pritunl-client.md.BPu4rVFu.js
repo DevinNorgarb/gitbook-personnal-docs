@@ -1,0 +1,9 @@
+import{_ as s,o as a,c as t,ag as e}from"./chunks/framework.DXGyWiRo.js";const g=JSON.parse('{"title":"Install Pritunl Client","description":"","frontmatter":{},"headers":[],"relativePath":"software-engineering/networking/vpn/install-pritunl-client.md","filePath":"software-engineering/networking/vpn/install-pritunl-client.md"}'),l={name:"software-engineering/networking/vpn/install-pritunl-client.md"};function i(p,n,r,c,o,d){return a(),t("div",null,[...n[0]||(n[0]=[e(`<h1 id="install-pritunl-client" tabindex="-1">Install Pritunl Client <a class="header-anchor" href="#install-pritunl-client" aria-label="Permalink to &quot;Install Pritunl Client&quot;">​</a></h1><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>sudo tee /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF</span></span>
+<span class="line"><span>deb https://repo.pritunl.com/stable/apt focal main</span></span>
+<span class="line"><span>EOF</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A</span></span>
+<span class="line"><span>sudo apt-get update</span></span>
+<span class="line"><span>sudo apt-get install pritunl-client-electron</span></span></code></pre></div><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>pritunl-client add pritunl://pritunl.url.com/ku/cdscdscdcds</span></span>
+<span class="line"><span>pritunl-client list</span></span>
+<span class="line"><span>pritunl-client start</span></span></code></pre></div>`,3)])])}const h=s(l,[["render",i]]);export{g as __pageData,h as default};
