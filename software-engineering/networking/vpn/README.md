@@ -1,15 +1,25 @@
 ---
 title: VPN
-description: "\"\\\"sudo nano /etc/sysctl.conf; *This page documents **UDP Holepunching**.*\\\"\""
+description: \"\\\"sudo nano /etc/sysctl.conf; *This page documents **UDP Holepunching**.*\\\"\
 ---
 
 # VPN
 
-Notes and links for **VPN**.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
+
+| Page | Notes |
+| --- | --- |
+| [Firewalls](./firewalls.md) | Curated notes and references for firewalls. |
+| [Install Pritunl Client](./install-pritunl-client.md) | Curated notes and references for install pritunl client. |
+| [Netmaker](./netmaker/README.md) | Curated notes and references for netmaker. |
+| [Udp Holepunching](./udp-holepunching.md) | Curated notes and references for udp holepunching. |
+
+## Related pages
 
 - [Install Pritunl Client](./install-pritunl-client.md)
-- [Firewalls](./firewalls.md) — sudo nano /etc/sysctl.conf
-- [UDP Holepunching](./udp-holepunching.md) — *This page documents **UDP Holepunching**.*
-- [NetMaker](./netmaker/README.md) — "\"This quick start guide is an **opinionated** guide for getting up and running with Netmaker as quickly as possible.\""
+- [Firewalls](./firewalls.md)
+- [UDP Holepunching](./udp-holepunching.md)
+- [NetMaker](./netmaker/README.md)

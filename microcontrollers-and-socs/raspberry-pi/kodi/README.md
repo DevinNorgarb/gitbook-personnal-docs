@@ -1,6 +1,13 @@
 ---
 title: Kodi
-description: "\"\\\"| [![Home icon grey.png](https://kodi.wiki/images/a/aa/Home_icon_grey.png)](https://kodi.wiki/view/Main_Page) | | | ![▶](https://kodi.wiki/i\\\"\""
+description: \"\\\"| [![Home icon grey.png](https://kodi.wiki/images/a/aa/Home_icon_grey.png)](https://kodi.wiki/view/Main_Page) | | | ![▶](https://kodi.wiki/i\\\"\
+---
+
+# Kodi
+
+## Source
+- https://kodi.wiki/images/a/aa/Home_icon_grey.png
+- https://kodi.wiki/i\\\"\""
 ---
 
 # Kodi
@@ -9,4 +16,17 @@ Notes and links for **Kodi**.
 
 ## In this section
 
-- [Wiki](./wiki.md) — | [![Home icon grey.png](https://kodi.wiki/images/a/aa/Home_icon_grey.png)](https://kodi.wiki/view/Main_Page) | | | ![▶](https://kodi.wiki/i
+- [Wiki](./wiki.md
+- https://kodi.wiki/view/Main_Page
+- https://kodi.wiki/i\\\"\""
+- https://kodi.wiki/i
+
+## Overview
+
+| Page | Notes |
+| --- | --- |
+| [Wiki](./wiki.md) | Curated notes and references for wiki. |
+
+## Related pages
+
+- [Wiki](./wiki.md)

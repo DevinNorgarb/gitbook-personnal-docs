@@ -1,8 +1,19 @@
+---
+title: Influx DB backup
+description: Reference notes and links for Influx DB backup in the snippets and scripts section.
+---
+
 # Influx DB backup
 
+## Source
+- Source URL not captured in original stub.
 
-```bash
-influxd backup -portable /path/to/backup/directory
-```
+## Summary
 
-<br>
+- Covers key material related to **Influx DB backup**.
+- Use this page as a launch point before drilling into implementation details.
+
+## Related pages
+
+- [Readme](./README.md)
+- [Bentasker Co Uk Tplink Tapo Kasa Influxdb](./bentasker-co-uk-tplink-tapo-kasa-influxdb.md)

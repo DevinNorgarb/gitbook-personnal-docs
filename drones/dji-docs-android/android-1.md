@@ -1,7 +1,25 @@
-<!-- Hidden from nav/build — see nav.hidden.json. Canonical: drones/dji-docs-android/android.md -->
+---
+title: Android
+description: Reference notes and links for Android in the drones section.
+---
 
 # Android
 
-> **Canonical page:** [Android](./android.md)
+## Source
+- Source URL not captured in original stub.
 
-Duplicate DJI SDK platform stub.
+## Summary
+
+- Covers key material related to **Android**.
+- Use this page as a launch point before drilling into implementation details.
+
+## Related pages
+
+- [Android](./android.md)
+- [Readme](./README.md)
+- [Choose A Language](./choose-a-language.md)
+- [Chuang Jian Hang Pai Xiang Ji App 1](./chuang-jian-hang-pai-xiang-ji-app-1.md)
+- [Chuang Jian Hang Pai Xiang Ji App](./chuang-jian-hang-pai-xiang-ji-app.md)
+- [Chuang Jian Zhi Neng Fei Xing Yu She Hang Dian Gong Neng App 1](./chuang-jian-zhi-neng-fei-xing-yu-she-hang-dian-gong-neng-app-1.md)
+- [Chuang Jian Zhi Neng Fei Xing Yu She Hang Dian Gong Neng App](./chuang-jian-zhi-neng-fei-xing-yu-she-hang-dian-gong-neng-app.md)
+- [Creating A Camera Application 1](./creating-a-camera-application-1.md)

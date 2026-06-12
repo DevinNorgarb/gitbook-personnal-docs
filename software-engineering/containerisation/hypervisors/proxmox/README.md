@@ -1,12 +1,19 @@
 ---
 title: ProxMox
-description: "\"\\\"*This page documents **Page 1**.*\\\"\""
+description: \"\\\"*This page documents **Page 1**.*\\\"\
 ---
 
 # ProxMox
 
-Notes and links for **ProxMox**.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
 
-- [Page 1](./page-1.md) — *This page documents **Page 1**.*
+| Page | Notes |
+| --- | --- |
+| [Page 1](./page-1.md) | Curated notes and references for page 1. |
+
+## Related pages
+
+- [Page 1](./page-1.md)

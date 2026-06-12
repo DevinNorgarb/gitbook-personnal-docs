@@ -1,13 +1,21 @@
 ---
-title: "\"\\\"Principles & Practices\\\"\""
+title: \"\\\"Principles & Practices\\\"\
 description: Imported summary of the Architectural Decision Records community homepage at adr.github.io
 ---
 
-# Principles & Practices
+# \"\\\"Principles & Practices\\\"\
 
-Notes and links for **Principles & Practices**.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
 
-- [Architectural Decision Records (adr.github.io)](./adr.github.io-architectural-decision-records-overview.md) — Imported summary of the Architectural Decision Records community homepage at adr.github.io
-- [Code Reviews](./code-reviews/README.md) — "\"Code review is mandatory at Sentry. This adds overhead to each change, but ensures that simple, often overlooked problems are more easily
+| Page | Notes |
+| --- | --- |
+| [Adr.github.io Architectural Decision Records Overview](./adr.github.io-architectural-decision-records-overview.md) | Curated notes and references for adr.github.io architectural decision records overview. |
+| [Code Reviews](./code-reviews/README.md) | Curated notes and references for code reviews. |
+
+## Related pages
+
+- [Architectural Decision Records (adr.github.io)](./adr.github.io-architectural-decision-records-overview.md)
+- [Code Reviews](./code-reviews/README.md)

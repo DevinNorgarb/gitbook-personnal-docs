@@ -5,8 +5,15 @@ description: Devops — Cloud-Init
 
 # Devops
 
-Notes and links for **Devops**.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
 
-- [Cloud-Init](./cloud-init/README.md) — "\"To validate the cloud-init config file, I used the Ubuntu cloud-init CLI command like so:; In order to set a hashed password, run this co
+| Page | Notes |
+| --- | --- |
+| [Cloud Init](./cloud-init/README.md) | Curated notes and references for cloud init. |
+
+## Related pages
+
+- [Cloud-Init](./cloud-init/README.md)

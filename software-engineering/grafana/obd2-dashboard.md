@@ -1,19 +1,26 @@
 ---
-description: "\"https://github.com/DevinNorgarb/obd-visualiser\""
+title: OBD2 Dashboard
+description: \"https://github.com/DevinNorgarb/obd-visualiser\
 ---
 
 # OBD2 Dashboard
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+## Source
+- https://github.com/DevinNorgarb/obd-visualiser\""
 
-![](<../../.gitbook/assets/2022-04-10\_20-21\_1 (copy).png>)
+## Summary
 
-![](<../../.gitbook/assets/2022-04-10\_20-20\_1 (1).png>)
+- Covers key material related to **OBD2 Dashboard**.
+- Consolidates the original source links for quick retrieval.
+- Use this page as a launch point before drilling into implementation details.
 
-![](../../.gitbook/assets/2022-04-10\_20-21.png)
+## Notes
 
-![](<../../.gitbook/assets/2022-04-10\_20-20 (2).png>) ![](<../../.gitbook/assets/2022-04-10\_20-19\_2 (1).png>)
+- This is a lightweight stub for a YouTube/PDF/external resource.
+- Keep this page as a concise reference instead of a full content import.
 
-![](../../.gitbook/assets/2022-04-10\_20-19\_2.png)
+## Related pages
 
-![](../../.gitbook/assets/2022-04-10\_20-19\_1.png)
+- [Readme](./README.md)
+- [Loki](./loki/README.md)
+- [Strava Dashboard](./strava-dashboard.md)

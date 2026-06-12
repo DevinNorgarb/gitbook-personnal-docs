@@ -1,12 +1,20 @@
 ---
 title: Embedded Systems
-description: "\"\\\"[kolban-ESP32.pdf](../../.gitbook/assets/kolban-ESP32.pdf)\\\"\""
+description: \"\\\"[kolban-ESP32.pdf](../../.gitbook/assets/kolban-ESP32.pdf)\\\"\
 ---
 
 # Embedded Systems
 
-Notes and links for **Embedded Systems**.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
 
-- [ESP32](./esp32.md) — [kolban-ESP32.pdf](../../.gitbook/assets/kolban-ESP32.pdf)
+| Page | Notes |
+| --- | --- |
+| [Esp32](./esp32.md) | Curated notes and references for esp32. |
+
+## Related pages
+
+- [kolban-ESP32.pdf](../../.gitbook/assets/kolban-ESP32.pdf)
+- [ESP32](./esp32.md)

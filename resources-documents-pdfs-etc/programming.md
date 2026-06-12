@@ -1,7 +1,25 @@
+---
+title: Programming
+description: Reference notes and links for Programming in the resources documents pdfs etc section.
+---
+
 # Programming
 
-[Algorithms_Illuminated_Part_1 (1).pdf](<../.gitbook/assets/Algorithms_Illuminated_Part_1 (1).pdf>)
+## Source
+- Source URL not captured in original stub.
 
-[The Linux Programming Interface.pdf](<../.gitbook/assets/The Linux Programming Interface.pdf>)
+## Summary
 
-[DataStructuresAndAlgorithmsInPython.pdf](../.gitbook/assets/DataStructuresAndAlgorithmsInPython.pdf)
+- Covers key material related to **Programming**.
+- Use this page as a launch point before drilling into implementation details.
+
+## Related pages
+
+- [DataStructuresAndAlgorithmsInPython.pdf](../.gitbook/assets/DataStructuresAndAlgorithmsInPython.pdf)
+- [Car Hacking](./car-hacking.md)
+- [Databases](./databases.md)
+- [Embedded Systems](./embedded-systems/README.md)
+- [Finance](./finance.md)
+- [Geospatial Development](./geospatial-development.md)
+- [Oauth2 Authentication](./oauth2-authentication.md)
+- [Pilots License](./pilots-license.md)

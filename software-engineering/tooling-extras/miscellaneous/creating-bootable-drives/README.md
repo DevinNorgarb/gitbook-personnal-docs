@@ -5,9 +5,17 @@ description: For creating PXE boot disks
 
 # Creating Bootable Drives
 
-Notes and links for **Creating Bootable Drives**.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
+
+| Page | Notes |
+| --- | --- |
+| [I Ventoy](./i-ventoy.md) | Curated notes and references for i ventoy. |
+| [Ventoy](./ventoy.md) | Curated notes and references for ventoy. |
+
+## Related pages
 
 - [Ventoy](./ventoy.md)
-- [i-Ventoy](./i-ventoy.md) — For creating PXE boot disks
+- [i-Ventoy](./i-ventoy.md)

@@ -1,12 +1,19 @@
 ---
 title: Custom OS
-description: "\"\\\"Do **not** continue after something fails!\\\"\""
+description: \"\\\"Do **not** continue after something fails!\\\"\
 ---
 
 # Custom OS
 
-Notes and links for **Custom OS**.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
 
-- [PixelExperience on Xiaomi Redmi](./pixelexperience-on-xiaomi-redmi.md) — Do **not** continue after something fails!
+| Page | Notes |
+| --- | --- |
+| [Pixelexperience On Xiaomi Redmi](./pixelexperience-on-xiaomi-redmi.md) | Curated notes and references for pixelexperience on xiaomi redmi. |
+
+## Related pages
+
+- [PixelExperience on Xiaomi Redmi](./pixelexperience-on-xiaomi-redmi.md)

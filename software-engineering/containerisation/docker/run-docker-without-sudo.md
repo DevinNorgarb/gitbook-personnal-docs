@@ -1,9 +1,25 @@
 ---
+title: Run docker without sudo
 description: Run Docker commands without sudo
 ---
 
 # Run docker without sudo
 
-> **Canonical runbook:** [Docker without root privileges](../../../snippets-and-scripts/install-scripts/install-docker-and-docker-compose/docker-without-root-privileges.md)
+## Source
+- Source URL not captured in original stub.
 
-This page is a navigation entry in the **Software Engineering → Docker** section. See the canonical runbook for full steps, troubleshooting, and platform-specific notes (Ubuntu service restart, Docker Desktop context, `gpasswd` alternative).
+## Summary
+
+- Covers key material related to **Run docker without sudo**.
+- Use this page as a launch point before drilling into implementation details.
+
+## Install / Run
+
+```bash
+# Add project-specific install or run commands here
+```
+
+## Related pages
+
+- [Docker without root privileges](../../../snippets-and-scripts/install-scripts/install-docker-and-docker-compose/docker-without-root-privileges.md)
+- [Multiarch Builds](./multiarch-builds.md)

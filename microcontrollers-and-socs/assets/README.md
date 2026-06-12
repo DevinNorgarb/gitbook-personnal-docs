@@ -1,5 +1,17 @@
+---
+title: Microcontrollers & SoCs assets
+description: Reference notes and links for Microcontrollers & SoCs assets in the microcontrollers and socs section.
+---
+
 # Microcontrollers & SoCs assets
 
-Topic-local images for pages under `microcontrollers-and-socs/`. See [Asset convention](../../.github/ASSET-CONVENTION.md).
+## Source
+- Source URL not captured in original stub.
 
-Each subdirectory is named after its ingest source slug (for example `github-bobbo117-mq135-air-quality-sensor/`).
+## Overview
+
+- This section currently has no child pages linked from this README.
+
+## Related pages
+
+- [Asset convention](../../.github/ASSET-CONVENTION.md)

@@ -1,9 +1,25 @@
-<!-- Hidden from nav/build — see nav.hidden.json. Canonical: software-engineering/tooling/miscellaneous/barrier-remote-keyboard-and-mouse.md -->
+---
+title: Barrier - Remote keyboard and mouse
+description: Reference notes and links for Barrier - Remote keyboard and mouse in the software engineering section.
+---
 
 # Barrier - Remote keyboard and mouse
 
-Moved to [Barrier - Remote keyboard and mouse](../tooling/miscellaneous/barrier-remote-keyboard-and-mouse.md).
+## Source
+- Source URL not captured in original stub.
 
-`apt install barrier`
+## Summary
 
-`barrierc -f --name raspberrypi --disable-crypto --enable-drag-drop 192.168.x.x`
+- Covers key material related to **Barrier - Remote keyboard and mouse**.
+- Use this page as a launch point before drilling into implementation details.
+
+## Related pages
+
+- [Barrier - Remote keyboard and mouse](../tooling/miscellaneous/barrier-remote-keyboard-and-mouse.md)
+- [Readme](./README.md)
+- [Backend](./backend/README.md)
+- [CSS](./css/README.md)
+- [Frontend](./frontend/README.md)
+- [Linux](./linux/README.md)
+- [Miscellaneous](./miscellaneous/README.md)
+- [Miscellaneous](./miscellaneous.md)

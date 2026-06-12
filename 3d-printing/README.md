@@ -5,9 +5,17 @@ description: Notes, gallery, and troubleshooting for 3D printing projects
 
 # 3D Printing
 
-Notes, gallery, and troubleshooting for 3D printing projects.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
 
-- [Gallery](./gallery.md) — ![](../.gitbook/assets/photo\_2022-04-10\_19-57-16.jpg)
-- [My problems](./my-problems.md) — *This page documents **My problems**.*
+| Page | Notes |
+| --- | --- |
+| [Gallery](./gallery.md) | Curated notes and references for gallery. |
+| [My Problems](./my-problems.md) | Curated notes and references for my problems. |
+
+## Related pages
+
+- [Gallery](./gallery.md)
+- [My problems](./my-problems.md)

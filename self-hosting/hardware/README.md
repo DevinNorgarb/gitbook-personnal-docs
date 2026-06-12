@@ -5,9 +5,17 @@ description: Self-hosted server hardware — IBM SystemX and Dell PowerEdge note
 
 # Hardware
 
-Self-hosted server hardware notes.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
 
-- [IBM SystemX x3690](./ibm-systemx-x3690.md) — This machine is a real beast.
-- [Dell PowerEdge 2950](./dell-poweredge-2950.md) — As the video title suggests, Louder than a Boeing 747
+| Page | Notes |
+| --- | --- |
+| [Dell Poweredge 2950](./dell-poweredge-2950.md) | Curated notes and references for dell poweredge 2950. |
+| [Ibm Systemx X3690](./ibm-systemx-x3690.md) | Curated notes and references for ibm systemx x3690. |
+
+## Related pages
+
+- [IBM SystemX x3690](./ibm-systemx-x3690.md)
+- [Dell PowerEdge 2950](./dell-poweredge-2950.md)

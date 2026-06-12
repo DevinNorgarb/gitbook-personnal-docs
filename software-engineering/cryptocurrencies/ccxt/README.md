@@ -5,8 +5,15 @@ description: Type / to search
 
 # ccxt
 
-Notes and links for **ccxt**.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
 
-- [manual](./manual.md) — Type / to search
+| Page | Notes |
+| --- | --- |
+| [Manual](./manual.md) | Curated notes and references for manual. |
+
+## Related pages
+
+- [manual](./manual.md)

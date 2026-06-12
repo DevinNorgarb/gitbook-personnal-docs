@@ -5,10 +5,19 @@ description: Cryptocurrencies — ccxt, Running your own bitcoin node, Trading B
 
 # Cryptocurrencies
 
-Notes and links for **Cryptocurrencies**.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
 
-- [ccxt](./ccxt/README.md) — Type / to search
-- [Running your own bitcoin node](./running-your-own-bitcoin-node/README.md) — "\"A full node is a program that fully validates transactions and blocks. Almost all full nodes also help the network by accepting transacti
-- [Trading Bots](./trading-bots.md) — Open-source crypto trading bot framework:
+| Page | Notes |
+| --- | --- |
+| [Ccxt](./ccxt/README.md) | Curated notes and references for ccxt. |
+| [Running Your Own Bitcoin Node](./running-your-own-bitcoin-node/README.md) | Curated notes and references for running your own bitcoin node. |
+| [Trading Bots](./trading-bots.md) | Curated notes and references for trading bots. |
+
+## Related pages
+
+- [ccxt](./ccxt/README.md)
+- [Running your own bitcoin node](./running-your-own-bitcoin-node/README.md)
+- [Trading Bots](./trading-bots.md)

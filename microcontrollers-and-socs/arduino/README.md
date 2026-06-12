@@ -1,14 +1,23 @@
 ---
 title: Arduino
-description: "\"\\\">-; Last updated: 3 years ago\\\"\""
+description: \"\\\">-; Last updated: 3 years ago\\\"\
 ---
 
 # Arduino
 
-Notes and links for **Arduino**.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
+
+| Page | Notes |
+| --- | --- |
+| [Elecrow Neo 6m GPS Shield](./elecrow-neo-6m-gps-shield.md) | Curated notes and references for elecrow neo 6m gps shield. |
+| [Forum Arduino Serial Input Basics](./forum-arduino-serial-input-basics.md) | Curated notes and references for forum arduino serial input basics. |
+| [K3s Tutorial Arduino](./k3s-tutorial-arduino.md) | Curated notes and references for k3s tutorial arduino. |
+
+## Related pages
 
 - [elecrow neo 6M GPS Shield](./elecrow-neo-6m-gps-shield.md)
-- [Serial Input Basics (forum)](./forum-arduino-serial-input-basics.md) — Imported notes from Robin2's classic Arduino forum tutorial on non-blocking serial reception
-- [Arduino (K3s tutorial notes)](./k3s-tutorial-arduino.md) — Last updated: 3 years ago
+- [Serial Input Basics (forum)](./forum-arduino-serial-input-basics.md)
+- [Arduino (K3s tutorial notes)](./k3s-tutorial-arduino.md)

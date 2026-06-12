@@ -1,15 +1,26 @@
 ---
 title: Car Hacking
-description: "\"\\\"0x00. INTRODUCTION; Credit https://curatedpython.com/p/yacht-yet-cantoolz-cantoolz/index.html\\\"\""
+description: \"\\\"0x00. INTRODUCTION; Credit https://curatedpython.com/p/yacht-yet-cantoolz-cantoolz/index.html\\\"\
 ---
 
 # Car Hacking
 
-Notes and links for **Car Hacking**.
+## Source
+- https://curatedpython.com/p/yacht-yet-cantoolz-cantoolz/index.html\\\"\""
+- https://curatedpython.com/p/yacht-yet-cantoolz-cantoolz/index.html"
 
-## In this section
+## Overview
 
-- [Chaos-Sec-Lab](./chaos-sec-lab.md) — 0x00. INTRODUCTION
-- [CuratedPython](./curatedpython.md) — "Credit https://curatedpython.com/p/yacht-yet-cantoolz-cantoolz/index.html"
-- [How to Hack and Upgrade Your Car, Using CAN Bus](./how-to-hack-and-upgrade-your-car-using-can-bus.md) — This document is aimed at those unfamiliar with CAN bus or the reverse engineering process, it will cover some very basic and advanced conce
-- [The Car Hacker’s Handbook](./the-car-hackers-handbook.md) — **A Guide for the Penetration Tester**
+| Page | Notes |
+| --- | --- |
+| [Chaos Sec Lab](./chaos-sec-lab.md) | Curated notes and references for chaos sec lab. |
+| [Curatedpython](./curatedpython.md) | Curated notes and references for curatedpython. |
+| [How To Hack And Upgrade Your Car Using Can Bus](./how-to-hack-and-upgrade-your-car-using-can-bus.md) | Curated notes and references for how to hack and upgrade your car using can bus. |
+| [The Car Hackers Handbook](./the-car-hackers-handbook.md) | Curated notes and references for the car hackers handbook. |
+
+## Related pages
+
+- [Chaos-Sec-Lab](./chaos-sec-lab.md)
+- [CuratedPython](./curatedpython.md)
+- [How to Hack and Upgrade Your Car, Using CAN Bus](./how-to-hack-and-upgrade-your-car-using-can-bus.md)
+- [The Car Hacker’s Handbook](./the-car-hackers-handbook.md)

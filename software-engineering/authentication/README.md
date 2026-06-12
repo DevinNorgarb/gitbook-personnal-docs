@@ -1,12 +1,20 @@
 ---
 title: Authentication
-description: "\"\\\"[Auth0-Infographic-Building-Constituent-Trust-GovTech.pdf](../../.gitbook/assets/Auth0-Infographic-Building-Constituent-Trust-GovTech.pdf)\\\"\""
+description: \"\\\"[Auth0-Infographic-Building-Constituent-Trust-GovTech.pdf](../../.gitbook/assets/Auth0-Infographic-Building-Constituent-Trust-GovTech.pdf)\\\"\
 ---
 
 # Authentication
 
-Notes and links for **Authentication**.
+## Source
+- Source URL not captured in original stub.
 
-## In this section
+## Overview
 
-- [OAuth2](./oauth2.md) — [Auth0-Infographic-Building-Constituent-Trust-GovTech.pdf](../../.gitbook/assets/Auth0-Infographic-Building-Constituent-Trust-GovTech.pdf)
+| Page | Notes |
+| --- | --- |
+| [Oauth2](./oauth2.md) | Curated notes and references for oauth2. |
+
+## Related pages
+
+- [Auth0-Infographic-Building-Constituent-Trust-GovTech.pdf](../../.gitbook/assets/Auth0-Infographic-Building-Constituent-Trust-GovTech.pdf)
+- [OAuth2](./oauth2.md)
