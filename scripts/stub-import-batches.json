@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "next_batch": 2,
+  "batches": [
+    {
+      "id": 1,
+      "label": "OBD2 related + pen-testing repos + ESP32 tools + scrapers",
+      "files": [
+        "obd2/related-projects/canreader.md",
+        "obd2/related-projects/carloop.io.md",
+        "obd2/related-projects/open-garages.md",
+        "pen-testing/beef.md",
+        "pen-testing/decompilers/dex2jar.md",
+        "pen-testing/decompilers/jd-gui.md",
+        "pen-testing/drones/dji-firmware-tools-github-repo.md",
+        "microcontrollers-and-socs/esp32/esp32-wifi-penetration-tool.md",
+        "microcontrollers-and-socs/esp32/evil-esp.md",
+        "microcontrollers-and-socs/esp32/esptool.md",
+        "random/torrents-and-dht-network/magnetico.md",
+        "web-scraping/scrapers.md"
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Raspberry Pi hotspot + Pi tools + install scripts (part 1)",
+      "files": [
+        "microcontrollers-and-socs/raspberry-pi/awesome-raspberry-pi.md",
+        "microcontrollers-and-socs/raspberry-pi/use-raspberry-pi-as-jtag-debugger.md",
+        "microcontrollers-and-socs/raspberry-pi/install-proxmox-on-a-raspberry-pi/pimox-pimox7.md",
+        "microcontrollers-and-socs/raspberry-pi/raspberry-pi-hotspot/hotspotos.md",
+        "microcontrollers-and-socs/raspberry-pi/raspberry-pi-hotspot/kupiki-hotspot-script.md",
+        "microcontrollers-and-socs/raspberry-pi/raspberry-pi-hotspot/rpi-wireless-hotspot.md",
+        "microcontrollers-and-socs/raspberry-pi/sim800l-gps-gprs-at-commands.md",
+        "snippets-and-scripts/install-scripts/python-libraries/poetry/README.md",
+        "snippets-and-scripts/install-scripts/samba-on-mac.md",
+        "snippets-and-scripts/install-scripts/rust.md",
+        "snippets-and-scripts/install-scripts/yarn.md",
+        "snippets-and-scripts/scripts/nginx-proxy-block.md"
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Install scripts (part 2) + misc tutorials",
+      "files": [
+        "snippets-and-scripts/install-scripts/composer.md",
+        "snippets-and-scripts/install-scripts/install-oh-my-zsh.md",
+        "snippets-and-scripts/install-scripts/python-libraries/README.md",
+        "snippets-and-scripts/install-scripts/python-libraries/pyenv/README.md",
+        "snippets-and-scripts/install-scripts/sdkman.md",
+        "misc/tutorials/install-ghost-blogging-platform-on-ubuntu.md",
+        "misc/tutorials/setting-up-k3s-in-lxc-containers-using-netmaker/install-k3s/README.md",
+        "random/adhd-and-programming/README.md",
+        "self-hosting/hardware/dell-poweredge-2950.md",
+        "pen-testing/drones/video-guide.md",
+        "pen-testing/kali-linux/README.md",
+        "robotics/sitl-1.md"
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Software engineering — docs, automation, android, ML",
+      "files": [
+        "software-engineering/documentation/tools.md",
+        "software-engineering/documentation/general.md",
+        "software-engineering/documentation/README.md",
+        "software-engineering/automation/README.md",
+        "software-engineering/android-app-development/capacitor.md",
+        "software-engineering/machine-learning/google-mlkit/README.md",
+        "software-engineering/machine-learning/google-mlkit/mlkit-barcode-android.md",
+        "software-engineering/machine-learning/openmv.io.md",
+        "software-engineering/programming/frontend/README.md",
+        "software-engineering/programming/frontend/javascript/README.md",
+        "software-engineering/cryptocurrencies/trading-bots.md",
+        "software-engineering/kubernetes/k3s.md"
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Software engineering — networking, browsers, containers, shopify",
+      "files": [
+        "software-engineering/networking/vpn/netmaker/README.md",
+        "software-engineering/networking/web-sockets/README.md",
+        "software-engineering/networking/web-sockets/socket-client-tool.md",
+        "software-engineering/browsers/README.md",
+        "software-engineering/browsers/extensions/README.md",
+        "software-engineering/browsers/apis/README.md",
+        "software-engineering/containerisation/docker.md",
+        "software-engineering/kubernetes/rancher.md",
+        "software-engineering/shopify-dev/carrier-services.md",
+        "software-engineering/shopify-dev/fulfilment-orders.md",
+        "software-engineering/webrtc/README.md",
+        "software-engineering/tooling-extras/testing/README.md"
+      ]
+    },
+    {
+      "id": 6,
+      "label": "GIS + IP cameras + OBD2 remaining",
+      "files": [
+        "gis/geocoding/README.md",
+        "gis/geocoding/mapbox-geocoding-api/README.md",
+        "gis/tile38.md",
+        "gis/vector-tiles.md",
+        "gis/mapbox-storytelling.md",
+        "ip-cameras/protocols/onvif.md",
+        "obd2/guides/creating-a-wireless-obdii-scanner.md",
+        "obd2/the-car-hacker-handbook-pdf.md",
+        "obd2/vehicle-tracking/README.md",
+        "obd2/obdii-simulators/libraries/README.md",
+        "drones/dji-docs-android/introduction.md",
+        "microcontrollers-and-socs/arduino/k3s-tutorial-arduino.md"
+      ]
+    }
+  ]
+}
