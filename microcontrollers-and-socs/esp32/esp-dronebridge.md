@@ -177,3 +177,7 @@ json-server db.json --routes routes.json
 ```
 
 Set `const ROOT_URL = "http://localhost:3000/"` inside `frontend/db_settings.js`
+
+## See also
+
+- [DroneBridge for Raspberry Pi (full system)](../../drones/dronebridge.md)

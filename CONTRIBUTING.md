@@ -21,7 +21,7 @@ This repository contains personal documentation originally organized like GitBoo
    ```
 
 3. Use a single H1 for the page title.
-4. Add the page to `SUMMARY.md` under the correct section, then run `npm run docs:gen-sidebar` (or `npm run docs:prep`) and commit the updated [`.vitepress/sidebar.generated.mjs`](.vitepress/sidebar.generated.mjs) so VitePress navigation stays in sync. CI runs `npm run docs:check-sidebar` to fail on drift.
+4. Add the page to `SUMMARY.md` under the correct section. You do **not** need to run generation locally for publish — CI runs `npm run docs:prep` (section indexes, topic links, sidebar) before every build. Use `npm run docs:dev` when you want a local preview with the same pipeline.
 
 ## Editing SUMMARY.md
 
@@ -39,6 +39,22 @@ Entries follow this format:
 ## Assets
 
 New images and downloads use **topic-local** paths per [.github/ASSET-CONVENTION.md](.github/ASSET-CONVENTION.md). Do not add files under `.gitbook/assets/`. Run `npm run docs:audit-assets` to list unreferenced legacy blobs before quarantine.
+
+## Cross-topic linking
+
+Some subjects appear in more than one sidebar tree (for example **Drones** under Pen Testing and as a top-level section). Cross-links are driven by [scripts/topic-clusters.json](scripts/topic-clusters.json).
+
+1. Add or edit a cluster in `topic-clusters.json` with:
+   - `hubs` — section `README.md` landing pages for each nav lens
+   - `related` — other pages readers should discover from those hubs
+   - `pageOverrides` — optional per-page `seeAlso` pairs (curated article-level links)
+2. CI applies cross-links on every build via `docs:gen-topic-links` (part of `docs:prep`). Locally, `npm run docs:dev` runs the same step before preview.
+3. To opt in a page to cluster footer links, add frontmatter `topics: [cluster-id]` (generates `## Related topics`).
+4. To keep hand-written links only, set `topicLinks: manual` in frontmatter.
+
+Do not hand-edit generated `## Related sections`, `## See also`, or `## Related topics` blocks — CI regenerates them on each build.
+
+Optional: run `npm run docs:check-generated` locally to verify committed generated files match source (same check as a full `docs:prep` + `git diff`).
 
 ## Style Guide
 

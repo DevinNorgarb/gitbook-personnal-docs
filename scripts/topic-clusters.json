@@ -1,0 +1,72 @@
+{
+  "drones": {
+    "title": "Drones",
+    "description": "DJI hardware, firmware, SDK, and security research.",
+    "hubs": [
+      {
+        "file": "pen-testing/drones/README.md",
+        "label": "Security & firmware hacking"
+      },
+      {
+        "file": "drones/README.md",
+        "label": "SDK, tooling & reference imports"
+      }
+    ],
+    "related": [
+      {
+        "file": "microcontrollers-and-socs/esp32/esp-dronebridge.md",
+        "label": "ESP32 DroneBridge firmware"
+      },
+      {
+        "file": "software-defined-radio/making-an-sdr-antenna.md",
+        "label": "SDR hardware (Aeroscope-adjacent)"
+      },
+      {
+        "file": "pen-testing/decompilers/android/README.md",
+        "label": "Android decompilers (DJI Pilot APK analysis)"
+      }
+    ],
+    "pageOverrides": {
+      "pen-testing/drones/dji-firmware-tools-github-repo.md": {
+        "seeAlso": [
+          {
+            "file": "drones/dji-firmware-tools.md",
+            "label": "Full upstream import (reference)"
+          }
+        ]
+      },
+      "drones/dji-firmware-tools.md": {
+        "seeAlso": [
+          {
+            "file": "pen-testing/drones/dji-firmware-tools-github-repo.md",
+            "label": "Curated summary with tool table"
+          }
+        ]
+      },
+      "drones/dronebridge.md": {
+        "seeAlso": [
+          {
+            "file": "microcontrollers-and-socs/esp32/esp-dronebridge.md",
+            "label": "ESP32 DroneBridge firmware"
+          }
+        ]
+      },
+      "microcontrollers-and-socs/esp32/esp-dronebridge.md": {
+        "seeAlso": [
+          {
+            "file": "drones/dronebridge.md",
+            "label": "DroneBridge for Raspberry Pi (full system)"
+          }
+        ]
+      },
+      "pen-testing/drones/synacktiv-dji-pilot-android-application-security-analysis.md": {
+        "seeAlso": [
+          {
+            "file": "drones/dji-docs-android/README.md",
+            "label": "DJI SDK Android documentation"
+          }
+        ]
+      }
+    }
+  }
+}

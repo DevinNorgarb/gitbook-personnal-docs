@@ -19,3 +19,10 @@ Notes and links for **Drones**.
 - [DIY DJI Aeroscope](./diy-dji-aeroscope.md) — This project is a receiver for DJI's Drone-ID protocol. The receiver works either live with an SDR, or offline on pre-recorded captures.
 - [DJI Pilot Android Application Security Analysis](./synacktiv-dji-pilot-android-application-security-analysis.md) — Imported note from Synacktiv
 - [Drone Encrypted Flight Logs (Yuneec ST-16)](./jamie-sharpe-drones-encrypted-flight-logs.md) — "Imported note from https://jamiesharpe.co.uk/2024/11/19/drones-encrypted-flight-logs/"
+
+## Related sections
+
+- [SDK, tooling & reference imports](../../drones/README.md)
+- [ESP32 DroneBridge firmware](../../microcontrollers-and-socs/esp32/esp-dronebridge.md)
+- [SDR hardware (Aeroscope-adjacent)](../../software-defined-radio/making-an-sdr-antenna.md)
+- [Android decompilers (DJI Pilot APK analysis)](../decompilers/android/README.md)

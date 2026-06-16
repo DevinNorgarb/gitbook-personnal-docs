@@ -39,6 +39,18 @@ description: Optional one-line summary (for tooltips/search)
 - Avoid GitBook import IDs (e.g. `/broken/pages/...`).
 - When linking to other sections, use paths relative to the current file.
 
+### Cross-topic sections (generated)
+
+`npm run docs:gen-topic-links` injects bounded blocks from [scripts/topic-clusters.json](../scripts/topic-clusters.json). Do not edit these sections by hand.
+
+| Heading | Where | Purpose |
+| --- | --- | --- |
+| `## Related sections` | Hub `README.md` files listed in a cluster | Links to sibling hubs and related pages in other nav trees |
+| `## See also` | Pages in `pageOverrides` | Curated cross-links between specific articles |
+| `## Related topics` | Pages with `topics: [cluster-id]` frontmatter | Footer links to cluster hubs and related pages |
+
+Set `topicLinks: manual` in frontmatter to skip automatic injection on a page.
+
 ## GitBook-Specific Syntax
 
 This repository was imported from GitBook. For **VitePress / GitHub Pages**, use portable markdown instead of GitBook tags:
@@ -49,7 +61,7 @@ This repository was imported from GitBook. For **VitePress / GitHub Pages**, use
 
 ## Publishing (VitePress)
 
-- Install Node.js 20+, then `npm ci`, `npm run docs:dev` (preview) or `npm run docs:build` (static output in `.vitepress/dist/`).
-- Navigation is defined in [SUMMARY.md](../SUMMARY.md); run `npm run docs:gen-sidebar` (or `docs:prep`) to regenerate [`.vitepress/sidebar.generated.mjs`](../.vitepress/sidebar.generated.mjs) after editing `SUMMARY.md`.
+- Install Node.js 20+, then `npm ci`, `npm run docs:dev` (preview; runs `docs:prep` first) or `npm run docs:build` (static output in `.vitepress/dist/`).
+- Navigation is defined in [SUMMARY.md](../SUMMARY.md). **CI** runs `docs:prep` before every deploy (section indexes, topic links, [`.vitepress/sidebar.generated.mjs`](../.vitepress/sidebar.generated.mjs)). Edit `SUMMARY.md` or [scripts/topic-clusters.json](../scripts/topic-clusters.json) — no local generation required for publish.
 - GitHub Actions ([`.github/workflows/vitepress.yml`](../.github/workflows/vitepress.yml)) builds and publishes to the `gh-pages` branch on pushes to `main`/`master`.
 - Site `base` is set in [`.vitepress/config.ts`](../.vitepress/config.ts) (`/` for the custom domain). The public URL is [https://docs.f1y.ing/](https://docs.f1y.ing/).

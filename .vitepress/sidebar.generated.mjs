@@ -1956,7 +1956,7 @@ export default [
     "text": "Pen Testing",
     "items": [
       {
-        "text": "Drones",
+        "text": "Drones (security research)",
         "link": "/pen-testing/drones/README",
         "items": [
           {
@@ -2196,67 +2196,74 @@ export default [
     "text": "Drones",
     "items": [
       {
-        "text": "DashWare Download",
-        "link": "/drones/dashware-download"
-      },
-      {
-        "text": "DJI Docs (Android)",
-        "link": "/drones/dji-docs-android/README",
+        "text": "Drones overview",
+        "link": "/drones/README",
         "items": [
           {
-            "text": "Choose a language",
-            "link": "/drones/dji-docs-android/choose-a-language"
+            "text": "DashWare Download",
+            "link": "/drones/dashware-download"
           },
           {
-            "text": "Introduction",
-            "link": "/drones/dji-docs-android/introduction"
+            "text": "DJI Docs (Android)",
+            "link": "/drones/dji-docs-android/README",
+            "items": [
+              {
+                "text": "Choose a language",
+                "link": "/drones/dji-docs-android/choose-a-language"
+              },
+              {
+                "text": "Introduction",
+                "link": "/drones/dji-docs-android/introduction"
+              },
+              {
+                "text": "Creating a Panorama Application",
+                "link": "/drones/dji-docs-android/creating-a-panorama-application-1"
+              },
+              {
+                "text": "Android",
+                "link": "/drones/dji-docs-android/android"
+              },
+              {
+                "text": "iOS",
+                "link": "/drones/dji-docs-android/ios"
+              },
+              {
+                "text": "Creating a Camera Application",
+                "link": "/drones/dji-docs-android/creating-a-camera-application-1"
+              },
+              {
+                "text": "Importing and Activating DJI SDK in Android Studio Project",
+                "link": "/drones/dji-docs-android/importing-and-activating-dji-sdk-in-android-studio-project"
+              },
+              {
+                "text": "Creating a MapView and Waypoint Application",
+                "link": "/drones/dji-docs-android/creating-a-mapview-and-waypoint-application"
+              },
+              {
+                "text": "Creating a Photo and Video Playback Application",
+                "link": "/drones/dji-docs-android/creating-a-photo-and-video-playback-application"
+              },
+              {
+                "text": "创建智能飞行预设航点功能App",
+                "link": "/drones/dji-docs-android/chuang-jian-zhi-neng-fei-xing-yu-she-hang-dian-gong-neng-app"
+              },
+              {
+                "text": "创建航拍相机App",
+                "link": "/drones/dji-docs-android/chuang-jian-hang-pai-xiang-ji-app"
+              }
+            ],
+            "collapsed": true
           },
           {
-            "text": "Creating a Panorama Application",
-            "link": "/drones/dji-docs-android/creating-a-panorama-application-1"
+            "text": "dji-firmware-tools",
+            "link": "/drones/dji-firmware-tools"
           },
           {
-            "text": "Android",
-            "link": "/drones/dji-docs-android/android"
-          },
-          {
-            "text": "iOS",
-            "link": "/drones/dji-docs-android/ios"
-          },
-          {
-            "text": "Creating a Camera Application",
-            "link": "/drones/dji-docs-android/creating-a-camera-application-1"
-          },
-          {
-            "text": "Importing and Activating DJI SDK in Android Studio Project",
-            "link": "/drones/dji-docs-android/importing-and-activating-dji-sdk-in-android-studio-project"
-          },
-          {
-            "text": "Creating a MapView and Waypoint Application",
-            "link": "/drones/dji-docs-android/creating-a-mapview-and-waypoint-application"
-          },
-          {
-            "text": "Creating a Photo and Video Playback Application",
-            "link": "/drones/dji-docs-android/creating-a-photo-and-video-playback-application"
-          },
-          {
-            "text": "创建智能飞行预设航点功能App",
-            "link": "/drones/dji-docs-android/chuang-jian-zhi-neng-fei-xing-yu-she-hang-dian-gong-neng-app"
-          },
-          {
-            "text": "创建航拍相机App",
-            "link": "/drones/dji-docs-android/chuang-jian-hang-pai-xiang-ji-app"
+            "text": "DroneBridge",
+            "link": "/drones/dronebridge"
           }
         ],
         "collapsed": true
-      },
-      {
-        "text": "dji-firmware-tools",
-        "link": "/drones/dji-firmware-tools"
-      },
-      {
-        "text": "DroneBridge",
-        "link": "/drones/dronebridge"
       }
     ],
     "collapsed": true

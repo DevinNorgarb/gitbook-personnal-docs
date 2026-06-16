@@ -425,7 +425,7 @@
 
 ## Pen Testing
 
-- [Drones](pen-testing/drones/README.md)
+- [Drones (security research)](pen-testing/drones/README.md)
   - [Video Guide](pen-testing/drones/video-guide.md)
   - [Rooting Mavic Pro in firmware with Force FCC and Boost and No NFZ](pen-testing/drones/rooting-mavic-pro-in-firmware-with-force-fcc-and-boost-and-no-nfz.md)
   - [dji-firmware-tools Github Repo](pen-testing/drones/dji-firmware-tools-github-repo.md)
@@ -482,21 +482,22 @@
 
 ## Drones
 
-- [DashWare Download](drones/dashware-download.md)
-- [DJI Docs (Android)](drones/dji-docs-android/README.md)
-  - [Choose a language](drones/dji-docs-android/choose-a-language.md)
-  - [Introduction](drones/dji-docs-android/introduction.md)
-  - [Creating a Panorama Application](drones/dji-docs-android/creating-a-panorama-application-1.md)
-  - [Android](drones/dji-docs-android/android.md)
-  - [iOS](drones/dji-docs-android/ios.md)
-  - [Creating a Camera Application](drones/dji-docs-android/creating-a-camera-application-1.md)
-  - [Importing and Activating DJI SDK in Android Studio Project](drones/dji-docs-android/importing-and-activating-dji-sdk-in-android-studio-project.md)
-  - [Creating a MapView and Waypoint Application](drones/dji-docs-android/creating-a-mapview-and-waypoint-application.md)
-  - [Creating a Photo and Video Playback Application](drones/dji-docs-android/creating-a-photo-and-video-playback-application.md)
-  - [创建智能飞行预设航点功能App](drones/dji-docs-android/chuang-jian-zhi-neng-fei-xing-yu-she-hang-dian-gong-neng-app.md)
-  - [创建航拍相机App](drones/dji-docs-android/chuang-jian-hang-pai-xiang-ji-app.md)
-- [dji-firmware-tools](drones/dji-firmware-tools.md)
-- [DroneBridge](drones/dronebridge.md)
+- [Drones overview](drones/README.md)
+  - [DashWare Download](drones/dashware-download.md)
+  - [DJI Docs (Android)](drones/dji-docs-android/README.md)
+    - [Choose a language](drones/dji-docs-android/choose-a-language.md)
+    - [Introduction](drones/dji-docs-android/introduction.md)
+    - [Creating a Panorama Application](drones/dji-docs-android/creating-a-panorama-application-1.md)
+    - [Android](drones/dji-docs-android/android.md)
+    - [iOS](drones/dji-docs-android/ios.md)
+    - [Creating a Camera Application](drones/dji-docs-android/creating-a-camera-application-1.md)
+    - [Importing and Activating DJI SDK in Android Studio Project](drones/dji-docs-android/importing-and-activating-dji-sdk-in-android-studio-project.md)
+    - [Creating a MapView and Waypoint Application](drones/dji-docs-android/creating-a-mapview-and-waypoint-application.md)
+    - [Creating a Photo and Video Playback Application](drones/dji-docs-android/creating-a-photo-and-video-playback-application.md)
+    - [创建智能飞行预设航点功能App](drones/dji-docs-android/chuang-jian-zhi-neng-fei-xing-yu-she-hang-dian-gong-neng-app.md)
+    - [创建航拍相机App](drones/dji-docs-android/chuang-jian-hang-pai-xiang-ji-app.md)
+  - [dji-firmware-tools](drones/dji-firmware-tools.md)
+  - [DroneBridge](drones/dronebridge.md)
 
 ## Software Defined Radio
 

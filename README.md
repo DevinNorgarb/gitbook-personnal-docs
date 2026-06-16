@@ -2,7 +2,7 @@
 
 Public knowledge base at **[docs.f1y.ing](https://docs.f1y.ing/)** — notes on software engineering, embedded systems, robotics, GIS, and related topics.
 
-The published site uses [VitePress](https://vitepress.dev/). Navigation is generated from **[SUMMARY.md](SUMMARY.md)** (`npm run docs:gen-sidebar`).
+The published site uses [VitePress](https://vitepress.dev/). Navigation and cross-topic links are generated from **[SUMMARY.md](SUMMARY.md)** and **[scripts/topic-clusters.json](scripts/topic-clusters.json)** in CI (`npm run docs:prep`) before each deploy.
 
 ## Site vs repository
 
@@ -24,8 +24,8 @@ See [.github/DOCUMENTATION-STYLE-GUIDE.md](.github/DOCUMENTATION-STYLE-GUIDE.md)
 ## Local development
 
 - **Prerequisites**: [Node.js](https://nodejs.org/) 20+ and `npm ci`.
-- **Local preview**: `npm run docs:dev` — regenerates section indexes and sidebar from `SUMMARY.md`, then starts VitePress (default port **5173**).
-- **Production build**: `npm run docs:build` writes to [`.vitepress/dist/`](.vitepress/dist/) (gitignored).
+- **Local preview**: `npm run docs:dev` — runs `docs:prep` then starts VitePress (default port **5173**).
+- **Production build**: `npm run docs:prep && npm run docs:build` locally, or rely on CI (prep then build). Output: [`.vitepress/dist/`](.vitepress/dist/) (gitignored).
 
 ## Publishing (GitHub Pages)
 

@@ -40,3 +40,7 @@ Synacktiv analyzed the Android `DJI Pilot` app (enterprise/professional drone se
 - Forced update pathways can materially increase exposure if they gate flight capability.
 - "Offline" operating modes may still depend on online steps for restricted-airspace workflows.
 - For sensitive deployments, software supply/update-channel trust is a primary risk factor.
+
+## See also
+
+- [DJI SDK Android documentation](../../drones/dji-docs-android/README.md)

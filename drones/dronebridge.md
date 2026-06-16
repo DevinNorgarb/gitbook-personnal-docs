@@ -101,3 +101,7 @@ There is a nightly branch with the most up to date code! It is not guaranteed th
 - All of the code (especially DroneBridge modules & lib\_dbcommon - C or Python) is under the Apache 2 license if not specified otherwise
 - WifiBroadcast legacy code (video, OSD, .profile, hello\_video) is licensed as specified or under the GPL v2 license
 - All Kernel drivers/patches are under GPL v2 license
+
+## See also
+
+- [ESP32 DroneBridge firmware](../microcontrollers-and-socs/esp32/esp-dronebridge.md)

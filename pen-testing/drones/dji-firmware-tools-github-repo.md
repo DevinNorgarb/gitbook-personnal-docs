@@ -37,7 +37,6 @@ Run any tool without arguments or with `--help` for usage. See `tests/` for work
 
 > **No step-by-step instructions** are provided intentionally — tools target engineers who understand the risks. Use at your own risk; investigate warnings before flashing modified firmware.
 
-## Related
+## See also
 
-- [Drones pen-testing section](./README.md)
-- [dji-firmware-tools](../../drones/dji-firmware-tools.md)
+- [Full upstream import (reference)](../../drones/dji-firmware-tools.md)
