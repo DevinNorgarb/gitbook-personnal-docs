@@ -62,6 +62,38 @@ features:
     linkText: Open section
 ---
 
+## Apps
+
+<p class="apps-lead">Android apps on Google Play — built for the field, not the store shelf.</p>
+
+<div class="apps-grid">
+
+<a class="app-card" href="https://play.google.com/store/apps/details?id=com.devsdev.gpsremote" target="_blank" rel="noopener noreferrer">
+  <img class="app-icon" src="/apps/gps-remote-icon.png" alt="GPS Remote for Osmo Action" width="72" height="72" loading="lazy" />
+  <div class="app-body">
+    <div class="app-meta">
+      <h3 class="app-name">GPS Remote for Osmo Action</h3>
+      <span class="app-badge">Photography</span>
+    </div>
+    <p class="app-tagline">Phone-as-GPS and BLE remote for Osmo Action &amp; 360 — geotag footage and control recording from your pocket.</p>
+    <span class="app-cta">Google Play</span>
+  </div>
+</a>
+
+<a class="app-card" href="https://play.google.com/store/apps/details?id=flight.track" target="_blank" rel="noopener noreferrer">
+  <img class="app-icon" src="/apps/sofly-icon.png" alt="SoFly" width="72" height="72" loading="lazy" />
+  <div class="app-body">
+    <div class="app-meta">
+      <h3 class="app-name">SoFly</h3>
+      <span class="app-badge">Maps &amp; Navigation</span>
+    </div>
+    <p class="app-tagline">Flight tracking and logging for pilots — GPS tracks, sync across devices, CSV export, privacy-first.</p>
+    <span class="app-cta">Google Play</span>
+  </div>
+</a>
+
+</div>
+
 ## More topics
 
 <div class="topic-grid">

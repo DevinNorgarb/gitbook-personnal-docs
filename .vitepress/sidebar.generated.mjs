@@ -299,6 +299,10 @@ export default [
           {
             "text": "Android Runtime - How Dalvik and ART Work",
             "link": "/software-engineering/android-app-development/android-runtime-how-dalvik-and-art-work"
+          },
+          {
+            "text": "GPS Remote for Osmo Action (Google Play)",
+            "link": "/software-engineering/android-app-development/play-google-com-gps-remote-for-osmo-action"
           }
         ],
         "collapsed": true
@@ -2360,6 +2364,10 @@ export default [
           {
             "text": "Awesome Cursor Skills",
             "link": "/misc/artificial-intelligence/github-awesome-cursor-skills"
+          },
+          {
+            "text": "What is MCP?",
+            "link": "/misc/artificial-intelligence/modelcontextprotocol-io-what-is-mcp"
           }
         ],
         "collapsed": true

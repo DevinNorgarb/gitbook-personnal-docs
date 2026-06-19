@@ -113,3 +113,123 @@
 .VPHome .topic-label {
   line-height: 1.3;
 }
+
+/* Published apps */
+.VPHome .apps-lead {
+  color: var(--vp-c-text-2);
+  font-size: 1rem;
+  line-height: 1.65;
+  margin: 0 0 1.25rem;
+}
+
+.VPHome .apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 1rem;
+  margin: 0;
+}
+
+.VPHome .app-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  background: linear-gradient(
+    145deg,
+    var(--vp-c-bg-soft) 0%,
+    color-mix(in srgb, var(--vp-c-brand-soft) 35%, var(--vp-c-bg-soft)) 100%
+  );
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  transition:
+    border-color 0.22s ease,
+    box-shadow 0.22s ease,
+    transform 0.22s ease;
+}
+
+.VPHome .app-card:hover {
+  border-color: color-mix(in srgb, var(--vp-c-brand-1) 55%, var(--vp-c-divider));
+  box-shadow:
+    0 10px 28px color-mix(in srgb, var(--vp-c-brand-1) 14%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--vp-c-brand-1) 8%, transparent);
+  transform: translateY(-2px);
+}
+
+.VPHome .app-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  flex-shrink: 0;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--vp-c-divider) 80%, transparent),
+    0 4px 14px color-mix(in srgb, var(--vp-c-text-1) 8%, transparent);
+}
+
+.VPHome .app-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.VPHome .app-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 0.65rem;
+}
+
+.VPHome .app-name {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.VPHome .app-badge {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--vp-c-brand-1);
+  background: color-mix(in srgb, var(--vp-c-brand-soft) 70%, transparent);
+  border: 1px solid color-mix(in srgb, var(--vp-c-brand-1) 18%, transparent);
+}
+
+.VPHome .app-tagline {
+  margin: 0;
+  color: var(--vp-c-text-2);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.VPHome .app-cta {
+  margin-top: 0.15rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
+  letter-spacing: 0.01em;
+}
+
+.VPHome .app-card:hover .app-cta {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .VPHome .app-card {
+    padding: 1rem;
+  }
+
+  .VPHome .app-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+  }
+}
