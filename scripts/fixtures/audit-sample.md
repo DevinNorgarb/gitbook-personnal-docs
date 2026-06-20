@@ -1,22 +1,17 @@
 ---
 title: Audit fixture
-description: Reference notes and links for Audit fixture in the scripts section.
 ---
 
-# Audit fixture
+# Sample
 
-## Source
-- https://example.com/x.png
+![local missing](./missing.png)
 
-## Summary
+[internal link](./also-missing.md)
 
-- Covers key material related to **Audit fixture**.
-- Consolidates the original source links for quick retrieval.
-- Use this page as a launch point before drilling into implementation details.
+![external](https://example.com/x.png)
 
-## Related pages
+[anchor only](#section)
 
-- [local missing](./missing.png)
-- [internal link](./also-missing.md)
-- [in fence](./ignored.png)
-- [Summary Navigation Sample](./summary-navigation-sample.md)
+```markdown
+![in fence](./ignored.png)
+```
