@@ -13,8 +13,8 @@ if [ "$#" -eq 0 ]; then
 fi
 
 if ! command -v gh >/dev/null 2>&1; then
-  echo "gh CLI required" >&2
-  exit 1
+  echo "[prune-action-artifacts] gh CLI not found — skipping artifact prune."
+  exit 0
 fi
 
 log() { echo "[prune-action-artifacts] $*"; }
