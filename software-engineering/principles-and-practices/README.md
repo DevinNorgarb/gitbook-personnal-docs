@@ -1,6 +1,6 @@
 ---
-title: \"\\\"Principles & Practices\\\"\
-description: Imported summary of the Architectural Decision Records community homepage at adr.github.io
+title: "\\\"\\\\\\\"Principles & Practices\\\\\\\"\\"
+description: "Notes on \\\"\\\\\\\"Principles & Practices\\\\\\\"\\."
 ---
 
 # \"\\\"Principles & Practices\\\"\

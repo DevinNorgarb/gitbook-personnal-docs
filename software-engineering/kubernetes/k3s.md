@@ -1,6 +1,6 @@
 ---
-title: K3s
-description: Lightweight Kubernetes — single binary, sqlite default, edge/IoT friendly.
+title: "K3s"
+description: "Notes on K3s."
 ---
 
 # K3s

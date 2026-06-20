@@ -1,6 +1,6 @@
 ---
-title: Raspberry Pi
-description: "\"\\\"[SIM800_Series_AT_Command_Manual_V1.09.pdf](../../.gitbook/assets/SIM800_Series_AT_Command_Manual_V1.09.pdf); https://linuxhint.com/install-arduino-ide-raspberry-pi/\\\"\""
+title: "Raspberry Pi"
+description: "Notes on Raspberry Pi."
 ---
 
 # Raspberry Pi

@@ -1,6 +1,6 @@
 ---
-title: Run docker without sudo
-description: Run Docker commands without sudo
+title: "Run docker without sudo"
+description: "Notes on Run docker without sudo."
 ---
 
 # Run docker without sudo

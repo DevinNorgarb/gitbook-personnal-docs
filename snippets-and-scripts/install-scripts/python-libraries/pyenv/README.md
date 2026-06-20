@@ -1,6 +1,6 @@
 ---
-title: pyenv
-description: Install and configure pyenv for multiple Python versions.
+title: "pyenv"
+description: "Notes on pyenv."
 ---
 
 # pyenv

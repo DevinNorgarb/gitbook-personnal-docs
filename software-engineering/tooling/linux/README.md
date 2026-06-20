@@ -1,6 +1,6 @@
 ---
-title: Linux
-description: \"\\\"*This page documents **LXC/LXD**.*\\\"\
+title: "Linux"
+description: "Notes on Linux."
 ---
 
 # Linux

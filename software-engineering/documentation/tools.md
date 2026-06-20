@@ -1,6 +1,6 @@
 ---
-title: Tools
-description: Obsidian — local-first notes, links, and knowledge bases.
+title: "Tools"
+description: "Notes on Tools."
 ---
 
 # Tools

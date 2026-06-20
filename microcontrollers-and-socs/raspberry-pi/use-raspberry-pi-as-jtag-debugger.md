@@ -1,6 +1,6 @@
 ---
-title: Use Raspberry Pi as JTAG Debugger
-description: PiOCD — use a Raspberry Pi as a JTAG dongle for embedded debug.
+title: "Use Raspberry Pi as JTAG Debugger"
+description: "Notes on Use Raspberry Pi as JTAG Debugger."
 ---
 
 # Use Raspberry Pi as JTAG Debugger

@@ -1,6 +1,6 @@
 ---
-title: LXC/LXD
-description: Linux containers with LXC/LXD — commands, networking, storage, and troubleshooting
+title: "LXC/LXD"
+description: "Notes on LXC/LXD."
 ---
 
 # LXC/LXD

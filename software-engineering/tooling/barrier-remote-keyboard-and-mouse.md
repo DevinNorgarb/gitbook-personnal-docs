@@ -1,6 +1,6 @@
 ---
-title: Barrier - Remote keyboard and mouse
-description: Reference notes and links for Barrier - Remote keyboard and mouse in the software engineering section.
+title: "Barrier - Remote keyboard and mouse"
+description: "Notes on Barrier - Remote keyboard and mouse."
 ---
 
 # Barrier - Remote keyboard and mouse

@@ -1,6 +1,6 @@
 ---
-title: Hardware
-description: Self-hosted server hardware — IBM SystemX and Dell PowerEdge notes
+title: "Hardware"
+description: "Notes on Hardware."
 ---
 
 # Hardware

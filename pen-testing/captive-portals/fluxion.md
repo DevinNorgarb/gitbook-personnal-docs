@@ -1,6 +1,6 @@
 ---
-title: fluxion
-description: Reference notes and links for fluxion in the pen testing section.
+title: "fluxion"
+description: "Notes on fluxion."
 ---
 
 # fluxion

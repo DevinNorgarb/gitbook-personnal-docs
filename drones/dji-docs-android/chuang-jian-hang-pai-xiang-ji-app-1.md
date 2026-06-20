@@ -1,6 +1,6 @@
 ---
-title: 创建航拍相机App
-description: Reference notes and links for 创建航拍相机App in the drones section.
+title: "创建航拍相机App"
+description: "Notes on 创建航拍相机App."
 ---
 
 # 创建航拍相机App

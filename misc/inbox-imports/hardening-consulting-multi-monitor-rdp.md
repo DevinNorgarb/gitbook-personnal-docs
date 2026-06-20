@@ -1,6 +1,6 @@
 ---
-title: Multi-monitor Support in RDP
-description: Imported note from Hardening Consulting
+title: "Multi-monitor Support in RDP"
+description: "Notes on Multi-monitor Support in RDP."
 ---
 
 # Multi-monitor Support in RDP

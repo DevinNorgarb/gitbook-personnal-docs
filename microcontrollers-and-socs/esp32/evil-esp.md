@@ -1,6 +1,6 @@
 ---
-title: EVIL-ESP
-description: Portable ESP8266 evil device — beacon spam, captive portal, evil twin.
+title: "EVIL-ESP"
+description: "Notes on EVIL-ESP."
 ---
 
 # EVIL-ESP

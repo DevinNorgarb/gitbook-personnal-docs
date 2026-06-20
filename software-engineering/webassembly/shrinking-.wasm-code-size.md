@@ -1,6 +1,6 @@
 ---
-description: This section will teach you how to optimize your .wasm
-coverY: 0
+title: "shrinking-.wasm-code-size"
+description: "Notes on shrinking-.wasm-code-size."
 ---
 
 # Shrinking .wasm Code Size

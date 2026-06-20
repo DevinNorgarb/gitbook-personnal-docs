@@ -1,6 +1,6 @@
 ---
-title: Socket Client Tool
-description: Browser tools for testing WebSocket and Socket.IO endpoints.
+title: "Socket Client Tool"
+description: "Notes on Socket Client Tool."
 ---
 
 # Socket Client Tool

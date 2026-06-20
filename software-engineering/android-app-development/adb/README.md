@@ -1,6 +1,6 @@
 ---
-title: adb
-description: Copy APK file from device to host using ADB
+title: "adb"
+description: "Notes on adb."
 ---
 
 # adb

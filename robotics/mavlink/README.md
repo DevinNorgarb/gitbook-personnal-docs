@@ -1,6 +1,6 @@
 ---
-title: Mavlink
-description: This page explains how to connect and configure a Raspberry Pi (RPi) so that it is able to communicate with a flight controller using the MA; ArduSub communicates with a protocol called MAVLink. Pymavlink is a python implementation of the MAVLink protocol. With pymavlink, it is pos
+title: "Mavlink"
+description: "Notes on Mavlink."
 ---
 
 # Mavlink

@@ -1,6 +1,6 @@
 ---
-title: Operations
-description: "\"\\\"The command provided is an `rsync` command used for backing up files from a remote server to a local directory. Here’s a breakdown of what i; **Prerequisites:**\\\"\""
+title: "Operations"
+description: "Notes on Operations."
 ---
 
 # Operations

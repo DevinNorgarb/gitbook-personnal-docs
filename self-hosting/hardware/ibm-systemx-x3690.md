@@ -1,6 +1,6 @@
 ---
-title: IBM System x3690
-description: Reference notes and links for IBM System x3690 in the self hosting section.
+title: "IBM System x3690"
+description: "Notes on IBM System x3690."
 ---
 
 # IBM System x3690

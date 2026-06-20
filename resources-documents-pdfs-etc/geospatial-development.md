@@ -1,6 +1,6 @@
 ---
-title: Geospatial Development
-description: Reference notes and links for Geospatial Development in the resources documents pdfs etc section.
+title: "Geospatial Development"
+description: "Notes on Geospatial Development."
 ---
 
 # Geospatial Development

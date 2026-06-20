@@ -1,6 +1,6 @@
 ---
-title: Programming
-description: Reference notes and links for Programming in the resources documents pdfs etc section.
+title: "Programming"
+description: "Notes on Programming."
 ---
 
 # Programming

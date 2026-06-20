@@ -1,6 +1,6 @@
 ---
-title: Cloud-Init
-description: \"\\\"To validate the cloud-init config file, I used the Ubuntu cloud-init CLI command like so:; In order to set a hashed password, run this command and enter your password when prompted:\\\"\
+title: "Cloud-Init"
+description: "Notes on Cloud-Init."
 ---
 
 # Cloud-Init

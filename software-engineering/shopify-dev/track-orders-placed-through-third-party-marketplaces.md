@@ -1,6 +1,6 @@
 ---
-title: Track orders placed through third-party marketplaces
-description: Shopify GraphQL Admin API workflow for Facebook/Google marketplace orders.
+title: "Track orders placed through third-party marketplaces"
+description: "Notes on Track orders placed through third-party marketplaces."
 ---
 
 # Track orders placed through third-party marketplaces

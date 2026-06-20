@@ -1,6 +1,6 @@
 ---
-title: Google MLKit
-description: On-device ML APIs for Android and iOS — vision, language, and more.
+title: "Google MLKit"
+description: "Notes on Google MLKit."
 ---
 
 # Google MLKit

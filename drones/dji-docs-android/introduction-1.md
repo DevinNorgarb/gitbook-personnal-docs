@@ -1,6 +1,6 @@
 ---
-title: Introduction
-description: Reference notes and links for Introduction in the drones section.
+title: "Introduction"
+description: "Notes on Introduction."
 ---
 
 # Introduction

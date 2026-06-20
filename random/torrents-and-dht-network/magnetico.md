@@ -1,6 +1,6 @@
 ---
-title: magnetico
-description: Autonomous BitTorrent DHT crawler — build a searchable magnet index.
+title: "magnetico"
+description: "Notes on magnetico."
 ---
 
 # magnetico

@@ -1,5 +1,6 @@
 ---
-description: "\"https://opennds.readthedocs.io/en/stable/\""
+title: "opennds"
+description: "Notes on opennds."
 ---
 
 # OpenNDS

@@ -1,6 +1,6 @@
 ---
-title: Yarn
-description: Install Yarn classic via the official install script.
+title: "Yarn"
+description: "Notes on Yarn."
 ---
 
 # Yarn

@@ -1,6 +1,6 @@
 ---
-description: Useful Magento CLI commands
-title: Magento
+title: "Magento"
+description: "Notes on Magento."
 ---
 
 # Magento

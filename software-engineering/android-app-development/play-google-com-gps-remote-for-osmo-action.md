@@ -1,6 +1,6 @@
 ---
-title: GPS Remote for Osmo Action
-description: Imported note from Google Play — GPS Remote for Osmo Action and related published Android apps.
+title: "GPS Remote for Osmo Action"
+description: "Notes on GPS Remote for Osmo Action."
 ---
 
 # GPS Remote for Osmo Action

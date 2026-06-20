@@ -1,6 +1,6 @@
 ---
-title: i-Ventoy
-description: Reference notes and links for i-Ventoy in the software engineering section.
+title: "i-Ventoy"
+description: "Notes on i-Ventoy."
 ---
 
 # i-Ventoy

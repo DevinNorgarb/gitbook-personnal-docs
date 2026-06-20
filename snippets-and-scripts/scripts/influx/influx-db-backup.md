@@ -1,6 +1,6 @@
 ---
-title: Influx DB backup
-description: Reference notes and links for Influx DB backup in the snippets and scripts section.
+title: "Influx DB backup"
+description: "Notes on Influx DB backup."
 ---
 
 # Influx DB backup

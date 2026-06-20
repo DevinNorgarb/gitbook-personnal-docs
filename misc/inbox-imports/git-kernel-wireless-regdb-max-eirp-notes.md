@@ -1,6 +1,6 @@
 ---
-title: Linux wireless-regdb (db.txt) — where limits look highest
-description: Notes from parsing sforshee wireless-regdb db.txt for maximum EIRP by country and band class
+title: "Linux wireless-regdb (db.txt) — where limits look highest"
+description: "Notes on Linux wireless-regdb (db.txt) — where limits look highest."
 ---
 
 # Linux wireless-regdb (`db.txt`) — maximum EIRP highlights

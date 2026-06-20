@@ -1,5 +1,6 @@
 ---
-description: simple openvpn or wireguard VPN server.
+title: "pivpn"
+description: "Notes on pivpn."
 ---
 
 # PiVPN

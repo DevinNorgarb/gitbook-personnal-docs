@@ -1,6 +1,6 @@
 ---
-title: Scrapers
-description: Curated list of web scraping libraries and frameworks.
+title: "Scrapers"
+description: "Notes on Scrapers."
 ---
 
 # Scrapers

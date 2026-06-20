@@ -1,6 +1,6 @@
 ---
-title: Miscellaneous
-description: \"\\\"`apt install barrier`\\\"\
+title: "Miscellaneous"
+description: "Notes on Miscellaneous."
 ---
 
 # Miscellaneous

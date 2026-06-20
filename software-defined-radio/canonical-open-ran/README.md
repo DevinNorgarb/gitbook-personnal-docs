@@ -1,6 +1,6 @@
 ---
-title: Canonical Open RAN
-description: "\"\\\"**Tags:** [Open RAN](https://ubuntu.com/blog/tag/open-ran) , [Telco](https://ubuntu.com/blog/tag/telco) , [Telco 5G](https://ubuntu.com/blog\\\"\""
+title: "Canonical Open RAN"
+description: "Notes on Canonical Open RAN."
 ---
 
 # Canonical Open RAN

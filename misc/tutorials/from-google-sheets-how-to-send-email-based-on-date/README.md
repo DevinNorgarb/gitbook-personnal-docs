@@ -1,6 +1,6 @@
 ---
-title: From Google Sheets, how to send email based on date
-description: "\"\\\"Continuing from my [previous post](https://aruva.medium.com/using-chatgpt-to-build-system-diagrams-part-i-69efc7603926), I wanted to focus o\\\"\""
+title: "From Google Sheets, how to send email based on date"
+description: "Notes on From Google Sheets, how to send email based on date."
 ---
 
 # From Google Sheets, how to send email based on date

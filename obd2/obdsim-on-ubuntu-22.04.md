@@ -1,6 +1,6 @@
 ---
-cover: ../.gitbook/assets/2022-06-19_21-58.png
-coverY: 0
+title: "obdsim-on-ubuntu-22.04"
+description: "Notes on obdsim-on-ubuntu-22.04."
 ---
 
 # obdsim on ubuntu 22.04

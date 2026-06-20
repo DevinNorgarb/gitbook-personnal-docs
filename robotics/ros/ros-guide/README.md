@@ -1,6 +1,6 @@
 ---
-title: Ros Guide
-description: \"\\\"'Credit: https://www.toptal.com/robotics/introduction-to-robot-operating-system'\\\"\
+title: "Ros Guide"
+description: "Notes on Ros Guide."
 ---
 
 # Ros Guide

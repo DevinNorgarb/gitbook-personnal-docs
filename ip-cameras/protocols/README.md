@@ -1,6 +1,6 @@
 ---
-title: Protocols
-description: \"\\\"[rfc2326.txt.pdf](../../../.gitbook/assets/rfc2326.txt.pdf); [ONVIF_Profile_-S_Specification_v1-2.pdf](../../.gitbook/assets/ONVIF_Profile_-S_Specification_v1-2.pdf)\\\"\
+title: "Protocols"
+description: "Notes on Protocols."
 ---
 
 # Protocols

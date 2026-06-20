@@ -1,7 +1,8 @@
 ---
 layout: landing
-title: Scripts
-description: "\"\\\"Get docker image sizes sorted by size; This page is a navigation entry in the **Scripts** section. The canonical runbook covers group setup, permission fixes, systemd boot configu\\\"\""
+
+title: "Scripts"
+description: "Notes on Scripts."
 ---
 
 # Scripts

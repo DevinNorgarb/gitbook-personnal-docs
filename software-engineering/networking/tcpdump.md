@@ -1,6 +1,6 @@
 ---
-title: TCPDump
-description: tcpdump cheat sheet — capture, filter, and inspect network traffic.
+title: "TCPDump"
+description: "Notes on TCPDump."
 ---
 
 # TCPDump

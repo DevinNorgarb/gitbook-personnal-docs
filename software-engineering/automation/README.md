@@ -1,6 +1,6 @@
 ---
-title: Automation
-description: Workflow automation with n8n and browser testing with Cypress.
+title: "Automation"
+description: "Notes on Automation."
 ---
 
 # Automation

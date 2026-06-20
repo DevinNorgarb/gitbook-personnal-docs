@@ -1,6 +1,6 @@
 ---
-title: Docker
-description: Container platform for developing, shipping, and running applications.
+title: "Docker"
+description: "Notes on Docker."
 ---
 
 # Docker

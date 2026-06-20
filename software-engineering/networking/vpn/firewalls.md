@@ -1,6 +1,6 @@
 ---
-title: Firewalls
-description: Reference notes and links for Firewalls in the software engineering section.
+title: "Firewalls"
+description: "Notes on Firewalls."
 ---
 
 # Firewalls

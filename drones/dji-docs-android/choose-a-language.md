@@ -1,6 +1,6 @@
 ---
-title: Choose a language
-description: Reference notes and links for Choose a language in the drones section.
+title: "Choose a language"
+description: "Notes on Choose a language."
 ---
 
 # Choose a language

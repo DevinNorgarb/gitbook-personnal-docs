@@ -1,6 +1,6 @@
 ---
-title: openmv.io
-description: OpenMV Cam — MicroPython machine vision on embedded cameras.
+title: "openmv.io"
+description: "Notes on openmv.io."
 ---
 
 # openmv.io

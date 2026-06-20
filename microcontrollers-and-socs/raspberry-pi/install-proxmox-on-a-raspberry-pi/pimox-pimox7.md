@@ -1,6 +1,6 @@
 ---
-title: pimox/pimox7
-description: Proxmox VE 7 port for Raspberry Pi — cluster Pis with x86 nodes.
+title: "pimox/pimox7"
+description: "Notes on pimox/pimox7."
 ---
 
 # pimox/pimox7

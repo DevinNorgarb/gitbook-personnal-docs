@@ -1,6 +1,6 @@
 ---
-title: Hypervisors
-description: Hypervisors — ProxMox
+title: "Hypervisors"
+description: "Notes on Hypervisors."
 ---
 
 # Hypervisors

@@ -1,5 +1,6 @@
 ---
-description: "\"https://blog.zakkemble.net/rpi4-pci-express-bridge-chip/\""
+title: "pci-express-bridge-chip"
+description: "Notes on pci-express-bridge-chip."
 ---
 
 # PCI-Express Bridge “Chip”

@@ -1,6 +1,6 @@
 ---
-title: Custom OS
-description: \"\\\"Do **not** continue after something fails!\\\"\
+title: "Custom OS"
+description: "Notes on Custom OS."
 ---
 
 # Custom OS

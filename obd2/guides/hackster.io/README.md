@@ -1,6 +1,6 @@
 ---
-title: Hackster.io
-description: "\"\\\"Fancy to see your's vehicle data online in real-time? If so, continue reading!; An attempt to achieve: 1. Shifter LEDs with RPM display 2. Manual gearbox sensing and display 3. CAN bus values forwarding to RaceChrono.\\\"\""
+title: "Hackster.io"
+description: "Notes on Hackster.io."
 ---
 
 # Hackster.io

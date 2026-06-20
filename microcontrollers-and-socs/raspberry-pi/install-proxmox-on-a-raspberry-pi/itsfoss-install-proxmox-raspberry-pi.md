@@ -1,6 +1,6 @@
 ---
-title: Installing Proxmox on a Raspberry Pi (It's FOSS)
-description: Imported install guide for Proxmox VE on Raspberry Pi using the apqa.cn ARM repository
+title: "Installing Proxmox on a Raspberry Pi (It's FOSS)"
+description: "Notes on Installing Proxmox on a Raspberry Pi (It's FOSS)."
 ---
 
 # Installing Proxmox on a Raspberry Pi to run Virtual Machines on it

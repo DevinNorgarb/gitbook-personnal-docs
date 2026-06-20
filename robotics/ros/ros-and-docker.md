@@ -1,5 +1,6 @@
 ---
-description: "\">-\""
+title: "ros-and-docker"
+description: "Notes on ros-and-docker."
 ---
 
 # ROS and Docker

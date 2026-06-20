@@ -1,6 +1,6 @@
 ---
-title: Bash
-description: Current date in Unix or Linux shell scripting and store it into a shell variable? How do I print the current date using Unix shell script? H
+title: "Bash"
+description: "Notes on Bash."
 ---
 
 # Bash

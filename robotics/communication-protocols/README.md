@@ -1,6 +1,6 @@
 ---
-title: Communication Protocols
-description: UART, I2C, SPI, and serial framing notes for microcontrollers and robotics wiring
+title: "Communication Protocols"
+description: "Notes on Communication Protocols."
 ---
 
 # Communication Protocols

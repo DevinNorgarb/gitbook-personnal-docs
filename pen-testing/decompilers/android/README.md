@@ -1,6 +1,6 @@
 ---
-title: Android
-description: \"\\\"smali/baksmali is an assembler/disassembler for the dex format used by dalvik, Android's Java VM implementation. The syntax is loosely based; Before you install APKTool, ensure that you have Java Development Kit (JDK) installed. APKTool requires Java to run.\\\"\
+title: "Android"
+description: "Notes on Android."
 ---
 
 # Android

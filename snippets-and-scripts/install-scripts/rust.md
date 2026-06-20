@@ -1,6 +1,6 @@
 ---
-title: Rust
-description: Install Rust via rustup.
+title: "Rust"
+description: "Notes on Rust."
 ---
 
 # Rust

@@ -1,5 +1,6 @@
 ---
-description: "\"https://securitytrails.com/blog/osint-tools\""
+title: "osint"
+description: "Notes on osint."
 ---
 
 # OSINT

@@ -1,6 +1,6 @@
 ---
-title: Mapbox Geocoding API
-description: Forward and reverse geocoding with Mapbox Search API.
+title: "Mapbox Geocoding API"
+description: "Notes on Mapbox Geocoding API."
 ---
 
 # Mapbox Geocoding API

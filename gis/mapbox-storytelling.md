@@ -1,6 +1,6 @@
 ---
-title: Mapbox Storytelling
-description: Scrollytelling map template — narrative + Mapbox GL chapters.
+title: "Mapbox Storytelling"
+description: "Notes on Mapbox Storytelling."
 ---
 
 # Mapbox Storytelling

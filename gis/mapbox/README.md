@@ -1,6 +1,6 @@
 ---
-title: MapBox
-description: \"\\\"*This page documents **Page**.*\\\"\
+title: "MapBox"
+description: "Notes on MapBox."
 ---
 
 # MapBox

@@ -1,6 +1,6 @@
 ---
-title: Deck GL Time Frame Animations
-description: Creating animated visualizations of NYC Taxi trip data with DeckGL TripsLayer
+title: "Deck GL Time Frame Animations"
+description: "Notes on Deck GL Time Frame Animations."
 ---
 
 # Deck GL Time Frame Animations

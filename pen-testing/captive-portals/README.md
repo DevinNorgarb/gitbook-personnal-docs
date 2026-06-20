@@ -1,6 +1,6 @@
 ---
-title: Captive Portals
-description: \"\\\"https://github.com/systematicat/hack-captive-portals\\\"\
+title: "Captive Portals"
+description: "Notes on Captive Portals."
 ---
 
 # Captive Portals

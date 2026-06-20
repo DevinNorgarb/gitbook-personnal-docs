@@ -1,6 +1,6 @@
 ---
-title: Car Hacking
-description: \"\\\"0x00. INTRODUCTION; Credit https://curatedpython.com/p/yacht-yet-cantoolz-cantoolz/index.html\\\"\
+title: "Car Hacking"
+description: "Notes on Car Hacking."
 ---
 
 # Car Hacking

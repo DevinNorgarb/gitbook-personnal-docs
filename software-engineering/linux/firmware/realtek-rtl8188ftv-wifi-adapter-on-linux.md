@@ -1,5 +1,6 @@
 ---
-description: "\">-\""
+title: "realtek-rtl8188ftv-wifi-adapter-on-linux"
+description: "Notes on realtek-rtl8188ftv-wifi-adapter-on-linux."
 ---
 
 # Realtek RTL8188FTV WiFi Adapter on Linux

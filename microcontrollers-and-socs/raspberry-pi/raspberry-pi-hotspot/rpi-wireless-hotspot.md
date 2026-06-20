@@ -1,6 +1,6 @@
 ---
-title: RPI Wireless Hotspot
-description: Turn a Pi into a WPA WiFi hotspot sharing its Ethernet connection.
+title: "RPI Wireless Hotspot"
+description: "Notes on RPI Wireless Hotspot."
 ---
 
 # RPI Wireless Hotspot

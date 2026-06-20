@@ -1,6 +1,6 @@
 ---
-title: Artificial Intelligence
-description: Reference notes and links for Artificial Intelligence in the misc section.
+title: "Artificial Intelligence"
+description: "Notes on Artificial Intelligence."
 ---
 
 # Artificial Intelligence

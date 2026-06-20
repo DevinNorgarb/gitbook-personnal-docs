@@ -1,6 +1,6 @@
 ---
-title: ccxt
-description: Type / to search
+title: "ccxt"
+description: "Notes on ccxt."
 ---
 
 # ccxt

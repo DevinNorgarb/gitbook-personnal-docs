@@ -1,6 +1,6 @@
 ---
-title: 3D Printing
-description: Notes, gallery, and troubleshooting for 3D printing projects
+title: "3D Printing"
+description: "Notes on 3D Printing."
 ---
 
 # 3D Printing

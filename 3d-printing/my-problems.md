@@ -1,6 +1,6 @@
 ---
-title: My problems
-description: Reference notes and links for My problems in the 3d printing section.
+title: "My problems"
+description: "Notes on My problems."
 ---
 
 # My problems

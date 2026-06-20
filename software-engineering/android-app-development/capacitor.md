@@ -1,6 +1,6 @@
 ---
-title: Capacitor
-description: Ionic Capacitor — ship web apps as native iOS/Android with a JS bridge.
+title: "Capacitor"
+description: "Notes on Capacitor."
 ---
 
 # Capacitor

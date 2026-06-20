@@ -1,6 +1,6 @@
 ---
-title: ONVIF
-description: ONVIF Profile S — IP camera streaming and device interoperability.
+title: "ONVIF"
+description: "Notes on ONVIF."
 ---
 
 # ONVIF

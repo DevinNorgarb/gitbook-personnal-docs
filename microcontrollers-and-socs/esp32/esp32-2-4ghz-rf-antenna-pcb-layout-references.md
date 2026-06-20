@@ -1,6 +1,6 @@
 ---
-title: ESP32 / 2.4 GHz RF, Antenna, and PCB Layout References
-description: Curated bibliography and layout guidelines from vendor app notes, FCC filings, and Espressif hardware design docs (imported 2026-05-26).
+title: "ESP32 / 2.4 GHz RF, Antenna, and PCB Layout References"
+description: "Notes on ESP32 / 2.4 GHz RF, Antenna, and PCB Layout References."
 ---
 
 # ESP32 / 2.4 GHz RF, Antenna, and PCB Layout References

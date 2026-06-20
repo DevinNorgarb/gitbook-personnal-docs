@@ -1,6 +1,6 @@
 ---
-title: Fulfillment Orders
-description: Shopify FulfillmentOrder workflow for apps and fulfillment services.
+title: "Fulfillment Orders"
+description: "Notes on Fulfillment Orders."
 ---
 
 # Fulfillment Orders

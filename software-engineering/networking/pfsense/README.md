@@ -1,6 +1,6 @@
 ---
-title: PFSense
-description: This following article is about building and running pfSense® software on a virtual machine under Proxmox Virtual Environment (VE). The guid
+title: "PFSense"
+description: "Notes on PFSense."
 ---
 
 # PFSense

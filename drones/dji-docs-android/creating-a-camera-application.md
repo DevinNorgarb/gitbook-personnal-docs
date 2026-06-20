@@ -1,6 +1,6 @@
 ---
-title: Creating a Camera Application
-description: Reference notes and links for Creating a Camera Application in the drones section.
+title: "Creating a Camera Application"
+description: "Notes on Creating a Camera Application."
 ---
 
 # Creating a Camera Application

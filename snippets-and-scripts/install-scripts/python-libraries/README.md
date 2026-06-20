@@ -1,6 +1,6 @@
 ---
-title: Python + Libraries
-description: Install Poetry and pyenv for Python version and dependency management.
+title: "Python + Libraries"
+description: "Notes on Python + Libraries."
 ---
 
 # Python + Libraries

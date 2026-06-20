@@ -1,6 +1,6 @@
 ---
-title: Guides
-description: \"\\\"![](https://www.redditstatic.com/desktop2x/img/renderTimingPixel.png); [JOHNKEENANIIIMQP2009.pdf](../../../.gitbook/assets/JOHNKEENANIIIMQP2009.pdf)\\\"\
+title: "Guides"
+description: "Notes on Guides."
 ---
 
 # Guides

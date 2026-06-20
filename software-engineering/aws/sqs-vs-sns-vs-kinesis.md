@@ -1,5 +1,6 @@
 ---
-description: "\">-\""
+title: "sqs-vs-sns-vs-kinesis"
+description: "Notes on sqs-vs-sns-vs-kinesis."
 ---
 
 # SQS vs SNS vs Kinesis

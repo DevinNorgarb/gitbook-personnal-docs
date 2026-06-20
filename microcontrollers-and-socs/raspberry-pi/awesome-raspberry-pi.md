@@ -1,6 +1,6 @@
 ---
-title: Awesome Raspberry Pi
-description: Curated list of Pi models, OS images, tools, and projects.
+title: "Awesome Raspberry Pi"
+description: "Notes on Awesome Raspberry Pi."
 ---
 
 # Awesome Raspberry Pi

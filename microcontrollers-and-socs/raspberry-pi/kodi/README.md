@@ -1,6 +1,6 @@
 ---
-title: Kodi
-description: \"\\\"| [![Home icon grey.png](https://kodi.wiki/images/a/aa/Home_icon_grey.png)](https://kodi.wiki/view/Main_Page) | | | ![▶](https://kodi.wiki/i\\\"\
+title: "Kodi"
+description: "Notes on Kodi."
 ---
 
 # Kodi

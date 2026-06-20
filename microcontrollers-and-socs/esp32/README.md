@@ -1,6 +1,6 @@
 ---
-description: "\"\\\"https://lastminuteengineers.com/esp32-pinout-reference/\\\"\""
-title: ESP32
+title: "ESP32"
+description: "Notes on ESP32."
 ---
 
 # ESP32

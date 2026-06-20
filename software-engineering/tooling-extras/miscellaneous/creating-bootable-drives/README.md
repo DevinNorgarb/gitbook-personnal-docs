@@ -1,6 +1,6 @@
 ---
-title: Creating Bootable Drives
-description: For creating PXE boot disks
+title: "Creating Bootable Drives"
+description: "Notes on Creating Bootable Drives."
 ---
 
 # Creating Bootable Drives

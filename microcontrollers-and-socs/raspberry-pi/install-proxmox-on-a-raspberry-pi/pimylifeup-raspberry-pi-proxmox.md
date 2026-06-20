@@ -1,6 +1,6 @@
 ---
-title: How to Install Proxmox on the Raspberry Pi (Pi My Life Up / PXVirt)
-description: Imported install guide for Proxmox VE on Raspberry Pi using the PXVirt ARM fork
+title: "How to Install Proxmox on the Raspberry Pi (Pi My Life Up / PXVirt)"
+description: "Notes on How to Install Proxmox on the Raspberry Pi (Pi My Life Up / PXVirt)."
 ---
 
 # How to Install Proxmox on the Raspberry Pi

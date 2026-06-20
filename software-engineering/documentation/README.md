@@ -1,6 +1,6 @@
 ---
-title: Documentation
-description: Personal and project documentation — Obsidian, READMEs, and writing resources.
+title: "Documentation"
+description: "Notes on Documentation."
 ---
 
 # Documentation

@@ -1,6 +1,6 @@
 ---
-title: tutorials
-description: \"\\\"Original guide: https://www.linode.com/docs/guides/how-to-install-ghost-on-ubuntu-18-04/; ![](https://blog.gsmart.in/wp-content/uploads/2019/05/e837b90f2df7063ed1584d05fb1d4390e376ead004b0144493f9c47ca7ecb3_640-150x100.jpg)\\\"\
+title: "tutorials"
+description: "Notes on tutorials."
 ---
 
 # tutorials

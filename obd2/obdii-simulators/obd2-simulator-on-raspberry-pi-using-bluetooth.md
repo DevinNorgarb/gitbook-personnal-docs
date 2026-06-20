@@ -1,5 +1,6 @@
 ---
-description: ...that actually works
+title: "obd2-simulator-on-raspberry-pi-using-bluetooth"
+description: "Notes on obd2-simulator-on-raspberry-pi-using-bluetooth."
 ---
 
 # OBD2 simulator on Raspberry Pi using Bluetooth

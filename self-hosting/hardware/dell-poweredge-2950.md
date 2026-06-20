@@ -1,6 +1,6 @@
 ---
-title: Dell PowerEdge 2950
-description: Legacy 2U rack server — loud fans, homelab nostalgia.
+title: "Dell PowerEdge 2950"
+description: "Notes on Dell PowerEdge 2950."
 ---
 
 # Dell PowerEdge 2950

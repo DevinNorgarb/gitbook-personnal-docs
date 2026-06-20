@@ -1,6 +1,6 @@
 ---
-title: Frontend
-description: \"\\\"Running the full sorry-cypress kit - setting up web dashboard to store and browse test results. The [basic](https://docs.sorry-cypress.dev/g\\\"\
+title: "Frontend"
+description: "Notes on Frontend."
 ---
 
 # Frontend

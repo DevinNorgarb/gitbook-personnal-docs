@@ -1,6 +1,6 @@
 ---
-title: Drone Encrypted Flight Logs (Yuneec ST-16)
-description: "\"Imported note from https://jamiesharpe.co.uk/2024/11/19/drones-encrypted-flight-logs/\""
+title: "Drone Encrypted Flight Logs (Yuneec ST-16)"
+description: "Notes on Drone Encrypted Flight Logs (Yuneec ST-16)."
 ---
 
 # Drone Encrypted Flight Logs (Yuneec ST-16)

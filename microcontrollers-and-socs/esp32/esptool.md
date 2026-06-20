@@ -1,6 +1,6 @@
 ---
-title: esptool
-description: Official utility to flash firmware on Espressif ESP8266/ESP32 chips.
+title: "esptool"
+description: "Notes on esptool."
 ---
 
 # esptool

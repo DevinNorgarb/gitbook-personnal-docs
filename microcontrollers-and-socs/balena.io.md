@@ -1,6 +1,6 @@
 ---
-title: Balena.io
-description: Reference notes and links for Balena.io in the microcontrollers and socs section.
+title: "Balena.io"
+description: "Notes on Balena.io."
 ---
 
 # Balena.io

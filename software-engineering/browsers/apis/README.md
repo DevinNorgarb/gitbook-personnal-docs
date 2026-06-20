@@ -1,6 +1,6 @@
 ---
-title: Browser APIs
-description: Shape Detection and barcode scanning web platform APIs.
+title: "Browser APIs"
+description: "Notes on Browser APIs."
 ---
 
 # Browser APIs

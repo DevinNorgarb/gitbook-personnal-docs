@@ -1,6 +1,6 @@
 ---
-title: Rancher
-description: Multi-cluster Kubernetes management — auth, monitoring, Fleet deployments.
+title: "Rancher"
+description: "Notes on Rancher."
 ---
 
 # Rancher

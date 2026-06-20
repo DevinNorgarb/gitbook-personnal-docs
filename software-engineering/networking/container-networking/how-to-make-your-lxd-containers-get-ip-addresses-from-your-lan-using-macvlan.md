@@ -1,6 +1,6 @@
 ---
-title: How to make your LXD containers get IP addresses from your LAN using macvlan
-description: Reference notes and links for How to make your LXD containers get IP addresses from your LAN using macvlan in the software engineering section.
+title: "How to make your LXD containers get IP addresses from your LAN using macvlan"
+description: "Notes on How to make your LXD containers get IP addresses from your LAN using macvlan."
 ---
 
 # How to make your LXD containers get IP addresses from your LAN using macvlan

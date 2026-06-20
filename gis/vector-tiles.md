@@ -1,6 +1,6 @@
 ---
-title: Vector Tiles
-description: MVT format for efficient web map delivery and client-side styling.
+title: "Vector Tiles"
+description: "Notes on Vector Tiles."
 ---
 
 # Vector Tiles

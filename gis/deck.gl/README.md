@@ -1,6 +1,6 @@
 ---
-title: Deck.gl
-description: Creating animated visualizations of NYC Taxi trip data with DeckGL TripsLayer
+title: "Deck.gl"
+description: "Notes on Deck.gl."
 ---
 
 # Deck.gl

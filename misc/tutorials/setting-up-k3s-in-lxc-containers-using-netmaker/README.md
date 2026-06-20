@@ -1,6 +1,6 @@
 ---
-title: Setting up K3s in LXC containers using Netmaker
-description: K3s on LXC with Netmaker VPN — install guide and related links
+title: "Setting up K3s in LXC containers using Netmaker"
+description: "Notes on Setting up K3s in LXC containers using Netmaker."
 ---
 
 # Setting up K3s in LXC containers using Netmaker

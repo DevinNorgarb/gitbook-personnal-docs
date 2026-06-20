@@ -1,6 +1,6 @@
 ---
-title: Shopify Dev
-description: "\"\\\"*This page documents **Fulfillment Orders**.*; *This page documents **Carrier Services**.*\\\"\""
+title: "Shopify Dev"
+description: "Notes on Shopify Dev."
 ---
 
 # Shopify Dev

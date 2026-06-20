@@ -1,6 +1,6 @@
 ---
-title: Testing WebRTC
-description: Trickle ICE sample for validating STUN/TURN and candidate gathering.
+title: "Testing WebRTC"
+description: "Notes on Testing WebRTC."
 ---
 
 # Testing WebRTC

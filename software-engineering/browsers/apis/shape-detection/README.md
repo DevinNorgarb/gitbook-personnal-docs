@@ -1,6 +1,6 @@
 ---
-title: Shape Detection
-description: "\"\\\"This version:[https://wicg.github.io/shape-detection-api](https://wicg.github.io/shape-detection-api)Issue Tracking:[GitHub](https://github.\\\"\""
+title: "Shape Detection"
+description: "Notes on Shape Detection."
 ---
 
 # Shape Detection

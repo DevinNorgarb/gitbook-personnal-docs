@@ -1,6 +1,6 @@
 ---
-title: Diet Pi
-description: \"\\\"**DietPi-Software** is a core DietPi tool, allowing you to install **Ready to run** and **optimized software items** for your device. It aut\\\"\
+title: "Diet Pi"
+description: "Notes on Diet Pi."
 ---
 
 # Diet Pi

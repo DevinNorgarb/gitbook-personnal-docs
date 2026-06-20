@@ -1,6 +1,6 @@
 ---
-title: Arduino
-description: \"\\\">-; Last updated: 3 years ago\\\"\
+title: "Arduino"
+description: "Notes on Arduino."
 ---
 
 # Arduino

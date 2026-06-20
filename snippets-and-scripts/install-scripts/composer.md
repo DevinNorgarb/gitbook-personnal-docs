@@ -1,6 +1,6 @@
 ---
-title: Composer
-description: Install PHP Composer globally via the official installer.
+title: "Composer"
+description: "Notes on Composer."
 ---
 
 # Composer

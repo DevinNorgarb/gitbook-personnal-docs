@@ -1,6 +1,6 @@
 ---
-title: Raspberry Pi HotSpot
-description: \"\\\"![](https://i.imgur.com/xeKD93p.png) [![Release 2.9.2](https://img.shields.io/badge/release-v2.9.2-green)](https://github.com/raspap/raspap-\\\"\
+title: "Raspberry Pi HotSpot"
+description: "Notes on Raspberry Pi HotSpot."
 ---
 
 # Raspberry Pi HotSpot

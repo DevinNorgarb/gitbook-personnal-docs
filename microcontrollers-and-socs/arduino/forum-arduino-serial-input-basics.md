@@ -1,6 +1,6 @@
 ---
-title: Serial Input Basics (Arduino Forum)
-description: Imported notes from Robin2's classic Arduino forum tutorial on non-blocking serial reception
+title: "Serial Input Basics (Arduino Forum)"
+description: "Notes on Serial Input Basics (Arduino Forum)."
 ---
 
 # Serial Input Basics (Arduino Forum)

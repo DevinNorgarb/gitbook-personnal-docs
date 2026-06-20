@@ -1,6 +1,6 @@
 ---
-title: Painless Mesh
-description: Reference notes and links for Painless Mesh in the microcontrollers and socs section.
+title: "Painless Mesh"
+description: "Notes on Painless Mesh."
 ---
 
 # Painless Mesh

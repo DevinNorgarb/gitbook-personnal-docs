@@ -1,6 +1,6 @@
 ---
-title: SDKMan
-description: Install SDKMAN for JVM and SDK version management.
+title: "SDKMan"
+description: "Notes on SDKMan."
 ---
 
 # SDKMan

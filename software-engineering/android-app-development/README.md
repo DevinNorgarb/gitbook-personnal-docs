@@ -1,6 +1,6 @@
 ---
-title: Android App Development
-description: "\"\\\"*This page documents **Cordova**.*; ordova\\\"\""
+title: "Android App Development"
+description: "Notes on Android App Development."
 ---
 
 # Android App Development

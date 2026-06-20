@@ -1,5 +1,6 @@
 ---
-description: Installing Docker on Kali Linux
+title: "docker-on-kali-linux"
+description: "Notes on docker-on-kali-linux."
 ---
 
 # Docker on Kali Linux

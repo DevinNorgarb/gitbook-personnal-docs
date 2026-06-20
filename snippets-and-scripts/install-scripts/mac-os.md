@@ -1,6 +1,6 @@
 ---
-title: Mac OS
-description: Reference notes and links for Mac OS in the snippets and scripts section.
+title: "Mac OS"
+description: "Notes on Mac OS."
 ---
 
 # Mac OS

@@ -1,6 +1,6 @@
 ---
-title: Drones
-description: "\"\\\"\\\\\\\\ CREDITS: With the exception, perhaps, of figuring out how to run the newest DJI Go app on Android while maintaining boost, I cannot claim ; https://github.com/o-gs/dji-firmware-tools\\\"\""
+title: "Drones"
+description: "Notes on Drones."
 ---
 
 # Drones

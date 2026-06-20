@@ -1,6 +1,6 @@
 ---
-title: OVMS
-description: OVMS; OVMS includes a range of CAN tools including multiple logging formats, a configurable OBD2 translator, a DBC decoder, a reverse engineering
+title: "OVMS"
+description: "Notes on OVMS."
 ---
 
 # OVMS

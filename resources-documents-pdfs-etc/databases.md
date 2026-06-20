@@ -1,6 +1,6 @@
 ---
-title: Databases
-description: Reference notes and links for Databases in the resources documents pdfs etc section.
+title: "Databases"
+description: "Notes on Databases."
 ---
 
 # Databases

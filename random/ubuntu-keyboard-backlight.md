@@ -1,6 +1,6 @@
 ---
-title: Ubuntu: Set Keyboard Backlight
-description: Reference notes and links for Ubuntu: Set Keyboard Backlight in the random section.
+title: "Ubuntu: Set Keyboard Backlight"
+description: "Notes on Ubuntu: Set Keyboard Backlight."
 ---
 
 # Ubuntu: Set Keyboard Backlight

@@ -1,6 +1,6 @@
 ---
-title: UDP Holepunching
-description: Reference notes and links for UDP Holepunching in the software engineering section.
+title: "UDP Holepunching"
+description: "Notes on UDP Holepunching."
 ---
 
 # UDP Holepunching

@@ -1,6 +1,6 @@
 ---
-title: VPN
-description: \"\\\"sudo nano /etc/sysctl.conf; *This page documents **UDP Holepunching**.*\\\"\
+title: "VPN"
+description: "Notes on VPN."
 ---
 
 # VPN

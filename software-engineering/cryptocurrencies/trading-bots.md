@@ -1,6 +1,6 @@
 ---
-title: Trading Bots
-description: Open-source crypto trading automation with Freqtrade.
+title: "Trading Bots"
+description: "Notes on Trading Bots."
 ---
 
 # Trading Bots

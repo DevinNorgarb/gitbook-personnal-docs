@@ -1,6 +1,6 @@
 ---
-title: Loki
-description: "\"\\\"1. Install Docker plugin:\\\"\""
+title: "Loki"
+description: "Notes on Loki."
 ---
 
 # Loki

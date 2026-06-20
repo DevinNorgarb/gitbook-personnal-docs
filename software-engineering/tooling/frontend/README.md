@@ -1,6 +1,6 @@
 ---
-title: Frontend
-description: Frontend — CSS
+title: "Frontend"
+description: "Notes on Frontend."
 ---
 
 # Frontend

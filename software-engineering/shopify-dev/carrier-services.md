@@ -1,6 +1,6 @@
 ---
-title: Carrier Services
-description: Shopify carrier-calculated shipping rates via app callback URL.
+title: "Carrier Services"
+description: "Notes on Carrier Services."
 ---
 
 # Carrier Services

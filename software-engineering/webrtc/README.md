@@ -1,6 +1,6 @@
 ---
-title: WebRTC
-description: Real-time voice/video — open-source stacks, testing, STUN/TURN setup.
+title: "WebRTC"
+description: "Notes on WebRTC."
 ---
 
 # WebRTC

@@ -1,6 +1,6 @@
 ---
-title: HotSpotOS
-description: Pi image that auto-starts a WiFi hotspot when no upstream WiFi is found.
+title: "HotSpotOS"
+description: "Notes on HotSpotOS."
 ---
 
 # HotSpotOS

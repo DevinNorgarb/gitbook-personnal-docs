@@ -1,6 +1,6 @@
 ---
-title: ELM327 Datasheet
-description: Reference notes and links for ELM327 Datasheet in the obd2 section.
+title: "ELM327 Datasheet"
+description: "Notes on ELM327 Datasheet."
 ---
 
 # ELM327 Datasheet

@@ -1,6 +1,6 @@
 ---
-title: Networking
-description: Reference notes and links for Networking in the software engineering section.
+title: "Networking"
+description: "Notes on Networking."
 ---
 
 # Networking

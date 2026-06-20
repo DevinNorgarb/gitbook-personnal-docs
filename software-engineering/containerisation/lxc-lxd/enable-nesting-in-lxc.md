@@ -1,5 +1,6 @@
 ---
-description: Enable the below command to run docker in LXC containers
+title: "enable-nesting-in-lxc"
+description: "Notes on enable-nesting-in-lxc."
 ---
 
 # Enable Nesting in LXC

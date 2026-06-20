@@ -1,6 +1,6 @@
 ---
-title: Miscellaneous
-description: Reference notes and links for Miscellaneous in the software engineering section.
+title: "Miscellaneous"
+description: "Notes on Miscellaneous."
 ---
 
 # Miscellaneous

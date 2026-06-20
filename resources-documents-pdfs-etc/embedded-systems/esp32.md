@@ -1,6 +1,6 @@
 ---
-title: ESP32
-description: Reference notes and links for ESP32 in the resources documents pdfs etc section.
+title: "ESP32"
+description: "Notes on ESP32."
 ---
 
 # ESP32

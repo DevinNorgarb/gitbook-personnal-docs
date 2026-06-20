@@ -1,6 +1,6 @@
 ---
-title: Arduino
-description: DIY Bluetooth programming shield for wireless Arduino flashing.
+title: "Arduino"
+description: "Notes on Arduino."
 ---
 
 # Arduino

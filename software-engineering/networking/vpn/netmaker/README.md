@@ -1,6 +1,6 @@
 ---
-title: NetMaker
-description: WireGuard automation — mesh VPNs, remote access, and multi-cloud networking.
+title: "NetMaker"
+description: "Notes on NetMaker."
 ---
 
 # NetMaker

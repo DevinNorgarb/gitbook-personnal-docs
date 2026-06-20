@@ -1,6 +1,6 @@
 ---
-title: Tile38
-description: In-memory geospatial database with real-time geofencing.
+title: "Tile38"
+description: "Notes on Tile38."
 ---
 
 # Tile38

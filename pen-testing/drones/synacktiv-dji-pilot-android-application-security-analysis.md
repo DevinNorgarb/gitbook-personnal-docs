@@ -1,6 +1,6 @@
 ---
-title: DJI Pilot Android Application Security Analysis
-description: Imported note from Synacktiv
+title: "DJI Pilot Android Application Security Analysis"
+description: "Notes on DJI Pilot Android Application Security Analysis."
 ---
 
 # DJI Pilot Android Application Security Analysis

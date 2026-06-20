@@ -1,6 +1,6 @@
 ---
-title: Page
-description: Reference notes and links for Page in the gis section.
+title: "Page"
+description: "Notes on Page."
 ---
 
 # Page

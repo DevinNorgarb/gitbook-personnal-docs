@@ -1,6 +1,6 @@
 ---
-title: 创建智能飞行预设航点功能App
-description: Reference notes and links for 创建智能飞行预设航点功能App in the drones section.
+title: "创建智能飞行预设航点功能App"
+description: "Notes on 创建智能飞行预设航点功能App."
 ---
 
 # 创建智能飞行预设航点功能App

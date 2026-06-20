@@ -1,6 +1,6 @@
 ---
-title: Laravel
-description: \"\\\"The Laravel Service Container is a powerful tool for managing dependencies of classes and doing the injection of dependencies. This basicall; *This page documents **Inertia Guide**.*\\\"\
+title: "Laravel"
+description: "Notes on Laravel."
 ---
 
 # Laravel

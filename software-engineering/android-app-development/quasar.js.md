@@ -1,6 +1,6 @@
 ---
-title: Quasar.js
-description: Reference notes and links for Quasar.js in the software engineering section.
+title: "Quasar.js"
+description: "Notes on Quasar.js."
 ---
 
 # Quasar.js

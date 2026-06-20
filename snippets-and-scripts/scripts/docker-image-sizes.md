@@ -1,6 +1,6 @@
 ---
-title: Docker Image Sizes
-description: Get docker image sizes sorted by size
+title: "Docker Image Sizes"
+description: "Notes on Docker Image Sizes."
 ---
 
 # Docker Image Sizes

@@ -1,6 +1,6 @@
 ---
-title: Vehicle Tracking
-description: Open Vehicles (OVMS) and Traccar GPS fleet tracking.
+title: "Vehicle Tracking"
+description: "Notes on Vehicle Tracking."
 ---
 
 # Vehicle Tracking

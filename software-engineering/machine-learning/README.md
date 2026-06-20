@@ -1,6 +1,6 @@
 ---
-title: Machine Learning
-description: Machine Learning — openmv.io, Google MLKit
+title: "Machine Learning"
+description: "Notes on Machine Learning."
 ---
 
 # Machine Learning

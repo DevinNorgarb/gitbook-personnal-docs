@@ -1,6 +1,6 @@
 ---
-title: Pelias Geocoder
-description: "\"\\\"For the past few months, Mapzen has been hard at work developing Pelias (https://github.com/pelias/pelias), a lightweight, modular implement; Pelias is a geocoder powered completely by open data, available freely to everyone.\\\"\""
+title: "Pelias Geocoder"
+description: "Notes on Pelias Geocoder."
 ---
 
 # Pelias Geocoder

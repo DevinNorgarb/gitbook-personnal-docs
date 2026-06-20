@@ -1,6 +1,6 @@
 ---
-title: Android Runtime - How Dalvik and ART Work
-description: Imported note from ProAndroidDev
+title: "Android Runtime - How Dalvik and ART Work"
+description: "Notes on Android Runtime - How Dalvik and ART Work."
 ---
 
 # Android Runtime - How Dalvik and ART Work

@@ -1,6 +1,6 @@
 ---
-title: SQLMap
-description: Reference notes and links for SQLMap in the pen testing section.
+title: "SQLMap"
+description: "Notes on SQLMap."
 ---
 
 # SQLMap

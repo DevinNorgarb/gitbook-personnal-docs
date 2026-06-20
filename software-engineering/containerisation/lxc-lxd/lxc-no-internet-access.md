@@ -1,6 +1,6 @@
 ---
-title: LXC No internet Access
-description: Reference notes and links for LXC No internet Access in the software engineering section.
+title: "LXC No internet Access"
+description: "Notes on LXC No internet Access."
 ---
 
 # LXC No internet Access
