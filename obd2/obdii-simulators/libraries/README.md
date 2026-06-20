@@ -1,6 +1,6 @@
 ---
-title: Libraries
-description: Python OBD-II simulators — ELM327 emulator and OBD2 simulator.
+title: "Libraries"
+description: "Notes on Libraries."
 ---
 
 # Libraries

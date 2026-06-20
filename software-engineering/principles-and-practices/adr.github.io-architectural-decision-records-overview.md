@@ -1,6 +1,6 @@
 ---
-title: Architectural Decision Records (ADR) — adr.github.io overview
-description: Imported summary of the Architectural Decision Records community homepage at adr.github.io
+title: "Architectural Decision Records (ADR) — adr.github.io overview"
+description: "Notes on Architectural Decision Records (ADR) — adr.github.io overview."
 ---
 
 # Architectural Decision Records (ADR) — adr.github.io overview

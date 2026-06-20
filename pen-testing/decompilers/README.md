@@ -1,6 +1,6 @@
 ---
-title: decompilers
-description: \"\\\"Java Decompiler; https://github.com/Konloch/bytecode-viewer/releases\\\"\
+title: "decompilers"
+description: "Notes on decompilers."
 ---
 
 # decompilers

@@ -1,6 +1,6 @@
 ---
-title: Ionic
-description: Reference notes and links for Ionic in the software engineering section.
+title: "Ionic"
+description: "Notes on Ionic."
 ---
 
 # Ionic

@@ -1,6 +1,6 @@
 ---
-title: OBD2 Dashboard
-description: \"https://github.com/DevinNorgarb/obd-visualiser\
+title: "OBD2 Dashboard"
+description: "Notes on OBD2 Dashboard."
 ---
 
 # OBD2 Dashboard

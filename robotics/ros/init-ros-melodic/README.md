@@ -1,6 +1,6 @@
 ---
-title: Init ROS Melodic
-description: ROS Melodic install notes — Ubuntu packages and wiki references
+title: "Init ROS Melodic"
+description: "Notes on Init ROS Melodic."
 ---
 
 # Init ROS Melodic

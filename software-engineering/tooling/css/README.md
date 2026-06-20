@@ -1,6 +1,6 @@
 ---
-title: CSS
-description: Here are simple steps you can do to inspect and copy the CSS of an element from a website.
+title: "CSS"
+description: "Notes on CSS."
 ---
 
 # CSS

@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting
-description: Reference notes and links for Troubleshooting in the software engineering section.
+title: "Troubleshooting"
+description: "Notes on Troubleshooting."
 ---
 
 # Troubleshooting

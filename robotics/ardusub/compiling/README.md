@@ -1,6 +1,6 @@
 ---
-title: Compiling
-description: "\"\\\"Clone the project from GitHub:; This article shows how to manually setup a minimal build environment on MacOS (ver 10.6 onwards).\\\"\""
+title: "Compiling"
+description: "Notes on Compiling."
 ---
 
 # Compiling

@@ -1,6 +1,6 @@
 ---
-title: Carloop.io
-description: OBD-II telematics hardware and companion apps (legacy).
+title: "Carloop.io"
+description: "Notes on Carloop.io."
 ---
 
 # Carloop.io

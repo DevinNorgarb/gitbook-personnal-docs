@@ -1,6 +1,6 @@
 ---
-title: ChatGPT
-description: Reference notes and links for ChatGPT in the misc section.
+title: "ChatGPT"
+description: "Notes on ChatGPT."
 ---
 
 # ChatGPT

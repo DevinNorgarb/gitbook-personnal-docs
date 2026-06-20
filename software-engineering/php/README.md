@@ -1,6 +1,6 @@
 ---
-title: PHP <3
-description: \"\\\"_This article was originally written by_ [_Mauro Chojrin_](https://www.honeybadger.io/blog/authors/maurochojrin/) _on the_ [_Honeybadger Dev; \\\\\\\"PHP Fatal error: Class UpdateHelper\\\\\\\\ComposerPlugin contains 2 abstract methods and must therefore be declared abstract or implement the rem\\\"\
+title: "PHP <3"
+description: "Notes on PHP <3."
 ---
 
 # PHP <3

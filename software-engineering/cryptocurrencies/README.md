@@ -1,6 +1,6 @@
 ---
-title: Cryptocurrencies
-description: Cryptocurrencies — ccxt, Running your own bitcoin node, Trading Bots
+title: "Cryptocurrencies"
+description: "Notes on Cryptocurrencies."
 ---
 
 # Cryptocurrencies

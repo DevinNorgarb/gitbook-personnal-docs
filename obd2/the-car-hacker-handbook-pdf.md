@@ -1,6 +1,6 @@
 ---
-title: The Car Hacker Handbook PDF
-description: Craig Smith — vehicle penetration testing reference (No Starch Press).
+title: "The Car Hacker Handbook PDF"
+description: "Notes on The Car Hacker Handbook PDF."
 ---
 
 # The Car Hacker Handbook PDF

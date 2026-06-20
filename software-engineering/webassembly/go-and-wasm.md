@@ -1,6 +1,6 @@
 ---
-title: Go and WASM
-description: Compile Go to WebAssembly and run it in the browser or Node.js.
+title: "Go and WASM"
+description: "Notes on Go and WASM."
 ---
 
 # Go and WASM

@@ -1,6 +1,6 @@
 ---
-title: Code Reviews
-description: \"\\\"Code review is mandatory at Sentry. This adds overhead to each change, but ensures that simple, often overlooked problems are more easily av; Note: Always make sure to take into account The Standard of Code Review when considering each of these points.\\\"\
+title: "Code Reviews"
+description: "Notes on Code Reviews."
 ---
 
 # Code Reviews

@@ -1,6 +1,6 @@
 ---
-title: Awesome Cursor Skills
-description: Imported notes from DevinNorgarb/awesome-cursor-skills — curated Cursor agent skills, plugins, and resources
+title: "Awesome Cursor Skills"
+description: "Notes on Awesome Cursor Skills."
 ---
 
 # Awesome Cursor Skills

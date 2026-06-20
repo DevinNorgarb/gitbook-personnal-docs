@@ -1,6 +1,6 @@
 ---
-title: ML Kit barcode scanning (Android)
-description: Scan and decode 1D/2D barcodes on Android with ML Kit.
+title: "ML Kit barcode scanning (Android)"
+description: "Notes on ML Kit barcode scanning (Android)."
 ---
 
 # ML Kit barcode scanning (Android)

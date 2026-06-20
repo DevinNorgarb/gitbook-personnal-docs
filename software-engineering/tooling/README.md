@@ -1,6 +1,6 @@
 ---
-title: Tooling
-description: Tools and utilities for development, testing, networking, and system administration
+title: "Tooling"
+description: "Notes on Tooling."
 ---
 
 # Tooling

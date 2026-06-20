@@ -1,6 +1,6 @@
 ---
-title: Creating A Wireless OBDII Scanner
-description: Academic project guide for building a wireless OBD-II diagnostic link.
+title: "Creating A Wireless OBDII Scanner"
+description: "Notes on Creating A Wireless OBDII Scanner."
 ---
 
 # Creating A Wireless OBDII Scanner

@@ -1,6 +1,6 @@
 ---
-title: Testing
-description: Frontend test infrastructure — Cypress dashboards and sorry-cypress.
+title: "Testing"
+description: "Notes on Testing."
 ---
 
 # Testing

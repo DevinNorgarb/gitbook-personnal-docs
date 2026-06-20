@@ -1,6 +1,6 @@
 ---
-title: Microcontrollers & SoCs assets
-description: Reference notes and links for Microcontrollers & SoCs assets in the microcontrollers and socs section.
+title: "Microcontrollers & SoCs assets"
+description: "Notes on Microcontrollers & SoCs assets."
 ---
 
 # Microcontrollers & SoCs assets

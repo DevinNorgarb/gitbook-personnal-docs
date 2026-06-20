@@ -1,6 +1,6 @@
 ---
-title: poetry
-description: Python dependency management and packaging with Poetry.
+title: "poetry"
+description: "Notes on poetry."
 ---
 
 # poetry

@@ -1,6 +1,6 @@
 ---
-title: DashWare Download
-description: DashWare_1.9.1.zip Download
+title: "DashWare Download"
+description: "Notes on DashWare Download."
 ---
 
 # DashWare Download

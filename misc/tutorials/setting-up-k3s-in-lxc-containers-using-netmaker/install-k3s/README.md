@@ -1,6 +1,6 @@
 ---
-title: Install K3s
-description: Single k3s cluster spanning multiple clouds over WireGuard (Netmaker).
+title: "Install K3s"
+description: "Notes on Install K3s."
 ---
 
 # Install K3s

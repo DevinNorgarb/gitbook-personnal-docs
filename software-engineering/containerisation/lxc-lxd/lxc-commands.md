@@ -1,6 +1,6 @@
 ---
-title: LXC commands
-description: Useful LXC/LXD CLI snippets for devices, ports, and config.
+title: "LXC commands"
+description: "Notes on LXC commands."
 ---
 
 # LXC commands

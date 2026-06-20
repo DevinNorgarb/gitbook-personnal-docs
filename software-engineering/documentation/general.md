@@ -1,6 +1,6 @@
 ---
-title: General
-description: Video resource on documentation and technical writing practices.
+title: "General"
+description: "Notes on General."
 ---
 
 # General

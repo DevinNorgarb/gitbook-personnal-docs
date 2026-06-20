@@ -1,6 +1,6 @@
 ---
-title: Install MAGE
-description: Reference notes and links for Install MAGE in the snippets and scripts section.
+title: "Install MAGE"
+description: "Notes on Install MAGE."
 ---
 
 # Install MAGE

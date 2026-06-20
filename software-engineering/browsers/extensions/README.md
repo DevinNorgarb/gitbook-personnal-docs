@@ -1,6 +1,6 @@
 ---
-title: Extensions
-description: Browser extensions for archiving and developer workflows.
+title: "Extensions"
+description: "Notes on Extensions."
 ---
 
 # Extensions

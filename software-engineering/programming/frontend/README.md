@@ -1,6 +1,6 @@
 ---
-title: Frontend
-description: Frontend notes — JavaScript desktop apps, Laravel/Vite, and CSS.
+title: "Frontend"
+description: "Notes on Frontend."
 ---
 
 # Frontend

@@ -1,6 +1,6 @@
 ---
-title: Drones
-description: DJI SDK docs, firmware tools, DroneBridge, and flight utilities.
+title: "Drones"
+description: "Notes on Drones."
 ---
 
 # Drones

@@ -1,6 +1,6 @@
 ---
-title: Cordova
-description: Reference notes and links for Cordova in the software engineering section.
+title: "Cordova"
+description: "Notes on Cordova."
 ---
 
 # Cordova

@@ -1,6 +1,6 @@
 ---
-title: ArduSub
-description: "\"\\\"ArduSub is hosted and maintained on [github](https://github.com/ardupilot/ardupilot.git). You need to clone the repository to have full code; This page shares issues that users have run into and how they were resolved. Hopefully this will help to solves issues for others.\\\"\""
+title: "ArduSub"
+description: "Notes on ArduSub."
 ---
 
 # ArduSub

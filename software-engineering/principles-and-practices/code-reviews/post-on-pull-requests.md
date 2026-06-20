@@ -1,5 +1,6 @@
 ---
-description: "\"https://cra.mr/2014/05/03/on-pull-requests\""
+title: "post-on-pull-requests"
+description: "Notes on post-on-pull-requests."
 ---
 
 # \[POST] On Pull Requests

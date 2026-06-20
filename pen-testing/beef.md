@@ -1,6 +1,6 @@
 ---
-title: BeEF
-description: Browser Exploitation Framework — client-side penetration testing.
+title: "BeEF"
+description: "Notes on BeEF."
 ---
 
 # BeEF

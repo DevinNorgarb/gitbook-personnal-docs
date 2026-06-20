@@ -1,6 +1,6 @@
 ---
-title: Networking
-description: Netfilter is a framework provided by the Linux kernel that allows various networking-related operations to be implemented in the form of cus
+title: "Networking"
+description: "Notes on Networking."
 ---
 
 # Networking

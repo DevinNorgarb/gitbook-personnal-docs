@@ -1,6 +1,6 @@
 ---
-title: Kali Linux
-description: Kali on Raspberry Pi — secure drop box, remote unlock, VPN access.
+title: "Kali Linux"
+description: "Notes on Kali Linux."
 ---
 
 # Kali Linux

@@ -1,6 +1,6 @@
 ---
-title: Creating a MapView and Waypoint Applicatio
-description: Reference notes and links for Creating a MapView and Waypoint Applicatio in the drones section.
+title: "Creating a MapView and Waypoint Applicatio"
+description: "Notes on Creating a MapView and Waypoint Applicatio."
 ---
 
 # Creating a MapView and Waypoint Applicatio

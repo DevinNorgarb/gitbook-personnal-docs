@@ -1,5 +1,6 @@
 ---
-description: Adding extra Swap Space
+title: "adding-extra-swap-to-a-linux-system"
+description: "Notes on adding-extra-swap-to-a-linux-system."
 ---
 
 # Adding extra swap to a Linux system

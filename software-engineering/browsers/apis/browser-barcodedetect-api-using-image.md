@@ -1,6 +1,6 @@
 ---
-title: Browser BarcodeDetect API using Image
-description: Shape Detection BarcodeDetector demo with a static image input.
+title: "Browser BarcodeDetect API using Image"
+description: "Notes on Browser BarcodeDetect API using Image."
 ---
 
 # Browser BarcodeDetect API using Image

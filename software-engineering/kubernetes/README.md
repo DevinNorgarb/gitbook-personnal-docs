@@ -1,6 +1,6 @@
 ---
-title: Kubernetes
-description: \"\\\"R; Remember to add these to this file `/run/flannel/subnet.env`\\\"\
+title: "Kubernetes"
+description: "Notes on Kubernetes."
 ---
 
 # Kubernetes

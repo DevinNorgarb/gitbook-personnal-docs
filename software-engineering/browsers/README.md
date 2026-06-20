@@ -1,6 +1,6 @@
 ---
-title: Browsers
-description: Browser extensions, web platform APIs, and CORS troubleshooting.
+title: "Browsers"
+description: "Notes on Browsers."
 ---
 
 # Browsers

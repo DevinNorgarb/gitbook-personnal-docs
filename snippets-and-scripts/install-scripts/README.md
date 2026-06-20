@@ -1,6 +1,6 @@
 ---
-title: Install Scripts
-description: Installation guides for development tools and services
+title: "Install Scripts"
+description: "Notes on Install Scripts."
 ---
 
 # Install Scripts

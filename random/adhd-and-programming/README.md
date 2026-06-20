@@ -1,6 +1,6 @@
 ---
-title: ADHD and Programming
-description: How ADHD brains interact with coding — hyperfocus, regulation, strategies.
+title: "ADHD and Programming"
+description: "Notes on ADHD and Programming."
 ---
 
 # ADHD and Programming

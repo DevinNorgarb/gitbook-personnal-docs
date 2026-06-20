@@ -1,6 +1,6 @@
 ---
-title: Linux
-description: "\"\\\">-; Adding extra Swap Space\\\"\""
+title: "Linux"
+description: "Notes on Linux."
 ---
 
 # Linux

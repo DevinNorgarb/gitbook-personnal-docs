@@ -1,6 +1,6 @@
 ---
-title: Google - Code Review
-description: "\"\\\"**At Google, we optimize for the speed at which a team of developers can produce a product together**, as opposed to optimizing for the spee; In general, it is important to be [courteous and respectful](https://chromium.googlesource.com/chromium/src/+/master/docs/cr_respect.md) whi\\\"\""
+title: "Google - Code Review"
+description: "Notes on Google - Code Review."
 ---
 
 # Google - Code Review

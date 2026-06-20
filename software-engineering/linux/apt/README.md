@@ -1,6 +1,6 @@
 ---
-title: apt
-description: Apt defaults to using the set of architectures reported by dpkg, and any unqualified architecture deb lines in /etc/apt/sources.list, which
+title: "apt"
+description: "Notes on apt."
 ---
 
 # apt

@@ -1,6 +1,6 @@
 ---
-title: Docker
-description: These optional post-installation procedures describe how to configure your Linux host machine to work better with Docker.
+title: "Docker"
+description: "Notes on Docker."
 ---
 
 # Docker

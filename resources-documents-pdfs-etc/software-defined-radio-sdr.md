@@ -1,6 +1,6 @@
 ---
-title: Software Defined Radio (SDR)
-description: Reference notes and links for Software Defined Radio (SDR) in the resources documents pdfs etc section.
+title: "Software Defined Radio (SDR)"
+description: "Notes on Software Defined Radio (SDR)."
 ---
 
 # Software Defined Radio (SDR)

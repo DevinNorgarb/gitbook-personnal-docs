@@ -1,5 +1,6 @@
 ---
-description: Making Antennas for 1090MHz ADS-B Aircraft Tracking
+title: "making-an-sdr-antenna"
+description: "Notes on making-an-sdr-antenna."
 ---
 
 # Making an SDR Antenna

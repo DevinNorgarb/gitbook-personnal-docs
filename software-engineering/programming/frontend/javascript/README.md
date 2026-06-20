@@ -1,6 +1,6 @@
 ---
-title: Javascript
-description: JavaScript desktop and full-stack frontend migration notes.
+title: "Javascript"
+description: "Notes on Javascript."
 ---
 
 # Javascript

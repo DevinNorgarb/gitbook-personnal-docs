@@ -1,6 +1,6 @@
 ---
-title: Running your own bitcoin node
-description: \"\\\"A full node is a program that fully validates transactions and blocks. Almost all full nodes also help the network by accepting transactions; Let me explain quickly that a Bitcoin node is any computer which runs a piece of software (Bitcoin Core) that has some important jobs:\\\"\
+title: "Running your own bitcoin node"
+description: "Notes on Running your own bitcoin node."
 ---
 
 # Running your own bitcoin node

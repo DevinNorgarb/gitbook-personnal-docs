@@ -1,6 +1,6 @@
 ---
-title: Run docker commands without needing sudo
-description: Reference notes and links for Run docker commands without needing sudo in the snippets and scripts section.
+title: "Run docker commands without needing sudo"
+description: "Notes on Run docker commands without needing sudo."
 ---
 
 # Run docker commands without needing sudo

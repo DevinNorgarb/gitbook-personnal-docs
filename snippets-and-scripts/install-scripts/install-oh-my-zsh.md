@@ -1,6 +1,6 @@
 ---
-title: Install oh-my-zsh
-description: One-line installer for Oh My Zsh framework.
+title: "Install oh-my-zsh"
+description: "Notes on Install oh-my-zsh."
 ---
 
 # Install oh-my-zsh

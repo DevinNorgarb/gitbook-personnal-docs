@@ -1,6 +1,6 @@
 ---
-title: Samba on Mac
-description: Install Samba 3 on macOS via Homebrew and launch on boot.
+title: "Samba on Mac"
+description: "Notes on Samba on Mac."
 ---
 
 # Samba on Mac

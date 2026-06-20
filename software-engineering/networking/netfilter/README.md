@@ -1,6 +1,6 @@
 ---
-title: netfilter
-description: \ This alert presents the percentage of used netfilter tracked connections. If you receive this alert, there is high utilization of the netf
+title: "netfilter"
+description: "Notes on netfilter."
 ---
 
 # netfilter

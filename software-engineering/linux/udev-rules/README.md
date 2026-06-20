@@ -1,6 +1,6 @@
 ---
-title: udev rules
-description: \"\\\"Udev is the Linux subsystem that supplies your computer with device events. In plain English, that means it's the code that detects when you; https://askubuntu.com/a/15643/593957\\\"\
+title: "udev rules"
+description: "Notes on udev rules."
 ---
 
 # udev rules

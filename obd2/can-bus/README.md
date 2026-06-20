@@ -1,6 +1,6 @@
 ---
-title: CAN Bus
-description: \"\\\"<div align=\\\\\\\"center\\\\\\\">; <figure><img src=\\\\\\\"https://www.elecrow.com/wiki/images/thumb/a/ac/CAN-BUS_Shield1.jpg/400px-CAN-BUS_Shield1.jpg\\\\\\\" alt=\\\\\\\"\\\\\\\"><figcaption></figcapt\\\"\
+title: "CAN Bus"
+description: "Notes on CAN Bus."
 ---
 
 # CAN Bus

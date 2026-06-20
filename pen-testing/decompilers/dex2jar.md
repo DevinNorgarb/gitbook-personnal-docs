@@ -1,6 +1,6 @@
 ---
-title: dex2jar
-description: Convert Android .dex files to Java .class / JAR for analysis.
+title: "dex2jar"
+description: "Notes on dex2jar."
 ---
 
 # dex2jar

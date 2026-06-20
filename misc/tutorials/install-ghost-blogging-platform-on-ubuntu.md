@@ -1,6 +1,6 @@
 ---
-title: Install Ghost blogging platform on Ubuntu
-description: Ghost CMS on Ubuntu 18.04 with Nginx, MySQL, Node.js, and Ghost-CLI.
+title: "Install Ghost blogging platform on Ubuntu"
+description: "Notes on Install Ghost blogging platform on Ubuntu."
 ---
 
 # Install Ghost blogging platform on Ubuntu

@@ -1,6 +1,6 @@
 ---
-title: act (Install GitHub Runners Locally)
-description: Reference notes and links for act (Install GitHub Runners Locally) in the snippets and scripts section.
+title: "act (Install GitHub Runners Locally)"
+description: "Notes on act (Install GitHub Runners Locally)."
 ---
 
 # act (Install GitHub Runners Locally)

@@ -1,6 +1,6 @@
 ---
-title: WebAssembly
-description: This section will teach you how to optimize your .wasm
+title: "WebAssembly"
+description: "Notes on WebAssembly."
 ---
 
 # WebAssembly

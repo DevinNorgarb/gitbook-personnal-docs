@@ -1,6 +1,6 @@
 ---
-title: Page 3
-description: Reference notes and links for Page 3 in the software defined radio section.
+title: "Page 3"
+description: "Notes on Page 3."
 ---
 
 # Page 3

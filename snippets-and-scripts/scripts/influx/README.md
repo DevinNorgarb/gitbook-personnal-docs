@@ -1,6 +1,6 @@
 ---
-title: Influx
-description: Imported notes from Ben Tasker on polling Kasa/Tapo plugs into InfluxDB via Docker
+title: "Influx"
+description: "Notes on Influx."
 ---
 
 # Influx

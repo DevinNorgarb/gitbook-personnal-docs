@@ -1,6 +1,6 @@
 ---
-title: Container Networking
-description: General container networking notes and links to LXC/LXD runbooks
+title: "Container Networking"
+description: "Notes on Container Networking."
 ---
 
 # Container Networking

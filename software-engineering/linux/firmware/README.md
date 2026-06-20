@@ -1,6 +1,6 @@
 ---
-title: Firmware
-description: \"\\\">-\\\"\
+title: "Firmware"
+description: "Notes on Firmware."
 ---
 
 # Firmware

@@ -1,6 +1,6 @@
 ---
-title: Page
-description: \"\\\"Please keep in mind that the [self-hosted repository](https://github.com/getsentry/self-hosted) is geared towards low traffic loads (less th\\\"\
+title: "Page"
+description: "Notes on Page."
 ---
 
 # Page

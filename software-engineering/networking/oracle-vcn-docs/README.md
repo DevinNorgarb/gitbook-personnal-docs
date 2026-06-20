@@ -1,6 +1,6 @@
 ---
-title: Oracle VCN Docs
-description: \"\\\"I figured it out. The connectivity issue was due to Oracle's default use of iptables on all Oracle-provided images. Literally the very first; When you work with Oracle Cloud Infrastructure, one of the first steps is to set up a Virtual Cloud Network (VCN) for cloud resources. This\\\"\
+title: "Oracle VCN Docs"
+description: "Notes on Oracle VCN Docs."
 ---
 
 # Oracle VCN Docs

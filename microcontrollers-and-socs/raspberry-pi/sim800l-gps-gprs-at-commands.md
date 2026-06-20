@@ -1,6 +1,6 @@
 ---
-title: SIM800L GPS/GPRS AT Commands
-description: Quick reference for SIM800 series AT commands; full manual linked below.
+title: "SIM800L GPS/GPRS AT Commands"
+description: "Notes on SIM800L GPS/GPRS AT Commands."
 ---
 
 # SIM800L GPS/GPRS AT Commands

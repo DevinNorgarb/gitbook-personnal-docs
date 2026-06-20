@@ -1,6 +1,6 @@
 ---
-title: Docker Compose
-description: Reference notes and links for Docker Compose in the software engineering section.
+title: "Docker Compose"
+description: "Notes on Docker Compose."
 ---
 
 # Docker Compose

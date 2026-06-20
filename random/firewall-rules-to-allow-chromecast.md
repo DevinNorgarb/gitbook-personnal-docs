@@ -1,6 +1,6 @@
 ---
-title: Firewall rules to allow Chromecast
-description: Reference notes and links for Firewall rules to allow Chromecast in the random section.
+title: "Firewall rules to allow Chromecast"
+description: "Notes on Firewall rules to allow Chromecast."
 ---
 
 # Firewall rules to allow Chromecast

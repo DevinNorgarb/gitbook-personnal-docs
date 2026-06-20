@@ -1,6 +1,6 @@
 ---
-title: CSS
-description: Reference notes and links for CSS in the software engineering section.
+title: "CSS"
+description: "Notes on CSS."
 ---
 
 # CSS

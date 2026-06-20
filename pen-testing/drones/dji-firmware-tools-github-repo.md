@@ -1,6 +1,6 @@
 ---
-title: dji-firmware-tools Github Repo
-description: Extract, modify, and repack DJI multirotor firmware packages.
+title: "dji-firmware-tools Github Repo"
+description: "Notes on dji-firmware-tools Github Repo."
 ---
 
 # dji-firmware-tools Github Repo

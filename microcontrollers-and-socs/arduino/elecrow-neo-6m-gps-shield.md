@@ -1,6 +1,6 @@
 ---
-title: elecrow neo 6M GPS Shield
-description: \">-\
+title: "elecrow neo 6M GPS Shield"
+description: "Notes on elecrow neo 6M GPS Shield."
 ---
 
 # elecrow neo 6M GPS Shield

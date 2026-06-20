@@ -1,6 +1,6 @@
 ---
-title: Finance
-description: Reference notes and links for Finance in the resources documents pdfs etc section.
+title: "Finance"
+description: "Notes on Finance."
 ---
 
 # Finance

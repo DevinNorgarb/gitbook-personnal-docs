@@ -1,6 +1,6 @@
 ---
-title: NetShoot
-description: Reference notes and links for NetShoot in the software engineering section.
+title: "NetShoot"
+description: "Notes on NetShoot."
 ---
 
 # NetShoot

@@ -1,6 +1,6 @@
 ---
-title: Creating a Panorama Application
-description: Reference notes and links for Creating a Panorama Application in the drones section.
+title: "Creating a Panorama Application"
+description: "Notes on Creating a Panorama Application."
 ---
 
 # Creating a Panorama Application

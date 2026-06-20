@@ -1,6 +1,6 @@
 ---
-title: RTSP
-description: \"\\\"\\\\\\\\[[RFC Home](https://www.rfc-editor.org/)] \\\\\\\\[[TEXT](https://www.rfc-editor.org/rfc/rfc2326.txt)|[PDF](https://www.rfc-editor.org/rfc/pdfrfc/\\\"\
+title: "RTSP"
+description: "Notes on RTSP."
 ---
 
 # RTSP

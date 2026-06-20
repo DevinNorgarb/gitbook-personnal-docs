@@ -1,5 +1,6 @@
 ---
-description: "\"https://www.traccar.org/download/\""
+title: "traccar.org"
+description: "Notes on traccar.org."
 ---
 
 # traccar.org

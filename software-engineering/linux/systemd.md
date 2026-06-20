@@ -1,6 +1,6 @@
 ---
-title: systemd
-description: Reference notes and links for systemd in the software engineering section.
+title: "systemd"
+description: "Notes on systemd."
 ---
 
 # systemd

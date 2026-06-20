@@ -1,6 +1,6 @@
 ---
-title: ESP32-C3 datasheet (English)
-description: Imported copy of the ESP32-C3 English datasheet mirrored on Michiel van der Wulp’s domotica site (ESP32-C3 Super Mini module notes).
+title: "ESP32-C3 datasheet (English)"
+description: "Notes on ESP32-C3 datasheet (English)."
 ---
 
 # ESP32-C3 datasheet (English)

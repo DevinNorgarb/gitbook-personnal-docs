@@ -1,6 +1,6 @@
 ---
-title: Geocoding Accuracy
-description: Reference notes and links for Geocoding Accuracy in the gis section.
+title: "Geocoding Accuracy"
+description: "Notes on Geocoding Accuracy."
 ---
 
 # Geocoding Accuracy

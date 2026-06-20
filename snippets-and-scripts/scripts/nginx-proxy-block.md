@@ -1,6 +1,6 @@
 ---
-title: Nginx Proxy Block
-description: Minimal reverse-proxy server block for an upstream app.
+title: "Nginx Proxy Block"
+description: "Notes on Nginx Proxy Block."
 ---
 
 # Nginx Proxy Block

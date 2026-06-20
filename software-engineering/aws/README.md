@@ -1,6 +1,6 @@
 ---
-title: AWS
-description: \"\\\">-\\\"\
+title: "AWS"
+description: "Notes on AWS."
 ---
 
 # AWS

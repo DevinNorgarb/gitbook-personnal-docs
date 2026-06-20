@@ -1,6 +1,6 @@
 ---
-title: Open Garages
-description: Public access, docs, and tools for understanding modern vehicle systems.
+title: "Open Garages"
+description: "Notes on Open Garages."
 ---
 
 # Open Garages

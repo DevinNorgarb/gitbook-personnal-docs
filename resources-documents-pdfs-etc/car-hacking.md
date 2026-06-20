@@ -1,6 +1,6 @@
 ---
-title: Car Hacking
-description: Reference notes and links for Car Hacking in the resources documents pdfs etc section.
+title: "Car Hacking"
+description: "Notes on Car Hacking."
 ---
 
 # Car Hacking

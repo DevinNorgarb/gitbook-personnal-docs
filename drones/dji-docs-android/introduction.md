@@ -1,6 +1,6 @@
 ---
-title: Introduction
-description: DJI Mobile SDK — deprecated GitBook, use official developer docs.
+title: "Introduction"
+description: "Notes on Introduction."
 ---
 
 # Introduction

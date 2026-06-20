@@ -1,6 +1,6 @@
 ---
-title: Libraries
-description: \"\\\"| CAN BUS Shield | 2-Channel CAN-BUS(FD) Shield |\\\"\
+title: "Libraries"
+description: "Notes on Libraries."
 ---
 
 # Libraries

@@ -1,6 +1,6 @@
 ---
-title: Marine Traffic SLR350
-description: Reference notes and links for Marine Traffic SLR350 in the drones section.
+title: "Marine Traffic SLR350"
+description: "Notes on Marine Traffic SLR350."
 ---
 
 # Marine Traffic SLR350

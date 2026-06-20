@@ -1,6 +1,6 @@
 ---
-title: SITL
-description: The SITL (Software In The Loop) simulator allows you to run APM without any hardware. It is a build of the autopilot code using an ordinary ; The SITL (Software In The Loop) simulator allows you to create and test DroneKit-Python apps without a real vehicle (from your developer des
+title: "SITL"
+description: "Notes on SITL."
 ---
 
 # SITL

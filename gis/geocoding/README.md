@@ -1,6 +1,6 @@
 ---
-title: Geocoding
-description: Forward/reverse geocoding APIs, accuracy research, and PostGIS MVT.
+title: "Geocoding"
+description: "Notes on Geocoding."
 ---
 
 # Geocoding

@@ -1,6 +1,6 @@
 ---
-description: "\"\\\">-\\\"\""
-title: Install ProxMox on a Raspberry Pi
+title: "Install ProxMox on a Raspberry Pi"
+description: "Notes on Install ProxMox on a Raspberry Pi."
 ---
 
 # Install ProxMox on a Raspberry Pi

@@ -1,6 +1,6 @@
 ---
-title: Kupiki Hotspot Script
-description: Automated captive-portal WiFi hotspot on Raspberry Pi (CoovaChilli + FreeRADIUS).
+title: "Kupiki Hotspot Script"
+description: "Notes on Kupiki Hotspot Script."
 ---
 
 # Kupiki Hotspot Script

@@ -1,6 +1,6 @@
 ---
-title: DJI Docs (Android)
-description: "\"\\\"This Gitbook is now deprecated, please refer to the iOS & Android tutorial sections in DJI Developer Website: [https://developer.dji.com/mob; 该Gitbook已弃用，不再予以维护，请移步到DJI开发者官网[https://developer.dji.com/mobile-sdk/documentation/introduction/index.html](https://developer.dji.com/mobile\\\"\""
+title: "DJI Docs (Android)"
+description: "Notes on DJI Docs (Android)."
 ---
 
 # DJI Docs (Android)

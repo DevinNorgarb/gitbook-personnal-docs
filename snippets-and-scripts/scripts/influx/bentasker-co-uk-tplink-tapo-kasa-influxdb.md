@@ -1,6 +1,6 @@
 ---
-title: Energy usage monitoring with TP-Link smart sockets and InfluxDB
-description: Imported notes from Ben Tasker on polling Kasa/Tapo plugs into InfluxDB via Docker
+title: "Energy usage monitoring with TP-Link smart sockets and InfluxDB"
+description: "Notes on Energy usage monitoring with TP-Link smart sockets and InfluxDB."
 ---
 
 # Energy usage monitoring with TP-Link smart sockets and InfluxDB

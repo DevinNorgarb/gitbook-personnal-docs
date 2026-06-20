@@ -1,6 +1,6 @@
 ---
-title: DroneBridge
-description: Reference notes and links for DroneBridge in the software defined radio section.
+title: "DroneBridge"
+description: "Notes on DroneBridge."
 ---
 
 # DroneBridge

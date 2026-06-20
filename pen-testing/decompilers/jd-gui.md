@@ -1,6 +1,6 @@
 ---
-title: jd-gui
-description: Standalone Java decompiler GUI for .class files.
+title: "jd-gui"
+description: "Notes on jd-gui."
 ---
 
 # jd-gui

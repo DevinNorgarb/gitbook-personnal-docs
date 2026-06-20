@@ -1,6 +1,6 @@
 ---
-title: Android
-description: Reference notes and links for Android in the drones section.
+title: "Android"
+description: "Notes on Android."
 ---
 
 # Android

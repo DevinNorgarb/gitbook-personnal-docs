@@ -1,6 +1,6 @@
 ---
-title: Inertia Guide
-description: Reference notes and links for Inertia Guide in the software engineering section.
+title: "Inertia Guide"
+description: "Notes on Inertia Guide."
 ---
 
 # Inertia Guide

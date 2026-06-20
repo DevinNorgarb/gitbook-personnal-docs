@@ -1,6 +1,6 @@
 ---
-title: How to use Lando for local development with Laravel
-description: "\"\\\"The first time I tried to get this working, once the cluster was up, the traefik pods were in CrashloopBackoff due to ip\\\\\\\\_forwarding being d; ![](<../../../../.gitbook/assets/image (61)>)\\\"\""
+title: "How to use Lando for local development with Laravel"
+description: "Notes on How to use Lando for local development with Laravel."
 ---
 
 # How to use Lando for local development with Laravel

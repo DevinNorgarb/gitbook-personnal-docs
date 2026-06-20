@@ -1,5 +1,6 @@
 ---
-description: "\"https://github.com/DroneBridge/DroneBridge\""
+title: "dronebridge"
+description: "Notes on dronebridge."
 ---
 
 # DroneBridge

@@ -1,5 +1,6 @@
 ---
-description: "\"https://askubuntu.com/a/15643/593957\""
+title: "changing-dev-hidraw-permissions"
+description: "Notes on changing-dev-hidraw-permissions."
 ---
 
 # Changing /dev/hidraw permissions

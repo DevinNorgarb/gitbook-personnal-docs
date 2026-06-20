@@ -1,5 +1,6 @@
 ---
-description: How to add some life to your Github profile homepage
+title: "github-readme"
+description: "Notes on github-readme."
 ---
 
 # GitHub README

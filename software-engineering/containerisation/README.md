@@ -1,6 +1,6 @@
 ---
-title: Containerisation
-description: Docker, LXC/LXD, Compose, and hypervisor notes
+title: "Containerisation"
+description: "Notes on Containerisation."
 ---
 
 # Containerisation

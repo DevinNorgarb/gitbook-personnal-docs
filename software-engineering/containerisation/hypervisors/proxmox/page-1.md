@@ -1,6 +1,6 @@
 ---
-title: Page 1
-description: Reference notes and links for Page 1 in the software engineering section.
+title: "Page 1"
+description: "Notes on Page 1."
 ---
 
 # Page 1

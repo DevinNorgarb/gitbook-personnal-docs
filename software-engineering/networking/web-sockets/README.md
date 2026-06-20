@@ -1,6 +1,6 @@
 ---
-title: Web Sockets
-description: WebSocket testing tools and Socket.IO debugging notes.
+title: "Web Sockets"
+description: "Notes on Web Sockets."
 ---
 
 # Web Sockets

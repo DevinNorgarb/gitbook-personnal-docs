@@ -1,6 +1,6 @@
 ---
-title: SITL
-description: Software-in-the-loop drone simulation — ArduPilot basics video.
+title: "SITL"
+description: "Notes on SITL."
 ---
 
 # SITL

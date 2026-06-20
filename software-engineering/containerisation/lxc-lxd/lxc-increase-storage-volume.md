@@ -1,5 +1,6 @@
 ---
-description: How to increase LXC container storage volume size using ZFS storage driver
+title: "lxc-increase-storage-volume"
+description: "Notes on lxc-increase-storage-volume."
 ---
 
 # LXC increase storage volume

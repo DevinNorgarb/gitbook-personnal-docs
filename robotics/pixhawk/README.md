@@ -1,6 +1,6 @@
 ---
-title: PixHawk
-description: "\"\\\"<figure><img src=\\\\\\\"../../.gitbook/assets/Connection-Diagram-R1.png\\\\\\\" alt=\\\\\\\"\\\\\\\"><figcaption></figcaption></figure>\\\"\""
+title: "PixHawk"
+description: "Notes on PixHawk."
 ---
 
 # PixHawk

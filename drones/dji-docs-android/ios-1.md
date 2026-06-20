@@ -1,6 +1,6 @@
 ---
-title: iOS
-description: Reference notes and links for iOS in the drones section.
+title: "iOS"
+description: "Notes on iOS."
 ---
 
 # iOS

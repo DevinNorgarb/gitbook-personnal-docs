@@ -1,6 +1,6 @@
 ---
-title: Proxmox VE Helper Scripts (community-scripts.org)
-description: Curated one-line install scripts for Proxmox VE LXC, VM, and host tooling
+title: "Proxmox VE Helper Scripts (community-scripts.org)"
+description: "Notes on Proxmox VE Helper Scripts (community-scripts.org)."
 ---
 
 # Proxmox VE Helper Scripts (community-scripts.org)

@@ -1,6 +1,6 @@
 ---
-title: Devops
-description: Devops — Cloud-Init
+title: "Devops"
+description: "Notes on Devops."
 ---
 
 # Devops

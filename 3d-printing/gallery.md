@@ -1,6 +1,6 @@
 ---
-title: Gallery
-description: Reference notes and links for Gallery in the 3d printing section.
+title: "Gallery"
+description: "Notes on Gallery."
 ---
 
 # Gallery

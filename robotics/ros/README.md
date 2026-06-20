@@ -1,6 +1,6 @@
 ---
-title: ROS
-description: \"\\\">-; A simple template project for [dockerizing](https://www.docker.com/) your [ROS](http://www.ros.org/) code. Have your ROS project set up and\\\"\
+title: "ROS"
+description: "Notes on ROS."
 ---
 
 # ROS

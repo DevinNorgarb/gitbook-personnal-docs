@@ -1,5 +1,6 @@
 ---
-description: "\">-\""
+title: "content-security-policy"
+description: "Notes on content-security-policy."
 ---
 
 # Content Security Policy

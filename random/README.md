@@ -1,6 +1,6 @@
 ---
-title: Random
-description: Miscellaneous notes on torrents, ADHD and programming, Ubuntu tips, Chromecast, and more
+title: "Random"
+description: "Notes on Random."
 ---
 
 # Random

@@ -1,6 +1,6 @@
 ---
-title: MQ135 Air Quality Sensor (Bobbo117)
-description: Notes from Bobbo117’s GitHub project — Arduino/ESP8266 calibration, OLED, MQTT, Home Assistant wiring and caveats for the MQ135 board.
+title: "MQ135 Air Quality Sensor (Bobbo117)"
+description: "Notes on MQ135 Air Quality Sensor (Bobbo117)."
 ---
 
 # MQ135 Air Quality Sensor (Bobbo117)

@@ -1,6 +1,6 @@
 ---
-title: Install Certbot
-description: \"\\\"Instructions for installing and using Certbot for Let's Encrypt SSL/TLS certificates\\\"\
+title: "Install Certbot"
+description: "Notes on Install Certbot."
 ---
 
 # Install Certbot

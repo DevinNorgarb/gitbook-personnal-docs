@@ -1,6 +1,6 @@
 ---
-title: ESP32 WiFi Penetration Tool
-description: ESP32-based WiFi security testing and attack toolkit.
+title: "ESP32 WiFi Penetration Tool"
+description: "Notes on ESP32 WiFi Penetration Tool."
 ---
 
 # ESP32 WiFi Penetration Tool

@@ -1,6 +1,6 @@
 ---
-title: ProxMox
-description: \"\\\"*This page documents **Page 1**.*\\\"\
+title: "ProxMox"
+description: "Notes on ProxMox."
 ---
 
 # ProxMox

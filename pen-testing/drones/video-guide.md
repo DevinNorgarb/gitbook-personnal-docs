@@ -1,6 +1,6 @@
 ---
-title: Video Guide
-description: Video walkthrough for drone security / firmware topics.
+title: "Video Guide"
+description: "Notes on Video Guide."
 ---
 
 # Video Guide

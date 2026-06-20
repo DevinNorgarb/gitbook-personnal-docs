@@ -1,6 +1,6 @@
 ---
-title: Pinout
-description: Reference notes and links for Pinout in the microcontrollers and socs section.
+title: "Pinout"
+description: "Notes on Pinout."
 ---
 
 # Pinout

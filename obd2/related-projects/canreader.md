@@ -1,6 +1,6 @@
 ---
-title: CANreader
-description: Android CAN bus client — CanHacker-compatible, multiple adapters.
+title: "CANreader"
+description: "Notes on CANreader."
 ---
 
 # CANreader

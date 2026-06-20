@@ -1,6 +1,6 @@
 ---
-title: ADHD Programming Notes
-description: Reference notes and links for ADHD Programming Notes in the random section.
+title: "ADHD Programming Notes"
+description: "Notes on ADHD Programming Notes."
 ---
 
 # ADHD Programming Notes

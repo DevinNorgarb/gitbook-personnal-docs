@@ -1,6 +1,6 @@
 ---
-title: \"\\\"Torrents & DHT Network\\\"\
-description: Autonomous (self-hosted) BitTorrent DHT search engine suite.
+title: "\\\"\\\\\\\"Torrents & DHT Network\\\\\\\"\\"
+description: "Notes on \\\"\\\\\\\"Torrents & DHT Network\\\\\\\"\\."
 ---
 
 # \"\\\"Torrents & DHT Network\\\"\

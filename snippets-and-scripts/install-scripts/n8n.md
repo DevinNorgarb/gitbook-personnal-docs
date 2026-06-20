@@ -1,5 +1,6 @@
 ---
-description: n8n — Workflow automation tool for building automated workflows
+title: "n8n"
+description: "Notes on n8n."
 ---
 
 # n8n

@@ -1,6 +1,6 @@
 ---
-title: Grafana
-description: \"\\\"By [_Techno Tim_](https://l.technotim.live/twitter)Posted _4 months ago_ Updated _12 days ago_ _4 min_ read; https://github.com/DevinNorgarb/obd-visualiser\\\"\
+title: "Grafana"
+description: "Notes on Grafana."
 ---
 
 # Grafana

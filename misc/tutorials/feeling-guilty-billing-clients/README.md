@@ -1,6 +1,6 @@
 ---
-title: Feeling Guilty Billing Clients?
-description: "\"\\\"![](<../../../.gitbook/assets/image (56)>)\\\"\""
+title: "Feeling Guilty Billing Clients?"
+description: "Notes on Feeling Guilty Billing Clients?."
 ---
 
 # Feeling Guilty Billing Clients?

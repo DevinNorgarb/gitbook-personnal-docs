@@ -1,6 +1,6 @@
 ---
-title: OBDII Simulators
-description: "\"\\\"...that actually works; \\\\\\\\ [Modules | Screenshots | Log Output | Supported OSs | Download | Contact ]\\\"\""
+title: "OBDII Simulators"
+description: "Notes on OBDII Simulators."
 ---
 
 # OBDII Simulators

@@ -1,6 +1,6 @@
 ---
-title: Related Projects
-description: "\"\\\"https://github.com/autowp/CANreader\\\"\""
+title: "Related Projects"
+description: "Notes on Related Projects."
 ---
 
 # Related Projects

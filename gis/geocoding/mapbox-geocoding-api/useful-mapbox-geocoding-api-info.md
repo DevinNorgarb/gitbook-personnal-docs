@@ -1,5 +1,6 @@
 ---
-description: "\">-\""
+title: "useful-mapbox-geocoding-api-info"
+description: "Notes on useful-mapbox-geocoding-api-info."
 ---
 
 # Useful Mapbox Geocoding API Info
