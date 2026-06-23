@@ -13,6 +13,7 @@ Open-source stacks for **live vehicle telemetry**, GPS tracking, and fleet dashb
 |------|--------|
 | [Open Vehicles documentation](./open-vehicles-documentation.md) | OVMS — EV/ICE remote monitor & control |
 | [traccar.org](./traccar.org.md) | Traccar GPS tracking server |
+| [Concox GT710 firmware extraction](./concox-gt710-firmware-extraction.md) | UART metadata, PCB map, macOS clone path |
 
 ## OVMS (high level)
 
