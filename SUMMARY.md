@@ -362,6 +362,8 @@
   - [Overclocking Raspberry Pi 4](microcontrollers-and-socs/raspberry-pi/overclocking-raspberry-pi-4/README.md)
     - [SEED Studio Overclocking Guide](microcontrollers-and-socs/raspberry-pi/overclocking-raspberry-pi-4/seed-studio-overclocking-guide.md)
     - [Pi 4 Overclocking Maximum settings](microcontrollers-and-socs/raspberry-pi/overclocking-raspberry-pi-4/pi-4-overclocking-maximum-settings.md)
+  - [Overclocking Raspberry Pi 5](microcontrollers-and-socs/raspberry-pi/overclocking-raspberry-pi-5/README.md)
+    - [Complete RPi 5 Overclocking Guide (cmd0s)](microcontrollers-and-socs/raspberry-pi/overclocking-raspberry-pi-5/github-cmd0s-rpi5-overclocking-guide.md)
 - [ESP32](microcontrollers-and-socs/esp32/README.md)
   - [ESP32 CAM](microcontrollers-and-socs/esp32/esp32-cam.md)
   - [ESP32-C3 datasheet (EN)](microcontrollers-and-socs/esp32/michiel-vanderwulp-be-esp32-c3-datasheet.md)
