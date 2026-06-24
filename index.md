@@ -68,8 +68,8 @@ features:
 
 <div class="apps-grid">
 
-<a class="app-card app-card--gps-remote" href="https://play.google.com/store/apps/details?id=com.devsdev.gpsremote" target="_blank" rel="noopener noreferrer">
-  <span class="app-icon" role="img" aria-label="GPS Remote for Osmo Action"></span>
+<a class="app-card app-card--gps-remote no-icon" href="https://play.google.com/store/apps/details?id=com.devsdev.gpsremote" target="_blank" rel="noopener noreferrer">
+  <img class="app-icon" src="/apps/gps-remote-icon.png" alt="GPS Remote for Osmo Action" width="72" height="72" loading="lazy" decoding="async">
   <div class="app-body">
     <div class="app-meta">
       <h3 class="app-name">GPS Remote for Osmo Action</h3>
@@ -80,8 +80,8 @@ features:
   </div>
 </a>
 
-<a class="app-card app-card--sofly" href="https://play.google.com/store/apps/details?id=flight.track" target="_blank" rel="noopener noreferrer">
-  <span class="app-icon" role="img" aria-label="SoFly"></span>
+<a class="app-card app-card--sofly no-icon" href="https://play.google.com/store/apps/details?id=flight.track" target="_blank" rel="noopener noreferrer">
+  <img class="app-icon" src="/apps/sofly-icon.png" alt="SoFly" width="72" height="72" loading="lazy" decoding="async">
   <div class="app-body">
     <div class="app-meta">
       <h3 class="app-name">SoFly</h3>

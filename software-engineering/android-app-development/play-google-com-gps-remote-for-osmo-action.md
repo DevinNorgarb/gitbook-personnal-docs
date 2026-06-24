@@ -13,7 +13,7 @@ description: "Notes on GPS Remote for Osmo Action."
 
 ## Content
 
-![GPS Remote for Osmo Action icon](./assets/play-google-com-gps-remote-for-osmo-action/icon.png)
+![GPS Remote for Osmo Action icon](/apps/gps-remote-icon.png)
 
 **Developer:** Devin Norgarb · **Category:** Photography · **Updated:** Jun 8, 2026
 
@@ -69,7 +69,7 @@ This is a third-party utility, not an official DJI or Mimo app. Features depend 
 
 ## Related app — SoFly
 
-![SoFly icon](./assets/play-google-com-gps-remote-for-osmo-action/sofly-icon.png)
+![SoFly icon](/apps/sofly-icon.png)
 
 **Play Store:** [SoFly — flight tracking & logging](https://play.google.com/store/apps/details?id=flight.track) · **Category:** Maps & Navigation · **Updated:** Jun 18, 2026
 
