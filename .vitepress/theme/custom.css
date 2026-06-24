@@ -149,6 +149,16 @@
     transform 0.22s ease;
 }
 
+.vp-doc a.app-card {
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.vp-doc a.app-card:hover {
+  color: inherit;
+}
+
 .VPHome .app-card:hover {
   border-color: color-mix(in srgb, var(--vp-c-brand-1) 55%, var(--vp-c-divider));
   box-shadow:
@@ -163,20 +173,10 @@
   height: 72px;
   border-radius: 18px;
   flex-shrink: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
   box-shadow:
     0 0 0 1px color-mix(in srgb, var(--vp-c-divider) 80%, transparent),
     0 4px 14px color-mix(in srgb, var(--vp-c-text-1) 8%, transparent);
-}
-
-.VPHome .app-card--gps-remote .app-icon {
-  background-image: url("/apps/gps-remote-icon.png");
-}
-
-.VPHome .app-card--sofly .app-icon {
-  background-image: url("/apps/sofly-icon.png");
 }
 
 .VPHome .app-body {
