@@ -9,6 +9,9 @@ const navHidden = JSON.parse(
   fs.readFileSync(path.join(root, "nav.hidden.json"), "utf8"),
 );
 
+const UMAMI_HOST = "https://umami.f1y.ing";
+const UMAMI_WEBSITE_ID = "10532e65-850b-4b41-8e8f-2b8a5e583612";
+
 export default defineConfig({
   title: "Devin Norgarb",
   titleTemplate: ":title · Notes",
@@ -16,6 +19,27 @@ export default defineConfig({
     "Public knowledge base — software engineering, embedded systems, robotics, GIS, and project notes.",
   // Custom domain serves docs at the root.
   base: "/",
+  head: [
+    [
+      "script",
+      {
+        defer: true,
+        src: `${UMAMI_HOST}/script.js`,
+        "data-website-id": UMAMI_WEBSITE_ID,
+      },
+    ],
+    [
+      "script",
+      {
+        defer: true,
+        src: `${UMAMI_HOST}/recorder.js`,
+        "data-website-id": UMAMI_WEBSITE_ID,
+        "data-sample-rate": "1",
+        "data-mask-level": "moderate",
+        "data-max-duration": "300000",
+      },
+    ],
+  ],
   vite: {
     // Legacy GitBook import store — see .github/ASSET-CONVENTION.md (prefer topic-local assets/)
     assetsInclude: [
