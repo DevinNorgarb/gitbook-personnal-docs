@@ -30,7 +30,7 @@ ChatGPT, DeepSeek, Perplexity, Gemini, Gemma, Llama, Grok, and more.
 
 Please consider sponsoring me.
 
-[![Sponsor](.github/assets/github-like-sponsor-button.svg)](https://github.com/sponsors/yamadashy)
+[![Sponsor](https://raw.githubusercontent.com/yamadashy/repomix/main/.github/assets/github-like-sponsor-button.svg)](https://github.com/sponsors/yamadashy)
 
 [![Sponsors](https://cdn.jsdelivr.net/gh/yamadashy/sponsor-list/sponsors/sponsors.png)](https://github.com/sponsors/yamadashy)
 
