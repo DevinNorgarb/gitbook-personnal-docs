@@ -141,7 +141,7 @@ client  = Anthropic(base_url="https://api.anthropic.com", api_key=ANTHROPIC_API_
 MODEL   = MODEL_ID
 
 # System prompt is the foundation of the agent's behavior, it sets the stage for how the model will approach tasks
-DEFAULT_SYSTEM = f"You are a coding agent at {os.getcwd()}. Use tools to solve tasks. Act, don't explain."
+DEFAULT_SYSTEM = f"You are a coding agent at &#123;os.getcwd()&#125;. Use tools to solve tasks. Act, don't explain."
 Since we are building claude we are using the anthropic model but you can use litellm to swap in any model you like, my github codebase is flexible to support any model provider.
 
 System prompt is the foundation of the agent’s behavior, system prompt is not useful most often but it is critical to set the stage for how the model will approach tasks.
@@ -149,27 +149,27 @@ System prompt is the foundation of the agent’s behavior, system prompt is not 
 As I previously mentioned the claude is build around tools, so we need to define some basic tools for our agent to interact with the world. These tools will be the interface through which the model can perform actions and gather information.
 
 BASIC_TOOLS = [
-    {
+    &#123;
         "name": "bash",
         "description": "Run a shell command.",
-        "input_schema": {
+        "input_schema": &#123;
             "type": "object",
-            "properties": {"command": {"type": "string"}},
+            "properties": &#123;"command": &#123;"type": "string"&#125;&#125;,
             "required": ["command"],
-        },
-    },
+        &#125;,
+    &#125;,
 ]
 In here we are defining a single tool called bash that allows the model to execute shell commands. The tool has a name, a description, and an input schema that specifies the expected format of the input.
 
-BASIC_DISPATCH: dict = {
+BASIC_DISPATCH: dict = &#123;
     "bash": lambda inp: run_bash(inp["command"]),
-}
+&#125;
 Dispatch is the mechanism that connects the model’s tool calls to actual code execution. It is a dictionary mapping tool names to handler functions. This is important for bigger architectures like claude code which contains tons of tools, it allows us to keep the tool definitions separate from their implementations and makes it easy to add new tools without changing the core loop.
 
-def dispatch_tools(response_content: list, dispatch: dict) -> List[Dict[str, Any]]:
+def dispatch_tools(response_content: list, dispatch: dict) -&gt; List[Dict[str, Any]]:
     """
     Executes all tool_use blocks from a model's response and collects the results.
-    
+
     Args:
         response_content (list): The `content` list from an Anthropic Message object.
         dispatch (dict): The dispatch map to use for routing tool calls.
@@ -185,30 +185,30 @@ def dispatch_tools(response_content: list, dispatch: dict) -> List[Dict[str, Any
         tool_input = block.input
         tool_use_id = block.id
         handler = dispatch.get(tool_name)
-        
+
         # Log the tool call for user visibility.
         first_val = str(list(tool_input.values())[0])[:80] if tool_input else ""
-        print(f"\033[33m[{tool_name}] {first_val}...\033[0m")  # Yellow text
+        print(f"\033[33m[&#123;tool_name&#125;] &#123;first_val&#125;...\033[0m")  # Yellow text
         if handler:
             try:
                 output = handler(tool_input)
             except Exception as e:
-                output = f"Error during tool execution: {e}"
+                output = f"Error during tool execution: &#123;e&#125;"
         else:
-            output = f"Error: Unknown tool '{tool_name}'"
-        
+            output = f"Error: Unknown tool '&#123;tool_name&#125;'"
+
         print(str(output)[:300])  # Print a preview of the output.
-        
-        results.append({
+
+        results.append(&#123;
             "type": "tool_result",
             "tool_use_id": tool_use_id,
             "content": str(output),
-        })
+        &#125;)
 
     return results
 dispatch_tools is a helper function that takes the model's response content, identifies any tool calls, executes them using the provided dispatch map, and collects the results. It also includes logging for visibility into what tools are being called and their outputs.
 
-def agent_loop(messages: List[Dict[str, Any]], dispatch: Dict) -> None:
+def agent_loop(messages: List[Dict[str, Any]], dispatch: Dict) -&gt; None:
     """
     Runs the core agent interaction loop until the model provides a final answer.
 
@@ -222,7 +222,7 @@ def agent_loop(messages: List[Dict[str, Any]], dispatch: Dict) -> None:
     while True:
 
         # 1. Call the LLM with the current conversation history and available tools.
-        print("\n\033[36m> Thinking...\033[0m")
+        print("\n\033[36m&gt; Thinking...\033[0m")
         response = client.messages.create(
             model=MODEL,
             system=DEFAULT_SYSTEM,
@@ -232,7 +232,7 @@ def agent_loop(messages: List[Dict[str, Any]], dispatch: Dict) -> None:
         )
 
         # Append the assistant's entire response (including any tool calls) to the history.
-        messages.append({"role": "assistant", "content": response.content})
+        messages.append(&#123;"role": "assistant", "content": response.content&#125;)
 
         # 2. Check if the loop should terminate.
         # If the stop reason is not 'tool_use', it means the model has provided its final answer.
@@ -242,10 +242,10 @@ def agent_loop(messages: List[Dict[str, Any]], dispatch: Dict) -> None:
         # 3. If the model wants to use tools, execute them.
         # The `dispatch_tools` function finds all tool_use blocks and runs them.
         results = dispatch_tools(response.content, dispatch)
-        
+
         # Append the tool results to the history as a new "user" message.
         # This informs the model of the outcome of its requested actions.
-        messages.append({"role": "user", "content": results})
+        messages.append(&#123;"role": "user", "content": results&#125;)
 Our agent loop is a simple while loop that continues until the model indicates it has reached a final answer.
 
 Let’s run this component with a simple task to see how it works.
@@ -257,7 +257,7 @@ history: List[Dict[str, Any]] = []
 while True:
     try:
         # Prompt the user for a query with a colored prompt.
-        query = input("\033[36ms01 >> \033[0m")
+        query = input("\033[36ms01 &gt;&gt; \033[0m")
     except (EOFError, KeyboardInterrupt):
         # Allow the user to exit gracefully with Ctrl+D or Ctrl+C.
         print("\nExiting.")
@@ -268,7 +268,7 @@ while True:
         break
 
     # Add the user's query to the conversation history.
-    history.append({"role": "user", "content": query})
+    history.append(&#123;"role": "user", "content": query&#125;)
 
     # Start the agent loop with the current history.
     # The `agent_loop` function will handle the back-and-forth with the model.
@@ -285,15 +285,15 @@ while True:
     print()
 In this code, we initialize an empty conversation history and enter a loop that continuously prompts the user for input. Each user query is added to the conversation history, and then we call the agent_loop function to handle the interaction with the model. After the loop finishes, we print the final answer provided by the assistant.
 
-s01 >> List all Python files in the current directory.
-> Thinking...
+s01 &gt;&gt; List all Python files in the current directory.
+&gt; Thinking...
 
 [Tool Call: bash]
 Command: ls *.py
 [Result]
 bash: ls: command not found
 
-> Thinking...
+&gt; Thinking...
 [Tool Call: bash]
 
 Command: find . -name "*.py" -type f
@@ -325,75 +325,75 @@ The dispatch map is a dictionary that connects what the model wants to do to the
 
 This separation means Claude Code can have 18 tools, 30 tools, or 5 tools, and the loop itself never changes. It is the same principle that makes Claude Code extensible through MCP, new tools are just new entries in the registry, regardless of whether they are local Python functions or remote servers.
 
-EXTENDED_DISPATCH: dict = {
+EXTENDED_DISPATCH: dict = &#123;
     "bash":   lambda inp: run_bash(inp["command"]),
     "read":   lambda inp: run_read(inp["path"], inp.get("start_line"), inp.get("end_line")),
     "write":  lambda inp: run_write(inp["path"], inp["content"]),
     "grep":   lambda inp: run_grep(inp["pattern"], inp.get("path", ".")),
     "glob":   lambda inp: run_glob(inp["pattern"]),
     "revert": lambda inp: run_revert(inp["path"]),
-}
+&#125;
 Each key is exactly the name the model will use in its tool call. Each value is the Python function that executes it. When Claude decides to read a file, the loop does one dictionary lookup and calls the handler. There are no conditionals, no class hierarchies, no framework routing logic. The entire dispatch mechanism is a single line: output = handler(tool_input).
 
 The tool definitions are equally important. These are what the model reads to decide which tool to call — and the description field is not documentation, it is an instruction.
 
 EXTENDED_TOOLS = BASIC_TOOLS + [
-    {
+    &#123;
         "name": "read",
         "description": "Read a file and return numbered lines. Use when you need to inspect file content or reference specific line numbers. Returns up to 50,000 characters. Use start_line/end_line for large files.",
-        "input_schema": {
+        "input_schema": &#123;
             "type": "object",
-            "properties": {
-                "path":       {"type": "string"},
-                "start_line": {"type": "integer"},
-                "end_line":   {"type": "integer"},
-            },
+            "properties": &#123;
+                "path":       &#123;"type": "string"&#125;,
+                "start_line": &#123;"type": "integer"&#125;,
+                "end_line":   &#123;"type": "integer"&#125;,
+            &#125;,
             "required": ["path"],
-        },
-    },
-    {
+        &#125;,
+    &#125;,
+    &#123;
         "name": "write",
         "description": "Write content to a file. Automatically snapshots the previous content so you can revert. Creates parent directories if needed.",
-        "input_schema": {
+        "input_schema": &#123;
             "type": "object",
-            "properties": {
-                "path":    {"type": "string"},
-                "content": {"type": "string"},
-            },
+            "properties": &#123;
+                "path":    &#123;"type": "string"&#125;,
+                "content": &#123;"type": "string"&#125;,
+            &#125;,
             "required": ["path", "content"],
-        },
-    },
-    {
+        &#125;,
+    &#125;,
+    &#123;
         "name": "grep",
         "description": "Search for a regex pattern across files. Returns file paths and line numbers of matches.",
-        "input_schema": {
+        "input_schema": &#123;
             "type": "object",
-            "properties": {
-                "pattern":   {"type": "string"},
-                "path":      {"type": "string"},
-                "recursive": {"type": "boolean"},
-            },
+            "properties": &#123;
+                "pattern":   &#123;"type": "string"&#125;,
+                "path":      &#123;"type": "string"&#125;,
+                "recursive": &#123;"type": "boolean"&#125;,
+            &#125;,
             "required": ["pattern"],
-        },
-    },
-    {
+        &#125;,
+    &#125;,
+    &#123;
         "name": "glob",
         "description": "Find files matching a glob pattern, e.g. '**/*.py'. Returns sorted list of matching paths.",
-        "input_schema": {
+        "input_schema": &#123;
             "type": "object",
-            "properties": {"pattern": {"type": "string"}},
+            "properties": &#123;"pattern": &#123;"type": "string"&#125;&#125;,
             "required": ["pattern"],
-        },
-    },
-    {
+        &#125;,
+    &#125;,
+    &#123;
         "name": "revert",
         "description": "Restore a file to its state before the last write call. Use when a write operation produced incorrect results.",
-        "input_schema": {
+        "input_schema": &#123;
             "type": "object",
-            "properties": {"path": {"type": "string"}},
+            "properties": &#123;"path": &#123;"type": "string"&#125;&#125;,
             "required": ["path"],
-        },
-    },
+        &#125;,
+    &#125;,
 ]
 A poorly written description causes the model to pick the wrong tool. If grep says "search files" and bash says "run commands", the model will use bash for every search operation because the description does not constrain it precisely enough.
 
@@ -401,37 +401,37 @@ Claude Code's internal tool descriptions are extremely specific about when each 
 
 The handler functions themselves follow a consistent contract — they accept a dict of inputs, return a string, and never raise exceptions to the loop. Errors are returned as strings, not thrown.
 
-def run_read(path: str, start_line: int = None, end_line: int = None) -> str:
+def run_read(path: str, start_line: int = None, end_line: int = None) -&gt; str:
     try:
         with open(path, "r", encoding="utf-8", errors="replace") as f:
             lines = f.readlines()
         s = (start_line or 1) - 1
         e = end_line or len(lines)
-        numbered = "".join(f"{s+1+i:4d}\t{l}" for i, l in enumerate(lines[s:e]))
+        numbered = "".join(f"&#123;s+1+i:4d&#125;\t&#123;l&#125;" for i, l in enumerate(lines[s:e]))
         return numbered[:50000] or "(empty file)"
     except FileNotFoundError:
-        return f"Error: file not found: {path}"
+        return f"Error: file not found: &#123;path&#125;"
     except Exception as e:
-        return f"Error reading {path}: {e}"
+        return f"Error reading &#123;path&#125;: &#123;e&#125;"
 
-def run_grep(pattern: str, path: str = ".", recursive: bool = True) -> str:
+def run_grep(pattern: str, path: str = ".", recursive: bool = True) -&gt; str:
     try:
         flags = ["-r"] if recursive else []
         r = subprocess.run(["grep", "-n", *flags, pattern, path],
                            capture_output=True, text=True, timeout=30)
         return ((r.stdout + r.stderr).strip() or "(no matches)")[:10000]
     except Exception as e:
-        return f"Error: {e}"
+        return f"Error: &#123;e&#125;"
 Notice that run_read returns numbered lines. This is intentional — when the model calls write to modify a file, it references line numbers from the previous read. The numbered output is what allows Claude to say "replace lines 45 through 67" with precision. Claude Code's read tool works exactly the same way.
 
-s02 >> Find all TODO comments in the codebase and show me which files they are in.
+s02 &gt;&gt; Find all TODO comments in the codebase and show me which files they are in.
 
-> Thinking...
+&gt; Thinking...
 [grep] TODO
 ./agents/s03_todo_write.py:45:    # TODO: add priority levels to tasks
 ./agents/s09_agent_teams.py:112:  # TODO: replace JSONL mailboxes with Redis
 
-> Thinking...
+&gt; Thinking...
 Final Answer:
 Found 2 TODO comments across 2 files:
 - s03_todo_write.py line 45: add priority levels to tasks
@@ -455,23 +455,23 @@ Claude Code injects the current todo state as a system reminder after every tool
 
 TODO_FILE = Path(".agent_todo.json")
 
-def todo_write(tasks: list) -> str:
-    data = [{"id": i, "task": t, "status": "pending"} for i, t in enumerate(tasks)]
+def todo_write(tasks: list) -&gt; str:
+    data = [&#123;"id": i, "task": t, "status": "pending"&#125; for i, t in enumerate(tasks)]
     TODO_FILE.write_text(json.dumps(data, indent=2))
-    return "Plan written:\n" + "\n".join(f"  [{i}] {t}" for i, t in enumerate(tasks))
+    return "Plan written:\n" + "\n".join(f"  [&#123;i&#125;] &#123;t&#125;" for i, t in enumerate(tasks))
 
-def todo_read() -> str:
+def todo_read() -&gt; str:
     if not TODO_FILE.exists():
         return "(no plan)"
     data = json.loads(TODO_FILE.read_text())
     return "\n".join(
-        f"  [{t['id']}] [{t['status']:12s}] {t['task']}" for t in data
+        f"  [&#123;t['id']&#125;] [&#123;t['status']:12s&#125;] &#123;t['task']&#125;" for t in data
     )
-def todo_update(index: int, status: str) -> str:
+def todo_update(index: int, status: str) -&gt; str:
     data = json.loads(TODO_FILE.read_text())
     data[index]["status"] = status
     TODO_FILE.write_text(json.dumps(data, indent=2))
-    return f"Task {index} marked {status}"
+    return f"Task &#123;index&#125; marked &#123;status&#125;"
 Three tools work together as a unit. todo_write commits the full plan at the start. todo_update marks each step as the agent moves through it. todo_read lets the model check its own progress at any point.
 
 Together they create an external working memory that keeps the execution honest — the model cannot silently skip steps because each step has a status that persists across turns.
@@ -479,17 +479,17 @@ Together they create an external working memory that keeps the execution honest 
 The system prompt is updated to make planning mandatory.
 
 SYSTEM = (
-    f"You are a coding agent at {os.getcwd()}. "
+    f"You are a coding agent at &#123;os.getcwd()&#125;. "
     "Before working on any multi-step task, ALWAYS call todo_write first "
     "to write your complete plan. Execute each step in order. "
     "Call todo_update after completing each step."
 )
 The word ALWAYS is load-bearing here. Without it, the model plans sometimes. With it, the model plans consistently. System prompt instructions that use strong imperative language produce more reliable behavior than ones that suggest or recommend.
 
-s03 >> Refactor the run_bash function to add configurable timeout and output truncation, then verify nothing breaks.
+s03 &gt;&gt; Refactor the run_bash function to add configurable timeout and output truncation, then verify nothing breaks.
 
 
-> Thinking...
+&gt; Thinking...
 [todo_write]
 Plan written:
   [0] Read the current run_bash implementation in core.py
@@ -501,13 +501,13 @@ Plan written:
 [read] core.py (lines 45-72)
 [todo_update] 0 → done
 
-> Thinking...
+&gt; Thinking...
 [write] core.py
 [todo_update] 1 → done
 [todo_update] 2 → done
 [todo_update] 3 → done
 
-> Thinking...
+&gt; Thinking...
 [bash] python -m pytest tests/test_agents_smoke.py -q
 44 passed in 2.1s
 
@@ -534,17 +534,17 @@ This is subagent context isolation, the pattern that allows Claude Code to work 
 The isolation is implemented by giving each subagent a completely independent messages[] list. There is no shared state between parent and child except the final text response that the child returns.
 
 SUBAGENT_SYSTEM = (
-    f"You are a subagent working on a specific subtask at {os.getcwd()}. "
+    f"You are a subagent working on a specific subtask at &#123;os.getcwd()&#125;. "
     "Complete your task thoroughly and summarise your findings clearly. "
     "Your output will be the only thing the parent agent sees."
 )
 
-def spawn_subagent(prompt: str) -> str:
+def spawn_subagent(prompt: str) -&gt; str:
     """Run a fresh agent loop with completely isolated context."""
-    print(f"\033[35m  [subagent spawned] {prompt[:60]}\033[0m")
-    
+    print(f"\033[35m  [subagent spawned] &#123;prompt[:60]&#125;\033[0m")
+
     # Completely fresh messages list - no shared state with parent
-    sub_messages = [{"role": "user", "content": prompt}]
+    sub_messages = [&#123;"role": "user", "content": prompt&#125;]
     while True:
         resp = client.messages.create(
             model=MODEL,
@@ -553,20 +553,20 @@ def spawn_subagent(prompt: str) -> str:
             tools=EXTENDED_TOOLS,
             max_tokens=8000,
         )
-        sub_messages.append({"role": "assistant", "content": resp.content})
-        
+        sub_messages.append(&#123;"role": "assistant", "content": resp.content&#125;)
+
         if resp.stop_reason != "tool_use":
             break
-            
+
         results = dispatch_tools(resp.content, EXTENDED_DISPATCH)
-        sub_messages.append({"role": "user", "content": results})
+        sub_messages.append(&#123;"role": "user", "content": results&#125;)
 
     # Extract only the final text - discard all intermediate tool calls
     result = "".join(
         b.text for b in sub_messages[-1]["content"] if hasattr(b, "text")
     )
 
-    print(f"\033[35m  [subagent done] {result[:80]}\033[0m")
+    print(f"\033[35m  [subagent done] &#123;result[:80]&#125;\033[0m")
 
     return result
 The subagent runs the exact same agent loop as the parent. It has access to the exact same tools. The only difference is its messages[] list starts empty and its system prompt focuses it on a bounded task. When it finishes, everything it accumulated, every file read, every grep output, every intermediate reasoning step is discarded. Only the final summary crosses back into the parent.
@@ -574,7 +574,7 @@ The subagent runs the exact same agent loop as the parent. It has access to the 
 This is registered as a tool so the model can decide when to use it.
 
 SUBAGENT_TOOLS = EXTENDED_TOOLS + [
-    {
+    &#123;
         "name": "spawn_subagent",
         "description": (
             "Spawn an isolated subagent to handle a subtask in a fresh context. "
@@ -582,30 +582,30 @@ SUBAGENT_TOOLS = EXTENDED_TOOLS + [
             "generate large amounts of intermediate output that the main conversation "
             "does not need to see. Returns only the subagent's final summary."
         ),
-        "input_schema": {
+        "input_schema": &#123;
             "type": "object",
-            "properties": {
-                "prompt": {"type": "string"}
-            },
+            "properties": &#123;
+                "prompt": &#123;"type": "string"&#125;
+            &#125;,
             "required": ["prompt"],
-        },
-    },
+        &#125;,
+    &#125;,
 ]
 
-SUBAGENT_DISPATCH = {
+SUBAGENT_DISPATCH = &#123;
     **EXTENDED_DISPATCH,
     "spawn_subagent": lambda inp: spawn_subagent(inp["prompt"]),
-}
+&#125;
 Let's test this .....
 
-s04 >> Analyse the entire codebase and give me a complete summary of the architecture.
+s04 &gt;&gt; Analyse the entire codebase and give me a complete summary of the architecture.
 
 
-> Thinking...
+&gt; Thinking...
 [spawn_subagent] Explore all Python files in the agents/ directory.
   Map their imports, their exported functions, and what each one adds
   over the previous session file.
-  [subagent] > Thinking...
+  [subagent] &gt; Thinking...
   [subagent] [glob] agents/**/*.py → 25 files found
   [subagent] [read] agents/core.py
   [subagent] [read] agents/s01_agent_loop.py
@@ -613,7 +613,7 @@ s04 >> Analyse the entire codebase and give me a complete summary of the archite
   ... (22 more reads, all inside the subagent)
   [subagent done] core.py exports client, tools, and dispatch maps.
                   Each session imports from core and adds one mechanism...
-> Thinking...
+&gt; Thinking...
 
 Final Answer:
 The codebase has a single shared foundation (core.py) that is imported by
@@ -671,8 +671,8 @@ The discovery mechanism scans the skills directory at startup, reads only the me
 
 SKILLS_DIR = Path(__file__).parent.parent / "skills"
 
-def discover_skills() -> dict[str, str]:
-    skills = {}
+def discover_skills() -&gt; dict[str, str]:
+    skills = &#123;&#125;
     for skill_dir in sorted(SKILLS_DIR.iterdir()):
         skill_md = skill_dir / "SKILL.md"
         if skill_dir.is_dir() and skill_md.exists():
@@ -689,29 +689,29 @@ def discover_skills() -> dict[str, str]:
             skills[skill_dir.name] = desc or "No description."
     return skills
 
-def load_skill(name: str) -> str:
+def load_skill(name: str) -&gt; str:
     skill_path = SKILLS_DIR / name / "SKILL.md"
     if not skill_path.exists():
-        return f"Error: skill '{name}' not found. Use list_skills to see available."
-    return f"=== SKILL: {name} ===\n{skill_path.read_text(encoding='utf-8')}"
+        return f"Error: skill '&#123;name&#125;' not found. Use list_skills to see available."
+    return f"=== SKILL: &#123;name&#125; ===\n&#123;skill_path.read_text(encoding='utf-8')&#125;"
 The system prompt references all available skills without loading any of them.
 
 _skill_list = "\n".join(
-    f"  - {n}: {d}" for n, d in discover_skills().items()
+    f"  - &#123;n&#125;: &#123;d&#125;" for n, d in discover_skills().items()
 )
 
 SYSTEM = (
-    f"You are a coding agent at {os.getcwd()}.\n"
+    f"You are a coding agent at &#123;os.getcwd()&#125;.\n"
     "When a task requires specialised knowledge, call load_skill(name) "
     "to get full instructions before starting. Do NOT guess.\n\n"
-    f"Available skills:\n{_skill_list}"
+    f"Available skills:\n&#123;_skill_list&#125;"
 )
 Let's test the skills methodology ....
 
-s05 >> Review agents/core.py for bugs, security issues, and code quality problems.
+s05 &gt;&gt; Review agents/core.py for bugs, security issues, and code quality problems.
 
 
-> Thinking...
+&gt; Thinking...
 [load_skill] code-review
 
 === SKILL: code-review ===
@@ -719,10 +719,10 @@ s05 >> Review agents/core.py for bugs, security issues, and code quality problem
 ## Review process
 1. Read the full file before commenting...
 
-> Thinking...
+&gt; Thinking...
 [read] agents/core.py
 
-> Thinking...
+&gt; Thinking...
 
 [grep] def run_bash
 agents/core.py:58
@@ -730,7 +730,7 @@ agents/core.py:58
 
 agents/core.py:62:    r = subprocess.run(command, shell=True, ...
 
-> Thinking...
+&gt; Thinking...
 Final Answer:
 
 [SECURITY] core.py:62
@@ -774,7 +774,7 @@ KEEP_RECENT        = 6       # keep last N messages verbatim
 MEMORY_FILE        = Path(".agent_memory.md")
 
 
-def _estimate_size(messages: list) -> int:
+def _estimate_size(messages: list) -&gt; int:
     total = 0
     for msg in messages:
         content = msg.get("content", "")
@@ -788,9 +788,9 @@ def _estimate_size(messages: list) -> int:
                     total += len(block.text or "")
     return total
 
-def _summarize(messages: list) -> str:
+def _summarize(messages: list) -&gt; str:
     text = "\n\n".join(
-        f"[{m['role']}]: " + (
+        f"[&#123;m['role']&#125;]: " + (
             m["content"] if isinstance(m["content"], str)
             else " ".join(
                 b.get("text", "") if isinstance(b, dict) else getattr(b, "text", "")
@@ -803,16 +803,16 @@ def _summarize(messages: list) -> str:
         model=MODEL,
         system="Summarise this conversation. Keep all important decisions, "
                "code changes, file paths, and context. Be concise but complete.",
-        messages=[{"role": "user", "content": f"Summarise:\n\n{text[:20000]}"}],
+        messages=[&#123;"role": "user", "content": f"Summarise:\n\n&#123;text[:20000]&#125;"&#125;],
         max_tokens=2000,
     )
     return "".join(b.text for b in resp.content if hasattr(b, "text"))
 The compression function is called after every agent response turn not on a timer, but based on measured context size.
 
-def maybe_compress(messages: list) -> bool:
-    if _estimate_size(messages) < COMPRESS_THRESHOLD:
+def maybe_compress(messages: list) -&gt; bool:
+    if _estimate_size(messages) &lt; COMPRESS_THRESHOLD:
         return False
-    if len(messages) <= KEEP_RECENT:
+    if len(messages) &lt;= KEEP_RECENT:
         return False
 
 
@@ -823,25 +823,25 @@ old_messages = messages[:-KEEP_RECENT]
 
     # Write to disk - survives session restarts
     MEMORY_FILE.write_text(
-        f"# Agent Memory\nGenerated: {datetime.now().isoformat()}\n\n{summary}\n"
+        f"# Agent Memory\nGenerated: &#123;datetime.now().isoformat()&#125;\n\n&#123;summary&#125;\n"
     )
 
     # Replace old messages with one summary block
     messages.clear()
-    messages.append({
+    messages.append(&#123;
         "role": "user",
-        "content": f"[Context summary from previous conversation]\n\n{summary}",
-    })
+        "content": f"[Context summary from previous conversation]\n\n&#123;summary&#125;",
+    &#125;)
 
-    messages.append({
+    messages.append(&#123;
         "role": "assistant",
         "content": "Understood. I have the full context from our previous work.",
-    })
+    &#125;)
 
     messages.extend(recent)
 
-    print(f"\033[90m  [compress] {len(old_messages)} messages → 1 summary "
-          f"| saved to {MEMORY_FILE}\033[0m")
+    print(f"\033[90m  [compress] &#123;len(old_messages)&#125; messages → 1 summary "
+          f"| saved to &#123;MEMORY_FILE&#125;\033[0m")
 
     return True
 At session startup, the agent checks for an existing memory file and loads it before the first user message.
@@ -849,14 +849,14 @@ At session startup, the agent checks for an existing memory file and loads it be
 history = []
 if MEMORY_FILE.exists():
     mem = MEMORY_FILE.read_text()
-    print(f"\033[90m  [memory] loaded from {MEMORY_FILE}\033[0m")
+    print(f"\033[90m  [memory] loaded from &#123;MEMORY_FILE&#125;\033[0m")
     history = [
-        {"role": "user",      "content": f"[Loaded memory]\n\n{mem}"},
-        {"role": "assistant", "content": "Memory loaded. Ready to continue."},
+        &#123;"role": "user",      "content": f"[Loaded memory]\n\n&#123;mem&#125;"&#125;,
+        &#123;"role": "assistant", "content": "Memory loaded. Ready to continue."&#125;,
     ]
-s06 >> Add error handling to all tool functions in core.py, then write tests for each one.
+s06 &gt;&gt; Add error handling to all tool functions in core.py, then write tests for each one.
 
-> Thinking...
+&gt; Thinking...
 [read] agents/core.py
 
 [todo_write]
@@ -869,16 +869,16 @@ s06 >> Add error handling to all tool functions in core.py, then write tests for
 [read] agents/core.py (lines 45-180)
 [todo_update] 0 → done
 
-> Thinking...
+&gt; Thinking...
 [write] agents/core.py
 [todo_update] 1 → done
 [todo_update] 2 → done
 
-> Thinking...
+&gt; Thinking...
 [write] tests/test_tools.py
 [todo_update] 3 → done
 
-> Thinking...
+&gt; Thinking...
 [bash] python -m pytest tests/test_tools.py -v
   test_run_bash_ok PASSED
   test_run_bash_blocks_dangerous PASSED
@@ -918,7 +918,7 @@ TASKS_FILE = Path(".agent_tasks.json")
 _TASKS_LOCK = threading.Lock()
 
 
-def _load() -> list:
+def _load() -&gt; list:
     if TASKS_FILE.exists():
         return json.loads(TASKS_FILE.read_text())
     return []
@@ -927,33 +927,33 @@ def _save(tasks: list):
     TASKS_FILE.write_text(json.dumps(tasks, indent=2))
 
 def run_task_create(description: str, depends_on: list = None,
-                    priority: str = "medium") -> str:
+                    priority: str = "medium") -&gt; str:
     with _TASKS_LOCK:
         tasks = _load()
-        task = {
+        task = &#123;
             "id":          uuid.uuid4().hex[:8],
             "description": description,
             "status":      "pending",
             "priority":    priority,
             "depends_on":  depends_on or [],
             "result":      "",
-        }
+        &#125;
         tasks.append(task)
         _save(tasks)
-    return f"created task {task['id']}: {description}"
+    return f"created task &#123;task['id']&#125;: &#123;description&#125;"
 
-def run_task_next() -> str:
+def run_task_next() -&gt; str:
     """Return the next unblocked pending task - respects dependency chain."""
     tasks = _load()
-    done_ids = {t["id"] for t in tasks if t["status"] == "done"}
-    for t in sorted(tasks, key=lambda x: {"high":0,"medium":1,"low":2}[x["priority"]]):
+    done_ids = &#123;t["id"] for t in tasks if t["status"] == "done"&#125;
+    for t in sorted(tasks, key=lambda x: &#123;"high":0,"medium":1,"low":2&#125;[x["priority"]]):
         if t["status"] != "pending":
             continue
         if all(dep in done_ids for dep in t.get("depends_on", [])):
-            return f"[{t['id']}] [{t['priority']}] {t['description']}"
+            return f"[&#123;t['id']&#125;] [&#123;t['priority']&#125;] &#123;t['description']&#125;"
     return "(no unblocked tasks available)"
 
-def run_task_update(task_id: str, status: str, result: str = "") -> str:
+def run_task_update(task_id: str, status: str, result: str = "") -&gt; str:
     with _TASKS_LOCK:
         tasks = _load()
         for t in tasks:
@@ -962,17 +962,17 @@ def run_task_update(task_id: str, status: str, result: str = "") -> str:
                 if result:
                     t["result"] = result
                 _save(tasks)
-                return f"task {t['id']} → {status}"
-    return f"Error: task '{task_id}' not found"
+                return f"task &#123;t['id']&#125; → &#123;status&#125;"
+    return f"Error: task '&#123;task_id&#125;' not found"
 The threading lock on every read-write operation is critical. In Phase 4, multiple agents will call _load() and _save() concurrently.
 
 Without the lock, two agents can read the same state simultaneously, each modify it independently, and the second write silently overwrites the first agent's changes. The lock makes every task state transition atomic.
 
-s07 >> We need to migrate the codebase to use async tool implementations throughout.
+s07 &gt;&gt; We need to migrate the codebase to use async tool implementations throughout.
        Break this down into tasks, identify dependencies, and start working through them.
 
 
-> Thinking...
+&gt; Thinking...
 
 [task_create] Audit all sync tool functions in core.py
               priority: high
@@ -992,14 +992,14 @@ s07 >> We need to migrate the codebase to use async tool implementations through
 
 [task_create] Run full test suite to verify async implementations
               depends_on: [s18_task_id], priority: high
-> Thinking...
+&gt; Thinking...
 [task_next]
 [a3f2c891] [high] Audit all sync tool functions in core.py
 
 [read] agents/core.py (lines 1-100)
 [task_update] a3f2c891 → done
 
-> Thinking...
+&gt; Thinking...
 [task_next]
 [b7d1e445] [high] Write async versions of run_bash, run_read, run_write
 
@@ -1007,26 +1007,26 @@ s07 >> We need to migrate the codebase to use async tool implementations through
 [write] agents/core.py
 [task_update] b7d1e445 → done
 
-> Thinking...
+&gt; Thinking...
 [task_next]
 [c9f3a112] [medium] Write async versions of run_grep, run_glob
 [write] agents/core.py
 [task_update] c9f3a112 → done
 
-> Thinking...
+&gt; Thinking...
 [task_next]
 [d2e8b334] [high] Update ASYNC_DISPATCH map with new handlers
 [write] agents/core.py
 [task_update] d2e8b334 → done
 
-> Thinking...
+&gt; Thinking...
 [task_next]
 [e5a1c667] [medium] Update s18_parallel_tools.py to use ASYNC_DISPATCH
 [read] agents/s18_parallel_tools.py
 [write] agents/s18_parallel_tools.py
 [task_update] e5a1c667 → done
 
-> Thinking...
+&gt; Thinking...
 [task_next]
 [f6b2d990] [high] Run full test suite to verify async implementations
 [bash] python -m pytest tests/ -q
@@ -1073,12 +1073,12 @@ import subprocess
 
 _BG_QUEUE: queue.Queue = queue.Queue()
 
-def run_bash_background(command: str, label: str = "") -> str:
+def run_bash_background(command: str, label: str = "") -&gt; str:
     """Start a shell command in a background daemon thread. Returns immediately."""
     label = label or command[:40]
 
     def _run():
-        print(f"\033[90m  [bg] started: {label}\033[0m")
+        print(f"\033[90m  [bg] started: &#123;label&#125;\033[0m")
         try:
             r = subprocess.run(
                 command, shell=True, capture_output=True,
@@ -1092,21 +1092,21 @@ def run_bash_background(command: str, label: str = "") -> str:
             status = "timed out"
 
         except Exception as e:
-            output = f"Error: {e}"
+            output = f"Error: &#123;e&#125;"
             status = "failed"
 
         # Push result into notification queue - agent will pick it up next turn
         _BG_QUEUE.put(
-            f"[Background task '{label}' {status}]\n{output}"
+            f"[Background task '&#123;label&#125;' &#123;status&#125;]\n&#123;output&#125;"
         )
 
-        print(f"\033[90m  [bg] {label} {status}\033[0m")
+        print(f"\033[90m  [bg] &#123;label&#125; &#123;status&#125;\033[0m")
 
     thread = threading.Thread(target=_run, daemon=True)
 
     thread.start()
 
-    return f"Background task started: '{label}'. You will be notified when it completes."
+    return f"Background task started: '&#123;label&#125;'. You will be notified when it completes."
 In our function agent_loop_with_bg(), we use stream_loop() as the main agent loop, but after every turn we check the _BG_QUEUE for any completed background tasks. If there are any, we inject them into the conversation as user messages so the model can react to them in its next turn.
 
 The agent loop is wrapped to drain notifications between turns.
@@ -1122,7 +1122,7 @@ def agent_loop_with_bg(messages: list):
         notification = _BG_QUEUE.get_nowait()
         print(f"\033[90m  [bg] notification injected\033[0m")
 
-        messages.append({"role": "user", "content": notification})
+        messages.append(&#123;"role": "user", "content": notification&#125;)
 
         # Let the model react to the notification
         stream_loop(messages, BG_TOOLS, BG_DISPATCH, system=SYSTEM)
@@ -1130,16 +1130,16 @@ We are basically giving the model a new tool run_bash_background() that it can c
 
 When the operation finishes, the model receives a notification with the result and can react to it in its next turn.
 
-s08 >> Run the full test suite in the background, then while that runs
+s08 &gt;&gt; Run the full test suite in the background, then while that runs
        add docstrings to all functions in core.py that are missing them.
 
 
-> Thinking...
+&gt; Thinking...
 [bash_background] python -m pytest tests/ -v --tb=short
                   label: full test suite
 Background task started: 'full test suite'. You will be notified when done.
 
-> Thinking...
+&gt; Thinking...
 [read] agents/core.py
 
 [todo_write]
@@ -1151,21 +1151,21 @@ Background task started: 'full test suite'. You will be notified when done.
 
 [grep] def [^_]
 
-agents/core.py:58:def run_bash(command: str) -> str:
+agents/core.py:58:def run_bash(command: str) -&gt; str:
 agents/core.py:78:def run_read(path: str, ...
 agents/core.py:98:def run_write(path: str, ...
 ... (6 more)
 
 [todo_update] 0 → done
-> Thinking...
+&gt; Thinking...
 [write] agents/core.py  (added docstrings to run_bash, run_read, run_write)
 [todo_update] 1 → done
 
-> Thinking...
+&gt; Thinking...
 [write] agents/core.py  (added docstrings to run_grep, run_glob, run_revert)
 [todo_update] 2 → done
 
-> Thinking...
+&gt; Thinking...
 [write] agents/core.py  (added docstrings to dispatch_tools, stream_loop)
 [todo_update] 3 → done
 [todo_update] 4 → done
@@ -1174,7 +1174,7 @@ agents/core.py:98:def run_write(path: str, ...
 [Background task 'full test suite' completed]
 44 passed in 2.1s
 
-> Thinking...
+&gt; Thinking...
 
 Final Answer:
 Added docstrings to all 8 functions in core.py while the test suite ran
@@ -1203,29 +1203,29 @@ MAILBOX_DIR = Path(".mailboxes")
 MAILBOX_DIR.mkdir(exist_ok=True)
 
 
-TEAMMATES = {
+TEAMMATES = &#123;
     "explorer": (
         f"You are an explorer agent specialising in reading and understanding "
-        f"codebases at {os.getcwd()}. You excel at mapping architecture, finding "
+        f"codebases at &#123;os.getcwd()&#125;. You excel at mapping architecture, finding "
         f"patterns, and understanding how components connect. Use read, glob, grep."
     ),
     "writer": (
         f"You are a writer agent specialising in creating and editing code at "
-        f"{os.getcwd()}. You excel at implementing changes cleanly, following "
+        f"&#123;os.getcwd()&#125;. You excel at implementing changes cleanly, following "
         f"existing patterns, and writing tests. Use write, read, bash."
     ),
-}
+&#125;
 In our TEAMMATES dict, we define two specialist agents, an explorer and a writer, each with their own system prompt that focuses them on their specialisation. The lead agent can delegate tasks to these teammates by writing messages to their respective JSONL inbox files.
 
-def _inbox(name: str) -> Path:
-    return MAILBOX_DIR / f"{name}.jsonl"
+def _inbox(name: str) -&gt; Path:
+    return MAILBOX_DIR / f"&#123;name&#125;.jsonl"
 
 def _send(to: str, frm: str, body: str):
 
     with open(_inbox(to), "a") as f:
-        f.write(json.dumps({"from": frm, "body": body}) + "\n")
+        f.write(json.dumps(&#123;"from": frm, "body": body&#125;) + "\n")
 
-def _receive(name: str) -> list[dict]:
+def _receive(name: str) -&gt; list[dict]:
     path = _inbox(name)
 
     if not path.exists():
@@ -1240,13 +1240,13 @@ Each teammate runs its own agent loop in a background thread, polling its inbox 
 
 def _run_teammate(name: str, system: str, stop_event: threading.Event):
 
-    print(f"\033[90m  [{name}] ready and listening\033[0m")
+    print(f"\033[90m  [&#123;name&#125;] ready and listening\033[0m")
 
     while not stop_event.is_set():
 
         for msg in _receive(name):
-            print(f"\033[35m  [{name}] received: {msg['body'][:60]}\033[0m")
-            sub_messages = [{"role": "user", "content": msg["body"]}]
+            print(f"\033[35m  [&#123;name&#125;] received: &#123;msg['body'][:60]&#125;\033[0m")
+            sub_messages = [&#123;"role": "user", "content": msg["body"]&#125;]
 
             while True:
                 resp = client.messages.create(
@@ -1255,13 +1255,13 @@ def _run_teammate(name: str, system: str, stop_event: threading.Event):
                     tools=EXTENDED_TOOLS, max_tokens=4000,
                 )
 
-                sub_messages.append({"role": "assistant", "content": resp.content})
+                sub_messages.append(&#123;"role": "assistant", "content": resp.content&#125;)
 
                 if resp.stop_reason != "tool_use":
                     break
                 results = dispatch_tools(resp.content, EXTENDED_DISPATCH)
 
-                sub_messages.append({"role": "user", "content": results})
+                sub_messages.append(&#123;"role": "user", "content": results&#125;)
 
 
             result = "".join(
@@ -1271,24 +1271,24 @@ def _run_teammate(name: str, system: str, stop_event: threading.Event):
 
             _send(msg["from"], name, result)
 
-            print(f"\033[35m  [{name}] result sent to {msg['from']}\033[0m")
+            print(f"\033[35m  [&#123;name&#125;] result sent to &#123;msg['from']&#125;\033[0m")
 
         stop_event.wait(timeout=0.5)
 The teammate loop continuously checks its inbox for new messages. When it receives a message, it processes it with a full agent loop, generates a response, and sends the result back to the sender.
 
 The teammate can handle multiple tasks over time, accumulating knowledge about the codebase with every interaction.
 
-s09 >> We need to understand the multi-agent architecture in this codebase and then
+s09 &gt;&gt; We need to understand the multi-agent architecture in this codebase and then
        add proper logging to all inter-agent communication functions.
 
 
-> Thinking...
+&gt; Thinking...
 [send_to_teammate] explorer
   Map all inter-agent communication functions across the agents/ directory.
   Find every function that sends or receives messages between agents.
   Return file names, function names, and line numbers.
 
-  [explorer] > Thinking...
+  [explorer] &gt; Thinking...
   [explorer] [glob] agents/**/*.py
   [explorer] [grep] def _send|def _receive|def send_to|mailbox
 
@@ -1300,13 +1300,13 @@ s09 >> We need to understand the multi-agent architecture in this codebase and t
 
   [explorer] result sent to lead
 
-> Thinking...
+&gt; Thinking...
 [send_to_teammate] writer
   Add structured logging to these 5 functions in s09 and s22:
   _send, _receive, send_to_teammate (s09)
   send, receive (s22)
   Log: timestamp, sender, recipient, message length, and status.
-  [writer] > Thinking...
+  [writer] &gt; Thinking...
   [writer] [read] agents/s09_agent_teams.py (lines 25-75)
   [writer] [read] agents/s22_production_mailbox.py (lines 40-60)
   [writer] [write] agents/s09_agent_teams.py
@@ -1315,7 +1315,7 @@ s09 >> We need to understand the multi-agent architecture in this codebase and t
   44 passed in 2.1s
   [writer] result sent to lead
 
-> Thinking...
+&gt; Thinking...
 
 Final Answer:
 Explorer mapped 5 inter-agent communication functions across 2 files.
@@ -1354,7 +1354,7 @@ class ProtocolAgent:
         self.name   = name
         self.system = system
         self.state  = AgentState.IDLE
-        self._inbox = MAILBOX_DIR / f"{name}_proto.jsonl"
+        self._inbox = MAILBOX_DIR / f"&#123;name&#125;_proto.jsonl"
         self._lock  = threading.Lock()
 
     def send(self, to: "ProtocolAgent", message: str):
@@ -1364,32 +1364,32 @@ class ProtocolAgent:
             self.state = AgentState.REQUESTING
 
         with open(to._inbox, "a") as f:
-            f.write(json.dumps({
+            f.write(json.dumps(&#123;
                 "from": self.name,
                 "body": message,
                 "timestamp": datetime.now().isoformat(),
-            }) + "\n")
+            &#125;) + "\n")
 
         with self._lock:
             self.state = AgentState.WAITING
 
-        return f"Message sent to {to.name}. Waiting for response."
+        return f"Message sent to &#123;to.name&#125;. Waiting for response."
 
-    def handle(self, message: str) -> str:
+    def handle(self, message: str) -&gt; str:
         with self._lock:
             self.state = AgentState.RESPONDING
-        sub = [{"role": "user", "content": message}]
+        sub = [&#123;"role": "user", "content": message&#125;]
 
         while True:
             resp = client.messages.create(
                 model=MODEL, system=self.system,
                 messages=sub, tools=EXTENDED_TOOLS, max_tokens=4000,
             )
-            sub.append({"role": "assistant", "content": resp.content})
+            sub.append(&#123;"role": "assistant", "content": resp.content&#125;)
             if resp.stop_reason != "tool_use":
                 break
             results = dispatch_tools(resp.content, EXTENDED_DISPATCH)
-            sub.append({"role": "user", "content": results})
+            sub.append(&#123;"role": "user", "content": results&#125;)
 
         with self._lock:
             self.state = AgentState.IDLE
@@ -1397,16 +1397,16 @@ class ProtocolAgent:
         return "".join(b.text for b in sub[-1]["content"] if hasattr(b, "text"))
 We can test the FSM by simulating two agents sending messages to each other and verifying that they never violate the protocol. In this test, we attempt to send a second message while the first is still waiting for a response, and we check that the FSM correctly blocks that action.
 
-s10 >> Analyse the test coverage of core.py and then write tests for any
+s10 &gt;&gt; Analyse the test coverage of core.py and then write tests for any
        functions that have less than 80% branch coverage.
 
 
-> Thinking...
+&gt; Thinking...
 [delegate] alpha
   Run coverage analysis on core.py. Report which functions have
   less than 80% branch coverage and what branches are untested.
   [alpha: IDLE → REQUESTING → WAITING]
-  [alpha] > Thinking...
+  [alpha] &gt; Thinking...
   [alpha] [bash] python -m pytest tests/ --cov=agents/core
                  --cov-report=term-missing -q
   Name              Stmts   Miss Branch BrPart  Cover
@@ -1416,14 +1416,14 @@ s10 >> Analyse the test coverage of core.py and then write tests for any
   [alpha: RESPONDING → IDLE]
   [alpha → lead] Coverage report: 3 functions below 80%...
 
-> Thinking...
+&gt; Thinking...
 [delegate] beta
   Write pytest tests for these 3 missing branches in core.py:
   1. run_revert when file was newly created (SNAPSHOTS[path] is None)
   2. check_permission when ask_user tier matches (requires input mock)
   3. stream_loop when extra_kwargs are passed
   [beta: IDLE → REQUESTING → WAITING]
-  [beta] > Thinking...
+  [beta] &gt; Thinking...
   [beta] [read] tests/test_agents_smoke.py
   [beta] [write] tests/test_core_coverage.py
   [beta] [bash] python -m pytest tests/test_core_coverage.py -v
@@ -1434,7 +1434,7 @@ s10 >> Analyse the test coverage of core.py and then write tests for any
   [beta: RESPONDING → IDLE]
   [beta → lead] 3 tests written and passing...
 
-> Thinking...
+&gt; Thinking...
 Final Answer:
 
 Alpha identified 3 functions below 80% branch coverage.
@@ -1455,16 +1455,16 @@ Each agent runs a continuous scan loop against the shared task graph from Phase 
 
 The lock is critical without it, two agents scanning simultaneously would both find the same task available, both claim it, and both execute it, wasting compute and potentially producing conflicting results.
 
-def claim_next_task(agent_id: str) -> dict | None:
+def claim_next_task(agent_id: str) -&gt; dict | None:
     """Atomically find and claim the next available unblocked task."""
 
     with _TASKS_LOCK:
         tasks = _load()
-        done_ids = {t["id"] for t in tasks if t["status"] == "done"}
+        done_ids = &#123;t["id"] for t in tasks if t["status"] == "done"&#125;
 
 
         # Sort by priority before scanning
-        priority_order = {"high": 0, "medium": 1, "low": 2}
+        priority_order = &#123;"high": 0, "medium": 1, "low": 2&#125;
         sorted_tasks = sorted(tasks, key=lambda t: priority_order.get(t["priority"], 1))
 
         for t in sorted_tasks:
@@ -1478,15 +1478,15 @@ def claim_next_task(agent_id: str) -> dict | None:
                 _save(tasks)
                 return t
     return None
-    
+
 def run_autonomous_agent(agent_id: str, stop_event: threading.Event):
 
     system = (
-        f"You are autonomous agent {agent_id} at {os.getcwd()}. "
+        f"You are autonomous agent &#123;agent_id&#125; at &#123;os.getcwd()&#125;. "
         "Complete assigned tasks thoroughly. Report your results clearly."
     )
 
-    print(f"\033[90m  [{agent_id}] scanning task board\033[0m")
+    print(f"\033[90m  [&#123;agent_id&#125;] scanning task board\033[0m")
 
     while not stop_event.is_set():
         task = claim_next_task(agent_id)
@@ -1495,10 +1495,10 @@ def run_autonomous_agent(agent_id: str, stop_event: threading.Event):
             stop_event.wait(timeout=1.0)
             continue
 
-        print(f"\033[35m  [{agent_id}] claimed [{task['id']}] "
-              f"{task['description'][:60]}\033[0m")
+        print(f"\033[35m  [&#123;agent_id&#125;] claimed [&#123;task['id']&#125;] "
+              f"&#123;task['description'][:60]&#125;\033[0m")
 
-        messages = [{"role": "user", "content": task["description"]}]
+        messages = [&#123;"role": "user", "content": task["description"]&#125;]
 
         try:
             while True:
@@ -1507,11 +1507,11 @@ def run_autonomous_agent(agent_id: str, stop_event: threading.Event):
                     messages=messages,
                     tools=EXTENDED_TOOLS, max_tokens=4000,
                 )
-                messages.append({"role": "assistant", "content": resp.content})
+                messages.append(&#123;"role": "assistant", "content": resp.content&#125;)
                 if resp.stop_reason != "tool_use":
                     break
                 results = dispatch_tools(resp.content, EXTENDED_DISPATCH)
-                messages.append({"role": "user", "content": results})
+                messages.append(&#123;"role": "user", "content": results&#125;)
 
             result = "".join(
                 b.text for b in messages[-1]["content"]
@@ -1527,7 +1527,7 @@ def run_autonomous_agent(agent_id: str, stop_event: threading.Event):
                         t["result"] = result
                         _save(tasks)
                         break
-            print(f"\033[32m  [{agent_id}] completed [{task['id']}]\033[0m")
+            print(f"\033[32m  [&#123;agent_id&#125;] completed [&#123;task['id']&#125;]\033[0m")
 
         except Exception as e:
 
@@ -1540,16 +1540,16 @@ def run_autonomous_agent(agent_id: str, stop_event: threading.Event):
                         _save(tasks)
                         break
 
-            print(f"\033[31m  [{agent_id}] failed [{task['id']}]: {e}\033[0m")
+            print(f"\033[31m  [&#123;agent_id&#125;] failed [&#123;task['id']&#125;]: &#123;e&#125;\033[0m")
 In our claim_next_task() function, we acquire a lock before scanning the task graph. In Claude code Phase 4, multiple agents will call this function simultaneously.
 The lock ensures that when one agent finds an available task and claims it, no other agent can claim the same task until the first agent releases the lock. This prevents race conditions and ensures that each task is executed by only one agent.
 Lets test this by posting several tasks with dependencies and then starting two autonomous agents to execute them.
 
-s11 >> Post tasks to add type annotations to every function in core.py.
+s11 &gt;&gt; Post tasks to add type annotations to every function in core.py.
        Each tool function gets its own task. Let the autonomous agents handle it.
 
 
-> Thinking...
+&gt; Thinking...
 [post_task] Add type annotations to run_bash        priority: high
 [post_task] Add type annotations to run_read        priority: high
 [post_task] Add type annotations to run_write       priority: high
@@ -1559,14 +1559,14 @@ s11 >> Post tasks to add type annotations to every function in core.py.
 [post_task] Run mypy on core.py to verify all annotations
             depends_on: [all 6 annotation tasks]   priority: high
 
-> Thinking...
+&gt; Thinking...
   [agent-1] claimed [a1b2c3d4] Add type annotations to run_bash
   [agent-2] claimed [e5f6a7b8] Add type annotations to run_read
-  [agent-1] > Thinking...
+  [agent-1] &gt; Thinking...
   [agent-1] [read] agents/core.py (lines 55-72)
   [agent-1] [write] agents/core.py
   [agent-1] completed [a1b2c3d4]
-  [agent-2] > Thinking...
+  [agent-2] &gt; Thinking...
   [agent-2] [read] agents/core.py (lines 75-95)
   [agent-2] [write] agents/core.py
   [agent-2] completed [e5f6a7b8]
@@ -1609,10 +1609,10 @@ Git worktrees give each agent its own complete checkout of the repository its ow
 
 There is no possibility of a write conflict because the files themselves are separate. When both tasks complete, the harness compares which files each branch modified and surfaces any overlapping changes for human review before merging.
 
-def create_worktree(task_id: str) -> tuple[str, str]:
+def create_worktree(task_id: str) -&gt; tuple[str, str]:
     """Create an isolated git worktree for a task."""
-    branch = f"task/{task_id}"
-    path   = str(Path(os.getcwd()).parent / f".worktree-{task_id[:8]}")
+    branch = f"task/&#123;task_id&#125;"
+    path   = str(Path(os.getcwd()).parent / f".worktree-&#123;task_id[:8]&#125;")
 
 
     if Path(path).exists():
@@ -1626,10 +1626,10 @@ def create_worktree(task_id: str) -> tuple[str, str]:
     rc, _, err = _git("worktree", "add", "-b", branch, path)
 
     if rc != 0:
-        raise RuntimeError(f"Failed to create worktree: {err}")
+        raise RuntimeError(f"Failed to create worktree: &#123;err&#125;")
     return path, branch
 
-def run_task_in_worktree(task: dict) -> str:
+def run_task_in_worktree(task: dict) -&gt; str:
     """Run an agent loop in an isolated worktree directory."""
 
     task_id     = task["id"]
@@ -1637,13 +1637,13 @@ def run_task_in_worktree(task: dict) -> str:
     wt_path, wt_branch = create_worktree(task_id)
 
     system = (
-        f"You are a coding agent working in isolated directory: {wt_path}. "
-        f"Task: {task['description']}. "
+        f"You are a coding agent working in isolated directory: &#123;wt_path&#125;. "
+        f"Task: &#123;task['description']&#125;. "
         "Your changes are on a separate git branch - you cannot affect other agents. "
         "When done, summarise every file you changed."
     )
 
-    messages = [{"role": "user", "content": task["description"]}]
+    messages = [&#123;"role": "user", "content": task["description"]&#125;]
 
     try:
 
@@ -1655,7 +1655,7 @@ def run_task_in_worktree(task: dict) -> str:
                 tools=EXTENDED_TOOLS, max_tokens=8000,
             )
 
-            messages.append({"role": "assistant", "content": resp.content})
+            messages.append(&#123;"role": "assistant", "content": resp.content&#125;)
 
             if resp.stop_reason != "tool_use":
                 break
@@ -1677,16 +1677,16 @@ def run_task_in_worktree(task: dict) -> str:
                         block.name, lambda _: "unknown"
                     )(block.input)
 
-                print(f"\033[33m  [{task_id[:6]}][{block.name}] "
-                      f"{str(list(block.input.values())[0])[:60]}\033[0m")
+                print(f"\033[33m  [&#123;task_id[:6]&#125;][&#123;block.name&#125;] "
+                      f"&#123;str(list(block.input.values())[0])[:60]&#125;\033[0m")
 
-                results.append({
+                results.append(&#123;
                     "type": "tool_result",
                     "tool_use_id": block.id,
                     "content": output,
-                })
+                &#125;)
 
-            messages.append({"role": "user", "content": results})
+            messages.append(&#123;"role": "user", "content": results&#125;)
 
         return "".join(
             b.text for b in messages[-1]["content"] if hasattr(b, "text")
@@ -1703,14 +1703,14 @@ We can test this by posting two tasks that both modify core.py and then starting
 
 Each agent will create its own worktree, make changes to core.py in isolation, and when both complete, the harness will detect that both branches modified core.py and flag it for human review before merging.
 
-s12 >> Run two tasks in parallel:
+s12 &gt;&gt; Run two tasks in parallel:
        Task A: Add input validation to all tool functions in core.py
        Task B: Add logging statements to all tool functions in core.py
 
 
-> Thinking...
+&gt; Thinking...
   Running 2 tasks in parallel worktrees...
- 
+
   [task-a] worktree created: .worktree-a1b2c3d4 (branch: task/a1b2c3d4)
   [task-b] worktree created: .worktree-e5f6a7b8 (branch: task/e5f6a7b8)
   [a1b2c3][read]  agents/core.py
@@ -1778,19 +1778,19 @@ def agent_loop_streaming(messages: list):
         print()
 
 
-        messages.append({"role": "assistant", "content": response.content})
+        messages.append(&#123;"role": "assistant", "content": response.content&#125;)
         if response.stop_reason != "tool_use":
             return
-        
+
         results = dispatch_tools(response.content, EXTENDED_DISPATCH)
-        messages.append({"role": "user", "content": results})
+        messages.append(&#123;"role": "user", "content": results&#125;)
 The stream.get_final_message() call at the end is important — it blocks until the stream is fully consumed and returns the complete response object with the same structure as messages.create().
 
 This means all downstream logic, stop reason checking, tool use parsing, content block extraction works identically whether the loop uses streaming or blocking.
 
 We can test this by refactoring an existing agent loop to use streaming and verifying that the output is correct and the test suite still passes.
 
-s13 >> Refactor the agent_loop function in s01 to use streaming
+s13 &gt;&gt; Refactor the agent_loop function in s01 to use streaming
        and explain what changed and why.
 
 I will start by reading the current implementation...
@@ -1825,10 +1825,10 @@ When it calls grep, it gets back file paths and line numbersl, not raw terminal 
 
 The snapshot mechanism is equally important. Every write call in Claude Code silently saves the previous file content before overwriting. If the model's change breaks something, revert restores the original in one call. There is no need to use git, no need to manually copy files — the harness handles reversibility automatically.
 
-SNAPSHOTS: dict[str, str | None] = {}
+SNAPSHOTS: dict[str, str | None] = &#123;&#125;
 
 
-def run_write(path: str, content: str) -> str:
+def run_write(path: str, content: str) -&gt; str:
     try:
         if os.path.exists(path):
             with open(path, "r", encoding="utf-8", errors="replace") as f:
@@ -1840,45 +1840,45 @@ def run_write(path: str, content: str) -> str:
         os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
         with open(path, "w", encoding="utf-8") as f:
             f.write(content)
-        return f"{action}: {path} (snapshot saved - use revert to undo)"
+        return f"&#123;action&#125;: &#123;path&#125; (snapshot saved - use revert to undo)"
     except Exception as e:
-        return f"Error writing {path}: {e}"
+        return f"Error writing &#123;path&#125;: &#123;e&#125;"
 
-def run_revert(path: str) -> str:
+def run_revert(path: str) -&gt; str:
     if path not in SNAPSHOTS:
-        return f"Error: no snapshot for {path}"
+        return f"Error: no snapshot for &#123;path&#125;"
     original = SNAPSHOTS.pop(path)
     if original is None:
         # File was newly created - revert means delete it
         os.remove(path)
-        return f"reverted: deleted {path} (it was a new file)"
+        return f"reverted: deleted &#123;path&#125; (it was a new file)"
     with open(path, "w", encoding="utf-8") as f:
         f.write(original)
-    return f"reverted: {path} restored to previous content"
+    return f"reverted: &#123;path&#125; restored to previous content"
 In our run_write function, we check if the file already exists. If it does, we read its content and save it in the SNAPSHOTS dictionary before overwriting it. If the file does not exist, we mark it as newly created by setting its snapshot to None. The run_revert function checks the snapshot if it's None, it knows to delete the file; otherwise, it restores the original content.
 
 The numbered line output from run_read is what makes precise edits possible.
 
-def run_read(path: str, start_line: int = None, end_line: int = None) -> str:
+def run_read(path: str, start_line: int = None, end_line: int = None) -&gt; str:
     try:
         with open(path, "r", encoding="utf-8", errors="replace") as f:
             lines = f.readlines()
         s = (start_line or 1) - 1
         e = end_line or len(lines)
         numbered = "".join(
-            f"{s+1+i:4d}\t{l}" for i, l in enumerate(lines[s:e])
+            f"&#123;s+1+i:4d&#125;\t&#123;l&#125;" for i, l in enumerate(lines[s:e])
         )
         return numbered[:50000] or "(empty file)"
     except FileNotFoundError:
-        return f"Error: file not found: {path}"
+        return f"Error: file not found: &#123;path&#125;"
 In order to test this, we can run a sequence of tool calls that write to a file, verify the content, then call revert and verify the original content is restored.
 
-s14 >> The run_bash function in core.py is missing output truncation
+s14 &gt;&gt; The run_bash function in core.py is missing output truncation
        for commands that produce very large outputs. Fix it.
 
 
 [read] agents/core.py (lines 55-80)
-  55    def run_bash(command: str) -> str:
+  55    def run_bash(command: str) -&gt; str:
   56        if any(d in command for d in _ALWAYS_BLOCK):
   57            return "Error: dangerous command blocked"
   58        try:
@@ -1902,7 +1902,7 @@ Let me verify the change looks correct before running tests.
 [read] agents/core.py (lines 55-65)
   55    MAX_OUTPUT = 50_000
   56
-  57    def run_bash(command: str) -> str:
+  57    def run_bash(command: str) -&gt; str:
   58        if any(d in command for d in _ALWAYS_BLOCK):
   59            return "Error: dangerous command blocked"
   60        try:
@@ -1965,15 +1965,15 @@ The permission check wraps every dispatch call before execution.
 RULES = load_rules()
 
 def check_permission(tool_name: str, input_str: str,
-                     rules: dict = None) -> tuple[bool, str]:
+                     rules: dict = None) -&gt; tuple[bool, str]:
     if rules is None:
         rules = RULES
 
     # Tier 1: always deny - checked first, no exceptions
     for rule in rules.get("always_deny", []):
         if re.search(rule["pattern"], input_str, re.IGNORECASE):
-            print(f"\033[31m[DENIED] {rule.get('reason')}\033[0m")
-            return False, f"Denied: {rule.get('reason')}"
+            print(f"\033[31m[DENIED] &#123;rule.get('reason')&#125;\033[0m")
+            return False, f"Denied: &#123;rule.get('reason')&#125;"
 
     # Tier 2: always allow - pass silently
     for rule in rules.get("always_allow", []):
@@ -1984,8 +1984,8 @@ def check_permission(tool_name: str, input_str: str,
     # Tier 3: ask user - pause and prompt
     for rule in rules.get("ask_user", []):
         if re.search(rule["pattern"], input_str, re.IGNORECASE):
-            print(f"\n\033[33m[PERMISSION] {tool_name}: {input_str[:100]}")
-            print(f"  Reason: {rule.get('reason')}\033[0m")
+            print(f"\n\033[33m[PERMISSION] &#123;tool_name&#125;: &#123;input_str[:100]&#125;")
+            print(f"  Reason: &#123;rule.get('reason')&#125;\033[0m")
             try:
                 ans = input("  Allow? [y/N] ").strip().lower()
             except (EOFError, KeyboardInterrupt):
@@ -1996,7 +1996,7 @@ def check_permission(tool_name: str, input_str: str,
     return True, "no rule matched"
 Let’s test this feature …
 
-s15 >> Install the requests library, then delete the old requirements.txt
+s15 &gt;&gt; Install the requests library, then delete the old requirements.txt
        and create a new one with all current dependencies.
 
 
@@ -2043,7 +2043,7 @@ This is how teams add cost tracking, audit logging, custom approval workflows, a
 
 *Event Bus (Created by Fareed Khan)*
 
-The event bus makes observability a structural property of the harness rather than something bolted on after the fact. Every significant moment fires a named event. Any function registered as a handler receives the full payload. A pre_tool_use hook that returns {"block": True} can prevent a tool from running — this is how policy enforcement layers cleanly on top of permission governance.
+The event bus makes observability a structural property of the harness rather than something bolted on after the fact. Every significant moment fires a named event. Any function registered as a handler receives the full payload. A pre_tool_use hook that returns &#123;"block": True&#125; can prevent a tool from running — this is how policy enforcement layers cleanly on top of permission governance.
 
 from collections import defaultdict
 from datetime import datetime
@@ -2053,11 +2053,11 @@ class EventBus:
     def __init__(self):
         self._handlers = defaultdict(list)
 
-    def on(self, event: str, handler) -> "EventBus":
+    def on(self, event: str, handler) -&gt; "EventBus":
         self._handlers[event].append(handler)
         return self   # allow chaining
 
-    def emit(self, event: str, **payload) -> list:
+    def emit(self, event: str, **payload) -&gt; list:
         results = []
         for handler in self._handlers[event]:
             try:
@@ -2065,7 +2065,7 @@ class EventBus:
                 if result:
                     results.append(result)
             except Exception as e:
-                print(f"\033[31m[EventBus] hook error on '{event}': {e}\033[0m")
+                print(f"\033[31m[EventBus] hook error on '&#123;event&#125;': &#123;e&#125;\033[0m")
         return results
 
 bus = EventBus()
@@ -2078,17 +2078,17 @@ def hook_logger(event, **payload):
     """Write every event to a log file."""
     ts   = datetime.now().strftime("%H:%M:%S.%f")[:-3]
     tool = payload.get("tool", "")
-    line = f"[{ts}] {event}" + (f" tool={tool}" if tool else "")
+    line = f"[&#123;ts&#125;] &#123;event&#125;" + (f" tool=&#123;tool&#125;" if tool else "")
 
     if "input" in payload:
         first = str(list(payload["input"].values())[0])[:60]
-        line += f" input={first!r}"
+        line += f" input=&#123;first!r&#125;"
 
     if "output" in payload:
-        line += f" output_len={len(str(payload['output']))}"
+        line += f" output_len=&#123;len(str(payload['output']))&#125;"
 
     if "error" in payload:
-        line += f" error={payload['error']!r}"
+        line += f" error=&#123;payload['error']!r&#125;"
 
     with open(_LOG_FILE, "a") as f:
         f.write(line + "\n")
@@ -2105,8 +2105,8 @@ def hook_stats(event, **payload):
     elif event == "session_end":
         if getattr(hook_stats, "_counts", None):
             total = sum(hook_stats._counts.values())
-            print(f"\033[90m  [stats] {total} tool calls: "
-                  f"{dict(hook_stats._counts)}\033[0m")
+            print(f"\033[90m  [stats] &#123;total&#125; tool calls: "
+                  f"&#123;dict(hook_stats._counts)&#125;\033[0m")
 
 hook_stats._counts = defaultdict(int)
 
@@ -2119,9 +2119,9 @@ def hook_timer(event, **payload):
     elif event == "post_tool_use" and hook_timer._start:
         elapsed = (datetime.now() - hook_timer._start).total_seconds()
 
-        if elapsed > 5:
-            print(f"\033[90m  [timer] {payload.get('tool')} "
-                  f"took {elapsed:.1f}s\033[0m")
+        if elapsed &gt; 5:
+            print(f"\033[90m  [timer] &#123;payload.get('tool')&#125; "
+                  f"took &#123;elapsed:.1f&#125;s\033[0m")
 
 hook_timer._start = None
 
@@ -2148,7 +2148,7 @@ def agent_loop_with_hooks(messages: list):
             print()
 
 
-            messages.append({"role": "assistant", "content": response.content})
+            messages.append(&#123;"role": "assistant", "content": response.content&#125;)
             if response.stop_reason != "tool_use":
                 break
             results = []
@@ -2171,28 +2171,28 @@ def agent_loop_with_hooks(messages: list):
                     try:
                         handler = EXTENDED_DISPATCH.get(block.name)
                         output  = handler(block.input) if handler else \
-                                  f"Unknown: {block.name}"
+                                  f"Unknown: &#123;block.name&#125;"
                         bus.emit("post_tool_use",
                                  tool=block.name,
                                  input=block.input,
                                  output=output)
                     except Exception as e:
-                        output = f"Error: {e}"
+                        output = f"Error: &#123;e&#125;"
                         bus.emit("tool_error",
                                  tool=block.name, error=str(e))
-                results.append({
+                results.append(&#123;
                     "type": "tool_result",
                     "tool_use_id": block.id,
                     "content": output,
-                })
+                &#125;)
 
-            messages.append({"role": "user", "content": results})
+            messages.append(&#123;"role": "user", "content": results&#125;)
 
     finally:
         bus.emit("session_end")
 In our test, we can verify that every tool call is logged with timestamps and input previews, that the timer flags any calls that take longer than 5 seconds, and that the stats hook prints a summary of tool usage at the end of the session.
 
-s16 >> Find all functions in core.py that dont have return type annotations
+s16 &gt;&gt; Find all functions in core.py that dont have return type annotations
        and add them. Then check if any function takes more than 3 parameters.
 
 
@@ -2210,7 +2210,7 @@ agents/core.py:145:def dispatch_tools(response_content: list, dispatch: dict):
 [post_tool_use] tool=grep output_len=312  → logger ✓  timer: 0.2s
 Found 3 functions missing return annotations.
 
-Adding -> str, -> str, -> list respectively...
+Adding -&gt; str, -&gt; str, -&gt; list respectively...
 [pre_tool_use] tool=write  → logger ✓  timer started
 [write] agents/core.py
 
@@ -2224,7 +2224,7 @@ stream_loop: 5 parameters (messages, tools, dispatch, system, extra_kwargs)
 [bash] python -m pytest tests/ -q
 
 44 passed in 2.1s
-  [stats] 6 tool calls: {'read': 1, 'grep': 1, 'write': 1, 'bash': 2, 'glob': 0}
+  [stats] 6 tool calls: &#123;'read': 1, 'grep': 1, 'write': 1, 'bash': 2, 'glob': 0&#125;
 
 Final Answer:
 Added return type annotations to 3 functions. One function (stream_loop)
@@ -2248,18 +2248,18 @@ SESSIONS_DIR = Path(".sessions")
 SESSIONS_DIR.mkdir(exist_ok=True)
 
 
-def new_session() -> dict:
-    return {
+def new_session() -&gt; dict:
+    return &#123;
         "id":       uuid.uuid4().hex[:8],
         "created":  datetime.now().isoformat(),
         "updated":  datetime.now().isoformat(),
         "title":    "new session",
         "messages": [],
-    }
+    &#125;
 
 def save_session(session: dict):
     session["updated"] = datetime.now().isoformat()
-    path = SESSIONS_DIR / f"{session['id']}.json"
+    path = SESSIONS_DIR / f"&#123;session['id']&#125;.json"
 
     # Serialise Anthropic SDK objects to plain dicts
     serialisable = []
@@ -2273,15 +2273,15 @@ def save_session(session: dict):
                 b.__dict__     if hasattr(b, "__dict__")   else b
                 for b in content
             ]
-        serialisable.append({"role": msg["role"], "content": content})
+        serialisable.append(&#123;"role": msg["role"], "content": content&#125;)
 
     path.write_text(json.dumps(
-        {**session, "messages": serialisable}, indent=2
+        &#123;**session, "messages": serialisable&#125;, indent=2
     ))
 
-def load_session(sid: str) -> dict | None:
+def load_session(sid: str) -&gt; dict | None:
 
-    path = SESSIONS_DIR / f"{sid}.json"
+    path = SESSIONS_DIR / f"&#123;sid&#125;.json"
     return json.loads(path.read_text()) if path.exists() else None
 Three REPL commands make persistence actionable — :resume continues an existing session, :fork branches from any point without affecting the original, :sessions lists everything saved.
 
@@ -2289,10 +2289,10 @@ Three REPL commands make persistence actionable — :resume continues an existin
 if query == ":sessions":
     for s in list_sessions():
         n = len(s.get("messages", []))
-        print(f"  \033[36m{s['id']}\033[0m  "
-              f"{s['updated'][:19]}  "
-              f"{s['title'][:50]}  "
-              f"\033[90m({n} msgs)\033[0m")
+        print(f"  \033[36m&#123;s['id']&#125;\033[0m  "
+              f"&#123;s['updated'][:19]&#125;  "
+              f"&#123;s['title'][:50]&#125;  "
+              f"\033[90m(&#123;n&#125; msgs)\033[0m")
     continue
 
 
@@ -2302,27 +2302,27 @@ if query.startswith(":resume "):
 
     if loaded:
         session = loaded
-        print(f"  Resumed: \033[36m{session['id']}\033[0m - "
-              f"{session['title']} ({len(session['messages'])} msgs)")
+        print(f"  Resumed: \033[36m&#123;session['id']&#125;\033[0m - "
+              f"&#123;session['title']&#125; (&#123;len(session['messages'])&#125; msgs)")
     continue
 
 if query.startswith(":fork "):
     orig = load_session(query[6:].strip())
 
     if orig:
-        session = {
+        session = &#123;
             **orig,
             "id":      uuid.uuid4().hex[:8],
-            "title":   f"fork of {orig['title'][:40]}",
+            "title":   f"fork of &#123;orig['title'][:40]&#125;",
             "created": datetime.now().isoformat(),
             "updated": datetime.now().isoformat(),
-        }
+        &#125;
         save_session(session)
-        print(f"  Forked → \033[36m{session['id']}\033[0m")
+        print(f"  Forked → \033[36m&#123;session['id']&#125;\033[0m")
     continue
 This can be tested by starting a session, making some changes, then resuming it to verify the state is intact. The fork command can be tested by forking an existing session, making different changes in the original and the fork, and verifying that both states are preserved independently.
 
-s17 >> Add comprehensive error handling to the run_write function
+s17 &gt;&gt; Add comprehensive error handling to the run_write function
        so it handles permission errors, disk full errors, and encoding errors.
 
 
@@ -2353,13 +2353,13 @@ New session: a3f2c891
 Session saved: a3f2c891
 
 --- (terminal closed, session restarted) ---
-s17 >> :sessions
+s17 &gt;&gt; :sessions
   a3f2c891  2026-04-01 11:23:45  Add error handling to run_write  (14 msgs)
 
-s17 >> :resume a3f2c891
+s17 &gt;&gt; :resume a3f2c891
   Resumed: a3f2c891 - Add error handling to run_write (14 msgs)
 
-s17 >> The error handling looks good. Now write tests specifically
+s17 &gt;&gt; The error handling looks good. Now write tests specifically
        for each of those three error paths.
 
 [read] agents/core.py (lines 95-130)
@@ -2373,10 +2373,10 @@ s17 >> The error handling looks good. Now write tests specifically
   3 passed in 0.3s
 Session saved: a3f2c891
 
-s17 >> :fork a3f2c891
+s17 &gt;&gt; :fork a3f2c891
   Forked → b7e1d334
 
-s17 >> Now in this fork, also add error handling to run_read
+s17 &gt;&gt; Now in this fork, also add error handling to run_read
        using the same patterns.
 
 [read] agents/core.py (lines 75-95)
@@ -2414,19 +2414,19 @@ The implementation requires refactoring the synchronous dispatch loop into an as
 
 import asyncio
 
-async def _dispatch_one(block) -> tuple[str, str]:
+async def _dispatch_one(block) -&gt; tuple[str, str]:
     """Execute one tool block asynchronously."""
     inp  = block.input
     name = block.name
-    print(f"\033[33m[{name}⟳] {str(list(inp.values())[0])[:80]}\033[0m")
+    print(f"\033[33m[&#123;name&#125;⟳] &#123;str(list(inp.values())[0])[:80]&#125;\033[0m")
     handler = ASYNC_DISPATCH.get(name)
     if not handler:
-        return block.id, f"Unknown tool: {name}"
+        return block.id, f"Unknown tool: &#123;name&#125;"
     try:
         output = await handler(inp)
     except Exception as e:
-        output = f"Error: {e}"
-    print(f"\033[90m  [{name}] done: {output[:80]}\033[0m")
+        output = f"Error: &#123;e&#125;"
+    print(f"\033[90m  [&#123;name&#125;] done: &#123;output[:80]&#125;\033[0m")
     return block.id, output
 
 async def agent_loop(messages: list):
@@ -2445,34 +2445,34 @@ async def agent_loop(messages: list):
 
         print()
 
-        messages.append({"role": "assistant", "content": response.content})
+        messages.append(&#123;"role": "assistant", "content": response.content&#125;)
 
         if response.stop_reason != "tool_use":
             return
         tool_blocks = [b for b in response.content if b.type == "tool_use"]
 
-        if len(tool_blocks) > 1:
-            print(f"\033[90m  Running {len(tool_blocks)} tools in parallel...\033[0m")
+        if len(tool_blocks) &gt; 1:
+            print(f"\033[90m  Running &#123;len(tool_blocks)&#125; tools in parallel...\033[0m")
 
         # All tool calls at once - not one by one
         pairs = await asyncio.gather(*[_dispatch_one(b) for b in tool_blocks])
         id_to_output = dict(pairs)
 
         results = [
-            {
+            &#123;
                 "type": "tool_result",
                 "tool_use_id": b.id,
                 "content": id_to_output[b.id],
-            }
+            &#125;
             for b in tool_blocks
         ]
-        messages.append({"role": "user", "content": results})
+        messages.append(&#123;"role": "user", "content": results&#125;)
 The async tool implementations use asyncio.create_subprocess_shell instead of subprocess.run so bash commands are truly non-blocking. File operations run in a thread executor since they are inherently synchronous I/O. Write operations get a per-path lock to prevent two parallel writes to the same file.
 
-_write_locks: dict[str, asyncio.Lock] = {}
+_write_locks: dict[str, asyncio.Lock] = &#123;&#125;
 
 
-async def async_bash(command: str) -> str:
+async def async_bash(command: str) -&gt; str:
 
     if any(d in command for d in _ALWAYS_BLOCK):
         return "Error: blocked"
@@ -2489,7 +2489,7 @@ async def async_bash(command: str) -> str:
 
     return out[:50000] if out else "(no output)"
 
-async def async_write(path: str, content: str) -> str:
+async def async_write(path: str, content: str) -&gt; str:
 
     # Per-file lock prevents concurrent writes to the same path
     if path not in _write_locks:
@@ -2500,14 +2500,14 @@ async def async_write(path: str, content: str) -> str:
         return await loop.run_in_executor(None, run_write, path, content)
 Let's test this ...
 
-s18 >> Analyse the entire agents/ directory: find all functions that
+s18 &gt;&gt; Analyse the entire agents/ directory: find all functions that
        take more than 3 parameters, all classes defined, and all
        imports used across all files. Report everything.
 
 
 Running 3 tools in parallel...
 
-[grep⟳] def .+:.+,.+,.+,.+  (functions >3 params)
+[grep⟳] def .+:.+,.+,.+,.+  (functions &gt;3 params)
 [grep⟳] ^class              (class definitions)
 
 [grep⟳] ^import|^from       (import statements)
@@ -2517,7 +2517,7 @@ Running 3 tools in parallel...
 
 All 3 greps completed in 0.4s (vs ~1.2s sequential)
 
-> Thinking...
+&gt; Thinking...
   Running 5 tools in parallel...
 
 [read⟳] agents/core.py (lines 140-160)
@@ -2535,7 +2535,7 @@ All 3 greps completed in 0.4s (vs ~1.2s sequential)
 All 5 tools completed in 0.6s (vs ~2.1s sequential)
 
 Final Answer:
-Functions with >3 parameters: stream_loop (5 params) in core.py.
+Functions with &gt;3 parameters: stream_loop (5 params) in core.py.
 Classes defined: AgentState, ProtocolAgent (s10), EventBus (s16),
   MailboxBackend (s22) - 4 total across the codebase.
 Import analysis: core.py uses 8 imports, average across all files is 5.
@@ -2558,7 +2558,7 @@ interrupt_queue: asyncio.Queue = asyncio.Queue()
 
 
 SYSTEM = (
-    f"You are a coding agent at {os.getcwd()}. "
+    f"You are a coding agent at &#123;os.getcwd()&#125;. "
     "When you receive [INTERRUPT], stop immediately. "
     "Summarise exactly what you have completed so far, "
     "what you were working on, and what remains. "
@@ -2569,8 +2569,8 @@ async def agent_loop(messages: list):
         # Check interrupt queue before calling the model
         try:
             interrupt_msg = interrupt_queue.get_nowait()
-            print(f"\n\033[31m[INTERRUPT] {interrupt_msg}\033[0m")
-            messages.append({"role": "user", "content": interrupt_msg})
+            print(f"\n\033[31m[INTERRUPT] &#123;interrupt_msg&#125;\033[0m")
+            messages.append(&#123;"role": "user", "content": interrupt_msg&#125;)
         except asyncio.QueueEmpty:
             pass
         def _stream():
@@ -2583,14 +2583,14 @@ async def agent_loop(messages: list):
                 return stream.get_final_message()
         response = await asyncio.get_event_loop().run_in_executor(None, _stream)
         print()
-        messages.append({"role": "assistant", "content": response.content})
+        messages.append(&#123;"role": "assistant", "content": response.content&#125;)
         if response.stop_reason != "tool_use":
             return
         # Check interrupt queue after model responds, before running tools
         try:
             interrupt_msg = interrupt_queue.get_nowait()
             print(f"\n\033[31m[INTERRUPT] Stopping tool execution\033[0m")
-            messages.append({"role": "user", "content": interrupt_msg})
+            messages.append(&#123;"role": "user", "content": interrupt_msg&#125;)
             continue   # go back to top - model handles the interrupt
         except asyncio.QueueEmpty:
             pass
@@ -2598,10 +2598,10 @@ async def agent_loop(messages: list):
         pairs       = await asyncio.gather(*[_dispatch_one(b) for b in tool_blocks])
         id_to_output = dict(pairs)
         results = [
-            {"type": "tool_result", "tool_use_id": b.id, "content": id_to_output[b.id]}
+            &#123;"type": "tool_result", "tool_use_id": b.id, "content": id_to_output[b.id]&#125;
             for b in tool_blocks
         ]
-        messages.append({"role": "user", "content": results})
+        messages.append(&#123;"role": "user", "content": results&#125;)
 
 async def input_loop(history: list):
     loop       = asyncio.get_event_loop()
@@ -2609,7 +2609,7 @@ async def input_loop(history: list):
     while True:
         try:
             query = await loop.run_in_executor(
-                None, lambda: input("\033[36ms19 >> \033[0m")
+                None, lambda: input("\033[36ms19 &gt;&gt; \033[0m")
             )
         except KeyboardInterrupt:
             # Ctrl+C at prompt - exit
@@ -2620,7 +2620,7 @@ async def input_loop(history: list):
         query = query.strip()
         if query.lower() in ("q", "exit", ""):
             break
-        history.append({"role": "user", "content": query})
+        history.append(&#123;"role": "user", "content": query&#125;)
         agent_task = asyncio.create_task(agent_loop(history))
         try:
             await agent_task
@@ -2638,7 +2638,7 @@ async def input_loop(history: list):
             except asyncio.TimeoutError:
                 print("  Agent did not respond to interrupt within 30s.")
         print()
-s19 >> Refactor every session file from s01 to s12 to add type annotations
+s19 &gt;&gt; Refactor every session file from s01 to s12 to add type annotations
        to all function signatures. Start with s01 and work through them all.
 
 [read] agents/s01_agent_loop.py
@@ -2670,7 +2670,7 @@ I was mid-way through s03_todo_write.py (task 2) - the file was
 read but not yet written. Tasks 3 through 12 have not been started.
 What would you like me to do next?
 
-s19 >> Actually skip s03 for now and jump straight to s04 through s06.
+s19 &gt;&gt; Actually skip s03 for now and jump straight to s04 through s06.
 [read] agents/s04_subagent.py
 [write] agents/s04_subagent.py
 [todo_update] 3 → done
@@ -2711,10 +2711,10 @@ The cache_control marker tells Anthropic's infrastructure to build a KV cache en
 
 # System prompt as a list of cacheable blocks
 SYSTEM_BLOCKS = [
-    {
+    &#123;
         "type": "text",
         "text": (
-            f"You are a coding agent at {os.getcwd()}. "
+            f"You are a coding agent at &#123;os.getcwd()&#125;. "
             "Use tools to solve tasks. Be concise.\n\n"
             "Tool capabilities:\n"
             "- bash: execute shell commands\n"
@@ -2725,17 +2725,17 @@ SYSTEM_BLOCKS = [
             "- revert: restore a file to its pre-write state\n\n"
             "Always verify your work. Check outputs before proceeding."
         ),
-        "cache_control": {"type": "ephemeral"},  # cache this block
-    }
+        "cache_control": &#123;"type": "ephemeral"&#125;,  # cache this block
+    &#125;
 ]
 
 
 # Last tool in the array gets cache_control - caches everything up to it
 CACHED_TOOLS = EXTENDED_TOOLS[:-1] + [
-    {
+    &#123;
         **EXTENDED_TOOLS[-1],
-        "cache_control": {"type": "ephemeral"},
-    }
+        "cache_control": &#123;"type": "ephemeral"&#125;,
+    &#125;
 ]
 A token usage tracker makes cache performance visible on every call.
 
@@ -2755,23 +2755,23 @@ def record(self, usage):
     def print_turn(self, usage):
         created = getattr(usage, "cache_creation_input_tokens", 0) or 0
         read    = getattr(usage, "cache_read_input_tokens",     0) or 0
-        if created > 0:
-            print(f"\033[90m  [cache] MISS → {created} tokens written\033[0m")
-        elif read > 0:
+        if created &gt; 0:
+            print(f"\033[90m  [cache] MISS → &#123;created&#125; tokens written\033[0m")
+        elif read &gt; 0:
             saved = int(read * 0.9)
-            print(f"\033[90m  [cache] HIT  → {read} tokens read "
-                  f"(saved ~{saved} tokens)\033[0m")
+            print(f"\033[90m  [cache] HIT  → &#123;read&#125; tokens read "
+                  f"(saved ~&#123;saved&#125; tokens)\033[0m")
     def print_summary(self):
         if not self.calls:
             return
         total_saved = int(self.cache_read * 0.9)
-        print(f"\033[90m  [cache summary] {self.calls} calls | "
-              f"written={self.cache_created} | "
-              f"hits={self.cache_read} | "
-              f"total saved≈{total_saved} tokens\033[0m")
+        print(f"\033[90m  [cache summary] &#123;self.calls&#125; calls | "
+              f"written=&#123;self.cache_created&#125; | "
+              f"hits=&#123;self.cache_read&#125; | "
+              f"total saved≈&#123;total_saved&#125; tokens\033[0m")
 
 stats = CacheStats()
-s20 >> Read every file in agents/ and produce a one-line summary
+s20 &gt;&gt; Read every file in agents/ and produce a one-line summary
        of what each one does. Then find which files have the most
        tool calls registered in their dispatch map.
 
@@ -2789,7 +2789,7 @@ agents/core.py, agents/s01_agent_loop.py ... (24 files)
   [cache] HIT → 1,847 tokens read (saved ~1,662 tokens)
 All 6 reads completed in 0.7s
 
-> Thinking...
+&gt; Thinking...
   Running 6 tools in parallel...
 [read⟳] agents/s06_context_compact.py
 [read⟳] agents/s07_task_system.py
@@ -2799,19 +2799,19 @@ All 6 reads completed in 0.7s
 [read⟳] agents/s11_autonomous_agents.py
   [cache] HIT → 1,847 tokens read (saved ~1,662 tokens)
 
-> Thinking...
+&gt; Thinking...
 
-[grep] DISPATCH.*{  (find dispatch maps)
+[grep] DISPATCH.*&#123;  (find dispatch maps)
   [cache] HIT → 1,847 tokens read (saved ~1,662 tokens)
 
 [bash] python -c "
 import ast, os
 for f in sorted(os.listdir('agents')):
     if not f.endswith('.py'): continue
-    src = open(f'agents/{f}').read()
+    src = open(f'agents/&#123;f&#125;').read()
     count = src.count('lambda inp:')
-    if count > 0:
-        print(f'{f}: {count} tools')
+    if count &gt; 0:
+        print(f'&#123;f&#125;: &#123;count&#125; tools')
 "
 
 s_full.py: 13 tools
@@ -2840,15 +2840,15 @@ A database server adds query tools. The model calls all of them identically to b
 
 *MCP (Created by Fareed Khan)*
 
-The MCP runtime reads server configurations from config/mcp_config.yaml, connects to each server at startup using the official MCP Python SDK, calls list_tools() to discover what each server provides, and registers everything under a prefixed name mcp__<server>__<tool> — in the dispatch map alongside the built-in tools.
+The MCP runtime reads server configurations from config/mcp_config.yaml, connects to each server at startup using the official MCP Python SDK, calls list_tools() to discover what each server provides, and registers everything under a prefixed name mcp__&lt;server&gt;__&lt;tool&gt; — in the dispatch map alongside the built-in tools.
 
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
 
-MCP_SESSIONS: dict[str, ClientSession] = {}
-MCP_TOOL_MAP: dict[str, tuple[str, str]] = {}  # prefixed_name → (server, tool)
-async def connect_mcp_servers() -> list[dict]:
+MCP_SESSIONS: dict[str, ClientSession] = &#123;&#125;
+MCP_TOOL_MAP: dict[str, tuple[str, str]] = &#123;&#125;  # prefixed_name → (server, tool)
+async def connect_mcp_servers() -&gt; list[dict]:
     """Connect to all configured MCP servers. Returns their tools as Anthropic defs."""
     try:
         with open(Path(__file__).parent.parent / "config" / "mcp_config.yaml") as f:
@@ -2870,34 +2870,34 @@ async def connect_mcp_servers() -> list[dict]:
                 session     = await ClientSession(read, write).__aenter__()
                 await session.initialize()
             else:
-                print(f"\033[33m  [{name}] transport '{transport}' not supported\033[0m")
+                print(f"\033[33m  [&#123;name&#125;] transport '&#123;transport&#125;' not supported\033[0m")
                 continue
             tool_list = await session.list_tools()
             MCP_SESSIONS[name] = session
-            print(f"\033[90m  [MCP] connected: {name} "
-                  f"({len(tool_list.tools)} tools)\033[0m")
+            print(f"\033[90m  [MCP] connected: &#123;name&#125; "
+                  f"(&#123;len(tool_list.tools)&#125; tools)\033[0m")
             for tool in tool_list.tools:
-                prefixed = f"mcp__{name}__{tool.name}"
+                prefixed = f"mcp__&#123;name&#125;__&#123;tool.name&#125;"
                 MCP_TOOL_MAP[prefixed] = (name, tool.name)
-                mcp_tools.append({
+                mcp_tools.append(&#123;
                     "name":         prefixed,
-                    "description":  f"[{name}] {tool.description or tool.name}",
-                    "input_schema": tool.inputSchema or {
-                        "type": "object", "properties": {}
-                    },
-                })
+                    "description":  f"[&#123;name&#125;] &#123;tool.description or tool.name&#125;",
+                    "input_schema": tool.inputSchema or &#123;
+                        "type": "object", "properties": &#123;&#125;
+                    &#125;,
+                &#125;)
         except Exception as e:
-            print(f"\033[31m  [MCP] failed to connect {name}: {e}\033[0m")
+            print(f"\033[31m  [MCP] failed to connect &#123;name&#125;: &#123;e&#125;\033[0m")
     return mcp_tools
 
-async def call_mcp_tool(prefixed_name: str, arguments: dict) -> str:
+async def call_mcp_tool(prefixed_name: str, arguments: dict) -&gt; str:
     """Route an MCP tool call to the correct server."""
     if prefixed_name not in MCP_TOOL_MAP:
-        return f"Error: MCP tool not found: {prefixed_name}"
+        return f"Error: MCP tool not found: &#123;prefixed_name&#125;"
     server_name, tool_name = MCP_TOOL_MAP[prefixed_name]
     session = MCP_SESSIONS.get(server_name)
     if not session:
-        return f"Error: server not connected: {server_name}"
+        return f"Error: server not connected: &#123;server_name&#125;"
     try:
         result = await session.call_tool(tool_name, arguments)
         parts  = []
@@ -2905,26 +2905,26 @@ async def call_mcp_tool(prefixed_name: str, arguments: dict) -> str:
             if hasattr(item, "text"):
                 parts.append(item.text)
             elif hasattr(item, "data"):
-                parts.append(f"[binary: {len(item.data)} bytes]")
+                parts.append(f"[binary: &#123;len(item.data)&#125; bytes]")
         return "\n".join(parts)[:50000] or "(no output)"
     except Exception as e:
-        return f"Error calling MCP tool: {e}"
+        return f"Error calling MCP tool: &#123;e&#125;"
 The dispatch router handles MCP tools identically to built-in tools — a prefix check is the only difference.
 
-async def dispatch_with_mcp(block) -> tuple[str, str]:
+async def dispatch_with_mcp(block) -&gt; tuple[str, str]:
     name = block.name
     inp  = block.input
-    print(f"\033[33m[{name}] {str(list(inp.values())[0])[:80]}\033[0m")
+    print(f"\033[33m[&#123;name&#125;] &#123;str(list(inp.values())[0])[:80]&#125;\033[0m")
 
 
 if name.startswith("mcp__"):
         output = await call_mcp_tool(name, inp)
     else:
         handler = ASYNC_DISPATCH.get(name)
-        output  = await handler(inp) if handler else f"Unknown: {name}"
+        output  = await handler(inp) if handler else f"Unknown: &#123;name&#125;"
     print(output[:200])
     return block.id, output
-s21 >> Using the connected filesystem and git MCP servers,
+s21 &gt;&gt; Using the connected filesystem and git MCP servers,
        show me the git log for the last 5 commits and then
        read the files that were changed in the most recent commit.
 
@@ -2932,26 +2932,26 @@ s21 >> Using the connected filesystem and git MCP servers,
   [MCP] connected: git (6 tools)
   Total tools: 14 built-in + 14 MCP = 28 available
 
-> Thinking...
-[mcp__git__git_log] {"repo_path": ".", "max_count": 5}
+&gt; Thinking...
+[mcp__git__git_log] &#123;"repo_path": ".", "max_count": 5&#125;
 commit a3f2c891  Add error handling to run_write (2026-04-01)
 commit b7e1d334  Fork: Add error handling to run_read (2026-04-01)
 commit c9d0e112  Phase 5 complete: all production hardening sessions (2026-04-01)
 commit d2e8b445  Add type annotations to s01-s06 (2026-03-31)
 commit e5f6a778  Initial implementation of core.py (2026-03-30)
 
-> Thinking...
-[mcp__git__git_diff] {"repo_path": ".", "ref": "HEAD~1"}
+&gt; Thinking...
+[mcp__git__git_diff] &#123;"repo_path": ".", "ref": "HEAD~1"&#125;
 diff --git a/agents/core.py b/agents/core.py
   + except PermissionError as e:
-  +     return f"Error: permission denied writing {path}: {e}"
+  +     return f"Error: permission denied writing &#123;path&#125;: &#123;e&#125;"
   + except OSError as e:
-  +     return f"Error: OS error writing {path}: {e}"
+  +     return f"Error: OS error writing &#123;path&#125;: &#123;e&#125;"
 Changed files in most recent commit: agents/core.py
 
-> Thinking...
+&gt; Thinking...
   Running 2 tools in parallel...
-[mcp__filesystem__read_file⟳] {"path": "agents/core.py"}
+[mcp__filesystem__read_file⟳] &#123;"path": "agents/core.py"&#125;
 [bash⟳] git show HEAD --stat
   [mcp__filesystem__read_file] done: 8,432 chars
   [bash] done: core.py | 8 ++++++++
@@ -3001,7 +3001,7 @@ import redis.asyncio as aioredis
 class MailboxBackend:
     """Common interface - swap backend without changing agent logic."""
     async def send(self, to: str, message: dict): ...
-    async def receive(self, name: str, timeout: float = 30.0) -> dict | None: ...
+    async def receive(self, name: str, timeout: float = 30.0) -&gt; dict | None: ...
     async def close(self): ...
 
 class RedisMailbox(MailboxBackend):
@@ -3009,19 +3009,19 @@ class RedisMailbox(MailboxBackend):
 
     def __init__(self, redis_url: str):
         self.redis   = aioredis.from_url(redis_url, decode_responses=True)
-        self._pubsubs: dict[str, aioredis.client.PubSub] = {}
+        self._pubsubs: dict[str, aioredis.client.PubSub] = &#123;&#125;
 
-    def _channel(self, name: str) -> str:
-        return f"agent:{name}:inbox"
+    def _channel(self, name: str) -&gt; str:
+        return f"agent:&#123;name&#125;:inbox"
 
     async def send(self, to: str, message: dict):
-        payload = json.dumps({
+        payload = json.dumps(&#123;
             **message,
             "ts": datetime.now().isoformat(),
-        })
+        &#125;)
         await self.redis.publish(self._channel(to), payload)
 
-    async def receive(self, name: str, timeout: float = 30.0) -> dict | None:
+    async def receive(self, name: str, timeout: float = 30.0) -&gt; dict | None:
         if name not in self._pubsubs:
             ps = self.redis.pubsub()
             await ps.subscribe(self._channel(name))
@@ -3030,7 +3030,7 @@ class RedisMailbox(MailboxBackend):
         ps       = self._pubsubs[name]
         deadline = asyncio.get_event_loop().time() + timeout
 
-        while asyncio.get_event_loop().time() < deadline:
+        while asyncio.get_event_loop().time() &lt; deadline:
             msg = await ps.get_message(
                 ignore_subscribe_messages=True, timeout=0.1
             )
@@ -3038,7 +3038,7 @@ class RedisMailbox(MailboxBackend):
                 try:
                     return json.loads(msg["data"])
                 except json.JSONDecodeError:
-                    return {"body": msg["data"]}
+                    return &#123;"body": msg["data"]&#125;
             await asyncio.sleep(0.05)
         return None
 
@@ -3058,18 +3058,18 @@ class QueueMailbox(MailboxBackend):
 
 
 def __init__(self):
-        self._queues: dict[str, asyncio.Queue] = {}
-    def _queue(self, name: str) -> asyncio.Queue:
+        self._queues: dict[str, asyncio.Queue] = &#123;&#125;
+    def _queue(self, name: str) -&gt; asyncio.Queue:
         if name not in self._queues:
             self._queues[name] = asyncio.Queue()
         return self._queues[name]
 
     async def send(self, to: str, message: dict):
-        await self._queue(to).put({
+        await self._queue(to).put(&#123;
             **message, "ts": datetime.now().isoformat()
-        })
+        &#125;)
 
-    async def receive(self, name: str, timeout: float = 30.0) -> dict | None:
+    async def receive(self, name: str, timeout: float = 30.0) -&gt; dict | None:
         try:
             return await asyncio.wait_for(
                 self._queue(name).get(), timeout=timeout
@@ -3080,17 +3080,17 @@ def __init__(self):
     async def close(self):
         pass
 
-async def make_mailbox() -> MailboxBackend:
+async def make_mailbox() -&gt; MailboxBackend:
     """Use Redis if available, fall back to Queue."""
     redis_url = os.getenv("REDIS_URL", "redis://localhost:6379")
 
     try:
         mb = RedisMailbox(redis_url)
         await mb.redis.ping()
-        print(f"\033[90m  [mailbox] Redis connected at {redis_url}\033[0m")
+        print(f"\033[90m  [mailbox] Redis connected at &#123;redis_url&#125;\033[0m")
         return mb
     except Exception as e:
-        print(f"\033[33m  [mailbox] Redis unavailable ({e}) - using Queue\033[0m")
+        print(f"\033[33m  [mailbox] Redis unavailable (&#123;e&#125;) - using Queue\033[0m")
         return QueueMailbox()
 The teammate loop is identical to Phase 4, the mailbox interface hides all transport details.
 
@@ -3099,7 +3099,7 @@ async def teammate_loop(
     mailbox: MailboxBackend,
     stop: asyncio.Event,
 ):
-    print(f"\033[90m  [{name}] ready on {mailbox.__class__.__name__}\033[0m")
+    print(f"\033[90m  [&#123;name&#125;] ready on &#123;mailbox.__class__.__name__&#125;\033[0m")
     while not stop.is_set():
         msg = await mailbox.receive(name, timeout=2.0)
         if not msg:
@@ -3108,10 +3108,10 @@ async def teammate_loop(
 
 sender = msg.get("from", "lead")
         body   = msg.get("body", "")
-        print(f"\n\033[35m  [{name}] task from {sender}: {body[:60]}\033[0m")
+        print(f"\n\033[35m  [&#123;name&#125;] task from &#123;sender&#125;: &#123;body[:60]&#125;\033[0m")
 
         # Full agent loop - identical to Phase 4
-        sub = [{"role": "user", "content": body}]
+        sub = [&#123;"role": "user", "content": body&#125;]
 
         while True:
             resp = await asyncio.get_event_loop().run_in_executor(
@@ -3121,28 +3121,28 @@ sender = msg.get("from", "lead")
                     messages=sub, tools=EXTENDED_TOOLS, max_tokens=4000,
                 )
             )
-            sub.append({"role": "assistant", "content": resp.content})
+            sub.append(&#123;"role": "assistant", "content": resp.content&#125;)
             if resp.stop_reason != "tool_use":
                 break
             results = dispatch_tools(resp.content, EXTENDED_DISPATCH)
-            sub.append({"role": "user", "content": results})
+            sub.append(&#123;"role": "user", "content": results&#125;)
 
         result = "".join(
             b.text for b in sub[-1]["content"] if hasattr(b, "text")
         )
 
-        await mailbox.send(sender, {
+        await mailbox.send(sender, &#123;
             "from": name, "to": sender,
             "type": "result", "body": result,
-        })
-        print(f"\033[35m  [{name}] result sent to {sender}\033[0m")
+        &#125;)
+        print(f"\033[35m  [&#123;name&#125;] result sent to &#123;sender&#125;\033[0m")
 In our teammate_loop() implementation, the agent receives messages from its mailbox, processes them with the model and tools, and sends results back to the sender via the same mailbox interface.
 
 The lead agent can send tasks to teammates without caring about the underlying transport it just calls mailbox.send() and waits for responses.
 
 Now we can run multiple teammates in parallel, each on their own Redis channel …
 
-s22 >> We have two specialists available — an explorer and a writer.
+s22 &gt;&gt; We have two specialists available — an explorer and a writer.
        Explore the current test coverage gaps in core.py then
        write new tests to close them. Run in parallel.
 
@@ -3150,7 +3150,7 @@ s22 >> We have two specialists available — an explorer and a writer.
 [mailbox] Redis connected at redis://localhost:6379
   Teammates: explorer, writer | backend: RedisMailbox
 
-> Thinking...
+&gt; Thinking...
 [send_to_teammate] explorer
   Run pytest with coverage on core.py. Find every function
   with less than 100% branch coverage. Report the exact
@@ -3158,7 +3158,7 @@ s22 >> We have two specialists available — an explorer and a writer.
 
   [explorer → redis channel agent:explorer:inbox]  ← instant delivery
   [explorer] task from lead: Run pytest with coverage on core.py...
-  [explorer] > Thinking...
+  [explorer] &gt; Thinking...
   [explorer] [bash] python -m pytest tests/ --cov=agents/core
                     --cov-report=term-missing -q
   Name            Stmts  Miss Branch BrPart  Cover  Missing
@@ -3168,7 +3168,7 @@ s22 >> We have two specialists available — an explorer and a writer.
 
 Result received in 8.2s (vs ~9s polling average in Phase 4)
 
-> Thinking...
+&gt; Thinking...
 [send_to_teammate] writer
   Write pytest tests for these missing branches in agents/core.py:
   1. run_revert line 134: file newly created (SNAPSHOTS[path] is None)
@@ -3178,7 +3178,7 @@ Result received in 8.2s (vs ~9s polling average in Phase 4)
   Target: bring core.py to 100% branch coverage.
   [writer → redis channel agent:writer:inbox]  ← instant delivery
   [writer] task from lead: Write pytest tests for missing branches...
-  [writer] > Thinking...
+  [writer] &gt; Thinking...
   [writer] [read] tests/test_agents_smoke.py
   [writer] [read] agents/core.py (lines 130-145)
   [writer] [read] agents/core.py (lines 194-205)
@@ -3200,7 +3200,7 @@ Result received in 23.4s
 Final Answer:
 Explorer identified 3 missing branches in core.py (88% coverage).
 Writer closed all 3 with targeted tests - core.py now at 100% branch coverage.
-Redis delivery latency: <10ms per message vs ~500ms polling in Phase 4.
+Redis delivery latency: &lt;10ms per message vs ~500ms polling in Phase 4.
 Both teammates ran on separate Redis channels - zero file locking,
 zero polling overhead, ready for multi-machine deployment.
 The latency difference is visible in the output, Redis delivers messages in under 10ms compared to the 500ms polling interval of the JSONL approach. For a session with dozens of inter-agent messages, this compounds into meaningful wall-time savings. More importantly, the Redis backend works identically whether both agents run on the same machine or on different machines in a cluster — the JSONL approach cannot do this at all.
@@ -3217,7 +3217,7 @@ A branch that already exists from a previous crashed run causes git worktree add
 
 Claude Code avoids most of these issues by using file snapshots rather than worktrees. But worktrees provide stronger isolation an agent literally cannot touch another agent’s files making them the right choice for large parallel tasks. The production worktree manager handles every edge case systematically before any task execution begins.
 
-def _git(*args, cwd=None) -> tuple[int, str, str]:
+def _git(*args, cwd=None) -&gt; tuple[int, str, str]:
     result = subprocess.run(
         ["git", *args], capture_output=True, text=True,
         cwd=cwd or os.getcwd(),
@@ -3225,19 +3225,19 @@ def _git(*args, cwd=None) -> tuple[int, str, str]:
     return result.returncode, result.stdout.strip(), result.stderr.strip()
 
 
-def check_git_state() -> dict:
+def check_git_state() -&gt; dict:
     """Full pre-flight check before any worktree operations."""
     _, branch, _ = _git("symbolic-ref", "--short", "HEAD")
     _, dirty, _  = _git("status", "--porcelain")
     _, wt_list, _ = _git("worktree", "list", "--porcelain")
-    return {
+    return &#123;
         "branch":       branch or "(detached)",
         "is_dirty":     bool(dirty),
         "is_detached":  not branch,
         "worktree_count": wt_list.count("worktree "),
-    }
+    &#125;
 
-def prune_stale_worktrees() -> int:
+def prune_stale_worktrees() -&gt; int:
     """Remove worktrees whose directories no longer exist."""
     _, out, _ = _git("worktree", "list", "--porcelain")
     pruned    = 0
@@ -3247,7 +3247,7 @@ def prune_stale_worktrees() -> int:
         if line.startswith("worktree "):
             current_path = line[9:]
         elif line == "prunable" and current_path:
-            print(f"\033[90m  [worktree] pruning stale: {current_path}\033[0m")
+            print(f"\033[90m  [worktree] pruning stale: &#123;current_path&#125;\033[0m")
             _git("worktree", "remove", "--force", current_path)
             pruned += 1
     _git("worktree", "prune")
@@ -3256,7 +3256,7 @@ We also need to create a safe wrapper around worktree creation that handles ever
 
 This is critical for a good user experience because if the model tries to create a worktree and it fails silently due to an edge case, the agent will be confused and likely fail the task without any indication of what went wrong.
 
-def create_worktree_safe(task_id: str) -> tuple[str, str]:
+def create_worktree_safe(task_id: str) -&gt; tuple[str, str]:
     """
     Safe worktree creation with full edge case handling.
     Returns (path, branch) or raises RuntimeError with a clear message.
@@ -3277,40 +3277,40 @@ def create_worktree_safe(task_id: str) -> tuple[str, str]:
             f"\033[33m  [worktree] Warning: uncommitted changes detected. "
             f"Worktree will branch from HEAD, not your working tree.\033[0m"
         )
-    branch = f"task/{task_id}"
-    path   = str(Path(os.getcwd()).parent / f".worktree-{task_id[:8]}")
+    branch = f"task/&#123;task_id&#125;"
+    path   = str(Path(os.getcwd()).parent / f".worktree-&#123;task_id[:8]&#125;")
 
     # Clean up path if it exists from a previous crashed run
     if Path(path).exists():
-        print(f"\033[90m  [worktree] removing stale path: {path}\033[0m")
+        print(f"\033[90m  [worktree] removing stale path: &#123;path&#125;\033[0m")
         _git("worktree", "remove", "--force", path)
         shutil.rmtree(path, ignore_errors=True)
 
     # Resolve branch name conflict
-    rc, _, _ = _git("show-ref", "--verify", f"refs/heads/{branch}")
+    rc, _, _ = _git("show-ref", "--verify", f"refs/heads/&#123;branch&#125;")
 
     if rc == 0:
-        print(f"\033[90m  [worktree] branch exists, deleting: {branch}\033[0m")
+        print(f"\033[90m  [worktree] branch exists, deleting: &#123;branch&#125;\033[0m")
         rc2, _, err = _git("branch", "-D", branch)
 
         if rc2 != 0:
             # Branch checked out elsewhere - use alternate name
-            branch = f"task/{task_id}-{uuid.uuid4().hex[:4]}"
-            print(f"\033[90m  [worktree] using alternate branch: {branch}\033[0m")
+            branch = f"task/&#123;task_id&#125;-&#123;uuid.uuid4().hex[:4]&#125;"
+            print(f"\033[90m  [worktree] using alternate branch: &#123;branch&#125;\033[0m")
 
     rc, _, err = _git("worktree", "add", "-b", branch, path)
 
     if rc != 0:
-        raise RuntimeError(f"git worktree add failed: {err}")
-    print(f"\033[90m  [worktree] created: {path} (branch: {branch})\033[0m")
+        raise RuntimeError(f"git worktree add failed: &#123;err&#125;")
+    print(f"\033[90m  [worktree] created: &#123;path&#125; (branch: &#123;branch&#125;)\033[0m")
 
     return path, branch
 Similarly we create conflicts detection that runs before any task execution begins to check if any parallel tasks modified overlapping files. If they did, we can either fail fast with a clear message or alert the model and let it decide how to proceed.
 
-def detect_conflicts(completed_tasks: list[dict]) -> list[str]:
+def detect_conflicts(completed_tasks: list[dict]) -&gt; list[str]:
     """Check if parallel tasks modified overlapping files."""
 
-    changed: dict[str, set] = {}
+    changed: dict[str, set] = &#123;&#125;
 
     for task in completed_tasks:
         branch = task.get("branch")
@@ -3330,14 +3330,14 @@ def detect_conflicts(completed_tasks: list[dict]) -> list[str]:
             overlap = changed[task_ids[i]] & changed[task_ids[j]]
             if overlap:
                 conflicts.append(
-                    f"Tasks {task_ids[i]} and {task_ids[j]} "
-                    f"both modified: {', '.join(sorted(overlap)[:5])}"
+                    f"Tasks &#123;task_ids[i]&#125; and &#123;task_ids[j]&#125; "
+                    f"both modified: &#123;', '.join(sorted(overlap)[:5])&#125;"
                 )
 
     return conflicts
 And in order to run a task in an isolated worktree with full lifecycle management, we need to wrap the entire execution in a try/finally block that ensures the worktree is always cleaned up even if the task fails with an exception.
 
-async def run_task_in_worktree_safe(task: dict) -> dict:
+async def run_task_in_worktree_safe(task: dict) -&gt; dict:
     """Run a task in an isolated worktree with full lifecycle management."""
     task_id = task["id"]
     wt_path = None
@@ -3349,13 +3349,13 @@ async def run_task_in_worktree_safe(task: dict) -> dict:
         task["branch"] = wt_branch
 
         system = (
-            f"You are a coding agent in isolated worktree: {wt_path}. "
-            f"Task: {task['description']}. "
+            f"You are a coding agent in isolated worktree: &#123;wt_path&#125;. "
+            f"Task: &#123;task['description']&#125;. "
             "Your changes are on a separate branch. "
             "Summarise every file you modified when done."
         )
 
-        messages = [{"role": "user", "content": task["description"]}]
+        messages = [&#123;"role": "user", "content": task["description"]&#125;]
 
         while True:
             resp = await asyncio.get_event_loop().run_in_executor(
@@ -3366,7 +3366,7 @@ async def run_task_in_worktree_safe(task: dict) -> dict:
                     tools=EXTENDED_TOOLS, max_tokens=8000,
                 )
             )
-            messages.append({"role": "assistant", "content": resp.content})
+            messages.append(&#123;"role": "assistant", "content": resp.content&#125;)
 
             if resp.stop_reason != "tool_use":
                 break
@@ -3387,16 +3387,16 @@ async def run_task_in_worktree_safe(task: dict) -> dict:
                     handler = EXTENDED_DISPATCH.get(block.name)
                     output  = handler(block.input) if handler else "unknown"
 
-                print(f"\033[33m  [{task_id[:6]}][{block.name}] "
-                      f"{str(list(block.input.values())[0])[:60]}\033[0m")
+                print(f"\033[33m  [&#123;task_id[:6]&#125;][&#123;block.name&#125;] "
+                      f"&#123;str(list(block.input.values())[0])[:60]&#125;\033[0m")
 
-                results.append({
+                results.append(&#123;
                     "type": "tool_result",
                     "tool_use_id": block.id,
                     "content": output,
-                })
+                &#125;)
 
-            messages.append({"role": "user", "content": results})
+            messages.append(&#123;"role": "user", "content": results&#125;)
 
         task["status"] = "done"
 
@@ -3407,7 +3407,7 @@ async def run_task_in_worktree_safe(task: dict) -> dict:
     except RuntimeError as e:
         task["status"] = "failed"
         task["error"]  = str(e)
-        print(f"\033[31m  [{task_id}] failed: {e}\033[0m")
+        print(f"\033[31m  [&#123;task_id&#125;] failed: &#123;e&#125;\033[0m")
 
     finally:
         # Always clean up - even on exception
@@ -3416,12 +3416,12 @@ async def run_task_in_worktree_safe(task: dict) -> dict:
             shutil.rmtree(wt_path, ignore_errors=True)
         if wt_branch:
             _git("branch", "-D", wt_branch)
-        print(f"\033[90m  [{task_id[:6]}] worktree cleaned up\033[0m")
+        print(f"\033[90m  [&#123;task_id[:6]&#125;] worktree cleaned up\033[0m")
 
     return task
 Let’s run the execution trace for two parallel tasks …
 
-s23 >> Run two tasks in parallel isolated worktrees:
+s23 &gt;&gt; Run two tasks in parallel isolated worktrees:
        Task A: Add input validation to run_bash — reject empty commands
                and commands over 10,000 characters.
        Task B: Add a call counter to run_bash that tracks how many
@@ -3483,7 +3483,7 @@ from core import (
 
 
 # Every mechanism wired in - each delegates to core for tool execution
-ALL_DISPATCH = {
+ALL_DISPATCH = &#123;
     **EXTENDED_DISPATCH,
     "todo_write":       lambda i: todo_write(i["tasks"]),
     "todo_read":        lambda i: todo_read(),
@@ -3497,14 +3497,14 @@ ALL_DISPATCH = {
     "task_next":        lambda i: task_next(),
     "bash_background":  lambda i: bash_background(i["command"], i.get("label", "")),
     "send_to_teammate": lambda i: send_to_teammate(i["name"], i["message"]),
-    "list_teammates":   lambda i: "\n".join(f"  {n}" for n in TEAMMATE_SYSTEMS),
-}
+    "list_teammates":   lambda i: "\n".join(f"  &#123;n&#125;" for n in TEAMMATE_SYSTEMS),
+&#125;
 We can simulate a complex session that uses every mechanism such as:
 
 The agent creates a new “debugging” skill on demand to cover systematic debugging methodology.
 The agent spawns a subagent to analyze the task list JSON for phantom dependencies.
 The agent runs a background task to execute the full test suite while it writes new tests.
-full >> We need to add a new skill called "debugging" that covers
+full &gt;&gt; We need to add a new skill called "debugging" that covers
         systematic debugging methodology. Create it, then use it
         to debug why the task_next function sometimes returns
         a blocked task.
@@ -3513,11 +3513,11 @@ full >> We need to add a new skill called "debugging" that covers
 Memory loaded from .agent_memory.md
   Teammates: explorer, writer | skills: agent-builder, code-review, pdf
 
-> Thinking...
+&gt; Thinking...
 [load_skill] agent-builder
   Loaded skill: agent-builder (harness design patterns)
 
-> Thinking...
+&gt; Thinking...
 [todo_write]
   [0] Create skills/debugging/SKILL.md with systematic methodology
   [1] Load the new debugging skill
@@ -3532,20 +3532,20 @@ Memory loaded from .agent_memory.md
   Loaded skill: debugging (systematic debugging methodology)
 [todo_update] 1 → done
 
-> Thinking...
+&gt; Thinking...
 [read] agents/s07_task_system.py (lines 60-85)
-  60    def task_next() -> str:
+  60    def task_next() -&gt; str:
   61        tasks   = _load()
-  62        done_ids = {t["id"] for t in tasks if t["status"] == "done"}
+  62        done_ids = &#123;t["id"] for t in tasks if t["status"] == "done"&#125;
   63        for t in sorted(tasks, key=lambda x: ...):
   64            if t["status"] != "pending":
   65                continue
   66            if all(dep in done_ids for dep in t.get("depends_on", [])):
-  67                return f"[{t['id']}] {t['description']}"
+  67                return f"[&#123;t['id']&#125;] &#123;t['description']&#125;"
   68        return "(no unblocked tasks)"
 [todo_update] 2 → done
 
-> Thinking...
+&gt; Thinking...
 [spawn_subagent]
   Read .agent_tasks.json and find any task whose depends_on
   list contains an ID that does not exist in the task list.
@@ -3556,7 +3556,7 @@ Memory loaded from .agent_memory.md
              This task will never unblock.
 [todo_update] 3 → done
 
-> Thinking...
+&gt; Thinking...
   [compress] context large - summarising older messages...
   [compress] 22 messages → 1 summary | saved to .agent_memory.md
 
