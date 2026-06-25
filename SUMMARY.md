@@ -531,6 +531,7 @@
   - [Awesome Cursor Skills](misc/artificial-intelligence/github-awesome-cursor-skills.md)
   - [What is MCP?](misc/artificial-intelligence/modelcontextprotocol-io-what-is-mcp.md)
   - [Repomix (AI codebase packing)](misc/artificial-intelligence/github-yamadashy-repomix.md)
+  - [Building Claude Code with Harness Engineering](misc/artificial-intelligence/levelup-gitconnected-claude-code-harness-engineering.md)
 - [tutorials](misc/tutorials/README.md)
   - [Install Ghost blogging platform on Ubuntu](misc/tutorials/install-ghost-blogging-platform-on-ubuntu.md)
   - [From Google Sheets, how to send email based on date](misc/tutorials/from-google-sheets-how-to-send-email-based-on-date/README.md)
