@@ -12,7 +12,7 @@ description: "Imported notes on reverse-engineering Claude Code's agent harness 
 - Author: Fareed Khan (Level Up Coding / Medium)
 - Companion repo: https://github.com/FareedKhan-dev/claude-code-from-scratch
 - Imported: 2025-06-25
-- Images: 31 diagrams saved under `./assets/levelup-gitconnected-claude-code-harness-engineering/` (extracted from HTML export via Medium CDN)
+- Images: 31 diagrams (1200px WebP, ~1.2 MB total) under `./assets/levelup-gitconnected-claude-code-harness-engineering/`
 
 ## Content
 
@@ -21,7 +21,7 @@ description: "Imported notes on reverse-engineering Claude Code's agent harness 
 As of early 2026, [Claude Code crossed $1 billion in annualized revenue](https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone) within six months of launch. It did not get there because of better prompts. It got there because Anthropic built the right harness around the right model, a streaming agent loop, a permission-governed tool dispatch system, and a context management layer that keeps the model focused across arbitrarily long sessions. That harness is fully reproducible, and that is exactly what we are going to build.
 
 
-![Claude Code Architecture](./assets/levelup-gitconnected-claude-code-harness-engineering/01-claude-code-architecture.png)
+![Claude Code Architecture](./assets/levelup-gitconnected-claude-code-harness-engineering/01-claude-code-architecture.webp)
 
 *Claude Code Architecture (Created by Fareed Khan)*
 
@@ -95,7 +95,7 @@ Claude Code is not an agent framework. It is a harness, one of the most carefull
 Claude Code architecture follows the principles of harness engineering in several ways:
 
 
-![Harness Architecture with Claude](./assets/levelup-gitconnected-claude-code-harness-engineering/02-harness-architecture-with-claude.png)
+![Harness Architecture with Claude](./assets/levelup-gitconnected-claude-code-harness-engineering/02-harness-architecture-with-claude.webp)
 
 *Harness Architecture with Claude (Created by Fareed Khan)*
 
@@ -107,7 +107,7 @@ Permission governance runs as a pre-execution layer, every tool call passes thro
 The agent loop is the single architectural primitive that everything else builds on. Before tools, before permissions, before multi-agent coordination, there is a loop that calls the model, observes what it wants to do, executes it, and feeds the result back.
 
 
-![Phase 1 — Core Agentic Loop](./assets/levelup-gitconnected-claude-code-harness-engineering/03-phase-1-core-agentic-loop.png)
+![Phase 1 — Core Agentic Loop](./assets/levelup-gitconnected-claude-code-harness-engineering/03-phase-1-core-agentic-loop.webp)
 
 *Phase 1 — Core Agentic Loop (Created by Fareed Khan)*
 
@@ -119,7 +119,7 @@ The most fundamental principle of any agentic system is the perception-action-ob
 The agent receives a task, attempts a solution using a tool
 Observes the result, and decides whether to continue or stop all driven by the model, not the code.
 
-![Minimal While Loop](./assets/levelup-gitconnected-claude-code-harness-engineering/04-minimal-while-loop.png)
+![Minimal While Loop](./assets/levelup-gitconnected-claude-code-harness-engineering/04-minimal-while-loop.webp)
 
 *Minimal While Loop (Created by Fareed Khan)*
 
@@ -315,7 +315,7 @@ In Claude Code’s internal architecture, the tool registry is one of the most s
 Claude Code ships with 18 registered tools such as bash, read, write, edit, glob, grep, WebFetch, AskUserQuestion, TodoWrite, and more.
 What makes this system elegant is not the number of tools, but the fact that adding a new one requires zero changes to the core loop.
 
-![Tool Dispatch Pattern](./assets/levelup-gitconnected-claude-code-harness-engineering/05-tool-dispatch-pattern.png)
+![Tool Dispatch Pattern](./assets/levelup-gitconnected-claude-code-harness-engineering/05-tool-dispatch-pattern.webp)
 
 *Tool Dispatch Pattern (Created by Fareed Khan)*
 
@@ -444,7 +444,7 @@ One of the most revealing findings from reverse-engineered Claude Code execution
 The plan comes before the action, and the action is only taken once the plan is committed.
 
 
-![ToDo Write](./assets/levelup-gitconnected-claude-code-harness-engineering/06-todo-write.png)
+![ToDo Write](./assets/levelup-gitconnected-claude-code-harness-engineering/06-todo-write.webp)
 
 *ToDo Write (Created by Fareed Khan)*
 
@@ -525,7 +525,7 @@ When asked to understand a new repository, Claude does not read files directly i
 It spawns three parallel explore subagents, each with a different focus, each running in complete isolation from the main context. The main conversation receives three clean summaries.
 It never sees the dozens of intermediate file reads, grep outputs, and directory listings that produced them.
 
-![Sub-agent Context](./assets/levelup-gitconnected-claude-code-harness-engineering/07-sub-agent-context.png)
+![Sub-agent Context](./assets/levelup-gitconnected-claude-code-harness-engineering/07-sub-agent-context.webp)
 
 *Sub-agent Context (Created by Fareed Khan)*
 
@@ -628,7 +628,7 @@ The isolation is what keeps the main agent’s reasoning at the right level of a
 The third phase is about the cognitive infrastructure where the agent moves beyond single-session execution loading domain knowledge only when it is needed.
 
 
-![Knowledge & Context Management](./assets/levelup-gitconnected-claude-code-harness-engineering/08-knowledge-context-management.png)
+![Knowledge & Context Management](./assets/levelup-gitconnected-claude-code-harness-engineering/08-knowledge-context-management.webp)
 
 *Knowledge & Context Management (Created by Fareed Khan)*
 
@@ -640,7 +640,7 @@ One of the most expensive mistakes in harness engineering is putting everything 
 A system prompt that contains PDF processing guides, code review methodologies, deployment checklists, and security auditing frameworks would consume thousands of tokens on every single API call the vast majority of it irrelevant to whatever the model is currently doing.
 Claude Code solves this with progressive disclosure, the same pattern that makes its skill system one of its most architecturally clean components.
 
-![On-Demand skill](./assets/levelup-gitconnected-claude-code-harness-engineering/09-on-demand-skill.png)
+![On-Demand skill](./assets/levelup-gitconnected-claude-code-harness-engineering/09-on-demand-skill.webp)
 
 *On-Demand skill (Created by Fareed Khan)*
 
@@ -763,7 +763,7 @@ Claude Code’s compressor wU2 triggers automatically at approximately 92% conte
 It does not discard history, it summarises it, keeping the information while dramatically reducing the token footprint. The summary is then written to a persistent markdown file on disk, making the agent's memory durable across session restarts.
 
 
-![Context Compression](./assets/levelup-gitconnected-claude-code-harness-engineering/10-context-compression.png)
+![Context Compression](./assets/levelup-gitconnected-claude-code-harness-engineering/10-context-compression.webp)
 
 *Context Compression (Created by Fareed Khan)*
 
@@ -904,7 +904,7 @@ Context compression keeps the conversation window manageable. But it solves a di
 The task graph is about what the agent commits to doing across sessions, across restarts, and eventually across multiple agents working in parallel.
 
 
-![File based](./assets/levelup-gitconnected-claude-code-harness-engineering/11-file-based.png)
+![File based](./assets/levelup-gitconnected-claude-code-harness-engineering/11-file-based.webp)
 
 *File based (Created by Fareed Khan)*
 
@@ -1047,7 +1047,7 @@ This is the behaviour that makes the task graph a fundamentally different mechan
 The fourth phase is about breaking the single-agent ceiling where one context window and one execution thread are no longer enough running slow operations in background threads without blocking the main loop, delegating parallel workstreams to persistent specialist agents, governing inter-agent communication with a finite state machine, enabling autonomous task claiming without a central coordinator, and isolating parallel file writes at the git worktree level.
 
 
-![Multi-Agent Teams](./assets/levelup-gitconnected-claude-code-harness-engineering/12-multi-agent-teams.png)
+![Multi-Agent Teams](./assets/levelup-gitconnected-claude-code-harness-engineering/12-multi-agent-teams.webp)
 
 *Multi-Agent Teams (Created by Fareed Khan)*
 
@@ -1059,7 +1059,7 @@ In Claude Code’s internal architecture, the h2A async queue is one of its most
 It pushes the operation into the background, continues planning the next steps, and receives a notification when the operation completes. The main reasoning loop never blocks on I/O.
 
 
-![Task Execution](./assets/levelup-gitconnected-claude-code-harness-engineering/13-task-execution.png)
+![Task Execution](./assets/levelup-gitconnected-claude-code-harness-engineering/13-task-execution.webp)
 
 *Task Execution (Created by Fareed Khan)*
 Without this mechanism, a coding agent is only as fast as its slowest tool call. A test suite that takes 45 seconds means 45 seconds of silence no planning, no parallel work, no progress. Background execution eliminates that ceiling entirely by decoupling operation execution from the agent’s reasoning cycle.
@@ -1191,7 +1191,7 @@ Claude Code parallel subagent system spawns ephemeral agents, they are created f
 A file exploration specialist, a code writing specialist, and a testing specialist each benefit from accumulated context about the codebase they are working in. Persistent teammates preserve that context across multiple delegated tasks.
 
 
-![Persistent Teammates](./assets/levelup-gitconnected-claude-code-harness-engineering/14-persistent-teammates.png)
+![Persistent Teammates](./assets/levelup-gitconnected-claude-code-harness-engineering/14-persistent-teammates.webp)
 
 *Persistent Teammates (Created by Fareed Khan)*
 
@@ -1332,7 +1332,7 @@ With multiple agents sending and receiving messages simultaneously, uncoordinate
 Without a protocol governing when agents can communicate, the team is unreliable at exactly the moments when it is under the most load.
 
 
-![FSM](./assets/levelup-gitconnected-claude-code-harness-engineering/15-fsm.png)
+![FSM](./assets/levelup-gitconnected-claude-code-harness-engineering/15-fsm.webp)
 
 *FSM (Created by Fareed Khan)*
 
@@ -1447,7 +1447,7 @@ When i ran this test, every state transition is logged. No agent sent a second r
 The FSM protocol governs communication between agents but still requires a lead to assign work. For very large workloads migrating an entire codebase, generating documentation for hundreds of functions, running analysis across thousands of files even the lead becomes a bottleneck. Autonomous self-assignment removes the coordinator entirely.
 
 
-![Self-assignment](./assets/levelup-gitconnected-claude-code-harness-engineering/16-self-assignment.png)
+![Self-assignment](./assets/levelup-gitconnected-claude-code-harness-engineering/16-self-assignment.webp)
 
 *Self-assignment (Created by Fareed Khan)*
 
@@ -1601,7 +1601,7 @@ Parallel agents writing to the same files in the same directory will eventually 
 The filesystem does not know about agent intentions it only knows about write operations, and two concurrent writes produce undefined results.
 
 
-![Worktree](./assets/levelup-gitconnected-claude-code-harness-engineering/17-worktree.png)
+![Worktree](./assets/levelup-gitconnected-claude-code-harness-engineering/17-worktree.webp)
 
 *Worktree (Created by Fareed Khan)*
 
@@ -1744,7 +1744,7 @@ The conflict detection ran after both completed and correctly identified that a 
 The fifth phase is about the gap between a working agent and a deployable one where streaming makes the model’s output visible in real time, file tools become reversible through automatic snapshotting, permission governance becomes declarative through a YAML rule system, every tool call becomes observable through a lifecycle event bus, and conversations become durable through session persistence.
 
 
-![Production Hardening](./assets/levelup-gitconnected-claude-code-harness-engineering/18-production-hardening.png)
+![Production Hardening](./assets/levelup-gitconnected-claude-code-harness-engineering/18-production-hardening.webp)
 
 *Production Hardening (Created by Fareed Khan)*
 
@@ -1756,7 +1756,7 @@ In Claude Code, streaming is not a feature, it is the default. Every interaction
 For long reasoning chains that span dozens of tool calls, a blocking agent sits silent for minutes while a streaming one shows its thinking in real time.
 
 
-![Real-time token streaming](./assets/levelup-gitconnected-claude-code-harness-engineering/19-real-time-token-streaming.png)
+![Real-time token streaming](./assets/levelup-gitconnected-claude-code-harness-engineering/19-real-time-token-streaming.webp)
 
 *Real-time token streaming (Created by Fareed Khan)*
 
@@ -1818,7 +1818,7 @@ Notice the response above streamed token by token — “I’ll start by reading
 Claude Code ships with dedicated file tools Read, Write, Edit, Glob, Grep not because bash cannot do file operations, but because dedicated tools give the model precise semantic operations with structured outputs. When the model calls read, it gets back numbered lines it can reference by number in a subsequent write.
 
 
-![Extended Tools](./assets/levelup-gitconnected-claude-code-harness-engineering/20-extended-tools.png)
+![Extended Tools](./assets/levelup-gitconnected-claude-code-harness-engineering/20-extended-tools.webp)
 
 *Extended Tools (Created by Fareed Khan)*
 When it calls grep, it gets back file paths and line numbersl, not raw terminal output. This structure is what allows Claude to make precise, targeted edits rather than overwriting entire files.
@@ -1928,7 +1928,7 @@ Claude Code permission system is one of its most studied architectural component
 That choice maps directly to a permission tier system some commands always run silently, some always require explicit approval, and some are blocked outright regardless of context.
 
 
-![Rule based permission](./assets/levelup-gitconnected-claude-code-harness-engineering/21-rule-based-permission.png)
+![Rule based permission](./assets/levelup-gitconnected-claude-code-harness-engineering/21-rule-based-permission.webp)
 
 *Rule based permission (Created by Fareed Khan)*
 This section implements that same three-tier model as a YAML configuration file. Security policy lives in configuration, not in code. Changing what requires approval is an edit to a config file, not a deployment. The rule evaluation runs as a pre-execution wrapper around every tool call.
@@ -2039,7 +2039,7 @@ Claude Code exposes a hooks system that lets users attach custom logic to any po
 This is how teams add cost tracking, audit logging, custom approval workflows, and integration with external monitoring systems without modifying the agent loop itself.
 
 
-![Event Bus](./assets/levelup-gitconnected-claude-code-harness-engineering/22-event-bus.png)
+![Event Bus](./assets/levelup-gitconnected-claude-code-harness-engineering/22-event-bus.webp)
 
 *Event Bus (Created by Fareed Khan)*
 
@@ -2238,7 +2238,7 @@ All of this happened without a single line of observability code inside the agen
 A session that cannot be resumed is a session that cannot be trusted with long tasks. If the model is 30 minutes into a complex refactor and the terminal closes, everything is lost not just the conversation, but the reasoning context that led to every decision made.
 
 
-![Session Persistence](./assets/levelup-gitconnected-claude-code-harness-engineering/23-session-persistence.png)
+![Session Persistence](./assets/levelup-gitconnected-claude-code-harness-engineering/23-session-persistence.webp)
 
 *Session Persistence (Created by Fareed Khan)*
 
@@ -2395,7 +2395,7 @@ The terminal closed mid-session and resumed exactly where it left off — 14 mes
 ## Phase 5: High-Performance Async Runtime
 The sixth phase is about performance and control where the agent moves from correct to fast and steerable — collapsing multi-tool turns from sequential to concurrent with asyncio.gather, giving users real-time steering through interrupt injection, eliminating redundant token spend through prompt caching, and opening the tool registry to any external server through the official MCP runtime.
 
-![High-Performance Async Runtime](./assets/levelup-gitconnected-claude-code-harness-engineering/24-high-performance-async-runtime.png)
+![High-Performance Async Runtime](./assets/levelup-gitconnected-claude-code-harness-engineering/24-high-performance-async-runtime.webp)
 
 *High-Performance Async Runtime (Created by Fareed Khan)*
 This is where Claude Code's 92% prefix reuse rate, parallel tool execution, and MCP support are made explicit and measurable.
@@ -2406,7 +2406,7 @@ One of the most significant performance characteristics of Claude Code, revealed
 When Claude returns a response with three grep calls and two reads in a single turn, all five execute simultaneously. The turn completes in the time of the slowest single call not the sum of all five.
 For codebase exploration tasks that involve dozens of reads and searches, this difference compounds dramatically.
 
-![parallel Tool](./assets/levelup-gitconnected-claude-code-harness-engineering/25-parallel-tool.png)
+![parallel Tool](./assets/levelup-gitconnected-claude-code-harness-engineering/25-parallel-tool.webp)
 
 *parallel Tool (Created by Fareed Khan)*
 
@@ -2548,7 +2548,7 @@ This compounds dramatically on larger codebases where Claude Code explores dozen
 Claude Code lets you press Ctrl+C mid-task to redirect the agent without losing any of the work it has done. The agent does not crash, it reads your interrupt, summarises its current progress, and waits for new instruction. This is the h2A steering queue: an async channel that sits alongside the agent loop and accepts messages from any source at any time.
 
 
-![Real-time Interrupt](./assets/levelup-gitconnected-claude-code-harness-engineering/26-real-time-interrupt.png)
+![Real-time Interrupt](./assets/levelup-gitconnected-claude-code-harness-engineering/26-real-time-interrupt.webp)
 
 *Real-time Interrupt (Created by Fareed Khan)*
 
@@ -2701,7 +2701,7 @@ Reverse-engineered Claude Code execution traces show a 92% prompt prefix reuse r
 Anthropic prompt caching serves those stable prefixes at approximately 10% of the normal token cost. For an agent that makes hundreds of API calls in a long session, this compounds into very significant savings.
 
 
-![KV Cache](./assets/levelup-gitconnected-claude-code-harness-engineering/27-kv-cache.png)
+![KV Cache](./assets/levelup-gitconnected-claude-code-harness-engineering/27-kv-cache.webp)
 
 *KV Cache (Created by Fareed Khan)*
 
@@ -2836,7 +2836,7 @@ Claude Code supports MCP natively — any compliant server’s tools become firs
 A database server adds query tools. The model calls all of them identically to built-in tools, with no awareness of whether a tool is a local Python function or a remote server process.
 
 
-![MCP](./assets/levelup-gitconnected-claude-code-harness-engineering/28-mcp.png)
+![MCP](./assets/levelup-gitconnected-claude-code-harness-engineering/28-mcp.webp)
 
 *MCP (Created by Fareed Khan)*
 
@@ -2976,7 +2976,7 @@ This is how Claude Code's MCP support works external servers extend the tool reg
 The seventh phase is about replacing teaching implementations with production-grade alternatives where file-based mailboxes become Redis pub/sub channels with instant delivery and cross-machine support, basic worktree creation becomes a full lifecycle manager that handles every edge case a real codebase surfaces, and the entire system is assembled into a single deployable reference that wires all mechanisms together.
 
 
-![Enterprise Upgrades](./assets/levelup-gitconnected-claude-code-harness-engineering/29-enterprise-upgrades.png)
+![Enterprise Upgrades](./assets/levelup-gitconnected-claude-code-harness-engineering/29-enterprise-upgrades.webp)
 
 *Enterprise Upgrades (Created by Fareed Khan)*
 
@@ -2988,7 +2988,7 @@ The JSONL mailbox system from Phase 4 works as a teaching mechanism but has thre
 It needs file locking for concurrent access two agents writing to the same file simultaneously produce corrupted JSONL. And it is single-machine the mailbox files live on one filesystem, making distributed deployment impossible.
 
 
-![Redis Pub/Sub](./assets/levelup-gitconnected-claude-code-harness-engineering/30-redis-pub-sub.png)
+![Redis Pub/Sub](./assets/levelup-gitconnected-claude-code-harness-engineering/30-redis-pub-sub.webp)
 
 *Redis Pub/Sub (Created by Fareed Khan)*
 Claude Code’s internal agent coordination uses message passing that is instant, lock-free, and works across process boundaries. Redis pub/sub provides exactly these properties. An agent publishes to a channel and any subscriber receives it within milliseconds no polling loop, no file locking, no filesystem dependency.
@@ -3211,7 +3211,7 @@ The basic worktree implementation from Phase 4 creates and removes worktrees but
 A branch that already exists from a previous crashed run causes git worktree add to fail. A repository in detached HEAD state cannot create new branches. And two agents that both modify the same file in separate branches create a merge conflict that neither agent will catch.
 
 
-![Worktree Lifecycle](./assets/levelup-gitconnected-claude-code-harness-engineering/31-worktree-lifecycle.png)
+![Worktree Lifecycle](./assets/levelup-gitconnected-claude-code-harness-engineering/31-worktree-lifecycle.webp)
 
 *Worktree Lifecycle (Created by Fareed Khan)*
 
