@@ -230,6 +230,7 @@
   - [SEEED Arduino CAN](obd2/libraries/seeed-arduino-can.md)
 - [CAN Bus](obd2/can-bus/README.md)
   - [Awesome CAN Bus](obd2/can-bus/awesome-can-bus.md)
+  - [CAN Bus Reverse Engineering Skills (CSS Electronics)](obd2/can-bus/github-css-electronics-can-bus-reverse-engineering-skills.md)
   - [CAN Bus Shield](obd2/can-bus/can-bus-shield.md)
   - [CAN Bus Shield V2.0](obd2/can-bus/can-bus-shield-v2.0.md)
 - [ELM327 Datasheet](obd2/elm327-datasheet.md)
