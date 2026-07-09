@@ -12,6 +12,7 @@ description: "Notes on Guides."
 
 | Page | Notes |
 | --- | --- |
+| [ESP32 OBD Live Web Dashboard (ArduinoCANShield)](./esp32-obd-live-web-dashboard.md) | Build log: NodeMCU-32S + MCP2515 + GPS, live WebSocket dashboard, CAN replay bench sim, VAG UDS modules. |
 | [Creating A Wireless Obdii Scanner](./creating-a-wireless-obdii-scanner.md) | Curated notes and references for creating a wireless obdii scanner. |
 | [Freematics + Traccar](./freematics-+-traccar.md) | Curated notes and references for freematics + traccar. |
 | [Hackster.io](./hackster.io/README.md) | Curated notes and references for hackster.io. |
