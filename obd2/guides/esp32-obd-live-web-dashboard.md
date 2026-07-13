@@ -7,9 +7,8 @@ description: "Build log: NodeMCU-32S + MCP2515 + GPS, live WebSocket dashboard o
 
 ## Source
 
-- Type: text
-- Origin: Cursor agent transcript blog post (Obsidian `BLOG-POSTS/arduinocanshield-2026-07-09.md`) + user-provided photos/video
-- Imported: 2026-07-09
+- Type: original write-up
+- Published: 2026-07-09
 - Images: 2 saved under `./assets/esp32-obd-live-web-dashboard/`
 - Video: [YouTube Shorts demo](https://youtube.com/shorts/r2-XjV_Vlvc?feature=share)
 - Firmware: [ArduinoCANShield PR #1](https://github.com/DevinNorgarb/ArduinoCANShield/pull/1)
