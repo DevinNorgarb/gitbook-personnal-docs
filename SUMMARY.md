@@ -386,6 +386,7 @@
 - [Awesome Self-Hosted](self-hosting/awesome-self-hosted.md)
 - [Domain Monitor (Hosteroid)](self-hosting/github-hosteroid-domain-monitor.md)
 - [What is Nginx UI?](self-hosting/nginxui-com-guide-about.md)
+- [devinn.org → GitHub Pages proxy](self-hosting/devinn-org-github-pages-proxy.md)
 - [Hardware](self-hosting/hardware/README.md)
   - [IBM SystemX x3690](self-hosting/hardware/ibm-systemx-x3690.md)
   - [Dell PowerEdge 2950](self-hosting/hardware/dell-poweredge-2950.md)
