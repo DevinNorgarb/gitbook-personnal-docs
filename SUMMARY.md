@@ -533,6 +533,7 @@
   - [ChatGPT](misc/artificial-intelligence/chatgpt.md)
   - [Using ChatGPT to build System Diagrams — Part I](misc/artificial-intelligence/using-chatgpt-to-build-system-diagrams-part-i.md)
   - [Awesome Cursor Skills](misc/artificial-intelligence/github-awesome-cursor-skills.md)
+  - [Superpowers Skills Library](misc/artificial-intelligence/github-obra-superpowers-skills.md)
   - [What is MCP?](misc/artificial-intelligence/modelcontextprotocol-io-what-is-mcp.md)
   - [Repomix (AI codebase packing)](misc/artificial-intelligence/github-yamadashy-repomix.md)
   - [Building Claude Code with Harness Engineering](misc/artificial-intelligence/levelup-gitconnected-claude-code-harness-engineering.md)
