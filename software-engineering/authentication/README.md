@@ -13,6 +13,7 @@ description: "Notes on Authentication."
 | Page | Notes |
 | --- | --- |
 | [Oauth2](./oauth2.md) | Curated notes and references for oauth2. |
+| [Logto (logto-io/logto)](./github-logto-io-logto.md) | Open-source auth infrastructure (OIDC/OAuth 2.1, SSO, RBAC, multi-tenancy). |
 
 ## Related pages
 
