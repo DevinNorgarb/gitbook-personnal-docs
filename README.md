@@ -1,14 +1,12 @@
 # Personal documentation
 
-Public knowledge base at **[docs.f1y.ing](https://docs.f1y.ing/)** — notes on software engineering, embedded systems, robotics, GIS, and related topics.
-
-The published site uses [VitePress](https://vitepress.dev/). Navigation and cross-topic links are generated from **[SUMMARY.md](SUMMARY.md)** and **[scripts/topic-clusters.json](scripts/topic-clusters.json)** in CI (`npm run docs:prep`) before each deploy.
+Public knowledge base at **[devinn.org](https://devinn.org)** — notes on software engineering, embedded systems, robotics, GIS, and related topics.
 
 ## Site vs repository
 
 | File | Purpose |
 |------|---------|
-| [`index.md`](index.md) | VitePress **home page** (`layout: home`) — what visitors see at `/` |
+| [`index.md`](index.md)
 | `README.md` | This file — GitHub repo overview and contributor setup |
 
 Do not sync `README.md` over `index.md`; they serve different audiences.
