@@ -20,3 +20,4 @@ Notes and links for **Android App Development**.
 - [GPS Remote for Osmo Action (Google Play)](./play-google-com-gps-remote-for-osmo-action.md) — BLE GPS push + remote for Osmo Action & 360
 - [MockLoc (Google Play)](./play-google-com-mockloc.md) — Mock GPS route playback for Android QA
 - [SACAA Air Law Assistant (CAA2.0)](./caa2-sacaa-air-law-assistant.md) — Cited SACAA air-law Q&A assistant
+- [Commandify — Spotify Voice Control (archived)](./commandify-spotify-voice-control.md) — Voice Spotify control; discontinued after API cutoff

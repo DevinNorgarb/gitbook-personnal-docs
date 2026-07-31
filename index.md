@@ -116,6 +116,18 @@ features:
   </div>
 </a>
 
+<a class="app-card app-card--commandify no-icon" href="/software-engineering/android-app-development/commandify-spotify-voice-control">
+  <img class="app-icon" src="/apps/commandify-icon.png" alt="Commandify" width="72" height="72" loading="lazy" decoding="async">
+  <div class="app-body">
+    <div class="app-meta">
+      <h3 class="app-name">Commandify</h3>
+      <span class="app-badge">Archived</span>
+    </div>
+    <p class="app-tagline">Spotify voice control for Android (5000+ users) — discontinued after Spotify removed third-party API access.</p>
+    <span class="app-cta">No longer available</span>
+  </div>
+</a>
+
 </div>
 
 ## More topics
