@@ -66,6 +66,8 @@
   - [Quasar.js](software-engineering/android-app-development/quasar.js.md)
   - [Android Runtime - How Dalvik and ART Work](software-engineering/android-app-development/android-runtime-how-dalvik-and-art-work.md)
   - [GPS Remote for Osmo Action (Google Play)](software-engineering/android-app-development/play-google-com-gps-remote-for-osmo-action.md)
+  - [MockLoc (Google Play)](software-engineering/android-app-development/play-google-com-mockloc.md)
+  - [SACAA Air Law Assistant (CAA2.0)](software-engineering/android-app-development/caa2-sacaa-air-law-assistant.md)
 - [Machine Learning](software-engineering/machine-learning/README.md)
   - [openmv.io](software-engineering/machine-learning/openmv.io.md)
   - [Google MLKit](software-engineering/machine-learning/google-mlkit/README.md)

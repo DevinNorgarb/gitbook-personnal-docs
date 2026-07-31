@@ -92,6 +92,30 @@ features:
   </div>
 </a>
 
+<a class="app-card app-card--mockloc no-icon" href="https://play.google.com/store/apps/details?id=com.mockloc" target="_blank" rel="noopener noreferrer">
+  <img class="app-icon" src="/apps/mockloc-icon.png" alt="MockLoc" width="72" height="72" loading="lazy" decoding="async">
+  <div class="app-body">
+    <div class="app-meta">
+      <h3 class="app-name">MockLoc</h3>
+      <span class="app-badge">Tools</span>
+    </div>
+    <p class="app-tagline">Mock GPS routes for Android QA — draw or import paths, replay at fixed speed, no root required.</p>
+    <span class="app-cta">Google Play</span>
+  </div>
+</a>
+
+<a class="app-card app-card--caa2 no-icon" href="https://sacaa.app" target="_blank" rel="noopener noreferrer">
+  <img class="app-icon" src="/apps/caa2-icon.png" alt="SACAA Air Law Assistant" width="72" height="72" loading="lazy" decoding="async">
+  <div class="app-body">
+    <div class="app-meta">
+      <h3 class="app-name">SACAA Air Law Assistant</h3>
+      <span class="app-badge">Education</span>
+    </div>
+    <p class="app-tagline">CAA2.0 — ask SACAA air-law questions with cited regs, AIP, AICs &amp; forms you can open and verify.</p>
+    <span class="app-cta">Web app</span>
+  </div>
+</a>
+
 </div>
 
 ## More topics
