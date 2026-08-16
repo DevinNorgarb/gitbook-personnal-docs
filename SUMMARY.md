@@ -138,6 +138,7 @@
     - [how-to: run your own bitcoin node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/how-to-run-your-own-bitcoin-node.md)
     - [Six Reasons Why You Should Run Your Own Bitcoin Node](software-engineering/cryptocurrencies/running-your-own-bitcoin-node/six-reasons-why-you-should-run-your-own-bitcoin-node.md)
   - [Trading Bots](software-engineering/cryptocurrencies/trading-bots.md)
+  - [4 Best Swing Trading Strategies That Work (Bybit)](software-engineering/cryptocurrencies/bybit-best-swing-trading-strategies.md)
 - [Linux](software-engineering/linux/README.md)
   - [Firmware](software-engineering/linux/firmware/README.md)
     - [Realtek RTL8188FTV WiFi Adapter on Linux](software-engineering/linux/firmware/realtek-rtl8188ftv-wifi-adapter-on-linux.md)
