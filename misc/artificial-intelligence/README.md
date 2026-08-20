@@ -18,6 +18,7 @@ description: "Notes on artificial-intelligence."
 | [Modelcontextprotocol Io What Is Mcp](./modelcontextprotocol-io-what-is-mcp.md) | What MCP is, why it matters, and links to build servers, clients, and apps. |
 | [Repomix (yamadashy/repomix)](./github-yamadashy-repomix.md) | Pack repositories into a single AI-friendly file for LLM context. |
 | [Building Claude Code with Harness Engineering](./levelup-gitconnected-claude-code-harness-engineering.md) | Reverse-engineering Claude Code's agent harness — loop, tools, context, permissions, multi-agent. |
+| [Gauntlet Loop (DevinNorgarb/gauntlet-loop)](./github-gauntlet-loop.md) | Builder/critic pairs, blind comparison against a real quality bar, loop until it wins. |
 | [Using Chatgpt To Build System Diagrams Part I](./using-chatgpt-to-build-system-diagrams-part-i.md) | Curated notes and references for using chatgpt to build system diagrams part i. |
 
 ## Related pages
@@ -29,3 +30,4 @@ description: "Notes on artificial-intelligence."
 - [What is MCP?](./modelcontextprotocol-io-what-is-mcp.md)
 - [Repomix (yamadashy/repomix)](./github-yamadashy-repomix.md)
 - [Building Claude Code with Harness Engineering](./levelup-gitconnected-claude-code-harness-engineering.md)
+- [Gauntlet Loop](./github-gauntlet-loop.md)
