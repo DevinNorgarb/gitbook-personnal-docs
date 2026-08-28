@@ -19,6 +19,7 @@ description: "Notes on artificial-intelligence."
 | [Repomix (yamadashy/repomix)](./github-yamadashy-repomix.md) | Pack repositories into a single AI-friendly file for LLM context. |
 | [Building Claude Code with Harness Engineering](./levelup-gitconnected-claude-code-harness-engineering.md) | Reverse-engineering Claude Code's agent harness — loop, tools, context, permissions, multi-agent. |
 | [Gauntlet Loop (DevinNorgarb/gauntlet-loop)](./github-gauntlet-loop.md) | Builder/critic pairs, blind comparison against a real quality bar, loop until it wins. |
+| [Rivet (Ironclad)](./rivet-ironcladapp-com-rivet.md) | Open-source visual AI programming environment for building, debugging, and deploying LLM prompt graphs. |
 | [Using Chatgpt To Build System Diagrams Part I](./using-chatgpt-to-build-system-diagrams-part-i.md) | Curated notes and references for using chatgpt to build system diagrams part i. |
 
 ## Related pages
@@ -31,3 +32,4 @@ description: "Notes on artificial-intelligence."
 - [Repomix (yamadashy/repomix)](./github-yamadashy-repomix.md)
 - [Building Claude Code with Harness Engineering](./levelup-gitconnected-claude-code-harness-engineering.md)
 - [Gauntlet Loop](./github-gauntlet-loop.md)
+- [Rivet (Ironclad)](./rivet-ironcladapp-com-rivet.md)

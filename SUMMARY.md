@@ -544,6 +544,7 @@
   - [Repomix (AI codebase packing)](misc/artificial-intelligence/github-yamadashy-repomix.md)
   - [Building Claude Code with Harness Engineering](misc/artificial-intelligence/levelup-gitconnected-claude-code-harness-engineering.md)
   - [Gauntlet Loop (DevinNorgarb/gauntlet-loop)](misc/artificial-intelligence/github-gauntlet-loop.md)
+  - [Rivet (Ironclad)](misc/artificial-intelligence/rivet-ironcladapp-com-rivet.md)
 - [tutorials](misc/tutorials/README.md)
   - [Install Ghost blogging platform on Ubuntu](misc/tutorials/install-ghost-blogging-platform-on-ubuntu.md)
   - [From Google Sheets, how to send email based on date](misc/tutorials/from-google-sheets-how-to-send-email-based-on-date/README.md)
