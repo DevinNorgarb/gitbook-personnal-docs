@@ -546,6 +546,7 @@
   - [Gauntlet Loop (DevinNorgarb/gauntlet-loop)](misc/artificial-intelligence/github-gauntlet-loop.md)
   - [Rivet (Ironclad)](misc/artificial-intelligence/rivet-ironcladapp-com-rivet.md)
   - [Building Effective Agents (Anthropic)](misc/artificial-intelligence/anthropic-building-effective-agents.md)
+  - [Contextual Retrieval (Anthropic)](misc/artificial-intelligence/anthropic-contextual-retrieval.md)
   - [Basic Multi-LLM Workflows (Claude Cookbook)](misc/artificial-intelligence/platform-claude-patterns-agents-basic-workflows.md)
 - [tutorials](misc/tutorials/README.md)
   - [Install Ghost blogging platform on Ubuntu](misc/tutorials/install-ghost-blogging-platform-on-ubuntu.md)
