@@ -547,6 +547,7 @@
   - [Rivet (Ironclad)](misc/artificial-intelligence/rivet-ironcladapp-com-rivet.md)
   - [Building Effective Agents (Anthropic)](misc/artificial-intelligence/anthropic-building-effective-agents.md)
   - [Basic Multi-LLM Workflows (Claude Cookbook)](misc/artificial-intelligence/platform-claude-patterns-agents-basic-workflows.md)
+  - [Contextual Embeddings for RAG (Claude Cookbook)](misc/artificial-intelligence/platform-claude-contextual-embeddings-guide.md)
 - [tutorials](misc/tutorials/README.md)
   - [Install Ghost blogging platform on Ubuntu](misc/tutorials/install-ghost-blogging-platform-on-ubuntu.md)
   - [From Google Sheets, how to send email based on date](misc/tutorials/from-google-sheets-how-to-send-email-based-on-date/README.md)
