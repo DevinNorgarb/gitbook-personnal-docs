@@ -12,6 +12,7 @@ const navHidden = JSON.parse(
 
 const UMAMI_HOST = "https://umami.f1y.ing";
 const UMAMI_WEBSITE_ID = "10532e65-850b-4b41-8e8f-2b8a5e583612";
+const GA_MEASUREMENT_ID = "G-FTXX4G8TZD";
 
 export default withMermaid(
   defineConfig({
@@ -40,6 +41,21 @@ export default withMermaid(
           "data-mask-level": "moderate",
           "data-max-duration": "300000",
         },
+      ],
+      [
+        "script",
+        {
+          async: "",
+          src: `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`,
+        },
+      ],
+      [
+        "script",
+        {},
+        `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '${GA_MEASUREMENT_ID}');`,
       ],
     ],
     vite: {
