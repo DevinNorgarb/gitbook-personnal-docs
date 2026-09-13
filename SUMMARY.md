@@ -238,6 +238,7 @@
   - [CAN Bus Reverse Engineering Skills (CSS Electronics)](obd2/can-bus/github-css-electronics-can-bus-reverse-engineering-skills.md)
   - [CAN Bus Shield](obd2/can-bus/can-bus-shield.md)
   - [CAN Bus Shield V2.0](obd2/can-bus/can-bus-shield-v2.0.md)
+  - [Last Minute Engineers — MCP2515 CAN Module + Arduino](obd2/can-bus/lastminuteengineers-mcp2515-can-module-arduino.md)
 - [ELM327 Datasheet](obd2/elm327-datasheet.md)
 - [Car Hacking](obd2/car-hacking/README.md)
   - [Chaos-Sec-Lab](obd2/car-hacking/chaos-sec-lab.md)
