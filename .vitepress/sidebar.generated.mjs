@@ -315,10 +315,6 @@ export default [
           {
             "text": "Commandify — Spotify Voice Control (archived)",
             "link": "/software-engineering/android-app-development/commandify-spotify-voice-control"
-          },
-          {
-            "text": "RevDash",
-            "link": "/obd2/related-projects/revdash-me"
           }
         ],
         "collapsed": true
@@ -1255,6 +1251,10 @@ export default [
           {
             "text": "Open Garages",
             "link": "/obd2/related-projects/open-garages"
+          },
+          {
+            "text": "RevDash",
+            "link": "/obd2/related-projects/revdash-me"
           }
         ],
         "collapsed": true
