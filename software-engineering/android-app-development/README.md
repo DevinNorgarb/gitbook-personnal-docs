@@ -19,6 +19,7 @@ Notes and links for **Android App Development**.
 - [Android Runtime - How Dalvik and ART Work](./android-runtime-how-dalvik-and-art-work.md) — Imported note from ProAndroidDev
 - [GPS Remote for Osmo Action (Google Play)](./play-google-com-gps-remote-for-osmo-action.md) — BLE GPS push + remote for Osmo Action & 360
 - [MockLoc (Google Play)](./play-google-com-mockloc.md) — Mock GPS route playback for Android QA
+- [RevDash (Google Play)](./play-google-com-revdash.md) — Live OBD-II dashboard & code reader (`app.revdash.obd`)
 - [SACAA Air Law Assistant (CAA2.0)](./caa2-sacaa-air-law-assistant.md) — Cited SACAA air-law Q&A assistant
 - [Commandify — Spotify Voice Control (archived)](./commandify-spotify-voice-control.md) — Voice Spotify control; discontinued after API cutoff
 - [RevDash](../../obd2/related-projects/revdash-me.md) — Android OBD-II dash + browser trip replay ([revdash.me](https://revdash.me/))
