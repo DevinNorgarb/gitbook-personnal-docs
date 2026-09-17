@@ -67,6 +67,7 @@
   - [Android Runtime - How Dalvik and ART Work](software-engineering/android-app-development/android-runtime-how-dalvik-and-art-work.md)
   - [GPS Remote for Osmo Action (Google Play)](software-engineering/android-app-development/play-google-com-gps-remote-for-osmo-action.md)
   - [MockLoc (Google Play)](software-engineering/android-app-development/play-google-com-mockloc.md)
+  - [RevDash (Google Play)](software-engineering/android-app-development/play-google-com-revdash.md)
   - [SACAA Air Law Assistant (CAA2.0)](software-engineering/android-app-development/caa2-sacaa-air-law-assistant.md)
   - [Commandify — Spotify Voice Control (archived)](software-engineering/android-app-development/commandify-spotify-voice-control.md)
 - [Machine Learning](software-engineering/machine-learning/README.md)
