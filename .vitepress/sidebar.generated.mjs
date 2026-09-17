@@ -303,6 +303,22 @@ export default [
           {
             "text": "GPS Remote for Osmo Action (Google Play)",
             "link": "/software-engineering/android-app-development/play-google-com-gps-remote-for-osmo-action"
+          },
+          {
+            "text": "MockLoc (Google Play)",
+            "link": "/software-engineering/android-app-development/play-google-com-mockloc"
+          },
+          {
+            "text": "SACAA Air Law Assistant (CAA2.0)",
+            "link": "/software-engineering/android-app-development/caa2-sacaa-air-law-assistant"
+          },
+          {
+            "text": "Commandify — Spotify Voice Control (archived)",
+            "link": "/software-engineering/android-app-development/commandify-spotify-voice-control"
+          },
+          {
+            "text": "RevDash",
+            "link": "/obd2/related-projects/revdash-me"
           }
         ],
         "collapsed": true
@@ -367,6 +383,10 @@ export default [
           {
             "text": "OAuth2",
             "link": "/software-engineering/authentication/oauth2"
+          },
+          {
+            "text": "Logto (logto-io/logto)",
+            "link": "/software-engineering/authentication/github-logto-io-logto"
           }
         ],
         "collapsed": true
@@ -649,6 +669,10 @@ export default [
           {
             "text": "Trading Bots",
             "link": "/software-engineering/cryptocurrencies/trading-bots"
+          },
+          {
+            "text": "4 Best Swing Trading Strategies That Work (Bybit)",
+            "link": "/software-engineering/cryptocurrencies/bybit-best-swing-trading-strategies"
           }
         ],
         "collapsed": true
@@ -1125,12 +1149,20 @@ export default [
             "link": "/obd2/can-bus/awesome-can-bus"
           },
           {
+            "text": "CAN Bus Reverse Engineering Skills (CSS Electronics)",
+            "link": "/obd2/can-bus/github-css-electronics-can-bus-reverse-engineering-skills"
+          },
+          {
             "text": "CAN Bus Shield",
             "link": "/obd2/can-bus/can-bus-shield"
           },
           {
             "text": "CAN Bus Shield V2.0",
             "link": "/obd2/can-bus/can-bus-shield-v2.0"
+          },
+          {
+            "text": "Last Minute Engineers — MCP2515 CAN Module + Arduino",
+            "link": "/obd2/can-bus/lastminuteengineers-mcp2515-can-module-arduino"
           }
         ],
         "collapsed": true
@@ -1232,6 +1264,10 @@ export default [
         "link": "/obd2/guides/README",
         "items": [
           {
+            "text": "ESP32 OBD Live Web Dashboard (ArduinoCANShield)",
+            "link": "/obd2/guides/esp32-obd-live-web-dashboard"
+          },
+          {
             "text": "Freematics + Traccar",
             "link": "/obd2/guides/freematics-+-traccar"
           },
@@ -1292,6 +1328,10 @@ export default [
           {
             "text": "traccar.org",
             "link": "/obd2/vehicle-tracking/traccar.org"
+          },
+          {
+            "text": "Concox GT710 firmware extraction (macOS)",
+            "link": "/obd2/vehicle-tracking/concox-gt710-firmware-extraction"
           }
         ],
         "collapsed": true
@@ -1705,6 +1745,17 @@ export default [
               }
             ],
             "collapsed": true
+          },
+          {
+            "text": "Overclocking Raspberry Pi 5",
+            "link": "/microcontrollers-and-socs/raspberry-pi/overclocking-raspberry-pi-5/README",
+            "items": [
+              {
+                "text": "Complete RPi 5 Overclocking Guide (cmd0s)",
+                "link": "/microcontrollers-and-socs/raspberry-pi/overclocking-raspberry-pi-5/github-cmd0s-rpi5-overclocking-guide"
+              }
+            ],
+            "collapsed": true
           }
         ],
         "collapsed": true
@@ -1776,6 +1827,18 @@ export default [
       {
         "text": "Awesome Self-Hosted",
         "link": "/self-hosting/awesome-self-hosted"
+      },
+      {
+        "text": "Domain Monitor (Hosteroid)",
+        "link": "/self-hosting/github-hosteroid-domain-monitor"
+      },
+      {
+        "text": "What is Nginx UI?",
+        "link": "/self-hosting/nginxui-com-guide-about"
+      },
+      {
+        "text": "devinn.org → GitHub Pages proxy",
+        "link": "/self-hosting/devinn-org-github-pages-proxy"
       },
       {
         "text": "Hardware",
@@ -2366,8 +2429,44 @@ export default [
             "link": "/misc/artificial-intelligence/github-awesome-cursor-skills"
           },
           {
+            "text": "Superpowers Skills Library",
+            "link": "/misc/artificial-intelligence/github-obra-superpowers-skills"
+          },
+          {
             "text": "What is MCP?",
             "link": "/misc/artificial-intelligence/modelcontextprotocol-io-what-is-mcp"
+          },
+          {
+            "text": "Repomix (AI codebase packing)",
+            "link": "/misc/artificial-intelligence/github-yamadashy-repomix"
+          },
+          {
+            "text": "Building Claude Code with Harness Engineering",
+            "link": "/misc/artificial-intelligence/levelup-gitconnected-claude-code-harness-engineering"
+          },
+          {
+            "text": "Gauntlet Loop (DevinNorgarb/gauntlet-loop)",
+            "link": "/misc/artificial-intelligence/github-gauntlet-loop"
+          },
+          {
+            "text": "Building Effective Agents (Anthropic)",
+            "link": "/misc/artificial-intelligence/anthropic-building-effective-agents"
+          },
+          {
+            "text": "Contextual Retrieval (Anthropic)",
+            "link": "/misc/artificial-intelligence/anthropic-contextual-retrieval"
+          },
+          {
+            "text": "Basic Multi-LLM Workflows (Claude Cookbook)",
+            "link": "/misc/artificial-intelligence/platform-claude-patterns-agents-basic-workflows"
+          },
+          {
+            "text": "Contextual Embeddings for RAG (Claude Cookbook)",
+            "link": "/misc/artificial-intelligence/platform-claude-contextual-embeddings-guide"
+          },
+          {
+            "text": "Rivet (Ironclad)",
+            "link": "/misc/artificial-intelligence/rivet-ironcladapp-com-rivet"
           }
         ],
         "collapsed": true

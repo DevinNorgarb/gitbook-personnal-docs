@@ -38,3 +38,4 @@ Project documentation for building a **wireless OBD-II scanner** — bridging ve
 - [OBD2 Guides](./README.md)
 - [ELM327 Datasheet](../elm327-datasheet.md)
 - [Related Projects](../related-projects/README.md)
+- [RevDash](../related-projects/revdash-me.md) — phone + ELM327 dash ([revdash.me](https://revdash.me/))

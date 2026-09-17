@@ -16,6 +16,7 @@ description: "Notes on ELM327 Datasheet."
 ## Related pages
 
 - [ELM327DSL.pdf](../.gitbook/assets/ELM327DSL.pdf)
+- [RevDash](./related-projects/revdash-me.md) — Android ELM327 dash + trip replay ([revdash.me](https://revdash.me/))
 - [A Quick Crash Course](./a-quick-crash-course.md)
 - [Can Bus](./can-bus/README.md)
 - [Car Hacking](./car-hacking/README.md)

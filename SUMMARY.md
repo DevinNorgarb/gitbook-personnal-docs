@@ -69,6 +69,7 @@
   - [MockLoc (Google Play)](software-engineering/android-app-development/play-google-com-mockloc.md)
   - [SACAA Air Law Assistant (CAA2.0)](software-engineering/android-app-development/caa2-sacaa-air-law-assistant.md)
   - [Commandify — Spotify Voice Control (archived)](software-engineering/android-app-development/commandify-spotify-voice-control.md)
+  - [RevDash](obd2/related-projects/revdash-me.md)
 - [Machine Learning](software-engineering/machine-learning/README.md)
   - [openmv.io](software-engineering/machine-learning/openmv.io.md)
   - [Google MLKit](software-engineering/machine-learning/google-mlkit/README.md)

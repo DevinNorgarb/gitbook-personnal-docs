@@ -5,14 +5,16 @@ description: Imported note from https://revdash.me/
 
 # RevDash
 
+Site: [revdash.me](https://revdash.me/) · Product docs: [revdash.me/docs](https://revdash.me/docs) · Privacy: [revdash.me/privacy](https://revdash.me/privacy)
+
 ![RevDash open graph / brand banner](./assets/revdash-me/01-og.png)
 
 ## Source
 
 - Type: webpage
-- Origin: https://revdash.me/
-- Docs: https://revdash.me/docs
-- Privacy: https://revdash.me/privacy
+- Origin: [https://revdash.me/](https://revdash.me/)
+- Docs: [https://revdash.me/docs](https://revdash.me/docs)
+- Privacy: [https://revdash.me/privacy](https://revdash.me/privacy)
 - Imported: 2026-09-17
 
 ## Content
