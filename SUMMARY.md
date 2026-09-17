@@ -259,6 +259,7 @@
   - [Carloop.io](obd2/related-projects/carloop.io.md)
   - [CANreader](obd2/related-projects/canreader.md)
   - [Open Garages](obd2/related-projects/open-garages.md)
+  - [RevDash](obd2/related-projects/revdash-me.md)
 - [Guides](obd2/guides/README.md)
   - [ESP32 OBD Live Web Dashboard (ArduinoCANShield)](obd2/guides/esp32-obd-live-web-dashboard.md)
   - [Freematics + Traccar](obd2/guides/freematics-+-traccar.md)

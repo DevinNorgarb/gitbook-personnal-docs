@@ -24,3 +24,4 @@ description: "Notes on Related Projects."
 - [Carloop.io](./carloop.io.md)
 - [CANreader](./canreader.md) — "https://github.com/autowp/CANreader"
 - [Open Garages](./open-garages.md)
+- [RevDash](./revdash-me.md) — https://revdash.me/
